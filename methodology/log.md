@@ -33,3 +33,5 @@
 - 2026-10-21T20:31:35Z **agent**: E3 revised against full text of Dorr & Mandelkern 2026: state/drafts/E3/v2.md
 - 2026-10-21T20:40:36Z **agent**: E1 revised against full text of Goodman & Salow 2023: state/drafts/E1/v2.md
 - 2026-10-21T20:40:50Z **event**: All three essays at v2 (state/drafts/E{1,2,3}/v2.md). Run paused in lean mode; handed to human for cross-model revision.
+- 2026-10-21T20:44:24Z **human** (method): see human_inputs.md
+- 2026-10-21T20:44:51Z **event**: Revision round 2 (human: revise the three essays). Blind referee per essay with main source in packet: P-cbf4=E1 (S2), P-8c16=E2 (S1), P-c865=E3 (S5). Revisers to follow (v3).
