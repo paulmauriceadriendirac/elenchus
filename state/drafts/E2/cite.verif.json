@@ -1,0 +1,533 @@
+[
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Nonpragmatic Vindication of Probabilism",
+      "authors": [
+        "Joyce"
+      ],
+      "year": 1998,
+      "venue": "Philosophy of Science",
+      "doi": "10.1086/392661",
+      "type": "journal-article",
+      "volume": "65",
+      "pages": "575-603"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Joyce1998",
+    "ref": {
+      "key": "Joyce1998",
+      "authors": [
+        "James M. Joyce"
+      ],
+      "year": 1998,
+      "title": "A Nonpragmatic Vindication of Probabilism",
+      "venue": "Philosophy of Science",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1086/392661",
+      "volume": "65",
+      "pages": "575-603"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Justifying Conditionalization: Conditionalization Maximizes Expected Epistemic Utility",
+      "authors": [
+        "Greaves",
+        "Wallace"
+      ],
+      "year": 2006,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzl607",
+      "type": "journal-article",
+      "volume": "115",
+      "pages": "607-632"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GreavesWallace2006",
+    "ref": {
+      "key": "GreavesWallace2006",
+      "authors": [
+        "Hilary Greaves",
+        "David Wallace"
+      ],
+      "year": 2006,
+      "title": "Justifying Conditionalization: Conditionalization Maximizes Expected Epistemic Utility",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "theorem as stated in SEP (Pettigrew) and Schwarz 2025",
+      "doi": "10.1093/mind/fzl607",
+      "volume": "115",
+      "pages": "607-632"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Expected Accuracy Supports Conditionalization\u2014and Conglomerability and Reflection",
+      "authors": [
+        "Easwaran"
+      ],
+      "year": 2013,
+      "venue": "Philosophy of Science",
+      "doi": "10.1086/668879",
+      "type": "journal-article",
+      "volume": "80",
+      "pages": "119-142"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Easwaran2013",
+    "ref": {
+      "key": "Easwaran2013",
+      "authors": [
+        "Kenny Easwaran"
+      ],
+      "year": 2013,
+      "title": "Expected Accuracy Supports Conditionalization\u2014and Conglomerability and Reflection",
+      "venue": "Philosophy of Science",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1086/668879",
+      "volume": "80",
+      "pages": "119-142"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Accuracy and the Laws of Credence",
+      "authors": [
+        "Pettigrew"
+      ],
+      "year": 2016,
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780198732716.001.0001",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Pettigrew2016",
+    "ref": {
+      "key": "Pettigrew2016",
+      "authors": [
+        "Richard Pettigrew"
+      ],
+      "year": 2016,
+      "title": "Accuracy and the Laws of Credence",
+      "venue": "Oxford University Press",
+      "type": "book",
+      "seen": "results as reported in SEP",
+      "doi": "10.1093/acprof:oso/9780198732716.001.0001"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Conditionalization Does Not (in General) Maximize Expected Accuracy",
+      "authors": [
+        "Schoenfield"
+      ],
+      "year": 2017,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzw027",
+      "type": "journal-article",
+      "volume": "126",
+      "pages": "1155-1187"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Schoenfield2017",
+    "ref": {
+      "key": "Schoenfield2017",
+      "authors": [
+        "Miriam Schoenfield"
+      ],
+      "year": 2017,
+      "title": "Conditionalization Does Not (in General) Maximize Expected Accuracy",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "theorem as stated in Pettigrew (2025 blog) and SEP; full text not read",
+      "doi": "10.1093/mind/fzw027",
+      "volume": "126",
+      "pages": "1155-1187"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "ACCURACY AND UR-PRIOR CONDITIONALIZATION",
+      "authors": [
+        "DAS"
+      ],
+      "year": 2018,
+      "venue": "The Review of Symbolic Logic",
+      "doi": "10.1017/s1755020318000035",
+      "type": "journal-article",
+      "volume": "12",
+      "pages": "62-96"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Das2019UrPrior",
+    "ref": {
+      "key": "Das2019UrPrior",
+      "authors": [
+        "Nilanjan Das"
+      ],
+      "year": 2019,
+      "title": "Accuracy and Ur-Prior Conditionalization",
+      "venue": "The Review of Symbolic Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1017/s1755020318000035",
+      "volume": "12",
+      "pages": "62-96"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "An Accuracy\u2010Dominance Argument for Conditionalization",
+      "authors": [
+        "Briggs",
+        "Pettigrew"
+      ],
+      "year": 2018,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12258",
+      "type": "journal-article",
+      "volume": "54",
+      "pages": "162-181"
+    },
+    "title_similarity": 0.99,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.99, author ok True, year ok False)"
+    ],
+    "key": "BriggsPettigrew2020",
+    "ref": {
+      "key": "BriggsPettigrew2020",
+      "authors": [
+        "R. A. Briggs",
+        "Richard Pettigrew"
+      ],
+      "year": 2020,
+      "title": "An Accuracy-Dominance Argument for Conditionalization",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12258",
+      "volume": "54",
+      "pages": "162-181"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "What is conditionalization, and why should we do it?",
+      "authors": [
+        "Pettigrew"
+      ],
+      "year": 2019,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-019-01377-y",
+      "type": "journal-article",
+      "volume": "177",
+      "pages": "3427-3463"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Pettigrew2020What",
+    "ref": {
+      "key": "Pettigrew2020What",
+      "authors": [
+        "Richard Pettigrew"
+      ],
+      "year": 2020,
+      "title": "What Is Conditionalization, and Why Should We Do It?",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s11098-019-01377-y",
+      "volume": "177",
+      "pages": "3427-3463"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Updating for externalists",
+      "authors": [
+        "Gallow"
+      ],
+      "year": 2019,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12307",
+      "type": "journal-article",
+      "volume": "55",
+      "pages": "487-516"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Gallow2021",
+    "ref": {
+      "key": "Gallow2021",
+      "authors": [
+        "J. Dmitri Gallow"
+      ],
+      "year": 2021,
+      "title": "Updating for Externalists",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12307",
+      "volume": "55",
+      "pages": "487-516"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Accuracy-dominance and conditionalization",
+      "authors": [
+        "Nielsen"
+      ],
+      "year": 2021,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-020-01598-6",
+      "type": "journal-article",
+      "volume": "178",
+      "pages": "3217-3236"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Nielsen2021",
+    "ref": {
+      "key": "Nielsen2021",
+      "authors": [
+        "Michael Nielsen"
+      ],
+      "year": 2021,
+      "title": "Accuracy-Dominance and Conditionalization",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "as summarised in SEP",
+      "doi": "10.1007/s11098-020-01598-6",
+      "volume": "178",
+      "pages": "3217-3236"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Externalism and exploitability",
+      "authors": [
+        "Das"
+      ],
+      "year": 2020,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12742",
+      "type": "journal-article",
+      "volume": "104",
+      "pages": "101-128"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Das2022",
+    "ref": {
+      "key": "Das2022",
+      "authors": [
+        "Nilanjan Das"
+      ],
+      "year": 2022,
+      "title": "Externalism and Exploitability",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12742",
+      "volume": "104",
+      "pages": "101-128"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Bayesian Updating When What You Learn Might Be False (Forthcoming in Erkenntnis)",
+      "authors": [
+        "Pettigrew"
+      ],
+      "year": 2021,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-020-00356-8",
+      "type": "journal-article",
+      "volume": "88",
+      "pages": "309-324"
+    },
+    "title_similarity": 0.8,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.80, author ok True, year ok False)"
+    ],
+    "key": "Pettigrew2023Bayesian",
+    "ref": {
+      "key": "Pettigrew2023Bayesian",
+      "authors": [
+        "Richard Pettigrew"
+      ],
+      "year": 2023,
+      "title": "Bayesian Updating When What You Learn Might Be False",
+      "venue": "Erkenntnis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10670-020-00356-8",
+      "volume": "88",
+      "pages": "309-324"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Updating without evidence",
+      "authors": [
+        "Isaacs",
+        "Russell"
+      ],
+      "year": 2022,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12426",
+      "type": "journal-article",
+      "volume": "57",
+      "pages": "576-599"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "IsaacsRussell2023",
+    "ref": {
+      "key": "IsaacsRussell2023",
+      "authors": [
+        "Yoaav Isaacs",
+        "Jeffrey Sanford Russell"
+      ],
+      "year": 2023,
+      "title": "Updating without Evidence",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12426",
+      "volume": "57",
+      "pages": "576-599"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Bayes Is Back",
+      "authors": [
+        "Meehan",
+        "Zhang"
+      ],
+      "year": 2025,
+      "venue": "Philosophical Review",
+      "doi": "10.1215/00318108-11873775",
+      "type": "journal-article",
+      "volume": "134",
+      "pages": "285-350"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "MeehanZhang2025",
+    "ref": {
+      "key": "MeehanZhang2025",
+      "authors": [
+        "Alexander Meehan",
+        "Snow Zhang"
+      ],
+      "year": 2025,
+      "title": "Bayes Is Back",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "abstract + detailed reconstruction in Pettigrew's blog post (2025); full text not read",
+      "doi": "10.1215/00318108-11873775",
+      "volume": "134",
+      "pages": "285-350",
+      "source_url": "https://richardpettigrew.substack.com/p/bayesianism-when-learning-isnt-straightforward"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Updating by Maximizing Expected Accuracy in Infinite Non-Partitional Settings",
+      "authors": [
+        "Easwaran",
+        "Nielsen"
+      ],
+      "year": 2025,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-025-09814-6",
+      "type": "journal-article",
+      "volume": "54",
+      "pages": "1095-1134"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EaswaranNielsen2025",
+    "ref": {
+      "key": "EaswaranNielsen2025",
+      "authors": [
+        "Kenny Easwaran",
+        "Michael Nielsen"
+      ],
+      "year": 2025,
+      "title": "Updating by Maximizing Expected Accuracy in Infinite Non-Partitional Settings",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "full text (open access): abstract, introduction, conclusion",
+      "doi": "10.1007/s10992-025-09814-6",
+      "volume": "54",
+      "pages": "1095-1134"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "(Almost) all evidence is higher-order evidence",
+      "authors": [
+        "Hedden",
+        "Dorst"
+      ],
+      "year": 2022,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anab081",
+      "type": "journal-article",
+      "volume": "82",
+      "pages": "417-425"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HeddenDorst2022",
+    "ref": {
+      "key": "HeddenDorst2022",
+      "authors": [
+        "Brian Hedden",
+        "Kevin Dorst"
+      ],
+      "year": 2022,
+      "title": "(Almost) All Evidence Is Higher-Order Evidence",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anab081",
+      "volume": "82",
+      "pages": "417-425"
+    }
+  }
+]
