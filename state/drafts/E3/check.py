@@ -1,4 +1,5 @@
-"""Formal checks for E3 v2 ("Flattening and Counterfactual Independence").
+"""Formal checks for E3 v3 ("Flattening and Counterfactual Independence").
+(v2's checks are preserved in check_v2.py.)
 
 Frames follow Dorr & Mandelkern (2026), Def. 2.1-2.3: each world w has an
 accessible set R(w) containing w, well-ordered by <_w with w first.  A
@@ -6,25 +7,36 @@ conditional X > Y is true at w iff no X-world is in R(w), or the <_w-first
 X-world in R(w) is a Y-world.  Selection f(w, X) = that first world, or None
 (the 'vacuous' outcome) if R(w) contains no X-world; f(None, X) = None.
 
-Checks:
- K1  (Flat) [f(f(w,Y),X) = f(w,X) whenever X <= Y]  <=>  D&M flatness
-     (Def. 4.1), all order frames on 3 and 4 worlds (exhaustive).
- K2  Flattening valid on a frame <=> (Flat): exhaustive over all frames and
-     all valuations of p, q, r on 3 worlds (independent check of Obs. 1).
- K3  Theorem 1 (N1, N2, X>(A or B) |- X>[(A & (B>~A)) or (B & (A>~B))],
-     A->X, B->X valid): valid on all semi-flat frames (Cautious Importation,
-     D&M Lemma 4.2) and on all frames meeting D&M's fn. 24 condition for
-     Cautious Exportation, up to 5 worlds (z3); fails on plain order frames.
- K4  The triad {A>~B, (A or B)>(B & (A>B)), Poss A} is unsatisfiable on
-     semi-flat frames; on Cautious-Exportation frames it is unsatisfiable
-     once '(A or B) > Poss A' is added; satisfiable on plain order frames.
- K5  Reunion, Avoidance and Buttons models: explicit C2 order models,
-     verdicts computed.
- K6  Imaging on a frame is cumulative for every probability function iff
-     (Flat): exhaustive over 3-world frames, exact rationals.
- K7  Quotations used in v2 occur verbatim in the source text.
- K8  Agreement corollary: on flat frames, if v is in R(w1) and R(w2), then
-     <_w1 and <_w2 order alike any y, z that both place after v (z3, n<=5).
+Checks (essay label in brackets):
+ K1  (Flat) <=> D&M flatness (Def. 4.1), all order frames on 3 and 4 worlds.   [Sec. 2]
+ K2  Flattening valid on a frame <=> (Flat), 3 worlds, all valuations.          [Sec. 2]
+ K3  Theorem 1 valid on semi-flat (Cautious Importation, D&M Lemma 4.2) and
+     on D&M fn. 24 (Cautious Exportation) frames up to 5 worlds (z3); fails
+     on plain order frames.                                                      [Thm 1]
+ K5  Case models (scenario-relative orderings): Reunion makes (1) true and
+     (2) false; Avoidance makes both false; Buttons (symmetric, both
+     tie-breaks): N1, N2 true, (D) false; Avoidance (D) true; asymmetric
+     Buttons: bare instance fails.                                               [Secs 3-4]
+ K6  Imaging iteration-invariant for every Pr <=> (Flat), 3-world frames.       [Remark, Sec. 6]
+ K7  Quotations used in v3 occur verbatim in the source text.
+ K8  Agreement on flat frames (z3, n<=5).                                       [Sec. 6]
+ K9  Observation 1 (conservativity): for every order frame on 3 worlds (and a
+     random sample on 4) and every world w, the linearization of <_w is a flat
+     frame giving w the same order, so first-degree sentences keep their
+     truth values at w; probabilistic version via disjoint union of
+     linearizations.                                                             [Obs. 1]
+ K10 Cross-case table: Reunion and Avoidance agree on every first-degree
+     conditional about A, B at the actual world; in flat versions of both
+     models (2)'s value fixes (1)'s under every construal X of the inner
+     antecedent that entails A v B; only the scenario-relative reading of (1)
+     with a selectional outer antecedent yields the contrast; exclusive,
+     additive ('both') and universal readings yield none.                         [Sec. 3]
+ K11 The Reunion frame (universal accessibility) validates Crashing Cautious
+     Importation and Crashing Cautious Exportation but not Flattening, so
+     C2 + both Crashing principles does not prove Flattening.                    [Obs. 3]
+ K12 Structural-equation check: intervening to realize Bob's coming and then
+     on Ann's coming leaves Bob's coming fixed; intervening on Ann's coming
+     at the actual world leaves Bob home.                                        [Sec. 5.2]
 Run:  python3 check.py
 """
 import itertools, random, re, sys
@@ -206,30 +218,6 @@ for cond_name in ("semiflat", "ce"):
 res = [theorem1_counterexample(n, "none", False) for n in (3, 4)]
 report(f"K3 Theorem 1 fails on some plain order frame (n=3,4): {res}", sat in res)
 
-def triad(n, frame_cond, extra):
-    F = Z3Frame(n, f"tr{n}{frame_cond}{extra}_")
-    A = [Bool(f"tA{n}_{i}") for i in range(n)]
-    B = [Bool(f"tB{n}_{i}") for i in range(n)]
-    s = Solver(); s.add(F.base)
-    if frame_cond == "semiflat": s.add(F.semiflat())
-    if frame_cond == "ce": s.add(F.ce_condition())
-    AorB = lor(A, B)
-    s.add(F.cond(A, lnot(B))[0])                               # N:  A > not B
-    s.add(F.cond(AorB, land(B, F.cond(A, B)))[0])              # J:  (A or B) > (B & (A > B))
-    s.add(possible(F, A)[0])                                   # Poss A
-    if extra:
-        s.add(F.cond(AorB, possible(F, A))[0])                 # (A or B) > Poss A
-    return s.check()
-
-r = [triad(n, "semiflat", False) for n in (3, 4, 5)]
-report(f"K4 triad unsat on semi-flat (Cautious Importation) frames n=3..5: {r}", all(x == unsat for x in r))
-r1 = [triad(n, "ce", False) for n in (3, 4, 5)]
-r2 = [triad(n, "ce", True) for n in (3, 4, 5)]
-print(f"     triad on Cautious-Exportation frames without extra premise: {r1}")
-report(f"K4 triad + '(A or B) > Poss A' unsat on Cautious-Exportation frames n=3..5: {r2}", all(x == unsat for x in r2))
-r3 = [triad(n, "none", True) for n in (3, 4)]
-report(f"K4 triad (+ extra premise) satisfiable on plain order frames: {r3}", sat in r3)
-
 # ---------------------------------------------------------------- K5 explicit case models
 # Worlds are valuations (a, b) for 'Ann came', 'Bob came'; universal accessibility.
 WORLDS = [(0, 0), (0, 1), (1, 0), (1, 1)]
@@ -258,8 +246,7 @@ D = IF(AorB, OR(AND(A_, IF(B_, NOT(A_))), AND(B_, IF(A_, NOT(B_)))))
 claims = {
     'N1 not(A>B)': NOT(IF(A_, B_)), 'N2 not(B>A)': NOT(IF(B_, A_)),
     'N  A>notB': IF(A_, NOT(B_)), 'P2 (AvB)>(B & notA)': IF(AorB, AND(B_, NOT(A_))),
-    'J  (AvB)>(B & (A>B))': IF(AorB, AND(B_, IF(A_, B_))), 'D': D,
-    'CE-instance consequent (AvB)>(A>notB)': IF(AorB, IF(A_, NOT(B_))),
+    '(1) (AvB)>(A>B)': IF(AorB, IF(A_, B_)), '(2) A>B': IF(A_, B_), 'D': D,
 }
 def verdicts(frame, actual=(0, 0)):
     return {k: ev(frame, actual, f) for k, f in claims.items()}
@@ -268,9 +255,9 @@ def verdicts(frame, actual=(0, 0)):
 reunion = model_from_costs(lambda w, v: 2 * abs(w[0] - v[0]) + abs(w[1] - v[1]))
 rv = verdicts(reunion)
 print("     Reunion verdicts at actual world:", rv)
-report("K5 Reunion: N1, N2, N, P2, J true; D false; CE-instance consequent false",
+report("K5 Reunion: N1, N2, N, P2 true; (1) true, (2) false (bare instance fails); D false",
        rv['N1 not(A>B)'] and rv['N2 not(B>A)'] and rv['N  A>notB'] and rv['P2 (AvB)>(B & notA)']
-       and rv['J  (AvB)>(B & (A>B))'] and not rv['D'] and not rv['CE-instance consequent (AvB)>(A>notB)'])
+       and rv['(1) (AvB)>(A>B)'] and not rv['(2) A>B'] and not rv['D'])
 report("K5 Reunion model is not flat (as it must not be)", not flat_selection(
     {WORLDS.index(w): tuple(WORLDS.index(v) for v in reunion[w]) for w in WORLDS}, 4))
 
@@ -280,8 +267,9 @@ report("K5 Reunion model is not flat (as it must not be)", not flat_selection(
 avoid = model_from_costs(lambda w, v: (10 if v == (1, 1) else 0) + 2 * abs(w[0] - v[0]) + abs(w[1] - v[1]))
 av = verdicts(avoid)
 print("     Avoidance verdicts at actual world:", av)
-report("K5 Avoidance: N1, N2 true and D true (verdict on D tracks dependence)",
-       av['N1 not(A>B)'] and av['N2 not(B>A)'] and av['D'])
+report("K5 Avoidance: N1, N2, P2 true; (1) false, (2) false (instance holds); D true",
+       av['N1 not(A>B)'] and av['N2 not(B>A)'] and av['P2 (AvB)>(B & notA)']
+       and not av['(1) (AvB)>(A>B)'] and not av['(2) A>B'] and av['D'])
 
 # Buttons: symmetric costs; the tie between the two single-press worlds broken either way.
 for first in ((0, 1), (1, 0)):
@@ -291,6 +279,12 @@ for first in ((0, 1), (1, 0)):
     bv = verdicts(model_from_costs(cost))
     report(f"K5 Buttons (tie broken toward {first}): N1, N2 true, D false",
            bv['N1 not(A>B)'] and bv['N2 not(B>A)'] and not bv['D'])
+
+# Asymmetric Buttons: Ann nearly pressed (departure cost 1), Bob's refusal was firm (cost 2).
+# Bare instance with roles of A, B swapped: (AvB)>(B>A) vs B>A.
+asym = model_from_costs(lambda w, v: abs(w[0] - v[0]) + 2 * abs(w[1] - v[1]))
+lhs = ev(asym, (0, 0), IF(AorB, IF(B_, A_))); rhs = ev(asym, (0, 0), IF(B_, A_))
+report(f"K5 asymmetric Buttons: (AvB)>(B>A) = {lhs}, B>A = {rhs} (instance fails)", lhs and not rhs)
 
 # ---------------------------------------------------------------- K6 imaging
 def image(frame, n, pr, X):
@@ -318,7 +312,7 @@ def cumulative(frame, n, trials=3):
     return True
 
 agree = all(cumulative(fr, 3) == flat_selection(fr, 3) for fr in all_frames(3))
-report("K6 imaging cumulative (point masses + random Pr, exact) <=> (Flat), all 3-world frames", agree)
+report("K6 imaging iteration-invariant (point masses + random Pr, exact) <=> (Flat), all 3-world frames", agree)
 
 # ---------------------------------------------------------------- K7 quotations
 src = open("/home/user/elenchus/inbox/sources/dorr-mandelkern-2026-sequence.txt", encoding="utf-8").read()
@@ -331,12 +325,12 @@ QUOTES = [
     "We have checked many instances of Flattening, in both the indicative and subjunctive mood, and have not found clear counterexamples.",
     "But matters are different for Flattening, which appears valid for both indicatives and subjunctives.",
     "we leave it as an open problem for proponents of C2.F",
-    "the logic C2.F has strong prima facie appeal as (at least part of) the logic of the natural language conditional",
+    "strong prima facie appeal as (at least part of) the logic of the natural language conditional",
     "except by doggedly holding in mind the Lewisian interpretation",
-    "Flattening is a “cautious” cousin",
-    "If he had been in France, he’d have had a great time if he had been in the south of France.",
+    "the first antecedent feels like it’s doing nothing",
+    "we might naturally regard Flattening as a plausible cautious cousin of the implausible, incautious Import-Export principle",
+    "single master order",
     "If he had gotten an espresso, then he would have had a fit if he’d gotten an overextracted one.",
-    "no ordinary metric space has the property that when X ⊆ Y, the closest element of X to a given point is the closest element of X to the closest element of Y to that point",
 ]
 for q in QUOTES:
     qn = re.sub(r"\s+", " ", q)
@@ -361,6 +355,133 @@ def agreement_violation(n):
     return s.check()
 res = [agreement_violation(n) for n in (3, 4, 5)]
 report(f"K8 Agreement holds on all flat frames n=3..5: {res}", all(r == unsat for r in res))
+
+
+# ---------------------------------------------------------------- K9 conservativity (Observation 1)
+def linearize(frame, n, w):
+    """Linear frame whose master order is: worlds outside R(w) (any order), then <_w."""
+    master = [x for x in range(n) if x not in frame[w]] + list(frame[w])
+    return tuple(tuple(master[master.index(x):]) for x in range(n))
+
+def k9_frame_ok(fr, n):
+    for w in range(n):
+        L = linearize(fr, n, w)
+        if L[w] != fr[w] or not dm_flat(L, n):
+            return False
+    return True
+
+ok9 = all(k9_frame_ok(fr, 3) for fr in all_frames(3))
+rng9 = random.Random(1)
+frames4 = list(all_frames(4))
+ok9b = all(k9_frame_ok(fr, 4) for fr in rng9.sample(frames4, 3000))
+report("K9 linearization of <_w is flat and preserves <_w: all 3-world frames, 3000 random 4-world frames", ok9 and ok9b)
+
+def disjoint_union_of_linearizations(fr, n):
+    """Worlds (c, x): copy c of the linearization at c; order of (c, x) = master_c from x on."""
+    idx, frames = {}, []
+    masters = {c: [x for x in range(n) if x not in fr[c]] + list(fr[c]) for c in range(n)}
+    for c in range(n):
+        for x in masters[c]:
+            idx[(c, x)] = len(idx)
+    U = [None] * len(idx)
+    for c in range(n):
+        m = masters[c]
+        for i, x in enumerate(m):
+            U[idx[(c, x)]] = tuple(idx[(c, y)] for y in m[i:])
+    return tuple(U), idx
+
+def k9_prob_ok(fr, n):
+    U, idx = disjoint_union_of_linearizations(fr, n)
+    N = len(U)
+    if not dm_flat(U, N):
+        return False
+    orig = {v: k[1] for k, v in idx.items()}           # each new world copies an old world's valuation
+    subsets = [frozenset(s) for k in range(0, n + 1) for s in itertools.combinations(range(n), k)]
+    for X in subsets:
+        for Y in subsets:
+            Xl = {u for u in range(N) if orig[u] in X}; Yl = {u for u in range(N) if orig[u] in Y}
+            for w in range(n):
+                if cond_true(fr, w, X, Y) != cond_true(U, idx[(w, w)], Xl, Yl):
+                    return False
+    return True   # pointwise agreement at head copies => equal probabilities for Pr placed on heads
+
+ok9p = all(k9_prob_ok(fr, 3) for fr in rng9.sample(list(all_frames(3)), 60)) and \
+       all(k9_prob_ok(fr, 4) for fr in rng9.sample(frames4, 40))
+report("K9 disjoint union of linearizations is flat and agrees on every first-degree X>Y at head copies", ok9p)
+
+# ---------------------------------------------------------------- K10 cross-case table (Section 3)
+def cells(pred): return [c for c in WORLDS if pred(c)]
+AB_cells = cells(lambda c: c[0] or c[1])
+def first_degree_profile(frame):
+    sub = [frozenset(s) for k in range(1, 5) for s in itertools.combinations(WORLDS, k)]
+    out = {}
+    for X in sub:
+        for Y in sub:
+            v = next(u for u in frame[(0, 0)] if u in X)
+            out[(X, Y)] = v in Y
+    return out
+report("K10 Reunion and Avoidance agree on every first-degree conditional about A, B at actuality",
+       first_degree_profile(reunion) == first_degree_profile(avoid))
+
+def flat_version(frame):
+    master = list(frame[(0, 0)])
+    return {x: tuple(master[master.index(x):]) for x in WORLDS}
+def nested_val(frame, X, r=lambda c: c[1] == 1):
+    """(A v B) > (X > r) at actuality, X a set of cells."""
+    v = next(u for u in frame[(0, 0)] if u in AB_cells)
+    s = next((u for u in frame[v] if u in X), None)
+    return True if s is None else r(s)
+def unnested_val(frame, X, r=lambda c: c[1] == 1):
+    s = next((u for u in frame[(0, 0)] if u in X), None)
+    return True if s is None else r(s)
+okf = True
+for k in range(1, len(AB_cells) + 1):
+    for X in itertools.combinations(AB_cells, k):
+        X = set(X)
+        vals = {nested_val(flat_version(m), X) for m in (reunion, avoid)} | {unnested_val(m, X) for m in (reunion, avoid)}
+        okf = okf and len(vals) == 1
+report("K10 flat versions: for every construal X of the inner antecedent entailing A v B, (AvB)>(X>B) = X>B, same in both cases", okf)
+
+inclusive = [nested_val(m, set(cells(lambda c: c[0] == 1))) for m in (reunion, avoid)]
+exclusive = [nested_val(m, {(1, 0)}) for m in (reunion, avoid)]
+additive  = [nested_val(m, {(1, 1)}) for m in (reunion, avoid)]
+def universal(m):  # 'at least one' read as: for each disjunct, if it had held, then (A > B)
+    return all(ev(m, (0, 0), IF(d, IF(A_, B_))) for d in (A_, B_))
+univ = [universal(m) for m in (reunion, avoid)]
+print(f"     (1) in [Reunion, Avoidance]: inclusive {inclusive}, exclusive {exclusive}, additive {additive}, universal {univ}")
+report("K10 only the inclusive selectional reading yields the contrast (True, False); the others yield none",
+       inclusive == [True, False] and len(set(exclusive)) == 1 and len(set(additive)) == 1 and len(set(univ)) == 1)
+
+# ---------------------------------------------------------------- K11 crashing halves (Observation 3)
+RF = {WORLDS.index(w): tuple(WORLDS.index(v) for v in reunion[w]) for w in WORLDS}
+def crashing_ok(frame, n):
+    W = range(n)
+    for vp in itertools.product([0, 1], repeat=n):
+        P = {i for i in W if vp[i]}
+        for vq in itertools.product([0, 1], repeat=n):
+            PQ = {i for i in W if vp[i] and vq[i]}
+            notposs = {u for u in W if sel(frame, u, PQ) is None}
+            for w in W:
+                lhs = cond_true(frame, w, P, notposs)
+                if lhs and w not in notposs:          # Crashing Cautious Importation
+                    return False
+                if w in notposs and not lhs:          # Crashing Cautious Exportation
+                    return False
+    return True
+report("K11 Reunion frame validates both Crashing principles but not Flattening",
+       crashing_ok(RF, 4) and not flattening_valid(RF, 4))
+
+# ---------------------------------------------------------------- K12 structural equations (Section 5.2)
+def solve(do):
+    v = {'sitter': 0, 'trip': 0}; v.update({k: x for k, x in do.items() if k in v})
+    v['B'] = do.get('B', v['sitter']); v['A'] = do.get('A', v['trip'])
+    return v
+def nested(do1, do2):
+    v1 = solve(do1)
+    exo = {k: v1[k] for k in ('sitter', 'trip')}
+    return solve({**exo, **{k: x for k, x in do1.items() if k in ('A', 'B')}, **do2})
+report("K12 do(A=1) at actuality leaves B=0; do(sitter=1) then do(A=1) leaves B=1",
+       solve({'A': 1})['B'] == 0 and nested({'sitter': 1}, {'A': 1})['B'] == 1)
 
 print("ALL CHECKS PASSED" if ok else "SOME CHECKS FAILED")
 sys.exit(0 if ok else 1)

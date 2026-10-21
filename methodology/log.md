@@ -35,3 +35,4 @@
 - 2026-10-21T20:40:50Z **event**: All three essays at v2 (state/drafts/E{1,2,3}/v2.md). Run paused in lean mode; handed to human for cross-model revision.
 - 2026-10-21T20:44:24Z **human** (method): see human_inputs.md
 - 2026-10-21T20:44:51Z **event**: Revision round 2 (human: revise the three essays). Blind referee per essay with main source in packet: P-cbf4=E1 (S2), P-8c16=E2 (S1), P-c865=E3 (S5). Revisers to follow (v3).
+- 2026-10-21T21:19:08Z **agent**: E2 revised to v3 after referee S1: state/drafts/E2/v3.md
