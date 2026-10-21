@@ -1,0 +1,979 @@
+16 wileyonlinelibrary.com/journal/nous NOÛS.2026;60:16–37.
+DOI:10.1111/nous.12549
+ARTICLE
+Symmetriesofvalue
+ZacharyGoodsell
+Philosophy,NationalUniversityof
+Singapore,Singapore
+Correspondence
+ZacharyGoodsell,Philosophy,National
+UniversityofSingapore,Singapore.
+Email:zacharyw.goodsell@gmail.com
+Abstract
+Standarddecisiontheoryranksriskyprospectsbytheir
+expected utility. This ranking does not change if the
+values of all possible outcomes are uniformly shifted
+or dilated. Similarly, if the values of the outcomes are
+negated,therankingofprospectsbytheirexpectedutil-
+ity is reversed. In settings with unbounded levels of
+utility, the expected utility of prospects is not always
+defined, but it is still natural to accept theaffine sym-
+metry principles, which say that the true ranking of
+prospects is unchanged by shifts and dilations, and
+is reversed by negation—even in hard cases where
+expectedutilitiesareundefined.Thispaperinvestigates
+theaffinesymmetryprinciplesandtheirconsequences.
+The principles are found to be surprisingly powerful.
+Combined with orthodox axioms, they assign precise
+utilityvaluestopreviouslyproblematiccases:forexam-
+ple,ln2 tothePasadenaprospect(Nover&Hájek,2004)
+and−1∕2tothealternatingStPetersburgprospect.They
+also have important structural consequences, notably
+vindicating Colyvan’s (2008) Relative Expectation The-
+ory. The paper then establishes the consistency of the
+affine symmetry principles. In light of their fruitful
+consequences,thisconsistencyresultsupportstheadop-
+tion of the affine symmetry principles as fundamental
+axiomsofdecisiontheory.
+This is an open access article under the terms of theCreative Commons AttributionLicense, which permits use, distribution and
+reproductioninanymedium,providedtheoriginalworkisproperlycited.
+©2025TheAuthor(s). NoûspublishedbyWileyPeriodicalsLLC.
+
+GOODSELL 17
+FIGURE 1 Intervalscalestructureofoutcomesrepresentedbyplacingoutcomescalled“Death”,“Coal”,
+“Cake”,and“Heaven”ontheline.ThediagramrepresentsHeavenasthebest,Deathastheworst,certaintyof
+Coalasbeingequallygoodas3/4chanceofDeathanda1/4chanceofHeaven,certaintyofCakeasbeingequally
+goodas2/3chanceofCoaland1/3chanceofHeaven,andsoon.
+FIGURE 2 Inthisfigurewiththreeadditionaloutcomes(“Bread”,“Pie”,“EarthlyUtopia”)areidentifiedon
+theline,sothattheoutcomeswithlabelsabovethelineexhibitthesameintervalscalestructureastheoutcomes
+withlabelsbelowtheline.Bothaboveandbelowtheline,thesecondworstoutcomeisaquarterofthewayfrom
+theworsttothebest,thethirdworstishalfofthewayfromtheworsttothebest,andsoon.
+1 THEAFFINESYMMETRYPRINCIPLES
+Thispaperinvestigatestwonaturalprinciplesofdecisiontheory,togethercalledthe affinesymme-
+tryprinciples,whichposithowcertainsymmetriesinthevalueoftheoutcomesofriskyprospects
+inducecorrespondingsymmetriesinthecomparisonoftheprospectsthemselves.Theprinciples,
+despiteinitiallyseemingobvious,areshowntohavestrikingconsequencesfordecisiontheoryin
+caseswherethestandardexpectedutilityofaprospectisundefined.
+The possible outcomes of prospects have an interval scale structure, corresponding to how
+mucha chanceofthemcontributestothe overall value ofa prospect.For example, we say that
+outcome𝑜2 ishalfwaybetween 𝑜1 and𝑜3 ifgetting𝑜2 forsureisequallygoodasafifty-fiftygamble
+between𝑜1 and𝑜3,whereas 𝑜2 isathirdofthewayfrom 𝑜1 to𝑜3 ifgetting 𝑜2 forsureisequally
+goodasa 2∕3chanceof𝑜1 anda1∕3chanceof𝑜3.Thisstructurecanbegraphicallyrepresentedby
+placingtheoutcomesonalineasinFigure 1,sothattheorderingoftheoutcomesisrepresented
+bytheleft-to-rightorderingofpointsontheline,andtheratiosofdifferencesbetweenoutcomes
+arerepresentedbytheratiosofdistancesbetweentheircorrespondingpoints.
+Typical approaches to decision theory—including the widely accepted Expected Utility
+Theory—constraintheoverallrankingofprospectsintermsoftheintervalscalestructureofout-
+comes.Foranysuchapproach,thecomparisonoftwoprospectsdependsonlyontheintervalscale
+structureexhibitedbytheoutcomesthoseprospectsmightyield.IfFigure 2isaccurateaboutthe
+interval scale structure of outcomes, this means that any verdict these approaches yield about
+gamblesbetweentheoutcomesDeath,Coal,Cake,andHeavenwouldbethesameifDeathwere
+replacedwithBread,CoalwithCake,CakewithPie,andHeavenwithEarthlyUtopia.
+Averynaturalidea,whichisthetopicofthispaper,isthatthecomparisonbetweenanytwo
+prospectsdoesnotdependonanyfeatureofoutcomesbesidestheirintervalscalestructure.This
+is the principle ofPositiveAffineInvariance . The other idea investigated in this paper is closely
+related.Theprincipleof NegativeAffineAnti-Invariance saysthatiftheorderingofprospectsby
+betterthan andtheorderingofprospectsby worsethan aredeterminedbytheintervalscalestruc-
+tureoftheoutcomesinthesameway,whichistosaythatreversingtheintervalscalestructure
+whilekeepingallratiosofdifferencesthesameshouldflipthecomparisonofanytwoprospects.
+Togetherthesearecalledthe affinesymmetryprinciples .
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+18 GOODSELL
+TABLE 1 ThealternatingStPetersburgprospect
+1∕2 1∕4 ... 1∕2𝑛 ...
+−2 4 ... (−2)𝑛 ...
+Tostatetheaffinesymmetryprinciplesmorecarefully,letan affinepermutation ofoutcomes
+be a permutation of outcomes𝜋 that preserves the ratios of differences between outcomes: so
+that𝜋(𝑜2)isthesameproportionofthewayfrom 𝜋(𝑜1)to𝜋(𝑜3)as𝑜2 isfrom 𝑜1 to𝑜3.Anaffine
+permutationissaidtobe positiveifitpreservestheorderingofoutcomes: 𝜋(𝑜1)isatleastasgood
+as𝜋(𝑜2)justincase 𝑜1 isatleastasgoodas 𝑜2;otherwiseit reversestheorderingofoutcomes,in
+whichcasetheaffinepermutationissaidtobe negative.
+Foranarbitraryprospect 𝜇let[𝜋]𝜇betheprospectthatyields 𝜋(𝑜)whenever𝜇wouldyield𝑜.
+Theaffinesymmetryprinciplesmaynowbestatedasfollows:
+Positive Affine InvarianceFor any positive affine permutation of outcomes𝜋,a n df o ra n y
+prospects𝜇and𝜈,𝜇≿𝜈 ifandonlyif [𝜋]𝜇≿[𝜋]𝜈 .
+NegativeAffineAnti-Invariance Foranynegativeaffinepermutationofoutcomes 𝜋,andfor
+anyprospects𝜇and𝜈,𝜇≿𝜈 ifandonlyif [𝜋]𝜇≾[𝜋]𝜈 .
+Which is to say that the comparison of prospects𝜇 and𝜈 is insensitive to anything besides the
+intervalscalestructureoftheoutcomestheymightyield.
+The standard view in decision theory, Expected Utility Theory, includes theorems very close
+to the affine symmetry principles. Autility representationis a function from outcomes to real
+numbers𝑈 that correctly represents their interval scale structure, so that𝑜1 is at least as good
+as𝑜2 ifandonlyif 𝑈(𝑜1) ≥𝑈(𝑜2),aswellassothat 𝑜2 isaproportionof 𝑥ofthewayfrom 𝑜1 to
+𝑜3 ifandonlyif
+𝑈(𝑜2)=(1−𝑥)𝑈(𝑜 1)+𝑥𝑈(𝑜 3).
+Expected Utility Theory says that, for any utility representation𝑈, a prospect at least as great
+expected utility is at least as good. For any utility representation𝑈,a na f f i n ep e r m u t a t i o no f
+outcomes performs some affine transformation of real numbers𝑎𝑥+𝑏 on the utility of those
+outcomes,sotheorderingofprospectsbytheirexpectedutilityisinvariantunderpositiveaffine
+permutationsofoutcomes,andisreversedbynegativeaffinepermutationsofoutcomes.
+However, Expected Utility Theory does not quite establish the affine symmetry principles
+because not every prospect has an expected utility. A good example, and one we will return to
+inSection 4,isthe alternatingStPetersburgprospect ,which,fixinganarbitraryutilityrepresenta-
+tion,yieldsanoutcomewithutility (−2)𝑛 withprobability 1∕2𝑛,foreverypositiveinteger 𝑛(see
+Table1).Theexpectedutilityofthisprospectwouldbegivenbythesum
+−2× 1
+2+4× 1
+4−8× 1
+8+⋯=−1+1−1+…,
+whichalternatesbetween −1and0andneverconverges.Theaffinesymmetryprinciplesapply
+eventoprospectsthatlackexpectedutilities;saying,forexample,thatreplacingalltheoutcomes
+inalternatingStPetersburgwithoutcomesthataretwiceasfarfromtheoutcomecalled“Cake”
+shouldpreservewhichisbetteroutofthatprospectandcertaintyofCake.If,forexample,Cakehas
+utility0ontheutilityrepresentationusedtodescribethealternatingStPetersburgprospect,and
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 19
+weassumealternatingStPetersburgisbetterthanCake,thensoshouldthedoubledalternating
+StPetersburg,whichyieldsanoutcomeofutility 2×(−2)𝑛 withprobability 1∕2𝑛 (asopposedto
+utility(−2)𝑛;againholdingtheutilityrepresentationfixed).Thisisthesortofjudgementthatthe
+affinesymmetryprinciplessecure.
+Theaffinesymmetryprinciplesarethetopicofthispaper.WebegininSection 2bycontrasting
+themwithcloselyrelatedbutimportantlydifferentassumptionsindecisiontheory.Section 3lays
+outanorthodoxaxiomaticframeworkfordecisiontheorythatformsthebackdropwithinwhich
+the affine symmetry principles will be studied. Section4 investigates the consequences of the
+affinesymmetryprinciplesinthissetting,includingbothgeneralstructuralconsequences,such
+asthevindicationofMarkColyvan’s( 2008)RelativeExpectationTheory,aswellasconsequences
+about the comparisons of particular prospects. Most strikingly, they imply that the alternating
+St Petersburg prospect is exactly equally good as a sure utility−1∕2, and that the “Pasadena”
+prospect of Nover and Hájek (2004) is equally good as utilityln2, among other comparisons.
+Model theory for the affine symmetry principles is developed in Section5, establishing among
+otherthingstheconsistencyoftheprinciples.Theaffinesymmetryprinciples,then,formawell-
+motivated, powerful, and consistent way of extending decision theory in cases where expected
+utilityisundefined.
+We will assume throughout that outcomes are representable by real number utilities. This
+assumptionrulesoutinfiniteratiosofdifferencesbetweenoutcomes.Thereisnophilosophical
+reason behind such a restriction, but it simplifies the mathematics significantly, so it is worth-
+whiletorestrictourattentionheretosomedomainofoutcomesforwhichallratiosofdifferences
+arefinite,sothattherealnumberutilityrepresentationispossible.
+2 DISTINGUISHINGTHEAFFINESYMMETRYPRINCIPLES
+Lore in decision theory has it that utility is only ‘defined’ (or ‘unique’) up to a positive affine
+transformation.Whatthismeansisthatforanyutilityrepresentation 𝑈,anypositiveaffinetrans-
+formation of𝑈 (i.e.,𝑎𝑈+𝑏 for a positive real number𝑎 and real number𝑏) represents the
+intervalscalestructureofoutcomesequallywell.Thisbeingthecase,itcanbehardtoseewhythe
+affinesymmetries,oratleastPositiveAffineInvariance,couldaddanythingtostandarddecision
+theory.Butthereisanimportantdifference:theloreisawell-establishedtheoremofdecisionthe-
+ory(originatinginvonNeumann&Morgenstern, 1944),whereastheaffinesymmetryprinciples
+aresubstantialadditionalaxioms.Understandingtheaffinesymmetryprinciplesrequiresgetting
+clearonthedifference.
+Thedifferencebetweentheloreandtheaffinesymmetryprinciplescanbeillustratedbyrec-
+ognizingthedifferencebetweenanaffinetransformationofautilityrepresentationandanaffine
+permutationofoutcomes.Autilityrepresentationisafunctionfromoutcomestonumbersthat
+representthoseoutcomes.Anaffinetransformationoftheutilityrepresentationisanotherfunc-
+tion from outcomes to numbers, so that different numbers are chosen to represent the same
+outcomes—seeFigure 3.Wemaythinkofthedifferenceasachangeinunits,suchasrepresenting
+thefreezingpointofwaterbythenumber 0(asindegreesCelsius)orthenumber32(asindegrees
+Fahrenheit). When it is observed that utility is ‘defined’ up to a positive affine transformation,
+whatisbeingobservedisthatstandardly,theroleofautilityrepresentationistonumericallyrepre-
+senttheintervalscalestructureofoutcomes,sothatanypositiveaffinetransformationoftheutil-
+ityrepresentationwoulddoanequallygoodjobinthatrole.Bycontrast,anaffinepermutationof
+outcomesisafunctionfromoutcomestooutcomes:outcomesthemselvesreplaceoutcomesonan
+affinepermutationofoutcomes,andnumbersneednotenterthepicture—seeFigure 4.Thetheo-
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+20 GOODSELL
+FIGURE 3 𝑈and0.5𝑈+1 areutilityrepresentations,soareequallygoodrepresentationsoftheinterval
+scalestructureofoutcomes.
+FIGURE 4 𝜋isapositiveaffinetransformation,becauseitpreservestheorderingandratiosofdifferences
+betweenprospects(inrelationtoFigure 3,𝜋=𝑈 −1◦(0.5𝑈+1) ).PositiveAffineInvariancesaysthatsubstituting
+DeathforBread,CoalforCake,etc.intwoprospectspreservestheircomparison.
+remisthattheintervalscalestructureofoutcomesisfaithfullyrepresentedbyanypositiveaffine
+transformation of a utility representation. The principle of Positive Affine Invariance adds that
+nothingbesidestheintervalscalestructureofoutcomesentersintothecomparisonofprospects. 1
+Thedistinctionissomewhatblurredintheliterature,especiallyinconnectionwithunbounded
+utility.Inthefollowingpassage,Easwaranarguesfromtheobservationthatutilityisonlydefined
+uptoapositiveaffinetransformationtoaprinciplemuchlikePositiveAffineInvariance:
+Hájek (2013, pp. 9–10) [Hájek (2014): 541-42] notes that utility is only defined up to
+ashift and a stretch—thereis nowell-defined0 and nowell-definedunit in which
+utilityismeasured.Thus,itoughttobethecasethataddingaconstanttotheutilityof
+everyoutcomeofagambleaffectstheoverallvalueofthegamblebyaddingthesame
+constant,andsimilarlyformultiplyingtheutilitiesbyapositiveconstant.(Easwaran,
+2014b:523)
+1Thisdistinctioniscloselyrelatedtothedistinctionbetweenpassiveandactivetransformationsingeometry—seepage
+84ofStruik( 1953).
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 21
+The subtle point is that the principle being argued for is one that also refers to the utility rep-
+resentation,soitwouldseemthataffinepermutationsofoutcomesneverenterthepicture.But
+Easwaranisnotarguingforatriviality.Whatfollows‘itoughttobethecasethat’isnotdeduc-
+tivelyentailedbywhatprecedes‘thus’.Rather,thepicturethatEaswaranisworkingwithisthat
+atypicaldecisiontheoryspecifiesanorderingof(some)prospectsbyanoperationthatconverts
+autilityrepresentationintoareal-valued valuefunction onprospects,sothatwhentwoprospects
+aregivenvaluesinthissense,theonewiththegreatervalueisbetter.Symbolically,anEaswaran-
+style theory posits a two-place value function𝑉(⋅,⋅), which takes a utility representation and a
+prospect and outputs a number. Expected Utility Theory is a theory of this sort where𝑉(𝑈,𝜇)
+is the expectation of𝑈 on𝜇, as are the proposals investigated in Easwaran’s paper. Easwaran’s
+constraintamountstoforbiddingsuchtheorieswheretheorderingofprospectsachievedatthe
+endissensitivetowhichutilityrepresentationispluggedinatthebeginning,whichistosaythat
+foranyprospects 𝜇and𝜈,anyutilityrepresentation 𝑈,positiverealnumbers 𝑎,andrealnumber
+𝑏
+𝑉(𝑈,𝜇) ≥𝑉(𝑈,𝜈)↔𝑉(𝑎𝑈+𝑏,𝜇) ≥𝑉(𝑎𝑈+𝑏,𝜈). 2
+Easwaran’sconstraintismotivatedbythesameideawehaveusedtomotivatetheaffinesymmetry
+principles:atheorywhichviolatedtheconstraintwouldbesensitivetofeaturesofprospectsother
+thanprobabilityandtheintervalscalestructureoftheirpossibleoutcomes;suchatheorywould
+positanas-yetunrecognizedfeatureofoutcomestoberelevantintheevaluationofprospects,and
+itseemsveryoddtoacceptsuchatheory.Butitisnotsomethingthatisestablishedjustbynoting
+that“utilityisonlydefineduptoashiftandastretch.”
+AdoptingEaswaran’sconstraintdoesnotrequireacceptingPositiveAffineInvariance.Rather,
+the constraint forbids accepting theories which posit specific comparisons that contradict Posi-
+tiveAffineInvariance,suchasatheorywhichgivesvalue −1∕2tothealternatingStPetersburg
+prospectbut 3todoublethealternatingStPetersburgprospect(thiswouldbeacounterexample
+toPositiveAffineInvariancebecausedouble −1∕2is−1,sodoublethealternatingStPetersburg
+wouldhavetobenobetterthanutility −1).WhereasPositiveAffineInvariancesaysthattheories
+violating Easwaran’s constraint are false, Easwaran’s constraint only forbids us from accepting
+them,whichcouldbeforanynumberofreasons(forexample,itmightbebecausewecan’tknow
+any such theory to be true). Nevertheless, Positive Affine Invariance would be a very natural
+explanationofwhyadoptingEaswaran’sconstraintisagoodidea.
+3 AXIOMATICDECISIONTHEORY
+Theaffinesymmetryprincipleswillbeinvestigatedwithinavariantoftheclassicalsystemofvon
+NeumannandMorgenstern( 1944),withsomestandardmodificationstoaccommodatethepos-
+sibilityofprospectswhichhaveinfinitelymanypossibleoutcomesofarbitrarilygreatutility.We
+takeasprimitiveameasurablespaceof outcomes,anddefinea prospecttobeaprobabilitydistri-
+butionoveroutcomes,andusethegreekletters 𝜇,𝜉,𝜈 asvariablesrangingoverprospects.Weuse
+2 Equivalently,giventheIndependenceprinciple(Section 3)andif 𝑉extendsexpectedutility:
+𝑉(𝑎𝑈+𝑏,𝜇)=𝑎𝑉(𝑈,𝜇)+𝑏
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+22 GOODSELL
+‘≿’forthe atleastasgood relationbetweenprospectswhichisthemaintopicofdecisiontheory.
+≿isassumedtobea totalpreordering ofprospects;whichisareflexiveandtransitiverelationthat
+alsocompareseverypairofprospects.WealsoassumevonNeumannandMorgenstern’sprinciple
+ofIndependence,whichsaysthat 𝜇isatleastasgoodas 𝜈ifandonlyif,foranythirdprospect 𝜉,an
+𝑥chanceof𝜇witha1−𝑥 chanceof𝜉isatleastasgoodasan 𝑥chanceof𝜈witha1−𝑥 chance
+of𝜉.Insymbols, 𝜇≿𝜈 ifandonlyif
+𝑥𝜇+(1−𝑥)𝜉≿𝑥𝜈+(1−𝑥)𝜉.
+AlsoinlinewithvonNeumannandMorgenstern,weassumethatoutcomeshaveintervalscale
+structureasoutlinedintheintroduction.Thisamountstotheclaimthatthereisa utilityrepre-
+sentationofoutcomes.Thisisameasurablefunction 𝑈fromoutcomestorealnumbers,suchthat
+foranyprospects 𝜇and𝜈thatcanonlyyieldfinitelymanyoutcomes,theexpectationof 𝑈on𝜇is
+atleastasgreatastheexpectationof 𝑈on𝜈.Thatis,when 𝜇yieldsoutcomes𝑜1 through𝑜𝑛 with
+probabilities𝑥1 through𝑥𝑛,and 𝜈yieldsoutcomes 𝑢1 through𝑢𝑚 withprobabilities 𝑦1 through
+𝑦𝑚,wecompare 𝜇and𝜈bycomparing
+𝐄𝜇𝑈= ∫ 𝑈d𝜇=𝑥 1𝑈(𝑜1)+⋯+𝑥 𝑛𝑈(𝑜𝑛), and
+𝐄𝜈𝑈= ∫ 𝑈d𝜈=𝑦 1𝑈(𝑢1)+⋯+𝑦 𝑚𝑈(𝑢𝑚).
+Weassumealsothatanysuchutilityrepresentationisabijection,whichistosaythateveryreal
+levelofutilityisexemplifiedbysomeoutcome,andthatequallygoodoutcomesareidentified.
+ThemaindivergencefromvonNeumannandMorgensternisthatweomittheArchimedean
+principle (which says that every prospect is equally good as some outcome),3 in favour of the
+widelyacceptedprincipleof StochasticDominance.4 Aprospect 𝜇issaidto strictlystochastically
+dominate𝜈 if for every outcome𝑜,𝜇 gives at least as great probability as𝜈 does to getting an
+outcomebetterthan 𝑜,andifforsome 𝑜,𝜇givesastrictlygreaterprobabilityofgettinganoutcome
+betterthan𝑜.Stochasticdominancestatesthataprospectwhichstrictlystochasticallydominates
+anotherisstrictlybetter.Intuitively,itsaysthatmodifyingaprospectbyshiftingsomeprobability
+ofworseoutcomestobetteroutcomesisastrictimprovement.CombiningStochasticDominance
+withtheexistenceofabijectiveutilityrepresentationimpliesthataStPetersburgprospect,which
+yieldsutility2𝑛 withprobability1∕2𝑛 foreach𝑛 ≥1,isbetterthananyoutcome,incontradiction
+withtheArchimedeanprinciple.
+Puttingtheseprinciplestogetheryieldsthefollowingtheory,whichfollowingGoodsell( 2024)
+wecall𝖣𝖳𝖴:
+Total Preordering≿isreflexive( 𝜇≿𝜇 ),transitive(if 𝜇≿𝜉≿𝜈 ,then 𝜇≿𝜈 ),andtotal( 𝜇≿𝜈
+or𝜈≿𝜇 ).
+3Moreprecisely,theArchimedeanprinciplesaysthatforanyprospects 𝜇≿𝜉≿𝜈 ,somemixtureof 𝜇and𝜈isequallygood
+as𝜉:𝑥𝜇+(1−𝑥)𝜈∼𝜉 forsome 𝑥.ThisistobedistinguishedfromanArchimedeanprinciplefor outcomes,whichsays
+thesamewhen 𝜇,𝜉,𝜈 areeach100%likelytoyieldsomeoutcome.TheArchimedeanprincipleforoutcomesfollowsfrom
+SimpleExpectedUtilityTheory.
+4Inrecentphilosophicalliteratureonunboundedutility,StochasticDominanceisdefendedinNoverandHájek( 2004),
+Easwaran(2014a),Meacham( 2019),andRussell,forthcoming.
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 23
+Independence𝜇≿𝜈 ifandonlyifforanyprospect 𝜉andnumber𝑥between0and1,𝑥𝜇+(1−
+𝑥)𝜉≿𝑥𝜈+(1−𝑥)𝜉 .5
+SimpleExpectedUtilityTheory Thereisabijectiveutilityrepresentation:ameasurablebijec-
+tion𝑈 fromoutcomestorealnumberssuchthatforanysimple 𝜇and𝜈,𝜇≿𝜈 ifandonlyif
+𝐄𝜇𝑈 ≥𝐄𝜈𝑈.
+StochasticDominance Foranyutilityrepresentation 𝑈,if
+𝜇({𝑢∶𝑈(𝑢)>𝑈(𝑜)}) ≥𝜈({𝑢∶𝑈(𝑢)>𝑈(𝑜)})
+holdsforeveryoutcome 𝑜,andthecomparisonisstrictforsome 𝑜,then𝜇≻𝜈 .
+Variousobjectionsto 𝖣𝖳𝖴arepossible.6 However,𝖣𝖳𝖴isincontestablyanaturalandorthodox
+approachtodecisiontheory,anditisstrongenoughtobringoutsomeoftheinterestingconse-
+quences of the affine symmetry principles. Importantly, the theory is on its own consistent, as
+Goodsellproves.Itwillbeassumedinwhatfollows.
+A natural addition to𝖣𝖳𝖴 would beexpected utility theory, which says that prospects can be
+comparedbytheirexpectedutilitieswhenevertheyaredefined,andnotjustwhentheprospects
+being compared are simple (as in Simple Expected Utility Theory). (Goodsell,2024, Theorem)
+proves that𝖣𝖳𝖴 does not quite imply Expected Utility Theory. A very natural addition to𝖣𝖳𝖴
+thatfillsthisgapistheprincipleof 𝐿1 Continuity,whichsaysthatthepreordering ≿iscontinuous
+withrespecttoconvergenceinexpectationofanyutilityrepresentation.Tobemoreprecise,fora
+utilityrepresentation,𝑈,the 𝐿1𝑈-distancebetweenprospects𝜇and𝜈istheinfimalexpectation
+oftheabsolutedifferencein 𝑈betweenanytworandomvariablesdistributedaccordingto 𝜇and𝜈
+(thedistanceis ∞iftheexpecteddifferencedivergesforallsuchrandomvariables). 𝐿1 Continuity
+maythenbestatedthus:
+𝐿1 ContinuityIfforanyutilityrepresentation 𝑈asequence𝜇𝑖 ofprospectsthatconvergesin 𝐿1
+𝑈-distanceto𝜇,thenif 𝜇𝑖≿𝜈 foreach𝑖,𝜇≿𝜈 aswell.7
+Adding𝐿1 Continuity to𝖣𝖳𝖴 yields Expected Utility Theory, and also brings out some further
+interestingconsequencesoftheaffinesymmetryprinciples,whichwillbenotedinwhatfollows.
+Toreasonwithaffinepermutationsofoutcomes,wefirstcoordinatizetheoutcomesbyfixing
+some arbitrary utility representation𝑈, and adopt the notation of writing𝑎𝑈+𝑏 for the per-
+mutationwhichmapsanoutcomeofutility 𝑥totheoutcomeofutility 𝑎𝑥+𝑏 .Moreaccurately,
+5Addition and multiplication of prospects are defined eventwise, so𝑥𝜇+(1−𝑥)𝜉 is the probability distribution that
+assignstoeachmeasurableset 𝑋theprobability
+𝑥𝜇(𝑋)+(1−𝑥)𝜈(𝑋).
+6Lauwers (2016) shows that totality is not acceptable from a mathematical constructivist point of view, given the other
+assumptions. Savage (1954), Hammond (1998), and more recently Russelland Isaacs (2021) argue for a bounded, rather
+thanbijective,utilityrepresentation,onthebasisofprinciplesrelatedtoSavage’sP7.Moreover,theveryideaofidentifying
+prospectswithprobabilitydistributionsoveroutcomesiscalledintoquestionbySeidenfeldetal.( 2009)aswellasLauwers
+andVallentyne( 2017),whoarguethattherecanbedifferencesinchoiceworthinessbetweenactionswhichwouldyield
+thesameprobabilitydistributionsoveroutcomes.
+7Although𝐿1𝑈-distancedependson 𝑈,thetopologygenerateddoesnot.
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+24 GOODSELL
+thispermutationwouldbedenoted 𝑈−1◦(𝑎𝑈+𝑏) (seeFigures 3and4);thebenefitofthecom-
+pactnotationisthatitallowsustowrite [𝑎𝑈+𝑏] forthefunctionwhichmodifiesaprospectby
+replacingeachoutcomebythepermutedoutcome;whichequivalentlyreplacesanychancethat
+prospecthasofutility 𝑥 withthesamechanceofutility 𝑎𝑥+𝑏 .Permutationsofthisformwith
+𝑎 ≠0areallandonlytheaffinepermutationsofprospects(thechoiceof 𝑈 doesn’tmatter).We
+maynowstatetheaffinesymmetryprinciplesasfollows:
+PositiveAffineInvariance Foranyutilityrepresentation 𝑈,if 𝑎>0 ,then 𝜇≿𝜈 ifandonlyif
+[𝑎𝑈+𝑏]𝜇≿[𝑎𝑈+𝑏]𝜈 .
+NegativeAffineAnti-Invariance Foranyutilityrepresentation 𝑈,if 𝑎>0 ,𝜇≿𝜈 ifandonly
+if[−𝑎𝑈+𝑏]𝜇≾[−𝑎𝑈+𝑏]𝜈 .
+Infact,onlyNegativeAffineAnti-Invarianceisstrictlyneeded,sinceitstraightforwardlyimplies
+PositiveAffineInvariancein 𝖣𝖳𝖴.However,forthepurposeofunderstandingproofs,itishelpful
+toreplaceNegativeAffineAnti-InvariancewiththeweakerReflectionAnti-Invariance:
+Reflection Anti-InvarianceFor any utility representation𝑈,𝜇≿𝜈 i fa n do n l yi f[−𝑈]𝜇≿
+[−𝑈]𝜈.
+PositiveAffineInvarianceisindependentofReflectionAnti-Invariance,buttogethertheseprin-
+ciplesentailandareentailedbyNegativeAffine-Invariance(ReflectionInvariancedoesnothave
+anobviousinterpretationintermsoftheintervalscalestructureofoutcomes,butiseasytouse
+once a utility representation has been decided upon).𝖣𝖳𝖴+ Sym will be𝖣𝖳𝖴 plus the affine
+symmetryprinciples.
+4 CONSEQUENCESOFAFFINESYMMETRY
+Wenowturntothequestionofhowaddingtheaffinesymmetryprinciplesaffectsdecisiontheory
+in𝖣𝖳𝖴.Themostimportantresultsarethattheaffinesymmetryprinciplescannotbederivedor
+refutedin𝖣𝖳𝖴:
+Theorem 1.Neitheraffinesymmetryprincipleisatheoremof 𝖣𝖳𝖴.Thesameistruewhen 𝖣𝖳𝖴
+extendedbyanyorallof 𝐿1Continuity,RelativeExpectationTheory(page10;seealsoColyvan, 2008),
+WeakExpectationTheory(Easwaran, 2008),orPrincipalValueTheory(Easwaran, 2014b).
+Proof. Goodsell (2024) (see Remark 3 for a countermodel to Reflection Anti-Invariance and
+Theorem10foracountermodeltoPositiveAffineInvariance). □
+Theorem2. Theaffinesymmetryprinciplesareconsistentwith 𝖣𝖳𝖴+𝐿1 Continuity.
+Proof. Section5. □
+In light of these two theorems, the affine symmetry principles are a nontrivial but very nat-
+ural way of extending to𝖣𝖳𝖴. In what follows we will build a picture of what they add to
+𝖣𝖳𝖴 by establishing some consequences of𝖣𝖳𝖴+ Sym that are independent of𝖣𝖳𝖴 (proofs of
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 25
+independence are omitted, but can be easily generated by modifying examples from Goodsell,
+2024). The overarching theme will be that adding the affine symmetry principles to𝖣𝖳𝖴vindi-
+catesandunifiesmuchpreviousliteratureondecisiontheorywithunboundedutility,especially
+theworkofColyvan( 2008)andtoalesserextentEaswaran( 2008,2014b)andHájek( 2014).
+Tobegin,theaffinesymmetryprinciplesdonotentailthatadoublingofutilityyieldsadoubling
+ofoverallvalue,inthesensethat 𝜇∼0.5𝛿 0+0.5[2𝑈]𝜇 where𝛿𝑥 istheprospectthatyieldsutility
+𝑥 with100%probability;thisidentityofvalueprovablyfailswhen 𝜇isaStPetersburgprospect,
+becausethenwehave 𝜇=0.5𝛿 2+0.5[2𝑈]𝜇.
+Bycontrast,theydoimplythataddingtoafixedamountofutilitytoeachoutcomeaddstothe
+overallvalueofaprospect,inthesensethatfifty-fiftybetweensomeprospect 𝜇andandutility 𝑏,
+andfifty-fiftybetweenthatprospect 𝜇plus𝑏unitsofutility( [𝑈+𝑏]𝜇 )andutility 0,areequally
+good.Moregenerally:
+Theorem3 (𝖣𝖳𝖴+ Sym).
+𝑥
+[
+𝑈+ 𝑏
+𝑥
+]
+𝜇+(1−𝑥)𝜈∼𝑥𝜇+(1−𝑥)
+[
+𝑈+ 𝑏
+1−𝑥
+]
+𝜈. (1)
+Proof. ByReflectionAnti-Invariancewehaveforanyprospect 𝜉andconstant𝑐,
+1
+2
+[
+𝑈+ 𝑐
+2
+]
+𝜉+ 1
+2
+[
+−𝑈− 𝑐
+2
+]
+𝜉∼𝛿 0.
+Shiftingutilityupby 𝑐∕2yields
+1
+2[𝑈+𝑐 ]𝜉+ 1
+2[−𝑈]𝜉∼𝛿 𝑐∕2. (2)
+Moreover,(1)isequivalentto
+𝛿0∼𝑥
+2
+[
+𝑈+ 𝑏
+𝑥
+]
+𝜇+ 1−𝑥
+2 𝜈+ 𝑥
+2[−𝑈]𝜇+ 1−𝑥
+2
+[
+−𝑈− 𝑏
+1−𝑥
+]
+𝜈
+Therighthandsideofwhichcanbedividedintotwopartswhichhavetheformof(2),whence
+theequalityofvaluemaybederivedwithSimpleExpectedUtilityTheory:
+𝛿0∼𝑥
+(1
+2
+[
+𝑈+ 𝑏
+𝑥
+]
+𝜇+ 1
+2[−𝑈]𝜇
+)
++(1−𝑥)
+(1
+2𝜈+ 1
+2
+[
+−𝑈− 𝑏
+1−𝑥
+]
+𝜈
+)
+.
+□
+Thisresultcanbeextendedinthepresenceof 𝐿1 Continuitytovindicatethecentralprincipleof
+Colyvan(2008),RelativeExpectationTheory .StatingRelative ExpectationTheoryinthepresent
+setting, where prospects are identified with probability distributions, is a little awkward. Here,
+Colyvan’sprincipleisstatedbyrelatingtheprospectstobecomparedwithrandomvariableson
+[0,1] thataredistributedaccordingtothoseprospects. 8
+8The principle is more natural in a setting where prospects are identified with random variables over an atomless
+probabilityspaceof“states”,inthestyleofSavage( 1954).
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+26 GOODSELL
+FIGURE 5 Graphsoftheutilityofoutcome-valuedrandomvariableson [0,1],𝑋and𝑌,andtheirdifference
+𝑋−𝑌 .RelativeExpectationTheorysaysthatif 𝑋−𝑌 hasanexpectedutility,thenthedistributionof 𝑋isatleast
+asgoodasthedistributionof 𝑌justincase 𝑋−𝑌 hasanonnegativeexpectedutility.Equivalently:ifthehatched
+andcrosshatchedareasbothhavefinitearea,thenthedistributionof 𝑋isbetterthanthedistributionof 𝑌justin
+casethenorthwest-hatchedshapehasanareaatleastasgreatasthecrosshatchedshape.SimpleRelative
+ExpectationTheorysaysthesameinthecasewhere 𝑋−𝑌 issimple(whichisnotsointhefigure).
+RelativeExpectationTheory Let𝑋 and𝑌 beanyoutcome-valuedrandomvariableson [0,1]
+with Lebesgue measure that are distributed according to𝜇 and𝜈 respectively. Let𝑋−𝑌 be
+theoutcome-valuedrandomvariableon [0,1] thatyieldsutility 𝑥−𝑦 when𝑋yieldsutility 𝑥
+and𝑌yieldsutility 𝑦.Thenif 𝑋−𝑌 hasanexpectedutility, 𝜇≿𝜈 ifandonlyiftheexpected
+utilityof𝑋−𝑌 isgreaterthanorequalto 0.SeeFigure 5.
+LikehowExpectedUtilityTheoryisdistinctfromSimpleExpectedUtilityTheorywhen 𝐿1 Con-
+tinuityisnotassumed,wealsodistinguishaversionofRelativeExpectationTheorythatapplies
+onlywhenthedifferenceoftherelevantrandomvariablesissimple:
+Simple Relative Expectation TheoryLet𝑋 and𝑌 be outcome-valued random variables on
+[0,1] withLebesguemeasurethataredistributedaccordingto 𝜇and𝜈respectively.Let𝑋−𝑌
+betheoutcome-valuedrandomvariableon [0,1] thatgivesyieldsoutcome 𝑥−𝑦 when𝑋yields
+𝑥and𝑌yields𝑦.Thenif 𝑋−𝑌 issimple(i.e.,hasfinitecodomain),then 𝜇≿𝜈 ifandonlyif
+theexpectedutilityof 𝑋−𝑌 isgreaterthanorequalto 0.
+Bothprinciplesarequitethemouthful,andmaynotseemparticularlynaturalinthissetting.This
+doesnotmatter,sincebothcanbederivedfromverynaturalassumptions:
+Theorem4 (𝖣𝖳𝖴+ Sym).SimpleRelativeExpectationTheoryistrue.
+Proof. First note that𝜇≿𝜈 is equivalent to0.5𝜇+0.5𝛿0≿0.5𝜈+0.5𝛿 0.L e t𝑋𝜇,𝑋𝜈,a n d𝑋𝜉 be
+distributedaccordingto 0.5𝜇+𝛿0,0.5𝜈+0.5𝛿0,and 0.5𝜉+0.5𝛿 0 respectivelysuchthat 𝑈◦𝑋𝜇=
+𝑈◦𝑋𝜈+𝑈◦𝑋𝜉.Let𝑜beoneoftheoutcomesof 𝜉,andlet 𝑋1
+𝜇 modify𝑋𝜇 bysubtracting𝑜fromall
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 27
+thoseoutcomeswhere 𝑋𝜉 yields𝑜,andaddingthesameprobabilityof 𝑜totheregionwhere 𝑋𝜇
+yieldsutility 0.ByTheorem 3,thedistributionof 𝑋1
+𝜇 isequallygoodas 𝜇.Repeatingthisprocess
+for the𝑛 possible outcomes of𝜉, we find the distribution of𝑋𝑛
+𝜇 is equally good as𝜇, and the
+distributionof𝑋𝑛
+𝜇 is0.5𝜈+0.5𝜉 ,whencetheresultfollowsbyIndependenceandSimpleExpected
+UtilityTheory. □
+Corollary5 (𝖣𝖳𝖴+ Sym).RelativeExpectationTheoryisequivalentto 𝐿1 Continuity.
+Wewillsaythat 𝜇differsfrom𝜈by𝜉whenforsome 𝑋and𝑌distributedaccordingto 𝜇and𝜈,
+𝑋−𝑌 isdistributedaccordingto 𝜉.
+NoticethatbyReflectionAnti-Invariance,asymmetricprospect—aprospect 𝜇thatisequalto
+[−𝑈]𝜇—isequallygoodaszeroutility.FromRelativeExpectationTheoryitalsofollowsthatif 𝜇
+and[−𝑈]𝜇differbyaprospectoffiniteexpectation 𝜉,then𝜇differsbytheexpectationof 𝜉from
+asymmetricprospect,so 𝜇isequallygoodastheexpectedutilityof 𝜉.Fromthisobservation,we
+mayderiveausefulstrengtheningofExpectedUtilityTheorythatdoesnotseemtohaveappeared
+intheliterature.Foraprospect 𝜇,let 𝐹bethe cumulativedistributionfunction of𝜇,whichmaps
+eachrealnumber 𝑥totheprobabilitythat 𝜇yieldsanoutcomewithutilityatleast 𝑥.When𝜇has
+anexpectedutility,itisgivenbytheintegral
+𝐄𝜇𝑈= ∫
+∞
+0
+𝐹(𝑧)d𝑧− ∫
+0
+−∞
+1−𝐹(𝑧)d𝑧
+Set𝐹+(𝑧)=𝐹(𝑧) ,andset 𝐹−(𝑧)∶=1−𝐹(−𝑧) .Thenwhentheexpectedutilityof 𝜇exists,wealso
+have
+∫
+∞
+0
+𝐹(𝑧)d𝑧− ∫
+0
+−∞
+1−𝐹(𝑧)d𝑧= ∫
+∞
+0
+𝐹+(𝑧)−𝐹 −(𝑧)d𝑧
+buttheright-hand-sideintegralmightexistevenwhentheexpectationdoesnot.Forexample,if
+𝜇issymmetricbutlacksanexpectation,then 𝐹+=𝐹−,sotheright-hand-sideintegralexistsand
+iszero.Lettheintegralof 𝐹+−𝐹− from0toinfinitybethe foldedexpectedutility of𝜇.
+FoldedExpectationTheory If𝜇and𝜈havefoldedexpectedutilities(seeFigure 6),then𝜇≿𝜈
+ifandonlyifthefoldedexpectedutilityof 𝜇isatleastasgreatasthatof 𝜈.
+Theorem6 (𝖣𝖳𝖴+ Sym).FoldedExpectationTheoryfollowsfrom 𝐿1 Continuity.
+Proof. Let𝜇 be a prospect with cumulative distribution function𝐹. Consider the random vari-
+ables𝑋+, defined to agree with(𝐹+(𝑧))−1 almost everywhere where𝐹(𝑧) is positive, and to be
+identicallyzerootherwise, 𝑋−,whichisthesamebutfor 𝐹−,andtheirdifference 𝑋+−𝑋− (see
+Figure7).If𝜇hasafoldedexpectedutility,thenthedistributionof 𝑋+−𝑋− hasanexpectedutil-
+ityequaltothefoldedexpectedutilityof 𝜇,so 𝜇isequallygoodasitsfoldedexpectedutilityby
+Theorem5. □
+FoldedExpectationTheoryshouldbedistinguishedfromsomerelatedproposalsinthelitera-
+ture.Itis(onitsown)incomparableinstrengthwithbothEaswaran’sWeakExpectationTheory
+(Easwaran,2008) and the stronger Principal Value Theory (Easwaran,2014b). It is not weaker
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+28 GOODSELL
+FIGURE 6 Ifthecumulativedistributionfunctionoverutilityforaprospectisthesolidcurve,thenthe
+foldedexpectedutilityofthatprospectisequaltonegativeonetimesthehatchedarea,ifthatareaisfinite.
+TABLE 2 ThePasadenaprospect.
+1∕2 1∕4 ... 1∕2𝑛 ...
+2 −4∕2 ... −(−2)𝑛∕𝑛 ...
+sinceunlikethesetwoproposals,FoldedExpectationTheoryevaluateseverysymmetricprospect
+as equally good as utility0; Easwaran’s two principles sometimes fail to assign values to such
+prospects.Itisnotstrongerthaneitherprincipleforamorecomplicatedreason.Aprospect 𝜇has
+aweakexpectationwhenthefollowingtwoconditionsaremet.First,thedefiniteintegral
+∫
+𝑡
+0
+𝐹+(𝑧)−𝐹 −(𝑧)d𝑧
+musthavealimitas 𝑡goestoinfinity;whichisthe principalvalue oftheintegral.Second, 𝜇must
+have ‘thin tails’: the probability that𝜇 yields an outcome better than utility𝑡 or worse than−𝑡
+mustdecaywith 𝑜(𝑡−1)as𝑡goestoinfinity.Inthiscasethe weakexpectedutility oftheprospect
+isgivenbytheprincipalvalueoftheintegral.Theseconditionsaremetwhen 𝜇isthe Pasadena
+prospect,whichforeachpositiveinteger 𝑛yieldsutility−(−2)𝑛withprobability1∕2𝑛(seeTable2).
+Easwaran shows the Pasadena prospect to have a weak expected utility ofln2. By contrast, the
+prospectdoesnothaveafoldedexpectedutility.
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 29
+FIGURE 7 Graphsoftherandomvariables 𝑋+,𝑋−,and𝑋+−𝑋− fromTheorem 6,inthecasewhere 𝐹is
+thecumulativedistributionfunctionfromFigure 6.Noticethatthetwohatchedshapeshaveequalarea,and
+equalareatothehatchedshapeinFigure 6.
+TABLE 3 TheArroyoprospect.
+1∕2 1∕6 ... 1∕(𝑛2+𝑛) ...
+2 −3 ... (−1)𝑛+1(𝑛+1) ...
+TABLE 4 TheArroyoprospect +0.5unitsofutility.
+1∕2 1∕6 ... 1∕(𝑛2+𝑛) ...
+2.5 −2.5 ... (−1)𝑛+1(𝑛+1)+0.5 ...
+Proposition7. ThePasadenaprospectdoesnothaveafoldedexpectedutility.
+For a nontrivial application of Folded Expectation Theory, we may evaluate Bartha’s (2016)
+Arroyo prospect (Table3), which for each positive integer𝑛 yields utility(−1)𝑛+1(𝑛+1) with
+probability1∕(𝑛2+𝑛).LikethePasadenaprospect,theArroyoprospect’sexpectedutilitywould
+begivenbythedivergentsum
+1−1∕2+1∕3+…,
+whichconditionallyconvergesto ln2.BarthademonstratesthattheArroyoprospectdoesnothave
+aweakexpectedutility.Butitdoeshaveafoldedexpectedutilityof ln2:
+Theorem8 (𝖣𝖳𝖴+ Sym+𝐿1 Continuity).TheArroyoprospectisequallygoodasutility ln2.
+Proof. Let𝐴betheArroyoprospect,andlet 𝐹 bethecumulativedistributionfunctionfor [𝑈+
+0.5]𝐴(Table4).Then 𝐹+(𝑧)−𝐹 −(𝑧)isthecumulativedistributionfunctionofaprospectwhich
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+30 GOODSELL
+yieldsutility2𝑛+0.5 withprobability
+1
+2𝑛(2𝑛−1) − 1
+2𝑛(2𝑛+1) ,
+andsuchaprospecthasexpectedutility 0.5+ln2 . □
+𝖣𝖳𝖴+ Sym, with or without𝐿1 Continuity, also goes beyond Folded Expectation Theory in
+manyways.WeshallfindthatthePasadenaprospect,unevaluablebyFoldedExpectationTheory,
+mustreceiveutility ln2 on𝖣𝖳𝖴+ Sym+𝐿1 Continuity.Toachievethisresult,wewillfirstgive
+asimplerexampleofsomethenecessarytechniquesbyevaluatingthealternatingStPetersburg
+prospectfromSection 1(Table1),whichyieldsutility (−2)𝑛 withprobability1∕2𝑛 foreachpositive
+integer𝑛.ThealternatingStPetersburgparadoxdoesnothavefoldedexpectedutility,oraweak
+expectation,oraprincipalvalue(therelevantintegraloscillatesbetween −1and0).Nevertheless,
+wefind:
+Theorem9 (𝖣𝖳𝖴+ Sym).ThealternatingStPetersburgprospecthasutility −1∕2.
+Proof. Let𝑃bethealternatingStPetersburgprospect.Wehavetheidentity
+𝑃=0.5𝛿 −2+0.5[−2𝑈]𝑃.
+Suppose𝑃≻𝛿 −1∕2. By the affine symmetry principles, it follows that[−2𝑈]𝑃≺𝛿 1. By Simple
+ExpectedUtilityTheoryandIndependence,wehave
+0.5𝛿−2+0.5[−2𝑈]𝑃≺0.5𝛿 −2+0.5𝛿1∼𝛿−1∕2
+so𝑃≺𝛿 −1∕2,acontradiction.Ananalogouscontradictionarisesfromsupposing 𝑃≻𝛿 −1∕2,soby
+Totalitywehave 𝑃∼𝛿 −1∕2. □
+Thisresultcanbegeneralizedtoanyprospectthatisself-similarinthesenseofbeingrelated
+toitselfbyaconvexcombinationwithanarbitraryprospect 𝜈 anditselfunderanegativeaffine
+transformation:
+Theorem 10(𝖣𝖳𝖴+ Sym). Suppose𝜇∼(1−𝑥)𝜈+𝑥[−𝑎𝑈+𝑏]𝜇 , with𝑎>0 and1>𝑥>0 .
+Then
+𝜇∼
+∞∑
+𝑛=0
+(1−𝑥)𝑥 𝑛
+[
+−𝑎𝑛𝑈+ (−𝑎)𝑛𝑏𝑥
+1−𝑥
+]
+𝜈.
+Proof. Define
+𝐸𝜇∶=(𝜇∼(1−𝑥)𝜈+𝑥[−𝑎𝑈+𝑏]𝜇),
+noticefirstthatbyTheorem 3,𝐸𝜇isequivalentto
+𝜇∼(1−𝑥)
+[
+𝑈+ 𝑏𝑥
+1−𝑥
+]
+𝜈+𝑥[−𝑎𝑈]𝜇.
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 31
+We nowshow thatsolutions to𝐸 are equally good;which is tosay that if𝐸𝜇 and𝐸(𝜇′)then
+𝜇∼𝜇 ′. Suppose for contradiction that𝐸𝜇 and𝐸𝜇′ and𝜇≻𝜇 ′. Then, by the affine symmetries
+andindependence,
+(1−𝑥)
+[
+𝑈+ 𝑏𝑥
+1−𝑥
+]
+𝜈+𝑥[−𝑎𝑈]𝜇≺(1−𝑥)
+[
+𝑈+ 𝑏𝑥
+1−𝑥
+]
+𝜈+𝑥[−𝑎𝑈]𝜇 ′,
+so𝜇≺𝜇 ′,acontradiction.
+Itremainsonlytoshowthat 𝐸𝜇𝐸,where
+𝜇𝐸 ∶=
+∞∑
+𝑛=0
+(1−𝑥)𝑥 𝑛
+[
+−𝑎𝑛𝑈+ (−𝑎)𝑛𝑏𝑥
+1−𝑥
+]
+𝜈.
+forthis,itsufficestoexpandthedefinitionasfollows:
+𝜇𝐸 =(1−𝑥)
+[
+𝑈+ 𝑏𝑥
+1−𝑥
+]
+𝜈+
+∞∑
+𝑛=1
+(1−𝑥)𝑥 𝑛
+[
+−𝑎𝑛𝑈+ (−𝑎)𝑛𝑏𝑥
+1−𝑥
+]
+𝜈
+=(1−𝑥)
+[
+𝑈+ 𝑏𝑥
+1−𝑥
+]
+𝜈+𝑥[−𝑎𝑈]𝜇 𝐸,
+so𝐸𝜇𝐸 followsbyreflexivityof ∼. □
+Theorem10yieldsthataself-similarityofvalueoftheform
+𝜇∼(1−𝑥)𝜈+𝑥[𝑎𝑈+𝑏]𝜇
+has a unique solution in value when𝑎<0 ; which must therefore be the value of the unique
+prospectwhichsolvestheself-similarityequationofprospects
+𝜇=(1−𝑥)𝜈+𝑥[𝑎𝑈+𝑏]𝜇
+Itisevidentthattheuniquenessofsolutiontotheequationofvaluenolongerholdswhen 𝑎>0 .
+Forlet𝑎=1∕𝑥 ,and𝜈=𝛿 (−𝑥𝑏)∕(1−𝑥),andtheresultingequationofvalue,
+𝜇∼(1−𝑥)𝛿 −𝑥𝑏
+1−𝑥
++𝑥
+[1
+𝑥𝑈+𝑏
+]
+𝜇
+issolvedforanysimple 𝜇.
+LetusnowreturntothePasadenaprospect(Table 2).Theseriesthatwouldgiveitsexpected
+utility,
+∞∑
+𝑛=1
+1
+2𝑛
+−(−2)𝑛
+𝑛
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+32 GOODSELL
+TABLE 5 TheHighlandParkprospect, 𝐻.
+1∕2 1∕4 1∕8 1∕16 ... 1∕22𝑛−1 1∕22𝑛 ...
+2 −4 8∕3 −16∕3 ... 22𝑛−1∕(2𝑛−1) −22𝑛∕(2𝑛−1) ...
+diverges,butthesequenceofitspartialsumsinthegivenorder,
+1− 1
+2+1
+3−…
+conditionallyconvergesto ln2.ItisnaturaltosupposethatthePasadenaprospectreallyisequally
+goodasutility ln2,andthisjudgementhasbeensupportedbyavarietyofprinciplesintheliter-
+ature,includingWeakExpectationTheory.Hájek( 2014:550),identifiesfiveadditionalproposals
+as entailing this judgement, an observation he has called a ‘hexangulation’ argument for the
+Pasadena prospect being equally good as utilityln2. As previously mentioned, Hájek indepen-
+dentlycomesclosetoendorsingtheaffinesymmetryprinciples(attheveryleastheseemswilling
+toapplyEaswaran’sconstraint—seeSection 2—toruleoutanytheorywhichgivesrisetospecific
+counterexamplestotheaffinesymmetryprinciples).Itturnsoutthatthesetwonaturalandseem-
+ingly unrelated opinions are not logically independent: the affine symmetry principles already
+implyavalueof ln2 forthePasadenaprospect,given 𝐿1 Continuity:
+Theorem11 (𝖣𝖳𝖴+ Sym+𝐿1 Continuity).ThePasadenaprospectisequallygoodastheoutcome
+ofutilityln2.
+Proof. ConsideramodificationofthePasadenaprospect,the HighlandParkprospect ofTable5,𝐻,
+whichsoursthenegative-utility-outcomesoftheprospectbydecreasingthedenominatorby1.The
+Highland Park prospect worsens the Pasadena prospect by a prospect with a finite expectation;
+specificallytheprospect
+2
+3𝛿0+1
+3
+∞∑
+𝑛=1
+3
+22𝑛𝛿 −22𝑛
+2𝑛(2𝑛−1)
+whichhasexpectation −ln2 .ByRelativeExpectationTheory,theHighlandParkprospectis ln2
+unitsofutilityworsethanthePasadenaprospect.
+Now,noticethattheHighlandParkprospect 𝐻hasthefollowingproperty
+𝐻= 2
+3𝑄+ 1
+3[−2𝑈]𝑄,
+where
+𝑄∶=
+∞∑
+𝑛=1
+3
+22𝑛𝛿22𝑛−1
+2𝑛−1
+.
+Noticethat𝑄and
+3
+4𝛿0+1
+4[4𝑈]𝑄
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 33
+alsodifferbyaprospectoffiniteexpectation,namely
+3
+4𝛿2+1
+4
+∞∑
+𝑛=1
+3
+22𝑛−1𝛿 −22𝑛+1
+(2𝑛+1)(2𝑛−1)
+whichhasanexpectationof 0,so
+𝑄∼ 3
+4𝛿0+1
+4[4𝑈]𝑄
+andthus
+𝑄∼ 1
+2𝛿0+1
+2[2𝑈]𝑄
+byTotalityandPositiveAffineInvariance.Then,byReflectionInvariance, 𝐻isequallygoodas 0.
+Therefore,since 𝐻 worsensthePasadenaprospectby ln2 unitsofutility,thePasadenaprospect
+isequallygoodastheoutcomeofutility ln2. □
+A natural conjecture is that𝖣𝖳𝖴+ Sym+𝐿1 Continuity entails one of Easwaran’s Weak
+Expectation Theory or Principal Value Theory in addition to mere Folded Expectation Theory.
+Theorem11lendssomeplausibilitytothisconjecture,whichisleftforfurtherwork.
+5 MODELSOFAFFINESYMMETRY
+The main purpose of this section is to establish the consistency of𝖣𝖳𝖴+ Sym+𝐿1 Continuity
+(Theorem 2). This will be done by constructing a model of the theory. Future investigation of
+modelsofthissortwillleadtobetterunderstandingofthelimitsofthetheory.
+A harmless simplification employed in the models will be the identification of the outcomes
+withtherealnumbers 𝐑,withtherealnumber 𝑥representingtheoutcomeofutility 𝑥.Prospects
+maythenbeidentifiedwiththereal-valuedprobabilitydistributions.However,itwillbeusefulto
+extendtheconvexspaceofprobabilitydistributionson 𝐑totherealvectorspaceof (finite)signed
+measures(see,e.g.,Folland, 1999Chapter3).
+Definition1 (Finitesignedmeasure/ ).A finitesignedmeasure on𝐑isafunctiononthemea-
+surablesetsof 𝐑thatisthedifference 𝜇+−𝜇− offinitemeasures 𝜇+ and𝜇−.  isthevectorspace
+offinitesignedmeasures.
+Theprobabilitydistributionsarethepositive signedmeasureswhichassign 1to𝐑;theother
+signedmeasureshavenodecision-theoreticallysignificantinterpretation,andmaybethoughtof
+asimaginarysumsanddifferencesofprospectswhereprobabilitiesareallowedtobegreaterthan
+1 or less than0. In this setting, principles of decision theory like Independence and Stochastic
+Dominancestillmakesensewhenappliedtoimaginaryprospects,andassumingthisadditional
+structure makes the models easier to work with. In particular, we may use the standard iden-
+tification of linear orderings withconesin the vector space (see, e.g., Aliprantis & Tourky,2007
+Chapter1).
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+34 GOODSELL
+Definition2 (Cone/convexcone/strictcone).A(weak) coneisaset 𝐶⊆𝑉 suchthat𝑥𝜇∈𝐶 when
+𝜇∈𝐶 and𝑥>0 .
+Aconeis convexwhen𝑥𝜇+𝑦𝜈∈𝐶 whenever𝜇,𝜈∈𝐶 and𝑥,𝑦>0 .
+Astrictconeistheset 𝐶⧵(−𝐶) ,where𝐶isa(weak)cone.When 𝐶isacone,wewrite 𝐶+ forthe
+correspondingstrictcone 𝐶⧵(−𝐶) ,𝐶0 forthedifference 𝐶⧵𝐶 +(=𝐶∩(−𝐶)) ,and𝐶− for(−𝐶+).
+Aconecorrespondstoapreordering ≥𝐶 of𝑉,where 𝜇 ≥𝐶 𝜈iff𝜈∈𝜇+𝐶 ,and 𝜇>𝐶 𝜈iff𝜈∈
+𝜇+𝐶 +,and𝜇=𝐶 𝜈iff𝜈∈𝜇+𝐶 0.
+When the cone is convex, the preordering≥𝐶 is linear, in the sense that it satisfies for any
+positivereals𝑥,𝑦,
+𝜇 ≥𝐶 𝜈↔𝑥𝜉+𝑦𝜇 ≥𝐶 𝑥𝜉+𝑦𝜈,
+which is analogous to the Independence principle generalized to settings where probabilities
+needn’tliebetween 0and1.
+Wewillbuildmodelsoftheaffinesymmetryprinciplesbyinterpreting‘ ≿’asthepreordering
+ofprospectsdeterminedbyacone 𝐶≿ on .Theprinciplesgoverning‘ ≿’aresatisfiedwhenever
+thecone𝐶≿ hasthefollowingcorrespondingproperties:
+Totality =𝐶∪𝐶 −.
+Preordering𝟎∈𝐶 (reflexivity),𝐶isconvex(transitivity).
+Independence𝐶isconvex.
+ExpectedUtilityTheoryand 𝐿1 ContinuityIf ∫𝑥d𝜇(𝑥) ≥0converges,then 𝜇∈𝐶 ifandonlyif
+∫𝑥d𝜇(𝑥) ≥0.
+Stochastic DominanceIf𝜇([𝑥,∞)) ≥𝜈([𝑥,∞)) for all𝑥∈𝐑 , then𝜇−𝜈∈𝐶 . If in addition,
+𝜇([𝑥,∞))>𝜈([𝑥,∞)) forsome𝑥∈𝐑 ,then𝜇−𝜈∈𝐶 +.
+Theaffinesymmetryprinciplesaredecomposedintothefollowingthreeconstraints:
+ScaleInvariance When𝑎>0 ,[𝑎𝑈]𝐶⊆𝐶 and[𝑎𝑈]𝐶+⊆𝐶+.
+ReflectionAnti-Invariance[−𝑈]𝐶=−𝐶 .
+ProspectShiftInvariance When𝜇isaprospect(aprobabilitydistribution), [𝑈+𝑏]𝜇−(𝜇+𝛿 𝑏)∈
+𝐶0
+Inthesettingofpreorderingson  ratherthanthespaceofprospects,thereisanimportantdif-
+ferencebetweenscalingandshiftingutility.Considertheimaginaryprospect 𝟎whichgiveszero
+probabilitytoeveryset.Itistobeequallygoodas 𝛿0,whichgives100%probabilitytoutility 0.But
+improvingthepayoffsof 𝟎byaunitreturns 𝟎again,whichisworsethan 𝛿0 so-shifted,whichis
+𝛿1.So,whereaswewillbeconsideringScaleInvarianceasapplyingtoallsignedmeasuresin ,
+theanalogousprincipletoShiftInvarianceisrestrictedtoprospects.
+ItisstraightforwardtocomeupwithconesthatsatisfytheseconstraintsbesidesTotality.One
+exampleistheconethatdeterminesthecontinuouseventualdominanceoftruncatedexpectation
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 35
+ordering⊒ofLauwers( 2016)andGoodsell( 2024),definedthus:
+𝜇⊒𝜈∶=(∀𝜀>0)(∃𝑡>0)(∀𝑠>𝑡)
+(
+∫
+𝑠
+−𝑠
+𝑥d𝜇− ∫
+𝑠
+−𝑠
+𝑥d𝜈>−𝜀
+)
+𝐶⊒={𝜇−𝜈∶𝜇⊒𝜈} is the corresponding cone.𝐶⊒ can also be expressed as the set of signed
+measureswhoseprincipalvalueiseventuallyalwaysgreaterthananynegativenumber:
+𝜇∈𝐶 ⊒=(∀𝜀>0)(∃𝑡>0)(∀𝑠>𝑡)
+(
+∫
+𝑠
+−𝑠
+𝑥d𝜇(𝑥)>−𝜀
+)
+Theorem12. Thecone𝐶⊒={𝜇−𝜈∶𝜇⊒𝜈} satisfiestheconstraintsbesidesTotality.
+Proof. Goodsell(2024). □
+Notethat𝐶⊒ isnottheonlysuchcone,butitisanaturalonewithplausibledecision-theoretic
+significance,andiseasytoworkwith.
+A model of the theory, then, can be generated byextending such a cone satisfying the con-
+straintsbesidesTotality,suchas 𝐶⊒,toaconethatdoeshaveTotalitywhilerespectingtheother
+constraints.
+Definition3 (Extensionofacone).Acone 𝐷issaidto(weakly) extend𝐶if𝐶⊆𝐷 and𝐶+⊆𝐷+;
+if𝐷 ≠𝐶then𝐷issaidto strictlyextend𝐶.
+Someoftheconstraintsareautomaticallyhadbyanyextensionofaconethatsatisfiesthem.
+Thesearetheprincipleswhichspecifyexactlywhichelementsaconemusthavetosatisfythem:
+Simple Expected Utility Theory, Stochastic Dominance, Prospect Shift Invariance, the reflexiv-
+ity part of Preordering (𝟎∈𝐶 ), and Totality (because there are no strict extensions to a cone
+whichisalreadytotal).Theotherprinciples,Independence,ScaleInvariance,andReflectionAnti-
+Invariance,constrainhowtheconemustrelatetoitself,andsowillnotbehadbyallextensions
+ofaconethathasthem.
+OurstrategyforconstructingaconesatisfyingtheconstraintsincludingTotality,then,willbe
+as follows: beginning with a cone like𝐶⊒ that satisfies the constraints besides Totality, we will
+showthatitisalwayspossibletostrictlyextendthisconewhilestillrespectingtheconstraintsof
+Independence,ScaleInvariance,andReflectionAnti-Invariance.ByZorn’slemma,itwillfollow
+thatthereisaninextensibleconesatisfyingtheseprinciples,whichwillsatisfyTotality.
+Theorem 13(Extensibility). Let𝐶 be a non-total convex cone satisfying Scale Invariance and
+ReflectionAnti-Invariance.Thenthereisastrictextensionof 𝐶satisfyingthoseprinciplesaswell.
+Proof. Take𝜇∉𝐶∪𝐶 −.Let𝐶𝜇 bethesmallestscaleinvariantandreflectionanti-invariantconvex
+conecontaining𝜇:
+𝐶𝜇=
+{𝑛∑
+𝑖=1
+sgn(𝑎𝑖)𝑥𝑖[𝑎𝑖𝑈]𝜇∶𝑛 ≥1,𝑥𝑖>0,𝑎𝑖 ≠0
+}
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+36 GOODSELL
+Wefirstshowthat 𝐶𝜇 intersectsatmostoneof 𝐶+,𝐶0,or𝐶−.Supposewithoutlossofgenerality
+thetransformation
+𝑇𝑎
+𝑥 ∶=
+𝑛∑
+𝑖=1
+sgn(𝑎𝑖)𝑥𝑖[𝑎𝑖𝑈]
+maps𝜇 to an element of𝐶+ (otherwise substitute𝐶+ for𝐶0 or𝐶−), and consider an arbitrary
+transformation
+𝑇𝑏
+𝑦 ∶=
+𝑚∑
+𝑖=1
+sgn(𝑏𝑖)𝑦𝑖[𝑏𝑖𝑈].
+𝑇𝑏
+𝑦(𝑇𝑎
+𝑥𝜇)∈𝐶 + by the hypothesis that𝐶 is convex, scale invariant, and reflection anti-invariant.
+Notice that the two operations commute:𝑇𝑎
+𝑥◦𝑇𝑏
+𝑦 =𝑇𝑏
+𝑦◦𝑇𝑎
+𝑥,s o𝑇𝑎
+𝑥(𝑇𝑏
+𝑦𝜇)∈𝐶 + as well. Therefore
+𝑇𝑏
+𝑦𝜇cannotbeineither 𝐶0 or𝐶− sincethosetwosetsarescaleinvariant,reflectionanti-invariant,
+convex,anddisjointfrom 𝐶+.
+Let𝐷be𝐶+(𝐶 𝜇∪{𝟎}) if𝐶𝜇 intersects𝐶+,𝐶+𝐶 𝜇+(−𝐶𝜇)if𝐶𝜇 intersects𝐶0,or𝐶+(−𝐶 𝜇∪
+{𝟎})if𝐶𝜇 intersects𝐶−,otherwiselet 𝐷be𝐶+(𝐶 𝜇∪{𝟎}) (ineffectsupposing 𝜇tobegoodwhen
+wecouldconsistentlysupposeittobeanyofgood,bad,orneutral).Since 𝐷 isthesumofscale
+invariantandreflectionanti-invariantconvexcones, 𝐷isalsoascaleinvariantandreflectionanti-
+invariantconvexcone.
+Itisclearthat 𝐶⊆𝐷 and𝐶 ≠𝐷.Now,supposethat 𝐷=𝐶+(𝐶 𝜇∪{𝟎}),then𝐶𝜇 doesnotinter-
+sect−𝐶,so −𝐶−(𝐶 𝜇∪{𝟎}) doesnotintersect 𝐶+,so 𝐶+⊆𝐷+.Similarlyintheothertwocases.
+So𝐶+⊆𝐷+,so𝐷isastrictextensionof 𝐶,asrequired. □
+Remark 1. The feature of rescaling and negating utility that ensures their exbility is that they
+commutewiththevectorspaceoperations(i.e.,theyarelinear)andalsocommutewitheachother.
+Thistechniquecanthereforebeusedtoestablishtheconsistencyof 𝖣𝖳𝖴withthemonotonicity
+(withrespectto ≿)ofanysuchclassofoperations,solongasthatclassismonotonewithrespect
+to⊒.
+Thisestablishestheconsistencyof 𝖣𝖳𝖴+ Sym.Fortheconsistencyof 𝐿1 Continuity,itsuffices
+tonotethatanyextensionof 𝐶⊒ hasthisproperty,sincewhen 𝜇and𝜈haveafinitedistanceinthe
+𝐿1 metric,𝐄𝜇−𝜈𝑈isfiniteso 𝜇−𝜈 isrankedashavingthatutilityon ⊒.
+ACKNOWLEDGMENTS
+Forhelpfulcommentsanddiscussion,thankstoWengKinSan,JeffRussell,AndrewBacon,John
+Hawthorne,JakeNebel,SnowZhang,KennyEaswaran,andaudiencesatNYUandUTAustin.
+ORCID
+ZacharyGoodsell https://orcid.org/0000-0002-2280-7249
+REFERENCES
+Aliprantis,C.D.,&Tourky,R.(2007). Conesandduality .AmericanMathematicalSociety. https://doi.org/10.1090/
+gsm/084
+Bartha,P.(2016).Makingdowithoutexpectations. Mind,125(499),799–827. https://doi.org/10.1093/mind/fzv152
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 37
+Colyvan, M. (2008). Relative expectation theory.Journal of Philosophy, 105(1), 37–44.https://doi.org/10.5840/
+jphil200810519
+Easwaran,K.(2008).Strongandweakexpectations. Mind,117(467),633–641. https://doi.org/10.1093/mind/fzn053
+Easwaran,K.(2014a).Decisiontheorywithoutrepresentationtheorems. Philosophers’Imprint,14.
+Easwaran, K. (2014b). Principal values and weak expectations.Mind, 123(490), 517–531.https://doi.org/10.1093/
+mind/fzu074
+Folland,G.B.(1999). Realanalysis:Moderntechniquesandtheirapplications (Vol.40).JohnWiley&Sons.
+Goodsell,Z.(2024).Decisiontheoryunbound. Noûs,58(3),669–695. https://doi.org/10.1111/nous.12473
+Hájek,A.(2014).Unexpectedexpectations. Mind,123(490),533–567. https://doi.org/10.1093/mind/fzu076
+Hammond,P.(1998).Objectiveexpectedutility.InS.Barbera,P.Hammond,&C.Seidl(Eds.), Handbookofutility
+theory(Vol.1,pp.145–212).Dordrecht:KluwerAcademicPublishers.
+Lauwers, L. (2016). Why decision theory remains constructively incomplete.Mind, 125(500), 1033–1043.https://
+doi.org/10.1093/mind/fzv174
+Lauwers,L.,&Vallentyne,P.(2017).Atreecanmakeadifference. JournalofPhilosophy ,114(1),33–42. https://doi.
+org/10.5840/jphil201711412
+Meacham,C.J.G.(2019).Differenceminimizingtheory. Ergo:AnOpenAccessJournalofPhilosophy ,6.https://doi.
+org/10.3998/ergo.12405314.0006.035
+Nover,H.,&Hájek,A.(2004).Vexingexpectations. Mind,113(450),237–249. https://doi.org/10.1093/mind/113.450.
+237
+Russell,J.S.(forthcoming).Fixingstochasticdominance. TheBritishJournalforthePhilosophyofScience .https://
+doi.org/10.1086/728716
+Russell, J. S., & Isaacs, Y. (2021). Infinite prospects.Philosophy and Phenomenological Research, 103(1), 178–198.
+https://doi.org/10.1111/phpr.12704
+Savage,L.(1954). Thefoundationsofstatistics .WileyPublicationsinStatistics.
+Seidenfeld, T., Schervish, M., & Kadane, J. (2009). Preference for equivalent random variables: A price for
+unboundedutilities. JournalofMathematicalEconomics ,45,329–340. https://doi.org/10.1016/j.jmateco.2008.12.
+002
+Struik,D.(1953). Lecturesonanalyticandprojectivegeometry .Addison-WesleyPublishingCompany.
+vonNeumann,J.andMorgenstern,O.(1944). Theoryofgamesandeconomicbehavior .PrincetonUniversityPress.
+Howtocitethisarticle: Goodsell,Z.(2026).Symmetriesofvalue. Noûs,60,16–37.
+https://doi.org/10.1111/nous.12549
+ 14680068, 2026, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12549, Wiley Online Library on [07/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

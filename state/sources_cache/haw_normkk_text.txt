@@ -1,0 +1,632 @@
+
+=== PAGE 1 ===
+Vol.:(0123456789)
+Philosophical Studies (2025) 182:3071–3084
+https://doi.org/10.1007/s11098-025-02382-0
+Normality and KK
+John Hawthorne1 
+Accepted: 4 July 2025 / Published online: 7 October 2025 
+© The Author(s) 2025
+Abstract
+In their 2016 ‘Taking a Chance on KK’, Jeremy Goodman and Bernhard Salow offer 
+an interesting epistemic model that validates KK. The springboard for my discus-
+sion will be a mistake in their presentation, one that points to a real problem with 
+the model. My remarks will have a broad interest, since certain of the key examples 
+point to intriguing questions concerning the epistemic contours of testimony and 
+memory. I’ll also raise instructive difficulties for a theoretically important weaken-
+ing of the JTB treatment of knowledge.
+1 Introduction
+In their 2016 ‘Taking a Chance on KK’, Jeremy Goodman and Bernhard Salow offer 
+an interesting epistemic model that validates KK. The springboard for my discus-
+sion will be a mistake in their presentation, one that points to a real problem with 
+the model. My remarks will have a broad interest, since certain of the key examples 
+point to intriguing questions concerning the epistemic contours of testimony and 
+memory. I’ll also raise instructive difficulties for a theoretically important weaken-
+ing of the JTB treatment of knowledge.
+Here is how the 2016 Goodman and Salow model works. (I will keep things some-
+what informal, providing just enough detail for the purposes of this brief essay.) States 
+of the world (hereafter, ‘worlds’) are ordered by two transitive relations, a relation of 
+being at least as normal as and a relation of being way more normal than, with the 
+obvious connections that these labels suggest. (Note that each relation is supposed to 
+be non-contingent.) Justification works like this: Each agent has a body of evidence, 
+and that evidence rules out some worlds. The ones that remain are the ‘evidentially 
+accessible worlds’. One is justified in ruling out all and only those worlds that are 
+either not evidentially accessible or which are way less normal than some evidentially 
+accessible world. Call the worlds that remain the ‘justification accessible worlds’. (In 
+ * John Hawthorne 
+ jhawthor@usc.edu
+1 School of Philosophy, University of Southern California, Mudd Hall, 3709 Trousdale Parkway, 
+Los Angeles, CA 90089, USA
+
+=== PAGE 2 ===
+3072 J. Hawthorne 
+each model, some evidentially accessible worlds are such that no evidentially acces-
+sible world is way more normal than them: so there will always be some evidentially 
+accessible worlds that are also justification accessible). The worlds that, for all one 
+knows, one is in—the ‘epistemically accessible worlds’ are (i) the justification acces-
+sible worlds, (ii) the actual world and (iii) all the worlds in between the actual world 
+and the justification accessible worlds (i.e. all the worlds that are neither justifica-
+tion accessible nor identical to the actual world, but which are at least as normal as 
+the actual world. Of course, in certain cases, no extra worlds are added in by clause 
+(iii).) One knows P just in case P is true at all the epistemically accessible worlds. 
+Given this model, in any case where some proposition P is true at all the epistemi-
+cally accessible worlds, the proposition that one knows P will be true at all the epis-
+temically accessible worlds too. If P is the strongest proposition known at the actual 
+world, then insofar as the actual world is not justification accessible, P will not be the 
+strongest proposition known at certain epistemically accessible worlds. But P will be 
+known at all the epistemically accessible worlds. Meanwhile, if the actual world is 
+one of the justification accessible worlds, the strongest proposition known will be the 
+strongest proposition known at all the epistemically accessible worlds, namely that 
+which is true at all and only the justification accessible worlds. 1 The model involves 
+various idealizations—for example, it doesn’t worry about the distinction between 
+knowing and being in a position to know. But it is nevertheless intended as an illumi-
+nating model of how knowledge works.
+2  Coin Flipping
+Goodman and Salow (2016) apply the KK friendly model to a set-up discussed in 
+Dorr et al. (2014). One thousand fair coins are laid out in sequence, and a coin flip-
+per will flip each in turn until a heads comes up or else all have been flipped. Dorr, 
+Goodman and Hawthorne show that on very natural assumptions (including, nota-
+bly, the anti-sceptical assumption that one knows the set-up and also knows that not 
+all 1000 coins will be flipped), the following principle is false: 
+Fair Coins
+If you know a coin is fair and for all you know it will be flipped, then for all 
+you know it will land tails.
+1 I have been talking in an intensionalist way, assuming that for a set of worlds, there is exactly one 
+proposition true at all and only those worlds. Non-intensionalists can replace talk of ‘strongest propo-
+sition’ with ‘strongest propositions’. These models are not designed to handle the phenomenon which 
+many non-intensionalists will think is rife, namely of knowing certain propositions without knowing cer -
+tain others that are necessarily equivalent. So non-intensionalists would do well to treat these models as 
+working with the idealization that if one knows a proposition, one knows all of its intensional equiva-
+lents. (Note also that even if one is an intensionalist, it may be that, in context, multiple propositions are 
+true at the same states of the world (which are the things that appear in the ranking), since states of the 
+world are more coarse-grained than worlds. Thus the idealization may be pertinent even for intensional-
+ists.).
+
+=== PAGE 3 ===
+3073
+Normality and KK  
+The argument goes like this: Given the anti-sceptical assumption, there is a first 
+coin—Cn + 1—that you know won’t be flipped. (That coin isn’t the first coin in the 
+sequence, which you know will be flipped). The coin before Cn + 1—i.e. Cn—is 
+a coin which for all you know will be flipped: but you know Cn won’t be flipped 
+and land tails, since that would mean Cn + 1 is flipped—something you know won’t 
+happen.
+Dorr et al. (2014) suggest that there is a true principle in the vicinity, namely:
+Weak Fair Coins: If a coin is fair and will be flipped, then for all you know it 
+will land tails.2
+It is easy enough to write down a toy model of knowledge with “margins” that vali-
+dates Weak Fair Coins but not Fair Coins: Suppose for example, that if the number 
+of tails flipped is x, the strongest thing you know is that there won’t be x plus 20 tails 
+in a row. Then anti-scepticism will be true in all but those very unusual “sceptical 
+scenarios” where there are at least 980 tails flipped in a row. And in the non-scep-
+tical scenarios, there will, in this model, be counterexamples to Fair Coins but not 
+Weak Fair Coins.
+But as Goodman and Salow (2016) point out (following Dorr et  al., 2014, 
+Sect. 7), Weak Fair Coins is not a happy fallback for the KK lover. For if Weak Fair 
+Coins is true, it seems like the sort of thing that can be known. But assuming clo-
+sure for knowledge, it is problematic to assume KK and also that Weak Fair Coins 
+is known. Suppose one knows 100 won’t be flipped. By closure (and knowledge of 
+the set up) one knows that coin 99 won’t both be flipped and come up tails. By KK 
+one knows that one knows this. By Weak Fair coins and closure one then knows that 
+coin 99 won’t both be flipped at all, since Weak Fair Coins says that if 99 is flipped, 
+one doesn’t know that it won’t be flipped and come up tails. The reasoning can be 
+repeated to show, for each coin less than 100, one knows that it won’t be flipped, in 
+violation of factivity for knowledge. They thus have to allow for situations in which, 
+say, exactly 99 coins are flipped and one knows in advance of the coin flipper doing 
+their thing that the coin flipper will not flip 100 coins. Moreoever, if one has such 
+knowledge and does not pay attention to the coin flipper—perhaps one goes to the 
+pub instead – it seems natural to think that one retains that knowledge. (See Good-
+man and Salow’s discussion of “Settledness”). Assuming this, we also get a counter-
+example to.
+Very Weak Fair Coins
+If a coin is about to be flipped then for all one knows it will land tails.
+Goodman and Salow opt for an even weaker fallback that they hope that KK lov-
+ers can learn to live with:
+2 For this and the various possible successor principles that follow, there are also prima facie compel-
+ling variants that involve weakly biased fair coins. For example, it is also natural to think that if a coin 
+is slightly biased in favor of heads and will be tossed, it is still true that for all I know it will land tails. I 
+shall not be relying on these variant principles, but those readers interested in trying to fix the problems 
+raised here within the KK normality framework should not forget the intuitive force of those other prin-
+ciples.
+
+=== PAGE 4 ===
+3074 J. Hawthorne 
+Extremely Weak Fair Coins
+If a coin is fair and you know it is about to be flipped, then for all you know it 
+will land tails.3
+They then offer a natural way of applying the KK normality model to the case 
+of the coin flipper. Suppose the normality ordering works so that for each value of 
+n between 1 and 999 inclusive, a world with exactly n + 1 tails is less normal than 
+a world with n tails, where worlds that differ by one in the number of tails are such 
+that neither is way more normal than the other. Suppose further that a world w1 is 
+way more normal than another w2 if there is never in w1 a substantial chance (for 
+some suitable interpretation of ‘substantial’) of the sequence being as long as in w2.
+Consider two people, Jack and Jill, in a world w where there are 30 tails in a 
+row followed by coin 31 being flipped and coming up heads. Suppose further that 
+Jack and Jill know the coin flipping protocol. The justification accessible worlds will 
+involve quite a few less heads than 30 (for natural choices of ‘substantial’). Before 
+things get going, Jack and Jill’s epistemically accessible worlds consist of the jus-
+tification accessible worlds, world w, and all the worlds in between. Since a 31 tail 
+world is less normal than w, it will not be epistemically accessible and so, while 
+coin 31 is flipped in w, Jack and Jill know at this point—according to this model—
+that coin 31 won’t be both flipped and come up tails (a counterexample to Weak 
+Fair Coins). Jack watches the flipper, Jill goes to the pub. By the time the flipper has 
+flipped 30 tails, Jill has received no new relevant evidence and still knows that she 
+is not in a world where coin 31 is flipped and comes up tails. While Jill is a counter-
+example to Very Weak Fair Coins, she is not a counterexample to Extremely Weak 
+Fair coins, since she doesn’t know coin 31 is about to be flipped. Consider Jack, 
+meanwhile, who watches the coins getting flipped, getting more and more evidence 
+about outcomes. By the time he has seen 30 tails come up, the top ranked eviden-
+tially accessible world will be one where exactly 30 tails come up. But since that 
+world is not way more normal than a world where exactly 31 tails come up, the 31 
+tails world will be justification accessible. And since the epistemically accessible 
+worlds have to include the justification accessible ones, Jack will no longer know 
+that there will not be 31 tails in a row: Jack’s initial knowledge is defeated and so 
+Jack is not a counterexample to Extremely Weak Fair Coins either. That said, Good-
+man and Salow’s models do not succeed in offering anything like a general vindica-
+tion of Extremely Weak Fair Coins. Indeed it is not hard to model counterexamples 
+to it. Consider the following setup:
+Jack picks a coin from a bucket. A coin flipper will flip that coin and carry on 
+flipping it until heads comes up or until the coin has been flipped 1000 times. The 
+coins in the bucket are of two sorts (with no overt tell tale signs as to which sort a 
+coin is). Half the coins are fair coins. Half the coins are radio-controlled in such a 
+way that they will come up tails for the first 30 flips and heads after that. Jack in 
+3 Here, as with the other principles, we have to control for unusual guises. Assume I introduce the name 
+‘Jones’ for the next fair coin in the cosmos that will be flipped tails that is not simultaneous with any 
+other tails flip. Suppose Jones is about to be flipped. I plausibly know that Jones will come up tails. I will 
+not fuss about strange guises in the main text.
+
+=== PAGE 5 ===
+3075
+Normality and KK  
+fact picks a fair coin. The world Jack is in is one where the flipper flips 30 tails fol-
+lowed by a heads. Jack knows about the protocol and about what is in the bucket. 
+Jack watches the flipper and sees 30 tails come up. How is it natural to model Jack’s 
+knowledge using the KK-normality model? Well relative to Jack’s evidence about 
+the set-up it would be pretty weird to pick a fair coin that comes up tails 30 times 
+but not weird at all to pick a radio-controlled coin that comes up tails 30 times (since 
+Jack’s evidence includes the information that this is what all the radio-controlled 
+coins will do). So it is very natural to treat a world where a radio controlled coin 
+comes up tails 30 times as way more normal than any world where a fair coin comes 
+up tails 30 times or more. This gets the justification accessible worlds just right—it 
+is intuitive to think that Jack is at this point justified in believing that he is looking at 
+a radio-controlled coin. In this setting the world where a fair coin comes up tails 31 
+times is not in the justification set. Moreover, it is (as in the original setup) plausibly 
+less normal than the world where the coin comes up 30 times followed by heads. So, 
+in the model, Jack gets to know that 31 will come up heads and also knows that 31 
+will be flipped.4
+The KK model does not vindicate Extremely Weak Fair Coins. I have just con-
+structed a natural counterexample to it using the modelling tool. 5 Here is the prob-
+lem. Goodman and Salow (2016, p. 190) claim that Extremely Weak Fair coins is an 
+“instance of the more general principle”:
+Known Unlikelihood
+If you know there is a substantial chance that P, then for all you know P.
+But it isn’t. 6 All we can get out of Known Unlikelihood (on a natural reading of 
+‘substantial chance’) is.
+Fantastically Weak Fair coins
+For any coin, if you know it is a fair coin and about to be flipped, then for all 
+you know it will land tails.
+Fantastically Weak Fair Coins is naturally computed as an instance of Known 
+Unlikelihood, Extremely Weak Fair Coins is not. And that is because ‘fair’ unam-
+biguously takes wide scope over ‘know’ in Extremely Weak Fair Coins. Now the 
+interesting thing is not that Goodman and Salow were perhaps a bit too casual in 
+4 Here is a way to bring out how weird this is (though I think it is in any case very strange on its face): 
+Consider a case where one starts out justified in believing a coin is fair. Then, after seeing 30 tails, one 
+will not know whether the next coin is heads. Suppose, then, that one receives misleading evidence that 
+made one justified in believing that the coin is radio controlled in the way described above. That would 
+allow one to acquire inductive knowledge that the next coin will land heads! It is bizarre to think mis-
+leading evidence would facilitate inductive knowledge in this way.
+5 Scholars of Goodman and Salow will notice a structural affinity between this example and the stopped 
+clock example in footnote 23 of Goodman and Salow (2023, p. 23), though there is no sign there that 
+they realized that Extremely Weak Fair Coins is in trouble on their KK model.
+6 Similar remarks apply to their (2016, p. 195) claims about some structural assumptions entailing 
+Extremely Weak Fair Coins.
+
+=== PAGE 6 ===
+3076 J. Hawthorne 
+their choice of which principles to write down. (I am frequently far more casual 
+about such things than they are.) The question is whether we can learn to live with 
+the falsity of Extremely Weak Fair Coins. Just look at it! Can we learn to live with 
+a special kind of mundane fair-coin-clairvoyance where there is a coin that is in fact 
+fair, that some ordinary human knows is about to be flipped, and where that person 
+knows in advance that it won’t be flipped and land tails? I myself find that pretty 
+hard to live with.
+Now Goodman and Salow’s model is just a model. While (assuming closure) 
+there is a watertight argument that a KK lover can’t have Weak Fair Coins, and there 
+is some natural stability of knowledge assumption that suggests they can’t have 
+Very Weak Fair Coins either, I don’t have a similarly watertight argument that KK 
+is incompatible with Extremely Weak Fair Coins. But what I can tell you is that a 
+proponent of KK will not find a natural path to Extremely Weak Fair Coins from 
+Goodman and Salow’s model.
+3  Vandalism
+There are various ways to try to tinker. For those that want to do so, it might be 
+helpful to look at a case which is a little less “cheesy” than one involving radio-
+controlled coins but where similar themes are at work. Suppose there is an elec-
+tion in Z-land involving two parties, X and Y. A certain locale is pretty much split 
+between X and Y supporters. A political vandal concocts a plan along the follow -
+ing lines: “I will go along the houses along the left side of the street and the first 
+time I see X-friendly paraphernalia, I will egg the house (i.e. throw eggs at it) and 
+then make my escape.” Jack and Jill know the set up. They know that there are 300 
+houses on the left hand side of the street (it is a very long street). (I’ll be using 
+the numbering system ‘1’ to ‘300’, where ‘1’ names the first house that the vandal 
+encounters.) The anti-sceptical assumption that they know that a house on the street 
+will get egged is very natural here. Even those who have sceptical leanings about 
+coin tosses will likely be pretty happy—unless their scepticism is quite radical—to 
+concede that Jack and Jill can know about the set up and also know that the vandal 
+will be egging exactly one house on the left hand side of the street (and then making 
+their escape).7 Suppose also that Jack and Jack have no insider knowledge about the 
+occupants of particular homes on the street, only that the locale is keenly divided 
+between X-supporters and Y-supporters In fact house 31 gets egged. The natural 
+way to model things has it that for number n = 2 or greater, worlds get less normal 
+7 Martin Smith (2018) is sceptical about such knowledge in the coin flipping case. But I don’t think he 
+would be sceptical here: Pertinent to his favored ideology, it is worth noting that if the vandal did not 
+see a single house with X-leaning paraphanalia on the left side of the street that would arguably demand 
+a special explanation. For what its worth I also think that versions of the radio-controlled case are also 
+somewhat therapeutic. Isn’t it very natural, in worlds where one picks a radio-controlled coin, that one 
+knows that it is radio-controlled by the time 30 tails have come up (and thus to treat the case in the main 
+text above as a kind of “bad case”/”sceptical scenario”)? Cf. Goodman and Salow (2023, p. 132), where 
+they pursue a similar theme.
+
+=== PAGE 7 ===
+3077
+Normality and KK  
+as n gets larger, and where such worlds are in turn more normal than the situation 
+in which there is no egged house at all. (It would be super weird for the vandal to 
+find no house with X-friendly paraphernalia. It would be weirder to have to go 32 
+houses to find one than to have to go 31 houses to find one. And so on.) The natural 
+extrapolation gets us a model according to which, at the outset, Jack and Jill know 
+that one of the first 31 houses are going to get egged. And here is a natural analogue 
+to Extremely Weak Fair coins:
+Extremely Weak Vandalism
+For each house n, if you have no special insider knowledge about the occu-
+pants of house n, then if you know that the vandal is about to investigate house 
+n, then for all you know, house n will be egged.
+I hope that the reader finds the expression ‘special insider knowledge’ to be intui-
+tive enough to be workable. One point to note: it is natural to understand ‘special 
+insider knowledge’ in such a way that if Jack and Jill have no special insider knowl-
+edge, they are not going to get special insider knowledge just by talking to each 
+other.
+Let us continue the story. Jill goes to the pub, and retains her knowledge that one 
+of the first 31 houses are going to get egged. Jack watches the vandal. At a certain 
+point Jack knows the first 30 houses have not been egged. Jack’s knowledge that one 
+of the first 31 houses will get egged has been defeated, but not Jill’s. Jill then calls 
+Jack and tells Jack ‘One of the first 31 houses will get egged’.
+Here is a version of the story that does not make trouble for the model but which 
+is interesting in its own right. In this version, Jack knows that Jill’s basis for the 
+speech is inductive and that she has no special insider knowledge. Here, since a 32 
+egging world is accessible to Jack, though not to Jill, then assuming the relevant 
+model, Jack would be speaking truly if he said “Maybe Jill knows the thing she said, 
+maybe she is speaking falsely. If the next house is egged then, as a keen student of 
+Goodman and Salow, I reckon that Jill will have spoken from knowledge. But even 
+with her having spoken, and even if I believe her, the world where 31 is not egged 
+and 32 is egged is justification accessible and so I am not in a position to know that 
+what Jill said is true.” So in this version of the story, the model gives us an interest-
+ing transmission failure.8 Even if Jack trusts Jill and Jill knows, Jack does not get to 
+know. And that’s not a bad result for Goodman and Salow—otherwise there would 
+be a really easy counterexample to Extremely Weak Vandalism.
+8 If one wants to find something in the vicinity of the attractive idea that trusting a knowledgeable asser -
+tion transmits knowledge, and also Goodman and Salow’s foundational distinction between evidential 
+and inductive knowledge, one might try the following fallback package: (i) A norm of assertion that 
+says that one may assert only if one knows p non-inductively and (ii) Permissible assertion transmits 
+knowledge. (i) has some intuitive motivation—after all, as noted below, assertion on the basis of induc-
+tive knowledge is often rather strange. (This contrasts with a variant package that is more liberal about 
+knowledge but which guarantees transmission only when the knowledge is evidential.) For my own part, 
+I am not so comfortable with a foundational evidential/inductive distinction that does so much episte-
+mological heavy lifting. (I realize that others will in any case not find the transmission idea prima facie 
+attractive, taken instead with a thought along the lines of: ‘Defeaters available to the recipient can easily 
+block the transmission of knowledge in such a way that trust will not allow the recipient’s belief to attain 
+that epistemic status’. The model’s prediction fits nicely with this thought.).
+
+=== PAGE 8 ===
+3078 J. Hawthorne 
+But here is a version of the story that is far more problematic. Suppose that Jack 
+knows Jill is being honest, saying what she believes, but does not know whether Jill 
+is speaking on the basis of induction or insider knowledge. Further Jack knows, inter 
+alia, that if she is not merely relying on induction she is speaking the truth. And sup-
+pose it would, relative to Jack’s evidence, be pretty weird for Jill to be making that 
+speech on inductive grounds. (Indeed this is a very natural assumption: It IS pretty 
+weird for people to make speeches like that on inductive grounds.) And suppose as 
+before that Jack has seen 30 houses not be egged. Here it is natural to think Jack is 
+justified in thinking Jill is speaking from insider information. So the world of the 
+story does not belong to the zone of justification accessible worlds. And extrapolating 
+from the above discussion, it is natural to think that the world where the vandal eggs 
+31 and Jill speaks on an inductive basis is more normal than the world where the van-
+dal eggs 32 and Jill speaks on that basis. So all the worlds in the justification zone are 
+worlds where one of the first 31 get egged, and the world Jack is in is a world where 
+one of the first 31 get egged. And all the worlds where Jill is speaking from induction 
+and it is not the case where one of the first 31 get egged are worlds less normal than 
+the world of the story, since the later the egging the less normal the world is. So all 
+the epistemically accessible worlds are ones where house 31 is egged.
+In this version of the story, knowledge is transmitted! Without any special insider 
+information (after all Jill was just using inductive resources) Jack gets to know 
+house 31 will get egged and also knows the vandal is about to investigate 31. This is 
+a troubling result for the model. As before there is a variant principle that isn’t coun-
+terexampled, in this case one that makes ‘has no insider knowledge’ narrow scope. 
+Since for all Jack knows he has insider knowledge from Jill, the strengthened prin-
+ciple survives. But Extremely Weak Vandalism seems compelling and it fails on the 
+KK model. Note that we can also get a structurally similar (though slightly more far 
+fetched) testimonial counterexample to Extremely Weak Fair Coins if we can fill out 
+the story in such a way that Jack is justified in thinking that Jill has special clairvoy-
+ant powers. (I’ll leave it as an exercise for the reader to fill in the details.)9
+4  Testimony and Memory
+Quite aside from the trouble they make for Goodman and Salow’s KK model, the 
+testimony cases above raise interesting questions about testimony. In these cases, 
+Jack is justified in believing that the testimonial basis is something other than 
+it is. How should we theorize about this kind of case? Note that one particularly 
+9 In connection to Goodman and Salow’s more general framework, here is another interesting issue that 
+these cases raise. They make a basic distinction between evidential knowledge and inductive knowledge 
+and allow that one can get evidential knowledge by testimony (see 2023, 138). What of cases where one 
+gets knowledge by testimony but doesn’t know whether the testifier’s knowledge is evidential or induc-
+tive? Does one get evidential knowledge in both cases (so that in the latter case one can perhaps later 
+return the favour and upgrade the knowledge of the testifier to evidential knowledge)? Or in neither case? 
+Or just in the evidential case, so that one is not in a position to know that one’s evidential knowledge is in 
+fact evidential? (A similar issue arises for preservative memory.).
+
+=== PAGE 9 ===
+3079
+Normality and KK  
+interesting version of such a case (illustrated by examples above) is one where some-
+one’s knowledge is based on a certain method, is then defeated, and then one gets 
+knowledgeable testimony from someone who, unbenownst to the recipient of the 
+testimony, is using the same (though undefeated) method. Here is another example:
+Alleged Misprint
+Jones reads in the Orange County Gazette that the New England Patriots won 
+against the Denver Broncos and comes to know this. A normally reliable 
+source tells Jones that the reported score in the Gazette has a misprint. Jones 
+becomes unsure whether the Patriots won or not. In fact there is no misprint in 
+the Gazette - the normally reliable source is confused. Jones travels to Boston 
+and asks someone whether the Patriots won. She is told they did. Unbenowst 
+to Jones, the informant (who happens to have just travelled from California) is 
+relying on the Gazette. The testifier knows that the Patriots won, thanks to the 
+Gazette. Jones trusts the informant.
+How should we theorize about such cases? (I can report that many informants had 
+no clear judgment.) There are a range of potentially relevant principles that I suspect 
+some philosophers would be initially tempted by, but which, on further reflection, 
+are quite dodgy. For example here is one:
+Attempt One
+ If a testifier who knows P tells you that P, and you trust the testifier, but your basis 
+for trust is that you justifiedly think that the testifier is using one method, when in 
+fact they are using another, then you don’t get to know that P by trusting the testifier.
+This doesn’t seem quite right. Suppose I trust Jones about the Manchester City 
+score, justifiedly believing that Jones has gotten the score from a newspaper. In fact 
+Jones came to know the score by attending the game. I really don’t think it is plausi-
+ble that knowledge fails to be transmitted.
+Attempt Two
+ If a testifer who knows P tells you that P, and you trust the testifier, but you would 
+not trust the testifier if you knew which method the testifer was using, then you don’t 
+get to know that P.
+I am not convinced. Suppose that I believe that no one can know that it is Janet on 
+the top of the hill from their vantage point by investigating the matter with the naked 
+eye. In fact Smith has extremely acute eyesight and came to know that it is Janet 
+just by looking. Smith tells me that Janet is on top of the hill. I justifiedly think that 
+Smith is relying on a previous conversation with Janet and believe Smith. Isn’t it at 
+least somewhat natural to think I get to know?
+Similarly suppose I think Johnson is bad at math. I am also bad at math: I 
+wouldn’t understand a proof even if someone tried to explain it to me. Johnson 
+tells me that 22/7 is greater than pi and I justifiedly think that Johnson has learned 
+this from some learned mathematician. In fact Johnson excels at math and believes 
+this on the basis of mathematical reasoning. Here it is quite natural to think I get to 
+
+=== PAGE 10 ===
+3080 J. Hawthorne 
+know, even though I would not have believed Johnson had they told me they were 
+relying on their own mathematical reasoning, nor even if they had tried to show me 
+the proof.
+Now of course, in all these cases, if I know about the method the testifier is using 
+under the guise ‘came to the correct answer using eyesight/mathematics’ etc.I would 
+still trust the testifier. But if we allow guises like that, then the principle will in any 
+case not be useful any more.10
+Notice that similar issues to the ones I have been raising also arise for memory. 
+One can forget the source of information retained in memory. In some cases you will 
+have false justified beliefs about the source of memory beliefs. And we can construct 
+versions of those cases which mirror various testimonial cases above. For example:
+Forgotten Source11
+You learn from Jones that P and come to know P. P gets stored in preservative 
+memory but you forget where you got P from. You come to believe that Jones 
+is a bad epistemic source on the basis of misleading information. If you knew 
+that your memory belief was gotten from Jones, then you would disown it. But 
+you don’t know that. Is the memory belief knowledge?
+The parallelism is suggestive and may lead one to search for more abstract princi-
+ples to handle both kinds of cases. Readers of the earlier sections might well think 
+that one way to tinker with Goodman and Salow’s model is to institute something 
+along the lines of:
+Abstract Fix
+One cannot come to know P if one’s path to believing P essentially relies on a 
+false belief.
+10 An anonymous referee suggested a different principle: If a testifier who knows P tells you that P, and 
+you trust the testifier, but the testifier’s knowledge would be defeated if they knew what you knew, then 
+you don’t get to know that P. (I assume the idea is not that we look at what would have happened if the 
+speaker had known exactly what you know, but what would have happened if the speaker had known 
+at least what you know. Presumably the closest accessible world(s) where they know at least what you 
+know are ones where they also retain much of the knowledge that they have but you lack. The ‘exactly’ 
+version is obviously very unpromising.) This also has curious results. For example: Suppose the testifier 
+knows the Patriots had the same score in their regular season home game against the Broncos as the pre-
+vious year. But that does not help them to know whether the Patriots won this year or not, as they do not 
+know the score the previous year. Instead, they learn that the Patriots beat the Broncos this time round 
+from the Gazette. You know independently that the Patriots beat the Broncos at home the previous year. 
+But you don’t prior to meeting the testifier know whether the result this time around is the same and so 
+come to believe the Patriots won this time round from the testifier. The principle suggests that while in 
+the natural filling out of the original Alleged Misprint case, you do not get to know, this variant is dif-
+ferent (since if the testifier knew what you knew, they would be able to combine your knowledge of last 
+years result with their knowledge that last year matched this year in order to stave off defeat.) This seems 
+to divide cases in an unintuitive way. (The principle is also a bit tricky to apply since it is up for grabs 
+whether you know such things as the proposition you would express by “If that person were to say the 
+Patriots won then the Patriots would have won” and so the question “what you know” is dialectically 
+tendentious.).
+11 Thanks to Jeremy Goodman for getting me to think about cases like this.
+
+=== PAGE 11 ===
+3081
+Normality and KK  
+Such tinkering would initiate another round of Gettierology. Notice that if you share 
+my (albeit tentative) judgment about the cases above, then a variant of the principle 
+that just used ‘relied’ is false. My trust in each of Jones, Smith and Johnson relied on 
+a false belief about their method. So the principle as stated will have to lean heavily 
+on the language of ‘essential reliance’. Here is Williamson’s (2007, p. 145) gloss on 
+‘essential premise’: “The principle applies only to essential premises, those that figure 
+in all the inferences on which the relevant belief in the conclusion is based”.
+Adapting this to the matter of reliance, the contents of the false justified beliefs 
+do seem to be essential:there is no other basis for the testimonially acquired belief 
+that does not involve the relevant belief about the testifier. So construed, the Abstract 
+Fix is no good. (For further discussion of variant notions of ‘essential premise’, see 
+Hawthorne & Rabinowitz, 2017). Moreover, as we shall see in the next section, 
+there are variants of the kind of problem that I have raised that do not involve reli-
+ance on a false belief at all and so the question of essential reliance on a false belief 
+is neither here nor there.
+For what it’s worth, I’m rather dubious that the cluster of issues raised here about 
+testimony, memory and defeat will be adequately handled by a principle or two that 
+is stress tested by considering a few cases in imagination, especially when so many 
+of the relevant cases seem to elicit no very clear judgment. If there is a path forward, 
+it is more likely to consist in epistemic modelling: we get abductive evidence for 
+the worth of a model by seeing that it does very well on matters we are pretty clear 
+about, and then see what it has to offer about the more murky issues about testimony 
+and memory that I have raised. I hope to have convinced the reader that in this con-
+nection, we must improve on Goodman and Salow’s KK model. It is of course a 
+further question—one for another time—whether the more general resources of nor-
+mality frameworks might provide the necessary illumination.
+5  Weak JTB
+Things are a little worse for the KK normality models than I have been letting on 
+so far. The KK model that Goodman and Salow endorse goes in for the following 
+principle:
+Weak JTB
+If P is the strongest proposition one justifiably believes and P is true, then one 
+knows P
+(I call it ‘Weak JTB’ because it is strictly logically weaker than ordinary JTB.) 
+Goodman and Salow would certainly not endorse JTB. Take a case where actuality 
+is not justification accessible and where there are worlds in between the actual world 
+and the worlds that are justification accessible. Then one can get a counterexam-
+ple to JTB by taking the proposition that is true at all and only the worlds that are 
+
+=== PAGE 12 ===
+3082 J. Hawthorne 
+either (i) actuality or (ii) justification accessible. But there are no counterexamples 
+to Weak JTB in their KK model.12
+Now the examples that I have been dealing with so far involve cases of justi-
+fied false belief—in one case a false justified belief that the coin is radio-controlled, 
+in the other that a certain person is speaking from insider knowledge. They thus 
+involve cases where the world of the story is outside the domain of justification-
+accessible worlds. One might hope that one can control for the problems I have been 
+raising by keeping Weak JTB but tweaking the clauses for epistemic accessibility in 
+cases where actuality lies outside the zone of justification accessible worlds. 13 But 
+another kind of case raises a deeper problem.
+Suppose that after seeing 10 tails, the strongest thing one is justified in believing 
+of a coin that is in fact fair and about to come up heads is the following disjunc-
+tion: either that coin is radio-controlled to come up heads next or else it is fair and 
+will come up heads next. (Here we assume background knowledge that the radio-
+controlled coins are set to come up heads on the eleventh flip). In the Goodman and 
+Salow normality models this is easy to model: the radio-controlled coin hypothesis 
+ranks top, the fair and heads at 11 world(s) are less normal but not way less normal 
+than top, and the worlds where head occurs after more than 11 flips are way less 
+normal than top. (Set things up so that as more and more tails come up, one is closer 
+and closer to being justified in an outright belief that the coin is radio-controlled. 
+12 Even leaving aside the details of normality models, there is a natural argument for Weak JTB from 
+KK. First, it is natural for KK defender to endorse the following principle:
+ JK: Jp then JKp.
+ (Indeed, assuming KK is intersubstittable with K under ‘Not K Not’—a natural corollary of KK, this is 
+compulsory on one standard gloss on ‘J’, namely ‘Not K Not Kp’). Second, what it is for something to 
+be the strongest thing that one is justified in believing is that it entails everything else one is justified in 
+believing. If p is the strongest thing one is justified in believing then (by JK) one is justified in believing 
+Kp. But then, if p is going to entail everything one is justified in believing, it had better entail Kp.
+13 As proof of concept here is a KK model that evades the problem cases raised so far. Call the justifica-
+tion-accessible worlds the ‘J1-worlds’. Here is a procedure—if the actual world if one of the J1 worlds, 
+then the epistemically accessible worlds are the J1 worlds. If it is not one of the J1 worlds, then the 
+epistemically accessible worlds will be the J2 worlds—where the J2 worlds are those that would be jus-
+tification accessible if the negation of the disjunction of the J1 worlds was part of one’s evidence. If the 
+actual world is neither a J1 or J2 world, then add in the J3 worlds…. Repeat the procedure until the actual 
+world is included. Suppose for example that if the coin comes up heads in any of the first ten tosses, the 
+strongest thing one knows is that it it will come up in the first ten tosses. Thus the J1 worlds include all 
+and only the outcomes where heads comes up somewhere between coins one and ten. Suppose also that 
+it took till coin 11 for heads to come up and one watched the coin flipper toss tails ten times, then at 
+that point, the strongest thing one would be justified in believing about the coin outcome was that heads 
+would come up between 11 and 20. Then, on this model, if it comes up heads at 11, the strongest thing 
+one knows in advance of any coin flipping is that one of the first twenty will come up heads. Here is how 
+the problems so far are avoided. Take the case where you are justified in believing that the coin is radio-
+controlled. Then one will have to include J2 worlds in the justification zone—the worlds that are justifi-
+cation accessible relative to an evidential situation where the fact that is is not radio controlled is part of 
+one’s evidence. (We can also handle cases where the J1 zone contains only worlds where Jack controls 
+the radio controlled coin, the J2 zone where Jill controls the radio controlled coin and J3 worlds where 
+the coin is fair.) Facts about what one is a position to know will have a step like structure as one increases 
+the number of coins. Some may find this all rather inelegant. But we at least avoid the counterexamples 
+of the main text.
+
+=== PAGE 13 ===
+3083
+Normality and KK  
+The problematic situation is the one where the number of tails witnessed is very 
+close to one where one is fully justified in the radio-controlled hypothesis but where 
+the hypothesis of fair and heads next is the only fair hypothesis standing, the others 
+being way less normal than the radio-controlled hypothesis. Note that having worlds 
+with a fair coin and more than 11 heads rank lower for normality than the world 
+with a fair coin and 11 heads is completely in keeping with the kind of anti-sceptical 
+ranking used in the original coins case.)
+Now we need just appeal to the Weak JTB part of the theory to make trouble for 
+Extremely Weak Fair Coins: The strongest thing one is justified in believing of a 
+coin that is in fact fair and about to come up heads is that either the coin is radio-
+controlled to come up heads next or else is fair and will come up heads next. By 
+Weak JTB one knows that it is either radio-controlled and about to come up heads or 
+else fair and about to come up heads. By closure one knows that it is about to come 
+up heads. So we have a counterexample to Extremely Weak Fair Coins.
+All this argument needs is (i) Single Premise Closure (ii) Weak JTB and (iii) situ-
+ations can arise where a fair coin is about to be tossed heads and the strongest thing 
+one is justified in believing is something that entails that it is either non-fair and will 
+come up heads next or else is fair and will come up heads next. Since Weak JTB and 
+Single Premise Closure are pretty much integral to the style of models Goodman 
+and Salow are using, and since it is very hard to see how one might block possible 
+cases of justification in the problematic disjunction, the problems for KK versions 
+of their models look rather deep indeed. Along the way we also see why it is hope-
+less to think that they can keep things under control by requiring that one’s belief 
+not essentially rely on justified belief in a falsehood—after all, the strongest thing 
+one is justified in believing in these variant cases is true and so one is not relying 
+on a falsehood, let alone essentially relying on one. Along the way we also see that, 
+normality-based or not, a KK model must either deny Weak JTB, deny Single Prem-
+ise Closure, or else deny that it can happen that the strongest thing one is justified in 
+believing entails a relevantly problematic disjunction.14
+14 A theme that is not present in Goodman and Salow (2016) but explored in Goodman and Salow 
+(2021) and presented as a theoretical option in Goodman and Salow (2023) involves a contextualism 
+where a contextually relevant question supplies a space of complete answers and the relative normality 
+technology is applied not to states of the world but to complete answers. (In this setting, as they explain, 
+probability can be used as a guide to normality.) It is beyond the scope of this short discussion to explore 
+the question sensitive approach. One initial thing to notice though is that if the polar question ‘Will it 
+land heads or not?’ is an acceptable question, then in a case with a mixture of radio-controlled and fair 
+coins in a bucket, while ‘I know it is radio-controlled’ is not the sort of thing that can express knowl-
+edge at that context (since it is not entailed by either cell), it will not be hard to set things up (using the 
+resources of the main text) so that the sentence ‘I know it will land heads’ will express knowledge. (Simi-
+lar remarks apply to the question-sensitive model in Hong 2023). Note also that things can be set up so 
+that the possibility of fair and heads plays a key role in taking the probability of heads over the threshold 
+and so, as discussed above, the case is not a case of ‘relying on a falsehood’. Thus, as far as Extremely 
+Weak Fair Coins goes, a lot turns on the issue of when various questions, including polar questions, are 
+admissible. (Goodman and Salow 2021, fn. 18, are open to the thought that context never supplies a 
+polar question as the relevant one.).
+
+=== PAGE 14 ===
+3084 J. Hawthorne 
+Acknowledgements I am very grateful to Sam Carter, Cian Dorr, Jeremy Goodman and an anonymous 
+referee for helpful comments and discussion.
+Funding Open access funding provided by SCELC, Statewide California Electronic Library Consortium. 
+There was no funding used to assist in the preparation of this manuscript.
+Declaration 
+Conflict of interest There are no relevant conflicts of interest
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, 
+which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative 
+Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your intended 
+use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permis-
+sion directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+References
+Dorr, C., Goodman, J., & Hawthorne, J. (2014). Knowing against the odds. Philosophical Studies. https:// 
+doi. org/ 10. 1007/ s11098- 013- 0212-9
+Goodman, J., & Salow, B. (2016). Taking a chance on KK. Philosophical Studies, 175, 183–196.
+Goodman. J, & Salow, B. (2021). Knowledge from Probability. In Halpern and Perea, (eds.) Theoretical 
+aspects of rationality and knowledge (TARK XVIII), pp 171–186.
+Goodman, J., & Salow, B. (2023). Epistemology normalized. The Philosophical Review, 132(1), 89–145.
+Hawthorne, J., & Rabinowitz, D. (2017). Knowledge and false belief. In Borges (ed.) New essays on the 
+gettier problem. Oxford University Press, 325–344.
+Hong, F. (2023). Prefaces, knowledge and questions. Ergo an Open Access Journal of Philosophy, 10, 
+11–17.
+Smith, M. (2018). Coin trials. Canadian Journal of Philosophy, 48(5), 726–741.
+Williamson, T. (2007). The philosophy of philosophy. Blackwell.
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps 
+and institutional affiliations.

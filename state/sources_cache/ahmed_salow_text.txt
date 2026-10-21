@@ -1,0 +1,1020 @@
+
+=== PAGE 1 ===
+ 1 
+Don’t Look Now 
+ 
+ 
+Arif Ahmed and Bernhard Salow 
+ 
+Draft – Please Cite Published Version 
+ 
+ 
+Abstract 
+ 
+Good’s Theorem is the apparent platitude that it is always rational to ‘look before you leap’: 
+to gather (reliable) information before making a decision when doing so is free. We argue  
+that Good’s Theorem is not platitudinous and may be false. And we argue that the correct 
+advice is rather to ‘make your act depend on the answer to a question’. Looking before you 
+leap is rational when, but only when, it is a way to do this. 
+ 
+1. Introduction 
+2. Good’s Theorem 
+3. Inexact Observation 
+4. Independence 
+5. Conditionality 
+5.1 The principle 
+5.2 Revisiting the counterexamples 
+6. Conclusion 
+ 
+1 Introduction 
+ 
+Good’s Theorem says: look before you leap if looking is free.  
+‘Free’ excludes all  costs: of money, of time, of  opportunity. Good doesn’t say  that 
+you should observe everything before doing anything; nor that you should pay the monetary 
+cost of checking your tax return with every accountant , the temporal cost of reading 
+everything on a subject before writing a pape r on it , or the opportunity cost of constant 
+dithering. He only recommend s not choosing until you have learnt what  you can learn  for 
+free. So qualified, the theorem looks platitudinous. ‘Look before you leap’ isn’ t always good 
+advice; ‘Look for free before you leap’ surely is. 
+But there are  counterexamples to Good’s Theorem , described and classified here. 
+Since Good’s proof is valid, the counterexamples show that his premises are contentious. 
+First question: which premises and why? Second question: how close we can get  to Good’s 
+Theorem without them? – is any genuine platitude within the neighbourhood of ‘look before 
+you leap’? We answer both. 
+Section 2 presents Good’s proof. Sections 3-4 give two counterexamples and identify 
+which premises cause trouble. Section 5 defends ‘Conditionality’ (5.1), which is the best we 
+can do whilst avoiding that trouble . Conditionality has two virtues : it follows from Good’s 
+uncontroversial assumptions (5.1); and it yields Good’s Theorem as a special case in certain 
+environments (5.2).  
+ 
+2 Good’s Theorem 
+ 
+Informally, Good’s Theorem (GT) says  
+
+=== PAGE 2 ===
+ 2 
+ 
+A rational agent will make any available, free and relevant observation before 
+choosing an act. 
+ 
+Before the proof, we make one comment and stress three points.  Comment: ‘relevant’ is 
+interpreted lightly: an observation is relevant unless the agent is certain that it has no bearing 
+on the decision.  (The proof also shows that when a free observation isn’t relevant, it is still 
+permissible to make it.) 
+Three further points: first (as mentioned): calling observation ‘free’ rules out anything 
+the agent considers a cost. Second:  making the observation is not supposed to affect any 
+event on which the success of any a vailable act depends. But third:  it may affect the agent’s 
+beliefs about these events—that’s the point.  
+Good’s ([1967]) proof uses standard (i.e. Savage’s) decision theory and standard (i.e. 
+Bayesian) formal epistemology. Specifically, Good assumes that rational agents (a) have 
+preferences that maximize expected utility and  choose in accordance with these preferences,  
+and (b) update by conditionalization. Before stating (a) and (b) we outline their background: 
+not because it plays a role in Good’s proof, but because we must relax it if (as we argue) 
+there is reason to dilute GT.      
+We have a set W of possible worlds  (assumed, for simplicity, to be finite) and  a set Z 
+of possible outcomes or payoffs (identified, for simplicity, with dollar credits and debits , so 
+that Z is a set of real numbers). The ‘act space’ A then contains all functions from W to Z i.e. 
+A=def.ZW. An act a  A specifies a ‘prize’ a (w) in each world w. An ‘event’ or ‘proposition’ 
+is a subset of W. If h is a proposition, and a (w1) = a (w2) whenever w1, w2  h, we define  
+a (h) as a (w) for any w  h. So a gamble paying $1 if this coin lands heads (h1) and losing $1 
+otherwise (h2) is the act a such that a (h1) = 1 and a (h2) = -1.  
+Classical decision theory says that for a1, a2  A, a rational agent’s preference 
+satisfies: 
+ 
+𝐸𝑈(𝑎) =def. ∑ 𝐶𝑟(ℎ)𝑎(ℎ)ℎ∈𝐻 1  
+𝑎1 ≻ 𝑎2 iff 𝐸𝑈(𝑎1) > 𝐸𝑈(𝑎2)  
+ 
+‘a1  a2’ means the agent strictly prefers a1 to a2 (so always chooses a1 when a2 is the only 
+alternative). Similarly ‘a1  a2’ means ~(a2  a1): the agent ‘weakly prefers’ a1 to a2. EU (a) 
+is the expected utility of a. It is a weighted average of the return s to a in the events h1, h2, 
+…hn (chosen so that a (w1) = a (w2) whenever w1, w2  hi), the weight for hi being Cr (hi). Cr 
+is the agent’s ‘credence’: a probability function mapping a proposition to the confidence the 
+agent assigns to that proposition. It follows that given a menu M of acts  (M  A), her 
+expectation of utility when facing M with belief state Cr is: 
+ 
+(1) 𝐸𝑈(𝑀, 𝐶𝑟) =def. max𝑎∈𝑀 ∑ 𝐶𝑟(ℎ)𝑎(ℎ)ℎ∈𝐻  
+ 
+Thus suppose you are choosing whether to be t $1 on Red Rum: winning  makes a 
+profit of $1 . Let h1 be the proposition that ( that is, the set of possible worlds at which) Red 
+Rum wins and h2 the proposition that he doesn’t. The available acts are then as follows. 
+ 
+ 
+  
+                                                      
+1 We assume that the agent has increasing linear utility for money. Nothing turns on this.   
+
+=== PAGE 3 ===
+ 3 
+ h1: RR wins h2: RR doesn’t win 
+a1: bet 1 -1 
+a2: no bet 0 0 
+Table 1: Red Rum 
+ 
+a1 and a2 are functions from {h1, h2} to Z = {-1, 0, 1} s.t. a1 (h1) = 1, a1 (h2) = -1, a2 (h1) = a2 
+(h2) = 0.  
+The expected utility of a1 is 𝐶𝑟(ℎ1) − 𝐶𝑟(ℎ2), which is 2𝐶𝑟(ℎ1) − 1 since 𝐶𝑟(ℎ1) +
+𝐶𝑟(ℎ2) = 1. The expected utility of a2 is 0. Since you pick whichever act has higher EU, the 
+expected utility of choosing from {a1, a2} is:  
+ 
+𝐸𝑈({𝑎1, 𝑎2}, 𝐶𝑟)=max {0, 2𝐶𝑟(ℎ1) − 1}.  
+ 
+So much for the background decision theory.  
+Call a set of propositions P = {p1, p2, … pm} a ‘partition’ if those propositions  are 
+mutually exclusive (i ≠ j  pi  pj = ) and jointly exhaustive (P = W). Now suppose that 
+before choosing you have the option to learn which element of a partition P is true—that is, 
+you can do what Good calls ‘making an observation ’ that settles P. (Since P partitions W, 
+exactly one element of P is true.) As Bayesians, we assume that upon observation you update 
+your beliefs Cr by conditionalization: if you learn that p  P is true, where Cr (p) > 0, then 
+your credence shifts from Cr to a new probability function 𝐶𝑟𝑝, defined on an arbitrary 
+proposition ℎ as follows: 
+  
+𝐶𝑟𝑝(ℎ) = 𝐶𝑟(ℎ|𝑝) =def.
+𝐶𝑟(ℎ𝑝)
+𝐶𝑟(𝑝)   
+ 
+(We’ll sometimes write ℎ𝑝 for ℎ ∩ 𝑝.) 𝐶𝑟(ℎ|𝑝) is the ‘conditional probability’ of h given p. 
+So much for the background epistemology.  
+Suppose you observe before choosing and learn p. Given your new credence function 
+Crp you now choose a  M maximizing: 
+ 
+𝐸𝑈(𝑎|𝑝) = ∑ 𝐶𝑟(ℎ|𝑝)𝑎(ℎ)ℎ∈𝐻      
+ 
+If observing means learning which p  P is true, the ex ante expected utility of observation 
+is: 
+ 
+(2) ∑ 𝐶𝑟(𝑝)𝐸𝑈(𝑀, 𝐶𝑟𝑝)𝑝∈𝑃 = ∑ 𝐶𝑟(𝑝)max𝑎∈𝑀 ∑ 𝐶𝑟(ℎ|𝑝)𝑎(ℎ)ℎ∈𝐻𝑝∈𝑃  
+ 
+Given that a rational person maximizes expected uti lity, it follows from (1 ) and ( 2) that GT 
+holds if this inequality does: 
+ 
+∑ 𝐶𝑟(𝑝)max𝑎∈𝑀 ∑ 𝐶𝑟(ℎ|𝑝)𝑎(ℎ)ℎ∈𝐻𝑝∈𝑃 ≥ max𝑎∈𝑀 ∑ 𝐶𝑟(ℎ)𝑎(ℎ)ℎ∈𝐻   
+ 
+By definition of 𝐶𝑟(ℎ|𝑝), this is equivalent to: 
+ 
+(3) ∑ max𝑎∈𝑀 ∑ 𝐶𝑟(ℎ𝑝)𝑎(ℎ) ≥ max𝑎∈𝑀 ∑ 𝐶𝑟(ℎ)𝑎(ℎ)ℎ∈𝐻ℎ∈𝐻𝑝∈𝑃   
+ 
+Good proves GT by proving (3).  
+
+=== PAGE 4 ===
+ 4 
+To get a feeling for how, consider this analogy. The US government faces a menu M 
+of nationwide tax regimes that each assign s a fixed rate to each economic class, where 
+individuals occupy the same class if and only if they have the same gross income . The 
+regimes typically have different effect s on different classes. The government  aims to 
+maximize net income aggregated across all individuals. Equivalently, it aims to maximize the 
+weighted sum of net incomes earnt by  each class, where the weight of a class is the 
+proportion of individuals within it.    
+As well as partitioning the population into economic classes, we can partition it into 
+States. Suppose e very individual resides in e xactly one State. So each tax regime has 
+implications for the income  of each State i.e. the aggregate income of its residents. We 
+number the regimes alphabetically by State, so that a1  M is by this measure the optimal 
+regime for Alabama, a2 for Alaska, … a50 is optimal for Wyoming. (Maybe ai = aj for some i 
+ j.)  
+ Now instead of a single tax regime applied across all States, imagine a scheme as that 
+varies the regime across States  as follows: it applies a1 in Alabama, a2 in Alaska, … a50 in 
+Wyoming. Then (3) is saying that as is at least as good, by the government’s measure, as any 
+a  M. Good’s argument for this is that as is at least as good as a in each State. as is at least 
+as good as a in Alabama, because as implements a1 in Alabama, which is optimal in M for 
+Alabama, etc. Since the weighted sum of incomes in any State is at least as high under as as 
+under any a  M, and since everyone resides in exactly one State, the sum of all incomes, and 
+hence the weighted sum of class earnings, is at least as high under as as under any a  M. 
+Citizens correspond to worlds, income classes to events h  H, States to observations 
+p  P, populations—of classes and States—to credence, and the original menu of uniform tax 
+regimes to your options. Specifically, for a class h, a State p and a tax regime a, the number 
+of individuals in that class in that State corresponds to Cr (hp), the number of individuals in 
+that class across the US to Cr (h), and the net income under a of anyone in that class to a (h).  
+The intuitive story translates into a literal proof of  (3). Since 𝐶𝑟(ℎ) = ∑ 𝐶𝑟(ℎ𝑝)𝑝∈𝑃 , 
+the right-hand side of (3) is: 
+ 
+(4) max𝑎∈𝑀 ∑ ∑ 𝐶𝑟(ℎ𝑝)𝑎(ℎ)ℎ∈𝐻𝑝∈𝑃 2 
+ 
+But ‘the sum of the maxima excee ds the maximum of the sums’. (4 ) chooses a single 𝑎 ∈ 𝑀, 
+call it 𝑎∗, that maximizes ∑ ∑ 𝐶𝑟(ℎ𝑝)𝑎(ℎ)ℎ∈𝐻𝑝∈𝑃 . But the left-hand side of (3) chooses, for 
+each 𝑝 ∈ 𝑃, an 𝑎𝑝 ∈ 𝑀 that maximizes ∑ 𝐶𝑟(ℎ𝑝)𝑎(ℎ)ℎ∈𝐻 . So if 𝑝 ∈ 𝑃 then 
+∑ 𝐶𝑟(ℎ𝑝)𝑎𝑝(ℎ)ℎ∈𝐻 ≥ ∑ 𝐶𝑟(ℎ𝑝)𝑎∗(ℎ)ℎ∈𝐻 ; (3) follows.  
+Let’s apply this to Red Rum . Before choosing whether to bet you can listen—for 
+free—to a tip. This has two possible outcomes:  the tipster forecasts either (p1) that Red Rum 
+wins or (p2) that he loses. The forecast needn’t be reliable in your opinion; but you have some 
+opinion about its reliability. Suppose you think a win has probability x if forecast and y if not. 
+So 𝐶𝑟(ℎ1|𝑝1) = 𝑥 and 𝐶𝑟(ℎ1|𝑝2) = 𝑦. Since the forecast is free, y our payoffs in this new 
+problem—Red Rum*—are: 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                      
+2 Using ∑ ∑ 𝑓(𝑥, 𝑦) = ∑ ∑ 𝑓(𝑥, 𝑦)𝑥∈𝑋𝑦∈𝑌𝑦∈𝑌𝑥∈𝑋 . 
+
+=== PAGE 5 ===
+ 5 
+ h1p1: forecast 
+win, win 
+h2p1: forecast 
+win, loss 
+h1p2: forecast 
+loss, win 
+h2p2: forecast 
+loss, loss 
+a1: bet 1 -1 1 -1 
+a2: no bet 0 0 0 0 
+a3: listen to 
+tip 
+1 if x > 0.5 
+0 if x ≤ 0.5 
+-1 if x > 0.5 
+0 if x ≤ 0.5 
+1 if y > 0.5 
+0 if y ≤ 0.5 
+-1 if y > 0.5 
+0 if y ≤ 0.5 
+Table 2: Red Rum*  
+ 
+The expected utilities are:  
+ 
+(5) 𝐸𝑈(𝑎1) = 2𝐶𝑟(ℎ1) − 1 
+(6) 𝐸𝑈(𝑎2) = 0 
+(7) 𝐸𝑈(𝑎3) = 𝐶𝑟(𝑝1)max {2𝑥 − 1, 0} + 𝐶𝑟(𝑝2)max {2𝑦 − 1, 0} 
+ 
+Now 2𝐶𝑟(ℎ1) − 1 = 𝐶𝑟(𝑝1)(2𝑥 − 1) + 𝐶𝑟(𝑝2)(2𝑦 − 1). So (7) ≥ (5), (6) for any x, y. It’s 
+always rational to listen: doing so can’t worsen but can improve things, in expectation.3  So 
+much for Good’s Theorem.  
+ 
+ 
+3 Inexact observation 
+ 
+GT is intuitive and its proof is simple.  So counterexamples are interesting. The first, using a 
+case suggested—for different purposes—by (Williamson [2011]), is as follows. 
+You are facing an unmarked clock with a single digit that can point in any of 60 
+uniformly separated directions that we (but not the clock) label 0 to 59. Your discrimination 
+of where the digit is pointing is limited ; to be reliable in your judgment you must leave a 
+margin of error. If the digit is in fact pointing at 53, you can reliably judge that it is pointing 
+between 52 and 54 inclusive, but you are unreliable about stronger claims. Similarly for 
+every other position.4 
+ Plausibly, your evidence is the strongest claim you can reliably get right. This means 
+that the maximal propositions you learn in the various scenarios overlap. Let D be the digit’s 
+true direction. If 𝐷 = 53, your evidence is th at 𝐷 ∈ {52,53,54}. I f 𝐷 = 52, it is that 𝐷 ∈
+{51,52,53}. Each scenario yields evidence compatible with the other. But they yield different 
+evidence. 
+ Call a world  w2 accessible from w1 if your evidence in w1 is consistent with w2. 
+Accessibility is not transitive. 𝐷 = 53 is consistent with the evidence from looking if 𝐷 =
+52. 𝐷 = 54  is consistent with the evidence if 𝐷 = 53. But 𝐷 = 54 is not consistent with the 
+evidence if 𝐷 = 52. More generally the situation is as in Figure 1.  
+ 
+Figure 1: Accessibility relations on an unmarked clock 
+                                                      
+3 GT does not say that you will actually do better  by listening. The tip might mislead. GT says that listening is 
+better ‘in expectation’, from the perspective of your ex ante credence.  
+4 In reality, it’s presumably  vague what margins suffice for your judgments to count as ‘reliable’. But the 
+problem arises for any fixed size of the margin above a certain lower bound; hence it arises on both epistemic 
+and supervaluational approaches.     
+
+
+=== PAGE 6 ===
+ 6 
+Examples like this have been widely discussed in epistemology.5 They are interesting 
+because they show how one might receive evidence without knowing that this is the evidence 
+one received. When (say) 𝐷 = 52, your evidence is that 𝐷 ∈ {51,52,53}. But if 𝐷 = 53, 
+which is consistent with what you learned ( namely with 𝐷 ∈ {51,52,53}), your evidence 
+would have been that 𝐷 ∈ {52,53,54}. So, while your evidence is that 𝐷 ∈ {51,52,53}, you 
+do not know this. 6 If you did know this, you could combine it with your knowl edge of the 
+setup to infer that 𝐷 = 52, since that is the only case in which you get this evidence. But it’s 
+implausible that you could learn something this exact from looking at the clock —even if you 
+did know the setup. 
+While widely discussed in epistemolo gy, there has been little discussion of how such 
+cases bear on decision theory, specifically on Good’s Theorem. 7 Yet they do. L et O say that 
+the digit is pointing at an odd number;  E that it is pointing at an even number  (calling 0 
+even). And suppose you haven’t looked at the clock yet , but know that if you do , you will 
+conditionalize on what you learn .8 Then by your own lights  ex ante, looking is misleading 
+regarding O and E.9 Suppose O, say 𝐷 = 53. Then looking rule s out all possibilities except 
+that and the ‘adjacent’ ones 𝐷 = 52 and 𝐷 = 54. Of these, two are in E and one is in O. So 
+your evidence supports E.10 Similarly, if E is true, looking will support O. 
+This fact—that, by your own lights ex ante, looking is misleading—creates failures of 
+GT. Suppose you are offered two bets. ODD costs 60¢ and pays $1 if O. EVEN costs 60¢ and 
+pays $1 if E. You can take either or neither now, or you can look at the clock before deciding. 
+Then you should think it a  bad idea to  look. Your evidence now supports not betting . 
+Suppose you look before deciding. If D is odd, your evidence will support E to degree 0.67, 
+making it rational to buy only the losing bet EVEN.  If D is even , the evidence will make it 
+rational to buy only the losing bet ODD. Either way, you pay 60¢ for a losing bet if you look 
+first. You know all this beforehand. So you know that it’s a bad idea to look first. 
+                                                      
+5 (Williamson [1992]) first d efends cases with roughly this structure. Much of the responding literature focuses 
+on knowledge, rather than evidence. Exceptions include ( Christensen [2010]; Elga [2013]; Horowitz [2014]), 
+which sympathetically discuss the above description. ( Cohen and Comesaña [2013]) builds  on (Stalnaker 
+[2009], pp. 405-6) to develop an alternative formal treatment, which— when applied to the clock—would make 
+the case consistent with GT. (Hawthorne and Magidor [2009]) and (Williamson [2013], pp. 80-3) criticize this 
+alternative. 
+6 All you know about your evidence is that it is either 𝐷 ∈ {50,51,52} or 𝐷 ∈ {51,52,53} or 𝐷 ∈ {52,53,54}. 
+7 Though see (Das [unpublished)]) and (Dorst [unpublished]). Other related literature differs in focus . 
+(Geanakoplos [1989]) shows that failures of Good’s Theorem arise from imperfections in the processing of 
+partitional observation: taking a signal at face -value, forgetfulness, wishful thinking, doxastic obstinacy or 
+failures of imagination. By contrast, we argue that observation of the unmarked clock is itself non -partitional, 
+which undermines GT even for agents lacking all those imperfections. (Williamson [2000], pp. 230-7) discusses 
+non-partitional observation and its relevance to decision theory, but focuses on exploitability. Bronfman 
+([2014]) and Schoenf ield ([forthcoming]) argue that these cases make conditionalization non-accuracy-
+maximizing. They are opposing the epistemic optimality of processing information in the usual way;  we are 
+opposing (and Good is defending) the pragmatic optimality of seeking information in the first place. 
+The literature also discusses how imprecise probabilities  bear on Good’s Theorem: Good ([1974]) 
+himself raises this worry, attributing it to Isaac Levi and Teddy Seidenfeld; (Seidenfeld [2004]) and (Bradley 
+and Steele [2016]) discuss it in detail. However, imprecise probabilities and inexact observations raise d ifferent 
+issues. Inexact observation, as described above, is consistent with the relevant probability distribution’s 
+assigning to each proposition a single real number, hence consistent with standard expected utility theory. By 
+contrast, imprecise probabilities violate standard expected utility theory. Counterexamples to GT that arise from 
+such imprecision are thus more like our second type of counterexample; see note 23 below.  
+8 This assumption, that you know ex ante that you are a Bayesian, is essential. But it is one that Good himself 
+both makes and needs: without it we lose motivation for ( 2), which is crucial to Good’s proof. So if our example 
+undermines the assumption , it leaves  Good with problems as serious as —though admittedly quite different 
+from—those we want to raise.  
+9 Compare (Horowitz [2014], pp. 735-740), which tentatively defends this feature of the example. 
+10 At least if, as we can assume, your initial distribution is uniform i.e. 𝐶𝑟(𝐷 = 𝑥) = 1/60 if 𝑥 = 0,1, … 59.  
+
+=== PAGE 7 ===
+ 7 
+This can seem puzzling. You know throughout that: 
+  
+(8) Your evidence on looking is 𝐷 ∈ {51,52,53} iff 𝐷 = 52 iff ODD is a losing bet. 
+ 
+Why, then, do you pay for ODD upon receiving 𝐷 ∈ {51,52,53}? The answer is just what 
+makes this case epistemologically interesting . Receiving 𝐷 ∈ {51,52,53} does not tell you 
+that you received 𝐷 ∈ {51,52,53}. So, upon receiving 𝐷 ∈ {51,52,53}, you cannot apply 
+modus ponens to (8) to conclude that ODD is a losing bet. Once we understand this crucial, 
+but surprising, feature of the example, the puzzle disappears. 
+ 
+We’ll discuss three objections. The first two arise from the fact that, according to our 
+description of the case, it allows you to receive evidence without knowing that you have 
+received it. 
+First Objection. This shows that we have misdescribed the example. You can always 
+tell what your evidence is; so the evidence can’t be as we claimed. 
+Response. It’s natural to think you can always tell what your evidence is. It’s also 
+natural to think that your evidence when looking at an unmarked clock is as we said it was. 
+The two conflict. Clearly, we cannot resolve this conflict here. 
+However, we do not need to. If the debates about inexact perception have taught us 
+anything, it’s that it isn’t obvious what to say—and hence not obvious that the case does not 
+work as we say. This suffices for our puzzle. GT is supposed to be a platitude. If it depends 
+on a far-from-obvious claim about how inexact perception works, it isn’t one. 
+Second Objection. Grant that our description of your evidence is correct: you receive 
+evidence without knowing that you received it. But then how can it influence you? The 
+argument against Good took for granted that (you know ex ante that) if you look at the clock 
+then your choice will maximize EU relative to the credence you then acquire. That 
+assumption was needed to argue (n. 8) that you will  buy the losing bet if you look . But why 
+think you will maximize EU relative to that credence function if looking leaves open what it 
+is? 
+ Response. This objection assumes that to act on a belief you must know what it is. 11 
+The underlying  picture of practical rationality  is this : the EU-maximizer surveys her 
+credences and utilities, compares the EU of her options, and chooses one that scores highest.  
+This picture is wrong. ‘Practical rationality’ doesn’t constrain how an agent chooses 
+in light of her beliefs and desires, but only what choices she makes given that she does in fact 
+have those beliefs and desires. In particular, we want to evaluate the choices of creatures who 
+don’t know that they have beliefs, let alone what they are. Chrysippus’ dog, faced with three 
+paths, set off down path C after smelling that its quarry was not on paths A or B. We want to 
+say the dog acted rationally; given its belief that the quarry was on path C, it would have been 
+irrational to set off down path A. But the dog does not know it has this belief. So we cannot 
+say this if practical rationality requires doxastic self -knowledge. (Similarly, eliminativists in 
+                                                      
+11 A less demanding version of the objection says only that you must know at each point what your preferences 
+are. This rules out the particular case  (where you won’t know your preferences after looking) , but not natural 
+variants. Imagine that you’ll get to see the hand for s lightly longer when it ’s pointing at an odd number, so that 
+in those cases you can reliably detect its exact position—but the added time is short enough that you can’t detect 
+whether you’ve been given it. Then you know beforehand that looking will give you  evidence that the number is 
+odd (raising its probability to 1  if it is, or .67, if not), so that your later preference will be to bet ODD whatever 
+you learned. So you’ll also know, after looking, that you then prefer to bet ODD. But your ex ante evaluation of 
+looking, hence buying ODD,  is still negative: the .5 chance of losing 60¢ outweighs the .5 chance of winning 
+40¢. 
+
+=== PAGE 8 ===
+ 8 
+the philosophy of mind deny that anyone has beliefs , so cannot know the contents of their 
+own; this does not protect them from charges of practical irrationality.)        
+ 
+The third objection grants the overall structure of the case, but challenges the details. 
+Third Objection. Grant that looking eliminates values far from D and leaves open 
+close ones . It doesn’t follow that you distribute credence uniformly over the remaining 
+possibilities. More likely you concentrate on central values within the range of still -live 
+possibilities. So a glance when 𝐷 = 52 might shift you to some 𝐶𝑟∗ satisfying: 
+ 
+(9) 𝐶𝑟∗(𝐷 = 51) = 0.1 
+(10) 𝐶𝑟∗(𝐷 = 52) = 0.8 
+(11) 𝐶𝑟∗(𝐷 = 53) = 0.1 
+ 
+But 𝐶𝑟∗ will prompt you to bet EVEN. G enerally, if looking makes your credence as sharply 
+peaked as 𝐶𝑟∗ about the centre of its support, then looking is a good idea ex ante.12   
+Response. Grant that a glance adjusts your credence to some 𝐶𝑟∗ symmetric about and 
+modal at the true value of D, and  not uniform over its support. Still, if 𝐶𝑟∗ is ‘close enough’ 
+to uniform, then our problem still arises given adjusted charges for the bets. 
+Let [j] be the proposition that 𝐷 =  𝑗 𝑚𝑜𝑑 60; and let 𝐶𝑟∗ ([𝑖])  =  𝑥 and 𝐶𝑟∗([𝑖 −
+1]) = 𝐶𝑟∗([𝑖 + 1]) = 𝑦 if in fact D = i. Since we can pick the distance between the positions 
+as we like, there’s no harm in assuming that 𝐶𝑟∗([𝑖 − 1] ∪ [𝑖] ∪ [𝑖 + 1]) = 1, so that x + 2y = 
+1. We can reprice the bets ODD and EVEN at $ 𝑐. Then, as long as 0.5 < 𝑐 < 2𝑦, looking at 
+the clock motivates taking (only) the losing bet on its position. Such a 𝑐 exists whenever 
+𝑦 > .25. 
+ Glancing may shift your credence to a distribution violating these conditions —like 
+(9)-(11)—and then the example creates no trouble for GT, whatever the charge on each bet. 
+But why must it? It is easy to imagine evidence to the contrary. Suppose  that you are 
+repeatedly forced to guess D at a glance: you are right one time in three and never out by 
+more than 1. If we like we can build this into the case.  
+ It might seem strange that when 𝐷 =  𝑖, 𝐶𝑟∗ ([𝑖 + 1]) and 𝐶𝑟∗ ([𝑖 − 1]) both exceed 
+0.25 and 𝐶𝑟∗([𝑖 + 2]) and 𝐶𝑟∗([𝑖 − 2]) are both zero, since then the probability that the digit 
+is pointing at j does not decrease linearly to zero with the angular distance between j and i, 
+but rather more quickly as we get further from i. But this is not so implausible . Suppose you 
+have visual receptors corresponding to each second of arc on the clock -face. When you look 
+at the clock and D = d*, visual receptors fire at a rate that is normally distributed about the 
+true position: those correspon ding to a position z seconds of arc away from d* fire at a rate 
+proportional to 𝑒−𝑧2 𝜎2⁄ for some constant 𝜎. And suppose that looking rules out a position if 
+and only if the receptors corresponding to that position fire at a rate below some threshold  
+> 0. Then 𝐶𝑟∗ (𝐷 =  𝑥) will fall first gently and then sharply – that is, non-linearly – towards 
+zero as |𝑥 − 𝑑∗| increases, just as in our model. 
+                                                      
+12 That you shift to Cr* is inconsistent with simple Bayesian updating on 𝐷 ∈ {51,52,53} given a uniform prior. 
+A natural model of the shift is Jeffrey conditionalization (Jeffrey [1983], pp. 164ff.). The idea is that perception 
+‘directly’ adjusts your confidence in certain propositions (‘This cloth is green’ , ‘ 𝐷 = 52’) within the open 
+interval (0, 1). If perception changes your Cr by directly a djusting your credences in X1, … Xn respectively to 
+Cr* (Xi), then its indirect impact on your credence is given by 𝐶𝑟∗(𝑌) = ∑ 𝐶𝑟(𝑌|𝑋𝑖)𝐶𝑟∗(𝑋𝑖)𝑛
+𝑖=1  for any Y in the 
+algebra. Good assumes ordinary conditionalization; (Graves [1989]) generalizes the argument to Jeffrey 
+conditionalization. Our example shows that, much as Good’s argument requires an objectionably narrow 
+definition of ‘making an observation’, such generalizations require an objectionably narrow view of what makes 
+a Jeffrey shift a ‘genuine learning experience’. 
+
+=== PAGE 9 ===
+ 9 
+Again, we needn’t show that our problem case actually arises, only that  it would in 
+circumstances that are ne ither ruled out a priori  nor excluded from the intuitive  principle 
+(‘look before you leap’). 𝑦 > 0.25 meets those conditions: nobody ever took GT to hold only 
+if perception doesn’t work like that. It is hardly platitudinous that it doesn’t. Neither therefore 
+is Good’s Theorem itself.  
+ 
+Where does Good’s proof go wrong, then ? Good identifies ‘making an observation’ 
+with learning exactly which element of some partition is true: specifically, it assumes you are 
+certain ex ante that the maximal proposition  learnt by observation is inconsistent with any 
+other maximal proposition you might learn by observation . Without this, there is no reason 
+why (2) should represent the expected utility of observing. 
+ Our example exhibits observations for which no partition P is such that you are 
+certain ex ante  that making the observation teaches you exactly which p  P is true. 𝐷 ∈
+{51, 52, 53} and 𝐷 ∈  {52, 53, 54} are both propositions that might exhaust what you learn by 
+looking; but they are consistent, since both hold if 𝐷 = 52. 
+So the problem is not that Good’s premises fail to entail his conclusion, but  that they 
+understand ‘observation’ too narrowly. Without this narrow understanding,  there is no 
+guarantee that a policy that adjusts one’s bet to the contents of the observation will do at least 
+as well ‘in expectation’ as taking whatever bet looks optimal ex ante.13 Good’s proof does not 
+apply to anyone who se observations are inexact. And it’s no platitude that there  aren’t—
+much less couldn’t be—people like that.  
+ 
+ 
+4 Independence 
+ 
+The second counterexample is better known : we present it more briefly. 14 Let h1, h2 and h3 
+partition W and let gambles a1-a4 on these events give you terminal wealth (in millions of 
+dollars) as specified below: 
+ 
+ h1 h2 h3 
+a1 0 5 0 
+a2 1 1 0 
+a3 0 5 1 
+a4 1 1 1 
+Table 3: Allais  
+ 
+It follows from EU-maximization that a rational wealth -lover prefers a1 (a2) from 𝑀12 =
+{𝑎1, 𝑎2} if and only if she prefers a3 (a4) from 𝑀34 = {𝑎3, 𝑎4}.15 That is: a1  a2 iff a3  a4 
+and a1   a2 iff a3  a4.   
+ That is descriptively false. If h1 says that in a fair lottery over [1, 100] the integer 
+drawn is 1, h2 that it lies in [2, 11] and h3 that it lies in [12, 100] , most people have 𝑎1  a2 
+and a4  a3. This is the Allais paradox.16  
+                                                      
+13 Partitionality is not necessary for GT: (Geanakoplos [1989]) and (Dorst [unpublished]) identify weaker 
+conditions that suffice. But since such conditions still rule out intuitive examples like the clock, it’s no more 
+obvious that observation obeys them than that it is partitional. 
+14 For discussion, see (Buchak [2010]). 
+15 𝐸𝑈(𝑎3) − 𝐸𝑈(𝑎1) = 𝐸𝑈(𝑎4) − 𝐸𝑈(𝑎2), so 𝐸𝑈(𝑎1) > 𝐸𝑈(𝑎2) iff 𝐸𝑈(𝑎3) > 𝐸𝑈(𝑎4) and 𝐸𝑈(𝑎1) ≥
+𝐸𝑈(𝑎2) iff 𝐸𝑈(𝑎3) ≥ 𝐸𝑈(𝑎4).  
+16 (Allais [1953]). 
+
+=== PAGE 10 ===
+ 10 
+That descriptive mismatch may be normatively irrelevant. But allow—following some 
+decision theorists —that these widespread ‘Allais preferences’ are rationally permissible . 
+Now suppose you face M12 and M34 on separate occasions: the draws are independent and 
+you may choose on either occasion without reference to the other. Before betting in each 
+case, you can make an observation P that teaches you one of two things: 
+ 
+𝑝1 = ℎ1 ∪ ℎ2  
+𝑝2 = ℎ3  
+ 
+Think of P as gathering incomplete but accur ate information about the draw: conducting P 
+tells you exactly whether the chosen integer exceeds 11.  
+ Should you observe P? It seems that if ex ante you prefer 𝑎1 to 𝑎2 and 𝑎4 to 𝑎3, and 
+know you will choose rationally after observing,17 then in at least  one situation you should 
+not. Suppose first that you learn p1. Then you are indifferent between 𝑎1 and 𝑎3: those 
+gambles only differ in the event ( h3) that your observation rules out; similarly, you are 
+indifferent between 𝑎2 and 𝑎4. So on learning p1, you have 𝑎1  𝑎2 iff 𝑎3  𝑎4, and 𝑎1  𝑎2 iff 
+𝑎3  𝑎4, given that  is transitive. So, in either  M12 or M34, you are at least open to choosing 
+what you initially reject.18 Or, suppose you learn p2. Now you are indifferent between 𝑎1 and 
+𝑎2, since they assign h3 to the same payoff; and between  𝑎3 and 𝑎4 for the same reason. So in 
+both cases, learning p2 makes you indifferent between your options.  
+So either in M12 or in M34 it will seem ex ante  counterproductive to conduct the 
+observation P: whatever you learn will make you open to the option that you now reject, with 
+no compensation. Your position ex ante therefore violates GT.  
+We can put it i n terms of our taxation analogy. Suppose the government cares not 
+only about the aggregate but also about the distributional effects of tax . Specifically, it 
+marginally prefers  tax schemes that make income  more equal. Suppose three economic 
+classes, h1, h2 and h3, and four tax regimes a1, a2, a3 and a4, with net incomes of each class as 
+in Table 3. Then the government may prefer a1 to a2 but a4 to a3, because the equality under 
+a4 more than compensates for its loss of income relative to a3; whereas the equality under a2, 
+being imperfect, does not compensate for its loss of income relative to a1.   
+Suppose now that the entire US population lives in two States: all those in classes h1 
+or h2 in Alabama, and all those in class h3 in Wyoming. And suppose the government is 
+choosing between two tax regimes, say a1 and a2. Then Good’s recommendation is 
+effectively to apply in each State the regime that is—by the government’s lights—optimal for 
+that State. This may not yield a result that is at least as good —by those lights—as whichever 
+of a1 and a2 is preferred overall. Optimizing on a State -by-State basis ignores the 
+distributional effects across States that made a4 overall preferable to a3.  
+Returning from the analogy: if the agent marginal ly disprefers variability in gambles, 
+then the compound gamble, that realizes in each event in a partition the optimal gamble for 
+that event, might look sub -optimal ex ante precisely because it ignores her aversion to cross-
+event variability.    
+This counterexample differs significantly from the last. The ‘clock’ objection grants 
+(i) that one should learn, before choosing, which element of a partition is true, but denies (ii) 
+                                                      
+17 See analogous comments on an analogous assumption at n. 8 above. 
+18 Indifference between a1 and a3 means a1  a3 and a3  a1; similarly for a2 and a4. So after you learn p1: if a1  
+a2, then a3  a1  a2  a4; so if a4  a3 then a2  a1 by the transitivity of , contradicting a1  a2. Hence if a1  a2 
+then a3  a4. The converse is provable in the same way: hence after you have learnt p1 you must have a1  a2 iff 
+a3  a4. Similarly if a1  a2 then a3  a1  a2  a4; so a3  a4 by the transitivity of .  Again the converse is 
+provable in the same way: hence after you have learnt p1 you must have a1  a2 iff a3  a4.    
+
+=== PAGE 11 ===
+ 11 
+that looking is always a way to do that. The Allais -based objection attacks (i). The Allais 
+subject should find it irrational to learn, before choosing from (say) M12, which of {ℎ1 ∪
+ℎ2, ℎ3} is true. Both objections oppose literally looking before leaping; but here that is a side-
+effect of denying that you should learn from a partition before leaping. 
+The Allais case highlight s Good’s reliance on a decision theory that prohibits Allais 
+preferences. What does this in the classical theory is: 
+ 
+Independence Axiom (IA): Let 𝑎1, 𝑎2, 𝑎3, 𝑎4 be acts and let {ℎ, ℎ∗} partition W. 
+Suppose: 
+(i) 𝑎1(𝑤) = 𝑎3(𝑤) and 𝑎2(𝑤) = 𝑎4(𝑤) for each 𝑤 ∈ ℎ 
+(ii) 𝑎1(𝑤) = 𝑎2(𝑤) and 𝑎3(𝑤) = 𝑎4(𝑤) for each 𝑤 ∈ ℎ∗  
+Then 𝑎1 ≻ 𝑎2 iff 𝑎3 ≻ 𝑎4
+19 
+ 
+Intuitively: a rational person who prefers (say) lottery ticket L1 over L2 should prefer any bet 
+with prize L1 to any with prize L2 but the same downside. It is easy to see why IA prohibits 
+Allais preferences: putting ℎ = ℎ1 ∪ ℎ2 and ℎ∗ = ℎ3, IA implies both 𝑎1 ≻ 𝑎2 ↔ 𝑎3 ≻ 𝑎4 
+and a1  a2  a3  a4, with a1-a4 as in Table 3. 
+ Since the Allais preferences look reasonable,  it’s not immediately obvious that 
+rationality demands Independence. It’s also not  obvious on reflection . EU-maximization 
+implies that anyone who (i) has concave utility for money and (ii) always declines a 50/50 bet 
+that wins $110 or loses $100 should (iii) decline a 50/50 bet that wins $ x or loses $1000, f or 
+arbitrarily large x.20 This oddity arises from IA. Moreover, plausible alternatives exist: many 
+versions of decision theory, by dispensing with IA , permit Allais preferences21, and some are 
+appealing not ( only) descriptively but as standards of rationality. 22 So it  isn’t as though 
+abandoning IA leaves no concept of  practical rationality at all. And the possibility of 
+abandoning it leaves GT looking shakier than it did.23 
+Still, t here are well -known pragmatic arguments for IA. They typically infer the 
+rationality of IA from the premise that violating it leaves one open to exploitation.24 Suppose 
+that you start out with a1  a2, a4  a3, but if you learn p1 then you have a3  a4. A cunning 
+bookie offers a choice between (a) choosing from a3 and a4 after learning which of {p1, p2} is 
+true and (b) paying $1 to choose without first learning this. You know that on (a), whatever 
+you learn, your choice will make you worse off (by your own lights ex ante) if it m akes any 
+difference. So you choose (b) and a4. So you are paying $1 for a4 when you could have had 
+that gamble for free. Your violating  IA is what makes you thus exploitable. H ence, it is 
+argued, rationality demands IA. And we might conclude that it’ s both harmless and 
+unsurprising that dropping it puts you beyond the scope of Good’s Theorem.   
+                                                      
+19 Many, such as ( Peterson [2009], p.  99), treat IA as a si ngle axiom;  in Savage’s original presentation its 
+content is spread across his definition D1 and postulate P2. (See the endpapers of Savage [1972]; cf. pp. 21-3.)     
+20 (Rabin [2000]). For other criticisms see (Hansson [1988], pp. 149-51; McClennen [1990], pp. 77-80).  
+21 These include: Prospect Theory (Kahneman and Tversky [1979]), Anticipated Utility Theory (Quiggin 
+[1982]), Generalized EU Analysis (Machina [1982]), Disappointment Theory (Loomes and Sugden [1986]), 
+Choquet EU Theory (Schmeidler [1989]), Risk -Weighted EU Theory (Buchak [2013]), and Counterfactual 
+Desirability Theory (Bradley and Stefánsson [forthcoming]). 
+22 See especially (McClennen [1990]) and (Buchak [2013]). A complication: the Allais case violates GT only if 
+we’re right that rational agents use ‘sophisticated choice’  when faced with sequential decision problems; 
+McClennen denies, and Buchak entertains denying, this. 
+23 These worries about IA depend on the rationality of a form of risk -avoidance not permitted by classical 
+decision theory. Many decision theories designed for imprecise probabilities also invalidate IA and, for that 
+reason, also generate counterexamples to GT. Other decision theories for imprecise probabilities validate IA and 
+may allow a weak version of GT. See (Seidenfeld [2004]) and (Bradley and Steele [2016]) for discussion. 
+24 For a summary of such arguments see (Machina [1989], pp. 1636-8) and (Buchak [2013], pp. 170-3).  
+
+=== PAGE 12 ===
+ 12 
+Various responses exist. Some reject the premise. There are, they point out,  no 
+cunning bookies who know your preferences and can demand payment to withhold 
+information. And if there were you’d be sure to avoid them. So this ‘pragmatic’ difficulty 
+with Allais preferences is hardly real.25  
+Others reject the validity of the argument. Some say that by choosing (b) and then a4, 
+you are not really throwing away $ 1, since the option of ‘ a4 for free’ was never genuinely 
+available. You knew in advance that if you were to choose (a) then, whatever you learn about 
+p1 and p2, you would not take the gamble a4 (unless it made no difference).26 More radically, 
+some say that practical rationality constrains your time-slices, not your temporally extended 
+self.27 Just as the Pareto inefficiency of the Prisoners’ Dilemma equilibrium is consistent with 
+both players’ rationality , so the diachronic exploitability of the Allais subject is consistent 
+with her time slices’ rationality. There is nothing else to count as irrational. 
+But, setting aside exploitation, someone might argue for IA as follows . It is 
+independently plausible that you should learn from a partition  (whether or not you must pay 
+not to). But violation of IA implies that you’d avoid doing that. So we can defend IA on the 
+basis of something like GT itself.  
+But, having set exploitation aside, is it obvious, independently of an antecedent 
+commitment to IA, that practical rationality demands uptake of free evidence? Clearly, 
+learning will improve your anticipated return from bets on propositions which the evidence 
+settles conclusively. But what about bets on a proposition p which the evidence doesn’t settle 
+conclusively? The evidence may move your credence in p closer to the truth (if , say,  it is 
+evidence for p, and p is true), but it may also move your credence further from the truth (if , 
+say, it is evidence for p, but p is false). In the first case, it will increase your ret urns; in the 
+latter, it will decrease them. So a little learning carries risks. Classical decision theory says 
+that the potential benefits always outweigh this risk; but theories which reject  IA because of 
+its incompatibility with intuitive risk -avoidance may well reach a different verdict . So the 
+attractiveness of free evidence is not a neutral starting -point from which to launch an 
+argument for IA.28 
+These responses to the arguments for IA are not decisive. We don’t mean to endorse 
+them. Nor, more generally, do we take a stand on whether IA is rationally compulsory. We 
+simply point out that it is not obviously so—not, for instance, in the way that  transitivity of 
+preference has seemed to be. And if IA is not platitudinous, then neither is GT. 
+ 
+Our two counterexamples show that GT rests on controversial assumptions (i) about 
+observation and (ii) about practical rationality. This is puzzling. We said at the outset that 
+‘look for free before you leap’ seems  platitudinous. Should we conclude that thi s is just 
+wrong?—That in fact  our confidence in this ‘platitude’ should not exceed our confidence in 
+the highly unobvious assumptions (i) and (ii)? 
+The straight answer must be ‘yes’. Even when looking is free, looking before leaping 
+is not a plati tudinously good idea. It may not be a good idea at all. But we can give a less 
+disappointing, if less straight, answer by showing  how to approximate the ‘platitude’ whilst 
+avoiding the questionable assumptions that underlie it. 
+ 
+ 
+                                                      
+25 (Christensen [2004], p. 110). See also (Lewis [1999], p. 133). 
+26 (Rabinowicz [1995]); (Buchak [2013], pp. 189-90). 
+27 (Hedden [2013]). 
+28 See (Buchak [2010], pp. 99-100). Thanks to a referee. Buchak  also suggests that we can explain the oddness 
+of avoiding free evidence by saying that it is irrational from an epistemic perspective; (Campbell -Moore and 
+Salow [unpublished]) argue that we cannot say this if we accept rational risk-avoidance. 
+
+=== PAGE 13 ===
+ 13 
+5 Conditionality 
+ 
+There is a platitude that avoids the counterexamples whilst  capturing something of the 
+intuitive content of GT. Section 5.1 states and proves the claim, which we call 
+‘Conditionality’. 5.2 shows how Conditionality avoids the difficulties facing GT, and that GT 
+is a special case of Conditionality in the kind of environment that Good (mistakenly) took for 
+granted.  
+ 
+5.1 The Principle 
+ 
+First, note that we can represent a question as a partition of W, the elements of the partition 
+being its possible (complete) a nswers.29 ‘Who came to the party?’ can be represented as the 
+partition containing ‘No one’, ‘Only John’, ‘Only Mary’, ‘John and Mary and no one else’, 
+etc. Moreover, for every partition, there is a corresponding question (‘Which element of this 
+partition is actual?’); so we can move freely between the two ways of talking. In these terms, 
+our platitude is:   
+ 
+Conditionality (C) : A rational agent will make her action depend on the  (true) 
+answer to any question, whenever she can freely do so.   
+ 
+What does it mean to mak e your action depend on the answer to a question? Suppose you 
+expect to choose from menu M, consisting, say, of (H) a bet on heads and (T) a bet on tails on 
+the next toss of this (possibly biased) coin. Then to make your decision depend on Q—say, 
+whether i t rains tomorrow —is to choose instead from the menu MQ, consisting of all the 
+ways for the choice  from M to depend on the answer to Q. In our example  these are: (HH) 
+Bet on heads if rain, bet on heads if no rain; (HT) Bet on heads if rain, bet on tails if no rain; 
+(TH) Bet on tails if rain, bet on heads if no rain; (TT) Bet on tails if rain, bet on tails if no 
+rain. So Conditionality says that you are ex ante better off choosing from this second menu. 
+ Note that  ‘making her action depend on the answer to a question’ means choosing 
+from all the ways in which the action can depend on the answer. In particular, it includes 
+vacuous dependence: realization of the same option given any  answer. (HH) and (TT) 
+illustrate such vacuous dependence. Allowing for this is what makes C platitudinous. 
+ Note also that  C does not require that the agent be in a position ever to learn the 
+answer to the question, let alone before choosing. C only tells her to employ some (free) 
+mechanism that makes the option realized dependent on the answer. T his needn’t involve 
+checking for herself what that answer is. For instance, suppose you can use a computer to 
+place your bet; you can program the computer to make the bet dependent however you like 
+on some condition to which the computer is sensitive but which you cannot observe and 
+might never learn —say, the material composition of the coin. C advises you to use the 
+computer (whereas GT is silent on this).  
+This illustrates that C, unlike GT, is not especially about observing or learning  before 
+acting. It deals with a more basic activity : making one’s act depend (optimally) on how the 
+world is (in some respect). Intuitively, learning before deciding is a way to achieve such 
+dependence—and as we’ll see, GT follows from C when it is. But as we’ll also see, learning 
+is not a way to achieve  such dependence in our counterexamples; that’s why GT can fail 
+there. 
+Because C isn’t about learning, its restriction to questions (= partitions) isn’t justified 
+by a theory of learning . Instead it rests on the observation that a conditional act is ill-defined 
+                                                      
+29 (Hamblin [1958]). 
+
+=== PAGE 14 ===
+ 14 
+unless specifiable r elative to a partition —a set of subsets of W that are disjoint and jointly 
+exhaustive. If the  conditions are not disjoint , the conditional act could make impossible 
+demands: the conditional act of buying this car if it is Japanese but not if it is a four -wheel 
+drive cannot be realized if the car is a Toyota Land Cruiser. If they are not exhaustive , the 
+conditional act may spe cify no prize, for instance if the car is a Citroen 2CV. C ’s focus on 
+partitions flows from the nature of acts, independently of issues about learning. 
+ So much for  what C says; on to its proof. Its  mathematical basis is th is principle, 
+which is trivial when Y is finite: 
+ 
+Principle of Maximization (PM) : If 𝑋 ⊆ 𝑌 and 𝑉: 𝑌 → ℝ is a function  then 
+max𝑥∈𝑋𝑉(𝑋) ≤ max𝑦∈𝑌𝑉(𝑌) 
+ 
+We informally sketch the route from PM to C.  If you can make the option realized from M 
+dependent as you like on the answer to  Q, then you can make it vacuously dependent: so 
+everything in M is available if conditionalization is available. So b y PM, the conditional 
+option that maximizes whatever you care about (for instance, EU) does at least as well as any 
+that maximizes it in M. If Alice can choose whichever of {HH, HT, TH, TT} maximizes her 
+expected utility, she will do at least as well ( ex ante in expectation) as when choosing from 
+{H, T}, because the former set includes the latter. 
+ Now a formal argument. We first prove the formal version of C: 
+ 
+Formal Conditionality (FC) : Suppose a finite menu M of acts such that each 
+𝑎 ∈ 𝑀 takes each h in some partition H of W to an outcome  𝑎(ℎ) = 𝑧 ∈ 𝑍. Let 
+Q be an arbitrary question. Let 𝐹 = 𝑀𝑄 be the set of all functions from Q to M 
+and for any 𝑓 ∈ 𝐹 and 𝑝 ∈ 𝑄 let 𝑓𝑝be the act f (p). Define M* to be the 
+following set: 
+ 
+{𝑎 ∈ A|∃𝑓 ∈ 𝐹 ∀𝑤 ∈ W ∀𝑝 ∈ 𝑄 ∀ℎ ∈ 𝐻: 𝑤 ∈ 𝑝 ∩ ℎ → 𝑎(𝑤) = 𝑓𝑝(ℎ)}. 
+ 
+Then for any function 𝑉: 𝐴 → ℝ, max𝑎∈𝑀𝑉(𝑎) ≤ max𝑎∈𝑀∗𝑉(𝑎). 
+ 
+Proof: we need to show that (i) M* exists and is a set of acts; (ii) that for any V, 
+max𝑎∈𝑀𝑉(𝑎) ≤ max𝑎∈𝑀∗𝑉(𝑎). (i) Since H and Q both partition W, so does 𝐻 ⊗
+𝑄 =def. {ℎ ∩ 𝑝|ℎ ∈ 𝐻, 𝑝 ∈ 𝑄}. Hence any w  W lies in exactly one element of 𝐻 ⊗ 𝑄. So M* 
+is well-defined and its elements are all functions from W to Z i.e. acts. (ii) For any a  M 
+consider the function 𝑓𝑎: 𝑄 → 𝑀 defined as follows: 𝑓𝑎(𝑝) = 𝑎. Then 𝑓𝑎 ∈ F and if h  H 
+then 𝑓𝑝
+𝑎(ℎ) =  𝑎(ℎ) = 𝑎(𝑤). So 𝑎 ∈ 𝑀∗. Therefore 𝑀 ⊆ 𝑀∗. Since M is finite, so is M*. So 
+PM applies to yield the result.       
+ To get from FC to C we need this decision-theoretic assumption: 
+ 
+Representability (R):  is representable, i.e.  is asymmetric and  is transitive.  
+ 
+If R holds and A is denumerable (which we assume), then some value function V from acts to 
+real numbers satisfies the following condition: for any 𝑎, 𝑎′: 𝑎 ≻ 𝑎′ ↔ 𝑉(𝑎) > 𝑉(𝑎′).30 By 
+FC, we know that if the agent faces M then for any question Q, maximizing V on MQ—that is, 
+making the option realized from M optimally dependent on the answer to Q—attains at least 
+                                                      
+30 For proof see (Kreps [1988], ch. 3). 
+
+=== PAGE 15 ===
+ 15 
+as high a V-score as maximizing V on M. By R, the agent is doing at least as well in the 
+former case as in the latter, by her own lights ex ante.  
+ The only substantial assumption here was Representability. This fragment of classical 
+decision theory is far less demanding than that necessary for GT. We have already seen that 
+the latter involves IA, which many decision theories reject. But most of these non-classical 
+decision theories still endorse R.31  
+ Conditionality is therefore  platitudinous and relatively weak. Platitudinous because 
+the mathematical idea behind it is —notwithstanding the tedium of FC itself —the utterly 
+simple idea that a function attains a (weakly) greater maximum over a finite set than over any 
+of its subsets. Weak because the decision -theoretic idea behind it —Representability—is 
+widely accepted and intuitively quite plausible. It is not universally accepted. S o 
+Conditionality itself is not a complete triviality. Someone who rejects R might perhaps reject 
+C.32 But C should appeal more widely than any principle that prohibits the Allais preferences. 
+ 
+5.2 Revisiting the counterexamples 
+ 
+Neither of our two examples conflicts with C. It’s tempting to think they must because they 
+conflict with GT, and GT seems to follow from C . Roughly, this is because it seems  that 
+observing and then deciding is always a way to make one’s decision depend optimally on the 
+answer to a question.  
+More carefully, s uppose that a rational  agent is choosing from M, and has the 
+opportunity to conduct an observation. It’s tempting to accept: 
+ 
+Questions: Any observation can be thought of as providing the complete answer 
+to some (antecedently specifiable) question. 
+  
+So let Q be the question which the observation would answer. By C, our agent prefers 
+choosing from MQ instead of M. It is also perhaps natural to think 
+ 
+Equivalence (E):  For a rational agent, choosing from M after learning the 
+answer to Q is eq uivalent to (leads to the same outcome as 33) choosing from 
+MQ. 
+ 
+Putting these together, it follows that our agent prefers choosing from M after learning the 
+answer to Q over choosing from M. Since choosing from M after learning the answer to Q is 
+just what it is to look first, our agent prefers looking before leaping. 
+So GT follows from C given initially plausible principles. Nonetheless, neither of our 
+examples conflicts with C. For, as we’re about to show, each of the examples conflicts with a 
+different premise in this derivation. 
+ 
+                                                      
+31 This includes Anticipated Utility Theory, Choquet Expected Utility , Risk-Weighted Expected Utility, and 
+Counterfactual Desirability Theory, but not Disappointment Theory (see n. 21).  
+32 For alleged counterexamples to the transitivity of  and hence (given asymmetry of ) to that of , see (May 
+[1954], pp. 6-7; Gehrlein and Fishburn [1976], p. 1). Decision theories employing imprecise probabilities  may 
+reject the transitivity of  while accepting that of  . For they may  allow incomparable options; and if  a is 
+incomparable to both b and c, yet b is preferable to c, we have c  a and a  b without c  b. Many working on 
+imprecise decision theories nonetheless maintain that if it’s unacceptable to choose a from 𝑀, it must also be 
+unacceptable to choose a from any 𝑀’ ⊇ 𝑀 – see e.g. Axiom 1a in (Seidenfeld et al. [2010], p. 164). C follows 
+straightforwardly from this – and hence appeals even to some who reject R. 
+33 Or at least the same up to indifference given the answer.  
+
+=== PAGE 16 ===
+ 16 
+5.2.1 The Unmarked Clock 
+ 
+The unmarked clock resists the slide from C to GT by being a counterexample to Questions: 
+there is no question such that looking at the clock guarantees that you learn exactly the 
+complete answer to it. Some things you might learn are consistent with others. So the things 
+you might learn don’t partition W. So they aren’t all complete answers to a single question. 
+ Note that looking is, even here, a way to make your decision depend on the answer to 
+some question or other. Let qi be the proposition that you learn [𝑖 − 1] ∪ [𝑖] ∪ [𝑖 + 1]. Then 
+𝑄 = {𝑞𝑖|0 ≤ 𝑖 ≤ 59} is a question, and which post -glance option you choose depends on its 
+answer: you bet ODD if the answer is qi for even i, and EVEN if the answer is qi for odd i. 
+But this dependence is not optimal ex ante: it differs from the pattern ‘bet ODD  if the answer 
+is qi for odd i, bet EVEN if the answer is qi for even i’, which is obviously what you’d choose 
+if allowed to make your bet depend  optimally on the answer to Q. But this non-optimality is 
+unsurprising: why should looking at the clock make your bet optimally dependent on the 
+answer to Q, when it doesn’t teach you that answer? 
+ The unmarked clock would refute C only if looking at the clock, then doing what you 
+think best, were equivalent to choosing an ex ante  optimal pattern of dependence  of your 
+choice on the answer to some Q. But it can’t be. For as we argued, looking at the c lock, and 
+then doing what you think best, means betting ODD (EVEN) if D is even (odd), hence a sure 
+loss. Yet one initial option was not to bet, which is strictly better. So for every Q, the 
+(vacuous) pattern of dependence ‘take no bet whatever the answer to Q’ is preferable to 
+looking and then doing what you think best. So the latter compound action can’t generate an 
+ex ante optimal pattern of dependence on Q. C is safe from the unmarked clock. 
+ 
+5.2.2 Allais 
+ 
+C is also safe from the Allais case. Suppose a subject prefers a1 to a2 and a4 to a3, and she 
+actually faces the choice (i) between 𝑎1 and a2. Intuitively, C says that she is no worse off by 
+her own lights if she now makes the final selection dependent on which of ℎ1 ∪ ℎ2 and ℎ3 is 
+true in whatever way now seems optimal to her. Inspection of the payoffs shows that she will 
+choose the (vacuously) dependent act from {𝑎1, 𝑎2}{ℎ1∪ℎ2,ℎ3} that realizes a1 in either 
+circumstance. Similarly, suppose she faces the choice (ii) between a3 and a4. If choosing from 
+the conditional acts, she will now choose the dependent act that realizes a4 in either case. The 
+important point is that in (i) and (ii), these dependent acts make her no worse off by her own 
+lights ex ante. So C is consistent with the Allais preferences. By contrast and as we saw, GT 
+is not. Given the Allais preferences a1  a2 and a4  a3, it must hold either in (i) or in (ii) that 
+choosing after learning which of ℎ1 ∪ ℎ2 and ℎ3 is true must make her worse off by  her own 
+lights ex ante.34   
+ Returning one more time to the taxation analogy: suppose again that every US citizen 
+resides in Alabama or Wyoming (not both), with those in h1 or h2 resident in Alabama and 
+those in h3 resident in Wyoming, and that the tax regimes a1-a4 affect these classes as in 
+Table 3. Then C says only that a government choosing from a1 and a2 is rational to make the 
+regime faced by a citizen somehow dependent on  the citizen’s State of residence. Thi s is 
+consistent with the government’s having distributional aims that make it prefer a4 to a3. It is 
+consistent with C that the government prefers a1-in-Alabama-and-a1-in-Wyoming to a2 but 
+                                                      
+34 But C does not itself counsel the agent to (pay to) avoid free evidence in Allais -type cases. Allais-type agents 
+will indeed do that, and this may be objectionable (see the discussion towards the end of section 4). But this is a 
+consequence of their preferences, not a consequence of C itself, which is entirely consistent with IA. C, like 
+transitivity, no more mandates the Allais preferences than it prohibits them.  
+
+=== PAGE 17 ===
+ 17 
+also a4-in-Alabama-and-a4-in-Wyoming to a3, because each preferred system represents 
+some way of making the tax regime conditional on the State of residence, which is all that C  
+recommends.      
+More formally: C implies that anyone facing M12 (M34) is (by her own lights ex ante) 
+no worse off  when choosing from the menu of dependent acts M12
+Q (M34
+Q), where Q is the 
+question whether h3 (as opposed to ℎ1 ∪ ℎ2) is true. That is trivial, since choosing from M12 
+(M34) is the same as choosing from M12
+Q (M34
+Q). For the options in M12 are a1 and a2 while 
+the options in M12
+Q are (in an obvious notation): 
+ 
+(i) ℎ1 ∪ ℎ2 → 𝑎1, ℎ3 → 𝑎1 
+(ii) ℎ1 ∪ ℎ2 → 𝑎1, ℎ3 → 𝑎2 
+(iii) ℎ1 ∪ ℎ2 → 𝑎2, ℎ3 → 𝑎1 
+(iv) ℎ1 ∪ ℎ2 → 𝑎2, ℎ3 → 𝑎2 
+ 
+Since options are functions from possible worlds to prizes, and a1 and a2 have identical prizes 
+throughout h3, we may identify (i ) with (ii) and (iii) with (iv). Clearly (i) is equivalent to a1 
+and (iv) to a2. So M12
+Q collapses into M12. Similarly M34
+Q collapses into M34.  
+So C holds in the Allais example. Since the observation does exactly and completely 
+answer the question whether h3 is true, the relevant instance of Questions also holds. So the 
+Allais case must be a counterexample to E, the principle that for an agent who acts rationally, 
+choosing from M after learning the answer to Q yields the same result as choosing from MQ. 
+And this is exactly what we found. When the agent learns the answer to Q before choosing, 
+she is liable to pick options from M = MQ that she initially rejects.35  
+So neither counterexample to  GT threatens C, supporting our claim that C is 
+platitudinous. We’ve also seen how to derive GT from C  using the initially plausible, but on 
+reflection non -obvious, principles Questions and Equivalence, thus revealing the sense in 
+which Good’s Theorem is the special case of Condition ality that we get whenever those 
+controversial principles do in fact hold.  
+ 
+6 Conclusion 
+ 
+Good’s paper b egan with Ayer’s  question: ‘why, in the theory of logical probability 
+(credibility) we should bother to make new observations’ .36 GT answers that observation 
+pays when its cost is negligible. We’ve shown : first, that it need not pay unless (i) 
+observation is partitional and (ii) rational choice respects  Independence—neither of which is 
+obvious. But second, that Conditionality holds irrespective of t hese assumptions, requiring 
+only that preference be representable. ‘Look before you leap’ blends assumptions about 
+perceptual epistemology and decision theory, making it only questionably true and clearly not 
+platitudinous. ‘Make your actions depend on the world when you can’ incurs a lighter, purely 
+decision-theoretic commitment that gives it, in our view, a better claim to being both.  
+ 
+ 
+ 
+                                                      
+35 It’s no coincidence that we needed counterexamples to IA to get a co unterexample to E.  E follows from IA 
+given R and a weak assumption about diachronic preference change (roughly: if there are acts a which the agent 
+weakly prefers to all acts in M conditional on p – i.e. the agent prefers the act ‘ 𝑝 → 𝑎, ~𝑝 → 𝑥’ to the act 
+‘𝑝 → 𝑏, ~𝑝 → 𝑥’ for any  𝑥, 𝑏 ∈ 𝑀 – the agent will weakly  prefer one of these acts to every act in M 
+unconditionally, after learning p). For space reasons, we omit the proof. 
+36 (Good [1967], p. 319). 
+
+=== PAGE 18 ===
+ 18 
+Acknowledgements 
+ 
+AA wishes to thank Julien Dutant, Christian List , and an audience at the London School of 
+Economics to which he delivered an early version of this paper. BS wishes to thank Nilanjan 
+Das, Kevin Dorst, and Ian Wells. We both wish to thank two referees for this Journal for 
+insightful comments that led to many improvements.  
+ 
+            
+ 
+References 
+ 
+Allais, M. [1953]: ‘Le Comportement de l’Homme Rationnel devant le Risque: Critique des 
+Postulats et Axiomes de l’École Américaine’, Econometrica, 21, pp. 503-546. 
+Bradley, R. and Stefánsson , H. O.  [forthcoming]: ‘Counterfactual Desirability ’, British 
+Journal for the Philosophy of Science. 
+Bradley, S. and Steele, K. [2016]: ‘Can Free Evidence be bad? Value of Information for the 
+Imprecise Probabilist’, Philosophy of Science, 83, pp. 1–28. 
+Bronfman, A. [2014]: ‘Conditionalization and Knowing that one Knows’, Erkenntnis, 79, pp. 
+871-92. 
+Buchak, L. [2010]: ‘Instrumental Rationality, Epistemic Rationality, and Evidence-
+gathering’, Philosophical Perspectives, 24, pp. 85-120. 
+Buchak, L. [2013]: Risk and Rationality. Oxford: OUP. 
+Campbell-Moore, C. and Salow, B. [unpublished]: ‘Avoiding Risk and Avoiding Evidence’ 
+Cohen, S. and Comesaña, J . [2013]: ‘Williamson on Gettier Cases and Epistemic Logic’, 
+Inquiry, 56, pp. 15–29. 
+Christensen, D. [2010]: ‘Rational Reflection’ Philosophical Perspectives, 24, pp. 121-140. 
+Das, N. [unpublished]: ‘Externalism and the Value of Information’ 
+Dorst, K. [unpublished]: ‘Evidence: A Guide for the Uncertain’ 
+Elga, A. [2013]: ‘The Puzzle of the unmarked clock and the new rational reflection 
+principle’, Philosophical Studies, 164, pp. 127-139. 
+Geanokoplos, J. [1989]: ‘Game Theory without Partitions, and Applications to Speculation 
+and Consensus’, Cowles Foundation Discussion Paper no. 914.  
+Gehrlein, W. V. and Fishburn , P. C.  [1976]: ‘Condorcet’s Paradox and Anonymous 
+Preference Profiles’, Public Choice, 26, pp. 1-18.   
+Good, I. J. [1967]: ‘On the Principle of Total Evidence’, British Journal for the Philosophy of 
+Science, 17, pp. 319-21.  
+Good, I. J. [1974]: ‘A Little Learning can be Dangerous’, British Journal for the Philosophy 
+of Science, 25, pp. 340-42.  
+Graves, P. [1989]: ‘The Total Evidence Principle for Probability Kinematics’, Philosophy of 
+Science, 56, pp. 317–324. 
+Hamblin, C. L. [1958]: ‘Questions’, Australasian Journal of Philosophy, 36, pp. 159-168. 
+Hansson, B. [1988]: ‘Risk Aversion as a Problem of Conjoint Measurement’, in P. 
+Gärdenfors and N. -E. Sahlin ( eds), Decision, Probability, and Utility: Selected Readings , 
+Cambridge: CUP, pp. 136-158.    
+Hawthorne, J.  and Magidor, O. [2010]: ‘Assertion and Epistemic Opacity’, Mind, 119, pp. 
+1087–1105. 
+Hedden, B. [2013]: ‘Options and Diachronic Tragedy’, Philosophy and Phenomenological 
+Research, 90, pp. 423-451. 
+
+=== PAGE 19 ===
+ 19 
+Horowitz, S. [2014]: ‘Epistemic Akrasia’, Noûs, 48, pp. 718-744. 
+Jeffrey, R. C. [1983]: The Logic of Decision, 2nd ed, Chicago: Chicago UP. 
+Kahneman, D. and Tversky , A . [1979]: ‘Prospect Theory: An Analysis of Decision under 
+Risk’, Econometrica, 47, pp. 263-91. 
+Kreps, D. M. [1988]: Notes on the Theory of Choice, Boulder: Westview. 
+Lewis, D. [1999]: ‘Why Conditionalize?’, in his Papers in Metaphysics and Epistemology . 
+Cambridge: CUP, pp. 403-7. Reprinted in A. Eagle (ed.) [2011]: Philosophy of Probability: 
+Contemporary Readings, London: Routledge, pp. 132-4. 
+Loomes, G. and Sugden , R . [1987]: ‘Disappointment and Dynamic Consistency in Choice 
+under Uncertainty’, Review of Economic Studies, 53, pp. 271-82.  
+McClennen, E. F. [1990]: Rationality and Dynamic Choice, Cambridge: CUP. 
+Machina, M. [1982]: ‘“Expected Utility ” analysis without the Independence Axiom ’, 
+Econometrica, 50, pp. 277-323. 
+Machina, M. [ 1989]: ‘Dynamic Consistency and Non-Expected Utility Models of choice’,  
+Journal of Economic Literature, 27, pp. 1622-68. 
+May, K. O. [1954]: ‘Intransitivity, Utility and the Aggregation of Preference Patterns’, 
+Econometrica, 22, pp. 1-13. 
+Peterson, M. J. [2009]: An Introduction to Decision Theory, Cambridge: CUP. 
+Quiggin, J. [1982]: ‘A Theory of Anticipated Utility’, Journal of Economic Behavior and  
+Organization, 3, pp. 323–343. 
+Rabin, M. [2000]: ‘Risk-aversion and Expected Utility Theory: A Calibration Theorem’, 
+Econometrica, 68, pp. 1281-92. 
+Rabinowicz, W. [1995]: ‘To Have One’s Cake and Eat it too: Sequential Choice and 
+Expected Utility Violations’, Journal of Philosophy, 92, 586-620. 
+Savage, L. J. [1972]: Foundations of Statistics, 2nd ed., New York: Dover. 
+Schmeidler, D. [1989]: ‘Subjective Probability and Expected Utility without Additivity’, 
+Econometrica, 57, pp. 571–587.  
+Schoenfield, M. [forthcoming]: ‘Conditionalization does not Maximize Expected Accuracy’, 
+Mind.  
+Seidenfeld, T. [2004]: ‘A Contrast between two Decision Rules for use with (Convex) Sets of 
+Probabilities: Gamma-maximin versus E-admissibility’, Synthese, 140, pp. 69–88. 
+Seidenfeld, T.,  Schervish, M., and Kadane, J . [2010]: ‘Coherent Choice Functions under 
+Uncertainty’, Synthese, 172, pp. 157-176. 
+Stalnaker, R. C. [2009] ‘On Hawthorne and Magidor on Assertion, Context, and Epistemic 
+Accessibility’ Mind, 470, pp. 399-409.   
+Williamson, T. [1992]: ‘Inexact Knowledge’, Mind, 402, pp. 217-242. 
+Williamson, T. [2000]: Knowledge and its Limits, Oxford: OUP.  
+Williamson, T.  [2011]: ‘Improbable Knowing’, in T. Dougherty (ed.), Evidentialism and its 
+Discontents, Oxford: OUP, pp. 147-64. 
+Williamson, T.  [2013]: ‘Response to Cohen, Comesaña, Goodman, Nagel, and  Weatherson 
+on Gettier Cases in Epistemic Logic’, Inquiry, 56, pp. 77–96. 

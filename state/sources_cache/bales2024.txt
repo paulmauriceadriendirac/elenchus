@@ -1,0 +1,597 @@
+arXiv:2401.15487v1  [cs.CY]  27 Jan 2024
+Artiﬁcial Intelligence:
+Arguments for Catastrophic Risk
+Adam Bales∗
+University of Oxford
+William D’Alessandro ∗
+University of Oxford
+Cameron Domenico Kirk-Giannini ∗
+Rutgers University–Newark
+Abstract
+Recent progress in artiﬁcial intelligence (AI) has drawn at tention to the technol-
+ogy’s transformative potential, including what some see as its prospects for caus-
+ing large-scale harm. We review two inﬂuential arguments pu rporting to show
+how AI could pose catastrophic risks. The ﬁrst argument — the Problem of Power-
+Seeking — claims that, under certain assumptions, advanced AI syste ms are likely
+to engage in dangerous power-seeking behavior in pursuit of their goals. We re-
+view reasons for thinking that AI systems might seek power, that they might obtain
+it, that this could lead to catastrophe, and that we might bui ld and deploy such sys-
+tems anyway. The second argument claims that the developmen t of human-level
+AI will unlock rapid further progress, culminating in AI sys tems far more capable
+than any human — this is the Singularity Hypothesis. Power-seeking behavior on
+the part of such systems might be particularly dangerous. We discuss a variety of
+objections to both arguments and conclude by assessing the s tate of the debate.
+1 Introduction
+Artiﬁcial intelligence (AI) has arrived. Today’s AI system s display various impressive capabilities:
+they handily defeat the best humans at games of strategy (Sch rittwieser et al. 2019), score highly on
+standardized tests (OpenAI 2023a), help design novel drugs (Jumper et al. 2021, Bran et al. 2023),
+create dazzling images via models like Dall-E 3, write and debug code via models like Github Codex,
+and converse compellingly with humans via models like GPT-4 .
+These capabilities are likely to progress rapidly in coming years as competition intensiﬁes and
+hardware and algorithms improve. Some leading AI companies explicitly aim at creating general-
+purpose human-level AI. 2 Assuming this goal is achieved, developers will face strate gic and eco-
+nomic incentives not to stop at human-level capabilities. W e may soon 3 ﬁnd ourselves sharing the
+world with a new kind of highly capable thinking thing, train ed but not necessarily understood or
+fully controlled by us.
+∗ Equal contribution. Paper forthcoming at Philosophy Compass.
+2E.g., Google’s DeepMind: “Our long term aim is to solve intel ligence, developing more general and ca-
+pable problem-solving systems, known as artiﬁcial general intelligence” (https://www.deepmind.com/about).
+And OpenAI: “We believe our research will eventually lead to artiﬁcial general intelligence, a system that can
+solve human-level problems” (https://openai.com/resear ch/overview). If this optimism among technical experts
+surprises some readers familiar with the skeptical argumen ts of Hubert Dreyfus (1965, 1972), it is worth point-
+ing out that contemporary machine learning has moved beyond many of the paradigms against which Dreyfus’s
+criticisms were leveled.
+3How soon? In a large 2023 survey of published AI researchers, superhuman general-purpose AI was ex-
+pected by 2047 with 50% likelihood (Grace et al. 2024). Meanw hile, as of January 2024, the forecasting
+site Metaculus gives 2032 as the aggregated expected date fo r human-level AI, based on over 2500 predic-
+tions (https://www.metaculus.com/questions/5121/date -of-artiﬁcial-general-intelligence/). For a comparison
+and synthesis of a number of estimated timelines, see Wynroe et al. (2023). Of course, predicting long-term
+technological developments is no trivial task even for experts, and the historical record of AI timeline estimates
+suggests that developments in the ﬁeld may be especially dif ﬁcult to foresee.
+A growing number of philosophers and others fear that future AI technology might pose a catas-
+trophic risk to humanity (Bostrom 2014, Ord 2020, V old & Harr is 2021). In this article, we explore
+some of the arguments behind such worries. 4 In contrast with discussion of pandemics, nuclear
+weapons, and other global threats, the AI risk debate turns o n distinctive issues in decision theory,
+ethics, and philosophy of mind. For this reason, the debate h as been shaped by philosophers from
+its beginnings.
+Our coverage here is limited in several ways. First, we prima rily discuss arguments for catastrophic
+risk, involving globally devastating harm or threats to human existence, autonomy or potential. (This
+isn't to deny that major non-catastrophic harms from AI are a lso worth taking seriously.) Second,
+we focus on risk claimed to be intrinsic to certain kinds of AI systems, rather than risk associated
+with human error or malicious misuse. 5 (This isn't to say that the latter kinds of risks are smaller,
+but they won't be our focus here.) Finally, lacking space to c over every form of risk in detail, we
+concentrate on one widely discussed idea: the notion that so me advanced AI systems are likely
+to function as agents pursuing goals, and as a result, are lik ely to engage in dangerous resource-
+acquiring, shutdown-avoiding, and correction-resisting behavior.
+Section 2 outlines this Problem of Power-Seeking. Section 3 then discusses two claims about AI
+goals (the Instrumental Convergence Thesis and the Orthogonality Thesis ) that are relied upon in
+making the case for the Problem of Power-Seeking. Assessing these claims is crucial for assessing
+the broader argument. In section 4, we turn to the Singularity Hypothesis, according to which rapid
+improvements, culminating in capabilities far beyond our s pecies' level, will follow on the heels of
+human-level AI. If this hypothesis is true, it provides one r eason to expect the sort of supercapable
+systems that can lead to the Problem of Power-Seeking. So ass essing this hypothesis helps us to
+determine how concerned we should be by power-seeking AI sys tems.
+It’s worth noting that there’s little consensus about the li kelihood of catastrophe from the sources
+we discuss. A small but vocal contingent of pessimists takes human extinction to be the default
+outcome of advanced AI (cf. Y udkowsky 2023). Other theorist s take catastrophe to be unlikely but
+worth taking seriously, on the grounds that even small chanc es of disaster should be understood in
+detail and reduced if possible. (For instance, Carlsmith (2 022) estimates that an AI catastrophe is
+>10% likely by 2070.) Still others question whether the risk s rise even to this level of signiﬁcance
+(Thorstad 2022, §6.2, Thorstad 2023). In general, the reade r would do well to view the arguments
+below as aiming at plausibility rather than very high probab ility or proof.
+2 The Problem of Power-Seeking
+Existing AI systems have already caused signiﬁcant harms. P edestrians have been killed by self-
+driving cars, for instance, and AI-generated images have ai ded incendiary misinformation cam-
+paigns (Klee & Ramirez 2023, Sanger & Myers 2023). However, w hile such outcomes are tragic,
+they don't constitute catastrophes on the scale discussed a bove. To pose such a risk, AI systems
+would likely need much greater power to affect the world. One prominent worry suggests that this
+is just what might happen: under plausible assumptions, som e AI systems will seek power, success-
+fully obtain it and go awry, potentially bringing about cata strophe (Y udkowsky 2008, Omohundro
+2008, Bostrom 2012, 2014, Carlsmith 2022, forthcoming). Th is is the Problem of Power-Seeking.
+We can spell out the case for this concern by considering four questions.
+First, why might AI systems seek power? The standard argument appeals to the Instrumental
+Convergence Thesis, which in rough terms holds that certain subgoals are useful for achieving a
+wide variety of ﬁnal goals (Omohundro 2008, Bostrom 2012). S uch subgoals might include self-
+preservation, self-improvement, and resource acquisitio n, among others. The Instrumental Conver-
+gence Thesis seems to suggest that many AI systems will devel op these subgoals, which we can
+describe as power-seeking subgoals, and so suggests that AI systems will seek power. We discuss
+this thesis further in §3.
+Second, why might power-seeking AI successfully acquire power? One reason is that some
+expect us to develop superintelligent AIs with radically greater cognitive powers than the smartest
+4A companion article examines proposals for developing AI sa fely.
+5For discussion of biochemical misuse risks, see D’Alessand ro et al. 2023. For general taxonomies of AI
+risk, see Yampolskiy 2015, Zwetsloot & Dafoe 2019 and Hendry cks et al. 2023.
+2
+humans. Such systems might be able to engage in sophisticate d misinformation campaigns, develop
+new military technologies, proﬁt from the stock market, and so on. Given such advantages, if
+superintelligent AI systems seek power, some will plausibl y acquire it (Bostrom 2014).
+Despite the terminology, this argument doesn't rely on a uni ﬁed notion of general intelligence. Nor
+does it assume that AIs will become conscious, acquire perso nhood, or possess humanlike beliefs
+and desires. Instead, what matters is that the systems are hi ghly capable at various tasks that are
+useful for gaining power (Carlsmith forthcoming). A more ap t label for this notion might be super-
+capability.
+Supercapability provides one reason AI systems might acqui re power; there are at least two others.
+One is supernumerosity: since copying software is cheap and easy, the population of capable AIs
+could quickly grow large. If these systems cooperated, shee r numbers might allow them to seize
+substantial collective power (Karnofsky 2022). Further, h umans might voluntarily relinquish signif-
+icant power to increasingly capable systems, because these systems can carry out useful tasks. For
+example, militaries might hand control of drones to AI.
+Third, why might AI systems acquiring power lead to catastrophe? If AI systems seek power
+on large scales, this might lead to conﬂict with humans as com petition arises for resources and
+inﬂuence. For example, AIs might seek to disempower humans t o limit our interference with their
+goals and might seize control of resources we rely on in order to promote their own ends (Bostrom
+2014, p. 141). If these systems have acquired sufﬁcient powe r, the outcomes of such behaviors
+could be catastrophic for humans.
+Fourth, why would we develop and deploy AI systems that posed catastr ophic risks? For a
+start, even if these risks were real and there was mounting ev idence for this, some people might not
+take the danger seriously, just as some are unconcerned by cl imate change. Further, if AI proves
+useful and economically valuable, competition between AI c ompanies and between governments
+will likely ensue (Carlsmith 2022, §5). Competitive enviro nments encourage rapid progress that
+might not involve adequate attention to safety. Finally, th ere's the possibility of deceptive alignment,
+which involves systems appearing safe during development b ut becoming dangerous when they're
+deployed in the world (Ngo et al. 2023, §4.2; Bostrom 2014, pp . 142–145). In such cases, we might
+not realize the risk until it's too late.
+This concludes our overview of the Problem of Power-Seeking . We now consider two objections.
+First, the above arguments envisage AI systems with at least human-level cognitive capabilities
+that behave in ways that strike us as capricious and morally a lien, pursuing unlimited power in the
+service of arbitrary goals. This is surprising. Perhaps it’ s also implausible. As AI systems develop
+cognitive capabilities at a similar level to our own, it’s po ssible their motivations will also converge
+on something like ours (see Müller and Cannon 2021). Catastr ophic power-seeking might then be
+rare. Against this line of thought, the Orthogonality Thesis holds that arbitrarily high levels of
+intelligence can be combined with more or less any ﬁnal goals (Bostrom 2012). If this were true,
+a system could be superintelligent without being driven by c oncerns that are conducive to human
+ﬂourishing. We discuss these issues further in §3.
+According to a second objection, power-seeking worries ign ore the fact that humans create AI sys-
+tems and so control their form. We can design systems which wo n’t cause large-scale harm, and we
+can implement regulations to ensure dangerous systems aren ’t deployed (cf. Pinker 2015). Indeed,
+safety concerns and economic incentives point in the same di rection here: unleashing catastrophe
+on the world would be bad for business, so even proﬁt-driven c ompanies will be motivated to invest
+in safety.
+These suggestions are reasonable in principle, but it’s unc lear that they’ll be easy to implement in
+practice. Ensuring that AI systems do what we want requires ruling out misaligned behavior contrary
+to designers’ intentions. 6 If misaligned behavior proves difﬁcult to foresee prior to d eployment,
+as some suspect it will, then well-meaning developers and re gulators may lack the tools to avert
+catastrophe.
+This alignment problem is at the core of many worries about catastrophic risk from AI. To get a sense
+of why it might prove difﬁcult for designers to foresee and ru le out misaligned behavior, consider
+the story of King Midas—or stories of golems and genies—wher e a simple wish is fulﬁlled in
+6For discussions of the concept of alignment, see Gabriel 202 0, Carlsmith 2022 §4.1.
+3
+unexpected and undesirable ways. Part of the point of these s tories is that wishes, when interpreted
+literally and without reference to our broader assumptions and desires, can easily go awry in ways we
+didn't anticipate. A supercapable AI system whose motives or understanding of the world differ even
+slightly from ours might resemble such dangerous wish-fulﬁ llers (Muehlhauser and Helm 2012).
+More concretely, we can see how misalignment might arise by c onsidering AI systems developed
+via reinforcement learning , a central technique underpinning contemporary AI. In rein forcement
+learning, a designer doesn't specify how a system is to carry out a given task; instead, the system
+learns how to do so via a training process. This involves the s ystem being run on a task and then
+receiving feedback on how it performed, in the form of a rewar d signal. The system is then modiﬁed,
+based on this reward, so that it will better carry out the task . With enough iterations, this process can
+lead to highly competent systems.
+Given this approach, there are at least two ways that misalig ned behavior can arise: reward misspec-
+iﬁcation and goal misgeneralization (Ngo et al. 2023). Reward misspeciﬁcation involves a system
+accidentally being rewarded for undesirable behavior (Kra kovna et al. 2020). 7 This happens be-
+cause it can be hard to specify a reward that captures exactly the desired behavior. For example,
+one system designed to win a boat racing video game was reward ed for achieving in-game points, a
+seemingly reasonable choice (Clark and Amodei 2016). Howev er, rather than winning, the resulting
+system steered the boat in circles in a way that allowed it to c ontinually acquire points. Here, the
+reward was misspeciﬁed.
+Even in the absence of misspeciﬁcation, goal misgeneralization can arise (Shah et al. 2022, Lan-
+gosco et al. 2022). This phenomenon arises because, in compl ex environments, reinforcement
+learning systems cannot be trained on every situation they m ight face. This raises the possibility that
+any goals developed might lead to desirable behavior in the s ituations encountered in training but
+lead to undesirable behavior in novel situations. This is go al misgeneralization. For example, Shah
+et al. (2022) trained an AI system to collect virtual apples a nd avoid being attacked by monsters.
+The system learned to collect shields, which helped with the latter task. Y et it continued to collect
+shields even when placed in environments without monsters, where acquiring shields was a waste
+of effort. This system's behavior generalized poorly to nov el situations.
+Reward misspeciﬁcation and goal misgeneralization repres ent two ways that AI systems could de-
+velop unwanted and potentially dangerous behavioral tende ncies. These might be difﬁcult to antici-
+pate prior to deployment, so safety-minded intentions migh t not sufﬁce to prevent harm.
+To summarize: AI risk theorists maintain that we have ground s to think AI systems might seek and
+acquire power in a way that leads to catastrophe, and grounds to think we might deploy such systems
+anyway. This is the Problem of Power-Seeking.
+3 AI Goals
+The above argument appealed to two claims relevant to the nat ure of AI goals: the Instrumental
+Convergence Thesis and the Orthogonality Thesis. We'll now examine these.
+We start with the Instrumental Convergence Thesis, the clai m that certain resource-acquiring, self-
+improving and shutdown-resisting subgoals are useful for a chieving a wide variety of ﬁnal goals.
+Given this thesis, we might expect sufﬁciently advanced goa l-directed AI systems to pursue such
+subgoals.
+Instrumental Convergence is motivated by the observation t hat agents possessing more material
+resources, foresight, factual knowledge, and persistent i nﬂuence on the world are typically better
+positioned to get what they want in many domains (Omohundro 2008, Bostrom 2012).8 For example,
+acquisition of resources like money is useful for achieving many goals. Consider an AI system with
+the goal of proving mathematical theorems. This system coul d use money to hire research assistants
+7Some terminology: reward hacking and speciﬁcation gaming refer to behaviors that take advantage of
+reward misspeciﬁcation to achieve high reward in an undesir able way.
+8These assets are less helpful for some goals, such as the goal of doing nothing. This is why Instrumental
+Convergence is framed in terms of a “wide variety” of ﬁnal goa ls.
+4
+or to pay for computing infrastructure with which to search t he space of possible proofs. Similar
+motivations can be given for the remaining subgoals. 9
+The subgoals comprising the Instrumental Convergence Thes is form a heterogeneous group; they
+need not stand or fall as genuinely universal together. Acco rdingly, some skeptics have focused their
+criticisms on particular members of the set. Salib (forthco ming) argues against self-improvement
+as a convergent subgoal, on the grounds that unimproved AIs m ay be unable to control the goals
+of their improved successors, and may therefore view self-i mprovement as a risk to be avoided.
+Meanwhile Gallow (forthcoming) evaluates the case for vari ous potential subgoals, reaching the
+mixed conclusion that some are plausibly instrumentally co nvergent while others are not (see also
+Goertzel 2015).
+Alternatively, one might raise a wholesale objection to the Instrumental Convergence Thesis, as
+Goertzel does when he suggests that the thesis's intuitive p lausibility relies on a tendency to anthro-
+pomorphize (Goertzel 2015). 10
+We turn now to the Orthogonality Thesis: the claim that arbit rarily high levels of intelligence can
+be combined with almost any ﬁnal goal. Bostrom’s case for thi s thesis rests on a conception of
+intelligence as skill at instrumental reasoning, or “searc h[ing] for instrumentally optimal plans and
+policies” (2012, 73).
+Müller and Cannon (2021) accept that Orthogonality might ho ld for intelligence in this instrumental
+sense. They argue, however, that AI systems would pose a thre at to humanity only if they possessed
+a richer sort of general intelligence, consisting partly in the ability to reﬂect on and modify one’s
+goals. According to Müller and Cannon, the Orthogonality Th esis is false if interpreted in terms of
+this latter notion of intelligence, because a highly capabl e generally intelligent system would seek
+rational and ethical coherence (and so might not retain any a rbitrary initial goal). Of course, both of
+these claims rest on controversial assumptions. As an empir ical matter, history seems to offer vivid
+illustrations of actors threatening large subsets of human ity without undergoing the kind of trans-
+formative self-examination Müller and Cannon describe; if this combination of general intelligence
+and dangerous goals is common for us, why think it’s unlikely for AI systems?
+In addition to arguments targeting each thesis in isolation , there are also holistic considerations
+relevant to both. We'll discuss two of these.
+First, Goertzel (2015) notes that questions of safety will b e decided by the speciﬁc goals that future
+AI systems actually develop. These will likely be constrain ed—by human intentions, technological
+limitations, training materials and procedures, and so on— rather than entirely arbitrary.
+This observation might seem to challenge the relevance of bo th theses. Ultimately, what matters is
+not whether subgoals are useful for achieving a wide variety of ﬁnal goals, but whether they're useful
+for achieving future systems’ actual goals, which may or may not be typical of goals in general. 11
+So Instrumental Convergence might be true but irrelevant fo r the real cases of interest in our world.
+Likewise, what matters is not whether high levels of intelli gence can be combined with most ﬁnal
+goals, but whether intelligence is compatible with future s ystems’ actual goals. If not, Orthogonality
+will be similarly irrelevant.
+These observations suggest that power-seeking arguments w ould be improved by paying greater
+attention to the particular types of goals that future AI sys tems are most likely to pursue. (The same
+advice also applies to some of these arguments’ critics: for instance, Gallow’s negative results on
+Instrumental Convergence assume that an AI system's desires are sampled randomly from the space
+of all possible desires.) On the other hand, if there are stro ng reasons to believe that the appearance
+of constraint is misleading and future AI goals might well be essentially arbitrary, these reasons
+deserve to be stated more clearly than they have been.
+9For attempts to formally prove that various behaviors are in strumentally convergent, see Turner et al. 2021
+and Turner and Tadepalli 2022.
+10Another possibility: humans might deliberately give AI sys tems power-seeking goals. If so then the prob-
+lem of power-seeking doesn't rely on Instrumental Convergence.
+11For work on whether present-day systems display the behavio rs predicted by Instrumental Convergence,
+see Baker et al. 2020, Perez 2022, OpenAI 2023b, §2.9.
+5
+A second holistic point is that Instrumental Convergence and Orthogonality both rely on the assump-
+tion that AI systems will have goals (and goal-pursuing abil ities) of some kind. This assumption
+may deserve further scrutiny. 12
+In its favor, Carlsmith (2022, §3) argues that goal-based ar chitectures are very useful: systems that
+have goals and competently aim to achieve them will be well pl aced to carry out complex tasks
+in the real world. 13 If this is right, then human designers might deliberately gi ve AI systems the
+structure needed for goals (as was tried, for instance, with Auto-GPT, an AI assistant that augments
+ChatGPT with internet access and various interactive capab ilities).14 Alternatively, the usefulness
+of goals might mean that, if we train a machine learning syste m to competently carry out a complex
+task, goal pursuit might emerge during training, even witho ut us intentionally creating this structure
+(Carlsmith 2022, §3.3, Ngo et al. 2023, §3.2). However, Drex ler (2019) pushes back against these
+views, arguing that it is both possible and desirable to crea te advanced AI systems that don't have
+goals in the relevant sense.
+A second class of arguments for expecting goal-pursuing AI s ystems are so-called coherence argu-
+ments (Omohundro 2007, §3, Omohundro 2008, Y udkowsky 2019) . In simple terms, these argu-
+ments hold that AI systems will be open to undesirable forms o f manipulation unless they behave
+as expected utility maximizers , which can be viewed as certain sorts of goal-driven agents. Given
+the further claim that sufﬁciently advanced AI systems won' t be open to undesirable manipulation,
+we get the conclusion that these systems will be expected uti lity maximizers. Hence, they'll have
+goals in a relevant sense. However, Thornley (2023) and Bale s (forthcoming) have pushed back
+against these arguments, in part by noting that the connecti on between avoiding manipulation and
+maximizing expected utility is less straightforward than s imple versions of the coherence argument
+assume.15
+All of these debates—about the Instrumental Convergence Th esis, the Orthogonality Thesis, and
+whether AI will be goal-driven—strike us as live and worth fu rther philosophical attention.
+4 The Singularity Hypothesis
+The Singularity Hypothesis is the hypothesis that there wil l be a period of rapid recursive improve-
+ment in the capabilities of AI systems following the point at which AI systems become able to
+contribute to research on AI. It bears on questions of catast rophic risk in so far as the result of
+such an “intelligence explosion” could be supercapable art iﬁcial systems which, if not aligned with
+human interests, might pose a threat to humanity.
+Dialectically, the Singularity Hypothesis makes contact w ith the Problem of Power-Seeking at two
+points: ﬁrst, misaligned agential AI systems with instrume ntally convergent reasons to engage in
+self-improvement might trigger a singularity-type recurs ive process; second, human actors seeking
+to improve the capabilities of AI systems could initiate a si ngularity-type recursive process which
+gives rise to misaligned supercapable AI systems. Thus it is conceivable that an “intelligence explo-
+sion” could be either the result or the cause of power-seeking behavior in AI systems.
+The two most extended treatments of the Singularity Hypothe sis from a philosophical perspective
+are due to Chalmers (2010) and Bostrom (2014), and these will be our focus in what follows. 16
+Chalmers (2010) summarizes the case for the Singularity Hyp othesis as follows:
+1. There will be AI (before long, absent defeaters).
+12The question isn't whether human developers of AI will have g oals or whether a reward signal will be used
+in training but whether systems will themselves have goals ( Ngo et al. 2023, §3).
+13Carlsmith's discussion of whether AI systems will be agentic planners is roughly equivalent to our question
+of whether these systems will have goals.
+14There's currently a great deal of interest in agentized lang uage models, which might suggest that systems
+with goals are likely to become the norm in the future. See, fo r example, Wang et al. 2023, Goldstein and
+Kirk-Giannini 2023.
+15See also Drexler 2019, §6.
+16Other sources include Good (1951, 1959, 1962, 1965), Morave c (1988), Vinge (1993), Bostrom (1998,
+2003), Kurzweil (2005), Hanson (2008), Muehlhauser and Sal amon (2012), and Loosemore and Goertzel
+(2012).
+6
+2. If there is AI, there will be AI+ (soon after, absent defeat ers).
+3. If there is AI+, there will be AI++ (soon after, absent defe aters).
+4. So: There will be AI++ (before too long, absent defeaters) .
+Here, AI is understood as human-level artiﬁcial intelligen ce, AI+ is understood as artiﬁcial intelli-
+gence that surpasses most humans, and AI++ is understood as i ntelligence that is “far greater than
+human level” (2010, 11).
+Chalmers motivates premise 1 by suggesting that if evolutio n could produce human-level intelli-
+gence, there can be no in-principle barrier to humans themse lves producing the same level of intel-
+ligence artiﬁcially. The rapid advancement of the capabili ties of AI systems over the past decade’s
+“deep learning revolution” further bolsters the plausibil ity of this ﬁrst premise.
+When it comes to premise 2, Chalmers suggests that if we creat e AI using an “extendible method”
+— a method that could, if further developed, yield more intel ligent systems — we should expect
+to be able to produce AI+ soon after. Not all methods of creati ng AI are plausibly extendible. As
+Chalmers points out, however, even if AI is not initially ach ieved using an extendible method, it
+could subsequently be used to discover an extendible method . This would sufﬁce for the truth of
+premise 2.
+The idea behind premise 3 is that the recursive improvement t hat will follow from the rise of AI+
+will soon lead to AI++. Chalmers motivates the idea of recurs ive improvement by appealing to what
+he calls the proportionality thesis: the thesis that “increases in intelligence (or increases o f a certain
+sort) always lead to proportionate increases in the capacit y to design intelligent systems” (2010, 21).
+Given the proportionality thesis, once we reach an AI+ with t he ability to design a system more
+intelligent than itself, we know that the system it designs w ill be able to design a system still more
+intelligent, and so on until AI++ is achieved.
+Bostrom’s (2014) version of the argument appeals to interpl ay between two factors: optimization
+power — the amount of effort applied to improving AI systems, weigh ted by its quality — and the
+recalcitrance of the problem of improving them. 17 When optimization power is great and recalci-
+trance is low, Bostrom suggests, we should expect AI systems to improve rapidly. On this way of
+framing the issue, the key question in considering the Singu larity Hypothesis is how we should ex-
+pect optimization power and recalcitrance to change as we mo ve from existing AI systems toward
+supercapable ones.
+Bostrom offers a number of considerations supporting the id ea that recalcitrance is likely to remain
+constant or decrease in the future, while optimization powe r is likely to increase. Even if it proves
+difﬁcult to improve the algorithms implemented by artiﬁcia l systems, for example, Bostrom argues
+that this recalcitrance will likely be offset by the compara tive ease of improving such systems by
+investing in more hardware and giving them access to more con tent. At the same time, we should
+expect a rapid increase in optimization power due to growing investment of resources like capital and
+human researchers and the fact that, as AI systems become inc reasingly capable, they themselves
+will be able to contribute increasing amounts of optimizati on power. Indeed, Bostrom suggests that
+after the event he calls “crossover” — the moment when most of the optimization power applied
+to the problem of improving AI systems comes from AI systems t hemselves — we should expect
+the capabilities of AI systems to undergo rapid improvement because “any increase in the system’s
+capability [will translate] into a proportional increase i n the amount of optimization power being
+applied to its further improvement” (2014, 74). Thus Bostro m, like Chalmers, thinks about the
+singularity through the lens of a proportionality thesis. 18
+17Bostrom writes about optimization power and recalcitrance as though they are continuous quantities rep-
+resentable by the real numbers but is explicit that this way o f framing things is only a heuristic (2014, 65).
+We believe the charitable way to read Bostrom is as committed to the weakest structural assumptions about
+intelligence, optimization power, and recalcitrance that make modeling future changes in the intelligence of
+AI systems using his equations predictively useful. Identi fying what these structural assumptions are is an
+interesting problem for future work.
+18While the arguments of Bostrom and Chalmers remain the most i nﬂuential among academic philosophers,
+readers may also be interested in two recent works which adop t a “compute-centric framework” for estimating
+how long it will take AI systems to reach human-level capabil ities (Cotra 2020, Davidson 2023). This approach
+begins by estimating how much computing power would be requi red to train a system with a given level of
+capability, and then constructs a model of when we're likely to use this much computing power to train a
+7
+Both Chalmers and Bostrom are aware that the fact that a proce ss of recursive improvement is possi-
+ble does not entail that it will actually occur. Chalmers con siders two broad classes of circumstances
+which might prevent a singularity-type recursive process f rom resulting in superintelligent AI sys-
+tems. First, situational defeaters include natural or manmade disasters, resource limitation s, and
+other conditions which might interrupt the process of recur sive improvement. Second, motivational
+defeaters include disinclination on the part of either humans or AI sys tems to initiate or maintain
+the process of recursive improvement, as well as active atte mpts to prevent or interrupt that process.
+Bostrom discusses similar possibilities in the context of e xploring how recalcitrance might evolve
+in the future.
+From the perspective of concern about catastrophic risks to humanity, many of the situational de-
+featers Chalmers considers may strike us as cold comfort. Fo r example, a natural or manmade dis-
+aster severe enough to permanently arrest technological pr ogress toward superintelligent AI would
+itself likely be a global catastrophe.
+At the same time, there are reasons to think that the kinds of m otivational defeaters Chalmers con-
+siders are unlikely permanently to prevent a singularity-t ype outcome. There are strong military and
+business incentives for state and corporate actors to devel op increasingly sophisticated AI systems,
+as well as competitive pressures for them to do so before anyo ne else. In the absence of any global
+organization with the power to enforce a permanent moratori um on AI development, disinclination
+and efforts at active prevention are likely to be local and te mporary.
+It is worth emphasizing that, as with the arguments discusse d in §2 above, the ubiquitous language
+of intelligence in discussions of the Singularity Hypothes is is eliminable. As Chalmers shows,
+singularity-type arguments can be constructed for any capa bility that is either (i) self-amplifying in
+the sense that it obeys a version of the proportionality thes is, or (ii) correlated with a self-amplifying
+capability. For example, if the capability to design and train deep-learning systems is self-amplifying
+and the capability to do scientiﬁc research is correlated wi th the capability to design and train deep-
+learning systems, there are singularity-style arguments t hat we should expect to see an “explosion”
+of both capabilities after AI reaches human-level competence at designing and training deep-learning
+systems.
+Given their radical conclusions, arguments for the Singula rity Hypothesis have always attracted
+controversy. For example, Modis (2012), Plebe and Perconti (2012), and Thorstad (2022) argue on
+empirical grounds that we should expect the rapid growth in t he capabilities of artiﬁcial systems
+observed in the past several decades to level off in the near f uture rather than continue. 19 Thorstad
+also engages directly with the work of Chalmers and Bostrom, arguing that Chalmers does not
+sufﬁciently motivate his proportionality thesis and that t he reasons Bostrom provides for thinking
+that recalcitrance will remain low in the future are either u nconvincing or do not motivate the idea
+of an intelligence explosion.
+In our view, neither the proponents of singularity-type arg uments nor their critics have made a fully
+convincing case. One important and undertheorized questio n is whether levels of intelligence, or
+of any given putative self-amplifying capability, have the right mathematical structure for propor-
+tionality theses to make sense. To say that the value of a func tion C(t) (say, our capacity to design
+intelligent systems at time t) increases in proportion to the value of another function I(t) (say, the
+amount of intelligence at our disposal at time t) is to say that there is a positive constant a such that
+C(t) = a * I(t). The proportionality thesis therefore implies that “the a mount of intelligence at our
+disposal” has something like the structure of the real numbe rs, so that multiplication by a constant is
+possible and the quantity a * I(t) makes sense. But if levels of intelligence have no more math emati-
+cal structure than that of a total order, for example, we can’ t speak of a * I(t): we may be able to say
+of two amounts of intelligence that the ﬁrst is larger than th e second, but not that the ﬁrst is a times
+larger. Under these circumstances, then, it is not possible to formulate a proportionality thesis.
+A related question is whether proportionality theses, if th ey are coherent, are plausible. While it
+seems clear that increases in a system’s intelligence will n ot be accompanied by reductions in its
+capacity to design intelligent systems or the optimization power it is able to contribute to various
+problems, the claim that every increase in intelligence is a ccompanied by a proportionate increase in
+design capacity or optimization power is much stronger. Cha lmers himself considers the possibility
+system. One way of thinking about compute-centric models wh ich we ﬁnd helpful is as spelling out in more
+detail how the relationship between optimization power and recalcitrance is likely to evolve in the future.
+19See also V old and Harris (2021) for a brief overview.
+8
+of “diminishing returns” in design capability as intellige nce increases, which challenges premise 3 of
+his argument. Why think that the proportionality thesis is m ore likely to be true than the diminishing
+returns thesis?
+While we sympathize with Thorstad’s call for more evidence i n support of the proportionality thesis,
+we also think this thesis is less outlandish than it may at ﬁrs t seem. As Chalmers formulates it, the
+proportionality thesis is that increases in intelligence lead to proportionate increases in design capa-
+bility. But the way in which this leading-to occurs might be q uite indirect. For example, increasing
+the intelligence of a given system by 10% might lead to a propo rtionate increase in design capabil-
+ity by giving human engineers ideas about how to improve the i ntelligence of a distinct system —
+one better at designing AI systems — by 10%. Nor do the increas es posited by the proportionality
+thesis need to happen immediately or be deterministic. It co uld take years of chancy trial and error
+for a 10% increase in the intelligence of AI systems to transl ate into a 10% improvement in their
+design capabilities. And the proportionality thesis does n ot need to hold in full generality to support
+Chalmers’s argument: all that is required is that it hold for a number of capability improvements
+sufﬁcient to achieve AI++ (Chalmers 2010, 22).
+5 Conclusion
+Are increasingly capable AI systems developed in the future likely to seek power? Will progress in
+AI lead to the kind of recursive improvement described by the Singularity Hypothesis? While some
+theorists have reached strong conclusions in this area, the se questions strike us as unsettled. Contin-
+ued philosophical research must be done to assess the plausi bility of arguments for catastrophic risk
+from AI systems.
+References
+Baker, B., Kanitscheider, I., Markov, T., Wu, Y ., Powell, G. , McGrew, B. and Mordatch, I. (2020). Emergent
+Tool Use From Multi-Agent Autocurricula. International Conference on Learning Representations 202 0.
+Bales, A. (forthcoming). Will AI avoid exploitation? Artiﬁ cial general intelligence and expected utility theory.
+Philosophical Studies.
+Bostrom, N. (1998). How long before superintelligence? International Journal of Future Studies , 2. Reprinted
+in Linguistic and Philosophical Investigations 5: 11-30 (2006).
+Bostrom, N. (2003). Ethical issues in advanced artiﬁcial in telligence, in Smit, I. and Lasker, G. E. (eds.)
+Cognitive, Emotive and Ethical Aspects of Decision Making i n Humans and in Artiﬁcial Intelligence , V ol. 2.
+International Institute of Advanced Studies in Systems Res earch and Cybernetics. Reprinted in Wallach, W.
+and Asaro, P . (eds.) Machine Ethics and Robot Ethics , Routledge, 2017, pp. 69–75.
+Bostrom, N. (2012). The superintelligent will: Motivation and instrumental rationality in advanced artiﬁcial
+agents. Minds and Machines 22, 71–85.
+Bostrom, N. (2014). Superintelligence: Paths, Dangers, Strategies. Oxford University Press.
+Bran, A.M., Cox, S., Schilter, O., Baldassari, C., White, A. D., and Schwaller, P . (2023). ChemCrow: Augment-
+ing large-language models with chemistry tools. https://arxiv.org/abs/2304.05376
+Butlin, P ., Long, R., et al. Consciousness in Artiﬁcial Intelligence: Insights from th e Science of Consciousness.
+https://arxiv.org/pdf/2308.08708.pdf
+Carlsmith, J. (2022). Is Power-Seeking AI an Existential Risk? https://arxiv.org/abs/2206.13353
+Carlsmith, J. (forthcoming). Existential risk from power- seeking AI. In J. Barrett, H. Greaves & D. Thorstad
+(eds.), Essays on Longtermism, OUP .
+Chalmers, D. J. (2010). The Singularity: A Philosophical An alysis. Journal of Consciousness Studies , 17(9–
+10), 9–10.
+Clark, J. and Amodei, D. (2016). Faulty Reward Functions in t he Wild. https://openai.com/research/faulty-
+reward-functions
+Cotra, A. (2020). Forecasting TAI with Biological Anchors. https://drive.google.com/drive/u/0/folders/
+15ArhEPZSTYU8f012bs6ehPS6-xmhtBPP .
+9
+D’Alessandro, W., Lloyd, H. and Sharadin, N. (2023). Large L anguage Models and Biorisk. American Journal
+of Bioethics 23 (10), 115-118.
+Davidson, T. (2023). What a Compute-Centric Framework Says about Takeoff Speeds. Open Phi-
+lanthropy Report. https://www.openphilanthropy.org/re search/what-a-compute-centric-framework-says-about-
+takeoff-speeds/.
+Drexler, K. E. (2019). Reframing Superintelligence: Comprehensive AI Services a s General Intelligence (Tech-
+nical Report #2019-1). Future of Humanity Institute.
+Dreyfus, H. (1965). Alchemy and Artiﬁcial Intelligence. RA ND Corporation Technical Report.
+Dreyfus, H. (1972). What Computers Can’t Do . Harper and Row.
+Gallow, D. (forthcoming). Instrumental Divergence. Philosophical Studies.
+Gabriel, I. (2020). Artiﬁcial Intelligence, V alues, and Al ignment. Mind and Machines. 30(3), 411–437.
+Goertzel, B. (2015). Superintelligence: Fears, Promises a nd Potentials. Journal of Evolution & Technology 25:
+55–87.
+Goldstein, S. and Kirk-Giannini, C. D. (2023). Language Age nts Reduce the Risk of Existential Catastrophe.
+AI & Society. Online First.
+Good, I. J. (1951). Review of Calculating Instruments and Machines by D. R. Hartree. Journal of the Royal
+Statistical Society Series A 114: 106-107.
+Good, I. J. (1959). Speculations on perceptrons and other au tomata. IBM Research Rept. No. RC-116.
+Good, I. J. (1962). The social implications of artiﬁcial int elligence. In Good, I. J., Maybe, A. J. and Smith, J.
+M. (eds.) The Scientist Speculates, William Heinemann Ltd., pp. 192-198.
+Good, I. J. (1965). Speculations concerning the ﬁrst ultrai ntelligent machine, in Alt, F. & Rubinoff, M. (eds.)
+Advances in Computers, vol 6, Academic Press.
+Goodfellow, I., Bengio, Y ., and Courville, A. (2016). Deep Learning. The MIT Press.
+Grace, K., Stewart, H., Sandkühler, J.F., Thomas, S., Weins tein-Raun, B. and Brauner, J.
+(2024). Thousands of AI authors on the future of AI. AI Impacts , https://aiimpacts.org/wp-
+content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf.
+Hanson, R. (2008). Economics of the singularity. IEEE Spectrum 45(6): 37–43.
+Hendrycks, D., Mazeika, M. and Woodside, T. (2023). An Overview of Catastrophic AI Risks. Center for AI
+Safety. https://arxiv.org/pdf/2306.12001.pdf
+Hubinger, E., van Merwijk, C., Mikulik, V ., Skalse, J. and Garrabrant, S. (2019). Risks from Learned Optimiza-
+tion in Advanced Machine Learning Systems. https://arxiv.org/abs/1906.01820
+Jumper, J., Evans, R. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature. 596,
+583–589.
+Karnofsky, H. (2022). AI could defeat all of us combined . Cold Takes . https://www.cold-takes.com/ai-could-
+defeat-all-of-us-combined
+Klee, M. and Ramirez, N. M. 2023. AI Has Made the Israel-Hamas Misinformation Epidemic Much, Much
+Worse. Rolling Stone, October 27, 2023.
+Krakovna, V ., Uesato, J., Mikulik, V ., Rahtz, M., Everitt, T ., Kumar, R. Kenton, Z., Leike, J. and Legg, S.
+(2020). Speciﬁcation Gaming: The Flip Side of AI Ingenuity. https://www.deepmind.com/blog/speciﬁcation-
+gaming-the-ﬂip-side-of-ai-ingenuity.
+Kurzweil, R. (2005). The Singularity is Near . Viking.
+Langosco, L., Koch, J., Sharkey, L.D., Pfau, J. and Krueger, D. (2022). Goal misgeneralization in deep re-
+inforcement learning. In International Conference on Machine Learning , Proceedings of Machine Learning
+Research, pp. 12004–12019.
+Loosemore, R. and Goertzel, B. (2012). Why an Intelligence E xplosion is Probable. In Eden, A. H., Moor, J.
+H., Søraker, J. H., and Steinhart, E. (eds.) Singularity Hypotheses: A Scientiﬁc and Philosophical Ass essment,
+Springer, pp. 83–96.
+Modis, T. (2012). Why the Singularity Cannot Happen. In Eden , A. H., Moor, J. H., Søraker, J. H., and
+Steinhart, E. (eds.) Singularity Hypotheses: A Scientiﬁc and Philosophical Ass essment, Springer, pp. 311–339.
+Moravec, H. (1988). Mind Children: The Future of Robot and Human Intelligence . Harvard University Press.
+10
+Muehlhauser, L. and Salamon, A. (2012). Intelligence Explo sion: Evidence and Import. In Eden, A. H., Moor,
+J. H., Søraker, J. H., and Steinhart, E. (eds.) Singularity Hypotheses: A Scientiﬁc and Philosophical Ass essment,
+Springer, pp. 15–40.
+Muehlhauser, L. and Helm, L. (2012). The Singularity and Mac hine Ethics. In Eden, A. H., Moor, J. H.,
+Søraker, J. H., and Steinhart, E. (eds.) Singularity Hypotheses: A Scientiﬁc and Philosophical Ass essment,
+Springer, pp. 101–126.
+Müller, V . C., & Cannon, M. (2021). Existential risk from AI a nd orthogonality: Can we have it both ways?
+Ratio, 35(1), 25–36.
+Ngo, R., Chan, L. and Mindermann, S. (2023). The Alignment Problem from a Deep Learning Perspective (v5).
+https://arxiv.org/abs/2209.00626
+OpenAI. (2023a). GPT-4 Technical Report. https://arxiv.o rg/abs/2303.08774
+OpenAI. (2023b). GPT-4 System Card. https://cdn.openai.c om/papers/gpt-4-system-card.pdf
+Omohundro, S. (2007). The Nature of Self-Improving Artiﬁcial Intelligence.
+https://selfawaresystems.ﬁles.wordpress.com/2008/01 /nature_of_self_improving_ai.pdf
+Omohundro, S. (2008). The basic AI drives. In P . Wang, B. Goer tzel and S. Franklin (eds.), Proceedings of the
+First Conference on Artiﬁcial General Intelligence , IOS Press.
+Ord, T. (2020). The Precipice: Existential Risk and the Future of Humanity . Bloomsbury Publishing.
+Pinker, S. (2015). Thinking Does Not Imply Subjugating. In B rockman, J. (ed) What To Think About Machines
+That Think, Harper Perennial, pp. 5–8
+Plebe, A. and Perconti, P . (2012). The Slowdown Hypothesis. In Eden, A. H., Moor, J. H., Søraker, J. H., and
+Steinhart, E. (eds.) Singularity Hypotheses: A Scientiﬁc and Philosophical Ass essment, Springer, pp. 349–362.
+Russell, S. (2019). Human Compatible: AI and the Problem of Control. Allen Lane.
+Russell, S. and Norvig, P . (2021). Artiﬁcial Intelligence: A Modern Approach (4th edition). Pearson.
+Salib, P . (Forthcoming).AI Will Not W ant to Self-Improve. Lawfare Digital Social Contract Whitepapers.
+Sanger, David E. and Steven Lee Myers. 2023. China Sows Disin formation About Hawaii Fires Using New
+Techniques. New York Times, Sep. 11 2023.
+Sattarov, F. (2019). Power and Technology: A Philosophical and Ethical Analysis . Rowman & Littleﬁeld
+Publishers.
+Schrittwieser, J., Antonoglou, I., Hubert, T., Simonyan, K ., Sifre, L., Schmitt, S., Guez, A., Lockhart, E.,
+Hassabis, D., Graepel, T., Lillicrap, T., and Silver, D. (20 19). Mastering Atari, Go, Chess and Shogi by
+Planning with a Learned Model . https://arxiv.org/abs/1911.08265
+Schwitzgebel, E. and Garza , M. (2015). A Defense of the Rights of Artiﬁcial Intelligence . Midwest Studies in
+Philosophy. 39(1), 98–119.
+Schwitzgebel, E. and Garza , M. (2020). Designing AI with Rights, Consciousness, Self-R espect, and Freedom.
+In S. Liao (ed). Ethics of Artiﬁcial Intelligence. Oxford University Press.
+Shah, R., V arma, V ., Kumar, R., Phuong, M., Krakovna, V ., Uesato, J. and Kenton, Z. (2022). Goal Misgener-
+alization: Why Correct Speciﬁcations Aren't Enough F or Cor rect Goals. https://arxiv.org/abs/2210.01790
+Shulman, C. and Bostrom, N. (2021). Sharing the World with Di gital Minds. In S. Clarke, H. Zohny, & J.
+Savulescu (eds.). Rethinking Moral Status. Oxford University Press.
+Thornley, E. (2023). There Are No Coherence Theorems. The Effective Altruism F orum.
+https://forum.effectivealtruism.org/posts/FoRyordtA7LDoEhd7/there-are-no-coherence-theorems.
+Thorstad, D. (2022). Against the Singularity Hypothesis. G lobal Priorities Institute Working Paper No. 19-
+2022.
+Thorstad, D. (2023). Exaggerating the Risks (Part 8: Carlsm ith Wrap-Up). Reﬂective Altruism.
+https://ineffectivealtruismblog.com/2023/06/03/exaggerating-the-risks-part-8-carlsmith-wrap-up/
+Turner, A.M., Smith, L., Shah, R., Critch, A., Tadepalli, P . (2021). Optimal Policies Tend to Seek Power.
+Advances in Neural Information Processing Systems , 35.
+Turner, A.M., Tadepalli, P . (2022). Parametrically Retarg etable Decision-Makers Tend To Seek Power. Ad-
+vances in Neural Information Processing Systems , 36.
+11
+Vinge, V . (1993). The coming technological singularity: How to survive in the post-human era. Proceedings of
+Vision-21: Interdisciplinary Science and Engineering in t he Era of Cyberspace (NASA Conference Publication
+10129): 11-22.
+V old, K. and Harris, D.R. (2021). How Does Artiﬁcial Intelli gence Pose an Existential Risk? In C. Véliz (ed.).
+Oxford Handbook of Digital Ethics. Oxford University Press.
+Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., ... and Wen, J. R. (2023). A survey on large
+language model based autonomous agents. https://arxiv.or g/abs/2308.11432.
+Wynroe, K., Atkinson, D., and Sevilla, J. (2023). Literatur e review of transformative artiﬁcial intelligence time-
+lines. Epoch AI, https://epochai.org/blog/literature-review-of-transformative-artiﬁcial-intelligence-timelines.
+Yampolskiy, R. (2015). Taxonomy of Pathways to Dangerous AI . AAAI W orkshop: AI, Ethics, and Society.
+Y udkowsky, E. (2008). Artiﬁcial Intelligence as a Positive and Negative Factor in Global Risk. In Bostrom, N.
+and ´Cirkovi´c, M. M. (eds.) Global Catastrophic Risks, Oxford University Press, pp. 308–345.
+Y udkowsky, E. (2019). Coherent Decisions Imply Consistent Utilities. LessWrong.
+https://www.lesswrong.com/posts/RQpNHSiWaXTvDxt6R/coherent-decisions-imply-consistent-utilities
+Y udkowsky, E. (2023). Pausing AI Development Isn’t Enough. We Need to Shut it All Down. Time, March 29,
+2023. https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/
+Zwetsloot, R. and Dafoe, A. (2019). Thinking About Risks From AI: Accidents, Misuse and Structu re. Lawfare.
+12

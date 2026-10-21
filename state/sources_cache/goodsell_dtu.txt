@@ -1,0 +1,1128 @@
+DOI:10.1111/nous.12473
+ARTICLE
+Decisiontheoryunbound
+ZacharyGoodsell
+DepartmentofPhilosophy,Universityof
+SouthernCalifornia,LosAngeles
+Correspondence
+ZacharyGoodsell,Departmentof
+Philosophy,UniversityofSouthern
+California,3709TrousdalePkwy,Los
+Angeles,CA,90089.
+Email:zgoodsel@usc.edu
+Abstract
+Countenancing unbounded utility in ethics gives rise
+to deep puzzles in formal decision theory. Here, these
+puzzles are taken as an invitation to assess the most
+fundamental principles relating probability and value,
+withtheaimofdemonstratingthatunboundedutilityin
+ethicsiscompatiblewithadesirabledecisiontheory.The
+resulting theory frames further discussion of Expected
+UtilityTheoryandofprinciplesconcerningsymmetries
+ofutility.
+1 THEPARADOX
+Theutilityofanoutcomeisanumberwhichmeasureshowmuchachanceofthatoutcomecon-
+tributestotheoverallvalueofariskygamble.Forexample,anoutcomehasutility 2justincase
+afifty-fiftygamblebetweenthatoutcomeandonewithutility 0isequallygoodascertaintyofan
+outcomewithutility 1.Moregenerally,anoutcomehasutility 𝑥,for𝑥anumbergreaterthan 1,if
+andonlyifagamblewitha 1∕𝑥chanceofthatoutcome,thatotherwiseyieldsutility 0,isequally
+goodasasureutility 1.Ifforeverynumbersomepossibleoutcomehasautilityatleastasgreat
+asthatnumber,wesaythatutilityis unbounded.
+Ifyouread“good”aboveas“morallygood”,thenwhetherutilityisunboundedinthatsenseis
+asubstantialethicalquestion.Forexample,onemightthinkthatitisgoodtocreatepeoplewhose
+liveswillbewonderful,andsoonemightwonderwhethera 1∕𝑛chanceofcreating 𝑛suchpeople
+isequallygoodascreatingexactlyonesuchpersonforsure.Forthistobesorequiresutilitytobe
+unbounded.Ifyouread“good”insomeotherway,suchas“goodforme”or“goodforthesake
+of winning this chess game”, then whether utility is unbounded in the concomitant sense is a
+differentquestion,butanequallysubstantialoneineachcase.Mostofwhatfollowswillbetrue
+This is an open access article under the terms of theCreative Commons Attribution-NonCommercial-NoDerivsLicense, which permits
+use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and no modifications or
+adaptationsaremade.
+©2023TheAuthors. NoûspublishedbyWileyPeriodicalsLLC.
+NOÛS.2024;58:669–695. wileyonlinelibrary.com/journal/nous 669
+
+670 GOODSELL
+TABLE 1 Thefirst-tossStPetersburgprospect.
+T HT ... H...HT ...
+2 4 ... 2𝑛 ...
+onmanyreasonabledisambiguations,butwhereambiguitymightbeproblematicwewilldefault
+tothemoralreading.
+Theproblemmotivatingthispaperisthattherearesignificantstructuralproblemsforthethesis
+of unbounded utility, which threaten to refute the thesis before the substantial ethics can even
+begin.Onewidelyrecognisedproblemisthat,whenutilityisunbounded,the expectedutility ofa
+prospectmightbeundefined.Inthatcase,standarddecisiontheory,whichcomparesprospectsby
+comparingtheirexpectedutilities,fallssilent.Thecanonicalwitnesstothisfactisthe StPetersburg
+prospect,whichyieldsutility 2withprobability 1∕2,utility 4withprobability 1∕4,andingeneral
+utility2𝑛 withprobability 1∕2𝑛.Theexpectedutilitywouldbegivenbythesum
+1
+2×2+ 1
+4×4+⋯+ 1
+2𝑛 ×2𝑛+⋯=1+1+⋯+1+…
+Since the sum does not converge, the expected utility is undefined. As a result, standard deci-
+siontheorydoesnotsayhowtovaluetheStPetersburgprospect.Inparticular,itdoesnotyield
+thecorrectverdictthatitisworsethanaprospectthatwithprobability 1∕2𝑛 yieldsutility 2𝑛+1
+insteadof 2𝑛.Thisdefectremainsevenwhentheexpectationistakenintheextendedrealnum-
+bers,andhencecanbegiventhevalue ∞.Inthatcase,bothoftheprospectsgetexpectedutility
+∞,soexpectedutilitystillcannotdistinguishbetweenthem. 1
+Buttheproblemissignificantlyworsethanameregapinstandarddecisiontheory.Thehypoth-
+esisofunboundedutilityisflatlyinconsistentwithsomeverycompellingprinciplesgoverningthe
+comparisonofprospects,whetherornotexpectedutilitiesareassignedtothem.Thequestionis
+nothowtoextendstandarddecisiontheoryinthisorthatway,butratherwhetherareasonable
+decision theory is compatible with unbounded utility at all. If not, then ethical principles that
+implyunboundedutilitycrashimmediately.
+The problem—a version of the Two-Envelope paradox—will be explained informally in the
+remainder of this section, and is precisified in Section2. Section3.3 presents and motivates a
+theory for reasoning in the presence of unbounded utility and establishes its consistency, thus
+guaranteeing that no further paradox arises. Having established the viability of this theory, the
+paperconcludes(Section 4)bypointingouttwoofmanyinterestingandunderexploredavenues
+forfurtherresearchondecisiontheoryinthepresenceofunboundedutility.
+The motivating paradox of the paper, first presented in Nalebuff (1989), can be illustrated as
+follows.2 Supposeacoinistobetossed(fairlyandindependently)infinitelymanytimes.Youhave
+twooptions.Thefirstistotakethe first-tossStPetersburgprospect ,whoseoutcomeisdetermined
+by how the coin lands in accordance with Table1. Choosing this prospect yields utility2 if the
+coin lands tails right away, utility4 if it lands heads then tails,8 if it lands heads-heads-tails,
+a n di ng e n e r a l2𝑛 if it takes𝑛 tosses for it to land tails for the first time. Your second option is
+to take thesecond-tossStPetersburgprospect , described in Table2. This prospect differs only in
+1SeeNoverandHájek( 2004)forfurtherdiscussion.
+2SeealsoBroome( 1995),ArntzeniusandMcCarthy( 1997),McGee( 1999),Chalmers( 2002),andDietrichandList( 2005).
+AsimilarpuzzleisfoundinSeidenfeldetal.( 2009).
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 671
+TABLE 2 Thesecond-tossStPetersburgprospect(“/”separatesthefirstcointossfromtherest).
+TABLE 3 Thefirst-tossprospectredescribed.
+that the first coin toss is ignored. So whether the first toss lands heads or tails, the second-toss
+prospectyieldsutility 2ifthesecondtosslandstails,utility 4ifthesecondlandsheadsandthe
+thirdlandstails,andingeneralutility 2𝑛 if,startingfromthesecondtoss,ittakes 𝑛tossestoget
+tailsforthefirsttime. 3Whichprospect,ifeither,isbetter?Hereareargumentstotwocontradictory
+answers:
+First argument: the two prospects areequally good. When evaluating a risky prospect, which
+coin tosses determine the outcome is not relevant. What matters are the probabilities of the
+various outcomes and the utility of those outcomes, and the two prospects are equal in these
+respects.
+Secondargument:thefirst-tossprospectis strictlybetter thanthesecond-tossprospect.Forsup-
+pose you learn the following: after the first toss, it took another𝑛 tosses for a toss to come up
+tails.Thatis,youlearnsomethingoftheform:eitherT/H ...HTorH/H...HT.Thisreducesyour
+decisiontothatbetweenthegreencellinTable 3andthegreencellinTable 2.Andthegreencell
+inTable 3isbetter:halfwaybetween 2and2𝑛+1 is2𝑛+1,sofifty-fiftybetween 2and2𝑛+1 isan
+improvementonasure 2𝑛.Butthisistrueforany 𝑛,sowecanknowinadvancethatthefirstwill
+lookabettergamblethanthesecond.Itseemsthenweshouldcuttothechaseandjudgethefirst
+betterunconditionally.
+Thesecontradictoryargumentsconstitutetheparadox.Theeasywayoutistodenythepossi-
+bilityoftherelevantprospects,anoptionusuallytakenbydenyingtheunboundednessofutility. 4
+Here,wewillbetakingthehardwayout,whichistoacceptthepossibilityoftheprospectsbut
+to block the reasoning that led to a contradiction.5 We will find that it is the second argument
+that must go. Although for any𝑛 the first-toss prospect is better than the second-toss prospect
+conditionalonittaking 𝑛tossestogettails,itisafallacytoconcludefromthisthatthefirst-toss
+prospectisbetterunconditionally(orsotheproponentofunboundedutilitymustsay).Butthisis
+onlythebeginningofthesolution.Thechallengeisindemonstratingthat,evenwithoutthisintu-
+itivelytemptingprinciple,thereisastrongandsystematicdecisiontheorytobehadthatmakes
+roomforunboundedutility.
+3Ifitmatters,wecanstipulatethatbothprospectsyieldutility 2intheprobabilityzeroeventthatalltosseslandheads.
+4Savage(1954):80-82,RussellandIsaacs( 2021).
+5Broome (1995) suggests this line, and it is endorsed by Arntzenius and McCarthy (1997), Dietrich and List (2005), and
+Meacham(2019),amongothers.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+672 GOODSELL
+2 FORMALIZINGTHEPARADOX
+2.1 Primitives
+Anoutcomeisintuitivelyasituationyoumightendupin,forwhichthereisnofurtheruncertainty
+about how good things will turn out if that outcome obtains. Aprospect (also called agamble
+or anact) is intuitively an option available to you which yields certain outcomes with certain
+probabilities.Theobjectofdecisiontheoryistoranktheprospectsintermsofthevaluesofthe
+outcomestheymightyieldandtheprobabilitieswithwhichtheyyieldthem.
+To get clear on the paradox, it will be useful to employ a standard formalization of decision
+theoryduetoSavage( 1954),whichisrichenoughtobringouttheparadox,butidealizedenough
+toobscureirrelevantcomplexities.
+Forconcreteness,wecanthinkofprospectsasdifferentwaysofgamblingontheresultofthe
+infinitesequenceofcointossesintroducedinSection 1.Thatis,aprospectassociatesanoutcome
+witheachwaythecointossesmightland,specificallytheoutcomethatyouwillendupinifyou
+taketheprospectandthecointosseslandthatway.Thus,theprobabilityofaprospect 𝑝yieldingan
+outcome𝑜isgivenbytheprobabilitythatthecointosseslandinoneofthewaysthat 𝑝associates
+with𝑜.
+LetΩbethesetofmaximallyspecificwaysthecointossesmightland, 6 and𝐏theusualproba-
+bilityfunctionforfairandindependentcointosses(e.g.,itgivesa 1∕4probabilitytotheclaimthat
+thefirsttosslandsheadsandthethirdlandstails,andsoon). 7 Wetakeasprimitivethefollowing:
+∙ Aspaceof outcomes (note:outcomesshouldnotbeconflatedwithwaysthecointossesmight
+land, since outcomes are supposed to be maximally specific with regards to how good things
+turnout).
+∙ Aspaceof prospects, ,whichisasetoffunctionsfrom Ωto .8
+∙ Arelation ≿onprospectscalled atleastasgoodas .
+We also use≿tocompare outcomeswith eachotherand with prospects,by identifyingeach
+outcome𝑜withtheprospectthatyields 𝑜nomatterwhat(i.e.,thefunctionthatmapseverything
+inΩto𝑜).
+Finally,wedefineutilityinthestandardway,relativetoanarbitrarychoiceofoutcomes 𝑜0 and
+𝑜1,with𝑜0≺𝑜1.𝑜0 and𝑜1 respectivelyhaveutilities 0and1bystipulation;thendefinetheutility
+6Ωconsistsofpropositionsoftheform
+Toss1landsheadsand...andtoss 𝑛landstailsand...
+Thesearestandardlyrepresentedbythespace 2𝜔 ofinfinite 0-1-valuedsequences.Anyotherstatespacewithsufficiently
+richprobabilitystructurewouldalsoserveforpresentpurposes.
+7Withtheusualmeasurablestructureon 2𝜔.𝐏isthecompletionofthemeasurewhichgivesprobability 1∕2𝑛 toeachset
+ofsequencesthatcontainsallandonlythosewhichagreeonsome 𝑛positions.
+8We assume that contains only measurable functions, where is given measurable structure compatible with≿
+restricted to constant functions. We say that a prospect𝑝 yields𝑜 in the state𝑥∈Ω if𝑝 maps𝑥 to𝑜. Moreover, the
+probabilitywithwhich 𝑝yieldsanoutcome in𝑋isgivenby
+𝐏({𝜔∈Ω∶𝑝(𝜔)∈𝑋}) (1)
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 673
+function𝑢sothataprospectwitha 1∕3chanceofutility 3anda2∕3chanceofutility 0isequally
+goodasasureutility 1,andsimilarlyforothernumbers. 9
+2.2 Assumptions
+Theparadoxcanbeillustratedbyderivingacontradictionfromsevenwidelyaccepteddecision-
+theoretic assumptions. Four of these are axioms from Savage’sFoundations of StatisticsSavage
+(1954).Thefirsttwooftheseconcerntheverygeneralstructureof ≿:
+Preordering Atleastasgoodas isreflexive(𝑝≿𝑝 )andtransitive(if 𝑝≿𝑞≿𝑟 ,then 𝑝≿𝑟 ).
+Totality Foranyprospects 𝑝and𝑞,either 𝑝≿𝑞 or𝑞≿𝑝 .
+Thenextonespecifiesthateverypossiblecorrelationbetweencoin-tosssequencesandoutcomes
+in correspondstoaprospectin :
+ProspectRichness Foranyfunction 10𝑓 fromΩto ,thereisaprospectin  thatyields 𝑓(𝑠)
+whenthecointosseslandinthesequence 𝑠.
+ThekeyaxiomofSavageisthe Sure-ThingPrinciple,whichreliesonadefinednotionof conditional
+comparisonofprospects.Foragivensubsetofcointosssequences 𝐸,let𝑝↾𝐸 betheprospectthat
+yieldsthesameoutcomeas 𝑝whenthewaythecointosseslandisin 𝐸,butwhichyieldsutility
+0in every other situation. Write𝑝≿𝐸 𝑞 for the comparison𝑝↾𝐸≿𝑞↾𝐸 . Savage’s Sure-Thing
+Principlesaysthattocompareprospectsthatareequallygoodconditionalon 𝐸,youcanignore
+whathappenson 𝐸andcomparethemconditionalonthecomplementof 𝐸(Ω⧵𝐸 ):
+Sure-Thing Let𝐸 be a subset ofΩwith probability strictly between zero and one such that𝑝
+and𝑞 are equally good conditional on𝐸 (i.e.,𝑝∼𝐸 𝑞). Then𝑝≿𝑞 i fa n do n l yi f
+𝑝≿Ω⧵𝐸 𝑞.
+ThenextthreeprinciplesgobeyondSavage’saxioms.Eachhasalsobeenendorsedatvarious
+pointsintheliterature,buttogethertheygiverisetotheparadox.Thefirstistheassumptionof
+unboundedutilityamongoutcomesin .
+UnboundedUtility Foranyrealnumber 𝑥,thereisanoutcomein thathasutility 𝑥(§2.1).
+9Ingeneral:
+∙ If𝑥 ≥1,thenfor 𝑜tohaveutility 𝑥isfora 1∕𝑥chanceof 𝑜and1−1∕𝑥 chanceof 𝑜0 tobeequallygoodasasure 𝑜1.
+∙ If𝑥 ≤0<1 ,thenfor 𝑜tohaveutility 𝑥isforan 𝑥chanceof 𝑜1 and1−𝑥 chanceof 𝑜0 tobeequallygoodasasure 𝑜.
+∙ If𝑥<0 ,thenfor 𝑜tohaveutility 𝑥isfora 1∕(1−𝑥) chanceof𝑜anda1−(1∕(1−𝑥)) chanceof𝑜1 tobeequallygood
+asasure 𝑜0.
+10Strictly,weshouldrestrictto measurablefunctions,whereΩisgivenitsusualprobabilityspacestructureand isgiven
+measurablespacestructurecompatiblewiththeorderinginducedby ≿on byconstantfunctionsfrom Ωto .
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+674 GOODSELL
+UnboundedUtilityimpliesthatthereareoutcomesofutilities 2,4,8,andsoon.Prospectrichness
+saysthatputtingtheseoutcomesintoTables 1through3givesyouacorrespondingprospect. 11
+Thenextassumptionisthatwhichundergirdsthe“firstargument”ofSection 1,whichsaysthat
+thecoinaStPetersburgprospectstartsfromdoesnotmatterandsothetwoprospectsareequally
+good:
+StochasticEquivalence Ifforeveryoutcome 𝑜,𝑝isequallylikelyas 𝑞istoyieldanoutcomeat
+leastasgoodas 𝑜,then 𝑝isequallygoodas 𝑞.12
+Ineffect,StochasticEquivalencesaysthatthecomparisonofprospectssupervenesonthevaluesof
+outcomesandtheprobabilitiesthattheprospectyieldsthemwith.Itcaneasilybeconfirmedthat
+thefirst-tossandsecond-tossprospectsofSection 1bothyieldanoutcomeofutilitygreaterthan 2
+withprobability1∕2,greaterthan 4withprobability1∕4,andsoon.SobyStochasticEquivalence
+they are equally good. Although Stochastic Equivalence goes beyond Savage’s axioms, it is an
+entirelystandardassumptionfordecisiontheoryinsettingswhereprospectscanhaveinfinitely
+manyoutcomes13 andincaseswhereexpectedutilitiesareundefinedonaccountofunbounded
+utility.14
+The“secondargument”intheparadoxsaidthatthefirst-tossprospectisstrictlybetterthanthe
+second-tossprospect.Theargumentreliedontheideaofcomparingthetwoprospectsconditional
+onaeachmemberofacertainpartitionofhowthecoinsmightland.Theprincipleneededtovin-
+dicatethisreasoningisageneralizationofSavage’sSure-ThingPrinciple(thenameisfromRussell
+andIsaacs( 2021),inDietrichandList( 2005)asimilarprincipleiscalled Event-WiseDominance):
+CountableSure-Thing Let  beapartitionof Ωintopropositionsofnonzeroprobability.Then
+ifsomeprospect 𝑝isatleastasgoodas 𝑞conditionaloneverymember
+of ,then𝑝isatleastasgoodas 𝑞.Ifinadditionthereissomemember
+of  conditionalonwhich 𝑝isstrictlybetterthan 𝑞(i.e.,𝑝≻𝐸 𝑞),then
+𝑝isstrictlybetterthan 𝑞.
+Countable Sure-Thing implies that the first-toss St Petersburg prospect is strictly better than
+thesecond-tossprospect.Wereasonasfollows.First,set  tobethefollowingpartitionof Ω:
+𝐸1∶=thesecondcointosslandstails
+𝐸2∶=thesecondcointosslandsheadsandthethirdlandstails
+⋮
+11Prospectrichnessalsoguaranteesthatforeachoutcome 𝑜in thereisaprospectthatyields 𝑜nomatterhowthecoin
+tossesland.Thuswecancompareoutcomesin withprospectsandeachotherbyusingthatsureprospectasaproxy(so,
+forexample, 𝑜≿𝑝 meansthatthesure 𝑜prospectisatleastasgoodas 𝑝).
+12Insymbols:
+∀𝑜(𝐏{𝑥∈Ω∶𝑝(𝑥)≿𝑜}=𝐏{𝑥∈Ω∶𝑞(𝑥)≿𝑜})→𝑝∼𝑞
+13Seee.g.,BlackwellandGirshick( 1979)[1954]:104,Joyce( 1999):26.
+14DietrichandList( 2005),Easwaran( 2014a),Meacham( 2019).
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 675
+𝐸𝑛 ∶=thesecondthrough (𝑛+1) st cointosseslandheadsandthe (𝑛+2) nd landstails
+⋮
+𝐸𝑛 istheclaimthatifyoutakethefirst-tossStPetersburgprospectyouwillendupinthegreencell
+inTable 3,andifyoutakethesecond-tossStPetersburgprospectyouwillendupinthegreencell
+inTable 2.ReasoningusingSavage’sprincipleswemayderivethatthegreencellinthefirst-toss
+prospectisbetterforany 𝑛,so isapartitionofpropositionsofnonzeroprobabilitysuchthatcon-
+ditionalonany,thefirst-tossprospectisbetter.CountableSure-Thinglicensestheconclusionthat
+thefirst-tossprospectisthereforebetterunconditionally.Thuswehavederivedtheparadoxfrom
+theaforementionedsevenprinciples:Savage’saxiomsofPreordering,Totality,ProspectRichness,
+Sure-Thing,plusthethreeadditionalassumptionsofUnboundedUtility,StochasticEquivalence,
+andCountableSure-Thing.Somethinghastogive.
+2.3 Weakeningtotalityandstochasticequivalence
+TwoofthemostcontentiousprinciplesinthederivationareTotalityandStochasticEquivalence.
+A related contradiction can be derived even when these principles are significantly weakened.
+The argument is slightly more complicated, but is dialectically significant because it sidesteps
+twofrequentmotivationsforrejectingTotalityandStochasticEquivalence.
+Most saliently, many authors are skeptical that these principles apply to prospects with
+infinitely many possible outcomes. Seidenfeld, Schervish, and Kadane (2009) and Lauwers and
+Vallentyne (2016); Lauwers and Vallentyne (2017) reject Stochastic Equivalence in such cases,
+andinparticulartheyrejecttheequalvalueofthefirst-andsecond-coinStPetersburgprospects.
+Easwaran (2014a) Lauwers (2016), and Meacham (2019) believe that such prospects give rise to
+failuresofTotality.Others—includingHare( 2010),Bales,Cohen,andHandfield( 2014),Schoen-
+field(2014)—haveraisedissuesforStochasticEquivalenceincaseswhereTotalityfailsamongthe
+possibleoutcomes.Sotoreinforcetheargumentweshallemployweakeningsofthetwoprinciples
+thatavoidbothcomplaints.
+Let asimple prospect be one that can only yield finitely many different outcomes. And say
+thatoutcomes 𝑜and𝑢arecomparableifeither 𝑜≿𝑢 or𝑢≿𝑜 .WewillrestrictbothTotalityand
+StochasticEquivalencetosimpleprospectswhosepossibleoutcomesareallcomparabletoavoid
+bothsortsofworry:
+RestrictedTotality If𝑝 and𝑞 are simple, and every pair of outcomes either
+mightyieldiscomparable,theneither 𝑝≿𝑞 or𝑞≿𝑝 .15
+RestrictedStochasticEquivalence If𝑝 and𝑞 are simple, and every pair of outcomes either
+might yield is comparable, then if𝑝 and 𝑞 yield the
+sameoutcomeswiththesameprobabilities,thentheyare
+equallygood.
+Toderivetheparadox,wecomparethefirst-tossandsecond-tossStPetersburgprospectwitha
+furtherStPetersburgprospectthatisdeterminedbyadisjointinfinitesetofcointosses.(Toavoid
+positingthesenewcointosses,wecouldhavesplitthecointossesintotwoinfinitecollectionsat
+15Restricted Totality entails that every pair of outcomes inis comparable—those who expect incomparability among
+outcomesmaytreat asaspecialcomparablesubclassofalloutcomes.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+676 GOODSELL
+FIGURE 1 Geometricrepresentationofstatespacewithtwoinfinitesequencesofcointosses.Thespaceis
+partitionedintocellsaccordingtohowmanytossesittakesforthetwosequencestogettailsforthefirsttime.For
+example,thehatchedregionrepresentsthesituationthattheoriginalsequencelandsHTandthenewsequence
+landsT.Theproposition 𝑀3 ishighlightedingreen.Notehowthe 𝑀𝑛 willpartitionthespace,andthateachis
+symmetricwithrespecttothetwosequences.[Colorfigurecanbeviewedatwileyonlinelibrary.com]
+thebeginning.)Callthesethe newcointosses.The newStPetersburgprospectyieldsutility 2if
+thefirstnewcointosslandstails, 4ifthefirstlandsheadsandthesecondtails,andsoon.
+Recall that, by countable Sure-Thing, the first-toss prospect is better than the second-toss
+prospect (the argument to this effect is not altered by the restriction of Totality and Stochastic
+Equivalence).ThenewparadoxwillbederivedbyshowingthatthenewStPetersburgprospectis
+neverthelessequallygoodasbothofthose.
+Tothisend,wepartitionthespaceofwaysthetossescouldland, Ω,asfollows:let 𝑀𝑛 bethe
+proposition that either the original tosses or the new tosses took𝑛 tosses to land tails for the
+firsttime,andtheothertooknomorethan 𝑛(seeFigure 1).Thissequenceofpropositionsforms
+a partition ofΩ into propositions of nonzero probability, so to show the first-toss and new St
+Petersburg prospects are equally good we can show that they are equally good conditional on
+any member of this partition. Crucially, each of the first-toss and new St Petersburg Prospects
+is simple conditional on any𝑀𝑛. The figure makes clear how the situation is probabilistically
+symmetric,sobyRestrictedStochasticEquivalencethefirst-tossandnewStPetersburgprospects
+are equally good conditional on any𝑀𝑛. Countable Sure-Thing then yields their unconditional
+equalgoodness.Thesamewouldhavegoneifwehadreplacedtheoriginalcointossesfromthe
+beginningwiththeoriginalcointossesbesidesthefirstcoin,therebyestablishingthatsecond-toss
+prospectisalsoequallygoodasthenewprospect.
+3 UNBOUNDEDUTILITYWITHOUTPARADOX
+3.1 Costsofrejectingcountablesure-thing
+Given that neither Stochastic Equivalence nor Totality is the culprit, it is most natural to
+view the paradox as demonstrating the incompatibility of Unbounded Utility with Countable
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 677
+Sure-Thing. If so, then the viability of Unbounded Utility depends on whether Countable
+Sure-Thingcanberejected.
+ItmustbestressedthatCountableSure-Thingformalizesanextremelytemptingmodeofrea-
+soning in decision theory. This is the reasoning exemplified in Section1, where we intuitively
+determinethatthefirst-tossprospectisbetterthanthesecondbydividingthemeachintocases
+(i.e.,thegreencellinTables 2and3)andfindingthatfirst-tossprospectbetterconditionalonany
+suchcaseoccurring.Thatis,CountableSure-Thinggivesvoicetoasortof“anti-Dutch-book”prin-
+ciple:ifyouknowyouareabouttolearnsomethingconditionalonwhichthefirst-tossprospect
+looksbetter,thenyoushouldnotneedtolearnit—youshouldbeabletocuttothechaseandjudge
+itbetterunconditionally.
+FailuresofCountableSure-Thingarecounterintuitive,butitisunclearwhethertheyshouldbe
+regardedasimpossible,orsimplyasonemoresurprisingconsequenceofreasoningwiththeinfi-
+nite(inthiscase,prospectswithinfinitelymanypossibleoutcomes).McGee( 1999),Dietrichand
+List(2005),andMeacham( 2019)urgethatweshouldlearntolivewiththefailureofCountable
+Sure-Thing,andArntzenius,Elga,andHawthorne( 2004)reinforcethecasebydrawingparallels
+withthepresentparadoxandarangeofotherpuzzlesindecisiontheory. 16 Itshouldalsoberec-
+ognizedthatUnboundedUtilityalsohasmuchgoinginitsfavour,suchasawiderangeofgeneral
+ethicalprinciplesthatentailit. 17
+ButthereisanotherpressingproblemforthosewhoacceptUnboundedUtility,whichisthat
+decisiontheoryinthepresenceofUnboundedUtilityismuchlesswellunderstoodthandecision
+theorywhereUnboundedUtilityiseschewedinfavourofCountableSure-Thing.Inthelattercase,
+alloftheotherprincipleslistedinSection 2canbeconsistentlyendorsed,andRussell( 2020)has
+demonstratedthatinthepresenceoftheseprinciples,CountableSure-Thinggivesrisetoahighly
+generalrepresentationtheorem(generalizingaresultofBlackwellandGirshick( 1979):105).The
+resultisanelegant,powerful,andoveralldesirabledecisiontheory.
+By contrast,work on decision theoryin the presence of UnboundedUtility has proceededin
+averypiecemealfashion.Toooften,theliteraturefocusesonconcretemethodsofaddingnum-
+bers together as proposals for avoiding the problem of undefined expected utilities, obscuring
+the more pressing need for deciding which of the fundamental principles of decision theory,
+suchasStochasticEquivalenceorSavage’sSure-Thingprinciple,canbeacceptedinlightofthe
+presentparadox.18 Whenfundamentalprinciplesarediscussed,theresultsoftenseemdire.Sei-
+denfeld,Schervish,andKadane( 2009),aswellasLauwersandVallentyne( 2016);Lauwersand
+Vallentyne (2017) take the very drastic step of rejecting Stochastic Equivalence, whereas Fine
+(2008)andSmith( 2014)questioneventheassumptionthataprospectguaranteedtoyieldabetter
+outcomeisbetter.Anotherverycommon(althoughplausiblylessproblematic)concessionisto
+acceptwidespreadfailuresofTotality(see,e.g.,Colyvan( 2008),Easwaran( 2014a),Lauwers( 2016),
+Meacham(2019)).
+Hereisnottheplacetoanswerthequestionofwhich(ifany)ofUnboundedUtilityandCount-
+able Sure-Thing should ultimately be accepted. The goal of this paper is to address the second
+16SeeRussellandIsaacs( 2021)foraresponseonbehalfofCountableSure-Thing.
+17Mostnotably,UnboundedUtilityfollowsfromstandardExpectedTotalUtilitarianism,andthereforealsofromethical
+viewsthatagreewithExpectedTotalUtilitarianismonasufficientlywiderangeofcase,e.g.incaseswheredeontological
+side-constraintsaremetorcaseswhereallbeneficiariesofanactionareequallywell-deserving.SeealsoBecksteadand
+Thomas(2021),Russell( 2021),Wilkinson( 2022).
+18Especially literature following Nover and Hájek (2004), including Colyvan (2008), Easwaran (2008), Gwiazda (2014),
+Easwaran(2014b),andBartha( 2016).
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+678 GOODSELL
+problem, which is answered by demonstrating that even in the presence of Unbounded Utility,
+thehighlyorthodoxprincipleslistedabove,besidesCountableSure-ThingbutincludingTotality
+andStochasticEquivalence,areconsistent.Therefore,decision-theoreticorthodoxyneednotbe
+rejectedtomakeroomforUnboundedUtility.
+3.2 Thetheory 𝗗𝗧𝗨
+ThissectioncompilestheseprincipleswithanimportantstrengtheningofStochasticEquivalence
+toStochasticDominance,andillustrateshowtheresultingtheorycancaptureagreatdealofgood
+decision-theoreticreasoning.Theresultingtheorywillbecalled 𝖣𝖳𝖴,(for 𝖣ecision𝖳heorywith
+𝖴nboundedutility).
+𝖣𝖳𝖴extendstheaxiomsstatedinSection 2withtheexceptionofCountableSure-Thing.These
+were the axioms of Savage, namely Preordering, Totality, Prospect Richness, and Sure-Thing,
+plus the two further axioms of Unbounded Utility and Stochastic Equivalence.𝖣𝖳𝖴 extends
+these axioms by strengthening Stochastic Equivalence to the also entirely standard principle of
+StochasticDominance:
+StochasticDominance Ifforeveryoutcome 𝑜,𝑝isatleastaslikelyas 𝑞istoyieldanoutcome
+betterthan𝑜,then𝑝isatleastasgoodas 𝑞.Ifthereisalsosomeoutcome
+𝑜 such that𝑝 is strictly more likely than𝑞 to yield an outcome better
+than𝑜,then 𝑝isstrictlybetterthan 𝑞.19
+WhereasStochasticEquivalencesaysthatthevalueofaprospectsupervenesontheprobability
+distribution over outcomes that prospect yields, stochastic dominance adds that shifting proba-
+bility fromworse outcomes to better onesis always an improvement.𝖣𝖳𝖴will also include the
+simplifying assumption ofArchimedean Outcomes, which says that every outcome in has a
+well-defined utility (in effect ignoring the possibility of infinitely good or bad outcomes and of
+infinitesimallygoodorbadoutcomes).
+𝖣𝖳𝖴 is a strong theory, and one in which at least a very large proportion of good decision-
+theoretic reasoning can be carried out. Here, this will be illustrated by pointing out three
+consequencesofthetheorywhichmakeitsoverallstructureclear. 20
+Thefirstconsequenceistheprincipleof StatewiseDominance:
+Statewisedominance Ifitiscertainthat 𝑝wouldyieldanoutcomeatleastasgoodas 𝑞would,
+then𝑝≿𝑞 .Ifthereisalsoanonzeroprobabilitythat 𝑝yieldsastrictly
+betteroutcomethan 𝑞,then 𝑝≻𝑞 .21
+19So-named by Quirk and Saposnik (1962). Stochastic Dominance is equivalent (in the presence of the other princi-
+ples,includingArchimedeanOutcomes)toStochasticEquivalenceplusthemostlyuncontroversialprincipleofStatewise
+Dominance,statedbelow.
+20Bya“consequenceof 𝖣𝖳𝖴”wemeanasentencethatcanbederivedfrom 𝖣𝖳𝖴plusenoughpuremathematicsforreal
+analysis. The background pure mathematical theory will be left implicit since the details don’t matter as long as it is
+sufficientlystrongandprovablyconsistent.
+21WederiveStatewiseDominancefromStochasticDominanceasfollows.First,let 𝑝and𝑞satisfytheantecedentofthe
+firstpartofStatewiseDominance,andsupposeforcontradictionthat 𝑝isworsethan 𝑞.Bystochasticdominance,itfollows
+thatforsome 𝑜,𝑞ismorelikelythan 𝑝istoyieldanoutcomebetterthan 𝑜.Then,conditionalontheclaimthat 𝑞would
+yieldanoutcomebetterthan 𝑜,theremustbeanonzeroprobabilitythat 𝑝wouldyieldanoutcomenobetterthan 𝑜.Hence
+thereisanonzeroprobabilitythatthereisanoutcomebetterthan 𝑜that𝑞yieldsandanoutcomenobetterthan 𝑜that𝑝
+yields,sothereisanonzeroprobabilitythat 𝑝yieldsanoutcomeworsethanwhat 𝑞yields,contradictingthesupposition.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 679
+Statewise Dominance is a desirable consequence because it is such an overwhelmingly plau-
+sible principle, but it has particular significance in the present context, where it has been
+suggestedthattheacceptorofUnboundedUtilitymustgiveupdominanceprinciplesaltogether
+in light of the various paradoxes. Arntzenius, Elga, and Hawthorne (2004) put this idea in a
+box:
+Ininfinitecases,rationalitydoesnotrequireonetochooseone’sdominantoptions
+TheboxcanbeinterpretedasdisavowingprincipleslikeCountableSure-Thing,orasdisavow-
+ingevenprincipleslikeStatewiseorStochasticDominance.Theconsistencyof 𝖣𝖳𝖴demonstrates,
+confirmingtheviewofDietrichandList( 2005),thatonthesecondinterpretationArntzeniusand
+coauthorswouldbeoverreacting.Theconsistencyalsomakesclearerhowvariousdominance-like
+formsofreasoningmustbedistinguishedtoavoidparadox.
+Thesecondimportantconsequenceof 𝖣𝖳𝖴isthefactthat,sinceitincludesStochasticDom-
+inance, the comparison of prospects can be simplified by instead comparing the probability
+distributionsoveroutcomesthattheygiveriseto.Infact,sincewearesupposingeveryoutcometo
+haveautilityandeveryutilitytobehadbysomeoutcome,wecansimplifymatterfurtherbycom-
+paring only the probability distribution overutilities (i.e., real numbers) that the two prospects
+giveriseto.Thatis,theprospect 𝑝canbeharmlesslyconflatedwiththeprobabilitydistribution 𝜇
+that,foreachsetofrealnumbers 𝑋,assignsto 𝑋theprobabilitythat 𝑝yieldsanoutcomewhose
+utilityisin 𝑋.Moreover,ProspectRichnessguaranteesthateveryreal-valuedprobabilitydistri-
+butioncorrespondstosomeprospect,sothequestionofhowtorankprospectsreducesentirelyto
+thatofhowtorankreal-valuedprobabilitydistributions.
+Theprinciplesof 𝖣𝖳𝖴carryoversmoothlytothecomparisonofprobabilitydistributions.We
+useGreekletters 𝜇,𝜈,𝜉 asvariablesforreal-valuedprobabilitydistributionsandabusenotation
+bywriting𝜇≿𝜈 fortheclaimthataprospectwhoseutilityisdistributedaccordingto 𝜇isatleast
+asgoodasanyprospectthatyieldsutilityaccordingtothedistribution 𝜈.InthissettingtheSure-
+ThingprinciplereducestovonNeumannandMorgenstern’s( 1944)principleof Independence:
+Independence 𝜇≿𝜈 if and only if, for any distribution𝜉 and number𝑥∈(0,1) ,𝑥𝜉+(1−
+𝑥)𝜇≿𝑥𝜉+(1−𝑥)𝜈 (themixtureofdistributions 𝑥𝜉+(1−𝑥)𝜇 isdefinedasthe
+distributionsatisfying
+(𝑥𝜉+(1−𝑥)𝜇)(𝑋)=𝑥𝜉(𝑋)+(1−𝑥)𝜇(𝑋)
+foranymeasurableset 𝑋).
+StochasticDominancecanberewrittenintermsofdistributionsasfollows:
+StochasticDominance If for every real number𝑥,𝜇 assigns probability at least as great as𝜈
+doestotheray [𝑥,∞) (i.e.,if𝜇[𝑥,∞) ≥𝜈[𝑥,∞)),andthereisalsoareal
+number𝑦suchthat𝜇assignsastrictlygreaterprobabilityto [𝑦,∞) than
+𝜈does(𝜇[𝑦,∞)>𝜈[𝑦,∞) ),then 𝜇≻𝜈 .
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+680 GOODSELL
+FIGURE 2 Blackisthemixtureofblue
+andred(by0.5).[Colorfigurecanbeviewed
+atwileyonlinelibrary.com]
+FIGURE 3 Bluedominatesred.[Color
+figurecanbeviewedat
+wileyonlinelibrary.com]
+Bothoftheseprinciplescannowbevisualizedintermsofthe cumulativedistributionfunctions ,
+or CDFs, of real-valued probability distributions. The CDF of𝜇 is the function that assigns to
+each number𝑥 the probability that𝜇 gives to the ray[𝑥,∞).S e eF i g u r e s2 and 3 for how the
+IndependenceandStochasticDominanceconditionsarevisualizedintermsofCDFs.
+Thefinalimportantconsequenceof 𝖣𝖳𝖴todiscussistheextenttowhichitvindicatesstandard
+decision-theoreticreasoninginthecaseofsimpleprospects(prospectswhichhaveonlyfinitely
+many possible outcomes). By slightly modifying von Neumann and Morgenstern’s representa-
+tiontheorem( 1944),22 onecanshowthatexpectedutilitytheoryforsimpleprospectsissimplya
+theoremof 𝖣𝖳𝖴.Thatis,wecanrecoverthefollowingprinciple:
+SimpleEUT If𝑝and𝑞aresimpleprospects,then 𝑝≿𝑞 ifandonlyiftheexpectedutilityof 𝑝is
+atleastasgreatasthatof 𝑞.
+ExpectedutilitycanalsobevisualizedintermsofCDFs,asinFigure 4.𝖣𝖳𝖴thereforeexplains
+22SeeJoyce( 1999)forexposition.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 681
+FIGURE 4 Theexpectationofthe
+distributionisequaltotheblueareaminus
+theredarea,ifbothareasarefinite.[Color
+figurecanbeviewedat
+wileyonlinelibrary.com]
+whyexpectation-basedreasoningisgoodinthefinitecaseswithoutfallingsilentintheinfinite
+cases, for the principles of𝖣𝖳𝖴 are fully general. In total, then,𝖣𝖳𝖴 is a strong and desirable
+theory.Thequestionthatremainsiswhetheritcontainsacontradiction.
+3.3 Consistencyof 𝗗𝗧𝗨
+Nofurthercontradictionarisesin 𝖣𝖳𝖴withouttheadditionofCountableSure-Thingprinciple:
+Theorem1. 𝖣𝖳𝖴isconsistent.
+In this sense we can be said to have solved the motivating paradox. The consistency of𝖣𝖳𝖴
+is established in AppendixB. In this section the main ideas will be covered by establishing the
+consistency of a weaker theory,𝖣𝖴, which is𝖣𝖳𝖴 but with the axiom of𝖳otality weakened to
+RestrictedTotality(§ 2.3).𝖣𝖴weakens𝖣𝖳𝖴bywithholdingonwhethereverypairofprospectsis
+comparable.Theproofoftheconsistencyof 𝖣𝖴isintuitiveandentirelyelementary;anditforms
+thecoreoftheproofofTheorem 1,whichcomplicatestheargumentbyastandardapplicationof
+non-principalultrafilters.TheproofstrategyineithercasecanbeattributedtoLauwers(Lauwers
+(2016)),whousesittoestablishtheconsistencyofweakfragmentsof 𝖣𝖴and𝖣𝖳𝖴.23
+The existence of non-principal ultrafilters requires the axiom of choice, so the proof of con-
+sistency is not acceptable from the perspective of constructive mathematics. This is significant
+becausevariousauthorsineconomicsandphilosophyhavesuggestedthatnon-constructivemath-
+ematicsshouldnotbeusedinethicaltheorising 24 (notethatby“constructive”mathematicsthese
+authorsgenerallymeanatheorylike 𝖹𝖥whichexcludestheaxiomofchoicebutincludesthelaw
+ofexcludedmiddle,whichinothercontextsisoftentakentobea“non-constructive”principle).
+23Inparticular,Lauwerscanbecreditedwithnoticingthatthepreordering ⊒definedinthissectionhaspropertiescorre-
+spondingtotheaxiomsofPreorderingandIndependence,andthatitcanbeextendedtoatotalorderingwithanultrafilter
+asisdoneinAppendix B.
+24See Fleurbaey and Michel (2003), Zame (2007), Lauwers (2010), Lauwers (2012), Lauwers (2016), Litak (2018), Askell
+(2018)(p.257).
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+682 GOODSELL
+Happily, for the consistency of𝖣𝖳𝖴the use of non-constructive mathematics is dispensable by
+acelebratedresultofGödel( 1938).25 However,thosewhowishtoavoidnon-constructivemathe-
+maticsinethicaltheorisingwillfindtheadditionofTotalityto 𝖣𝖴unacceptable,becauseLauwers
+(2016)showsthat 𝖣𝖳𝖴alreadyentailsnon-constructivemathematicalprinciples.
+Nevertheless,theconsistencyof 𝖣𝖳𝖴overjust 𝖣𝖴maybeofinteresteventothosewhoreject
+the axiom of Totality, whether they do so to avoid non-constructive mathematics or otherwise.
+Thisisbecauseauthorswhoacceptsomeoralloftheaxiomsof 𝖣𝖴—includingSavage,aswellas
+Joyce(1999),Easwaran( 2014a)andmanyotherswhorejectTotality—taketheprinciplesof 𝖣𝖴to
+benotjusttrueprinciplesgoverningthestructureofvalueunderrisk,butasprinciplesconstrain-
+ingallcoherentwaysofpreferringprospects.Thatis,theytake(someorallof)theaxiomsof 𝖣𝖴
+to be true when ‘≿’ is replaced with a variable universally quantified over all “coherent prefer-
+enceorderings”.Onthispicture,theconsistencyofaddingthefollowingprincipleaboutcoherent
+preferenceorderingsisequivalenttotheconsistencyof 𝖣𝖳𝖴:
+CoherentExtensibility
+(i) Foreverypairofprospects 𝑝,𝑞 andcoherentpreferenceordering ≿
+forwhich𝑞̸≿𝑝 and𝑝̸≿𝑞 ,thereisacoherentpreferenceordering
+≿′ thatextends ≿suchthateither 𝑝≿′𝑞or𝑞≿′𝑝.26
+(ii) For any set of coherent preference orderings that extend one
+another, there is a coherent preference ordering that extends all
+ofthem.27
+Coherent Extensibility is plausible even supposing Totality fails, for reasons presented in
+Kaplan(1983)andHare( 2010)(seealsodeFinetti( 1972)§3.10.7foranalogousconsiderationsin
+probabilitytheory).Itisalsoseeminglyacceptablefromaconstructiveperspective:seeRemark 1
+inAppendix B.
+Theremainderofthissectionestablishesthefollowing:
+Theorem2. 𝖣𝖴isconsistent.
+Theconsistencywillbeshownbyshowingthatthetheoryistrueonaninterpretation,bycon-
+structinganordering ⊒ofprospectsthathastheproperties 𝖣𝖴says≿has.Whatthisamountstois
+constructingapreorderingofprobabilitydistributionssatisfyingIndependence,StochasticDom-
+inance,andSimpleEUT(§ 3.2),whichwewillalsowrite ⊒.28 SeeFigures 2,3,and 4fordiagrams
+illustratingtheseconditions.
+25ForamodernexpositionoftheresultseeJech( 2006) pp.188-190.Gödel showedthat 𝖹𝖥—whichthepreviouslycited
+authorswhoimposeconstructivenessaccept—canprovetheconsistencyoffragmentsof 𝖹𝖥+ Choicethataresufficient
+forTheorem 1,andso 𝖹𝖥issufficientfortheconsistencyof 𝖣𝖳𝖴.
+26≿1 extends≿2 ifforany 𝑝,𝑞,𝑝≿1 𝑞if𝑝≿2 𝑞,and 𝑝≿1 𝑞onlyif 𝑞̸≿2 𝑝.Notethateveryorderingextendsitself.
+27CoherentExtensibilityimpliestheexistenceofatotalcoherentpreferenceorderinggivenZorn’slemma,sothe‘ ≿’in
+𝖣𝖳𝖴maybeinterpretedasthatcoherentpreferenceordering.
+28Simple EUT immediately implies Unbounded Utility and Restricted Totality. Independence implies Sure-Thing.
+ProspectRichnessisbuiltintothemodelbecauseallprobabilitydistributionsareinthedomainof ⊒.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 683
+FIGURE 5 Theexpectationtruncated
+to10ofthedistribution(i.e., 𝐄𝑡𝜇for𝑡=10 )
+isequaltotheblueareaminustheredarea.
+Noticethatbothareaswillbefiniteforany 𝑡.
+[Colorfigurecanbeviewedat
+wileyonlinelibrary.com]
+The construction of⊒ is built on the observation that the ordering of distributions by their
+expected values satisfies all three constraints when we restrict attention to distributions whose
+expectationiswell-defined(allofwhichareconfirmedbyinspectingthefigures). 29
+Theonlyproblemisthattheexpectationofadistributionisnotalwaysdefined.This,wehave
+alreadyobserved(§ 1),isthecaseforthedistributionoftheStPetersburgprospect.Forthecon-
+structionof ⊒,whatwewilldoinsteadiscompareprospectsbythesequenceoftheir truncated
+expectations.Forapositiverealnumber 𝑡,write 𝐄𝑡𝜇fortheexpectationofthedistributionthatis
+justlike 𝜇butthatputsalltheprobabilityofavaluebiggerthan 𝑡onto𝑡,andalltheprobability
+of a value less than−𝑡 onto−𝑡. This distribution agrees with𝜇 on subsets of(−𝑡,𝑡), but gives
+probabilities𝜇([𝑡,∞)) and𝜇((−∞,−𝑡]) respectivelytotheutilities 𝑡and−𝑡.30, 31 SeeFigure 5for
+ageometricalrepresentation.
+Whentheexpectationofadistribution 𝜇iswell-defined,itisgivenbythelimitofthetruncated
+expectationsas𝑡goestoinfinity.Crucially,truncatedexpectationsareallwell-definedforanyreal-
+29Writing𝐄𝜇fortheexpectationof 𝜇,weobservethefollowing:
+∙ WheneverSimpleEUTrequiresthat 𝜇⊒𝜈 ,bydefinitiontheexpectations 𝐄𝜇and𝐄𝜈arewell-definedand 𝐄𝜇 ≥𝐄𝜈.
+∙ Theexpectationofamixtureofprospectswithwell-definedexpectationsisthemixtureoftheirexpectations:
+𝐄(𝑥𝜉+(1−𝑥)𝜇)=𝑥𝐄𝜉+(1−𝑥)𝐄𝜇
+Hence𝐄(𝑥𝜉+(1−𝑥)𝜇) isatleastasgreatas 𝐄(𝑥𝜉+(1−𝑥)𝜈) ifandonlyif 𝐄𝜇 isatleastasgreatas 𝐄𝜈,whenthe
+expectationsexist.
+∙ If𝜇stochasticallydominates𝜈andbothhavewell-definedexpectations, 𝐄𝜇isatleastasgreatas 𝐄𝜈,and𝐄𝜇isstrictly
+greaterifitstrictlystochasticallydominates.
+30Easwaran(2014b)appealstoaverysubtlydifferentnotionoftruncationofaprospect.ForEaswaran,thetruncationof 𝜇
+to𝑡reassignsalltheprobabilityofutilitybetterthan 𝑡orworsethan −𝑡to0,ratherthanto 𝑡or−𝑡.Easwaran(pp.490-491)
+showshisnotionoftruncationtohavesomepathologicalpropertiesforprospectsthathavewhathecalls“unstabletails”,
+soitwillnotworkforpresentpurposes.
+31
+𝐄𝑡𝜇∶= ∫
+𝑡
+−𝑡
+𝑧d𝜇(𝑧)
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+684 GOODSELL
+valuedprobabilitydistribution.Evenifthelimitisnotwell-defined,eachtruncatedexpectation
+is. Thus,every pair of probability distributions can be compared by comparing their truncated
+expectations,andthisishowwewillbuildtherequiredpreordering.
+𝜇⊒𝜈 willbedefinedas:as 𝑡increases,eventually 𝐄𝑡𝜇isalwaysatleastasgreatas 𝐄𝑡𝜈.More
+precisely:
+𝜇⊒𝜈∶=(∃𝑠>0)(∀𝑡>𝑠)(𝐄 𝑡𝜇 ≥𝐄𝑡𝜈)
+⊒isclearlyreflexive,andistransitivebecauseif 𝐄𝑡𝜇 ≥𝐄𝑡𝜈forall𝑡greaterthan𝑠1 and𝐄𝑡𝜇 ≥𝐄𝑡𝜉
+forall 𝑡greaterthan 𝑠2,then 𝐄𝑡𝜇 ≥𝐄𝑡𝜉forall 𝑡greaterthanboth 𝑠1 and𝑠2.
+We then use the properties of expectations to show that⊒ always satisfies Simple EUT,
+Independence,andStochasticDominance:
+Simple EUT:I f𝜇 is simple, then there is a biggest utility,𝑠𝜇, that gets a nonzero probability.
+Thenfor 𝑡 biggerthan 𝑠𝜇,𝐄𝑡𝜇=𝐄𝜇 .Soin particular, if𝐄𝜇 ≥𝐄𝜈 thenforsome 𝑠 (whicheveris
+largeroutof 𝑠𝜇 or𝑠𝜈),𝐄𝑡𝜇 ≥𝐄𝑡𝜈forall 𝑡>𝑠 .
+Independence:Thetruncatedexpectationofamixtureisthemixtureoftruncatedexpectations:
+𝐄𝑡(𝑥𝜉+(1−𝑥)𝜇)=𝑥𝐄 𝑡𝜉+(1−𝑥)𝐄 𝑡𝜇
+Andbybasicalgebrawehave 𝐄𝑡𝜇 ≥𝐄𝑡𝜈ifandonlyif
+𝑥𝐄𝑡𝜉+(1−𝑥)𝐄 𝑡𝜇 ≥𝑥𝐄𝑡𝜉+(1−𝑥)𝐄 𝑡𝜈
+So𝜇⊒𝜈 ifandonlyif 𝑥𝜉+(1−𝑥)𝜇⊒𝑥𝜉+(1−𝑥)𝜈 .
+StochasticDominance:If𝜇stochasticallydominates𝜈,thenthetruncationof 𝜇to𝑡alsostochas-
+ticallydominatesthetruncationof 𝜈 to𝑡.Hence 𝐄𝑡𝜇 ≥𝐄𝑡𝜈 forany 𝑡so𝜇⊒𝜈 .Ifinaddition,for
+somenumber 𝑠,𝜇givesastrictlyhigherprobabilitythan 𝜈to(𝑠,∞),then 𝐄𝑡𝜇>𝐄 𝑡𝜈forall 𝑡>𝑠 .
+So𝜇⊐𝜈 .
+𝖣𝖴isthereforeconsistent.
+4 FURTHERDIRECTIONS
+𝖣𝖳𝖴isastrongandplausibletheory,soisagoodstartingpointfortheinvestigationofunbounded
+utility.Nevertheless,𝖣𝖳𝖴leavesmanyquestionsundecided.Themodelconstructiontechniques
+for𝖣𝖳𝖴and𝖣𝖴arefairlygeneral,andslightvariationsinthemodelsshowhowvariouscompar-
+isonsofprospectsthatmightseemobviousareinfactindependentofthetheory.Onediagnosis
+is that𝖣𝖳𝖴 should be extended so as to imply these comparisons. Another is that, in light of
+the failure of Countable Sure-Thing, we should be a little less trusting of our intuitions when
+unboundedutilityisonthetable,socomparisonsthatgobeyond 𝖣𝖳𝖴should,sometimessurpris-
+ingly, be regarded as suspicious. In this section, we consider two possible extensions of𝖣𝖳𝖴as
+casestudies.Thesecasestudiesillustratehowthereisstillagreatdealofwork,bothformaland
+philosophical,tobedoneintheinvestigationofunboundedutility.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 685
+4.1 Expectedutilitytheory
+Considertheprinciplethatliesatthecenterofdecisiontheory:
+ExpectedUtilityTheory(EUT) If𝑝and𝑞bothhaveanexpectedutility,then 𝑝≿𝑞 ifandonly
+iftheexpectedutilityof 𝑝 isatleastasgreatastheexpected
+utilityof 𝑞.
+EUTissilentaboutprospects,liketheStPetersburgprospect,whichlackanexpectedutility.
+Still,theexistenceofprospectsbeyonditsremitdoesnotrefuteEUTasstatedabove;theysimply
+showthatexpectedutilityisnottheendofthestory.Andinalmosteverycontemporarytreatment
+ofunboundedutility,EUTisassumedtobetrue.Forexample,Colyvan( 2008),Easwaran( 2008),
+Seidenfeldetal.( 2009),Gwiazda( 2014),Easwaran( 2014b),Bartha( 2016),LauwersandVallentyne
+(2016),andMeacham( 2019)allpresupposeEUT,andtaketheirtasktobeto extendEUTsoasto
+beabletoevaluateprospectswithoutanexpectedutility(Easwaran( 2014a)andSmith( 2014)are
+notableexceptions).
+TherearesomedissentersfromEUT,forexampleBuchak( 2013)andSmith( 2014).Butthese
+theoristsalsodepartradicallyfromorthodoxdecisiontheory,rejectingtheSure-Thingprinciple
+andipsofacto theIndependenceaxiomof 𝖣𝖳𝖴.However,evenifwetaketheorthodoxapproach
+todecisiontheorywith 𝖣𝖳𝖴,EUTbuildsinanovelassumption.Thatis,ExpectedUtilityTheory
+isnotaconsequenceof 𝖣𝖳𝖴,andhencemustbesupportedbysomeadditionalargument.
+Rather,𝖣𝖳𝖴 vindicates onlySimple EUT(§3.2), which is the restriction of EUT to simple
+prospects—those with only finitely many possible outcomes. The proof that𝖣𝖳𝖴is compatible
+with the failure of EUT is in AppendixB (Theorem 3). An easier exercise is to show that the
+model just constructed for𝖣𝖴 is one where EUT fails. For this, consider a prospect that yields
+utility𝑛withprobability 1∕2𝑛.Thisprospecthasexpectedutilitygivenbythesum:
+1
+2×1+ 1
+4×2+⋯+ 1
+2𝑛 ×𝑛+⋯=2
+Bycontrast,itstruncatedexpectedutilityisalwaysstrictlylessthan 2,sothisprospectisstrictly
+worsethan 2inthemodel.
+WhileEUTisnotimpliedby 𝖣𝖳𝖴,norisitsnegation:
+Theorem3. EUTisindependentof 𝖣𝖳𝖴.32
+Whetheritshouldbeacceptedisthereforeanindependentphilosophicalquestion.Isubmitthat
+itshouldnotbe.ThegeneralizationfromSimpleEUTtoEUTproperisalmostexactlyanalogous
+to the generalization from Sure-Thing to Countable Sure-Thing, and we have seen that this is
+exactlythesortofgeneralizationthatunboundedutilityshouldmakeussuspiciousof.
+Todrawouttheanalogy,consideraprospect 𝑝thatyieldsutility 𝑦withprobability 𝑥(among
+otherpossibilities).TheSure-Thingprinciplesaysthat 𝑝canbecomparedwithanyotherprospect
+asfollows:firstconditionalon 𝑝yielding𝑦,thenconditionalon 𝑝notyielding 𝑦.Thus,thevalue
+contributedbythe 𝑥chanceofutility 𝑦isindependentofwhateverotheroutcomes 𝑝mightyield,
+andsoinsomesensecansimplybeaddedtothetotal.Thedefinitionofutilityischosensothatthe
+32ProofinAppendix B.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+686 GOODSELL
+utilitycontributionofan 𝑥chanceofutility 𝑦istheproduct 𝑥𝑦,sothevalueof 𝑝canbethought
+ofas 𝑥𝑦plusthevalueof 𝑝thatiscontributedbythenon- 𝑦possibilities.
+𝑥𝑦+…
+Suppose𝑝 is simple, so it has finitely many possible utilities,𝑦1, through𝑦𝑛, which it yields
+withsomeprobabilities 𝑥1 through𝑥𝑛.Byrepeatingtheabovereasoning 𝑛times,theSure-Thing
+principlesaysthatthevalueof 𝑝isgivenbythesum:
+𝑥1𝑦1+⋯+𝑥 𝑛𝑦𝑛
+WhichisexactlytheverdictofSimpleEUT.
+ToderiveEUTproperfromthissortofreasoning,weneedtoextendittonon-simpleprospects,
+such as a prospect𝑞 that yields utilities in the infinite sequence𝑦1,𝑦2,… with probabilities
+𝑥1,𝑥2,… . The Sure-Thing principle says that the value of𝑞 is given by the value of the contri-
+butionofan 𝑥𝑛 chanceof𝑦𝑛 plusthevalueof 𝑞conditionalonnotgettingutility 𝑦𝑛,forany 𝑛.But
+sincethereareinfinitelymanydifferentpossibleoutcomes,itjustdoesnotfollowthatthevalue
+of𝑞isdeterminedbyaddingthesecontributionstogetherallatoncewiththesum
+𝑥1𝑦1+⋯+𝑥 𝑛𝑦𝑛+…
+whichiswhatEUTdemands.
+TogetthisinthesamewayaswegotSimpleEUTfromSure-Thing,wewouldneedaprinciple
+thatallows ustocomputethevalueofaprospectbydividingitinto infinitely manypieces,and
+evaluatingthosepiecesallatonce.Andthemostobvioussuchprinciplewouldbe CountableSure-
+Thing.SincewehavejustbeenforcedtorejectCountableSure-Thing,EUTshouldalsolookvery
+dubious,andcertainlyshouldnotbeconsideredasbeingonaparwithSimpleEUT.
+4.2 Symmetriesofvalue
+Wenowturntoanotherpossibleextensionof 𝖣𝖳𝖴.Theideaisthatthe atleastasgood orderingof
+prospectsshouldbeinvariantundercertainoperationsontheprospects.Forexample,ifyouadda
+fixedutilityallpossibleoutcomesoftwoprospects,thatshouldn’taffectwhichisbetterofthetwo.
+Similarly,ifyoumultiplytheutilityofalloftheirpossibleoutcomesbyafixedpositiveamount.
+Writing𝛼⋅𝑝+𝛽 foraprospectwhichyieldsutility 𝛼𝑥+𝛽 whenever𝑝wouldyieldutility 𝑥,we
+formalizethisideawiththefollowingtwoprinciple:
+ShiftInvariance Foranyrealnumber 𝛽,𝑝≿𝑞 ifandonly 𝑝+𝛽≿𝑞+𝛽 .
+ScaleInvariance Foranypositiverealnumber 𝛼,𝑝≿𝑞 ifandonlyif 𝛼⋅𝑝≿𝛼⋅𝑞 .
+Thisideahascomeupafewtimesintheliterature,suchasinHájek’s(Hájek( 2014),pp.490-491)
+discussionofGwiazda( 2014),andbyEaswaran: 33
+33More recently, Wilkinson (2022) has marshalled a principle closely related to Scale Invariance (called Scale
+Independence)indefenceofUnboundedUtility.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 687
+[...]utilityisonlydefineduptoashiftandastretch— thereisnowell-defined0and
+nowell-definedunitinwhichutilityismeasured.Thus,itoughttobethecasethat
+addingaconstanttotheutilityofeveryoutcomeofagambleaffectstheoverallvalue
+ofthegamblebyaddingthesameconstant,andsimilarlyformultiplyingtheutilities
+byapositiveconstant. 34 Easwaran(2014b),p.490.
+Anothernaturalideainthesamefamilyisthatreplacingutility 𝑥withutility −𝑥throughout
+twoprospectsreversestheircomparison.
+ReflectionAnti-Invariance 𝑝≿𝑞 ifandonlyif (−1)⋅𝑞≿(−1)⋅𝑝 .
+Theseprinciplesareplausible,andhavealreadybeenputtoworkinvariousplaces.Butmere
+plausibilityisn’tenough.Withoutsomeguaranteethattheydonotleadtoafurtherparadox,they
+cannotbeaccepted.Themodeltheoryjustlaidoutaboveandintheappendixallowsustobegin
+the investigation of these principles. There are two extremely salient questions to ask of each
+principle.First:doesit followfrom𝖣𝖳𝖴?Second:isit consistentwith𝖣𝖳𝖴,orsomeothernatural
+theorylike𝖣𝖴?
+Onthefirstquestion,theanswerissurprisinglynegativeinallthreecases.Thatis,noneofshift
+orScaleInvariance,orReflectionAnti-Invariance,canbederivedin 𝖣𝖳𝖴(seeAppendix B).On
+the other hand, the answer is positive in each case on the question of consistency. In fact, it is
+consistentwith 𝖣𝖳𝖴thatallthreeprinciplesbetruetogether(seeGoodsell( 2023),Chapter4).
+These three principles therefore constitute a promising way of strictly extending𝖣𝖳𝖴.T h e
+questionofwhethertoacceptthemonceagainbecomesaphilosophicalone,andagoodexam-
+pleofhowdecisiontheoryinthepresenceofunboundedutilityremainsaninterestingtopicfor
+furtherresearch.
+ACKNOWLEDGEMENTS
+ThankstoJeffRussell,WengKinSan,JohnHawthorne,MarkColyvan,KennyEaswaran,toan
+audience at the Pacific APA, and to various anonymous referees atNoûsand other journals for
+helpfulcommentsanddiscussiononpreviousdrafts.
+REFERENCES
+Arntzenius,F.,Elga,A.,&Hawthorne,J.(2004).Bayesianism,infinitedecisions,andbinding. Mind,113(450),251–
+283.
+Arntzenius,F.,&McCarthy,D.(1997).Thetwoenvelopeparadoxandinfiniteexpectations. Analysis,57(1),42–50.
+Askell,A.(2018). ParetoPrinciplesinInfiniteEthics .PhDthesis,NewYorkUniversity.
+Bales,A.,Cohen,D.,&Handfield,T.(2014).Decisiontheoryforagentswithincompletepreferences. Australasian
+JournalofPhilosophy ,92(3),453–70.
+Bartha,P.(2016).Makingdowithoutexpectations. Mind,125(499),799–827.
+Beckstead,N.,&Thomas,T.(2021).Aparadoxfortinyprobabilitiesandenormousvalues. GPIWorkingPapers,(7).
+Blackwell,D.A.,&Girshick,M.A.(1979). Theoryofgamesandstatisticaldecisions .CourierCorporation.
+Broome,J.(1995).Thetwo-envelopeparadox. Analysis,55(1),6–11.
+34It should be noted that the strengthening of Scale Invariance suggested in a naïve reading of this passage is
+straightforwardlyinconsistentwith 𝖣𝖳𝖴(usingthesameargumentasinSection 1):
+ValueScaling Afifty-fiftygamblebetween 2⋅𝑝 and0isequallygoodas 𝑝.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+688 GOODSELL
+Buchak,L.(2013). RiskandRationality .OxfordUniversityPress.
+Chalmers,D.(2002).Thest.petersburgtwo-envelopeparadox. Analysis,62(2),155–157.
+Colyvan,M.(2008).Relativeexpectationtheory. JournalofPhilosophy ,105(1),37–44.
+deFinetti,B.(1972). Probability,Induction,andStatistics .NewYork:JohnWiley.
+Dietrich,F.,&List,C.(2005).Thetwo-envelopeparadox:Anaxiomaticapproach. Mind,114(454),239–248.
+Easwaran,K.(2008).Strongandweakexpectations. Mind,117(467),633–641.
+Easwaran,K.(2014a).Decisiontheorywithoutrepresentationtheorems. Philosophers’Imprint,14.
+Easwaran,K.(2014b).Principalvaluesandweakexpectations. Mind,123(490),517–531.
+Fine,T.(2008).Evaluatingthepasadena,altadena,andstpetersburggambles. Mind,117(467),613–632.
+Fleurbaey, M., & Michel, P. (2003). Intertemporal equity and the extension of the ramsey criterion.Journal of
+MathematicalEconomics,39(7),777–802.
+Gödel,K.(1938).Theconsistencyoftheaxiomofchoiceandofthegeneralizedcontinuum-hypothesis. Proceedings
+oftheNationalAcademyofSciences ,24(12),556–557.
+Goodsell,Z.(2023). UnboundedUtility.PhDthesis,UniversityofSouthernCalifornia.
+Gwiazda,J.(2014).Orderlyexpectations. Mind,123(490),503–516.
+Hájek,A.(2014).Unexpectedexpectations. Mind,123(490),533–567.
+Hare,C.(2010).Takethesugar. Analysis,70(2),237–247.
+Jech, T. (2006).Set Theory: The Third Millennium Edition, Revised and Expanded. Springer Monographs in
+Mathematics.SpringerBerlinHeidelberg.
+Joyce,J.M.(1999). TheFoundationsofCausalDecisionTheory .CambridgeUniversityPress.
+Kaplan,M.(1983).Decisiontheoryasphilosophy. PhilosophyofScience ,50(4),549–577.
+Lauwers,L.(2010).Orderinginfiniteutilitystreamscomesatthecostofanon-ramseyset. JournalofMathematical
+Economics,46(1),32–37.
+Lauwers,L.(2012).Intergenerationalequity,efficiency,andconstructibility. EconomicTheory,49(2),227–242.
+Lauwers,L.(2016).Whydecisiontheoryremainsconstructivelyincomplete. Mind,125(500),1033–1043.
+Lauwers, L., & Vallentyne, P. (2016). Decision theory without finite standard expected value.Economics and
+Philosophy,32(3),383–407.
+Lauwers,L.,&Vallentyne,P.(2017).Atreecanmakeadifference. JournalofPhilosophy ,114(1),33–42.
+Litak,T.(2018).Infinitepopulations,choiceanddeterminacy. StudiaLogica:AnInternationalJournalforSymbolic
+Logic,106(5),969–999.
+McGee,V.(1999).Anairtightdutchbook. Analysis,59(4),257–265.
+Meacham,C.J.G.(2019).Differenceminimizingtheory. Ergo:AnOpenAccessJournalofPhilosophy ,6.
+Nalebuff,B.(1989).Puzzles:Theotherperson’senvelopeisalwaysgreener. TheJournalofEconomicPerspectives ,
+3(1),171–181.
+Nover,H.,&Hájek,A.(2004).Vexingexpectations. Mind,113(450),237–249.
+Quirk,J.P.,&Saposnik,R.(1962).Admissibilityandmeasurableutilityfunctions. TheReviewofEconomicStudies ,
+29(2),140–146.
+Russell, J. S. (2020). Non-archimedean preferences over countable lotteries.JournalofMathematicalEconomics ,
+88(May2020),180–186.
+Russell,J.S.(2021).Ontwoargumentsforfanaticism. GPIWorkingPapers ,(17).
+Russell,J.S.,&Isaacs,Y.(2021).Infiniteprospects. PhilosophyandPhenomenologicalResearch ,103(1),178–198.
+Savage,L.(1954). TheFoundationsofStatistics .WileyPublicationsinStatistics.
+Schoenfield,M.(2014).Decisionmakinginthefaceofparity. PhilosophicalPerspectives,28(1),263–277.
+Seidenfeld, T., Schervish, M., & Kadane, J. (2009). Preference for equivalent random variables: A price for
+unboundedutilities. JournalofMathematicalEconomics ,45,329–340.
+Smith,N.J.J.(2014).Isevaluativecompositionalityarequirementofrationality? Mind,123(490),457–502.
+vonNeumann,J.,&Morgenstern,O.(1944). TheoryofGamesandEconomicBehavior .PrincetonUniversityPress.
+Wilkinson,H.(2022).Indefenseoffanaticism. Ethics,132(2),445–477.
+Zame,W.(2007).Canintergenerationalequitybeoperationalized? TheoreticalEconomics,2,187–202.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 689
+Howtocitethisarticle: Goodsell,Z.(2024).Decisiontheoryunbound. Noûs,58,
+669–695.https://doi.org/10.1111/nous.12473
+APPENDIXA:AXIOMSOF 𝗗𝗧𝗨
+Preordering At least as good asis reflexive (𝑝≿𝑝 ) and transitive (if𝑝≿𝑞≿𝑟 ,
+then𝑝≿𝑟 ).
+Totality Foranyprospects 𝑝and𝑞,either 𝑝≿𝑞 or𝑞≿𝑝 .
+Sure-Thing Let𝐸beasubsetof Ωwithprobabilitystrictlybetweenzeroandone
+such that𝑝 and𝑞 are equally good conditional on𝐸 (i.e.,𝑝∼𝐸 𝑞).
+Then𝑝≿𝑞 ifandonlyif 𝑝≿Ω⧵𝐸 𝑞.
+ProspectRichness Foranyfunction 35𝑓fromΩto ,thereisaprospectin  thatyields
+𝑓(𝑠)whenthecointosseslandinthesequence 𝑠.
+UnboundedUtility For any real number𝑥, there is an outcome in that has utility𝑥
+(§2.1).
+ArchimedeanOutcomes Everyoutcomein hasautility.
+StochasticDominance Ifforeveryoutcome 𝑜,𝑝isatleastaslikelyas 𝑞istoyieldanoutcome
+betterthan𝑜,then𝑝isatleastasgoodas 𝑞.Ifthereisalsosomeout-
+come𝑜suchthat 𝑝isstrictlymorelikelythan 𝑞toyieldanoutcome
+betterthan𝑜,then 𝑝isstrictlybetterthan 𝑞.
+𝖣𝖴replacesTotalitywith:
+RestrictedTotality If𝑝 and𝑞 are simple, and every pair of outcomes either might yield is
+comparable,theneither 𝑝≿𝑞 or𝑞≿𝑝 .
+Alsoofnotearethefollowingconsequenceof 𝖣𝖴.
+Independence 𝜇≿𝜈 if and only if, for any distribution𝜉 and number𝑥∈[0,1] ,𝑥𝜉+(1−
+𝑥)𝜇≿𝑥𝜉+(1−𝑥)𝜈 .
+SimpleEUT If𝑝and𝑞aresimpleprospects,then 𝑝≿𝑞 ifandonlyiftheexpectedutilityof
+𝑝isatleastasgreatasthatof 𝑞.
+APPENDIXB:PROOFOFCONSISTENCYOF 𝗗𝗧𝗨
+Wenowprovethemainresult(Theorem 1)andsomeothertheorems.Weproceedbyextending
+theproofofSection 3.3withanultrafilter.Itisalsopossibletogiveamoreabstractproofbyadapt-
+ingthetechniqueofFine( 2008)toaccomodateStochasticDominanceandapplyingZorn’slemma
+directly,howevertheconcretemodelsgeneratedbythetruncatedexpectationorderingarepartic-
+ularlynatural(theyare,forexample,anticipatedbyEaswaran( 2014b)andLauwers( 2016))and
+35Strictly,weshouldrestrictto measurablefunctions,whereΩisgivenitsusualprobabilityspacestructureand isgiven
+measurablespacestructurecompatiblewiththeorderinginducedby ≿onconstantfunctionsfrom Ωto .
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+690 GOODSELL
+straightforward,andaresufficientlymodulartoachievealldesiredindependenceandconsistency
+results.
+Definition1 (Coboundedultrafilter).A coboundedultrafilter on[0,∞) isasetofsubsetsof [0,∞),
+,suchthat:
+∙ If𝑋⊆𝑌 and𝑋∈ ,then 𝑌∈ .
+∙ If𝑋∈  and𝑌∈ ,then 𝑋∩𝑌∈ .
+∙ Forevery𝑋⊆[0,∞) ,either 𝑋∈  or[0,∞)⧵𝑋∈ .
+∙  containsnoboundedsets.
+Lemma4 (Ultrafilterlemma). Thereisacoboundedultrafilter.
+Proof. Standard(e.g.,Jech( 2006),Theorem7.5). □
+Inwhatfollows,let  beacoboundedultrafilterthatisheldfixedthroughout.Roughlyspeak-
+ing,wewillextend ⊒byadding 𝑝⊒𝑞 whenthesetof 𝑡∈𝐑 + forwhichthe 𝑡-truncatedexpected
+utility of𝑝 exceeds the𝑡-truncated expected utility of𝑞 for all𝑡 is a member of. The follow-
+ing standard definition will make it easier to show that the resultant ordering has the desired
+properties:
+Definition2. Forfunctions 𝑓 and𝑔from[0,∞) to𝐑,sa y𝑓∼∗
+ 𝑔if𝑓 and𝑔arethesameona
+memberof .Letthesetof hyperrealsbethesetofequivalenceclassesoffunctionsfrom [0,∞)
+to𝐑modulo∼∗
+.Forsuchafunction 𝑓,let [𝑓]bethecorrespondinghyperrealnumber.
+Lemma5. Thehyperrealsformanorderedfieldunderpointwiseaddition,pointwisemultiplication,
+andthetotalordering ≥,definedsothat [𝑓] ≥[𝑔]ifandonlyifthesetofpoints 𝑥forwhich 𝑓(𝑥) ≥
+𝑔(𝑥)isin .
+Proof. Standard(seealsoLemma 6). □
+Theorem1. 𝖣𝖳𝖴isconsistent.
+Proof. WewillmodifythemodeldefinedforTheorem 2byreplacing ⊒with⊒∗,definedas:
+𝜇⊒∗𝜈∶=[𝐄 𝑡(𝜇)] ≥[𝐄𝑡(𝜈)]
+Now we check that each of the desired principles holds in the model. Simple EUT holds for
+the same reasoning as before. It remains to check that⊒∗ is a total preordering that satisfies
+IndependenceandStochasticDominance.
+TotalityandPreordering .Lemma 5.
+Independence.ForthesamereasonsasintheproofofTheorem 2,wehave:
+𝐄𝑡(𝑥𝜉+(1−𝑥)𝜇)=𝑥𝐄 𝑡𝜉+(1−𝑥)𝐄 𝑡𝜇
+AndbyLemma 5wehave
+[𝑥𝐄𝑡𝜉+(1−𝑥)𝐄 𝑡𝜇]=𝑥[𝐄 𝑡𝜉]+(1−𝑥)[𝐄 𝑡𝜇]
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 691
+Now,𝜇⊒∗𝜈isequivalentto [𝐄𝑡𝜇] ≥[𝐄𝑡𝜈],andsoisalsoequivalentto
+[𝐄𝑡(𝑥𝜉+(1−𝑥)𝜇)] ≥[𝐄𝑡(𝑥𝜉+(1−𝑥)𝜈)],
+whichisequivalentto 𝑥𝜉+(1−𝑥)𝜇⊒ ∗𝑥𝜉+(1−𝑥)𝜈 .
+StochasticDominance.ForTheorem 2weshowedthatif 𝜇dominates𝜈,then 𝐄𝑡𝜇 ≥𝐄𝑡𝜈forall
+𝑡in[0,∞).And[0,∞)∈ ,so𝜇⊒∗𝜈.Andif 𝜇strictlydominatesthenforsome 𝑠>0 ,𝐄𝑡𝜇>𝐄 𝑡𝜈
+forall 𝑡>𝑠 ,andthesetofpointsgreaterthan 𝑠isin  becauseitiscobounded,so 𝜇⊐∗𝜈. □
+Remark1. A natural model of the theory of𝖣𝖴 with Coherent Extensibility (§3.3)c a nb ec o n -
+structedin 𝖹𝖥usingasimilartechnique.Thisestablishesthatthetheoryisnotnon-constructive
+inthesenseofLauwers( 2016).Foranarbitrarycoboundedfilter 𝐹,let ⊒𝐹 be⊒∗ asintheproof
+ofTheorem 1butwith 𝐹 insteadof .Thenwemayinterpret‘coherentpreferenceordering’as
+being a preordering of the form⊒𝐹 for some cobounded filter𝐹.T h a te a c h⊒𝐹 satisfies𝖣𝖴 is
+thesameargumentastheproofofTheorem 1,andCoherentExtensibilityistrueintheresulting
+modelbecausecoboundedfiltersareextendibleandtheunionofcoboundedfiltersthatmutually
+extendeachotherisalsoacoboundedfilter.
+Theorem3. EUTisindependentof 𝖣𝖳𝖴.36
+Thistheoremrequiressomemoredefinitions.
+Definition3 (ContinuousHyperreal).Forfunctions 𝑓∶[0,∞)→𝐑 and𝑔∶[0,∞)→𝐑 ,saythat
+𝑓∼𝑐
+ 𝑔if,forany 𝜀>0 ,thesetofpoints 𝑥forwhich |𝑓(𝑥)−𝑔(𝑥) |<𝜀 isamemberof .Then,
+letthe continuoushyperreals bethesetoffunctionsmodulo ∼𝑐
+.Let[𝑓]𝑐 bethecontinuoushyper-
+realofwhich 𝑓isamember.Therealscanbeidentifiedwiththeequivalenceclassesofconstant
+functions[𝑦↦𝑥] 𝑐.
+Lemma 6.The continuous hyperreals form an ordered ring under pointwise addition, pointwise
+multiplication,andthetotalordering ≤,definedsothat [𝑓]𝑐 ≤[𝑔]𝑐 ifandonlyifforeverypositive
+realnumber𝜀,thesetofpoints 𝑥forwhich𝑓(𝑥)isnogreaterthan 𝑔(𝑥)+𝜀 isamemberof .
+Proof. First we must check that the pointwise operations are well-defined on the continuous
+hyperreals:thatif [𝑓]=[𝑔] and[ℎ]=[𝑖] ,then[𝑓]+[ℎ]=[𝑔]+[𝑖] and[𝑓]⋅[ℎ]=[𝑔]⋅[𝑖] .Tosee
+thatthisisso,fixsome 𝜀andlet 𝑋 and𝑌 respectivelybethesetsonwhich 𝑓 andℎand𝑔and𝑖
+arewithin 𝜀∕2ofeachotherinthecaseofaddition,andwithin
+√
+𝜀inthecaseofmultiplication.
+Then,since 𝑋∩𝑌 isamemberof ,theoperationsworkthesameondifferentmembersofthe
+sameequivalenceclass.Thatthecontinuoushyperrealsformaringfollowsfromthefactthatthe
+pointwiseoperationsmaketheunderlyingsetoffunctionsintoaring.
+That ≤isreflexiveisobvious,andthat ≤istransitivefollowsfromthefactthatif 𝑋∈  isthe
+setonwhich 𝑓+𝜀∕2 isatleastasgreatas 𝑔,and 𝑌∈  isthesetonwhich 𝑔+𝜀∕2 isasgreatas
+ℎ,then 𝑓+𝜀 isatleastasgreatas ℎon𝑋∩𝑌 ,whichisamemberof .Totalityfollowsfromthe
+maximalitypropertyofultrafilters.Theorderedringpropertiesfollowfromthepropertiesofreal
+additionandmultiplication. □
+36ProofinAppendix B.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+692 GOODSELL
+Proof of Theorem3.. To show that EUT does not follow from𝖣𝖳𝖴, notice that the ordering in
+Theorem1extendstheorderinginTheorem 2,soalsoviolatesEUT.
+ToshowthatEUTisconsistent,weusethesameproofasTheorem 1butwith⊒∗ replacedwith
+⊒𝑐,definedas:
+𝜇⊒𝑐𝜈∶=[𝐄 𝑡𝜇]𝑐 ≥[𝐄𝑡𝜈]𝑐
+We then prove that the resulting model satisfies the desired principles. Things go the same as
+beforewithoneexception,whichisStochasticDominance.Forthis,itisslightlyhardertoshow
+that when𝜇 strictly dominates𝜈 it is strictly better, because in general𝐄𝑡𝜇 can always strictly
+exceed𝐄𝑡𝜈,butbyavanishingamount,inwhichcase [𝐄𝑡𝜇]𝑐 =[𝐄𝑡𝜈]𝑐.Howeverinthecasewhere
+𝜇strictlydominates 𝜈,thereissomeutility 𝑠suchthat 𝜇isstrictlymorelikelythan 𝜈toyieldan
+outcomeatleastasgoodas 𝑠.Itfollowsthatfor 𝑡>𝑠 ,thereissome 𝛿>0 suchthat𝐄𝑡𝜇>𝐄 𝑡𝜈+𝛿 ,
+soinfact [𝐄𝑡𝜇]𝑐 >[𝐄𝑡𝜈]𝑐 asrequired.
+ItremainsonlytoshowthatEUTholdsinthemodel.Thiscorrespondstotheconditionthat
+when𝜇 and𝜈 haveexpectations, 𝜇⊒𝑐𝜈 ifandonlyif 𝐄𝜇 ≥𝐄𝜈.Sosupposethat 𝜇 doeshavean
+expectation.Then
+𝐄𝜇∶= lim𝑥→∞𝐄𝑡𝜇
+Whichistosaythat,forall 𝜀>0 ,thereisan 𝑠>0 suchthatfor 𝑡>𝑠 , |𝐄𝑡𝜇−𝐄𝜇 |<𝜀 .Therefore,
+[𝐄𝑡𝜇]𝑐 =𝐄𝜇,soingeneralif 𝜈alsohasanexpectedutility,then 𝜇⊒𝑐𝜈ifandonlyif 𝐄𝜇 ≥𝐄𝜈. □
+Remark2. Foranyunboundedsubset 𝑋⊆[0,∞) ,thereisacoboundedultrafilterthatcontains
+𝑋.
+Proof. Jech(2006),Theorem7.5. □
+Corollary1. Thus,if𝐄𝑡𝜇 ≥𝐄𝑡𝜈onanunboundedset,itisconsistentwith 𝖣𝖳𝖴that𝜇isatleastas
+goodas𝜈.
+Corollary2. Since𝐄𝑡𝜇 ≥𝐄𝑡𝜈onanunboundedsetifandonlyif ¬(𝜇⊒𝜈) ,itfollowsthatif 𝜇isnot
+atleastasgoodas 𝜈inthemodelconstructedforTheorem 2,itisconsistentin 𝖣𝖳𝖴that𝜈isatleast
+asgoodas 𝜇.
+Remark3. Intheaboveproofs, 𝐄𝑡𝜇canbereplacedwith 𝐄𝑓𝑔
+𝑡 𝜇,definedas
+∫
+𝑓(𝑡)
+−𝑔(𝑡)
+𝑧d𝜇(𝑧)
+foranytwononnegative,increasing,andunboundedfunctions 𝑓and𝑔,andtheresultingordering
+ofprospectsstillsatisfiestherelevantcombinationofprinciples.
+Corollary3. LetthesymmetricStPetersburgprospectbethatwhichyieldsutilities 2and−2each
+withprobability1∕4,4and−4withprobabilities1∕8,andingeneralutilities 2𝑛 and−2𝑛 eachwith
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 693
+TABLE 4 ThesymmetricStPetersburgprospect.
+1∕4 1∕4 1∕8 1∕8 ... 2−(𝑛+1) 2−(𝑛+1) ...
+2 −2 4 −4 ... 2𝑛 −2𝑛 ...
+probabilities1∕2(𝑛+1) (seeTable 4).Bysetting 𝑓and𝑔appropriately,itispossibletobuildmodelsfor
+Theorem3where:
+∙ ThesymmetricStPetersburgprospectisbetterthaneveryoutcome.
+∙ ThesymmetricStPetersburgprospectisworsethaneveryoutcome.
+∙ Foranyparticularoutcome 𝑥,thesymmetricStPetersburgprospectisequallygoodas 𝑥.(If𝑥isn’t
+0,thenReflectionAnti-Invarianceisfalseinthemodel.)
+Theorem7. ReflectionAnti-Invarianceholdsinthemodelsconstructedfor 𝖣𝖳𝖴,𝖣𝖴,and 𝖣𝖳𝖴+
+EUT.
+Theorem8. ShiftInvarianceholdsinthemodelsconstructedfor 𝖣𝖴and𝖣𝖳𝖴+ EUT.
+Proof. ForShiftInvarianceinthemodelof 𝖣𝖳𝖴+ EUT,write 𝜇+𝛽 forthedistributionthatgives
+𝑋+𝛽 (i.e.,{𝑥+𝛽∶𝑥∈𝑋} )thesameprobabilityas 𝜇(𝑋).W ehave
+𝐄𝑡𝜇+𝛽 = ∫
+𝑡
+−𝑡
+𝑧d𝜇+𝛽(𝑧)= ∫
+𝑡−𝛽
+−𝑡−𝛽
+𝑧+𝛽 d𝜇(𝑧)
+= ∫
+𝑡
+−𝑡
+𝑧+𝛽 d𝜇(𝑧)+ ∫
+−𝑡
+−𝑡−𝛽
+𝑧+𝛽 d𝜇(𝑧)− ∫
+𝑡
+𝑡−𝛽
+𝑧+𝛽 d𝜇(𝑧)
+=𝐄𝑡𝜇+ ∫
+𝑡
+−𝑡
+𝛽d𝜇(𝑧)+
+(
+∫
+−𝑡
+−𝑡−𝛽
+𝑧d𝜇(𝑧)− ∫
+𝑡
+𝑡−𝛽
+𝑧d𝜇(𝑧)
+)
+The second term in the last line tends to𝛽,s i n c e𝜇 is a probability distribution, and third term
+tends to0, because it is bounded in absolute value above by𝑡𝛽𝜇[𝑡−𝛽,𝑡) . Hence[𝐄𝑡𝜇+𝛽]𝑐 =
+[𝐄𝑡𝜇]𝑐+𝛽. □
+Theorem9. ScaleInvarianceistrueinthemodelconstructedfor 𝖣𝖴.
+Theorem10. ScaleInvariancefailsinallmodelsof 𝖣𝖳𝖴constructedabove.
+Proof. Write𝜇2 forthedistributionsatisfying:
+𝜇2(𝑋)=𝜇(𝑋÷2)
+Forallmeasurable 𝑋.𝜇2 isthedistributioncorrespondingtomultiplyingeachpossibleutilityby
+2.
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+694 GOODSELL
+Noticethat 𝐄𝑡𝜇2=𝐄2𝑡𝜇.HenceforacounterexampletoScaleInvarianceinthemodelitwill
+sufficetofind 𝜇and𝜈suchthatforsome 𝛿,thesets
+{𝑡∈𝐑 +∶𝐄𝑡𝜇 ≥𝐄𝑡𝜈+𝛿}
+and
+{𝑡∈𝐑 +∶𝐄2𝑡𝜈 ≥𝐄2𝑡𝜇+𝛿}
+arebothin .
+To this end, notice also that a function𝑓(𝑡)∶𝐑 +→𝐑+ is𝐄𝑡𝜇 for some𝜇 when𝑓 is nonde-
+creasing,continuous,differentiablealmosteverywhere,withanonincreasingderivativebounded
+aboveby 1,whichtendstowards 0inthelimit.Soitsufficestofind 𝑓and𝑔withthispropertyso
+thatthesetonwhich 𝑓(𝑡) ≥𝑔(𝑡)+𝛿 andthesetonwhich 𝑔(2𝑡) ≥𝑓(2𝑡)+𝛿 arebothin .
+Set𝑓(𝑡)and𝑔(𝑡)asfollows:
+𝑓(𝑡)∶=
+√
+𝑡+1
+𝑔(𝑡)∶=
+⎧
+⎪
+⎨
+⎪⎩
+√
+𝑡+1 0 ≤𝑡<1
+√
+𝑡+1+
+sin(𝜋log2𝑡)
+1000 𝑡 ≥1
+We have for𝑡 ≥1,
+𝑔(𝑡)−𝑓(𝑡)=
+sin
+(
+𝜋log2𝑡
+)
+1000
+𝑔(2𝑡)−𝑓(2𝑡)=
+sin
+(
+𝜋log22𝑡
+)
+1000
+=−
+sin
+(
+𝜋log2𝑡
+)
+1000
+So for any𝛿>0 , the set of points𝑡 ≥1 for which𝑓(𝑡) ≥𝑔(𝑡)+𝛿 and𝑔(2𝑡) ≥𝑓(2𝑡)+𝛿 are the
+same,andarebothunbounded.
+Nextwemustshowthat 𝑓(𝑡)and𝑔(𝑡)areindeed𝐄𝑡𝜇and𝐄𝑡𝜈forsomedistributions 𝜇and𝜈.For
+this,noticethatbotharecontinuous,andbotharesmootheverywherebesides1,withderivatives
+andsecondderivativesasfollows:
+𝑓′(𝑡)= 1
+2
+√
+𝑡+1
+𝑓′′(𝑡)= −1
+4
+3√
+𝑡+1
+𝑔′(𝑡)= 1
+2
+√
+𝑡+1
++
+𝜋cos
+(
+𝜋log2𝑡
+)
+1000(ln2)𝑡
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GOODSELL 695
+𝑔′′(𝑡)= −1
+4
+3√
+𝑡+1
++
+−𝜋2(ln2)sin
+(
+𝜋log2𝑡
+)
+−𝜋cos
+(
+𝜋log2𝑡
+)
+1000(ln2)𝑡2
+𝑓′isboundedaboveby 1,tendstowards 0,andispositive. 𝑓′′isnegativeso 𝑓′isalwaysdecreasing,
+so𝑓(𝑡)isindeed𝐄𝑡𝜇forsome𝜇.For𝑔,noticethatfor 𝑡 ≥1thenumeratoroftheaddedtermdecays
+like1∕𝑡for𝑔′ andlike1∕𝑡2 for𝑔′′,whichismuchmorerapidlythan 1∕
+√
+𝑡or1∕3√
+𝑡,so𝑔(𝑡)is𝐄𝑡𝜈
+forsome 𝜈.
+Whatwehaveshownisthatforany 𝛿>0 ,𝑓(𝑡) ≥𝑔(𝑡)+𝛿 ifandonlyif 𝑔(2𝑡) ≥𝑓(2𝑡)+𝛿 .Hence
+ifthesetofsuch 𝑡isin ,wehaveacounterexampletoScaleInvariance.Supposeotherwise,then
+forevery 𝜀thesetof 𝑡suchthat |𝑓(𝑡)−𝑔(𝑡) |<𝜀 isin .Foragiven 𝜀,thissetisgivenby
+{𝑡∈𝐑 +∶ |sin(𝜋log2𝑡)|<1000𝜀}
+Then,wemayrepeattheabovereasoning,nowcomparing 𝑓(𝑡)withℎ(𝑡),definedasfollows:
+ℎ(𝑡)∶=
+⎧
+⎪
+⎨
+⎪⎩
+√
+𝑡+1 0 ≤𝑡<2
+√
+𝑡+1+
+cos(𝜋log2𝑡)
+1000 𝑡 ≥2
+And by the same argument we must conclude the following set to be in if there is no
+counterexampletoScaleInvariance:
+{𝑡∈𝐑 +∶ |cos(𝜋log2𝑡)|<1000𝜀}
+Butsin andcos are out of phase:sin takes a value near0 whencos t a k e sa ne x t r e m a lv a l u e ,
+and vice-versa. So the two sets are disjoint (for small values of𝜀). So in any case there is a
+counterexampletoScaleIndependenceinthemodel. □
+ 14680068, 2024, 3, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/nous.12473, Wiley Online Library on [16/02/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

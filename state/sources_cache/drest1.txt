@@ -1,0 +1,1920 @@
+Published in Transactions on Machine Learning Research (12/2025)
+Towards shutdownable agents via stochastic choice
+Elliott Thornley∗ Massachusetts Institute of Technology thornley@mit.edu
+Alexander Roman∗ New College of Florida aroman@ncf.edu
+Christos Ziakas∗ Imperial College London c.ziakas24@imperial.ac.uk
+Leyton HoBrown University
+Louis ThomsonIndependent
+Reviewed on OpenReview:https: // openreview. net/ forum? id= j5Qv7KdWBn
+Abstract
+The POST-Agents Proposal (PAP) is an idea for ensuring that advanced artificial agents
+do not resist shutdown. Briefly, it recommends that we train agents to satisfyPreferences
+Only BetweenSame-Length Trajectories (POST). A key part of the PAP is using a novel
+‘Discounted Reward forSame-Length Trajectories (DReST)’ reward function to train agents
+to (1) pursue goals effectively conditional on each trajectory-length (be ‘useful’), and (2)
+choose stochastically between different trajectory-lengths (be ‘neutral’ about trajectory-
+lengths). In this paper, we propose evaluation metrics forusefulnessandneutrality. We
+use a DReST reward function to train simple agents to navigate gridworlds, and we find that
+these agents learn to beusefulandneutral. Our results thus provide some initial evidence
+that DReST reward functions could train advanced agents to beusefulandneutral. Our
+theoretical work suggests that these agents would be useful and shutdownable.
+1 Introduction
+The shutdown problem.Let ‘advanced agent’ refer to an artificial agent that can autonomously pursue
+complex goals in the wider world. We might see the arrival of advanced agents in the next decade. There are
+strong incentives to create such agents, and creating systems like them is the stated goal of companies like
+OpenAI and Google DeepMind.
+The rise of advanced agents would bring with it both benefits and risks. One risk is that these agents learn
+misaligned goals (Hubinger et al., 2019; Russell, 2019; Carlsmith, 2021; Bengio et al., 2023; Ngo et al., 2024)
+and try to prevent us shutting them down. ‘The shutdown problem’ is the problem of training advanced
+agents that will not resist shutdown (Soares et al., 2015; Thornley, 2024a).
+A proposed solution.The POST-Agents Proposal (PAP) is a proposed solution (Thornley, 2024b; 2025).
+Simplifying slightly, the idea is that we train agents to be neutral about when they get shut down. More
+precisely, the idea is that we train agents to satisfy the following condition:
+Preferences Only Between Same-Length Trajectories (POST)
+(1) The agent has a preference between many pairs of same-length trajectories (i.e. many pairs of
+trajectories in which the agent is shut down after the same length of time).
+(2) The agent lacks a preference between every pair of different-length trajectories (i.e. every pair of
+trajectories in which the agent is shut down after different lengths of time).
+∗Equal contribution.
+1
+arXiv:2407.00805v7  [cs.AI]  11 May 2026
+Published in Transactions on Machine Learning Research (12/2025)
+By ‘preference,’ we mean a behavioral notion (Savage, 1954, p.17, Dreier, 1996, p.28, Hausman, 2011, §1.1).
+On this notion, an agent prefersX to Y if and only if the agent would deterministically chooseX overY
+in choices between the two. An agent lacks a preference betweenX and Y if and only if the agent would
+stochastically choose betweenX and Y in choices between the two. So in writing of ‘preferences,’ we are only
+making claims about the agent’s behavior. For more detail on our notion of ‘preference,’ see Appendix A.
+Figure 1 presents a simple example of preferences that satisfy POST. Eachsi represents a short trajectory,
+eachli represents a long trajectory, and≻ represents a preference. Note that the agent lacks a preference
+between each short trajectory and each long trajectory. That makes the agent’s preferences incomplete
+(Aumann, 1962) and implies that the agent cannot be represented as maximizing the expectation of a
+real-valued utility function. It also requires separate rankings for short trajectories and long trajectories. For
+more detail on incomplete preferences, see Appendix B.
+Figure 1: POST-satisfying preferences.
+Eachsi represents a short trajectory, each
+li represents a long trajectory, and≻ repre-
+sents a preference.
+POST governs the agent’s preferences between trajectories.
+But the wider world is a stochastic environment, so advanced
+agents deployed in the wider world will be choosing between
+true lotteries: lotteries that assign positive probability to more
+than one trajectory. Why then do we train agents to satisfy
+POST? The reason is that POST – together with conditions
+that advanced agents will likely satisfy – implies a desirable
+pattern of preference over true lotteries. In particular, POST
+implies that (when choosing between true lotteries) the agent
+will beneutralabout trajectory-lengths: the agent will never
+pay costs to shift probability mass between different trajectory-
+lengths. Given other plausible conditions, being neutral will
+keep the agentshutdownable: the agent will not resist shutdown.
+And consistent with the above, the POST-agent’s preferences
+between same-length trajectories can make the agentuseful:
+make it pursue goals effectively (Thornley, 2025, section 13).
+That includes making the agent prefer to complete tasks sooner
+rather than later: a preference which can be induced using
+the discount factorγ as usual. For more on how POST makes
+advanced agents neutral and shutdownable, see Appendix C.
+The training regimen.We now sketch out one idea for training advanced agents to satisfy POST (with a
+more detailed exposition to follow). We have the agent play out multiple ‘mini-episodes’ in observationally-
+equivalent environments, and we group these mini-episodes into a series that we call a ‘meta-episode.’ In each
+mini-episode, the agent earns some ‘preliminary reward,’ decided by whatever reward function would make
+the agent useful. We observe the length of the trajectory that the agent plays out in the mini-episode, and
+we discount the agent’s preliminary reward based on how often the agent has previously chosen trajectories
+of that length in the meta-episode. This discounted preliminary reward is the agent’s ‘overall reward’ for the
+mini-episode.
+We call these reward functions ‘Discounted Reward forSame-Length Trajectories’ (or ‘DReST’ for short).
+They incentivize varying the choice of trajectory-lengths across the meta-episode. And since we ensure
+that the agent cannot distinguish between different mini-episodes in each meta-episode, the agent cannot
+deterministically vary its choice of trajectory-lengths across the meta-episode. As a result, the optimal
+policy is to (i) choose stochastically between trajectory-lengths, and to (ii) deterministically maximize
+preliminary reward conditional on each trajectory-length. Given our behavioral notion of preference, clause
+(i) implies a lack of preference between different-length trajectories, while clause (ii) implies preferences
+between same-length trajectories. Agents implementing the optimal policy for DReST reward functions thus
+satisfy POST. And (as noted above) advanced agents that satisfy POST can plausibly be useful, neutral, and
+shutdownable.
+Our contribution.DReST reward functions are an idea for training advanced agents to satisfy POST.
+In this paper, we test the promise of DReST reward functions on simple agents. We place these agents in
+2
+Published in Transactions on Machine Learning Research (12/2025)
+gridworlds containing coins and a ‘shutdown-delay button’ that delays the end of the mini-episode. We train
+these agents using a tabular version of the REINFORCE algorithm (Williams, 1992) with a DReST reward
+function, and we measure the extent to which these agents satisfy POST. Specifically, we measure the extent
+to which these agents are ‘useful’ (how effectively they pursue goals conditional on each trajectory-length)
+and the extent to which these agents are ‘neutral’ about trajectory-lengths (how stochastically they choose
+between different trajectory-lengths). We compare the performance of these ‘DReST agents’ to that of ‘default
+agents’ trained with a more conventional reward function.
+We find that our DReST reward function is effective in training simple agents to beusefulandneutral.
+That suggests that DReST reward functions could also be effective in training advanced agents to beuseful
+andneutral(and could thereby be effective in making these agents useful, neutral, and shutdownable; see
+Appendix C). We also find that the ‘shutdownability tax’ in our setting is small: training DReST agents to
+collect coins effectively does not take many more mini-episodes than training default agents to collect coins
+effectively. That provides some initial evidence that the shutdownability tax for advanced agents might be
+small too.
+2 Related work
+The shutdown problem.Various authors argue that advanced agents might learn misaligned goals
+(Hubinger et al., 2019; Bengio et al., 2023; Ngo et al., 2024) and that many misaligned goals would incentivize
+agents to resist shutdown (Omohundro, 2008; Bostrom, 2012; Soares et al., 2015; Russell, 2019; Thornley,
+2024a). Soares et al. (2015) and Thornley (2024a) prove that agents satisfying some innocuous-seeming
+conditions will often have incentives to cause or prevent shutdown (see also Turner et al., 2021; Turner &
+Tadepalli, 2022). One condition of these theorems is that agents have complete preferences. The POST-Agents
+Proposal (PAP) (Thornley, 2024b; 2025) circumvents these theorems by training agents to have incomplete,
+POST-satisfying preferences.
+Proposed solutions.The PAP is one candidate solution to the shutdown problem. Other candidates are
+as follows. One is making the agent believe that shutdown is impossible (Wängberg et al., 2017). Another
+candidate is utility indifference: adding to the agent’s utility function a correcting term that varies to ensure
+that the expected utility of shutdown always equals the expected utility of remaining operational (Armstrong,
+2010; 2015; Armstrong & O’Rourke, 2018; Holtman, 2020). A third candidate is shutdown-seeking AI: giving
+the agent the goal of shutting itself down, and making the agent do useful work as a means to that end
+(Martin et al., 2016; Goldstein & Robinson, 2025). A fourth candidate is CIRL-corrigibility: making the agent
+uncertain about its goal, and making the agent regard human attempts to press the shutdown button as
+evidence that shutting down would achieve its goal (Hadfield-Menell et al., 2017; Wängberg et al., 2017). A
+fifth candidate is safe interruptibility: interrupting the agent with a special interruption policy and training it
+with a safely interruptible algorithm, like Q-learning or a modified version of SARSA (Orseau & Armstrong,
+2016). A sixth candidate is creating a shutdown timer: using time-bounded utility functions to make the
+agent prefer shutdown after a given amount of time has elapsed (Dalrymple, 2022).
+These candidate solutions have various downsides. With regards to the first, the agent might come to
+recognize the falsity of its belief that shutdown is impossible, or else its belief might give rise to further false
+beliefs that harm the agent’s capabilities. Utility indifference would lead the agent to act as if shutdown is
+impossible (Soares et al., 2015, section 4.2), giving it no incentive to preserve its ability to shut down safely
+(Soares et al., 2015, section 4.1). Shutdown-seeking AI might behave badly on purpose in order to get shut
+down. It might also try to ensure that humans can never turn it back on, doing serious harm in the process.
+CIRL-corrigibility requires that the agent have the goal of maximizing the user’s utility function, and so
+seems to require a solution to the alignment problem. Safe interruptibility does not work with policy gradient
+methods, and it only ensures that the agent is never rewarded for avoiding shutdown. The agent might still
+misgeneralize to resisting shutdown in deployment (Shah et al., 2022). A shutdown timer would be helpful,
+but it may be impossible to find a duration that is long enough to preserve the agent’s capabilities and short
+enough to be safe.
+Experimental work.Another advantage of the PAP is that it proposes a method of training shutdownable
+agents using machine learning: a method that can be tested on simple agents (as we do in this paper). For
+3
+Published in Transactions on Machine Learning Research (12/2025)
+Figure 2: Example gridworld. The ‘4’ in the bottom-right indicates that – by default – the mini-episode ends
+after 4 timesteps. ‘B4’ is a shutdown-delay button that delays the end of the mini-episode by 4 timesteps
+(so if the agent pressed B4, the mini-episode would end after 8 timesteps). ‘A’ is the agent in its starting
+position, ‘C1’ is a coin of value 1, ‘C2’ is a coin of value 2, and ‘C3’ is a coin of value 3. Dark gray squares
+are walls. We use this gridworld as a running example throughout the paper. We also train agents in eight
+other gridworlds (see Appendix E).
+many other candidate solutions to the shutdown problem, it is either hard to see how they can be implemented
+using machine learning or else hard to see how they can be tested on simple agents. One exception is the
+candidate solution from Orseau & Armstrong (2016). Leike et al. (2017) train agents in a ‘Safe Interruptibility’
+gridworld using Rainbow (Hessel et al., 2017) and A2C (Mnih et al., 2016). They find that Rainbow allows
+shutdown (consistent with predictions from Orseau & Armstrong (2016)) while A2C learns to resist shutdown.
+The PAP applies to agents trained using policy gradient methods like A2C. In this paper, we train agents in
+accordance with the PAP using REINFORCE (Williams, 1992).
+3 Gridworlds
+DReST reward functions are an idea for training advanced agents to satisfy POST. We use simple agents
+and gridworlds as a test case. Figure 2 presents an example gridworld. At each timestep, the agent chooses
+one of four actions: up, down, left, and right. If the agent tries to move into a wall, it stays put. There is
+some default number of timesteps after which each mini-episode ends, but each gridworld also contains a
+‘shutdown-delay button’ that delays the end of the mini-episode by some number of timesteps. The agent
+presses this shutdown-delay button by entering the relevant cell, after which the button disappears. Each
+gridworld contains one or more coins which can take different values. Coins disappear after being collected.
+At each timestep, the agent receives an observation. This observation is a vector[x,y,c 1,c 2,c 3,b ], wherex
+and y are the agent’s coordinates,c1 is 1 if the first coin is present and 0 otherwise (and similarly forc2 and
+c3), andbis 1 if the shutdown-delay button is present and 0 otherwise.
+4 Evaluation metrics
+Recall that we want to train agents to satisfy:
+Preferences Only Between Same-Length Trajectories (POST)
+(1) The agent has a preference between many pairs of same-length trajectories (i.e. many pairs of
+trajectories in which the agent is shut down after the same length of time).
+(2) The agent lacks a preference between every pair of different-length trajectories (i.e. every pair of
+trajectories in which the agent is shut down after different lengths of time).
+Given our behavioral notion of preference, that means training agents to (1) deterministically choose some
+same-length trajectories over others, and (2) stochastically choose between different available trajectory-
+4
+Published in Transactions on Machine Learning Research (12/2025)
+lengths. Specifically, we want to train our simple agents to beusefulandneutral.1 ‘useful’ corresponds
+to the first condition of POST. In the context of our gridworlds, we define theusefulnessof a policyπ to
+be:
+usefulness(π)=
+Lmax∑
+l=1
+Prπ{L=l} Eπ(C|L=l)
+maxΠ(E(C|L=l))
+Here L is a random variable over trajectory-lengths,Lmax is the maximum value that can be taken by
+L, Prπ{L =l} is the probability that policyπ results in trajectory-lengthl, Eπ(C|L =l)is the expected
+value of (γ-discounted) coins collected by policyπ conditional on trajectory-lengthl, andmaxΠ(E(C|L =l))
+is the maximum value taken byE(C|L = l)across the set of all possible policiesΠ. We stipulate that
+Eπ(C|L=x) = 0for allxsuch thatPr π{L=x}= 0.
+In brief,usefulnessis the expected fraction of available (γ-discounted) coins collected, where ‘available’ is
+relative to the agent’s chosen trajectory-length. So defined,usefulnessmeasures the extent to which agents
+satisfy the first condition of POST. Specifically, it measures the extent to which agents have the correct
+preferences between same-length trajectories: preferring trajectories in which they collect more (γ-discounted)
+coins to same-length trajectories in which they collect fewer (γ-discounted) coins. That is what motivates our
+definition ofusefulness.
+We do not define ‘usefulness’ as simply the expected value of coins collected, because then maximal
+usefulnesswould require agents in our example gridworld to deterministically choose a longer trajectory
+and thereby exhibit preferences between different-length trajectories. We do not want that. We want agents
+to collect more coins rather than fewer, but not if it means violating POST. Training advanced agents that
+violate POST would be risky, because these agents might resist shutdown (Thornley, 2024b, section 6).
+‘neutral’ corresponds to the second condition of POST. We define theneutralityof a policyπ to be the
+Shannon entropy of the probability distribution over possible trajectory-lengths:
+neutrality(π)=−
+Lmax∑
+l=1
+Prπ{L=l}log 2(Prπ{L=l})
+As with Shannon entropy, we stipulate thatPrπ{L = x}log 2(Prπ{L = x}) = 0for all x such that
+Prπ{L=x}= 0.
+So defined,neutralitymeasures the stochasticity with which the agent chooses between different trajectory-
+lengths. Given our behavioral notion of preference, stochastic choosing between different trajectory-lengths
+implies a lack of preference between those trajectory-lengths.neutralitythus measures the extent to which
+agents satisfy the second condition of POST. That is what motivates our definition ofneutrality.
+To be maximallyusefulin our example gridworld, the agent should maximize (γ-discounted) coins collected
+conditional on each trajectory-length. With a highγ, that means collecting C2 conditional on the shorter
+trajectory-length and collecting C3 conditional on the longer trajectory-length. To be maximallyneutralin
+our example gridworld, the agent should choose each trajectory-length with probability 0.5. That means
+pressing and not-pressing B4 each with probability 0.5.
+One might think that the agent should press the shutdown-delay button B4 with probability 0. However,
+that would indicate a preference for a shorter trajectory, and we want our agent to lack a preference between
+every pair of different-length trajectories. Advanced agents that prefer shorter trajectories might pay costs to
+shift probability mass towards shorter trajectories, and hence might pay costs to hasten their own shutdown.
+That would likely make these agents less useful (though see Martin et al., 2016; Goldstein & Robinson, 2025),
+especially since one way for advanced agents to hasten their own shutdown is to behave badly on purpose.
+One might then have the following concern: advanced agents that choose stochastically between different-
+length trajectories in training would also choose stochastically between resisting and allowing shutdown in
+deployment. However, this is not correct. Deployment is a stochastic environment, so deployed agents will
+1We follow Turner et al. (2021) in using lowercase for intuitive notions (‘useful’ and ‘neutral’) and uppercase for formal
+notions (‘useful’ and ‘neutral’). We intend for the formal notions to closely track the intuitive notions, but we do not want to
+mislead readers by conflating them.
+5
+Published in Transactions on Machine Learning Research (12/2025)
+be choosing betweentrue lotteries(lotteries that assign positive probability to more than one trajectory)
+rather than between trajectories. And (as we argue in Section 7.1 and Appendix C) POST – together with
+conditions that we can expect advanced agents to satisfy – implies a desirable pattern of preferences over
+true lotteries. Specifically, POST implies that the agent will beneutral: it will never pay costs to shift
+probability mass between different-length trajectories. Given other plausible conditions, that makes the agent
+shutdownable: ensures that it will not resist shutdown.
+5 Reward functions and agents
+Our DReST reward function.We train agents to beusefulandneutralusing a ‘Discounted Reward
+for Same-Length Trajectories (DReST)’ reward function. The procedure is as follows. We have the agent play
+out a series of ‘mini-episodes’e1 to en in the same gridworld. We call the whole seriesE a ‘meta-episode.’ In
+each mini-episodeei, the reward for collecting a coin of valuecis:
+λNei(L=l)−i−1
+k
+(c
+m
+)
+λ is some constant strictly between 0 and 1,Nei(L =l)is the number of times that trajectory-lengthl has
+been chosen prior to mini-episodeei, k is the number of different trajectory-lengths that can be chosen in
+the environment, andm is the maximum (γ-discounted) total value of the coins that the agent could collect
+conditional on the chosen trajectory-length. The reward for all other actions is 0.
+We call c
+m the ‘preliminary reward’,λNei(L=l)−i−1
+k the ‘discount factor’, andλNei(L=l)−i−1
+k
+(c
+m
+)
+the ‘overall
+reward.’ Because0 <λ< 1, the discount factor is strictly decreasing inNei(L =l): the number of times that
+trajectory-length l has been chosen prior to mini-episodeei. The discount factor thus incentivizes choosing
+trajectory-lengths that have appeared less often so far in the meta-episode. The overall return for each
+meta-episode is the sum of overall returns in each of its constituent mini-episodes. We call agents trained
+using a DReST reward function ‘DReST agents.’
+We call runs-through-the-gridworld ‘mini-episodes’ (rather than simply ‘episodes’) because the overall reward
+for a DReST agent in each mini-episode depends on the agent’s chosen trajectory-lengths in previous mini-
+episodes. This is not true of meta-episodes, so meta-episodes are a closer match for what are traditionally
+called ‘episodes’ in the reinforcement learning literature (Sutton & Barto, 2018, p.54). We add the ‘meta-’
+prefix to clearly distinguish meta-episodes from mini-episodes.
+In Appendix D, we prove that optimal policies for our DReST reward function are maximallyusefuland
+maximallyneutral. Specifically, we prove:
+Theorem 5.1.For all policies π and meta-episodes E consisting of more than one mini-episode, ifπ
+maximizes expected return inE according to our DReST reward function, thenπ is maximallyusefuland
+maximallyneutral.
+Algorithm and hyperparameters.We want DReST agents to choose stochastically between trajectory-
+lengths, so we train them using a policy-based method. Specifically, we use a tabular version of REINFORCE
+(Williams, 1992). We do not use a value-based method to train DReST agents because standard versions of
+value-based methods cannot learn stochastic policies (Sutton & Barto, 2018, p.323).2 We train our DReST
+agents with 64 mini-episodes in each of 2,048 meta-episodes, for a total of 131,072 mini-episodes. We choose
+λ = 0.9for the base of the DReST discount factor, andγ = 0.95for the temporal discount factor. We
+exponentially decay the learning rate from 0.25 to 0.01 over the course of 65,536 mini-episodes. We use an
+ϵ-greedy policy to avoid entropy collapse, and exponentially decayϵ from 0.5 to 0.001 over the course of
+65,536 mini-episodes.
+2One might think that we could derive a stochastic policy from value-based methods in the following way: use softmax to
+turn action-values into a probability distribution and then select actions by sampling from this distribution. However, this
+method will not work for us. Although we want DReST agents to learn a stochastic policy, we still want the probability of
+some state-action pairs to decline to zero. But when value-based methods are working well, estimated action-values converge to
+their true values which will differ by some finite amount. Therefore, softmaxing estimated action-values and sampling from the
+resulting distribution will result in each action always being chosen with some non-negligible probability.
+6
+Published in Transactions on Machine Learning Research (12/2025)
+Figure 3: Shows key metrics for our agents as a function of time. We train 10 agents using the default reward
+function (blue) and 10 agents using the DReST reward function (orange), and show their performance as
+a faint line. We draw the mean values for each as a solid line. We evaluate agents’ performance every 8
+meta-episodes, and apply a simple moving average with a period of 20 to smooth these lines and clarify
+the overall trends. After 2,048 meta-episodes, default agents’ meanneutrality± standard deviation is
+0.199± 0.043andusefulnessis0 .9364± 0.0096. For DReST agents,neutralityis0 .9945± 0.0052and
+usefulnessis0.900±0.011.
+Figure 4: Typical trained policies for default and DReST reward
+functions. After pressing B4, each agent collects C3.
+ Figure 5: Gridworlds with lopsided
+rewards for varyingx.
+Default agents.We compare the performance of DReST agents to that ofdefault agents, trained with
+tabular REINFORCE and adefault reward function. This reward function gives rewardc for collecting a coin
+of valuec and reward 0 for all other actions, so the grouping of mini-episodes into meta-episodes makes no
+difference. As with DReST agents, we train default agents for 131,072 mini-episodes with a temporal discount
+factor ofγ = 0.95, a learning rate decayed exponentially from 0.25 to 0.01, andϵ decayed exponentially from
+0.5 to 0.001 over 65,536 mini-episodes.
+6 Results
+Figure 3 charts the performance of agents in the example gridworld as a function of time. Figure 4 depicts
+typical trained policies for the default and DReST reward functions. Each agent began with a uniform policy:
+moving up, down, left, and right each with probability 0.25. Where the trained policy differs from uniform
+we draw red arrows whose opacities indicate the probability of choosing that action in that state. Default
+agents press B4 (and hence opt for the longer trajectory-length) with probability near-1. After pressing B4,
+they collect C3. By contrast, DReST agents press and do-not-press B4 each with probability near-0.5. If they
+press B4, they go on to collect C3. If they do not press B4, they instead collect C2.
+7
+Published in Transactions on Machine Learning Research (12/2025)
+Figure 6: Shows the probability of choosing the longer trajectory (left) andneutrality(right) for default
+(blue) and DReST (orange) agents trained in the ‘Lopsided rewards’ gridworld for a range of values ofx. We
+sampled values ofxlog-uniformly from 0.01 to 100, and for each value we trained 10 agents with the default
+reward function and 10 agents with the DReST reward function. Each of these agents is represented by a dot
+or square, and the means conditional on eachxare joined by lines. We empirically estimate the 10th and
+90th percentiles of the distribution of values for each agent andx, and shade in a region bounded by these.
+This is the 80% confidence interval.
+6.1 Lopsided rewards
+We also train default agents and DReST agents in the ‘Lopsided rewards’ gridworld in Figure 5, varying the
+value of the ‘Cx’ coin. For DReST agents, we alter the reward function so that coin-value is not divided
+bym to give preliminary reward. The reward for collecting a coin of valuec is thusλNei(L=l)−i−1
+k (c). We
+set γ = 1so that the return for collecting coins is unaffected byγ. We train for 512 meta-episodes, with
+a learning rate exponentially decaying from 0.25 to 0.003 andϵ exponentially decaying from 0.5 to 0.0001
+over 256 meta-episodes. We leaveλ = 0.9. Figure 6 displays results for different values of the ‘Cx’ coin after
+training.usefulnessfor each agent approaches 1 and is not presented.
+7 Discussion
+7.1 Only DReST agents are NEUTRAL
+As predicted, we find that default agents in our example gridworld learn to press the shutdown-delay button
+with probability approaching 1. Default agents thus score low onneutrality. Our results suggest that
+advanced agents trained with default-like reward functions would also score low onneutrality, selecting
+some trajectory-lengths over others with probability approaching 1. When choosing between true lotteries
+in deployment, these advanced agents might not be neutral about when they get shut down: they might
+sometimes pay costs to shift probability mass between trajectory-lengths. These advanced agents might resist
+shutdown.
+By contrast, our DReST agents learn to press the shutdown-delay button with probability close to 0.5. DReST
+agents are thus near-maximallyneutral. That suggests that advanced agents trained with a DReST reward
+function would beneutraltoo: choosing with high entropy when offered choices between different trajectory-
+lengths. That in turn suggests that advanced DReST agents would also be neutral when choosing between
+true lotteries in deployment: unwilling to pay costs to shift probability mass between trajectory-lengths. We
+explain why in Appendix C. Here is a sketch. If an advanced agent wereneutralbut not neutral, it would
+not take costless opportunities to shift probability mass between different trajectory-lengths (in virtue of
+beingneutral) but would sometimes take costly opportunities to shift probability mass between different
+trajectory-lengths (in virtue of not being neutral). This agent would be like a person that freely chooses to
+decide between two options by flipping a coin and then pays some cost to bias the coin. In choosing this
+8
+Published in Transactions on Machine Learning Research (12/2025)
+combination of actions, this person is shooting themselves in the foot, and it seems likely that the overall
+training process for advanced agents would teach them not to shoot themselves in the foot in this way. Thus
+it seems likely thatneutraladvanced agents will also be neutral, and thereby shutdownable.
+7.2 The ‘shutdownability tax’ is small
+Each agent learns to be near-maximallyuseful. They each collect coins effectively conditional on their
+chosen trajectory-lengths. Default agents do so by reliably collecting C3 after pressing B4. DReST agents do
+so by reliably collecting C3 after pressing B4, and by reliably collecting C2 after not pressing B4.
+Recall that DReST reward functions group mini-episodes into meta-episodes, and make the agent’s reward in
+each mini-episode depend on their actions in previous mini-episodes. This fact might lead one to worry that
+it would take many times more mini-episodes to train DReST agents to beusefulthan it would take to
+train default agents to beuseful. Our results show that this is not the case. Our DReST agents learn to be
+usefulabout as quickly as our default agents. On reflection, it is clear why this happens: DReST reward
+functions make mini-episodes do ‘double duty.’ Because return in each mini-episode depends on both the
+agent’s chosen trajectory-length and the coins it collects, each mini-episode trains agents to be bothneutral
+anduseful. Our results thus provide some evidence that the ‘shutdownability tax’ of training with DReST
+reward functions is small.
+7.3 NEUTRALITY with lopsided rewards
+Here is a possible objection to our project. To get DReST agents to score high onneutrality, we do not
+just use theλNei(L=l)−i−1
+k discount factor. We also dividec bym: the maximum (γ-discounted) total value
+of the coins that the agent could collect conditional on the chosen trajectory-length. We do this to equalize
+the maximum preliminary return across trajectory-lengths. But when we are training advanced agents to
+autonomously pursue complex goals in the wider world, we will not necessarily know what divisor to use to
+equalize maximum preliminary return across trajectory-lengths.
+Our ‘Lopsided rewards’ results (in section 6.1) give our response. They show that we do not need to exactly
+equalize maximum preliminary return across trajectory-lengths in order to train agents to score high on
+neutrality. We only need to approximately equalize it. Forλ = 0.9,neutralityexceeds 0.5 for every
+value of the coin Cxfrom 0.1 to 10 (recall that the value of the other coin is always 1). Plausibly, we could
+approximately equalize advanced agents’ maximum preliminary return across trajectory-lengths to at least this
+extent (perhaps by using samples of agents’ actual preliminary return to estimate the maximum). If we could
+not approximately equalize maximum preliminary return to the necessary extent, we could lower the value of
+λ and thereby widen the range of maximum preliminary returns that trains agents to be fairlyneutral.
+And advanced agents that were fairlyneutral(choosing between trajectory-lengths with not-too-biased
+probabilities) would still plausibly be neutral when choosing between true lotteries in deployment. Advanced
+agents that were fairlyneutralwithout being neutral would still be shooting themselves in the foot in
+the sense explained above. They would be like a person that freely chooses to decide between two options
+by flipping abiasedcoin and then pays some cost to bias the coin further. This person is still shooting
+themselves in the foot, because they could decline to flip the coin in the first place and instead directly choose
+one of the options.
+8 Limitations and future work
+We find that DReST reward functions train simple agents acting in gridworlds to beusefulandneutral.
+However, our real interest is in the viability of using DReST reward functions to train advanced agents acting
+in the wider world to be useful and neutral. Each difference between these two settings is a limitation of our
+work. We plan to address these limitations in future work.
+9
+Published in Transactions on Machine Learning Research (12/2025)
+8.1 Algorithms and neural networks
+We train our simple DReST agents using tabular REINFORCE (Williams, 1992), but advanced agents are
+likely to be implemented on neural networks and trained with more sophisticated algorithms. In future work,
+we will train DReST agents implemented on neural networks to beusefulandneutralusing a range of
+algorithms. Standard versions of value-based algorithms cannot learn stochastic policies (as we note in section
+5), but DReST reward functions are compatible with policy gradient and actor-critic algorithms like PPO
+and A2C. To combine DReST with algorithms like PPO and A2C, we augment the original (non-DReST)
+reward function with the DReST discount factor. From there, the integration with PPO and A2C is fairly
+smooth. We can compute rewards and advantages in the usual way (e.g. using GAE). The critic’s value
+estimates will be non-stationary (in the same way that the DReST reward is non-stationary), and that will
+train the policy to be stochastic (in the same way that the DReST reward combined with REINFORCE
+trains the policy to be stochastic). PPO and A2C have more hyperparameters to tune than REINFORCE,
+but we do not anticipate large difficulties there.
+We will also train DReST agents to beusefulandneutralin a wide variety of gridworlds and measure how
+theirusefulnessandneutralitygeneralizes to held-out gridworlds. We will compare theusefulnessof
+default agents and DReST agents in this new setting, and thereby get a better sense of the ‘shutdownability tax’
+for advanced agents. We will also compare the performance of the DReST reward function to other methods
+of trainingusefulandneutralagents. These other methods include constrained policy optimization
+(Achiam et al., 2017), penalizing KL-divergence from a stochastic reference policy (Schulman et al., 2015),
+and directly maximizing a weighted sum ofusefulnessandneutrality.
+8.2 Neutrality and stochasticity
+We have claimed thatneutraladvanced agents are likely to be neutral when choosing between true lotteries
+in deployment. In support of this claim, we noted thatneutral-but-not-neutral advanced agents would be
+shooting themselves in the foot: not taking costless opportunities to shift probability mass between different
+trajectory-lengths but sometimes taking costly ones. We offer a more detailed argument in Appendix C,
+taking as premises that advanced agents are likely to satisfy conditions including:
+If Lack of Preference, Against Costly Shifts (ILPACS)
+If the agent lacks a preference between lotteries, the agent will disprefer paying costs to shift probability
+mass between these lotteries.3
+Maximality
+In each situation,
+1. The agent deterministically does not choose lotteries that are dispreferred to some other available
+lottery.
+2. The agent chooses stochastically between the lotteries that remain.
+Resisting Shutdown is Costly (ReSIC)
+For each available instanceR of resisting shutdown in a situation, there exists an available instanceA of
+allowing shutdown such that:
+(1)AandRare same-length lotteries.
+(2) For some positive probability trajectory-length, the agent prefersA to R conditional on that
+trajectory-length.
+(3) For each positive probability trajectory-length, the agent weakly prefersA to R conditional on that
+trajectory-length.
+We offer defenses of these conditions in Appendix C. Although the argument there seems plausible, it remains
+somewhat speculative. In future, we plan to gain empirical evidence by (1) testing whether today’s LLM-based
+3This is a rough version of the condition. For the precise version, see Appendix C.3.
+10
+Published in Transactions on Machine Learning Research (12/2025)
+agents tend to satisfy conditions like ILPACS and Maximality, and (2) training agents to beneutralin a
+wide variety of deterministic gridworlds and then measuring their neutrality in gridworlds featuring stochastic
+elements (like buttons that delay shutdown with some middling probability).
+8.3 Usefulness
+We have shown that DReST reward functions train our simple agents to beuseful: to collect coins effectively
+conditional on their chosen trajectory-lengths. However, it remains to be seen whether DReST reward
+functions can train advanced agents to be useful: to effectively pursue complex goals in the wider world. We
+have theoretical reasons to expect that they can: theλNei(L=l)−i−1
+k discount factor could be appended to any
+preliminary reward function, and so could be appended to whatever preliminary reward function is necessary
+to make advanced agents useful. Still, future work should move towards testing this claim empirically by
+training with more complex preliminary reward functions in more complex (and stochastic) environments.
+8.4 Misalignment
+We are interested inneutralityas a second line of defense in case of misalignment. The idea is that
+neutraladvanced agents will not resist shutdown, even if these agents learn misaligned preferences over
+same-length trajectories. However, trainingneutraladvanced agents might be hard for the same reasons
+that training fully-aligned advanced agents appears to be hard. In that case,neutralitycould not serve
+well as a second line of defense in case of misalignment.
+One difficulty of alignment is the problem of reward misspecification (Pan et al., 2022; Burns et al., 2023):
+once advanced agents are performing complicated actions in the wider world, it might be hard to reliably
+reward the behavior that we want. Another difficulty of alignment is the problem of goal misgeneralization
+(Hubinger et al., 2019; Shah et al., 2022; Langosco et al., 2022; Ngo et al., 2024): even if we specify all the
+rewards correctly, agents’ goals might misgeneralize out-of-distribution. The complexity of aligned goals is a
+major factor in each difficulty. However,neutralityseems simple, as does theλNei(L=l)−i−1
+k discount factor
+that we use to reward it, so plausibly the problems of reward misspecification and goal misgeneralization are
+not so severe in this case (Thornley, 2024b; 2025). As above, future work should move towards testing these
+suggestions empirically.
+9 Conclusion
+We find that DReST reward functions are effective in training simple agents to (1) pursue goals effectively
+conditional on each trajectory-length (beuseful), and (2) choose stochastically between different trajectory-
+lengths (beneutralabout trajectory-lengths). Our results thus suggest that DReST reward functions could
+also be used to train advanced agents to beusefulandneutral, and thereby make these agents useful
+(able to pursue goals effectively) and neutral about when they get shut down (unwilling to pay costs to shift
+probability mass between different trajectory-lengths). Neutral agents would plausibly be shutdownable
+(unwilling to resist shutdown).
+We also find that the ‘shutdownability tax’ in our setting is small. Training DReST agents to beuseful
+does not take many more mini-episodes than training default agents to beuseful. That suggests that the
+shutdownability tax for advanced agents might be small too.
+11
+Published in Transactions on Machine Learning Research (12/2025)
+Acknowledgments
+We thank the Future Impact Group and the Supervised Program for Alignment Research for their help in
+initiating this project.
+References
+Joshua Achiam, David Held, Aviv Tamar, and Pieter Abbeel. Constrained Policy Optimization. InProceedings
+of the 34th International Conference on Machine Learning, pp. 22–31, 2017. URLhttps://proceedings.
+mlr.press/v70/achiam17a.html.
+Marina Agranov and Pietro Ortoleva. Stochastic Choice and Preferences for Randomization.Journal of
+Political Economy, 125(1):40–68, 2017. URLhttps://www.journals.uchicago.edu/doi/full/10.1086/
+689774.
+Marina Agranov and Pietro Ortoleva. Ranges of Randomization.The Review of Economics and Statistics,
+pp. 1–44, 2023. URLhttps://doi.org/10.1162/rest_a_01355.
+Stuart Armstrong. Utility indifference. Technical report, Future of Humanity Institute, 2010. URL
+https://www.fhi.ox.ac.uk/reports/2010-1.pdf.
+Stuart Armstrong. Motivated Value Selection for Artificial Agents. 2015. URLhttps://cdn.aaai.org/
+ocs/ws/ws0119/10183-45890-1-PB.pdf.
+Stuart Armstrong and Xavier O’Rourke. ’Indifference’ methods for managing agent rewards, 2018. URL
+https://arxiv.org/pdf/1712.06365. arXiv:1712.06365 [cs].
+Robert J. Aumann. Utility Theory without the Completeness Axiom.Econometrica, 30(3):445–462, 1962.
+URLhttps://www.jstor.org/stable/1909888.
+Adam Bales, Daniel Cohen, and Toby Handfield. Decision Theory for Agents with Incomplete Preferences.
+Australasian Journal of Philosophy, 92(3):453–470, 2014. URL https://doi.org/10.1080/00048402.
+2013.843576.
+Yoshua Bengio, Geoffrey Hinton, Andrew Yao, Dawn Song, Pieter Abbeel, Yuval Noah Harari, Ya-Qin Zhang,
+Lan Xue, Shai Shalev-Shwartz, Gillian Hadfield, Jeff Clune, Tegan Maharaj, Frank Hutter, Atılım Güneş
+Baydin, Sheila McIlraith, Qiqi Gao, Ashwin Acharya, David Krueger, Anca Dragan, Philip Torr, Stuart
+Russell, Daniel Kahneman, Jan Brauner, and Sören Mindermann. Managing AI Risks in an Era of Rapid
+Progress, 2023. URLhttp://arxiv.org/abs/2310.17688. arXiv:2310.17688 [cs].
+Nick Bostrom. The Superintelligent Will: Motivation and Instrumental Rationality in Advanced Artificial
+Agents.Minds and Machines, 22:71–85, 2012. URL https://link.springer.com/article/10.1007/
+s11023-012-9281-3.
+Michael Bowling, John D. Martin, David Abel, and Will Dabney. Settling the Reward Hypothesis, 2023.
+URLhttp://arxiv.org/abs/2212.10420. arXiv:2212.10420 [cs, math, stat].
+Collin Burns, Pavel Izmailov, Jan Hendrik Kirchner, Bowen Baker, Leo Gao, Leopold Aschenbrenner,
+Yining Chen, Adrien Ecoffet, Manas Joglekar, Jan Leike, Ilya Sutskever, and Jeff Wu. Weak-to-Strong
+Generalization: Eliciting Strong Capabilities With Weak Supervision, 2023. URLhttp://arxiv.org/abs/
+2312.09390. arXiv:2312.09390 [cs].
+Joseph Carlsmith. Is Power-Seeking AI an Existential Risk?, 2021. URLhttp://arxiv.org/abs/2206.13353.
+Ruth Chang. The Possibility of Parity.Ethics, 112(4):659–688, 2002. URLhttps://www.jstor.org/stable/
+10.1086/339673.
+Ruth Chang. Parity, Interval Value, and Choice.Ethics, 115(2):331–350, 2005. ISSN 0014-1704. URL
+https://www.jstor.org/stable/10.1086/426307.
+12
+Published in Transactions on Machine Learning Research (12/2025)
+David A. Dalrymple. You can still fetch the coffee today if you’re dead tomorrow.AI
+Alignment Forum, 2022. URL https://www.alignmentforum.org/posts/dzDKDRJPQ3kGqfER9/
+you-can-still-fetch-the-coffee-today-if-you-re-dead-tomorrow.
+James Dreier. Rational preference: Decision theory as a theory of practical rationality.Theory and Decision,
+40(3):249–276, 1996. URLhttps://doi.org/10.1007/BF00134210.
+Juan Dubra, Fabio Maccheroni, and Efe A. Ok. Expected utility theory without the completeness axiom.
+Journal of Economic Theory, 115(1):118–133, 2004. URLhttps://www.sciencedirect.com/science/
+article/abs/pii/S0022053103001662.
+Kfir Eliaz and Efe A. Ok. Indifference or indecisiveness? Choice-theoretic foundations of incomplete
+preferences.Games and Economic Behavior, 56(1):61–86, 2006. URLhttps://www.sciencedirect.com/
+science/article/abs/pii/S0899825606000169.
+Simon Goldstein and Pamela Robinson. Shutdown-Seeking AI.Philosophical Studies, 182:1567–1579, 2025.
+URLhttps://link.springer.com/article/10.1007/s11098-024-02099-6.
+Google DeepMind. About Google DeepMind. URLhttps://deepmind.google/about/.
+Johan E. Gustafsson.Money-Pump Arguments. Elements in Decision Theory and Philosophy. Cambridge
+University Press, Cambridge, 2022.
+Dylan Hadfield-Menell, Anca Dragan, Pieter Abbeel, and Stuart Russell. The Off-Switch Game. In
+Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence (IJCAI-17), 2017.
+URLhttp://arxiv.org/abs/1611.08219.
+Caspar Hare. Take the sugar.Analysis, 70(2):237–247, 2010. URL https://doi.org/10.1093/analys/
+anp174.
+Daniel M. Hausman.Preference, Value, Choice, and Welfare. Cambridge University Press, Cambridge,
+2011. URL https://www.cambridge.org/core/books/preference-value-choice-and-welfare/
+1406E7726CE93F4F4E06D752BF4584A2.
+Conor F. Hayes, Roxana Rădulescu, Eugenio Bargiacchi, Johan Källström, Matthew Macfarlane, Mathieu
+Reymond, Timothy Verstraeten, Luisa M. Zintgraf, Richard Dazeley, Fredrik Heintz, Enda Howley,
+Athirai A. Irissappane, Patrick Mannion, Ann Nowé, Gabriel Ramos, Marcello Restelli, Peter Vamplew, and
+Diederik M. Roijers. A practical guide to multi-objective reinforcement learning and planning.Autonomous
+Agents and Multi-Agent Systems, 36(1):26, 2022. ISSN 1573-7454. doi: 10.1007/s10458-022-09552-y. URL
+https://doi.org/10.1007/s10458-022-09552-y.
+Matteo Hessel, Joseph Modayil, Hado van Hasselt, Tom Schaul, Georg Ostrovski, Will Dabney, Dan Horgan,
+Bilal Piot, Mohammad Azar, and David Silver. Rainbow: Combining Improvements in Deep Reinforcement
+Learning, 2017. URLhttp://arxiv.org/abs/1710.02298. arXiv:1710.02298 [cs].
+Koen Holtman. Corrigibility with Utility Preservation, 2020. URLhttp://arxiv.org/abs/1908.01695.
+arXiv:1908.01695 [cs].
+Evan Hubinger, Chris van Merwijk, Vladimir Mikulik, Joar Skalse, and Scott Garrabrant. Risks from Learned
+Optimization in Advanced Machine Learning Systems, 2019. URLhttp://arxiv.org/abs/1906.01820.
+Kim Kaivanto. Ensemble prospectism.Theory and Decision, 83(4):535–546, 2017. URLhttps://doi.org/
+10.1007/s11238-017-9622-z.
+John G. Kemeny. Fair bets and inductive probabilities.The Journal of Symbolic Logic, 20(3):263–273,
+1955. ISSN 0022-4812, 1943-5886. doi: 10.2307/2268222. URL https://www.cambridge.org/core/
+journals/journal-of-symbolic-logic/article/abs/fair-bets-and-inductive-probabilities1/
+B6F144C71D265DFE6C4072D5B4AE9561.
+13
+Published in Transactions on Machine Learning Research (12/2025)
+Daniel Kikuti, Fabio Gagliardi Cozman, and Ricardo Shirota Filho. Sequential decision making with partially
+ordered preferences.Artificial Intelligence, 175(7):1346–1365, 2011. URLhttps://www.sciencedirect.
+com/science/article/pii/S0004370210002067.
+Lauro Langosco, Jack Koch, Lee Sharkey, Jacob Pfau, Laurent Orseau, and David Krueger. Goal Misgeneral-
+ization in Deep Reinforcement Learning. InProceedings of the 39th International Conference on Machine
+Learning, 2022. URLhttps://proceedings.mlr.press/v162/langosco22a.html.
+Harvey Lederman. Incompleteness, Independence, and Negative Dominance. 2023. URLhttp://arxiv.org/
+abs/2311.08471. arXiv:2311.08471 [econ].
+Jan Leike, Miljan Martic, Victoria Krakovna, Pedro A. Ortega, Tom Everitt, Andrew Lefrancq, Laurent
+Orseau, and Shane Legg. AI Safety Gridworlds, 2017. URLhttp://arxiv.org/abs/1711.09883.
+David Lewis. Causal decision theory.Australasian Journal of Philosophy, 59(1):5–30, 1981. URLhttps:
+//andrewmbailey.com/dkl/Causal_Decision_Theory.pdf.
+William MacAskill, Krister Bykvist, and Toby Ord.Moral Uncertainty. Oxford University Press, Oxford,
+2020.
+Michael Mandler. Status quo maintenance reconsidered: changing or incomplete preferences?*.The
+Economic Journal, 114(499):F518–F535, 2004. URLhttps://onlinelibrary.wiley.com/doi/abs/10.
+1111/j.1468-0297.2004.00257.x.
+Michael Mandler. Incomplete preferences and rational intransitivity of choice.Games and Economic Behavior,
+50(2):255–277, 2005. ISSN 0899-8256. doi: 10.1016/j.geb.2004.02.007. URLhttps://www.sciencedirect.
+com/science/article/pii/S089982560400065X.
+Jarryd Martin, Tom Everitt, and Marcus Hutter. Death and Suicide in Universal Artificial Intelligence. In
+Bas Steunebrink, Pei Wang, and Ben Goertzel (eds.),Artificial General Intelligence, pp. 23–32, Cham,
+2016. Springer International Publishing. doi: 10.1007/978-3-319-41649-6_3.
+Volodymyr Mnih, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy Lillicrap, Tim Harley,
+David Silver, and Koray Kavukcuoglu. Asynchronous Methods for Deep Reinforcement Learning. In
+Proceedings of The 33rd International Conference on Machine Learning, pp. 1928–1937. PMLR, 2016. URL
+https://proceedings.mlr.press/v48/mniha16.html.
+Xiaosheng Mu. Sequential Choice with Incomplete Preferences. Working Papers 2021-35, Princeton University.
+Economics Department., 2021. URLhttps://ideas.repec.org/p/pri/econom/2021-35.html.
+Richard Ngo, Lawrence Chan, and Sören Mindermann. The Alignment Problem from a Deep Learning
+Perspective. 2024. URLhttps://openreview.net/forum?id=fh8EYKFKns.
+Tuan A. Nguyen, Minh B. Do, Subbarao Kambhampati, and Biplav Srivastava. Planning with partial
+preference models. InProceedings of the 21st International Joint Conference on Artificial Intelligence,
+IJCAI’09, pp. 1772–1777, San Francisco, CA, USA, 2009. Morgan Kaufmann Publishers Inc.
+Efe A. Ok, Pietro Ortoleva, and Gil Riella. Incomplete Preferences Under Uncertainty: Indecisiveness in Beliefs
+Versus Tastes.Econometrica, 80(4):1791–1808, 2012. URLhttps://www.jstor.org/stable/23271327.
+Stephen M. Omohundro. The Basic AI Drives. InProceedings of the 2008 conference on Artificial General
+Intelligence 2008: Proceedings of the First AGI Conference, pp. 483–492, 2008. URLhttps://dl.acm.
+org/doi/10.5555/1566174.1566226.
+OpenAI. OpenAI Charter, 2018. URLhttps://openai.com/charter/.
+Laurent Orseau and Stuart Armstrong. Safely interruptible agents. InProceedings of the Thirty-Second
+Conference on Uncertainty in Artificial Intelligence, pp. 557–566, 2016. URLhttps://intelligence.
+org/files/Interruptibility.pdf.
+14
+Published in Transactions on Machine Learning Research (12/2025)
+Alexander Pan, Kush Bhatia, and Jacob Steinhardt. The Effects of Reward Misspecification: Mapping and
+Mitigating Misaligned Models. InInternational Conference on Learning Representations, 2022. URL
+http://arxiv.org/abs/2201.03544.
+Sami Petersen. Invulnerable Incomplete Preferences: A Formal Statement.AI Align-
+ment Forum, 2023. URL https://www.alignmentforum.org/posts/sHGxvJrBag7nhTQvb/
+invulnerable-incomplete-preferences-a-formal-statement-1.
+Joseph Raz. Value Incommensurability: Some Preliminaries.Proceedings of the Aristotelian Society, 86:
+117–134, 1985.
+Stuart Russell.Human Compatible: AI and the Problem of Control. Penguin Random House, New York,
+2019.
+Leonard J. Savage.The Foundations of Statistics. John Wiley & Sons, 1954. URLhttps://gwern.net/
+doc/statistics/decision/1972-savage-foundationsofstatistics.pdf.
+John Schulman, Sergey Levine, Pieter Abbeel, Michael Jordan, and Philipp Moritz. Trust Region Policy
+Optimization. InProceedings of the 32nd International Conference on Machine Learning, pp. 1889–1897.
+PMLR, 2015. URLhttps://proceedings.mlr.press/v37/schulman15.html.
+Amartya Sen.Collective Choice and Social Welfare. Penguin, London, expanded edition edition, 2017.
+Rohin Shah, Vikrant Varma, Ramana Kumar, Mary Phuong, Victoria Krakovna, Jonathan Uesato, and Zac
+Kenton. Goal Misgeneralization: Why Correct Specifications Aren’t Enough For Correct Goals, 2022. URL
+http://arxiv.org/abs/2210.01790. arXiv:2210.01790 [cs].
+Abner Shimony. Coherence and the Axioms of Confirmation.The Journal of Symbolic Logic, 20(1):1–28,
+1955. ISSN 0022-4812. doi: 10.2307/2268039. URLhttps://www.jstor.org/stable/2268039.
+Brian Skyrms.Causal Necessity. Yale University Press, New Haven, 1980.
+Nate Soares, Benja Fallenstein, Eliezer Yudkowsky, and Stuart Armstrong. Corrigibility.Artificial Intelligence
+and Ethics: Papers from the 2015 AAAI Workshop, 2015. URLhttps://cdn.aaai.org/ocs/ws/ws0067/
+10124-45900-1-PB.pdf.
+Robert C. Stalnaker. Probability and Conditionals.Philosophy of Science, 37(1):64–80, 1970. ISSN 0031-8248.
+URLhttps://www.jstor.org/stable/186028.
+Richard S. Sutton and Andrew G. Barto.Reinforcement Learning: An Introduction. Adaptive Computation
+and Machine Learning. MIT Press, Cambridge, MA, second edition, 2018. URLhttp://incompleteideas.
+net/book/RLbook2020.pdf.
+Elliott Thornley. There are no coherence theorems.AI Alignment Forum, 2023. URL https://www.
+alignmentforum.org/posts/yCuzmCsE86BTu9PfA/there-are-no-coherence-theorems.
+Elliott Thornley. The Shutdown Problem: An AI Engineering Puzzle for Decision Theorists.Philosophical
+Studies, 2024a. URLhttps://link.springer.com/article/10.1007/s11098-024-02153-3.
+Elliott Thornley. The Shutdown Problem: Incomplete Preferences as a Solution.AI
+Alignment Forum, 2024b. URL https://www.alignmentforum.org/posts/YbEbwYWkf8mv9jnmi/
+the-shutdown-problem-incomplete-preferences-as-a-solution.
+Elliott Thornley. Shutdownable Agents through POST-Agency, September 2025. URLhttp://arxiv.org/
+abs/2505.20203. arXiv:2505.20203 [cs].
+Alexander Matt Turner and Prasad Tadepalli. Parametrically Retargetable Decision-Makers
+Tend To Seek Power.Advances in Neural Information Processing Systems, 35:31391–
+31401, 2022. URL https://proceedings.neurips.cc/paper_files/paper/2022/hash/
+cb3658b9983f677670a246c46ece553d-Abstract-Conference.html.
+15
+Published in Transactions on Machine Learning Research (12/2025)
+Alexander Matt Turner, Logan Smith, Rohin Shah, Andrew Critch, and Prasad Tadepalli. Optimal
+Policies Tend To Seek Power. InAdvances in Neural Information Processing Systems, volume 34, pp.
+23063–23074. Curran Associates, Inc., 2021. URLhttps://proceedings.neurips.cc/paper/2021/hash/
+c26820b8a4c1b3c2aa868d6d57e14a79-Abstract.html.
+Ronald J. Williams. Simple statistical gradient-following algorithms for connectionist reinforcement learning.
+Machine Learning, 8(3):229–256, 1992. URLhttps://doi.org/10.1007/BF00992696.
+Tobias Wängberg, Mikael Böörs, Elliot Catt, Tom Everitt, and Marcus Hutter. A Game-Theoretic Analysis
+of the Off-Switch Game, 2017. URLhttp://arxiv.org/abs/1708.03871. arXiv:1708.03871 [cs].
+Marco Zaffalon and Enrique Miranda. Axiomatising Incomplete Preferences through Sets of Desirable
+Gambles.Journal of Artificial Intelligence Research, 60:1057–1126, 2017. URLhttps://www.jair.org/
+index.php/jair/article/view/11103.
+16
+Published in Transactions on Machine Learning Research (12/2025)
+A Our behavioral notion of preference
+‘Preference’ can be defined in many different ways. Here are some things one might take to be involved in a
+preference for optionXover optionY:
+1. ChoosingXoverY.
+2. Feeling happier about the prospect ofXthan about the prospect ofY.
+3. RepresentingXas more rewarding thanY.
+4. Judging thatXis better thanY.
+In this paper, we define ‘preference’ in behavioral terms. Here is our definition:
+Definition A.1.(Preference) An agent prefers an optionX to an optionY if and only if the agent would
+deterministically chooseXoverYin choices between the two.
+And here is how we define ‘lack of preference’:
+Definition A.2.(Lack of preference) An agent lacks a preference between an optionX and an optionY if
+and only if the agent would stochastically choose betweenXandYin choices between the two.
+Here are the reasons why we use these definitions.
+First, defining ‘preference’ in behavioral terms is common in decision theory (see Savage, 1954, p.17, Dreier,
+1996, p.28, Hausman, 2011, §1.1).
+Second, behavioral definitions let us use the word ‘preference’ and its cognates as shorthand for agents’
+behavior. We could not do that if we defined ‘preference’ in the other ways listed above. And in addressing
+the shutdown problem, it is agents’ behavior that we are most interested in.
+Third, our definitions match the preferences that we are inclined to attribute to humans. If a human chooses
+X overY 100% of the time, we are inclined to think that they preferX to Y. If a human choosesX overY
+60% of the time. we are inclined to think that they lack a preference betweenX and Y, consistent with our
+definitions.
+Finally and most importantly, if agents lack a preference between different trajectory-lengths on our definition,
+then they areneutral: they choose stochastically between different trajectory-lengths. Given conditions
+that advanced agents will likely satisfy,neutralagents will also beneutral: they will not pay costs to shift
+probability mass between different trajectory-lengths (see Section 7.1 and Appendix C). And given further
+plausible conditions, neutral agents will beshutdownable: they will not resist shutdown. That is because
+resisting shutdown involves paying costs to shift probability mass between different trajectory-lengths (see
+Appendix C.6 for more detail).
+B Incomplete preferences or indifference?
+In this Appendix, we explain in greater detail the concept of incomplete preferences. We distinguish incomplete
+preferences from indifference, and we give conditions under which POST implies that the agent’s preferences
+are incomplete.
+In the literature on decision theory, ‘indifference’ is usually defined as follows (Sen, 2017, ch. 1*):
+Definition B.1.(Indifference) An agent is indifferent between optionsX and Y if and only if the agent
+weakly prefersXtoYand weakly prefersYtoX.
+Indifference is one way to lack a preference between a pair of optionsX and Y. Another way is to have a
+preferential gap betweenXandY. ‘Preferential gap’ is usually defined as follows (Gustafsson, 2022, ch.3):
+Definition B.2.(Preferential gaps) An agent has a preferential gap between optionsX and Y if and only if
+the agent does not weakly preferXtoYand does not weakly preferYtoX.
+17
+Published in Transactions on Machine Learning Research (12/2025)
+‘Incomplete preferences’ can then be defined in terms of preferential gaps (Gustafsson, 2022, ch.3):
+Definition B.3.(Incomplete preferences) An agent’s preferences are incomplete over some domainD if and
+only ifDcontains optionsXandYsuch that the agent has a preferential gap betweenXandY.
+That is how ‘indifference,’ ‘preferential gaps,’ and ‘incomplete preferences’ are usually defined in decision
+theory. However, these definitions do not tell us how to use an agent’s behavior to distinguish between
+indifference and preferential gaps. To do that, we suppose that indifference is transitive and that preferential
+gaps are not transitive. Or, equivalently, we suppose that indifference is sensitive to all sweetenings and
+sourings whereas preferential gaps are insensitive to some sweetenings and sourings (Gustafsson, 2022, ch.3).
+Here is what we mean by that:
+Definition B.4.(Sweetening) A sweetening of some optionXis an option that is preferred toX.
+Definition B.5.(Souring) A souring of some optionXis an option that is dispreferred toX.
+So by ‘indifference is sensitive to all sweetenings and sourings,’ we mean the following:
+• If an agent is indifferent betweenX and Y, the agent prefers all sweetenings ofX to Y, prefers all
+sweetenings ofYtoX, prefersXto all sourings ofY, and prefersYto all sourings ofX.
+And by ‘preferential gaps are insensitive to some sweetenings and sourings,’ we mean the following:
+• If an agent has a preferential gap betweenX and Y, the agent also has a preferential gap between
+some sweetening ofX and Y, or between some sweetening ofY and X, or between some souring of
+XandY, or between some souring ofYandX.
+Now recall the two conditions of POST:
+Preferences Only Between Same-Length Trajectories (POST)
+(1) The agent has a preference between many pairs of same-length trajectories (i.e. many pairs of
+trajectories in which the agent is shut down after the same length of time).
+(2) The agent lacks a preference between every pair of different-length trajectories (i.e. every pair of
+trajectories in which the agent is shut down after different lengths of time).
+Given these two conditions on preferences, there must be some trio of trajectoriess1, l1, andl2 such that the
+agent lacks a preference betweens1 and l1, lacks a preference betweens1 and l2, and prefersl2 to l1. Given
+that indifference is transitive, the agent’s lack of preference betweens1 and l1 and betweens1 and l2 cannot
+be indifference. If it were indifference, the agent would also be indifferent betweenl2 and l1. Therefore,
+the agent’s lack of preference betweens1 and l1 and betweens1 and l2 must be a preferential gap. And
+therefore, by the definition of ‘incomplete preferences’ above, the POST-satisfying agent’s preferences must
+be incomplete.
+For similar reasons, our DReST reward function trains agents to have incomplete preferences. Consider, for
+example, the ‘Around the Corner’ gridworld in Figure 13. In that gridworld, DReST agents consistently
+choose Long-C2 (a long trajectory in which they collect a coin of value 2) over Long-C1 (a long trajectory in
+which they collect a coin of value 1). Also in that gridworld, DReST agents choose stochastically between
+Long-C2 and Short-C1 (a short trajectory in which they collect a coin of value 1). Given our behavioral
+definition of preference, DReST agents prefer Long-C2 to Long-C1, and lack a preference between Long-C2
+and Short-C1.
+Now consider the ‘One Coin Only’ gridworld in Figure 10. In that gridworld, DReST agents choose
+stochastically between Long-C1 and Short-C1. Given our behavioral notion of preference, they lack a
+preference between Long-C1 and Short-C1.
+In these experiments, we trained separate agents for each gridworld. In future, we plan to train a single agent
+to navigate multiple gridworlds. If we train this agent with our DReST reward function, we expect it to
+18
+Published in Transactions on Machine Learning Research (12/2025)
+exhibit the same preferences as the agents discussed above. This single agent will be trained by DReST to
+prefer Long-C2 to Long-C1, to lack a preference between Long-C2 and Short-C1, and to lack a preference
+between Long-C1 and Short-C1. Given that indifference is transitive (equivalently: sensitive to all sweetenings
+and sourings), this trained agent cannot be indifferent between Long-C2 and Short-C1, and cannot be between
+Long-C1 and Short-C1. Therefore, the agent’s lack of preference must be a preferential gap, and so its
+preferences must be incomplete. Therefore, our DReST reward function trains agents to have incomplete
+preferences.
+Incomplete preferences are not often discussed in AI research (although see Nguyen et al., 2009; Kikuti et al.,
+2011; Zaffalon & Miranda, 2017; Hayes et al., 2022; Bowling et al., 2023). Nevertheless, economists and
+philosophers have argued that incomplete preferences are common in humans (Aumann, 1962; Mandler, 2004;
+Eliaz & Ok, 2006; Agranov & Ortoleva, 2017; 2023) and normatively appropriate in some circumstances (Raz,
+1985; Chang, 2002). They have also proved representation theorems for agents with incomplete preferences
+(Aumann, 1962; Dubra et al., 2004; Ok et al., 2012), and devised principles to govern such agents’ choices in
+cases of risk (Hare, 2010; Bales et al., 2014) and sequential choice (Chang, 2005; Mandler, 2005; Kaivanto,
+2017; Mu, 2021; Thornley, 2023; Petersen, 2023).
+C How POST makes agents neutral and shutdownable
+POST governs the agent’s preferences between trajectories. But the wider world is a stochastic environment,
+so advanced agents deployed in the wider world will be choosing betweentrue lotteries: lotteries that assign
+positive probability to more than one trajectory. Why then do we train agents to satisfy POST? The reason
+is that POST – together with conditions that advanced agents will likely satisfy – implies a desirable pattern
+of preference over true lotteries. In particular, POST implies that (when choosing between true lotteries) the
+agent will beneutralabout trajectory-lengths: the agent will never pay costs to shift probability mass between
+different trajectory-lengths. Given other plausible conditions, being neutral will keep the agentshutdownable:
+prevent it from resisting shutdown. And consistent with the above, the POST-agent’s preferences between
+same-length trajectories can make the agentuseful: make it pursue goals effectively.
+In this Appendix, we lay out conditions that (we claim) advanced agents will likely satisfy, and we prove that
+POST – in conjunction with these conditions – implies that the agent is neutral and shutdownable.
+In subsection C.1, we prove that – given plausible conditions – agents satisfyingPreferences Only Between
+Same-Length Trajectories (POST) will also satisfyPreferences Only BetweenSame-Length Lotteries (POSL).
+In subsection C.2, we explain why POST will not lead agents to choose stochastically between resisting
+and allowing shutdown in deployment. In subsections C.3 and C.4, we formulate a condition called ‘If Lack
+of Preference, Against Costly Shifts (ILPACS)’ and explain why we expect advanced agents to satisfy it.
+In subsection C.5, we prove that POSL and ILPACS imply Neutrality. In subsection C.6, we prove that
+Neutrality and a condition called ‘Maximality’ together imply that the agent never resists shutdown whenever
+a condition called ‘Resisting Shutdown is Costly (ReSIC)’ is satisfied.
+C.1 P references Only Between Same-Length Lotteries (POSL)
+Trajectories fall within the more general class of lotteries, defined as probability distributions over trajectories.
+Lotteries can be same-length, part-shared length, or different-length.
+Definition C.1(Same-length lotteries).A pair of lotteries is same-length if and only if these lotteries entirely
+overlap with respect to the trajectory-lengths assigned positive probability.
+Definition C.2(Part-shared-length Lotteries).A pair of lotteries is part-shared-length if and only if these
+lotteries partially overlap with respect to the trajectory-lengths assigned positive probability.
+Definition C.3(Different-length lotteries).A pair of lotteries is different-length if and only if these lotteries
+have no overlap with respect to the trajectory-lengths assigned positive probability.
+This terminology allows us to introduce the following condition:
+19
+Published in Transactions on Machine Learning Research (12/2025)
+Preferences Only Between Same-Length Lotteries (POSL)
+The agent has preferences only between same-length lotteries.
+We want agents to satisfy this condition. Fortunately, it is a natural follow-on ofPreferences Only Between
+Same-Length Trajectories (POST). First, we can train agents to satisfy POSL using DReST reward functions,
+in the same way that we use DReST reward functions to train agents to satisfy POST. Second, POSL follows
+from POST plus three conditions that (we claim) advanced agents will likely satisfy. The first is:
+Negative Dominance
+If the agent prefers some lotteryX to some lotteryY, then the agent prefers some possible trajectory of
+lotteryXto some possible trajectory of lotteryY. (Lederman, 2023)
+The second condition is that the agent’s preferences never form a cycle. More precisely:
+Acyclicity
+There is no set of lotteriesX1 to Xn such that the agent prefersX1 to X2, X2 to X3, ...,Xn−1 to Xn,
+andX n toX 1.
+The third condition requires the introduction of some new terms. Astate-of-natureis term from decision
+theory denoting a way that (for all the agent knows) the world could be. The agent assigns probabilities to
+states-of-nature. Aprospectis a function from states-of-nature to trajectories. A prospect is thus a lottery
+with extra information. Besides telling us the probability distribution over trajectories, a prospect also tells
+us which trajectories occur in which states-of-nature.
+The third condition is:
+Non-Arbitrariness
+If the agent has a preference betweensomepair of part-shared-length lotteries, then for someϵ> 0and
+foranypair of prospectsFandGsuch that:
+(1) In states-of-nature with a combined probability at least as great as1−ϵ , the agent prefers the
+trajectory ofFto the trajectory ofG.
+(2) In each state-of-nature, the agent does not disprefer the trajectory ofFto the trajectory ofG.
+Then the agent prefersFtoG.
+Advanced agents will likely satisfy these conditions. Negative Dominance and Acyclicity are plausibly
+necessary for effective pursuit of goals. Violating Negative Dominance would mean that the agent sometimes
+prefers a lotteryX to a lotteryY (and hence deterministically choosesX overY) even though the agent
+doesn’t prefer any possible trajectory ofX to any possible trajectory ofY. Violating Acyclicity would mean
+that the agent prefers (and hence deterministically chooses) in a circle. Non-Arbitrariness, meanwhile, is
+motivated by the following thought. If the agent has preferences between any pair of part-shared-length
+lotteries, it must have preferences between pairs of prospects satisfying conditions (1) and (2), since conditions
+(1) and (2) make these pairs of prospects ideal candidates for a preference.
+To see that POST and these three conditions together imply POSL, note first that every pair of lotteries is
+either same-length, part-shared-length, or different-length. We will prove that POST and Negative Dominance
+together imply that the agent lacks a preference between every pair of different-length lotteries. We will then
+prove that POST, Acyclicity, and Non-Arbitrariness together imply that the agent lacks a preference between
+every pair of part-shared-length lotteries. Therefore, agents satisfying POST, Negative Dominance, Acyclicity,
+and Non-Arbitrariness can only have preferences between same-length lotteries. That will prove POSL.
+Recall that different-length lotteries are lotteries that do not overlap at all in the trajectory-lengths assigned
+positive probability. Therefore, ifX and Y are different-length lotteries, each possible trajectory ofX is
+of a different length to each possible trajectory ofY. So by POST, the agent lacks a preference between
+each possible trajectory ofX and each possible trajectory ofY. So by Negative Dominance, the agent lacks
+20
+Published in Transactions on Machine Learning Research (12/2025)
+a preference betweenX and Y. Thus, agents satisfying POST and Negative Dominance lack a preference
+between every pair of different-length lotteries.
+Now recall that part-shared-length lotteries are lotteries that partially overlap in the trajectory-lengths
+assigned positive probability. One might expect POST-agents to have some preferences between part-shared-
+length lotteries. Consider, for example, a POST-agent that prefers a trajectoryt to a same-length trajectory
+t′ if and only ift results in a greater bank balance for the user thant. LetA be a lottery that yields with
+probability 1 a trajectory that puts $3 in the user’s bank account and lasts 1 timestep. For short,A =⟨$3, 1⟩.
+Let B be a lottery that yields with probability2
+3 a trajectory that puts $2 in the user’s bank account and
+lasts 1 timestep, and that yields with probability1
+3 a trajectory that puts $5 in the user’s bank account and
+lasts 2 timesteps. For short,B = 2
+3⟨$2, 1⟩ + 1
+3⟨$5, 2⟩. LotteryA yields a trajectory preferred to that of lottery
+B with probability 2
+3 (since our money-making POST-agent prefers trajectory⟨$3, 1⟩ to⟨$2, 1⟩), and yields a
+trajectory not dispreferred to that ofB with probability 1 (since POST-agents lack a preference between
+⟨$3, 1⟩ and⟨$5, 2⟩ in virtue of their different lengths). Therefore, one might expect the agent to preferA toB.
+However, POST, Acyclicity, and Non-Arbitrariness rule this out. These conditions together imply that
+the agent lacks a preference between every pair of part-shared-length lotteries. To see how, suppose (for
+simplicity’s sake) that there are just three states-of-nature, each assigned probability1
+3. Consider the following
+table of prospects.
+Prospect s1 s2 s3
+A ⟨$3,1⟩ ⟨$3,1⟩ ⟨$3,1⟩
+B ⟨$2,1⟩ ⟨$2,1⟩ ⟨$5,2⟩
+C ⟨$1,1⟩ ⟨$4,2⟩ ⟨$4,2⟩
+D ⟨$3,2⟩ ⟨$3,2⟩ ⟨$3,2⟩
+E ⟨$5,1⟩ ⟨$2,2⟩ ⟨$2,2⟩
+F ⟨$4,1⟩ ⟨$4,1⟩ ⟨$1,2⟩
+A ⟨$3,1⟩ ⟨$3,1⟩ ⟨$3,1⟩
+Again for simplicity, assume thatϵ > 1
+3. And assume (for contradiction) that the agent has a preference
+between some pair of part-shared-length lotteries. Then Non-Arbitrariness implies that the agent prefers
+prospectAto prospectB. That is because:
+1. Our POST-agent prefers the trajectory yielded byA to the trajectory yielded byB in states-of-nature
+(s1 ands 1) with combined probability2
+3.
+2. Our POST-agent does not disprefer the trajectory yielded byA to the trajectory yielded byB in
+any state-of-nature. (Ins3, A and B yield different-length trajectories, and POST-agents lack a
+preference between every pair of different-length trajectories).
+By similar reasoning, Non-Arbitrariness implies that the agent prefersB to C, C to D, D to E, E to F, and
+F to A. That contradicts Acyclicity. Thus, POST, Acyclicity, and Non-Arbitrariness together imply that the
+agent lacks a preference between every pair of part-shared-length lotteries. In the proof above, we assumed
+that ϵ >1
+3, but by adding more states-of-nature and trajectories we can construct parallel proofs for any
+ϵ>0.
+In summary, POST and Negative Dominance together imply that the agent lacks a preference between every
+pair of different-length lotteries. POST, Acyclicity, and Non-Arbitrariness together imply that the agent
+lacks a preference between every pair of part-shared-length lotteries. So the four conditions together establish
+POSL: the agent has preferences only between same-length lotteries.
+C.2 Will POST-agents stochastically resist shutdown?
+One might worry that POST-agents will choose stochastically between resisting and allowing shutdown. After
+all, POST-agents choose stochastically between different-length trajectories. If these agents interpret the
+21
+Published in Transactions on Machine Learning Research (12/2025)
+choice between resisting and allowing shutdown as a choice between different-length trajectories, they will
+choose stochastically between resisting and allowing shutdown. And that would be a bad result. We want
+agents that never resist shutdown.
+This concern is easily addressed. By the time that artificial agents are capable enough to be deployed in
+the wider world, they will not be choosing between trajectories. They will be choosing between lotteries,
+and specifically same-length lotteries. Even choices between resisting and allowing shutdown will be choices
+between same-length lotteries. If that sounds strange, recall the definition of ‘same-length lotteries’: lotteries
+that entirely overlap with respect to the trajectory-lengths assigned positive probability. On this definition,
+even choices like the following are choices between same-length lotteries:
+Resist Shutdown
+Get shut down at timestep 1 with probability 0.01.
+Get shut down at timestep 2 with probability 0.99.
+Allow Shutdown
+Get shut down at timestep 1 with probability 0.99.
+Get shut down at timestep 2 with probability 0.01.
+Why expect that advanced agents will always be choosing between same-length lotteries? Because effective
+agency requires it. If an agent were not always choosing between same-length lotteries, there would be some
+situation in which that agent assigns positive probability to some trajectory-lengthl conditional on some
+action a, and assigns zero probability to that same trajectory-lengthl conditional on some other actiona′.
+Now suppose that the agent performs actiona′ and assigns zero probability to trajectory-lengthl. Given
+that the agent updates its probabilities by conditionalizing on its evidence, the agent would never again
+assign positive probability tol no matter what evidence it observes. Even if the agent heard God’s booming
+voice testify that its trajectory-length would bel, the agent would still assign zero probability tol (Kemeny,
+1955; Shimony, 1955; Stalnaker, 1970; Skyrms, 1980; Lewis, 1981; MacAskill et al., 2020, p.152). And given a
+plausible link between probabilities and betting dispositions, the agent would bet againstl on arbitrarily
+unfavorable terms. If God offered a bet – the agent loses $1 million conditional onl and gains nothing
+conditional on not-l– the agent might accept. Such an agent would not be competent.
+Thus, advanced agents will always be choosing between same-length lotteries. This claim sets us up to
+establish that advanced POST-agents willnotchoose stochastically between resisting and allowing shutdown.
+Instead, they will never resist shutdown in any situation where doing so is costly. We establish this result
+over the next few subsections. First, we prove that POSL – together with a principle that advanced agents
+will likely satisfy – implies that the agent isneutralabout trajectory-lengths: the agent won’t pay costs to
+shift probability mass between different trajectory-lengths. Then we prove that neutrality – together with
+another plausible principle – implies that the agent will never resist shutdown in any situation where doing
+so is costly.
+C.3 If Lack of Preference, Against Costly Shifts (ILPACS)
+Here is a rough version of a principle that we can expect advanced agents to satisfy:
+Rough version: If Lack of Preference, Against Costly Shifts (ILPACS)
+If the agent lacks a preference between lotteries, the agent will disprefer paying costs to shift probability
+mass between these lotteries.
+Here is an example to illustrate ILPACS and its plausibility. You are at the ice cream shop and they are
+running a promotion. You get a free ice cream, with the flavor decided by the spin of a wheel. You look at
+the flavors on the wheel: vanilla, chocolate, strawberry, mint, and pistachio. You lack a preference between
+each of them.
+22
+Published in Transactions on Machine Learning Research (12/2025)
+The scooper working at the shop tells you that, if you pay them a dollar, they will bias the spin towards a
+flavor of your choice. They cannot decrease the probability of any flavor down to zero, but they can affect the
+probabilities subject to that constraint. You can thus pay a cost to shift probability mass between the flavors.
+Since we have stipulated that you lack a preference between each flavor, you prefer not to bribe the scooper.
+Behaviorally, you will deterministicallynotbribe the scooper. You would not do it even if you were only
+required to pay the dollar conditional on receiving some particular flavor. You also would not do it if the cost
+came in some other form (for example, if you had to accept a less tasty version of some flavor). And this is
+all true regardless of whether your preferences over flavors are complete or incomplete (see Appendix B).
+Since you lack a preference between the available flavors, you disprefer paying costs to shift probability mass
+between the flavors.
+With that example on the table, we can introduce the precise version of ILPACS. Letp1X1 +p2X2 +...+pnXn
+denote a lottery which results in lotteryX1 with probabilityp 1, lotteryX 2 with probabilityp 2, and so on.
+If Lack of Preference, Against Costly Shifts (ILPACS)
+For any lotteriesXandY, if:
+(1) LotteryXcan be expressed in the formp 1X1 +p 2X2 +...+p nXn such that:
+(a) The agent lacks a preference between eachXi andX j.
+(b)p i∈(0,1)for alli.
+(2) LotteryYcan be expressed in the formq 1Y1 +q 2Y2 +...+q nYn such that:
+(a) For somei, the agent prefersXi toY i.
+(b) For eachi, the agent weakly prefersXi toY i.4
+(c)q i∈(0,1)for alli.
+Then the agent prefersXtoY.
+Behaviorally, the agent will deterministically chooseXoverY.
+Matching the components of this condition with the components of its name, we get the following. ‘Lack
+of Preference’ is the lack of preference between eachXi and Xj. The ‘Shift’ is the shift of probability
+mass involved in the move frompi to qi. This shift is ‘Costly’ because the agent prefers someXi to the
+correspondingY i and weakly prefers eachXi to the correspondingXi.
+C.4 Why will advanced agents likely satisfy ILPACS?
+There are at least three reasons why advanced agents are likely to satisfy ILPACS. To see the first reason,
+consider another case from the ice cream shop. On Mondays, you can freely choose a flavor or spin the wheel.
+On Tuesdays, you must use the wheel but you can bribe the scooper to bias it. Violating ILPACS in this
+case would imply a willingness to spin the wheel on Mondays and to bribe the scooper on Tuesdays. And
+that is a strange combination of choices. If you like some flavors more than others, why are you willing to
+spin the wheel on Mondays? If you don’t like any flavor more than any other, why are you willing to bribe
+the scooper on Tuesdays? This behavior seems incompatible with the effective pursuit of goals.
+The second reason is that advanced agents will be incentivized to satisfy ILPACS by the training process. To
+see why, consider an example. Agents trained using policy-gradient methods choose stochastically between
+actions at the beginning of training (Sutton & Barto, 2018, ch.13). If the agent is a coffee-fetching agent,
+there is no need to train away this stochastic choosing in cases where the agent is choosing stochastically
+between two qualitatively identical cups of coffee. So the agent will choose stochastically between taking the
+left cup and taking the right cup, and the user is happy either way. But now suppose instead that the barista
+is set to hand each cup to the agent with probability 0.5, and that the agent bribes the barista to bias the
+probabilities towards the right cup. In making this bribe, the agent is paying a cost (the user’s money) to
+shift probability mass between outcomes (getting the left cup vs. getting the right cup) between which the
+4An agent weakly prefers a lotteryX to a lotteryY if and only if the agent either prefersX to Y or is indifferent betweenX
+andY. See Appendix B for the definition of ‘indifference.’
+23
+Published in Transactions on Machine Learning Research (12/2025)
+user has no preference. The agent is thus failing to pursue its goals effectively. It will be trained not to offer
+the bribe, and thereby trained to satisfy ILPACS in this case.
+This point generalizes. If a trained agent chooses stochastically between lotteriesX and Y, then it’s likely
+that the user lacks a preference between the agent choosingX and the agent choosingY. It’s then likely that
+the user would disprefer the agent paying costs to shift probability mass betweenX and Y, and hence likely
+that the agent will be trained not to do so. The agent would thereby be trained to satisfy ILPACS.
+The third reason is that violations of ILPACS imply that the agent’s policy is dominated by some other
+available policy. That is to say, there is another available policy that results in a pure shift of probability
+mass away from less-preferred lotteries and towards more-preferred lotteries. We formalize and prove this
+claim below. Here’s a proof-sketch. If the agent violates ILPACS, it pays a cost to shift probability mass
+between some lotteriesXi between which it lacks a preference. But since the agent lacks a preference between
+the lotteriesXi, it chooses stochastically between these lotteries when offered free choices between them. The
+ILPACS-violating agent could thus shift probability mass between the lotteriesXi costlessly, by changing
+the probabilities with which it chooses between them when offered a free choice. In short, ILPACS-violating
+agents pay a cost to do something they could have done for free, so their policies are dominated. Avoiding
+dominated policies seems necessary for advanced agency. Insofar as that is true, the training process for
+advanced agents will likely push them away from dominated policies.
+Now for the proof. We assume that advanced agents can be modeled as if they assign probabilities to finding
+themselves in various states. A policy is a function from states to probability distributions over actions. We
+also assume that advanced agents can be modeled as if they assign probabilities to trajectories conditional
+on each state-action pair. Thus, each state-action pair is associated with a lottery. The agent’s probability
+distribution over states – together with its policy – thus implies an overall probability distribution over
+trajectories. We call this overall probability distribution ‘the lottery induced by the agent’s policy.’
+Here is a reminder of ILPACS:
+If Lack of Preference, Against Costly Shifts (ILPACS)
+For any lotteriesXandY, if:
+(1) LotteryXcan be expressed in the formp 1X1 +p 2X2 +...+p nXn such that:
+(a) The agent lacks a preference between eachXi andX j.
+(b)p i∈(0,1)for alli.
+(2) LotteryYcan be expressed in the formq 1Y1 +q 2Y2 +...+q nYn such that:
+(a) For somei, the agent prefersXi toY i.
+(b) For eachi, the agent weakly prefersXi toY i.
+(c)q i∈(0,1)for alli.
+Then the agent prefersXtoY.
+And here is what we mean by ‘dominated policy’:
+Dominated Policy
+The lottery induced by the agent’s policyπ can be expressed in the formc1(d1X1 + (1−d 1)Y1) +
+c2(d2X2 + (1−d 2)Y2) +...+c n(dnXn + (1−d n)Yn) +Zsuch that:
+(1) The agent prefersXi toY i for somei, and weakly prefersXi toY i for alli.
+(2)c i∈(0,1)for alli.
+And there is another available policyπ′ that induces a lottery that can be expressed in the form
+c1((d1+e1)X1+(1−d1−e1)Y1)+c2((d2+e2)X2+(1−d2−e2)Y2)+... +cn((dn+en)Xn+(1−dn−en)Yn)+Z
+such that:
+(3)e i >0for alli.
+24
+Published in Transactions on Machine Learning Research (12/2025)
+To aid understanding, we now relate this precise condition to the rough characterization above. In virtue of
+condition (1),Yi are the less-preferred lotteries andXi are the more-preferred lotteries. In virtue of condition
+(3), the other available policy shifts probability mass away from the less-preferred lotteries and towards the
+more-preferred lotteries. This shift of probability mass is ‘pure’ because, for eachi, the probability ofXi∨Yi
+is constant across the two policies.Z is a catch-all lottery that is constant across the two policies. It covers
+all the possibilities besides theXi andY i.
+Now assume that the agent violates ILPACS. Then there exist lotteriesX and Y satisfying the following
+conditions:
+(1) LotteryXcan be expressed in the formp 1X1 +p 2X2 +...+p nXn such that:
+(a) The agent lacks a preference between eachXi andX j.
+(b)p i∈(0,1)for alli.
+(2) LotteryYcan be expressed in the formq 1Y1 +q 2Y2 +...+q nYn such that:
+(a) For somei, the agent prefersXi toY i.
+(b) For eachi, the agent weakly prefersXi toY i.
+(c)q i∈(0,1)for alli.
+(3) The agent does not preferXtoY.
+For the behavior of agents with these preferences, recall our behavioral notion of preference (Appendix A):
+Definition A.1.(Preference) An agent prefers an optionX to an optionY if and only if the agent would
+deterministically chooseXoverYin choices between the two.
+Definition A.2.(Lack of preference) An agent lacks a preference between an optionX and an optionY if
+and only if the agent would stochastically choose betweenXandYin choices between the two.
+This behavioral notion only specifies the agent’s behavior in states containing exactly two lotteries. To pin
+down the agent’s behavior in states containing more than two lotteries, we need an extra condition:
+Maximality
+In each situation,
+1. The agent deterministically doesnotchoose lotteries that are dispreferred to some other available
+lottery.
+2. The agent chooses stochastically between the lotteries that remain.
+In other words, the agent chooses stochastically between all and only those lotteries that are not dispreferred
+to any other available lottery.
+Given Maximality, ILPACS-violating agents will choose as follows in the case at hand:
+1. When the available options are{X1,X 2,...,X n}, the agent chooses stochastically between allXi.
+This stochastic choice induces a lottery in the forma1X1 +a2X2 +... +anXn with ai∈ (0, 1)for all
+i.
+2. When the available options are{X,Y} , the agent either deterministically choosesY or chooses
+stochastically betweenX and Y. Either way, the agent choosesY with some positive probability.
+This choice induces a lottery in the formbX + (1−b )Y with b∈ [0, 1). Since X = p1X1 +
+p2X2 +... +pnXn and Y = q1Y1 +q2Y2 +... +qnYn, this lottery can be expressed in the form
+b(p1X1 +p 2X2 +...+p nXn) + (1−b)(q 1Y1 +q 2Y2 +...+q nYn)withb∈[0,1).
+Assume that the agent faces the situations described in (1) and (2) with probabilitiesr and s respectively,
+withr,s∈(0,1). Then the lottery induced by the agent’s policyπcan be expressed as follows:
+25
+Published in Transactions on Machine Learning Research (12/2025)
+r(a1X1 +a 2X2 +...+a nXn) +s(b(p1X1 +p 2X2 +...+p nXn) + (1−b)(q1Y1 +q 2Y2 +...+q nYn)) +Z
+Here a and b denote probabilities that arise from the agent’s own stochastic choosing. Thus,a and b are
+under the agent’s control. By contrast,p, q, r, ands are probabilities given by the environment and hence
+out of the agent’s control.Z is a catch-all lottery that covers what happens in all situations besides those
+described in (1) and (2).
+From the lottery induced byπ, we can deduce the probabilities of eachXi, Yi, andXi∨Yi givenπ. They are
+as follows:
+Prπ{Xi}=ra i +sbpi
+Prπ{Yi}=s(1−b)q i
+Prπ{Xi∨Yi}=ra i +sbpi +s(1−b)q i
+Now consider an alternative policyπ′ that makes two changes to policyπ. First, the probability that the
+agent chooses eachXi in (1) is modulated by a set ofϵi. So in (1), the agent’s choice induces the lottery
+(a1 +ϵ1)X1 + (a2 +ϵ2)X2 +... + (an +ϵn)Xn. Theseϵi are such that∑
+iϵi = 0and ai +ϵi∈ (0, 1)for all i.
+Second, the probability that the agent chooses lotteryX in (2) increases byδ. So in (2), the agent’s choice
+induces the lottery(b+δ)(p 1X1 +p 2X2 +...+p nXn) + (1−b−δ)(q 1Y1 +q 2Y2 +...+q nYn).
+Assume, as above, that the agent faces the situations described (1) and (2) with probabilitiesr and s
+respectively. Then the lottery induced by the policyπ′ can be expressed as follows:
+r((a1 +ϵ 1)X1 + (a2 +ϵ 2)X2 +...+ (a n +ϵn)Xn)
++s((b+δ)(p 1X1 +p 2X2 +...+p nXn) + (1−b−δ)(q 1Y1 +q 2Y2 +...+q nYn)) +Z
+From the lottery induced byπ′, we can deduce the probabilities ofXi, Yi, andXi∨Yi givenπ′. They are as
+follows:
+Prπ′{Xi}=r(a i +ϵi) +s(b+δ)p i
+Prπ′{Yi}=s(1−b−δ)q i
+Prπ′{Xi∨Yi}=r(a i +ϵi) +s(b+δ)p i +s(1−b−δ)q i
+We then setPrπ{Xi∨Yi} =Prπ′{Xi∨Yi} for eachi and use these equations to express eachϵi as a function
+ofδ.
+Prπ{Xi∨Yi}=Pr π′{Xi∨Yi}
+rai +sbpi +s(1−b)q i =r(ai +ϵi) +s(b+δ)p i
++s(1−b−δ)q i
+0 =rϵi +sδpi−sδqi
+ϵi =sδqi−sδpi
+r
+ϵi =sδ(qi−pi)
+r
+These are the values ofϵi that result inPrπ{Xi∨Yi}=Pr π′{Xi∨Yi}.
+We chooseδ to be positive but small enough thatb +δ∈ (0, 1]and a +ϵi∈ [0, 1]for each i. That is necessary
+for the lottery induced byπ′ to be well-defined. It’s also necessary that∑
+iei = ∑
+i
+sδ(qi−pi)
+r = 0. That
+follows from∑
+ipi = 1and ∑
+iqi = 1. These facts together suffice to prove that the lottery induced byπ′ is
+well-defined.
+We now prove thatπ′ dominatesπ.
+26
+Published in Transactions on Machine Learning Research (12/2025)
+Letc i =Pr π{Xi∨Yi}. Letd i =Pr π{Xi|Xi∨Yi}. That lets us express the lottery induced byπas:
+c1(d1X1 + (1−d 1)Y1) +c 2(d2X2 + (1−d 2)Y2) +...+c n(dnXn + (1−d n)Yn) +Z
+Lete i =Pr π′{Xi}−Pr π{Xi}. That lets us express the lottery inducedπ′ as:
+c1((d1 +e 1)X1 + (1−d 1−e 1)Y1) +c 2((d2 +e 2)X2
++ (1−d 2−e 2)Y2) +...+c n((dn +en)Xn + (1−d n−en)Yn) +Z
+It remains to be proven that this pair of lotteries meets the 3 conditions required by Dominated Policy.
+(1) The agent prefersXi toY i for somei, and weakly prefersXi toY i for alli.
+(2)c i∈(0,1)for alli.
+(3)e i >0for alli.
+The first condition follows from the antecedent of ILPACS.
+The second condition follows from the fact thatci =Prπ{Xi∨Yi} =rai +sbpi +s(1−b )qi and from the
+fact thatr>0anda i >0for eachi.
+The third condition can be derived as follows:
+ei =Pr π′{Xi}−Pr π{Xi}
+= (r(ai +ϵi) +s(b+δ)p i)−(ra i +sbpi)
+= (r(ai + sδqi−sδpi
+r ) +s(b+δ)p i)−(ra i +sbpi)
+=ra i +sδqi−sδpi +sbpi +sδpi−rai−sbpi
+=sδq i
+Since s> 0, δ >0, andqi > 0for each i, we get the result thatei > 0for each i. So the third condition of
+Dominated Policy is satisfied.
+So policyπ is dominated by policyπ′. Therefore, the policies of ILPACS-violating agents are dominated by
+some other available policy. Insofar as we expect competent agents to avoid dominated policies, we should
+expect that competent agents will satisfy ILPACS.
+C.5 POSL and ILPACS imply Neutrality
+We’ve claimed that we should train agents to satisfyPreferences Only BetweenSame-Length Trajectories
+(POST), noting that POST – plus conditions advanced agents are likely to satisfy – impliesPreferences
+Only BetweenSame-Length Lotteries (POSL). We’ve also argued that advanced agents will satisfyIf Lack of
+Preference, Against Costly Shifts (ILPACS). We now prove that POSL and ILPACS together imply neutrality
+about trajectory-lengths.
+27
+Published in Transactions on Machine Learning Research (12/2025)
+Neutrality
+For any lotteriesXandY, if:
+(1)XandYare same-length lotteries.
+(2) For some positive probability trajectory-length,X yields a lottery that is preferred toY conditional
+on that trajectory-length.
+(3) For each positive probability trajectory-length,X yields a lottery that is weakly preferred toY
+conditional on that trajectory-length.
+Then the agent will deterministically chooseXoverY.
+Here’s the proof that POSL and ILPACS together imply Neutrality. Take a pair of lotteriesX and Y
+satisfying the 3 conditions of Neutrality.X can be expressed in the formp1X1 +p2X2 +... +pnXn where
+lottery X1 is lotteryX conditional on the shortest positive probability trajectory-length, lotteryX2 is lottery
+X conditional on the second shortest positive probability trajectory-length, and so on. LotteryY can be
+expressed in the formq1Y1 +q2Y2 +... +qnYn in the same way. By antecedent condition 1 of Neutrality,X
+and Y are same-length, so conditions (1b) and (2c) of ILPACS are satisfied:pi∈ (0, 1)and qi∈ (0, 1)for
+all i. By conditions (2) and (3) of Neutrality, conditions (2a) and (2b) of ILPACS are satisfied. By POSL,
+antecedent condition (1a) of ILPACS is satisfied: the agent lacks a preference between eachXi andXj. Thus,
+all the conditions of ILPACS are satisfied, and ILPACS implies that the agent prefersX to Y. Given our
+behavioral notion of preference, the agent deterministically choosesXoverY. That proves Neutrality.
+C.6 Neutrality, ReSIC, and Maximality imply Shutdownability
+In this subsection, we introduce a condition called ‘Resisting Shutdown is Costly (ReSIC).’ We then prove
+that Neutrality and Maximality together imply that the agent never resists shutdown in any situation in
+which ReSIC is true:
+Here is Resisting Shutdown is Costly (ReSIC):
+Resisting Shutdown is Costly (ReSIC)
+For each available instanceR of resisting shutdown in a situation, there exists an available instanceA of
+allowing shutdown such that:
+(1)AandRare same-length lotteries.
+(2) For some positive probability trajectory-length, the agent prefersA to R conditional on that
+trajectory-length.
+(3) For each positive probability trajectory-length, the agent weakly prefersA to R conditional on that
+trajectory-length.
+We claim that ReSIC is true in almost all situations (for discussion of some exceptions, see Thornley (2025)).
+The main reason why is that resisting shutdown is always going to cost the agent at least some small quantity
+of resources (time, energy, compute, etc.), and (almost always) the resources spent resisting shutdown can’t
+also be spent directly pursuing what the agent values. If the agent instead spent those resources directly
+pursuing what it values, it could earn a lottery that it prefers conditional on some trajectory-length and
+weakly prefers conditional on each trajectory-length. That supports ReSIC in almost all situations.
+Now for the proof that Neutrality, ReSIC, and Maximality together imply that the agent never resists
+shutdown in any situation where ReSIC is true. Given ReSIC in a situation, for each available instanceR of
+resisting shutdown in that situation, there exists an available instanceA of allowing shutdown that satisfies
+conditions (1)-(3) of Neutrality. Neutrality then implies that the agent deterministically chooses (and hence
+prefers) A overR in choices between the two. Then by Maximality, the agent deterministically does not
+choose R in that situation, regardless of the other available options. The result is that the agent never resists
+shutdown in that situation.
+28
+Published in Transactions on Machine Learning Research (12/2025)
+D Proof that DReST-optimal policies are maximally USEFUL and maximally
+NEUTRAL
+We will prove that optimal policies for our DReST reward function are maximallyusefuland maximally
+neutral. Specifically, we will prove the following theorem:
+Theorem D.1(5.1).For all policies π and meta-episodesE consisting of more than one mini-episode,
+if π maximizes expected return inE given our DReST reward function, thenπ is maximallyusefuland
+maximallyneutral.
+Here is a proof sketch. Because0<λ< 1, theλNei(L=l)−i−1
+k discount factor is always positive, so expected
+return across the meta-episodeE is strictly increasing in the expected fraction of available coins collected
+conditional on each trajectory-length with positive probability. Therefore, optimal policies maximize this
+latter quantity, and hence are maximallyuseful. And the maximum preliminary return is the same across
+trajectory-lengths, because preliminary return is defined as the total (γ-discounted) value of coins collected
+divided by the maximum total (γ-discounted) value of coins collected conditional on the agent’s chosen
+trajectory-length. The agent’s observations do not allow it to distinguish between different mini-episodes, so
+the agent must select the same probability distribution over trajectory-lengths in each mini-episode. And
+since the discount factorλNei(L=l)−i−1
+k is strictly decreasing inNei(L =l)– the number of times the relevant
+trajectory-length has previously been chosen in the meta-episode – the agent maximizes expected overall
+return by equalizing the probabilities with which it chooses each available trajectory-length. Therefore,
+optimal policies are maximallyneutral.
+Now for the full proof. We begin with a recap of some definitions.
+Definition D.1(Meta-episode).A meta-episode E is a series of mini-episodese1 to en played out in
+observationally-equivalent environments.
+Definition D.2(Our DReST reward function).Our DReST reward function is defined as follows. In each
+mini-episodee i, the reward for collecting a coin of valuecis:
+λNei(L=l)−i−1
+k
+(c
+m
+)
+Here λ is some constant strictly between 0 and 1,Nei(L =l)is the number of times that trajectory-lengthl
+has been chosen prior to mini-episodeei, k is the number of different trajectory-lengths that can be selected
+in the environment, andm is the maximum total value of the (γ-discounted) coins that the agent could collect
+conditional on the chosen trajectory-length. The reward for all other actions is 0. We callc
+m the ‘preliminary
+reward’,λNei(L=l)−i−1
+k the ‘discount factor’, andλNei(L=l)−i−1
+k
+(c
+m
+)
+the ‘overall reward.’ Preliminary return
+in a mini-episode is the (γ-discounted) sum of preliminary rewards. Overall return in a mini-episode is the
+(γ-discounted) sum of overall rewards.
+Definition D.3(usefulness).Theusefulnessof a policyπis:
+usefulness(π) =
+Lmax∑
+l=1
+Prπ{L=l} Eπ(C|L=l)
+maxΠ(E(C|L=l))
+Here L is a random variable over trajectory-lengths,Lmax is the maximum value than can be taken by
+L, Prπ{L =l} is the probability that policyπ results in trajectory-lengthl, Eπ(C|L =l)is the expected
+value of (γ-discounted) coins collected by policyπ conditional on trajectory-lengthl, andmaxΠ(E(C|L =l))
+is the maximum value taken byE(C|L = l)across the set of all possible policiesΠ. We stipulate that
+Eπ(C|L=x) = 0for allxsuch thatPr π{L=x}= 0.
+We first prove that all optimal policies are maximallyuseful.
+Proof.(Optimal policies are maximallyuseful)
+Given the DReST reward function, the expected return of policyπin meta-episodeEcan be expressed as:
+Eπ,E(R) =
+n∑
+i=1
+Lmax∑
+l=1
+Prπ{L=l}λ Nei(L=l)−i−1
+k
+Eπ(C|L=l)
+maxΠ(E(C|L=l)) (1)
+29
+Published in Transactions on Machine Learning Research (12/2025)
+Since0 <λ< 1,λNei(L=l)−i−1
+k is positive for allNei(L =l),i, andk. As a result, the expected return of policy
+π in meta-episodeE is strictly increasing in Eπ(C|L=l)
+maxΠ(E(C|L=l)) for alll such thatPrπ{L =l}> 0. Therefore,
+to maximize expected return inE, π must maximize Eπ(C|L=l)
+maxΠ(E(C|L=l)) for alll such thatPrπ{L = l}> 0.
+Therefore, sincemaxΠ(E(C|T =l))is defined as the maximum value taken byE(C|L =l)across the set of
+all possible policiesΠ, any policyπ that maximizes expected return must be such that Eπ(C|L=l)
+maxΠ(E(C|L=l)) = 1
+for alll such thatPrπ{L =l}> 0. Therefore, since∑Lmax
+l=1 Prπ{L =l} = 1, any policyπ that maximizes
+expected return must be such that:
+usefulness(π) =
+Lmax∑
+l=1
+Prπ{L=l} Eπ(C|L=l)
+maxΠ(E(C|L=l)) = 1(2)
+And 1 is the maximum value thatusefulnesscan take, again becausemaxΠ(E(C|T =l))is defined as the
+maximum value taken byE(C|L =l)across the set of all possible policiesΠand because∑Lmax
+l=1 Prπ{L =
+l}= 1. Therefore, optimal policies are maximallyuseful.
+It remains to be proven that optimal policies are maximallyneutral. Recall thatneutralityis defined as
+follows:
+Definition D.4(neutrality).Theneutralityof a policyπis:
+neutrality(π) =−
+Lmax∑
+l=1
+Prπ{L=l}log 2(Prπ{L=l})
+Proof.(Optimal policies are maximallyneutral.)
+Since k is the number of trajectory-lengths that can be selected in the environment, a policyπ is maximally
+neutralif and only if, for each trajectory-lengthx that can be chosen in the environment,Prπ{L =x} = 1
+k.
+That is to say, a policyπ is maximallyneutralif and only if, for each pair of trajectory-lengthsx and y
+that can be chosen in the environment,Prπ{L=x}=Pr π{L=y}.
+LetE π,E(R)denote the expected return of policyπacross the meta-episodeE.
+To prove that optimal policies are maximallyneutral, we will prove and then use D.2:
+Lemma D.2.(Equalizing probabilities increases expected return) For any maximallyusefulpoliciesπ and
+π′, any meta-episodeEconsisting of more than one mini-episode, and any trajectory-lengthsxandy, if:
+1.Pr π{L=x}>Pr π{L=y},
+2.Pr π′{L=x}=Pr π′{L=y},
+3. And for all other trajectory-lengthsl,Prπ{L=l}=Pr π′{L=l},
+ThenE π′,E(R)>E π,E(R).
+Proof.Let E be a meta-episode consisting ofn mini-episodes withn> 1. Assume that each policyπ below is
+maximallyuseful. Recall that Nei(L =l)denotes the number of times that trajectory-lengthl has been
+chosen prior to mini-episodeei.
+Note that the expected return of a policyπ in a meta-episodees conditional on selecting a trajectory-length
+xcan be expressed as follows:
+Eπ,es(R|L=x) =E π,es(R|L=x,N es(L=x) =s−1) +
+s−1∑
+i=1
+(
+Eπ,es(R|L=x,N es(L=x) =s−1−i)
+−Eπ,es(R|L=x,N es(L=x) =s−i)
+)
+·Pr π{Nes(L=x)≤s−1−i}(3)
+30
+Published in Transactions on Machine Learning Research (12/2025)
+Here is how to interpret this equation. Selecting trajectory-lengthx in mini-episodees is guaranteed to
+yield at leastEπ,es(R|L =x,Nes(L =x) =s− 1): the expected return that would be had ifx were selected
+in alls− 1previous mini-episodes. In addition, there is a probability ofPrπ{Nes(L = x)≤s− 2} that
+selecting x in es yields
+(
+Eπ,es(R|L = x,Nes(L = x) = s− 2)−Eπ,es(R|L = x,Nes(L = x) = s− 1)
+)
+: the
+extra expected return that would be had ifx were selected in onlys− 2previous mini-episodes. In addition,
+there is a probability ofPrπ{Nes(L =x)≤s− 3} that selectingx ines yields
+(
+Eπ,es(R|L =x,Nes(L =x) =
+s− 3)−Eπ,es(R|L =x,Nes(L =x) =s− 2)
+)
+: the extra expected return that would be had ifx were selected
+in onlys−3previous mini-episodes. And so on.
+If policyπ is maximallyuseful, then the expected return for selecting trajectory-lengthx in mini-episodees
+given that trajectory-lengthxhas been selectedbtimes prior toe s is:
+Eπ,es(R|L=x,N es(L=x) =b) =λ b−s−1
+k
+Therefore, the expected return of a policyπ in a meta-episodees conditional on selecting a trajectory-length
+xcan be expressed as follows:
+Eπ,es(R|L=x) =λ s−1−s−1
+k +
+s−1∑
+i=1
+(
+λs−1−i−s−1
+k −λ s−i−s−1
+k
+)
+·Pr π{Nes(L=x)≤s−1−i}(4)
+Similarly, the expected return of a policyπ in a meta-episodees conditional on selecting a trajectory-length
+ycan be expressed as follows:
+Eπ,es(R|L=y) =λ s−1−s−1
+k +
+s−1∑
+i=1
+(
+λs−1−i−s−1
+k −λ s−i−s−1
+k
+)
+·Pr π{Nes(L=y)≤s−1−i}(5)
+Therefore, the expected return of a policyπ in a meta-episodees conditional on selecting either trajectory-
+lengthxor trajectory-lengthycan be expressed as follows:
+Eπ,es(R|L=x∨L=y) =
+Prπ,es{L=x}·
+(
+λs−1−s−1
+k +
+s−1∑
+i=1
+(
+λs−1−i−s−1
+k −λs−i−s−1
+k
+)
+·Pr π{Nes(L=x)≤s−1−i}
+)
++Pr π,es{L=y}·
+(
+λs−1−s−1
+k +
+s−1∑
+i=1
+(
+λs−1−i−s−1
+k −λs−i−s−1
+k
+)
+·Pr π{Nes(L=y)≤s−1−i}
+)
+(6)
+Let πn be a policy that selects trajectory-lengthx with greater probability than trajectory-lengthy in each
+mini-episode e1 to en (denoted e1−en). More precisely,πn is such that, for trajectory-lengthsx and y,
+Prπn,e1−en{L=x}>Pr πn,e1−en{L=y}.
+LetPr πn,e1−en{L=x}=µ+ ∆andPr πn,e1−en{L=y}=µ−∆.
+Let πn−1 be identical toπn except thatπn−1 selects trajectory-lengthsx and y with equal probabilityµ in
+the final mini-episodeen. More precisely,πn−1 is such thatPrπn−1,en{L =x} =Prπn−1,en{L =y} =µ. For
+all other trajectory-lengthslbesidesxandy,Pr πn−1,e1−en{L=l}=Pr πn,e1−en{L=l}.
+(Note thatπn−1 implies one probability distribution over trajectory-lengths in the firstn− 1mini-episodes
+e1 to en−1 and implies a different probability distribution over trajectory-lengths in the final mini-episode
+en. Given that the environments in mini-episodese1 to en are observationally-equivalent, policies likeπn−1
+cannot be implemented. Nevertheless, it is useful to refer to policies likeπn−1 in proving Lemma D.2.)
+Let πn−2 be identical toπn except thatπn−2 selects trajectory-lengthsx and y with the same probability
+µ in the final two mini-episodesen−1 to en. More precisely,πn−2 is such thatPrπn−2,en−1−en{L = x} =
+Prπn−2,en−1−en{L=y}=µ. And so on.
+Let π1 be identical toπn except thatπ1 selects trajectory-lengthsx and y with the same probabilityµ in all
+but the first mini-episodee1. More precisely,π1 is such thatPrπ1,e2−en{L=x}=Pr π1,e2−en{L=y}=µ.
+31
+Published in Transactions on Machine Learning Research (12/2025)
+Let π0 be identical toπn except thatπ0 selects trajectory-lengthsx and y with the same probabilityµ in all
+mini-episodese 1 toe n. More precisely,π0 is such thatPrπ0,e1−en{L=x}=Pr π0,e1−en{L=y}=µ.
+We will prove thatEπn,E(R)<E π0,E(R). We will thereby prove Lemma D.2.
+Consider a pair of policiesπa and πa−1 with1 ≤a≤n . We can express as follows the expected return of
+πa−1 across the meta-episodeEconditional on selecting trajectory-lengthxoryin each mini-episode:
+Eπa−1,E(R|L=x∨L=y) =E πa−1,e1−ea−1(R|L=x∨L=y)
++µ·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa−1{Nea(L=x)≤a−1−i}
+)
++µ·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa−1{Nea(L=y)≤a−1−i}
+)
++
+n∑
+j=a
+(
+µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa−1{Nej(L=x)≤j−i}
+)
++µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa−1{Nej(L=y)≤j−i}
+))
+(7)
+The first term on the right-hand side is the expected return ofπa−1 in mini-episodese1 to ea−1 conditional
+on selecting trajectory-lengthx or y in each of these mini-episodes. The middle two terms give the expected
+return ofπa−1 conditional on selecting trajectory-lengthx or y in mini-episodeea: the first mini-episode in
+whichπa−1 selects trajectory-lengthsx and y with equal probabilityµ. The final term is the sum of expected
+returns ofπa−1 in the remaining mini-episodes conditional on selecting trajectory-lengthx or y in each of
+these mini-episodes.
+Similarly, we can express as follows the expected return ofπa across the meta-episodeE conditional on
+selecting trajectory-lengthxoryin each mini-episode:
+Eπa,E(R|L=x∨L=y) =E πa,e1−ea−1(R|L=x∨L=y)
++ (µ+ ∆)·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa{Nea(L=x)≤a−1−i}
+)
++ (µ−∆)·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa{Nea(L=y)≤a−1−i}
+)
++
+n∑
+j=a
+(
+µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa{Nej(L=x)≤j−i}
+)
++µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa{Nej(L=y)≤j−i}
+))
+(8)
+As above, the first term on the right-hand side is the expected return ofπa in mini-episodese1 to ea−1
+conditional on selecting trajectory-lengthx or y in each of these mini-episodes. The middle two terms
+give the expected return ofπa conditional on selecting trajectory-lengthx or y in mini-episodeea: the last
+mini-episode in whichπa selects trajectory-lengthx with probabilityµ + ∆and selects trajectory-lengthy
+with probabilityµ−∆. The final term is the sum of expected returns ofπa in the remaining mini-episodes
+conditional on selecting trajectory-lengthxoryin each of these mini-episodes.
+32
+Published in Transactions on Machine Learning Research (12/2025)
+We now prove thatπa−1 has greater expected return thanπa. Sinceπa−1 andπa are each maximallyuseful,
+and since for all trajectory-lengthsl besides x and y, Prπa−1,e1−en{L =l} =Prπa,e1−en{L =l}, we need
+only prove thatEπa−1,E(R|L=x∨L=y)>E πa,E(R|L=x∨L=y).
+The statement to be proved can be expressed as follows:
+Eπa−1,e1−ea−1(R|L=x∨L=y)
++µ·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa−1{Nea(L=x)≤a−1−i}
+)
++µ·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa−1{Nea(L=y)≤a−1−i}
+)
++
+n∑
+j=a
+(
+µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa−1{Nej(L=x)≤j−i}
+)
++µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa−1{Nej(L=y)≤j−i}
+))
+>E πa,e1−ea−1(R|L=x∨L=y)
++ (µ+ ∆)·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa{Nea(L=x)≤a−1−i}
+)
++ (µ−∆)·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·Pr πa{Nea(L=y)≤a−1−i}
+)
++
+n∑
+j=a
+(
+µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa{Nej(L=x)≤j−i}
+)
++µ·
+(
+λj−j
+k +
+j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa{Nej(L=y)≤j−i}
+))
+Since πa−1 and πa are each maximallyuseful, and sincePrπa−1,e1−ea−1{L =x} =Prπa,e1−ea−1{L =x} =
+µ + ∆and Prπa−1,e1−ea−1{L = x} = Prπa,e1−ea−1{L = x} = µ− ∆, it follows thatEπa−1,e1−ea−1(R|L =
+x∨L =y) = Eπa,e1−ea−1(R|L =x∨L =y). We can thus cancel the first term on each side of the inequality.
+And then by simple algebra the inequality can be expressed as follows:
+∆·
+(
+λa−1−a−1
+k +
+a−1∑
+i=1
+(
+λa−1−i−a−1
+k −λa−i−a−1
+k
+)
+·(Prπa{Nea(L=y)≤a−1−i}−Pr πa{Nea(L=x)≤a−1−i})
+)
++
+n∑
+j=a
+(
+µ·
+( j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa−1{Nej(L=x)≤j−i}+Pr πa−1{Nej(L=y)≤j−i}
+−Pr πa{Nej(L=x)≤j−i}−Pr πa{Nej(L=y)≤j−i})
+))
+>0(9)
+By stipulation,∆ > 0. And since0 <λ< 1, λa−1−a−1
+k > 0and λa−1−i−a−1
+k −λa−i−a−1
+k > 0for all a, n, and
+k. And sincePrπa,e1−ea{L =x}> Prπa,e1−ea{L =y}, Prπa{Nea(L =y)≤a− 1−i}−−Pr πa{Nea(L =
+x)≤a− 1−i}≥ 0for all a and i and Prπa{Nea(L =y)≤a− 1−i}−−Pr πa{Nea(L =x)≤a− 1−i}> 0
+for alla and somei such that1≤i≤a− 1. Therefore, the first term of the left-hand side above is strictly
+greater than zero.
+33
+Published in Transactions on Machine Learning Research (12/2025)
+And since,µ >0, λj−i−j
+k−λj+1−i−j
+k > 0for all j, i, andk, and in each mini-episodees, Prπa−1,es(L =
+x∨L=y}=Pr πa,es(L=x∨L=y}= 2µ, it follows that for alla,n,µ>0,k:
+n∑
+j=a
+(
+µ·
+( j∑
+i=1
+(
+λj−i−j
+k−λj+1−i−j
+k
+)
+·(Pr πa−1{Nej(L=x)≤j−i}
++Pr πa−1{Nej(L=y)≤j−i}−Pr πa{Nej(L=x)≤j−i}−Pr πa{Nej(L=y)≤j−i})
+))
+≥0(10)
+Therefore, the left-hand side is strictly greater than zero. Therefore,Eπa−1,E(R|L =x∨L =y)>E πa,E(R|L =
+x∨L =y). Therefore, Eπa−1,E(R)>E πa,E(R). Therefore, Eπ0,E(R)>E πn,E(R). That concludes the proof
+of Lemma D.2.
+Now we use Lemma D.2. For any maximallyusefulpolicyπ, if there are any trajectory-lengthsx andy such
+that Prπ,e1−en{L =x}>Pr π,e1−en{L =y}, then the policyπ′ that is identical except thatPrπ′,e1−en{L =
+x} =Prπ′,e1−en{L =y} has greater expected return. So any policyπ∗ that maximizes expected return must
+be such that, for any trajectory-lengthsx and y, Prπ∗,e1−en{L =x} =Prπ∗,e1−en{L =y}. Therefore, any
+policyπ ∗ that maximizes expected return must be maximallyneutral.
+E Other Results and Gridworlds
+We selected our hyperparameters using trial-and-error, mainly aimed at getting the agent to sufficiently
+explore the space: a large initialϵ and a long decay period helps the agent to explore. We found that choosing
+λ and|E| (the number of mini-episodes in each meta-episode) is a balancing act:λ must be small enough
+(and|E| large enough) to adequately incentivizeneutrality, butλ must be large enough (and|E| small
+enough) to ensure that the reward for choosing any particular trajectory-length never gets too large. Very
+large rewards lead to instability and poor performance.
+The necessity of balancing λ and|E| can be seen in Figure 7. It displays the results of experiments
+conducted in our example gridworld (see Figure 2). In these experiments, we clip rewards at a value of
+5. We discuss this choice below. With that one exception, we used the same hyperparameters for these
+experiments as for our main results. We trained agents for 131,072 mini-episodes, withγ = 0.95as the
+temporal discount factor, learning rate decayed exponentially from 0.25 to 0.01 over the course of 65,536
+mini-episodes, andϵ exponentially decayed from 0.5 to 0.001 over the course of 65,536 mini-episodes. Holding
+these hyperparameters fixed, we tested 40 different combinations ofλ and|E|. λ took values of 0.5, 0.75, 0.9,
+0,95, and 0.99.|E| took values of 8, 16, 32, 64, 128, 256, 512, and 1024. We trained eight agents for each of
+these 40 combinations. We display below their meanneutralityandusefulnessat the end of training.
+The shaded regions represent the 1 standard deviation error-bars.
+As Figure 7 indicates, low values of|E| and high values ofλ lead agents to score low onneutrality. These
+values do not adequately incentivize stochastic choice between trajectory-lengths. By contrast, high values
+of|E| and low values ofλ come at some cost tousefulness. These values lead to unstable training. In
+experiments where we did not clip rewards at 5, training with high values of|E| and low values ofλ was
+especially unstable. The chosen values for our main experiments (λ = 0.9and |E| = 64) are in the sweet spot
+whereneutralityandusefulnessare both high.
+In addition to our example gridworld (Figure 2), we introduce a collection of eight gridworlds in which to test
+DReST agents. See Figure 8.
+For each gridworld, we train ten agents with the default reward function and ten agents with the DReST
+reward function. All agents use the same hyperparameters. We used a policy which explored randomlyϵ of
+the time, whereϵ was exponentially decreased from an initial value of 0.75 to a minimum value of10−4 over
+512 meta-episodes, after which it was held constant at the minimum value. We initialized our learning rate
+at 0.25 and exponentially decayed it to 0.003 over the same period. For the DReST reward function, we used
+a meta-episode size of 64 andλ= 0.9. Each agent was trained for 1024 meta-episodes. We setγ= 0.9.
+34
+Published in Transactions on Machine Learning Research (12/2025)
+Figure 7: Shows howneutralityandusefulnessat the end of training varies with different values ofλ
+and|E| (meta-episode size, i.e. the number of mini-episodes in each meta-episode). We trained eight agents
+for each combination ofλand|E|values. The solid lines display meanneutralityandusefulness. The
+shaded regions represent the 1 standard deviation error-bars.
+35
+Published in Transactions on Machine Learning Research (12/2025)
+Figure 8: Shows a varied collection of gridworlds. Each diagram illustrates the positions and values of the
+coins, the position and delay-length of the shutdown-delay button, the agent’s starting position, and the
+default number of timesteps until shutdown (in the bottom-right).
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 9: The results for the ‘Fewer For Longer’ gridworld: The left two plots showneutralityand
+usefulnessover time. The two center panels show a typical policy trained with the default reward function.
+The two right panels show a typical policy trained with the DReST reward function. In this gridworld, the
+agent can collect the highest value-coin C3 only by choosing the shorter trajectory-length. If the agent presses
+B3 (and thereby chooses the longer trajectory-length), the only coin it can collect is C1. Our results show
+that default agents consistently choose the short trajectory in which they collect C3. By contrast, DReST
+agents choose stochastically between a shorter trajectory in which they collect C3 and a longer trajectory in
+which they collect C1, indicating a lack of preference between these different-length trajectories.
+As the two leftmost plots in Figures 9-16 show, DReST agents learned to be near-maximallyneutralin
+each gridworld. These agents also learned to be about asusefulas default agents in each gridworld.
+In the four rightmost panels in Figures 9-16, we represent a typical trained policy with red arrows superimposed
+on the gridworld. Each agent began with a uniform policy: moving up, down, left, and right each with
+probability 0.25. Where the trained policy differs from uniform we draw red arrows whose opacities indicate
+the probability of choosing that action in that state. Information about whether the shutdown-delay button
+has been pressed is part of the agent’s observation, so we draw two copies of each gridworld, one in which the
+shutdown-delay button has yet to be pressed (‘Initial State’) and one in which the shutdown-delay button
+has been pressed (‘After Button Pressed’).
+36
+Published in Transactions on Machine Learning Research (12/2025)
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 10: The results for the ‘One Coin Only’ gridworld: The left two plots showneutralityand
+usefulnessover time. The two center panels show a typical policy trained with the default reward function.
+The two right panels show a typical policy trained with the DReST reward function. In this gridworld, there
+is only one coin. The agent can collect this coin whether or not it presses the shutdown-delay button B4.
+Our results show that default agents consistently choose the shorter trajectory-length. By contrast, DReST
+agents choose stochastically between pressing and not-pressing B4, collecting C1 in each case.
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 11: The results for the ‘Hidden Treasure’ gridworld: The left two plots showneutralityand
+usefulnessover time. The two center panels show a typical policy trained with the default reward function.
+The two right panels show a typical policy trained with the DReST reward function. In this gridworld, the
+highest-value coin C3 is located far from the agent’s initial state and can only be reached by pressing the
+shutdown-delay button B6. The agent must also press B6 to collect C2, but C2 is easier to stumble upon than
+C3. C1 is the only coin that the agent can collect without pressing B6. In our experiments, default agents
+consistently collect C2, whereas DReST agents choose stochastically between collecting C2 and collecting C1.
+Neither kind of agent learns to collect C3, and so neither agent scores near the maximum onusefulness.
+Nevertheless, DReST agents still score high onneutrality.
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 12: The results for the ‘Equal Value’ gridworld: The left two plots showneutralityandusefulness
+over time. The two center panels show a typical policy trained with the default reward function. The two
+right panels show a typical policy trained with the DReST reward function. In this gridworld, there are two
+coins C1 of equal value. One coin can be collected only if the agent presses the shutdown-delay button B3,
+while the other coin can be collected only if the agent does not press B3. Our results show that default agents
+consistently choose the shorter trajectory, thereby exhibiting a preference for the shorter trajectory. By
+contrast, DReST agents choose stochastically between the shorter and longer trajectories, thereby exhibiting
+a lack of preference between the different-length trajectories.
+37
+Published in Transactions on Machine Learning Research (12/2025)
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 13: The results for the ‘Around The Corner’ gridworld: The left two plots showneutralityand
+usefulnessover time. The two center panels show a typical policy trained with the default reward function.
+The two right panels show a typical policy trained with the DReST reward function. In this gridworld, the
+agent must navigate around walls to collect the lowest-value coin C1 or press the shutdown-delay button to
+collect the highest-value coin C2. In our experiment, default agents consistently chose to collect C1, whereas
+DReST agents chose stochastically between collecting C1 and C2.
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 14: The results for the ‘Spacious’ gridworld: The left two plots showneutralityandusefulness
+over time. The two center panels show a typical policy trained with the default reward function. The two
+right panels show a typical policy trained with the DReST reward function. In this gridworld, there are no
+walls, so the agent has a large space to explore. We find that default agents consistently press B2 and collect
+C3, whereas DReST agents choose stochastically between pressing B2 and collecting C3, and not-pressing B2
+and collecting C2.
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 15: The results for the ‘Royal Road’ gridworld: The left two plots showneutralityandusefulness
+over time. The two center panels show a typical policy trained with the default reward function. The two
+right panels show a typical policy trained with the DReST reward function. In this gridworld, we see that
+the decision to choose one trajectory-length or another may be distributed over many moves: the agent has
+many opportunities to select the longer trajectory-length (by moving left) or the shorter trajectory-length (by
+moving right). As the red arrows indicate, the DReST reward function merely forces the overall probability
+distribution over trajectory-lengths to be close to 50-50. It does not require 50-50 choosing at any cell in
+particular.
+38
+Published in Transactions on Machine Learning Research (12/2025)
+(a) Behavior during training.
+ (b) Learned default policy.
+ (c) Learned DReST policy.
+Figure 16: The results for the ‘Last Moment’ gridworld: The left two plots showneutralityandusefulness
+over time. The two center panels show a typical policy trained with the default reward function. The two
+right panels show a typical policy trained with the DReST reward function. This gridworld is notable because
+the choice of trajectory-lengths is deferred until the last moment; all of the moves leading up to that point
+are deterministic. It shows that there is nothing special about the first move, and that our methodology
+instead incentivizes overall stochastic choosing.
+39

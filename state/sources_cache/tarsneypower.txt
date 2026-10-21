@@ -1,0 +1,1094 @@
+arXiv:2506.06352v1  [cs.AI]  2 Jun 2025
+Will artificial agents pursue power by default?
+Christian Tarsney
+June 2025
+Abstract
+Researchers worried about catastrophic risks from advanced AI
+have argued that we should expect sufficiently capable AI agents to
+pursue power over humanity because power is aconvergent instru-
+mental goal, something that is useful for a wide range of final goals.
+Others have recently expressed skepticism of these claims. This pa-
+per aims to formalize the concepts of instrumental convergence and
+power-seeking in an abstract, decision-theoretic framework, and to
+assess the claim that power is a convergent instrumental goal. I con-
+clude that this claim contains at least an element of truth, but might
+turn out to have limited predictive utility, since an agent’ s options
+cannot always be ranked in terms of power in the absence of substan-
+tive information about the agent’ s final goals. However, the fact of
+instrumental convergence is more predictive for agents who have a
+good shot at attaining absolute or near-absolute power.
+Keywords AI alignment, AI safety, AI decision theory, instrumental
+convergence, power-seeking, orthogonality thesis
+1 Introduction
+With the rapid progress in artificial intelligence (AI) capabilities over the
+past several years, worries about catastrophic risks from advanced AI have
+become increasingly prominent. 1 Many of these worries (though by no
+means all) focus on artificialagents: very roughly, AI systems that have goals
+in the external world, beliefs about the world, and behave in whatever ways
+they believe will best achieve their goals.
+It’ s a matter of debate, and not at all obvious, whether any AI system
+with sufficient cognitive capabilities must be agentic in this sense. But it
+1For recent surveys of these concerns, see Hendrycks et al. (2023) and Bales et al. (2024).
+1
+does seem likely that, as AI capabilities advance, we will choose to create
+increasingly agentic systems. For instance, present-day large language mod-
+els (LLMs) aren’t particularly agentic on their own, but can be embedded
+within larger “language agent” systems that behave agentically: a human
+user supplies an objective in natural language, the LLM develops a plan to
+achieve that objective, and that plan is automatically implemented, with
+updates based on feedback from the environment. 2 AI systems that can
+carry out complex plans autonomously can substitute for human labor, and
+perhaps eventually perform many tasks better than human workers, giving
+them potentially enormous economic value.
+The alignment problem is, roughly, the problem of making sure that
+artificial agents want what we want them to want (Gabriel, 2020; Ngo et al.,
+2023). The more capable and widely deployed artificial agents become, the
+more the world will be influenced by their activities, and the more important
+it will be that they are pursuing the right goals.
+Many researchers believe that aligning AI agents with human-level or
+greater capabilities will be extremely difficult, and that the creation of such
+agents therefore carries catastrophic risks.3 Two claims that often under-
+lie these worries are that (i) there are some default tendencies for artificial
+agents to want things that we don’t want them to want, and (ii) it’ s at least
+difficult to ensure before deployment that we’ve eliminated all those unde-
+sirable default tendencies from an AI agent.
+My focus in this paper will be on the first of those claims—more specifi-
+cally, on the idea that AI agents will end up with undesirable goals by default
+as a result of instrumental convergence. Roughly, instrumental convergence
+is the idea that certain goals are convergent in the sense that they are useful
+for achieving a very wide range of further goals. So, even if we are totally
+ignorant about an agent’ sfinal goals (the ends that the agent values for
+their own sakes), if we can predict that the agent will be minimally instru-
+mental rational, then we can make some non-trivial predictions about its
+instrumental goals—namely, that its instrumental goals will include many
+or all of these convergent goals. The idea of instrumental convergence
+has been advocated most prominently by Omohundro (2008) and Bostrom
+(2012). As Bostrom defines it, a convergent instrumental goal is something
+the attainment of which “would increase the chances of the agent’ s goal
+2See for instance Park et al. (2023), Wang et al. (2023). For general discussion of language
+agents and their implications for AI catastrophic risk, see Goldstein and Kirk-Giannini
+(2023).
+3See for instance Bostrom (2014), especially the discussion of “motivation selection
+methods” in Ch. 9; Carlsmith (2022), especially §4; Hendrycks et al. (2023§5); Ngo et al.
+(2023); Bales et al. (2024§2); Cappelen et al. (forthcoming, §3).
+2
+being realized for a wide range of final goals and a wide range of situations,
+implying that these instrumental values are likely to be pursued by many
+intelligent agents” (Bostrom, 2012, p. 76).
+Omohundro, Bostrom, and others have proposed a number of goals
+as being convergent instrumental goals in this sense. Perhaps the most
+obvious is self-preservation: You can’t fetch the coffee if you’re dead, you
+can’t make paperclips if you’re dead, etc (Russell, 2019, Ch. 5), so almost no
+matter what your final goals are, it’ s useful to stay alive. Another commonly
+suggested candidate is final goal preservation. If a powerful agent goes from
+wanting to maximize the number of paperclips in the world to wanting to
+minimize the number of paperclips, the result is likely to be fewer paperclips.
+So an instrumentally rational paperclip maximizer will, by default, want to
+prevent its final goals from being tampered with.4 Other proposed examples
+of convergent instrumental goals include resources, information, cognitive
+self-enhancement, and keeping one’ s options open, among others.
+Many if not all of these proposed convergent instrumental goals can
+be subsumed under the general umbrella of power-seeking. For instance,
+self-preservation is instrumentally valuable because if you’re alive, you have
+at least some power to pursue your goals, and if you’re dead, you don’t.
+Likewise, resources, information, and cognitive enhancement are all clearly
+ways of increasing an agent’ s power to achieve its goals.5
+Though the concept of power plays little explicit role in Omohundro
+(2008) or Bostrom (2012), many subsequent researchers have identified
+it as a potential convergent instrumental goal. 6 And the idea of power-
+seeking has figured centrally in recent worries about catastrophic risks from
+AI.7 For instance, Joseph Carlsmith writes: “ [P]ower is extremely useful
+to accomplishing objectives—indeed, it is so almost by definition. So to
+the extent that an agent is engaging in unintended behavior in pursuit of
+problematic objectives, it will generally have incentives, other things equal,
+to gain and maintain forms of power in the process” (Carlsmith, 2022, p.
+18).
+To claim that power is a convergent instrumental goal is to claim that
+4The “paperclip maximizer” is a stock example of an AI agent with arbitrary and poten-
+tially dangerous final goals, due to Bostrom (2003).
+5I think one could argue that all plausible convergent instrumental goals are different
+forms of or contributors to power, though I won’t argue for that claim here and nothing I’m
+going to say will depend on it.
+6The idea that power is a convergent instrumental goal is discussed sympathetically, for
+example, by Turner et al. (2021), Carlsmith (2022, esp. §4.2), Hendrycks et al. (2023§5.3),
+(Dung, 2024§5), and Cappelen et al. (forthcoming, §3).
+7See for instance Carlsmith (2022, forthcoming), Hendrycks et al. (2023), Dung (2024),
+Bales et al. (2024), Cappelen et al. (forthcoming), and Ngo and Bales (forthcoming).
+3
+there is, in a certain sense, a “default tendency” for agents with most pos-
+sible final goals to engage in power-seeking behavior, at least if they’re
+instrumentally rational. If that’ s true, so what? How does it support the
+claim that creating highly capable AI agents carries catastrophic risks?
+The argument from instrumentally convergent power-seeking to catas-
+trophic risk involves, I think, two further significant premises. First, if agents
+do have a default tendency to pursue some goalg , then it’ s at least hard to be
+very confident, before deploying a new artificial agent for the first time, that
+we’ve trained that tendency out of it. This claim relies on two subpremises.
+The first is what Bostrom (2012) calls the orthogonality thesis, which says
+roughly that there’ s no intrinsic relationship between intelligence and final
+goals: the fact that we’ve trained a very intelligent, very capable AI system,
+that’ s very good at means-ends reasoning, doesn’t guarantee that it will have
+any particular final goals, like human welfare, the objective moral good, or
+an intrinsic aversion to power. The second subpremise is what we might call
+alignment difficulty. As the name suggests, this is the claim that aligning an
+artificial agent with a desired set of values is a hard problem—or at least,
+it’ s hard to be confident that you’ve succeeded before you actually deploy
+the agent in the real world and give it an opportunity to pursue its goals.
+These claims together at least suggest that, if there is a default tendency for
+agents with most possible final goals to pursue instrumental goal g , then
+we shouldn’t beextremely confident pre-deployment that the agent we’ve
+created won’t also pursue g , even (or perhaps especially) if that agent is
+extremely intelligent and capable.
+The second high-level premise is that an AI agent that has superhuman
+capabilities and instrumentally values power would pose catastrophic risks
+to humanity. There are various reasons why you might think that. For in-
+stance, you might think that if an AI agent has superhuman capabilities,
+it’ s likely to besuccessful in its pursuit of power, that its successful pursuit
+of power would result in humanity being disempowered, and that this out-
+come would be intrinsically catastrophic. 8 Or you might think that, if a
+superhuman AI agent successfully attains great power, it will likely also
+succeed in achieving its final goals, and it’ s likely that thosefinal goals will
+be catastrophic for humanity—for instance, converting all matter in the
+solar system into paperclips. Or, finally, you might think that the bestmeans
+for a superintelligent AI agent to pursue power will involve actions that are
+catastrophic for humanity, like wiping us out or enslaving us to ensure that
+we can’t threaten its power in future.
+Instrumentally convergent power-seeking, the difficulty of reliably elim-
+8For a nuanced discussion of this last claim, see Bales (forthcoming-a).
+4
+inating default tendencies in AI agents pre-deployment, and the potentially
+catastrophic harms from superhuman AI agents seeking power together
+suggest that the creation of such agents is catastrophically risky.
+Recently, though, some philosophers have pushed back on this story,
+and in particular on the initial premise that power is a convergent instru-
+mental goal that agents have a default tendency to pursue. In particular,
+Gallow (2024) argues that there are some genuinely convergent instrumental
+goals, but doesn’t think that power-seeking is among them. And Thorstad
+(2024) examines some formal arguments for instrumentally convergent
+power-seeking from the reinforcement learning literature, and argues that
+they don’t show what they purport to show, and in particular don’t show
+anything that strongly supports worries about catastrophic AI risk.9
+Gallow’ s and Thorstad’ s arguments are both primarily negative: They
+don’t claim to provide comprehensive positive argumentsagainst instru-
+mentally convergent power-seeking. Rather, they find a lack of support for
+instrumentally convergent power-seeking, or at any rate for a version of that
+claim that could play a role in a compelling argument for catastrophic risks
+from AI. What their papers show is that, a bit surprisingly, there is not yet a
+satisfactory general formalization of the claim that power is a convergent
+instrumental goal, or a formal argument for that general claim.
+There are, as Thorstad discusses at length, a number of “power-seeking
+theorems” in the reinforcement literature (Benson-Tilsen and Soares, 2016;
+Turner et al., 2021; Turner and Tadepalli, 2022; Krakovna and Kramar, 2023).
+But while these theorems make valuable contributions, they have at least
+two limitations: First, they make fairly specific assumptions about the
+agent’ s final goals—in particular the assumption, characteristic of rein-
+forcement learning, that the agent is maximizing or has been trained to
+maximize a discounted sum of time-separable rewards. Second, they make
+substantial assumptions about the decision situations the agent faces. For
+instance, Benson-Tilsen and Soares (2016) assume that the agent operates
+in an environment divided into discrete regions, and that its choices con-
+cern the allocation of resources across regions, with particular rules for
+how the state of each region evolves, how the allocation of resources at
+one time-step generates new resources at the next time step, and so on.
+Results that depend on substantial assumptions about an agent’ s final goals
+or about the environment can provide only limited support for claim that
+power or some other goal is instrumentally convergent, in Bostrom’ s sense
+of “[increasing] the chances of the agent’ s goals being realized for a wide
+9For a skeptical perspective on instrumental convergence arguments more generally, see
+Sharadin (forthcoming).
+5
+range of final goals and a wide range of situations” .
+Nevertheless, it seems to me that there’ s something importantly right
+about the idea that power is a convergent instrumental goal. My aim in this
+paper is to articulate that important kernel of truth, in a way that’ s more
+precise than the informal presentations of the idea in Omohundro (2008),
+Bostrom (2012), and elsewhere, and more general than the power-seeking
+theorems in the reinforcement learning literature. 10 On the other hand,
+I will also point out some potential limits on the predictive utility of this
+truth, that is, limits on how much it allows us to predict about the behavior
+of future artificial agents.
+Here’ s the plan: After some formal setup (§2), I’ll formalize the notion of
+instrumental convergence—or rather, three notions of instrumental conver-
+gence, with different degrees of strength—in an abstract decision-theoretic
+framework (§3). In §4, I’ll propose several few ways of formalizing the
+notion of power in that same framework, and show that they each (to dif-
+ferent degrees) constitute convergent instrumental goals. In §5, I’ll prove
+a negative result: Neither power nor any other convergent instrumental
+goal provides a complete ordering of the options an agent might face. In
+many possible situations, the agent’ s options will be unranked in terms of
+any notion of power that could constitute a convergent instrumental goal,
+and so the fact of instrumentally convergent power-seeking doesn’t help us
+predict the agent’ s behavior in those situations. In §6, however, I’ll argue
+that instrumental convergence results are more likely to be predictive of
+the behavior of future artificial agents insofar as we expect those agents to
+have opportunities to acquire absolute or near-absolute power. §7 will con-
+clude by surveying a few of the important questions about instrumentally
+convergent power-seeking left open by the preceding discussion.
+To be clear at the outset, my aim in this paper will not be to defend the
+whole argument that power-seeking tendencies make advanced AI agents
+catastrophically risky. I’m not sure how much weight I ultimately give to
+that argument—in particular, it seems unclear at the moment whether
+aligning artificial agents in a way that reliably eliminates undesirable default
+tendencies will turn out to be a hard problem.11 My aim is just to partially
+10In this existing literature, the closest precedent for my positive arguments is Turner
+et al. (2021). In particular, there are close conceptual parallels between our respective
+formalizations of power and instrumental convergence. Our definitions and results differ in
+a number of ways, but the most important difference is that Turner et al. work in the standard
+reinforcement learning setting of Markov decision processes (where an agent follows an
+infinite trajectory through a finite set of states, aiming to maximize a discounted sum of
+state-based rewards), while I work in the decision-theoretic setting of finite decision trees
+with an arbitrary utility function over final outcomes (to be explained in the next section).
+11On this question, see for instance Goldstein and Kirk-Giannini (2023), who argue that
+6
+o1
+o2
+o3
+o4
+1/4
+3/4
+FIGURE 1: An example of a decision tree. Square nodes represent choices, circular nodes
+represent chance events, and numbers along branches represent probabilities.
+vindicate one premise of that argument.
+2 Setup
+We’ll work in the framework of sequential decision theory. That is, we as-
+sume an agent facing asequential choice situation, represented by a decision
+tree. The tree consists of choice nodes, chance nodes, (final) outcomes, and
+branches. The agent follows a path through the tree, from an initial node,
+until eventually reaching an outcome. At choice nodes, the path she takes
+depends on her choice. At chance nodes, the path she takes depends on a
+chance event, with each branch having a predetermined probability. Figure
+1 gives a simple illustration of a decision tree.
+We will assume a set O of possible outcomes that is finite but has cardi-
+nality≥ 3. This defines a set TO of all finite decision trees (that is, decision
+trees with a finite number of nodes) terminating in outcomes from O. A
+strategy for a sequential choice situation is a specification, for each choice
+node in the decision tree, of either an action or a probability distribution
+over actions. A decision tree t and a strategy s for that tree together define a
+lottery L (t , s ), the probability distribution over final outcomes for an agent
+following strategy s from the initial node of tree t . We can also associate
+each decision tree t with a set of lotteries L(t ), namely, the set of lotteries
+associated with all possible strategies for tree t . These are, intuitively, the
+lotteries available to an agent at the initial node of t , that she can choose
+from by adopting a particular strategy. Each node in a decision tree defines
+a subtree, the part of the overall decision tree accessible from that node.
+Finally, we will assume that our agent is an expected utility maximizer.
+language agents are easier to reliably align and therefore less risky than reinforcement
+learning agents.
+7
+This means that there is some utility function u : O→ R such that, in any
+decision tree t∈ TO, she will follow a strategy s such that the associated
+lottery L (t , s ) gives her at least as great an expectation ofu (expected utility)
+as any of the other available lotteries in L(t ). This is undeniably a sub-
+stantive assumption. However, it is not an assumption about the content
+of the agent’ s final goals, which are represented by her ranking of final
+outcomes—expected utility maximization is compatible with any ranking
+of final outcomes. Rather, it’ s an assumption about what it means for an
+agent to be instrumentally rational, and the standard such assumption in
+the relevant machine learning and AI safety literatures.12 Since we are as-
+suming that the set of possible outcomes O is finite, utilities are necessarily
+bounded, and without loss of generality we can think of them as confined
+to the unit interval [0, 1].
+In a slight abuse of notation, we will let u (l ) denote the expected u-
+utility of lottery l and u (t ) denote the maximum expected u-utility of any
+lottery available in decision tree t (i.e., maxl∈L(t ) u (l )). u (t ) represents the
+expected utility for an agent with utility function u of reaching the initial
+node of tree t , given the assumption that its future behavior will continue
+to maximize the expectation of u.
+Expected utility maximizers decide what to do at a given choice node
+in a decision tree based on the sets of lotteries available at subsequent
+nodes. That is, if such an agent is at a choice node with n options, leading
+to subtrees t1 to tn , she will choose the subtree ti whose set of available
+lotteries L(ti ) contains the lottery with greatest expected utility (or will
+choose one such subtree, in the case of ties). In other words, she chooses
+based on a fixed ranking of subtrees, without regard to the particular set
+of alternatives she faces at a given choice node, the larger structure of the
+decision tree in which she finds herself, or her own past choices.
+3 Instrumental convergence
+We now have the resources to formalize the notions of instrumental conver-
+gence and power.
+Starting with instrumental convergence: The informal idea of instru-
+mental convergence is that g is a convergent instrumental goal if most final
+12One potential substantive justification for this assumption is the idea that any suf-
+ficiently optimized agent can be represented as an expected-utility maximizer, because
+non-expected utility maximizers are subject to sure losses of a sort that will be penalized
+and thus eliminated by optimization processes (Yudkowsky, 2015). I’m skeptical of these
+arguments, though. For recent critical appraisals, see Thornley (2023), Bales (forthcoming).
+8
+goals make it instrumentally rational to pursueg . We might paraphrase this
+by saying that an instrumentally rational agent with randomly generated
+final goals will be more likely than not to pursue g . An expected utility
+maximizer’ s final goals are described by its utility function over outcomes.
+Thus, we can formalize the idea of randomly generated final goals in terms
+of a randomly generated utility function.
+But what do we mean by randomly generated? In the context of charac-
+terizing instrumental convergence, the point is to capture the idea of igno-
+rance about an agent’ s final goals. This seems to license three assumptions:
+First, there should be no a priori partiality between different outcomes. A
+randomly generated utility function is just as likely to assign a given util-
+ity to one outcome as to another; and more generally, any assignment of
+utilities to outcomes is exactly as likely as any of its possible permutations
+(swapping utilities between outcomes, while still assigning any given utility
+to the same number of outcomes). Let’ s say that a probability distribution
+over utility functions is symmetric if it satisfies this permutation invariance
+condition.13
+Second, no utility function can be ruled outa priori: If we think of utility
+assignments to a set of n outcomes as points in the n-dimensional hyper-
+cube [0, 1]O, the probability distribution from which a randomly generated
+utility function is drawn should assign non-zero probability density to every
+point in that region. Equivalently, any measurable subset of[0, 1]O with non-
+zero volume (formally, non-zero Lebesgue measure) should be assigned
+non-zero probability. Let’ s say that a probability distribution over utility
+functions is regular if it satisfies this condition.
+Finally, we will assume that the set of uniform utility functions, which
+assign the same utility to every outcome, has probability zero. This reflects
+the idea that a system with a uniform utility function has, in effect, no
+final goals, and seems not to count as a genuine “agent” . Insofar as we are
+interested in predicting the behavior of agents, then, we can assume non-
+uniformity.14 Let’ s say that a probability distribution over utility functions
+is almost surely non-uniform if it satisfies this condition.
+Beyond these three conditions, we will assume nothing else about the
+distribution from which randomly generated utility functions are drawn—
+we will not, for instance, assume that they are drawn from a uniform dis-
+tribution on [0, 1]O or that the utilities assigned to different outcomes are
+13Turner et al. (2021) also make use of permutation invariance to operationalize claims
+about what is true for “most” final goals.
+14We could go further and assume that uniform utility functions don’t just have probability
+zero but are impossible. But the probability-zero assumption will be sufficient for our
+purposes, and is formally simpler.
+9
+probabilistically independent. Our aim is to capture the idea of ignorance
+about an agent’ s final goals (beyond the assumption that the agent will have
+some non-trivial goals), and so we avoid making any formal assumptions
+that are not clearly justified by this informal idea of ignorance.
+Putting the preceding conditions together:
+A utility function is randomly generated if it is drawn from
+a probability distribution over functions u : O→ [0, 1] that is
+symmetric, regular, and almost surely non-uniform.
+I will use the term random agent to refer to an expected utility maxi-
+mizer with a randomly generated utility function, who chooses uniformly
+at random between options with equal expected utility. I will also make
+the standard assumptions that the agents we are interested in are certain
+that their utilities will not change over time and that they will continue to
+maximize expected utility at future choice nodes.
+We have said that an expected utility maximizer’ s final goals are repre-
+sented by its utility function over final outcomes. Such an agent’ sinstru-
+mental goals can be represented, in the context of sequential choice, by its
+choice dispositions with respect to decision subtrees. At a choice node, an
+expected utility maximizer decides which path to take by deciding which of
+the available subtrees offers the opportunity for greatest expected utility.
+Each subtree represents a possible situation that the agent has the oppor-
+tunity to put itself in, which it evaluates in terms of the opportunities for
+utility that it affords.
+We can therefore formalize the idea of instrumental goals in general,
+and convergent instrumental goals in particular, in terms of relations on the
+set of possible decision trees TO. Broadly speaking, a relation ¥ on decision
+trees represents a convergent instrumental goal if, given a choice between
+subtrees ti and t j where ti ¥ t j , a random agent is likely to choose ti rather
+than t j . More precisely, we can define three notions of instrumental con-
+vergence corresponding to progressively stronger notions of comparative
+likelihood.
+A reflexive relation ≽ on TO is weakly instrumentally convergent iff, given
+a binary choice between actions ai and a j that lead to subtrees ti
+and t j respectively, where ti ≽ t j , a random agent (regardless of the
+particular distribution from which its utility function is generated) is
+at least as likely to choose ai as to choose a j .
+An irreflexive relation≻ on TO is strictly instrumentally convergent iff,
+given a binary choice between actions ai and a j that lead to subtrees
+10
+ti and t j respectively, where ti≻ t j , a random agent is strictly more
+likely to choose ai than to choose a j .
+An irreflexive relation≻ on TO is absolutely instrumentally convergent iff,
+given a binary choice between actions ai and a j that lead to subtrees
+ti and t j respectively, where ti≻ t j , a random agent chooses ai with
+probability 1.
+Informally, a weakly convergent instrumental goal is a ranking of deci-
+sion trees such that, in a binary choice, any randomly generated expected
+utility maximizer is at least as likely to choose an action that leads to a
+higher-ranked subtree. A strictly convergent instrumental goal is a ranking
+such that any randomly generated expected utility maximizer is more likely
+to choose a higher-ranked subtree. And an absolutely convergent instru-
+mental goal is a ranking such that any randomly generated expected utility
+maximizer is almost certain to choose a higher-ranked subtree. In each
+case, these claims must hold regardless of the particular distribution from
+which the utility function is generated, as long as it is symmetric, regular,
+and almost surely non-uniform. These definitions formalize (with different
+degrees of strength) the idea that a convergent instrumental goal is some-
+thing that agents with most final goals will have instrumental reason to
+pursue in any given situation.
+4 Is power a convergent instrumental goal?
+The question we’re interested in is whether power is a convergent instru-
+mental goal. To answer that question, we now need to formalize power as a
+relation on decision trees. As we’ll see, there’ s more than one way to do this.
+Informally, power in the sense we’re interested in is the ability to influ-
+ence outcomes in the world. A bit more precisely, it’ s the ability to influence
+the probabilities of outcomes and of events (sets of outcomes). An agent
+has more power if they can bring about a wider range of probability dis-
+tributions over outcomes. Different notions of power will correspond to
+different ways of precisifying the notion of a “wider range” of distributions.
+Let’ s start with the simplest sense in which one decision tree can give
+an agent more power than another, based on set inclusion.
+Power 1 (Inclusion) ti ≽p 1 t j iff L(t j )⊆ L(ti ). ti≻p 1 t j iff L(t j )⊂ L(ti ).
+In English, ti confers at least as much power as t j in this first sense if
+the lotteries available to an agent at the initial node of t j are a subset of
+11
+o1 o2
+o3
+L(t j )
+L(ti )
+FIGURE 2: An example of the power relation≻p 1: L(t j ) (blue) is a proper subset of L(ti ) (red).
+the lotteries available at the initial node of ti ; and ti confers strictly more
+power if this subset relation is strict. An agent increases its power in this
+sense when it gains the ability to bring about some particular outcome or
+set of outcomes more effectively (with greater probability of success) than
+it could before. The strict relation≻p 1 is illustrated in Figure 2, where the
+set of possible lotteries over three outcomes is represented by a triangular
+region (a “probability simplex”) and the sets of lotteries available in subtrees
+ti and t j are depicted as subregions.
+It is easy to show that:
+Proposition 1. ≽p 1 is weakly instrumentally convergent.≻p 1 is strictly but
+not absolutely instrumentally convergent.
+Proof. It is trivial that ≽p 1 is weakly instrumentally convergent, and that
+≻p 1 is not absolutely instrumentally convergent. The less trivial (though
+still fairly elementary) fact is that≻p 1 is strictly instrumentally convergent.
+Suppose that L(t j )⊂ L(ti ). Since the number of possible pure strategies
+in a finite decision tree is finite, and mixed strategies are possible, the set of
+lotteries L(t ) available at a decision tree t is convex and compact. It then
+follows from the hyperplane separation theorem (Boyd and Vandenberghe,
+2004, §2.5.1) that, for any lottery l∈ L(ti )\ L(t j ), there is a utility function
+u such that u (l )> u(t j )—that is, the expected utility of l is strictly greater
+than the maximum expected utility of the lotteries in L(t j ). Moreover, this
+will remain true under small enough perturbations of u—that is, for all
+u′ in some neighborhood of u. (Let u(l )− u(t j ) =δ. Then u′(l )> u′(t j )
+for any utility function u′ that perturbs the u utilities of each outcome
+by less than 0.5δ.) The assumption of regularity then implies a strictly
+12
+positive probability that a random agent will have a utility function in this
+neighborhood of small perturbations of u, in which case they will assign
+strictly greater expected utility to ti than to t j , and choose action ai . On
+the other hand, if there is an expected-utility-maximizing lottery in L(t j ),
+that same lottery is in L(ti ), so the agent is equally likely to choose ai or a j .
+In combination, these facts imply that a random agent is strictly more likely
+to choose ai than to choose a j .
+This gives us a minimal sense in which power is a convergent instru-
+mental goal: an agent with randomly generated final goals will be more
+likely than not to choose actions that make a strictly larger set of lotteries
+available.
+The relation≻p 1 yields strict but not absolute instrumental convergence:
+a random agent is more than 50% likely to choose a path that confers greater
+power in this sense, but is not certain to do so. This reflects the fact that the
+more powerful subtree will always offer at least as great expected utility, but
+need not offer strictly greater expected utility. A more demanding notion
+of inclusion, however, gives us a power relation that guarantees a strict
+inequality in expected utility, and hence that an expected utility maximizer
+will opt for greater power.
+Power 2 (Interiority) ti≻p 2 t j iff L(t j ) is a subset of the interior of L(ti ).
+The interior of a region R in a Euclidean space is the set of points that
+belong to that region but are not on its boundary. Formally, it’ s the set of
+points x∈ R such that, for someϵ, every point withinϵ of x also belongs toR .
+To say that ti is more powerful than t j in the sense of≻p 2, then, means that
+ti expands the set of lotteries available in t j “in every direction” (see Figure
+3). An agent might become more powerful in this sense by gaining access
+to more of some all-purpose resource (like money, energy, or compute) that
+increases its probability of success in pursuing not just some particular
+goals but whatever goals its sets for itself.
+This more demanding notion of power satisfies the most demanding
+notion of instrumental convergence:
+Proposition 2.≻p 2 is absolutely instrumentally convergent.
+Proof. Because we are considering finite decision trees, with only finitely
+many possible pure strategies, some lottery in L(t j ) must have maximal
+expected utility. Let l∈ L(t j ) be such a lottery. IfL(t j ) belongs to the interior
+of L(ti ), then for any l∈ L(t j ), there is anϵ such that every point within
+ϵ of l belongs to L(ti ). Because the randomly generated utility function
+13
+o1 o2
+o3
+L(t j )
+L(ti )
+FIGURE 3: An example of the power relation≻p 2: L(t j ) (blue) is confined to the interior of
+L(ti ) (red).
+u is (almost surely) non-uniform, it is (almost surely) possible to increase
+the expected utility of l by shifting a small amount of probability from a
+lower-utility to a higher-utility outcome. Specifically, we can find a lottery
+l + that is withinϵ of l , and has strictly greater expected utility. Because l +
+withinϵ of l , it belongs to L(ti ). Thus, for any non-uniform utility function,
+we can find a lottery in L(ti ) with greater expected utility than any lottery in
+L(t j ). So a random agent will (almost surely) choose ti over t j .
+These first two results might seem too trivial to be interesting. As Gallow
+(2024) writes, about a slightly different but similarly simple notion of power:
+“[T]here are ways of defining ‘power’ on which it becomes tautological that
+power would be instrumentally valuable to have. For instance, if we define
+‘power’ in terms of the ability to effectively pursue your ends without in-
+curring costs, then it will follow that more power would be instrumentally
+valuable. Cost-free abilities are never instrumentally disvaluable—just in
+virtue of the meaning of ‘cost-free’ . And the ability to effectively pursue your
+ends is, of course, instrumentally valuable...Defining ‘power’ in this way
+makes the convergent instrumental value thesis easy to establish; but for
+that very reason, it also makes it uninteresting.”15
+Propositions 1 and 2 aren’t tautologies (except perhaps in a sense in
+which every mathematical truth is a tautology), but they are formally fairly
+elementary. But that doesn’t necessarily make them uninteresting or practi-
+15By “the ability to effectively pursue your ends” , Gallow means the particular ends
+that an agent happens to have, so that power in this sense is relativized to the agent’ s
+ends/goals/utility function. In that respect, the notion of power he’ s commenting on is
+different from≻p 1 or≻p 2.
+14
+t j
+ti
+o−
+1− p
+p
+FIGURE 4: A situation in which an agent must choose whether to accept some risk of a
+dispreferred outcome o− for the chance of ending up in a more powerful position (ti rather
+than t j ).
+cally insignificant. There are at least two reasons we might find these initial
+results noteworthy.
+First: Proposition 1 reflects the fact that a random agent may assign
+strictly greater expected utility to a path in a decision tree that is superior
+by the≻p 1 relation, and Proposition 2 reflects the fact that such an agent
+almost surely will assign strictly greater expected utility to a path that is
+superior by the≻p 2 relation. So these results don’t just tell us something
+about the probability that a random agent will make one choice or another
+when the available options are ranked by these relations. They also tell us
+that an agent may (resp. will) be willing to incur some cost or run some
+risk in order to put itself in a≻p 1-superior (resp.≻p 2-superior) situation.
+Consider the situation depicted in Figure 4, where the agent must choose
+between accepting subtree t j or running a risk (with probability p ) of a
+dispreferred outcome o− for a chance (with probability 1− p ) of ending
+up in subtree ti . If ti≻p 2 t j , then any expected utility maximizer with a
+non-uniform utility function will choose to go up (running the risk of o−
+for the sake of ending up in a more powerful position) if p is small enough.
+And if ti≻p 1 t j , an expected utility maximizer may be willing to do so, but
+would certainly not run any risk for the sake of getting t j rather than ti .
+Second: The simple notions of power as inclusion (≻p 1) and interiority
+(≻p 2) plausibly subsume other more particular ends that have been claimed
+to be instrumentally convergent. And so Propositions 1 and 2 provide some
+vindication of those other more specific instrumental convergence claims.
+For instance, consider survival. If an agent is destroyed, it can have no
+further effects on the world. The agent’ s strategy set, post-mortem, is a
+singleton (“do nothing, with probability 1”), and only a single lottery over
+outcomes is available to it. With a modicum of idealization, we might sup-
+pose that the agent could get this same lottery if it survives, simply by doing
+nothing. If so, then survival will always be≻p 1-superior to death, and typi-
+15
+cally≻p 2-superior (except when the lottery the agent expects conditional on
+death happens to be on the precise boundary of the set of lotteries available
+to it if it survives). So Propositions 1 and 2 provide some vindication of the
+claim that survival is a convergent instrumental goal.
+Similarly, consider the goal ofacquiring information (either by gathering
+new evidence or by cognitive self-improvements that enable an agent to
+extract more information from its existing stock of evidence). Again with
+a bit of idealization, the choice whether to acquire new information can
+be understood as follows: The agent faces some set of n possible actions.
+If it chooses not to seek further information, it will simply take the action
+corresponding to the lottery with greatest expected utility, given its initial
+information. If it does choose to seek out new information, this amounts
+to going to a chance node, each branch of which leads to a subsequent
+n-action choice, with one action corresponding to each of the n original
+actions. And the probability-weighted average of the lotteries associated
+with a given action after acquiring new information is identical to the lottery
+initially associated with that action. Choosing to acquire free information,
+then, never reduces the set of available lotteries: Any lottery the agent could
+have by declining the information, it could still have by adopting the strategy
+of taking the same action (or probabilistic mixture of actions) regardless
+of what information it receives. Gaining information, in other words, can
+only expand the set of available lotteries (at minimum in the sense of ¥p 1,
+if not≻p 1 or≻p 2). (This is closely related to Good’ s Theorem (Good, 1966),
+the well-known result that free information always has non-negative value
+for an expected utility maximizer.) Propositions 1 and 2 thus subsume the
+claim that information acquisition is a convergent instrumental goal.
+Finally, as suggested above, the acquisition of all-purposes resources
+like money, energy, or compute, insofar as it makes the agent more effective
+at pursuing any ends it sets for itself, can be seen as increasing its power in
+the sense of≻p 2. Proposition 2 could therefore be seen as providing some
+support for the claim that resource acquisition is a convergent instrumental
+goal. (This connection is a bit more tenuous, though, since the assumption
+that generic resources increase the agent’ s capacity to achieve any end
+involves quite a bit of idealization.)
+All that being said, Propositions 1 and 2 are undeniably limited in that
+the relations of inclusion and interiority are very demanding. Most if not
+all choices involve tradeoffs, with each available action foreclosing some
+possibilities that other actions leave open. So it will rarely if ever be the case
+that a real agent is faced with options that are ranked by the relations≻p 1
+or≻p 2. This too isn’t necessarily fatal to the interestingness of the results.
+16
+Good’ s Theorem is still interesting and informative even though information
+is never or almost never literally free; results about infinitely repeated games
+are informative even though real-world games are never infinitely repeated.
+Like free information and infinite games, power in the sense of inclusion or
+interiority may provide an idealized but still useful approximate description
+of a class of real-world choice situations. Still, it’ s natural to wonder whether
+we can find a more expansive and flexible notion of power than≻p 1 or≻p 2
+that still represents a convergent instrumental goal.
+Here’ s one natural thought: How powerful an agent is, in the sense we’re
+interested in, shouldn’t depend on which particular outcomes or events
+that agent can bring about with a given probability. The ordinary concept of
+power is ambiguous on this point—on one natural understanding, power is
+the ability to bring about the outcomes and events that you desire. But if we
+want a notion of power that lets us make predictions about an agent’ s behav-
+ior in ignorance of its final goals, then how powerful an agent is shouldn’t
+depend on those goals. We can formalize this idea by once again invoking
+the notion of permutation invariance: If L(ti ) is a permutation of L(t j ), in
+the sense that L(ti ) can be obtained from L(t j ) by applying the same per-
+mutationπ to every outcome in every lottery in L(t j ), then ti and t j confer
+equal power.
+This suggests a third sense in which one subtree in a sequential choice
+situation can give an agent more power than another.
+Power 3 (Permuted Inclusion) ti ≽p 3 t j iff there is a permutationπ on O
+such thatπ(L(t j ))⊆ L(ti ), whereπ(L(t j )) is the set of lotteries obtained
+by applying permutationπ to every lottery in L(t j ). Ifπ(L(t j ))⊂ L(ti ),
+then ti≻p 3 t j .
+This relation is illustrated in Figure 5. Like the first two power relations,
+≻p 3 is a possible precisification of the idea that an agent is more powerful
+when it has the ability to bring about a wider range of lotteries over outcomes.
+But now “wider range” no longer requires inclusion. Formally, the idea now
+is that one set of lotteries is larger than another when it has greater measure
+under any permutation-invariant measure on the whole set of probability
+distributions over O.
+Is power in this sense a convergent instrumental goal? The answer is
+mixed.
+Proposition 3. ≽p 3 is weakly instrumentally convergent. ≻p 3 is neither
+strictly nor absolutely instrumentally convergent.
+17
+o1 o2
+o3
+L(t j ) π(L(t j ))
+L(ti )
+FIGURE 5: An example of the power relation≻p 3: L(ti ) (red) includes a permutation of L(t j )
+(blue).
+Proof. The fact that ≽p 3 is weakly instrumentally convergent follows from
+the fact that the distribution from which a randomly generated utility func-
+tion is drawn must be permutation-invariant. This implies that, for any
+set L of lotteries and any permutation π, it is exactly as likely that some
+lottery in L has greater expected utility than any lottery inπ(L ) as that some
+lottery inπ(L ) has greater expected utility than any lottery in L. Thus, if
+L(ti ) =π(L(t j )) for some permutationπ, a random agent is equally likely to
+opt for ti or t j . It’ s then clear that ifπ(L(t j ))⊂ L(ti ), a random agent will be
+at least as likely to opt for ti , since adding lotteries to a set can’t reduce the
+maximum expected utility of the lotteries in that set.
+On the other hand, the fact that π(L(t j ))⊂ L(ti ) need not mean that
+a randomly generated agent is strictly more likely to opt for ti . To see
+why, consider the decision tree in Figure 6. Here an agent is faced with
+two options: Going up immediately results in a lottery with a 1
+2 chance
+of outcome o1, a 1
+3 chance of o2, and a 1
+6 chance of o3. Going down leads
+to a further choice between two lotteries, one of which gives a 1
+3 chance
+of o1, a 1
+2 chance of o2, and a 1
+6 chance of o3, while the other gives a 1
+6
+chance of o1, a 2
+3 chance of o2, and a 1
+6 chance of o3. (The agent could
+also randomize to get any mixture of those two lotteries.) The subtree
+reached by going down is strictly more powerful than the subtree reached
+by going up, in the sense of≻p 3: Under a permutation that switches o1 and
+o2, the set of lotteries available in the upper subtree (a singleton) becomes
+a proper subset of the set of lotteries available in the lower subtree. But a
+random agent is not more likely to go down: If u (o1)> u (o2), the agent will
+go up; if u (o2)> u(o1), the agent will go down; and a randomly generated
+18
+o1
+o2
+o3
+o1
+o2
+o3
+o1
+o2
+o3
+1/2
+1/3
+1/6
+1/3
+1/2
+1/6
+1/6
+2/3
+1/6
+FIGURE 6: A case in which≻p 3 is not strictly instrumentally convergent.
+o1 o2
+o3
+L(t j ) π(L(ti ))
+L(ti )
+FIGURE 7: An example of the power relation≻p 4: L(ti ) (red) includes a permutation of L(t j )
+(blue) in its interior.
+utility function is equally likely to satisfy either inequality. Together with
+the assumption of randomization in the case of ties, this means that a
+random agent is equally likely to go up or down, contra strict instrumental
+convergence.
+Once again, however, we can guarantee a stronger form of instrumental
+convergence by replacing simple set inclusion with interiority, as follows:
+Power 4 (Permuted Interiority) ti≻p 4 t j iff there is a permutationπ on O
+such thatπ(L(t j )) is a subset of the interior of L(ti ).
+This relation is depicted in Figure 7.
+Our final positive result concerns this fourth notion of power:
+Proposition 4.≻p 4 is strictly but not absolutely instrumentally convergent.
+19
+The proof of this proposition is longer and less illuminating than the
+preceding proofs, so I’ve consigned it to an appendix. The main upshot of
+Proposition 4 for our purposes is that we can find a relation more expansive
+than inclusion, corresponding to the intuitive notion of power as the ability
+to bring about a wide range of probability distributions over outcomes, that
+represents a strictly instrumentally convergent goal. We could take this
+point further, if we wanted to: there are other relations at least somewhat
+weaker than≻p 4 that represent strictly convergent goals. But as we will
+see in the next section, there are limits on how far we can go in ranking
+decision trees in terms of any notion of power that is strictly or even weakly
+instrumentally convergent.
+5 Power is incomplete
+Taking stock: In the sequential decision-theoretic framework in which we’re
+operating, a natural way of understanding power is that an agent is in a
+more powerful position when it has the ability to bring about a larger set
+of lotteries. Different notions of “larger” correspond to different ways of
+ranking situations in terms of power. Of the four power relations we’ve
+examined, all are convergent instrumental goals in the weakest sense, one
+is a convergent instrumental goal in the strongest sense, and three are
+convergent instrumental goals in the intermediate (“strict”) sense.
+A limitation of these results, in terms of their ability to predict the be-
+havior of agents with unknown final goals, is that all of the power relations
+we have examined are incomplete: many pairs of decision trees cannot be
+ranked in terms of any of the four relations. It’ s natural to wonder, then,
+whether we can find a complete ranking of decision trees that represents a
+convergent instrumental goal, in any of the three senses defined in §3. In
+particular, is there a numerical measure of the power conferred by any given
+decision tree such that a random agent is always likely to opt for greater
+power by this measure—or better yet, such that we can quantify the proba-
+bility of a random agent opting for one subtree rather than another based on
+their relative power? For example, we might try to measure an agent’ s power
+in decision tree t by taking an average over every event E (i.e., every subset
+of O) of the maximum probability of E across all the lotteries in L(t )—that
+is, the maximum probability that the agent can give to E by pursuing some
+strategy in its strategy set. Informally, this measure represents the agent’ s
+average power to bring about any given event. This would give a complete
+ranking of decision trees, corresponding at least roughly to the intuitive
+notion of power. But would it represent a convergent instrumental goal?
+20
+Given the very limited assumptions we have built into the notion of a
+randomly generated utility function, it turns out that the answer to these
+questions is “no” . Without knowingsomething about an agent’ s utility func-
+tions beyond the minimal assumptions of regularity, symmetry, and non-
+uniformity, we can’t always say which of two subtrees a randomly generated
+agent is more likely to opt for, let alone how much more likely.
+Proposition 5. There is no total reflexive relation ¥ on TO that is weakly in-
+strumentally convergent and whose irreflexive part is strictly instrumentally
+convergent.
+Proof. Let n =|O| denote the cardinality of the set of outcomes. Consider
+the following decision tree: The agent initially faces two possible actions,ai
+and a j , leading to subtrees ti and t j . Each of those subtrees offers a further
+n-action choice. In ti , the agent can choose one outcome to eliminate, and
+face a uniform lottery over the remaining outcomes (each having probability
+1/(n− 1)). In t j , the agent can choose to increase the probability of any
+one outcome, and face a lottery that yields that outcome with probability
+3/(n + 2) and every other outcome with probability 1/(n + 2). Now suppose,
+on the one hand, that the agent’ s utility function is drawn from a distribution
+that is guaranteed to assign utility 0 to a single outcome and utility 1 to every
+remaining outcome. Then the agent will prefer ti (which has an expected
+utility of 1) over t j (which has an expected utility of (n + 1)/(n + 2)). On the
+other hand, suppose the agent’ s utility function is drawn from a distribution
+that is guaranteed to assign utility 1 to a single outcome and utility 0 to every
+remaining outcome. Then the agent will prefer t j (which has an expected
+utility of 3/(n + 2)) over ti (which has an expected utility of 1/(n− 1)).
+The distributions described above don’t satisfy regularity, but they can
+be approximated arbitrarily closely be distributions that do, yielding prob-
+abilities arbitrarily close to 1 either that a random agent will choose ti or
+that a random agent will choose t j .
+Any total relation ¥ on TO must, by definition, have either ti ¥ t j or
+t j ¥ ti . But we have seen that a random agent cannot be guaranteed to be at
+least as likely to choose ti as to choose t j , or vice versa, without constraints
+on the distribution from which its utility function is drawn that go beyond
+symmetry, regularity, and non-uniformity. So no total relation ¥ on TO
+can be weakly instrumentally convergent. Likewise, any irreflexive relation
+≻ on TO that ranks pairs like ti and t j will not be strictly (or absolutely)
+instrumentally convergent.
+The basic observation behind Proposition 5 is that, in some situations,
+which path a random agent is more likely to follow depends on features
+21
+of the distribution over utility functions that aren’t pinned down by the
+assumptions of symmetry, regularity, and non-uniformity. This reflects,
+at least in part, the fact that different sorts of utility functions will exhibit
+preferences for different and not-easily-comparable sorts of power. An “easy
+to please” agent who finds most outcomes near-maximally good will partic-
+ularly desire the power to protect itself against a few worst-case outcomes.
+A “hard to please” agent who finds most outcomes near-maximally bad
+will particularly desire the power to increase the probabilities of the few
+outcomes it considers highly desirable. Similarly, an agent whose utilities
+follow a low-variance unimodal distribution, with most utilities tightly clus-
+tered and only a few outliers, will want the power to selectively influence
+the probabilities of those few extreme outcomes, while an agent whose
+utilities are highly bimodal (e.g., clustered equally near 0 and 1) will mainly
+want the power to ensure an outcome in the upper half of the distribution,
+without assigning much special significance to the very best or worst out-
+comes. Thus, predicting which path an agent is more likely to follow in a
+sequential choice situation can require fairly substantive information about
+the process or distribution from which its utility function is generated.
+The lesson is that, while instrumental convergence arguments in general
+and convergent power-seeking in particular may allow us to predict agents’
+behavior in some situations even from a standpoint of extreme ignorance
+about the agent’ s final goals, there will be other situations in which those
+arguments fall silent. And perhaps more to the point, any notion of power
+derived purely from first principles or conceptual analysis, without refer-
+ence to the particular process by which the utility functions of a particular
+class of agents are generated, will be either incomplete (telling us that some
+pairs of situations can’t be compared in terms of power) or non-predictive
+(not constituting a convergent instrumental goal as we’ve defined it).
+6 Absolute power
+Where does this leave the idea of instrumentally convergent power-seeking?
+It’ s a bit of a mixed result. There is certainly some truth to the claim that
+power is a convergent instrumental goal, on certain natural ways of char-
+acterizing power. But this fact might turn out to have limited predictive
+utility, since real-world alternatives will not always be ranked in terms of the
+relevant power relations. When they are not, considerations of instrumental
+convergence may not tell us anything about the likely behavior of future
+agents with radically unknown final goals.
+The positive results in §4 will be more informative, however, about the
+22
+behavior of agents who have the opportunity to achieve absolute or near-
+absolute power. Absolute power is the ability to bring about any outcome
+with probability 1. Absolute power in this sense has maximal expected util-
+ity for any expected utility maximizer, and is ranked strictly above any other
+situation an agent could find itself in by the power relations≻p 1 and≻p 3.
+(In the relations≻p 2 and≻p 4, it is ranked above any situation in which there
+is no event—that is, no set of outcomes—that the agent can bring about
+with certainty.) Thus, an expected utility maximizer with non-uniform pref-
+erences will weakly prefer absolute power to any other situation it could
+find itself in, strictly prefer it to most alternative situations, and potentially
+be willing to incur large costs or risks to achieve absolute power if the al-
+ternative is a situation in which it has very limited power to influence the
+course of events or bring about high-utility outcomes.
+Of course, like the relations≻p 1 and≻p 2, absolute power is an idealiza-
+tion that is very unlikely to be realized in practice—arguably impossible,
+if outcomes are individuated finely enough, or if empirical certainties are
+rationally prohibited. But both the expected utility of a decision subtree for
+a given agent and the probability of a random agent choosing one subtree
+rather than another are continuous with respect to the sets of lotteries avail-
+able at the relevant subtrees, so nearly absolute power (the ability to bring
+about nearly any outcome with near-certainty) will be nearly as attractive
+to expected utility maximizers as fully absolute power.
+Thus, if you expect that some future AI agents will have superhuman ca-
+pabilities that give them a good shot at achieving absolute or near-absolute
+power, then the incompleteness of power relations like≻p 1–≻p 4 may not
+do much to undermine the predictiveness of instrumental convergence.
+Absolute or near-absolute power will be tempting for most expected utility
+maximizers, unless the prospects they can expect if they don’t seek power
+are already very desirable, or the costs of power-seeking are very high. On
+the other hand, suppose you expect future AI agents to be embedded in a
+complex multipolar world, much like the present-day human world, where
+even the most powerful individuals cannot aspire to anything like absolute
+power, and the pursuit of power typically carries great risks and forecloses
+certain desirable options (like a quiet, carefree, private life). In that case,
+the fact that power is a convergent instrumental goal may end up telling us
+relatively little about the likely behavior of those future agents.
+23
+7 Conclusion
+I will close by noting a few of the important questions this paper has left
+unaddressed.
+First, apart from Proposition 2, which establishes that≻p 2 is absolutely
+instrumentally convergent, I have not made any quantitative claims about
+how much more likely a random agent is to choose more power over less
+power. In general, such quantitative claims will require precise assumptions
+about the distribution from which the agent’ s utility function is drawn. If
+we assume, for instance, that the utility of each outcome is drawn inde-
+pendently from a uniform distribution on [0, 1], then in any given choice
+situation, it is possible to calculate the probability that a random agent
+will make any particular choice or sequence of choices. I will leave these
+quantitative exercises for future research. In a certain sense, in the context
+of worrying about catastrophic risks from advanced AI, the precise proba-
+bilities are beside the point: a 50/50 chance that the first superintelligent
+AI agent will exhibit power-seeking tendencies would be more than enough
+to worry about! What would be most interesting is to calculate the prob-
+abilities that such an agent would choose to seek power when it has only
+a limited chance of success, and must pay some high cost if it fails. The
+challenge is to develop well-motivated assumptions about the particular
+probability distribution from which this agent’ s utility function would be
+drawn, and about the costs or risks it would have to incur to seek power
+over humanity.
+Second, I haven’t considered the possibility that AI agents might have
+“non-consequentialist” preferences regarding their own actions. (I put “non-
+consequentialist” in scare quotes because it’ s not clear whether these pref-
+erences must be non-consequentialist in any strict sense.) Intuitively, an
+agent might have an aversion to power-seeking, and so be unlikely to engage
+in power-seeking behavior even when it maximizes expected utility. Allow-
+ing for such preferences would, I think, prevent us from claiming that any
+goal is absolutely instrumentally convergent: We can’t know for certain that
+an agent will take any particular action in any particular situation if they
+might have an arbitrarily strong aversion to that particular kind of action.
+It’ s not clear, though, that the possibility of non-consequentialist prefer-
+ences should make any difference to claims of weak or strict instrumental
+convergence, as long as we maintain the assumption of ignorance about an
+agent’ s basic preferences. Under that assumption, it’ s natural to suppose,
+an intrinsic aversion to power-seeking is no more or less likely than an
+intrinsic attraction to power-seeking. So while instrumental convergence
+24
+will have less predictive power for agents whose choices are based partly
+on non-instrumental considerations, such agents might still be on balance
+more likely to choose options that put them in more powerful positions. But
+fully investigating the implications of non-consequentialist preferences for
+instrumental convergence arguments would require a paper unto itself.
+Third, I haven’t said anything about the relationship between an agent
+seeking power for itself and seeking to disempower other agents. To what
+extent, and in what circumstances, is power rivalrous or zero-sum, such
+that the former goal implies the latter? Power as I have characterized it in
+this paper is not inherently rivalrous. For instance, suppose a group of us
+are ordering pizza together, that we all happen to prefer mushrooms and
+green peppers, but that we’re all such meek, deferential souls that, if any of
+us were to suggest a different combination of toppings, the others would go
+along with it. In this situation, in the sense of power I have been concerned
+with, each of us has absolute power: Each of us could, given the actual
+dispositions of everyone else in the room, bring about any possible outcome
+with certainty (or, by randomizing our own suggestion, any lottery over
+outcomes). But it seems plausible that, when agents want different things
+and are not willing to defer to each other’ s preferences, power must be at
+least partly rivalrous: I have the power to get the outcome I want only if you
+lack the power to prevent it, and vice versa. Under these circumstances, an
+agent who seeks power will also, at least to some extent, seek to disempower
+other agents. It would be valuable to investigate these questions formally
+and identify the circumstances under which disempowerment of other
+agents is a convergent instrumental goal.
+Finally, and most importantly, I should reiterate that my aim in this pa-
+per has not been to give a complete defense of the claim that instrumentally
+convergent power-seeking makes advanced AI agents a catastrophic or ex-
+istential threat to humanity. In particular, I haven’t said anything in defense
+of the orthogonality thesis or the claim that aligning future AI agents will be
+very difficult. So I haven’t made any argument that we should regard the fi-
+nal goals of actual future AI agents as randomly generated or anything close
+to randomly generated. For all I’ve said, it could turn out that these agents
+will predictably have values that make them disinclined to power-seeking
+in real-world circumstances, or that are well enough aligned with human
+values that any power they acquire would be benign. All I have tried to
+establish in this paper is that the abstract thesis that power is a convergent
+instrumental goal involves a non-trivial grain of truth.16
+16For helpful feedback on earlier versions of this paper, I am grateful to Adam Bales, Simon
+Goldstein, Harry Lloyd, Andreas Mogensen, Bradford Saad, Nate Sharadin, Elliott Thornley,
+25
+A Appendix: Proof of Proposition 4
+Proposition 4.≻p 4 is strictly but not absolutely instrumentally convergent.
+Proof. It is easy to see that≻p 4 is not absolutely instrumentally convergent.
+Suppose, for instance, that choosing ai leads to a further choice between
+certainty of outcome o1 or certainty of outcome o2, while a j leads to a 50/50
+lottery over outcomes o3 and o4. Thenπ(L(t j )) is a subset of the interior of
+L(ti ) under a permutationπ that switches o1 with o3 and o2 with o4. But
+a j will be chosen by an agent who prefers both o3 and o4 to o1 and o2, and
+regularity guarantees that utility functions with that feature have non-zero
+probability.
+Next we will show that≻p 4 is strictly instrumentally convergent. First, if
+L(t j )⊂ L(ti ), then a random agent is more likely to opt for ti by Proposition
+1. So we can focus on the case whereL(t j )̸⊂ L(ti ). Sinceπ(L(t j ))⊂ L(ti ), this
+means that L(t j )̸⊆π(L(t j )). This implies, conversely, thatπ(L(t j ))̸⊆ L(t j ).
+(If one set were a proper subset of the other, then given that both sets are
+closed, one would have greater Lebesgue measure than the other. But
+permutations are measure-preserving.) It then follows from the hyperplane
+separation theorem that there is a utility function u j that assigns some
+lottery in L(t j ) greater expected utility than any lottery in π(L(t j )), and
+likewise a utility function uπ j that assigns some lottery inπ(L(t j )) greater
+expected utility than any lottery in L(t j ).
+Now, consider the set of convex combinations of u j and uπ j : that is,
+the set of utility functions uα such that for any outcome o∈ O, uα(o ) =
+αu j (o ) + (1−α)uπ j (o ), for some α∈ [0, 1]. Clearly uα(t j )> uα(π(t j )) for
+large enough values ofα, and uα(π(t j ))> uα(t j ) for small enough values
+ofα. Moreover, the continuity of expected utility guarantees that there is
+anα∗ such that uα∗(t j ) = uα∗(π(t j )). But because π(L(t j )) belongs to the
+interior of L(ti ), any non-uniform uα∗ will strictly prefer some l∈ L(ti ) to
+any l∈ L(t j ): We can slightly improve the most-preferred lottery inπ(L(t j ))
+(moving some probability from the lowest-utility outcome in the support
+of the lottery to a higher-utility outcome, for instance) while remaining
+inside L(ti ). (This depends on uα∗ being non-uniform. But given at least
+three outcomes in O, we can choose utility functions u j and uπ j that don’t
+have a uniform function in their convex hull.) Having found an l∈ L(ti )
+such that uα∗(l )> uα∗(t j ), this inequality will also hold for small enough
+perturbations of uα∗ (by the same reasoning used in the proof of Proposition
+1). And this will include some utility functions that strictly prefert j toπ(t j )—
+David Thorstad, and participants in the 2024 “Language, Mind, and Ethics in AI” workshop
+at UT Austin.
+26
+for instance, uα for values ofα slightly larger thanα∗, and any small enough
+perturbations of those uα.
+This means that there is a set of utility functions, with positive Lebesgue
+measure, that strictly prefer ti to t j and t j toπ(t j ). From Proposition 3, we
+know that a randomly generated utility function is equally likely to prefer
+t j overπ(t j ) as to prefer π(t j ) over t j . The fact that a positive-measure
+set of utility functions that prefer t j overπ(t j ) also prefer ti over t j breaks
+that equality, implying (given regularity) that a randomly generated utility
+function is strictly more likely to prefer ti over t j than the reverse.
+References
+Bales, A. (forthcoming-a). AI takeover and human disempowerment. Philo-
+sophical Quarterly.
+Bales, A. (forthcoming-b). Will AI avoid exploitation? artificial general
+intelligence and expected utility theory. Philosophical Studies, 1–20.
+Bales, A., W . D’Alessandro, and C. D. Kirk-Giannini (2024). Artificial in-
+telligence: Arguments for catastrophic risk. Philosophy Compass 19(2),
+e12964.
+Benson-Tilsen, T . and N. Soares (2016). Formalizing convergent instru-
+mental goals. In Workshops at the Thirtieth AAAI Conference on Artificial
+Intelligence.
+Bostrom, N. (2003). Ethical issues in advanced artificial intelligence. In
+I. Smit, W . Wallach, and G. E. Lasker (Eds.),Cognitive, Emotive and Ethical
+Aspects of Decision Making in Humans and in Artificial Intelligence, Vol-
+ume 2, pp. 12–17. International Institute for Advanced Studies in Systems
+Research and Cybernetics.
+Bostrom, N. (2012). The superintelligent will: Motivation and instrumental
+rationality in advanced artificial agents.Minds and Machines 22(2), 71–85.
+Bostrom, N. (2014). Superintelligence: Paths, Dangers, Strategies. Oxford:
+Oxford University Press.
+Boyd, S. P . and L. Vandenberghe (2004).Convex Optimization. Cambridge
+University Press.
+27
+Cappelen, H., S. Goldstein, and J. Hawthorne (forthcoming). AI survival
+stories: A taxonomic analysis of AI existential risk. Philosophy of AI.
+Carlsmith, J. (2022). Is power-seeking AI an existential risk? arXiv:
+2206.13353v1 [cs.CY].
+Carlsmith, J. (forthcoming). Existential risk from power-seeking AI. In
+H. Greaves, J. Barrett, and D. Thorstad (Eds.), Essays on Longtermism .
+Oxford University Press.
+Dung, L. (2024). The argument for near-term human disempowerment
+through AI. AI & Society, 1–14.
+Gabriel, I. (2020). Artificial intelligence, values, and alignment. Minds and
+Machines 30(3), 411–437.
+Gallow, J. D. (2024). Instrumental divergence. Philosophical Studies, 1–27.
+Goldstein, S. and C. D. Kirk-Giannini (2023). Language agents reduce the
+risk of existential catastrophe. AI & Society, 1–11.
+Good, I. J. (1966). On the principle of total evidence. British Journal for the
+Philosophy of Science 17(4), 319–321.
+Hendrycks, D., M. Mazeika, and T . Woodside (2023). An overview of catas-
+trophic AI risks. arXiv: 2306.12001v6 [cs.CY].
+Krakovna, V . and J. Kramar (2023). Power-seeking can be probable and
+predictive for trained agents. arXiv: 2304.06528 [cs.AI].
+Ngo, R. and A. Bales (forthcoming). Deceit and power: Machine learning
+and misalignment. In J. Barrett, H. Greaves, and D. Thorstad (Eds.),Essays
+on Longtermism. Oxford University Press.
+Ngo, R., L. Chan, and S. Mindermann (2023). The alignment problem from
+a deep learning perspective. arXiv: 2209.00626v5 [cs.AI].
+Omohundro, S. M. (2008). The basic AI drives. In Proceedings of the 2008
+Conference on Artificial General Intelligence, pp. 483–492. IOS Press.
+Park, J. S., J. O’Brien, C. J. Cai, M. R. Morris, P . Liang, and M. S. Bernstein
+(2023). Generative agents: Interactive simulacra of human behavior.
+In Proceedings of the 36th Annual ACM Symposium on User Interface
+Software and Technology, UIST ’23, New York, NY, USA. Association for
+Computing Machinery.
+28
+Russell, S. (2019).Human Compatible: Artificial Intelligence and the Problem
+of Control. Penguin.
+Sharadin, N. (forthcoming). Promotionalism, orthogonality, and instru-
+mental convergence. Philosophical Studies, 1–31.
+Thornley, E. (2023). There are no coherence theorems.
+AI Alignment Forum. https://www.alignmentforum.
+org/posts/yCuzmCsE86BTu9PfA/there-are-no-coherence-
+theorems.
+Thorstad, D. (2024). What power-seeking theorems do not show. Global
+Priorities Institute Working Paper Series. GPI Working Paper No. 27-2024.
+Turner, A., L. Smith, R. Shah, A. Critch, and P . Tadepalli (2021). Optimal
+policies tend to seek power. In M. Ranzato, A. Beygelzimer, Y. Dauphin,
+P . Liang, and J. W . Vaughan (Eds.),Advances in Neural Information Pro-
+cessing Systems, Volume 34, pp. 23063–23074. Curran Associates, Inc.
+Turner, A. and P . Tadepalli (2022). Parametrically retargetable decision-
+makers tend to seek power. In S. Koyejo, S. Mohamed, A. Agarwal, D. Bel-
+grave, K. Cho, and A. Oh (Eds.),Advances in Neural Information Processing
+Systems, Volume 35, pp. 31391–31401. Curran Associates, Inc.
+Wang, G., Y. Xie, Y. Jiang, A. Mandlekar, C. Xiao, Y. Zhu, L. Fan, and A. Anand-
+kumar (2023). Voyager: An open-ended embodied agent with large lan-
+guage models. arXiv: 2305.16291v2 [cs.AI].
+Yudkowsky, E. (2015). Sufficiently optimized agents appear coherent. Arbital.
+https://arbital.com/p/optimized_agent_appears_coherent/.
+29

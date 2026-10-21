@@ -1,0 +1,437 @@
+Vol.:(0123456789)
+Theory and Decision (2026) 101:391–400
+https://doi.org/10.1007/s11238-025-10025-3
+A behavioural money‑pump argument for completeness
+Johan E. Gustafsson1 
+Accepted: 26 January 2025 / Published online: 24 May 2025 
+© The Author(s) 2025
+Abstract
+Completeness says that, for every pair of prospects, at least one of the prospects is 
+at least as preferred as the other. I present a new money-pump argument that Com-
+pleteness is a requirement of rationality. In comparison with earlier money-pump 
+arguments for Completeness, this argument relies on a unidimensional form of sto-
+chastic dominance and the behavioural assumption that agents pick in a probabilistic 
+manner when no option is optimal. Moreover, unlike some of the previous argu-
+ments, the new argument is based on a forcing money pump, that is, an exploita-
+tion scheme where the agent is rationally required at each step to go along with the 
+scheme.
+Keywords Money pumps · Completeness · Picking · Stochastic dominance · 
+Dynamic choice
+Completeness says that, for every pair of prospects, at least one of the prospects is at 
+least as preferred as the other. Letting ‘ X ≿ Y ’ denote that X is at least as preferred 
+as Y, we can state Completeness as follows:1
+Completeness   For all prospects X and Y, it holds that X ≿ Y or Y ≿ X.
+In this paper, I will present a new money-pump argument that Completeness is a 
+requirement of rationality. Unlike earlier money-pump arguments for that require-
+ment, this argument relies on a unidimensional form of stochastic dominance and 
+on the behavioural assumption that agents pick in a probabilistic manner when no 
+ * Johan E. Gustafsson 
+ johan.eric.gustafsson@gmail.com
+1 The University of Texas at Austin, Austin, TX, USA
+1 Arrow 1951, p. 13. von Neumann and Morgenstern (1944, pp. 26–27) use a slightly weaker variant of 
+Completeness which allows that a prospect is not at least as preferred as itself.
+392 J. E. Gustafsson 
+option is optimal.2 And, unlike some of the earlier arguments, the new one is based 
+on a forcing money pump — that is, an exploitation scheme where the agent is 
+rationally required at each step to go along with the scheme.3
+Let ‘ X ≻ Y ’ denote a preference for X over Y, defined as follows:
+ And let ‘ X ∥ Y ’ denote a preferential gap between X and Y, defined as follows:4
+If you have a preferential gap between X and Y, we say that X and Y are gap-related.
+Now, suppose you violate Completeness by having a preferential gap between 
+prospects A and B (which can either be final outcomes or uncertain prospects):
+A crucial difference between a preferential gap and indifference (that is, when both 
+relata are at least as preferred as the other) is that a preferential gap is robust to some 
+mild sourings or sweetenings. 5 A souring of a prospect  X is a prospect that is just 
+like X except that it is certainly inferior in one dimension that the agent cares about 
+(for instance, the souring may be worse in terms of money). Whereas a sweetening 
+of a prospect  X is a prospect that is just like X except that it is certainly superior in 
+one dimension that the agent cares about.
+If the preferential gap between A and B is only robust to sourings or sweetenings 
+of A (and not B), we relabel A as ‘B’ and B as ‘A’. If the preferential gap between A 
+and B is only robust to sweetenings of B (and not sourings), we relabel one of these 
+sweetenings of B as ‘B’ and B as ‘ B−−’.6 Moreover, we assume that a souring of a 
+X ≻ Y =df X ≿ Y and it is not the case that Y ≿ X.
+X ∥ Y =df it is neither the case that X ≿ Y nor the case that Y ≿ X.
+(1)A ∥ B.
+4 von Neumann and Morgenstern 1947, p. 630.
+5 This is analogous to Raz’s (1985–1986, p. 120; 1986, pp. 325–6) similar ‘mark of incommensurability’ 
+for value incomparability.
+6 Accordingly, we don’t need the assumption that the robustness to sourings is symmetrical between the 
+relata of preferential gaps. This assumption (or, at least, that there is some pair of prospects for which 
+the robustness is symmetrical) is needed for the money-pump argument for Completeness in Gustafsson 
+2022b, p. 26.
+3 Chang’s (1997, p. 11) and Broome’s (1999, pp. 156–7; 2000, pp. 33–4) money pumps are non-forcing. 
+For the forcing/non-forcing distinction, see Gustafsson and Espinoza 2010,  pp.  761–2 and Gustafsson 
+2022b, p. 27. Bradley and Steele (2016, pp. 8–9) claim (without spelling out the details) that agents with 
+incomplete preferences may pay to avoid free information, which is closely related to a money pump. 
+They (2016, p. 25) maintain, however, that such agents — given a suitable choice rule — won’t face a 
+forcing money pump. Finally, like the present paper, Bader (2019) discusses agents with probabilistic 
+behaviour in choices between gap-related options. His cases involve iterated choices between the sour -
+ings of the options with the unsoured options only being reachable after having reject a large number of 
+sourings (which each might be selected with some probability). But these cases, as Bader points out, only 
+become arbitrarily close to proper (sure loss) money pumps.
+2 Compared to the deontic money-pump argument for Completeness in Gustafsson 2022b,  pp.  24–39 
+(which is also based on a forcing money pump), the new argument relies on neither the Principle of 
+Rational Decomposition nor the Principle of Future-Choice Independence. See Gustafsson 2022b,  pp. 
+28, 31.
+393
+A behavioural money-pump argument for completeness  
+prospect is less preferred than the original prospect. Hence we can infer that there is 
+a souring B−− of B such that
+(We label the souring ‘ B−− ’ rather than ‘ B− ’ to leave notational room for a milder 
+souring of B later on.)
+How do you select an option in a choice between options when no option is pre-
+ferred to the others? A standard answer is that you don’t choose: you pick. 7 If, in a 
+choice between options X and  Y, you predictably pick X by habit (or by some tie-
+breaking rule), then it seems that you effectively prefer X to  Y (or, at least, regard 
+X as at least as preferred as  Y).8 Instead, we shall be concerned with the case where 
+your preferential gap between two options makes your behaviour uncertain (at least 
+to yourself). Let’s say an agent probabilistically picks between two options if the 
+agent does not know in advance what they would select if they were to face that 
+choice.9
+If you pick in a fully blind way, it seems that the probability that each alterna-
+tive will be selected is uniform. Picking in that fully blind way makes most sense 
+when your preferential attitudes for the options are exactly symmetrical. 10 Having a 
+preferential gap between two options, however, doesn’t necessarily require that your 
+preferential attitudes are symmetrical between the options. For instance, it’s plausi-
+ble, given your preferences in (1) and (2), that your preferential comparison of A and 
+B has a somewhat different balance than your preferential comparison of A and B−− . 
+Plausibly, you are more likely to select A over B−− than to select A over B.
+Hence we do not assume that you probabilistically pick with a probability distri-
+bution that gives an equal probability for each option. We allow (but do not require) 
+that these probability distributions differ for different pairs of gap-related options 
+when you pick between them. (We will assume, however, that these probability dis-
+tributions are precise and knowable rather than Knightian. 11 But we will cover the 
+Knightian and imprecise cases later on.)
+Suppose then that, in a choice between A and B, you probabilistically pick A with 
+probability p (where 0 < p < 1 ). And, in a choice between A and B−− , you proba-
+bilistically pick B−− with probability q (where 0 < q < 1 ). We assume that neither p 
+nor q is equal to 0 or 1, because (as mentioned), if you certainly select X in a choice 
+between X and Y, then you effectively prefer X to Y.
+(2)A ∥ B−− , and B ≻ B−− .
+7 Ullmann-Margalit and Morgenbesser 1977,  p.  757. Rabinowicz (2008,  pp.  25–6) claims that, in a 
+choice between two gap-related options, the agent makes a choice but that choice is not based on any 
+reasoned choice disposition. This is consistent, as Rabinowicz notes, with the agent still having a choice 
+disposition in a weaker sense — that of having a certain probability of choosing each option.
+8 See also Rescher 1959/1960, p. 170.
+9 The idea is not that the agent consults any external randomization device. (See Ullmann-Margalit and 
+Morgenbesser 1977, pp. 769–70 for some objections to that approach.) Rather, it’s your preferential atti-
+tudes for the two options which make you uncertain what you would select in a choice between them.
+10 Such symmetrical cases are the kinds of cases for which Ullmann-Margalit and Morgenbesser 
+(1977, pp. 757–9) proposed picking.
+11 See Knight 1921, p. 20.
+394 J. E. Gustafsson 
+Moreover, we assume the following requirement of rationality:12
+The Preferential Behaviour Restriction   For all prospects X and  Y, the agent’s 
+behaviour at a choice between X and Y only depends on the agent’s preferential 
+attitudes for X and Y.
+The idea is that your behaviour in a choice between two options should be based 
+on your preferential attitudes for those options. But note that, if you have a prefer -
+ential gap between two options, the relevant preferential attitudes might be some-
+thing richer than merely having a preferential gap. Still, the Preferential Behaviour 
+Restriction is here taken to rule out that your choice behaviour in a choice between 
+two options depends on any parts of a decision problem that can no longer be 
+reached from the current choice node.13
+Holding fixed your preferential attitudes that we will now try to exploit, consider 
+the following decision problem:
+Here, the boxes represent choice nodes and the circles represent chance nodes. At 
+the chance nodes, chance goes up if and only if chance event  E happens — both 
+chance nodes depending on that same event. This event E occurs with a probability r 
+such that
+The potential outcomes if you go up at node 1 (that is, outcomes A− and B− ) will be 
+introduced shortly.
+At node 1, you predict that you would probabilistically pick B−− at node 4 with 
+probability q and that you would probabilistically pick A at node 5 with probability p. 
+So — letting ‘ [X1 ,p1 ; X2 ,p2 ;…]  ’ denote the prospect of X 1 with probability  p1, X2 
+r = p
+p + q .
+13 Hence this requirement rules out resolute choice; see McClennen 1990, pp. 12–13. For a critical dis-
+cussion of resolute choice, see Gustafsson 2022b, pp. 66–74.
+12 A notable difference between the money-pump argument for Completeness presented in this paper 
+and the one in Gustafsson 2022b, pp. 24–39 is that the latter does not need the Preferential Behaviour 
+Restriction, relying instead on the (deontic rather than behavioural) principle Decision-Tree Separability 
+— that the rational status of the options at a choice node does not depend on other parts of the decision 
+tree than those that can be reached from that node. See Gustafsson 2022b, p. 9.
+395
+A behavioural money-pump argument for completeness  
+with probability p2, and so on — you predict that, if you were to go down at node 1, 
+you would face prospect D:
+Now, consider the following requirement of rationality:14
+The Strong Principle of Unidimensional Stochastic Dominance   For all pros-
+pects X, X− , and Y, it holds that, if (i) X− is a souring of  X, (ii) X ≻ X− , and 
+(iii) 0 < p ≤ 1 , then [X,p;Y,1 − p] ≻ [X−,p;Y,1 − p].
+In other words, if a first prospect gives the same probability of each outcome as a 
+second prospect except that in the second prospect some of the outcomes are soured, 
+then you prefer the first prospect to the second. As far as rational requirements con-
+cerning uncertainty go, it’s a compelling requirement.15
+By the Strong Principle of Unidimensional Stochastic Dominance, it follows that 
+you prefer [A, r; B,1 − r] to  D. To see this, note that the probability of ending up 
+with A given D is equal to
+So, given D, the probability of ending up with A is r and the probability of ending 
+up with one of B and B−− is 1 − r . And, since D gives you some chance of  B−− , the 
+Strong Principle of Unidimensional Stochastic Dominance entails that [A, r; B,1 − r] 
+is preferred to D.
+For another way to see this, we introduce prospect F:
+Note that [A, r; B,1 − r] is equivalent to [B, qr; F ,1 − qr] and D is equivalent to 
+[B−− ,qr; F ,1 − qr] . So, from  (2), we have, by the Strong Principle of Unidimen-
+sional Stochastic Dominance,
+Next, consider the following requirement of rationality:16
+D =[ B−− ,rq; A, r(1 − q)+( 1 − r)p;B, (1 − r)(1 − p)].
+r(1 − q)+( 1 − r)p = p
+p + q (1 − q)+
+/parenleft.s3
+1 − p
+p + q
+/parenright.s3
+p = p
+p + q = r.
+F =
+/bracketleft.s3
+A, r
+1 − qr; B,1 − r
+1 − qr
+/bracketright.s3
+.
+(3)[A, r; B,1 − r] ≻ D.
+14 Gustafsson 2022b, p. 59. While this principle is compelling, it’s a drawback of the present approach 
+that it needs any assumption specifically about uncertain prospects to defend Completeness, since Com-
+pleteness isn’t essentially about uncertainty (still, it does apply to uncertain prospects). The approach in 
+Gustafsson 2022b, pp. 24–9 does not rely on any assumptions specifically about uncertain prospects.
+15 This requirement should be plausible even if one is risk-averse. For instance, Buchak (2013,   
+pp. 37–8), who favours risk aversion of the expected-utility-violating variety, accepts a still stronger ver -
+sion of the requirement.
+16 Gustafsson 2022b, p. 5.
+396 J. E. Gustafsson 
+Unidimensional Continuity of Preference   For all prospects X and Y, it holds 
+that, if X ≻ Y , then there is a prospect X− such that (i) X− is a souring of X and 
+(ii) X ≻ X− ≻ Y.
+The idea is that, if you prefer X to  Y, then you prefer X to Y with some margin. So 
+there should be some small extent to which we can sour X such that this souring is 
+also preferred to Y (the souring, of course, will be less preferred than X).
+From (3), it follows, by Unidimensional Continuity of Preference, that there are 
+sourings of A− and B− of A and B respectively such that
+So now we have the missing prospects of the decision problem: If you were to go up 
+at node 1, you would end up with A− if E occurred and with B− if E did not occur.
+At node  1, you rely on backward induction — that is, you take into account 
+your predictions about your behaviour at future choice nodes when you make your 
+choice. Since [A−,r; B−,1 − r] is the prospect of going up at node 1 and you predict 
+that you would face the less preferred prospect D if you were to go down, you go up 
+at node 1. But then, regardless of whether E occurs, you will end up with a souring 
+of what you would have ended up with if you had gone down at each choice node. 
+E occurs E does not occur
+Up at node 1 A− B−
+Down at each choice node A B
+Accordingly, this case is a money pump. We can think of the choice nodes as trad-
+ing opportunities. At each choice node, you receive a trade offer, which you accept 
+by going up and you turn down by going down. And we can think of you as initially 
+possessing the prospect [A, r; B,1 − r] , that is, what you would get if you were to 
+turn down all trade offers. At node 1, you are offered a trade from [A, r; B,1 − r] to 
+[A−,r; B−,1 − r] . If you were to turn down that trade and E occurred, you would 
+be offered a trade from A to B−− at node 4. And, if you were to turn down the trade 
+at node 1 and E did not occur, you would be offered a trade from B to A at node 5. 
+Since you will go up at node  1, you are guaranteed to pay (letting the unidimen-
+sional sourings be monetary) for what you could have walked away with for free.
+Note that this money pump cannot be blocked by foresight. You know the whole 
+exploitation set-up in advance. And we assumed that you make your choice at 
+node 1 with the help of backward induction. So, even though you have foresight and 
+use backward induction, you prefer going up at node 1. And so you get exploited.17
+(4)[A, r; B,1 − r] ≻ [A−,r; B−,1 − r] ≻ D.
+17 In fact, this decision problem is BI-terminating. A decision is BI-terminating if and only if backward 
+induction only recommends options that are not followed by any further choice nodes. See Rabinowicz 
+1998, p. 101. In BI-terminating decision problems, we can defend the prescription of backward induc-
+tion at the initial node without making the implausible assumption that one would behave rationally even 
+at choice nodes that are only reachable via irrational choices. To defend the prescription of backward 
+induction at the initial node in BI-terminating decision problems, we only need to assume that, at nodes 
+that can be reached without making any irrational choices, the agent retains (i) their rationality and (ii) 
+397
+A behavioural money-pump argument for completeness  
+Could this money pump be blocked with the help of resolute choice — that is, 
+could it be blocked if you stick to plans even if you would not have followed those 
+plans if you had not adopted them? 18 On the conservative form of resolute choice, 
+resolute agents stick to a plan as long as they do not prefer to deviate from that 
+plan.19 If you are this kind of agent, you could adopt a plan at node 1 to go down at 
+each choice node. Thereby, you can predict at node 1 that you will go down at nodes 
+4 and 5. And then, taking this prediction into account, you are rationally required to 
+go down at node 1. Hence you avoid being exploited.
+This resolute approach, however, violates the Preferential Behaviour Restriction. 
+Since we hold your preferential attitudes fixed throughout the decision problem, you 
+would still have a preferential gap between the available options at nodes 4 and 5. 
+So, acting based on your preferential attitudes, you would go up at nodes 4 and 5 
+with some probability. Accordingly, if you resolutely follow the plan to go down 
+(with certainty) at each choice node, your behaviour at those nodes cannot solely 
+depend on your preferential attitudes. It must also depend on your having adopted 
+the plan to go down at each choice node. But why would you care about following 
+that plan at nodes 4 and 5? What should matter is how you feel about the available 
+options at those nodes. The mere fact that you initially adopted a plan to go down at 
+these nodes does not seem to give you any additional reason for going down.20
+Note, in addition, that, back at node 1 when you adopted the plan, you had the 
+same preferential attitudes about the options at nodes 4 and 5 as you have when you 
+reach those nodes. So, even at the time you adopted the plan to go down at each 
+choice node, you did not prefer the outcome of going up at node 4 or 5 to the out-
+come of going down. Hence, even if you defer to your past self, you don’t seem to 
+have any reason to care about that plan at nodes 4 and 5.
+It may be objected that the plan to walk away from all trade offers isn’t avail-
+able in the relevant sense at node 1, since there is some positive probability that you 
+would accept one of the offers at nodes 4 and 5. Note, however, that what makes 
+the plan to walk away from all offers unavailable in this sense is your incomplete 
+preferential attitudes — which is the target of the argument. 21 So your incomplete 
+preferential attitudes are still to blame for your exploitability.
+More generally, it may be objected that it’s unrealistic that an exploiter would 
+have the detailed knowledge of your preferential attitudes which the exploiter needs 
+in order to set up this money pump. But all money-pump schemes require that the 
+exploiter (to some extent) knows the agent’s preferences. What matters for the 
+money-pump argument is not that it’s easy for the exploiter to set up the exploitation 
+scheme — only that it’s in principle possible to do so. It’s the exploitability (rather 
+20 Broome 1992, p. 668.
+21 Steele 2010, p. 474 and Gustafsson 2022b, p. 14.
+18 McClennen 1985, pp. 102–3; 1990, pp. 12–13.
+19 Rabinowicz 1995, pp. 594–5 and Gustafsson 2022b, p. 73.
+their trust in their rationality at nodes that can be reached without making any irrational choices. This 
+weaker form of backward induction is thus sufficient to rule out Ahmed’s (2017, p. 1001) self-regulation 
+approach — which prescribes going down at node 1.
+Footnote 17 (Continued)
+398 J. E. Gustafsson 
+than any likely exploitation) of your preferential attitudes that is taken to be a sign of 
+irrationality.22
+It may also be objected that the uncertainty about what you would select at nodes 
+4 and 5 is Knightian (that is, the uncertainty is not quantifiable by probabilities). If 
+so, we need a Knightian variation of the Strong Principle of Unidimensional Sto-
+chastic Dominance. Let ‘ [X1 ,E1 ;X2 ,E2 ; …] ’ denote a gamble where X1 is the out-
+come given event E1 , X2 is the outcome given event  E2 , and so on, and {E1 ,E2 ,…} 
+is a partition of states of nature. Then we adopt the following requirement of 
+rationality:23
+The Strong Principle of Unidimensional Knightian Dominance For all pros- 
+pects X1 ,X2 ,… ,Xn and X−
+1  , it holds that, if (i) X−
+1  is a souring of X1 and 
+X1 ≻ X−
+1  , then [X1 ,E1 ;X2 ,E2 ;… ;Xn,En] ≻ [X−
+1 ,E�
+1 ;X2 ,E�
+2 ;… ;Xn,E�
+n] , where 
+the list of events E�
+1 ,E�
+2 ,… ,E�
+n is a permutation of E1 , E2,..., En and the agent’s 
+uncertainty over these events is not quantifiable in probabilities.
+Since we have no quantifiable probabilities and we don’t care in what states of 
+nature outcomes happen, all we have to work with are the potential outcomes of 
+[X1 ,E1 ;X2 ,E2 ;… ;Xn,En] and the potential outcomes of [X−
+1 ,E�
+1 ;X2 ,E�
+2 ;… ;Xn,E�
+n] , 
+which are the same as those of [X1 ,E1 ;X2 ,E2 ;… ;Xn,En] except that one out-
+come in the former is soured. So [X1 ,E1 ;X2 ,E2 ;… ;Xn,En] should be preferred to 
+[X−
+1 ,E�
+1 ;X2 ,E�
+2 ;… ;Xn,E�
+n].
+Given your Knightian uncertainty about what you would choose at nodes 4 
+and  5, we can let E  be an event such that you also have Knightian uncertainty 
+about  E. Then, at node 1, your uncertainty over the following events E1 , E2 , E3 , 
+and E4 is not quantifiable in probabilities:
+E1 : E occurs, and you would accept the trade at node 4.
+E2 : E occurs, and you would turn down the trade at node 4.
+E3 : E does not occur, and you would accept the trade at node 5.
+E4 : E does not occur, and you would turn down the trade at node 5.
+Here, {E1 ,E2 ,E3 ,E4 } is a partition of the states of nature. The Strong Principle of 
+Unidimensional Knightian Dominance then entails that
+From (5), it follows, by Unidimensional Continuity of Preference, that
+So the prospect of going up at node 1 is preferred, using backward induction, to the 
+prospect of going down at that node.
+(5)[A,E1 ;A,E2 ;B,E3 ;B,E4 ] ≻ [B−− ,E1 ;A,E2 ;A,E3 ;B,E4 ].
+(6)[A−,E1 ;A−,E2 ;B−,E3 ;B−,E4 ] ≻ [B−− ,E1 ;A,E2 ;A,E3 ;B,E4 ].
+23 It may be objected that this principle is sensitive to the individuation of events. But note that all prin-
+ciples for decision under ignorance either violate some plausible principle or are sensitive to the indi-
+viduation of event or states of nature. See Gustafsson 2022a.
+22 See Gustafsson 2022b, p. 21.
+399
+A behavioural money-pump argument for completeness  
+But what if your uncertainty about what you would select at nodes 4 and 5 is 
+quantifiable but imprecise? We can model your imprecise credences as the set 
+of precise probability functions that are sharpenings of your credences. And we 
+adopt the following requirement of rationality:
+The Strong Principle of Sharpened Unidimensional Stochastic Dominance 
+If U and V  are imprecise prospects such that, on each precise probability 
+function that is a sharpening of the agent’s credences, there is a probabil-
+ity p and prospects X , X− , Y, such that (i) X− is a souring of X , (ii) X ≻ X− , 
+(iii) 0 < p ≤ 1 , (iv) U is equivalent to prospect [X,p;Y,1 − p] , and (v) V  is 
+equivalent to prospect [X−,p;Y,1 − p] , then U ≻ V.
+Then, for each sharpening  i of your credences, we let p i , q i , and ri be your precise 
+credences in i  for p , q, and r  respectively. Now, we let E  be an event that occurs 
+with an imprecise probability  r such that, for each sharpening  i of your credences, 
+we have
+Then, by the Strong Principle of Sharpened Unidimensional Stochastic Dominance, 
+it follows that the imprecise prospect of [A, E; B, ¬E] is preferred (using backward 
+induction) to the imprecise prospect of going down at node 1 — since, for each 
+sharpening, we can reason as we did before in the precise-probability case. And, by 
+the Unidimensional Continuity of Preference, it follows that the imprecise prospect 
+of [A−, E; B−, ¬E] is preferred to the imprecise prospect of going down at node  1. 
+Accordingly, you prefer the imprecise prospect of going up at node 1 to the impre-
+cise prospect of going down at that node. So you would still get exploited.
+Hence, even with Knightian or imprecise probabilities, the money-pump argu-
+ment still works.
+I wish to thank Ralf  M. Bader, Lara Buchak, Adam Elga, Harvey Lederman, Sami Petersen, Wlodek 
+Rabinowicz, Dean Spears, Katie Steele, Christian Tarsney, and the participants of the Problems of Phi-
+losophy: Decision Theory seminar at Princeton University on February 13, 2024 for valuable comments.
+Data availability The paper is purely theoretical and does not rely on any data.Open Access This article 
+is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, 
+adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit 
+to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if 
+changes were made. The images or other third party material in this article are included in the article’s 
+Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not 
+included in the article’s Creative Commons licence and your intended use is not permitted by statutory 
+regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright 
+holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+(7)ri = pi
+pi + qi
+.
+400 J. E. Gustafsson 
+References
+Ahmed, A. (2017). Exploiting Cyclic Preference. Mind, 126(504), 975–1022.
+Arrow, K. J. (1951). Social Choice and Individual Values. New York: Wiley.
+Bader, R. M. (2019) ‘Probabilistic Exploitation’, unpublished manuscript.
+Bradley, S., & Steele, K. (2016). Can Free Evidence Be Bad? Value of Information for the Imprecise 
+Probabilist. Philosophy of Science, 83(1), 1–28.
+Broome, J. (1992). Review of Edward F. McClennen, Rationality and Dynamic Choice: Foundational 
+Explorations. Ethics, 102(3), 666–668.
+Broome, J. (1999). Ethics Out of Economics. Cambridge: Cambridge University Press.
+Broome, J. (2000). Incommensurable Values. In R. Crisp & B. Hooker (Eds.), Well-Being and Morality: 
+Essays in Honour of James Griffin (pp. 21–38). Oxford: Clarendon Press.
+Buchak, L. (2013). Risk and Rationality. Oxford: Oxford University Press.
+Chang, R. (1997). Introduction. In R. Chang (Ed.), Incommensurability, Incomparability, and Practical 
+Reason (pp. 1–34). Cambridge, MA: Harvard University Press.
+Gustafsson, J. E. (2022a). Decisions under Ignorance and the Individuation of States of Nature. Thought, 
+11(2), 86–92.
+Gustafsson, J. E. (2022b). Money-Pump Arguments. Cambridge: Cambridge University Press.
+Gustafsson, J. E., & Espinoza, N. (2010). Conflicting Reasons in the Small-Improvement Argument. The 
+Philosophical Quarterly, 60(241), 754–763.
+Knight, F. H. (1921). Risk, Uncertainty and Profit, Boston: Houghton Mifflin.
+McClennen, E. F. (1985). Prisoner’s Dilemma and Resolute Choice. In R. Campbell & L. Sowden (Eds.), 
+Paradoxes of Rationality and Cooperation: Prisoner’s Dilemma and Newcomb’s Problem (pp. 
+94–104). Vancouver: University of British Columbia Press.
+McClennen, E. F. (1990). Rationality and Dynamic Choice: Foundational Explorations. Cambridge: 
+Cambridge University Press.
+Rabinowicz, W. (1995). To Have One’s Cake and Eat It, Too: Sequential Choice and Expected-Utility 
+Violations. The Journal of Philosophy, 92(11), 586–620.
+Rabinowicz, W. (1998). Grappling with the Centipede: Defence of Backward Induction for BI-Terminat-
+ing Games. Economics and Philosophy, 14(1), 95–126.
+Rabinowicz, W. (2008). Value Relations. Theoria, 74(1), 18–49.
+Raz, J. (1985–1986) ‘Value Incommensurability: Some Preliminaries’, Proceedings of the Aristotelian 
+Society 86:117–134.
+Raz, J. (1986). The Morality of Freedom. Oxford: Clarendon Press.
+Rescher, N. (1959/1960) ‘Choice without Preference: A Study of the History and of the Logic of the 
+Problem of “Buridan’s Ass” ’, Kant-Studien 51(1–4): 142–175.
+Steele, K. S. (2010). What Are the Minimal Requirements of Rational Choice? Arguments from the 
+Sequential-Decision Setting. Theory and Decision, 68(4), 463–487.
+Ullmann-Margalit, E., & Morgenbesser, S. (1977). Picking and Choosing. Social Research, 44(4), 
+757–785.
+von Neumann, J., & Morgenstern, O. (1944). Theory of Games and Economic Behavior. Princeton: 
+Princeton University Press.
+von Neumann, J., & Morgenstern, O. (1947). Theory of Games and Economic Behavior. Princeton: 
+Princeton University Press, second edn.
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps 
+and institutional affiliations.

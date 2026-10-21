@@ -1,0 +1,1448 @@
+ 
+ 
+A paradox for tiny
+ 
+probabilities
+ 
+and enormous values
+ 
+ 
+Nick Beckstead and Teruji Thomas
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Global Priorities Institute | September 2020
+ 
+ 
+GPI Working Paper No. 10-2020
+ 
+ 
+
+A Paradox for Tiny Probabilities
+and Enormous Values
+Nick Beckstead and Teruji Thomas*
+Abstract
+We show that every theory of the value of uncertain prospects
+must have one of three unpalatable properties.Reckless theories rec-
+ommend risking arbitrarily great gains at arbitrarily long odds for
+the sake of enormous potential; timid theories recommend pass-
+ing up arbitrarily great gains to prevent a tiny increase in risk;non-
+transitive theories deny the principle that, ifA is better thanB and
+B is better than C, then A must be better than C. While non-
+transitivity has been much discussed, we draw out the costs and
+beneﬁts of recklessness and timidity when it comes to axiology, de-
+cision theory, and moral uncertainty.
+We will argue that every theory about the value of prospects must have
+one of three unpalatable properties. By aprospect we mean a situation in
+which diﬀerent outcomes can arise with diﬀerent probabilities. For con-
+venience, we will only consider prospects in which the possible outcomes
+are adequately described in terms of apayoﬀ : the quantiﬁable gain or loss
+of some type of good relative to a ﬁxed baseline outcome. Diﬀerent the-
+ories of value will, of course, care about diﬀerent types of goods. We will
+be most interested in a moral context, in which a typical payoﬀ might be
+some number of people beneﬁted in a certain way, or else some number
+*Working paper, September . This paper was originally drafted by the ﬁrst au-
+thor based on his dissertation (Beckstead, , chapter ). The second author is respon-
+sible for most of the revisions and ideas newly appearing in this version. We are grateful
+to many people for feedback and assistance, including Amanda Askell, Andreas Mo-
+gensen, Christian Tarsney, Elliott Thornley, Hayden Wilkinson, Hilary Greaves, Larry
+Temkin, Philipp Schoenegger, Stefan Riedener, Theron Pummer, Tomi Francis, and
+Will MacAskill.
+
+of good lives brought into existence; in a prudential context, it might be
+some number of years of happy life. At any rate, the ﬁrst two horns of the
+trilemma are to be understood with respect to a given type of good and a
+given baseline.
+The ﬁrst horn of the trilemma is
+Recklessness: For any ﬁnite payoﬀx, no matter how good,
+and any positive probability p, no matter how tiny, there’s a
+ﬁnite payoﬀ y, such that gettingy with probability p is better
+than getting x for sure.
+Unless otherwise speciﬁed, ‘gettingy with probabilityp’ will mean getting
+nothing (i.e. the baseline outcome) with the remaining probability1 − p.
+So, a theory that is reckless with respect to future years of happy life will
+say that the prospect of living100 more years for sure is worse than a mere
+one-in-a-trillion chance of living for some ﬁnite (but perhaps truly vast)
+amount of time—and thus, all but certainly, dying right away.
+The second horn is
+Timidity: Let s be any positive number, no matter how small.
+There’s a ﬁnite payoﬀx and a positive probabilityp, such that
+getting x with probabilityp is no worse than getting any other
+ﬁnite payoﬀ, no matter how good, with a slightly smaller
+probability, justs percent less thanp.
+A theory that is timid with respect to lives saved will say that, for somen
+and p, savingnliveswith probability pis no worse than saving an arbitrarily
+large number of lives with probability0.999-times-p (just 0.1% smaller).
+The third horn is
+Non-Transitivity: There are prospectsA, B, andC, such that
+A is better B, B is better thanC, but A is not better thanC.
+We think that recklessness and timidity are both intuitively implausible for
+many types of goods. Not simply resting on intuition, we will draw out the
+troubling consequences of each. In contrast, we will not consider in depth
+While, as here, we often speak of ‘chance’ for convenience, we are sympathetic to
+the view that, strictly speaking, the relevant probabilities are epistemic. The distinction
+may be especially important if one thinks that chance-propositions can themselves bear
+value (Stefánsson and Bradley, ).
+
+the possibility of rejecting transitivity; for a comprehensive discussion of
+it, we defer to Temkin () and the large associated literature. The
+arguments in this paper could, then, be seen as supporting non-transitivity,
+although we are not inclined toward that conclusion.
+While our focus is oﬃcially on theories of value, we’ll sometimes talk
+about reckless or timidagents as well as theories. These agents form their
+preferences and choose their options in line with the recommendations of
+a reckless or timid theory of value. We do this to make recklessness and
+timidity more vivid; we’re not committed to the view that, in general, one
+ought to choose the best prospect, although we’re inclined to think that
+this is often true.
+In section , we will clarify the three problems and explain why we
+must choose between them, for any type of good. We’ll also introduce
+‘negative’ versions of timidity and recklessness, having to do with bad pay-
+oﬀs rather than good ones. The remainder of the paper discusses problems
+associatedwithtimidandrecklessviews, andtheirbroaderimplicationsfor
+decision theory and axiology.
+In section, we consider some well-known approaches to the evalua-
+tion of prospects, and how they can lead to timidity or recklessness. The
+discussion includes expected value theory, risk-weighted expected utility
+theory, and a cleaned-up version of the ‘Nicolausian discounting’ view ad-
+vocated bySmith () andMonton (). For example, we note that
+the best-supported versions of utilitarianism, which speciﬁcally involve ex-
+pected value theory, will lead to recklessness with respect to the creation
+of good lives. In general, our analysis of timidity and recklessness will be
+relevant to identifying the costs and beneﬁts of many axiological theories.
+Insection , wearguethattimidapproacheshaveimplicationsthatwill
+be implausible for many kinds of goods. For example, timidity means that
+events that happened in remote regions of space and time could be relevant
+to which actions would be best in prospect, even though we cannot aﬀect
+what happens in those parts of space and time. Moreover, timidity tends
+to require implausibly extreme risk aversion, and even timid views will
+tend to recommend certain kinds of long-shot bets, with counterintuitive
+results.
+In sections  and , we describe some problems that arise from reck-
+lessness when one allows for unbounded or inﬁnite payoﬀs. Versions of
+these problems will be familiar to many readers in the context of expected
+utility theory, where they are associated with the St Petersburg gamble
+
+and Pascal’s wager, respectively. What’s new here is that similar problems
+arise very generally from recklessness, regardless of whether one accepts
+expected utility theory. So these problems are more general and—given
+that the alternative is timidity—more pressing than usually thought. We
+also want to emphasize the importance of these problems in moral con-
+texts, whereas discussions of St Petersburg and Pascal almost always focus
+on prudential value or mere preference.
+Section  shows, more speciﬁcally, that recklessness conﬂicts with
+some very plausible dominance principles, while in section  we argue
+that reckless theories areinﬁnity-obsessed: they evaluate an arbitrarily tiny
+probability of an inﬁnite payoﬀ above any ﬁnite payoﬀ for sure. Although,
+for reasons we will explain, it is unclear how much diﬀerence this makes in
+ordinary situations, inﬁnity obsession would lead to very strange decisions
+in some possible circumstances, and would greatly alter the grounds that
+we would ordinarily invoke to justify claims about whether one prospect
+is better than another.
+In section , we argue that recklessness poses a problem for creating
+an acceptable theory of normative or evaluative uncertainty. How should
+your preferences reﬂect your uncertainty about which theory of value is
+correct? Many philosophers have argued in favor of an approach to this
+and similar questions that relies on expected utility theory. We argue that,
+under such an approach, agents who have any credence at all in reckless-
+ness must themselves be reckless. (As we’ll explain, this is related to, but in
+some ways goes beyond standard worries about extreme theories ‘swamp-
+ing’ more moderate ones.) Although we will mention some approaches to
+normative uncertainty that avoid this problem, there is a conundrum here
+for philosophers broadly sympathetic to the use of expected utility theory
+in this context.
+ Why We Have to Choose
+In this section, we argue that one has to choose between timidity, reckless-
+ness, and non-transitivity when evaluating prospects. A simple example
+illustrates the point.
+DevilatYourDeathbed: On your deathbed, God hands you
+a ticket that can be delivered to any of his angels, good for
+an additional year of happy life. As you celebrate, the devil
+appears and asks you, ‘Won’t you accept a small risk to get
+
+something vastly better? Trade that ticket for this one: it’s
+good for 10 years of happy life, with probability0.999.’ You
+accept and the devil hands you a new ticket. But the devil
+asks again, ‘Won’t you accept a small risk to get something
+vastly better? Trade that ticket for this one: it is good for100
+years of happy life, with probability0.9992—just 0.1% lower.’
+After 50,000 trades, you ﬁnd yourself with a ticket for1050,000
+years of happy life that only works with probability0.99950,000,
+less than one chance in1021.
+Predictably, you die shortly thereafter.
+In tabular form, the options look like this:
+Deal 0 1 2 3 · · · n · · · 50,000
+Payoﬀ 1 10 100 1 ,000 · · · 10n · · · 10100,000
+Probability 1 0 .999 0 .998 0 .997 · · · 0.999n · · · < 10−21
+On the one hand, each deal seems better than the one before. Accepting
+each deal immensely increases the payoﬀ that’s on the table (increasing the
+number of happy years by a factor of10) while decreasing its probability
+by a tiny percentage (speciﬁcally, by0.1%). It seems unreasonably timid
+to reject such a trade. On the other hand, it seems unreasonably reckless
+to take all of the deals—that would mean trading the certainty of a really
+valuable payoﬀ for all but certainly no payoﬀ at all.
+Why is it impossible to avoid all the timid choices and all the reckless
+ones? With some qualiﬁcations to be discussed below, a theory that is
+not timid with respect to years of happy life will say that deal  is better
+than deal , deal  is better than deal , deal  is better than deal , …,
+deal , is better than deal ,, and deal , is better than deal
+,. If transitivity holds, it follows that deal , is better than deal
+. But that amounts to recklessness: an extremely small probability of a
+suﬃciently large payoﬀ is better than getting an excellent payoﬀ for sure.
+Arguments with a similar structure are often calledspectrum or continuum arguments;
+see Temkin() for a survey. The best known arguments involve tradeoﬀs between the
+quantity and the quality of a payoﬀ (e.g. the duration of a life and its typical wellbeing at a
+time) rather than, as here, the quantity and the probability. Our argument has the useful
+feature that probability has an extremely well-established quantitative structure, with no
+natural threshold between ‘high’ and ‘low’ probability, whereas the structure of well-being
+
+That’s why we must choose between timidity, recklessness, and non-
+transitivity, when it comes to years of happy life; the argument obviously
+generalises to other types of goods. Of course, timidity, as we formulated
+it in the introduction, does not speciﬁcally claim that a0.1 decrease in
+probability cannot be outweighed by a10-fold increase in the payoﬀ. Sim-
+ilarly, recklessness does not speciﬁcally claim that one year of happy life is
+worse than a0.99950,000 probability of 1050,000 years of happy life. But to
+avoid timidity altogether, there mustsome deal at each step that would im-
+prove your prospects: there must be some percentage decrease (0.01, or
+0.000001, or…) such that, at each step, it would be better to reduce the
+probability of the payoﬀ by that percentage in exchange for a suﬃciently
+large increase in its size. By stringing together a suﬃciently large number
+of such deals, we can deduce that, for any positive probabilityp, no matter
+how small, it would be better to trade the original payoﬀ for the prospect
+of some vast payoﬀ with probabilityat most p. But then it would also be
+better to trade the original payoﬀ for the prospect of a vast payoﬀ with
+probability exactly p. That’s recklessness.
+Someone might embrace the timid approach on the grounds that, after
+enough time, additional years of happy life have essentially no value (per-
+haps because of boredom). We are skeptical, but in any case the problem
+recurs for other types of goods, for which the analogous claim is less plau-
+sible. We’ll consider the problems with timidity more systematically in
+sections  and , but for now, impressionistically: if you think that (i)
+it is better for human civilization to ﬂourish for more time rather than
+less, and that (ii) if human civilization ﬂourishes for much longer, that
+would be much better, then timidity with respect to years of ﬂourishing
+will seem unattractive. Similarly for timidity with respect to saving lives,
+if you think that (i) it is better to save more lives rather than less, and
+that (ii) if we save many, many more lives, that would be much better.
+(say) is more mysterious. Temkin discusses a probability-based spectrum argument in his
+chapter , but it works quite diﬀerently from ours. At any rate, the point of this paper
+is not merely to identify the spectrum argument, but to explain how it ﬁts into standard
+theories of value and to give a sustained discussion of the costs and beneﬁts of diﬀerent
+responses.
+For a sophisticated view along these lines, seeWilliams ().
+Won’t we, though, eventually run out of lives to save? There are diﬀerent ways to
+ﬁnesse this, but the simplest is to consider a baseline outcome with an inﬁnite population.
+In general, while we have presented timidity and recklessness as posing a dilemma relative
+to each baseline, one can also think of it as a dilemma between recklessness for some
+
+In general, timidity is prima facie unattractive with respect to any good
+for which (i) more of that good seems better than less of that good, and
+(ii) a lot more seems a lot better. On the other hand, recklessness leads to
+its own problems, which we will detail in sections and .
+It’s worth noting that we can construct a analogous trilemma using
+negative value. In this version, the payoﬀs might instead be years of mis-
+erable life, rather than years of happy life. A person who is ‘reckless,’ in the
+negative variant, prefers even a very long period of misery for sure to an
+arbitarily small probability of a suﬃciently long period of misery (e.g. pre-
+ferring 1,000 years of suﬀering for sure to a one-in-a-trillion chance of
+suﬀering for some much longer period). More generally and precisely:
+Negativerecklessness: Foranyﬁnitepayoﬀ x, nomatterhow
+bad, and any positive probabilityp, no matter how tiny, there’s
+a ﬁnite payoﬀy, such that gettingy with probabilityp is worse
+than getting x for certain.
+Similarly, the negatively timid person passes up a deal that would give
+them a much shorter period of suﬀering but with slightly higher probabil-
+ity. More generally and precisely:
+Negative timidity: Let s be any positive number, no matter
+howsmall. There’saﬁnitepayoﬀ xandapositiveprobability p,
+such that gettingx with probabilityp is nobetter than getting
+any other ﬁnite payoﬀ, no matter how bad, with a slightly
+smaller probability, justs percent less thanp.
+We think that, for many sources of value, negative recklessness and neg-
+ative timidity are roughly as counterintuitive as the original positive ver-
+sions, and they will lead to analogous diﬃculties. But, if anything, our
+arguments will weigh especially heavily against negative timidity.
+ Examples
+We now give examples of diﬀerent ways of evaluating prospects, and how
+they lead to timidity or recklessness. We organize these examples around
+three diﬀerent ideas that one might invoke to explain timidity, or to avoid
+baseline and timidity forall. Indeed, recklessness with respect to even one baseline leads
+to some quite general theoretical problems, as explained in section.
+
+recklessness: the boundedness of value, risk aversion, and discounting
+small probabilities. To be clear, this discussion isn’t meant to exhaust the
+logical space. But it will include the best-credentialed normative theories
+of evaluation under uncertainty.
+Throughout this section, we’ll focus on prospects that aresimple in that
+each one has only a ﬁnite number of possible outcomes, all corresponding
+to ﬁnite payoﬀs. We thereby rule out, to begin with, any diﬃculties that
+might arise from inﬁnite payoﬀs or St Petersburg gambles of the sort we’ll
+describe in sections and .
+. The boundedness of value
+As we already suggested in section , the most natural explanation for
+timidity is that the value of ﬁnite payoﬀs is bounded above. dealn would
+be worse than dealn +1 in sequences like Devil at Your Deathbed, if the
+payoﬀ of deal n were already so good that it was near the upper limit of
+how valuable an additional number of happy years could be. Though the
+number of years available in dealn +1 might be much greater, theirvalue
+would not, and therefore wouldn’t justify taking even a tiny additional risk.
+It would be strange to say (on the other hand) that the possibility of a
+much better outcome could not justify a slight increase in risk.
+As we’ll now argue, the connection between timidity and the bound-
+edness of value is especially clear if we useexpected value theory (EVT), the
+most common normative model for evaluating simple prospects. Accord-
+ing to EVT, one prospect is better than another just in case it has higher
+expected value. Here, the expected value of a prospect is computed by (i)
+identifying all of the possible outcomes of the prospect, (ii) multiplying
+the probability of each outcome by its value, and (iii) adding all those
+terms together. So the expected value (relative to the relevant baseline) of
+EVT is a special case of expectedutility theory, which we’ll discuss in the next sub-
+section. There are two diﬀerent ways to understand EVT. On one understanding, there
+are independently given cardinal facts about value, i.e. not only facts about which out-
+comes are better than which others, but also facts abouthow much better they are; EVT
+then makes sense relative to a suitable quantitative representation of those facts. But
+some authors (e.g.Broome, , p. ) think that the question ‘how much better’ is at
+best ambiguous, and regard EVT as providing a possible disambiguation. We note that
+the intuitive explanation of timidity in terms of the boundedness of valueitself requires
+some cardinal facts: we want to be able to say that, at some point, increasing the payoﬀ
+makes things better butnot by much.
+
+getting a payoﬀx with probabilityp just equalsp times the value of getting
+x for sure.
+It is easy to see that, given EVT, recklessness corresponds exactly to
+the value of payoﬀs being unbounded above, in the following precise sense:
+For any ﬁnite payoﬀx, and any numbern > 0, there exists a ﬁnite
+payoﬀ y whose value is at leastn times greater than that ofx.
+Similarly, timidity means that value has an upper bound, in the precise
+sense that there’s somex and somen such that no ﬁnite payoﬀ is more than
+n times better than x. Perfectly analogous arguments show that negative
+timidity requires a lower bound on the value of ﬁnite payoﬀs, and negative
+recklessness requires that there is no such lower bound.
+Given EVT, then, the connection between timidity and the bounded-
+ness of value is especially tight. But even if EVT is not exactly right, the
+boundedness of value would be a natural way to avoid recklessness. It pro-
+vides a clear and, at least, prima facie plausible explanation of why some
+of the devil’s deals might not be worthwhile.
+We’ll discuss some of the general problems with this idea in section
+, but for now we’ll just point out that many substantive theories of value
+do not put bounds on the value of various interesting goods. For example,
+the most natural understanding of utilitarianism as an evaluative theory
+says that improving n lives by a given amount improves the world byn
+times as much as improving one life; so the value of improving lives is
+unbounded. Total utilitarianism and its variants likewise put unbounded
+value on creating good lives. And of course utilitarianism is not special
+here: giving priority to the badly oﬀ, for example, or introducing further
+dimensions (like equality) along which an outcome can be good or bad will
+not automatically place bounds on value. So there is ample motivation to
+consider other possible justiﬁcations for timidity.
+. Risk aversion
+The very names ‘timidity’ and ‘recklessness’ suggest diﬀerent attitudes to-
+wards risk. If value is not bounded, one might guess that risk aversion is
+What’s more, some of the best worked-out arguments for total (or critical level)
+utilitarianism, like that ofBroome (), speciﬁcally rely on expected value theory. One
+can even arguefor expected value theory from total utilitarianism, or for expected utility
+theory with an unbounded utility function from key utilitarian principles like the Pareto
+principle and anonymity; seeMcCarthy et al.(, especially Theorem .).
+
+the proper way to account for timidity. As we’ll now argue, timidity can
+indeed be explained byextreme levels of risk aversion onsome, but not all,
+ways of theorizing about risk attitudes. In the end, the risk aversion re-
+quired may be too extreme to be plausible; that’s an issue we’ll return to in
+section .
+It is not straightforward to give an account of ‘risk aversion’ in an ordi-
+nary intuitive sense. However, according to a standard story, the charac-
+teristic feature of risk aversion is that one systematically judges that a sure
+payoﬀ is better than an uncertain prospect with the same expected size:
+for example, it’s better to save10 lives for sure than to have a1⁄2 chance of
+saving 9 lives and a1⁄2 chance of saving11. (This is, speciﬁcally, risk aver-
+sion with respect to thesize of payoﬀs; we’ll also discuss risk aversion with
+respect to theirvalue below.) Risk seeking requires the opposite judgment;
+risk neutrality means that these prospects as equally good.
+We’ll illustrate the connection between timidity and extreme risk aver-
+sion using what we take to be the two most popular normative theories of
+risk attitudes.
+First, expected utility theory (EUT) assigns a numerical ‘utility’ to each
+outcome, and prospects are compared on the basis of their expected util-
+ity. The utility of an outcome should depend only on the outcome’s value,
+and better outcomes should have higher utility. Given the similarity be-
+tween EUT and EVT (we’ll explain the contrast shortly) it should come
+as no surprise that timidity is equivalent to the claim that the utility of ﬁ-
+nite payoﬀs is bounded above, and negative timidity to the claim that it is
+bounded below. The argument is the same as before, with ‘utility’ instead
+of ‘value’. What does this have to do with risk aversion?
+Risk aversion, in this framework, means that payoﬀs have decreasing
+marginal utility: the utility function increases less rapidly with each addi-
+tional unit of payoﬀ. It is, in other words,concave. Now, concavity does
+not entail that the utility function is bounded above, so risk aversion does
+not entail timidity. But the utility function will be bounded above if it is
+very concave, when it comes to good outcomes—that is, if the contribu-
+tion to utility of each additional unit of payoﬀ falls oﬀ suﬃciently quickly.
+So timidity can be explained by relatively extreme levels of risk aversion
+when it comes to large payoﬀs. Risk seeking, on the other hand, means
+that the utility function isconvex: it increases more rapidly with each ad-
+ditional unit of value. Negative timidity can be explained by relatively
+extreme levels of risk seeking when it comes to very negative payoﬀs. This
+
+connection between negative timidity and risk seeking, rather than risk
+aversion, shouldn’t be too surprising. Negative timidity suggests that, in
+some cases, a gamble with a relatively high expected payoﬀ and a relatively
+small spread of payoﬀs is no worse than one with a relatively low expected
+payoﬀ and a relatively high spread. For risk attitudes to explain this pat-
+tern, they must tend to favour high-spread prospects over low-spread ones.
+That is risk seeking.
+How is this story diﬀerent from the one about expectedvalue theory
+in §.? First of all, EUT doesn’t presuppose that there are any cardinal
+facts about value (cf. footnote). But even if there are such facts, the utility
+function need not straightforwardly reﬂect them. In particular, even if the
+value of ﬁnite payoﬀs has no upper bound, their utility may. This can
+happen if the utility of positive payoﬀs is very concave as a function of
+their value, not just as a function of their size. In that case, getting a
+positive payoﬀ for sure will be better than any uncertain prospect with the
+same expected value. This is ‘pure’ risk aversion, risk aversion with respect
+to value itself. And similarly, even if the value of ﬁnite payoﬀs has no
+lower bound, negative timidity can arise through pure risk seeking, when
+it comes to negative payoﬀs.
+The EUT account of risk aversion has often been criticized, so we
+would not want to be its hostage. Let us also consider the recently popular
+risk-weighted expected utility theory (REUT), developed byBuchak ()
+as a ‘subjective’ version of the anticipated utility theory ofQuiggin ().
+According to this view, each payoﬀ again as an associated utility, but risk
+attitudes are captured by a separate ‘risk function’r, which is used to trans-
+form the probabilities. In the case of risk aversion, this transformation
+is designed to put high weight on the relatively bad outcomes of each
+prospect, amounting to a sort of pessimism; for risk seeking it puts high
+weight on the relatively good outcomes.
+Speciﬁcally, if, according to some prospect P, P>x is the probability of getting an
+outcome better thanx, and P≥x is the probability of getting an outcome at least as good
+as x, then the risk-weighted expected utility of the prospect is
+X
+x
+
+r (P≥x) − r (P>x)
+
+· u(x)
+with respect to the risk functionr and the utility function u. In the special case where
+r (x) = x, the term in square brackets is just the probability of getting an outcome as good
+as x, and the whole sum is nothing but the expected utility ofP. But, in general,r is only
+required to be an increasing, real-valued function withr (0) = 0 and r (1) = 1.
+
+Even if this is an attractive theory of risk attitudes, risk-weighted ex-
+pected utility theory will not avoid recklessness unless utility is bounded
+above: it is no diﬀerent from expected utility theory in that respect. The
+reason is that the risk-weighted expected utility of gettingx with proba-
+bility p is still just some positive number times the utility ofx. Because
+of the risk function, that number is no longer simplyp, but that doesn’t
+change the fact that, if the utility ofx increases without bound, then so
+does the risk-weighted expected utility of gettingx with probability p. So
+risk aversion in this sense is insuﬃcient to avoid recklessness. Moreover,
+this time, the boundedness of the utility function cannot be explained by
+appeal to risk aversion: risk aversion is already supposed to be handled by
+the risk function r. A bound on the utility function is more naturally in-
+terpreted as a bound on value. So, according to the standard intepretation
+of this theory, not even extreme levels of risk aversion suﬃce for timidity.
+There is, however, a relatively natural way to make risk-weighted ex-
+pected utility theory more extreme, so that it does lead to timidity, even
+with an unbounded utility function. We’ll discuss that tweak under the
+next heading.
+. Discounting small probabilities
+A third strategy for avoiding recklessness isNicolausian discounting. On
+common formulations of this view, one simply ignores outcomes whose
+probabilities are smaller than some threshold.  So, when it comes to
+recklessness, one will simply end up ignoring the tiny probability of an
+enormous payoﬀ. Indeed, a key motivation for Nicolausian discounting is
+precisely to avoid recklessness and similar phenomena.
+Unfortunately, the common formulation of Nicolausian discounting
+is fatally ﬂawed. But since something in this neighbourhood has often
+been considered prima facie plausible, we’ll take the time to formulate a
+principle that avoids the most obvious pitfalls.
+First, the problems. Consider the (not simple) prospect of gettingx
+years of happy life, where the real number x will be chosen at random
+somewhere between 0 and 1. Then each speciﬁc payoﬀ has probability
+See Smith () and Monton () for recent proponents of this very old view.
+Monton coins the name ‘Nicolausian discounting’ after Nicolaus Bernoulli, who, in a
+ letter, suggested that ‘cases that have a very small probability must be neglected and
+assumed to be zero’ (in Monton’s translation). The view is similar to the theory of ‘de
+minimis risks’, for which seePeterson ().
+
+zero. Ordinary and risk-weighted expected utility theory have ways of
+dealing with this phenomenon (roughly, one replaces sums with integrals),
+but applying Nicolausian discounting in this case is completely hopeless
+(we can’t just ignoreevery outcome). Relatedly, whether or not any out-
+comes fall below the probability threshold will depend on how ﬁnely we
+individuate them. Suppose for the sake of concreteness that the probabil-
+ity threshold is one-in-a-billion. If the devil oﬀers us one year of happy
+life, should we evaluate the prospect as if it has exactly one payoﬀ with
+probability one, or as if it has a trillion slightly diﬀerent payoﬀs, all below
+the probability threshold? Nicolausian discounting, insofar as it makes
+sense at all, must implausibly claim that this kind of redescription matters
+a lot. Finally, suppose that one prospect is very similar to another, except
+that it will turn out much better in certain cases, which individually have
+probabilities below the threshold. The ﬁrst prospect is clearly better, but
+Nicolausian discounting denies it.
+Here’s a solution. Instead of giving all small-probability outcomes zero
+weight, giveinﬁnitesimal weight to outcomes that are unsually extreme in
+value. We will call this type of viewtail discounting. Here is a way to cash
+it out. There is some probability thresholdε. An outcome x is in theleft
+tail of a given prospect if the probability of gettingx-or-worse is at mostε.
+Similarly, x is in theright tail if the probability of gettingx-or-better is at
+most ε. Say that an outcome isextreme with respect to the given prospect if
+it is in the left tail or the right tail. Otherwise, say thatx is normal. On the
+simplest form of tail discounting, one prospect is better than another if the
+expected value of its normal outcomes is higher; but if the two prospects
+have the same expected value for normal outcomes, then use the expected
+value of extreme outcomes as a tie-breaker. Roughly, then, the view is that
+one should ignore the tails of a distribution, except for breaking ties. (If
+one is only interested in avoiding the positive form of recklessness, then
+one can ignore the right tail only.)
+Tail discounting may be more defensible than Nicolausian discounting
+as commonly formulated. It does not suﬀer from the problems described
+See Gustafsson and Torpman() for an attempt to ﬁnd a canonical individuation
+of states, in a rather diﬀerent context.
+Buchak (, pp. –) makes (without endorsement) a similar suggestion in the
+context of St Petersburg gambles, which we’ll consider in section; but her suggestion
+is to give extreme outcomeszero weight, which still leads to an analogue of the last prob-
+lem mentioned above. At any rate, the problems we raise throughout this paper for tail
+discounting also apply to this simpler view.
+
+above. And it can be seen as an extreme form of risk-weighted expected
+value theory, meaning that defences of the latter can, to some extent, be
+adapted to defend tail discounting as well. Unfortunately, tail discount-
+ing leads to an especially extreme and implausible form of timidity (§.),
+along with some more general problems to which we’ll now turn.
+ The Price of Timidity
+We think that timidity is troubling on its face. For example, each deal
+oﬀered by the devil really does seem better than the one before. But the
+problems don’t stop there. In this section we explain some additional prob-
+lems faced by timid theories. Some of these are completely general. Oth-
+ers relate to particular ways of implementing timidity that were sketched
+in section. Even if these latter problems may not be completely general,
+they illustrate the diﬃculty of constructing a plausible timid theory.
+We’ll give a brief summary at the end of the section.
+. Even small decreases in unlikely payoﬀs cannot be outweighed
+In any instance of timidity, a small decrease in the probability of a payoﬀ
+cannot be outweighed by any ﬁnite increase in the size of the payoﬀ. One
+might think, ‘This is notso implausible, because, after all, the payoﬀ may
+have been enormous to begin with; a small decrease in the probability of an
+enormous payoﬀ is still a weighty matter.’ However, we can argue against
+timidity in a way that does not involve large decreases in the size of any
+possible payoﬀ.
+Consider, for the sake of concreteness, the prospectP of saving1,000
+lives with probability0.1. A theory that is timid with respect to lives saved
+might say thatPis no worse than the prospect of saving even a vast number
+of lives with probability0.099, only one percent smaller. We can imagine
+that the outcome ofP depends on the outcome of a raﬄe: if the golden
+Speciﬁcally, this is a form of risk-weighted expected value theory in which the risk-
+function has inﬁnitesimal values for probabilities belowε or above1 − ε. For an inﬁnites-
+imal numberι (e.g. a surreal or non-standard real number), one can choose the risk func-
+tion r such that r (x) = xι for x ≤ ε, r (x) = 1 − (1 − x)ι for x ≥ 1 − ε, and such that r (x)
+increases linearly forx between ε and 1 − ε. Because of this connection, tail discounting
+satisﬁes the most important axioms of risk-weighted expected utility theory: dominance,
+comonotonic tradeoﬀ consistency, and the related comonotonic sure thing principle, for
+which seeBuchak ().
+
+ticket is drawn, then a mechanism will be activated that will save1,000
+lives. Now consider a prospect P1 that diﬀers from P in two ways: ﬁrst,
+the mechanism is designed to save many more lives—let’s say10,000; but
+second, there is a one-percent failure rate, and in the fail-state,P1 saves
+only 999 lives. So P1 almost certainly leads to ten times as many lives
+saved as in P, and at worst, in the highly unlikely fail-state, it will save
+only one life fewer. Intuitively,P1 is much better thanP. But now consider
+a prospect P2. In P2, the mechanism usually saves100,000, but only998
+in the fail-state. So, compared to P1, there are almost certainly10 times
+as many lives saved, and at worst one fewer.P2 is clearly better than P1,
+so also better than P. But if we continue this sequence along, we get to
+P1000, in which no lives are saved in the fail-state. ThusP1000 leads to a vast
+number of lives saved (namely,101003) with probability0.099. Since P1000
+is better than P, our theory of value must not be timid in this particular
+way. Nor is there anything special about this case;mutatis mutandis, we
+have an argument against timidity in general.
+. Strange dependence on distant space and time
+Timidity requires our evaluation of prospects to depend in strange ways
+on what happens in distant places and times. At least, this is true insofar
+as the types of goods with respect to which we are timid can be realised
+far away.
+The problem is especially simple to understand if we suppose that
+timidity arises from the boundedness of value. How far away we are from
+the relevant baseline and how close we are to the upper bound can depend
+on how things are in remote regions of spacetime. In many situations,
+though, this would be deeply implausible. For example, if we had some
+way of greatly improving the lives of the roughly one billion people who
+now suﬀer from extreme global poverty, we could not plausibly claim that
+this would have only trivial value, on the grounds that a lot of great things
+had happened in the distant past or were now happening in other galax-
+ies, so that we had already come close to the upper limit on how good
+improving lives could be.
+Perhaps, then, the point is less telling in the context of prudential value, but we leave
+this open. The argument to follow is closely related to well-known arguments from ‘sep-
+arability’ for totalist views in population ethics (seeThomas, b). However, the issue
+for us is not separability in general but the particularly strange violations of separability
+to which timidity leads.
+
+What if value is not bounded, but timidity still holds? Then essen-
+tially the same problem appears in a more complicated guise. Suppose
+we would like to compare an option that would, relative to the status quo,
+signiﬁcantly beneﬁt a large number n of people with probability q, with
+another option that would beneﬁt an even larger numberN of people, to
+a similar extent, with a larger probabilityp. It seems obvious that the sec-
+ond option leads to a better prospect, especially ifq is much smaller than
+p and N is much larger thann. However, if value is timid with respect to
+the number of people beneﬁted, then whether this is true can depend on
+how the beneﬁts happen to be correlated with what happens (and would
+have happened anyway) in far-away times and places.
+To see this, remember that timidity is formulated relative to some base-
+line outcome. While it’s usually a convenient assumption, this baseline
+need not be the practically relevant status quo. Consider, then the follow-
+ing prospectsA, B, C. Relative to the baseline,A beneﬁts n+N people with
+probability p, whileB beneﬁts onlyn people with slightly larger probability
+p + q.
+Probabilities
+p q 1 − p − q
+A beneﬁts n + N 0 0
+B n n 0
+C n 0 0
+According to timidity, there will be some such case in whichA is no better
+than B, even thoughq is one trillionth the size ofp and N is a trillion times
+the size ofn. But now suppose that, in evaluating our options, the relevant
+status quo is not the baseline considered so far, but rather the prospectC,
+in which n people may already have been beneﬁted in a galaxy far away—
+we have no inﬂuence on what happens to those people. Relative tothat
+status quo, prospect B corresponds to beneﬁting onlyn people with tiny
+probability q, while A corresponds to beneﬁting N people with a much
+larger probability p. So, implausibly, the option of beneﬁting n people
+(relative to the status quo) with probabilityq is not better in prospect than
+the option of beneﬁtingN people with probabilityp.
+It seems strange to us that the importance of a given probability of ben-
+eﬁting a given number of people depends in any signiﬁcant way on what
+might happen, entirely beyond our inﬂuence, in far-away times and places.
+
+But, more importantly, the speciﬁc implications of timidity in cases like
+the one we just described seem rather implausible. And similar problems
+follow from negative timidity, but we won’t discuss them here.
+. Extreme risk aversion in very positive outcomes
+The next problem is that timidity leads to implausibly extreme forms of
+risk aversion, at least according to all the timid theories we surveyed in
+section .
+Consider ﬁrst a view according to which there is an upper limit on
+how good ﬁnite payoﬀs of the relevant sort could be. We will get deeply
+implausible results when thinking about prospects that mix high-value and
+middling-value outcomes. For example, suppose that 1010 extra years of
+happy life would take you extremely close to the upper limit to how good
+extra years of life could be. Now consider two prospects,A and B, in which
+the outcome depends on the toss of a fair coin:
+Heads Tails
+A 1010 years of happy life  hour of misery
+B 1080 years of happy life  hours of misery
+Since 1010 years of happy life would take you extremely close to the
+upper limit, the additional  orders of magnitude of years of happy life
+would represent a trivial improvement. However, against the baseline of
+a middling-value life, there is a non-trivial diﬀerence between two hours
+of misery and only one. Therefore, on this approach, we should conclude
+that A is better thanB. This implausible conclusion can be interpreted as
+an extreme degree of risk aversion with respect to years of happy life.B
+has a much greater expected number of years of happy life thanA, but it
+is still judged worse; this is the characteristic pattern of risk aversion.
+Whataboutversionsoftimidityonwhichvalueisnotbounded? Views
+that generate timidity through risk aversion are likely to end up in the same
+boat. To avoid recklessness, the level of risk aversion must be very high;
+but then it will seem unacceptably high in other cases. Concretely, suppose
+that risk aversion is encoded by a bounded utility function, in the context
+of EUT. Then we can run the same example as before, supposing that1010
+extra years of happy life would bring you very close to the upper bound
+for utility. We will again conclude thatA is better thanB. In the case of
+
+REUT, one could avoid this conclusion by combining the bounded utility
+function with a risk-function that is extremely risk-seeking. But then the
+theory will be implausibly risk-seeking in more ordinary cases.
+Finally, whatabouttaildiscounting? Taildiscountinghasanadvantage
+over the views we have just considered. Our example of extreme risk aver-
+sion seems particularly strange because the probabilities involved—those
+of a fair coin landing heads or tails—are middling in value, quite diﬀer-
+ent from the exotically small probabilities that seem most relevant to the
+dilemma between timidity and recklessness. In such middling-probability
+cases, tail discounting will tend to agree with expected value theory, lead-
+ing to generally plausible results. But it will still lead to weird results when
+we consider probabilities close to the threshold.
+Speciﬁcally, tail discounting implies the following condition that is
+both stronger and stranger than ordinary timidity, and which isn’t implied
+by the other timid theories we considered.
+Thresholdtimidity: Thereissomepositiveprobabilitythresh-
+old such that, for any ﬁnite, positive payoﬀsx and y, gettingx
+with probability below the threshold is never better than get-
+ting y with probability above the threshold—no matter how
+much betterx is than y and no matter how close together the
+two probabilities may be.
+So, for example, the prospect of improving1080 lives with some particular
+positive probability, one trillionth of a percent below the threshold, is no
+better than the prospect of improving only one life with a probability two
+trillionths of a percent greater. Roughly speaking, threshold timidity tells
+us that, close to the threshold, decreasing risk is inﬁnitely more important
+than increasing expected value.
+. Extreme risk seeking in very negative outcomes
+Just as timidity is associated with risk aversion for prospects with good
+outcomes, negative timidity is associated with risk seeking for prospects
+with very bad outcomes. Because of this, negatively timid theories face
+mirror-images of all the problems described in the previous subsection.
+In fact, these problems tend to look even worse, insofar as risk seeking
+generally seems more unreasonable than risk aversion does.
+
+To vary the example, here’s an interpersonal case. Suppose that a the-
+ory is negatively timid in that it puts bounds on the badness of many peo-
+ple suﬀering. This type of theory is pretty implausible right away. Some
+(e.g. prioritarians) would argue that additional suﬀering within a single life
+has increasing moral urgency, and some utilitarians would argue that the
+importance of additional suﬀering neither diminishes nor increases, but
+there seems little to recommend the view that additional suﬀering could
+become decreasingly important as it piles up. Still, to see how risk seeking
+enters in, let us suppose that the suﬀering of10 trillion people for a year
+would take us trivially close to the bound. Then this type of theory would
+tend to favour prospectB over A in the following case:
+Heads Tails
+A 1010 people suﬀer for a year  person has an enjoyable day
+B 1080 people suﬀer for a year  person has two enjoyable days
+After all, against the baseline of a middling-valued world, the happiness of
+one person for one additional day is a non-trivial consideration; it would
+outweigh the supposedly trivial consideration of all that extra suﬀering.
+If negative timidity arises not from a bounded value function, but from
+a bounded utility function, then essentially the same problem arises. Al-
+though a view of this type gets to insist that additional suﬀering does not
+decrease in value, it would still lead to extreme risk seeking with respect
+to suﬀering, and this is almost as implausible.
+Finally, tail discounting leads to a negative version of threshold timid-
+ity. It would say, for example, that the prospect of1080 people suﬀering for
+a year, with some particular positive probability, very close to the thresh-
+old, is no worse than the probability of one person suﬀering for one hour,
+with a probability that is one part in a trillion greater. Roughly speak-
+ing, this negative variant of threshold timidity would say that, close to
+the threshold, increasing risk is inﬁnitely more important than increasing
+expected value. This does not strike us as a tenable view.
+. Long-shots
+Recklessness suggests that we should value some extreme long-shot bets
+in a way that often seems counterintuitive. However, all the timid views
+we considered in section also recommend certain long-shot bets, so the
+purported advantages of timidity are undermined.
+
+To take the simplest case ﬁrst, consider tail discounting. Suppose for
+concreteness that the probability threshold is 0.00001. Then we avoid
+recklessness, but, if the value of ﬁnite payoﬀs is unbounded, it will still
+be true that any ﬁnite payoﬀ for sure, no matter how good, is worse than
+a 0.000011 probability of some other ﬁnite payoﬀ. But a longshot bet
+with a0.000011 probability of a payoﬀ is not really less objectionable than
+one with a0.00001 probability. This illustrates the more general problem:
+there seems to be no way to set the threshold so that tail discounting rules
+out all and only the objectionable longshots. Perhaps, however, this prob-
+lem can be mitigated by allowing the probability threshold to be vague, to
+match the way in which it is vague which longshots are objectionable.
+We won’t press the issue here.
+Now here’s an example of the type of longshots that are encouraged
+when value or utility is bounded above.
+Lingering doubt: In an alternate possible world, people live
+in a utopia. Life is extremely good for everyone, society is
+extremely just, and so on. Their historians oﬀer a reasonably
+well-documented history where life was similarly good. How-
+ever, the historians cannot deﬁnitively rule out various un-
+likely conspiracy theories. Perhaps, for instance, some past
+generation ‘cooked the books’ in order to shield future gener-
+ations from knowing the horrors of a past more like the world
+we live in today.
+Against this background, let us evaluate two options: one
+would modestly beneﬁt everyone aliveif (as is all but certain)
+thepastwasagoodone; theotherwouldsimilarlybeneﬁtonly
+a few people, and only if the conspiracy theories happened to
+be true.
+In this case, the second option might yield a better prospect. Why? If
+the conspiracy theories are not true, then the status quo is already about as
+good as it could be, and the beneﬁts to everyone alive would make almost
+no diﬀerence to the value (or utility) of the world. But if the conspiracy
+theories are true, and the world overall is middling in value or utility, then
+beneﬁting relatively few people would make a relatively large diﬀerence.
+See Peterson(, p. ) for this idea in the context ofde minimis risk, andThomas
+(a) for vagueness as a general response to spectrum arguments.
+
+Of course, what’s strange about this case is not only that it involves
+seemingly undue attention to a highly unlikely scenario. Contrary to the
+timid analysis of the case, we feel that modestly beneﬁtting everyone alive
+would in fact be a weighty consideration, even in the presence of some
+risk.
+. Itemized billing for the timid
+To summarize, timid theories have the following features that seem prob-
+lematic for many types of goods. The ﬁrst three are general.
+. They pass up at least one seemingly great low-risk deal in Devil at
+Your Deathbed, or in a similar case for other types of goods.
+. They must claim that, in some cases, even a small decrease in one
+unlikely payoﬀ cannot be outweighed by any increase in a much
+more likely payoﬀ (§.).
+. Their ranking of prospects is sensitive in implausible ways to how
+things are in the far removes of space and time (§.).
+The others features are had by all the timid theories we have identiﬁed,
+and it is hard to see how we could avoid them; but, for all that, they may
+not be completely general.
+. They rank prospects in an extremely risk-averse way (§.).
+. In the case of negative timidity, they rank other prospects in an ex-
+tremely risk-seeking way (§.).
+. Like reckless theories, they still recommend betting on certain kinds
+of counterintuitive longshots (§.).
+All together these problems show that justifying timidity in a plausible
+way is a serious challenge, especially for morally relevant goods. But reck-
+lessness will also have its costs.
+
+ Recklessness and Dominance
+There is some hope that the basic implausibility of recklessness might be
+open to debunking. It is hard to comprehend payoﬀs that are getting arbi-
+trarily large, so perhaps intuition is not to be trusted in these cases. And
+our intuitions might also be confused by all kinds of confounding factors
+that we would expect to see in practical situations where the stakes are very
+high and one’s evaluation of prospects is sensitive to miniscule absolute
+changes in probabilities: it’s natural to start worrying about the reliabil-
+ity of one’s evidence and one’s cognitive facilities, one’s powers of intro-
+spection, whether one is being tricked or one is simply hallucinating, and
+so on. Perhaps in the unusually simple and clearly speciﬁed cases which
+recklessness strictly speaking involves, ‘reckless’ behavior really would be
+reasonable.
+Still, the case against recklessness can be pressed, and that’s what we’ll
+do in this section and the next. Here, we’ll argue that recklessness leads to
+violations of a very compelling dominance principle. Next, we’ll argue that
+(under some further assumptions) recklessness leads to the single-minded
+pursuit of inﬁnite payoﬀs.
+In the context of expected utility theory, we know that recklessness
+corresponds to the use of an unbounded utility function. And there is a
+large literature that focuses on the problems that arise from an unbounded
+utility function, centered around the St Petersburg gamble . It turns out
+that at least some of these problems arise directly from recklessness, given
+background assumptions that are much weaker than the assumption of
+expected utility theory. Given that the alternative is timidity, the problems
+are deeper and more general that usually presented. That’s what we’ll now
+explain.
+Recall that the St Petersburg gamble, in its modern guise, oﬀers a1⁄2
+chance of  units of utility, a1⁄4 chance of  units, a1⁄8 chance of  units,
+and in general a1⁄2n chance of2n units. The expected utility of this prospect
+is inﬁnite. Some of the problems associated with the St Petersburg gam-
+See Baron and Greene () for enlightening examples about how pre-theoretic
+intuition fares very badly with respect to evaluating alternatives involving large numbers
+of people.
+The original St Petersburg gamble had monetary payoﬀs, and so inﬁnite expected
+monetary value. The observation that one can create St Petersburg gambles with inﬁnite
+expected utility, as long as the utility function is unbounded, goes back at least toMenger
+(). To emphasize: our own argument below in no way assumes expected utility
+
+ble involve handling this inﬁnity in a sensible way. As but one example,
+the ‘Petrograd’ gamble (Colyvan, ) is like St Petersburg except that
+it invariably pays oﬀ one extra unit of utility. It is presumably better than
+St Petersburg (indeed, one unit better!), but it apparently has ‘the same’
+inﬁnite expected utility. The more fundamental problem, however, is that
+the St Petersburg gamble leads to violations of some extremely attractive
+normative principles which are often themselves assumed in axiomatic ap-
+proaches to expected utility theory. Speciﬁcally, consider the following
+two principles:
+Outcome-outcomedominance: If, no matter what, the out-
+come ofA would be at least as good as the outcome ofB, then
+A is at least as good asB.
+Prospect-outcome dominance: If prospect A is strictly bet-
+ter than each possible outcome of prospectB, thenA is strictly
+better than B.
+By outcome-outcome dominance, the St Petersburg gamble is at least as
+good as a version that caps the payoﬀ at2n units of utility. But (one can
+check) this capped version has expected utility greater thann; it is better
+than gettingn units of utility for sure. So, by transitivity, the St Petersburg
+gamble is strictly better than getting n units for sure, for every natural
+number n. Therefore, the St Petersburg gamble is strictly better than every
+one of its own possible outcomes. Since the St Petersburg gamble is not
+(however) strictly better than itself, prospect-outcome dominance fails.
+theory.
+This principle is often called ‘statewise dominance’. The outcome of a prospect
+depends on what state the world is in initially; the antecedent in the principle is that,
+whichever state the world is in,A results in an outcome that is at least as good as that of
+B. Some decision-theoretic frameworks do not formally represent prospects using states,
+but it should still be possible informally to specify prospects by their eﬀects in diﬀerent
+states, and to assert outcome-outcome dominance for prospects so speciﬁed. Alterna-
+tively, one can replace outcome-outcome dominance in the following discussion by the
+notionally stronger but also very popular condition known as ‘stochastic dominance’ that
+does not refer to states.
+This ‘capped’ version, in other words, oﬀers a1⁄2 chance of  units of utility, a1⁄4
+chance of  units, a1⁄8 chance of  units, and so on, up to a1⁄2n−1 chance of2n−1 units, and
+oﬀers 2n units with the remaining probability.
+See Chalmers () for a version of this problem, andHammond () for the
+use of similar dominance principles to rule out unbounded utility functions.
+
+The problem as we have described it so far depends on expected utility
+theory. Unfortunately, it generalises to all reckless views. For, assuming
+recklessness, we can construct a ‘generalized St Petersburg gamble’ in the
+following way. Take any payoﬀ x0. By recklessness, there is a payoﬀ x1
+such that a 1⁄2 chance of x1 is better than x0 for sure. By recklessness,
+there is an payoﬀx2 such that a1⁄4 chance of x2 is better than x1 for sure.
+And so on, obtaining a sequence of payoﬀs x1, x2, x3, . . ., such that a 1⁄2n
+chance of xn is better than xn−1 for sure. Now consider a ‘generalized St
+Petersburg gamble’A that oﬀers a1⁄2n chance of xn, for everyn = 1,2,3, . . ..
+By outcome-outcome dominance, A is at least as good as simply getting
+the 1⁄2n chance of xn and nothing otherwise. And by construction this is
+better than getting xn−1 for sure. So, again, A is better than every one of
+its possible outcomes, violating prospect-outcome dominance.
+We think that prospect-outcome dominance and (especially) outcome-
+outcome dominance are both compelling principles; it’s hard to fathom
+why they should be violated in the clean kinds of cases we have in mind,
+where the value of outcomes is apparently the only thing at stake and there
+are no violations of rights or objectionable unfairness or other complicat-
+ing factors. Moreover, the timid theories with bounded value or utility
+functions that we discussed in section  are immune to these problems.
+This is a serious strike against recklessness.
+ Recklessness and Inﬁnity Obsession
+Now we introduce a problem that arises for reckless theories when there
+is a possibility of an inﬁnite payoﬀ. While theorizing about inﬁnite cases
+in ethics is notoriously diﬃcult (seeBostrom () for an entry to the
+literature), the timid approaches we surveyed in section don’t lead to the
+particular problem we identify here. And we aren’t aware of any inﬁni-
+tarian problems that are speciﬁc to timid views. That speaks in favour of
+What about views that discount small probabilities (§.)? While such views are
+immune to the the recklessness-based argument we gave in this section, the problem still
+arises. To see this in the context of tail discounting, consider a prospect in which one
+will either, with probability below the threshold, face a St Petersburg gamble, or, with
+the remaining probability, get a zero payoﬀ. This will lead to a violation of prospect-
+outcome dominance. On the other hand, simply ignoring the tails of the distribution (as
+in fn. ) would violate outcome-outcome dominance. We do not know whether there
+is a reasonable way for probability discounters to thread the needle here—it’s yet another
+challenge for advocates of these views.
+
+timidity, and against recklessness.
+While in philosophy and in life we usually don’t think about the pos-
+sibility of achieving inﬁnite payoﬀs, some philosophers, such as Pascal,
+claim that such inﬁnite considerations should be decisive, at least in the-
+ory. More precisely, these people claim:
+Inﬁnityobsession: Any non-zero probability, no matter how
+small, of an inﬁnite payoﬀ, is better than any ﬁnite payoﬀ for
+sure.
+Throughout this discussion, by ‘an inﬁnite payoﬀ’ we will mean speciﬁcally
+a positively inﬁnite payoﬀ, like an inﬁnite number of years of happy life, or
+an inﬁnite number of lives saved, or something equally good. For example,
+in Pascal’s case, inﬁnity obsession arises from the claim that an arbitrarily
+small chance of eternity in heaven is better than any ﬁnite reward. But
+of course the negatively reckless will face similar problems with respect to
+negatively inﬁnite payoﬀs.
+In this section, we argue that, given minimal assumptions, reckless
+agents must be inﬁnity-obsessed (§.), and that, given slightly stronger
+assumptions, recklessness leads to other, potentially even stranger forms
+of obsession (§.). Finally, we argue that it’s unclear to what extent these
+forms of obsession would aﬀect our judgments about cases of immediate
+practical relevance, but they remain troubling in other ways (§.).
+First, though, let us make sure the diﬀerences between recklessness
+and inﬁnity obsession are quite clear. Of course, only the latter involves
+inﬁnite payoﬀs, but there is another diﬀerence too. Though the reckless
+are willing to take some extreme risks for ﬁnite rewards, their willingness
+to take a risk for any given reward depends on the probability involved.
+When it comes to inﬁnite rewards, the inﬁnity-obsessed have no such con-
+cern. Any non-zero probability of an inﬁnite reward seems better to them
+than any ﬁnite reward for sure. To emphasize how strange this is: in any
+instance of recklessness, there’s some conceivable evidence you could show
+See Hájek () for an insightful discussion of Pascal’s wager from the point of
+view of modern decision theory.
+We continue with the standard assumption that probabilities are real numbers, and
+so exclude inﬁnitesimal probabilities. We thus set aside the natural question of what to do
+about inﬁnitesimal probabilities of inﬁnite payoﬀs. Inﬁnity obsession involves a violation
+of the standard ‘continuity’ or ‘Archimedean’ axiom used by expected utility theory and
+many other decision theories.
+
+the reckless agent, short of deﬁnitively proving, with probability , that his
+longshot won’t pay oﬀ, that will make him give up his interest in it. Not
+so for the inﬁnity-obsessed; unless you deﬁnitively prove, with probability
+, that his inﬁnite longshot won’t pay oﬀ, he’ll prefer to take his chances.
+. How recklessness leads to inﬁnity obsession
+Despite their diﬀerences, recklessness leads to inﬁnity obsession, given
+only very weak assumptions. For example, suppose we have an agent who
+is reckless about the number of happy years of life he has. Compared to
+getting any ﬁnite number of years of happy life for sure, he’d prefer even a
+tiny chance of living for a suﬃciently long but ﬁnite time.A fortiori, he’d
+prefer the same tiny chance of living for inﬁnitely long. So he’d prefer any
+tiny chance of living forever to any ﬁnite number of years of happy life for
+sure. In other words, he’ll be inﬁnity-obsessed.
+More formally, the premises we need to derive inﬁnity obsession are
+recklessness, transitivity, outcome-outcomedominance, andtheclaimthat
+an inﬁnite payoﬀ is better than a ﬁnite one. The argument goes like this.
+Consider a prospect A that gives the agent an inﬁnite payoﬀ with proba-
+bility p > 0, let B be a prospect that gives the agent some ﬁnite payoﬀy
+with that same probabilityp, and letC be a prospect that gives the agent
+some other ﬁnite payoﬀx for sure. We have to show thatA is better than
+C. According to recklessness, there’s some value ofy that would make B
+better than C. But an inﬁnite payoﬀ is better than a ﬁnite payoﬀ, so, by
+outcome-outcome dominance, A is at least as good as B. Therefore, by
+transitivity, A is better thanC.
+. Other forms of obsession
+We’ve formulated inﬁnity obsession in a way that ties it very closely to
+recklessness, as the preceding argument shows. But slightly stronger as-
+sumptions lead from recklessness to other forms of obsession, which may
+be even more troubling. To illustrate, suppose we accept
+It’s true that, in section, we argued that recklessness requires one to deny either
+outcome-outcome dominance or prospect-outcome dominance. We think it would be
+quite remarkable to reject the particular application of outcome-outcome dominance that
+follows. Be that as it may, the logical point is that if one rejects only the slightly less
+compelling condition of prospect-outcome dominance, then one still falls prey to inﬁnity
+obsession.
+
+The sure thing principle:If, on the supposition that some
+proposition E is true, prospectA is at least as good asB, and,
+on the supposition thatE is false, A is better than B, then A
+is better thanB.
+Although the sure thing principle in its full generality is closely associated
+with expected utility theory, the particular applications we will make of it
+are relatively uncontroversial; for example, they are compatible with the
+risk-weighted expected utility theory we described in section. Here,
+then, are two further types of obsession that will ensnare the reckless if
+they accept the sure thing principle.
+First, inﬁnity obsession compares a prospect withsome chance of re-
+sulting in an inﬁnite payoﬀ to a prospect withno such chance: it says the
+former is always better. The following condition suggests, more generally,
+that a higher chance of an inﬁnite payoﬀ is always better.
+Generalized inﬁnity obsession: Getting an inﬁnite payoﬀ
+with some probabilityp and nothing otherwise is better than
+getting the same inﬁnite payoﬀ with any smaller probability
+q and a ﬁnite payoﬀx otherwise—no matter how goodx may
+be.
+A bit roughly, someone who is inﬁnity-obsessed in this generalized sense
+is obsessed with increasing the probability of inﬁnite payoﬀs, completely
+heedless of ﬁnite considerations.
+Although generalized inﬁnity obsession is stronger than plain old in-
+ﬁnity obsession, one can argue for the stronger claim from the weaker.
+Suppose that A is the prospect of getting the inﬁnite payoﬀ with probabil-
+ity p and nothing otherwise, andB is the prospect of getting the inﬁnite
+payoﬀ with probability q and x otherwise. First, it seems harmless to as-
+sume that, p being higher thanq, A results in the inﬁnite payoﬀ whenever
+B does. Now suppose thatA and B both result in the inﬁnite payoﬀ. Then
+they turn out equally well; on that supposition,A and B are equally good.
+That is, we will at most use a simple case of the comonotonic sure thing principle
+discussed byBuchak (). We won’t go into the details, since one can judge our appli-
+cation of the principle on its own terms.
+Hájek () entertains the view that, contrary to generalized inﬁnity obsession, all
+prospects involving inﬁnite payoﬀs are equally good. But this can’t be right if one accepts
+outcome-outcome dominance in the relevant cases and thinks an inﬁnite payoﬀ is better
+than a ﬁnite one.
+
+On the contrary supposition,B results in the ﬁnite payoﬀx, and A either
+results in the inﬁnite payoﬀ or in nothing. By inﬁnity obsession,A is bet-
+ter than B, on this supposition. Therefore, by the sure thing principle,A
+is better thanB.
+Second, here is a troubling kind of obsession that involves only ﬁnite
+payoﬀs. In section, we showed how to construct a ‘generalized St Peters-
+burg gamble’ using recklessness and only ﬁnite payoﬀs. An argument very
+similar to the one for inﬁnity obsession, but using the sure thing principle
+in place of outcome-outcome dominance, shows that reckless theories are
+likely to be ‘St Petersburg-obsessed’:
+St Petersburg obsession:Any non-zero probability, no mat-
+ter how small, of facing a generalized St Petersburg gamble,
+is better than any ﬁnite payoﬀ for sure.
+We’ll omit the argument for the sake of space.
+Of course, one can try to argue in similar ways for forms of obsession
+that apply in a wider range of cases, using similar or stronger dominance
+principles. The intention of our current arguments is simply to show that
+there are a range of troubling obsessions that a reckless theory will have
+diﬃculty avoiding in any plausible and principled way.
+. Does inﬁnity obsession have practical consequences?
+Even if inﬁnity obsession and its kin are troubling as theoretical conse-
+quences of recklessness, their practical implications remain unclear. For
+one thing, our formulation of inﬁnity obsession only involves a class of
+very simple prospects (each involving at most two outcomes), and realis-
+tic cases are bound to be much more complicated. We haven’t, moreover,
+considered negatively inﬁnite payoﬀs, and the related question of how to
+weigh chances of positive inﬁnities against chances of negative inﬁnities;
+how inﬁnite payoﬀs compare with generalized St Petersburg gambles; and
+so on. But all that this suggests is that even harder thinking about inﬁnities
+might be needed to handle realistic cases.
+On the other hand, it may be tempting to think that questions of in-
+ﬁnity are practically irrelevant, in the sense that they do not actually arise
+In the context of expected utility theory, the point that an unbounded utility function
+leads to violations of the continuity axiom through St Petersburg gambles goes back at
+least toArrow ().
+
+when it comes to evaluating the prospects that we are likely to face any
+time soon. That would arguably reduce the sting of inﬁnity obsession. In
+the rest of this section, we’ll consider two attempts to justify such a claim.
+We think both warrant further investigation, but even if they happen to
+work in our current circumstances, there are still foreseeable cases in which
+inﬁnity obsession leads to bizarre recommendations.
+Cancellation of infinities and ‘simple cluelessness’. At a ﬁrst
+pass, one could avoid worrying about inﬁnities by simply giving zero prob-
+ability to any scenario in which you achieve an inﬁnite payoﬀ. However,
+we don’t think this is tenable: it seems irrational to assign zero (or even
+inﬁnitesimal) probability to all the inﬁnite scenarios that have been con-
+templated by physicists, futurists, and theists. AsBostrom () points
+out, many astrophysicists now believe that the universe is inﬁnite, and this
+would make it likely that there are inﬁnitely many valuable lives. In turn,
+it is hard to be absolutely certain that one will not happen to achieve an
+inﬁnite payoﬀ in terms of lives improved, or perhaps in terms of good lives
+created.
+However, there is a variation on this strategy that seems more promis-
+ing, and which anyway clariﬁes our predicament. When it comes to com-
+paring the prospects of fairly mundane actions like buying cake versus buy-
+ing ice cream, it seems intuitive that any inﬁnitarian considerations should
+cancel out. While, as above, it is hard to entirely rule out the possibility
+that buying cake will indirectly lead to an inﬁnite payoﬀ, it might be rea-
+sonable to givethe same probability to an inﬁnite payoﬀ from cake as from
+ice cream. Then the inﬁnitarian considerations might not favour either op-
+tion on balance. Indeed, the forms of inﬁnity obsession we have discussed
+concern cases in which the probability of an inﬁnite payoﬀ varies. So it
+is not obvious that they have any implications for how we should think
+A familiar point is that certainty is an implausibly high standard in that it is immune
+to new evidence, at least by standard Bayesian lights. Granted, there are broadly Bayesian
+views on which certainty is relatively easy to come by and easy to lose. According to a view
+defended by Williamson (, ch. ), Bayesians should conditionalize on everything
+they know. Insofar as we know all kinds of everyday propositions, like what we’ll have for
+dinner, we can be certain of many things. But even on this view, the point remains: we
+just aren’t in a position to know that an inﬁnite payoﬀ is completely oﬀ the table. We’d
+have to know a lot more about physics (let alone theology!) for that to be true, and what
+we’d have to know would be in tension with what we currently suspect. One might also
+worry whether high stakes in themselves can undermine epistemic justiﬁcation.
+
+about mundane cases.
+How well this story works will depend on the details of our theory of
+evaluating prospects, but it also depends on a strong type of indiﬀerence
+principle. Why should the probabilities beexactly the same in the cases of
+cakeand ice cream? If oneofthe probabilitiesiseverso slightly larger, then
+generalized inﬁnity obsession suggests thatthat fact should be decisive.
+We agree that this is a serious challenge, and only note that an indiﬀerence
+principle of the relevant form has been defended by Greaves () in
+cases of what she calls ‘simple cluelessness’. The present example would
+involve simple cluelessness insofar as there is no reason to think that one of
+the options leads to an inﬁnite payoﬀ that doesn’t apply,mutatis mutandis,
+to the other.
+Empirical stabilizing assumptions. Another way to try to limit the
+practical consequences of inﬁnity obsession (and its generalisations) is to
+invoke what Bostrom () calls an empirical stabilizing assumption —
+some empirical assumption which, if true, means that what’s best condi-
+tional on achieving a ﬁnite payoﬀ and what’s best overall are broadly equiv-
+alent. One can imagine other domains where distinct considerations gen-
+erally lead to the same recommendations. For example, it may be that, for
+manychildren, doingwhattheirmothersaysanddoingwhat’sintheirown
+best interest generally amount to the same thing, because (and here’s the
+analogue of an empirical stabilizing assumption) mothers are predictably
+motivated to promote their children’s interests.
+What kind of empirical stabilizing assumption might hold? Some-
+one might argue that whatever best promotes the long-term survival and
+ﬂourishing of our descendants in the distant future will generally be what’s
+best in terms of ﬁnite considerationsand what’s best in terms of inﬁnite
+considerations. It will do well with respect to ﬁnite payoﬀs because of
+the enormous (even if ﬁnite) number of potentially good lives in the fu-
+ture. And it will do well with respect to inﬁnite considerations because,
+A diﬀerent thought is that the probability of achieving an inﬁnite payoﬀ will neces-
+sarily be ‘imprecise’ for either option. Then the theory of decision-making with imprecise
+probabilities will come to the fore. Here a serious worry is that imprecision about the
+probability of an inﬁnite payoﬀ will tend to mean that almost any option is permissible—
+see Mogensen () for a version of this worry for high-stakes ﬁnitary cases.
+Parﬁt (, chapter ),Bostrom (, ) andBeckstead () all argue for
+this conclusion.
+
+if humans manage to survive and ﬂourish into the distant future, they’ll be
+reasonably likely to ﬁnd and execute any available strategies for achieving
+inﬁnite payoﬀs (and perhaps also for avoiding negatively inﬁnite payoﬀs).
+It is plausible, after all, that future generations will havesome interest in
+producing inﬁnite payoﬀs (especially if recklessness is true), and that ﬂour-
+ishing and long-lasting future civilisations will be better placed than we are
+to do so, if it’s possible at all. Conversely, it’s unclear how we could realis-
+tically promote inﬁnite payoﬀs without enabling our descendants in more
+general ways. While there is much more to think about here, it does
+seem that, even if recklessness is true, there might be signiﬁcant overlap
+between what’s best with respect to ﬁnitary considerations and what’s best
+overall, in our current situation.
+Two caveats. The above considerations suggest that inﬁnity obsession
+and its cousins might not be extremely revisionary for current practical
+purposes. Perhaps this makes recklessness somewhat less unattractive. We
+end, however, with two serious caveats.
+First, even if some empirical stabilizing assumption meant that taking
+inﬁnite payoﬀs into account would not greatly change our evaluation of
+the prospects open to us, it would signiﬁcantly change the reasons behind
+these evaluations, and in strange ways. For someone who suﬀers from
+generalized inﬁnity obsession, the main reason that it would be good to
+prevent climate change would be that it would (for example) increase the
+chance that future people ﬁnd some way of achieving an inﬁnite amount of
+value, rather than the fact that lots of future generations would be better
+oﬀ in some more likely, merely ﬁnite way. Likewise, prudentially, the
+main reason that it would be important to avoid smoking would be that
+it might increase your odds of living long enough for some method of
+giving people inﬁnite value to be discovered, and ‘lung cancer is an awful
+experience’ would be a relatively minor consideration. Inﬁnity obsession
+would remain revisionary in this way.
+Second, there are situations that might arise in the distant future where
+the relevant probabilities wouldn’t cancel out and no empirical stabilizing
+assumption would apply. In some of those cases, inﬁnity obsession still
+seems deeply troubling. Here is a stylized illustration.
+Inﬁnite research vs. utopia:Our descendants reach the lim-
+For a similar line of thought, more fully developed, seeWilliams ().
+
+its of technological progress and become very conﬁdent, but
+not certain, that it’s impossible to achieve an inﬁnite payoﬀ.
+(And, indeed, it is impossible). They must decide how some
+vast amount of resources should be allocated between two
+projects: creating an extremely good (but only ﬁnite) utopia,
+or researching possible methods of achieving an inﬁnite pay-
+oﬀ.
+It is likely that if these people were inﬁnity-obsessed, they would spend
+nearly all of the resources on the inﬁnite research; they would keep be-
+coming more and more certain that their research would bear no fruit;
+and they would keep going at it as long as they didn’t becomecompletely
+certain that achieving an inﬁnitely good outcome was impossible—which
+perhaps they never would.
+. Wrapping up
+In this section we’ve argued for the following claims. A reckless theory of
+value must be inﬁnity-obsessed if (i) it says that inﬁnite payoﬀs are bet-
+ter than ﬁnite ones and (ii) it satisﬁes transitivity and outcome-outcome
+dominance. It will be inﬁnity-obsessed in the generalized sense, as well as
+St Petersburg-obsessed, if it allows certain applications of the sure thing
+principle. These types of obsession are implausible, and are a major cost
+of recklessness. It’s less clear what the practical consequences of inﬁnity
+obsession and its kin would be; it’s at least arguable that inﬁnitarian con-
+siderations cancel out in mundane cases, and that empirical stabilizing
+assumptions are relevant in others. But there would probably be some ma-
+jor diﬀerences in some cases we could encounter, and inﬁnity obsession
+would remain highly revisionary at the level of justiﬁcation.
+ Recklessness and Moral Uncertainty
+Some philosophers have argued that we should treat uncertainty about
+moral or evaluative matters in essentially the same way that we should
+treat empirical uncertainty, and speciﬁcally that we should use expected
+utility theory in both cases. After all, the axiomatic basis of expected
+For early examples, seeLockhart (), Ross(), Sepielli (); seeMacAskill
+et al.() for a recent book-length treatment, andRiedener () for a version of the
+axiomatic approach mentioned in the next sentence.
+
+utility theory isprima facie plausible regardless of what type of uncertainty
+is at stake. In this section, we raise an objection to this type of view, based
+on the possibility of reckless and inﬁnity-obsessed theories of value. We
+then comment on how this ﬁts into the general challenge of constructing
+an adequate theory of evaluative uncertainty.
+Let us step back for a moment to make sure the topic is clear. In this
+context, a natural way to understand the question is: how should your
+preferences reﬂect your credences about value? Here is an example.
+Suppose that you have some credence in utilitarianism and
+some credence in a pluralistic form of egalitarianism, as the-
+ories of value. Should you then prefer a more equal outcome
+to a less equal one when egalitarianism says that it is better
+but utilitarianism says that they are equally good?
+For our purposes, one can understand the ‘should’ as a matter of coherence
+between your beliefs and your desires. The question is whether you could
+coherently have the credences described while also (for example) being en-
+tirely indiﬀerent about equality. A theory of evaluative uncertainty would
+answer this question and others like it.
+Here is the problem. Suppose that each of the theoriesTi in which you
+have some credence ranks simple prospects by expected utility—each one
+with respect to a diﬀerent utility functionui. Suppose your preferences also
+rank simple prospects by expected utility, with respect to yet another utility
+function u. Finally, suppose that your preferences over simple prospects
+satisfy the following
+Pareto assumption: If every theory Ti in which you have
+some credence says that A is at least as good asB, then you
+weakly prefer A to B (that is, you either strictly preferA to B,
+or you are indiﬀerent between them).
+If, in addition, one of theTi says thatA is better thanB, then
+you strictly preferA to B.
+(So, in the preceding example, youdoprefer the more equal outcome to the
+less equal one.) Then, one can show that, if any of theTi are reckless, your
+preferences must be reckless as well. Indeed, it follows from Harsanyi’s
+We’re continuing to assume here that all the theories under consideration recognize
+
+aggregation theorem thatu is a weighted sum of theui:
+u = α1u1 + α2u2 + · · ·+ αnun ()
+for some positive real numbers αi. If any one of the Ti is reckless, or
+equivalently if any one of theui is unbounded, thenu must be unbounded
+as well.
+Despite the drawbacks of recklessness, it is hard to deny that we should
+have some credence in reckless theories of value, given the challenges faced
+by the alternatives, and given that on many standard theories, the value
+of ﬁnite payoﬀs is unbounded. It is therefore hard to deny that, if empiri-
+cal and evaluative uncertainty are both governed by expected utility theory,
+then one’s preferences should be reckless. Moreover, since advocates of ex-
+pected utility theory typically endorse outcome-outcome dominance and
+the sure thing principle as core commitments, we seem bound to fall into
+generalized inﬁnity obsession and St Petersburg obsession as well.
+This could reasonably be seen as an objection to the use of expected
+utility theory in this context. It is true, after all, that some quite diﬀer-
+ent approaches to evaluative uncertainty will avoid the problem altogether.
+Gustafsson and Torpman() defend ‘My Favourite Theory’, which in
+this context would be the view that your preferences should match the
+judgments of the evaluative theory in which you have highest credence;
+they reject both expected utility theory and the Pareto condition. And nor-
+mative externalists, likeWeatherson (), might claim that there sim-
+ply aren’t interesting norms in this area (let alone ones that would require
+reckless preferences). So our argument could be taken to lend support to
+such alternative approaches, or simply as raising an important problem for
+those attracted to expected utility theory and similar views.
+that payoﬀs of the relevant kind are good to some extent (or at least limited in how bad
+they are). This avoids some strange and exceptional cases where diﬀerent theories per-
+fectly cancel one another out. For example, if total utilitarianism and the opposite of
+total utilitarianism were the only theories in which you had credence, and you gave them
+exactly the same weight, then your preferences would not be reckless; you would be indif-
+ferent about everything. But even without this assumption, it would take a remarkable
+coincidence for diﬀerent theories to cancel out exactly in a way that avoids recklessness.
+See Harsanyi (, , §.). In the traditional interpretation of Harsanyi’s
+framework, each ui is a utility function representing the preferences of some person, and
+u is a utility function representing the preferences of a social planner. The result is that the
+social planner’s utility function should be a weighted sum of those of individuals. The idea
+of using Harsanyi’s theorem in the context of moral uncertainty is found inBeckstead
+() and independently inRiedener (, ).
+
+This argument is closely related to, but importantly diﬀerent from, a
+common observation in the literature. Suppose there were a universal no-
+tion of ‘moral value’ such that each theoryTi assigned a degree vi(x) of
+moral value to each outcomex. We could then make intertheoretic com-
+parisons of moral value, i.e. we could ask whetherTi gives greater moral
+value to x than Tj does. And suppose you formed your preferences in
+line with expected moral value, i.e.
+u = Cr(T1)v1 +Cr(T2)v2 + · · ·+Cr(Tn)vn ()
+where Cr(Ti) is your credence in Ti; the similarity between () and ()
+should be clear. Then the common observation is that your preferences
+will tend to be determined by high-stakes theories, i.e. ones that claim
+there are very large diﬀerences in moral value between relevant outcomes;
+moreover, this can be true even if you have only tiny credence in those
+high-stakes theories. The low-stakes theories are ‘swamped’ by the high-
+stakes ones. Again, this may seem objectionable.
+Because our argument focusses on the speciﬁc phenomenon of reck-
+lessness, it is able to rely on a much more minimal view about evaluative
+uncertainty. First, we don’t need to say anything about any cardinal notion
+of ‘moral value’ or ‘high stakes’; our use of utility functions is compatible
+with the view that utility is just a formal device based on the structural ax-
+ioms of expected utility theory, such as the sure thing principle. Second,
+relatedly, we don’t need to say anything about the meaningfulness of any
+sort of intertheoretic comparisons, a deep problem for moral uncertainty
+that goes back at least toHudson (). And, ﬁnally, far fromassuming
+that the overall utility functionu is a weighted sum of theui, in analogy
+Strictly speaking, in this discussion we only need to make intertheoretic comparisons
+between diﬀerences in moral value, but we set this aside to simplify the exposition.
+See e.g. Ross (), Greaves and Ord (), MacAskill et al. (, ch. ) for
+discussions of this problem. We note that the recent literature on normative uncertainty
+is highly sophisticated, and the comments in the next paragraph are not intended as
+objections.
+It would be reasonable, though, to suggest that the agent’s preferences must end up
+reﬂecting an implicit view about such comparisons. Where would this implicit view come
+from, if intertheoretic comparisons are meaningless? Perhaps it could be purely subjec-
+tive and pragmatic—that is, not an implicit viewabout intertheoretic comparisons, but a
+practical stance towards reconciling competing demands. At any rate, the logical point is
+that, insofar as you do, on whatever basis, satisfy the stated conditions, your preferences
+will be reckless. One could also try to generalize the argument to allow forincomparabil-
+ity in the agent’s preferences, contrary to the most orthodox version of expected utility
+
+to (), we derive it, via Harsanyi’s theorem, from a small number of more
+basic principles.
+ Conclusion
+In summary, as far as the evaluation of prospects goes, we must be willing
+to pass up ﬁnite but arbitrarily great gains to prevent a small increase in risk
+(timidity), be willing to risk arbitrarily great gains at arbitrarily long odds
+for the sake of enormous potential (recklessness), or be willing to rank
+prospects in a non-transitive way. All options seem deeply unpalatable,
+so we are left with a paradox. Of course, as we argued in section, the
+paradox may eﬀectively resolve itself: on some views about normative un-
+certainty, we are bound to have reckless preferences, even if our credence
+in reckless theories is vanishingly small. But this result is unpalatable in
+itself.
+If we accept timidity, we must think that sometimes even a small re-
+duction in an unlikely payoﬀ cannot be outweighed by a suﬃciently large
+reduction in a more likely one. We must care about seemingly irrelevant
+details involving the distant reaches of space and time. We are likely to en-
+dorse extreme risk aversion in some cases and, when it comes to negative
+timidity, extreme risk seeking in others. And, for all that, it is not clear
+we can avoid favouring problematic long-shot bets.
+If we accept recklessness, then we must deny some compelling dom-
+inance principles, like prospect-outcome dominance. And we are likely
+to be inﬁnity-obsessed, pursuing any chance of an inﬁnite payoﬀ, or even
+any chance of a generalized St Petersburg gamble, at any ﬁnite expense.
+Some may see this as another argument for ranking prospects non-
+transitively. We are not inclined toward this resolution, but we think
+that increasing one’s conﬁdence in this position is a fair reaction to the
+arguments, given that new challenges have been presented for other ap-
+proaches, but not for this one.
+theory. We note that some generalizations of Harsanyi’s theorem allow for incompara-
+bility (see McCarthy et al., ), but if incomparability is suﬃciently widespread (as
+one might guess if intertheoretic comparisons makeno sense at all) then the argument for
+recklessess will fail; seeMacAskill () for a discussion of similar issues.
+
+References
+Arrow, K. (). Aspects of the Theory of Risk-Bearing . Yrjö Jahnssonin
+Säätiö, Helsinki.
+Baron, J. and Greene, J. (). Determinants of insensitivity to quantity
+in valuation of public goods: Contribution, warm glow, budget con-
+straints, availability, and prominence. Journal of Experimental Psychol-
+ogy: Applied, ():–.
+Beckstead, N. ().On the Overwhelming Importance of Shaping the Far
+Future. PhD thesis, Rutgers.
+Beckstead, N. (). A brief argument for the overwhelming importance
+of shaping the far future. In Greaves, H. and Pummer, T., editors,
+Eﬀective Altruism: Philosophical Issues , pages –. Oxford University
+Press.
+Bostrom, N. (). Astronomical waste: The opportunity cost of delayed
+technological development. Utilitas, ():–.
+Bostrom, N. (). Inﬁnite ethics.Analysis and Metaphysics, :–.
+Bostrom, N. (). Existential risk prevention as global priority.Global
+Policy, ().
+Broome, J. ().W eighing Lives. Oxford University Press.
+Buchak, L. (). Risk and rationality. Oxford University Press.
+Chalmers, D. J. (). The St. Petersburg two-envelope paradox.Anal-
+ysis, ():–.
+Colyvan, M. (). Relative expectation theory. Journal of Philosophy ,
+():–.
+Greaves, H. (). Cluelessness. Proceedings of the Aristotelian Society ,
+():–.
+Greaves, H. and Ord, T. (). Moral uncertainty about population
+axiology. Journal of Ethics and Social Philosophy, ():–.
+
+Gustafsson, J. E. and Torpman, O. (). In defence of my favourite
+theory. Paciﬁc Philosophical Quarterly, ():–.
+Hammond, P. J. (). Objective expected utility: A consequentialist
+perspective. In Baberà, S., Hammond, P. J., and Seidl, C., editors,
+Handbook of utility theory, V olume , pages –. Kluwer.
+Harsanyi, J. C. (). Cardinal welfare, individualistic ethics, and inter-
+personal comparisons of utility.Journal of Political Economy, ():–
+.
+Harsanyi, J. C. (). Rational behavior and bargaining equilibrium in
+games and social situations. Cambridge University Press.
+Hudson, J. L. (). Subjectivization in ethics. American Philosophical
+Quarterly, ():–.
+Hájek, A. (). Waging war on Pascal’s wager.The Philosophical Review,
+():–.
+Lockhart, T. ().Moral Uncertainty and Its Consequences. Oxford Uni-
+versity Press, New York.
+MacAskill, W. (). The infectiousness of nihilism.Ethics, ():–
+.
+MacAskill, W., Bykvist, K., and Ord, T. ().Moral Uncertainty. Ox-
+ford University Press.
+McCarthy, D., Mikkola, K., and Thomas, T. (). Aggregation
+for potentially inﬁnite populations without continuity or completeness.
+Manuscript.
+McCarthy, D., Mikkola, K., and Thomas, T. (). Utilitarianism with
+and without expected utility.Journal of Mathematical Economics, :–
+.
+Menger, K.(). DasUnisherheitsmomentinderWertlehre. Z. Nation-
+alökonomie, :–. Translated as ‘The role of uncertainty in eco-
+nomics’, in Shubik, M. (ed.),Essays in mathematical economics in honor
+of Oskar Morgenstern, Princeton University Press, .
+
+Mogensen, A. (). Maximal cluelessness. Manuscript.
+Monton, B. (). How to avoid maximizing expected utility.Philoso-
+phers’ Imprint, .
+Parﬁt, D. ().On What Matters: V olume Two. Oxford University Press,
+Oxford.
+Peterson, M. (). What is a de Minimis risk? Risk Management,
+():–.
+Quiggin, J. (). A theory of anticipated utility. Journal of Economic
+Behavior & Organization, pages –.
+Riedener, S. (). Maximising Expected V alue Under Axiological Uncer-
+tainty: An Axiomatic Approach . PhD thesis, Oxford University.
+Riedener, S. (). An axiomatic approach to axiological uncertainty.
+Philosophical Studies, :–.
+Ross, J. (). Rejecting Ethical Deﬂationism.Ethics, ():–.
+Sepielli, A. ().Along an Imperfectly-Lighted Path: Practical Rationality
+and Normative Uncertainty. PhD Thesis, Rutgers University.
+Smith, N. J. J. (). Is evaluative compositionality a requirement of
+rationality? Mind, ():–.
+Stefánsson, H. O. and Bradley, R. (). How valuable are chances?
+Philosophy of Science, ():–.
+Temkin, L. S. ().Rethinking the Good: Moral Ideals and the Nature of
+Practical Reasoning. Oxford University Press, Oxford.
+Thomas, T. (a). Are spectrum arguments defused by vagueness?
+Manuscript.
+Thomas, T. (b). Separability in population ethics. In The Oxford
+Handbook of Population Ethics. Oxford University Press. Forthcoming.
+Weatherson, B. ().Normative Externalism. Oxford University Press.
+
+Williams, B. (). The Makropulos Case: Reﬂections on the Tedium
+of Immortality. In Problems of the Self: Philosophical Papers - ,
+pages –. Cambridge University Press, Cambridge.
+Williams, E. G. (). Promoting Value As Such. Philosophy and Phe-
+nomenological Research, ():–.
+

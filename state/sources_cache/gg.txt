@@ -1,0 +1,671 @@
+arXiv:0811.0683v1  [math.ST]  5 Nov 2008
+The Annals of Statistics
+2008, Vol. 36, No. 5, 2409–2422
+DOI: 10.1214/07-AOS532
+c© Institute of Mathematical Statistics , 2008
+AN ALGORITHMIC AND A GEOMETRIC CHARACTERIZATION
+OF COARSENING AT RANDOM
+By Richard D. Gill 1 and Peter D. Gr ¨unwald2,3
+Leiden University and CWI
+We show that the class of conditional distributions satisfy ing the
+coarsening at random (CAR) property for discrete data has a s im-
+ple and robust algorithmic description based on randomized uniform
+multicovers: combinatorial objects generalizing the noti on of parti-
+tion of a set. However, the complexity of a given CAR mechanis m
+can be large: the maximal “height” of the needed multicovers can be
+exponential in the number of points in the sample space. The r esults
+stem from a geometric interpretation of the set of CAR distri butions
+as a convex polytope and a characterization of its extreme po ints.
+The hierarchy of CAR models deﬁned in this way could be useful in
+parsimonious statistical modeling of CAR mechanisms, thou gh the
+results also raise doubts in applied work as to the meaningfu lness of
+the CAR assumption in its full generality.
+1. Introduction. In statistical practice one is often presented with in-
+complete, or more generally, coarse data. To properly model such data, one
+needs to take into account the mechanism by which the data are coarsened.
+In practice the details of this coarsening mechanism are oft en unknown or
+computationally expensive to model. Therefore, it is of int erest to deter-
+mine conditions under which this mechanism can be safely ign ored. The
+“coarsening at random” (CAR) assumption is the weakest cond ition giving
+this guarantee. It was identiﬁed by Heitjan and Rubin (1991). More recently,
+Received June 2007; revised June 2007.
+1Supported by the IST Programme of the European Community wit hin the PASCAL
+Network of Excellence, IST-2002-506778. RDG’s work was sup ported (during his previ-
+ous aﬃliation) by the Department of Mathematics, Utrecht Un iversity, and, thanks to a
+visiting position, by the Thiele Centre, ˚Arhus University.
+2CWI is the Dutch national research institute for mathematic s and computer science.
+3Eurandom is funded by the Dutch science foundation, NWO, and Eindhove n Uni-
+versity.
+AMS 2000 subject classiﬁcations. Primary 62A01; secondary 62N01.
+Key words and phrases. Coarsening at random (CAR), ignorability, uniform multi-
+cover, Fibonacci numbers.
+This is an electronic reprint of the original article published by the
+Institute of Mathematical Statistics in The Annals of Statistics ,
+2008, Vol. 36, No. 5, 2409–2422 . This reprint diﬀers from the original in
+pagination and typographic detail.
+1
+2 R. D. GILL AND P. D. GR ¨UNW ALD
+Gr¨ unwald and Halpern(2003) and Jaeger (2005b) have stressed that the im-
+portance of CAR is not restricted to statistical applicatio ns: when updating
+a probability distribution based on new information in lear ning, artiﬁcial in-
+telligence, or other scientiﬁc applications, it precisely characterizes when one
+can ignore the distinction between the fact that an event has been observed,
+and the fact that an event has happened, thereby considerably simplifying
+the update process.
+Thus, both in statistical inference with coarsened data and for probability
+updating in learning algorithms, it is attractive to be able to make the CAR
+assumption. In order to be able to judge whether or not the ass umption is
+warranted, it is important to fully understand its meaning. Here we approach
+this problem by giving two intimately related characteriza tions of the CAR
+assumption. First, we show that the set of all CAR mechanisms for a given
+ﬁnite sample space can be seen as a convex polytope. Each CAR m echa-
+nism is a mixture of CAR mechanisms which correspond to the ve rtices of
+the polytope. Our ﬁrst main result, Theorem 1, characterizes these vertices.
+Our second result, which follows easily from the ﬁrst, compl ements this ge-
+ometric view with an algorithmic one. We show that a simple pr obabilistic
+algorithm can simulate any possible CAR mechanism, and only CAR mech-
+anisms. Prompted by Gill, van der Laan and Robins (1997), earlier authors
+[Gr¨ unwald and Halpern(2003) and Jaeger (2005b)] have also searched for
+such constructions, calling them procedural models for CAR. Yet the pro-
+cedural models proposed so far are not quite satisfactory, b ecause in all
+cases,
+1. The procedural model depends on parameters which have to b e ﬁne-tuned
+in order to guarantee the CAR property; or equivalently,
+2. A small perturbation in the parameters can destroy the CAR property.
+This “frailty” or lack of robustness is an indication that su ch procedures
+may not occur naturally. In fact Jaeger (2005b), Theorem 4.17, shows that
+the only CAR mechanisms which a robust procedure can generat e must be
+of a special type known as “coarsening completely at random, ” CCAR.
+Here we present a natural way to generate all CAR mechanisms, and only
+CAR mechanisms, that does not require ﬁne-tuning of parameters . Our algo-
+rithm works for arbitrary ﬁnite sample spaces. It is based on a generalization
+of the notion of a partition of a set which we call a uniform multicover , or
+just multicover for short.
+Superﬁcially, its existence would have to contradict Jaege r’s theorem men-
+tioned above. But of course, a proven theorem does not allow a ny contra-
+dictions. The diﬀerence lies in the notion we use of robustnes s and of its
+negation, frailty. Our result can be seen as criticism of Jae ger’s notion of
+robustness, even though this does at ﬁrst sight seem appeali ng and natural.
+By parameterizing CAR distributions in a diﬀerent manner, we obtain a
+ALGORITHMIC AND GEOMETRIC CAR 3
+representation in which CAR can be generated without parameter tuning.
+In a nut-shell: we consider a discrete uniform distribution to be a robust and
+natural object. Jaeger considers it to be an easily perturbe d object.
+We emphasize that the body of Jaeger’s work remains highly re levant; this
+is just one of a number of important results he has obtained, a nd we, too,
+come to the conclusion that CAR mechanisms which are not CCAR will
+be very rare in practice. For instance, our ﬁnal result, Theo rem 3, shows
+that, although no ﬁne-tuning is needed, the complexity (deﬁ ned in terms
+of the “height” of multicovers) of the CAR mechanisms genera ted by our
+algorithm can grow exponentially in the size of the sample sp ace.
+The paper is organized as follows. In Section 2 we brieﬂy introduce coars-
+ening at random and other preliminaries. In Section 3 we give our geometric
+interpretation of CAR distributions (Theorem 1). In Section 4 we deﬁne
+uniform multicovers and use these to deﬁne our procedural CA R model.
+We show that it generates all and only CAR mechanisms (Theore m 2). In
+Section 5 we discuss our CAR model in detail. We show (Theorem 3) that
+it gives rise to an exponential lower bound on the height of th e multicovers
+needed in Theorem 2. The proofs are given in the ﬁnal section.
+2. Preliminaries. Let E be a ﬁnite nonempty set, containing n elements.
+A coarsening mechanism is a probabilistic rule which replac es any point x
+in E with a subset A of E containing x. Thus a coarsening mechanism
+is speciﬁed by a collection of (conditional) probabilities πx
+A such that for
+all x, ∑
+A∋x πx
+A = 1. Intuitively, x is generated by some process which for
+simplicity we will refer to as “Nature.” But rather than obse rving x directly,
+the statistician observes a coarsening of x, that is, a set A containing x. We
+call x the underlying outcome and A the corresponding observation. The
+coarsening mechanism determines the A that is observed given x; πx
+A is
+the probability of observing the set A with A ∋ x, given that Nature has
+generated x. We deﬁne the support of such a coarsening mechanism as the
+set of A ⊆ E for which πx
+A > 0 for some x ∈ E.
+A coarsening mechanism satisﬁes the CAR (coarsening at rand om) prop-
+erty if and only if for all x, x′ ∈ A,
+πx
+A = πx′
+A = πA, say.(2.1)
+Intuitively, this means that the probability of observing A is the same for all
+x that are contained in A: the coarsening is done “at random,” independently
+of the underlying x. We note that ( 2.1) is the deﬁnition of CAR employed by
+Gill, van der Laan and Robins (1997). It is called “strong CAR” by Jaeger
+(2005a). The deﬁnition is explained in detail by Gill, van der Laan and Robins
+(1997) and Jaeger (2005a); motivation, practical relevance and applications
+of the CAR property are discussed extensively by Gill, van der Laan and Robins
+(1997) and Gr¨ unwald and Halpern(2003).
+4 R. D. GILL AND P. D. GR ¨UNW ALD
+Deﬁnition ( 2.1) shows that a CAR mechanism is speciﬁed by a collection
+of probabilities πA indexed by the nonempty subsets A of E satisfying
+∑
+A∋x
+πA = 1 ∀x ∈ E.(2.2)
+We can therefore represent a CAR mechanism by the vector π = (πA : ∅ ⊂
+A ⊆ E), where we assume the subsets A to be ordered in some standard man-
+ner. For a given ﬁnite set of CAR mechanisms π1, . . . ,πp, and any probabil-
+ity vector λ = (λ1, . . . , λp), we deﬁne their mixture π′ = λ1π1 + · · ·+ λpπp.
+The following two observations are immediate:
+1. For each partition of E, there is a unique CAR mechanism that has
+exactly that partition as its support (for each set A in the partition,
+πx
+A = πA = 1, for all x ∈ A).
+2. Each ﬁnite mixture of CAR mechanisms again represents a CA R mech-
+anism.
+These two observations suggest a simple procedural CAR mode l: Fix some
+integer p > 0 and pick p (arbitrary) partitions E1, . . . ,Ep of E. Each of these
+induces a unique corresponding CAR mechanism. Now ﬁx an arbi trary dis-
+tribution λ = λ1, . . . , λp on E1, . . . ,Ep. The coarsened data are now generated
+by ﬁrst, independently of the underlying x, selecting one of the p parti-
+tions according to the distribution λ. Then, within the chosen partition, the
+unique A is generated which contains the underlying x. One can think of
+each partition as a “sensor” with the help of which the data ar e observed.
+The procedure amounts to selecting a sensor completely at ra ndom, inde-
+pendently of the underlying x generated by Nature. This procedural CAR
+model is called the CARgen procedure by Gr¨ unwald and Halpern(2003).
+The “parameters” of this procedure are the number of partiti ons p, the par-
+titions E1, . . . ,Ep and the distribution λ. Clearly, for every setting of the
+parameters, the resulting algorithm deﬁnes a CAR mechanism . One may
+be tempted to think that, by an appropriate setting of the par ameters, all
+CAR mechanisms can be simulated by CARgen, but the following example
+shows that this is not the case:
+Example 1 [Gill, van der Laan and Robins (1997)]. Let E = {1, 2, 3},
+A12 = {1, 2}, A23 = {2, 3} and A31 = {3, 1}. Consider the coarsening mecha-
+nism π∗ deﬁned by
+π∗1
+A12 = π∗2
+A12 = π∗2
+A23 = π∗3
+A23 = π∗3
+A31 = π∗1
+A31 = 1
+2 ,(2.3)
+and π∗x
+A = 0 for all other x ∈ E, A ⊆ E. By ( 2.1) it is immediately seen that
+this is a CAR mechanism. But because the support of the mechan ism is not a
+union of partitions of E, it cannot be simulated by the CARgen procedure.
+ALGORITHMIC AND GEOMETRIC CAR 5
+The example shows that the CARgen procedure is incomplete: there
+exist CAR mechanisms which cannot be represented by any para meter
+setting of CARgen. The question is now whether there exist “natural”
+procedural CAR models which are complete. In previous work, two can-
+didates for such models were proposed: Gr¨ unwald and Halper n’s ( 2003)
+CARgen∗ (an extension of CARgen described above) and Jaeger’s ( 2005b)
+Propose-and-Test model. Both of these suﬀer from the frailty property men-
+tioned in the Introduction: rather than producing CAR mechanisms for
+all parameter settings, the parameters need to be ﬁne-tuned . In previous
+work, one other procedural model has been proposed which, li ke CAR-
+gen, produces CAR mechanisms for all settings of its parameters . However,
+as shown by Jaeger (2005b), this randomized monotone coarsening model
+[Gill, van der Laan and Robins (1997)] is in fact equivalent to CARgen:
+both can simulate exactly the set of “coarsening completely at random”
+(CCAR) mechanisms. In fact, [ Jaeger (2005b), Theorem 4.17] shows that
+any CAR mechanism that is not CCAR is, in a certain sense, nonr obust.
+For the details of Jaeger’s deﬁnition of robustness we refer to Jaeger (2005b).
+Brieﬂy, he supposes that a CAR mechanism involves an auxilia ry random-
+ization, and deﬁnes robustness in terms of robustness to cha nges in the
+distribution of the auxiliary variable.
+Jaeger’s result suggests that there exists no procedural CA R model that is
+both complete and does not require any parameter tuning. Yet in Section 4,
+we exhibit a simple extension of the CARgen procedure which achieves
+exactly this, as long as we are able to sample from a uniform di stribution.
+The procedural model will be based on a geometric interpreta tion of CAR
+which we present below.
+3. A geometric view of CAR. We have already indicated that a ﬁnite
+mixture of CAR mechanisms π is itself a CAR mechanism. Hence, for a
+given ﬁnite sample space E the set of all CAR mechanisms deﬁned with
+respect to E forms a convex body in Euclidean space. In Theorem 1 we
+show that this body is a polytope with a ﬁnite number of extrem e points,
+the vertices of the polytope. In order to characterize these extreme points,
+we ﬁrst note that the support of a CAR mechanism is always a cov er of E.
+With any cover of E we associate its incidence matrix: the matrix M with
+rows indexed by x ∈ E, columns indexed by A in the support, and elements
+/BD
+{x∈A}. An incidence matrix of a cover is a matrix of 0’s and 1’s with a t
+least one 1 in every row and column. We now use these incidence matrices
+to deﬁne extreme CAR mechanisms in an algebraic way. Theorem 1 below
+states that these CAR mechanisms are also extreme points in t he geometric
+sense, justifying our terminology.
+In the sequel, vectors are always column vectors, even if we l azily list the
+elements in a row. 0 and 1 denote vectors of 0’s and 1’s, respectively, whose
+length depends on the context.
+6 R. D. GILL AND P. D. GR ¨UNW ALD
+Take the incidence matrix M of an arbitrary cover ( A1, . . . , Am) of E.
+If the equation M z = 1 has a nonnegative solution, then this solution z =
+(z1, . . . , zm) represents a CAR mechanism π, where for any Aj appearing in
+the cover, zj = πAj , and for any A not appearing in the cover, πA = 0 [see
+also Gr¨ unwald and Halpern(2003), who explain this in detail]. We call π a
+CAR mechanism corresponding to M .
+Definition 1. We call π an extreme CAR mechanism if it corresponds
+to an incidence matrix M of a cover ( A1, . . . , Am) such that M z = 1 has a
+unique, and strictly positive, solution.
+By deﬁnition, a CAR mechanism is extreme if and only if it is th e only
+CAR mechanism with the same support. It is easily checked tha t the mech-
+anism π∗ of Example 1 is an example of an extreme CAR mechanism: it is
+the only CAR mechanism with support A12, A23, A31. The uniqueness also
+implies that the support of an extreme CAR mechanism cannot h ave more
+than n elements (the size of E). It is clear that the number of extreme CAR
+mechanisms, for given E, is ﬁnite. We can ﬁnd them all by enumerating and
+testing all covers of E with m ≤ n elements.
+Theorem 1. Every CAR mechanism is a mixture of extreme CAR
+mechanisms.
+In other words, all CAR mechanisms can be represented by rand omly
+choosing, independently of x, one of a ﬁnite set of extreme CAR mechanisms.
+In the next section, we show that all such extreme mechanisms are of a
+simple and natural form. This will lead to Theorem 2, a direct corollary of
+Theorem 1, giving an algorithmic characterization of CAR.
+4. An algorithmic view of CAR. Our procedure is based on the notion
+of a uniform multicover , which we now deﬁne. A k-multicover of E, or
+just k-cover for short, is a collection of nonempty subsets of E, allowing
+multiplicities, such that for each x ∈ E, precisely k of the sets (some of
+which may be the same) contain x. Thus a 1-cover is an ordinary partition
+of E. By a uniform multicover we mean a k-cover for some k ≥ 1. The height
+of a uniform multicover is its value of k. The support of a multicover is the
+set of subsets of E in the multicover.
+A k-cover is speciﬁed by its support and by the multiplicity of e ach set
+in its support. Thus, to each nonempty subset A of E there corresponds a
+nonnegative integer nA such that nA = 0 if A is absent from the k-cover;
+otherwise nA > 0 is the multiplicity of A in the k-cover. The nA have to
+satisfy
+∑
+A∋x
+nA = k ∀x ∈ E.(4.1)
+ALGORITHMIC AND GEOMETRIC CAR 7
+For a given k-cover we can now deﬁne a CAR mechanism by setting
+πA = nA/k ∀A ⊆ E.(4.2)
+The algorithmic interpretation is as follows: Nature gener ates some x ∈ E.
+The coarsening mechanism investigates which A in the uniform multicover
+contain x. There are exactly k such A, including multiplicities, whatever x.
+We choose one of these uniformly at random, that is, each A with x ∈ A is
+chosen with probability 1 /k.
+Conversely, any CAR mechanism for which all the CAR probabil ities πA
+are rational numbers is generated by a k-cover with k equal to the lowest
+common multiple of the denominators of the πA. We call CAR mechanisms
+obtained in this way rational. The rational CAR mechanisms are precisely
+the CAR mechanisms generated by a uniform multicover . Note that if k and
+all nA share a common factor, we can divide by this factor without ch anging
+the πA. We consider such multicovers as equivalent and take the mul ticover
+with the smallest k as representative of the class. In this way, each rational
+CAR mechanism corresponds to exactly one uniform multicove r, and vice
+versa. We can make the connection to Theorem 1 by noting that
+F act 1. Every extreme CAR mechanism is rational. Thus, it is gener-
+ated by a uniform multicover.
+This follows directly from the fact that the matrix M in Deﬁnition 1 is a
+0/1-matrix and the solution of M z = 1 is unique.
+As stated above, for each rational CAR mechanism there is a un ique uni-
+form multicover which generates it. We can thus deﬁne an “ext reme multi-
+cover” as a uniform multicover that generates an extreme CAR mechanism.
+Using Theorem 1, it is easily shown that extreme multicovers are just those
+uniform multicovers that do not contain a subset that is also a uniform
+multicover (we omit the details of the reasoning).
+We may now deﬁne a procedural CAR model by ﬁrst ﬁxing a ﬁnite nu m-
+ber p of arbitrary uniform multicovers C1, . . . ,Cp. We then ﬁx an arbitrary
+distribution λ = (λ1, . . . , λp) on C1, . . . ,Cp. The coarsened data are now gen-
+erated by ﬁrst, independently of the underlying x, selecting one of the p
+uniform multicovers according to the distribution λ. Suppose we have cho-
+sen multicover Cj with height kj. Then among the kj sets in Cj which contain
+x, we choose one uniformly at random, with probability 1 /kj . This proce-
+dural CAR model is a simple extension of CARgen (Section 2), where the
+role of partitions is taken over by the more general uniform m ulticovers.
+Like CARgen, it simulates a CAR mechanism for all parameter settings;
+no ﬁne-tuning is needed. Theorem 2(ii) below (a corollary of Theorem 1)
+states that by appropriately setting the parameters, we can simulate all
+CAR mechanisms. Before presenting the theorem, we continue our example.
+8 R. D. GILL AND P. D. GR ¨UNW ALD
+Example 2 (Example 1 continued). The collection C = {A12, A23, A31}
+is a uniform multicover of E with height 2. Consider a simple instantiation of
+the procedural CAR model we described above, with just one mu lticover C =
+C1, so that λ = (1). For each x chosen by Nature, there will be exactly two
+elements of C which contain x. We select between these with probability 1 /2.
+It is immediately clear that this algorithm simulates the CA R mechanism
+π∗ described in Example 1. An implementation of this mechanism requires a
+fair coin toss. If the coin is biased the CAR property can be lo st. Relatedly,
+the mechanism is not robust in Jaeger’s sense.
+Theorem 2. (i) Every CAR mechanism can be arbitrarily well approx-
+imated by a rational CAR mechanism, that is, for all CAR mechani sms π,
+all ε > 0, there exists a rational CAR mechanism π′ such that ‖π − π′‖ < ε.
+(ii) Every CAR mechanism is exactly equal to a ﬁnite mixture of extr eme
+(and hence rational) CAR mechanisms.
+We extensively discuss this theorem in the next section.
+5. Discussion. Theorem 2 shows that there is an easy probabilistic algo-
+rithm which approximates each CAR mechanism arbitrarily we ll, and that a
+randomized version of the algorithm reproduces each one exa ctly. Since the
+rational numbers form a dense subset of the reals, Theorem 2(i) is, in a sense,
+trivial. The real innovation is part (ii), which shows that e ach CAR distri-
+bution can be represented exactly as a mixture of a ﬁnite set of candidate
+rational mechanisms.
+No ﬁne-tuning of parameters is required to ensure the CAR pro perties
+so the algorithms do have a robustness property. We just need to be able
+to choose uniformly at random from a ﬁnite set. Of course, if o ne perturbs
+the uniform distribution over the k sets containing a point x, one will in
+general destroy the CAR property—this is the reason that our result does
+not contradict Jaeger’s ( 2005b), Theorem 4.17. For this reason, some read-
+ers may not want to call the procedure “robust.” However, the (weaker)
+claim that the algorithm requires no parameter tuning seems indisputable:
+we can hardly think of implementing a uniform distribution a s “parameter
+tuning.” Unlike the parameters in earlier complete procedu ral CAR models,
+which could vary from situation to situation and were hard to determine,
+the uniform distribution is universal and easy to determine . If the device
+we use to generate a uniform distribution does not work perfe ctly, our pro-
+cedural model will slightly violate CAR, hence one might per haps say it
+is “nonrobust”; but devices used to generate a uniform distr ibution (coins,
+dice) exist, and usually do not arise as ﬁne-tuned versions o f devices that
+can generate a whole range of distributions; hence one canno t say that our
+model requires “ﬁne-tuning.”
+ALGORITHMIC AND GEOMETRIC CAR 9
+The reason that earlier complete procedural CAR models did r equire pa-
+rameter tuning was that their parameters had to satisfy comp licated con-
+straints [see, e.g., Example 4.7 in Jaeger (2005b)]. As remarked by M. Jaeger,
+we do pay a price for avoiding these parameter constraints: w e now have com-
+plicated constraints ( 4.1) on multiplicities of sets appearing in multicovers.
+Such constraints are arguably more natural than constraint s on continuous-
+valued parameters, at least as long as the multicovers invol ved are not too
+complex. Unfortunately, in order to span all CAR mechanisms , we some-
+times need highly complex multicovers, as we show below. Thi s limits the
+importance of our procedural model, as we discuss further be low.
+We can measure the complexity of multicovers in terms of thei r height.
+Since the row rank of M equals its (full) column rank, m, we can delete rows
+obtaining an m × m nonsingular matrix M0. Deleting the corresponding rows
+from 1 also, we obtain z = M −1
+0 1. It follows by the standard expression of
+matrix inverse in terms of determinants that the value of k appearing in
+(4.2) is bounded by m!. Hence, the height of the extreme multicovers that
+can be deﬁned on a sample space of size |E| = n is upper bounded by n!. But
+is this too pessimistic? Unfortunately not, or at least, not signiﬁcantly: our
+next and last theorem gives an exponential lower bound on the maximal
+height of an extreme multicover. It turns out that this grows at least as
+fast as the celebrated Fibonacci numbers, deﬁned as F1 = 1, F2 = 1, and for
+j ≥ 3, Fj = Fj−1 + Fj−2.
+Theorem 3 below considers n × n matrices Sn inductively deﬁned as fol-
+lows: S1 = (1). For odd n, Sn+1 is constructed from Sn by setting
+Sn+1 =
+( 1 0⊤
+0 Sn
+)
+.
+For even n, Sn+1 is constructed from Sn by setting
+Sn+1 =
+( 0 1⊤
+1 Sn
+)
+.
+This is easier than it seems: the pattern should be obvious fr om the example
+n = 9, shown in Figure 1.
+Theorem 3. For odd n > 0, the equation Snz = 1 has the unique solu-
+tion
+z =
+( Fn−1
+Fn
+, Fn−2
+Fn
+, . . . ,F2
+Fn
+, F1
+Fn
+, 1
+Fn
+)
+,
+so that Sn represents an extreme point for sample spaces with size |E| = n,
+with height k = Fn.
+10 R. D. GILL AND P. D. GR ¨UNW ALD
+The theorem implies that the maximal height of an extreme mul ticover
+grows exponentially fast with n; also, the maximal needed multiplicity of a
+set in an extreme multicover grows exponentially fast with n. We interpret
+this result as follows.
+Uniform multicovers are important in two ways:
+1. They lead to an attractive algorithmic characterization of CAR that re-
+quires no ﬁne-tuning of parameters (Theorem 2).
+2. They induce a hierarchy of CAR models that could be of use in statistical
+applications. We elaborate on this below.
+Yet apart from these applications, the importance of unifor m multicovers in
+understanding CAR is limited—the maximal needed height of t he multicover
+grows exponentially fast with n, so though the idea of the algorithm is
+simple, its detailed speciﬁcation can be complex. Thus, we c an say neither
+that our characterization provides a truly simple descript ion of every CAR
+mechanism, nor that our multicover CAR mechanisms always co rrespond
+to some “natural” process. While it seems reasonable to supp ose that low-
+height multicovers may be good models for some processes occ urring in
+nature, the same cannot be said for exponentially high multi covers, and our
+Theorem 3 does show that we need to take these into account.
+Jaeger’s (2005b) robustness Theorem 4.17 suggests that the CAR mecha-
+nisms occurring in nature are those generated by randomized 1-covers. Our
+characterization nuances this somewhat, suggesting that i n some situations
+k-covers for small k > 1 may also be reasonable models. Indeed, the hier-
+archy of CAR mechanisms induced by our algorithm suggests a s tatistical
+estimation procedure for parsimoniously estimating CAR me chanisms and
+their parameters. Such a procedure would penalize the ﬁt of a proposed
+CAR mechanism to the data. The penalization would be some fun ction of
+the number of extreme multicovers needed to express the mech anism, and
+the height of each of these. Alternatively one could use just one multicover,
+
+
+0 1 1 1 1 1 1 1 1
+1 1 0 0 0 0 0 0 0
+1 0 0 1 1 1 1 1 1
+1 0 1 1 0 0 0 0 0
+1 0 1 0 0 1 1 1 1
+1 0 1 0 1 1 0 0 0
+1 0 1 0 1 0 0 1 1
+1 0 1 0 1 0 1 1 0
+1 0 1 0 1 0 1 0 1
+
+
+Fig. 1. The matrix S9, an example of the matrices Sn ﬁguring in Theorem 3.
+ALGORITHMIC AND GEOMETRIC CAR 11
+not necessarily extreme, and penalize its height. This coul d be done either
+explicitly, by adding a regularization term to the likeliho od, or implicitly,
+by the use of suitable Bayesian priors.
+Such procedures could be useful in practice if one seriously believed that
+the data are CAR but quite possibly, not CCAR. One could hope i n this way
+to combine the advantages of asymptotic validity and even go for asymptotic
+eﬃciency, with good small sample behavior. However, our res ults can also be
+read in a diﬀerent way. Though we found an appealing way to mode l CAR,
+it remains the fact that there do not seem to be so many good rea sons
+in practice, in general, to assume CAR but not CCAR. Therefor e, if one is
+prepared to assume CAR, one is likely to be also prepared to as sume CCAR.
+Though the distinction concerns a “nuisance” part of the mod el, and indeed,
+in likelihood approaches is invisible by the likelihood fac torization implied
+by CAR, one can capitalize on the extra knowledge, for instan ce, in order
+to obtain better small sample properties of estimators, at t he cost of loss of
+asymptotic eﬃciency.
+A ﬁnal view is that the extra generality obtained by relaxing CCAR to
+CAR is illusory. If one does not believe in CAR, one has no opti on but
+to start modeling and estimating the coarsening mechanism. Jaeger ( 2006a,
+2006b) has made some proposals in this direction which seem promis ing. An-
+other possibility, so far not explored, is to use the notion o f relative rather
+than absolute CAR introduced by Gill, van der Laan and Robins (1997).
+The point of CAR is that, in likelihood inference, one can ana lyze coars-
+ened data as if the coarsening mechanism had been ﬁxed in advance as any
+particular CAR mechanism, and speciﬁcally therefore, as if coarsening by
+an independently ﬁxed-in-advance partitioning of the samp le space. Rela-
+tive CAR means CAR relative to some other speciﬁc (non-CAR) c oarsening
+mechanism: the likelihood factors; the interesting part is the same as if the
+data had been coarsened by the reference coarsening model; t he nuisance
+part can be used for inference concerning which coarsening mechanism has
+generated the data, out of the mechanisms in the family impli ed by the ref-
+erence mechanism. It would be interesting to explore this po ssibility in more
+detail.
+6. Proofs.
+6.1. Proof of Theorem 1. We show below that the set of all CAR mecha-
+nisms forms a convex polytope and characterize the extreme p oints in terms
+of linear algebra, corresponding to Deﬁnition 1.
+A CAR mechanism is a collection of numbers πA indexed by the nonempty
+subsets A of a ﬁnite set E. They must satisfy two sets of constraints: the
+inequalities πA ≥ 0 for each A, and the equalities ∑
+A∋x πA = 1 for each
+x, both of which are obviously linear. Together the constrain ts imply that
+12 R. D. GILL AND P. D. GR ¨UNW ALD
+πA ≤ 1 for all A. Collecting the πA into a vector π, we see that the set of all
+π is a convex, compact polytope since it is bounded and is the in tersection
+of a ﬁnite number of closed half-spaces (one for each inequal ity constraint)
+and hyperplanes (one for each equality constraint). Hence e ach π is a convex
+combination of the extreme points of the polytope, of which t here are a ﬁnite
+number in total.
+The polytope lives in the aﬃne subspace of all vectors π satisfying the
+equality constraints ∑
+A∋x πA = 1 for each x. Since π has 2|E| − 1 components
+(the number of nonempty subsets of E) and there are |E| constraints, it
+follows that the dimension of this aﬃne subspace is 2 |E| − 1 − |E|. The
+polytope is just the intersection of that aﬃne subspace with the positive
+orthant. Within the aﬃne subspace, each face of the polytope corresponds
+to one of the hyperplanes πA = 0. Each vertex of the polytope is the unique
+meeting point of a number of faces; one for each A such that πA = 0. Thus
+to each vertex is associated a collection of subsets A such that if we set the
+corresponding πA equal to 0 in the equations ∑
+A∋x πA = 1 for all x, there is
+a unique and strictly positive solution in the remaining πA. Conversely, any
+such collection of A deﬁnes a vertex.
+The subsets A not in the collection deﬁne the support of the extreme
+CAR mechanism π under consideration. Let M be its incidence matrix: the
+matrix of zeros and ones with rows indexed by elements x ∈ E, columns
+indexed by A in the support, and with entries /BD
+{x∈A}. Write π0 for the
+vector of πA for A in the support. In matrix form, the equations which must
+have a unique and positive solution z = π0 can be written
+M z = 1,(6.1)
+and we have proved that there is a one-to-one correspondence between ver-
+tices of the polytope and incidence matrices M of covers of E such that this
+equation has a unique and positive solution. As we argued in S ection 4, if
+the solution is unique it has to be rational.
+Combining these facts, extreme points of the polytope of CAR mecha-
+nisms correspond to covers of E whose incidence matrix M is such that
+M z = 1 has a unique solution, and the solution is strictly positive .
+Remark. A condition equivalent to M z = 1 having a unique positive
+solution [Farkas’s lemma in the theory of linear programmin g Schrijver
+(1986), Chapter 7] is that M has full column rank, and, if y is such that (a)
+y⊤M ≥ 0, then (b) y⊤1 ≥ 0, with equality in (b) implying equality in (a).
+By arguments from integer programming [see again Schrijver (1986)] one
+may restrict here to vectors y of integers. Jaeger (2005b) gives a version of
+this condition for the existence of a CAR mechanism with give n support—
+he does not demand full rank since he does not ask for uniquene ss. Though
+more combinatorial in nature, this version of the condition for extremality
+ALGORITHMIC AND GEOMETRIC CAR 13
+does not seem to be much more useful, except perhaps for helpi ng one to
+show that certain covers do not lead to solutions.
+6.2. Proof of Theorem 2. Theorem 2 is, in fact, a direct corollary of
+Theorem 1. Namely, each extreme point is rational and therefore corre sponds
+to a uniform multicover. Every point in a polytope can be writ ten as a
+mixture of its extreme points. This gives us item (ii). Item ( i) follows by
+considering the rational convex combinations of the extrem es, which lie dense
+in all convex combinations.
+6.3. Proof of Theorem 3. We prove the theorem by induction on n. For
+n = 1, the result trivially holds. Now suppose the result holds for Sn−1, for
+some even n > 1. Thus, Sn−1q = 1 has a unique solution
+q = (q1, . . . , qn−1) =
+( Fn−2
+Fn−1
+, Fn−3
+Fn−1
+, . . . , F2
+Fn−1
+, F1
+Fn−1
+, 1
+Fn−1
+)
+.(6.2)
+We prove the theorem by showing that this implies that
+Sn+1r = 1(6.3)
+has the unique solution
+r = (r1, . . . , rn+1) =
+( Fn
+Fn+1
+, Fn−1
+Fn+1
+, . . . , F2
+Fn+1
+, F1
+Fn+1
+, 1
+Fn+1
+)
+.(6.4)
+To prove ( 6.4), note ﬁrst that to each row of ( 6.3) corresponds a linear
+equation. Writing the equations corresponding to the ﬁrst t wo rows explicitly
+and the equations corresponding to rows 3 to n + 1 in matrix form, and
+reordering terms, we see that ( 6.3) is equivalent to
+r2 = 1 −
+n+1∑
+i=3
+ri,(6.5)
+r2 = 1 − r1,(6.6)
+Sn−1(r3, . . . , rn+1)T = 1 − r1,(6.7)
+where, by our inductive assumption, the last equality impli es
+(r3, . . . , rn+1) = (1 − r1)(q1, . . . , qi),(6.8)
+and in particular
+n+1∑
+i=3
+ri = (1 − r1)
+n−1∑
+i=1
+qi.(6.9)
+14 R. D. GILL AND P. D. GR ¨UNW ALD
+Combining ( 6.6) with ( 6.5), we get r1 = ∑ n−1
+i=3 ri. Plugging this into ( 6.9)
+gives
+r1
+1 − r1
+=
+n−1∑
+i=1
+qi(6.10)
+where qi are given by ( 6.2). We claim this has the unique solution r1 =
+Fn/Fn+1. To see this, note the following basic fact which follows imm ediately
+from repeatedly substituting the deﬁnition Fn = Fn−1 + Fn−2 on the left in
+(6.11):
+F act 2. For odd n > 0,
+Fn =
+n−2∑
+i=1
+Fj + 1.(6.11)
+The fact implies that the right-hand side of ( 6.10) is equal to Fn/Fn−2.
+Plugging in our proposed solution r1 = Fn/Fn+1, the left-hand side of ( 6.10)
+becomes Fn/(Fn+1 − Fn) = Fn/Fn−2, so that ( 6.10) holds. This shows that
+r1 is indeed given by Fn/Fn+1. By ( 6.6) it now follows that r2 = Fn−1/Fn+1,
+and, by ( 6.8), that for j ∈ {3, . . . , n+ 1}, rj = qj−2/r2 = sj/Fn+1, where
+(s1, s2, . . . , sn−2, sn−1) = (Fn−2, Fn−3, . . . , F1, 1). This shows that ( 6.4) is the
+unique solution of Sn+1r = 1, and thus completes the induction step. The
+theorem is proved.
+Acknowledgments. We would like to thank Sasha Gnedin and Lex Schri-
+jver for stimulating conversations. Lex Schrijver made som e essential con-
+tributions to the proof of Theorem 3.
+REFERENCES
+Gill, R., van der Laan, M. and Robins, J. (1997). Coarsening at random: Character-
+isations, conjectures and counter-examples. In Proceedings First Seattle Conference on
+Biostatistics (D. Lin, ed.) 255–294. Springer, New York.
+Gr¨unw ald, P. and Halpern, J. (2003). Updating probabilities. J. Artiﬁcial Intelligence
+Research 19 243–278. MR2115626
+Heitjan, D. and Rubin, D. (1991). Ignorability and coarse data. Ann. Statist. 19 2244–
+2253. MR1135174
+Jaeger, M. (2005a). Ignorability for categorical data. Ann. Statist. 33 1964–1981.
+MR2166567
+Jaeger, M. (2005b). Ignorability in statistical and probabilistic in ference. J. Artiﬁcial
+Intelligence Research 24 889–917. MR2200528
+Jaeger, M. (2006a). The AI & M procedure for learning from incomplete da ta. In Pro-
+ceedings of the Twenty-Second Conference on Uncertainty in Artiﬁcial Intelligence (UAI
+2006) (R. Dechter and T. Richardson, eds.) 225–232.
+ALGORITHMIC AND GEOMETRIC CAR 15
+Jaeger, M. (2006b). On testing the missing at random assumption. In Machine Learning:
+ECML 2007, Seventeenth European Conference on Machine Lear ning (J. F¨ urnkranz,
+T. Scheﬀer and M. Spiliopoulou, eds.). Lecture Notes in Comput. Sci. 4212 671–678.
+Springer, Berlin.
+Schrijver, A. (1986). Theory of Linear and Integer Programming . Wiley, Chichester.
+MR0874114
+Mathematical Institute
+Leiden University
+Niels Bohrweg 1
+2333 CA Leiden
+Netherlands
+E-mail: gill@math.leidenuniv.nl
+URL: http://www.math.leidenuniv.nl/˜gill
+CWI
+Kruislaan 413
+1096 SJ Amsterdam
+and
+Eurandom
+Eindhoven
+Netherlands
+E-mail: peter.grunwald@cwi.nl
+URL: http://www.grunwald.nl

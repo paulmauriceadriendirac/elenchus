@@ -34,3 +34,9 @@
 - E3 v2 — state/drafts/E3/v2.md (L6; revised against Dorr & Mandelkern 2026 full text; core cases survived)
 - Each has revision_notes.md (fidelity audit, prior-art findings, weakest points) and check.py.
 - Next: human takes essays to other AI models for revision; human does word count, hidden-text check, PDF, methodology report.
+
+## Second wave (2026-10-21 ~21:30 UTC)
+- Web allowed again. Ideation on existing work: state/ideas/{L3,L5,L6,DT}.md → triage → draft top
+  3 → referee → revise. Note: competition allows at most 3 submissions per entrant; extra essays
+  are alternatives to choose among.
+- E2 v4 in progress (engage Zendejas Medina 2024 and others). E1 v3 in progress.

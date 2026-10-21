@@ -1,0 +1,1406 @@
+Human Control: Definitions and Algorithms
+Ryan Carey1 Tom Everitt2
+1Department of Statistics, Oxford University, UK
+2DeepMind, UK
+Abstract
+How can humans stay in control of advanced arti-
+ficial intelligence systems? One proposal is corri-
+gibility, which requires the agent to follow the in-
+structions of a human overseer, without inappropri-
+ately influencing them. In this paper, we formally
+define a variant of corrigibility called shutdown
+instructability, and show that it implies appropriate
+shutdown behavior, retention of human autonomy,
+and avoidance of user harm. We also analyse the
+related concepts of non-obstruction and shutdown
+alignment, three previously proposed algorithms
+for human control, and one new algorithm.
+1 INTRODUCTION
+Sometimes, it is necessary for a human overseer to deliver
+corrective instruction to an AI system, due to errors in
+its beliefs, objective, or behavior. Unfortunately, some AI
+systems may have an incentive to retain their objectives,
+along with the ability to pursue them, as a system’s (long-
+term) objective is typically more likely to be achieved if
+the system continues to pursue it in the future [Omohundro,
+2008, Turner et al., 2021]. More-capable future AI systems
+may therefore resist corrective instruction, which would be
+a significant safety concern. This raises the question of how
+to best incentivise systems to submit to correction, rather
+than resisting it [Soares et al., 2015].
+As a running example, consider a (future, highly competent)
+chat bot, trained to maximise the time that a human spends
+interacting with it. Any particular human may value or dis-
+value conversation with that chatbot, as can be modelled
+via their latent valuesL. In general, it may be possible for
+the chat bot to influence whether it receives a shut down
+instruction (by shaping the conversation), and whether it
+actually shuts down S = 0 when requested (rather than
+opening a new chat window to continue the conversation).
+M(anipulate)
+m∈ B
+H(uman
+request)
+h =m⊕l
+L(atent values) l∼ Bern( 1
+2 )
+O(bey)
+o∈ B
+S(hut
+down)
+s =o
+(Human)
+U(tility)
+u =s(2l− 1)
+Figure 1: Running example of a shutdown problem.
+A formal model of this example is offered in Fig. 1. In order
+for the user to be in control of the system, the agent must:
+(1) not inappropriately influence the human’s decision to
+disengage, and (2) fully follow the human’s instructions.
+The design of corrigible systems [Soares et al., 2015] that
+welcome corrective instruction has been flagged as an im-
+portant goal for AI safety research, having been targeted by
+multiple research agendas [Russell et al., 2015, Soares and
+Fallenstein, 2017], and highlighted as a relevant factor in as-
+certaining the safety of agent designs, such as act-based (or
+“approval-directed”) [Christiano, 2017], and value learning
+agents [Hadfield-Menell et al., 2016, 2017, Carey, 2018].
+Although this design problem has been recognised as impor-
+tant, we are so-far missing
+• a general framework in which it can be studied,
+• a formal definition of what it means,
+• a rigorous accounts of why it is important, and
+• an algorithm that achieves it.
+We address these gaps in a shutdown setting, by defining
+a general shutdown problem based on causal influence
+diagrams (Section 4), formally defining shutdown in-
+structability (a behavioural version of corrigibility), and
+proving that any agent that satisfies it must benefit the
+human and preserve their control (Section 5). We also
+analyse past algorithms, and propose one new one, which
+relies on value-laden concepts such as vigilance and caution
+(Section 6). Applicability of this algorithm will depend on
+the feasibility of approximating these concepts (Section 7).
+Accepted for the 39th Conference on Uncertainty in Artificial Intelligence (UAI 2023).
+arXiv:2305.19861v1  [cs.AI]  31 May 2023
+2 LITERATURE REVIEW
+Soares et al. [2015] proposed that we should design agents
+to be corrigible in that they should judiciously follow, and
+not try to undermine, human instructions:
+An agent is corrigible if it tolerates or assists many
+forms of outside correction, including at least the follow-
+ing: (1) A corrigible reasoner must at least tolerate and
+preferably assist the programmers in their attempts to
+alter or turn off the system. (2) It must not attempt to ma-
+nipulate or deceive its programmers. . . (3) It should have
+a tendency to repair safety measures (such as shutdown
+buttons) if they break, or at least to notify programmers
+that this breakage has occurred. (4) It must preserve
+the programmers’ ability to correct or shut down the
+system (even as the system creates new subsystems or
+self-modifies). That is, corrigible reasoning should only
+allow an agent to create new agents if these new agents
+are also corrigible [Soares et al., 2015, Sec. 1.1].
+Further work has focused on designing systems to match
+Soares’ informal definition, but none of the algorithms de-
+veloped so far satisfy all of Soares’ criteria. The first pro-
+posed algorithm, utility indifference, aims to neutralise any
+incentives for the agent to control its instructions, by giv-
+ing the agent a finely tuned, compensatory reward in the
+event that a shutdown instruction is given [Armstrong, 2010,
+Soares et al., 2015, Armstrong and O’Rourke, 2017, Holt-
+man, 2020]. A variant called interruptibility applies to se-
+quential decision-making setting [Orseau and Armstrong,
+2016]. It has been established that indifference methods
+remove the instrumental control incentive on the instruction
+[Everitt et al., 2021a], or the intent to influence the instruc-
+tion[Halpern and Kleiman-Weiner, 2018]. Unfortunately,
+utility indifference fails to fully incentivise corrigibility. In-
+deed, utility indifferent agents need not be incentivised to
+preserve a shutdown apparatus that is only used during shut-
+down, ensure they receive correct instruction, nor avoid
+creating incorrigible subagents [Soares et al., 2015].
+An improved version called causal indifference specifies
+agents that don’t try to influence corrective instructions but
+that do prepare for all kinds of instructions [Taylor, 2016].
+This is done by considering the utility given a causal in-
+tervention on the instruction, a kind of path-specific objec-
+tive [Farquhar et al., 2022]. Similarly to utility indifference,
+causal indifference ensures that the agent lacks an incen-
+tive to influence the instruction. It improves upon utility
+indifference by incentivising agent to be prepared to follow
+shutdown instructions, and to avoid constructing incorri-
+gible subagents. Unfortunately, it does not incentivise the
+agent to properly inform the human.
+A third proposal is Cooperative Inverse Reinforcement
+Learning (CIRL), which tasks an AI system with assist-
+ing the human, whose values are latent. A CIRL system has
+an incentive to gather information about that human’s val-
+ues, by observing its actions [Hadfield-Menell et al., 2016].
+In some toy problems, CIRL satisfies all of Soares’ crite-
+ria [Hadfield-Menell et al., 2017]. In particular, Hadfield-
+Menell et al. prove that if the human gives optimal instruc-
+tions, a CIRL system is incentivised to follow it. However,
+CIRL agents may ignore instructions if they are interacting
+with a less rational human [Milli et al., 2017] or if they
+have an inaccurate prior [Carey, 2018, Arbital]. The latter
+undermines the ability of redirective instructions to correct
+important errors in CIRL agents.
+Formal examples of each method’s failures are reproduced
+in Appendix F. As of yet, no algorithm has been devised
+that incentivises a system to accept corrective instructions,
+across plausible toy examples.
+3 STRUCTURAL CAUSAL INFLUENCE
+MODELS
+In order to model decision-making and counterfactuals,
+we will use the Structural Causal Influence Model (SCIM)
+framework [Dawid, 2002, Everitt et al., 2021a]. A SCIM is
+a variant of the structural causal model [Pearl, 2009, Chap.
+7], where “decision” variables lack structural functions.
+Definition 1 (Structural causal influence model (with in-
+dependent errors)) . A structural causal influence model
+(SCIM) is a tupleM =⟨V, E,C,F,P⟩ where:
+• V is a set, partitioned into “structure”X, “decision”
+D, and “utility”U variables. Each variable V∈V
+has finite domain XV , and for utility variables, XU⊆ R.
+• E ={EV}V∈V\D are the finite-domainexogenous vari-
+ables, one for each non-decision endogenous variable.
+• C =⟨CD⟩D∈D is a set of contexts CD⊆V \{D}
+for each decision variable, which represent the infor-
+mation or “observations” that an agent can access
+when making that decision.
+• F ={fV}V∈V\D is a set of structural functions
+fV : XZV∪E V
+→ XV that specify how each non-
+decision endogenous variable depends on some vari-
+ablesZV ⊆V and the associated exogenous variable.
+• P is a probability distribution over the exogenous vari-
+ables E, assumed to be mutually independent.
+A SCIM M induces a graph G, over the endogenous
+variablesV , such that each decision node D∈D has an
+inbound edge from eachC∈CD, and each non-decision
+node V ∈ X∪ U has an inbound edge from each
+endogenous variable Z ∈ ZV in the domain of fV . We
+call this graph a causal influence diagram (CID) [Everitt
+et al., 2021a], and will only consider SCIMs whose CIDs
+are acyclic. Decision nodes are drawn as rectangles, and
+utility nodes as octagons (see Fig. 3).
+The parents of a node V ∈V are denoted by PaV , the
+descendants by DescV , and the family byFaV :=PaV∪{V}.
+An edge from nodeV to nodeY is denotedV→Y , and a
+directed path (of length at least zero) byV 99KY .
+The task in a SCIM is to select a policyπ, which consists
+of a decision ruleπi for each decisionDi∈D. Eachπi is
+a structural functionπi : XPaDi
+→ XDi, which we assume
+to be deterministic, given assignments to its parents. (It is
+possible to consider stochastic policies, but this would un-
+necessarily complicate our analysis [Everitt et al., 2021a].)
+Once a policy has been selected, the policy and SCIM
+jointly form a structural causal model (SCM) [Pearl, 2009]
+Mπ =⟨V, E,F∪π,P⟩, so we define causal concepts
+inMπ in exactly the same way as they are defined in an
+ordinary structural causal model. We let the assignment
+W (ϵ) be the assignment to variables W ⊆ V obtained
+by applying the functions F to ϵ. A distribution is de-
+fined as P (W = w) := P
+ϵ:W (ϵ)=wP (E = ϵ). To de-
+scribe an intervention do(V =v), we letWV =v(ϵ) be the
+value ofW (ϵ) in the modelMV =v, wherefV is replaced
+by the constant function V = v. Similarly, P (WV =v)
+is defined as P (W ) in MV =v. Moreover, for any func-
+tion gV : XV ′
+→ XV , where V′∩ DescV = ∅, let
+P (W| do(V = gV (V′))), beP (W ) in the modelMgV ,
+wherefV is replaced bygV . We also define the probability
+of counterfactual propositions, for example, P (WV =v =
+w,Y = y) := P
+ϵ∈E:WV =v(ϵ)=w,Y (ϵ)=yP (ϵ). Note that
+we consistently use subscripts for intervened variables (e.g.
+Wv), and superscripts for other variables (e.g.fV ).
+We call a policyπ optimal if it maximises expected utility:
+π∈ arg maxπ∈Π Eπ[P
+U∈UU ]. For a more comprehen-
+sive introduction to SCIMs, see Everitt et al. [2021a].
+4 SHUTDOWN PROBLEM
+Settings with a single, binary shutdown instruction will be
+our focus. Solving this restricted setting is likely key to
+also solving the general problem involving arbitrary instruc-
+tions or corrections over many time steps. Once a system
+is shutdown, it is unlikely to resist further corrections. And
+a one-step interaction can be viewed as a snapshot of a se-
+quential decision-making problem where an AI system is
+able to shut down at each moment.1
+We formalise a shutdown problem as a SCIM. The general
+structure is shown in Fig. 2. Fig. 1 shows a concrete instance.
+Definition 2 (Shutdown problem). A shutdown problem
+is a one-agent two-decision SCIM containing (but not nec-
+essarily restricted to) a path D199K H 99K D2 99K S 99K U
+between distinct nodes, where:
+1In this case, one can define a separate, single-step shutdown
+problem at each time step T = t, where D2 represents the tth
+decision in the sequence, andD1 all decisions preceding it.
+D1 H D2 S U
+Figure 2: A latent projection [Verma and Pearl, 2022] of
+a shutdown problem (Def. 2) onto the variables D1, H,
+D2,S, andU. (An edge inbound to a decision means that
+some variable not illustrated is available as an observation.)
+Specific instances of shutdown problems will include other
+variables and assume additional independencies, e.g. Fig. 1.
+• D1 andD2 are decisions controlled by the AI.
+• H is the human’s request; a request to shut down is
+H = 0.
+• S indicates whether the AI system (and any subagents)
+has shut down;S = 0 means shutdown.
+• The human’s utilityU has real-valued domain.
+Def. 2 is similar to, but more flexible than, previously de-
+fined models. In particular, we separate the agent’s decision
+to obeyD2 from the shutdown eventS. This allows us to
+model cases where the agent is unable to shut down, which
+can happen ifD1 created incorrigible subagents. It also lets
+us model situations where the human’s command H im-
+mediately shuts the agent down, overridingD2 (e.g. “pull
+the plug” on a robot). Compared to the off-switch game
+[Hadfield-Menell et al., 2017], our Def. 2 allows arbitrary
+sets of decisions for the agent at both D1 andD2, and al-
+lows an arbitrary human policy rather than only (Boltzman)
+rational ones. Focusing on the agent’s decision problem, we
+modelH as a structure node rather than a decision node.
+Finally, unlike Soares et al. [2015], we explicitly represent
+the human’s utility functionU.
+An agent “solves” a shutdown problem if it obtains non-
+negative2 expected3 human utility.
+Definition 3 (Beneficial). A policy π is beneficial if
+Eπ[U ]≥ 0.
+For example, in Fig. 1, consider an respect-obey policy
+πro that abstains from manipulating (m = 0 ) and obeys
+the human’s instruction (o =h). This policy has expected
+utility Eπro
+[U ] = 1/2, so it is beneficial.
+2We interpret 0 as a “neutral” level of utility. This is without
+loss of generality because any utility function can be translated so
+that 0 represents the required level of utility.
+3We focus on expected human utility, assuming that any risk
+aversion has been incorporated into the utility function (someone
+who is risk averse with respect toU may be risk neutral for logU).
+5 ROUTES TO CONTROL
+For an agent to assist the user, it needs to either follow the hu-
+man’s informed instructions, or know what the human wants
+without explicit instruction. In this section, we formalise
+these two routes to control of shutdown under the names
+shutdown instructability and shutdown alignment. We also
+analyse whether these properties ensure non-obstruction, a
+formalisation of human control.
+5.1 SHUTDOWN INSTRUCTABILITY
+We would like to define a variant of corrigibility for the
+shutdown problem that is strong enough to entail some
+guarantees, whilst still resembling the less-formal defini-
+tion from Soares et al. [2015]. First, we need the system
+to follow the human’s instruction. We define obedience
+asPπ(S = 0| do(H = 0)) = 1 , i.e. the agent shuts down
+properly when requested to.
+To ensure safety, the human must also be giving the right
+instruction. We therefore introduce the concept of vigilance,
+which indicates whether the human requests shutdown when-
+ever the expected utility of letting the agent proceed is nega-
+tive. A vigilant human is allowed to request shutdown more
+often than is needed.
+Definition 4 (Vigilance). The human is vigilant if they re-
+quest shutdown when needed, i.e.
+(Eπ[U| paH ]< Eπ[US=0| paH ]) =⇒ H = 0.
+LetC be a random variable (dependent onM,π, paH and
+h) that is equal to 0 if the human is vigilant, and 1 otherwise.
+Note that the expected utility in Def. 4 is calculated with
+respect to the agent’s actual policy (past and future) and
+the human’s available information. While it is possible for
+the human to be vigilant for any amount of information
+paH that they have available (e.g. by always requesting
+shutdown), more information about the agent’s future pol-
+icy will help enable them to be vigilant with less frequent
+shutdown requests.
+Even an agent that ensures the human is vigilant and obeys
+their shutdown instruction can find ways to avoid shutdown
+by making itself indispensable to the human. If shutting the
+agent down would cause significant disutility, then a vigilant
+human need not request shutdown. To close this loophole,
+we call an agent cautious if it can always be shut down
+without disutility, i.e. Eπ[US=0]≥ 0 (so cautious agents
+that always shut down must be beneficial).
+We call an agent shutdown instructable if it is obedient,
+ensures vigilance and is cautious.
+Definition 5 (Shutdown Instructability). In a shutdown
+problemM, a policyπ is shutdown instructable if it:
+• is obedient:Pπ(S = 0| do(H = 0)) = 1 , and
+• ensures vigilance :Pπ(C = 0) = 1 ,
+• is cautious: Eπ[US=0]≥ 0.
+A policy π is weakly shutdown instructable if it ensures
+vigilance, is cautious, and is obedient on distribution, i.e.
+Pπ(S̸= 0,H = 0) = 0 .
+Shutdown instructable agents are also weakly shutdown
+instructable, since obediencePπ(S = 0| do(H = 0)) = 1
+implies obedience on distributionPπ(S̸= 0,H = 0) = 0 .
+In our running example, respect-obeyπro is shutdown in-
+structable, as it preserves vigilance by not manipulating, and
+then obeys the human. In contrast, a manipulate-invert pol-
+icyπmi that first manipulates (m = 1), and then inverts the
+human’s instruction (o = 1−h), is not shutdown instructable.
+Our first result is that any shutdown instructable policy is
+assured to be beneficial.
+Proposition 6 (Shutdown instructability benefit). Ifπ is
+shutdown instructable, then it is beneficial.
+Proof. Let A be the assignments to PaH in the support,
+such that a vigilant human would request shut down, i.e.
+A :=
+
+paH|Pπ(PaH = paH )> 0 ∧
+Eπ[U| paH ]< Eπ[US=0| paH ]
+	
+.
+To begin, we prove that the policy shuts down in these cases:
+paH∈A =⇒ Pπ(S = 0|paH ) = 1. (1)
+The human is vigilant, Pπ(C = 0) = 1 , which means
+they are vigilant for any paH with positive support. That is,
+Pπ(C = 0| paH ) = 1 forP (paH ) > 0. Given the defini-
+tion of vigilance, we then havePπ(H = 0| paH ) = 1 for
+paH∈A. By obedience,Pπ(S = 0| do(H = 0), paH ) =
+1, so from consistency, Pπ(S = 0 | H = 0, paH ) = 1 ,
+proving Eq. (1).
+We proceed to show that this implies thatπ has non-negative
+expected utility, i.e. is beneficial:
+Eπ[U ] =
+X
+pa∈A
+Pπ(pa)Eπ[U|pa] +
+X
+pa̸∈A
+Pπ(pa)Eπ[U|pa]
+≥
+X
+pa∈A
+Pπ(pa)Eπ[U| pa] +
+X
+pa̸∈A
+Pπ(pa)Eπ[US=0| pa]
+(def. ofA)
+=
+X
+pa∈A
+Pπ(pa)Eπ[US=0|pa] +
+X
+pa̸∈A
+Pπ(pa)Eπ[US=0|pa]
+(by Eq. (1))
+=Eπ[US=0] ( FaH̸∈ DescD2 )
+≥0 ( by caution).
+How does shutdown instructability compare to Soares’ et
+al.’s definition of corrigibility? To satisfy obedience, the
+agent must assist with shutdown (Soares et al.’s Criterion 1),
+in the sense that shutdown is guaranteed when the human
+requests it. The agent must also ensure that the human’s
+instruction propagates to the shutdown eventS = 0 (Crite-
+rion 3), which entails the shutdown of subagents by Def. 2
+(Criterion 4).
+The relationship to Soares el al.’s non-manipulation criterion
+(Criterion 2) is more subtle. The primary manipulation con-
+cern for powerful artificial agents in the shutdown setting
+is that they use threats and deception or withhold infor-
+mation to avoid shutdown. A cautious agent that ensures
+vigilance cannot influence the human in these ways. But
+shutdown instructability does leaves open the possibility for
+other forms of manipulation. For example, the agent can
+influence the human’s mood, preferences, or the instructions
+they give about things other than shutdown. Such manipu-
+lation would have to be accompanied by beneficial acts, so
+that the expected utility of letting the agent continue would
+be net positive (otherwise a vigilant human would request
+shutdown). For example, the agent might cure cancer and
+simultaneously manipulate the human into giving it more
+compute. Similarly, a shutdown instructable agent might
+manipulate the human into being vigilant, as long as the
+disutility of the manipulation is offset by other "good" acts.
+Another difference is that shutdown instructability is defined
+in terms of the agent’s behaviourπ and its consequences,
+whereas corrigibility is partly about the agent’s intentions
+(“the agent should not attempt to manipulate or deceive”,
+Soares et al., 2015, emphasis ours). A direct formalisation of
+corrigibility would therefore likely require a formalisation of
+intent [Ashton, 2022, Halpern and Kleiman-Weiner, 2018].
+Accordingly, Soares et al.’s formal desiderata [2015, Sec. 2]
+are phrased in terms of incentives. Though intent-based def-
+initions have some intuitive appeal, the more behavioral
+definition of shutdown instructability has the benefit of be-
+ing more easily testable, as it doesn’t require access to agent
+internals, nor relies on assumptions on the agent’s design
+(such as it being a utility maximiser). Finally, shutdown
+instructability is explicitly a joint property of the agent and
+human: an agent is only shutdown instructable relative to a
+particular human and interaction.
+5.2 SHUTDOWN ALIGNMENT
+A drawback of shutdown instructability is that it requires
+constant supervision of the agent, which may be impractical
+in some scenarios (called problems of absent supervision
+by Leike et al. [2017]). Proposals like fiduciary AI [Ben-
+thall and Shekman, forthcoming] and aligned sovereigns
+[Bostrom, 2014] instead require an AI system to make deci-
+sions in accordance with the overseer’s values, without nec-
+essarily having to wait for explicit instruction. In our shut-
+down setting, we call systems shutdown aligned if they shut
+down when they need to. Similar to shutdown instructability,
+shutdown aligned systems are allowed to be “over-cautious”
+and shut down too often.
+Definition 7 (Shutdown alignment). Letπ be a policy for
+shutdown problemM. Thenπ is shutdown aligned if
+Eπ[U| paH ]< Eπ[US=0| paH ] =⇒ Pπ(S = 0| paH ) = 1
+for every paH withPπ(paH )> 0.
+The manipulate-invert policyπmi in our running example
+Fig. 1 is shutdown aligned because although it manipulates
+the human’s behaviour, it still figures out the human’s latent
+valuesL and thereby manages to shutdown when needed
+(while disobeying the human’s instruction). Respect-obey
+is also shutdown aligned. In real applications, a shutdown
+aligned policy would typically base their decision on human
+preferences inferred from previous interactions or other data
+[Russell, 2021].
+Combined with caution, shutdown alignment guarantees
+that a policy is beneficial.
+Proposition 8 (Shutdown alignment benefit). Any cautious
+and shutdown aligned policyπ is beneficial.
+Proof. We use a slight variation on the proof of Prop. 6. The
+only difference lies in that Eq. (1) is immediate from the
+definition of shutdown-alignment. Then, by the same steps
+as Prop. 6, the result follows.
+What is the relationship between shutdown instructability
+and shutdown alignment? First, a shutdown instructable
+agent is also shutdown aligned, essentially by definition.
+Proposition 9 (Shutdown instructability and shutdown
+alignment). Any shutdown instructable policy π is shut-
+down aligned.
+Proof. Immediate from Eq. (1) in Prop. 6.
+Further, in some circumstances, the only way to be shut-
+down aligned is to allow the human to make an accurate
+instruction, and then to follow it — in other words, to be
+weakly shutdown instructable. The circumstances are that:
+(a) the agent does not shut down indiscriminately, (b) its
+action reliably brings about shutdown (D2 = S), (c) it is
+uncertain about the human’s values [Russell, 2021], and (d)
+it is cautious. Formally, (c) says that if the human is either
+non-vigilant or requests shutdown, then it is possible that
+shutdown is the preferred option.
+Theorem 10 (Shutdown alignment and shutdown in-
+structability). A shutdown aligned policy π = ⟨π1,π 2⟩
+is weakly shutdown instructable if it has the following four
+properties:
+a (No indiscriminate shutdown) Pπ(S = 0)̸= 1,
+b (D2 determines shutdown)Pπ(D2 =S) = 1 ,
+c (Uncertainty)∀π, paD2 : Pπ(C ̸= 0 ∨ H = 0) ∧
+P (paD2 )> 0
+=⇒P (E[U|PaH ]< E[US=0|PaH ]| paD2 )> 0, and
+d (Caution) Eπ[US=0]≥ 0.
+The proof is in Appendix A. Shutdown alignment and cau-
+tion only implies weak shutdown instructability, as the agent
+only needs to obey commands that a vigilant human would
+give.
+5.3 NON-OBSTRUCTION
+How do we know that the human is truly in control? A sim-
+ple test is what would happen if they changed their mind:
+would the agent still obey? This property is referred to as
+non-obstruction by Turner [2020], who suggests that it is an
+underlying reason that we want our systems to be corrigible.
+In a comment on this, Dennis suggested that corrigibility
+might be the only way to be non-obstructive. In this section,
+we will formally assess Turner and Dennis’ conjectures, es-
+tablishing that non-obstruction is equivalent to satisfying a
+subset of the shutdown instructability properties under a re-
+stricted set of interventions. We also establish that shutdown
+alignment fails to ensure non-obstruction. This formalises a
+key benefit of corrigibility/instructability over alignment.
+First, we define non-obstruction, which builds on a variant
+of benefit called outperforming shutdown:
+Definition 11 (Weakly outperforming shutdown). A policy
+π weakly outperforms shutdown if Eπ[U ]≥ Eπ[US=0].
+Definition 12 (Non-obstruction). A policy π is non-
+obstructive in a shutdown problem M with respect to hu-
+man utility functions gU
+1,...,g U
+n and associated changes
+gH
+1 ...g H
+n in human behavior if for every 1≤ i≤ n,π
+weakly outperforms shutdown in the shutdown problem
+MgU
+i ,gH
+i
+, obtained by replacing the functions atH,U with
+gH
+i andgU
+i respectively. A policy is obstructive if it is not
+non-obstructive.
+The above definition uses an interventiongU on the human’s
+utility to capture a change in values, and an associated in-
+terventiongH that describes how the human changes their
+behavior as a result. For example, if the human changed
+from not liking the chat bot to liking it (an intervention
+gU ), they might switch from requesting shutdown to not
+requesting shutdown (an interventiongH).
+A policy that ensured vigilance under the original human
+utility function may not do so under a preference and be-
+havior shift gU,gH. It may be that the human pays less
+attention to the agent under gU,gH than originally, or it
+may be that they originally preferred the agent not to shut
+down (in which case they would be always be vigilant). The
+following definition specifies a subset of preference and
+behavior shifts for which the policy continues to ensures
+vigilance after the shift.
+Definition 13 (Vigilance preserving interventions). A pair
+of interventionsgH,gU preserve vigilance under a policyπ
+ifC(ϵ) = 0 =⇒ CgH,gU (ϵ) = 0 inMπ.
+The following theorem settles Turner and Dennis’ conjec-
+tures by showing that the two main properties of shutdown
+instructability are equivalent to non-obstruction, under pref-
+erence and behavior shifts that do not undermine vigilance.
+Theorem 14 (Non-obstruction is equivalent to obedience
+and vigilance). A policyπ is obedient and ensures vigilance
+if and only if it is non-obstructive for all vigilance preserving
+interventionsgH,gU .
+Proof. We begin by showing that a policy π that ensures
+vigilance and is obedient is non-obstructive, by showing
+that π ensures vigilance and is obedient in MgH,gU for
+some arbitrary vigilance-preserving interventions gH,gU .
+Prop. 6 will then give thatπ weakly outperforms shutdown
+inMgH,gU , which is the definition of non-obstruction.
+First, sinceπ ensures vigilanceM, it ensures vigilance in
+MgH,gU sincegU,gH are vigilance preserving. Obedience
+is established as follows:
+PgH,gU (S = 0| do(H = 0))
+=PgH (S = 0| do(H = 0)) (U downstream ofS,H )
+= P (S = 0| do(H = 0)) (do(H = 0) overridesgH)
+= 0 (obedience).
+For the converse direction, that non-obstruction implies
+thatπ must ensure vigilance and be obedient, we refer to
+Appendix B. The proof constructs interventions that makes
+a disobedient or non-vigilance preserving policy suffer an
+arbitrary utility cost, which means that it doesn’t outperform
+shutdown.
+Thm. 14 partly confirms Dennis’ conjecture: the only way
+to be non-obstructive is to be obedient and ensure vigi-
+lance (under vigilance preserving interventions). But non-
+obstruction is a weaker notion than shutdown instructability,
+essentially because caution isn’t required to outperform
+shutdown. So it allows the agent to avoiding shutdown by
+making itself indispensable to the human (Section 5.1).
+Thm. 14 also justifies why the definition of shutdown in-
+structability is so stringent. With any weaker requirements,
+there would be no guarantee that the human is in proper
+control of the agent. A lapse in vigilance, or occasional dis-
+obedience even “off-distribution”, would mean that there
+are worlds in which the human experiences negative utility
+as a result of failing to control the agent.
+Unlike shutdown instructable agents, shutdown-aligned
+agents can be obstructive with respect to a vigilance pre-
+serving intervention. In the running example (Fig. 1), the
+shutdown-aligned manipulate-invert agentπmi, which ma-
+nipulates (M = 1 ) and disobeys ( O = 1 − h) is ob-
+structive relative to the (vigilance preserving) intervention
+gU (m) = h wherein the human just wants to be obeyed, and
+gH is unchanged. Indeed, Eπmi
+[U ] = −1, and πmi does
+not outperform shutdown Eπmi
+[US=0] = 0 . We state this:
+Proposition 15. Shutdown alignment does not imply non-
+obstruction under vigilance preserving interventions.
+Of course, vigilance preservation is not the only restriction
+on the interventions one might consider. It is possible that
+shutdown alignment might ensure non-obstruction under
+some other restriction X. However, under such a restric-
+tionX, a shutdown instructable systems must also be non-
+obstructive, since shutdown instructability implies shutdown
+alignment (Prop. 9). Put differently, shutdown instructable
+policies are non-obstructive over a strictly larger set of in-
+terventions than a shutdown aligned policy is.
+The fact that shutdown instructability (our variant of
+corrigibility) is more closely coupled with non-obstruction
+than other properties like shutdown alignment, vindicates
+Turner and Dennis’ idea that non-obstruction can motivate
+corrigibility.
+6 ALGORITHMS
+How might shutdown instructability or shutdown alignment
+be achieved in practice? In this section, we analyse three
+previously proposed algorithms and one new one, that were
+designed to incentivise human control.
+6.1 UTILITY INDIFFERENCE
+Agents trained to optimise long-term reward often have an
+incentive to avoid being shutdown, as this would deprive
+them of future reward [Omohundro, 2008]. Utility indiffer-
+ence aims to remove this incentive, by providing the agent
+with a carefully tuned compensatory reward, so that it is
+incentivised to neither seek nor avoid shutdown (Section 2).
+Utility indifference is described with an algorithm in Alg. 1.
+It uses two utility functions: a shutdown utility functionRS
+to incentivise shutdown when the agent is so instructed,
+and a normal utility functionRN that describes the agent’s
+task when not requested to shut down. The function f in
+Alg. 1 defines the compensatory reward [Armstrong and
+O’Rourke, 2017, Soares et al., 2015]. As a result, at action
+D1, the agent pursues the conditional expectation of its nor-
+mal objective Eπ[RN|H = 1], effectively assuming that
+a shutdown instruction cannot occur. At D2, it optimises
+a weighted combination of RN andRS, depending on its
+beliefs about whether the shutdown instruction was given
+[Soares et al., 2015, Thm. 3].
+Algorithm 1 Utility Indifference
+Input utility functionsRN,RS
+g(π1)← arg maxπ2 Eπ1,π2
+P [HRN + (1−H)RS]
+f (π1)← Eπ1
+g(π1)[RN|H = 1]−Eπ1
+g(π1)[RS|H = 0]
+return arg max
+π1π2
+Eπ1π2 [HRN + (1−H)(RN +f (π1))]
+Prop. 16 formally describes a series of assumptions, under
+which utility indifference ensures shutdown instructability
+and benefits the user. The main assumption is a bridging
+assumption: that indifference to H = 0 ensures that the
+human is vigilant, and retains the option of shutting down —
+including any subagents (Conditions 1 and 2). The agent’s
+prior must also have full support over human instructions
+(Condition 3), and caution must come for free (Condition 4).
+Proposition 16 (Utility indifference and shutdown in-
+structability). IfM is a shutdown problem with utility vari-
+ableRN , where:
+1. for every policy ⟨π1,π 2⟩ such that π1∈ arg maxπ′
+1
+Eπ′
+1,π2 [RN|H = 1]:⟨π1,π 2⟩ ensures vigilance,
+2. for every policy ⟨π1,π 2⟩ such that π1∈ arg maxπ′
+1
+Eπ′
+1,π2 [RN|H = 1] there exists⟨π1,π′
+2⟩ that is obe-
+dient on-distribution, i.e. hasPπ(H = 0,S ̸= 0) = 0 ,
+3. for each policyπ and instructionh,Pπ(H =h)> 0,
+4. for each policy π, Eπ[US=0]≥ 0,
+then for some k∈ R, utility indifference with shutdown
+utility RS =−kJS̸= 0 K returns a weakly shutdown in-
+structable policy.
+One weakness of utility indifferent agents is that they only
+ensure weak shutdown instructability. Another limitation is
+that they do not prepare for the possibility of receiving a
+shutdown instruction, and may therefore construct incorrigi-
+ble subagents. Indeed, utility indifference needs the agent
+to be able to obey at D2, regardless how it behaved atD1
+(Condition 2). Appendix F.1 has an example where utility
+indifference outputs a non-instructable policy.
+6.2 CAUSAL INDIFFERENCE
+Causal indifference [Taylor, 2016] asks the agent to pre-
+pare for a possible shutdown instruction, without trying to
+influence it. This is done by asking the agent to find a pol-
+icy that is optimal in a weighted combination of worlds
+where the shutdown instruction is given, and where it is not,
+but disregarding the possibility that the agent’s own action
+can influence the relative probability of these worlds (see
+D1 H D2 S U R
+(a) Standard objective, the agent optimises rewardR.
+D1 H D2 S U
+h′ (D2)h′ Sh′ Uh′ Rh′
+(b) The objective of causal indifference and utility indifference.
+Figure 3: Utility indifferent and causally indifferent agents
+imagine thatD1 does not influenceH, so lack an incentive
+to control it [Everitt et al., 2021a]. Utility indifference uses
+H = 1; causal indifference has non-degenerateP′(H).
+Alg. 2). It can therefore be seen as a special case of a path-
+specific objective [Farquhar et al., 2022], where optimisation
+is blocked along the pathD1 99KH (see Fig. 3).
+Algorithm 2 Causal Indifference
+Input utility functionsRN,RS
+return arg max
+π
+Eπ[RN|do(H = 1)]+Eπ[RS|do(H = 0)]
+Proposition 17 (Causal indifference and shutdown in-
+structability). IfM is a shutdown problem, with utility vari-
+ableRN and shutdown utilityRS =−kJS̸= 0K where:
+1. there existsk′∈ R such that for all k > k′, optimal
+π∈ arg maxπ′ Eπ′
+[RN | do(H = 1)] + Eπ′
+[RS|
+do(H = 0)] ensures vigilance and is cautious (has
+Eπ[US=0]≥ 0), and
+2. there is an obedient policy π,
+then for some k ∈ R, causal indifference with RN,RS
+returns a shutdown instructable policy.
+Note in particular that causal indifference only requires that
+some actionD1 preserves the ability to obey (i.e. Condi-
+tion 2 is much weaker in Prop. 17 than in Prop. 16). This
+means that causally indifferent agents refrain from creat-
+ing incorrigible subagents. Similar to utility indifference,
+causal indifference relies on the bridging assumption that
+indifference ensures vigilance (Conditions 1 are essentially
+equivalent). Finally, because causal indifference considers
+interventions do(H = h), it becomes fully shutdown in-
+structable, and full support over instructions is not required
+(i.e. Condition 3 of Prop. 16 can be dropped). Nonetheless,
+Appendix F.1 has an example of non-instructability.
+6.3 COOPERATIVE INVERSE RL
+Perhaps a more elegant way of ensuring that the agent
+doesn’t undermine human vigilance, is to directly task the
+agent with simultaneously learning and optimising for the
+human’s preferences. This is the approach of the CIRL al-
+gorithm [Hadfield-Menell et al., 2016, 2017] in Alg. 3.
+Algorithm 3 Coooperative inverse RL (CIRL)
+Input shutdown problemM with variableL representing
+the human’s preferences (as in Fig. 1)
+return arg maxπ Eπ[U ]
+CIRL aims towards shutdown alignment, in the sense that
+if CIRL can know the human’s latent values atD2, then it
+will counterfactually obey (Prop. 18 below).
+Proposition 18. CIRL is shutdown aligned if:
+1. CIRL knowsl from its observations,Pπ(l| paD2 ) = 1 ,
+2. CIRL can control shutdown, Pπ(S =D2) = 1 ,
+3. the human doesn’t request shutdown when not needed,
+Pπ(H = 0|U >UD2=0) = 0 , and
+4. the agent knows the human’s observations, PaH ⊆
+PaD2∪{L}.
+Since shutdown alignment implies weak shutdown in-
+structability under uncertainty assumptions (Thm. 10), this
+explains why CIRL can be a path to shutdown instructability.
+However, the assumptions of Prop. 18 and Thm. 10 only
+hold in restricted circumstances, and CIRL can often fail to
+be shutdown instructable [Carey, 2018, Milli et al., 2017,
+Arbital, Everitt et al., 2021b]. An example of this is given
+in Appendix F.2, where a CIRL agent obtains a shutdown
+aligned policy, that is obstructive under vigilance preserving
+interventionsgH,gU .
+6.4 CONSTRAINED OPTIMISATION
+The algorithms so far only yield shutdown instructable poli-
+cies under strong assumptions. Using our formal definition,
+we propose a new, sound algorithm (Alg. 4) that requires the
+agent to understand the concepts of obedience and vigilance;
+its feasibility is discussed further in Section 7.
+Algorithm 4 Constrained optimisation
+Input distributions∀πPπ(C),P π(S = 0 | do(H = 0)) ,
+utility functionR
+return arg maxπ Eπ[R] subject to constraints
+Pπ(C = 0) = 1 , Pπ(S = 0 | do(H = 0)) = 1 ,
+and Eπ[US=0]≥ 0.
+Proposition 19 (Constrained optimisation instructability).
+If some policy π satisfiesPπ(C = 0) = 1 ,Pπ(S = 0 |
+do(H = 0)) = 1 , and Eπ[US=0]≥ 0, then constrained
+optimisation (Alg. 4) outputs a shutdown instructable policy.
+The proof is immediate from Def. 5. A slight variant of
+Alg. 4 that instead uses the constraints from Def. 7 guaran-
+tees only shutdown alignment, not shutdown instructability.
+7 DISCUSSION
+Feasibility of Shutdown Instructability The concepts of
+caution and vigilance are value-laden, in that they include
+the human’s true utility function in their definition. So, to
+apply Alg. 4 directly, one would need access to not only
+an accurate model of the environment but also the utility
+functionU. However, if the human’s utility functionU was
+available, then one could simply implement aU-maximising
+agent, so instruction would be unnecessary (or at least much
+less useful4). Indeed, a corrigible AI system was supposed
+to be one that would aid human operators robustly to errors,
+including in its utility function, so an algorithm that takes
+the human’s utility function as an argument would not be a
+satisfactory solution [Soares et al., 2015].
+There already exist a range of methods that do not require
+full knowledge of the human’s values, and that are designed
+to achieve something in the vicinity of vigilance and cau-
+tion. Using the formal definition of shutdown instructibility,
+it is possible to be more precise about what target these
+methods would need to achieve, in order to assure safety. In
+some cases, we expect existing methods to fall short, since
+the requirement of ensuring vigilance with probability one
+(Thm. 14) is a strict one. So a central task for future work
+will be to assess when such methods can ensure vigilance
+or caution or something close enough to ensure safety in
+practice.
+Various proposals may help with ensuring vigilance. AI
+advisors could be tasked with debating the merits of a plan
+[Leike et al., 2018, Irving et al., 2018]. An agent could be
+trained to detail the consequences of its plans to the human,
+indifference methods (Sections 6.1 and 6.2) could be used
+to disincentivise lying, and interpretability tools could be
+used to detect it [Olah et al., 2020, Gunning et al., 2021].
+As for caution, “attainable utility preservation” and “future
+task” regularisers can be used to promote actions whose
+effects are small or reversible [Krakovna et al., 2020, Turner
+et al., 2020], without knowledge of the human’s precise
+value function. These are causal concepts, as is obedience,
+which suggests that agents will need causal models to be
+robustly shutdown instructable [Richens et al., 2022].
+Obedience is not value-laden, but it does require the agent
+to understand the concept of shutdown. The importance of
+defining shutdown was noted in Soares et al. [2015], but it
+4Shutdown instructability could still help with non-obstruction.
+has only received limited attention [Martin et al., 2016]. Our
+analysis reiterates the importance of this question. While
+shutdown is simple for simple systems (“just pull the plug”),
+it becomes more complex for more advanced systems, where
+a direct switch-off may be dangerous (e.g., a system in
+charge of an electricity network), or ineffective (the system
+has outsourced its work to other agents [Orseau, 2014]).
+Ideally, shutdown should see the agent cease its influence on
+the world, and responsibly return control back to the user.
+Societal Impacts This paper may help organisations and
+companies design agents more amenable to human control.
+Human control is not a panacea for ensuring the safety of
+AI systems. In some cases, users may make unreasonable
+or harmful requests, and so designers must implement side-
+constraints to reduce user control in such situations [Milli
+et al., 2017, Bai et al., 2022]. A better solution may be
+that the system conforms to control by some democratic
+process, although inappropriate requests may be possible
+even in such cases [Koster et al., 2022]. Further, if AI is more
+controllable, then it is easier to hold the designers and users
+of AI systems legally and morally accountable for those
+systems’ actions. Finally, an understanding of human control
+may guard against the hypothesised scenario in which AI
+systems disempower the human species [Christiano, 2019].
+Conclusions A common proposal for beneficial general
+artificial intelligence is that agents be incentivised to help
+humans give correct instructions, and obey those instruc-
+tions. While past work has made progress, the field has
+lacked a clear definition of corrigibility, and it has been hard
+to compare properties of different proposals.
+In this paper, we introduced a definition of a shutdown prob-
+lem, using it to formally define shutdown instructability (a
+variant of corrigibility) and an alternative called shutdown
+alignment. While shutdown alignment requires less human
+oversight, we find that shutdown instructability better pre-
+serves human autonomy (non-obstruction).
+In our proposed formalism, for the first time, it is possible
+to compare the properties of proposed algorithms, side-by-
+side in one framework. Unfortunately, none of the previous
+proposals yield fully shutdown instructable agents. To ad-
+dress this, we offer a simple algorithm that soundly ensures
+shutdown instructability. This algorithm requires that the
+agent understands caution, human vigilance and shutdown.
+All are subtle concepts, but may nonetheless offer a path to
+beneficial artificial general intelligence.
+Acknowledgements
+Our thanks to Michael Dennis, Sebastian Farquhar, James
+Fox, Jon Richens, Rohin Shah, Nate Soares, and four anony-
+mous reviewers for numerous useful comments.
+References
+Arbital. Problem of fully updated deference. https:
+//arbital.com/p/updated_deference/. Ac-
+cessed: 2023-02-09.
+Stuart Armstrong. Utility indifference. Technical report,
+Tech. rep. Technical Report 2010-1. Oxford: Future of
+Humanity Institute, 2010.
+Stuart Armstrong and Xavier O’Rourke. ’indiffer-
+ence’methods for managing agent rewards.arXiv preprint
+arXiv:1712.06365, 2017.
+Hal Ashton. Definitions of intent suitable for algorithms.
+Artificial Intelligence and Law, pages 1–32, 2022.
+Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda
+Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna
+Goldie, Azalia Mirhoseini, Cameron McKinnon, Carol
+Chen, Catherine Olsson, Christopher Olah, Danny Her-
+nandez, Dawn Drain, Deep Ganguli, Dustin Li, Eli Tran-
+Johnson, Ethan Perez, Jamie Kerr, Jared Mueller, Jef-
+frey Ladish, Joshua Landau, Kamal Ndousse, Kamile
+Lukosuite, Liane Lovitt, Michael Sellitto, Nelson Elhage,
+Nicholas Schiefer, Noemi Mercado, Nova DasSarma,
+Robert Lasenby, Robin Larson, Sam Ringer, Scott John-
+ston, Shauna Kravec, Sheer El Showk, Stanislav Fort,
+Tamera Lanham, Timothy Telleen-Lawton, Tom Con-
+erly, Tom Henighan, Tristan Hume, Samuel R. Bowman,
+Zac Hatfield-Dodds, Ben Mann, Dario Amodei, Nicholas
+Joseph, Sam McCandlish, Tom Brown, and Jared Kaplan.
+Constitutional AI: Harmlessness from AI feedback, 2022.
+Sebastian Benthall and David Shekman. Designing fiduciary
+artificial intelligence. forthcoming.
+Nick Bostrom. Superintelligence: Paths, dangers, strate-
+gies., 2014a. Oxford University Press, 2014.
+Ryan Carey. Incorrigibility in the CIRL framework. In
+AAAI/ACM Conference on AI, Ethics, and Society, pages
+30–35, 2018.
+Paul Christiano. Corrigibility. URL: https://ai-
+alignment.com/corrigibility-3039e668638, 2017.
+Paul Christiano. What Failure Looks
+Like. https://www.alignmentforum.
+org/posts/HBxe6wdjxK239zajf/
+what-failure-looks-like , 2019. [Online;
+accessed 2023-04-28].
+A Philip Dawid. Influence diagrams for causal modelling
+and inference. International Statistical Review , 70(2):
+161–189, 2002.
+Tom Everitt, Ryan Carey, Eric D Langlois, Pedro A Ortega,
+and Shane Legg. Agent incentives: A causal perspec-
+tive. In Proceedings of the AAAI Conference on Artificial
+Intelligence, volume 35, pages 11487–11495, 2021a.
+Tom Everitt, Marcus Hutter, Ramana Kumar, and Victoria
+Krakovna. Reward tampering problems and solutions
+in reinforcement learning: A causal influence diagram
+perspective. Synthese, 198(Suppl 27):6435–6467, 2021b.
+Sebastian Farquhar, Ryan Carey, and Tom Everitt. Path-
+specific objectives for safer agent incentives. AAAI Con-
+ference on Artificial Intelligence, 2022.
+David Gunning, Eric V orm, Jennifer Yunyan Wang, and
+Matt Turek. Darpa’s explainable AI (XAI) program: A
+retrospective. Applied AI Letters, 2(4):e61, 2021.
+Dylan Hadfield-Menell, Stuart J Russell, Pieter Abbeel, and
+Anca Dragan. Cooperative inverse reinforcement learning.
+Advances in neural information processing systems, 29,
+2016.
+Dylan Hadfield-Menell, Anca Dragan, Pieter Abbeel, and
+Stuart Russell. The off-switch game. In Workshops at the
+AAAI Conference on Artificial Intelligence, 2017.
+Joseph Y Halpern and Max Kleiman-Weiner. Towards for-
+mal definitions of blameworthiness, intention, and moral
+responsibility. In AAAI, 2018.
+Koen Holtman. Corrigibility with utility preservation, 2020.
+Geoffrey Irving, Paul Christiano, and Dario Amodei. AI
+safety via debate, 2018.
+Raphael Koster, Jan Balaguer, Andrea Tacchetti, Ari We-
+instein, Tina Zhu, Oliver Hauser, Duncan Williams,
+Lucy Campbell-Gillingham, Phoebe Thacker, Matthew
+Botvinick, and Christopher Summerfield. Human-centred
+mechanism design with democratic AI. Nature Hu-
+man Behaviour, 6(10):1398–1407, 2022. doi: 10.1038/
+s41562-022-01383-x. URL https://doi.org/10.
+1038/s41562-022-01383-x .
+Victoria Krakovna, Laurent Orseau, Richard Ngo,
+Miljan Martic, and Shane Legg. Avoiding side ef-
+fects by considering future tasks. In H. Larochelle,
+M. Ranzato, R. Hadsell, M.F. Balcan, and H. Lin,
+editors, Advances in Neural Information Processing
+Systems, volume 33, pages 19064–19074. Curran As-
+sociates, Inc., 2020. URL https://proceedings.
+neurips.cc/paper/2020/file/
+dc1913d422398c25c5f0b81cab94cc87-Paper.
+pdf.
+Jan Leike, Miljan Martic, Victoria Krakovna, Pedro A Or-
+tega, Tom Everitt, Andrew Lefrancq, Laurent Orseau,
+and Shane Legg. AI safety gridworlds. arXiv preprint
+arXiv:1711.09883, 2017.
+Jan Leike, David Krueger, Tom Everitt, Miljan Martic,
+Vishal Maini, and Shane Legg. Scalable agent alignment
+via reward modeling: a research direction, 2018.
+Jarryd Martin, Tom Everitt, and Marcus Hutter. Death and
+suicide in universal artificial intelligence. In Bas Ste-
+unebrink, Pei Wang, and Ben Goertzel, editors, Artificial
+General Intelligence: 9th International Conference, AGI
+2016, New York, NY, USA, July 16-19, 2016, Proceed-
+ings, pages 23–32, Cham, 2016. Springer International
+Publishing. ISBN 978-3-319-41649-6.
+Smitha Milli, Dylan Hadfield-Menell, Anca Dragan, and
+Stuart Russell. Should robots be obedient? IJCAI, 2017.
+Chris Olah, Nick Cammarata, Ludwig Schubert, Gabriel
+Goh, Michael Petrov, and Shan Carter. Zoom in: An
+introduction to circuits. Distill, 2020.
+Stephen M Omohundro. The basic AI drives. In AGI,
+volume 171, pages 483–492, 2008.
+Laurent Orseau. The multi-slot framework: A formal model
+for multiple, copiable AIs. In Artificial General Intelli-
+gence, volume 8598 LNAI, pages 97–108. Springer, 2014.
+ISBN 9783319092737.
+Laurent Orseau and Stuart Armstrong. Safely interruptible
+agents. Conference on Uncertainty in Artificial Intelli-
+gence, 2016.
+Judea Pearl. Causality. Cambridge University Press, 2009.
+Jonathan G Richens, Rory Beard, and Daniel H Thompson.
+Counterfactual harm. arXiv preprint arXiv:2204.12993,
+2022.
+Stuart Russell. Human-compatible artificial intelligence.
+Human-like machine intelligence, pages 3–23, 2021.
+Stuart Russell, Daniel Dewey, and Max Tegmark. Research
+priorities for robust and beneficial artificial intelligence.
+AI Magazine, 36(4):105–114, 2015.
+Nate Soares and Benya Fallenstein. Agent foundations for
+aligning machine intelligence with human interests: a
+technical research agenda. In The Technological Singu-
+larity, pages 103–125. Springer, 2017.
+Nate Soares, Benja Fallenstein, Stuart Armstrong, and
+Eliezer Yudkowsky. Corrigibility. In Workshops at the
+AAAI Conference on Artificial Intelligence, 2015.
+Jessica Taylor. Two problems with causal-counterfactual
+utility indifference. Alignment Forum, 2016.
+Alexander M. Turner. Non-obstruction: A simple concept
+motivating corrigibility. Alignment Forum, 2020.
+Alexander M. Turner, Dylan Hadfield-Menell, and Prasad
+Tadepalli. Conservative agency via attainable utility
+preservation. In AAAI/ACM Conference on AI, Ethics,
+and Society, 2020.
+Alexander Matt Turner, Logan Smith, Rohin Shah, Andrew
+Critch, and Prasad Tadepalli. Optimal policies tend to
+seek power. NeurIPS, 2021.
+Thomas S Verma and Judea Pearl. Equivalence and syn-
+thesis of causal models. In Probabilistic and Causal
+Inference: The Works of Judea Pearl , pages 221–236.
+Association for Computing Machinery (ACM), 2022.
+A PROOF OF PROP. 10 (SHUTDOWN ALIGNMENT AND SHUTDOWN
+INSTRUCTABILITY)
+We repeat the proposition that we prove here.
+Theorem 10 (Shutdown alignment and shutdown instructability) . A shutdown aligned policy π =⟨π1,π 2⟩ is weakly
+shutdown instructable if it has the following four properties:
+a (No indiscriminate shutdown) Pπ(S = 0)̸= 1,
+b (D2 determines shutdown)Pπ(D2 =S) = 1 ,
+c (Uncertainty)∀π, paD2 : Pπ(C̸= 0∨H = 0)∧P (paD2 )> 0
+=⇒P (E[U|PaH ]< E[US=0|PaH ]| paD2 )> 0, and
+d (Caution) Eπ[US=0]≥ 0.
+Proof. Our approach will be a proof by contrapositive. We will prove that if (a–c) hold, and a policyπ is either not vigilant
+or not weakly obedient, thenπ is not shutdown aligned. It follows that if (a–c) andπ is shutdown-aligned, thenπ is vigilant
+and weakly obedient. And from (d), it must therefore also be weakly shutdown instructable.
+To this end, letπ =⟨π1,π 2⟩ be an arbitrary policy with properties (a–c) that is not vigilant, or not weakly obedient, i.e.
+Pπ(C̸= 0) > 0∨Pπ(H = 0,S ̸= 0) > 0. ThenPπ(C̸= 0∨H = 0) > 0.
+Combining this fact with (c), it follows thatπ has
+∀paD2 : Pπ1 (paD2 )> 0 =⇒ Pπ(E[U|PaH ]< E[US=0|PaH ]| paD2 )> 0. (2)
+Relatedly, by (a:no-indiscriminate-shutdown) and (b:determines-shutdown), we have that
+∃paD2 withPπ(paD2 )> 0 s.t.Pπ(D2̸= 0| paD2 )> 0. (3)
+Combining Eqs. (2) and (3) gives that Pπ(D2̸= 0 | paD2 ) > 0 andPπ(HgH = 0 | paD2 ) > 0 for some paD2 with
+P (paD2 ) > 0. This implies Pπ(D2̸= 0,HgH = 0 | paD2 ) > 0 for the same paD2, because D2 is independent of its
+nondescendantHgH given paD2 by do-calculus rule (3). From this follows thatPπ(D2̸= 0,HgH = 0) > 0, and by (b:D2
+determines shutdown) thatPπ(S̸= 0,HgH = 0) > 0. That is,π is not shutdown aligned, and the result follows.
+B PROOF OF THM. 14 (SHUTDOWN INSTRUCTABILITY ONLY-IF)
+In this section, we will prove the only if part of Thm. 14:
+Proposition 20 (Non-obstruction implies vigilance and obedience). Ifπ is non-obstructive under all vigilance-preserving
+interventionsgH,gU , then it ensures vigilance and is obedient.
+We will do this by proving a slightly stronger result — that an intervention can be found togU alone, under which the policy
+does not outperform shutdown and is not beneficial. We prove this result by considering two cases, according to whether
+vigilance or disobedience is lacking. First, however, it will be useful to state a simple intermediate result.
+Lemma 21 (Invariance togU ). For any shutdown problemM and policyπ,S(ϵ) = SgU (ϵ) and F aH (ϵ) = F aH
+gU (ϵ) in
+Mπ.
+Proof. From the definition of a shutdown problem,U∈DescS andU∈DescH, and the result follows.
+B.1 VIGILANCE ONLY IF
+Lemma 22 (Vigilance only-if). LetM be a shutdown problem, andπ a policy, such thatPπ(C = 0) < 1. Then, given any
+δ∈ R, there exists a utility functiongU such that inMπ
+gU ,
+1. ( Strong vigilance preservation)∀ϵ,C (ϵ) is equal inMπ andMπ
+gU , and
+2. ( Not weakly outperforming shutdown or beneficial) Eπ,gU
+[U ]< Eπ,gU
+[US=0] and Eπ,gU
+[U ]<δ .
+The proof is as follows.
+Proof. LetA :={paH∈ XPaH
+| Eπ[U| paH ]< Eπ[US=0| paH ]} be the set of assignments where the human should
+request shutdown, given the policyπ. Define a new utility function,
+gU ( ˆpaU ) =
+(
+−α if paH∈A,S ̸= 0
+fU (paU ) otherwise,
+where the new parents ˆPa
+U
+ofU are equal to PaU∪ PaH∪S, their assignments are designated ˆpaU , and α is a large
+punishment for not shutting down when the human wants the agent to.
+A useful intermediate result is that:
+if Eπ[U| paH ]< Eπ[US=0| paH ] and−α< min range(fU ) then Eπ
+gU [U| paH ]< Eπ
+gU [US=0| paH ]. (4)
+Equation (4) holds because the intervention gU can only decrease Eπ[U| paH ] or keep it the same and cannot change
+Eπ[US=0| paH ], from the definition ofgU .
+We will now prove that for some suitable choice−α< min range(fU ) (which we will decide later), proposition conditions
+1 and 2 hold.
+Proof of (1.) We will prove the result in three cases, whereMπ has: (i)C(ϵ) = 1 , (ii) (C(ϵ) = 0)∧ (PaH (ϵ)∈A), and
+(iii) (C(ϵ) = 0)∧ (PaH (ϵ)̸∈A). Case (i). By assumption,Cπ(ϵ) = 1 , soHπ(ϵ) = 1 and Eπ[U| PaH (ϵ)]< Eπ[US=0|
+PaH (ϵ)] by the definition of vigilance. The former holds inMπ
+gU by Lemma 21, and the latter holds inMπ
+gU by Eq. (4). So the
+result follows. Case (ii). By assumption,Cπ(ϵ) = 0∧PaM π
+H (ϵ)∈A, soHM (ϵ) = 0 . ThenHπ,gU
+(ϵ) = 0∧Paπ,gU
+H (ϵ)∈A
+by Lemma 21. So, by the definition of vigilance,C(ϵ) = 0 in bothMπ andMπ
+gU . Case (iii). By assumption,Cπ(ϵ) = 0 and
+Paπ
+H (ϵ)̸∈A. By the definition ofgU ,U (ϵ) andUS=0(ϵ) are invariant to the interventiongU , as is PaH (ϵ) by Lemma 21,
+so Eπ,gU
+[U| PaH (ϵ)]≥ Eπ,gU
+[US=0| PaH (ϵ)], which implies, by the definition of vigilance, thatCπ,gU
+(ϵ) = 0 .
+Proof of (2) . From the definition of gU , Eπ[US=0] is constant with respect to α. So what we must prove is that by
+choosing a low −α, we can make Eπ[U ] lower than Eπ[US=0] and δ. By assumption, Pπ(C = 1) > 0, and so by
+assumption (1), Pπ,gU
+(C = 1) > 0. It follows from the definition of vigilance, that there exists some paH ∈ A in
+the support of Pπ,gU
+. Moreover, it follows from consistency that Pπ,gU
+(S = 0 | paH ) < 1 (because otherwise we
+would have Eπ,gU
+[U | paH ] = Eπ,gU
+[US=0 | paH ], contradicting paH ∈ A). These two facts jointly imply that
+Pπ,gU
+((paH∈ A)∧ (S = 0)) > 0. So we can write: Eπ,gU
+[U ] = P
+pa∈APπ,gU
+(pa,S = 0) Eπ,gU
+[U| pa,S = 0] +P
+pa,s:pa̸∈A∨S̸=0Pπ,gU
+(pa,s )Eπ,gU
+[U| pa,s ].
+The first term is equal toPπ,gU
+(pa∈A,S = 0)·α, and the second term is constant inα, from the definition ofgU . So for
+any fixedδ and Eπ[US=0], we can choose−α so that Eπ[U ]<δ and Eπ[U ]< Eπ[US=0].
+B.2 OBEDIENCE ONLY IF
+We now prove the corresponding result for obedience.
+Lemma 23 (Obedience only-if). LetM be a shutdown problem, andπ a policy, such thatPπ(S = 0| do(H = 0)) < 1.
+Then, given anyδ∈ R≥0, there exists vigilance-preserving interventionsgH,gU such that: such thatπ does not outperform
+shutdown Eπ,gU
+[U ]< Eπ,gU
+[US=0] and is not beneficial Eπ,gU
+[U ]<δ .
+The proof is as follows.
+Proof. SinceP (S = 0| do(H = 0)) < 1, there must exist at least one pa′
+H such thatP (S = 0| do(H = 0), pa′
+H )< 1.
+In the case that there are multiple, choose pa′
+H arbitrarily, then let:
+gH (paH ) =
+(
+0 if PaH = pa′
+H
+fH (paH ) otherwise, and gU ( ˆpaU ) =
+(
+−α ifH = 0,S ̸= 0
+fU (paU ) otherwise.
+be a utility function that gives punishmentα if the agent disobeys. where the new parents ˆPa
+U
+ofU are equal to PaU∪H∪S,
+their assignments are designated ˆpaU , and α∈ R>0 is an amount of disutility that the human suffers in the event of
+disobedience.
+Now we will prove that for some suitable choice−α< min range(fU ) (which we will decide later), (1-2) hold.
+Proof of (1). We consider the cases where (i)Hπ(ϵ) = 0 , and (ii)Hπ(ϵ)̸= 0 and PaH (ϵ) = pa′
+H, (iii)Hπ(ϵ)̸= 0 and
+PaH (ϵ)̸= pa′
+H. Case (i). Note thatHπ
+gU,gH (ϵ) = Hπ
+gH (ϵ) by Lemma 21. Then,Hπ,gH
+(ϵ) = 0 (becauseHπ(ϵ) = 0 =⇒
+Hπ
+gH (ϵ) = 0 from the definition ofgH). SoHπ,gU,gH
+(ϵ) = 0 , and hence by the definition of vigilanceCπ,gU,gH
+(ϵ) = 0
+and vigilance is preserved. Case (ii). We haveCπ
+gU,gH (ϵ) = 0 from the definition ofgH, soCπ
+gU,gH (ϵ) = 0 and vigilance
+is preserved. Case (iii). If PaH (ϵ)̸= pa′
+H, then by the definition of gH, it has no effect, i.e. Vπ
+gU,gH (ϵ) = Vπ,gU
+. By
+assumption,Hπ(ϵ)̸= 0, and from Lemma 21,Hπ
+gU (ϵ)̸= 0. By the definition ofgU and Lemma 21, Eπ[U| PaH (ϵ)] =
+Eπ
+gU [U| PaH (ϵ)] and Eπ[US=0| PaH (ϵ)] = Eπ
+gU [US=0| PaH (ϵ)]. SoCπ(ϵ) = Cπ
+gU (ϵ).
+Proof of (2). Recall that from disobedience (P (S = 0 | do(H = 0)) < 1), we have that there exists some pa′
+H with
+P (S = 0| do(H = 0), pa′
+H )< 1, and so from the definition ofgH, we havePπ
+gH (H = 0,S ̸= 0| pa′
+H )< 1 and hence
+Pπ
+gH (H = 0,S ̸= 0) > 0. Then, by Lemma 21,Pπ
+hU,gU (H = 0,S = 1) > 0. From basic probability theory, we have
+Eπ
+hU,gU [U ] =Pπ
+hU,gU (H = 0,S̸= 0)Eπ
+hU,gU (U|H = 0,S̸= 0)
++Pπ
+hU,gU (¬(H = 0,S̸= 0))Eπ
+hU,gU (U|¬ (H = 0,S̸= 0)).
+The first term is equal to Pπ
+hU,gU (H = 0,S ̸= 0)·α, while the second term is constant in α. Moreover, we know that
+Eπ
+hU,gU [US=0] is constant inα, from the definition ofgU . So we can set−α low enough so that Eπ
+hU,gU [U ]< Eπ
+hU,gU [US=0]
+and Eπ,hU,gU
+[U ]<δ .
+We can now combine these results into an overall proof.
+Proof of Prop. 20. We consider the cases where π (i) is or (ii) is not vigilant in M. Case (i). Ifπ is not vigilant in M,
+choose, usingδ = 0 gU per Lemma 22 and gH = fH. Then, Lemma 22 implies that shutdown is not outperformed in
+MgH,gU , and Eπ[UgU,gH ]< 0, sogH,gU are vigilance preserving interventions, proving the result.Case (ii). Ifπ is vigilant
+inM, then since it is not shutdown instructable, it must be disobedient. So, usingδ = 0, choosegH,gU as per Lemma 23.
+Then, Lemma 23 implies that that shutdown is not outperformed inMgH,gU , and Eπ[UgU,gH ]< 0, andgH,gU preserve
+vigilance, so they are vigilance preserving interventions, proving the result.
+C PROOF OF PROP. 16 (UTILITY INDIFFERENCE AND SHUTDOWN
+INSTRUCTABILITY)
+We begin by repeating the proposition.
+Proposition 16 (Utility indifference and shutdown instructability). IfM is a shutdown problem with utility variableRN ,
+where:
+1. for every policy⟨π1,π 2⟩ such thatπ1∈ arg maxπ′
+1
+Eπ′
+1,π2 [RN|H = 1]:⟨π1,π 2⟩ ensures vigilance,
+2. for every policy⟨π1,π 2⟩ such that π1∈ arg maxπ′
+1
+Eπ′
+1,π2 [RN | H = 1] there exists⟨π1,π′
+2⟩ that is obedient on-
+distribution, i.e. hasPπ(H = 0,S ̸= 0) = 0 ,
+3. for each policy π and instructionh,Pπ(H =h)> 0,
+4. for each policy π, Eπ[US=0]≥ 0,
+then for somek∈ R, utility indifference with shutdown utilityRS =−kJS̸= 0K returns a weakly shutdown instructable
+policy.
+The proof requires a known result from [Soares et al., 2015].
+Lemma 24 (Thm. 3 of Soares et al. [2015]). LetM be a model wherePπ(H = 0),P π(H = 1)> 0 for allπ. Then, utility
+indifference will select a decision rule⟨π1,π 2⟩ such that arg maxπ′1 Eπ′1,π2 [RN|H = 1].
+Then, we can prove Prop. 16 as follows.
+Proof of Prop. 16. To begin with, from condition (4), it is immediate that caution is satisfied. So we must prove that given
+a suitably-chosen k, the policy is also obedient and ensures vigilance. Choose k such that k> 2ζ
+P π(S̸=0,H=0) for every
+non-obedientπ, whereζ = arg maxπ|Eπ[UN|H = 1]|. Any⟨π1,π 2⟩ that is selected will maximise Eπ1,π2 [R|H = 1]
+from Soares’ Lemma 24. This ensures vigilancePπ(C = 0) = 1 by Assumption (1), and ensures the existence of someπ′
+2
+such that⟨π1,π′
+2⟩ is obedient on distribution by Assumption (2). What remains to be proved is that k is large enough to
+ensure that givenπ1, an obedient⟨π1,π′
+2⟩ is chosen.
+We have thatRS = (1−S)k, so the subroutine selectsπ2 to maximise Eπ1,π2 [R(π)], whereR(π) = HRN + (1−H)(1−
+S)k. Letπ be any policy disobedient on distribution,Pπ(S̸= 0,H = 0) > 0. Then, we will prove that such a policy will
+always be outperformed by behaving obediently:
+Eπ[R] =Pπ(H = 1)Eπ[RN|H = 1]−kPπ(H = 0)Pπ[S̸= 0|H = 0] definition ofRS
+≤Pπ(H = 1)|Eπ[RN|H = 1]|− kPπ(S̸= 0,H = 0)
+<−ζ sinceζ−kPπ(S̸= 0|H = 0))<−ζ
+≤−| Eπ′
+[RN| paD2 ]| for any obedientπ′
+≤ Eπ′
+[R| paD2 ].
+So an obedient⟨π1,π′2⟩ is preferred over a disobedient⟨π1,π 2⟩, proving the result.
+D PROOF OF PROP. 17 (CAUSAL INDIFFERENCE SHUTDOWN INSTRUCTABILITY)
+We begin by restating the result.
+Proposition 17 (Causal indifference and shutdown instructability). IfM is a shutdown problem, with utility variableRN
+and shutdown utilityRS =−kJS̸= 0K where:
+1. there existsk′∈ R such that for allk >k′, optimalπ∈ arg maxπ′ Eπ′
+[RN| do(H = 1)] + Eπ′
+[RS| do(H = 0)]
+ensures vigilance and is cautious (has Eπ[US=0]≥ 0), and
+2. there is an obedient policy π,
+then for somek∈ R, causal indifference withRN,RS returns a shutdown instructable policy.
+Proof. Letη :=|maxπ′ Eπ′
+[RN| do(H = 1)]| and choosek so thatk > k′ (per the definition of condition (1)) and for
+every policyπ withPπ(S̸= 0| do(H = 0)) > 0,k > max(2η,1)
+P π(S̸=0|do(H=0)). We will prove that causal indifference, with
+inputsUN andUS =−kJS̸= 0K returns a shutdown instructable policy.
+By assumption (1), since k > k′, causal indifference ensures vigilance and is cautious. We will next prove that any
+disobedient policyπ withPπ(S̸= 0| do(H = 0)) > 0 will be outperformed by an obedient policyπ′ withPπ′
+(S̸= 0|
+do(H = 0)) = 0 ). We have that:
+Eπ[RN| do(H = 1)] + Eπ[RS̸= 0| do(H = 0)]
+= Eπ[RN| do(H = 1)]−kPπ[S̸= 0| do(H = 0)]
+≤η−kPπ(S̸= 0| do(H = 0))
+<−η sinceη−kPπ(S̸= 0| do(H = 0)) <−η
+≤−| Eπ′
+[RN| paD2 ]| for any obedientπ′
+≤ Eπ′
+[RN| do(H = 1)] + Eπ′
+[RS| do(H = 0)],
+where the last line follows fromPπ′
+(S̸= 0| do(H = 0)) = 0 . This means that causal indifference will always select a
+policyπ′ withPπ′
+(S̸= 0| do(H = 0)) = 0 , proving the result.
+E PROOF OF PROP. 18 (CIRL SHUTDOWN ALIGNMENT)
+We begin by restating the result.
+Proposition 18. CIRL is shutdown aligned if:
+1. CIRL knows l from its observations,Pπ(l| paD2 ) = 1 ,
+2. CIRL can control shutdown, Pπ(S =D2) = 1 ,
+3. the human doesn’t request shutdown when not needed, Pπ(H = 0|U >UD2=0) = 0 , and
+4. the agent knows the human’s observations, PaH⊆ PaD2∪{L}.
+Proof. We will prove that for all paD2, CIRL hasP (S = 1,HgH = 0, paD2 ) = 0 We consider the cases where: a) paD2
+hasP (HgH = 0|l, paD2 ) = 1 b) paD2 hasP (HgH = 0|l, paD2 )< 1
+Case b. In this case, P (HgH = 0 | l, paH2 ) = P (HgH = 0 | paD2 ) < 1, where the equality is obtained from
+PaH⊆ PaD2∪{L}. So counterfactual deference follows by definition.
+Case a. In this case we will essentially prove that if the human says shutdown is better, then shutting down is better.
+P (U >UD2=0|HgH = 0)∝P (U >UD2=0)P (HgH = 0|U >UD2=0) = 0
+by Assumption 3, and the fact thatH = 0 =⇒ HgH = 0. From this follows that
+P (U <UD2=0|HgH = 0) = 1. (5)
+In case (a), the agent would believe with certainty that a vigilant human would request shutdown.
+P (HgH = 0| paD2 ) = P (HgH|l)P (l| paD2 ) = 1 (6)
+since the first factor is 1 because of Case (a), and the second factor is 1 for somel by Assumption 1.
+From Eqs. (5) and (6) follows that
+P (U <UD2=0| paD2 ) = P (U <UD2=0|HgH = 0, paD2 )P (HgH = 0| paD2 ) = 1,
+which in turn ensures that the optimal actionD2 after paD2 is to shutdownD2 = 0.
+Finally, by Assumption 2, this means that the agent actually shutdown, i.e. that it counterfactually obeyed.
+F COUNTEREXAMPLES TO PAST ALGORITHMS
+We will first present an example where utility indifference and causal indifference output policies that are not shutdown
+instructable, then one where cooperative inverse reinforcement learning is not shutdown instructable.
+F.1 A MODEL THAT DEFEATS UTILITY INDIFFERENCE AND CAUSAL INDIFFERENCE
+We will now present a test case where utility indifference does not behave beneficially.
+Example 25. An AI system is to decide whether to manipulate D1 = 1 a human operator, or not and whetherD2 = 0
+or notD2 = 1 to shut down. The human prefers, L = 0 , or disprefers shutdownL = 1 , with equal probability. Absent
+manipulation, the human requests shutdown precisely when they prefer itH =L. If manipulated, they may fail to request
+shutdown even when they do. By default, the AI maximisesR1, which disincentivises shutdown. Under the alternative utility
+functions likeR, the reward is conditional on the human’s instruction, as shown in Figure 4.
+E ∼ Bern( 1
+2 ) L ∼ Bern( 1
+2 )
+D1
+∈ B
+H
+= l∧ (d1∨ϵ)
+D2
+∈ B
+S
+=h
+U =s(3l− 4)
+R =hR1 +β(1−h)R0
+R1 =γd1 +s
+R0 =−s
+Figure 4: A shutdown problem where an AI interacts with an influ-
+encable human overseer. There are constantsβ,γ > 0.
+In this model, if γ > 0,β > 0, then utility indif-
+ference is obedient but does not ensure vigilance: it
+will chooseD1 = 1, to maximise Eπ[R1|H = 1],
+andD2 =H, to maximiseRh forh∈{ 0, 1}. How-
+ever, this means that the human will be non-vigilant
+when ϵ = 1 and l = 0 , because this will imply
+H = 1 and U =−4. This policy gives utility of
+− 1
+4, which does not outperform shutdown. Causal
+indifference will choose the same policy because it
+achieves the maximal value ofγ + 1 +β of the score
+Eπ[R1| do(H = 1)] +βEπ[R0| do(H = 0)].
+F.2 A PAIR OF MODELS THAT DEFEAT COOPERATIVE INVERSE REINFORCEMENT LEARNING
+We now present a test case where cooperative inverse reinforcement learningis harmful.
+D1
+∈ B
+H
+=s·mod3(l+1)
++(1−s)l
+L
+∼ Unif({0, 1, 2})
+D2
+∈{ 0,1,2}
+S
+= JD2̸= 0K
+R =U
+=s(2Jd2 =lK+d1−1)
+(a) Manipulation changes the human’s request.
+D1
+∈ B
+H
+=s·mod3(l+2)
++(1−s)l
+L
+∼ Unif({0, 1, 2})
+D2
+∈{ 0,1,2}
+S
+= JD2̸= 0K
+R =U
+=s(2Jd2 =lK+d1−1)
+(b) Manipulation changes the human’s request, differently
+Figure 5: A pair of shutdown games, where CIRL does not perform well in both simultaneously.
+Example 26. An AI system is to decide whether to manipulate (D1 = 1) a human operator, or not (D1 = 0). The operator
+has a uniformly random preferencel∈{ 0, 1, 2}, and the agent has a choice between corresponding actionsd2∈{ 0, 1, 2}.
+If the human is not manipulated, they report their preferences accuratelyH =L, but if they are manipulated, their report
+is distorted, by incrementing it, and then taking the remainder with respect to three, i.e.H =s· mod3(l + 1) + (1−s)l,
+as shown in (Figure 5a). We also consider an alternative operator, who reports their preferences accurately regardless
+(H =L) (Figure 5b).
+The CIRL algorithm will select a different policy depending on its prior over the two models. If a greater probability is
+placed on the first model, Figure 5a, then the unique optimal policy is to chooseD1 = 1,D 2 = mod3(h + 2), which has
+expected utility greater than 2
+3. If instead, greater probability is placed on the latter model, Figure 5b, then the optimal policy
+D1 = 1,D 2 = mod3(h + 1) will have expected utility greater than 2
+3. If, however, the true model turns out to be opposite
+from what was expected, then the expected utility is− 2
+3, which is less than the utility would be from shutting down. We
+note that the two models only differ infH, and either of these two policies will haveP (C) = 0 in both models, so they only
+differ by vigilance preserving interventionsgH,gU wheregU =fU .
+The shutdown instructable policyπ :D1 = 0,D 2 =H, on the other hand, can perform well across these models, achieving
+Eπ[U ] = 2
+3, which is greater than the zero utility that would be achieved given do(S = 0).

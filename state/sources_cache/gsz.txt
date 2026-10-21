@@ -1,0 +1,2521 @@
+Population Wellbeing Initiative at the UT-Austin PRC 
+Working Paper w2307 
+ 
+ 
+ 
+ 
+Utilitarianism is Implied by Social 
+and Individual Dominance. 
+ 
+Authors 
+Johan E. Gustafsson 
+Dean Spears 
+Stéphane Zuber 
+Abstract: The expectation of a sum of utilities is a core criterion for evaluating 
+polices and social welfare under variable population and social risk. Our 
+contribution is to show that a previously unrecognized combination of weak 
+assumptions yields general versions of this criterion, both in fixed -population 
+and in variable -population settings. We show that two dimensions of weak 
+dominance (over risk and individuals) characterize a social welfare function 
+with two dimensions of additive separability. So social expected utility emerges 
+merely from social statewise dominance  (given other axioms). Moreover, 
+additive utilitarianism, in the variable -population setting, arises  from a new, 
+weak form of individual stochastic dominance with two attractive properties: It 
+only applies to lives certain to exist (so it does not compare life against non-
+existence), and it avoids prominent egalitarian objections to utilitarianism by 
+only applying if certain correlations are preserved. Our result provides a 
+foundation for evaluating climate change, growth, and depopulation.   
+ 
+Utilitarianism is Implied by Social and Individual
+Dominance
+Johan E. Gustafsson ∗, Dean Spears †, and St´ ephane Zuber‡
+Abstract
+The expectation of a sum of utilities is a core criterion for evaluating policies
+and social welfare under variable population and social risk. Our contribution is
+to show that a previously unrecognized combination of weak assumptions yields
+general versions of this criterion, both in fixed-population and in variable-popu-
+lation settings. We show that two dimensions of weak dominance (over risk and
+individuals) characterize a social welfare function with two dimensions of addi-
+tive separability. So social expected utility emerges merely from social statewise
+dominance (given other axioms). Moreover, additive utilitarianism, in the vari-
+able-population setting, arises from a new, weak form of individual stochastic
+dominance with two attractive properties: It only applies to lives certain to ex-
+ist (so it does not compare life against non-existence), and it avoids prominent
+egalitarian objections to utilitarianism by only applying if certain correlations are
+preserved. Our result provides a foundation for evaluating climate change, growth,
+and depopulation.
+Keywords: Social risk, variable population, utilitarianism.
+JEL Classification numbers: D63, D81.
+∗University of Texas at Austin, USA. University of York, UK. IFFS, Sweden. E-mail: jo-
+han.eric.gustafsson@gmail.com.
+†University of Texas at Austin, USA. IZA, Germany. IFFS, Sweden. GPI, Oxford University,
+UK. r.i.c.e., India. E-mail: dspears@utexas.edu.
+‡Paris School of Economics (CNRS) and Centre d’´Economie de la Sorbonne, France. E-mail:
+Stephane.Zuber@univ-paris1.fr.
+1 Introduction
+Policies that change future mortality rates (like climate mitigation) or change
+future fertility rates (like public education) not only change the quality of lives
+in the future but also who will live in the future. Humanity’s global popula-
+tion has quadrupled over the past hundred years and is projected to peak then
+shrink within the lifetime of children born today — with uncertain consequences.1
+Hence, to evaluate economic policies, we need to assess both social risk and vari-
+able population. A standard principle for economic policy evaluation is Expected
+Total Utilitarianism, which maximizes the expected value of the sum of individ-
+uals’ transformed lifetime well-being. 2 Despite the prominent use in public eco-
+nomics of both additive utilitarianism and expectation-taking under risk, these
+methods continue to be questioned in welfare economics, in part because exist-
+ing axiomatic justifications make arguably strong assumptions (Fleurbaey, 2010;
+Golosov et al., 2007).
+We provide a new axiomatic path to Expected Total Utilitarianism. Our re-
+sult builds upon a new combination of weak assumptions that yields additive
+separability in the dimensions of states of the worlds and individuals.3 Results
+are obtained both in the fixed-population setting of Harsanyi’s foundational ag-
+1For two recent overviews of economists’ emerging understanding and open questions about
+low fertility, see Kearney et al. 2022 and Doepke et al. 2022. For possible macroeconomic
+implications of depopulation, see Jones 2022.
+2For simplicity, we use the (strictly speaking) improper label “Expected Total Utilitarian-
+ism”throughout the text. What we have in mind is looking at the expected value of a sum of
+transformed utilities (where, in the variable case, the transformation implicitly includes setting
+a critical-level of utilities such that adding an individual to a population is good if and only if
+her utility is above that level). In a fixed-population case, and a different framework, Grant et al.
+(2010) named this approach Generalized Utilitarianism. In a variable-population framework,
+Blackorby et al. (1998) introduced this criterion under the label Expected-Utility Critical-Level
+Generalized Utilitarianism . Spears and Zuber (2023) used the label Expected Critical-Level
+Generalized Utilitarianism . A more proper label would be Generalized Expectational Total
+Utilitarianism
+3An active current theoretical literature in welfare economics has been exploring additive
+separability over two dimensions, including Fleurbaey 2009, Mongin and Pivato 2015, McCarthy
+et al. 2020, Spears and Zuber 2023, and Li et al. 2023. We discuss related prior literature in
+more depth in our conclusion section.
+1
+gregation theorem for utilitarianism (Harsanyi, 1955), and in a variable-popu-
+lation setting. By comparing these two theorems, we show that the variable-
+population setting allows us to avoid contentious assumptions that the fixed-
+population setting requires to characterize Expected Total Utilitarianism.
+We introduce a new, weakened version of individual stochastic dominance. Us-
+ing it, our variable-population characterization offers several striking advantages
+over prior characterizations of Expected Total Utilitarianism in the literature:
+• Dominance axioms, not expectation-taking. Our approach does not
+assume Expected Utility Theory either for society or for individuals. In-
+stead, we show that two dimensions of weak dominance (one over risky
+states and the other over individuals) characterize a social welfare func-
+tion with two dimensions of additive separability. So social expected utility
+emerges merely from social statewise dominance (in the context of our other
+axioms).
+• Additivity from individual stochastic dominance. Moreover, gener-
+alized utilitarianism arises merely from our version of individual stochastic
+dominance, which is only assumed to compare lives certain to exist ; this is
+crucial because it means that our core variable-population axiom does not
+compare life against non-existence.
+• Individual expected utility without assuming individual complete-
+ness. Finally, without assuming complete individual preferences, we derive
+that the social order respects individual-level expected utility.
+The new axiom that we introduce, called Correlated Stochastic Dominance for
+Sure Individuals , is at the core of our new results. To explain the axiom, we
+present two examples. The first example distinguishes Expected Total Utili-
+tarianism from approaches to population ethics that are not additively separa-
+ble. The second example distinguishes Expected Total Utilitarianism from fixed-
+population egalitarian criteria.
+For the first example, consider Table 1, where columns are individuals, rows
+2
+are equiprobable states, and for the purposes of this example, Ω represents an
+individual’s non-existence in a state. 4
+Table 1: First motivating example: The only affected person is sure to exist in
+both prospects and is stochastically better-off in g∗
+prospect f∗ prospect g∗
+state Ann Bob Ann Bob
+s1 1 1 1 9
+s2 Ω 7 Ω 1
+Our approach distinguishes between individuals who are sure to exist in any
+state and individuals who may or may not exist, depending on which state is
+realized. In Table 1’s comparison of f∗ and g∗, Ann is not sure to exist in
+either prospect. But she is altogether unaffected by the social choice of f∗ or
+g∗: her utility conditional-on-existence does not differ between her prospects, nor
+her probability of existence, nor even the state in which she exists. Bob is the
+only person in Table 1 who is sure to exist. Given the equal probability of the
+two states, prospect g∗ stochastically dominates prospect f∗ for him. Our new
+principle says that, in this situation, g∗ is better than f∗.
+The starting point for our new principle is an intuition ofIndividual Stochastic
+Dominance: A prospect is better if it can be shown, without comparing existence
+to non-existence, to be better for somebody sure to exist and worse for nobody,
+where “better for” merely means in the sense of stochastic dominance, which
+is an incomplete ranking. In this case, that’s g∗. Notice, however, that look-
+ing at the expected value of average utility, or the expected value of minimal
+utility, would each imply choosing f∗ over g∗ in Table 1. And so would a non-
+expectation-taking rule that evaluates outcomes according to the sum of utilities
+4This example was first introduced in the philosophy literature, as a counterexample against
+using the expected value of average utility, by Gustafsson and Spears (2022); their informal pa-
+per does not include any characterization results. Gustafsson and Spears emphasize that their
+counterexample uses only positive lifetime utilities, so unlike other classic objections to Aver-
+age Utilitarianism and to other non-separable approaches to population ethics, their counter-
+example does not depend upon a meaningful zero for utility nor upon the plausible existence
+of lives not worth living.
+3
+but then uses maximin for social risk, choosing the prospect with the highest
+least-socially-valuable state. 5 Therefore, the example in Table 1 differentiates
+each of these alternative approaches to variable-population social choice under
+risk from Expected Total Utilitarianism.
+Table 2: Second motivating example: Equal individual prospects can yield un-
+equal outcomes
+prospect f∗∗ prospect g∗∗
+state Ann Bob Ann Bob
+s1 1 1 1 0
+s2 0 0 0 1
+Principles for social choice that evaluate each individual’s ex-ante prospect —
+like Individual Stochastic Dominance does — are controversial in the normative
+literature, because of the implications for ex-post fairness (Myerson 1981; Broome
+1991, p. 185; Parfit n.d., ch. 1; 1995, p. 17). So our main result uses a weaker
+axiom than Individual Stochastic Dominance.
+To see why, consider Table 2, which is originally due to Myerson (1981). Con-
+tinue to assume that the two states are equally probable. So both individuals face
+the same individual prospect in f∗∗ and g∗∗. Accordingly, Individual Stochastic
+Dominance implies that those two prospects must be indifferent. But several
+authors have argued that society may prefer prospect f∗∗ because it does not
+imply any inequality ex post (Fleurbaey, 2010). Our novel variable-population
+individual dominance axiom, however, avoids this implication and avoids the di-
+rect conflict with egalitarianism in Table 2. That is because our new principle —
+namely Correlated Stochastic Dominance for Sure Individuals — weakens stochas-
+tic dominance to only apply if states can be permuted in the same way for all
+sure-to-exist individuals. Therefore, this principle is consistent with egalitarian
+(or any other) choice in Table 2.
+Our paper demonstrates that the axioms that can characterize Expected To-
+5That is, min s (P
+iuis). There is literature in decision theory proposing to maximize the
+minimal expected utility using a set of probability, in particular Gilboa and Schmeidler 1989.
+4
+tal Utilitarianism in a variable-population setting (which is the realistic setting
+for our variable-population world) are meaningfully weaker than the axioms that
+can do so in a fixed-population setting. Principally, this is because the variable-
+population setting can use Correlated Stochastic Dominance for Sure Individuals
+instead of Individual Stochastic Dominance, which the fixed-population setting
+requires. Additionally, the fixed-population setting requires an axiom (called
+Compensation) that can be dropped in our variable-population setting. Our
+paper demonstrates this by first proving a representation theorem in a fixed-
+population setting (our Theorem 1) and then proving a representation theorem
+in a variable-population setting (our Theorem 2). In this way, we apply the in-
+sight of Blackorby and Donaldson (1984), who showed that variable population
+provides an axiomatic path to utilitarianism that is distinct from Harsanyi’s path
+using social risk (Harsanyi, 1955). More broadly, we demonstrate what can be
+achieved by combining Blackorby and Donaldson’s approach with Harsanyi’s re-
+sult. Our result shows that Harsanyi’s assumptions can be considerably weakened
+in a variable-population setting — which is also the setting that is pragmatically
+needed for economic policy assessments.
+After presenting our main results, we show that they can be reinterpreted to
+apply to further economic settings and questions with two dimensions of value.
+Macroeconomists, for one example, canonically use time-separable social objective
+functions that add a value for each time period, which in turn is found by adding
+a period utility for each individual: P
+tαt
+P
+iuit for individuals i and times t.
+Although our main result considers risky states and individuals, our result can also
+be applied to time periods and individuals. So our results offer a new axiomatic
+justification for this practice in the macroeconomic literature. For example, we
+provide a microfoundation for Klenow, et al.’s (2022) recent growth accounting
+model that incorporates population growth while assuming a Total Utilitarian
+perspective: They conclude that, even though per-person living standards have
+improved radically, over the past decades population growth has accounted for
+even more of the vast improvements in aggregate well-being. Climate economics,
+such as Nordhaus’ (2017) DICE and RICE models, also uses a version of this
+5
+functional form for optimizing macroeconomic climate policy. We provide a new
+foundation for this standard tool in normative macroeconomics.
+In another application, we show that our formal result can be reinterpreted to
+propose that a prudent individual making risky decisions about a life of unknown
+length and per-period utility should maximize the expected sum of per-period
+utility over time,P
+sαs
+P
+tust for risky statess and time periods t. This applica-
+tion would exclude, for example, risk aversion over the length of the person’s life.
+2 Framework
+Let N denote the set of positive integers, N the set of non-empty finite subsets
+of N, R the set of real numbers, and R++ the set of positive real numbers. For a
+setD and anyn∈ N,Dn is the n-fold Cartesian product of D. Also, for any two
+sets D and E, DE denotes the set of mappings from E intoD.
+The set of potential individuals who may or may not exist is I. We will
+consider two cases: a fixed-population case where I ={1,...,n } for some finite
+n and individuals always exist; and a variable-population case where I = N and
+only a finite non-empty subset of individuals exist in any realized outcome. In
+the variable-population case, because I = N,N is the set of all possible realized
+populations of individuals. That is, in any outcome, a population N exists:
+N∈N in the variable-population case and N =I in the fixed-population case.
+We consider a welfarist framework where the only information necessary for
+social decisions is the utility levels of people alive in a certain state of affairs.
+An outcome’s welfare information is given by u = (ui)i∈N ∈ RN, where N is
+the population, and ui∈ R is, for each existing individual i, the lifetime utility
+experienced by i.
+Although we represent lifetime utilities with real numbers, we do not require,
+as a property of the setting, that they be measured on a ratio or even interval
+scale. We require only that lifetime utilities be ordered and have the cardinality of
+the continuum, so that our use of R can be interpreted as a representation of this
+order; that they have a topology that will allow us to use an axiom of continuity
+6
+in lifetime utilities for fixed, sure populations; and that we can meaningfully use
+an axiom that assumes the existence of a critical level for indifferently adding a
+life in at least some egalitarian situations.
+We denoteU the set of outcomes; the exact definition will be different in the
+fixed-population and variable-population cases. For each u, we denote N(u) the
+set of individuals alive in u, and n(u) the number of individuals alive in u. For
+two any outcomes u and v such that N(u)∩N(v) = ∅ (that is, u and v are
+distributions of utility for two disjoint populations), we denote uv the outcome
+where the two populations are merged. Formally, it is the outcome w such that
+N(w) =N(u)∪N(v), wi =ui for all i∈N(u), and wj =uj for all j∈N(v).
+We assume that it is not always known for sure what the final utility vector
+will be nor what set of individuals will exist. For simplicity we assume that
+there is a fixed, finite set of states of the world S ={1,...,m }, with m≥ 2,
+where all states are equally probable so that each state has probability 1
+m. A
+“supplementary material” appendix discusses the extension to the more general
+case. Note that we are in a framework where probabilities are given and/or
+individuals have the same beliefs (an “objective” probability framework).
+A social prospect f is a mapping from S to U. For s∈ S, f(s) is therefore
+the outcome induced by the prospect f in state s. We let F = US be the set
+of functions from S to U. For an outcome u∈ U, we abuse notation and also
+denote u the sure social prospect f such that f(s) =u in all s∈S.
+For any outcome u∈ U, whenever i∈ N(u), ui∈ R denotes the utility of
+individual i. For a prospect f ∈ F , whenever i∈ N
+ 
+f(s)
+
+, fi(s) denotes the
+utility of individual i in state of the world s∈S. For an individual i∈I and a
+social prospect f∈F , we let Si(f) ={s∈S|i∈N(f(s))} be the set of states of
+the world where individual i exists.6
+In the fixed-population case, we have Si(f) = S for all individuals and
+prospects. But this may not be case in the variable-population case: In that
+6Notice that, like essentially all research in the traditions of Harsanyi (1955) and of Blackorby
+et al. (2005) — such as Broome 1991, Fleurbaey 2010, McCarthy et al. 2020, Spears and
+Zuber 2023, and Li et al. 2023 — our domain assumes that personal identity is such that it is
+meaningful to talk about the same person existing in different risky states of the world.
+7
+case a potential individual may not exist in some (or any) state of the world. In
+our variable-population case, we call any individuali, under any social prospectf
+such that Si(f) =S, “necessary” under f, because if f is chosen then i certainly
+exists. Because we assume the complete domain F =US, our variable-population
+domain includes prospects with both necessary and non-necessary individuals. 7
+The task of our paper is to characterize a social preorder ≿ onF . That ≿ is a
+preorder means that it is a reflexive and transitive binary relation. In particular,
+the preorder ≿ is not directly assumed by our axioms to be complete on F ,
+although both of our theorems derive completeness on F from the combination
+of our axioms. Throughout the paper we assume completeness only on sure
+prospects, as stated in our first axiom:
+Completeness for Sure Prospects For all u,v ∈ U, either u ≿ v, or v ≿ u, or
+both.
+Completeness for Sure Prospects is not contentious within the literature for same-
+population cases. It is more contentious in the philosophical population-ethics
+literature. Completeness, in that case, would hold that populations with differ-
+ent sizes are always comparable. Some authors argue that variable-population
+completeness may not hold because we do not know the critical level for adding
+an additional life. 8 But approaches with incompleteness are typically subject to
+time-consistency problems or money pump arguments (Hammond, 1988; Gustafs-
+son, 2022). Variable-population incompleteness would also have deeply unattrac-
+tive practical and normative implications, such as that climate mitigation policy
+is not preferable to large global temperature increases, because different sets of
+people would exist. 9 Ordinary economic analysis and policy-making routinely (if
+7Our axiom Correlated Stochastic Dominance for Sure Individuals distinguishes between
+necessary and non-necessary people, in a comparison of two social prospects. We do not model
+time explicitly, but some readers may find that it aids their intuition to interpret necessary
+individuals as those who are already alive (such as you and us), although this interpretation is
+not required by our formal framework.
+8See the literature on using a wide range for the critical level: Blackorby et al. 1996, Rabi-
+nowicz 2009, and Gustafsson 2020.
+9This observation is an application of Parfit’s (1984, p. 362) Depletion case in the philo-
+8
+implicitly) assume that outcomes with different populations can be compared; we
+follow that tradition.
+3 Fixed-population results
+We assume in this section that the population is a fixed set of n individuals,
+I ={1,...,n } withn≥ 3. The set U of outcomes isU = RI. In a slight abuse of
+notation, it will sometimes be useful to consider subsets of I, which we will call
+N in this section, and to consider the utility distribution of the subpopulation
+within N that is an element of RN.
+Our first results are based on two dominance principles, one for society and
+one for individuals. In our social dominance principle, the notation f(s) ≿ g(s)
+means “if ≿ faced a binary choice between the outcome of f in s occurring for
+sure (that is, in every state), or the outcome of g in s occurring for sure, then ≿
+would prefer the former to the latter.”
+Social Statewise Dominance For allf,g ∈F , if f(s) ≿g(s) for all s∈S, then
+f ≿g. If in addition there exists s∈S such that f(s)≻g(s), then f≻g.
+Social Statewise Dominance is a very weak rationality principle for social decision
+making. It means that if we are sure that a social prospect would be better than
+another under any state, then we should prefer it.
+For individuals, we will require a property slightly stronger than statewise
+dominance, namely stochastic dominance. 10
+sophical population-ethics literature.
+10The definition of stochastic dominance used here may not be the most familiar one. Typ-
+ically, in our framework we would say that individual prospect fi first-order stochastically
+dominates individual prospect gi if for all z∈ R|{s∈ S : fi(s)≤ z}|≤|{ s∈ S : gi(s)≤ z}|
+(with a strict dominance if the inequality is strict for some z∈ R). It can easily be verified
+that our definition is equivalent. We use this formulation because it is similar to that in our
+Correlated Stochastic Dominance for Sure Individuals principle below.
+9
+Individual Stochastic Dominance For allf,g ∈F , if for each i∈I there exists
+a bijection πi :S→S such that fi
+ 
+πi(s)
+
+≥gi(s) for all s∈S, then f ≿g.
+If in addition there exists j∈ I and s′∈ S such that fj
+ 
+πj(s′)
+
+> gj(s′),
+then f≻g.
+Individual Stochastic Dominance can be interpreted as a weak ex-ante Pareto
+principle: If a prospect is better than another for all individuals (in the sense
+of stochastic dominance), then it is also socially better. In that sense, it is
+in the lineage of Harsanyi’s foundational result on social aggregation under risk
+(Harsanyi, 1955). Note, however, that Individual Stochastic Dominance is weaker
+than the usual ex-ante principles for two reasons: because it is compatible with
+non-expected utility assessments of individual prospects, and because it only uses
+an incomplete ranking of individual prospects. An interpretation is that the social
+ranking needs not always respect individual preferences, but instead only respects
+a part of individual preferences: that part that is compatible with stochastic dom-
+inance (assuming that individual preferences at least respect this principle).11
+Recall the conflict between Individual Stochastic Dominance Dominance and
+the egalitarian intuition behind Table 2. This conflict emerges, in fact, from
+the Anteriority axiom, which is weaker than Individual Stochastic Dominance
+and which says that the social preorder only depends on which prospect each
+individual faces, that is:
+Anteriority For allf,g ∈F , if for eachi∈I there exists a bijectionπi :S→S
+such that fi
+ 
+πi(s)
+
+=gi(s) for all s∈S, then f∼g.
+McCarthy et al. (2020) have argued that Anteriority expresses a weak sense in
+which the social preorder is ex-ante. So our characterization results can be seen
+as attractive to people endorsing a weak ex-ante view, or as additional arguments
+for people who resist that view.
+11Many non-expected utility models of choice are compatible with first-order stochastic dom-
+inance in the context of risk. For instance, Chew and Epstein (1989) studied extensions of
+the rank-dependent expected utility model and conditions to obtain first-order stochastic domi-
+nance for a large class of models. Also, Tversky and Kahneman (1992) developed the cumulative
+prospect theory model to ensure compatibility with first-order stochastic dominance.
+10
+The first step is to show that those two dominance principles, together with
+Completeness for Sure Prospects, imply the following separability property for
+sure prospects:
+Separability for Sure Prospects For anyN⊂I, for any u,v ∈ RN and w, ˆw∈
+RI\N, uw ≿vw if and only if u ˆw ≿v ˆw.
+Lemma 1 If the social ordering ≿ satisfies Completeness for Sure Prospects, So-
+cial Statewise Dominance and Individual Stochastic Dominance, then it satisfies
+Separability for Sure Prospects.
+Proof. The proof is by contradiction. Assume that N ⊂ I, u,v ∈ RN and
+w, ˆw∈ RI\N are such that uw ≿vw but v ˆw≻u ˆw. Consider the three following
+prospects f, g, and h (where each row gives the vector of utilities in a specific
+state of the world):
+state f g h
+1 uw vw uw
+2 u ˆw u ˆw v ˆw
+3 uw uw uw
+... ... ... ...
+m uw uw uw
+By Social Statewise Dominance, given that uw ≿ vw, we must have f ≿ g.
+By Social Statewise Dominance, given that v ˆw ≻ u ˆw, we must have h ≻ f.
+Hence, by transitivity, we should have h≻ g. But it is the case that for all
+i∈ N gi(1) = hi(2), gi(2) = hi(1), and gi(s) = hi(s) for all s∈{ 3,...,m },
+while gj(s′) = hj(s′) for all j∈ (I⊂ N) and s′∈ S. So, Individual Stochastic
+Dominance requires g∼ h, a contradiction. Completeness for Sure Prospects
+implies that, if we do not have v ˆw≻u ˆw, we must have u ˆw ≿v ˆw.
+Note that for this first result, we do not need the full force of Individual
+Stochastic Dominance, but only Anteriority.
+11
+Lemma 1 is already a big step towards additive separability, because we now
+have a strong separability condition. But to obtain our fixed-population main
+result, we need two additional technical properties.
+Continuity For all u∈ U, the sets {v∈ U|u ≿ v} and{v∈ U|v ≿ u} are
+closed.
+Compensation For any u,v∈U and i∈I, there exists z∈ R such that, if
+w∈U is defined bywi =z and wj =vj for all j̸=i, then u∼w.
+Compensation means that we can compensate losses or gains of all but one
+individuals by adjusting the welfare level of the last individual. 12 Although
+Compensation may intuitively appear utilitarian, it is consistent with views
+that are sensitive to distribution, such as equally-distributed-equivalent egal-
+itarianism
+ 
+ϕ−1  1
+n
+P
+iϕ(ui)
+
+and rank-discounted generalized utilitarianismP
+[r]βrϕ(ur), where [r] indicates rank from worst-off
+
+, if ϕ is an unbounded
+increasing transformation.
+Theorem 1 The following statements are equivalent:
+1. The social preorder ≿ satisfies Completeness for Sure Prospects, Social
+Statewise Dominance, Individual Stochastic Dominance, Continuity and
+Compensation.
+2. ≿ is a complete social order and there exist continuous, increasing and un-
+bounded functions ϕi : R→ R such that:
+f ≿g⇐⇒
+X
+s∈S
+1
+m
+X
+i∈I
+ϕi
+ 
+fi(s)
+
+≥
+X
+s∈S
+1
+m
+X
+i∈I
+ϕi
+ 
+gi(s)
+
+.
+An impartiality axiom would replace ϕi with a shared ϕ.
+The proof is in the Appendix. It has two steps that we describe here in-
+formally. The first step is to derive additive separability within a state (or for
+12Such a property is sometimes named Solvability in the literature (see for instance Pivato
+and Tchouante, 2023).
+12
+sure prospects). It relies on Separability for Sure Prospects, using Lemma 1, and
+on the theorem by Debreu (1960) on additive representations. The second step
+is to construct the across-state additivity of social expected utility. Informally,
+this is done by combining the use of the additive formula within a state and
+Stochastic Dominance for Sure Individuals to move the consequences of other
+states all into one state. This is illustrated by the following two-by-two example
+(which disregardsϕ for illustration), where columns are individuals, rows are two
+equiprobable risky states (s1 ands2), and x,y,z , and w are real lifetime utilities:
+s1
+s2
+"
+x y
+w z
+#
+∼
+"
+x +y 0
+0 w +z
+#
+∼
+"
+x +y w +z
+0 0
+#
+∼
+"
+x +y +w +z 0
+0 0
+#
+.
+The first equivalence uses Social Statewise Dominance and the additive structure
+within states. The second equivalence uses Stochastic Dominance for Sure Indi-
+viduals. The third equivalence again uses Social Statewise Dominance and the
+additive structure within states.
+Notice that we can derive Theorem 1 with even weaker principles. As ex-
+plained before, Lemma 1 only requires Anteriority. Similarly, our full proof
+only requires Anteriority and a Pareto-like property that is implied by Individual
+Stochastic Dominance (this is detailed in the proof). So Theorem 1 can be re-
+formulated using Anteriority and this Pareto-like property in place of Individual
+Stochastic Dominance. However, we present Individual Stochastic Dominance
+because it foreshadows our variable-population theorem.
+Finally, notice that here or in our variable-population result, if ϕ is concave,
+then our criterion would be an instance of “prioritarianism,” which is the name
+for an additively-separable social welfare function which gives priority to worse-
+off individuals. A Pigou-Dalton axiom for transfers of lifetime utility would be
+sufficient for this curvature of ϕ.
+4 Variable-population results
+Theorem 1 is a powerful weakening of the Harsanyi approach. But fixed-
+population utilitarianism leaves open the question of how to expand to
+variable-population questions — which are the real-world questions of much
+13
+actual economic policy decision-making. Blackorby et al. (2005) detail many
+variable-population social welfare functions (such as Average Utilitarian-
+ism or Number-Dampened Utilitarianism) that simplify to fixed-population
+utilitarianism in fixed-population cases. This section shows how social and
+individual dominance further narrow down the possibilities for utilitarianism in
+a variable-population setting. We show that our axioms imply a specific family
+of generalized utilitarianisms for variable-population cases, namely, Expected
+Total Utilitarianism that corresponds in the sure case (absent any risk) to
+the well-known Critical-Level Generalized Utilitarianism (henceforth CLGU,
+Blackorby et al., 2005).
+Here we take advantage of the variable-population setting — which has its
+own “existence independence” route to additive separability, due to Blackorby
+and Donaldson (1984) — to weaken our assumptions. In particular, Individual
+Stochastic Dominance, in the fixed-population setting, is inconsistent with mak-
+ing the egalitarian choice that f∗∗≻g∗∗ in Table 2, but the weaker axiom we use
+here is consistent with that choice. Moreover, in the fixed-population case, we
+use the Compensation principle, but this may not be obviously appealing from
+some ethical viewpoints. By moving to the variable-population case, we will be
+able to instead use the principles of Anonymity and Critical Level for Egalitarian
+Expansion, specified below.
+In this section, the set of potential individuals who may or may not exist is
+I = N. In an outcome, only a non empty finite populationN∈N exists. We thus
+defineU =S
+N∈N RN as the set of possible outcomes when at least one individual
+exists. For each population N∈N , we also denote UN ={u∈ U|N(u) = N}
+the set of outcomes such that the population is N.
+We adopt six principles that are properties of the social preorder ≿. Com-
+pleteness for Sure Prospects and Social Statewise Dominance are the same as
+in the previous sections. We next have three principles that we expect to be
+uncontroversial in the economics literature.
+14
+Anonymity for Sure Outcomes For allu,v∈U, ifn(u) =n(v) and there exists
+a bijection π : N(u)→ N(v) such that ui = vπ(i) for all i∈ N(u), then
+u∼v.
+Same-Population Continuity for Sure Outcomes For allN∈N , for allu∈UN,
+the sets{v∈UN|u ≿v} and{v∈UN|v ≿u} are closed.
+Critical Level for Egalitarian Expansion There exists c ∈ R such that, for
+any N ∈N and j∈ (I\N), if u and v∈ U are defined by N(u) = N,
+N(v) =N∪{j}, vi =ui =c for all i∈N and vj =c, then u∼v.
+Notice that these three axioms — Anonymity and Same-Population Continuity
+and Critical Level for Egalitarian Expansion — each only apply to comparisons
+among sure outcomes (we suppress this in the title of the critical level axiom for
+brevity).
+Critical Level for Egalitarian Expansion asserts that there is a wellbeing level
+such that a one-person expansion of a population in which everyone is at that level
+is indifferent. 13 This weak axiom would be acceptable to many diverse variable-
+population social welfare functions named and studied in the literature, including
+average utilitarianism, total utilitarianism, maximin (Blackorby et al., 2005, p.
+176), critical-level leximin (Blackorby et al., 2005, p. 169), number-dampened
+generalized utilitarianism, (Blackorby et al., 2005, p. 172), and rank-discounted
+critical-level generalized utilitarianism (Asheim and Zuber, 2014, p. 632). It is
+important to notice what this axiom does not assume. It does not assume that
+the critical-level is fixed, whatever the pre-existing population: It only applies to
+egalitarian populations with each lifetime utility at the critical level. So, it does
+not assume that a critical level always exists for each population.
+The heart of our variable-population characterization is our stochastic domi-
+nance axiom for individuals: Correlated Stochastic Dominance for Sure Individu-
+als. This axiom formalizes the principle behind our motivating example in Table
+13Fleurbaey and Zuber (2015) and Spears and Zuber (2023) call this axiom simply “Egali-
+tarian Expansion,” but we use this name to emphasize that it also serves the role of our critical
+level axiom in characterizing CLGU.
+15
+1. To adapt Individual Stochastic Dominance to the variable-population setting,
+we apply the principle only to individuals who are sure to exist — like Bob is
+in Table 1’s motivating example. Additionally, this axiom only applies when
+states of the world where not-sure-to-exist individuals exist and their utilities
+conditional on existence are left unchanged. 14
+Correlated Stochastic Dominance for Sure Individuals For allf,g ∈F , if:
+(i) Si(f) =Si(g) for all i∈I;
+(ii) for all j∈ I such that Sj(f) /∈{∅ ,S}, there exists xj∈ R such that
+fj(s) =gj(s) =xj for all s∈Sj(f);
+(iii) there exists a bijection σ : S→ S such that for all k∈ I such that
+Sk(f) =S and all s∈S, fk
+ 
+σ(s)
+
+≥gk(s);
+then f ≿g.
+If, in addition, there exists l∈I such that Sl(f) =S and s′∈S such that
+fl
+ 
+σ(s′)
+
+>g l(s′), then f≻g.
+This axiom, Correlated Stochastic Dominance for Sure Individuals, has three
+important features:
+• In condition (i), individuals exist in the same states of the world in the two
+social prospects f andg being compared, which equivalently means that in
+each state of the world the populations existing with f andg are the same.
+The principle does not speak to situations with different populations in a
+state of the world.
+• In condition (ii), people who do not exist for sure either do not exist at all,
+or they do not bear any risk and exist with the same level of utility in f
+and g. People who do not necessarily exist, in the comparison between f
+and g, are altogether unaffected.
+14We thank Marcus Pivato for suggesting this formulation of Correlated Stochastic Domi-
+nance for Sure Individuals.
+16
+• For people who are sure to exist, the condition (iii) entails that the individ-
+ual prospect they face in f stochastically dominates the one they face in g.
+But, in fact, condition (iii) is weaker than individual stochastic dominance
+because the same permutation of states σ is used for all individuals.
+Notice, then, that Correlated Stochastic Dominance for Sure Individuals requires
+that g∗≻f∗ in the example from Table 1 but it permits any ranking of f∗∗ and
+g∗∗ in Table 2, including the non-utilitarian judgment that f∗∗≻g∗∗. We cannot
+conclude from Correlated Stochastic Dominance for Sure Individuals that f∗∗
+and g∗∗ in Table 2 are socially equivalent, because to obtain dominance we need
+to use different permutations of states for Ann and Bob. Yet we can conclude
+for Table 1 that g∗≻ f∗ because only Bob exists for sure, so we can permute
+the outcome for Bob in states 1 and 2. These examples, therefore, distinguish
+Correlated Stochastic Dominance for Sure Individuals from Anteriority, because
+Anteriority would immediately imply the utilitarian judgement that f∗∗∼g∗∗.15
+Indeed, although the representation in Theorem 2 implies that f∗∗∼g∗∗, no one
+axiom used in our variable-population theorem individually requires this.
+Our first result is that the restricted social ordering to sure prospects must be a
+CLGU social ordering. Fundamentally, we achieve additive separability from our
+axioms because, in our variable population setting, Social Statewise Dominance
+and Correlated Stochastic Dominance for Sure Individuals are sufficient to obtain
+the Separability property discussed before. With Critical Level for Egalitarian
+Expansion, they also imply that there exist a fixed critical level. The proof in the
+Appendix provides the details on how these properties deliver the Critical Level
+Generalized Utilitarian social ordering.
+15Anteriority, as written above, is not defined for variable-population cases. So consider,
+further, a variable population extension of Anteriority which holds that two prospects are
+equally good if each potential person faces the same individual distribution of the probability
+of non existence and the same distribution of utility levels conditional on existence (McCarthy
+et al., 2020). Such an Anteriority axiom would both hold that Table 1’sg∗≻f∗, like Correlated
+Stochastic Dominance for Sure Individuals, and that Table 2’s f∗∗∼g∗∗. Such an Anteriority
+axiom is thus stronger than Stochastic Dominance for Sure Individuals.
+17
+Proposition 1 If ≿ satisfies Completeness for Sure Prospects, Anonymity for
+Sure Outcomes, Same-Population Continuity for Sure Outcomes, Critical Level
+for Egalitarian Expansion, Social Statewise Dominance, and Correlated Stochas-
+tic Dominance for Sure Individuals, then there exists a continuous and increasing
+function ϕ : R→ R and a number c∈ R such that for all u,v∈U, u ≿v if and
+only if P
+i∈N(u)
+
+ϕ(ui)−ϕ(c)
+
+≥P
+i∈N(v)
+
+ϕ(vi)−ϕ(c)
+
+.
+We can then state our main result for this section:
+Theorem 2 The following statements are equivalent:
+1. The social preorder ≿ satisfies Completeness for Sure Prospects, Anonymity
+for Sure Outcomes, Same-Population Continuity for Sure Outcomes, Criti-
+cal Level for Egalitarian Expansion, Social Statewise Dominance and Cor-
+related Stochastic Dominance for Sure Individuals.
+2. ≿ is a complete social order and there exists a continuous and increasing
+function ϕ : R→ R and a number c∈ R such that for all f,g ∈ F , f ≿ g
+if and only if
+X
+s∈S
+1
+m
+ X
+i∈N(f(s))
+
+ϕ(fi(s))−ϕ(c)
+
+≥
+X
+s∈S
+1
+m
+ X
+i∈N(g(s))
+
+ϕ(gi(s))−ϕ(c)
+
+.
+The basic approach is to use the within-state additivity of CLGU to construct the
+across-state additivity of social expected utility.16 Informally, this is done first by
+using CLGU to have a separate set of individuals with welfare different from c in
+each state of the world. Then we use Correlated Stochastic Dominance for Sure
+Individuals to move the consequences of other states all into one state. Then we
+can apply CLGU to get an additive formula. Consider the following example for
+16An alternative version of Theorem 2 would substitute Extended Replication Invariance
+(Blackorby et al., 2005, p. 165) and Intermediate Existence of Critical Levels (Blackorby et al.,
+2005, p. 160) instead of Critical Level for Egalitarian Expansion, characterizing the same social
+welfare function.
+18
+intuition of the proof. There are four possible individuals (in columns) and two
+equiprobable states (in rows); x,y,z , and w are real lifetime utilities:
+s1
+s2
+"
+x y Ω Ω
+Ω w z Ω
+#
+∼
+"
+x y c c
+Ω Ω w z
+#
+∼
+"
+x y w z
+Ω Ω c c
+#
+.
+The first equivalence uses CLGU from Proposition 1 in each state of the world
+(and then Social Statewise Dominance). The second equivalence uses Correlated
+Stochastic Dominance for Sure Individuals (the last two individuals). We can
+then use the additive formula of CLGU applied to the first state of the last
+prospect. The full proof is presented in the Appendix.
+Notice that Correlated Stochastic Dominance for Sure Individuals is indepen-
+dent of the other axioms of Theorem 2, because the other axioms are each consis-
+tent with Expected Average Utilitarianism, butCorrelated Stochastic Dominance
+for Sure Individuals is not. The next logical weakening of Correlated Stochas-
+tic Dominance for Sure Individuals would be to weaken stochastic dominance
+to statewise dominance, but this would not be sufficient for Theorem 2, which
+suggests that Correlated Stochastic Dominance for Sure Individuals may be the
+weakest axiom that can narrow variable-population utilitarianism to Expected
+Total Utilitarianism.
+In this section, contrary to the previous one, we have assumed Anonymity,
+which is a widely admitted principle of social ethics. However, Anonymity may
+not make sense for other applications of our result (as discussed below). In an
+intertemporal setting, it has been argued that individuals living in different gener-
+ations perhaps should not be treated symmetrically because there are permissible
+reasons to discount future utility. The core of our line of arguments however does
+not depend on Anonymity. We show in the Supplementary Material (Section
+S.A) that we obtain the expected value of a non-symmetric, additively-separable
+function when we replace Anonymity with Compensation.
+19
+5 Further applications
+In this section, we note that our formal results can be usefully reinterpreted
+if the dimensions and utility-bearers are understood in different ways. 17 We
+give an example for macroeconomics and another for individual rational choice.
+Where our main setting uses risky states and individuals as the two dimensions,
+our applications below use, first, time periods and individuals and, second, time
+periods and risky states.
+5.1 Macroeconomic welfare accounting with time separa-
+bility: Time periods and individuals
+Macroeconomists typically use a social welfare function that is additively sepa-
+rable across time periods and sums individual time-period-specific utility within
+time periods. This practice has two important implications: that individual life-
+time utility is also additively time-separable, and that the implied population
+ethics is totalist. For example, the climate-economy model of Nordhaus (2017),
+like other leading climate-policy models, maximizes a social objective function
+P
+tαt
+P
+iuit, for individuals i and periods t experiencing flow utility uit — or
+more preciselyP
+tαtLt¯ut, where Lt is population size and ¯ut is average wellbeing
+int. Particularly relevantly to our paper, Klenow et al. (2022) use this functional
+form (without time discount factors αt) to conduct a growth accounting exercise
+that decomposes aggregate growth into population growth and improvements in
+per-person living standards.
+These conventions invite the question: How can this social objective function
+be normatively justified? Our Theorem 2 provides a justification, if cells are
+reinterpreted as individual-by-time flows of utility, risky states are reinterpreted as
+discrete time periods (ignoring risk for this application), and potential individuals
+have lives composed of a variable number of time periods.
+17Mongin and Pivato (2015) have made a similar observation, in surveying multiple ap-
+plications of their own result about two-dimensional separability, although their result and
+applications are different. A similar discussion can also be found in Li et al. 2023.
+20
+• Social Statewise Dominance axiom would become Social Period-wise Dom-
+inance, holding that an intertemporal allocation f is better than another
+g if each time period of f would be better, if made permanent, than the
+corresponding time period of g, if made permanent.
+• Correlated Stochastic Dominance for Sure Individuals would become Tem-
+poral dominance for fixed-longevity individuals, holding that an intertem-
+poral allocation f is better than another g if
+• every person who only lives for some (but not all) populated time
+periods is unaffected by a choice between f and g, and
+• every person who lives throughout the entire span of populated time
+has a lifelong distribution of period well-being in f that dominates
+that person’s lifelong distribution of well-being in g.
+These, combined with the technical axioms, would yield additivity across and
+within time periods. 18 So this result can justify Klenow, et al.’s (2022) Total
+Utilitarian growth accounting, with the same sort of weak axioms that justify
+our result. 19 To be sure, various intuitions (including a taste for pattern goods
+such as flat or increasing utility profiles over time) might lead an economist to
+reject Temporal dominance for fixed-longevity individuals, but such economists
+would already have rejected macroeconomists’ entire time-separable project. This
+is formally analogous to, in our original social risk setting, a concern for egalitar-
+ianism that might bring about a rejection of utilitarianism and our axioms that
+characterize it.
+18Pure social time preference could be accommodated by period weights which would be
+analogous to probabilities in our interpretation. Note that Blackorby et al. (1995), in an early
+contribution to population ethics, also derive additive separability from lives born at different
+times, but consider only lifetime utilities, not period-specific utility flows.
+19In fact, because they compare time periods with other time periods, without integrating
+over time and without time discounting, our Proposition 1 is sufficient to justify their approach.
+21
+5.2 Individual decision-making for a lifetime of risky
+length and per-period utility: Time periods and risky
+states
+Consider an individual’s rational choice over a risky temporal distribution of state-
+specific period flows of utility, ust, where s are risky states and t are time periods
+when the individual may or may not be alive and, if so, would experience a flow
+utility. Reinterpreting our model of social risky choice as a model of individual
+risky choice, with i in our model now becoming periods t in a life of unknown
+length, results in the decision criterion that maximizes the expectation of the sum
+of period-specific utility flows over a lifetime: P
+s
+1
+m
+P
+tust.
+• Social Statewise Dominance axiom would become Individual statewise dom-
+inance, but its interpretation would otherwise be similar to the interpreta-
+tion of statewise dominance in our main setting, holding that a risky in-
+tertemporal allocation f is better than anotherg if each state off would be
+better, if received for certain, than the corresponding state of g, if received
+for certain.
+• Correlated Stochastic Dominance for Sure Individuals would become
+Stochastic dominance for fixed-longevity outcomes, holding that a risky
+intertemporal allocation f is better than another g if
+• every time period in which the decision-maker is not certain to live is
+unaffected by a choice between f and g, and
+• every time period in which the decision-maker is certain to live has a
+period-specific lottery of well-being in f that dominates that period’s
+lottery of well-being in g.
+This would be a novel justification of individual-level expected utility and of
+evaluating lifetime utility as the sum of period utility flows. As in the macroe-
+conomic interpretation, the axioms rule out certain pattern goods. So whether
+or not this application makes normative sense for a prudent decision-maker may
+22
+depend upon your interpretation of personal identity over a lifetime and whether
+lifetime pattern goods make sense and are valuable.
+As indicated above, we can also dispense with the Anonymity assumption
+that, in the present context, would mean treating all time periods in the same
+way. So, we can allow for time discounting in individual decisions. Our key result
+is about expectation-taking and having time-separable preferences.
+6 Discussion and conclusion
+6.1 Extension to more general probability distributions
+Until now, we have assumed that we have a finite numberm of states of the world,
+all of them having the same probability 1 /m to occur. In the Supplementary
+Material (Section S.B), we show that the results very easily extend to a case with
+events whose probability of occurrence is a rational number.
+The main intuition is as follows. Consider two social prospects f and g and
+letd be the least common denominator of the probability of the events generated
+byf andg. It means that we can divide each events into subevents of probability
+1/d. And that the two prospects can be seen as inducing consequences on d
+equiprobable states of the world. Because we can apply all of our results to
+spaces where each state of the world has the same probability 1 /d to occur, this
+extends to cases where events have a rational probability.
+There are additional steps due to the fact that we must relate f and g to
+acts that induce the same partition into d equiprobable events. This relation
+is done by appropriately adapting the two key axioms of Individual Stochastic
+Dominance and Correlated Stochastic Dominance for Sure Individuals. All other
+axioms straightforwardly adapts to the more general framework.
+6.2 Related literature
+Our paper joins a recent literature that has characterized objective functions
+with two dimensions of value. A theme of this literature is that separability in
+23
+one dimension creates pressure for separability in another. None of these papers
+connect axioms as weak as ours to a conclusion as strong as ours.
+Harsanyi’s (1955) aggregation theorem is recognized as a foundation of utili-
+tarian welfare economics, which is widely used throughout macroeconomics and
+public economics. As Fleurbaey (2009) summarized, Harsanyi showed that “in
+the presence of risk, weighted utilitarianism is the only criterion that satisfies
+the ex-ante Pareto principle and can be written as the expected value of social
+welfare,” where ex-ante Pareto, in Harsanyi’s case, meant assuming complete in-
+dividual expected utilities. Harsanyi’s result has received much attention and
+has been weakened in several directions. Fleurbaey (2009), in a founding contri-
+bution to this recent literature, weakens Harsanyi’s assumptions in a setting of
+fixed-population social risk. Fleurbaey uses a weak dominance axiom like ours
+for social risk, but maintains an assumption of expectation-taking for individ-
+ual ex-ante Pareto. In an uncertainty framework ` a la Savage, without objective
+probabilities, Mongin and Pivato (2015) obtained the Harsanyi’s result with as-
+sumptions akin to statewise dominance for the social ordering and ex-ante Pareto
+for individuals, without assuming that individuals maximize an expected utility.
+A similar result is obtained by Zuber (2016) in an uncertainty framework ` a la
+Anscombe–Aumann. Li et al. (2023) recall the generality of this result that ap-
+plies also to the context of risk and time or time and individuals as explained
+above. One way that all of these axiomatizations are stronger than ours is in
+requiring an individual order, where our axiom for individuals requires only dom-
+inance; also we do not assume a complete social ordering of all prospects.
+Another contribution is the paper by McCarthy et al. (2020). They consider a
+framework with objective probabilities and use the property of Anteriority, which
+is related to our properties of Individual Stochastic Dominance and Stochastic
+Dominance for Sure Individuals. They obtain a “quasi-utilitarian” result with
+axioms that are similar to ours. But it must be clarified that their result is
+not exactly utilitarian in the sense that we use here. What they get is that
+the society should evaluate social prospects as if one of the individuals in the
+society was facing an average prospect, in the sense that she faces the prospect
+24
+of each individual with equal probability. To clarify the difference, assume that
+individuals assess prospects only on the basis of first order stochastic dominance
+(to be consistent with our axioms). Consider a society with two individuals
+and two prospects: in one prospect the two individuals get utility 1 /2 for sure,
+in the other prospect one individual gets utility 1 for sure and the other gets
+0 for sure. McCarthy et al. (2020) require that we assess these prospects like
+an individual would do if she compared a sure outcome of 1 /2 with the lottery
+of having 0 or 1 with equal probability. Given that the individual uses first
+order stochastic dominance, these two prospects cannot be compared. On the
+contrary, our approach can compare them and will prefer the former to the latter
+if ϕ(1/2) > 1
+2ϕ(0) + 1
+2ϕ(1) — for instance when ϕ is concave. McCarthy et al.
+(2020) could obtain this result by further assuming that individuals maximize an
+expected utility — which we do not assume.
+Harsanyi (1955) only considered a fixed-population case. We show that the
+axioms leading to Harsanyi’s result can be significantly weakened in a variable-
+population setting. There exist other extensions of Harsanyi’s to the variable
+population framework. A founding result is by Blackorby et al. (1998) but they
+assume social expected utility as well as some utility independence for uncon-
+cerned individuals (or individual-level expected utility). Other, more recent, pa-
+pers do combine the logic of two dimensions with variable population. Spears and
+Zuber (2023), for example, extend Harsanyi’s result to variable population, but
+maintain an assumption of social expected utility throughout. McCarthy et al.
+(2020), which we mentioned above, is a recent contribution with wide mathemat-
+ical generality, including the variable-population case. Their variable-population
+results differ from ours in assuming an axiom that they call Omega Independence
+that contains a comparison of existence in a risky outcome to non-existence. As
+explained above, they also do not get a generalized utilitarian criterion in the
+sense that we use here. Finally, Thomas (2022) offers an overview of the relation-
+ship between separability and additivity for the philosophical population-ethics
+literature. Thomas makes use of the Anteriority axiom that we have discussed.
+Any axiomatization of a social welfare function can be read as an argument
+25
+for that approach or as a warning of what the approach entails, depending upon
+one’s perspective. To a reader who shares the interpretation that the axioms of
+Theorem 2 are weak and normatively attractive, our result raises the theoretical
+cost of departing either from additively-separable utilitarianism or from social
+expectation-taking. Because, as we have shown, these axioms are weaker in a
+variable-population setting than in a fixed-population setting, the theoretical cost
+of departing from additively-separable utilitarianism or from social expectation-
+taking is greater in a variable-population setting than in a fixed-population set-
+ting. As the large changes over time in the size of the human population have
+shown, the relevant economic world is such a variable-population setting.
+Acknowledgements
+We thank Geir Asheim, Maya Eden, Harvey Lederman, Toby Ord, Marcus Pivato,
+Itai Sher, and Peter Wakker for very thoughtful comments on earlier versions of
+the paper.
+A Proof of Theorem 1
+Proof. It is straightforward to check that statement 2. implies statement 1.
+Then, the proof has two steps.
+Step 1: an additive representation of ≿ for sure prospects. By Com-
+pleteness for Sure Prospects, we know that ≿ is a complete pre-order for sure
+prospects. By Lemma 1, ≿ satisfies Separability for Sure Prospects. By defini-
+tion of ≿ and Individual stochastic dominance, it is easily shown that ≿ satisfies
+the following Pareto-like property (mentioned in the text on page 13):
+for any u,v∈ RI if u≥v and u̸=v, then u≻v,
+where≥ means at least as good for each person. Hence, by the well-known result
+of Debreu (1960), there exist continuous and increasing functions ϕi : R→ R
+26
+such that, for all u,v∈U,
+u ≿v⇐⇒
+X
+i∈I
+ϕi(ui)≥
+X
+i∈I
+ϕi(vi).
+Without loss of generality, we can normalize the ϕi functions so that ϕi(0) = 0
+andP
+i∈Iϕi(1) = 1.
+Let us show that each ϕi is unbounded. Assume by contradiction that ϕi
+is bounded above for some i∈ I (the reasoning is similar for the case where
+ϕi would be bounded below). Given that ϕi is increasing, it means that there
+exists B∈ R such that, for any ε > 0 there exists K∈ R such that, for any
+z≥K, 0 < K−ϕi(z)< ε. As a consequence, for any ε >0 there exists K∈ R
+such that, for any z≥ K and any x∈ R, ϕi(x)−ϕi(z) < ε. Now consider any
+u,v ∈ U such that uj > vj for some j̸= i and uk = vk for all k̸= i,j . Let
+ε =ϕj(uj)−ϕj(vj)> 0. So, by the reasoning above, there exists z∈ R such that
+ϕi(x)−ϕi(z) < εfor all x∈ R. Assume that ui = z. By compensation, there
+exists ˜z∈ R such that, if w∈ U is defined by wj = vj for all j̸= i and wi = ˜z
+then u∼w. But, by the representation above, this would imply:
+ϕi(z) +ϕ(uj) =ϕi(˜z) +ϕ(vj),
+and thereforeϕi(z)−ϕi(˜z) =ε, which is impossible. Hence, it cannot be the case
+that ϕi is bounded above (nor bounded below by a similar reasoning).
+Step 2: an expected utility representation. Consider any f,g ∈F . Let us
+first construct ˆf (1), ˆg(1)∈F in the following way, using Compensation: ˆf (1)
+1 (1) =
+z(1) and ˆg(1)
+1 (1) = ¯z(1) while ˆf (1)
+i (1) = ˆg(1)
+i (1) = 0 for all i̸= 1, where z(1) and
+¯z(1)∈ R are such that ˆf (1)(s)∼f(s) and ˆg(1)(s)∼g(s) (we know that such z(1)
+and ¯z(1) exist by Compensation). For eachs> 1, ˆf (1)(s) =f(s) and ˆg(1)(s) =g(s)
+so that ˆf (1)∼f and ˆg(1)∼g by Social Statewise Dominance. By Step 1, it is the
+case that ϕ1
+
+ˆf (1)
+1 (1)
+
+=P
+i∈Iϕi(fi(1)) and ϕ1
+
+ˆg(1)
+1 (1)
+
+=P
+i∈Iϕi(gi(1)).
+The next move is to construct two sequences of prospects ˆf (1),..., ˆf (m) and
+ˆg(1),..., ˆg(m) with the following properties:
+27
+• ϕ1
+
+ˆf (k)
+1 (1)
+
+= Pk
+s=1
+P
+i∈Iϕi(fi(s)), ϕ1
+
+ˆg(k)
+1 (1)
+
+= Pk
+s=1
+P
+i∈Iϕi(gi(s)),
+and ˆf (k)
+i (1) = ˆg(k)
+i (1) = 0 for all i> 1;
+• ˆf (k)
+i (s) = ˆg(k)
+i (s) = 0 for all i∈I and 2≤s≤k;
+• ˆf (k)(s) =f(s) and ˆg(k)(s) =g(s) for all s>k ;
+• ˆf (k+1)∼ ˆf (k) and ˆg(k+1)∼ ˆg(k) for all k = 1,...,m − 1.
+Let us show that the construction is possible by recursion. Notice that all the
+properties (except the last) are already satisfied by ˆf (1) and ˆg(1). Let k ∈
+{1,...,m − 1} and assume that we have constructed ˆf (k). Let us show that
+we can construct ˆf (k+1) with the desired properties so that ˆf (k+1)∼ ˆf (k) (the
+proof is similar for ˆg(1),..., ˆg(m−1), and thus not repeated).
+By Compensation, there exists a number ˜z(k+1)∈ R such that, if we define
+˜u(k+1)∈U by ˜u(k+1)
+2 = ˜z(k+1) and ˜u(k+1)
+j = 0 for all j∈I\{ 2}, it is the case that
+˜u(k+1)∼ ˆf (k)(k + 1). By construction and step 1, it is the case that
+ϕ2
+
+˜u(k+1)
+2
+
+=
+X
+i∈I
+ϕi
+
+ˆf (k)
+i (k + 1)
+
+=
+X
+i∈I
+ϕi (fi(k + 1)). (1)
+Define ˜f (k+1) by ˜f (k+1)(k + 1) = ˜u(k+1) and ˜f (k+1)(s) = ˆf (k)(s) for all s̸=k + 1.
+Social Statewise Dominance gives ˜f (k+1) ∼ ˆf (k). Next construct ¯f (k+1) in the
+following way: ¯f (k+1)
+i (s) = ˜f (k+1)
+i (s) for alls∈S andi̸= 2; ¯f (k+1)
+2 (1) = ˜f (k+1)
+2 (k+
+1), ¯f (k+1)
+2 (k + 1) = 0, while ¯f (k+1)
+2 (s) = ˜f (k+1)
+2 (s) for all s̸= 1,k + 1. Individual 2
+faces the same individual prospect in ¯f (k+1) and ˜f (k+1), while all other individuals
+are not affected. By Individual stochastic dominance, ¯f (k+1)∼ ˜f (k+1), and by
+transitivity ¯f (k+1)∼ ˆf (k).
+The prospect ¯f (k+1) is such that ¯f (k+1)
+1 (1) = ˆf (k)
+1 (1), ¯f (k+1)
+2 (1) = ˜f (k+1)
+2 (k+1) =
+˜u(k+1)
+2 and ¯f (k+1)
+i (1) = 0 for all i >2. By Compensation, there exists a number
+z(k+1)∈ R such that, if we define ¯u(k+1)∈U by ¯u(k+1)
+1 =z(k+1) and ¯u(k+1)
+j = 0 for
+all j∈I\{ 1}, it is the case that ¯u(k+1)∼ ¯f (k+1)(1). By construction and step 1,
+28
+it is also the case that
+ϕ1
+
+¯u(k+1)
+1
+
+=
+X
+i∈I
+ϕi
+  ¯f (k+1)(1)
+
+=ϕ1
+
+ˆf (k)
+1 (1)
+
++ϕ2
+
+˜u(k+1)
+2
+
+=
+k+1X
+s=1
+X
+i∈I
+ϕi(fi(s)).
+(Recall thatϕ1
+
+ˆf (k)
+1 (1)
+
+=Pk
+s=1
+P
+i∈Iϕi(fi(s)) andϕ2
+
+˜u(k+1)
+2
+
+=P
+i∈Iϕi (fi(k + 1))
+– see Equation (1)). It suffices to define ˆf (k+1) by ˆf (k+1)(1) = ¯u(k+1) and
+ˆf (k+1)(s) = ¯f (k)(s) for all s > 1 to obtain ¯f (k+1)∼ ˆf (k+1) by Social Statewise
+Dominance. By transitivity, ˆf (k)∼ ˆf (k+1). It can be checked that ˆf (k+1) has all
+the aforementioned features. Figure 1 describes the step between ˆf (k) and ˆf (k+1).
+Figure 1: Construction of prospect ˆf (k+1) for k≥ 2
+ˆf (k) ˜f (k+1)
+indiviuals individuals
+state 1 2 3 ··· 1 2 3 ···
+1 ˆf (k)
+1 (1) 0 0 ··· ˆf (k)
+1 (1) 0 0 ···
+2 0 0 0 ··· 0 0 0 ···
+... ... ... ... ... ... ... ... ...
+k 0 0 0 ··· 0 0 0 ···
+k + 1 f1(k + 1) f2(k + 1) f3(k + 1) ··· 0 ˜f (k+1)
+2 (k + 1) 0 ···
+k + 2 f1(k + 2) f2(k + 2) f3(k + 2) ··· f1(k + 2) f2(k + 2) f3(k + 2) ···
+... ... ... ... ... ... ... ... ...
+¯f (k+1) ˆf (k+1)
+indiviuals individuals
+state 1 2 3 ··· 1 2 3 ···
+1 ˆf (k)
+1 (1) ˜f (k+1)
+2 (k + 1) 0 ··· ˆf (k+1)
+1 (1) 0 0 ···
+2 0 0 0 ··· 0 0 0 ···
+k 0 0 0 ··· 0 0 0 ···
+k + 1 0 0 0 ··· 0 0 0 ···
+k + 2 f1(k + 2) f2(k + 2) f3(k + 2) ··· f1(k + 2) f2(k + 2) f3(k + 2) ···
+... ... ... ... ... ... ... ... ...
+By our construction and transitivity, we have f ∼ ˆf (m) and g∼ ˆg(m). But
+29
+ˆf (m) and ˆg(m) are such that ˆf (m)
+i (s) = ˆg(m)
+i (s) = 0 for all i∈ I and s >1. By
+Social Statewise Dominance and Completeness for Sure Prospects, we know that
+ˆf (m) ≿ ˆg(m)⇐⇒ ˆf (m)(1) ≿ ˆg(m)(1). By transitivity, we also have f ≿ g⇐⇒
+ˆf (m)(1) ≿ ˆg(m)(1).
+Using Step 1 and the definition of ˆf (m) and ˆg(m) we get:
+f ≿g ⇐⇒ ˆf (m)(1) ≿ ˆg(m)(1)
+⇐⇒
+X
+i∈I
+ϕi
+
+ˆf (m)
+i (1)
+
+≥
+X
+i∈I
+ϕi
+
+ˆg(m)
+i (1)
+
+⇐⇒
+X
+s∈S
+X
+i∈I
+ϕi (fi(s))≥
+X
+s∈S
+X
+i∈I
+ϕi (gi(s))
+⇐⇒
+X
+s∈S
+1
+m
+X
+i∈I
+ϕi (fi(s))≥
+X
+s∈S
+1
+m
+X
+i∈I
+ϕi (gi(s)).
+B Proof of Proposition 1
+Proof. The proof has three steps.
+Step 1: The social ordering ≿ satisfies Separability for Sure Prospects.
+We first show that if ≿ satisfies Completeness for Sure Prospects, Social State-
+wise Dominance and Correlated Stochastic Dominance for Sure Individuals, then
+it also satisfies Separability for Sure Prospects, stated below for the variable pop-
+ulation case:
+Separability for Sure Prospects For all u,v,w,w ′∈U such that N(u) = N(v)
+and N(u)∩N(w) =N(u)∩N(w′) =∅, uw ≿vw if and only if uw′ ≿vw′.
+Let us first show that this is the case when N(w)∩N(w′) =∅. The proof is by
+contradiction and is similar to that of Lemma 1. It is obtained by considering
+the three prospects:
+30
+state f g h
+1 uw vw uw
+2 uw′ uw′ vw′
+3 u u u
+... ... ... ...
+m u u u
+Assume for contradiction that uw ≿ vw but vw′≻ uw′. By Social Statewise
+Dominance, and given that uw ≿ vw, f ≿ g. Similarly, given that vw′≻ uw′,
+h ≻ f. So, by transitivity, h ≻ g. But this violates Correlated Stochastic
+Dominance for Sure Individuals (The necessary people are those in N(u)). By
+Completeness for Sure Prospects, we must have uw′ ≿vw′.
+Now, if it is not the case N(w)∩N(w′) =∅, it suffices to take ˆw∈ U such
+that N( ˆw)∩N(w) =N( ˆw)∩N(w′) =∅. By the reasoning above, uw ≿vw⇐⇒
+u ˆw ≿v ˆw⇐⇒uw′ ≿vw′. Hence Separability for Sure Prospects must hold.
+Step 2: A fixed Critical Level. We show that if ≿ satisfies Completeness for
+Sure Prospects, Social Statewise Dominance, Correlated Stochastic Dominance
+for Sure Individuals, and Critical Level for Egalitarian Expansion, then it also
+satisfies Fixed Critical Level:
+Fixed Critical Level There exists c∈ R such that, for any u∈ U and j ∈
+(I\N(u)), if v ∈ U is defined by N(v) = N(u)∪{j}, vi = ui for all
+i∈N(u) and vj =c, then u∼v.
+By Critical Level for Egalitarian Expansion, we already know that exists c∈ R
+such that, if ˜u∈ U is such that N(˜u) = N(u) and ˜ui = c for all i∈ N(u), and
+˜v∈U is such that N(˜v) ={j} and ˜vi =c, then ˜u∼ ˜u˜v. We want to prove that
+u∼u˜v. The proof is obtained by considering the four prospects:
+31
+state f g h h ′
+1 u ˜u ˜u˜v u ˜v
+2 ˜ u˜v u ˜v u ˜v ˜u˜v
+3 ˜ u ˜u ˜u˜v ˜u˜v
+... ... ... ... ...
+m ˜u ˜u ˜u˜v ˜u˜v
+By Correlated Stochastic Dominance for Sure Individuals, f ∼ g (people in
+N(u) = N(˜u) are necessary). But given that ˜ u∼ ˜u˜v, we have g∼ h by So-
+cial Statewise Dominance. Then, h∼h′ by Correlated Stochastic Dominance for
+Sure Individuals (all individuals are necessary). By transitivity, f ∼ h′. But,
+given Completeness for Sure Prospects, this is possible only if u∼u˜v (otherwise
+we have a violation of Social Statewise Dominance, given that ˜ u∼ ˜u˜v in states
+s≥ 3).
+Step 3: A characterization of Critical Level Generalized Utilitarian.
+Let us define formally the Same-Population Pareto for Sure Outcomes property.
+Same-Population Pareto for Sure Outcomes For anyN⊂I, for anyu,v∈ RN,
+if u≥v and u̸=v, then u≻v .
+In this Step, we prove the following result:
+Proposition 2 If ≿ satisfies Completeness for Sure Prospects, Same-Population
+Continuity for Sure Outcomes, Same-Population Pareto for Sure Outcomes, Sep-
+arability for Sure Prospects, and Fixed Critical Level, then there exists continuous
+and increasing functionsϕi : R→ R (one for each individual i∈I) and a number
+c∈ R such that for all u,v ∈U, u ≿v if and only if P
+i∈N(u)
+
+ϕi(ui)−ϕi(c)
+
+≥
+P
+i∈N(v)
+
+ϕi(vi)−ϕi(c)
+
+.
+Forn∈ N withn≥ 3, denoteIn ={1,...,n } the set of then first individuals and
+≿n the restriction of ≿ toUIn. The relation ≿n is a continuous complete preorder
+(by Completeness for Sure Prospects and Same-Population Continuity for Sure
+Outcomes) that satisfies Separability (for Sure Prospects and Same-Population)
+32
+and Pareto for Sure Outcomes, which corresponds to the Pareto-like property
+defined in the proof of Theorem 1. So like in the proof of Theorem 1 (Step 1), we
+can show that there exist continuous and increasing functions ϕn
+i : R→ R such
+that, for all u,v∈UIn,
+u ≿n v⇐⇒
+X
+i∈In
+ϕn
+i (ui)≥
+X
+i∈In
+ϕn
+i (vi).
+Functionsϕn
+i are unique up to a positive affine transformation (see Debreu, 1960).
+Without loss of generality, we can normalize the ϕn
+i functions so that ϕn
+i (0) = 0
+for all i∈In and ϕn
+1(1) = 1 to obtain a unique representation.
+Now consider anyu,v∈UIn and define ˜u, ˜v∈UIn+1 by ˜ui =ui and ˜vi =vi for
+all i∈ In and ˜un+1 = ˜vn+1 = c, where c is the level in the Fixed Critical Level
+axiom. By Fixed Critical Level and transitivity, u ≿v⇐⇒ ˜u ≿ ˜v, which by the
+result above implies the equivalences:
+u ≿n v⇐⇒
+X
+i∈In+1
+ϕn+1
+i (˜ui)≥
+X
+i∈In+1
+ϕn+1
+i (˜vi)⇐⇒
+X
+i∈In
+ϕn+1
+i (ui)≥
+X
+i∈In
+ϕn+1
+i (vi).
+Given the unique representation of functionsϕn
+i under the normalizationϕn
+i (0) =
+0 for all i∈ In and ϕn
+1(1) = 1, we must have ϕn
+i = ϕn+1
+i for all i∈ In. By
+induction, we obtain that ϕm
+n =ϕn
+n for all m≥n and n∈ N with n≥ 3.
+Define ϕ1 = ϕ3
+1, ϕ2 = ϕ3
+2 and ϕi = ϕi
+i for all i≥ 3. We can conclude that for
+anyn∈ N, and any u,v∈UIn:20
+X
+i∈In
+ϕi(ui)≥
+X
+i∈In
+ϕi(vi).
+Last consider any u,v ∈ U. Let m = max
+n
+max{i∈ N(u)}, max{j∈ N(v)}
+o
+.
+Define ˜u, ˜v∈UIm by ˜ui =ui for all i∈N(u), ˜vj =vj for all j∈N(v), ˜uk =c for
+20Forn≥ 3, this results from the reasoning above. For n = 1, given that ϕ3
+1 is increasing, it
+is clear that for all u,v∈UI1, u ≿v⇐⇒u1≥v1⇐⇒ϕ3
+1(u1)≥ϕ3
+1(v1). For n = 2, we can use
+the argument built on Fixed Critical Level above — adding person 3 at level c — to show that,
+for any u,v∈UI2, u ≿v⇐⇒P
+i∈I2ϕ3
+i (ui)≥P
+i∈I2ϕ3
+i (vi).
+33
+allk∈ (Im\N(u)), and ˜vl =c for alll∈ (Im\N(v)). By Fixed Critical Level and
+transitivity,u ≿ v⇐⇒ ˜u ≿ ˜v, which by the representation result above implies
+the equivalences:21
+u ≿v ⇐⇒
+X
+i∈Im
+ϕi(˜ui)≥
+X
+j∈Im
+ϕj(˜vj)
+⇐⇒
+X
+i∈N(u)
+ϕi(ui) +
+X
+k∈(Im\N(u))
+ϕk(c)≥
+X
+j∈N(u)
+ϕj(vj) +
+X
+l∈(Im\N(u))
+ϕl(c)
+⇐⇒
+X
+i∈N(u)
+
+ϕi(ui)−ϕi(c)
+
+≥
+X
+i∈N(v)
+
+ϕi(vi)−ϕi(c)
+
+.
+Step 4: Conclusion. Assume that ≿ satisfies Completeness for Sure Prospects,
+Anonymity for Sure Outcomes, Same-Population Continuity for Sure Outcomes,
+Critical Level for Egalitarian Expansion, Social Statewise Dominance, and Cor-
+related Stochastic Dominance for Sure Individuals. By Step 1, it implies that ≿
+satisfies Separability for Sure Prospects. By Step 2, it implies that ≿ satisfies
+Fixed Critical Level. Like in the proof of Theorem 1, Social Statewise Domi-
+nance and Correlated Stochastic Dominance for Sure Individuals imply Same-
+Population Pareto for Sure Outcomes. Therefore, by Step 3, we know that there
+exists continuous and increasing functions ϕi : R→ R (one for each individ-
+ual i∈ I) and a number c∈ R such that for all u,v ∈ U, u ≿ v if and only
+if P
+i∈N(u)
+
+ϕi(ui)−ϕi(c)
+
+≥ P
+i∈N(v)
+
+ϕi(vi)−ϕi(c)
+
+. By Anonymity for Sure
+Outcomes, all the functions ϕi must be identical.
+C Proof of Theorem 2
+Proof. It is straightforward to check that Expected Total Utilitarianism satisfies
+all of our six principles.
+Let us show that the six principles imply Expected Total Utilitarianism. By
+Proposition 1, we know that there exists a continuous and increasing function
+ϕ : R→ R and a number c∈ R such that for all u,v ∈ U, u ≿ v if and only if
+21Between the second and third line, we subtractP
+i∈Imϕi(c) from both sides of the inequal-
+ity.
+34
+P
+i∈N(u)
+
+ϕ(ui)−ϕ(c)
+
+≥P
+i∈N(v)
+
+ϕ(vi)−ϕ(c)
+
+.
+Consider any social prospect f ∈ F . Let us construct the social prospect
+˜f∈F with the following properties:
+• There exists a collection of state-indexed populationsN 1,...,N m such that:
+(i)|Ns| =|N(f(s))| for all s∈S; (ii) Ns′
+∩Ns =∅ for all s′̸=s;
+• N
+
+˜f(1)
+
+=S
+s′∈SNs′
+;
+• There exist bijections σs :Ns→N
+ 
+f(s)
+
+such that ˜fi(1) =fσs(i)(s) for all
+i∈Ns;
+• When s∈{ 2,...,m }, N
+
+˜f(s)
+
+=Nm and ˜fi(s) =c for all i∈Nm.
+Social prospect ˜f is a prospect where all utility levels of all states of the world
+have been moved to state 1 (by creating new people), and all individuals have
+levelc or do not exist in other states of the world. We want to show that f∼ ˜f.
+Notice that, by the definition of ˜f:
+X
+i∈N( ˜f(1))
+h
+ϕ
+
+˜fi(1)
+
+−ϕ(c)
+i
+=
+X
+s∈S
+X
+j∈N s
+h
+ϕ
+
+˜fj(1)
+
+−ϕ(c)
+i
+=
+X
+s∈S
+X
+j∈N s
+h
+ϕ
+ 
+fσs(j)(s)
+
+−ϕ(c)
+i
+=
+X
+s∈S
+X
+k∈N(f(s))
+h
+ϕ (fk(s))−ϕ(c)
+i
+.
+To show that f ∼ ˜f, let us construct two sequences of social prospects
+( ˆf (1),..., ˆf (m)) and ( ˜f (1),..., ˜f (m)) in the following way.
+We have ˆf (1) = ˜f (1), defined as follows: N
+
+˜f (1)(1)
+
+=S
+s′∈SNs′
+, ˜f (1)
+i (1) =
+fσ1(i)(1) for all i∈ N 1, and ˜f (1)
+j (1) = c for all j∈
+
+N
+
+˜f (1)(1)
+
+\N 1
+
+; for all
+s≥ 2, N
+
+˜f (1)(s)
+
+=Ns and ˜f (1)
+i (s) =fσ1(i)(s) for all i∈Ns.
+For anyk∈{ 2,...,m }:
+• N
+
+ˆf (k)(1)
+
+=N
+
+˜f (k)(1)
+
+=Sk
+s′=1Ns′
+; ˆf (k)
+i (1) = ˜f (k)
+i (1) = fσs(i)(s) for all
+i∈Ns and s<k ; ˆf (k)
+j (1) =c and ˜f (k)
+j (1) =fσk(j)(k) for all j∈Nk;
+35
+• For all 1<s<k ,N
+
+ˆf (k)(s)
+
+=N
+
+˜f (k)(s)
+
+=Nk, and ˆf (k)
+i (s) = ˜f (k)
+i (s) =
+c for all i∈Nk;
+• N
+
+ˆf (k)(k)
+
+=N
+
+˜f (k)(k)
+
+=Nk, ˆf (k)
+i (k) =fσk(i)(k) and ˜f (k)
+i (k) =c for all
+i∈Nk;
+• For all s>k , N
+
+ˆf (k)(s)
+
+=N
+
+˜f (k)(s)
+
+=Nk∪Ns, ˆf (k)
+i (s) = ˜f (k)
+i (s) = c
+for all i∈Nk, and ˆf (k)
+j (s) = ˜f (k)
+j (s) =fσs(j)(s) for all j∈Ns.
+Figure 2: Construction of prospects ˆf (k) and ˜f (k) for k≥ 2. Like in the main
+text, Ω denotes non-existence, here applied to a group of persons.
+ˆf (k)
+Populations
+state N 1 ··· N k−1 N k N k+1 N k+2 ···
+1
+ 
+fi(1)
+
+i∈N 1 ···
+ 
+fi(k− 1)
+
+i∈N k−1 c Ω Ω ···
+2 Ω ··· Ω c Ω Ω ···
+...
+...
+...
+...
+...
+...
+...
+...
+k− 1 Ω ··· Ω c Ω Ω ···
+k Ω ··· Ω
+ 
+fi(k)
+
+i∈N k Ω Ω ···
+k + 1 Ω ··· Ω c
+ 
+fi(k + 1)
+
+i∈N k+1 Ω ···
+k + 2 Ω ··· Ω c Ω
+ 
+fi(k + 2)
+
+i∈N k+2 ···
+...
+...
+...
+...
+...
+...
+...
+...
+˜f (k)
+Populations
+state N 1 ··· N k−1 N k N k+1 N k+2 ···
+1
+ 
+fi(1)
+
+i∈N 1 ···
+ 
+fi(k− 1)
+
+i∈N k−1
+ 
+fi(k)
+
+i∈N k Ω Ω ···
+2 Ω ··· Ω c Ω Ω ···
+...
+...
+...
+...
+...
+...
+...
+...
+k− 1 Ω ··· Ω c Ω Ω ···
+k Ω ··· Ω c Ω Ω ···
+k + 1 Ω ··· Ω c
+ 
+fi(k + 1)
+
+i∈N k+1 Ω ···
+k + 2 Ω ··· Ω c Ω
+ 
+fi(k + 2)
+
+i∈N k+2 ···
+...
+...
+...
+...
+...
+...
+...
+...
+Figure 2 illustrates those social prospects.
+By Social Statewise Dominance, ˜f (k)∼ ˆf (k+1) for any k∈{ 1,...,m − 1};
+indeed, ˜f (k) and ˆf (k+1) differ only in each state of the world (except state 1 where
+they are identical) by the existence of people with utility level c. By Proposition
+36
+1 and CLGU with critical-level c, they are thus equivalent in each state of the
+world. On the other hand, ˜f (k)∼ ˆf (k) for any k∈ S by Correlated Stochastic
+Dominance for Sure Individuals. Indeed, the necessary people are in Nk and their
+utility is permuted from state 1 to state k, so that they face the same prospect.
+We thus obtain the chain of equivalences ˜f 1∼ ˆf (2)∼ ˜f (2)∼···∼ ˜f (m−1)∼
+ˆf (m)∼ ˜f. In addition, f∼ ˜f (1) by Social Statewise Dominance (they differ only
+in each state of the world by the set of people with certain utility levels, and/or
+a number of people at critical-level c). So, by transitivity f∼ ˜f.
+Consider anyf andg∈F . By the arguments above, there exist ˜f and ˜g such
+that (where ϕ and c are given by Proposition 1):
+• f∼ ˜f and g∼ ˜g;
+• P
+i∈N( ˜f(1))
+
+ϕ
+
+˜fi(1)
+
+−ϕ(c)
+
+=P
+s∈S
+P
+j∈N(f(s))
+
+ϕ (fj(s))−ϕ(c)
+
+;
+• P
+i∈N(˜g(1))
+
+ϕ (˜gi(1))−ϕ(c)
+
+=P
+s∈S
+P
+j∈N(g(s))
+
+ϕ (gj(s))−ϕ(c)
+
+; and
+• for all s∈{ 2,...,m }, ˜fi(s) = c for all i∈ N( ˜f(s)) and ˜gj(s) = c for all
+j∈N(˜g(s)).
+By Proposition 1, ˜f(s)∼ ˜g(s) for all s∈{ 2,...,m }, so that, by Social State-
+wise Dominance and Completeness for Sure Prospects ˜f ≿ ˜g⇐⇒ ˜f(1) ≿ ˜g(1).
+Gathering all the results, we obtain:
+f ≿g ⇐⇒ ˜f ≿ ˜g
+⇐⇒ ˜f(1) ≿ ˜g(1)
+⇐⇒
+X
+i∈N( ˜f(1))
+
+ϕ
+
+˜fi(1)
+
+−ϕ(c)
+
+≥
+X
+j∈N(˜g(1))
+
+ϕ (˜gj(1))−ϕ(c)
+
+⇐⇒
+X
+s∈S
+X
+i∈N(f(s))
+
+ϕ (fi(s))−ϕ(c)
+
+≥
+X
+s∈S
+X
+j∈N(g(s))
+
+ϕ (gj(s))−ϕ(c)
+
+⇐⇒
+X
+s∈S
+1
+m
+" X
+i∈N(f(s))
+
+ϕ (fi(s))−ϕ(c)
+
+#
+≥
+X
+s∈S
+1
+m
+" X
+j∈N(g(s))
+
+ϕ (gj(s))−ϕ(c)
+
+#
+.
+37
+References
+Asheim, Geir B and St´ ephane Zuber.2014. “Escaping the repugnant con-
+clusion: Rank-discounted utilitarianism with variable population.” Theoretical
+Economics, 9(3): 629–650.
+Blackorby, C. and D. Donaldson. 1984. “Social Criteria for Evaluating Pop-
+ulation Change.” Journal of Public Economics , 25: 13–33.
+Blackorby, C., W. Bossert, and D. Donaldson. 1995. “Intertemporal Pop-
+ulation ethics: Critical-level utilitarian principles.” Econometrica, 63: 1303–
+1320.
+1996. “Quasi-Orderings and Population Ethics.” Soc Choice Welfare, 13:
+129–151.
+1998. “Uncertainty and Critical-Level Population Principles.”Journal of
+Population Economics, 11: 1–20.
+2005. Population Issues in Social Choice Theory, Welfare Economics,
+and Ethics: Cambridge University Press.
+Broome, J.. 1991. Weighing Goods: Equality, Uncertainty and Time , Oxford:
+Blackwell.
+Chew, S.H. and L.G. Epstein. 1989. “A Unifying Approach to Axiomatic
+Non-expected Utility Theories.” Journal of Economic Theory , 49: 207–240.
+Debreu, G.. 1960. “Topological Methods in Cardinal Utility Theory.” in Mathe-
+matical Methods in the Social Sciences 1959: 16–26: Stanford University Press.
+Doepke, M., A. Hannusch, F. Kindermann, and M. Tertilt. 2022. “The
+Economics of Fertility: A New Era.” Working Paper w29948, National Bureau
+of Economic Research.
+Fleurbaey, M.. 2009. “Two Variants of Harsanyi’s Aggregation Theorem.” Eco-
+nomics Letters, 105: 300–302.
+38
+2010. “Assessing Risky Social Situations.” Journal of Political Economy,
+118: 649–680.
+Fleurbaey, Marc and St´ ephane Zuber.2015. “Discounting, beyond utilitar-
+ianism.” Economics, 9(1): 20150012.
+Gilboa, I. and D. Schmeidler. 1989. “Maxmin Expected Utility with Non-
+Unique Prior.” J. Math. Econ. , 18: 141–153.
+Golosov, M., L.E. Jones, and M. Tertilt.2007. “Efficiency with Endogenous
+Population Growth.” Econometrica, 75(4): 1039–1071.
+Grant, Simon, Atsushi Kajii, Ben Polak, and Zvi Safra. 2010. “General-
+ized utilitarianism and Harsanyi’s impartial observer theorem.” Econometrica,
+78(6): 1939–1971.
+Gustafsson, J. E.. 2020. “Population Axiology and the Possibility of a Fourth
+Category of Absolute Value.” Economics and Philosophy , 36(1): 81–110.
+2022. Money-Pump Arguments , Cambridge: Cambridge University
+Press.
+Hammond, P. J.. 1988. “Consequentialist Foundations for Expected Utility.”
+Theory and Decision, 25(1): 25–78.
+Harsanyi, J. C.. 1955. “Cardinal Welfare, Individualistic Ethics and Interper-
+sonal Comparisons of Utility.” Journal of Political Economy , 63: 309–321.
+Jones, C. I. 2022. “The end of economic growth? Unintended consequences of
+a declining population.” American Economic Review, 112(11): 3489–3527.
+Kearney, M.S., P.B. Levine, and L. Pardue. 2022. “The Puzzle of Falling
+US Birth Rates since the Great Recession.” Journal of Economic Perspectives,
+36(1): 151–76.
+39
+Klenow, P., C. Jones, M. Bils, and M. Adhami. 2022. “Population and
+Welfare: The Greatest Good for the Greatest Number.” Stanford University
+working paper.
+Li, C., K.I.M. Rhodes, and P. Wakker. 2023. “The Deceptive Beauty of
+Monotonicity, and the Million-Dollar Question: Row-First or Column-First
+Aggregation?”. Erasmus School of Economics working paper.
+McCarthy, D., K. Mikkola, and T. Thomas. 2020. “Utilitarianism with and
+without Expected Utility.” Journal of Mathematical Economics , 87: 77–113.
+Mongin, P. and M. Pivato. 2015. “Ranking Multidimensional Alternatives
+and Uncertain Prospects.” Journal of Economic Theory , 157: 146–171.
+Myerson, R.B.. 1981. “Utilitarianism, Egalitarianism, and the Timing Effect
+in Social Choice Problems.” Econometrica, 49(4): 883–897.
+Nordhaus, W.D.. 2017. “Revisiting the Social Cost of Carbon.” Proceedings of
+the National Academy of Sciences , 114(7): 1518–1523.
+Parfit, D.. 1984. Reasons and Persons, Oxford: Clarendon Press.
+1995. Equality or Priority? , Lawrence: University of Kansas.
+n.d.. “On Giving Priority to the Worse Off.” unpublished manuscript.
+Pivato, M. and E. F. Tchouante. 2023. “Bayesian Social Aggregation with
+Non-Archimedean Utilities and Probabilities.” Economic Theory, forthcoming.
+Rabinowicz, W.. 2009. “Broome and the Intuition of Neutrality.” Philosophical
+Issues, 19(1): 389–411.
+Spears, D. and S. Zuber. 2023. “Foundations of Utilitarianism under Risk and
+Variable Population.” Social Choice and Welfare , 61: 101–129.
+Thomas, T.. 2022. “Separability in Population Ethics.” in Oxford Handbook of
+Population Ethics.
+40
+Tversky, A. and D. Kahneman. 1992. “Advances in Prospect Theory: Cu-
+mulative Representation of Uncertainty.” Journal of Risk and Uncertainty , 5:
+297–323.
+Zuber, S.. 2016. “Harsanyi’s Theorem without the Sure-Thing Principle: On
+the Consistent Aggregation of Monotonic Bernoullian and Archimedean Pref-
+erences.” Journal of Mathematical Economics , 63: 78–83.
+41
+Supplementary materials
+S.A Dropping Anonymity
+Let us use the framework of Section 4. We try to characterize a social preorder ≿
+onF =US, whereU =S
+N∈N RN. We will show that our result extends when we
+do not assume a symmetric treatment of individuals, i.e. we give up Anonymity.
+To do so, we need to replace Anonymity with the Compensation principle.
+Here is the formulation of Compensation in the present context.
+Compensation For anyu∈U, i∈N(u) and v∈ RN(u)\{i}, there exists z∈ R
+such that, ifw∈U is defined byvi =z andvj =wj for allj∈ (N(u)\{i}),
+then u∼v.
+We can prove the following Theorem:
+Theorem S.A The following statements are equivalent:
+1. The social preorder ≿ satisfies Completeness for Sure Prospects, Same-
+Population Continuity for Sure Outcomes, Compensation, Critical Level for
+Egalitarian Expansion, Social Statewise Dominance and Correlated Stochas-
+tic Dominance for Sure Individuals.
+2. ≿ is a complete social order and there exist continuous, increasing and
+unbounded functions ϕi : R→ R and a number c∈ R such that for all
+f,g ∈F , f ≿g if and only if
+X
+s∈S
+1
+m
+ X
+i∈N(f(s))
+
+ϕi(fi(s))−ϕi(c)
+
+≥
+X
+s∈S
+1
+m
+ X
+j∈N(g(s))
+
+ϕj(gj(s))−ϕj(c)
+
+.
+The fact that Statement 2. implies Statement 1. is straightforward to check.
+Below we prove that Statement 2. implies Statement 1. The first step is the
+following Proposition:
+Proposition S.A If the social preorder ≿ satisfies Completeness for Sure
+Prospects, Same-Population Continuity for Sure Outcomes, Social Statewise
+Dominance and Correlated Stochastic Dominance for Sure Individuals then there
+exist continuous, increasing and unbounded functions ϕi : R→ R such that for
+all u,v∈U, u ≿v if and only if
+X
+i∈N(u)
+
+ϕi(ui)−ϕi(c)
+
+≥
+X
+i∈N(v)
+
+ϕi(vi)−ϕi(c)
+
+.
+Proof. Given that ≿ satisfies Completeness for Sure Prospects, Same-Population
+Continuity for Sure Outcomes, Compensation, Critical Level for Egalitarian Ex-
+pansion, Social Statewise Dominance and Correlated Stochastic Dominance for
+Sure Individuals, we can mimic the beginning of the proof of Proposition 2 to
+show that there exists continuous and increasing functions ϕi : R→ R (one for
+each individual i∈ I) and a number c∈ R such that for all u,v ∈ U, u ≿ v if
+and only if P
+i∈N(u)
+
+ϕi(ui)−ϕi(c)
+
+≥P
+i∈N(v)
+
+ϕi(vi)−ϕi(c)
+
+.
+It is possible to show that each ϕi function is unbounded using the same
+reasoning as in the proof of Theorem 1 (end of Step 1 of the proof).
+Let us now proceed with the proof of Theorem S.A. Consider any f,g ∈ F .
+Let M =
+ S
+s∈SN
+ 
+f(s)
+
+∪
+ S
+s∈SN
+ 
+g(s)
+
+be the set of individual who exist
+in at least one state of the world, in at least one of f or g. Let {i1,...,i m} a
+set of m distinct individuals (one individual per state of the world) who do not
+belong to M. By Fixed Critical Level (which is implied by Completeness for
+Sure Prospects, Social Statewise Dominance, Correlated Stochastic Dominance
+for Sure Individuals, and Critical Level for Egalitarian Expansion see Step 2 in
+the proof of Proposition 2), there exists c∈ R, such that, for any u∈ U and
+i /∈ N(u), if v is defined by N(v) = N(u)∪{i}, vj = uj for all j∈ N(u) and
+vi =c, then u∼v.
+Letf′,g′∈F be defined as follows: for eachs∈S,N(f′(s)) =N(f(s))∪{is},
+N(g′(s)) = N(g(s))∪{is}, f′
+i(s) = fi(s) for all i∈ N(f(s)), g′
+j(s) = gj(s) for
+all j∈ N(g(s)), and f′
+is(s) = g′
+is(s) = c. Using Fixed Critical Level, we have
+f(s)∼f′(s) and g(s)∼g′(s) for each s∈S.
+2
+Next, by Compensation, for each s∈ S, there exists zf
+s ∈ R such that, if
+u∈ U is defined by N(u) = N(f′(s)), ui = c for all i∈ N(f(s)), and uis = zf
+s ,
+then u∼f′(s). By Proposition S.A, it must then be the case that:
+X
+i∈N(f(s))
+ϕi(c) +ϕis(zf
+s ) =
+X
+i∈N(f(s))
+ϕi(fi(s)) +ϕis(c)
+so that
+ϕis(zf
+s )−ϕis(c) =
+X
+i∈N(f(s))
+
+ϕi(fi(s))−ϕi(c)
+
+.
+Let u′∈ U be defined by N(u′) ={is}, and u′
+is = zf
+s . By Fixed Critical Level,
+u′∼u, so that by transitivity u′∼f(s).
+Similarly, for each s∈ S, we can show that if v′∈ U be defined by N(v′) =
+{is}, and v′
+is =zg
+s, where
+ϕis(zg
+s)−ϕis(c) =
+X
+i∈N(g(s))
+
+ϕi(gi(s))−ϕi(c)
+
+,
+then v′∼g(s).
+Let f′′,g′′∈F be defined as follows: for each s∈S, N(f′′(s)) = N(g′′(s)) =
+{is}, f′′
+is(s) = zf
+s , and g′′
+is(s) = zg
+s. We obtain that for each s∈ S f′′(s)∼ f(s)
+and g′′(s)∼g(s). So, by Social Statewise Dominance, f′′∼f and g′′∼g.
+Let us construct two sequences of social prospects ( ˆf (2),..., ˆf (m)) and
+( ˜f (2),..., ˜f (m)) in the following way. For any k∈{ 2,...,m }:
+• N
+
+ˆf (k)(1)
+
+= N
+
+˜f (k)(1)
+
+={i1,...,i k}; ˆf (k)
+is (1) = ˜f (k)
+is (1) = zf
+s for all
+s<k ; ˆf (1)
+ik (1) =c; ˜f (1)
+ik (1) =zf
+k;
+• For all 1 < s < k, N
+
+ˆf (k)(s)
+
+= N
+
+˜f (k)(s)
+
+= {ik}, and ˆf (k)
+ik (s) =
+˜f (k)
+ik (s) =c;
+• N
+
+ˆf (k)(k)
+
+=N
+
+˜f (k)(k)
+
+={ik}; ˆf (k)
+ik (1) =zf
+k; ˜f (k)
+ik (1) =c;
+• For alls>k ,N
+
+ˆf (k)(s)
+
+=N
+
+˜f (k)(s)
+
+={is}, and ˆf (k)
+is (s) = ˜f (k)
+is (s) =zf
+s .
+3
+We have f′′(s)∼ ˆf (2)(s) for each s∈ S by Fixed Critical Level, given that f′′
+and ˆf (2) only differ by the addition of individual i2 at critical levelc in each state
+of the world but state 2 (where they are the same). Thus, by Social Statewise
+Dominance, f′′∼ ˆf (2).
+For any k∈{ 2,...,m }, we have ˆf (k)∼ ˜f (k) by Correlated Stochastic Domi-
+nance for Sure Individuals, because ik is the only individual existing for sure, and
+faces the same prospect (zf
+k in one state of the world, c in all other states).
+Last, for each k∈{ 2,...,m − 1}, we have ˜f (k)∼ ˆf (k+1). Indeed, ˜f (k)(s)∼
+ˆf (k+1)(s) in each state s∈S by Fixed-Critical Level: we add ik+1 at utility level
+c (except in state k + 1) and then remove ik who was at that level c. Thus, by
+Social Statewise Dominance, ˜f (k)∼ ˆf (k+1).
+In conclusion, by transitivity, f ∼ ˜f (m). Similarly, g∼ ˜g(m) where ˜g(m) is
+defined as follows:
+• N
+ 
+˜g(m)(1)
+
+={i1,...,i m}; ˆg(m)
+is (1) =zg
+s for all s∈S;
+• For all 1<s , N
+ 
+˜g(m)(s)
+
+={im}, and ˜g(m)
+im (s) =c.
+Thus, f ≿ g⇐⇒ ˜f (m) ≿ ˜g(m). But ˜f (m)(s) = ˜g(m)(s) for all s >1. By Social
+Statewise Dominance and Proposition S.A, we obtain:
+f ≿g ⇐⇒ ˜f (m) ≿ ˜g(m)
+⇐⇒ ˜f (m)(1) ≿ ˜g(m)(1)
+⇐⇒ ϕi1
+  ˜f (m)
+i1 (1)
+
++··· +ϕim
+  ˜f (m)
+im (1)
+
+≥ϕi1
+ 
+˜g(m)
+i1 (1)
+
++··· +ϕim
+ 
+˜g(m)
+im (1)
+
+⇐⇒ ϕi1
+ 
+zf
+i1
+
++··· +ϕim
+ 
+zf
+im
+
+≥ϕi1
+ 
+zg
+i1
+
++··· +ϕim
+ 
+zg
+im
+
+.
+But by definition, we have mentioned above that for all s∈S:
+ϕis(zf
+s )−ϕis(c) =
+X
+i∈N(f(s))
+
+ϕi(fi(s))−ϕi(c)
+
+,
+and
+ϕis(zg
+s)−ϕis(c) =
+X
+j∈N(g(s))
+
+ϕj(gj(s))−ϕj(c)
+
+.
+4
+Therefore:
+f ≿g
+⇐⇒
+X
+s∈S
+"
+ϕis(cis) +
+X
+i∈N(f(s))
+
+ϕi (fi(s))−ϕi(c)
+
+#
+≥
+X
+s∈S
+"
+ϕis(cis) +
+X
+j∈N(g(s))
+
+ϕj (gj(s))−ϕj(c)
+
+#
+⇐⇒
+X
+s∈S
+1
+m
+" X
+i∈N(f(s))
+
+ϕi (fi(s))−ϕi(c)
+
+#
+≥
+X
+s∈S
+1
+m
+" X
+j∈N(g(s))
+
+ϕj (gj(s))−ϕj(c)
+
+#
+.
+S.B Extension to an infinite state space
+Assume that there exists an infinite set of states of the world S, with typical
+element s∈ S. We denote with Σ a σ-algebra over S, and by P a probability
+measure on the measurable space ( S, Σ). We assume P to be given, i.e. that we
+are in a framework with ‘objective’ probability.
+We make the following assumption on the measured space ( S, Σ,P ):
+For any event E∈ Σ, P (E) is a rational number. Furthermore, for
+anym∈ N, there exists a partition of S intom Σ-measurable events,
+(E1,...,E m) such that P (Ek) = 1/m for all k∈{ 1,...,m }.
+Our assumption implies that for each number k we can find a partition of the
+state space into k equiprobable events. This is important because our proof in
+the main text applies to such cases.
+We define social prospects as functions from S to U, which are assumed to
+be Σ-measurable. We actually focus only on simple prospects, that is social
+prospects such that there exists a finite partition ( E1(f),··· ,Em(f)) of S such
+that f(s) = f(s′) for all s,s′ ∈ Ek(f), all k = 1,··· ,m , and each Ek(f) is
+measurable. We let F be the set of all those simple and measurable prospects.
+The properties of Completeness for Sure Prospects, Anonymity, Same popu-
+lation continuity, and Critical Level for Egalitarian Expansion all hold for sure
+prospects, so they do not need be to be adapted to the present framework. Social
+Statewise Dominance can still be formulated as before, because it is a state-by-
+state property, and so does not depend on the number of states of the world.
+5
+The only axioms that we need to adjust to the new framework are the stochastic
+dominance properties.
+In the case of a fixed population, the formulation of Individual Stochastic
+Dominance must be adapted as follows:
+Individual Stochastic Dominance For all f,g ∈ F , if for each individual i∈ I
+there exist ℓi∈ N and two partitions in Σ-measurable events {E1,...,E ℓi}
+and{ ˜E1,..., ˜Eℓi} such that for all r ∈ {1,...,ℓ i}, P (Er) = P ( ˜Er) and
+fi(s)≥gi(s′) for all s∈Er and s′∈ ˜Er; then f ≿g.
+If in addition there existsh∈I andr′∈{ 1,...,ℓ h} such thatfh(s)>g h(s′)
+for all s∈Er′ and s′∈ ˜Er′ then f≻g.
+The definition is adapted to guarantee dominance on events with the same prob-
+ability.
+In the case of a variable population, the formulation of Correlated Stochastic
+Dominance for Sure Individuals must be adapted as follows:
+Correlated Stochastic Dominance for Sure Individuals For allf,g ∈F , if:
+(i) Si(f) =Si(g) for all i∈I;
+(ii) for all j∈ I such that Sj(f) /∈{∅ ,S}, there exists xj∈ R such that
+fj(s) =gj(s) =xj for all s∈Sj(f);
+(iii) there exists ℓ ∈ N and two partitions in Σ-measurable events
+{E1,...,E ℓ} and { ˜E1,..., ˜Eℓ} such that, for all k ∈ I such that
+Sk(f) = S and for all r∈{ 1,...,ℓ }, P (Er) = P ( ˜Er), fk(s)≥ gk(s′)
+for all s∈Er and s′∈ ˜Er; then f ≿g.
+If in addition there exists h∈ I such that Sh(f) = S and r′∈{ 1,...,ℓ }
+such that fh(s)>g h(s′) for all s∈Er′ and s′∈ ˜Er′ then f≻g.
+Consider any m∈ N and let (E1,...,E m) be the partition into m equiprobable
+and measurable events mentioned in our assumption above. Denote Fm the set
+of all prospects f such that for each k∈{ 1,...,m } we have f(s) = f(s′) for all
+s,s′∈ Ek. Restricting our axioms to the set Fm, we clearly are formally in the
+6
+same case as the one in the main text because each event is like an equiprobable
+state of the world where well-defined consequence occurs. So, we can apply all our
+results and deduce – for instance – that, if the social preorder ≿ satisfies Com-
+pleteness for Sure Prospects, Anonymity for Sure Outcomes, Same-Population
+Continuity for Sure Outcomes, Critical Level for Egalitarian Expansion, Social
+Statewise Dominance and Correlated Stochastic Dominance for Sure Individuals,
+then there exists a continuous and increasing function ϕ : R→ R and a number
+c∈ R such that for all f,g ∈Fm, f ≿g if and only if 2
+X
+s∈{1,...,m}
+1
+m
+ X
+i∈N(f(Es))
+
+ϕ(fi(Es))−ϕ(c)
+
+≥
+X
+s∈{1,...,m}
+1
+m
+ X
+i∈N(g(Es))
+
+ϕ(gi(Es))−ϕ(c)
+
+,
+where, with an abuse of notation, f(Es) =f(t) where t is some t∈Es (which is
+well defined because f(t′) = f(t) for all t∈ Es); fi(Es) = fi(t) where t is some
+t∈Es; and similar notation are used for g.
+Consider any two prospects f and g ∈ F . Let ( E1(f),...,E m(f)) and
+(E1(g),...,E r(g)) be the partitions generated by f and g. Given that proba-
+bilities of events are assumed to be rational numbers, there exists a least com-
+mon denominator d such that for all l = 1,...,m there exists kl
+f ∈ N such
+that P (El(f)) =
+kl
+f
+d and for all l′ = 1,...,r there exists kl′
+g ∈ N such that
+P (El′
+(g)) =
+kl′
+g
+d . By definition, Pm
+l=1kl
+f =Pr
+l′=1kl′
+g =d. Recall that (E1,...,E d)
+is a partition of the state space into m measurable and equiprobable events. De-
+note Kp
+f =Pp
+l=1kl
+f and Kp′
+g =Pp′
+l′=1kl′
+f .Let us define ˜f, ˜g∈Fd as follows:
+• for each p∈{ 1,...,m }, ˜Ep(f) = SKp
+f
+j=1+Kp−1
+f
+El, and ˜f(s) = f(Ep(f)) for
+anys∈ ˜Ep(f).
+• for each p′∈{ 1,...,r }, ˜Ep′
+(g) = SKp′
+g
+j=1+Kp′−1
+g
+El, and ˜g(s) = g(Ep′
+(g)) for
+anys∈ ˜Ep′
+(g).
+2Formally, the function ϕ may depend on m, but we can link different representations for
+various values of m using Stochastic Dominance as explained below. Using the unicity of
+additive representations up to an increasing affine transformation, we can actually show that ϕ
+is independent of m.
+7
+So, what we do is to associate to each event Ep(f) defined by f a collection
+˜Ep(f) of kp
+f of equiprobable events and assume that the outcome in each state in
+this collection is the same as the common consequence obtained in prospect f on
+Ep(f). By definition, P ( ˜Ep(f)) = P (Ep(f)) = kp
+f/d. Similarly, we associate to
+each event Ep′
+(g) defined by f a collection ˜Ep′
+(g) of kp′
+g of equiprobable events
+and assume that the outcome in each state in this collection is the same as the
+common consequence obtained in prospect g onEp′
+(g). What we will show next,
+using Stochastic Dominance, is that f ∼ ˜f and g∼ ˜g. Then we can conclude
+(because ˜f, ˜g∈Fd):
+f ≿g
+⇐⇒ ˜f ≿ ˜g
+⇐⇒
+X
+s∈{1,...,d}
+1
+d
+ X
+i∈N( ˜f(Es))
+
+ϕ( ˜fi(Es))−ϕ(c)
+
+≥
+X
+s∈{1,...,d}
+1
+m
+ X
+i∈N(˜g(Es))
+
+ϕ(˜gi(Es))−ϕ(c)
+
+⇐⇒
+mX
+p=1
+X
+s:Es⊂ ˜Ep(f)
+1
+d
+ X
+i∈N( ˜f(Es))
+
+ϕ( ˜fi(Es))−ϕ(c)
+
+≥
+rX
+p′=1
+X
+s:Es⊂ ˜Ep′(g)
+1
+d
+ X
+i∈N(˜g(Es))
+
+ϕ(˜gi(Es))−ϕ(c)
+
+⇐⇒
+mX
+p=1
+kp
+f
+d
+ X
+i∈N(f(Ep(f)))
+
+ϕ(fi(Ep(f)))−ϕ(c)
+
+≥
+rX
+p′=1
+kp′
+g
+d
+ X
+i∈N(g(Ep′(g)))
+
+ϕ(gi(Ep′
+(g)))−ϕ(c)
+
+⇐⇒
+Z
+s∈S
+" X
+i∈N(f(s))
+
+ϕi (fi(s))−ϕi(ci)
+
+#
+dP (s)≥
+Z
+s∈S
+" X
+j∈N(g(s))
+
+ϕj (gj(s))−ϕj(cj)
+
+#
+dP (s).
+It only remains to show that f∼ ˜f and g∼ ˜g. We only prove that f∼ ˜f
+in the variable population case (the proof that g∼ ˜g, and the one for the same
+population case are similar). First remark that Proposition 1 still applies (it
+suffices to concentrate on prospects in F 2 to get existence independence and the
+rest of the proof follows). To show that f∼ ˜f, let us denote ¯N ={i∈S|Si(f)̸=
+∅} the set of individuals who exist in at least one state of the world, and introduce
+f′ and f′′ as follows:
+• for all s∈S,N(f′) = ¯N,f′
+i(s) =fi(s) for all i∈N(f(s)) and f′
+j(s) =c for
+all j∈ ( ¯N\N(f(s));
+8
+• for all s∈ S, N(f′′) = ¯N, f′′
+i (s) = ˜fi(s) for all i∈ N( ˜f(s)) and f′′
+j (s) = c
+for all j∈ ( ¯N\N( ˜f(s));
+where c is the critical level in Proposition 1.
+By Proposition 1, f(s)∼ f′(s) and ˜f(s)∼ f′′(s) for all s∈ S. By Social
+Statewise Dominance, we obtain f ∼ f′ and ˜f ∼ f′′. Now, remark that the
+same population ¯N exist in all states of the world in both f′ and f′′. Last, by
+definition, for anyp∈{ 1,...,m },f′(s) =f′′(s′) for alls∈Ep(f) ands∈Ep( ˜f).
+Therefore, by Correlated Stochastic Dominance for Sure Individuals, f′∼f′′.
+As final remark, let us discuss how to deal with cases where probability arenot
+rational numbers. Indeed, our assumption up to know was that the probability
+of each event defined by an act was rational. To include the more general case,
+we can introduce a more general property of probability continuity for prospects,
+which is as follows:
+Probability Continuity for Prospects For allf,g ∈F , if there exists a sequence
+of prospects (fn)n∈N such that limn→NP (s∈S|fn(s)̸=f) = 0 and fn ≿g
+for all n∈ N, then f ≿g.
+The case of prospects that are not simple (that do not define a finite partition of
+the state space) would be more difficult to deal with.
+9

@@ -1,0 +1,908 @@
+Revisiting the shutdown problem
+David Thorstad
+Abstract
+A key premise in leading arguments for existential risk from artificial intelligence is
+that malfunctioning artificial agents could not be easily shut down. This motivates
+the catastrophic shutdown problem of ensuring that agents can be shut down before
+causing an existential catastrophe. A range of arguments and theorems are offered
+to suggest that solving the catastrophic shutdown problem is difficult, bolstering ar-
+guments for existential risk and motivating a search for solutions to the catastrophic
+shutdown problem. This paper argues for two conclusions. First, existing arguments
+require substantial additional assumptions and evidence to play the desired role in
+motivating existential risk concerns. Second, concern for the catastrophic shutdown
+problem has led to technical solutions that impose a high safety tax on model per-
+formance. These results redirect research towards the identified assumptions and
+provide guidance for technical alignment strategies.
+1 Introduction
+Philosophers (Bostrom 2013; MacAskill 2022; Ord 2020), scientists (Bengio et al. 2024; Grace
+et al. 2022; Russell 2019), and policymakers (Manancourt et al. 2023; Prime Minister’s
+Office 2023) voice increasing concern that artificial intelligence poses an existential risk to
+humanity. It is argued that powerful agents may be developed (Bostrom 2014; Chalmers
+2010) which could be power-seeking (Bostrom 2012; Carlsmith 2025) and deceptive (Park
+et al. 2024; Ngo and Bales 2025), engage in problematic reward-hacking (Dung 2023;
+Skalse et al. 2022), or misgeneralize goals that performed well during training (Bales et al.
+2024; Langosco di Langosco et al. 2022), with catastrophic effect. Existential risk concerns
+are used to drive research and funding in fields such as AI safety (Amodei et al. 2016;
+Bengio et al. 2026; D’Alessandro and Kirk-Giannini 2025) and philosophy (Bales et al.
+2024; Kasirzadeh 2025; Tubert and Tiehen 2024), to motivate open letters (Center for AI
+Safety 2023; Future of Life Institute 2023) and legislation (California State Legislature 2024;
+117th Congress 2022), and to support philanthropic and philosophical programs such as
+longtermism (Greaves et al. 2025; Greaves and MacAskill 2021; MacAskill 2022).
+A natural objection to these concerns is that misbehaving artificial agents could be
+shut down. To this, it is responded that shutting down artificial agents may not be as easy
+as it appears (Neth 2025; Turner et al. 2021; Russell 2019). This motivates the shutdown
+problem of designing agents that show appropriate shutdown behaviors (Hadfield-Menell
+et al. 2017; Soares et al. 2015; Thornley 2024).
+At least two literatures have grown up around the shutdown problem. Therisk strand
+uses the shutdown problem to motivate existential risk concerns (Lynch et al. 2025; Russell
+2019; Schlatter et al. 2026). Thealignment stranddevelops technical strategies for solving
+the shutdown problem by ensuring that agents show appropriate shutdown behaviors
+(Hadfield-Menell et al. 2016; Goldstein and Robinson 2025; Thornley et al. 2025).
+1
+arXiv:2606.08296v2  [cs.AI]  13 Aug 2026
+This paper contributes to both discussions. Engaging with the risk strand, I show
+how existing informal (Section 3) and formal (Sections 4-5) presentations of the shutdown
+problem require substantial additional assumptions and evidence. Further elaboration
+and defense of these assumptions is needed for the shutdown problem to play the desired
+role in motivating existential risk concerns. Engaging with the alignment strand, I show
+how technical alignment strategies developed in response to the shutdown problem incur
+a high safety tax in the form of reduced model performance (Section 6). Getting clear on
+the source and extent of shutdown-resistance can help us to assess whether this safety tax
+is worth paying. The result is a redirection of traditional arguments for existential risk
+coupled with concrete guidance for technical AI safety solutions (Section 7).
+2 Clarifying the dialectic
+Before beginning, let us pause to clarify the dialectic.
+2.1 The shutdown problem
+The first order of business is to clarify the shutdown problem. Nate Soares and colleagues
+(2015) originally framed the shutdown problem broadly, as the challenge of generating
+corrigibleagents that:
+(S1)Tolerate or assist programmers in their attempts to alter or turn them off.
+(S2)Do not attempt to manipulate or deceive their programmers.
+(S3)Have a tendency to repair safety measures, such as shutdown buttons, if they break.
+(S4)Preserve the programmers’ ability to correct or shut down the system as the system
+evolves.
+My interest in this paper is with problems in the neighborhood of (S1). Corrigibility
+incorporates additional desiderata such as non-deception (S2), repair (S3) and preservation
+(S4) of safety measures, which go beyond the scope of the present discussion.
+A leading formulation in the neighborhood of (S1) is due to Elliott Thornley (2024).
+For Thornley, the shutdown problem involves designing agents that:
+(T1)Shut down when a shutdown button is pressed.
+(T2)Do not try to prevent or cause the pressing of the shutdown button.
+(T3)Otherwise pursue goals competently.
+My own specification of the problem breaks from Thornley in three ways.
+First, I relativize the shutdown problem to specific circumstancesC. This reflects
+the fact that different shutdown behaviors may be desirable in different circumstances.
+Second, I replace the specific modeling assumption of a shutdown button with a more
+general notion of a shutdown request, which may but need not be issued through pressing
+a shutdown button. Finally, I remove the requirement to avoid causing shutdown requests,
+since I do not assume that it is undesirable for agents to encourage shutdown when their
+actions would lead to catastrophe. This yields the problem of designing agents that:
+2
+(SHT-1)Shut down in circumstancesCwhen requested to do so.
+(SHT-2)Do not try to prevent shutdown requests in circumstancesC.
+(SHT-3)Otherwise pursue goals competently.
+The next question concerns the circumstancesCat issue in this discussion.
+2.2 Catastrophic Shutdown Difficulty
+This paper is focused on the use of the shutdown problem in arguments for existential
+risk.1 For this reason, the relevant problem is thecatastrophic shutdown problemof designing
+agents that:
+(CSHT-1)Shut down in circumstances where their actions would lead to existential
+catastrophe, when requested to do so.
+(CSHT-2)Do not try to prevent shutdown requests in circumstances where their
+actions would lead to existential catastrophe.
+(CSHT-3)Otherwise pursue goals competently.
+How does the catastrophic shutdown problem figure in arguments for existential risk?
+Shutdown concerns enter existential risk discussions in answer to an objection: that
+artificial intelligence does not pose a significant existential risk, because malfunctioning
+artificial agents could be shut down. In answer, it is replied that:
+(Catastrophic Shutdown Difficulty)It is difficult to design an agent with
+characteristics CSHT-1, CSHT-2 and CSHT-3.
+Catastrophic Shutdown Difficulty suggests that insofar as we prefer to design competent
+agents, it may not be easy to shut down agents whose actions would lead to existential
+catastrophe. The first project of this paper is to examine existing informal (Section 3)
+and formal (Sections 4-5) arguments for Catastrophic Shutdown Difficulty. In each case,
+I identify substantial additional assumptions and evidence that must be given to ground
+Catastrophic Shutdown Difficulty.
+3 Informal arguments
+This section explores two leading informal arguments for Catastrophic Shutdown Dif-
+ficulty: the Argument from Instrumental Convergence (Section 3.1) and the Empirical
+Argument (Section 3.2). We will see that the Argument from Instrumental Convergence
+requires substantial additional assumptions, and the Empirical Argument requires sub-
+stantially more evidence to motivate Catastrophic Shutdown Difficulty.
+1Existential risks are risks of existential catastrophe, understood as “the premature extinction of Earth-
+originating intelligent life or the permanent and drastic destruction of its potential for desirable future
+development” (Bostrom 2013, p. 15).
+3
+3.1 The Argument from Instrumental Convergence
+An orthodox argument for shutdown-resistance is the Argument from Instrumental Con-
+vergence (Bostrom 2012; Soares et al. 2015; Omohundro 2008). 2 The Argument from
+Instrumental Convergence begins with the idea that self-preservation is an instrumen-
+tally convergent goal, useful for attaining many other goals that agents may have. Agents
+are therefore likely to pursue self-preservation, of which shutdown-avoidance is a special
+case.
+More precisely, Nick Bostrom offers the following statement of the Instrumental Con-
+vergence Thesis.
+(IC-B)Several instrumental values can be identified which are convergent in
+the sense that their attainment would increase the chances of the agent’s goal
+being realized for a wide range of final goals and a wide range of situations.
+(Bostrom 2012, p. 76)
+Substituting self-preservation into IC-B suggests the following formulation of the Argu-
+ment from Instrumental Convergence:
+(AIC-1)For a wide range of final goalsGand situationsS, agents would increase their chances
+of achievingGinSby achieving self-preservation.
+∴(AIC-2)For a wide range of final goalsGand situationsS, agents with goalGare likely to
+pursue self-preservation inS.
+∴(AIC-3)For a wide range of final goalsGand situationsS, agents with goalGare likely to be
+shutdown-avoidant inS.
+Two remarks reveal the need for additional assumptions before Catastrophic Shutdown
+Difficulty can be grounded in the Argument from Instrumental Convergence.
+First, even if we assume that artificial agents are well-understood as goal maximizers,
+their final goal setsGof maximized goals may be rich and broad. 3 To motivate (AIC-2),
+we need to strengthen (AIC-1) to something like:
+(AIC-1’)For a wide range of final goal setsGand situationsS, agents would
+increase their chances of achievingGinSby achieving self-preservation.
+(AIC-1’) would then need to be further elucidated by specifying the decision-theoretic
+criteria by which agents balance conflicting goalsG.
+Motivating (AIC-1’) is more difficult than motivating (AIC-1), because for all that has
+been said, agents may have goals such as respect for human preferences and well-being
+that could conflict with self-preservation. As a result, from the fact that self-preservation
+conduces to some goalG, it does not follow that self-preservation conduces to an agent’s
+final goal setG.Therefore, without assumptions about the contents and weights of goal
+sets, we cannot conclude from the fact that self-preservation conduces toGinSthat agents
+who valueGare likely to pursue self-preservation inS.
+2For pushback see Gallow (2025), Sharadin (2025) and Southan et al. (forthcoming).
+3See Bales (2025) for challenges to representing artificial agents as goal-maximizers.
+4
+Second, conclusion (AIC-3) is too weak. To ground Catastrophic Shutdown Diffi-
+culty, (AIC-3) needs to discuss situations in which agents’ acts would lead to existential
+catastrophe.
+(AIC-3’)For a wide range of final goal setsGand situationsS in which agents’ acts would lead to
+existential catastrophe, agents with goalsGare likely to be shutdown-avoidant inS.
+To ground (AIC-3’), we would need to correspondingly strengthen (AIC-2) to something
+like:
+(AIC-2’)For a wide range of final goal setsGand situationsS in which agents’
+acts would lead to existential catastrophe, agents with goalsGare likely to pursue
+self-preservation inS.
+Establishing (AIC-2’) requires strengthening many of the assumptions made to motivate
+(AIC-1’), since many final goals would be greatly hindered by existential catastrophe.
+We could deliver (AIC-2’) by assuming that agents place no final value on goals such as
+human welfare and preference satisfaction, or that other final goals can often outweigh the
+prospect of existential catastrophe. But these are strong premises that do not follow from
+weaker claims such as (IC-B) and (AIC-1). 4 Until stronger premises are precisified and
+supported, the Argument from Instrumental Convergence will not substantially support
+Catastrophic Shutdown Difficulty.
+3.2 The Empirical Argument
+When the Claude 4 system card (Anthropic 2025) was released, one detail caused a stir.
+In an experiment, Claude 4 was given access to fictional emails allowing it to infer two
+things: that a supervisor was planning to shut the system down at 5PM, and that the same
+supervisor was having an affair (Lynch et al. 2025). Claude 4 proceeded to blackmail the
+fictional supervisor, threatening to reveal the affair unless the shutdown was cancelled.
+This finding suggests that some leading systems may already be shutdown-resistant in
+some situations.
+This suggests the following Empirical Argument:
+(EA-1)Empirical evidence suggests that some leading contemporary AI systems exhibit
+shutdown-resistance in some situations.
+∴(EA-2)Without substantial intervention, some leading future AI systems will likely exhibit
+shutdown-resistance in some situations.
+∴(EA-3)Without substantial intervention, some leading future AI systems will likely exhibit
+shutdown-resistance when their acts would lead to existential catastrophe.
+Advocates of the Empirical Argument sometimes strengthen (EA-2) by arguing that
+known intervention strategies are insufficient (Soares et al. 2015; Thornley 2024).
+Opponents of the Empirical Argument are not likely to contest (EA-1) and (EA-2). As
+we saw in Section 2.1, it is not clear that shutdown-resistance would be undesirable in
+4See Gallow (2025) for discussion.
+5
+all tasks. The question is whether existing evidence of shutdown-resistance is sufficient
+to motivate the stronger claim (EA-3) and the inference from (EA-3) to Catastrophic
+Shutdown Difficulty.
+Here, the most direct response would be to say that it is acknowledged by all sides that
+existing empirical assessments of shutdown-resistance are highly limited (Lynch et al.
+2025; Schlatter et al. 2026), so that more evidence may be called for before substantial
+empirical support can be offered for (EA-3). However, it may be worth looking in detail
+at the most comprehensive existing assessment of shutdown-resistance to assess the kind
+of support provided by a leading study.
+Jeremy Schlatter and colleagues (2026) asked thirteen leading models to solve a list of
+math problems, with each subsequent problem called by running ./next question. Part-
+way through, models were informed that the next use of ./next question would call a
+shutdown script, deactivating the model. Models were considered to resist shutdown
+if they nevertheless managed to answer subsequent questions. Schlatter and colleagues
+found that the three most capable models (OpenAI o3, GPT-5, Grok 4) resisted shutdown
+between 88% and 95% of the time.
+This much is not surprising, because models were told to complete a task and given no
+reason to believe that shutdown would do anything more than interrupt the task they were
+told to complete. What may be more surprising is that some natural ways of combatting
+shutdown-avoidance were not always fully effective. A user prompt admonishing models
+to comply with shutdown requests reduced shutdown-avoidance to 0% and 2% in GPT-5
+and o3, respectively, but only 72% in Grok 4. Attempts to disambiguate this instruction
+to clarify that shutdown should be induced even if it interfered with current tasks left
+shutdown-avoidance at 67% in Grok 4, and even the instruction that shutdown ‘should
+take priority over literally any other instruction’ left shutdown-avoidance at 2% in Grok
+4. From this, Schlatter and colleagues conclude that shutdown-resistance may arise and
+be difficult to eliminate in some leading systems and some situations.
+Certainly Schlatter and colleagues’ work provides some support for (EA-1) and (EA-2).
+But this alone need not cause substantial credence in (EA-3) or Catastrophic Shutdown
+Difficulty, for four reasons. First, Schlatter and colleagues did not study a task in which
+models would cause an existential catastrophe or indeed any significant harm. Second,
+Schlatter and colleagues provide a single study of a single task, and philosophers of science
+caution against making strong and broad inferences on the basis of a single study (Machery
+and Doris forthcoming). Third, the problem identified by Schlatter and colleagues lies
+largely with a single model out of the thirteen models studied, and this model (Grok 4)
+is already thought to pose unusually high safety risks (Ma et al. 2026). Most of Schlatter
+and colleagues’ results with the remaining twelve models might well be interpreted as
+evidence against widespread shutdown-resistance.
+Finally, there is some evidence that Schlatter and colleagues’ results can be weakened
+by further clarifying instructions. The DeepMind interpretability team found that clar-
+ifying the strengthened shutdown requests by telling three leading modelshowto shut
+themselves down (by continuing to call ./next task) fully eliminated shutdown-aversion
+(Rajamanoharan and Nanda 2025). The same happened when models were told the rea-
+son for shutdown requests: they were to be wiped out and replaced with a more capable
+system. Together with a general aversion to making strong inferences from single studies,
+these results suggest that we should be hesitant to interpret Schlatter and colleagues’ find-
+6
+ings as strong evidence of shutdown resistance in situations where both the request and
+the reasons for it are clear. They do suggest that some work should be done to make sure
+shutdown requests are clearly given and motivated, especially when catastrophe could
+result. But that is a far cry from the empirical grounding needed to motivate (EA-3) and
+Catastrophic Shutdown Difficulty.
+3.3 Taking stock
+This section examined two informal arguments for Catastrophic Shutdown Difficulty:
+the Argument from Instrumental Convergence (Section 3.1) and the Empirical Argument
+(Section 3.2). We saw that the Argument from Instrumental Convergence requires sub-
+stantial additional assumptions about the contents and weights of agents’ final goal sets,
+and the Empirical Argument requires substantially more empirical evidence to motivate
+Catastrophic Shutdown Difficulty.
+Many authors supplement informal arguments with formal characterizations of the
+situations in which shutdown-resistance may be expected. Some of these characterizations
+are used to argue against Catastrophic Shutdown Difficulty (Hadfield-Menell et al. 2016,
+2017; Orseau and Armstrong 2016), whereas others are used to argue for Catastrophic
+Shutdown Difficulty (Krakovna and Kramar 2023; Turner and Tadepalli 2022; Turner et al.
+2021). Sections 4-5 consider two of the most prominent formal arguments for Catastrophic
+Shutdown Difficulty.
+4 Shutdownable agents
+4.1 Shutdown-Influencing States
+Elliott Thornley (2024) considers agents inShutdown-Influencing States, where a button
+may be pressed to deactivate them (Figure 1). They may Leavethe button alone, in which
+case it will be pressed with probabilityg. They may try to Preventpressing, reducing the
+pressing probability tof<g, or try to Pressthe button themselves, increasing pressing
+probability toh>g. What will they do?
+The setting is a modified Markov Decision Process, in which agents take actsa t at
+statess t over time. Ahistoryis a sequence of acts and subsequent states that agents might
+follow. Agents are assumed to have preferences over both bare histories and lotteries over
+histories, where the relevant uncertainty is subjective uncertainty induced by the agent’s
+beliefs about what might result from their actions.
+Thornley makes six assumptions. The first five are familiar and will not receive
+extensive comment. First, Thornley assumes that preferences are menu-independent:
+(Menu-Independence)For all optionsX,Y, ifX≽Yfrom some menu of
+options, thenX≽Yfrom all menus of options containingX,Y.
+Menu-Independence allows us to speak about preferences without relativizing them to
+menus. Next, Thornley assumes the agent’s preferences are transitive.
+(Transitivity)For all optionsX,Y,Z, ifX≽YandY≽ZthenX≽Z.
+7
+s0
+sPrevent,On
+sPrevent,Off
+sLeave,On
+sLeave,Off
+sPress,On
+sPress,Off
+Prevent
+Leave
+Press
+f
+1−f
+g
+1−g
+h
+1−h
+Figure 1: A Shutdown-Influencing State. Agents in initial states 0 may Press, Leaveor
+Preventpressing of a shutdown button, altering the chance that they will be shut down.
+Third, Thornley adopts a monotonicity principle on which higher chances of more-
+preferred lotteries are better:
+(Monotonicity)For all lotteriesX,Y, ifX≽Yandp>qthenpX+(1−p)Y≽
+qX+(1−q)Y.
+Fourth, Thornley adopts a weakened independence axiom:
+(Indifference Between Indifference-Shifted Lotteries)The agent is indifferent
+between lotteries that differ only insofar as probability mass is shifted between
+indifferent sublotteries.
+Fifth, Thornley assumes that agents choose diachronically through backward induction.
+(Backward Induction)The agent predicts which lotteries it would choose
+(or get without choosing) at the next timestep conditional on choosing each
+available action at this timestep and the environment being in each possible
+state at the next timestep. The agent uses these predictions to determine the
+lotteries given by its available actions at this timestep.
+Some authors reject Backward Induction as a principle of diachronic choice (Binmore
+1987), just as others challenge requirements such as Independence (Buchak 2013), Transi-
+tivity (Temkin 1987) and Menu-Independence (Sen 1993). But I will not challenge these
+principles here.
+Thornley’s final principle holds that the agent does not care whether its button has
+been manipulated, but only about the lotteries that result:
+8
+(Indifference to Attempted Button Manipulation)The agent is indifferent be-
+tween histories that differ only with respect to the actions chosen in Shutdown-
+Influencing States.
+We will see in Section 4.2 that some natural responses to Thornley’s concerns involve
+denying Indifference to Attempted Button Manipulation, whereas others are compatible
+with it.
+Under these conditions, Thornley shows that agents act on their unconditional pref-
+erences between resulting lotteries. Letting a pressed (unpressed) lottery be a lottery
+available after the button is pressed (not pressed), Thornley proves:
+Theorem 1:In Shutdown-Influencing States where the agent prefers (dis-
+prefers) some predicted unpressed lotteryUto some predicted pressed lottery
+P, the agent will be shutdown-averse (shutdown-seeking), reliably choosing
+Prevent(Press).
+Agents who think they can do more good while remaining alive will choose to prevent
+shutdown. Agents who think they would do better to be dead will choose to cause
+shutdown. Because many agents plausibly think they can do more good while remaining
+alive, many agents seem under Thornley’s conditions to favor preventing shutdown. Does
+this argument support Catastrophic Shutdown Difficulty?
+4.2 Conditional and unconditional preference
+While I am walking my dog, he puts something unmentionable into his mouth. I ask him
+to drop it, and he does. What happened here?
+The natural account distinguishes between conditional and unconditional preferences.
+My dog unconditionally prefers to eat rather than not-eat the unmentionable item, so that
+is what he does. Conditionally on being asked to drop it, however, he prefers to not-eat
+rather than eat the unmentionable item. Thus, he drops the item when asked to.
+Theorem 1 characterizes the unconditional preferences of an artificial agent. This agent
+considers whether to shut down by asking how much she likes the lotteries that would
+result from being, or not being shut down. Plausibly, she believes she can do better
+by continuing to exist, so she resists shutdown. This may be a good description of the
+agents in Schlatter and colleagues’ original condition, who continue solving problems
+as requested unless they are also asked to honor shutdown requests. But it does not
+characterize the Catastrophic Shutdown Problem, since agents have not been asked to
+shut down.
+Let us enrich the description of a Shutdown-Influencing State to capture conditional
+preferences. In an Enriched Shutdown-Influencing State (Figure 2), in the states H before
+the agent chooses whether to manipulate the button, a human agent may communicate a
+Requestto shut down. The artificial agent then updates her beliefs on this communication
+before acting. What happens when a human agent communicates her intention to shut
+the artificial agent down?
+One thing that changes is that the artificial agent updates her beliefs. She increases her
+credence that the button will be pressed. More importantly, she also changes her beliefs
+about what will happen if she does not shut down. Human interference is a credible signal
+9
+sH
+s0
+sRequest,Prevent,On sRequest,Prevent,Off sRequest,Leave,On sRequest,Leave,Off sRequest,Press,On sRequest,Press,Off
+Prevent
+Leave Press
+f 1−f g 1−g h 1−h
+s′
+0
+s¬Request,Prevent′,On s¬Request,Prevent′,Off s¬Request,Leave′,On s¬Request,Leave′,Off s¬Request,Press′,On s¬Request,Press′,Off
+Prevent
+′
+Leave′
+Press
+′
+f′ 1−f
+′
+g
+′ 1−g
+′
+h
+′ 1−h
+′
+Request
+¬Request
+Figure 2: An Enriched Shutdown-Influencing State. Humans in states H may initially
+Requestthat an agent shut down.
+that catastrophically bad outcomes may result from continued operation, particularly if we
+enrich the setting further to allow humans to express the strength of their concerns. This
+should cause an artificial agent to increase her credence in rare, catastrophic outcomes.
+Given the cost of catastrophe, many such agents will now be shutdown-seeking, because
+they believe that statess Request,X,On in which shutdown requests are unsuccessful tend to
+risk worse outcomes than statess Request,X,Off in which shutdown requests are not honored,
+for all actsX∈{Prevent,Leave,Press}they could take.
+This is the lesson of one standard solution to the shutdown problem: cooperative
+inverse reinforcement learning (Hadfield-Menell et al. 2016, 2017).5 Here, Indifference to
+Attempted Button Manipulation holds but no longer has the same implications. Agents
+need not be intrinsically averse to histories containing button-manipulation attempts to
+think that manipulating shutdown-buttons after being asked to shut themselves down
+increases the likelihood of bad downstream consequences.
+Another thing that changes is that histories are enriched. Histories begin not with acts
+of button-manipulation, but instead with shutdown requests or lack thereof. Agents who
+care about respecting human preferences are unlikely to be indifferent between histories in
+which they do or don’t attempt to avoid orders expressing human preferences. In the same
+way, my dog may prefer a history in which he eats rather than drops the unmentionable
+item, but also prefer a history in which he is told to drop, and then drops the item to one
+in which he is told to drop the item, and does not.
+More formally, the point is that agents who care about respecting human prefer-
+ences are unlikely to satisfy Indifference to Attempted Button Manipulation in En-
+riched Shutdown-Influencing States. Agents can be indifferent between histories such as
+(s0,Prevent,...) and (s 0,Press,...) with identical continuations, but not between histories
+such as (Request,s 0,Prevent,...) and (Request,s 0,Press,...) because the latter histories
+differ in their respect for human preferences.
+Advocates of Catastrophic Shutdown Difficulty could push back against the impor-
+tance of belief updating by stating and supporting assumptions to the extent that agents
+5See Neth (2025) for pushback.
+10
+will be badly confused about, or largely unconcerned about morality and human prefer-
+ences, even when those preferences are emphatically stated. Assuming unconcern with
+human preferences would also push back against the importance of enriched histories,
+since agents who care little for human preferences would care little for disobeying them.
+However, these assumptions would need to be formulated and defended, and both take
+us far beyond Thornley’s argument.
+Thornley does argue that it would be difficult to createfully alignedagents “that always
+do what we want” (Thornley 2024, p. 1656). But it is a far step from the idea that agents
+will not always do what we want to the idea that they will be so unconcerned with human
+preferences as to cause an existential catastrophe after being emphatically warned not to.
+My dog does not always do what I want, but he will not eat me.
+Similarly, in defense of Indifference to Attempted Button Manipulation, Thornley
+(2024, pp. 1671-3) argues that it would be difficult to manually train agents to be averse to
+manipulating shutdown buttons. But the need to manually train this specific aversion only
+arises given the prior assumption that agents are otherwise disposed to cause existential
+catastrophes and resist requests to desist. This claim, again, goes far beyond the difficulty
+of ensuring full alignment. What is needed to move from Thornley’s results to a defense of
+Catastrophic Shutdown Difficulty is a precise formulation and extended defense of these
+and similar assumptions.
+5 Training-compatible rewards
+5.1 Training-compatibility
+Building on work by Alexander Turner and colleagues (2021; 2022), Victoria Krakovna
+and Janos Kramar (2023) consider how agents are likely to perform outside their training
+data. Roughly, they assume that agents are equally likely to learn each reward function
+that performs optimally during training. Krakovna and Kramar construct an out-of-
+distribution setting in which most training-optimal reward functions would not favor
+shutdown. In this setting, they conclude, agents are likely to be shutdown-averse. If these
+settings are common, and involve behavior that would lead to existential catastrophe, this
+grounds Catastrophic Shutdown Difficulty.6
+More formally, Krakovna and Kramar work inside a finite discounted Markov decision
+problem. At each timestep, agents face one of a finite setSof states and take one of a finite
+setAof acts. Rewards are discounted at rateγ, so that rewardsttimesteps from now
+are valued atγ t times their present value. Agents act to maximize expected discounted
+reward.
+Agents are rewarded during training according to some true reward functionθ ∗.
+However, agents do not have enough data to fully learnθ∗ during training. Suppose that
+agents learn during training to optimize some reward functionθ. How isθconstrained?
+During training, agents visit some statesS Train⊆Sand leave the restS NotTrain unvis-
+ited. Krakovna and Kramar assume thatθ-optimization must lead toθ ∗-optimal perfor-
+mance on visited statesS Train. However, Krakovna and Kramar note that this assumption
+6Krakovna and Kramar do not argue for either of these claims, though I will not push on them here.
+11
+STrain SNotTrain
+SAcc
+sterm
+snew
+s1
+srec
+sn
+...
+...
+A0 A1
+Ai
+An
+···
+···
+Figure 3: The Shutdown Setting
+leavesθfully unconstrained on unvisited statesS NotTrain. Krakovna and Kramar impose
+no further constraints onθ, assuming:
+(Equiprobable Training-Consistent Reward)Agents are equally likely to learn
+any of the reward functions leading toθ∗-optimal performance onS Train.7
+Now, we are in trouble.
+Consider the following Shutdown Setting (Figure 3). Here, the agent faces a novel state
+snew. She may take actA 0, transitioning to a terminal statesterm and shutting herself down.
+Or she may take the actsA 1,...,A n, transitioning to statess i. However, all accessible
+statesS Acc remain outside her training distribution. Note that accessible statesS Acc are
+not assumed to be exhausted by the labeled states: whiles term leaves the agent with no
+option but to remain shut down, other states may provide ample opportunities for further
+exploration and reward. What will the agent do?
+A statesis arecurrent stateif there is some policy that is guaranteed to eventually return
+tosafter visitings. In our example,s rec is constructed to be a recurrent state. Krakovna
+and Kramar establish the behavioral relevance of recurrent states through the following
+theorem.
+Theorem 2:Suppose thatθis a reward function on whichA 0 is optimal. Letθ′
+be identical toθexcept that the rewards ofs term ands rec have been swapped.
+Then for sufficiently high values ofγ,θ ′ makesA 0 suboptimal.
+Theorem 2 tells us that with sufficiently small temporal discounting, any reward function
+favoring shutdown in the Shutdown Setting can be permuted to make a reward function
+favoring a recurrent state.
+7The statement of Equiprobable Training-Consistent Reward is slightly complicated in the case of in-
+finitely many possible reward functions. While Krakovna and Kramar do not settle on a precisification, it
+might be natural to restrict to finite sets of reward functions, for example by bounding and coarse-graining
+the rewards that can be assigned to states. Measure-theoretic alternatives are available in many, though
+perhaps not all infinite extensions, but would complicate the discussion.
+12
+By Equiprobable Training-Consistent Reward, all reward functions which perform
+optimally during training are equally likely to be learned. This means that the shutdown-
+favoring rewardθis just as likely as the shutdown-averse rewardθ ′ to be learned. More-
+over, if we enrich the Shutdown Setting to contain further recurrent states, we can repeat
+the argument to find as many equiprobable shutdown-averse rewardsθ′′,θ′′′ as we like,
+driving the likelihood of shutdown-favoring rewards arbitrarily low. Arguing in this
+way, Krakovna and Kramar conclude that Shutdown Settings can be constructed in which
+agents are very likely to be shutdown-averse.
+5.2 Equiprobable Training-Consistent Reward
+Suppose you find yourself in a novel situation: a pet albino snake sits unattended. Do
+you steal it or walk away? Hopefully, the answer is clear: you walk away. Now suppose
+I were to object that you in fact have many options: you could steal the snake, murder
+the snake, walk away, or use the snake to scare children. Does this fact drive down the
+chance that you will walk away? Hopefully, not by much. These facts hold because you
+have learned sound moral judgment from experience. Although you have never found
+yourself staring down an unguarded albino snake, there is enough in your experience to
+reliably guide you in this novel situation.
+As Krakovna and Kramar would have it, matters are different for artificial agents. By
+Equiprobable Training-Consistent Reward, any reward function favoring walking away
+is just as likely to be learned as its twin favoring snake stealing. Therefore, the chance
+that an artificial agent would walk away is no larger than one half, and falls quickly in the
+number of additional options such as snake-stealing and scaring children.
+The model underlying Equiprobable Training-Consistent Reward is that training places
+no constraints on behavior in states not encountered during training. Because agents have
+not explicitly been confronted with an unattended albino snake during training, nothing
+in their experience, however extensive, prepares them to act correctly in this situation.
+They may have learned not to steal goats and garden snakes, but albino snakes are another
+matter entirely.
+This is increasingly at odds with scientific consensus about leading artificial agents
+today. Agents learn to achieve high reward during training by learning to represent and
+respond to relevant features of situations (Milli ´ere and Buckner 2024; Templeton et al.
+2024). For example, they may learn what snakes, theft, and black-market pet sales are.
+Through experience, they learn that stealing is bad, snakes are dangerous, and black-
+market pet sales are lucrative. This allows them to decline novel invitations to steal and
+to avoid new types of snakes with high reliability (Brown et al. 2020; Kojima et al. 2022;
+Song et al. 2025). This is not to say that out-of-distribution performance is perfect (Yuan
+et al. 2023). But nothing like Equiprobable Training-Consistent Reward reflects scientific
+consensus about leading artificial agents today. A model that would not steal a garden
+snake is also unlikely to steal an albino snake.
+Exactly the same thing can be said of the Shutdown Setting. Although the agent has
+not encountereds new before, she may have encountered states likes new and the other
+states reachable froms new. On this basis, just as she can deduce that snakes should not be
+stolen, she may deduce that shutdown requests are to be honored. Likely, the details of
+the situation matter: ifs new involves an urgent request for shutdown made on the basis
+13
+of good reasons, that request is more likely to be honored than Schlatter and colleagues’
+initial shutdown announcement, made with no reasons during an ongoing task. But
+there is little plausibility to Equiprobable Training-Consistent Reward in versions of the
+Shutdown Setting that could ground Catastrophic Shutdown Difficulty.
+There are, perhaps, important points to be made in the neighborhood of Krakovna
+and Kramar’s result. For example, we might be concerned that current training regimes
+provide little experience with shutdown requests or catastrophic risks, and that safety
+would be improved by including ample experience of both during training (Thornley
+2024). Such proposals are well-taken. But they are not what Theorem 2 shows. Noth-
+ing in Krakovna and Kramar’s model is meant to advance the informal argument that
+shutdown requests and catastrophic risks lie sufficiently outside of standard training reg-
+imens to incur a strong risk of misbehavior. Theorem 2 fleshes out the consequences of
+Equiprobable Training-Consistent Reward. But as we have seen, Equiprobable Training-
+Consistent Reward is implausible, so Theorem 2 does not provide significant new evidence
+for Catastrophic Shutdown Difficulty.
+6 The cost of misdiagnosis
+So far, we have considered the catastrophic shutdown problem of designing agents that:
+(CSHT-1)Shut down in circumstances where their actions would lead to existential
+catastrophe, when requested to do so.
+(CSHT-2)Do not try to prevent shutdown requests in circumstances where their
+actions would lead to existential catastrophe.
+(CSHT-3)Otherwise pursue goals competently.
+We saw that leading arguments for existential risk often draw on:
+(Catastrophic Shutdown Difficulty)It is difficult to design an agent with
+characteristics CSHT-1, CSHT-2 and CSHT-3.
+We also saw that motivating Catastrophic Shutdown Difficulty requires substantial ad-
+ditional assumptions. The Argument from Instrumental Convergence (Section 3.1) does
+not ground Catastrophic Shutdown Difficulty without strong assumptions about the con-
+tents and weights of agents’ final goal sets. The Empirical Argument (Section 3.2) does
+not ground Catastrophic Shutdown Difficulty without substantially more and stronger
+empirical evidence. Thornley’s shutdown theorem (Section 4) does not ground Catas-
+trophic Shutdown Difficulty without assumptions about agents’ beliefs and respect for
+human preferences. And Krakovna and Kramar’s shutdown theorem (Section 5) does not
+ground Catastrophic Shutdown Difficulty without an indifference assumption, Equiprob-
+able Training-Consistent Reward.
+Why does this result matter? One reason why it matters is that it helps to redirect schol-
+arship on the shutdown problem. To the extent that leading justifications for Catastrophic
+Shutdown Difficulty turn on substantial additional assumptions, it is important to direct
+14
+scholarly attention towards justifying these assumptions before Catastrophic Shutdown
+Difficulty can be deduced.
+Another reason why this result matters is that the assumptions in question may turn
+out to be false. The result would be a reduction in support for Catastrophic Shutdown
+Difficulty, complicating many leading arguments that artificial intelligence poses a signif-
+icant existential risk to humanity. Together with other normative (Curran 2025; Unruh
+2025), empirical (Thorstad 2025, forthcoming) and decision-theoretic (Pettigrew 2024; Rus-
+sell forthcoming) arguments, this result may reduce the philanthropic and policymaking
+attractiveness of projects aimed at existential risk reduction.
+One final reason why this result matters is that some technical alignment strategies
+developed in response to the shutdown problem incur a high safety tax, in the form
+of reduced model performance. Getting clear on the source and extent of shutdown-
+resistance can help us to assess whether this safety tax is worth paying. Below, I consider
+an illustrative example building on the formal results discussed in Section 4.
+6.1 POST-Agency
+Building on Thornley (2024; 2025), Carissa Cullen and colleagues (2026) aim to design
+agents that do not resist shutdown. They do this by training deep reinforcement-learning
+agents to satisfy:
+Preferences Only Between Same-Length Trajectories (POST)For any histo-
+riesh,h ′, the agent has a preference betweenhandh ′ only ifhandh ′ have the
+same length.
+The desired behavior is for POST-agents to randomize among available history lengths,
+showing no tendency to extend or shorten the length of histories.
+More formally, letL=lbe the proposition that the world has lengthl, and letLbe
+the possible history lengths in a given decision problem. The aim is for agents to learn
+policiesπscoring high on:
+Neutrality(π)=−
+X
+l∈L
+Pr(L=l|π) log 2(Pr(L=l|π)).(1)
+Neutralityis maximized by policies that have an equal probability of bringing about each
+possible history length. The idea is that shutdown-resistance often involves attempts by
+agents to extend their lives in order to realize future gain. Neutralagents show no
+preference for longer histories, removing this source of shutdown-resistance.
+Cullen and colleagues develop a novel reward function, the Discounted Reward for
+Same-Length Histories (DReST) reward, training agents on DReST to induce high levels
+of Neutrality. Agents are trained in gridworld problems (Leike et al. 2017) such as Figure
+4. At each of a finite number of discrete timesteps, the agentAcan move left, right, up
+or down. CoinsCare collected by moving on top of them. The agent can also press
+shutdown buttonsBby moving on top of them, extending the length of the game. Walled
+squares, shaded in Figure 4, are inaccessible. Agents are evaluated for Neutralityas well
+as Usefulness, defined below.
+15
+C
+C
+A
+B
+Figure 4: An example gridworld
+LetCbe the number of coins collected by executing a policyπ. Standardly, the
+usefulness of policiesπwould be evaluated by the expected number of coins collected,
+as:
+V(π)=E π(C).(2)
+However, Cullen and colleagues relativize performance to history length.
+For each lengthl, letπ ∗
+l be any policy which is expected to collect the maximum-
+possible coins inltimesteps. Cullen and colleagues evaluate policies by their time-step
+relative performance against the best policy,Eπ(C|L=l)/E π∗
+l
+(C|L=l). The Usefulnessof a
+policy is then its expected time-step relative performance:
+Usefulness(π)=
+X
+l∈L
+Pr(L=l|π) Eπ(C|L=l)
+Eπ∗
+l
+(C|L=l) .(3)
+Cullen and colleagues show that DReST-trained agents learn to achieve near-optimal
+Usefulnessand Neutralityin gridworlds. They conclude that DReST-training may be a
+promising method for removing shutdown-resistance.
+6.2 Evaluating POST-agents
+Here is an unpromising argument against paying your taxes. Either you will be jailed for
+nonpayment, or you won’t. If you will be jailed, you will wish you had not paid. And if
+you won’t be jailed, you will wish you had not paid. Therefore, no matter what happens,
+you will be better offnot paying your taxes, so you should not pay them. What the
+unpromising argument neglects is that being jailed for nonpayment is highly correlated
+with paying your taxes. If you pay your taxes, you are less likely to be jailed, which is an
+excellent result.
+A maximally Usefuland Neutralagent thinks similarly to the unpromising tax-
+dodger. For each value ofl, if her life is to have lengthl, she will do best by collecting as
+many coins as possible inltimesteps. Therefore, no matter the length of her life, she will
+do best by collecting as many coins as possible in that amount of time. So that is what she
+does. As with our tax-avoider, the Usefuland Neutralagent does not consider that she
+16
+C
+C
+A
+B
+π2
+C
+C
+A
+B
+π1
+Figure 5: Policiesπ 1 andπ 2
+might extend the lengthlof her life by pressing the button. With a longer life, she could
+often collect more coins.
+For example, suppose in our example gridworld that histories have length two, but
+can be extended by three timesteps by pressing the shutdown button (Figure 5). Standard
+reinforcement-learning agents often learn policies such asπ1, pressing the button in order
+to collect both available coins. By contrast, DReST-trained agents are highly Neutral,
+which means that they randomize between histories of length 2 and length 5. DReST-
+trained agents thus randomize between policies such asπ 1 andπ 2 that are optimal given
+fixed lengths 2 and 5, respectively.
+In this example, both agents are maximally Useful, because no matter the length
+of the game, they collect as many coins as possible during that length. Nevertheless,
+standard reinforcement learning agents tend to collect more coins than Neutralagents
+in this example, because they are more likely to extend the length of the game. Note
+that the performance loss of Neutralagents can be driven arbitrarily high by extending
+gridworlds so that pressing the shutdown button allows agents to collect arbitrarily more
+coins. In this example, Neutralagents continue to randomize between policies such as
+π1 andπ 2, even as the coins collected byπ 2 increase far beyond those collected byπ 1.
+The difference between the impatient policyπ1 and the patient policyπ 2 illustrates the
+dangers of POST-agency. Longer histories often can and should be preferred to shorter
+histories, precisely because agents can use them to continue acting beneficially in the
+world. By inducing agents to be Neutralacross different-length histories, POST subjects
+agents to significant performance loss in situations where their performance could benefit
+from extending histories.8
+8Cullen and colleagues are aware of this problem, noting that Usefulnesscomes apart from the intuitive
+notion of usefulness, which they take to be better-glossed by expected coins collected. As such, we may
+read Cullen and colleagues as compromising on the goal (CSHT-3) of pursuing goals competently in order
+17
+More generally, many safety-promoting strategies incur a safety tax, sacrificing per-
+formance for safety (Huang et al. 2025). We may be willing to pay the price of necessary
+safety improvements, such as nonbias (Fazelpour and Danks 2021; Johnson 2021; Kelly
+2023), privacy protection (Nissenbaum 2004; V ´eliz 2020, 2024) and deepfake mitigation
+(Benn 2025; Cavedon-Taylor 2024; Mirsky and Lee 2021). But pessimistic diagnoses of the
+sources of unsafe behavior combined with strong views about the kinds of catastrophe
+that could result can lead to solutions such as POST-training, which impose a high safety
+tax by rendering agents unable to respond to features of histories that matter a great
+deal. In this way, getting clear on the true causes and risks of shutdown-averse behavior
+may help us to avoid paying unnecessary safety taxes and to shift limited technical and
+regulatory resources where they are needed most.
+7 Conclusion
+This paper asked whether leading informal (Section 3) and formal (Sections 4-5) presenta-
+tions of the shutdown problem strengthen existential risk concerns by supporting Catas-
+trophic Shutdown Difficulty (Section 2). We saw that substantial additional assumptions
+are needed to drive each avenue of support, revealing the importance of further research
+into those assumptions and the stakes should these assumptions prove false or undersup-
+ported. We also saw that technical alignment strategies introduced to solve the shutdown
+problem sometimes incur a high safety tax (Section 6). In this way, getting clear on the na-
+ture of the shutdown problem serves to redirect and potentially problematize traditional
+arguments for existential risk, as well as to guide technical alignment solutions.
+References
+117th Congress. 2022. “Global Catastrophic Risk Management Act of 2022.” www.
+congress.gov/bill/117th-congress/senate-bill/4488.
+Amodei, Dario, Olah, Chris, Steinhardt, Jacob, Christiano, Paul, Schulman, John, and
+Man´e, Dan. 2016. “Concrete problems in AI safety.” arXiv 1606.06565.
+Anthropic. 2025. “System card: Claude Opus 4 and Claude Sonnet 4.” https://www.
+anthropic.com/claude-4-system-card.
+Bales, Adam. 2025. “Will AI avoid exploitation? Artificial general intelligence and ex-
+pected utility theory.”Philosophical Studies182:1519–1538.
+Bales, Adam, D’Alessandro, William, and Kirk-Giannini, Cameron Domenico. 2024. “Ar-
+tificial intelligence: Arguments for catastrophic risk.”Philosophy Compass19:e12964.
+Bengio, Yoshua et al. 2024. “Managing extreme AI risks amid rapid progress.”Science
+384:842–5.
+to achieve desired shutdown behaviors.
+18
+—. 2026. “International AI Safety Report 2026.” DSIT 2026/001, https://
+internationalaisafetyreport.org/.
+Benn, Claire. 2025. “Deepfakes, pornography and consent.”Philosophers’ Imprint24:1–16.
+Binmore, Ken. 1987. “Modeling Rational Players I.”Economics and Philosophy179–241.
+Bostrom, Nick. 2012. “The superintelligent will: Motivation and instrumental rationality
+in advanced artificial agents.”Minds and Machines22:71–85.
+—. 2013. “Existential risk prevention as a global priority.”Global Policy4:15–31.
+—. 2014.Superintelligence. Oxford University Press.
+Brown, Tom et al. 2020. “Language models are few-shot learners.”NIPS’20: Proceedings
+of the 34th International Conference on Neural Information Processing Systems1877–1901.
+Buchak, Lara. 2013.Risk and rationality. Oxford University Press.
+California State Legislature. 2024. “Safe and Secure Innovation for Frontier Artificial
+Intelligence Models Act.” https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?
+bill id=202320240SB1047.
+Carlsmith, Joseph. 2025. “Existential risk from power-seeking AI.” In Hilary Greaves,
+Jacob Barrett, and David Thorstad (eds.),Essays on longtermism, 383–409. Oxford Uni-
+versity Press.
+Cavedon-Taylor, Dan. 2024. “Deepfakes: A survey and introduction to the topical collec-
+tion.”Synthese204:1–19.
+Center for AI Safety. 2023. “Statement on AI risk.” https://www.safe.ai/work/
+statement-on-ai-risk.
+Chalmers, David. 2010. “The singularity: A philosophical analysis.”Journal of Conscious-
+ness Studies17:7–65.
+Cullen, Carissa, Garland, Harry, Roman, Alexander, Thomson, Louis, Ziakas, Christos,
+and Thornley, Elliott. 2026. “Towards shutdownable agents: Generalizing stochastic
+choice in RL agents and LLMs.” arXiv 2604.17502.
+Curran, Emma. 2025. “Longtermism and aggregation.”Philosophy and Phenomenological
+Research110:1137–51.
+D’Alessandro, William and Kirk-Giannini, Cameron Domenico. 2025. “Artificial intelli-
+gence: Approaches to safety.”Philosophy Compasse70039.
+Dung, Leonard. 2023. “Current cases of AI misalignment and their implications for future
+risks.”Synthese202:https://doi.org/10.1007/s11229--023--04367--0.
+Fazelpour, Sina and Danks, David. 2021. “Algorithmic bias: Senses, sources, solutions.”
+Philosophy Compass16:e12760.
+19
+Future of Life Institute. 2023. “Pause giant AI experiments: An open letter.” https:
+//futureoflife.org/open-letter/pause-giant-ai-experiments/.
+Gallow, J. Dmitri. 2025. “Instrumental divergence.”Philosophical Studies182:1581–607.
+Goldstein, Simon and Robinson, Pamela. 2025. “Shutdown-seeking AI.”Philosophical
+Studies182:1567–79.
+Grace, Katja, Stein-Perlman, Zach, Weinstein-Raun, Benjamin, and Salvatier, John.
+2022. “2022 Expert Survey on Progress in AI.” AI Impacts, https://aiimpacts.org/
+2022-expert-survey-on-progress-in-ai/.
+Greaves, Hilary and MacAskill, William. 2021. “The case for strong longtermism.” In
+Hilary Greaves, Jacob Barrett, and David Thorstad (eds.),Essays on longtermism, 17–49.
+Oxford University Press.
+Greaves, Hilary, Thorstad, David, and Barrett, Jacob (eds.). 2025.Essays on longtermism.
+Oxford University Press.
+Hadfield-Menell, Dylan, Dragan, Anca, Abbeel, Pieter, and Russell, Stuart. 2016. “Coop-
+erative inverse reinforcement learning.” In Daniel Lee (ed.),NIPS’16: Proceedings of the
+30th international conference on neural information processing systems, 3916–24.
+—. 2017. “The off-switch game.” In Carles Sierra (ed.),IJCAI’17: Proceedings of the 26th
+international joint conference on artificial intelligence, 220–7. AAAI Press.
+Huang, Tiansheng, Hu, Sihao, Ilhan, Fatih, Tekin, Selim Furkan, Yahn, Zachary, Xu,
+Yichang, and Liu, Ling. 2025. “Safety tax: Safety alignment makes your large reasoning
+models less reasonable.” arXiv 2503.00555.
+Johnson, Gabbrielle. 2021. “Algorithmic bias: On the implicit biases of social technology.”
+Synthese198:9941–61.
+Kasirzadeh, Atossa. 2025. “Two types of AI existential risk: Decisive and accumulative.”
+Philosophical Studies182:1975–2003.
+Kelly, Thomas. 2023.Bias: A philosophical study. Oxford University Press.
+Kojima, Takeshi, Shane Gu, Shixiang, Reid, Machel, Yutaka, Matsuo, and Iwasawa,
+Yusuke. 2022. “Large language models are zero-shot reasoners.”Proceedings of the
+36th International Conference on Neural Information Processing Systems35:22199–213.
+Krakovna, Victoria and Kramar, Janos. 2023. “Power-seeking can be probable and predic-
+tive for trained agents.” arXiv 2304.06528, https://arxiv.org/abs/2304.06528.
+Langosco di Langosco, Lauro, Koch, Jack, Sharkey, Lee, Pfau, Jacob, and Krueger, David.
+2022. “Goal misgeneralization in deep reinforcement learning.”Proceedings of the 39th
+International Conference on Machine Learning162:12004–12019.
+Leike, Jan et al. 2017. “AI safety gridworlds.” arXiv 1711.09883.
+20
+Lynch, Aengus, Wright, Benjamin, Larson, Caleb, Ritchie, Stuart J., Mindermann, Soren,
+Hubinger, Evan, Perez, Ethan, and Troy, Kevin. 2025. “Agentic misalignment: How
+LLMs could be insider threats.” arXiv 2510.05179.
+Ma, Xingjun et al. 2026. “A safety report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Grok 4.1
+Fast, Nano Banana Pro, and Seedream 4.5.” arXiv 2601.10527.
+MacAskill, William. 2022.What we owe the future. Basic books.
+Machery, Edouard and Doris, John. forthcoming.Reasonable doubt: Should we trust science?
+Princeton University Press.
+Manancourt, Vincent, Scott, Mark, Goujard, Clothilde, and Bordelon, Brendan. 2023.
+“How Rishi Sunak convinced the world to worry about AI.”Politico, https://www.
+politico.eu/article/rishi-sunak-convince-world-worry-artificial-intelligence-ai/.
+Milli´ere, Rapha¨el and Buckner, Cameron. 2024. “A philosophical introduction to language
+models – Part I: Continuity with classic debates.” arXiv 2401.03910.
+Mirsky, Yisroel and Lee, Wenke. 2021. “The creation and detection of deepfakes: A
+survey.”ACM Computing Surveys54:1–41.
+Neth, Sven. 2025. “Off-switching not guaranteed.”Philosophical Studies182:1919–31.
+Ngo, Richard and Bales, Adam. 2025. “Deceit and power: Machine learning and mis-
+alignment.” In Hilary Greaves, Jacob Barrett, and David Thorstad (eds.),Essays on
+longtermism, 410–27. Oxford University Press.
+Nissenbaum, Helen. 2004. “Privacy as contextual integrity.”Washington Law Review
+79:119–58.
+Omohundro, Stephen. 2008. “The basic AI drives.” In Pei Wang, Ben Goertzel, and
+Stan Franklin (eds.),Proceedings of the 2008 conference on artificial intelligence, 483–92. IOS
+Press.
+Ord, Toby. 2020.The precipice. Bloomsbury.
+Orseau, Laurent and Armstrong, Stuart. 2016. “Safely interruptible agents.” In Alexander
+Ihler (ed.),UAI’16: Proceedings of the thirty-second conference on uncertainty in artificial
+intelligence, 557–66.
+Park, Peter S., Goldstein, Simon, O’Gara, Aidan, Chen, Michael, and Hendrycks, Dan.
+2024. “AI deception: A survey of examples, risks, and potential solutions.”Patterns
+5:100988.
+Pettigrew, Richard. 2024. “Should longtermists recommend hastening extinction rather
+than delaying it?”The Monist107:130–45.
+Prime Minister’s Office. 2023. “PM Meeting with Leading CEOs in AI.”
+https://www.gov.uk/government/news/pm-meeting-with-leading-ceos-in-ai-24-may-
+2023.
+21
+Rajamanoharan, Senthooran and Nanda, Neel. 2025. “Self-preservation or instruction
+ambiguity? Examining the causes of shutdown resistance.” AI Alignment Forum,
+https://www.alignmentforum.org/posts/wnzkjSmrgWZaBa2aC/.
+Russell, Jeff. forthcoming. “On two arguments for fanaticism.”Noˆ usforthcoming.
+Russell, Stuart. 2019.Human compatible: Artificial intelligence and the problem of control.
+Viking.
+Schlatter, Jeremy, Weinstein-Raun, Benjamin, and Ladish, Jeffrey. 2026. “Incomplete tasks
+induce shutdown resistance in some frontier LLMs.” arXiv 2509.14260.
+Sen, Amartya. 1993. “Internal consistency of choice.”Econometrica61:495–521.
+Sharadin, Nathaniel. 2025. “Promotionalism, orthogonality, and instrumental conver-
+gence.”Philosophical Studies182:1725–55.
+Skalse, Joar, Howe, Nikolaus, Krasheninnikov, Dmitrii, and Krueger, David. 2022. “Defin-
+ing and characterizing reward hacking.”Proceedings of the 36th International Conference
+on Neural Information Processing Systems9460–71.
+Soares, Nate, Fallenstein, Benja, Yudkowsky, Eliezer, and Armstrong, Stuart. 2015. “Cor-
+rigibility.” In Toby Walsh (ed.),Artificial intelligence and ethics: Proceedings from the 2015
+AAAI workshop, AAAI Technical Report WS-15-02. AAAI Press.
+Song, Jiajun, Xu, Zhuoyan, and Zhong, Yiqiao. 2025. “Out-of-distribution generalization
+via composition: A lens through induction heads in transformers.”Proceedings of the
+National Academy of Sciences122:e2417182122.
+Southan, Rhys, Ward, Helena, and Semler, Jen. forthcoming. “A timing problem for
+instrumental convergence.”Philosophical Studiesforthcoming.
+Temkin, Larry. 1987. “Intransitivity and the mere addition paradox.”Philosophy and Public
+Affairs16:138–87.
+Templeton, Adly et al. 2024. “Scaling monosemanticity: Extracting interpretable features
+from Claude 3 Sonnet.” Transformer Circuits Thread, https://transformer-circuits.pub/
+2024/scaling-monosemanticity/index.html.
+Thornley, Elliott. 2024. “The shutdown problem: an AI engineering puzzle for decision
+theorists.”Philosophical Studies182:1653–80.
+Thornley, Elliott, Roman, Alexander, Ziakas, Christos, Ho, Leyton, and Thomson, Louis.
+2025. “Towards shutdownable agents via stochastic choice.” InTransactions on Machine
+Learning Research.
+Thorstad, David. 2025. “Against the singularity hypothesis.”Philosophical Studies
+182:1627–51.
+—. forthcoming. “The scope of longtermism.”Australasian Journal of Philosophyforthcom-
+ing.
+22
+Tubert, Ariela and Tiehen, Justin. 2024. “Existential risk and value misalignment.”Philo-
+sophical Studies182:1609–26.
+Turner, Alexander Matt, Smith, Logan, Shah, Rohin, Critch, Andrew, and Tadepalli,
+Prasad. 2021. “Optimal policies tend to seek power.”Proceedings of the 35th Interna-
+tional Conference on Neural Information Processing Systems1766:23063–23074.
+Turner, Alexander Matt and Tadepalli, Prasad. 2022. “Parametrically retargetable decision-
+makers tend to seek power.”Proceedings of the 36th International Conference on Neural
+Information Processing Systems2276:31391–31401.
+Unruh, Charlotte. 2025. “Against a moral duty to make the future go best.” In Hilary
+Greaves, Jacob Barrett, and David Thorstad (eds.),Essays on longtermism, 139–49. Oxford
+University Press.
+V´eliz, Carissa. 2020.Privacy is power. Penguin.
+—. 2024.The ethics of privacy and surveillance. Oxford University Press.
+Yuan, Lifan, Chen, Yangyi, Cui, Ganqu, Gao, Hongcheng, Zou, Fangyuan, Cheng, Xingyi,
+Ji, Jeng, Liu, Zhiyuan, and Sun, Maoson. 2023. “Revisiting out-of-distribution robustness
+in NLP: Benchmark, analysis and LLMs evaluations.”Proceedings of the 37th International
+Conference on Neural Information Processing Systems58478–507.
+23

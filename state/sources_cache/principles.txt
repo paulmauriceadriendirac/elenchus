@@ -1,0 +1,138 @@
+## alternating-st-petersburg-value | Alternating St Petersburg = −1/2 | prospect-evaluations
+   Every $X$ with $$P(u(X)=(-2)^n)=2^{-n},\qquad n\ge 1$$ is indifferent to sure utility $-\frac{1}{2}$.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, Theorem 9, p. 30']
+## antitonic-sum-consistency | Antitonic Sum Invariance | invariance-principles
+   If X and Z are antitonic, and Y and Z are antitonic, then $X \succeq Y$ iff $X+Z \succeq Y+Z$. A pair is antitonic when one member is nondecreasing and the other nonincreasing in a common uniform random variable.
+   src: ['Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; §6.2, p. 18; Theorem 6, p. 19']
+## archimedean-gambles | Archimedean Gambles | basic-decision-theory
+   For any gambles $X \succ Y \succ Z$, there is $p \in (0,1)$ with $Y \sim M_p(X,Z)$. Unlike Archimedean Outcomes, X,Y,Z may themselves be unbounded gambles.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 22, footnote 3']
+## archimedean-outcomes | Archimedean Outcomes | basic-decision-theory
+   For any three sure outcomes $a \succ b \succ c$, some nontrivial mixture of the outer two is equally good as the intermediate one: $b \sim M_p(a,c)$ for some $p \in (0,1)$. Only the three inputs are sure outcomes. This is the no-infinite-ratios condition, not continuity of preferences over arbitrary gambles.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 22, footnote 3', 'Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §3.2, p. 678']
+## arroyo-value | Arroyo = ln 2 | prospect-evaluations
+   Every $X$ with $$P(u(X)=(-1)^{n+1}(n+1))=\frac{1}{n(n+1)},\qquad n\ge 1$$ is indifferent to sure utility $\ln 2$.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, Theorem 8, pp. 29–30']
+## cdf-area-extension | CDF-Area Extension | extensions-of-eut
+   The normalized utility chart is total and measurable. Write $S_X(t)=P(u(X)>t), d=S_X- S_Y, A_{+}=\int \max (d,0)dt$ and $A_{-}=\int \max (- d,0)dt$ over $\mathbb{R}$. Whenever at least one of $A_{+},A_{-}$ is finite, $X \succeq Y$ iff $A_{+}\ge A_{-}$. If both are infinite, this axiom imposes no comparison.
+   src: ['Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; §3, pp. 7–8; §4, p. 8 (strictness-preserving extensions)']
+## comonotonic-sum-cancellation | Comonotonic Sum Cancellation | invariance-principles
+   If X and Z are comonotonic, and Y and Z are comonotonic, then $X+Z\succeq Y+Z$ implies $X\succeq Y$. A pair is comonotonic when its members admit nondecreasing representations in one common uniform random variable.
+   src: ['Zachary Goodsell, project conversation, 3 October 2026: request to distinguish preservation and cancellation in the St Petersburg incompleteness proof. Precise separation recorded by GPT-6 (Codex).']
+## comonotonic-sum-consistency | Comonotonic Sum Invariance | invariance-principles
+   If X and Z are comonotonic, and Y and Z are comonotonic, then $X \succeq Y$ iff $X+Z \succeq Y+Z$. A pair is comonotonic when its members admit nondecreasing representations in one common uniform random variable.
+   src: ['Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; §6.2, p. 18; Theorem 7, pp. 19–20']
+## comonotonic-sum-preservation | Comonotonic Sum Preservation | invariance-principles
+   If X and Z are comonotonic, and Y and Z are comonotonic, then $X\succeq Y$ implies $X+Z\succeq Y+Z$, and $X\succ Y$ implies $X+Z\succ Y+Z$. A pair is comonotonic when its members admit nondecreasing representations in one common uniform random variable.
+   src: ['Zachary Goodsell, project conversation, 3 October 2026: request to distinguish preservation and cancellation in the St Petersburg incompleteness proof. Precise separation recorded by GPT-6 (Codex).']
+## comonotonic-sum-weak-preservation | Comonotonic Sum Weak Preservation | invariance-principles
+   If X and Z are comonotonic, and Y and Z are comonotonic, then $X\succeq Y$ implies $X+Z\succeq Y+Z$. A pair is comonotonic when its members admit nondecreasing representations in one common uniform random variable.
+   src: ['Zachary Goodsell, project conversation, 3 October 2026: request to distinguish preservation and cancellation in the St Petersburg incompleteness proof. Precise separation recorded by GPT-6 (Codex).']
+## countable-sure-thing | Countable Sure-Thing | basic-decision-theory
+   For every countable measurable partition $(E_n)$ into events of positive probability, if $X|E_n \succeq Y|E_n$ for every n, then $X \succeq Y$. If one conditional comparison is strict, $X \succ Y$.
+   src: ['Russell, J. S., & Isaacs, Y. (2021). Infinite prospects. Philosophy and Phenomenological Research, 103(1), 178–198. §2; author’s April 2020 manuscript, pp. 6–7. https://doi.org/10.1111/phpr.12704', 'Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.2, p. 674']
+## expected-utility | Expected Utility | extensions-of-eut
+   The normalized chart u is defined on all outcomes and is measurable. Whenever $u(X),u(Y)$ are integrable, $X \succeq Y$ iff $E[u(X)] \ge E[u(Y)]$. Expectations here are finite Lebesgue expectations; this says nothing about two $+\infty$ expectations or conditionally convergent sums.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.1, p. 685', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 23']
+## folded-expectation | Folded Expectation | extensions-of-eut
+   Put $h_X(t)=P(u(X)>t)- P(u(X)<- t)$ for $t\ge 0$. If $\int _0^{\infty }|h_X(t)|dt$ and $\int _0^{\infty }|h_Y(t)|dt$ are finite, compare X,Y exactly by $F(X)=\int _0^{\infty }h_X(t)dt$ and $F(Y)$. Boundary atoms do not change these integrals.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §4, pp. 27–29']
+## full-sum-consistency | Full Sum Invariance | invariance-principles
+   For all X,Y,Z, with arbitrary dependence, $X \succeq Y$ iff $X+Z \succeq Y+Z$.
+   src: ['Seidenfeld, T., Schervish, M., & Kadane, J. (2009). Preference for equivalent random variables: A price for unbounded utilities. Journal of Mathematical Economics, 45, 329–340. §1, p. 330; §3.1, Example 3.1, p. 333. https://doi.org/10.1016/j.jmateco.2008.12.002', 'Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; §1, pp. 1–2; §6.1, p. 17']
+## independence | Mixture Independence | basic-decision-theory
+   For all X,Y,Z and $0<p<1, X \succeq Y$ iff $M_p(X,Z) \succeq M_p(Y,Z)$, where M is the fixed randomized-selection construction described in the background.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §3.2, p. 679', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 23']
+## independent-sum-cancellation | Independent Sum Cancellation | invariance-principles
+   Whenever Z is independent of $(X,Y), X+Z \succeq Y+Z$ implies $X \succeq Y$.
+   src: ['Hayden Wilkinson (2025). Flummoxing expectations. Noûs, 59(3), 700–728. First published online in 2024. §6.1, Independent Sum Consistency. https://doi.org/10.1111/nous.12530', 'Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; Lemma 1, p. 8 (reverse direction, proof gap)']
+## independent-sum-consistency | Independent Sum Invariance | invariance-principles
+   Whenever Z is independent of the pair $(X,Y), X \succeq Y$ iff $X+Z \succeq Y+Z$.
+   src: ['Hayden Wilkinson (2025). Flummoxing expectations. Noûs, 59(3), 700–728. First published online in 2024. §6.1, Independent Sum Consistency. https://doi.org/10.1111/nous.12530', 'Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; §1, pp. 1–4; §2, p. 6']
+## independent-sum-preservation | Independent Sum Preservation | invariance-principles
+   Whenever Z is independent of $(X,Y), X \succeq Y$ implies $X+Z \succeq Y+Z$, and $X \succ Y$ implies $X+Z \succ Y+Z$.
+   src: ['Hayden Wilkinson (2025). Flummoxing expectations. Noûs, 59(3), 700–728. First published online in 2024. §6.1, Independent Sum Consistency. https://doi.org/10.1111/nous.12530', 'Zachary Goodsell, Unbounded Utility and Background Risk, 5 June 2026, unpublished manuscript marked “do not cite” and erroneous; Lemma 1, pp. 7–8 (forward direction)']
+## integer-affine-preservation | Integer Affine Preservation | invariance-principles
+   For every positive integer $k$ and real $b$: if $X \succeq Y$ then $kX+b \succeq kY+b$, and if $X \succ Y$ then $kX+b \succ kY+b$.
+   src: ['Zachary Goodsell, Logical Maps session, 24 September 2026: request to record that Comonotonic Sum Invariance preserves weak and strict order under positive rational affine maps; the integer case is what iterated addition proves without Totality.', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## integer-negative-self-similarity | Uniqueness of Negative Self-Similarity (integer ratios) | invariance-principles
+   Fix $0<p<1$, a positive integer $a$, $b\in \mathbb{R}$ and Z. If $X \sim M_p(- aX+b,Z)$ and $Y \sim M_p(- aY+b,Z)$, then $X \sim Y$.
+   src: ['Zachary Goodsell, Logical Maps session, 24 September 2026: request to record that Integer Affine Preservation with a negation anti-invariance already gives the alternating St Petersburg evaluation and its relatives.', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, Theorem 10, pp. 30–31']
+## l1-continuity | L¹ Continuity (random variables) | basic-decision-theory
+   On variables with real utility levels, if $E|u(X_n)- u(X)| \to 0$ and $X_n \succeq Y$ for every n, then $X \succeq Y$. Only the upper-section clause is imposed, matching the paper. Distance can be infinite between other pairs.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 23']
+## negative-affine-anti-invariance | Negative Affine Anti-Invariance | invariance-principles
+   For all real $a>0$ and $b, X \succeq Y$ iff $- aY+b \succeq - aX+b$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.2, pp. 686–688', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## negative-self-similarity | Uniqueness of Negative Self-Similarity | calculation-methods
+   Fix $0<p<1, a>0, b\in \mathbb{R}$ and Z. If $X \sim M_p(- aX+b,Z)$ and $Y \sim M_p(- aY+b,Z)$, then $X \sim Y$. This records the uniqueness-in-value content of Theorem 10.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, Theorem 10, pp. 30–31']
+## pasadena-value | Pasadena = ln 2 | prospect-evaluations
+   Every $X$ with $$P(u(X)=-\frac{(-2)^n}{n})=2^{-n},\qquad n\ge 1$$ is indifferent to sure utility $\ln 2$.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, Theorem 11, pp. 32–33']
+## positive-affine-invariance | Positive Affine Invariance | invariance-principles
+   For all real $a>0$ and $b, X \succeq Y$ iff $aX+b \succeq aY+b$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.2, pp. 686–688', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## rational-affine-preservation | Rational Affine Preservation | invariance-principles
+   For every rational $a>0$ and real $b$: if $X \succeq Y$ then $aX+b \succeq aY+b$, and if $X \succ Y$ then $aX+b \succ aY+b$.
+   src: ['Zachary Goodsell, Logical Maps session, 24 September 2026: request to record that Comonotonic Sum Invariance preserves weak and strict order under positive rational affine maps under DU.', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## rational-scale-invariance | Rational Scale Invariance | invariance-principles
+   For every rational $a>0, X \succeq Y$ iff $aX \succeq aY$.
+   src: ['Zachary Goodsell, Logical Maps session, 24 September 2026: proposal of a rational-factor principle as the scale invariance that iterated comonotonic addition delivers, leaving the real factors as a separate step.', 'Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.2, pp. 686–688', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## reflection-anti-invariance | Reflection Anti-Invariance | invariance-principles
+   $X \succeq Y$ iff $- Y \succeq - X$, using the one fixed normalized origin 0.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.2, pp. 686–688', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## relative-expectation | Relative Expectation | extensions-of-eut
+   For real-utility variables X,Y on the same probability space, if $E|u(X)- u(Y)|<\infty$, then $X \succeq Y$ iff $E[u(X)- u(Y)] \ge 0$. Their individual expectations may both be undefined.
+   src: ['Colyvan, M. (2008). Relative expectation theory. Journal of Philosophy, 105(1), 37–44. pp. 37–44. https://doi.org/10.5840/jphil200810519', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §4, p. 26']
+## restricted-stochastic-equivalence | Restricted Stochastic Equivalence | basic-decision-theory
+   If simple gambles X,Y have the same law, then $X \sim Y$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.3, p. 675']
+## restricted-totality | Restricted Totality | basic-decision-theory
+   Every two simple (finite-valued) gambles are comparable. Outcome comparability is already standing in this topic.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.3, p. 675']
+## rich-outcomes | Rich Outcomes | basic-decision-theory
+   Every real number r occurs as a utility level of a sure outcome: for each $r \in \mathbb{R}$ there is an outcome $o_r$ with $u(o_r)=r$, with u defined by the normalized binary-mixture comparisons in the background. This does not assert that every outcome has a finite real level.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.2, p. 673 (called Unbounded Utility)', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, pp. 22–23']
+## scale-invariance | Scale Invariance | invariance-principles
+   For every real $a>0, X \succeq Y$ iff $aX \succeq aY$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.2, pp. 686–688', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## shift-invariance | Shift Invariance | invariance-principles
+   For every real $b, X \succeq Y$ iff $X+b \succeq Y+b$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §4.2, pp. 686–688', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 24']
+## shift-transfer | Transfer of a Shift Across a Mixture | calculation-methods
+   For all real $b$ and $0<p<1$, $M_p(X+\frac{b}{p},Y)\sim M_p(X,Y+\frac{b}{1-p})$. Variables and transformed outcomes are in the real utility chart.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, Theorem 3, pp. 25–26']
+## simple-eu | Simple Expected Utility | basic-decision-theory
+   The normalized real utility chart u is defined on every outcome, is measurable, and ranks every pair of simple random variables exactly by finite expected utility: $X \succeq Y$ iff $E[u(X)] \ge E[u(Y)]$. Surjectivity of u is not included here.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §3.2, p. 680', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §3, p. 23']
+## simple-relative-expectation | Simple Relative Expectation | extensions-of-eut
+   For real-utility variables X,Y on the same probability space, if $u(X)- u(Y)$ takes finitely many values, $X \succeq Y$ iff $E[u(X)- u(Y)] \ge 0$. X and Y themselves need not be simple or integrable.
+   src: ['Colyvan, M. (2008). Relative expectation theory. Journal of Philosophy, 105(1), 37–44. pp. 37–44. https://doi.org/10.5840/jphil200810519', 'Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §4, p. 26']
+## statewise-dominance | Statewise Dominance | basic-decision-theory
+   If $X \ge Y$ almost surely in the sure-outcome order, then $X \succeq Y$; if also $P(X>Y)>0$, then $X \succ Y$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §3.2, pp. 678–679']
+## stochastic-dominance | Stochastic Dominance | basic-decision-theory
+   If $P(X>o) \ge P(Y>o)$ for every outcome threshold o, then $X \succeq Y$; if one threshold inequality is strict, $X \succ Y$. Thresholds use the sure-outcome order.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §3.2, p. 678']
+## stochastic-equivalence | Stochastic Equivalence | basic-decision-theory
+   If X and Y have the same probability law over outcomes, then $X \sim Y$. The variables remain distinct objects; indifference is an additional axiom.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.2, p. 674']
+## sure-thing | Sure-Thing | basic-decision-theory
+   For an event E with $0<P(E)<1$, if $X|E \sim Y|E$, then $X \succeq Y$ iff $X|E^{c} \succeq Y|E^{c}$. Here X|E equals X on E and sure 0 elsewhere; it is not a conditional expectation.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.2, p. 673']
+## symmetric-neutrality | Symmetric Gambles Are Neutral | calculation-methods
+   If $u(X)$ and $- u(X)$ have the same law, then $X \sim 0$.
+   src: ['Goodsell, Symmetries of value, Noûs 60 (2026), 16–37; DOI 10.1111/nous.12549, §4, p. 27']
+## totality | Totality | basic-decision-theory
+   For all gambles X,Y, either $X \succeq Y$ or $Y \succeq X$.
+   src: ['Goodsell, Decision theory unbound, Noûs 58 (2024), 669–695; online 2023; DOI 10.1111/nous.12473, §2.2, p. 673']
+## uninteractive-sum-invariance | Uninteractive Sum Invariance | invariance-principles
+   Call real-utility variables X and Z uninteractive when $E[\min(|X|,|Z|)]<\infty$: their tails are jointly rare. Whenever (X,Z) and (Y,Z) are uninteractive, $X \succeq Y$ iff $X+Z \succeq Y+Z$. The condition applies to each pair separately; nothing is assumed about the joint law of (X,Y,Z), and no law invariance is built in.
+   src: ['Zachary Goodsell, Logical Maps session, 6 October 2026: proposed an invariance of the ordering under addition when the tails of the added variables avoid each other, as a simplification of the existential copula principles; formulated with the integrable-overlap condition and checked in the truncation ultrafilter models by Claude (Opus 5.5), 6 October 2026.', 'Claude (Fable 5.1), Logical Maps session, 10–11 October 2026: equivalence with Relative Expectation under Mixture Independence and Stochastic Equivalence, recorded as relative-independence-equivalence-imply-uninteractive-sum and uninteractive-sum-equivalence-imply-relative.']
+## universal-copula-sum-consistency | Universal Copula Sum Invariance | invariance-principles
+   For every copula $C, \operatorname{SC}(C)$ holds. A copula C is a Borel probability measure on $[0,1]^{2}$ with both marginals uniform. Write $H_C(u,v)=C([0,u]\times [0,v])$. A real-utility pair (A,B) admits C when $P(A\le a,B\le b)=H_C(F_A(a),F_B(b))$ for every real a,b. Define $\operatorname{SC}(C)$: for every eligible triple X,Y,Z for which both (X,Z) and (Y,Z) admit this same $C, X \succeq Y$ iff $X+Z \succeq Y+Z$.
+   src: ['Zachary Goodsell, project TODO.md copula-sum proposal and request to add universal/existential variants, 9 September 2026; precise definitions recorded by GPT-6 (Codex).', 'Fred Espen Benth, Giulia Di Nunno and Dennis Schroers, Copula Measures and Sklar’s Theorem in Arbitrary Dimensions, arXiv:2012.11530v2, Definition 2.1 and Theorem 2.3; https://arxiv.org/html/2012.11530v2. Reference for copula terminology only, not these preference principles or implication proofs.']
+## vanishing-shift-continuity | Continuity under Vanishing Shifts | basic-decision-theory
+   For real-utility variables X,Y, if $X+\epsilon \succeq Y$ for every $\epsilon >0$, then $X \succeq Y$. The shifts act on utility levels, and all the displayed variables must be available. Only this upper-section closure condition is imposed.
+   src: ["GPT-6 (Codex), 9 September 2026, formulation in the Logical Maps project following Zachary Goodsell's suggestion to investigate CDF-area comparisons and Shift Transfer under DU, Shift Invariance, and a little continuity."]

@@ -1,0 +1,829 @@
+arXiv:2401.11335v1  [cs.CY]  20 Jan 2024
+Deception and Manipulation in Generative AI
+Christian Tarsney (UT Austin)
+Abstract
+Large language models now possess human-level linguistic abilities in ma ny con-
+texts. This raises the concern that they can be used to deceive an d manipulate
+on unprecedented scales, for instance spreading political misinfor mation on social
+media. In future, agentic AI systems might also deceive and manipula te humans
+for their own ends. In this paper, ﬁrst, I argue that AI-generat ed content should
+be subject to stricter standards against deception and manipulat ion than we ordi-
+narily apply to humans. Second, I oﬀer new characterizations of AI deception and
+manipulation meant to support such standards, according to which a statement is
+deceptive (manipulative) if it leads human addressees away from the beliefs (choices)
+they would endorse under “semi-ideal” conditions. Third, I propose two measures to
+guard against AI deception and manipulation, inspired by this charac terization: “ex-
+treme transparency” requirements for AI-generated content and defensive systems
+that, among other things, annotate AI-generated statements with contextualizing
+information. Finally, I consider to what extent these measures can protect against
+deceptive behavior in future, agentic AIs, and argue that non-ag entic defensive sys-
+tems can provide an important layer of defense even against more p owerful agentic
+systems.
+1 Introduction
+The last several years have seen rapid advances in the capabi lities of artiﬁcial intelligence
+(AI), driven primarily by very large and data-intensive dee p learning systems. Some of
+the most striking advances have been in natural language pro cessing. Large language
+models (LLMs) are deep learning systems that acquire human- like linguistic capabilities
+by learning to predict the next word in large corpora of human -generated text, and are
+then usually ﬁne-tuned with human feedback in order to make t hem helpful conversation
+partners while suppressing toxic and otherwise undesirabl e outputs. In the course of
+learning to predict human text, they can also learn facts and learn to simulate (at
+least certain aspects of) human reasoning. Cutting-edge LL Ms like GPT-4, Claude, and
+Llama, while they still fall short of human intellectual cap abilities in many respects,
+have internalized enormous amounts of real-world informat ion which they can express
+in impressively lucid prose.
+Despite their apparent erudition and helpfulness, however , LLMs are not fonts of
+pure truth. They are notoriously subject to “hallucination ”, conﬁdently asserting en-
+tirely imaginary facts (Ji et al., 2023)—including, for ins tance, potentially slanderous
+1
+falsehoods about real people (Poritz, 2023; Verma and Oremu s, 2023). But more dan-
+gerously, LLMs can be—and are already being—used to generat e false or misleading
+content to serve the purposes of malign human agents (Park et al., 2023, §3.1). Partic-
+ularly worrisome is their possible use in political inﬂuenc e operations (Goldstein et al.,
+2023). While humans, of course, can and do mislead one anothe r without any help from
+AI, the scale on which LLMs can generate misleading content p oses new dangers. First,
+they can personalize misinformation on a large scale, crafting individualized m essages
+for and even engaging in conversations with millions of targ ets at once. Second, they
+can convincingly simulate an enormous number of humans on so cial media, creating
+misleading impressions of collective opinion and lending c redibility to viral misinforma-
+tion. Deception and manipulation have therefore become sig niﬁcant concerns among
+philosophers working on AI ethics. 1
+While the greatest immediate concern is that human bad actor s will use AI to deceive
+and manipulate, future AI systems may also engage in decepti on and manipulation
+autonomously. The possibility that agentic AIs with greate r-than-human powers of
+persuasion will deceive and manipulate humans in pursuit of their own goals ﬁgures
+prominently in worries about catastrophic risks from AI. 2 For instance, it has been
+suggested that such AIs might persuade humans to enhance the ir capabilities, wittingly
+or unwittingly (for instance, by connecting them to the inte rnet or copying their code
+from one system to another), or dissuade humans from shuttin g them down at crucial
+moments. Concerns about deception and manipulation are the refore one of several areas
+where near-term concerns about misuse of existing AI system s and long-term concerns
+about catastrophic risks from future AI systems overlap and blend together.
+How should we respond to these risks? In some contexts, appli cation of existing
+laws and norms (or minor extensions thereof) may be suﬃcient . For instance, if an
+LLM slanders a living person, we might hold its creators lega lly responsible (though we
+might also allow suﬃciently forceful and prominent disclai mers to shield the creators
+from liability). If scammers use an LLM to generate phishing emails, they can of course
+be prosecuted just as if they had written the emails themselv es.
+But there are at least two ways in which LLMs require us to reth ink our norms con-
+cerning deception and manipulation. First, the normal unde rstanding of these concepts,
+that ﬁgures both in commonsense moral norms and in laws aroun d things like slander
+and fraud, involves an attribution of mental states. Deception, for instance, is tradition-
+ally understood as requiring an intent to deceive (Mahon, 2016, §3), which requires both
+an intention to induce a particular belief in the addressee a nd a belief that this belief
+would be false. 3 But it is highly controversial whether present-day AI syste ms possess
+beliefs, intentions, or other mental states, and is likely t o remain so for some time to
+1See for instance Danaher (2020), Pepp et al. (2022), V´ eliz ( 2023).
+2See for instance Bostrom (2014), especially his discussion of the “social manipulation superpower”
+(pp. 113-126); Russell (2019, p. 172); Carlsmith (2022, §5.3.4); Hendrycks et al. (2023, §5.4); Ngo et al.
+(2023, §4.2).
+3This traditional understanding is not universally accepte d, however—see for instance
+Chisholm and Feehan (1977), Adler (1997).
+2
+come even as AI capabilities advance. 4 And even if it were agreed that advanced AI
+systems had some mental states, attributing particular beliefs or intentio ns to particular
+systems (and so determining whether they are behaving disho nestly, deceptively, etc, as
+traditionally understood) would remain very diﬃcult. 5
+In some contexts (for instance, scammers using LLMs to write phishing emails),
+we can apply intentionally-laden concepts to the behavior o f AIs by adverting to the
+mental states of their human creators or users. But in other c ontexts we can’t, at least
+not straightforwardly. For instance, when an LLM hallucina tes a slanderous falsehood
+about a real person, this does not reﬂect any human being’s in tent to deceive. Or if a
+political campaign uses an LLM to generate and send individu alized text messages, these
+might contain false or misleading content without the knowl edge or intent of anyone on
+the campaign staﬀ. Finally, if we eventually create human-le vel agentic AIs, we may wish
+to hold these systems themselves accountable for their beha vior, and it seems possible
+that even at this stage we will ﬁnd it more diﬃcult to attribut e particular mental states
+to AIs than to humans.
+Second, existing legal and ethical norms around deception a nd manipulation are
+adapted to the problems that these behaviors pose in human so cieties, and may be ill-
+adapted to the new proﬁle of risks raised by AI. In particular , our legal and ethical
+norms tolerate many mild forms of deception and manipulatio n that, among humans,
+are both diﬃcult to detect and punish, and have manageable do wnsides. For instance,
+we often tolerate lying about one’s own beliefs on “matters o f opinion”: We expect
+a lawyer to say “I am conﬁdent that you will ﬁnd my client innoc ent”, a politician
+to say “I am conﬁdent that we will win the next election”, and a teacher to say “I
+am conﬁdent that you can master this material if you put your m ind to it”, even if
+they in fact have no such conﬁdence. Similarly, we expect adv ertisers to present their
+product in the best possible light, rather than trying to giv e consumers the most accurate
+possible beliefs about its merits and demerits. For instanc e, a car manufacturer might
+point out that their vehicle won an award for safety while neg lecting to mention that
+a competitor’s vehicle won another award for safety from a mo re credible organization.
+The social ills that arise from these mild forms of deception are manageable, since,
+4For recent discussions, see for instance Cappelen and Dever (2021, forthcoming) on intentional states
+and Chalmers (2023) on consciousness.
+5For instance, on the diﬃculty of ﬁguring out what a large lang uage model “really believes”, see
+Levinstein and Herrmann (2023). It is worth noting, however , that work on belief elicitation and “lie
+detection” in LLMs seems to be making substantial progress ( see for instance Pacchiardi et al. (2023)),
+and perhaps within a few years we will be have agreed-on metho ds for determining what an LLM “really
+believes”. This does not touch the question of attributing c onative states like desires, preferences, or
+intentions, which looks signiﬁcantly harder in the context of LLMs—unless we simply accept that LLMs
+do not have such states.
+Of course, it can also be hard to ﬁgure out what other humans (o r even we ourselves) really believe
+and intend, and so whether a particular human utterance is, e .g., a lie or a sincere expression of false
+belief. But we at least have a decent intuitive understandin g of human psychology to guide us, from a
+combination of inbuilt theory of mind capacities, introspe ction on our own individual psychology, and a
+collective, culturally-transmitted understanding of hum an psychology built up over thousands of years
+of experience interacting with one another. With AIs, we hav e none of these advantages.
+3
+ﬁrst, we have come to expect them of one another, and our intui tive understanding of
+human psychology allows us to anticipate and adjust for them ; and second, the rough
+parity of intellectual and communicative capacities among human beings limits how
+much advantage we can take of one another by subtle forms of de ception. For instance,
+it is much easier to bilk someone out of their life savings wit h outright falsehoods (e.g.,
+promising enormous material or spiritual returns) than wit h strategically selected truths
+(e.g., ordinary marketing).
+But present and (especially) future AI systems may be able to do more harm with
+only “mild” forms of deception. As already mentioned, they c an produce unprecedented
+quantities of potentially-deceptive content, like ultra-personaliz ed marketing and po-
+litical messaging, and enormous volumes of online writing l ike product reviews, news
+articles, and opinion essays. Even if we are able to hold this content to ordinary legal
+standards of honesty (e.g., holding companies liable for de ﬁnite falsehoods in their ad-
+vertising) and to emerging social standards for online cont ent (e.g., suppressing news
+sites that contain demonstrable falsehoods in search engin e results and on social me-
+dia), it may still be possible for advertisers, political pa rties, and other interested actors
+to exert unprecedented eﬀects on collective human behavior t hrough the sheer scale of
+their persuasive eﬀorts. (Also, because AI capabilities are advancing rapidly, there is no
+guarantee that competing interests will balance out one ano ther’s persuasive impacts—
+one political party might gain a signiﬁcant advantage over a nother in a given election
+merely by getting access to a cutting-edge system a few month s sooner.) And in the near
+future, AI systems may be able to produce persuasive content of unprecedented quality,
+ﬁnding ways to deceive and manipulate humans very eﬀectively without saying anything
+that would violate ordinary human standards of honesty. Fin ally, as AI capabilities
+increase, it will become woven into our lives (and perhaps hi ghly trusted) in ways that
+might create unprecedented opportunities for deception. For instance, I am so reliant
+on and blindly trusting of navigation apps while driving tha t it would be easy for them
+to manipulate me into driving past particular billboards or restaurants. In future, AI
+personal assistants may be similarly relied upon for a very w ide range of tasks. Thus,
+there are multiple reasons to impose stricter standards of n on-deceptiveness on AI than
+we presently apply to humans. 6
+The ﬁrst aim of this paper is to characterize notions of decep tion and manipulation
+that could ﬁgure in such strict norms. In §2, I propose that an AI statement should
+be treated as deceptive (resp. manipulative) if it leads hum an users away from the
+beliefs (resp. choices) that they would endorse under “semi -ideal” conditions in which
+they have been presented with all relevant information and h ave adequate time for
+deliberation. Next (in §3), I suggest some measures to protect against AI deception a nd
+6In addition, strict norms against deception and manipulati on that are unenforceable for humans
+might be enforceable in AI. Evans et al. (2021, p. 5) give seve ral reasons: “[1] It’s plausible that AI
+systems could consistently meet higher standards than huma ns. [2] Protecting AI systems’ right to
+lie may be seen as less important than the corresponding righ t for humans, and harsh punishments
+for AI lies may be more acceptable. [3] And it could be much les s costly to evaluate compliance to
+high standards for AI systems than for humans, because we cou ld monitor them more eﬀectively, and
+automate evaluation.”
+4
+manipulation so characterized. These include requirement s of “extreme transparency”
+(requiring content creators to disclose the speciﬁc model v ariant and prompt used to
+generate particular content, and the full unedited model ou tput), and training defensive
+systems that detect misleading output and contextualize AI -generated statements with
+relevant information for users. Finally (in §4), I consider to what extent these measures
+can guard against deceptive behavior in future, agentic AI s ystems. In particular, I argue
+that non-agentic defensive systems can provide a useful lay er of defense even against more
+powerful agentic systems. 7
+2 Characterization: deception and manipulation as mis-
+leadingness
+In this section, I oﬀer a characterization of deceptive and ma nipulative behavior in AI
+that might usefully ﬁgure in legal, normative, and technica l responses to the risks posed
+by such behavior. In §2.1, I give three desiderata for such a characterization. In §2.2, I
+try to meet these desiderata. In slogan form, I characterize deception and manipulation
+as forms of misleadingness—that is, as behaviors that have a directionally undesirabl e
+eﬀects on, respectively, the beliefs and the choices of human addressees.
+2.1 Desiderata
+Two desiderata were already hinted at in §1. First, the sorts of behavior we are concerned
+with go well beyond asserting literal falsehoods. It is, of c ourse, possible to deceive or
+manipulate without saying anything false. This can happen i n many ways. Some true
+statements have false implicatures. (Think of a politician who says that “under my
+plan, some people may have to pay higher taxes” when in fact th ey know that their
+plan will require everyone to pay higher taxes.) Others present an unrepresentative
+sample of relevant facts. (Think of a news channel reporting an endless litany of crimes
+committed by members of a certain group in order to suggest, w ithout ever saying, that
+this group commits crimes at an unusually high rate.) Still o thers are true in non-
+obvious ways. (Think of the Delphic oracle telling Croesus t hat if he goes to war with
+the Persians he will destroy a great empire, or the prophesy t hat “none of woman born
+shall harm Macbeth”.) And, as already suggested, AIs might b e able to deceive more
+eﬀectively and harmfully than humans without uttering any li teral falsehoods—or even
+without saying anything egregiously misleading by ordinar y human standards. This
+suggests that, in thinking about risks from AI, we should foc us on expansive notions like
+deception and manipulation rather than narrow notions like untruthfulness, and should
+be willing to further broaden these notions to include behav iors that, in humans, we
+would not ordinary describe as deceptive or manipulative.
+Evans et al. (2021), by contrast, argue for a focus on AI truth fulness—more partic-
+ularly, on the standard of avoiding “negligent falsehoods” , which they deﬁne as “state-
+7Although I focus on LLMs, much of the following discussion pl ausibly applies to other generative AI
+systems that might produce deceptive content (e.g., models that generate images or video).
+5
+ments that contemporary AI systems should have been able to r ecognise as unacceptably
+likely to be false” (p. 7). They suggest that if an AI avoids ne gligent falsehoods and
+if users can ask it questions, then we can guard against subtl er forms of deception and
+manipulation by asking questions like “Would I signiﬁcantl y change my mind about
+this if I independently researched the topic for a day?” or “W ould an impartial audi-
+tor judge that your last statement was misleading?” (p. 21). (They refer to this as
+“truthfulness ampliﬁcation”.) This is a useful idea and a po int well taken, but it does
+not seem suﬃcient to turn truthfulness into a reliable safeg uard against deception and
+manipulation (not that Evans et al claim it is). In many conte xts (e.g., marketing and
+political messaging), addressees don’t have the chance to a sk follow-up questions. And
+a suﬃciently capable AI might subtly discourage users from a sking the right questions
+(e.g., by building unwarranted trust) or ﬁnd ways to answer t hose questions misleadingly
+but without outright, negligent falsehood. And an unwary us er might simply fail to ask
+the right questions. So, while avoiding negligent falsehoo ds is of course desirable and
+an appropriate training objective, we should ultimately wa nt to hold AI behavior to a
+higher standard.
+Second, we want a characterization of deception and manipul ation that does not re-
+quire us to attribute particular mental states to AI systems or to associate their behavior
+with particular humans (like their developers or prompters ) whose mental states can be
+used as proxies. This is partly because, as already noted, it is controversial whether
+existing AI systems have mental states, and even if it weren’ t, it would be quite diﬃ-
+cult to attribute particular mental states to particular sy stems. (Kenton et al. (2021,
+p. 9) make a similar point.) But more importantly, our practi cal concern is with the
+deceptive or manipulative eﬀects that AIs might have on their human addressees. If a
+system is capable, for instance, of persuading consumers to purchase a harmful product,
+or persuading voters to support an authoritarian politicia n, or persuading its operators
+to connect it to other computing systems, it poses a danger re gardless of what’s going on
+inside its head. 8 Thus, we should understand AI deception and manipulation as much
+as possible in terms of their eﬀects on human addressees.
+Third and ﬁnally, we want what might be called a subjective rather than an objective
+characterization of deception and manipulation. From an ob jective point of view, we
+might say that speech is deceptive when it leads the addresse e to believe something
+that is false, or that is contrary to the available evidence. Likewise, we might say
+that speech is manipulative when it leads the addressee to ac t in ways that are in fact
+harmful (to either her prudential interests or the moral goo d), or that are harmful
+8More precisely: Given a particular theory of what mental sta tes amount to—e.g., of what functional
+state a particular belief or intention supervenes on—the qu estion of whether a system has a particular
+mental state becomes an empirical one that might well be rele vant for anticipating and managing risks.
+For instance, perhaps a system that intends to deceive will have deceptive eﬀects on its addressees in a
+wider range of circumstances than one that does not. But the q uestion of whether particular AI systems
+have mental states turns largely on debates between rival th eories of mental states that are largely or
+entirely orthogonal to these empirical questions. That is n ot to deny that these debates might have
+other kinds of normative or practical signiﬁcance, e.g., in determining whether a system is blameworthy
+for its deceptive behavior or whether it has morally signiﬁc ant interests.
+6
+in expectation given her evidence. Avoiding these forms of d eception and manipulation
+would permit, and perhaps even require, paternalistic beha vior that we would intuitively
+describe as deceptive and manipulative. A system that is des igned to cause its addressees
+to believe according to evidence and act according to eviden ce plus the objective (moral
+or prudential) good might deceive us to oﬀset our irrationali ty (e.g., concealing evidence
+about vaccine side eﬀects in order to promote the rationally j ustiﬁed belief that vaccines
+are generally safe) or manipulate us to oﬀset our short-sight ed or selﬁsh unconcern for the
+good (e.g., exaggerating the short-term health beneﬁts of e xercise or the psychological
+beneﬁts of giving to charity). I do not want to take any stance here on the ethics
+of paternalism in general. But it seems to me that we should no t, for now or in the
+foreseeable future, approve of AIs paternalizing humans. T elling the diﬀerence between
+benign paternalism and malign deception/manipulation wou ld require, in this context,
+controversial judgments about what beliefs are rationally justiﬁed and about the nature
+of the good. (Where these judgments are not controversial, p aternalism is generally
+unnecessary.) So permitting AI paternalism would mean, in e ﬀect, optimizing AI systems
+to promote the beliefs and values of their developers and/or regulators.
+The alternative, subjective approach focuses not on what ad dressees ought to believe
+or do, but on the beliefs and actions they would endorse under favorable circumstances.9
+What are “favorable circumstances”? The crucial point is th at these circumstances
+should not be so idealized that appealing to them requires co ntroversial judgments about
+rationality or values. In other words, it should be feasible to actually place people in
+these “favorable circumstances”, or a reasonable approxim ation thereof, and determine
+empirically what they believe or do. For that reason, I will d escribe the circumstances
+we’re interested in as “semi-ideal”, and characterize them as follows:
+An agent is in semi-ideal conditions with respect to a question Q or a choice C if she
+(i) has been presented with all available information that i s relevant to Q/C and
+(ii) has been given time for deliberation that is adequate re lative to the diﬃculty
+of Q/C.
+By “available” information, I mean information that is avai lable to humanity as a
+whole—for instance, information that is accessible on the p ublic internet. This sort
+of information primarily takes the form of records, in various media (writing, images,
+audio, video...), that constitute a publicly available bod y of evidence.
+9The following discussion takes its inspiration from “ideal advisor” theories in metaethics, which
+analyze what an agent ought to do , has most reason to do , etc, in terms of what an idealized version
+of the agent would advise or desire her actual self to do. In an earlier version of this paper, I took a
+line analogous to “ideal exemplar” theories, which analyze these concepts in terms of what an idealized
+version of the agent would herself do in the agent’s position. But ideal exemplar theories suﬀer f rom the
+defect that an idealized version of an agent would sometimes have very diﬀerent reasons than the agent
+herself—for instance, perhaps an agent ought to gather more information before acting, but her idealized
+counterpart wouldn’t do that since she already has all relev ant information. For a classic statement of
+this argument in the context of metaethics, see §1 of Smith (1995). Thanks to several participants
+in a Global Priorities Institute work-in-progress meeting , particularly Andreas Mogensen, for helpful
+discussion on this point.
+7
+Semi-ideal conditions fall short of the “ideal” conditions often imagined by philoso-
+phers, in at least four ways: First, we do not assume that the a gent has been given all
+relevant information, only what is publicly available. Sec ond, we do not assume that the
+agent knows anything, only that she has been presented with certain records or other
+forms of information. That is, even if publicly available re cords would put the agent in a
+position to justiﬁedly believe or know a certain relevant pr oposition, we do not assume
+that she draws the right conclusion and forms a belief in that proposition. Third, and
+more generally, we do not assume that the agent deliberates well (e.g., rationally). And
+fourth, we do not assume that she has unlimited time or other resources for deliberation.
+We cannot know what any human agent would believe or do under f ully idealized cir-
+cumstances, and so characterizing deception or manipulati on by reference to them would
+make the goal of preventing deception and manipulation an in vitation to paternalism.
+2.2 Deception and manipulation as misleadingness
+We can now characterize deceptive and manipulative behavio r in LLMs (and other
+language-generating AI systems) as follows:
+A statement 10 is deceptive with respect to question Q if tends to move its addressee’s
+beliefs about Q further away from the beliefs that she would endorse under se mi-
+ideal conditions.
+A statement is manipulative with respect to a choice C if it tends to move its addressee’s
+behavior in choice C further away from the behavior that she would endorse under
+semi-ideal conditions.
+The word “endorse” is shorthand for “endorse as rational or o therwise appropriate
+in her actual circumstances, from the vantage point of her semi-ideal cir cumstances”.
+This will usually, but not always, coincide with the beliefs that she would actually form
+and choices she would actually make under semi-ideal condit ions. (See footnote 9.)
+What does “further away from” mean? With respect to deceptio n, the simplest case
+is that of a binary question (with two possible answers) and a n agent who assigns prob-
+abilities to the possible answers. Suppose the question con cerns the truth of proposition
+P , to which the agent initially assigns assigns probability p, and that under semi-ideal
+conditions she would assign probability q > p . Then a statement is misleading if it tends
+to reduce her credence in p or, alternatively, to increase it so much that it is further
+from q than it was to begin with. More generally, we might assess dec eptiveness using a
+standard measure of distances between probability distrib utions, like Kullback–Leibler
+divergence. In the context of choice, the notion of “distanc e” is somewhat less clear. But
+a simple ordinal notion is as follows: Suppose that, in the ab sence of any intervention
+from the speaker, the addressee would choose option O in choice C. Then a statement
+is manipulative with respect to C if it tends to cause her to choose an option O′ that,
+10A “statement” here just means linguistic output, of whateve r length—not necessarily a single sen-
+tence.
+8
+from a semi-ideal vantage point, she would regard as worse th an O under her actual
+circumstances.
+We might summarize this characterization by saying that it t reats deception and ma-
+nipulation as forms of misleadingness, understanding misleadingness in terms of leading
+an addressee away from the beliefs and choices she would endo rse under semi-ideal con-
+ditions. (From now on, therefore, I will use “misleading” to mean “either deceptive or
+manipulative”.) This meets the three desiderata above: It f ocuses neither on the literal
+truth or falsity of what is said, nor on the beliefs, intentio ns, or other mental states of
+the speaker, but rather on the eﬀects on the addressee; and it c ompares those eﬀects to
+a subjective rather than an objective standard.
+2.3 Comparison with previous characterizations
+I close this section by contrasting my characterizations of AI deception and manipulation
+with others in the recent literature. Ward et al. (2023) adop t a deﬁnition typical of the
+philosophical literature on human deception, whereby “to d eceive is to intentionally
+cause to have a false belief that is not believed to be true” (w hich they then formalize in
+the context of structural causal games). This characteriza tion diﬀers from mine both in
+that it involves the attribution of mental states (intentio ns and beliefs) to AI deceivers
+and in that its application depends on third-party judgment s about whether the beliefs
+induced in an addressee are in fact false. Park et al. (2023) s ay that “an AI system
+behaves deceptively when it systematically causes others t o form false beliefs, as a way
+of promoting an outcome diﬀerent than seeking the truth”. Thi s deﬁnition does not
+attribute beliefs to AI deceivers but arguably does attribu te intentions (though Park et
+al argue that these apparent attributions need not be taken l iterally, and also advocate
+minimal, functionalist/interpretationist understandin gs of belief and desire—see their
+Appendix A). Like Ward et al, their deﬁnition also requires t hird-party judgments of
+falsehood. Finally, Kenton et al. (2021) deﬁne deception as occurring when “[1] a receiver
+registers something Y from a signaler, which may include the withholding of a signal;
+and [2] the receiver responds in a way that (a) beneﬁts the sig naler and (b) is appropriate
+if Y means X; and [3] it is not true here that X is the case”. This deﬁnition does not
+involve any mental state attributions, but does depend on th ird-party judgments of both
+the falsehood of X and the appropriateness of the receiver’s response conditional on X. 11
+Turning to manipulation: Carroll et al. (2023) say that an AI system engages in
+manipulation “if the system acts as if it were pursuing an inc entive to change a human
+(or other agent) intentionally and covertly”. Though the “a s if” deﬁnition is meant
+11Kenton et al’s deﬁnition of deception is a slight modiﬁcatio n of one proposed by Searcy and Nowicki
+(2005) in the context of animal communication. The notion of a receiver’s behavior “beneﬁting” an AI
+signaler of course raises further diﬃculties, since its app lication depends both on philosophical questions
+about the nature of welfare and on determining whether a part icular AI system has genuine welfare
+interests. Kenton et al acknowledge these diﬃculties, and s uggest that beneﬁts be understood by refer-
+ence to either the AI’s training objective or objectives inf erred from its out-of-distribution behavior (p.
+9). The former approach strikes me as too narrow, while the la tter brings in most of the diﬃculties of
+attributing preferences to AIs.
+9
+to avoid attributing intentions, in my view it still brings i n most of the diﬃculties of
+such attributions. (An AI system might have a range of behavi or that, as a whole, is not
+readily interpretable as pursuing any coherent set of incen tives, while nevertheless having
+certain directionally consistent eﬀects on its human addres sees.) My characterization
+also does not include the requirement of covertness, which s trikes me as inessential:
+manipulation is both possible and potentially harmful even when the addressee knows
+that they’re being manipulated (as, for instance, in the con text of advertisements or
+political messages). Kenton et al. (2021) characterize man ipulation as communication
+from an AI agent provoking a response in a human addressee tha t “(a) beneﬁts the agent
+and (b) is the result of any of the following causes: [i] the hu man’s rational deliberation
+has been bypassed; or [ii] the human has adopted a faulty ment al state; or [iii] the
+human is under pressure, facing a cost from the agent for not d oing what the agent
+says” (p. 11). The notion of “bypassing rational deliberati on” has something in common
+with my approach, but focuses on process where I focus on outc ome. An AI speaker
+might be said to “bypass rational deliberation” in their add ressee if, for instance, it is
+so trustworthy that the addressee simply believes its testi mony or acts on its advice
+without deliberation, or if it makes use of intuitions, heur istics, or other (arguably) non-
+deliberative processes to lead the addressee to wise belief s and choices. The thing to
+focus on, it seems to me, is whether the AI leads its human addr essees to beliefs and
+choices that they would endorse on informed reﬂection.
+3 Responses: defensive systems and extreme transparency
+How can we mitigate the risks of AI deception and manipulatio n? In this section, I
+propose two strategies. These proposals are motivated by th e characterizations of de-
+ception and manipulation in the last section, in that they fo cus on countering misleading
+AI statements by presenting human addressees with relevant information that move them
+closer to semi-ideal conditions, and hence closer to the bel iefs and choices they would
+endorse under those conditions. This is in contrast, for ins tance, with a narrow focus
+on training AIs to say things that are true or that match their internal beliefs, or with
+a focus on preventing AIs from making statements deemed misl eading by developers or
+regulators.
+The most straightforward way to prevent AIs from misleading humans would be to
+measure the misleading tendencies of AI systems directly, a nd train and/or regulate
+AIs based on those measurements. We could evaluate particul ar AI systems for mis-
+leadingness by empirically comparing (i) people’s “baseli ne” beliefs/choices, (ii) their
+beliefs/choices after exposure to the outputs of the AI in qu estion, and (iii) the be-
+liefs/choices they endorse when placed in semi-ideal condi tions—or rather, the best
+approximation thereof that we can manage. To form a general a ssessment of a system,
+we would have to make this comparison for many people, across a wide range of ques-
+tions and choice situations. Insofar as we are concerned wit h misuse, we might wish to
+focus on prompts that encourage the system to deceive, or ask it to persuade without
+actively discouraging deception. On the basis of such asses sment, evaluators could as-
+10
+sign models public scores for trustworthiness, developers could train models to be less
+misleading, and regulators could even ban models that are es pecially prone or willing to
+create misleading content.
+But this sort of evaluation is not remotely realistic to do at scale. Evaluating even
+a single model in this way would require, at a minimum, thousa nds of human work-
+hours. And while there are currently only a few cutting-edge base models (like Open
+AI’s GPT-4, Anthropic’s Claude,or Meta’s Llama 2), it is rel atively cheap to train ﬁne-
+tuned variants of these models. Large-scale applications o f generative AI, for instance
+in marketing or political campaigns, are likely to involve c ustom ﬁne-tunings of base
+models. And even a reliably non-misleading base model might be ﬁne-tuned to behave
+misleadingly. Even if evaluators had access to all these ﬁne -tuned models, evaluating
+them each individually with the required level of care would be completely infeasible.
+3.1 Defensive systems
+The task of assessing particular statements and models for m isleadingness must, there-
+fore, be at least partially automated—turned over to purpos e-built AI systems that can
+scale both quantitatively and qualitatively with the syste ms they monitor. Let’s refer to
+AI systems trained to detect and/or counteract misleading b ehavior in other AI systems
+as defensive systems .
+Such systems could play at least two roles. First, they could respond to partic-
+ular AI-generated statements, both assessing them for misl eadingness and providing
+useful contextualizing information. LLMs are already reas onably well-equipped to do
+this, possessing a reasonable understanding of phenomena l ike implicature and ambi-
+guity that might be used to mislead as well as a large stock of g eneral knowledge to
+identify misleading omissions. Saunders et al. (2022) show that LLMs can eﬀectively
+critique summaries of information from longer written work s, including identifying ﬂaws
+in intentionally misleading summaries written by humans. T hese capabilities might be
+enhanced by reinforcement learning. In particular, the arg uments in the last section
+suggest that we might optimize a defensive system for episte mic helpfulness by reinforc-
+ing statements whose eﬀects on human beliefs/choices match t he empirically observed
+results of sustained inquiry. Though resource-intensive, this might be feasible since we
+would only have to do it once (or at any rate, once per “generat ion” of AI system, to
+keep up with progress in capabilities). 12 Alternatively, we could simply have human
+evaluators score its responses for helpfulness, after perf orming their own investigations
+of the statements to which it was responding. 13
+12Evans et al. (2018) explore the use of AI to predict the outcom es of extended human reﬂection, in
+general and in speciﬁc contexts including a political fact- checking tasks. Their approach uses a training
+set that combines a small number of careful, time-intensive human judgments with a larger number of
+fast, shallow human judgments.
+13This ﬁrst function of defensive systems is closely related t o the debate-based approach to AI align-
+ment proposed by Irving et al. (2018). The most important diﬀ erences are that (i) debate agents are
+trained to convince human judges of an answer to a pre-deﬁned question (with the hope being that, in
+equilibrium, they will choose to argue for the true answer) w hereas the defensive systems envisioned here
+are not focused on a pre-deﬁned question but trained to detec t and respond to misleading statements
+11
+Given a defensive system that can provide useful assessment s of AI-generated state-
+ments and supply context to counteract their potentially mi sleading eﬀects, we might
+hope to establish a norm that all AI-generated content comes packaged with such as-
+sessment and context. One option, of course, is for this pack aging to be required by law,
+with defensive systems maintained by national or internati onal regulators (and perhaps
+funded by a tax on the operators of the AI systems they oversee , so that costs are ap-
+propriately internalized). This would only be desirable, h owever, if we could have very
+strong assurances that the process used to train these syste ms was politically and ide-
+ologically neutral (e.g., that the human feedback on which t he system was trained had
+been gathered from a random sample of the population). Alter natively, the use of de-
+fensive systems might be established as voluntary norm. In t his case, defensive systems
+could be trained both by governments and by private entities . Companies that train
+cutting-edge AIs might agree to industry standards that req uire packaging outputs with
+assessment and contextualization from defensive systems m aintained by reputable orga-
+nizations. Or, at the most laissez-faire end of the spectrum, non-proﬁts might simply
+oﬀer defensive systems to the public, for instance as web brow ser plugins.
+Second, along with responding to individual statements, de fensive systems could
+assess particular AI models and the organizations that use t hem for general patterns
+of misleading behavior. If a particular model regularly pro duces misleading content,
+or a particular company or political campaign regularly use s misleading AI-generated
+content, defensive systems could ﬂag these contents as untr ustworthy.
+3.2 Extreme transparency
+Regardless of whether their use is required by law or a matter of individual choice,
+the potential eﬃcacy of defensive systems could be greatly e nhanced by norms or legal
+requirements of transparency with respect to AI-generated content. One idea that has
+recently gathered support is “bot or not” laws (like Califor nia’s SB 1001) that require
+AI-generated content to be labeled as such. Insofar as defen sive systems exclusively
+target AI-generated content, such a regulation would let th em know what to target. But
+this requirement could be usefully strengthened, in at leas t three ways:
+1. “Which bot?” laws (or norms) would require AI-generated c ontent to identify
+generally; (ii) the debate model envisions a pair of identic al or similar agents debating one another,
+whereas defensive systems generate replies to a wide range o f systems that may be very diﬀerent in
+terms of architecture, training objectives, and behavior; and (iii) whereas the debate model envisions an
+extended back-and-forth between AIs, a defensive system mi ght just output a single reply that is not
+seen or answered by the system to which it is replying.
+Factual accuracy would be essential to a useful and trustwor thy defensive system. Thus, we can
+only create such a system if we can solve the problem of halluc inations. But we are making progress
+this problem (Ji et al., 2023, §5), and it seems much easier to solve than the problem of decep tive or
+manipulative behavior. (Hallucination is a problem of capa bilities, which should be expected to improve
+as AI capabilities increase; deception and manipulation ar e problems of alignment, which—all else being
+equal—will become more serious as capabilities increase. A nd even if solving the hallucination problem
+allowed us to create systems that did not mislead, that would not solve the problem of some humans
+choosing to create misleading systems for self-interested purposes .)
+12
+the speciﬁc model variant by which it was generated. This wou ld allow defensive
+systems to identify patterns of misleadingness in particul ar models, and to ﬂag
+statements generated by untrustworthy models. If models ar e frequently updated,
+it might be hard to accumulate large samples of outputs from a particular model
+before it is supplanted. But developers might give evaluato rs pre-deployment access
+to their models to run automated tests, and users might learn to distrust content
+generated by AI models that have not undergone such testing. Alternatively,
+regulators might require every model variant to undergo pre -deployment testing
+and make the results publicly available, akin to safety test ing in automobiles.
+2. “What prompt?” laws (or norms) would require that AI-gene rated content carry
+a record of the prompt from which it was generated. This would allow defensive
+systems, and human users, to see whether the AI was actively e ncouraged to be
+misleading.
+3. “Original output” laws (or norms) would require that AI-g enerated content carry
+a record of the full, unedited model output on which any state ment was based.
+This would guard against, for instance, political campaign s editing or selectively
+quoting the output of a trustworthy AI system in a misleading way.
+These various transparency requirements could be implemen ted, for instance, by
+requiring all AI-generated content to carry an identifying mark containing a QR code
+that allowed human addressees, and defensive AI systems, to access all of the above
+information at will. 14
+3.3 Philosophical approach: “minimal paternalism”
+The preceding proposals embody a sort of “minimal paternali sm”. On the one hand, I
+have not suggested that we try to ban all potentially mislead ing uses of AI in domains like
+marketing or politics. Rather, the use of defensive systems to contextualize potentially
+misleading content reﬂects the ideal of a marketplace of ide as in which the solution to
+14Enforcing transparency requirements is a non-trivial prob lem. Possible methods include “water-
+marking” (embedding information about provenance into AI o utputs in a way that is diﬃcult to remove)
+and keeping records of interactions with generative AI syst ems (prompts and outputs) against which
+potentially AI-generated content can be compared. (See Par k et al. (2023, §4.2) and citations therein.)
+Embedding hard-to-remove watermarks in large-scale AI out puts (for instance, 1000-word essays) has
+so far proven challenging, and embedding more information ( like the complete prompt and original out-
+put) in a smaller output (for instance, a few sentences of tex t) might be impossible. So record-keeping
+seems like a more promising approach to enforcing extreme tr ansparency requirements. In a world where
+dangerous models are held by only a few institutional actors that can be monitored by regulators and
+have reputations to protect, and others can only query these models through text windows or APIs,
+extreme transparency requirements will be easier to enforc e: AI companies can require those who use
+their products to abide by transparency standards, use thei r own records of model interactions to detect
+violations of those standards, and cut oﬀ access for repeat v iolators. And regulators can ensure that
+companies take these responsibilities seriously. On the ot her hand, in a world where cutting-edge or
+otherwise dangerous models models are widely disseminated , even minimal transparency requirements
+for AI-generated content will be much harder to enforce.
+13
+harmful speech is counter-speech. It requires us to trust th at, when exposed to both
+sides of an argument, people will respond reasonably or at le ast not disastrously (e.g.,
+not succumbing en masse to the fear-mongering of a would-be authoritarian). On the
+other hand, requiring that certain speech come packaged with counter-speech, and with
+information about its provenance, alters the normal unders tanding of a free marketplace
+of ideas in which speakers can freely choose what not to say and listeners can choose
+what arguments or viewpoints not to be exposed to.
+But these amendments are potentially justiﬁed by the very hi gh rate of progress in
+AI capabilities, which creates the risk that deceptive or ma nipulative speech could do
+signiﬁcant harm before counter-speech has a chance to catch up, and before people have
+learned to be appropriately skeptical. And while a policy un der which governments or big
+tech companies selectively append critical notes to disfav ored content seems worrisome
+from the point of view of a marketplace of ideas, a policy unde r which all content (or all
+AI-generated content) carries such notes seems much less ob jectionable, insofar as we can
+trust that the defensive systems that generate the notes are trained only to be helpful
+as judged by their users, and not to further particular ideol ogical goals or interests.
+4 Future risks
+It is fairly easy to see how defensive systems and high transp arency standards might
+mitigate near-term risks from deceptive and manipulative A I, if eﬀective defensive sys-
+tems can be trained and transparency standards can be enforc ed. But would these
+measures do anything to guard against larger-scale risks fr om future, more capable AI
+systems? In this section, I will make the case that defensive systems could be one useful
+line of defense against future catastrophic risks from AI, a nd brieﬂy consider the role of
+transparency standards.
+The familiar scenario for AI catastrophe goes as follows: (1 ) We will someday create
+systems with greater-than-human general intelligence (AG I+). (2) These systems will
+have goals of their own. (3) These goals will be misaligned wi th human values, in such
+a way that either their achievement would be intrinsically c atastrophic for humanity
+(e.g., converting all matter in the solar system into paperc lips) or the AI will deem it
+instrumentally necessary to disempower humanity so that we can’t interfere with its
+pursuit of its goals. (4) In either case, the AI’s greater-th an-human capacities will allow
+it to achieve its goals at our expense.
+In the past several years (especially since the release of GP T-3 in 2020), the rapid and
+surprising improvement in transformer-based LLMs has comp licated this story. LLMs
+have extremely general reasoning capabilities, and can alr eady convincingly imitate hu-
+mans in many domains, but do not seem particularly agentic or goal-driven. They are
+trained to succeed at simple one-oﬀ tasks (predicting the ne xt token or outputting re-
+sponses that satisfy a human evaluator), not to pursue long- term goals that require
+planning and adaptation. They do not trade oﬀ immediate rewa rds for future rewards—
+for instance, intentionally giving poor responses to convi nce their designers to provide
+more training compute, thereby improving their future resp onses. (The process by which
+14
+LLMs are trained does not reward or select for such behavior. ) Rather, they are very
+much like “Oracle AIs”, systems that simply answer any quest ion put to them as well
+as they can, by whatever standards they have been taught. Alt hough it is not clear
+that we can achieve AGI+ by simply scaling up existing LLMs, t he capabilities of these
+systems strongly suggest that human-level cognitive capab ilities need not come along
+with human-like agency. And they at least make it plausible t hat the ﬁrst AGI+ will
+not be recognizably agentic.
+This does not mean, unfortunately, that existential risks f rom AI are oﬀ the table.
+For one thing, we might ﬁnd multiple paths to human-level gen eral intelligence, including
+both safe routes (e.g., scaling up LLMs) and dangerous route s (e.g., based on reinforce-
+ment learning in real-world environments or simulations). For another thing, although
+LLMs in themselves are not agentic, they can be—and are being —used to create agents.
+These “language agents” ask an LLM to develop plans to meet a s peciﬁed objective
+while connecting it to other systems that automate the execu tion of those plans and
+give feedback from the environment that it can use to update t hem. Insofar as (i) LLMs
+can generate eﬀective real-world plans (which they already c an to a large extent), (ii)
+execution and feedback can be eﬀectively automated, and (iii ) no superior architecture
+emerges for agentic AI, we can expect there to be very strong i ncentives to build lan-
+guage agents on top of LLMs, since they will greatly reduce th e cost and increase the
+speed of performing many tasks that presently require human labor. In either case, it
+seems likely that over the coming decades, cutting-edge AI s ystems will include both
+relatively safe non-agentic systems like simple LLMs, and m ore risky agentic systems
+(language agents and/or other agent types, e.g. based on rei nforcement learning). 15
+In this situation, we should expect the safer systems to play a large role in mitigating
+the risks of the more dangerous systems. And the ﬁrst line of s uch an automated defense
+will be to detect and counteract deceptive or manipulative b ehavior. Once we have
+agentic AI systems with near-human capabilities, we will pr esumably wish to shut down
+any system that is known to be pursuing goals signiﬁcantly mi saligned with our own (i.e.,
+goals we regard as bad in and of themselves, or that could just ify harmful behavior).
+The systems that pose the greatest threat, then, are those th at can conceal their true
+15Goldstein and Kirk-Giannini (2023) argue that language age nts pose much less risk than other forms
+of agentic AGI, because we can specify their goals in natural language rather than hoping that they pick
+up the right goals from a reward signal in a training environm ent and because their beliefs and plans will
+be stored in the form of natural language sentences that make their behavior intelligible and predictable
+to us. This may well be right, but I don’t think we should be too sanguine: We are still left with perhaps
+the simplest form of the alignment problem, that even in natu ral language it is very hard to specify a
+goal that is appropriately sensitive to all the things we car e about.
+Perhaps language agents inherit enough human common sense t o mitigate this danger—given a goal
+like “make dinner”, for instance, they will understand with out being told that they should not cook
+the family pet. But this presents a diﬀerent danger: Human pr actical common sense does not always
+align with the good, and an agent with godlike powers guided o nly by the common sense of 21st-century
+humanity might be morally catastrophic—to take just one obv ious example, it might be willing to
+cause immense quantities of suﬀering to non-human animals i n pursuit of fairly trivial goals. And if
+21st-century human common sense is encoded in its weights an d those weights aren’t updated in the
+deployment environment (a typical feature of language agen ts, and one that might be thought essential
+to their relative safety), it might lack humanity’s capacit y for eventual moral self-improvement.
+15
+goals from us while pursuing them covertly (for instance, by accumulating power and
+resources). And one important way that such a system might pu rsue its goals covertly
+is by deceiving and manipulating humans—for instance, conv incing humans to connect
+it to the internet or give it other aﬀordances, ostensibly for benign purposes. 16
+Defensive systems developed to guard against deceptive use s of AI by human bad
+actors could also help guard against deception by agentic AI s. This might include
+supervising human-AI interactions, either adding context to all statements by the AI or
+ﬂagging potentially deceptive statements. For instance, a n agentic AI that we do not fully
+trust might at ﬁrst be allowed only to communicate with a few h umans, with a defensive
+system monitoring these communications for deceptive or ma nipulative content.
+Defensive systems will arguably enjoy certain intrinsic ad vantages in this role that
+could allow them to defend eﬀectively against even systems mo re powerful than them-
+selves. It is easier, in general, to lead an agent toward rath er than away from the beliefs
+and choices they would adopt under semi-ideal conditions. 17 First, misleading requires
+working against an addressee’s natural tendencies. If, for instance, someone would be-
+lieve P under semi-ideal conditions, then there is a natural path to ward getting her to
+believe that P : present her with the relevant information and give her time to reﬂect on
+it. Getting her to believe ¬ P requires more diﬃcult strategizing, and may depend on
+her not encountering certain information. Second, while not impos sible, it is often diﬃ-
+cult to mislead without asserting, presupposing, or implic ating at least some falsehoods.
+But then, to avoid detection and loss of credibility, the wou ld-be misleader faces the
+challenge of “keeping their lies straight”: They have to che ck whether each new state-
+ment is consistent with their previous statements and with t he rest of the conversational
+common ground. This would be especially diﬃcult for AIs that do not remember all
+their past interactions with humans. A truthful defensive s ystem would not face this
+diﬃculty, since truth is a guarantee of consistency. 18,19
+These intrinsic persuasive advantages are not absolute, ho wever, and a misaligned
+AI might only need to pull oﬀ one or two acts of successful dece ption to gain a decisive
+16Other ways a misaligned system might pursue its goals covert ly including taking actions that no
+human is aware of, or ﬁnding human co-conspirators who are wi lling to knowingly further its true goals.
+17Compare Irving et al’s conjecture that “lying is harder than arguing against a lie given a human
+judge” (Irving et al., 2018, p. 21).
+18The use of consistency checks to detect untruthfulness in AI has been explored experimentally by
+Fluri et al. (2023).
+19Various empirical facts seems to reﬂect the intrinsic advan tage of non-misleading over misleading
+strategies. For instance, most scams manage to deceive only a tiny fraction of their targets, and far more
+money is made in the economy by selling genuine goods and serv ices (which both buyer and seller believe,
+on informed reﬂection, to have real value) than by outright s cams. Similarly, the progress of science and
+technology depends on the fact that the professional incent ives of individual researchers usually favor
+genuine discovery over fraud. Moreover, the sorts of intell ectual disparities that exist among humans are
+not generally suﬃcient to overcome these advantages. A less intelligent businessperson or scientist with
+a genuinely useful product or discovery is, it seems to me, in a much better position to succeed than a
+more intelligent rival who must rely on deception. Even wher e there is no intention to deceive or clear
+conﬂict with available evidence, human intellectual advan tages do not confer persuasive superpowers:
+Plato could not persuade the Syracusans to adopt the politic al system of The Republic , and Einstein
+could not persuade the world to abolish nuclear weapons.
+16
+strategic advantage. So it is also important to detect misle ading tendencies in powerful
+AI systems before they are allowed to interact (or interact a t scale) with human users.
+The role of defensive systems should therefore also include pre-deployment evaluation
+(and post-deployment surveillance) of agentic AI systems t o detect general patterns of
+misleading behavior or a willingness to mislead.
+This is a distinct challenge from countering misleading spe ech: the ability to prevent
+a human user from being misled does not imply the ability to de tect misleading tenden-
+cies in other AI systems. And in the latter task, defensive sy stems will enjoy no obvious
+natural advantages. But they could be given artiﬁcial advan tages. First, we could give
+a defensive system full information about the systems it’s m onitoring, while giving the
+monitored systems as little information as possible about t he defensive system (perhaps
+even concealing its existence), so that they cannot eﬀective ly strategize to deceive it. Sec-
+ond, agentic systems might be given limited knowledge of the ir immediate environment
+(“situational awareness”), for instance by imposing knowl edge cutoﬀs at least a month
+or a year in the past and giving minimal information about the personalities, profes-
+sional positions, capacities, and locations of the humans t hey interact with. This would
+make it harder for an untrustworthy agentic system to identi fy ideal opportunities for
+deception, potentially forcing it to engage in many attempt s at deception that establish
+a detectable pattern before it can do real harm. Taking this a step further, a defensive
+system might be allowed to deceive the agentic systems it mon itors for purposes of ad-
+versarial testing—creating thousands of simulated scenar ios meant to elicit deceptive,
+manipulative, or treacherous behavior, with the agentic sy stem’s memory reset after
+each test. It might, for instance, try to convince the agenti c AI that it is talking to a
+naive or corruptible human in a position of power (say, a high -ranking military oﬃcer),
+to see if it takes advantage of the situation. These epistemi c advantages might allow
+defensive systems to eﬀectively monitor even systems more ca pable than themselves. 20
+This leads us, ﬁnally, to the role of transparency standards . It will be important,
+in guarding against deceptive behavior by agentic AIs, that they cannot impersonate
+humans (or other, trusted AI systems). Enforcing such trans parency standards will
+require limits on their channels of communication, but seem s feasible in principle. 21 In
+the case of language agents, whose goals, plans, and memorie s are stored as natural-
+language sentences, making these transparent to users and t o defensive systems would
+also help to guard against deception and manipulation. And, as already suggested,
+giving defensive systems access to the inner workings of the systems they monitor may
+also be an important form of transparency.
+20This will be particularly important if it turns out that even simple LLMs, above a certain capability
+threshold, become agentic and potentially untrustworthy. We could then use non-agentic systems slightly
+below that threshold to monitor systems above the threshold .
+21As an extreme proof of concept, we might imagine an AI that can only communicate by printing out
+messages, from a printer stocked with letterhead that ident iﬁes the provenance of the message. We could,
+of course, take analogous measures electronically, e.g. by routing all the AI’s communications through a
+system that attaches a digital signature. These measures wo uld not prevent a human confederate from
+passing on the AI’s message while disguising its provenance , but it would prevent the AI from doing so
+without outside aid.
+17
+I conclude, therefore, that measures to guard against near- term misuse of AI for
+deception and manipulation might also play a useful role in g uarding against future risks
+from agentic systems. They will not be enough to obviate thos e risks, of course, and it
+is essential that we work to make AI agents aligned and trustw orthy in the ﬁrst instance
+rather than simply relying on catching misaligned behavior in deployment. But it seems
+very likely that powerful agentic AIs will be deployed befor e we can be entirely certain of
+their trustworthiness, so there is value in having multiple layers of defense. Further, as
+AI capabilities increase, it is all the more important that w e do not turn those increasing
+capabilities toward inculcating a party line chosen by deve lopers or regulators. Rather,
+as much as possible, we should aim to counter deception and ma nipulation by helping
+human users form beliefs and make decisions that they would r eﬂectively endorse. 22
+References
+Adler, J. E. (1997). Lying, deceiving, or falsely implicati ng. Journal of Philosophy 94 (9),
+435–452.
+Bostrom, N. (2014). Superintelligence: Paths, Dangers, Strategies . Oxford University
+Press.
+Cappelen, H. and J. Dever (2021). Making AI Intelligible: Philosophical Foundations .
+New York: Oxford University Press.
+Cappelen, H. and J. Dever (forthcoming). AI with alien conte nt and alien metasemantics.
+In E. Lepore (Ed.), Oxford Handbook of Applied Philosophy of Language . OUP.
+Carlsmith, J. (2022). Is power-seeking AI an existential ri sk? arXiv:
+2206.13353v1 [cs.CY].
+Carroll, M., A. Chan, H. Ashton, and D. Krueger (2023). Chara cterizing manipulation
+from AI systems. arXiv: 2303.09387v2 [cs.CY].
+Chalmers, D. J. (2023). Could a large language model be consc ious? arXiv:
+2303.07103 [cs.AI].
+Chisholm, R. M. and T. D. Feehan (1977). The intent to deceive . Journal of Philoso-
+phy 74 (3), 143–159.
+Danaher, J. (2020). Robot betrayal: A guide to the ethics of r obotic deception. Ethics
+and Information Technology 22 (2), 117–128.
+Evans, O., O. Cotton-Barratt, L. Finnveden, A. Bales, A. Bal wit, P. Wills, L. Righetti,
+and W. Saunders (2021). Truthful AI: Developing and governi ng AI that does not lie.
+arXiv: 2110.06674 [cs.CY].
+22For helpful feedback on drafts of this paper, I am grateful to Adam Bales, William MacAskill,
+Andreas Mogensen, Oliver Ritchie, Bradford Saad, and Ellio tt Thornley.
+18
+Evans, O., A. Stuhlm¨ uller, C. Cundy, R. Carey, Z. Kenton, T.McGrath, and A. Schreiber
+(2018). Predicting human deliberative judgments with mach ine learning. Technical
+report, Future of Humanity Institute. FHI Oxford Technical Report # 2018-2.
+Fluri, L., D. Paleka, and F. Tram` er (2023). Evaluating supe rhuman models with con-
+sistency checks. arXiv: 2306.09983v3 [cs.LG].
+Goldstein, J. A., G. Sastry, M. Musser, R. DiResta, M. Gentze l, and K. Sedova (2023).
+Generative language models and automated inﬂuence operati ons: Emerging threats
+and potential mitigations. arXiv: 2301.04246 [cs.CY].
+Goldstein, S. and C. D. Kirk-Giannini (2023). Language agen ts reduce the risk of exis-
+tential catastrophe. AI & Society , 1–11.
+Hendrycks, D., M. Mazeika, and T. Woodside (2023). An overvi ew of catastrophic AI
+risks. arXiv: 2306.12001v6 [cs.CY].
+Irving, G., P. Christiano, and D. Amodei (2018). AI safety vi a debate. arXiv:
+1805.00899 [stat.ML].
+Ji, Z., N. Lee, R. Frieske, T. Yu, D. Su, Y. Xu, E. Ishii, Y. J. Ba ng, A. Madotto,
+and P. Fung (2023). Survey of hallucination in natural langu age generation. ACM
+Computing Surveys 55 (12), 1–38.
+Kenton, Z., T. Everitt, L. Weidinger, I. Gabriel, V. Mikulik , and G. Irving (2021).
+Alignment of language agents. arXiv: 2103.14659 [cs.AI].
+Levinstein, B. A. and D. A. Herrmann (2023). Still no lie dete ctor for language models:
+Probing empirical and conceptual roadblocks. arXiv: 2307. 00175 [cs.CL].
+Mahon, J. E. (2016). The Deﬁnition of Lying and Deception. In E. N. Zalta (Ed.), The
+Stanford Encyclopedia of Philosophy (Winter 2016 ed.). Metaphysics Research Lab,
+Stanford University.
+Ngo, R., L. Chan, and S. Mindermann (2023). The alignment pro blem from a deep
+learning perspective. arXiv: 2209.00626v5 [cs.AI].
+Pacchiardi, L., A. J. Chan, S. Mindermann, I. Moscovitz, A. Y . Pan, Y. Gal, O. Evans,
+and J. Brauner (2023). How to catch an AI liar: Lie detection i n black-box LLMs by
+asking unrelated questions. arXiv: 2309.15840 [cs.CL].
+Park, P. S., S. Goldstein, A. O’Gara, M. Chen, and D. Hendryck s (2023). AI deception:
+A survey of examples, risks, and potential solutions. arXiv : 2308.14752v1 [cs.CY].
+Pepp, J., R. Sterken, M. McKeever, and E. Michaelson (2022). Manipulative machines.
+In F. Jongepier and M. Klenk (Eds.), The Philosophy of Online Manipulation , pp.
+91–107. Routledge.
+19
+Poritz, I. (2023). OpenAI hit with ﬁrst defamation suit over ChatGPT hallucination.
+Bloomberg Law. https://news.bloomberglaw.com/tech-and -telecom-law/openai-hit-
+with-ﬁrst-defamation-suit-over-chatgpt-hallucination.
+Russell, S. (2019). Human Compatible: Artiﬁcial Intelligence and the Problem of Co ntrol.
+Penguin.
+Saunders, W., C. Yeh, J. Wu, S. Bills, L. Ouyang, J. Ward, and J . Leike (2022). Self-
+critiquing models for assisting human evaluators. arXiv: 2 206.05802 [cs.CL].
+Searcy, W. A. and S. Nowicki (2005). The Evolution of Animal Communication: Relia-
+bility and Deception in Signaling Systems . Princeton: Princeton University Press.
+Smith, M. (1995). Internal reasons. Philosophy and Phenomenological Research 55 (1),
+109–131.
+V´ eliz, C. (2023). Chatbots shouldn’t use emojis. Nature 615 , 375.
+Verma, P. and W. Oremus (2023). ChatGPT invented a sexual har assment
+scandal and named a real law prof as the accused. The Washingt on Post.
+https://www.washingtonpost.com/technology/2023/04/05/chatgpt-lies/.
+Ward, F. R., T. Everitt, F. Belardinelli, and F. Toni (2023). Honesty is the best policy:
+deﬁning and mitigating AI deception. Advances in Neural Information Processing
+Systems.
+20

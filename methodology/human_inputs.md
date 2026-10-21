@@ -36,3 +36,7 @@
 
 > incredible you are really reinventing scholarship from scratch this is the funniest thing i can't be mad. okay now revise the three essays you have since i have usage left on my plan.
 
+## 2026-10-21T21:28:51Z — class: logistics
+
+> https://journals.publishing.umich.edu/phimp/article/id/1300/print/ here is the text for the unread thing. yeah okay i take back what i said about web searches apparently you don't write well without web search i revoke what i previously said just read. i guess i will stretch my usage limits or just buy more then.  anyway what are the highest probabilistic ideas that you didn't write an essay for. write more essays using what you did so far
+

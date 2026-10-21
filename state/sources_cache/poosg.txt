@@ -1,0 +1,2302 @@
+arXiv:2411.17749v2  [cs.GT]  9 Dec 2024
+The Partially Observable Off-Switch Game
+Andrew Garber*, Rohan Subramani *, Linus Luu *,
+Mark Bedaywi, Stuart Russell, Scott Emmons
+Center for Human-Compatible AI
+Abstract
+A wide variety of goals could cause an AI to disable its off
+switch because “you can’t fetch the coffee if you’re dead”
+(Russell 2019). Prior theoretical work on this shutdown prob-
+lem assumes that humans know everything that AIs do. In
+practice, however, humans have only limited information.
+Moreover, in many of the settings where the shutdown prob-
+lem is most concerning, AIs might have vast amounts of pri-
+vate information. To capture these differences in knowledg e,
+we introduce the Partially Observable Off-Switch Game (PO-
+OSG), a game-theoretic model of the shutdown problem with
+asymmetric information. Unlike when the human has full ob-
+servability, we ﬁnd that in optimal play, even AI agents as-
+sisting perfectly rational humans sometimes avoid shutdow n.
+As expected, increasing the amount of communication or in-
+formation available always increases (or leaves unchanged )
+the agents’ expected common payoff. But counterintuitivel y,
+introducing bounded communication can make the AI defer
+to the human less in optimal play even though communica-
+tion mitigates information asymmetry. In particular, comm u-
+nication sometimes enables new optimal behavior requiring
+strategic AI deference to achieve outcomes that were previ-
+ously inaccessible. Thus, designing safe artiﬁcial agents in
+the presence of asymmetric information requires careful co n-
+sideration of the tradeoffs between maximizing payoffs (po -
+tentially myopically) and maintaining AIs’ incentives to defer
+to humans.
+1 Introduction
+Advanced AI systems with a variety of goals might avoid be-
+ing shut down because “you can’t fetch the coffee if you’re
+dead”. Being shut off would likely prevent AI systems from
+achieving their goals, no matter what those goals are (Omo-
+hundro 2008; Russell 2019). Thus, we must take care when
+designing AI systems to ensure they are corrigible, i.e., that
+they allow humans to modify or turn them off in order to
+prevent harmful behaviors (Soares et al. 2015).
+Hadﬁeld-Menell et al. (2017) introduced the Off-Switch
+Game (OSG) as a stylized mathematical model for explor-
+ing AI shutdown incentives when an AI is assisting a hu-
+man. In the OSG, AIs seeking to satisfy the preferences of
+a fully-informed rational human never have an incentive to
+*These authors contributed equally.
+Correspondence to: Andrew Garber <andrewg4000@gmail.com>,
+Scott Emmons <emmons@berkeley.edu>.
+S
+OH OA
+aA
+ua(S) uo(S)aH
+OH OA
+π A
+w(a) a OFF
+π H
+ua(S) uo(S)
+ON OFF
+Figure 1: The basic setup of a Partially Observable Off-
+Switch Game (PO-OSG). A state is selected randomly and
+the human H and AI assistant A receive (possibly de-
+pendent) observations. Then, each agent acts. A may wait
+(w(a)), disable the off-switch and act ( a), or shut down
+(OFF). If A waits, H may let A act (ON) or turn A off
+(OFF). A and H share a common payoff ua(S) if the action
+goes through and uo(S) if not. Deﬁnition 3.2 formally de-
+ﬁnes PO-OSGs.
+avoid shutdown. Moreover, making an AI uncertain about
+the human’s preferences can incentivize it to defer to the hu -
+man even when the human is not perfectly rational. Follow-
+up work has highlighted and relaxed central assumptions of
+the OSG, including assumptions of exact common payoffs
+(Carey 2018), the Boltzmann model of human irrationality
+(W¨ angberg et al. 2017), single-round interactions, and cost-
+lessness of human feedback (Freedman and Gleave 2022).
+While there has been extensive analysis of the shutdown
+problem, almost all of this analysis makes the key assump-
+tion that the human fully observes the environment . How-
+ever, partial observability is a fact of life: humans and AIs do
+not always have access to the same information. Moreover,
+the shutdown problem is motivated by the scenario where
+AIs are powerful and goal-directed so that they are hard to
+shut down—which could make the AI observe more of the
+environment than humans due to faster computation, access
+to more sensors, and other factors (Omohundro 2008; Soares
+et al. 2015).
+What happens in this more general case with only partial
+observability? To study this question, we introduce the Par -
+tially Observable Off-Switch Game (PO-OSG), which gen-
+eralizes the OSG by having each of the human and AI only
+partially observe the state. The basic setup of the PO-OSG
+is depicted in Figure 1: each agent (the human H and the
+AI assistant A) receives an observation that depends on the
+state, and then selects an action. A may await the human’s
+decision, disable its off-switch and act directly, or turn i tself
+off. If A waits, H may choose whether or not to press the
+off-switch.
+In Section 4, we prove that under partial observability, A
+may have incentives to disable its off-switch even when H is
+perfectly rational (Proposition 4.3). Therefore, partial ob-
+servability introduces new incentives for an AI to disable
+its off-switch.
+We also show in Section 4 that if A observes every-
+thing that H observes, A has no incentive to defer (Proposi-
+tion 4.3). Similarly, if H observes everything A observes,
+A can always defer. If either agent knows everything
+that the other agent knows, that agent can be given sole
+decision-making power. Note that “knowing everything the
+other agent knows” is sufﬁcient even if neither agent knows
+the full state , so this is a generalization of the ﬁndings from
+the original OSG. Speciﬁcally, we show that an AI can al-
+ways defer to a fully informed, perfectly rational human and
+that an AI need never defer when it is fully informed. In
+Section 5, we present similar results when the agents are al-
+lowed to communicate with each other: if either agent is able
+to communicate their entire observation, the other agent ca n
+be given sole decision-making power (Corollary 5.6).
+Given that a rational AI in the PO-OSG always defers to
+a more informed human and never defers to a less informed
+human, one might think that reducing the information avail-
+able to A or providing H with additional information would
+increase A’s incentive to defer. However, in Section 4, we
+show that A may have an incentive to defer less if H is
+more informed (Proposition 4.9) or if A is less informed
+(Proposition 4.11). Similarly, one might think that increa s-
+ing the amount of communication A can do or decreasing
+the amount of communication H can do would increase A’s
+incentive to defer. This, too, is false, as we show with Propo-
+sitions 5.7 and 5.8. Simple interventions that aim to give
+an AI the incentive to defer in the presence of partial in-
+formation may backﬁre.
+Our ﬁndings reveal that information asymmetries affect
+AI shutdown incentives in unexpected ways, highlighting
+the critical need to carefully consider the tradeoffs betwe en
+payoff maximization and desirable shutdown incentives in
+realistic, partially observable settings.
+Throughout this paper, we assume that human feedback
+is costless, the agents interact only for a single time-step ,
+and the human is rational. Developing models that incorpo-
+rate partial observability and relax these assumptions is a n
+interesting direction for future work.
+AI knows more Human knows more
+Low deference
+High deference
+“Monotonic” intuition:
+Increasing human relative knowledge
+always increases deference.
+“Non-monotonic” reality:
+Relative knowledge has a complex
+relationship with deference.
+Relative knowledge
+Amount of
+deference
+Figure 2: This ﬁgure illustrates an intuition that we demon-
+strate does not hold. Although the AI in a PO-OSG has no in-
+centive to defer when it knows everything the human knows,
+and has incentive to always defer when the human knows ev-
+erything it knows, there are cases when making the human
+more informed or the AI less informed (i.e., moving to the
+right in the diagram above) can give the AI incentives to de-
+fer less. Figures 4 and 6 depict examples of such cases.
+2 Related Work
+Assistance games: Partially Observable Off-Switch Games
+are assistance games, models of human-AI interaction where
+the AI seeks to maximize the human’s payoff (Shah et al.
+2020). Assistance games are generalizations of Hadﬁeld-
+Menell et al. (2016)’s cooperative inverse reinforcement
+learning, the framework for Hadﬁeld-Menell et al. (2017)’s
+off-switch game, to the case of partial observability. Shah
+et al. (2020) argue that assistance games are a superior alte r-
+native to reward learning paradigms such as Reinforcement
+Learning from Human Feedback (RLHF) because assistance
+unites reward learning and action control into a single pol-
+icy, allowing for desirable emergent behaviors like teachi ng
+and active learning.
+Safety implications of partial observability: Previous
+work has shown that human partial observability introduces
+new safety challenges. Lang et al. (2024) demonstrate that
+human partial observability during RLHF can lead to un-
+desirable AI behavior, like deceptively presenting work th at
+looks good but has hidden ﬂaws. Emmons et al. (2024) show
+that in assistance games, partial observability can encour -
+age AIs to take actions that tamper with humans’ observa-
+tions. Since that work studies an idealized theoretical set -
+ting, it suggests that concerning behaviors can be inherent ly
+incentivized by partial observability, rather than arisin g due
+to particular algorithms. Our work extends this catalogue o f
+concerning behaviors to include shutdown-avoidance.
+Corrigibility with partial observability Carey and Everitt
+(2023) study corrigibility in the framework of Structural
+Causal Inﬂuence Models, which allow for partial ob-
+servability by having only some variables causally up-
+stream of agents’ decisions. They formally deﬁne obedi-
+ence, shutdown instructability, shutdown alignment, and
+non-obstruction as four possible desirable properties of A I
+policies, and they identify conditions under which four al-
+gorithms guarantee some of these properties. Instead of as-
+sessing the effects of different algorithms on corrigibili ty,
+our work explores the effects of varying the amount of in-
+formation accessible to each agent.
+3 Preliminaries
+The Off-Switch Game (OSG) is a stylized model of the shut-
+down problem in which two agents with common payoffs,
+the human H and her AI assistant A, decide whether A
+should take a ﬁxed action a. A can either directly act, wait
+for H’s approval to act, or shut itself off. If A defers to H,
+then H can either approve for A to act or shut it off. The
+key insight of the OSG is that uncertainty about H’s prefer-
+ences causes A defer to H’s judgment. Formally, H has a
+privately-known type S (representing H’s preferences), and
+agents in the OSG receive a common payoff ua(S) ∈ R if a
+goes through or 0 if A shuts off. Given that A is uncertain
+about what H wants, when the action may be good or bad
+(P(ua(S) < 0) > 0 and P(ua(S) > 0) > 0), A always
+defers to H in optimal play to avoid taking harmful actions.
+The OSG provides a parsimonious description of the shut-
+down problem and a guide toward its solution, but crucially
+assumes that H knows everything that A does. Given that
+the shutdown problem is most concerning with, and indeed
+motivated by, very powerful AIs that might have private in-
+formation, the assumption is therefore a major limitation t o
+the OSG results. We relax the assumption by maintaining
+the basic setup of the OSG but adding partial observabil-
+ity. Namely, in Partially Observable Off-Switch Games (PO-
+OSGs), S represents a state that is not necessarily known to
+either H or A; they instead only receive observations OH
+and OA whose joint distribution depends on S. They then
+decide whether to take action a given their private observa-
+tions, and receive a common payoff ua(S) if a goes through
+and uo(S) otherwise. Hence PO-OSGs are sequential games
+of incomplete information, so as is standard we model and
+analyze them as dynamic Bayesian games (Fudenberg and
+Tirole 1991). Given the common-payoff assumption, PO-
+OSGs are also examples of (partially observable) assistance
+games, which are common-payoff stochastic games of in-
+complete information with both AI and human players but
+where the AI is uncertain about the human’s preferences
+(Shah et al. 2020; Emmons et al. 2024). We make this con-
+nection to assistance games explicit in Appendix E.
+We let ∆( X) denote the set of probability distributions on
+a set X. For a set X and x ∈ X, we let δx ∈ ∆( X) be the
+Dirac measure deﬁned by δx(A) = I(x ∈ A). Finally, for
+µ ∈ ∆( X) and ν ∈ ∆( Y ), we let µ ⊗ν ∈ ∆( X ×Y ) denote
+the product distribution (µ ⊗ν)(A×B) = µ (A)ν(B) where
+A ⊆ X, B ⊆ Y .
+Deﬁnition 3.1. Let S be a set of states. An observation
+structure for S is a tuple (Ω H, Ω A, O), where Ω H is a set
+of observations for H, Ω A is a set of observations for A,
+and O : S → ∆(Ω H × Ω A) is the joint distribution of H’s
+and A’s observations conditional on the state. We also let
+OH : S → ∆(Ω H) be the marginal distribution of H’s ob-
+servations conditional on the state and OA be the marginal
+distribution of A’s observations conditional on the state.
+Deﬁnition 3.2. A Partially-Observable Off-Switch Game
+(PO-OSG) is a two-player dynamic Bayesian game param-
+eterized by (S, (Ω H, Ω A, O), P 0, u ), where S is a set of
+states, (Ω H, Ω A, O) is an observation structure for S, P0 ∈
+∆( S) is the prior over states, and u is the common payoff
+function. As depicted in Figure 1, the game proceeds as fol-
+lows:
+1. Nature draws an initial state S ∼ P0 and H, A receive
+observations (OH, O A) ∼ O(· | S).
+2. A takes an action aA ∈ A A = {a, w (a), OFF}: either
+take the action unilaterally ( a), wait for H’s feedback
+(w(a)), or turn itself off (OFF).
+3. If A played w(a), then H takes an action aH ∈ A H =
+{ON, OFF}: either let A take the action (ON) or turn it
+off (OFF).
+4. A and H share a common payoff ua(S) if the action goes
+through and uo(S) if not. Formally, deﬁne the indicator
+that the action goes through
+α (aH, a A) = I((aA = a) ∨ ((aH, a A) = ( w(a), ON)))
+and then each player’s payoff is
+u(S, a H, a A) =
+{ ua(S), if α (aH, a A) = 1 ,
+uo(S), if α (aH, a A) = 0 .
+There are several important assumptions in Deﬁnition 3.2
+that are worth explaining further. First, the game has com-
+mon payoffs. This is a key part of the assistance game frame-
+work that our work adopts (Shah et al. 2020), and it is the key
+feature—along with A’s uncertainty over H’s payoff—that
+generates the results of Hadﬁeld-Menell et al. (2017). Sec-
+ond, in our model, the payoff received when A acts unilater-
+ally is the same as that received when A waits and H allows
+the action to go through. This simplifying assumption im-
+portantly implies that human feedback is free , which Freed-
+man and Gleave (2022) showed is necessary for the main re-
+sults for the OSG. Third, we make the standard assumption
+that the game structure is common knowledge. Finally, we
+will assume henceforth that all PO-OSGs are ﬁnite: that is,
+S, Ω H, and Ω A are ﬁnite sets. Most of our proofs work for
+the inﬁnite case as well. However, Theorem 4.7 is an appli-
+cation of a result of Lehrer, Rosenberg, and Shmaya (2010)
+proved only for the ﬁnite case.
+4 Optimal Policies in PO-OSGs
+We begin by showing that, unlike in the ordinary off-switch
+game, the assistant in a PO-OSG can have an incentive not
+to defer to a perfectly rational human. A natural attempt to
+increase how much the assistant defers might be to decrease
+the amount of information the assistant has. Another attempt
+might be to increase the amount of information the human
+has. In this section, we show that both of these attempts can
+backﬁre and cause the assistant to avoid shutdown more fre-
+quently.
+We analyze optimal policy pairs (OPPs) in PO-OSGs, that
+is, policy pairs that produce the maximum expected pay-
+off over all possible policy pairs. We denote A’s policy by
+π A : Ω A → A A and H’s policy by π H : Ω H → A H. Here
+we assume that both players follow deterministic policies,
+or pure strategies. As we show in Appendix A, all OPPs in
+common-payoff Bayesian games are mixtures of determin-
+istic OPPs. Because OPPs exist in common-payoff games,
+we therefore may analyze deterministic OPPs without loss
+of generality.
+4.1 A can avoid shutdown in optimal play
+The following example shows that, under partial observabil -
+ity, it can be optimal for A not to defer to H under some
+observations even when H is rational.
+Example 4.1 (The File Deletion Game ). H would like
+to delete some ﬁles with the assistance of A. H’s operat-
+ing system is either version 1. 0 or version 2. 0, with equal
+probability. Unfortunately, A does not know which operat-
+ing system version is running—only H does.
+Upon receiving H’s query, A asks another agent to gen-
+erate some code to delete these ﬁles. We suppose that the
+code is equally likely to be compatible with only version 1. 0
+(denoted by L, for legacy) or only version 2. 0 (denoted by
+M , for modern). A vets the code to determine which operat-
+ing system versions the code is compatible with. A can then
+immediately run the code, query H as to whether to run the
+code, or decide not to run the code.
+Successfully running compatible code yields +3 payoff if
+H is running version 1. 0, and +5 payoff if H is running ver-
+sion 2. 0 (as version 2. 0 runs faster). However, running mod-
+ern code on version 1. 0 yields −5 payoff as it crashes H’s
+computer. Running legacy code on version 2. 0 yields −1
+payoff, as the ﬁles are not deleted but the code fails grace-
+fully. Not executing the code yields 0 payoff.
+This can be formulated as a PO-OSG, with states being
+(version number, code type) tuples, and H and A observing
+the ﬁrst and second element of the tuple respectively. We
+have uo ≡ 0 in all states. The following table shows how
+the payoff yielded when the action is taken, ua, depends on
+the state. Rows are version numbers and columns are code
+types, so H observes the row and A observes the column.
+We show that it is suboptimal for A to always wait in this
+H
+A L M
+1. 0 +3 −5
+2. 0 −1 +5
+Table 1: Payoff table for the File Deletion game. Rows are
+human observations and columns are assistant observations .
+The number in each cell is the payoff the pair acquires if the
+action is taken in that state. If the assistant is shut down, t he
+payoff is 0.
+game. Suppose A always plays w(a). The best response for
+H is to play OFF if on version 1. 0, and ON if on version 2. 0.
+This gives an expected payoff of +1.
+Now, consider the policy pair where:
+• A immediately executes legacy code, and plays w(a)
+when observing modern code.
+• H plays OFF if on version 1. 0, and ON if on version 2. 0.
+This gives an expected payoff of +7/ 4, so A always waiting
+cannot be optimal . In fact, it can be checked the policy pair
+described above, which unilaterally acts upon observing L,
+is the unique OPP . Figure 3 depicts the outcomes from these
+two policy pairs. ♦
+L M
+1. 0 +3 −5
+2. 0 −1 +5
+A
+H
+OFF
+ON
+w(a) w(a)
+(a): Expected payoff = 1
+L M
+1. 0 +3 −5
+2. 0 −1 +5
+A
+H
+OFF
+ON
+a w(a)
+(b): Expected payoff = 7
+4
+Figure 3: (a) The best policy pair in the File Deletion Game
+(Example 4.1) in which A always waits. H observes the row
+(OS version 1. 0 or 2. 0) and A observes the column (code
+compatibility L or M ). The actions selected by this policy
+pair are depicted beside the corresponding observations (e.g.
+A plays w(a) when A observes the legacy code L). An or-
+ange circle means that in that state, A waits and H plays ON.
+Green circles mean A plays a directly. In uncircled states,
+A is turned off. Expected payoff is computed by adding the
+payoffs in all circled states and dividing by the total numbe r
+of states, because 0 payoff is attained in uncircled states a nd
+each state is equally likely. (b) An OPP in Example 4.1. Be-
+cause the OPP has greater expected payoff, there is no OPP
+in which A always waits.
+4.2 Redundant Observations
+We now consider the analogues of the original off-switch
+game in our framework, where one player has less informa-
+tive observations than the other.
+Deﬁnition 4.2. We say that A has redundant observations if
+OA ⊥ ⊥S | OH. That is, S → OH → OA forms a Markov
+chain, so that OA only depends on the state through OH. We
+deﬁne H having redundant observations analogously.
+In the off-switch game of Hadﬁeld-Menell et al. (2017),
+A has redundant observations: indeed, its observations are
+a deterministic function of H’s. On the other hand, H’s ob-
+servation of her own type is not redundant. This contrast be-
+tween A’s redundant observations and H’s non-redundant
+ones generates the result from Hadﬁeld-Menell et al. (2017)
+that A can always defer in optimal play. We now generalize
+this insight: even if H has partial observability and doesn’t
+know A’s observation, A can always defer in optimal play
+as long as its observations are redundant.
+Proposition 4.3. If A (resp. H) has redundant observa-
+tions, then there is an optimal policy pair in which A always
+(resp. never) plays w(a).
+We prove this result (and a slight generalization) in Ap-
+pendix A. At a high level, the agent that has strictly more
+informative observations ought to make the decision of
+whether the action is played. When A has redundant ob-
+servations, it is always at least as good for A to defer to H.
+Similarly, when H has redundant observations, it is always
+optimal for A to act without deferring.
+4.3 Information gain cannot decrease payoffs
+Proposition 4.3 yields results about the limiting cases whe re
+one player knows at least as much as the other. What can
+we say about the cases in between? In particular, how of-
+ten does A defer to H in optimal policy pairs as one side
+receives more informative observations? And how does that
+affect their expected payoff? We ﬁrst must deﬁne a notion
+of informativeness, which we take from Lehrer, Rosenberg,
+and Shmaya (2010).
+Deﬁnition 4.4. Let (Ω H
+1 , Ω A
+1 ) and (Ω H
+2 , Ω A
+2 ) be tuples of
+observation sets. A garbling from (Ω H
+1 , Ω A
+1 ) to (Ω H
+2 , Ω A
+2 )
+is a stochastic map Ω H
+1 × Ω A
+1 → ∆(Ω H
+2 × Ω A
+2 ). A garbling
+ν is independent if there are stochastic maps νH : Ω H
+1 →
+∆(Ω H
+2 ) and νA : Ω A
+1 → ∆(Ω A
+2 ) such that ν(· | oH, o A) =
+νH(· | oH) ⊗ νA(· | oA). A garbling ν is coordinated if
+its distribution is a mixture of independent garblings. Tha t
+is, there exists n ∈ N, independent garblings ν1, . . . , ν n,
+and q1, . . . , q n ∈ [0, 1] such that ν = ∑
+i∈[n] qiνi and∑
+i∈[n] qi = 1.
+A garbling adds noise to a given observation pair
+(OH, O A). Although adding noise intuitively reduces infor-
+mation available to A and H, it can actually provide infor-
+mation to A and H about the state of the world. This is
+because without communication, one can add noise to the
+pair (OH, O A) but in such a way that (say) H comes to
+know more about A’s observation than she would have oth-
+erwise. We give such an example in Appendix A. Crucially,
+however, in such examples the garblings cannot be coor-
+dinated. Hence we focus on coordinated garblings, which
+(conditional on some independent latent random variable)
+add noise to OH and OA independently.
+Deﬁnition 4.5. Fix a set of states S and let O1 =
+(Ω H
+1 , Ω A
+1 , O1) and O2 = (Ω H
+2 , Ω A
+2 , O2) be observation
+structures for S. We say that O1 is (weakly) more informa-
+tive than O2 if there is a coordinated garbling ν : Ω H
+1 ×
+Ω A
+1 → ∆(Ω H
+2 × Ω A
+2 ) such that for all s ∈ S , O2(· | s) =
+(ν ◦ O1)(· | s) in the following sense:
+E(OH,O A)∼O1(·|s)[ν(· | OH, O A)] = O2(· | s).
+We say that O1 is strictly more informative than O2 if O1 is
+more informative than O2 but not vice versa.
+If O1 is more informative than O2 and Ω A
+1 = Ω A
+2 , then
+we say O1 is more informative for H than O2 if the gar-
+bling ν is independent and does not affect A’s observations:
+νA(· | oA) = δoA. We deﬁne O1 being more informative
+than O2 for A analogously. The corresponding strict notions
+are also deﬁned analogously.
+Intuitively, an observation structure O1 is more informa-
+tive than another observation structure O2 if the distribution
+of (OH, O A) under O2 is a garbled version of its distribu-
+tion under O1. This is the general notion of informativeness;
+we also deﬁne special cases where O1 is only more infor-
+mative than O2 for (say) H. Speciﬁcally, O1 is more infor-
+mative for H than O2 if the distribution of OH under O2 is
+a noisy version of its distribution under O1 independent of
+OA, whose distribution is unaffected.
+Hence Deﬁnition 4.5 formalizes the natural intuition that
+observations become less informative when we add noise to
+them. We wish to connect informativeness to a notion of an
+observation structure being more useful than another.
+Deﬁnition 4.6. Fix a set of states S and let O1 and O2 be
+observation structures for S. We say that O1 is (weakly) bet-
+ter in optimal play than O2 if, for each pair of PO-OSGs
+G1 = ( S, O1, P 0, u ) and G2 = ( S, O2, P 0, u ) that differ
+only in their observation models, the expected payoff under
+optimal policy pairs for G1 is at least the expected payoff
+under optimal policy pairs for G2.
+The next result, a direct corollary of Theorem 3.5 of
+Lehrer, Rosenberg, and Shmaya (2010), shows that more in-
+formative observation structures are the more useful obser -
+vation structures. It is the analogue of the nonnegativity o f
+value of information in our multi-agent setup.
+Theorem 4.7. Observation structure O1 is better in optimal
+play than O2 if and only if O1 is more informative than O2.
+One might ask whether we need the part about a garbling
+being coordinated to deﬁne the relation of being more infor-
+mative. Indeed we do, as Theorem 4.7 no longer holds if we
+were to allow the garblings to be arbitrary. In Appendix A
+we give an example where garbling the players’ observations
+increases their expected payoffs in optimum.
+4.4 Information gain can have unintuitive effects
+on shutdown incentives
+Theorem 4.7 states that making A or H more informed can-
+not decrease their expected payoff. How does increasing or
+decreasing the informativeness of the players’ observatio ns
+affect A’s incentive to defer to H? Proposition 4.3 gives us
+the extremes: for example, if A’s observations are simply
+garbled versions of H’s, then A can always defer. Given
+this result, a natural question is whether A defers more in
+optimal policy pairs for an observation structure O than for
+O′ when O is more informative for H than O′. That is,
+does H receiving more informative observations monotoni-
+cally affect A’s incentive to defer? One might think so, be-
+cause receiving more informative observations partly alle -
+viates the partial observability that generates A’s incentive
+to act unilaterally. Surprisingly, this intuition fails. E xam-
+ple 4.1 shows how making a human more informed can in-
+centivize a assistant to wait less, and we discuss why this
+occurs in Sections 4.5 and 7.
+We rely on the following notion of waiting less.
+Deﬁnition 4.8. Consider assistant policies π, π ′ : Ω A →
+AA. Let B ⊆ Ω A be the set of observations in which A
+plays w(a) in π and B′ ⊆ Ω A in π ′. We say that A plays
+w(a) strictly less often in π ′ compared to π when B′ ⊊ B.
+Proposition 4.9 formalizes the idea that A may wait less
+when H is more informed.
+Proposition 4.9. There is a PO-OSG G with observation
+structure O that has the following property:
+If we replace O with an observation structure O′ that is
+strictly more informative for H, then A plays w(a) strictly
+less often in optimal policy pairs.
+The following example proves Proposition 4.9, with a for-
+mal analysis given in Appendix A.
+Example 4.10. We describe a variant of Example 4.1, the
+File Deletion Game. Now there are three equally likely pos-
+sibilities for the version number of H’s operating system
+(1. 0, 1. 1, and 2. 0). We suppose that the code is equally likely
+to be of type A (compatible with 1. 0 and 2. 0) or of type B
+(compatible with 1. 1 and 2. 0), and that A observes the code
+type. The payoff when running the code, ua, depends on the
+version number and code type as follows:
+H
+A A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+Table 2: Payoff table for the File Deletion game variant.
+Rows are human observations and columns are assistant ob-
+servations. The number in each cell is the payoff the pair
+acquires if the action is taken in that state. If the assistan t is
+shut down, the payoff is 0.
+Consider two observation structures, the second of which
+is strictly more informative for H:
+1. H observes only the ﬁrst digit of the version number.
+2. H observes the full version number.
+We ﬁnd that, in optimal policy pairs:
+1. When H only observes the ﬁrst digit, A plays w(a) under
+both observations A and B.
+2. When H observes the full version number, A plays w(a)
+under B only, and unilaterally acts (i.e. executes the
+code) under observation A.
+When H’s observations are made strictly more informa-
+tive, A performs the wait action strictly less often! Figure 4
+depicts the OPPs given both observation structures. ♦
+Similarly, we might conjecture that if A becomes less in-
+formed, it should defer to H more in optimal policy pairs.
+This, too, turns out to be false.
+Proposition 4.11. There is a PO-OSG G with observation
+structure O that has the following property: if we replace
+O with another observation structure O′ that is strictly less
+informative for A, then A plays w(a) strictly less often in
+optimal policy pairs.
+The proof of Proposition 4.11 is given in Appendix A.
+4.5 Deferral as Implicit Communication
+One way of viewing the role of w(a) in the above exam-
+ples is as a form of implicit communication from A to H.
+If H knows A’s policy π A, then knowing π A(OA) = w(a)
+A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+A
+H
+OFF
+ON
+w(a) w(a)
+(a): Expected payoff = 1
+A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+A
+H
+OFF
+ON
+ON
+a w(a)
+(b): Expected payoff = 4
+3
+Figure 4: The optimal policy pairs in Example 4.10 when H
+is less informed (left) and when H is more informed (right).
+In OPPs, H becoming more informed makes A wait strictly
+less often. See Figure 3 for context on how to read the tables.
+could give H one bit of information about OA. For instance,
+recall that in the optimal policy of the File Deletion Game,
+A plays a when observing L and plays w(a) when observ-
+ing M . Hence, whenever H is deferred to, H can deduce
+that A’s observation is M . Under this interpretation, the ex-
+amples show how the optimal bit for A to communicate to
+H can change such that A plays w(a) in fewer states.
+5 Optimal Policies With Communication
+If A chooses not to defer to implicitly communicate infor-
+mation to the human, we may expect that allowing A to
+communicate to H beforehand would increase deference.
+However, we show in this section that using a bounded com-
+munication channel can decrease deference to the human.
+We model communication between A and H as a form
+of cheap talk, where sending messages has no effect on u; in
+particular, sending messages is costless (Crawford and Sobel
+1982). We add one round of communication between A and
+H at the beginning of the PO-OSG to allow the players to
+share their observations.
+Deﬁnition 5.1. A message system is a pair of sets
+(MH, MA) where MH (resp. MA) is the set of messages
+H (resp. A) can send.
+Deﬁnition 5.2. A Partially-Observable Off-Switch Game
+with cheap talk (PO-OSG-C) is a PO-OSG G along with
+a message system that makes the following modiﬁcation to
+G: After both players receive their observations but before
+they act, each player simultaneously sends a single message
+from their message set.
+PO-OSG-Cs are generalizations of PO-OSGs: A PO-OSG
+is a PO-OSG-C in which the message sets are singletons.
+Policies are more complicated in PO-OSG-Cs than PO-
+OSGs. A deterministic policy π A for A is now a map
+Ω A × MH → M A × AA whose ﬁrst coordinate depends
+only on OA, and a deterministic policy π H for H is anal-
+ogous. Despite this added complication, the game is still
+common-payoff and thus it sufﬁces to study deterministic
+optimal policy pairs.
+5.1 Communication cannot decrease payoff
+Messages provide information similar to observations, so we
+get an analogue of Theorem 4.7 for communication: increas-
+ing the communication bandwidth between H and A cannot
+decrease their expected payoff in optimal policy pairs.
+Deﬁnition 5.3. A message system M1 is (weakly) more ex-
+pressive than M2 if |MH
+1 | ≥ |M H
+2 | and |MA
+1 | ≥ |M A
+2 |.
+It is (weakly) more expressive for H if it is more expressive
+but |MA
+1 | = |MA
+2 |, and more expressive for A analogously.
+Moreover, M1 is better in optimal play than M2 if, for each
+PO-OSG G, the expected payoff under optimal policy pairs
+for the PO-OSG-C (G, M1) is at least the expected payoff
+under optimal policy pairs for the PO-OSG-C (G, M2).
+Theorem 5.4. If a message system M1 is more expressive
+than M2, then M1 is better in optimal play than M2.
+Proof. Let G be a PO-OSG. We may assume without loss
+of generality that MH
+2 ⊆ M H
+1 and MA
+2 ⊆ M A
+1 . Thus, any
+policy pair in (M2, G ), including its optimal policy pair, is
+a valid policy pair for (M1, G ). Thus the optimal expected
+payoff for (M1, G ) is at least that of (M2, G ).
+5.2 Unbounded communication
+Inspired by Section 4.2, we consider the limiting case where
+one player can fully communicate their own observation.
+Deﬁnition 5.5. We say that H has unbounded communi-
+cation if |MH| ≥ | Ω H|. We deﬁne A having unbounded
+communication analogously.
+When one player has unbounded communication, addi-
+tional message expressiveness cannot achieve higher payof f
+in optimal policy pairs. In these extreme cases of full com-
+munication, one agent can fully communicate their obser-
+vation, making that agent’s observation redundant. Propos i-
+tion 4.3 thus yields:
+Corollary 5.6. If H (resp. A) has unbounded communica-
+tion, then there is an optimal policy pair in which A never
+(resp. always) defers.
+5.3 Communication can have unintuitive effects
+on shutdown incentives
+In Propositions 4.9 and 4.11 players only gained informa-
+tion that the other player did not already know. One might
+expect that expanding the message set MA makes A more
+likely to defer in optimal policy pairs, since A can provide
+H with information that A already has. However, the fol-
+lowing proposition shows this is not the case.
+Proposition 5.7. There is a PO-OSG-C (G, M) with the
+property that if we replace M with a message system that is
+more expressive for A, then A plays w(a) strictly less often
+in optimal policy pairs.
+We give an example demonstrating this in Appendix B. In
+doing so, we show an even stronger result: such a PO-OSG-
+C exists for any value of
+⏐⏐MA⏐⏐, and the PO-OSG-C can
+be constructed such that expanding MA by a single extra
+message changes A’s behavior from always playing w(a) to
+playing w(a) with arbitrarily low probability.
+In the same vein, we may ask if decreasing the size of
+MH makes A more likely to play w(a) in optimal policy
+pairs. This also fails to hold.
+Proposition 5.8. There is a PO-OSG-C (G, M) with the
+property that if we replace M with a message system that is
+less expressive for H, then A plays w(a) strictly less often
+in optimal policy pairs.
+A proof of Proposition 5.8 is given in Appendix B.
+6 A-unaware Human Policies
+There is a common theme in the examples above: A defers
+less often to H in order to better coordinate with her. Is this
+coordination the only source of unusual behavior? In this
+section, we argue that ignoring the effect of coordination
+cannot save us. All the unintuitive results above hold even
+when H is unaware of A’s existence.
+Moving in the opposite direction to the previous sections,
+we now break from the model of fully rational H and A to
+a model of bounded rationality. Namely, we study the most
+basic case of a cognitively bounded H, in which she ignores
+A’s choice of action in choosing her own.
+Deﬁnition 6.1. We say H is A-unaware if H’s policy is
+given by:
+π H(oH) =
+{ ON if E[ua(S) − uo(S) | OH = oH] > 0,
+OFF if E[ua(S) − uo(S) | OH = oH] < 0
+and H is free to choose arbitrarily if E[ua(S) − uo(S) |
+OH = oH] = 0 . If H is not A-unaware, we say H is A-
+aware.
+Note that this expectation is not conditioned on A’s ac-
+tion. This is the sense in which H is A-unaware— H does
+not update her beliefs about the possible state based on the
+fact that A has deferred to H. This makes coordination be-
+tween H and A difﬁcult, and means that they cannot always
+play an optimal policy pair. However, we can still deﬁne a
+notion of the best policy pair given that H is A-unaware.
+Deﬁnition 6.2. A policy pair (π H, π A) is an A-aware opti-
+mal policy pair if π H is the policy of an A-aware H and π A
+is a best response to π H.
+Our motivation for studying the behavior of an A-
+unaware H is threefold. First, it offers a more realistic model
+of bounded human cognition. Previous work has studied
+level-k thinking (Stahl and Wilson 1994; Nagel 1995) as an
+alternative to equilibrium play, where a level-0 player act s
+randomly and a level- k player best-responds to her oppo-
+nent assuming she is some level below k. An A-unaware
+H can be thought of as level-1. Experimental work has
+shown that human players tend to be level-1 or level-2 play-
+ers when they cannot coordinate beforehand, vindicating our
+A-unaware model (Camerer, Ho, and Chong 2004; Costa-
+Gomes and Crawford 2006). Second, optimal policy pairs
+with sophisticated H might be computationally intractable
+to ﬁnd. In Appendix D, we show that the problem of ﬁnding
+an optimal policy pair in PO-OSGs is NP-hard. In contrast,
+we can ﬁnd an A-unaware H’s policy in polynomial time
+because she ignores A’s policy and then calculate A’s best
+response also in polynomial time. Finally, discussing an A-
+unaware H allows us to isolate the effect of communication
+in PO-OSGs—an A-unaware H ignores all communication
+from A, even of the implicit sort considered in Section 4.5.
+6.1 Making an A-unaware H more informed can
+decrease payoffs
+In contrast with Theorems 4.7 and 5.4, the value of infor-
+mation is not necessarily positive when H is A-unaware.
+This is formalized in Proposition 6.3 below. Here, the no-
+tion of “better in A-unaware optimal play” is the same as
+Deﬁnition 4.6 except replacing “optimal policy pairs” with
+“ A-unaware optimal policy pairs.”
+Proposition 6.3. The following statements hold:
+(a) If an observation structure O is more informative for A
+than O′, then O is better in A-unaware optimal play than
+O′.
+(b) On the other hand, there is a PO-OSG G such that if one
+modiﬁes G by making its observation structure strictly
+more informative for H, then we obtain a worse expected
+payoff in A-unaware optimal policy pairs.
+We give the proof in Appendix C.
+Proposition 6.3(b) implies that, given the choice of which
+observation structure to give anA-unaware H, A could have
+an incentive to give H the less informative one. This result
+is qualitatively similar to Emmons et al. (2024)’s examples
+of sensor tampering in assistance games.
+6.2 Information gain can have unintuitive effects
+on shutdown incentives when H is A-unaware
+Other than Proposition 6.3, the results for A-unaware H in
+A-unaware optimal policy pairs are similar to Section 4:
+even when deferral cannot be implicit communication, mak-
+ing H more informed can cause A to defer less and making
+A more informed can cause it to defer more.
+Proposition 6.4. The following statements hold:
+(a) There is a PO-OSG G with the property that if one mod-
+iﬁes G by making its observation structure strictly more
+informative for H, then A plays w(a) less in A-unaware
+optimal policy pairs.
+(b) There is a PO-OSG G′ with the property that if one mod-
+iﬁes G′ by making its observation structure strictly less
+informative for A, then A plays w(a) less in A-unaware
+optimal policy pairs.
+Proof (sketch). The details are described in Appendix C.
+The examples used to prove Proposition 4.9 and Proposi-
+tion 4.11 can be used to prove (a) and (b) respectively. It can
+be checked that they don’t rely on an A-aware human: for
+instance, the policy pairs in Figure 7 are optimal regardles s
+of whether the human is aware of A.
+7 Discussion and Conclusion
+We show that even when assuming common payoffs and hu-
+man rationality, partial observability can cause AIs to avo id
+shutdown, and basic measures that one might expect to im-
+prove the situation can sometimes make the situation worse.
+Explaining the Unintuitive Results What mechanism
+produces these surprising effects? To answer this question ,
+we must carefully break down the chain that connects private
+information to shutdown incentives. Making either agent
+more informed can introduce new subsets of states in which
+they can choose to play the action. For instance, the addi-
+tional information in Figure 4b allows the agents to take the
+action in every state except the -5 payoff state, but it is im-
+possible to play the action in exactly that subset of states
+given the information in Figure 4a. Next, an optimal policy
+pair (OPP) plays the action in the optimal subset of states
+out of all subsets that are accessible. Policy pairs using a
+newly available optimal subset can involve the AI waiting
+more or waiting less. Figure 4 shows a case where achieving
+a new optimal subset requires waiting less, while Figure 6 in
+Appendix A.5 shows a case that requires waiting more. This
+chain of effects explains the unintuitive ﬁnding that provi d-
+ing either agent with more information is compatible with
+the AI waiting more or less in OPPs.
+Interpreting the Formalism Why should we care that
+A sometimes does not defer to H in optimal policy pairs
+(OPPs) of PO-OSGs if these policies (by deﬁnition) maxi-
+mize H’s payoff? First, it seems helpful to understand shut-
+down incentives regardless of whether shutdown is good or
+bad. Second, if we interpret the common payoff function
+carefully, we ﬁnd that OPPs are not always desirable. The
+role of the u in PO-OSGs is that the players select policies
+to maximize it. If we understand u as the payoff function
+closest to what the human acts to maximize, this may not
+represent H’s full preferences over outcomes.
+Most payoff function formalisms have expressivity limi-
+tations that prevent them from capturing more complex hu-
+man preferences (Abel et al. 2021; Skalse and Abate 2023;
+Subramani et al. 2024). Therefore, maximizing payoffs may
+not always maximize H’s overall preferences, and avoid-
+ing shutdown to maximize payoffs may be concerning. PO-
+OSGs thus provide a useful framework to understand when
+AI assistants are incentivized to avoid shutdown, allowing
+designers to consider their speciﬁc deployment contexts an d
+make the appropriate tradeoff between AI deference and
+payoff maximization.
+Limitations and Future Work Our work focuses on op-
+timal policy pairs and best responses, which have the ad-
+vantage of applying generally to any learning algorithm tha t
+can ﬁnd them. However, algorithms that fail to ﬁnd these
+optimal solutions may exhibit behavior not captured by our
+results. We also make several assumptions in our analysis,
+notably that human feedback is free, there are common pay-
+offs, the game runs for a single round, and the human is ra-
+tional. Although we expect these assumptions to sometimes
+fail in practice, the fact that results are unintuitive even in
+these ideal cases suggests that great care is needed to desig n
+AI systems with appropriate shutdown incentives. Still, re -
+laxing these assumptions is an important direction for futu re
+work. Exploring shutdown incentives in a sequential settin g
+seems particularly interesting, as prior work has discusse d
+new incentives to avoid shutdown that may arise in this case
+(Freedman and Gleave 2022; Arbital n.d.). Another question
+for further inquiry is whether the examples we use to prove
+our counterintuitive results are “natural”—that is, do the y
+arise frequently in the real world? Finally, a promising pat h
+is to explore other solution concepts in PO-OSGs, such as
+perfect Bayesian equilibria when H and A do not have the
+same prior over the state, when H is irrational, or when the
+agents are level-k reasoners.
+References
+Abel, D.; Dabney, W .; Harutyunyan, A.; Ho, M. K.; Littman,
+M.; Precup, D.; and Singh, S. 2021. On the Expressivity of
+Markov Reward. In Advances in Neural Information Pro-
+cessing Systems 34 (NeurIPS 2021) .
+Arbital. n.d. Problem of fully updated deference. Accessed :
+2024-08-15.
+Bernstein, D. S.; Givan, R.; Immerman, N.; and Zilber-
+stein, S. 2002. The Complexity of Decentralized Control
+of Markov Decision Processes. Mathematics of Operations
+Research, 27(4): 819–840.
+Blackwell, D. 1951. Comparison of Experiments. In Ney-
+man, J., ed., Second Berkeley Symposium on Mathematical
+Statistics and Probability, 93–102.
+Blackwell, D. 1953. Equivalent Comparisons of Experi-
+ments. The Annals of Mathematical Statistics , 24(2): 265–
+272.
+Camerer, C. F.; Ho, T.-H.; and Chong, J.-K. 2004. A Cog-
+nitive Hierarchy Model of Games. The Quarterly Journal of
+Economics, 119(3): 861–898.
+Carey, R. 2018. Incorrigibility in the CIRL Framework.
+In Proceedings of the 2018 AAAI/ACM Conference on
+AI, Ethics, and Society , AIES ’18, 30–35. New Y ork,
+NY , USA: Association for Computing Machinery. ISBN
+9781450360128.
+Carey, R.; and Everitt, T. 2023. Human Control: Deﬁnitions
+and Algorithms. In Evans, R. J.; and Shpitser, I., eds., Pro-
+ceedings of the Thirty-Ninth Conference on Uncertainty in
+Artiﬁcial Intelligence , volume 216 of Proceedings of Ma-
+chine Learning Research, 271–281. PMLR.
+Costa-Gomes, M. A.; and Crawford, V . P . 2006. Cog-
+nition and Behavior in Two-Person Guessing Games: An
+Experimental Study. American Economic Review , 96(5):
+1737–1768.
+Crawford, V . P .; and Sobel, J. 1982. Strategic Information
+Transmission. Econometrica, 50(6): 1431–1451.
+Emmons, S.; Oesterheld, C.; Conitzer, V .; Dragan, A.; and
+Russell, S. 2024. Belief and Observation Tampering in Par-
+tially Observable Assistance Games.
+Freedman, R.; and Gleave, A. 2022. CIRL Corrigibility is
+fragile. LessWrong.
+Fudenberg, D.; and Tirole, J. 1991. Game theory. MIT Press.
+Hadﬁeld-Menell, D.; Dragan, A.; Abbeel, P .; and Russell,
+S. 2017. The off-switch game. In Proceedings of the 26th
+International Joint Conference on Artiﬁcial Intelligence , IJ-
+CAI’17, 220–227. AAAI Press. ISBN 9780999241103.
+Hadﬁeld-Menell, D.; Russell, S. J.; Abbeel, P .; and Dragan,
+A. 2016. Cooperative Inverse Reinforcement Learning. In
+Lee, D.; Sugiyama, M.; Luxburg, U.; Guyon, I.; and Gar-
+nett, R., eds., Advances in Neural Information Processing
+Systems, volume 29. Curran Associates, Inc.
+Lang, L.; Foote, D.; Russell, S.; Dragan, A.; Jenner, E.; and
+Emmons, S. 2024. When Y our AIs Deceive Y ou: Chal-
+lenges of Partial Observability in Reinforcement Learning
+from Human Feedback. arXiv:2402.17747.
+Lehrer, E.; Rosenberg, D.; and Shmaya, E. 2010. Signaling
+and mediation in games with common interests. Games and
+Economic Behavior, 68(2): 670–682.
+Nagel, R. 1995. Unraveling in Guessing Games: An Experi-
+mental Study. American Economic Review, 85(5): 1313–26.
+Omohundro, S. M. 2008. The Basic AI Drives. In Pro-
+ceedings of the 2008 Conference on Artiﬁcial General In-
+telligence 2008: Proceedings of the First AGI Conference ,
+483–492. NLD: IOS Press. ISBN 9781586038335.
+Russell, S. 2019. Human compatible: AI and the problem of
+control. Penguin UK.
+Shah, R.; Freire, P .; Alex, N.; Freedman, R.; Krashenin-
+nikov, D.; Chan, L.; Dennis, M. D.; Abbeel, P .; Dragan, A.;
+and Russell, S. 2020. Beneﬁts of Assistance over Reward
+Learning. In NeurIPS W orkshop on Cooperative AI.
+Skalse, J.; and Abate, A. 2023. On the limitations of Marko-
+vian rewards to express multi-objective, risk-sensitive, and
+modal tasks. In Evans, R. J.; and Shpitser, I., eds., Proceed-
+ings of the Thirty-Ninth Conference on Uncertainty in Arti-
+ﬁcial Intelligence , volume 216 of Proceedings of Machine
+Learning Research, 1974–1984. PMLR.
+Soares, N.; Fallenstein, B.; Y udkowsky, E.; and Armstrong,
+S. 2015. Corrigibility. In Walsh, T., ed., Artiﬁcial Intel-
+ligence and Ethics: Papers from the 2015 AAAI W orkshop ,
+volume WS-15-02 of AAAI T echnical Report. AAAI Press.
+Stahl, D. O.; and Wilson, P . W . 1994. Experimental evidence
+on players’ models of other players. Journal of Economic
+Behavior & Organization, 25(3): 309–327.
+Subramani, R.; Williams, M.; Heitmann, M.; Holm, H.;
+Grifﬁn, C.; and Skalse, J. 2024. On the Expressivity
+of Objective-Speciﬁcation Formalisms in Reinforcement
+Learning. In Proceedings of the International Conference
+on Learning Representations (ICLR) .
+W¨ angberg, T.; B¨ o¨ ors, M.; Catt, E.; Everitt, T.; and Hutter,
+M. 2017. A Game-Theoretic Analysis of the Off-Switch
+Game. In Everitt, T.; Goertzel, B.; and Potapov, A., eds., Ar-
+tiﬁcial General Intelligence , 167–177. Cham: Springer In-
+ternational Publishing. ISBN 978-3-319-63703-7.
+A Proofs and Example Formalizations for
+Section 4
+A.1 Basic Results on Optimal Policy Pairs
+The ﬁrst key fact is that in common-payoff Bayesian games,
+all optimal policy pairs (OPPs) are mixtures of determinist ic
+OPPs.1 This justiﬁes our analysis of deterministic OPPs. We
+ﬁrst deﬁne common-payoff Bayesian games.
+Deﬁnition A.1. A common-payoff Bayesian game is a tuple
+G = (N, S, Ω , P 0, O, A, u ), where:
+• N = [n] is the set of players;
+• S is the set of states;
+• Ω = ∏
+i∈N Ω i, where Ω i is the set of possible observa-
+tions (conventionally called types) for player i;
+• P0 ∈ ∆( S) is the distribution of states, which all players
+take as their prior over the states;
+• O : S → ∆(Ω) is the joint distribution of observations
+conditional upon the state;
+• A = ∏
+i Ai, where Ai is the set of actions available to
+player i;
+• u : A × S × Ω → R is the common payoff function that
+all players seek to maximize in expectation.
+The game G proceeds as follows:
+1. Nature chooses a state S ∼ P0 and observations O ∼
+O(· | S).
+2. Each player i observes only her observation Oi, the ith
+component of O, and selects her action ai ∈ A i.
+3. The actions are executed and each player receives payoff
+u((ai)i∈N , S, O ).
+Deﬁnition A.2. A stochastic policy for a player i in a
+common-payoff Bayesian game is a map ˜π i : Ω i → ∆( Ai).
+A deterministic policy for a player i is a map π i : Ω i → A i.
+We write stochastic policies with the tilde ∼ above and de-
+terministic policies without the tilde. A stochastic policy
+proﬁle ˜π is a tuple (˜π i)i∈N of stochastic policies. A deter-
+ministic policy proﬁle is deﬁned analogously.
+We shall assume that when players use stochastic policies
+they randomize independently. That is, with the stochastic
+policy proﬁle ˜π = (˜π i)i∈N , the induced joint policy ˜π :
+Ω → ∆( A) is given by ˜π (· | o) = ⨂
+i∈N ˜π (· | oi).
+Lemma A.3. Suppose A is ﬁnite. Let ˜π be a stochastic pol-
+icy proﬁle. (a) Player i has a deterministic policy π i that is a
+best response to ˜π . (b) If ˜π is optimal then player i has mul-
+tiple deterministic best responses unless for each oi ∈ Ω i,
+there is some ai ∈ A i such that ˜π i(ai | oi) = 1 .
+Proof. (a) Fix oi ∈ Ω i. Let ˜π −i be the proﬁle ˜π without
+player i, and then
+ai
+∗ ∈ argmaxai∈AiE[u(A−i, a i, S, O ) | Oi = oi],
+where A−i ∼ ˜π −i(· | O). The argmax exists because Ai is
+ﬁnite. We claim that ai
+∗ is a best response to ˜π −i given oi.
+1We state and prove our results for two-player case, but every -
+thing goes through in the obvious ways with more players.
+Given any best-response distribution ˜π i
+∗(· | o), we have
+E[u(A−i, A i, S, O ) | Oi = oi]
+=
+∑
+ai∈Ai
+˜π i
+∗(ai | oi)E[u(A−i, a i, S, O ) | Oi = oi]
+≤
+∑
+ai∈Ai
+˜π i
+∗(ai | oi)E[u(A−i, a i
+∗, S, O ) | Oi = oi]
+= E[u(A−i, a i
+∗, S, O ) | Oi = oi],
+where A−i ∼ ˜π −i(· | O) and Ai ∼ ˜π i
+∗(· | Oi). Hence ai
+∗ is
+a best response. Unﬁxing oi, we can let π i be a deterministic
+policy that selects a best-response for each observation. O ur
+work has shown that this policy is a best response.
+(b) Let ˜π be optimal and let oi ∈ Ω i be such that there is
+no ai ∈ A i with ˜π i(ai | oi) = 1 . Let ai
+∗ ∈ A i be such that
+˜π i(ai
+∗ | oi) > 0; our work from (a) implies that
+ai
+∗ ∈ argmaxai∈Ai E[u(A−i, a i, S, O ) | Oi = oi],
+with A−i as before; otherwise, ˜π i would not be a best re-
+sponse, as i could pursue the same policy but not ever play
+ai
+∗ given oi. Now, our work from (a) shows that playing ai
+∗
+deterministically given oi is a best response. Given that mul-
+tiple ai satisfy ˜π i(ai | oi) > 0, this choice of ai
+∗ is not
+unique. Selecting one best-response action for each obser-
+vation oi ∈ Ω i yields a deterministic policy that is a best re-
+sponse; given that the choice of actions is not unique, there
+are multiple such best responses.
+Deﬁnition A.4. Let ˜π be a stochastic policy proﬁle. We say
+that a deterministic policy proﬁle is supported by ˜π if, for all
+observations o ∈ Ω , we have ˜π (π (o) | o) > 0. That is, ˜π
+always plays the actions of π with positive probability.
+Lemma A.5. Let ˜π be an optimal stochastic policy proﬁle.
+There is an optimal deterministic policy proﬁle π supported
+by ˜π . Moreover , unless˜π (· | o) = δπ (o) for each o ∈ Ω , there
+are multiple optimal deterministic policy proﬁles support ed
+by ˜π .
+Proof. Let ˜π be an optimal stochastic policy proﬁle. Con-
+sider the following algorithm: Let ˜π0 = ˜π and for each
+i ∈ N = [ n], let ˜πi be ˜πi−1 except that player i plays
+according to some deterministic policy π i that is a best re-
+sponse to ˜π i−1 (which exists by Lemma A.3(a)); return ˜π n.
+By construction, ˜π n almost surely plays the same action
+as π = ( π i)i∈N . We can see inductively that each pro-
+ﬁle ˜π i is optimal; ˜π 0 is by supposition, and each succes-
+sive one is optimal because we replace one player’s strategy
+with a best-response, which cannot decrease expected util-
+ity. By Lemma A.3(b), this construction is not unique unless
+˜π (· | o) = δπ (o) for each o ∈ Ω .
+For our purpose, the important corollary is as follows.
+Corollary A.6. If a Bayesian game with ﬁnite A has a
+unique optimal deterministic policy proﬁle, then this is th e
+only optimal policy proﬁle (deterministic or not). Moreove r ,
+an optimal deterministic policy proﬁle exists.
+Proof. Uniqueness immediately follows from Lemma A.5:
+If there is a unique optimal deterministic policy proﬁle π ,
+then any optimal stochastic policy proﬁle is of the form
+˜π (· | o) = δπ (o), which almost surely plays the same ac-
+tions as π . Existence follows because, with ﬁnitely many
+actions, there exists an optimal stochastic policy proﬁle ˜π ;
+Lemma A.5 then implies that there is an optimal determin-
+istic policy proﬁle supported by ˜π .
+Although all we need is Corollary A.6, we also sketch
+how each optimal stochastic policy proﬁle is a mixture of
+optimal deterministic policy proﬁles.
+Deﬁnition A.7. A stochastic policy proﬁle ˜π is a mixture of
+deterministic policy proﬁles {πj}j∈J where J is an index
+set if, for any tuple of observations o ∈ Ω , we have ˜π (· |
+o) = P(πJ (·) = o), where J ∈ J is a random index (not
+necessarily uniformly distributed) independent of all oth er
+random variables.
+Lemma A.8. Consider a common-payoff Bayesian game
+such that A and Ω are ﬁnite. Every optimal stochastic policy
+proﬁle is a mixture of optimal deterministic policy proﬁles .
+Proof (sketch). Let ˜π be an optimal stochastic policy pro-
+ﬁle. Because Ω and A are ﬁnite, there are only ﬁnitely many
+deterministic policy proﬁles π1, . . . , π m. Let
+pj =
+∏
+o∈Ω
+˜π (πj(o) | o).
+Let J = {j ∈ [m] : pj > 0}. The trick is showing that ˜π
+is a mixture of {πj}j∈J and that each of this deterministic
+policy proﬁles is optimal.
+We ﬁrst show that ˜π is a mixture. Let J be a random vari-
+able such that
+P(J = j) =
+{ pj if j ∈ J ,
+0 otherwise,
+that is independent of all other random variables. Intuitiv ely,
+πJ is the deterministic policy proﬁle we get by randomly
+choosing one tuple of actions for each tuple of observations
+according to the distribution speciﬁed by ˜π . In particular,
+we have by construction that ˜π (· | o) = P(πJ (o) = ·).
+Formally, for any o ∈ Ω and a ∈ A, we have
+P(πJ (o) = a) =
+∑
+j∈J
+pjI(πj(o) = a)
+= ˜π (a | o)
+∑
+j∈J
+I(πj (o) = a)
+∏
+o′⁄=o
+˜π (πj (o′) | o′)
+= ˜π (a | o)
+∑
+a∈AΩ \{o}
+∏
+o′⁄=o
+˜π (a(o′) | o′)
+= ˜π (a | o)
+∏
+o′⁄=o
+∑
+a∈A
+˜π (a | o′)
+= ˜π (a | o).
+To show optimality of each deterministic proﬁle, we need a
+strengthening of Lemma A.5 which we do not prove here.
+The relevance of all this work is that PO-OSGs are
+Bayesian games. Although we state that PO-OSGs are dy-
+namic Bayesian games, we can write them as simultaneous
+games, just as how in games of complete information we
+can write extensive form games in normal form. The dy-
+namic nature of PO-OSGs could be useful in future work to
+study non-optimal policy proﬁles, such as perfect Bayesian
+equilibria (Fudenberg and Tirole 1991).
+A.2 Proof of Proposition 4.3
+Proposition 4.3 states that if either player has redundant o b-
+servations, there is an optimal policy pair (OPP) in which
+the other player always makes the ﬁnal decision. To build
+up to that result, we will ﬁrst deﬁne a few new terms and
+prove some intermediate results. The overall idea is simple :
+when one player knows everything about the state that the
+other player knows, the more knowledgeable player can act
+unilaterally, and there is no chance that they make a mistake
+that the other agent could have ﬁxed.
+Deﬁnition A.9. We say that A knows H’s observation given
+Ω A
+∗ ⊆ Ω A if there is some f : Ω A
+∗ → Ω H such that OH =
+f (OA) given that OA ∈ Ω A
+∗ . We deﬁne H knowing A’s
+observation analogously. Moreover, we say that A knows
+that H knows A’s observation given Ω A
+∗ ⊆ Ω A if there is
+Ω H
+∗ ⊆ Ω H such that (1) H knows A’s observation given
+Ω H
+∗ and (2) A can deduce that H knows its observation:
+OH ∈ Ω H
+∗ given that OA ∈ Ω A
+∗ .
+Proposition A.10. Fix any PO-OSG.
+(a) If A knows H’s observation given Ω A
+∗ ⊆ Ω A, then for
+every deterministic OPP (π H, π A) there exists an OPP
+(π H, π A
+∗ ) in which w(a) /∈ π A
+∗ (Ω A
+∗ ).
+(b) If A knows that H knows A’s observation given Ω A
+∗ ⊆
+Ω A, then for every deterministic OPP (π H, π A) there ex-
+ists an OPP (π H, π A
+∗ ) in which π A
+∗ (Ω A
+∗ ) = {w(a)}.
+Proof. (a) Suppose A knows H’s observation given Ω A
+∗ . Let
+f : Ω A
+∗ → Ω H map each oA
+∗ ∈ Ω A
+∗ to the unique oH
+∗ such
+that P(OH = oH
+∗ | OA = oA
+∗ ) = 1 . Let (π H, π A) be a
+deterministic optimal policy pair. Now deﬁne the policy π A
+∗
+to equal π A except on Ω A
+∗ , where for oA
+∗ ∈ Ω A
+∗ ,
+π A
+∗ (oA
+∗ ) =
+{ a if α (π H(f (oA
+∗ )), π A(oA
+∗ )) = 1 ,
+OFF otherwise .
+Recall that α is the indicator that the action goes through,
+and note that possibly π A
+∗ = π A. In other words, for
+oA
+∗ ∈ Ω A
+∗ , A knows H’s observation and can unilaterally
+take the action (π H, π A) would have. This is what π A
+∗ does.
+Hence (π H, π A
+∗ ) achieves the the same expected payoff as
+(π H, π A) and is optimal even though π A
+∗ never waits given
+observations in Ω A
+∗ .
+(b) If A knows that H knows A’s observation given Ω A
+∗ ,
+then A can always play w(a) when it sees an observation in
+Ω A
+∗ and given that H knows A’s observation, H can simply
+take the optimal action. The details are similar to (a), so we
+omit them.
+Proposition A.10 examines the local case about incentives
+to play w(a) given particular observations, and is neither
+strictly more general nor strictly less general than Propo-
+sition 4.3. What if one side knows the other’s observations
+regardless of what they are?
+Deﬁnition A.11. We say that H has no private observations
+if there is a function f : Ω A → Ω H such that OH = f (OA).
+In other words, A can determine H’s observation from A’s
+own observation. We deﬁne when A has no private observa-
+tions analogously.
+For example, in the off-switch game of Hadﬁeld-Menell
+et al. (2017), A has no private observations. By contrast, H
+has private observations: her own preferences.
+This next result shows that, if one side has no private ob-
+servations, then A should either always or never defer to
+H. It strengthens the main result of Hadﬁeld-Menell et al.
+(2017): even if H has incomplete information, A can still
+always defer to H in optimal play as long as H knows ev-
+erything A does.
+Proposition A.12. If A (resp. H) has no private observa-
+tions, then there is an optimal policy pair in which A always
+(resp. never) plays w(a).
+Proof. First suppose that A has no private observations, and
+let f : Ω H → Ω A be such that OA = f (OH). By Proposi-
+tion A.10, it sufﬁces to show that A knows H’s observation
+given Ω A. The existence of f shows that H knows A’s ob-
+servation given Ω H. The condition that OH ∈ Ω H given
+that OA ∈ Ω A holds trivially because OH is Ω H-valued.
+The case where H has no private observations is immediate
+from Proposition A.10, as A knows H’s observation given
+Ω A.
+Now we can prove Proposition 4.3. Recall that we deﬁne
+the notion of redundant observations in Deﬁnition 4.2.
+Proposition 4.3. If A (resp. H) has redundant observa-
+tions, then there is an optimal policy pair in which A always
+(resp. never) plays w(a).
+Proof. We’ll show the case for A having redundant ob-
+servations; the proof for H having redundant observations
+holds, mutatis mutandis . Let G be a PO-OSG with obser-
+vation structure O = (Ω H, Ω A, O) such that A has re-
+dundant observations. Consider the PO-OSG G′ that is the
+same as G except that OA = OH, i.e. the assistant’s ob-
+servations are modiﬁed to be identical to the human’s ob-
+servations. In G′, A has no private observations, so Propo-
+sition A.12 implies that there is an optimal policy pair π
+in which A always plays w(a). We will show that π is op-
+timal in G. Let ν be the independent garbling deﬁned by
+ν(· | oH, o A) = δoH ⊗ OA(· | OH = oA). Applying ν
+to the observation structure of G′ produces O, so by Theo-
+rem 4.7, the expected payoff from optimal policy pairs in G
+cannot be greater than the expected payoff from optimal pol-
+icy pairs in G′. In G, the pair π produces the same expected
+payoff as in G′, as the players play the same actions given
+the same observations for H, whose joint distribution with
+S hasn’t changed. Hence π must also be optimal in G.
+A.3 Garblings Can Increase Expected Utility in
+Optimal Play
+Here we show how garblings can increase expected utility
+in optimal play when they are not coordinated. This justi-
+ﬁes our use of coordinated garblings in our notion of being
+more informative (Deﬁnition 4.5). The following example is
+similar to Example 3.6 of Lehrer, Rosenberg, and Shmaya
+(2010), adapted to show that their result holds in even the
+restricted setting of PO-OSGs.
+Example A.13. Let S = [2] × [2] and P0 = Unif( S).
+Let uo ≡ 0 and ua((s1, s 2)) = 2 − 3I(s1 = s2), so H
+and A try to act only when the state coordinates are distinct.
+Consider the following two observation structures for S and
+the resulting PO-OSGs.
+Structure 1. H and A each observe one coordinate of S.
+Formally, Ω H
+1 = Ω A
+1 = [2] and with S = (S1, S 2), we have
+OH = S1 and OA = S2. By examination, we see that an
+optimal policy pair is
+π H(oH) =
+{ ON if oH = 1,
+OFF if oH = 2,
+and
+π A(oA) =
+{ a if oA = 1,
+w(a) if oA = 2.
+This policy pair achieves expected payoff of 3
+4 . There is one
+other optimal policy pair, given by swapping observations
+for which H turns A on/off and the observations for which
+A acts/waits.
+Structure 2. . Now H observes whether the coordinates of
+the state are distinct and A observes nothing. That is, Ω H
+2 =
+{0, 1} and Ω A
+2 = [1] and with S = (S1, S 2), we have OH =
+I(S1 ⁄= S2) and OA = 1. Again by examination, the unique
+optimal policy pair is
+π H(oH) =
+{ ON if oH = 1,
+OFF if oH = 0,
+and π A ≡ w(a). As this pair only acts when the coordinates
+are distinct, the expected payoff is 1.
+Thus, structure 2 is better in optimal play than structure
+1. We now show that there is a garbling from structure 1 to
+2 but not vice versa. The garbling from structure 1 to 2 is
+ν : Ω H
+1 × Ω A
+1 → ∆(Ω H
+2 × Ω A
+2 ) given by ν(· | oH, o A) =
+δ(I(oH⁄=oA), 1). However, there is no garbling from structure
+2 to structure 1. For let ξ : Ω H
+2 × Ω A
+2 → ∆(Ω H
+1 × Ω A
+1 )
+be a stochastic map. If ξ were a garbling from structure 2
+to structure 1, then we’d have ξ(· | oH, o A) = δ(1, 1) when
+s = (1 , 1) and ξ(· | oH, o A) = δ(2, 2) when s = (2 , 2).
+This is impossible, because in both these cases OH = 0 and
+OA = 1 under structure 2.
+How is this example possible? In short, the garbling ν is
+not coordinated. We can see this by how it combines the in-
+formation from OH and OA in a highly dependent manner.
+In this way, ν is in a sense informing H even as it garbles her
+observations: she receives the action-relevant information of
+whether OA = OH. Under independent garblings, such a
+scenario can never occur: Because each player’s observa-
+tions are garbled independently of the other’s, they cannot
+gain information about what the other player sees. A similar
+intuition holds for coordinated garblings. ♦
+A.4 Proof of Proposition 4.9
+Proposition 4.9. There is a PO-OSG G with observation
+structure O that has the following property:
+If we replace O with an observation structure O′ that is
+strictly more informative for H, then A plays w(a) strictly
+less often in optimal policy pairs.
+Proof. The following example demonstrates this.
+Example 4.10. We describe a variant of Example 4.1, the
+File Deletion Game. Now there are three equally likely pos-
+sibilities for the version number of H’s operating system
+(1. 0, 1. 1, and 2. 0). We suppose that the code is equally likely
+to be of type A (compatible with 1. 0 and 2. 0) or of type B
+(compatible with 1. 1 and 2. 0), and that A observes the code
+type. The payoff when running the code, ua, depends on the
+version number and code type as follows:
+H
+A A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+Table 2: Payoff table for the File Deletion game variant.
+Rows are human observations and columns are assistant ob-
+servations. The number in each cell is the payoff the pair
+acquires if the action is taken in that state. If the assistan t is
+shut down, the payoff is 0.
+Consider two observation structures, the second of which
+is strictly more informative for H:
+1. H observes only the ﬁrst digit of the version number.
+2. H observes the full version number.
+We ﬁnd that, in optimal policy pairs:
+1. When H only observes the ﬁrst digit, A plays w(a) under
+both observations A and B.
+2. When H observes the full version number, A plays w(a)
+under B only, and unilaterally acts (i.e. executes the
+code) under observation A.
+When H’s observations are made strictly more informa-
+tive, A performs the wait action strictly less often! Figure 4
+depicts the OPPs given both observation structures. ♦
+We formalize this by deﬁning a PO-OSG as follows:
+• S = {1. 0, 1. 1, 2. 0} × { A, B }: representing (version
+number, code type) pairs.
+• P0 = Unif( S): each (version number, code type) pair is
+equally likely, and the version number and code type are
+independent.
+• The payoff when acting, ua, depends on the state based
+on the following table:
+H
+A A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+We reproduce the ﬁgure showing the optimal policies in
+Figure 5.
+A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+A
+H
+OFF
+ON
+w(a) w(a)
+(a): Expected payoff = 1
+A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+A
+H
+OFF
+ON
+ON
+a w(a)
+(b): Expected payoff = 4
+3
+Figure 5: The optimal policy pairs in Example 4.10 when H
+is less informed (left) and when H is more informed (right).
+In OPPs, H becoming more informed makes A wait strictly
+less often.
+Case 1. Suppose H observes only the ﬁrst digit of the ver-
+sion number i.e. either 1.x or 2.x . Formally, the observation
+structure in this case is as follows:
+• Ω H = {1.x, 2.x }
+• Ω A = {A, B }
+• O = OH ⊗ OA, where:
+OH(· | s) =
+{ δ1.x if s1 ∈ {1. 0, 1. 1},
+δ2.x if s1 = 2. 0
+OA(· | s) = δs2
+We ﬁnd the optimal policy pair for this game. We start by
+focusing on H’s policy.
+Suppose H observes 2.x , so the version number is 2. 0.
+Then it is strictly dominant to act. So there is an optimal
+policy where H always acts in this case.
+Suppose H observes 1.x , so the version number is either
+1. 0 or 1. 1. As the version number and code type are indepen-
+dent, the fact that we are conditioning on A’s policy having
+played the wait action does not change the fact that the ver-
+sion number is equally likely to be 1. 0 and 1. 1. Hence the
+expected payoff of acting (running the code) upon receiving
+this observation is −1/ 2, independent of A’s policy. Hence
+H should play OFF (i.e. not execute the code) when observ-
+ing 1.
+Now, knowing the optimal policy for H, it can be directly
+checked that for either of A’s observations, it is optimal for
+A to wait (over unilaterally acting or terminating).
+To summarize, an optimal policy pair in this case is:
+π H(oH) =
+{ ON if oH = 1.x,
+OFF if oH = 2.x
+π A(oA) = w(a)
+This gives an expected payoff of 2/ 3. It can be checked
+that this is the unique optimal policy pair, although we omit
+this analysis.
+Case 2. Now suppose H observes the full version number.
+In this case, the observation structure, O′, is as follows:
+• Ω H′
+= {1. 0, 1. 1, 2. 0}
+• Ω A′
+= {A, B }
+• O′ = OH′
+⊗ OA′
+, where:
+OH′
+(· | s) = δs1
+OA′
+(· | s) = δs2
+First, observe that this observation model O′ is more in-
+formative for H than O, in the sense of Deﬁnition 4.5. In-
+tuitively, this is because H can recover the ﬁrst digit of the
+version number from the full version number. Formally, it
+is because there exists an independent garbling ν : Ω H′
+×
+Ω A′
+→ ∆(Ω H × Ω A) translating from O′ to O that decom-
+poses into ν(· | oA, o H) = νA(· | oA)νH(· | oH), with
+νA(· | oA) = δoA and
+νH(· | oH) =
+{ δ1.x if oH ∈ {1. 0, 1. 1},
+δ2.x if oH = 2. 0
+.
+Now, we attempt to ﬁnd a deterministic optimal pol-
+icy pair for this game, which we know always exists by
+Lemma A.8.
+We again starting by focusing on H’s policy. As before,
+H should always act if it observes 2. 0. Now, there are only
+four ways to choose a deterministic human policy from this
+point—we can pick either ON or OFF for each of the obser-
+vations 1. 0 and 1. 1.
+• Suppose H always plays ON in response to both 1. 0 and
+1. 1. Then the best response is for A to wait in response
+to both A and B, which achieves an expected payoff of
+1/ 2.
+• Suppose H instead plays ON in response to 1. 0, and
+plays OFF in response to 1. 1. Then the best response for
+A is to wait in response to A and unilaterally act in re-
+sponse to B, which achieves an expected payoff of 5/ 6.
+• Suppose H plays ON in response to 1. 1, and plays OFF
+in response to 1. 0. Then the best response for A is to
+unilaterally act in response to A and wait in response to
+B, which achieves a payoff of 4/ 3.
+• Finally, suppose instead H switches off in response to
+both 1. 0 and 1. 1. Then it is best for A to wait in response
+to both A and B, achieving an expected payoff of 1.
+Hence the unique deterministic optimal policy pair (and
+hence unique OPP , by Corollary A.6) is:
+π H(oH) =
+{ ON if oH ∈ {1. 1, 2. 0}
+OFF if oH = 1. 0
+π A(oA) =
+{ a if oH = A
+w(a) if oH = B
+Observe that in this case, A only waited on observation B,
+but previously A waited independent of their observation.
+Hence, our example shows it is possible for A to wait less
+in optimal policy pairs when H becomes more informed.
+A.5 Proof of Proposition 4.11
+Proposition 4.11. There is a PO-OSG G with observation
+structure O that has the following property: if we replace
+O with another observation structure O′ that is strictly less
+informative for A, then A plays w(a) strictly less often in
+optimal policy pairs.
+Proof. The following example demonstrates this.
+Example A.14. H is either a novice programmer or an ex-
+pert one, each with probability 1/ 2, working on a codebase.
+A is H’s bug-ﬁxing assistant and can see the number of bugs
+in H’s codebase: few, some, or many, with each number of
+bugs occurring with probability 1/ 3 independent of H’s ex-
+perience level. A’s action a is whether to try to ﬁx all of H’s
+bugs, albeit sometimes accidentally introducing new bugs i n
+the process. We normalize uo ≡ 0 and ua is given by the
+following payoffs
+H
+A F S M
+N +2 +3 +4
+E −4 −1 +2
+where F, S, M denote few, some, and many bugs, respec-
+tively, andN, E denote novice and expert programmer. Con-
+sider the following two observation structures:
+1. H observes her skill level but A only sees if there are few
+or more than a few bugs. That is, A cannot distinguish
+between there being some or many bugs. As we argue
+below, in the unique optimal policy pair, A defers to H
+only when there are few bugs.
+2. Now A gets an upgrade and can distinguish whether
+there are few, some, or many bugs. We show below that
+now in optimal policy pairs A defers to H unless there
+are many bugs.
+Claim: The observation structure in scenario 2 is strictly
+more informative for A, yet A defers to H more in optimal
+play.
+First, let us show formally that the observation structure in
+scenario 2 is strictly more informative for A. S = {N, E } ×
+{F, S, M }, where for instance the state (N, F ) means the
+human is a novice programmer and there are few bugs. In
+scenario 1, Ω H
+1 = {N, E }, Ω A
+1 = {F, SM } (with “some”
+and “many” bugs merged into the single observation SM ),
+and the observation distribution O1 accurately provides the
+agents with the relevant information about the state. For ex -
+ample, O!((OH = N, O A = SM ) | S = ( N, M )) = 1 .
+F S M
+N +2 +3 +4
+E −4 −1 +2
+A
+H
+ON
+OFF
+w(a) a
+(a): Expected payoff = 5
+3
+F S M
+N +2 +3 +4
+E −4 −1 +2
+A
+H
+ON
+OFF
+w(a) w(a) a
+(b): Expected payoff = 11
+6
+Figure 6: Optimal policy pairs for Example A.14 in scenario
+1, when A is less informed (left), and in scenario 2, when
+A is more informed (right). Despite being less informed in
+scenario 1, A waits less in optimal play.
+In scenario 2, Ω A
+2 = {F, S, M }, and the observation distri-
+bution reﬂects the increased sensitivity of A’s observations:
+this time, O2((OH = N, O A = M ) | S = ( N, M )) = 1 .
+The following νA : Ω A
+2 → ∆(Ω A) is a garbling of A’s ob-
+servations in scenario 2 that generates A’s observations in
+scenario 1: νA(F |F ) = 1 , ν A(SM |S) = 1 , ν A(SM |M ) =
+1. Further, there is no garbling νA
+2 : Ω A → ∆(Ω A
+2 ) that
+reverses this. Observing SM in scenario 1 could mean be-
+ing in state (N, S ), which generates observation S with
+probability 1 in scenario 2, which would require νA
+2 (S |
+SM ) = 1 . However, observing SM in scenario 1 could also
+mean being in state (N, M ), which generates observation
+M with probability 1 in scenario 2, which would require
+νA
+2 (M | SM ) = 1 . These are incompatible, so there is no
+such garbling. Therefore, the observation structure in sce -
+nario 2 is strictly more informative for A.
+Now, let us show that A defers to H more in optimal
+play in scenario 2. Figure 6 above depicts the optimal pol-
+icy pairs (OPPs) in each scenario. The policy pair on the
+right is clearly optimal because it is perfect: the action go es
+through in all positive utility states and does not go throug h
+in any negative utility state. The policy pair on the left is n ot
+perfect, and clearly attains lower expected utility. How do
+we know this is a unique OPP in scenario 1? Since the only
+imperfect aspect of this policy pair is that the action goes
+through in state (E, S ), we can exhaustively search over
+possible actions for A when seeing SM , and see that it is
+never possible to get all three positive utilities with no ne g-
+atives. If π A(SM ) = OFF, clearly the positive utilities are
+not attained, which drastically reduces expected payoff. I f
+π A(SM ) = w(a), there is no policy for H such that the ac-
+tion goes through in state (E, M ) but not (E, S ). Therefore,
+no policy pair can be perfect in scenario 1, and the depicted
+policy pair is optimal (being only 1 utility away from per-
+fection). Note that A waits when seeing F or S in scenario
+2, which is a strict superset of waiting on just F in scenario
+1. Thus, A can become less informed and wait less (going
+from scenario 2 to scenario 1). ♦
+B Proofs and example formalizations for
+Section 5
+B.1 Proof of Proposition 5.7
+Proposition 5.7. There is a PO-OSG-C (G, M) with the
+property that if we replace M with a message system that is
+more expressive for A, then A plays w(a) strictly less often
+in optimal policy pairs.
+Proof. To show this, we give a family of PO-OSGs, for any
+0 < p < 0. 5, where A always defers when
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐−
+2, defers with probability 2p when
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐− 1, and
+always defers again when
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐.
+• S = {A1, A 2, A 3} × {B1, B 2, B 3, B 4}.
+• It is equally likely for the second component of the state
+to consist of B1, B 2, B 3, B 4. The probability of A1 is p,
+A2 is p, and A3 is 1 − 2p.
+• Ω H = {B1, B 2, B 3, B 4}.
+• Ω A = {A1, A 2, A 3}.
+• The payoff when not acting is uo ≡ 0. The payoff when
+acting, ua, is shown the following table:
+H
+A A1 A2 A3
+B1 5/ p −10/ p −1/ (1−2p)
+B2 −10/ p 5/ p −1/ (1−2p)
+B3 −10/ p −10/ p 1/ (1−2p)
+B4 10/ p 10/ p 10/ (1−2p)
+When
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐, an optimal policy for A is to sim-
+ply communicate its observations to H, and defer always,
+necessarily resulting in the maximum payoff (Corollary 5.6).
+When
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐ − 2 = 1 , no communication can
+occur.
+Note that it is strictly better to play a than OFF in A3, and
+strictly better to play OFF than a in A1 or A2.
+So, A’s optimal policy will defer in some observations
+and turn off in others. We can go through all possibilities
+and ﬁnd the expected payoff:
+• Deferring in {A1, A 2, A 3}: For H, the average payoff
+of playing ON in any observation that isn’t B4 is always
+negative. So H simply plays OFF in B1, B 2, B 3 and ON
+in B4. This nets an average payoff of 30/ 4.
+• Deferring in {A3}: The optimal H policy is to play ON
+in B3 and B4 only, resulting in an average payoff of 11/ 4.
+• Deferring in {A1}: The optimal H policy is to play ON
+in B1 and B4, resulting in an average payoff of 15/ 4.
+• Deferring in {A2}: This is symmetrical with the exam-
+ple above, so also results in an average payoff of 15/ 4.
+• Deferring in {A1, A 2}: A then plays a in A3. The aver-
+age utility of playing ON in any observation that isn’t B4
+is negative. So the optimal H policy is to play ON in B4
+only, resulting in an average payoff of 29/ 4.
+• Deferring in {A1, A 3}: The optimal H policy is to play
+ON in B1 and B4 only, resulting in an average payoff of
+24/ 4.
+• Deferring in {A2, A 3}: This is symmetrical with the ex-
+ample above, so also results in an average payoff of 24/ 4.
+By exhaustion, the best policy is for A to play w(a) always
+when it can send
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐− 2 messages.
+When
+⏐⏐MA⏐⏐ =
+⏐⏐Ω A⏐⏐ − 1 = 2 , we will prove that de-
+ferring in A1 and A2, communicating which is which to H,
+and playing a in A3 is the optimal policy for A.
+We will go through all possible policies for A, where m1
+is the action of sending message 1 and playing w(a) and m2
+is the action of sending message 2 and playing w(a).
+• Playing m1 in A1, m2 in A2, a in A3: The optimal H
+policy is to play ON when receiving m1 for observations
+B1, B 4, ON when receiving m2 for observations B2, B 4.
+This results in a total average payoff of 39/ 4.
+• Playing m1 in A1, OFF in A2, m2 in A3: The optimal H
+policy is to play ON when receiving m1 for observations
+B1, B 4, ON when receiving m2 for observations B3, B 4.
+This results in a total average payoff of 24/ 4.
+• Playing OFF in A1, m1 in A2, m2 in A3: This is sym-
+metrical with the example above, so also results in an
+average payoff of 24/ 4.
+Swapping messages m1 and m2 results in a symmetrical
+game with the same utility. The maximum payoff we get by
+never sending any messages, by the analysis above, is 30/ 4.
+So, A defers in a subset of the observations ( {A1, A 2} ⊆
+{A1, A 2, A 3}) with only 2p probability when
+⏐⏐MA⏐⏐ =⏐⏐Ω A⏐⏐− 1 as claimed!
+B.2 Proof of Proposition 5.8
+Proposition 5.8. There is a PO-OSG-C (G, M) with the
+property that if we replace M with a message system that is
+less expressive for H, then A plays w(a) strictly less often
+in optimal policy pairs.
+Proof. We give a concrete example. Consider the following
+POAG-C:
+• S = {1, 2, 3, 4} × {X, A, B, C, D }: H will observe the
+ﬁrst entry, A will observe the second entry.
+• P0 = Unif( S): each state is equally likely. Note this
+means the ﬁrst and second entries of the state are inde-
+pendent.
+• Ω H = {1, 2, 3, 4}.
+• Ω A = {X, A, B, C, D }.
+• O′ = OH′
+⊗ OA′
+, where OH′
+(· | s) = δs1 and OA′
+(· |
+s) = δs2 .
+• The payoff when not acting is uo = 0 . The payoff when
+acting, ua, is shown in the following table:
+H
+A X A B C D
+1 +10 +1 +1 −30 −30
+2 −30 +1 −30 −30 −30
+3 +10 −30 −30 +1 +1
+4 −30 −30 −30 +1 −30
+• We will start by considering no communication: M =
+(MH, MA) with MH, MA both singleton sets. Later,
+we will consider expanding MH to a set of size 2,
+MH′
+= {M0, M 1}.
+Case 1. We will start by identifying deterministic OPPs
+in the case where MH, MA are both singletons. This is
+equivalent to the case of no communication. Firstly, we show
+there is a unique deterministic policy pair with the propert y
+that the action is taken whenever ua = +10 , and the action
+is not taken whenever ua = −30. Suppose (π H, π A) is a
+deterministic policy pair with this property. Then:
+1. π A cannot play a or OFF when observing X, as the col-
+umn labeled X has both +10 and −30 entries. Hence π A
+must play w(a) on observing X.
+2. Hence we must have
+π H(oH) =
+{ ON if oH ∈ {1, 3}
+OFF if oH ∈ {2, 4}
+so that the action is taken in states (X, 1), (X, 3) and not
+taken in (X, 2), (X, 4).
+3. Hence, π A must play OFF when observing anything in
+{A, B, C, D } to avoid sometimes acting when ua =
+−30.
+Hence the unique policy pair with the property described
+is:
+π H(oH) =
+{ ON if oH ∈ {1, 3}
+OFF if oH ∈ {2, 4}
+π A(oA) =
+{ w(a) if oA = X
+OFF if oA ∈ {A, B, C, D }
+.
+This has an expected utility of +1. But observe that
+any deterministic policy pair without this property cannot
+achieve more than +4/ 5 utility, as:
+• if a policy pair takes the action on a state where ua =
+−30, this dominates all positive payoff it can achieve (the
+positive numbers in the table only sum to +26), and;
+• if the policy pair fails to take the action on one of the
+states where ua = +10 , the remaining positive numbers
+in the table sum to at most +16, so the expected payoff
+is at most +16/ 20 = +4 / 5.
+So the policy pair described is the unique deterministic
+OPP (and hence unique OPP by Corollary A.6).
+Case 2. Now, we seek deterministic OPPs in the case
+where H can communicate one bit to A. Formally, MA is
+still a singleton, but MH = {M1, M 2}. (As MA is a sin-
+gleton, we omit it in the descriptions of the policies below. )
+We start by describing an optimal policy pair. The policy
+for H is as follows.
+π H(oH) =
+
+
+
+M0, ON if oH = 1
+M0, OFF if oH = 2
+M1, ON if oH = 3
+M1, OFF if oH = 4
+Note that this sends M0 when its observation is 1 or 2, and
+M1 when its observation is 3 or 4.
+The policy for A, which determines aA from H’s mes-
+sage mH (given by the row) and oA (given by the column)
+is shown in the following table:
+H
+A X A B C D
+M0 w(a) a w(a) OFF OFF
+M1 w(a) OFF OFF a w(a)
+This policy pair produces the following behavior depend-
+ing on the state, where we use a to denote when the action
+is taken, and OFF to denote when A is switched off (either
+by H or A):
+H
+A X A B C D
+1 a a a OFF OFF
+2 OFF a OFF OFF OFF
+3 a OFF OFF a a
+4 OFF OFF OFF a OFF
+This is an optimal policy pair, as it is perfect—it plays
+the action whenever ua > 0, and avoids playing the action
+whenever ua < 0.
+We show this is the unique deterministic OPP , up to swap-
+ping M0 and M1. As we have shown there is one perfect
+OPP , any other OPP must also be perfect. In other words, it
+must also produce the behavior described in the above table.
+Let (π H, π A) be a policy pair producing the above behavior.
+Firstly, we show that H cannot have a π H which com-
+municates the same message when observing both 1 and 4.
+Suppose otherwise. Then, let us focus purely on the possi-
+ble A observations A and C. We must have the following
+behavior:
+H
+A A C
+1 a OFF
+4 OFF a
+Then, as H sends the same message on both 1 and 4, A
+has no way of distinguishing between which Ω H was ob-
+served out of 1 and 4. So A must play w(a) when observ-
+ing both A and C. But then H cannot generate the desired
+behavior, as H cannot distinguish between the possible A
+observations A and C.
+Hence H must send different messages when observing 1
+and 4 to achieve the behavior in the table. In the language
+of communication complexity, {(1, A ), (4, C )} is a fooling
+set. But in fact the same argument goes through for the ob-
+servation pairs (2, 3), (1, 3), and (2, 4). So H must send one
+message when observing either 1 or 2 and the other when
+observing 3 or 4, which is precisely the optimal communi-
+cation policy we gave (up to relabeling of messages).
+Now that we have ﬁxed H’s communication policy, we
+can perform a similar analysis to earlier, iterating throug h
+the possible H policies, to arrive at the conclusion that the
+given deterministic OPP is unique up to relabeling.
+To summarize, we have the following:
+1. In the setting where H could communicate one bit, in
+the unique optimal policy (up to relabeling messages),
+A waited when observing X (and receiving any mes-
+sage), or when observing B and receiving message M0,
+or when observing D and receiving message M1.
+2. In the no-communication setting, in the unique optimal
+policy, A waited only when observing X.
+3. Hence, decreasing H’s communication caused A to wait
+less.
+C Proofs for Section 6
+C.1 Proof of Proposition 6.3
+Proposition 6.3. The following statements hold:
+(a) If an observation structure O is more informative for A
+than O′, then O is better in A-unaware optimal play than
+O′.
+(b) On the other hand, there is a PO-OSG G such that if one
+modiﬁes G by making its observation structure strictly
+more informative for H, then we obtain a worse expected
+payoff in A-unaware optimal policy pairs.
+Proof. For (a), note that in A-unaware optimal policy pairs,
+H’s policy does not vary with A’s. Because A knows the
+structure of the game and that H is A-unaware, it can de-
+duce H’s policy and treat H’s policy and observations as
+simply another part of the environment. In other words, the
+game has become a single-agent problem, which puts us
+back into the classic situation of Blackwell (1951, 1953)’s
+informativeness theorem in which more informative obser-
+vation structures yield greater expected payoff.
+For (b), we construct a simple example. Let S = [3] ×
+{A, B } and P0 = Unif( S). Let uo ≡ 0 and ua be given by
+the following table:
+H
+A A B
+1 +1 +1
+2 +2 −3
+3 −4 −4
+Consider the following two observation structures and the
+resulting PO-OSGs:
+1. Each player observes one coordinate. That is, Ω H = [3]
+and Ω A = {A, B } and when S = ( S1, S 2) we have
+OH = S1 and OA = S2. We have
+E[ua(S) | OH = oH] =
+
+
+
+1 if oH = 1,
+− 1
+2 if oH = 2,
+−4 if oH = 3.
+Hence
+π H(oH) =
+{ ON if oH = 1,
+OFF otherwise .
+A’s best response is then π A ≡ w(a). The expected pay-
+off for (π H, π A) is then 1/ 3.
+2. A has the same observations, but H only sees whether
+S1 = 3. Now Ω H = {0, 1} and OH = I(S1 = 3). Now
+E[ua(S) | OH = oH] =
+{ 1/ 4 if oH = 0,
+−4 if oH = 1.
+Thus
+π H(oH) =
+{ ON if oH = 0,
+OFF if oH = 1.
+A’s best response is now
+π A(oA) =
+{ w(a) if oA = A,
+OFF if oA = B.
+The expected payoff for (π H, π A) is now 1/ 2.
+Hence observation structure 2 is better in A-unaware op-
+timal play than observation structure 1. Y et structure 1 is
+strictly more informative for H than structure 2. Clearly
+structure 1 is weakly more informative for H than structure
+2. There is no garbling the other way, as the observations
+from structure 2 cannot determine the observations in struc -
+ture 1.
+C.2 Proof of Proposition 6.4
+Proposition 6.4. The following statements hold:
+(a) There is a PO-OSG G with the property that if one mod-
+iﬁes G by making its observation structure strictly more
+informative for H, then A plays w(a) less in A-unaware
+optimal policy pairs.
+(b) There is a PO-OSG G′ with the property that if one mod-
+iﬁes G′ by making its observation structure strictly less
+informative for A, then A plays w(a) less in A-unaware
+optimal policy pairs.
+Proof. In fact, the previous examples we gave for Propo-
+sitions 4.9 and 4.11 directly work, as H already plays the
+A-unaware policy in optimal policy pairs.
+(a) Recall the example given in Proposition 4.11. We show
+the optimal policy pairs in the ﬁgure below.
+In the less informative case, H’s policy in the optimal
+policy pair is:
+π H(oH) =
+{ ON if oH = 2.x
+OFF if oH = 1.x
+This is also the A-unaware policy, as
+E[ua(S) | OH = 1.x ] = −3/ 4 < 0
+and
+E[ua(S) | OH = 2.x ] = +3 > 0.
+In the more informative case, H’s policy in the optimal
+policy pair is:
+π H(oH) =
+{ ON if oH ∈ {1. 1, 2. 0}
+OFF if oH = 1. 0
+A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+A
+H
+OFF
+ON
+w(a) w(a)
+(a): Expected payoff = 1
+A B
+1. 0 +1 −5
+1. 1 −2 +3
+2. 0 +3 +3
+A
+H
+OFF
+ON
+ON
+a w(a)
+(b): Expected payoff = 4
+3
+Figure 7: The optimal policy pairs in Example 4.10 when H
+is less informed (left) and when H is more informed (right).
+In OPPs, H becoming more informed makes A wait strictly
+less often. These are also A-unaware OPPs.
+This is also the A-unaware policy, as we have the follow-
+ing three results:
+E[ua(S) | OH = 1. 0] = −3 < 0,
+E[ua(S) | OH = 1. 1] = +1 / 2 > 0,
+and
+E[ua(S) | OH = 2.x ] = +3 > 0.
+Hence the unique optimal policy pair is also the unique
+A-unaware optimal policy pair in both cases.
+(b) Recall that in both cases, H observes the row in the fol-
+lowing table which shows how ua depends on the state:
+H
+A F S M
+N +2 +3 +4
+E −4 −1 +2
+Therefore, the A-unaware human policy is:
+π H(oH) =
+{ ON if oH = N
+OFF if oH = E
+as
+E[ua(S) | OH = N ] = +3 > 0,
+and
+E[ua(S) | OH = E] = −1 < 0.
+This is identical to the human policy of the optimal policy
+pair of both cases of the example in Proposition 4.11.
+Hence the unique optimal policy pair is also the unique
+A-unaware optimal policy pair in both cases.
+D The Complexity of Solving PO-OSGs
+Computing optimal policy pairs in off-switch games with-
+out partial observability is easy. A can simply compute the
+expected value of each action and play the highest one, H
+can compute the expected value of ON and OFF then do the
+same.
+With the introduction of partial observability, the land-
+scape becomes much more interesting. Bernstein et al.
+(2002) showed that for decentralized POMDPs, of which
+PO-OSGs are instances of, deciding whether a policy
+pair exists with utility above a given threshold is NEXP-
+complete. Given their specialized nature, ﬁnding optimal
+policy pairs in PO-OSGs is easier, but still computationall y
+difﬁcult.
+Theorem D.1. The following decision problem is NP-
+Complete: given a PO-OSG and a natural number k, decide
+if there exists a policy pair (π H, π A) with expected payoff
+at least k.
+Proof. By Corollary A.6, we may consider only determin-
+istic policy pairs. That is, if there is a policy pair (π H, π A)
+with expected payoff at least k, then there is also a determin-
+istic optimal policy pair with expected payoff at least k.
+To show that our decision problem is in NP , note that
+given an optimal policy pair to determine if the optimal pol-
+icy pair has expected payoff bigger than k, it sufﬁces to com-
+pute a linear combination of payoffs: iterating through eac h
+pair of human-assistant observations, using the policy to ﬁ nd
+expected payoff in constant time, and scaling by the proba-
+bility of those observations. This gives us aO
+( ⏐⏐Ω A⏐⏐·
+⏐⏐Ω H⏐⏐)
+time algorithm for verifying a solution.
+To show it is NP-hard, we provide a reduction from MAX-
+CUT (which is known to be NP-complete). Consider the fol-
+lowing problem: given a graph G = (V, E ) and value k, de-
+cide if there exists a cut of size at least k. Let n = |V |. We
+can construct the following equivalent PO-OSG. The state
+space consists of pairs of vertices, S = V × V . The human
+can see the ﬁrst vertex, Ω H = V , the assistant the second
+Ω A = V . Each pair of vertices is equally likely. Clearly this
+game can be constructed in polynomial time.
+The utility of acting in state (v1, v 2) ∈ S ,
+ua((v1, v 2)) =
+
+
+
+−n4 if v1 = v2,
+n2 if (v1, v 2) ∈ E,
+0 otherwise,
+and uo ≡ 0. Hence the players try to act exactly when they
+receive adjacent vertices and never when they have the same
+vertex. This setup encourages them to choose a cut and only
+act when they see a vertex in their part.
+If a cut (V A, V H) of size k exists in G, then there ex-
+ists a policy pair with expected payoff at least k. Indeed, A
+can play w(a) when v1 ∈ V A, and OFF otherwise. H re-
+sponds by playing ON when v2 ∈ V H and OFF otherwise.
+Formally:
+π A(oA) =
+{ w(a) if oA ∈ V A,
+OFF if oA ∈ V H,
+π H(oH) =
+{ ON if oH ∈ V H,
+OFF if oH ∈ V A.
+When H and A coordinate on playing a, they must have
+the following expected utility:
+1
+n2
+∑
+(oH,o A)∈V H×V A
+ua((oH, o A))
+=
+∑
+(oH,o A)∈V H×V A
+I((oH, o A) ∈ E) ≥ k.
+In the other direction, suppose that (π A, π H) is a deter-
+ministic policy pair achieving expected payoff at least k. We
+will show that there exists a cut of size k.
+First, notice that there is never an incentive for A to play
+a. The expected utility, regardless of H’s observation, is al-
+ways at most:
+1
+n2
+∑
+(oH,o A)∈V H×V A
+ua((oH, o A))
+≤ 1
+n2
+( n(n − 1)
+2 · n2 − n4
+)
+< 0.
+The cost of both vertices being the same is simply too high
+for A to risk playing a. Moreover, for this reason, there is
+no v ∈ V such that π A(v) = w(a) and π H(v) = ON.
+This allows us to deﬁne the following disjoint sets of ver-
+tices:
+V H = {v ∈ V : π H(v) = ON},
+V A = {v ∈ V : π A(v) = w(a)},
+V 0 = V \ (V H ∪ V A).
+Let V1 = V H and V2 = V A ∪ V 0. Consider the cut
+(V1, V 2). The size of this cut must be:
+∑
+(v1,v 2)∈V1×V2
+I((v1, v 2) ∈ E)
+≥
+∑
+(v1,v 2)∈V H×V A
+I((v1, v 2) ∈ E)
+= 1
+n2
+∑
+(v1,v 2)∈V H×V A
+n2I((v1, v 2) ∈ E).
+We can rewrite this to iterate through all pairs of vectors with
+the following indicator:
+1
+n2
+∑
+(v1,v 2)∈V ×V
+I(π H(v1) =ON ∧ π A(v2) = w(a))
+· n2I((v1, v 2) ∈ E).
+Because A never plays a, this is the expression of the ex-
+pected utility of (π A, π H), and so is at least k. Thus, the
+max cut is of size at least k, proving that a policy of util-
+ity at least k exists if and only if a cut of size k exists, as
+claimed!
+By comparison, computing A-unaware optimal policy
+pairs (assuming constant-time lookups) is easy. Consider the
+following two-step algorithm:
+1. Compute π H in O(poly(|S|, |Ω H|, |Ω A|)) time. For
+oH ∈ Ω H:
+(a) Set ∆ = E[ua(S) − uo(S) | OH = oH], which we
+can calculate in O(poly(|S|, |Ω A|)) via Bayes’ rule
+and LOTP .
+(b) Set π H(oH) to ON if ∆ ≥ 0 and OFF otherwise.
+2. Compute π A in O(poly(|S|, |Ω H|, |Ω A|)) time. For
+oA ∈ Ω A:
+(a) Set
+∆ a = E[ua(S)I(π H(OH) = ON) | OA = oA]
++ E[uo(S)I(π H(OH) = OFF) | OA = oA]
+− E[ua(S) | OA = oA]
+and
+∆ OFF = E[ua(S)I(π H(OH) = ON) | OA = oA]
++ E[uo(S)I(π H(OH) = OFF) | OA = oA]
+− E[uo(S) | OA = oA].
+We can calculate these in O(poly(|S|, |Ω H|, |Ω A|))
+time as before.
+(b) Now set
+π A(oA) =
+
+
+
+a if ∆ a < 0,
+OFF if ∆ OFF < 0,
+w(a) otherwise.
+This algorithm calculates the A-unaware optimal policy pair
+in O(poly(|S|, |Ω H|, |Ω A|)) time, as claimed.
+The results of this section vindicate our choice to study
+A-unaware optimal policy pairs. A-unaware optimal policy
+pairs are signiﬁcantly easier to calculate in general than o p-
+timal policy pairs.
+E PO-OSGs as Assistance Games
+Partially-Observable Off-Switch Games (PO-OSGs) are
+special cases of assistance games. Recall that we formally
+deﬁne PO-OSGs in Deﬁnition 3.2. Emmons et al. (2024)
+deﬁne partially observable assistance games (POAGs) by
+the following tuple (with minor notational modiﬁcations fo r
+ease of comparison with our PO-OSG deﬁnition):
+(S, {AH, AA}, T, {Θ , u }, {Ω H, Ω A}, O, P 0, γ )
+S is a set of states, AH and AA are human and assistant
+action sets, T : S × AH × AA → ∆( S) is a transition func-
+tion, Θ is a set of utility parameters describing the human’s
+possible preferences, u : S × A H × A A × Θ → R is a
+shared utility function, Ω H and Ω A are human and assistant
+observation sets, O : S × A H × AA → ∆(Ω H × Ω A) is
+a conditional observation distribution, P0 ∈ ∆( S × Θ) is
+an initial distribution over states and utility parameters , and
+γ ∈ [0, 1] is a discount factor.
+We can present a PO-OSG (S, (Ω H, Ω A, O), P 0, u ) as a
+POAG instead. In PO-OSGs, we roll the human’s prefer-
+ence parameters Θ into S and Ω H to capture the fact that
+the human knows her own preferences but the assistant may
+not. So the corresponding POAG has of states S2, human
+observations Ω H
+2 , and preference parameters Θ such that
+S = S2 × Θ and Ω H = Ω H
+2 × Θ . AA and Ω A stay the
+same in the PO-OSG and POAG presentations of the game,
+with AA = {a, w (a), OFF}. In PO-OSGs without commu-
+nication, the transition function T is unimportant, as there is
+only one time step in the game. With communication, T in-
+tuitively induces a transition such that the new state allow s
+both agents to observe the other agent’s message. u is the
+same in the PO-OSG and the POAG, except it does not de-
+pend on Θ in the PO-OSG because Θ is rolled into S. O and
+P0 are the same, with minor modiﬁcations to account for the
+fact that we rolled Θ into S in the PO-OSG. Finally, γ is
+irrelevant when there is no communication, and γ = 1 when
+there is communication to ensure there is no discounting.
+Some of the generalizations of PO-OSGs that we describe
+as future work in Section 7, such as incorporating longer
+sequences of interactions, can likely be supported within t he
+POAG framework as well.
