@@ -22,6 +22,8 @@ Claims checked (numbering as in v2):
   Prop 3  MEET(w) = {v : exists b in RB, v >= glb(w, b)} (glb computed from >= alone)
           equals prod_d (B_d U up(w_d)); satisfies the five framework principles and
           transitivity; and equals K on every comparable structure (all total preorders, n<=5).
+          MEET is the most restrictive relation satisfying FACTIVITY, INDUCTIVE LIMITS,
+          CONVEXITY and COMBINATION (two dimensions), or FACTORIZATION (any number).
   Table   COMBINATION / MARGINS for I, K, KM, MEET on product structures.
   Mono    KM on product structures: w >= w' implies KM(w) subset of KM(w').
   Fig 4   G&S's figure-4 model: the stated accessibility sets.
@@ -183,6 +185,33 @@ check(table["KM"]["comb_fail"] == 0 and table["KM"]["marg_fail"] == 0, "KM table
 check(table["MEET"]["comb_fail"] == 0 and table["MEET"]["marg_fail"] > 0, "MEET table")
 check(table["I"]["comb_fail"] > 0 and table["I"]["marg_fail"] == 0, "I table")
 check(table["K"]["comb_fail"] > 0 and table["K"]["marg_fail"] > 0, "K table")
+
+
+# ---------- MEET as the knowledge default once COMBINATION is added ----------
+def minimal_comb(P, w, n):
+    """Most restrictive set containing RB and w (INDUCTIVE LIMITS, FACTIVITY) and closed
+    under COMBINATION at w and under CONVEXITY (upward closure)."""
+    R = set(P.RB) | {w}
+    while True:
+        new = set(R)
+        for v in R:
+            for d in range(n):
+                new.add(tuple(v[d] if j == d else w[j] for j in range(n)))
+        new |= {u for u in P.W if any(P.ge(u, v) for v in new)}
+        if new == R: return frozenset(R)
+        R = new
+def minimal_box(P, w, n):
+    """Smallest upward-closed product set containing RB and w."""
+    proj = [set(v[d] for v in P.RB) | {w[d]} for d in range(n)]
+    box = set(itertools.product(*proj))
+    return frozenset(u for u in P.W if any(P.ge(u, v) for v in box))
+for dims in families:
+    n = len(dims); P = product(dims)
+    for w in P.W:
+        check(minimal_box(P, w, n) == P.MEET(w), f"MEET is not the smallest upward-closed box at {w}")
+        if n == 2:
+            check(minimal_comb(P, w, n) == P.MEET(w), f"MEET is not the 2-dim knowledge default at {w}")
+print("MEET = knowledge default under COMBINATION (2 dims) and under FACTORIZATION (all): checked")
 
 # ---------- Prop 3 under COMPARABILITY: MEET = K on all total preorders, n <= 5 ----------
 cnt = 0

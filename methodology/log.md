@@ -30,3 +30,4 @@
 - 2026-10-21T20:13:30Z **agent**: E3 essay drafted from L6 map: state/drafts/E3/v1.md
 - 2026-10-21T20:14:15Z **event**: Fetched Dorr & Mandelkern 2026 'Sequence and Consequence' from arXiv 2411.16994v2 (inbox/sources/dorr-mandelkern-2026-sequence.pdf + .txt). Launched E3 revision against it.
 - 2026-10-21T20:26:39Z **agent**: E2 revised against full text of Meehan & Zhang 2025: state/drafts/E2/v2.md
+- 2026-10-21T20:31:35Z **agent**: E3 revised against full text of Dorr & Mandelkern 2026: state/drafts/E3/v2.md

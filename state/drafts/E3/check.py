@@ -323,20 +323,24 @@ report("K6 imaging cumulative (point masses + random Pr, exact) <=> (Flat), all 
 # ---------------------------------------------------------------- K7 quotations
 src = open("/home/user/elenchus/inbox/sources/dorr-mandelkern-2026-sequence.txt", encoding="utf-8").read()
 norm = src.replace("ﬀ", "ff").replace("ﬁ", "fi").replace("ﬂ", "fl").replace("ﬃ", "ffi")
-norm = re.sub(r"=== PDF page \d+ ===", " ", norm)
+norm = re.sub(r"\n\d+\n=== PDF page \d+ ===\n", "\n", norm)   # drop page footer + marker
 norm = re.sub(r"-\n", "", norm)          # hyphenation at line ends
 norm = re.sub(r"\s+", " ", norm)
-norm = re.sub(r"(\w) (ff|fi|fl|ffi)", r"\1\2", norm)   # 'di ff erent' artefacts
+norm_joined = re.sub(r"(\w) (ff|fi|fl|ffi)", r"\1\2", norm)   # 'di ff erent' ligature artefacts
 QUOTES = [
     "We have checked many instances of Flattening, in both the indicative and subjunctive mood, and have not found clear counterexamples.",
     "But matters are different for Flattening, which appears valid for both indicatives and subjunctives.",
     "we leave it as an open problem for proponents of C2.F",
     "the logic C2.F has strong prima facie appeal as (at least part of) the logic of the natural language conditional",
+    "except by doggedly holding in mind the Lewisian interpretation",
+    "Flattening is a “cautious” cousin",
+    "If he had been in France, he’d have had a great time if he had been in the south of France.",
+    "If he had gotten an espresso, then he would have had a fit if he’d gotten an overextracted one.",
     "no ordinary metric space has the property that when X ⊆ Y, the closest element of X to a given point is the closest element of X to the closest element of Y to that point",
 ]
 for q in QUOTES:
     qn = re.sub(r"\s+", " ", q)
-    report(f"K7 verbatim: '{q[:60]}...'", qn in norm)
+    report(f"K7 verbatim: '{q[:60]}...'", qn in norm or qn in norm_joined)
 
 # ---------------------------------------------------------------- K8 agreement
 def agreement_violation(n):
