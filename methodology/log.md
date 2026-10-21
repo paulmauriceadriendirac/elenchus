@@ -23,3 +23,5 @@
 - 2026-10-21T19:51:34Z **human** (logistics): see human_inputs.md
 - 2026-10-21T19:57:31Z **agent**: E2 essay drafted from L5 map: state/drafts/E2/v1.md
 - 2026-10-21T20:04:24Z **agent**: E1 essay drafted from L3 map: state/drafts/E1/v1.md
+- 2026-10-21T20:09:41Z **human** (courier): see human_inputs.md
+- 2026-10-21T20:10:17Z **event**: Human supplied full text of Meehan & Zhang 2025 'Bayes Is Back' (inbox/sources/meehan-zhang-bayes-is-back.pdf + .txt extraction). Launched E2 revision against it: fidelity audit, prior-art check, v2.

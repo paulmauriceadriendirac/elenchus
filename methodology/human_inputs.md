@@ -24,3 +24,7 @@
 
 > why were you even runningweb searches did i not tell you to ask me to texts? i have pdfs and reading pdfs is like cents for you.
 
+## 2026-10-21T20:09:41Z — class: courier
+
+> [uploaded PDF: bayes.pdf, 66 pages] this essay? like why were you focusing all the compute on exploration. should have spend this on thinking about the essay!!!! revise it now that you have the full text
+
