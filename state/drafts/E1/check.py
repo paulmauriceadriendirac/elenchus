@@ -26,7 +26,8 @@ Claims checked (numbering as in v2):
           CONVEXITY and COMBINATION (two dimensions), or FACTORIZATION (any number).
   Table   COMBINATION / MARGINS for I, K, KM, MEET on product structures.
   Mono    KM on product structures: w >= w' implies KM(w) subset of KM(w').
-  Fig 4   G&S's figure-4 model: the stated accessibility sets.
+  Fig 4   G&S's figure-4 model: the stated accessibility sets; and, under STATISM, K's
+          conditional knowledge at (0,2) is lost on discovering its antecedent.
   Cor 4   Probabilist relations (p. 121 proposal) built from independent marginals: the
           single-question relations are per-dimension relations obeying (i)-(iii), and
           KM on the product equals the intersection of single-question accessibility.
@@ -250,6 +251,17 @@ check(F.I((0, 1)) == sq | S_((0, 2), (1, 2), (2, 0)), "fig4 I(0,1)")
 check(F.MEET((0, 2)) == F.KM((0, 2)), "fig4 MEET(0,2) = KM(0,2)")
 check(F.MEET((1, 1)) == sq and F.KM((1, 1)) == frozenset(F.W), "fig4 MEET vs KM at (1,1)")
 print("figure 4: K(0,2) =", sorted(F.K((0, 2))), "| KM(0,2) =", sorted(F.KM((0, 2))))
+
+# discovery under STATISM (G&S p. 128): learning that the second dimension is bizarre
+Ep = [w for w in F.W if w[1] == 2]
+Fp = Struct(Ep, F.ge, F.sm)
+before = F.K((0, 2)); after = Fp.K((0, 2))
+knows_cond_before = all(v[0] == 0 for v in before if v[1] == 2)
+knows_cons_after = all(v[0] == 0 for v in after)
+check(knows_cond_before and not knows_cons_after and after == S_((0, 2), (1, 2)),
+      "K: conditional knowledge lost on learning its antecedent")
+print("K at (0,2): knows 'dim2 bizarre -> dim1 ordinary' before discovery:", knows_cond_before,
+      "| knows 'dim1 ordinary' after discovering dim2 bizarre:", knows_cons_after)
 
 # ---------- Probabilist relations (G&S p. 121) ----------
 def prob_rel(cells, P, t):

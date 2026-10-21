@@ -27,3 +27,10 @@
 - Three single-pass essays: E1 (L3), E2 (L5), E3 (L6) → state/drafts/E*/v1.md. After that the
   human takes them to other AI models for revision and does word count, hidden-text check, PDF
   and methodology report manually.
+
+## Current deliverables (2026-10-21)
+- E1 v2 — state/drafts/E1/v2.md (L3; revised against Goodman & Salow 2023 full text; core of v1 was prior art, thesis replaced)
+- E2 v2 — state/drafts/E2/v2.md (L5; revised against Meehan & Zhang 2025 full text; core of v1 was prior art, thesis replaced)
+- E3 v2 — state/drafts/E3/v2.md (L6; revised against Dorr & Mandelkern 2026 full text; core cases survived)
+- Each has revision_notes.md (fidelity audit, prior-art findings, weakest points) and check.py.
+- Next: human takes essays to other AI models for revision; human does word count, hidden-text check, PDF, methodology report.

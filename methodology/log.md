@@ -31,3 +31,5 @@
 - 2026-10-21T20:14:15Z **event**: Fetched Dorr & Mandelkern 2026 'Sequence and Consequence' from arXiv 2411.16994v2 (inbox/sources/dorr-mandelkern-2026-sequence.pdf + .txt). Launched E3 revision against it.
 - 2026-10-21T20:26:39Z **agent**: E2 revised against full text of Meehan & Zhang 2025: state/drafts/E2/v2.md
 - 2026-10-21T20:31:35Z **agent**: E3 revised against full text of Dorr & Mandelkern 2026: state/drafts/E3/v2.md
+- 2026-10-21T20:40:36Z **agent**: E1 revised against full text of Goodman & Salow 2023: state/drafts/E1/v2.md
+- 2026-10-21T20:40:50Z **event**: All three essays at v2 (state/drafts/E{1,2,3}/v2.md). Run paused in lean mode; handed to human for cross-model revision.
