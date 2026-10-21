@@ -10,3 +10,4 @@
 - [ ] Phase 1 — terrain
 
 ## Notes
+- Human declined to extend redact list (2026-10-21); keep identity out of deliverables regardless.
