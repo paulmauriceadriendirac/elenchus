@@ -1,0 +1,859 @@
+[
+ {
+  "key": "BourgetChalmers2023",
+  "authors": [
+   "David Bourget",
+   "David J. Chalmers"
+  ],
+  "year": 2023,
+  "title": "Philosophers on Philosophy: The 2020 PhilPapers Survey",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "doi": "10.3998/phimp.2109",
+  "volume": "23",
+  "used_for": "Part 1; full text retrieved (journal PDF)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Gallow2021",
+  "authors": [
+   "J. Dmitri Gallow"
+  ],
+  "year": 2021,
+  "title": "A Model-Invariant Theory of Causation",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-8699682",
+  "volume": "130",
+  "pages": "45-96",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "deRosset2021",
+  "authors": [
+   "Louis deRosset"
+  ],
+  "year": 2021,
+  "title": "Hollow Truth",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-9263952",
+  "volume": "130",
+  "pages": "533-581",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Mandelkern2021",
+  "authors": [
+   "Matthew Mandelkern"
+  ],
+  "year": 2021,
+  "title": "If P, Then P!",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "doi": "10.5840/jphil20211181242",
+  "volume": "118",
+  "pages": "645-679",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Stojnic2022",
+  "authors": [
+   "Una Stojnić"
+  ],
+  "year": 2022,
+  "title": "Just Words: Intentions, Tolerance and Lexical Selection",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12781",
+  "volume": "105",
+  "pages": "3-17",
+  "note": "online 2021 (Annual vol. 41)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Hurka2021",
+  "authors": [
+   "Thomas Hurka"
+  ],
+  "year": 2021,
+  "title": "Against 'Good for'/'Well-Being', for 'Simply Good'",
+  "venue": "The Philosophical Quarterly",
+  "type": "article",
+  "doi": "10.1093/pq/pqaa078",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)",
+  "volume": "71"
+ },
+ {
+  "key": "HajekRabinowicz2022",
+  "authors": [
+   "Alan Hájek",
+   "Wlodek Rabinowicz"
+  ],
+  "year": 2022,
+  "title": "Degrees of Commensurability and the Repugnant Conclusion",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12388",
+  "volume": "56",
+  "pages": "897-919",
+  "note": "online 2021",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Nair2021",
+  "authors": [
+   "Shyam Nair"
+  ],
+  "year": 2021,
+  "title": "\"Adding Up\" Reasons: Lessons for Reductive and Nonreductive Approaches",
+  "venue": "Ethics",
+  "type": "article",
+  "doi": "10.1086/715288",
+  "volume": "132",
+  "pages": "38-88",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Pummer2021",
+  "authors": [
+   "Theron Pummer"
+  ],
+  "year": 2021,
+  "title": "Impermissible yet Praiseworthy",
+  "venue": "Ethics",
+  "type": "article",
+  "doi": "10.1086/713953",
+  "volume": "131",
+  "pages": "697-726",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Chen2022",
+  "authors": [
+   "Eddy Keming Chen"
+  ],
+  "year": 2022,
+  "title": "Fundamental Nomic Vagueness",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-9415127",
+  "volume": "131",
+  "pages": "1-49",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "IsaacsHawthorneRussell2022",
+  "authors": [
+   "Yoaav Isaacs",
+   "John Hawthorne",
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2022,
+  "title": "Multiple Universes and Self-Locating Evidence",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-9743809",
+  "volume": "131",
+  "pages": "241-294",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Lee2022",
+  "authors": [
+   "Chunghyoung Lee"
+  ],
+  "year": 2022,
+  "title": "I Am Not the Zygote I Came from Because a Different Singleton Could Have Come from It",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-9743822",
+  "volume": "131",
+  "pages": "295-325",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Bradley2022",
+  "authors": [
+   "Richard Bradley"
+  ],
+  "year": 2022,
+  "title": "Impartial Evaluation under Ambiguity",
+  "venue": "Ethics",
+  "type": "article",
+  "doi": "10.1086/718081",
+  "volume": "132",
+  "pages": "541-569",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Barnes2022",
+  "authors": [
+   "Elizabeth Barnes"
+  ],
+  "year": 2022,
+  "title": "Gender without Gender Identity: The Case of Cognitive Disability",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzab086",
+  "volume": "131",
+  "pages": "838-864",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Fusco2024",
+  "authors": [
+   "Melissa Fusco"
+  ],
+  "year": 2024,
+  "title": "Absolution of a Causal Decision Theorist",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12459",
+  "volume": "58",
+  "pages": "616-643",
+  "note": "online 2023 (Annual vol. 43)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Russell2024",
+  "authors": [
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2024,
+  "title": "On Two Arguments for Fanaticism",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12461",
+  "volume": "58",
+  "pages": "565-595",
+  "note": "online 2023 (Annual vol. 43)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Dorst2023",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2023,
+  "title": "Rational Polarization",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-10469499",
+  "volume": "132",
+  "pages": "355-458",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Nebel2024",
+  "authors": [
+   "Jacob M. Nebel"
+  ],
+  "year": 2024,
+  "title": "Ethics without Numbers",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12966",
+  "volume": "108",
+  "pages": "289-319",
+  "note": "online 2023 (Annual vol. 43)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "MarusicWhite2023",
+  "authors": [
+   "Berislav Marušić",
+   "Stephen J. White"
+  ],
+  "year": 2023,
+  "title": "Disagreement and Alienation",
+  "venue": "Philosophical Perspectives",
+  "type": "article",
+  "doi": "10.1111/phpe.12197",
+  "volume": "37",
+  "pages": "210-227",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Knowlton2023",
+  "authors": [
+   "Tyler Knowlton",
+   "Paul Pietroski",
+   "Alexander Williams",
+   "Justin Halberda",
+   "Jeffrey Lidz"
+  ],
+  "year": 2023,
+  "title": "Psycholinguistic Evidence for Restricted Quantification",
+  "venue": "Natural Language Semantics",
+  "type": "article",
+  "doi": "10.1007/s11050-023-09209-w",
+  "volume": "31",
+  "pages": "219-251",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "DiBella2024",
+  "authors": [
+   "Nicholas DiBella"
+  ],
+  "year": 2024,
+  "title": "Cantor, Choice, and Paradox",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-11249602",
+  "volume": "133",
+  "pages": "223-263",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Rubenstein2024",
+  "authors": [
+   "Ezra Rubenstein"
+  ],
+  "year": 2024,
+  "title": "Two Approaches to Metaphysical Explanation",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12491",
+  "volume": "58",
+  "pages": "1107-1136",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Jacobs2024",
+  "authors": [
+   "Caspar Jacobs"
+  ],
+  "year": 2024,
+  "title": "Comparativist Theories or Conspiracy Theories?",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "doi": "10.5840/jphil2024121728",
+  "volume": "121",
+  "pages": "365-393",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Munoz2024",
+  "authors": [
+   "Daniel Muñoz"
+  ],
+  "year": 2024,
+  "title": "Each Counts for One",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-024-02195-7",
+  "volume": "181",
+  "pages": "2737-2754",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Ninan2024",
+  "authors": [
+   "Dilip Ninan"
+  ],
+  "year": 2024,
+  "title": "An Expressivist Theory of Taste Predicates",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "doi": "10.3998/phimp.2683",
+  "volume": "24",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "MeehanZhang2025",
+  "authors": [
+   "Alexander Meehan",
+   "Snow Zhang"
+  ],
+  "year": 2025,
+  "title": "Bayes Is Back",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-11873775",
+  "volume": "134",
+  "pages": "285-350",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "BlumbergHolguin2025",
+  "authors": [
+   "Kyle Blumberg",
+   "Ben Holguín"
+  ],
+  "year": 2025,
+  "title": "Fictional Reality",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-11676103",
+  "volume": "134",
+  "pages": "149-201",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Berstler2025",
+  "authors": [
+   "Sam Berstler"
+  ],
+  "year": 2025,
+  "title": "The Structure of Open Secrets",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-11676088",
+  "volume": "134",
+  "pages": "109-148",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "White2025",
+  "authors": [
+   "P. Quinn White"
+  ],
+  "year": 2025,
+  "title": "Love First",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.13135",
+  "pages": "854-886",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)",
+  "volume": "110"
+ },
+ {
+  "key": "KearlWillardKyle2026",
+  "authors": [
+   "Timothy Kearl",
+   "Christopher Willard-Kyle"
+  ],
+  "year": 2026,
+  "title": "Epistemic Cans",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.70091",
+  "volume": "112",
+  "pages": "462-470",
+  "note": "Young Epistemologist Prize 2024 (per Univ. of Glasgow news); published 2026",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Simion2024",
+  "authors": [
+   "Mona Simion"
+  ],
+  "year": 2024,
+  "title": "Resistance to Evidence and the Duty to Believe",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12964",
+  "volume": "108",
+  "pages": "203-216",
+  "note": "Young Epistemologist Prize 2021 (per Daily Nous); online 2023",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "SchwitzgebelEtAl2024",
+  "authors": [
+   "Eric Schwitzgebel",
+   "David Schwitzgebel",
+   "Anna Strasser"
+  ],
+  "year": 2024,
+  "title": "Creating a Large Language Model of a Philosopher",
+  "venue": "Mind & Language",
+  "type": "article",
+  "doi": "10.1111/mila.12466",
+  "volume": "39",
+  "pages": "237-259",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "SiYangHashimoto2024",
+  "authors": [
+   "Chenglei Si",
+   "Diyi Yang",
+   "Tatsunori Hashimoto"
+  ],
+  "year": 2024,
+  "title": "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers",
+  "venue": "arXiv preprint arXiv:2409.04109",
+  "type": "preprint",
+  "manual_check": "arXiv API record and full PDF retrieved 2026-10-21",
+  "verification": "MANUAL_VERIFIED via arXiv API (Crossref/OpenAlex do not index; OpenAlex rate-limited): arXiv API record and full PDF retrieved 2026-10-21"
+ },
+ {
+  "key": "SiHashimotoYang2025",
+  "authors": [
+   "Chenglei Si",
+   "Tatsunori Hashimoto",
+   "Diyi Yang"
+  ],
+  "year": 2025,
+  "title": "The Ideation-Execution Gap: Execution Outcomes of LLM-Generated versus Human Research Ideas",
+  "venue": "arXiv preprint arXiv:2506.20803",
+  "type": "preprint",
+  "manual_check": "arXiv API record (abstract) retrieved 2026-10-21",
+  "verification": "MANUAL_VERIFIED via arXiv API (Crossref/OpenAlex do not index; OpenAlex rate-limited): arXiv API record (abstract) retrieved 2026-10-21"
+ },
+ {
+  "key": "MengEtAl2025",
+  "authors": [
+   "Yibo Meng",
+   "Lyumanshan Ye",
+   "Eve He",
+   "Zhe Yan",
+   "Zhiming Liu",
+   "Yipeng Yu",
+   "Yan Guan",
+   "Xiaolan Ding"
+  ],
+  "year": 2025,
+  "title": "Can Intelligent User Interfaces Engage in Philosophical Discussions? A Longitudinal Study of Philosophers' Evolving Perceptions",
+  "venue": "arXiv preprint arXiv:2511.23188",
+  "type": "preprint",
+  "manual_check": "arXiv API record and HTML full text retrieved 2026-10-21; weak source (n=16, unnamed system)",
+  "verification": "MANUAL_VERIFIED via arXiv API (Crossref/OpenAlex do not index; OpenAlex rate-limited): arXiv API record and HTML full text retrieved 2026-10-21; weak source (n=16, unnamed system)"
+ },
+ {
+  "key": "WaltersWilder2023",
+  "authors": [
+   "William H. Walters",
+   "Esther Isabelle Wilder"
+  ],
+  "year": 2023,
+  "title": "Fabrication and Errors in the Bibliographic Citations Generated by ChatGPT",
+  "venue": "Scientific Reports",
+  "type": "article",
+  "doi": "10.1038/s41598-023-41032-5",
+  "volume": "13",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "PanicksseryEtAl2024",
+  "authors": [
+   "Arjun Panickssery",
+   "Samuel R. Bowman",
+   "Shi Feng"
+  ],
+  "year": 2024,
+  "title": "LLM Evaluators Recognize and Favor Their Own Generations",
+  "venue": "Advances in Neural Information Processing Systems 37",
+  "type": "proceedings",
+  "doi": "10.52202/079017-2197",
+  "pages": "68772-68802",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "SharmaEtAl2023",
+  "authors": [
+   "Mrinank Sharma",
+   "Meg Tong",
+   "Tomasz Korbak",
+   "David Duvenaud",
+   "Amanda Askell",
+   "Samuel R. Bowman",
+   "Newton Cheng",
+   "Esin Durmus"
+  ],
+  "year": 2023,
+  "title": "Towards Understanding Sycophancy in Language Models",
+  "venue": "arXiv preprint arXiv:2310.13548",
+  "type": "preprint",
+  "manual_check": "arXiv API record (abstract) retrieved 2026-10-21; author list truncated to first 8 as returned",
+  "verification": "MANUAL_VERIFIED via arXiv API (Crossref/OpenAlex do not index; OpenAlex rate-limited): arXiv API record (abstract) retrieved 2026-10-21; author list truncated to first 8 as returned"
+ },
+ {
+  "key": "CappelenDever2025",
+  "authors": [
+   "Herman Cappelen",
+   "Josh Dever"
+  ],
+  "year": 2025,
+  "title": "Recognizing Artificial Minds: A Philosophical Defense of AI Cognition (first posted as 'Going Whole Hog: A Philosophical Defense of AI Cognition')",
+  "venue": "arXiv preprint arXiv:2504.13988",
+  "type": "preprint",
+  "manual_check": "arXiv API record (current title and abstract) retrieved 2026-10-21; original title per search results",
+  "verification": "MANUAL_VERIFIED via arXiv API (Crossref/OpenAlex do not index; OpenAlex rate-limited): arXiv API record (current title and abstract) retrieved 2026-10-21; original title per search results"
+ },
+ {
+  "key": "MilliereBuckner2024",
+  "authors": [
+   "Raphaël Millière",
+   "Cameron Buckner"
+  ],
+  "year": 2024,
+  "title": "A Philosophical Introduction to Language Models -- Part I: Continuity With Classic Debates",
+  "venue": "arXiv preprint arXiv:2401.03910",
+  "type": "preprint",
+  "manual_check": "arXiv API record retrieved 2026-10-21",
+  "verification": "MANUAL_VERIFIED via arXiv API (Crossref/OpenAlex do not index; OpenAlex rate-limited): arXiv API record retrieved 2026-10-21"
+ },
+ {
+  "key": "MacheryEtAl2004",
+  "authors": [
+   "Edouard Machery",
+   "Ron Mallon",
+   "Shaun Nichols",
+   "Stephen P. Stich"
+  ],
+  "year": 2004,
+  "title": "Semantics, Cross-Cultural Style",
+  "venue": "Cognition",
+  "type": "article",
+  "doi": "10.1016/j.cognition.2003.10.003",
+  "volume": "92",
+  "pages": "B1-B12",
+  "note": "content via retrieved abstract summaries only",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "MacheryEtAl2017",
+  "authors": [
+   "Edouard Machery",
+   "Stephen Stich",
+   "David Rose",
+   "Amita Chatterjee",
+   "Kaori Karasawa",
+   "Noel Struchiner",
+   "Smita Sirker",
+   "Naoki Usui"
+  ],
+  "year": 2017,
+  "title": "Gettier Across Cultures",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12110",
+  "volume": "51",
+  "pages": "645-664",
+  "verification": "MANUAL_VERIFIED: DOI resolves to this article (title sim 0.96); Crossref issued=2015 is online-first, published-print 2017-09 (Noûs 51(3) 645-664) — checked 2026-10-21"
+ },
+ {
+  "key": "SwainEtAl2008",
+  "authors": [
+   "Stacey Swain",
+   "Joshua Alexander",
+   "Jonathan M. Weinberg"
+  ],
+  "year": 2008,
+  "title": "The Instability of Philosophical Intuitions: Running Hot and Cold on Truetemp",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/j.1933-1592.2007.00118.x",
+  "volume": "76",
+  "pages": "138-155",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "SchwitzgebelCushman2012",
+  "authors": [
+   "Eric Schwitzgebel",
+   "Fiery Cushman"
+  ],
+  "year": 2012,
+  "title": "Expertise in Moral Reasoning? Order Effects on Moral Judgment in Professional Philosophers and Non-Philosophers",
+  "venue": "Mind & Language",
+  "type": "article",
+  "doi": "10.1111/j.1468-0017.2012.01438.x",
+  "volume": "27",
+  "pages": "135-153",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "SchwitzgebelCushman2015",
+  "authors": [
+   "Eric Schwitzgebel",
+   "Fiery Cushman"
+  ],
+  "year": 2015,
+  "title": "Philosophers' Biased Judgments Persist Despite Training, Expertise and Reflection",
+  "venue": "Cognition",
+  "type": "article",
+  "doi": "10.1016/j.cognition.2015.04.015",
+  "volume": "141",
+  "pages": "127-137",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "CovaEtAl2021",
+  "authors": [
+   "Florian Cova",
+   "Brent Strickland",
+   "Angela Abatista"
+  ],
+  "year": 2021,
+  "title": "Estimating the Reproducibility of Experimental Philosophy",
+  "venue": "Review of Philosophy and Psychology",
+  "type": "article",
+  "doi": "10.1007/s13164-018-0400-9",
+  "volume": "12",
+  "pages": "9-44",
+  "note": "many further co-authors",
+  "verification": "MANUAL_VERIFIED: DOI resolves to this article (title sim 1.00); online-first 2018, published-print 2021-03 (RPP 12(1) 9-44) — checked 2026-10-21"
+ },
+ {
+  "key": "Knobe2021",
+  "authors": [
+   "Joshua Knobe"
+  ],
+  "year": 2021,
+  "title": "Philosophical Intuitions Are Surprisingly Stable Across both Demographic Groups and Situations",
+  "venue": "Filozofia Nauki",
+  "type": "article",
+  "doi": "10.14394/filnau.2021.0007",
+  "volume": "29",
+  "pages": "11-76",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "StichMachery2023",
+  "authors": [
+   "Stephen P. Stich",
+   "Edouard Machery"
+  ],
+  "year": 2023,
+  "title": "Demographic Differences in Philosophical Intuition: a Reply to Joshua Knobe",
+  "venue": "Review of Philosophy and Psychology",
+  "type": "article",
+  "doi": "10.1007/s13164-021-00609-7",
+  "volume": "14",
+  "pages": "401-434",
+  "note": "online 2022",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Knobe2023",
+  "authors": [
+   "Joshua Knobe"
+  ],
+  "year": 2023,
+  "title": "Difference and Robustness in the Patterns of Philosophical Intuition Across Demographic Groups",
+  "venue": "Review of Philosophy and Psychology",
+  "type": "article",
+  "doi": "10.1007/s13164-023-00683-z",
+  "volume": "14",
+  "pages": "435-455",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "HorvathWiegmann2016",
+  "authors": [
+   "Joachim Horvath",
+   "Alex Wiegmann"
+  ],
+  "year": 2016,
+  "title": "Intuitive Expertise and Intuitions about Knowledge",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-016-0627-1",
+  "volume": "173",
+  "pages": "2701-2726",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "HorvathWiegmann2022",
+  "authors": [
+   "Joachim Horvath",
+   "Alex Wiegmann"
+  ],
+  "year": 2022,
+  "title": "Intuitive Expertise in Moral Judgments",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "doi": "10.1080/00048402.2021.1890162",
+  "volume": "100",
+  "pages": "342-359",
+  "note": "online 2021; content via preprint abstract (PsyArXiv 10.31234/osf.io/5grsq)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "HorvathMeyerWiegmann2020",
+  "authors": [
+   "Joachim Horvath",
+   "Karina Meyer",
+   "Alex Wiegmann"
+  ],
+  "year": 2020,
+  "title": "Intuitive Expertise and Irrelevant Options",
+  "venue": "Oxford Studies in Experimental Philosophy Volume 3",
+  "type": "chapter",
+  "doi": "10.1093/oso/9780198852407.003.0012",
+  "pages": "275-310",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Seyedsayamdost2015",
+  "authors": [
+   "Hamid Seyedsayamdost"
+  ],
+  "year": 2015,
+  "title": "On Normativity and Epistemic Intuitions: Failure of Replication",
+  "venue": "Episteme",
+  "type": "article",
+  "doi": "10.1017/epi.2014.27",
+  "volume": "12",
+  "pages": "95-116",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "AwadEtAl2020",
+  "authors": [
+   "Edmond Awad",
+   "Sohan Dsouza",
+   "Azim Shariff",
+   "Iyad Rahwan",
+   "Jean-François Bonnefon"
+  ],
+  "year": 2020,
+  "title": "Universals and Variations in Moral Decisions Made in 42 Countries by 70,000 Participants",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "type": "article",
+  "doi": "10.1073/pnas.1911517117",
+  "volume": "117",
+  "pages": "2332-2337",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Chalmers2015",
+  "authors": [
+   "David J. Chalmers"
+  ],
+  "year": 2015,
+  "title": "Why Isn't There More Progress in Philosophy?",
+  "venue": "Philosophy",
+  "type": "article",
+  "doi": "10.1017/s0031819114000436",
+  "volume": "90",
+  "pages": "3-31",
+  "note": "author's PDF retrieved (consc.net)",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "DellsenLawlerNorton2022",
+  "authors": [
+   "Finnur Dellsén",
+   "Insa Lawler",
+   "James Norton"
+  ],
+  "year": 2022,
+  "title": "Thinking about Progress: From Science to Philosophy",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12383",
+  "volume": "56",
+  "pages": "814-840",
+  "note": "online 2021",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ },
+ {
+  "key": "Cappelen2012",
+  "authors": [
+   "Herman Cappelen"
+  ],
+  "year": 2012,
+  "title": "Philosophy without Intuitions",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/acprof:oso/9780199644865.001.0001",
+  "note": "cited only as existing; content not read for this brief",
+  "verification": "VERIFIED (tools/verify_refs.py, 2026-10-21)"
+ }
+]
