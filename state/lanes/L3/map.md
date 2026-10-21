@@ -1,6 +1,6 @@
 # Lane L3 — Knowledge, normality and inquiry: literature map
 
-Lane-mapper, 2026-10-21. References: `state/lanes/L3/refs.json` (every entry carries `seen`), checked in `refs.verification.json`. **Reading levels** are given per source in §9 and in `refs.json`; "via X" marks content known only through X. PhilArchive, Wiley, T&F and OUP returned 403; eleven fetch requests filed (`requests/fetch/l3-*.md`, five high). "[Inference]" marks my own claims.
+Lane-mapper, 2026-10-21. References: `state/lanes/L3/refs.json` (every entry carries `seen`), checked in `refs.verification.json`. **Reading levels** are given per source in §9 and in `refs.json`; "via X" marks content known only through X. PhilArchive, Wiley, T&F and OUP returned 403; eleven fetch requests filed (`requests/fetch/l3-*.md`, six high). "[Inference]" marks my own claims.
 
 ---
 
@@ -40,7 +40,7 @@ Lane-mapper, 2026-10-21. References: `state/lanes/L3/refs.json` (every entry car
 - *Ex-ante puzzle* (Carter & Hawthorne 2024). If inquiry aims at knowledge and defeat is possible, someone who knows should decline further evidence. Their principle, as quoted in Brown 2025: "An agent must decline to gather some evidence if, by gathering that evidence, she 1) could not come to satisfy the aim of any inquiry she's engaged in, but 2) could cease to satisfy the aim of an inquiry she is engaged in". Their reply invokes a derivative norm, "You must: X only if you know that you satisfy the norm of X" (p. 661, via Brown), iterated without limit, so that agents aiming at the ideal are always also inquiring into their higher-order knowledge.
 - *Rivals.*
   - Inquiry aims beyond knowledge, at maximising epistemic value of credences (Beddor 2024).
-  - Personal aims (Falbo 2023; Woodard 2024; Willard-Kyle 2023a).
+  - Personal aims (Falbo 2023; Woodard 2024; cf. Willard-Kyle 2023a).
   - Situation-sensitive norms of inquiry (Brown 2025).
   - Belief-revision principles (Salow 2025, abstract), which dissolve the puzzle "without the need for controversial theoretical commitments", against fallibilist replies.
 - *Zetetic norms.* Ignorance norm, knowledge norm for inquiry (Willard-Kyle 2023b); conflicts between epistemic and zetetic norms (Friedman 2020); Millson 2020.
@@ -55,13 +55,13 @@ Lane-mapper, 2026-10-21. References: `state/lanes/L3/refs.json` (every entry car
 
 - **R1. Margin-for-error vs KK** (Williamson 2000). Non-transitive nearness plus a margin requirement invalidates KK. KK in turn implies cliff-edge knowledge in Bjorn-type cases (via Goodman & Salow 2023 §3).
 - **R2. Improbable knowing** (Williamson 2011, 2014, via Goodman 2013): in his models one can know p "in spite of its being overwhelmingly improbable given what you know that you know it". Goodman (2013) gives models without this feature.
-- **R3. DGH tetrad** (Dorr, Goodman & Hawthorne 2014). Setup: 1000 fair coins, flipped until heads. Then (1) you know C1000 won't be flipped; (2) if you know Cn won't be flipped you know Cn−1 won't land tails; (3) if you know Cn won't land tails you know Cn won't be flipped; (4) you don't know C1 won't be flipped. These are inconsistent, so anti-scepticism refutes FAIR COINS ("If you know that a coin is fair, and for all you know it is going to be flipped, then for all you know it will land tails"). By AUTUMN LEAF, scepticism spreads to mundane knowledge of the future. Known Conditional Unlikelihood yields "rampant skepticism" (the Jack/Jill lightning case). Possible Future Unlikelihood plus Inferential Anti-dogmatism yields scepticism about chances. Survivors: Known Unlikelihood, Actual (Future) Unlikelihood, WEAK FAIR COINS.
+- **R3. DGH tetrad** (Dorr, Goodman & Hawthorne 2014). Setup: 1000 fair coins, flipped until heads. Then (1) you know C1000 won't be flipped; (2) if you know Cn won't be flipped you know Cn−1 won't land tails; (3) if you know Cn won't land tails you know Cn won't be flipped; (4) you don't know C1 won't be flipped. These are inconsistent, so anti-scepticism refutes FAIR COINS ("If you know that a coin is fair, and for all you know it is going to be flipped, then for all you know it will land tails"). By AUTUMN LEAF, scepticism spreads to mundane knowledge of the future. Known Conditional Unlikelihood yields "rampant skepticism" (the Jack/Jill lightning case). Possible Future Unlikelihood plus Inferential Anti-dogmatism yields scepticism about chances. Survivors: Known, Actual, Known Future and Actual Future Unlikelihood; WEAK FAIR COINS.
 - **R4. Goodman & Salow 2018.**
-  - (a) KK, closure, knowability of WEAK FAIR COINS and anti-scepticism are jointly inconsistent.
+  - (a) KK, closure, knowability of WEAK FAIR COINS and anti-scepticism are jointly inconsistent (Hawthorne 2025 calls the closure-based argument "watertight").
   - (b) SETTLEDNESS, KK, anti-scepticism and knowledge of ACTUAL UNLIKELIHOOD are inconsistent. More generally, KK clashes with any defeat that one can neither rule out in advance nor check.
   - (c) A KK-validating normality model, R_K = R_B ∪ {v ∈ E : v ≽ s}, predicts KNOWN UNLIKELIHOOD in Flipping Coins. They claim its logic is "the one advocated by Stalnaker (2006), making the logic of knowledge S4.2"; the proof is "beyond the scope" (n.10).
   - (d) A million independent copies of the experiment show that conjunction closure in normality models conflicts with KNOWN UNLIKELIHOOD.
-  - (e) EXTREMELY WEAK FAIR COINS ("If a coin is fair and you know that it is about to be flipped, then for all you know it will land tails") is derivable from settledness plus a chance–normality assumption in branching-time models.
+  - (e) They claim that EXTREMELY WEAK FAIR COINS ("If a coin is fair and you know that it is about to be flipped, then for all you know it will land tails") follows, in branching-time models, from two assumptions: evidence speaks decisively only to settled matters, and no flip-history is far more normal than all its tails-variants. Hawthorne (2025 n.6) disputes this claim too.
 - **R5. Hawthorne 2025.**
   - (a) Radio-controlled coins (half fair, half rigged to land tails 30 times): in the Goodman–Salow KK model, an observer of 30 tails *knows* the next fair coin lands heads, which violates EXTREMELY WEAK FAIR COINS. Goodman & Salow's claim that this principle is an instance of Known Unlikelihood is a scope error: only the narrow-scope "Fantastically Weak" version follows.
   - (b) A testimonial variant (the Vandalism case) transmits inductive knowledge without insider evidence.
@@ -113,11 +113,11 @@ Lane-mapper, 2026-10-21. References: `state/lanes/L3/refs.json` (every entry car
 8. **Testimony and memory with mistaken source-beliefs** (Alleged Misprint, Forgotten Source). "many informants had no clear judgment". Hawthorne doubts that "a principle or two" will settle the matter and favours modelling (2025 §4).
 9. **What better knowledge is.** Salow conjectures a ranking by stringency of parameters (safety distance, normality threshold, virtue), noting "the devil will, of course, be in the details" (forthcoming §6).
 10. **Value of evidence in ideal cases** is "open" (Salow 2023 §5). Whether risk-sensitive *epistemic* counterexamples exist needs "a theory of risk-aversion and its interaction with accuracy". The accuracy of "suspended probabilistic judgement" is unsettled (§3).
-11. **Bounded agents and ex-ante dogmatism.** Carter & Hawthorne concede that for agents who do not aim at the ideal, "a satisfactory response… ought to tell us something about agents like this" (p. 664, via Brown). Brown's situation-sensitive standard is unspecified beyond its sensitivity to stakes, professional norms and expectations.
+11. **Bounded agents and ex-ante dogmatism.** Of agents who do not aim at the ideal, Carter & Hawthorne concede: "For a response to be satisfactory, it ought to tell us something about agents like this" (p. 664, via Brown). Brown's situation-sensitive standard is unspecified beyond its sensitivity to stakes, professional norms and expectations.
 12. **Where the ω-assertion argument fails.** Holguín: "I'm not exactly certain where the argument goes wrong" (2025 §1).
 13. **Gnosticism vs margins.** "I leave open whether the correct response is to reject gnosticism, or the idea that inexact knowledge requires a margin for error" (Salow, WIP abstract).
 14. **Question-sensitive theories' limits.** Fang (2026) calls for "future research into their limits".
-15. **Asymmetric counterparts and closure.** Dutant & Rosenkranz's results "leave open whether there is a viable framework… [with] some alternative, non-symmetric relation", such as comparative normality (2024 §1).
+15. **Asymmetric counterparts and closure.** Dutant & Rosenkranz "leave open whether there is a viable framework" that construes counterparthood as "some alternative, non-symmetric relation", such as comparative normality (2024 §1).
 16. **The proofreader paradox** (Goodman, unpublished draft). How do careful checking that finds no errors and the conviction that errors remain fit together dynamically? His question-based diagnosis faces a "memorized order" variant.
 17. **Normality and action.** Can any normality-based knowledge be action-guiding (Hong 2026), or underwrite a knowledge-first anti-fanatical decision theory (Hong 2025)?
 

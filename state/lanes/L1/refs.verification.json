@@ -724,7 +724,7 @@
     }
   },
   {
-    "status": "MISMATCH",
+    "status": "VERIFIED",
     "match": {
       "title": "Know Your Way Out of St. Petersburg: An Exploration of \u201cKnowledge-First\u201d Decision Theory",
       "authors": [
@@ -738,23 +738,22 @@
       "pages": "2473-2492"
     },
     "title_similarity": 1.0,
-    "notes": [
-      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
-    ],
+    "source": "crossref-doi",
     "key": "Hong2024Know",
     "ref": {
       "key": "Hong2024Know",
       "authors": [
         "Frank Hong"
       ],
-      "year": 2024,
+      "year": 2022,
       "title": "Know Your Way Out of St. Petersburg: An Exploration of \u201cKnowledge-First\u201d Decision Theory",
       "venue": "Erkenntnis",
       "type": "article",
       "seen": "title",
       "doi": "10.1007/s10670-022-00639-2",
       "volume": "89",
-      "pages": "2473-2492"
+      "pages": "2473-2492",
+      "note": "Crossref issued 2022 (online); journal issue 2024, vol 89(6)"
     }
   },
   {
@@ -1908,7 +1907,7 @@
     }
   },
   {
-    "status": "MISMATCH",
+    "status": "VERIFIED",
     "match": {
       "title": "Surreal decisions",
       "authors": [
@@ -1923,9 +1922,7 @@
       "pages": "54-74"
     },
     "title_similarity": 1.0,
-    "notes": [
-      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
-    ],
+    "source": "crossref-doi",
     "key": "Chen2020Surreal",
     "ref": {
       "key": "Chen2020Surreal",
@@ -1933,14 +1930,15 @@
         "Eddy Keming Chen",
         "Daniel Rubio"
       ],
-      "year": 2020,
+      "year": 2018,
       "title": "Surreal decisions",
       "venue": "Philosophy and Phenomenological Research",
       "type": "article",
       "seen": "title",
       "doi": "10.1111/phpr.12510",
       "volume": "100",
-      "pages": "54-74"
+      "pages": "54-74",
+      "note": "Crossref issued 2018 (online); journal issue 2020, vol 100(1)"
     }
   },
   {
@@ -2202,7 +2200,7 @@
     }
   },
   {
-    "status": "MISMATCH",
+    "status": "VERIFIED",
     "match": {
       "title": "Ignore risk; Maximize expected moral value",
       "authors": [
@@ -2216,16 +2214,14 @@
       "pages": "144-161"
     },
     "title_similarity": 1.0,
-    "notes": [
-      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
-    ],
+    "source": "crossref-doi",
     "key": "Zhao2023Ignore",
     "ref": {
       "key": "Zhao2023Ignore",
       "authors": [
         "Michael Zhao"
       ],
-      "year": 2023,
+      "year": 2021,
       "title": "Ignore risk; Maximize expected moral value",
       "venue": "No\u00fbs",
       "type": "article",
@@ -2233,7 +2229,7 @@
       "doi": "10.1111/nous.12398",
       "volume": "57",
       "pages": "144-161",
-      "note": "first published online 2021"
+      "note": "Crossref issued 2021 (online); journal issue 2023, vol 57(1)"
     }
   },
   {
