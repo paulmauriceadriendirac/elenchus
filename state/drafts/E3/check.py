@@ -23,6 +23,8 @@ Checks:
  K6  Imaging on a frame is cumulative for every probability function iff
      (Flat): exhaustive over 3-world frames, exact rationals.
  K7  Quotations used in v2 occur verbatim in the source text.
+ K8  Agreement corollary: on flat frames, if v is in R(w1) and R(w2), then
+     <_w1 and <_w2 order alike any y, z that both place after v (z3, n<=5).
 Run:  python3 check.py
 """
 import itertools, random, re, sys
@@ -334,7 +336,27 @@ QUOTES = [
 ]
 for q in QUOTES:
     qn = re.sub(r"\s+", " ", q)
-    report(f"K7 verbatim: '{q[:60]}...'", qn in norm or qn.replace(" ", "") in norm.replace(" ", ""))
+    report(f"K7 verbatim: '{q[:60]}...'", qn in norm)
+
+# ---------------------------------------------------------------- K8 agreement
+def agreement_violation(n):
+    F = Z3Frame(n, f"ag{n}_")
+    s = Solver(); s.add(F.base); s.add(F.semiflat()); s.add(F.transitive())
+    viol = []
+    for w1 in range(n):
+        for w2 in range(n):
+            for v in range(n):
+                for y in range(n):
+                    for z in range(n):
+                        if len({y, z}) == 2:
+                            after = And(Or(v == w1, F.lt(w1, v, y)), Or(v == w1, F.lt(w1, v, z)),
+                                        Or(v == w2, F.lt(w2, v, y)), Or(v == w2, F.lt(w2, v, z)),
+                                        F.acc[w1][v], F.acc[w2][v], y != v, z != v)
+                            viol.append(And(after, F.lt(w1, y, z), F.lt(w2, z, y)))
+    s.add(Or(viol))
+    return s.check()
+res = [agreement_violation(n) for n in (3, 4, 5)]
+report(f"K8 Agreement holds on all flat frames n=3..5: {res}", all(r == unsat for r in res))
 
 print("ALL CHECKS PASSED" if ok else "SOME CHECKS FAILED")
 sys.exit(0 if ok else 1)
