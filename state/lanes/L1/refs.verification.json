@@ -1,0 +1,2613 @@
+[
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "In Defense of Fanaticism",
+      "authors": [
+        "Wilkinson"
+      ],
+      "year": 2022,
+      "venue": "Ethics",
+      "doi": "10.1086/716869",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "445-477"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wilkinson2022Defense",
+    "ref": {
+      "key": "Wilkinson2022Defense",
+      "authors": [
+        "Hayden Wilkinson"
+      ],
+      "year": 2022,
+      "title": "In Defense of Fanaticism",
+      "venue": "Ethics",
+      "type": "article",
+      "seen": "full text of GPI Working Paper 4-2020 (Jan 2021 version); published version not read",
+      "doi": "10.1086/716869",
+      "volume": "132",
+      "pages": "445-477",
+      "source_url": "https://www.globalprioritiesinstitute.org/wp-content/uploads/Hayden-Wilkinson_In-defence-of-fanaticism.pdf"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Egyptology and fanaticism",
+      "authors": [
+        "Wilkinson"
+      ],
+      "year": 2024,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-024-02180-0",
+      "type": "journal-article",
+      "volume": "181",
+      "pages": "1903-1923"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wilkinson2024Egyptology",
+    "ref": {
+      "key": "Wilkinson2024Egyptology",
+      "authors": [
+        "Hayden Wilkinson"
+      ],
+      "year": 2024,
+      "title": "Egyptology and fanaticism",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "full text (published OA version via ORA)",
+      "doi": "10.1007/s11098-024-02180-0",
+      "volume": "181",
+      "pages": "1903-1923",
+      "source_url": "https://ora.ox.ac.uk/objects/uuid:a65cec61-8010-469e-810c-8b72567cbbba"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Flummoxing expectations",
+      "authors": [
+        "Wilkinson"
+      ],
+      "year": 2024,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12530",
+      "type": "journal-article",
+      "volume": "59",
+      "pages": "700-728"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wilkinson2025Flummoxing",
+    "ref": {
+      "key": "Wilkinson2025Flummoxing",
+      "authors": [
+        "Hayden Wilkinson"
+      ],
+      "year": 2025,
+      "title": "Flummoxing expectations",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract (Crossref); principle statement as recorded on Goodsell's Logical Maps",
+      "doi": "10.1111/nous.12530",
+      "volume": "59",
+      "pages": "700-728"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Unexpected Value of the Future",
+      "authors": [
+        "Wilkinson"
+      ],
+      "year": 2026,
+      "venue": "Ergo an Open Access Journal of Philosophy",
+      "doi": "10.3998/ergo.9269",
+      "type": "journal-article",
+      "volume": "13",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wilkinson2026Unexpected",
+    "ref": {
+      "key": "Wilkinson2026Unexpected",
+      "authors": [
+        "Hayden Wilkinson"
+      ],
+      "year": 2026,
+      "title": "The Unexpected Value of the Future",
+      "venue": "Ergo",
+      "type": "article",
+      "seen": "abstract (Crossref) + abstract/intro of GPI WP 17-2022",
+      "doi": "10.3998/ergo.9269",
+      "volume": "13"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Can Risk Aversion Survive the Long Run?",
+      "authors": [
+        "Wilkinson"
+      ],
+      "year": 2022,
+      "venue": "The Philosophical Quarterly",
+      "doi": "10.1093/pq/pqac056",
+      "type": "journal-article",
+      "volume": "73",
+      "pages": "625-647"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wilkinson2023LongRun",
+    "ref": {
+      "key": "Wilkinson2023LongRun",
+      "authors": [
+        "Hayden Wilkinson"
+      ],
+      "year": 2023,
+      "title": "Can Risk Aversion Survive the Long Run?",
+      "venue": "The Philosophical Quarterly",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/pq/pqac056",
+      "volume": "73",
+      "pages": "625-647"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Infinite aggregation: expanded addition",
+      "authors": [
+        "Wilkinson"
+      ],
+      "year": 2020,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-020-01516-w",
+      "type": "journal-article",
+      "volume": "178",
+      "pages": "1917-1949"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wilkinson2021Infinite",
+    "ref": {
+      "key": "Wilkinson2021Infinite",
+      "authors": [
+        "Hayden Wilkinson"
+      ],
+      "year": 2021,
+      "title": "Infinite aggregation: expanded addition",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1007/s11098-020-01516-w",
+      "volume": "178",
+      "pages": "1917-1949"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A paradox for tiny probabilities and enormous values",
+      "authors": [
+        "Beckstead",
+        "Thomas"
+      ],
+      "year": 2023,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12462",
+      "type": "journal-article",
+      "volume": "58",
+      "pages": "431-455"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Beckstead2024Paradox",
+    "ref": {
+      "key": "Beckstead2024Paradox",
+      "authors": [
+        "Nick Beckstead",
+        "Teruji Thomas"
+      ],
+      "year": 2024,
+      "title": "A paradox for tiny probabilities and enormous values",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract (Crossref) + full text of GPI Working Paper 7-2021 version",
+      "doi": "10.1111/nous.12462",
+      "volume": "58",
+      "pages": "431-455",
+      "source_url": "https://globalprioritiesinstitute.org/wp-content/uploads/Nick-Beckstead-and-Teruji-Thomas_A-paradox-for-tiny-probabilities-and-enormous-values.pdf"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On two arguments for fanaticism",
+      "authors": [
+        "Russell"
+      ],
+      "year": 2023,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12461",
+      "type": "journal-article",
+      "volume": "58",
+      "pages": "565-595"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Russell2024Two",
+    "ref": {
+      "key": "Russell2024Two",
+      "authors": [
+        "Jeffrey Sanford Russell"
+      ],
+      "year": 2024,
+      "title": "On two arguments for fanaticism",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract; content of \u00a72 and \u00a74 via Wilkinson 2024 and Barrett 2026 (secondary)",
+      "doi": "10.1111/nous.12461",
+      "volume": "58",
+      "pages": "565-595"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Infinite Prospects*",
+      "authors": [
+        "Russell",
+        "Isaacs"
+      ],
+      "year": 2020,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12704",
+      "type": "journal-article",
+      "volume": "103",
+      "pages": "178-198"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Russell2021Infinite",
+    "ref": {
+      "key": "Russell2021Infinite",
+      "authors": [
+        "Jeffrey Sanford Russell",
+        "Yoaav Isaacs"
+      ],
+      "year": 2021,
+      "title": "Infinite Prospects",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12704",
+      "volume": "103",
+      "pages": "178-198"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Non-Archimedean preferences over countable lotteries",
+      "authors": [
+        "Russell"
+      ],
+      "year": 2020,
+      "venue": "Journal of Mathematical Economics",
+      "doi": "10.1016/j.jmateco.2020.03.011",
+      "type": "journal-article",
+      "volume": "88",
+      "pages": "180-186"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Russell2020NonArchimedean",
+    "ref": {
+      "key": "Russell2020NonArchimedean",
+      "authors": [
+        "Jeffrey Sanford Russell"
+      ],
+      "year": 2020,
+      "title": "Non-Archimedean preferences over countable lotteries",
+      "venue": "Journal of Mathematical Economics",
+      "type": "article",
+      "seen": "title; described in Goodsell 2024 \u00a73.1",
+      "doi": "10.1016/j.jmateco.2020.03.011",
+      "volume": "88",
+      "pages": "180-186"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Fixing Stochastic Dominance",
+      "authors": [
+        "Russell"
+      ],
+      "year": 2026,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1086/728716",
+      "type": "journal-article",
+      "volume": "77",
+      "pages": "701-725"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Russell2026Fixing",
+    "ref": {
+      "key": "Russell2026Fixing",
+      "authors": [
+        "Jeffrey Sanford Russell"
+      ],
+      "year": 2026,
+      "title": "Fixing Stochastic Dominance",
+      "venue": "The British Journal for the Philosophy of Science",
+      "type": "article",
+      "seen": "search-result summary of abstract only",
+      "doi": "10.1086/728716",
+      "volume": "77",
+      "pages": "701-725"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Paradoxes of infinite aggregation",
+      "authors": [
+        "Hong",
+        "Russell"
+      ],
+      "year": 2024,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12535",
+      "type": "journal-article",
+      "volume": "59",
+      "pages": "809-827"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hong2025Paradoxes",
+    "ref": {
+      "key": "Hong2025Paradoxes",
+      "authors": [
+        "Frank Hong",
+        "Jeffrey Sanford Russell"
+      ],
+      "year": 2025,
+      "title": "Paradoxes of infinite aggregation",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12535",
+      "volume": "59",
+      "pages": "809-827"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Against anti\u2010fanaticism",
+      "authors": [
+        "Tarsney"
+      ],
+      "year": 2024,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13120",
+      "type": "journal-article",
+      "volume": "110",
+      "pages": "734-753"
+    },
+    "title_similarity": 0.978,
+    "source": "crossref-doi",
+    "key": "Tarsney2024Against",
+    "ref": {
+      "key": "Tarsney2024Against",
+      "authors": [
+        "Christian Tarsney"
+      ],
+      "year": 2024,
+      "title": "Against anti-fanaticism",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract + full text of author's preprint (Google Drive link on author's research page)",
+      "doi": "10.1111/phpr.13120",
+      "volume": "110",
+      "pages": "734-753",
+      "source_url": "https://www.christiantarsney.com/research"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Expected value, to a point: Moral decision\u2010making under background uncertainty",
+      "authors": [
+        "Tarsney"
+      ],
+      "year": 2025,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12544",
+      "type": "journal-article",
+      "volume": "59",
+      "pages": "1093-1125"
+    },
+    "title_similarity": 0.993,
+    "source": "crossref-doi",
+    "key": "Tarsney2025Expected",
+    "ref": {
+      "key": "Tarsney2025Expected",
+      "authors": [
+        "Christian Tarsney"
+      ],
+      "year": 2025,
+      "title": "Expected value, to a point: Moral decision-making under background uncertainty",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract + full text of earlier arXiv version 'Exceeding Expectations' (arXiv:1807.10895v5)",
+      "doi": "10.1111/nous.12544",
+      "volume": "59",
+      "pages": "1093-1125",
+      "source_url": "https://arxiv.org/abs/1807.10895"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Small Probabilities and High Stakes",
+      "authors": [
+        "Tarsney"
+      ],
+      "year": 2026,
+      "venue": "Cambridge University Press",
+      "doi": "10.1017/9781009333047",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Tarsney2026Small",
+    "ref": {
+      "key": "Tarsney2026Small",
+      "authors": [
+        "Christian Tarsney"
+      ],
+      "year": 2026,
+      "title": "Small Probabilities and High Stakes",
+      "venue": "Cambridge Elements in Decision Theory and Philosophy (Cambridge University Press)",
+      "type": "book",
+      "seen": "abstract only (fetch request filed)",
+      "doi": "10.1017/9781009333047"
+    }
+  },
+  {
+    "match": {
+      "title": "Expected value, to a point: Moral decision\u2010making under background uncertainty",
+      "authors": [
+        "Tarsney"
+      ],
+      "year": 2025,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12544",
+      "type": "journal-article",
+      "volume": "59",
+      "pages": "1093-1125"
+    },
+    "title_similarity": 0.667,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Tarsney2024SEP",
+    "ref": {
+      "key": "Tarsney2024SEP",
+      "authors": [
+        "Christian Tarsney",
+        "Teruji Thomas",
+        "William MacAskill"
+      ],
+      "year": 2024,
+      "title": "Moral Decision-Making Under Uncertainty",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia-entry",
+      "seen": "full text of \u00a7'small probabilities' and bibliography",
+      "source_url": "https://plato.stanford.edu/entries/moral-decision-uncertainty/",
+      "manual_check": "SEP entry page retrieved 2026-10-21: 'First published Wed Mar 13, 2024', copyright 2024 by Tarsney, Thomas, MacAskill"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Dominance Argument Against Incompleteness",
+      "authors": [
+        "Tarsney",
+        "Lederman",
+        "Spears"
+      ],
+      "year": 2025,
+      "venue": "Philosophical Review",
+      "doi": "10.1215/00318108-11964820",
+      "type": "journal-article",
+      "volume": "134",
+      "pages": "455-490"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Tarsney2025Dominance",
+    "ref": {
+      "key": "Tarsney2025Dominance",
+      "authors": [
+        "Christian Tarsney",
+        "Harvey Lederman",
+        "Dean Spears"
+      ],
+      "year": 2025,
+      "title": "A Dominance Argument Against Incompleteness",
+      "venue": "Philosophical Review",
+      "type": "article",
+      "seen": "abstract (via committee map)",
+      "doi": "10.1215/00318108-11964820",
+      "volume": "134",
+      "pages": "455-490"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Saving Fanaticism",
+      "authors": [
+        "Kowalczyk"
+      ],
+      "year": 2025,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2025.2489120",
+      "type": "journal-article",
+      "volume": "103",
+      "pages": "1011-1023"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kowalczyk2025Saving",
+    "ref": {
+      "key": "Kowalczyk2025Saving",
+      "authors": [
+        "Kacper Kowalczyk"
+      ],
+      "year": 2025,
+      "title": "Saving Fanaticism",
+      "venue": "Australasian Journal of Philosophy",
+      "type": "article",
+      "seen": "search-result summary of PhilArchive abstract; SEP (Tarsney et al. 2024) presents 'a variation on' its argument",
+      "doi": "10.1080/00048402.2025.2489120",
+      "volume": "103",
+      "pages": "1011-1023"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Risk, Non-Identity, and Extinction",
+      "authors": [
+        "Kowalczyk",
+        "Venkatesh"
+      ],
+      "year": 2024,
+      "venue": "The Monist",
+      "doi": "10.1093/monist/onae004",
+      "type": "journal-article",
+      "volume": "107",
+      "pages": "146-156"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kowalczyk2024Risk",
+    "ref": {
+      "key": "Kowalczyk2024Risk",
+      "authors": [
+        "Kacper Kowalczyk",
+        "Nikhil Venkatesh"
+      ],
+      "year": 2024,
+      "title": "Risk, Non-Identity, and Extinction",
+      "venue": "The Monist",
+      "type": "article",
+      "seen": "abstract (via committee map)",
+      "doi": "10.1093/monist/onae004",
+      "volume": "107",
+      "pages": "146-156"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "In defense of moderation",
+      "authors": [
+        "Barrett"
+      ],
+      "year": 2026,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-026-02579-x",
+      "type": "journal-article",
+      "volume": "183",
+      "pages": "3059-3087"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Barrett2026Moderation",
+    "ref": {
+      "key": "Barrett2026Moderation",
+      "authors": [
+        "Jacob Barrett"
+      ],
+      "year": 2026,
+      "title": "In defense of moderation",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract (Crossref) + full text of GPI Working Paper 32-2024",
+      "doi": "10.1007/s11098-026-02579-x",
+      "volume": "183",
+      "pages": "3059-3087",
+      "source_url": "https://globalprioritiesinstitute.org/wp-content/uploads/Jacob-Barrett-In-Defence-of-Moderation.pdf"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On the Offense against Fanaticism",
+      "authors": [
+        "Bottomley",
+        "Williamson"
+      ],
+      "year": 2025,
+      "venue": "Ethics",
+      "doi": "10.1086/732617",
+      "type": "journal-article",
+      "volume": "135",
+      "pages": "320-332"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Bottomley2025Offense",
+    "ref": {
+      "key": "Bottomley2025Offense",
+      "authors": [
+        "Christopher Bottomley",
+        "Timothy Luke Williamson"
+      ],
+      "year": 2025,
+      "title": "On the Offense against Fanaticism",
+      "venue": "Ethics",
+      "type": "article",
+      "seen": "search-result summary of PhilArchive listing only (fetch request filed)",
+      "doi": "10.1086/732617",
+      "volume": "135",
+      "pages": "320-332"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Fanaticism and knowledge",
+      "authors": [
+        "Hong"
+      ],
+      "year": 2025,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-025-05114-3",
+      "type": "journal-article",
+      "volume": "206",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hong2025Fanaticism",
+    "ref": {
+      "key": "Hong2025Fanaticism",
+      "authors": [
+        "Frank Hong"
+      ],
+      "year": 2025,
+      "title": "Fanaticism and knowledge",
+      "venue": "Synthese",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s11229-025-05114-3",
+      "volume": "206"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Know Your Way Out of St. Petersburg: An Exploration of \u201cKnowledge-First\u201d Decision Theory",
+      "authors": [
+        "Hong"
+      ],
+      "year": 2022,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-022-00639-2",
+      "type": "journal-article",
+      "volume": "89",
+      "pages": "2473-2492"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Hong2024Know",
+    "ref": {
+      "key": "Hong2024Know",
+      "authors": [
+        "Frank Hong"
+      ],
+      "year": 2024,
+      "title": "Know Your Way Out of St. Petersburg: An Exploration of \u201cKnowledge-First\u201d Decision Theory",
+      "venue": "Erkenntnis",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1007/s10670-022-00639-2",
+      "volume": "89",
+      "pages": "2473-2492"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probability discounting and money pumps",
+      "authors": [
+        "Kosonen"
+      ],
+      "year": 2024,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13053",
+      "type": "journal-article",
+      "volume": "109",
+      "pages": "593-611"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kosonen2024Money",
+    "ref": {
+      "key": "Kosonen2024Money",
+      "authors": [
+        "Petra Kosonen"
+      ],
+      "year": 2024,
+      "title": "Probability discounting and money pumps",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.13053",
+      "volume": "109",
+      "pages": "593-611"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Discounting Small Probabilities Solves the Intrapersonal Addition Paradox",
+      "authors": [
+        "Kosonen"
+      ],
+      "year": 2021,
+      "venue": "Ethics",
+      "doi": "10.1086/715276",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "204-217"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kosonen2021Discounting",
+    "ref": {
+      "key": "Kosonen2021Discounting",
+      "authors": [
+        "Petra Kosonen"
+      ],
+      "year": 2021,
+      "title": "Discounting Small Probabilities Solves the Intrapersonal Addition Paradox",
+      "venue": "Ethics",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1086/715276",
+      "volume": "132",
+      "pages": "204-217"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Pascal's Hell",
+      "authors": [
+        "Kosonen"
+      ],
+      "year": 2026,
+      "venue": "Philosophical Perspectives",
+      "doi": "10.1111/phpe.70019",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kosonen2026Hell",
+    "ref": {
+      "key": "Kosonen2026Hell",
+      "authors": [
+        "Petra Kosonen"
+      ],
+      "year": 2026,
+      "title": "Pascal's Hell",
+      "venue": "Philosophical Perspectives",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpe.70019"
+    }
+  },
+  {
+    "match": {
+      "title": "Discounting Small Probabilities Solves the Intrapersonal Addition Paradox",
+      "authors": [
+        "Kosonen"
+      ],
+      "year": 2021,
+      "venue": "Ethics",
+      "doi": "10.1086/715276",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "204-217"
+    },
+    "title_similarity": 0.457,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Kosonen2022Thesis",
+    "ref": {
+      "key": "Kosonen2022Thesis",
+      "authors": [
+        "Petra Kosonen"
+      ],
+      "year": 2022,
+      "title": "Tiny Probabilities of Vast Value",
+      "venue": "DPhil thesis, University of Oxford",
+      "type": "thesis",
+      "seen": "cited via SEP and Barrett; not read",
+      "source_url": "https://philarchive.org/rec/KOSTPO-18",
+      "manual_check": "Listed in SEP 'Moral Decision-Making Under Uncertainty' bibliography as PhD thesis, Worcester College, Oxford, 2022"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A dilemma for Nicolausian discounting",
+      "authors": [
+        "Cibinel"
+      ],
+      "year": 2023,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anac095",
+      "type": "journal-article",
+      "volume": "83",
+      "pages": "662-672"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Cibinel2023Dilemma",
+    "ref": {
+      "key": "Cibinel2023Dilemma",
+      "authors": [
+        "Pietro Cibinel"
+      ],
+      "year": 2023,
+      "title": "A dilemma for Nicolausian discounting",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anac095",
+      "volume": "83",
+      "pages": "662-672"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Is Evaluative Compositionality a Requirement of Rationality?",
+      "authors": [
+        "Smith"
+      ],
+      "year": 2014,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzu072",
+      "type": "journal-article",
+      "volume": "123",
+      "pages": "457-502"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Smith2014Compositionality",
+    "ref": {
+      "key": "Smith2014Compositionality",
+      "authors": [
+        "Nicholas J. J. Smith"
+      ],
+      "year": 2014,
+      "title": "Is Evaluative Compositionality a Requirement of Rationality?",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title; described in Wilkinson 2022 fn. 11",
+      "doi": "10.1093/mind/fzu072",
+      "volume": "123",
+      "pages": "457-502"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Infinite Decisions and Rationally Negligible Probabilities",
+      "authors": [
+        "Smith"
+      ],
+      "year": 2016,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzv209",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "1199-1212"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Smith2016Infinite",
+    "ref": {
+      "key": "Smith2016Infinite",
+      "authors": [
+        "Nicholas J. J. Smith"
+      ],
+      "year": 2016,
+      "title": "Infinite Decisions and Rationally Negligible Probabilities",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzv209",
+      "volume": "125",
+      "pages": "1199-1212"
+    }
+  },
+  {
+    "match": {
+      "title": "How Can an Atheist Defend Intelligent Design?",
+      "authors": [
+        "Monton"
+      ],
+      "year": 2022,
+      "venue": "Filozoficzne Aspekty Genezy",
+      "doi": "10.53763/fag.2022.19.2.202",
+      "type": "journal-article",
+      "volume": "19",
+      "pages": null
+    },
+    "title_similarity": 0.381,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Monton2019Avoid",
+    "ref": {
+      "key": "Monton2019Avoid",
+      "authors": [
+        "Bradley Monton"
+      ],
+      "year": 2019,
+      "title": "How to Avoid Maximizing Expected Utility",
+      "venue": "Philosophers' Imprint",
+      "type": "article",
+      "seen": "title (cited in SEP)",
+      "volume": "19",
+      "source_url": "http://hdl.handle.net/2027/spo.3521354.0019.018",
+      "manual_check": "SEP 'Moral Decision-Making Under Uncertainty' bibliography: Philosophers' Imprint 19: article 18; handle link given there"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probabilities Cannot Be Rationally Neglected",
+      "authors": [
+        "Isaacs"
+      ],
+      "year": 2016,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzv151",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "759-762"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Isaacs2016Neglected",
+    "ref": {
+      "key": "Isaacs2016Neglected",
+      "authors": [
+        "Yoaav Isaacs"
+      ],
+      "year": 2016,
+      "title": "Probabilities Cannot Be Rationally Neglected",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzv151",
+      "volume": "125",
+      "pages": "759-762"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Against the <i>De Minimis</i> Principle",
+      "authors": [
+        "Lundgren",
+        "Stef\u00e1nsson"
+      ],
+      "year": 2020,
+      "venue": "Risk Analysis",
+      "doi": "10.1111/risa.13445",
+      "type": "journal-article",
+      "volume": "40",
+      "pages": "908-914"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Lundgren2020DeMinimis",
+    "ref": {
+      "key": "Lundgren2020DeMinimis",
+      "authors": [
+        "Bj\u00f6rn Lundgren",
+        "H. Orri Stef\u00e1nsson"
+      ],
+      "year": 2020,
+      "title": "Against the De Minimis Principle",
+      "venue": "Risk Analysis",
+      "type": "article",
+      "seen": "title (cited in SEP)",
+      "doi": "10.1111/risa.13445",
+      "volume": "40",
+      "pages": "908-914"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Pascal's mugging",
+      "authors": [
+        "Bostrom"
+      ],
+      "year": 2009,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anp062",
+      "type": "journal-article",
+      "volume": "69",
+      "pages": "443-445"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Bostrom2009Mugging",
+    "ref": {
+      "key": "Bostrom2009Mugging",
+      "authors": [
+        "Nick Bostrom"
+      ],
+      "year": 2009,
+      "title": "Pascal's mugging",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/analys/anp062",
+      "volume": "69",
+      "pages": "443-445"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Pascal's Mugger Strikes Again",
+      "authors": [
+        "Balfour"
+      ],
+      "year": 2020,
+      "venue": "Utilitas",
+      "doi": "10.1017/s0953820820000357",
+      "type": "journal-article",
+      "volume": "33",
+      "pages": "118-124"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Balfour2021Mugger",
+    "ref": {
+      "key": "Balfour2021Mugger",
+      "authors": [
+        "Dylan Balfour"
+      ],
+      "year": 2021,
+      "title": "Pascal's Mugger Strikes Again",
+      "venue": "Utilitas",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1017/s0953820820000357",
+      "volume": "33",
+      "pages": "118-124"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Expected choiceworthiness and fanaticism",
+      "authors": [
+        "Baker"
+      ],
+      "year": 2024,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-024-02146-2",
+      "type": "journal-article",
+      "volume": "181",
+      "pages": "1237-1256"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Baker2024Choiceworthiness",
+    "ref": {
+      "key": "Baker2024Choiceworthiness",
+      "authors": [
+        "Calvin Baker"
+      ],
+      "year": 2024,
+      "title": "Expected choiceworthiness and fanaticism",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1007/s11098-024-02146-2",
+      "volume": "181",
+      "pages": "1237-1256"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Decision theory unbound",
+      "authors": [
+        "Goodsell"
+      ],
+      "year": 2023,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12473",
+      "type": "journal-article",
+      "volume": "58",
+      "pages": "669-695"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goodsell2024Unbound",
+    "ref": {
+      "key": "Goodsell2024Unbound",
+      "authors": [
+        "Zachary Goodsell"
+      ],
+      "year": 2024,
+      "title": "Decision theory unbound",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "full text (OA PDF hosted on Logical Maps site)",
+      "doi": "10.1111/nous.12473",
+      "volume": "58",
+      "pages": "669-695"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Symmetries of value",
+      "authors": [
+        "Goodsell"
+      ],
+      "year": 2025,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12549",
+      "type": "journal-article",
+      "volume": "60",
+      "pages": "16-37"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goodsell2026Symmetries",
+    "ref": {
+      "key": "Goodsell2026Symmetries",
+      "authors": [
+        "Zachary Goodsell"
+      ],
+      "year": 2026,
+      "title": "Symmetries of value",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "full text (OA PDF hosted on Logical Maps site)",
+      "doi": "10.1111/nous.12549",
+      "volume": "60",
+      "pages": "16-37"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A St Petersburg Paradox for risky welfare aggregation",
+      "authors": [
+        "Goodsell"
+      ],
+      "year": 2021,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anaa079",
+      "type": "journal-article",
+      "volume": "81",
+      "pages": "420-426"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goodsell2021St",
+    "ref": {
+      "key": "Goodsell2021St",
+      "authors": [
+        "Zachary Goodsell"
+      ],
+      "year": 2021,
+      "title": "A St Petersburg Paradox for risky welfare aggregation",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anaa079",
+      "volume": "81",
+      "pages": "420-426"
+    }
+  },
+  {
+    "match": {
+      "title": "Mesoscale explorer: Visual exploration of large\u2010scale molecular models",
+      "authors": [
+        "Rose",
+        "Sehnal",
+        "Goodsell",
+        "Autin"
+      ],
+      "year": 2024,
+      "venue": "Protein Science",
+      "doi": "10.1002/pro.5177",
+      "type": "journal-article",
+      "volume": "33",
+      "pages": null
+    },
+    "title_similarity": 0.418,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Goodsell2026LogicalMaps",
+    "ref": {
+      "key": "Goodsell2026LogicalMaps",
+      "authors": [
+        "Zachary Goodsell"
+      ],
+      "year": 2026,
+      "title": "Logical Maps: Unbounded Utility (online database of principles, results and models; build of 2026-10-19)",
+      "venue": "zacharygoodsell.com",
+      "type": "website",
+      "seen": "full database (principles, results, models, conjectures) extracted from the page's embedded data",
+      "source_url": "https://zacharygoodsell.com/logical-maps/unbounded-utility/",
+      "manual_check": "Retrieved 2026-10-21; embedded build timestamp 2026-10-19T09:55:45Z; 46 principles, 103 results (98 proved, 5 conjectured), 21 models"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Symmetry, Invariance, and Imprecise Probability",
+      "authors": [
+        "Goodsell",
+        "Nebel"
+      ],
+      "year": 2024,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzae048",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goodsell2025Symmetry",
+    "ref": {
+      "key": "Goodsell2025Symmetry",
+      "authors": [
+        "Zachary Goodsell",
+        "Jacob M. Nebel"
+      ],
+      "year": 2025,
+      "title": "Symmetry, Invariance, and Imprecise Probability",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzae048",
+      "volume": "134",
+      "pages": "758-773"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Preference for equivalent random variables: A price for unbounded utilities",
+      "authors": [
+        "Seidenfeld",
+        "Schervish",
+        "Kadane"
+      ],
+      "year": 2009,
+      "venue": "Journal of Mathematical Economics",
+      "doi": "10.1016/j.jmateco.2008.12.002",
+      "type": "journal-article",
+      "volume": "45",
+      "pages": "329-340"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Seidenfeld2009Preference",
+    "ref": {
+      "key": "Seidenfeld2009Preference",
+      "authors": [
+        "Teddy Seidenfeld",
+        "Mark J. Schervish",
+        "Joseph B. Kadane"
+      ],
+      "year": 2009,
+      "title": "Preference for equivalent random variables: A price for unbounded utilities",
+      "venue": "Journal of Mathematical Economics",
+      "type": "article",
+      "seen": "secondary: result as recorded on Logical Maps and described in Goodsell 2024, Wilkinson 2024",
+      "doi": "10.1016/j.jmateco.2008.12.002",
+      "volume": "45",
+      "pages": "329-340"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Vexing Expectations",
+      "authors": [
+        "Nover"
+      ],
+      "year": 2004,
+      "venue": "Mind",
+      "doi": "10.1093/mind/113.450.237",
+      "type": "journal-article",
+      "volume": "113",
+      "pages": "237-249"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Nover2004Vexing",
+    "ref": {
+      "key": "Nover2004Vexing",
+      "authors": [
+        "Harris Nover",
+        "Alan H\u00e1jek"
+      ],
+      "year": 2004,
+      "title": "Vexing Expectations",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "secondary (SEP St Petersburg entry)",
+      "doi": "10.1093/mind/113.450.237",
+      "volume": "113",
+      "pages": "237-249"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Strong and Weak Expectations",
+      "authors": [
+        "Easwaran"
+      ],
+      "year": 2008,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzn053",
+      "type": "journal-article",
+      "volume": "117",
+      "pages": "633-641"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Easwaran2008Strong",
+    "ref": {
+      "key": "Easwaran2008Strong",
+      "authors": [
+        "Kenny Easwaran"
+      ],
+      "year": 2008,
+      "title": "Strong and Weak Expectations",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "secondary (SEP St Petersburg entry quotes p. 635)",
+      "doi": "10.1093/mind/fzn053",
+      "volume": "117",
+      "pages": "633-641"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Principal Values and Weak Expectations",
+      "authors": [
+        "Easwaran"
+      ],
+      "year": 2014,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzu074",
+      "type": "journal-article",
+      "volume": "123",
+      "pages": "517-531"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Easwaran2014Principal",
+    "ref": {
+      "key": "Easwaran2014Principal",
+      "authors": [
+        "Kenny Easwaran"
+      ],
+      "year": 2014,
+      "title": "Principal Values and Weak Expectations",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title; quoted in Goodsell 2024 \u00a74.2",
+      "doi": "10.1093/mind/fzu074",
+      "volume": "123",
+      "pages": "517-531"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Relative Expectation Theory",
+      "authors": [
+        "Colyvan",
+        "Journal of Philosophy, Inc."
+      ],
+      "year": 2008,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil200810519",
+      "type": "journal-article",
+      "volume": "105",
+      "pages": "37-44"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Colyvan2008Relative",
+    "ref": {
+      "key": "Colyvan2008Relative",
+      "authors": [
+        "Mark Colyvan"
+      ],
+      "year": 2008,
+      "title": "Relative Expectation Theory",
+      "venue": "Journal of Philosophy",
+      "type": "article",
+      "seen": "secondary (SEP St Petersburg; Goodsell 2026)",
+      "doi": "10.5840/jphil200810519",
+      "volume": "105",
+      "pages": "37-44"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Unexpected Expectations",
+      "authors": [
+        "Hajek"
+      ],
+      "year": 2014,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzu076",
+      "type": "journal-article",
+      "volume": "123",
+      "pages": "533-567"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hajek2014Unexpected",
+    "ref": {
+      "key": "Hajek2014Unexpected",
+      "authors": [
+        "Alan H\u00e1jek"
+      ],
+      "year": 2014,
+      "title": "Unexpected Expectations",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzu076",
+      "volume": "123",
+      "pages": "533-567"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Making Do Without Expectations",
+      "authors": [
+        "Bartha"
+      ],
+      "year": 2016,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzv152",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "799-827"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Bartha2016Making",
+    "ref": {
+      "key": "Bartha2016Making",
+      "authors": [
+        "Paul F. A. Bartha"
+      ],
+      "year": 2016,
+      "title": "Making Do Without Expectations",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "secondary (SEP St Petersburg: Arroyo game)",
+      "doi": "10.1093/mind/fzv152",
+      "volume": "125",
+      "pages": "799-827"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Making Ado Without Expectations:",
+      "authors": [
+        "Colyvan",
+        "H\u00e1jek"
+      ],
+      "year": 2016,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzv160",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "829-857"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Colyvan2016Ado",
+    "ref": {
+      "key": "Colyvan2016Ado",
+      "authors": [
+        "Mark Colyvan",
+        "Alan H\u00e1jek"
+      ],
+      "year": 2016,
+      "title": "Making Ado Without Expectations",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzv160",
+      "volume": "125",
+      "pages": "829-857"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Evaluating the Pasadena, Altadena, and St Petersburg Gambles",
+      "authors": [
+        "Fine"
+      ],
+      "year": 2008,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzn037",
+      "type": "journal-article",
+      "volume": "117",
+      "pages": "613-632"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Fine2008Evaluating",
+    "ref": {
+      "key": "Fine2008Evaluating",
+      "authors": [
+        "Terrence L. Fine"
+      ],
+      "year": 2008,
+      "title": "Evaluating the Pasadena, Altadena, and St Petersburg Gambles",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title; characterised in Goodsell 2024 \u00a73.1",
+      "doi": "10.1093/mind/fzn037",
+      "volume": "117",
+      "pages": "613-632"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Difference Minimizing Theory",
+      "authors": [
+        "Meacham"
+      ],
+      "year": 2019,
+      "venue": "Ergo, an Open Access Journal of Philosophy",
+      "doi": "10.3998/ergo.12405314.0006.035",
+      "type": "journal-article",
+      "volume": "6",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Meacham2019Difference",
+    "ref": {
+      "key": "Meacham2019Difference",
+      "authors": [
+        "Christopher J. G. Meacham"
+      ],
+      "year": 2019,
+      "title": "Difference Minimizing Theory",
+      "venue": "Ergo",
+      "type": "article",
+      "seen": "title; characterised in Goodsell 2024",
+      "doi": "10.3998/ergo.12405314.0006.035",
+      "volume": "6"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "DECISION THEORY WITHOUT FINITE STANDARD EXPECTED VALUE",
+      "authors": [
+        "Lauwers",
+        "Vallentyne"
+      ],
+      "year": 2015,
+      "venue": "Economics and Philosophy",
+      "doi": "10.1017/s0266267115000334",
+      "type": "journal-article",
+      "volume": "32",
+      "pages": "383-407"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Lauwers2016Decision",
+    "ref": {
+      "key": "Lauwers2016Decision",
+      "authors": [
+        "Luc Lauwers",
+        "Peter Vallentyne"
+      ],
+      "year": 2016,
+      "title": "Decision Theory without Finite Standard Expected Value",
+      "venue": "Economics and Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1017/s0266267115000334",
+      "volume": "32",
+      "pages": "383-407",
+      "note": "first published online 2015"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Why Decision Theory Remains Constructively Incomplete",
+      "authors": [
+        "Lauwers"
+      ],
+      "year": 2016,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzv174",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "1033-1043"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Lauwers2016Why",
+    "ref": {
+      "key": "Lauwers2016Why",
+      "authors": [
+        "Luc Lauwers"
+      ],
+      "year": 2016,
+      "title": "Why Decision Theory Remains Constructively Incomplete",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzv174",
+      "volume": "125",
+      "pages": "1033-1043"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Bayesianism, Infinite Decisions, and Binding",
+      "authors": [
+        "Arntzenius"
+      ],
+      "year": 2004,
+      "venue": "Mind",
+      "doi": "10.1093/mind/113.450.251",
+      "type": "journal-article",
+      "volume": "113",
+      "pages": "251-283"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Arntzenius2004Bayesianism",
+    "ref": {
+      "key": "Arntzenius2004Bayesianism",
+      "authors": [
+        "Frank Arntzenius",
+        "Adam Elga",
+        "John Hawthorne"
+      ],
+      "year": 2004,
+      "title": "Bayesianism, Infinite Decisions, and Binding",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "secondary (boxed slogan quoted in Goodsell 2024 p. 679)",
+      "doi": "10.1093/mind/113.450.251",
+      "volume": "113",
+      "pages": "251-283"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Two-Envelope Paradox: An Axiomatic Approach",
+      "authors": [
+        "Dietrich"
+      ],
+      "year": 2005,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzi239",
+      "type": "journal-article",
+      "volume": "114",
+      "pages": "239-248"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Dietrich2005Two",
+    "ref": {
+      "key": "Dietrich2005Two",
+      "authors": [
+        "Franz Dietrich",
+        "Christian List"
+      ],
+      "year": 2005,
+      "title": "The Two-Envelope Paradox: An Axiomatic Approach",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzi239",
+      "volume": "114",
+      "pages": "239-248"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The St. Petersburg two-envelope paradox",
+      "authors": [
+        "Chalmers"
+      ],
+      "year": 2002,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/62.2.155",
+      "type": "journal-article",
+      "volume": "62",
+      "pages": "155-157"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Chalmers2002St",
+    "ref": {
+      "key": "Chalmers2002St",
+      "authors": [
+        "David J. Chalmers"
+      ],
+      "year": 2002,
+      "title": "The St. Petersburg two-envelope paradox",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "full text (author's page)",
+      "doi": "10.1093/analys/62.2.155",
+      "volume": "62",
+      "pages": "155-157",
+      "source_url": "https://consc.net/papers/stpete.html"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "An airtight Dutch book",
+      "authors": [
+        "McGee"
+      ],
+      "year": 1999,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/59.4.257",
+      "type": "journal-article",
+      "volume": "59",
+      "pages": "257-265"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "McGee1999Airtight",
+    "ref": {
+      "key": "McGee1999Airtight",
+      "authors": [
+        "Vann McGee"
+      ],
+      "year": 1999,
+      "title": "An airtight Dutch book",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/analys/59.4.257",
+      "volume": "59",
+      "pages": "257-265"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Stochastic Dominance under Independent Noise",
+      "authors": [
+        "Pomatto",
+        "Strack",
+        "Tamuz"
+      ],
+      "year": 2020,
+      "venue": "Journal of Political Economy",
+      "doi": "10.1086/705555",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "1877-1900"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Pomatto2020Stochastic",
+    "ref": {
+      "key": "Pomatto2020Stochastic",
+      "authors": [
+        "Luciano Pomatto",
+        "Philipp Strack",
+        "Omer Tamuz"
+      ],
+      "year": 2020,
+      "title": "Stochastic Dominance under Independent Noise",
+      "venue": "Journal of Political Economy",
+      "type": "article",
+      "seen": "abstract (arXiv:1807.06927)",
+      "doi": "10.1086/705555",
+      "volume": "128",
+      "pages": "1877-1900"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Surreal decisions",
+      "authors": [
+        "Chen",
+        "Rubio"
+      ],
+      "year": 2018,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12510",
+      "type": "journal-article",
+      "volume": "100",
+      "pages": "54-74"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Chen2020Surreal",
+    "ref": {
+      "key": "Chen2020Surreal",
+      "authors": [
+        "Eddy Keming Chen",
+        "Daniel Rubio"
+      ],
+      "year": 2020,
+      "title": "Surreal decisions",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1111/phpr.12510",
+      "volume": "100",
+      "pages": "54-74"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Waging War on Pascal's Wager",
+      "authors": [
+        "Ha\u0301jek"
+      ],
+      "year": 2003,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-112-1-27",
+      "type": "journal-article",
+      "volume": "112",
+      "pages": "27-56"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hajek2003Waging",
+    "ref": {
+      "key": "Hajek2003Waging",
+      "authors": [
+        "Alan H\u00e1jek"
+      ],
+      "year": 2003,
+      "title": "Waging War on Pascal's Wager",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "secondary (SEP Pascal's Wager)",
+      "doi": "10.1215/00318108-112-1-27",
+      "volume": "112",
+      "pages": "27-56"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Taking Stock of Infinite Value: Pascal\u2019s Wager and Relative Utilities",
+      "authors": [
+        "Bartha"
+      ],
+      "year": 2007,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-005-8006-z",
+      "type": "journal-article",
+      "volume": "154",
+      "pages": "5-52"
+    },
+    "title_similarity": 0.993,
+    "source": "crossref-doi",
+    "key": "Bartha2007Taking",
+    "ref": {
+      "key": "Bartha2007Taking",
+      "authors": [
+        "Paul Bartha"
+      ],
+      "year": 2007,
+      "title": "Taking Stock of Infinite Value: Pascal's Wager and Relative Utilities",
+      "venue": "Synthese",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1007/s11229-005-8006-z",
+      "volume": "154",
+      "pages": "5-52"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Mixed strategies, uncountable times, and Pascal's Wager: a reply to Robertson",
+      "authors": [
+        "Easwaran",
+        "Monton"
+      ],
+      "year": 2012,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/ans122",
+      "type": "journal-article",
+      "volume": "72",
+      "pages": "681-685"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Easwaran2012Mixed",
+    "ref": {
+      "key": "Easwaran2012Mixed",
+      "authors": [
+        "Kenny Easwaran",
+        "Bradley Monton"
+      ],
+      "year": 2012,
+      "title": "Mixed strategies, uncountable times, and Pascal's Wager: a reply to Robertson",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "secondary (SEP Pascal's Wager)",
+      "doi": "10.1093/analys/ans122",
+      "volume": "72",
+      "pages": "681-685"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Infinite ethics and the limits of impartiality",
+      "authors": [
+        "Nebel"
+      ],
+      "year": 2025,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.70010",
+      "type": "journal-article",
+      "volume": "60",
+      "pages": "433-453"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Nebel2025Infinite",
+    "ref": {
+      "key": "Nebel2025Infinite",
+      "authors": [
+        "Jacob M. Nebel"
+      ],
+      "year": 2025,
+      "title": "Infinite Ethics and the Limits of Impartiality",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract (via committee map)",
+      "doi": "10.1111/nous.70010",
+      "volume": "60",
+      "pages": "433-453"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Risk and Rationality",
+      "authors": [
+        "Buchak"
+      ],
+      "year": 2013,
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780199672165.001.0001",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Buchak2013Risk",
+    "ref": {
+      "key": "Buchak2013Risk",
+      "authors": [
+        "Lara Buchak"
+      ],
+      "year": 2013,
+      "title": "Risk and Rationality",
+      "venue": "Oxford University Press",
+      "type": "book",
+      "seen": "secondary",
+      "doi": "10.1093/acprof:oso/9780199672165.001.0001"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "How Should Risk and Ambiguity Affect Our Charitable Giving?",
+      "authors": [
+        "Buchak"
+      ],
+      "year": 2023,
+      "venue": "Utilitas",
+      "doi": "10.1017/s0953820823000055",
+      "type": "journal-article",
+      "volume": "35",
+      "pages": "175-197"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Buchak2023Charitable",
+    "ref": {
+      "key": "Buchak2023Charitable",
+      "authors": [
+        "Lara Buchak"
+      ],
+      "year": 2023,
+      "title": "How Should Risk and Ambiguity Affect Our Charitable Giving?",
+      "venue": "Utilitas",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1017/s0953820823000055",
+      "volume": "35",
+      "pages": "175-197"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Risk writ large",
+      "authors": [
+        "Thoma",
+        "Weisberg"
+      ],
+      "year": 2017,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-017-0916-3",
+      "type": "journal-article",
+      "volume": "174",
+      "pages": "2369-2384"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Thoma2017Risk",
+    "ref": {
+      "key": "Thoma2017Risk",
+      "authors": [
+        "Johanna Thoma",
+        "Jonathan Weisberg"
+      ],
+      "year": 2017,
+      "title": "Risk writ large",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract (via committee map)",
+      "doi": "10.1007/s11098-017-0916-3",
+      "volume": "174",
+      "pages": "2369-2384"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Risk Aversion and the Long Run",
+      "authors": [
+        "Thoma"
+      ],
+      "year": 2019,
+      "venue": "Ethics",
+      "doi": "10.1086/699256",
+      "type": "journal-article",
+      "volume": "129",
+      "pages": "230-253"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Thoma2019Risk",
+    "ref": {
+      "key": "Thoma2019Risk",
+      "authors": [
+        "Johanna Thoma"
+      ],
+      "year": 2019,
+      "title": "Risk Aversion and the Long Run",
+      "venue": "Ethics",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1086/699256",
+      "volume": "129",
+      "pages": "230-253"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Ignore risk; Maximize expected moral value",
+      "authors": [
+        "Zhao"
+      ],
+      "year": 2021,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12398",
+      "type": "journal-article",
+      "volume": "57",
+      "pages": "144-161"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Zhao2023Ignore",
+    "ref": {
+      "key": "Zhao2023Ignore",
+      "authors": [
+        "Michael Zhao"
+      ],
+      "year": 2023,
+      "title": "Ignore risk; Maximize expected moral value",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12398",
+      "volume": "57",
+      "pages": "144-161",
+      "note": "first published online 2021"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Costs of abandoning the Sure-Thing Principle",
+      "authors": [
+        "Briggs"
+      ],
+      "year": 2015,
+      "venue": "Canadian Journal of Philosophy",
+      "doi": "10.1080/00455091.2015.1122387",
+      "type": "journal-article",
+      "volume": "45",
+      "pages": "827-840"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Briggs2015Costs",
+    "ref": {
+      "key": "Briggs2015Costs",
+      "authors": [
+        "Rachael Briggs"
+      ],
+      "year": 2015,
+      "title": "Costs of abandoning the Sure-Thing Principle",
+      "venue": "Canadian Journal of Philosophy",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1080/00455091.2015.1122387",
+      "volume": "45",
+      "pages": "827-840"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Risk, rationality and expected utility theory",
+      "authors": [
+        "Pettigrew"
+      ],
+      "year": 2015,
+      "venue": "Canadian Journal of Philosophy",
+      "doi": "10.1080/00455091.2015.1119610",
+      "type": "journal-article",
+      "volume": "45",
+      "pages": "798-826"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Pettigrew2015Risk",
+    "ref": {
+      "key": "Pettigrew2015Risk",
+      "authors": [
+        "Richard Pettigrew"
+      ],
+      "year": 2015,
+      "title": "Risk, rationality and expected utility theory",
+      "venue": "Canadian Journal of Philosophy",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1080/00455091.2015.1119610",
+      "volume": "45",
+      "pages": "798-826"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Rational risk\u2010aversion: Good things come to those who weight",
+      "authors": [
+        "Bottomley",
+        "Williamson"
+      ],
+      "year": 2023,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13006",
+      "type": "journal-article",
+      "volume": "108",
+      "pages": "697-725"
+    },
+    "title_similarity": 0.991,
+    "source": "crossref-doi",
+    "key": "Bottomley2024Rational",
+    "ref": {
+      "key": "Bottomley2024Rational",
+      "authors": [
+        "Christopher Bottomley",
+        "Timothy Luke Williamson"
+      ],
+      "year": 2024,
+      "title": "Rational risk-aversion: Good things come to those who weight",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.13006",
+      "volume": "108",
+      "pages": "697-725",
+      "note": "first published online 2023"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Generalizations of risk-weighted expected utility",
+      "authors": [
+        "Easwaran"
+      ],
+      "year": 2026,
+      "venue": "Economics and Philosophy",
+      "doi": "10.1017/s0266267125100618",
+      "type": "journal-article",
+      "volume": "42",
+      "pages": "617-644"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Easwaran2026Generalizations",
+    "ref": {
+      "key": "Easwaran2026Generalizations",
+      "authors": [
+        "Kenny Easwaran"
+      ],
+      "year": 2026,
+      "title": "Generalizations of risk-weighted expected utility",
+      "venue": "Economics and Philosophy",
+      "type": "article",
+      "seen": "abstract + introduction of OA PDF",
+      "doi": "10.1017/s0266267125100618",
+      "volume": "42",
+      "pages": "617-644"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A calibration theorem for risk-weighted expected utility theory",
+      "authors": [
+        "Yu"
+      ],
+      "year": 2026,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-026-02520-2",
+      "type": "journal-article",
+      "volume": "183",
+      "pages": "2143-2165"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Yu2026Calibration",
+    "ref": {
+      "key": "Yu2026Calibration",
+      "authors": [
+        "Boning Yu"
+      ],
+      "year": 2026,
+      "title": "A calibration theorem for risk-weighted expected utility theory",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s11098-026-02520-2",
+      "volume": "183",
+      "pages": "2143-2165"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Avoiding Risk and Avoiding Evidence",
+      "authors": [
+        "Campbell-Moore",
+        "Salow"
+      ],
+      "year": 2020,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2019.1697305",
+      "type": "journal-article",
+      "volume": "98",
+      "pages": "495-515"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Campbellmoore2020Avoiding",
+    "ref": {
+      "key": "Campbellmoore2020Avoiding",
+      "authors": [
+        "Catrin Campbell-Moore",
+        "Bernhard Salow"
+      ],
+      "year": 2020,
+      "title": "Avoiding Risk and Avoiding Evidence",
+      "venue": "Australasian Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract (via committee map)",
+      "doi": "10.1080/00048402.2019.1697305",
+      "volume": "98",
+      "pages": "495-515"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On the desire to make a difference",
+      "authors": [
+        "Greaves",
+        "Thomas",
+        "Mogensen",
+        "MacAskill"
+      ],
+      "year": 2024,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-024-02102-0",
+      "type": "journal-article",
+      "volume": "181",
+      "pages": "1599-1626"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Greaves2024Desire",
+    "ref": {
+      "key": "Greaves2024Desire",
+      "authors": [
+        "Hilary Greaves",
+        "Teruji Thomas",
+        "Andreas Mogensen",
+        "William MacAskill"
+      ],
+      "year": 2024,
+      "title": "On the desire to make a difference",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s11098-024-02102-0",
+      "volume": "181",
+      "pages": "1599-1626"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Stochastic dominance for incomplete preferences",
+      "authors": [
+        "Francis",
+        "Gustafsson"
+      ],
+      "year": 2025,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anaf046",
+      "type": "journal-article",
+      "volume": "86",
+      "pages": "299-311"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Francis2025Stochastic",
+    "ref": {
+      "key": "Francis2025Stochastic",
+      "authors": [
+        "Tomi Francis",
+        "Johan E. Gustafsson"
+      ],
+      "year": 2025,
+      "title": "Stochastic dominance for incomplete preferences",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anaf046",
+      "volume": "86",
+      "pages": "299-311"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A risky challenge for intransitive preferences",
+      "authors": [
+        "Williamson"
+      ],
+      "year": 2023,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12455",
+      "type": "journal-article",
+      "volume": "58",
+      "pages": "360-385"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Williamson2024Risky",
+    "ref": {
+      "key": "Williamson2024Risky",
+      "authors": [
+        "Timothy Luke Williamson"
+      ],
+      "year": 2024,
+      "title": "A risky challenge for intransitive preferences",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12455",
+      "volume": "58",
+      "pages": "360-385",
+      "note": "first published online 2023"
+    }
+  },
+  {
+    "match": {
+      "title": "A New Twist to the St. Petersburg Paradox",
+      "authors": [
+        "Peterson",
+        "Journal of Philosophy, Inc."
+      ],
+      "year": 2011,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil20111081239",
+      "type": "journal-article",
+      "volume": "108",
+      "pages": "697-699"
+    },
+    "title_similarity": 0.769,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429",
+      "year differs: ref 2023 vs registry 2011"
+    ],
+    "status": "PROBABLE",
+    "key": "Peterson2023SEP",
+    "ref": {
+      "key": "Peterson2023SEP",
+      "authors": [
+        "Martin Peterson"
+      ],
+      "year": 2023,
+      "title": "The St. Petersburg Paradox",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia-entry",
+      "seen": "full text of \u00a7\u00a74-7",
+      "source_url": "https://plato.stanford.edu/entries/paradox-stpetersburg/",
+      "manual_check": "SEP page retrieved 2026-10-21: first published 30 Jul 2019, substantive revision 1 Aug 2023, copyright 2023 Martin Peterson"
+    }
+  },
+  {
+    "match": {
+      "title": "Numerical Approximation to Functions and Data",
+      "authors": [
+        "H\u00e1jek",
+        "Hayes",
+        "Hajek"
+      ],
+      "year": 1972,
+      "venue": "International Statistical Review / Revue Internationale de Statistique",
+      "doi": "10.2307/1402770",
+      "type": "journal-article",
+      "volume": "40",
+      "pages": "250"
+    },
+    "title_similarity": 0.237,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Hajek2022SEP",
+    "ref": {
+      "key": "Hajek2022SEP",
+      "authors": [
+        "Alan H\u00e1jek"
+      ],
+      "year": 2022,
+      "title": "Pascal's Wager",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia-entry",
+      "seen": "\u00a7 on mixed strategies",
+      "source_url": "https://plato.stanford.edu/entries/pascal-wager/",
+      "manual_check": "SEP page retrieved 2026-10-21: substantive revision 11 Sep 2022, copyright 2022 Alan H\u00e1jek"
+    }
+  }
+]

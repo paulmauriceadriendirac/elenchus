@@ -1,0 +1,1059 @@
+[
+ {
+  "key": "Dorr2023Case",
+  "authors": [
+   "Cian Dorr",
+   "Jacob M. Nebel",
+   "Jake Zuehl"
+  ],
+  "year": 2023,
+  "title": "The Case for Comparability",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract (+ statement of Comparability quoted in Hajek&Rabinowicz fn15; D'Ambrosio&Hedden fn5)",
+  "doi": "10.1111/nous.12407",
+  "volume": "57",
+  "pages": "414-453",
+  "note": "online 2022; fetch request l2-dnz-case-for-comparability"
+ },
+ {
+  "key": "Dorr2021Consequences",
+  "authors": [
+   "Cian Dorr",
+   "Jacob M. Nebel",
+   "Jake Zuehl"
+  ],
+  "year": 2021,
+  "title": "Consequences of Comparability",
+  "venue": "Philosophical Perspectives",
+  "type": "article",
+  "seen": "abstract (Semantic Scholar)",
+  "doi": "10.1111/phpe.12157",
+  "volume": "35",
+  "pages": "70-98"
+ },
+ {
+  "key": "Carlson2024Defense",
+  "authors": [
+   "Erik Carlson",
+   "Olle Risberg"
+  ],
+  "year": 2024,
+  "title": "In Defense of Value Incomparability: A Reply to Dorr, Nebel, and Zuehl",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12533"
+ },
+ {
+  "key": "Dorr2026Defense",
+  "authors": [
+   "Cian Dorr",
+   "Jacob M. Nebel",
+   "Jake Zuehl"
+  ],
+  "year": 2026,
+  "title": "In Defense of Comparability: Reply to Carlson and Risberg",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.70040"
+ },
+ {
+  "key": "DAmbrosio2023Multidimensional",
+  "authors": [
+   "Justin D'Ambrosio",
+   "Brian Hedden"
+  ],
+  "year": 2023,
+  "title": "Multidimensional Adjectives",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "seen": "full text (author preprint, sections 1-3)",
+  "doi": "10.1080/00048402.2023.2277923"
+ },
+ {
+  "key": "Hedden2024Multidimensional",
+  "authors": [
+   "Brian Hedden",
+   "Jacob M. Nebel"
+  ],
+  "year": 2024,
+  "title": "Multidimensional Concepts and Disparate Scale Types",
+  "venue": "Philosophical Review",
+  "type": "article",
+  "seen": "full text (author preprint, sections 1-4 and conclusion)",
+  "doi": "10.1215/00318108-11249629",
+  "volume": "133",
+  "pages": "265-308"
+ },
+ {
+  "key": "Klein1980Semantics",
+  "authors": [
+   "Ewan Klein"
+  ],
+  "year": 1980,
+  "title": "A Semantics for Positive and Comparative Adjectives",
+  "venue": "Linguistics and Philosophy",
+  "type": "article",
+  "seen": "title; content only as described by D'Ambrosio & Hedden",
+  "doi": "10.1007/bf00351812",
+  "volume": "4",
+  "pages": "1-45"
+ },
+ {
+  "key": "Tarsney2025Dominance",
+  "authors": [
+   "Christian Tarsney",
+   "Harvey Lederman",
+   "Dean Spears"
+  ],
+  "year": 2025,
+  "title": "A Dominance Argument Against Incompleteness",
+  "venue": "Philosophical Review",
+  "type": "article",
+  "seen": "full text (arXiv 2403.17641v2)",
+  "doi": "10.1215/00318108-11964820",
+  "volume": "134",
+  "pages": "455-490"
+ },
+ {
+  "key": "Lederman2023Incompleteness",
+  "authors": [
+   "Harvey Lederman"
+  ],
+  "year": 2023,
+  "title": "Incompleteness, Independence, and Negative Dominance",
+  "venue": "arXiv preprint 2311.08471",
+  "type": "preprint",
+  "seen": "full text (arXiv v1)",
+  "note": "manual check: arXiv record 2311.08471",
+  "source_url": "https://arxiv.org/abs/2311.08471"
+ },
+ {
+  "key": "Hare2010Take",
+  "authors": [
+   "Caspar Hare"
+  ],
+  "year": 2010,
+  "title": "Take the Sugar",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "title; content via Francis & Gustafsson 2026 and TLS 2025",
+  "doi": "10.1093/analys/anp174",
+  "volume": "70",
+  "pages": "237-247"
+ },
+ {
+  "key": "Schoenfield2014Decision",
+  "authors": [
+   "Miriam Schoenfield"
+  ],
+  "year": 2014,
+  "title": "Decision Making in the Face of Parity",
+  "venue": "Philosophical Perspectives",
+  "type": "article",
+  "seen": "title; quoted passages via TLS 2025 and Francis & Gustafsson 2026",
+  "doi": "10.1111/phpe.12044",
+  "volume": "28",
+  "pages": "263-277"
+ },
+ {
+  "key": "Bales2014Decision",
+  "authors": [
+   "Adam Bales",
+   "Daniel Cohen",
+   "Toby Handfield"
+  ],
+  "year": 2014,
+  "title": "Decision Theory for Agents with Incomplete Preferences",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "seen": "abstract (SSRN version)",
+  "doi": "10.1080/00048402.2013.843576",
+  "volume": "92",
+  "pages": "453-470"
+ },
+ {
+  "key": "Bader2018Stochastic",
+  "authors": [
+   "Ralf M. Bader"
+  ],
+  "year": 2018,
+  "title": "Stochastic Dominance and Opaque Sweetening",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "seen": "title; content via TLS 2025",
+  "doi": "10.1080/00048402.2017.1362566",
+  "volume": "96",
+  "pages": "498-507"
+ },
+ {
+  "key": "Doody2019Opaque",
+  "authors": [
+   "Ryan Doody"
+  ],
+  "year": 2019,
+  "title": "Opaque Sweetening and Transitivity",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1080/00048402.2018.1520269",
+  "volume": "97",
+  "pages": "559-571"
+ },
+ {
+  "key": "Doody2025Reasons",
+  "authors": [
+   "Ryan Doody"
+  ],
+  "year": 2025,
+  "title": "Reasons, Rationality, and Opaque Sweetening: Hare's \"No Reason\" Argument for Taking the Sugar",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.70007",
+  "volume": "60",
+  "pages": "328-350"
+ },
+ {
+  "key": "Francis2026Stochastic",
+  "authors": [
+   "Tomi Francis",
+   "Johan E. Gustafsson"
+  ],
+  "year": 2026,
+  "title": "Stochastic Dominance for Incomplete Preferences",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "full text (sections 1-2.2)",
+  "doi": "10.1093/analys/anaf046",
+  "volume": "86",
+  "pages": "299-311"
+ },
+ {
+  "key": "Rabinowicz2022Incommensurability",
+  "authors": [
+   "Wlodek Rabinowicz"
+  ],
+  "year": 2022,
+  "title": "Incommensurability Meets Risk",
+  "venue": "Value Incommensurability: Ethics, Risk, and Decision-Making (Routledge)",
+  "type": "chapter",
+  "seen": "title; Well-Roundedness principle as quoted by TLS 2025",
+  "doi": "10.4324/9781003148012-15",
+  "pages": "201-230",
+  "note": "volume dated 2021 by some registries, 2022 by Crossref issued date"
+ },
+ {
+  "key": "Hedden2024Parity",
+  "authors": [
+   "Brian Hedden"
+  ],
+  "year": 2024,
+  "title": "Parity and Pareto",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "full text (author preprint, sections 1-2) + abstract",
+  "doi": "10.1111/phpr.13056",
+  "volume": "109",
+  "pages": "575-592"
+ },
+ {
+  "key": "Hedden2024Dimensions",
+  "authors": [
+   "Brian Hedden",
+   "Daniel Muñoz"
+  ],
+  "year": 2024,
+  "title": "Dimensions of Value",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12454",
+  "volume": "58",
+  "pages": "291-305"
+ },
+ {
+  "key": "Nebel2020Fixed",
+  "authors": [
+   "Jacob M. Nebel"
+  ],
+  "year": 2020,
+  "title": "A Fixed-Population Problem for the Person-Affecting Restriction",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "summary in TLS 2025 fn 17",
+  "doi": "10.1007/s11098-019-01338-5",
+  "volume": "177",
+  "pages": "2779-2787"
+ },
+ {
+  "key": "Russell2026Fixing",
+  "authors": [
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2026,
+  "title": "Fixing Stochastic Dominance",
+  "venue": "British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "title; claim as reported by TLS 2025 fn 11 and Lederman 2023 sec. 3",
+  "doi": "10.1086/728716",
+  "volume": "77",
+  "pages": "701-725"
+ },
+ {
+  "key": "Manzini2008Representation",
+  "authors": [
+   "Paola Manzini",
+   "Marco Mariotti"
+  ],
+  "year": 2008,
+  "title": "On the Representation of Incomplete Preferences over Risky Alternatives",
+  "venue": "Theory and Decision",
+  "type": "article",
+  "seen": "title; via TLS fn 10 and Lederman",
+  "doi": "10.1007/s11238-007-9086-7",
+  "volume": "65",
+  "pages": "303-323"
+ },
+ {
+  "key": "Gustafsson2022Money",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2022,
+  "title": "Money-Pump Arguments",
+  "venue": "Cambridge University Press (Elements in Decision Theory and Philosophy)",
+  "type": "book",
+  "seen": "full text of ch. 3 (Completeness)",
+  "doi": "10.1017/9781108754750"
+ },
+ {
+  "key": "Gustafsson2026Behavioural",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2026,
+  "title": "A Behavioural Money-Pump Argument for Completeness",
+  "venue": "Theory and Decision",
+  "type": "article",
+  "seen": "full text",
+  "doi": "10.1007/s11238-025-10025-3",
+  "volume": "101",
+  "pages": "391-400"
+ },
+ {
+  "key": "Gustafsson2016Money",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2016,
+  "title": "Money Pumps, Incompleteness, and Indeterminacy",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.12248",
+  "volume": "92",
+  "pages": "60-72"
+ },
+ {
+  "key": "Petersen2026Dynamic",
+  "authors": [
+   "Sami Petersen"
+  ],
+  "year": 2026,
+  "title": "Dynamic Choice without the Completeness Axiom",
+  "venue": "Theory and Decision",
+  "type": "article",
+  "seen": "abstract (Crossref)",
+  "doi": "10.1007/s11238-025-10052-0",
+  "volume": "101",
+  "pages": "375-390"
+ },
+ {
+  "key": "Bradley2016Can",
+  "authors": [
+   "Seamus Bradley",
+   "Katie Steele"
+  ],
+  "year": 2016,
+  "title": "Can Free Evidence Be Bad? Value of Information for the Imprecise Probabilist",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/684184",
+  "volume": "83",
+  "pages": "1-28"
+ },
+ {
+  "key": "Bales2023Will",
+  "authors": [
+   "Adam Bales"
+  ],
+  "year": 2023,
+  "title": "Will AI Avoid Exploitation? Artificial General Intelligence and Expected Utility Theory",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s11098-023-02023-4",
+  "volume": "182",
+  "pages": "1519-1538"
+ },
+ {
+  "key": "Thornley2024Shutdown",
+  "authors": [
+   "Elliott Thornley"
+  ],
+  "year": 2024,
+  "title": "The Shutdown Problem: An AI Engineering Puzzle for Decision Theorists",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "full text (arXiv 2403.04471v2), sections 4-7",
+  "doi": "10.1007/s11098-024-02153-3",
+  "volume": "182",
+  "pages": "1653-1680"
+ },
+ {
+  "key": "Thornley2025Towards",
+  "authors": [
+   "Elliott Thornley",
+   "Alexander Roman",
+   "Christos Ziakas",
+   "Leyton Ho",
+   "Louis Thomson"
+  ],
+  "year": 2025,
+  "title": "Towards Shutdownable Agents via Stochastic Choice",
+  "venue": "Transactions on Machine Learning Research",
+  "type": "article",
+  "seen": "abstract, sec. 1 and Appendix B (arXiv 2407.00805v7)",
+  "note": "manual check: arXiv 2407.00805 header says published TMLR 12/2025",
+  "source_url": "https://arxiv.org/abs/2407.00805"
+ },
+ {
+  "key": "Thorstad2026Revisiting",
+  "authors": [
+   "David Thorstad"
+  ],
+  "year": 2026,
+  "title": "Revisiting the Shutdown Problem",
+  "venue": "arXiv preprint 2606.08296",
+  "type": "preprint",
+  "seen": "abstract and sec. 6.1",
+  "note": "manual check: arXiv record",
+  "source_url": "https://arxiv.org/abs/2606.08296"
+ },
+ {
+  "key": "Benavoli2025Why",
+  "authors": [
+   "Alessio Benavoli",
+   "Alessandro Facchini",
+   "Marco Zaffalon"
+  ],
+  "year": 2025,
+  "title": "Why AI Safety Requires Uncertainty, Incomplete Preferences, and Non-Archimedean Utilities",
+  "venue": "arXiv preprint 2512.23508",
+  "type": "preprint",
+  "seen": "abstract",
+  "note": "manual check: arXiv record",
+  "source_url": "https://arxiv.org/abs/2512.23508"
+ },
+ {
+  "key": "Tarsney2024Against",
+  "authors": [
+   "Christian Tarsney"
+  ],
+  "year": 2024,
+  "title": "Against Anti-Fanaticism",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "full text (author penultimate draft), Theorem 1 and sec. 6",
+  "doi": "10.1111/phpr.13120",
+  "volume": "110",
+  "pages": "734-753"
+ },
+ {
+  "key": "Tarsney2026Absolutism",
+  "authors": [
+   "Christian J. Tarsney"
+  ],
+  "year": 2026,
+  "title": "Absolutism vs. Comparativism about Value",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract (author homepage)",
+  "doi": "10.1007/s11098-026-02567-1"
+ },
+ {
+  "key": "Chang2002Possibility",
+  "authors": [
+   "Ruth Chang"
+  ],
+  "year": 2002,
+  "title": "The Possibility of Parity",
+  "venue": "Ethics",
+  "type": "article",
+  "seen": "title; content via SEP (Andersson & Hsieh 2025)",
+  "doi": "10.1086/339673",
+  "volume": "112",
+  "pages": "659-688"
+ },
+ {
+  "key": "Chang2017Hard",
+  "authors": [
+   "Ruth Chang"
+  ],
+  "year": 2017,
+  "title": "Hard Choices",
+  "venue": "Journal of the American Philosophical Association",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/apa.2017.7",
+  "volume": "3",
+  "pages": "1-21"
+ },
+ {
+  "key": "Gert2004Value",
+  "authors": [
+   "Joshua Gert"
+  ],
+  "year": 2004,
+  "title": "Value and Parity",
+  "venue": "Ethics",
+  "type": "article",
+  "seen": "title; via SEP and Rabinowicz 2008 abstract",
+  "doi": "10.1086/381697",
+  "volume": "114",
+  "pages": "492-510"
+ },
+ {
+  "key": "Rabinowicz2008Value",
+  "authors": [
+   "Wlodek Rabinowicz"
+  ],
+  "year": 2008,
+  "title": "Value Relations",
+  "venue": "Theoria",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/j.1755-2567.2008.00008.x",
+  "volume": "74",
+  "pages": "18-49"
+ },
+ {
+  "key": "Rabinowicz2012Value",
+  "authors": [
+   "Wlodek Rabinowicz"
+  ],
+  "year": 2012,
+  "title": "Value Relations Revisited",
+  "venue": "Economics and Philosophy",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s0266267112000144",
+  "volume": "28",
+  "pages": "133-164"
+ },
+ {
+  "key": "Hajek2022Degrees",
+  "authors": [
+   "Alan Hájek",
+   "Wlodek Rabinowicz"
+  ],
+  "year": 2022,
+  "title": "Degrees of Commensurability and the Repugnant Conclusion",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "full text (ANU repository accepted version), secs 1-5, 11, notes",
+  "doi": "10.1111/nous.12388"
+ },
+ {
+  "key": "Broome2022Incommensurateness",
+  "authors": [
+   "John Broome"
+  ],
+  "year": 2022,
+  "title": "Incommensurateness Is Vagueness",
+  "venue": "Value Incommensurability: Ethics, Risk, and Decision-Making (Routledge)",
+  "type": "chapter",
+  "seen": "title",
+  "doi": "10.4324/9781003148012-3",
+  "pages": "29-49"
+ },
+ {
+  "key": "Carlson2004Broome",
+  "authors": [
+   "Erik Carlson"
+  ],
+  "year": 2004,
+  "title": "Broome's Argument against Value Incomparability",
+  "venue": "Utilitas",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s0953820804000548",
+  "volume": "16",
+  "pages": "220-224"
+ },
+ {
+  "key": "Elson2014Heaps",
+  "authors": [
+   "Luke Elson"
+  ],
+  "year": 2014,
+  "title": "Heaps and Chains: Is the Chaining Argument for Parity a Sorites?",
+  "venue": "Ethics",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1086/674844",
+  "volume": "124",
+  "pages": "557-571"
+ },
+ {
+  "key": "Andersson2016Parity",
+  "authors": [
+   "Henrik Andersson"
+  ],
+  "year": 2016,
+  "title": "Parity and Comparability—A Concern Regarding Chang's Chaining Argument",
+  "venue": "Ethical Theory and Moral Practice",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s10677-015-9621-5",
+  "volume": "19",
+  "pages": "245-253"
+ },
+ {
+  "key": "Gustafsson2010Conflicting",
+  "authors": [
+   "Johan E. Gustafsson",
+   "Nicolas Espinoza"
+  ],
+  "year": 2010,
+  "title": "Conflicting Reasons in the Small-Improvement Argument",
+  "venue": "The Philosophical Quarterly",
+  "type": "article",
+  "seen": "abstract (author homepage)",
+  "doi": "10.1111/j.1467-9213.2009.648.x",
+  "volume": "60",
+  "pages": "754-763"
+ },
+ {
+  "key": "Gustafsson2013Indeterminacy",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2013,
+  "title": "Indeterminacy and the Small-Improvement Argument",
+  "venue": "Utilitas",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s0953820813000034",
+  "volume": "25",
+  "pages": "433-445"
+ },
+ {
+  "key": "Gustafsson2023Possibility",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2023,
+  "title": "The Possibility of Undistinguishedness",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract (author homepage)",
+  "doi": "10.1007/s11098-022-01889-0",
+  "volume": "180",
+  "pages": "609-613"
+ },
+ {
+  "key": "Gustafsson2020Population",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2020,
+  "title": "Population Axiology and the Possibility of a Fourth Category of Absolute Value",
+  "venue": "Economics and Philosophy",
+  "type": "article",
+  "seen": "title; summary in TLS 2025 fn 22",
+  "doi": "10.1017/s0266267119000087",
+  "volume": "36",
+  "pages": "81-110"
+ },
+ {
+  "key": "Raleigh2023Argument",
+  "authors": [
+   "T. Raleigh"
+  ],
+  "year": 2023,
+  "title": "The Argument from Small Improvement Is a Red Herring",
+  "venue": "Inquiry",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1080/0020174x.2023.2205441"
+ },
+ {
+  "key": "Forrester2022Epistemicism",
+  "authors": [
+   "P. Forrester"
+  ],
+  "year": 2022,
+  "title": "Epistemicism and Commensurability",
+  "venue": "Inquiry",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1080/0020174x.2022.2155870"
+ },
+ {
+  "key": "Andersson2026Possibility",
+  "authors": [
+   "Henrik Andersson"
+  ],
+  "year": 2026,
+  "title": "The Possibility of Incomparability",
+  "venue": "Ethical Theory and Moral Practice",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s10677-026-10579-3"
+ },
+ {
+  "key": "Weatherson2025Are",
+  "authors": [
+   "Brian Weatherson"
+  ],
+  "year": 2025,
+  "title": "Are Choices Binary?",
+  "venue": "Philosophical Issues",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phis.70011"
+ },
+ {
+  "key": "Tucker2026Parity",
+  "authors": [
+   "Chris Tucker",
+   "E. Jackson"
+  ],
+  "year": 2026,
+  "title": "Parity and the Permissivism Puzzle: A Defense of Epistemic Options",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.70129"
+ },
+ {
+  "key": "Thieme2026Dilemmas",
+  "authors": [
+   "Aaron Thieme"
+  ],
+  "year": 2026,
+  "title": "Dilemmas, Teleology, and Incomparable Value",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.70134"
+ },
+ {
+  "key": "Thornley2022Critical",
+  "authors": [
+   "Elliott Thornley"
+  ],
+  "year": 2022,
+  "title": "Critical Levels, Critical Ranges, and Imprecise Exchange Rates in Population Axiology",
+  "venue": "Journal of Ethics and Social Philosophy",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.26556/jesp.v22i3.1593",
+  "volume": "22",
+  "pages": "382-414"
+ },
+ {
+  "key": "Nebel2023Ethics",
+  "authors": [
+   "Jacob M. Nebel"
+  ],
+  "year": 2023,
+  "title": "Ethics without Numbers",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.12966",
+  "volume": "108",
+  "pages": "289-319"
+ },
+ {
+  "key": "Nebel2022Totalism",
+  "authors": [
+   "Jacob M. Nebel"
+  ],
+  "year": 2022,
+  "title": "Totalism without Repugnance",
+  "venue": "Ethics and Existence: The Legacy of Derek Parfit (Oxford University Press)",
+  "type": "chapter",
+  "seen": "abstract",
+  "doi": "10.1093/oso/9780192894250.003.0009",
+  "pages": "200-231"
+ },
+ {
+  "key": "Kowalczyk2024Opaque",
+  "authors": [
+   "Kacper Kowalczyk",
+   "Aidan B. Penn"
+  ],
+  "year": 2024,
+  "title": "Opaque Options",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s11098-024-02134-6",
+  "volume": "181",
+  "pages": "1837-1849"
+ },
+ {
+  "key": "Gustafsson2026Ex",
+  "authors": [
+   "Johan E. Gustafsson",
+   "Kacper Kowalczyk"
+  ],
+  "year": 2026,
+  "title": "Ex Ante Pareto and the Opaque-Identity Puzzle",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.5840/jphil20251177",
+  "volume": "123",
+  "pages": "63-76"
+ },
+ {
+  "key": "Andersson2022Value",
+  "authors": [
+   "Henrik Andersson",
+   "Anders Herlitz"
+  ],
+  "year": 2022,
+  "title": "Value Incommensurability: Ethics, Risk, and Decision-Making",
+  "venue": "Routledge",
+  "type": "book",
+  "seen": "table of contents (Crossref chapter records)",
+  "doi": "10.4324/9781003148012",
+  "note": "edited volume; OA CC-BY-NC-ND"
+ },
+ {
+  "key": "Andersson2025Incommensurable",
+  "authors": [
+   "Henrik Andersson",
+   "Nien-hê Hsieh"
+  ],
+  "year": 2025,
+  "title": "Incommensurable Values",
+  "venue": "Stanford Encyclopedia of Philosophy (substantive revision 26 June 2025)",
+  "type": "encyclopedia",
+  "seen": "full text",
+  "note": "manual check: plato.stanford.edu/entries/value-incommensurable/ (authors from copyright line)",
+  "source_url": "https://plato.stanford.edu/entries/value-incommensurable/"
+ },
+ {
+  "key": "Aumann1962Utility",
+  "authors": [
+   "Robert J. Aumann"
+  ],
+  "year": 1962,
+  "title": "Utility Theory without the Completeness Axiom",
+  "venue": "Econometrica",
+  "type": "article",
+  "seen": "passage quoted in Lederman 2023",
+  "doi": "10.2307/1909888",
+  "volume": "30",
+  "pages": "445-462"
+ },
+ {
+  "key": "Dubra2004Expected",
+  "authors": [
+   "Juan Dubra",
+   "Fabio Maccheroni",
+   "Efe A. Ok"
+  ],
+  "year": 2004,
+  "title": "Expected Utility Theory without the Completeness Axiom",
+  "venue": "Journal of Economic Theory",
+  "type": "article",
+  "seen": "title; role as described by Lederman 2023",
+  "doi": "10.1016/s0022-0531(03)00166-2",
+  "volume": "115",
+  "pages": "118-133"
+ },
+ {
+  "key": "Seidenfeld1995Representation",
+  "authors": [
+   "Teddy Seidenfeld",
+   "Mark J. Schervish",
+   "Joseph B. Kadane"
+  ],
+  "year": 1995,
+  "title": "A Representation of Partially Ordered Preferences",
+  "venue": "The Annals of Statistics",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1214/aos/1034713653",
+  "volume": "23",
+  "pages": "2168-2217"
+ },
+ {
+  "key": "Eliaz2006Indifference",
+  "authors": [
+   "Kfir Eliaz",
+   "Efe A. Ok"
+  ],
+  "year": 2006,
+  "title": "Indifference or Indecisiveness? Choice-Theoretic Foundations of Incomplete Preferences",
+  "venue": "Games and Economic Behavior",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1016/j.geb.2005.06.007",
+  "volume": "56",
+  "pages": "61-86"
+ },
+ {
+  "key": "Mandler2005Incomplete",
+  "authors": [
+   "Michael Mandler"
+  ],
+  "year": 2005,
+  "title": "Incomplete Preferences and Rational Intransitivity of Choice",
+  "venue": "Games and Economic Behavior",
+  "type": "article",
+  "seen": "title; role as described by Lederman 2023 fn 1",
+  "doi": "10.1016/j.geb.2004.02.007",
+  "volume": "50",
+  "pages": "255-277"
+ },
+ {
+  "key": "Galaabaatar2013Subjective",
+  "authors": [
+   "Tsogbadral Galaabaatar",
+   "Edi Karni"
+  ],
+  "year": 2013,
+  "title": "Subjective Expected Utility with Incomplete Preferences",
+  "venue": "Econometrica",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.3982/ecta9621",
+  "volume": "81",
+  "pages": "255-284"
+ },
+ {
+  "key": "Ok2012Incomplete",
+  "authors": [
+   "Efe A. Ok",
+   "Pietro Ortoleva",
+   "Gil Riella"
+  ],
+  "year": 2012,
+  "title": "Incomplete Preferences under Uncertainty: Indecisiveness in Beliefs versus Tastes",
+  "venue": "Econometrica",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.3982/ecta8040",
+  "volume": "80",
+  "pages": "1791-1808"
+ },
+ {
+  "key": "Bewley2002Knightian",
+  "authors": [
+   "Truman F. Bewley"
+  ],
+  "year": 2002,
+  "title": "Knightian Decision Theory. Part I",
+  "venue": "Decisions in Economics and Finance",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s102030200006",
+  "volume": "25",
+  "pages": "79-110"
+ },
+ {
+  "key": "Nielsen2022Revealed",
+  "authors": [
+   "Kirby Nielsen",
+   "Luca Rigotti"
+  ],
+  "year": 2022,
+  "title": "Revealed Incomplete Preferences",
+  "venue": "arXiv preprint 2205.08584",
+  "type": "preprint",
+  "seen": "abstract",
+  "note": "manual check: arXiv record",
+  "source_url": "https://arxiv.org/abs/2205.08584"
+ },
+ {
+  "key": "Nishimura2023Best",
+  "authors": [
+   "Hiroki Nishimura",
+   "Efe A. Ok"
+  ],
+  "year": 2023,
+  "title": "Best Complete Approximations of Preference Relations",
+  "venue": "arXiv preprint 2311.06641",
+  "type": "preprint",
+  "seen": "abstract",
+  "note": "manual check: arXiv record",
+  "source_url": "https://arxiv.org/abs/2311.06641"
+ },
+ {
+  "key": "Bradley2014Should",
+  "authors": [
+   "Seamus Bradley",
+   "Katie Steele"
+  ],
+  "year": 2014,
+  "title": "Should Subjective Probabilities Be Sharp?",
+  "venue": "Episteme",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/epi.2014.8",
+  "volume": "11",
+  "pages": "277-289"
+ },
+ {
+  "key": "Isaacs2022Non",
+  "authors": [
+   "Yoaav Isaacs",
+   "Alan Hájek",
+   "John Hawthorne"
+  ],
+  "year": 2022,
+  "title": "Non-Measurability, Imprecise Credences, and Imprecise Chances",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzab031",
+  "volume": "131",
+  "pages": "894-918"
+ },
+ {
+  "key": "Dorr2023Non",
+  "authors": [
+   "Cian Dorr"
+  ],
+  "year": 2023,
+  "title": "Does Non-Measurability Favour Imprecision?",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzad041"
+ },
+ {
+  "key": "Goodsell2024Symmetry",
+  "authors": [
+   "Zachary Goodsell",
+   "Jacob M. Nebel"
+  ],
+  "year": 2024,
+  "title": "Symmetry, Invariance, and Imprecise Probability",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract (partial)",
+  "doi": "10.1093/mind/fzae048"
+ }
+]

@@ -8,3 +8,7 @@
 
 > I don't mind the name thing it's fine. it does not bother me
 
+## 2026-10-21T19:42:58Z — class: logistics
+
+> "if budget runs low, prepare handoff packets for another AI model."  also maybe skip some of the extra most token inefficent steps damn i did not anticipate this api cost token burn speed
+

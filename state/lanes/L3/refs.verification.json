@@ -1,0 +1,4119 @@
+[
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Epistemology Normalized",
+      "authors": [
+        "Goodman",
+        "Salow"
+      ],
+      "year": 2023,
+      "venue": "Philosophical Review",
+      "doi": "10.1215/00318108-10123787",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "89-145"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodmanSalow2023EN",
+    "ref": {
+      "key": "GoodmanSalow2023EN",
+      "authors": [
+        "Jeremy Goodman",
+        "Bernhard Salow"
+      ],
+      "year": 2023,
+      "title": "Epistemology Normalized",
+      "venue": "The Philosophical Review",
+      "volume": "132",
+      "pages": "89-145",
+      "doi": "10.1215/00318108-10123787",
+      "type": "article",
+      "seen": "full text (penultimate draft, Salow homepage)",
+      "source_url": "https://users.ox.ac.uk/~shug2406/EpistemologyNormalized.pdf"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Taking a chance on KK",
+      "authors": [
+        "Goodman",
+        "Salow"
+      ],
+      "year": 2017,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-017-0861-1",
+      "type": "journal-article",
+      "volume": "175",
+      "pages": "183-196"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodmanSalow2018Chance",
+    "ref": {
+      "key": "GoodmanSalow2018Chance",
+      "authors": [
+        "Jeremy Goodman",
+        "Bernhard Salow"
+      ],
+      "year": 2018,
+      "title": "Taking a chance on KK",
+      "venue": "Philosophical Studies",
+      "volume": "175",
+      "pages": "183-196",
+      "doi": "10.1007/s11098-017-0861-1",
+      "type": "article",
+      "seen": "full text (published OA version)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowledge from Probability",
+      "authors": [
+        "Goodman",
+        "Salow"
+      ],
+      "year": 2021,
+      "venue": "Electronic Proceedings in Theoretical Computer Science",
+      "doi": "10.4204/eptcs.335.15",
+      "type": "journal-article",
+      "volume": "335",
+      "pages": "171-186"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodmanSalow2021TARK",
+    "ref": {
+      "key": "GoodmanSalow2021TARK",
+      "authors": [
+        "Jeremy Goodman",
+        "Bernhard Salow"
+      ],
+      "year": 2021,
+      "title": "Knowledge from Probability",
+      "venue": "Electronic Proceedings in Theoretical Computer Science (TARK 2021)",
+      "volume": "335",
+      "pages": "171-186",
+      "doi": "10.4204/EPTCS.335.15",
+      "type": "article",
+      "seen": "full text of sections 1-2; rest skimmed"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Belief Revision from Probability",
+      "authors": [
+        "Goodman",
+        "Salow"
+      ],
+      "year": 2023,
+      "venue": "Electronic Proceedings in Theoretical Computer Science",
+      "doi": "10.4204/eptcs.379.25",
+      "type": "journal-article",
+      "volume": "379",
+      "pages": "308-317"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodmanSalow2023TARK",
+    "ref": {
+      "key": "GoodmanSalow2023TARK",
+      "authors": [
+        "Jeremy Goodman",
+        "Bernhard Salow"
+      ],
+      "year": 2023,
+      "title": "Belief Revision from Probability",
+      "venue": "Electronic Proceedings in Theoretical Computer Science (TARK 2023)",
+      "volume": "379",
+      "pages": "308-317",
+      "doi": "10.4204/EPTCS.379.25",
+      "type": "article",
+      "seen": "abstract (Salow homepage)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Belief Revision Normalized",
+      "authors": [
+        "Goodman",
+        "Salow"
+      ],
+      "year": 2024,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-024-09769-0",
+      "type": "journal-article",
+      "volume": "54",
+      "pages": "1-49"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodmanSalow2025BRN",
+    "ref": {
+      "key": "GoodmanSalow2025BRN",
+      "authors": [
+        "Jeremy Goodman",
+        "Bernhard Salow"
+      ],
+      "year": 2025,
+      "title": "Belief Revision Normalized",
+      "venue": "Journal of Philosophical Logic",
+      "volume": "54",
+      "pages": "1-49",
+      "doi": "10.1007/s10992-024-09769-0",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Normality and KK",
+      "authors": [
+        "Hawthorne"
+      ],
+      "year": 2025,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-025-02382-0",
+      "type": "journal-article",
+      "volume": "182",
+      "pages": "3071-3084"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hawthorne2025Normality",
+    "ref": {
+      "key": "Hawthorne2025Normality",
+      "authors": [
+        "John Hawthorne"
+      ],
+      "year": 2025,
+      "title": "Normality and KK",
+      "venue": "Philosophical Studies",
+      "volume": "182",
+      "pages": "3071-3084",
+      "doi": "10.1007/s11098-025-02382-0",
+      "type": "article",
+      "seen": "full text (published OA version)"
+    }
+  },
+  {
+    "match": {
+      "title": "Lewis on iterated knowledge",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2015,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-015-0568-0",
+      "type": "journal-article",
+      "volume": "173",
+      "pages": "1571-1590"
+    },
+    "title_similarity": 0.529,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "SalowForthIterated",
+    "ref": {
+      "key": "SalowForthIterated",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2025,
+      "title": "Iterated Knowledge isn't Better Knowledge",
+      "venue": "The Journal of Philosophy",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "type": "article",
+      "seen": "full text (penultimate draft)",
+      "source_url": "https://users.ox.ac.uk/~shug2406/IteratedKnowledge.pdf",
+      "note": "forthcoming per author homepage (updated Oct 2025); no DOI located; year field is homepage date"
+    },
+    "manual_check": "No registry record (forthcoming). Confirmed on author homepage https://users.ox.ac.uk/~shug2406/ (updated Oct 2025): 'Iterated Knowledge isn't Better Knowledge. Journal of Philosophy, forthcoming', PDF retrieved 2026-10-21.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A fragile compromise: Goldstein on omega knowledge without KK",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2025,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2025.2507115",
+      "type": "journal-article",
+      "volume": null,
+      "pages": "1-16"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Salow2025Fragile",
+    "ref": {
+      "key": "Salow2025Fragile",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2025,
+      "title": "A fragile compromise: Goldstein on omega knowledge without KK",
+      "venue": "Inquiry",
+      "volume": null,
+      "pages": "1-16",
+      "doi": "10.1080/0020174X.2025.2507115",
+      "type": "article",
+      "seen": "abstract (author homepage)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Fallibility and Dogmatism",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2024,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2024.2381692",
+      "type": "journal-article",
+      "volume": "103",
+      "pages": "23-38"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Salow2025Fallibility",
+    "ref": {
+      "key": "Salow2025Fallibility",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2025,
+      "title": "Fallibility and Dogmatism",
+      "venue": "Australasian Journal of Philosophy",
+      "volume": "103",
+      "pages": "23-38",
+      "doi": "10.1080/00048402.2024.2381692",
+      "type": "article",
+      "seen": "abstract (author homepage)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Value of Evidence",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2023,
+      "venue": "The Routledge Handbook of the Philosophy of Evidence",
+      "doi": "10.4324/9781315672687-15",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "148-162"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Salow2023Value",
+    "ref": {
+      "key": "Salow2023Value",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2023,
+      "title": "The Value of Evidence",
+      "venue": "The Routledge Handbook of the Philosophy of Evidence",
+      "volume": null,
+      "pages": "148-162",
+      "doi": "10.4324/9781315672687-15",
+      "type": "chapter",
+      "seen": "full text (author's current draft)",
+      "source_url": "https://users.ox.ac.uk/~shug2406/ValueOfEvidence.pdf",
+      "note": "Crossref dates the handbook 2023; author homepage says 2024"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Is A Little Learning Dangerous?",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2026,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.70032",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Salow2026Little",
+    "ref": {
+      "key": "Salow2026Little",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2026,
+      "title": "Is A Little Learning Dangerous?",
+      "venue": "Noûs",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1111/nous.70032",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Don’t Look Now",
+      "authors": [
+        "Ahmed",
+        "Salow"
+      ],
+      "year": 2019,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1093/bjps/axx047",
+      "type": "journal-article",
+      "volume": "70",
+      "pages": "327-350"
+    },
+    "title_similarity": 0.963,
+    "source": "crossref-doi",
+    "key": "AhmedSalow2019",
+    "ref": {
+      "key": "AhmedSalow2019",
+      "authors": [
+        "Arif Ahmed",
+        "Bernhard Salow"
+      ],
+      "year": 2019,
+      "title": "Don't Look Now",
+      "venue": "The British Journal for the Philosophy of Science",
+      "volume": "70",
+      "pages": "327-350",
+      "doi": "10.1093/bjps/axx047",
+      "type": "article",
+      "seen": "full text sections 1-2 (draft); structure of rest"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Avoiding Risk and Avoiding Evidence",
+      "authors": [
+        "Campbell-Moore",
+        "Salow"
+      ],
+      "year": 2020,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2019.1697305",
+      "type": "journal-article",
+      "volume": "98",
+      "pages": "495-515"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "CampbellMooreSalow2020",
+    "ref": {
+      "key": "CampbellMooreSalow2020",
+      "authors": [
+        "Catrin Campbell-Moore",
+        "Bernhard Salow"
+      ],
+      "year": 2020,
+      "title": "Avoiding Risk and Avoiding Evidence",
+      "venue": "Australasian Journal of Philosophy",
+      "volume": "98",
+      "pages": "495-515",
+      "doi": "10.1080/00048402.2019.1697305",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Transparency and the KK Principle",
+      "authors": [
+        "Das",
+        "Salow"
+      ],
+      "year": 2016,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.12158",
+      "type": "journal-article",
+      "volume": "52",
+      "pages": "3-23"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "DasSalow2018",
+    "ref": {
+      "key": "DasSalow2018",
+      "authors": [
+        "Nilanjan Das",
+        "Bernhard Salow"
+      ],
+      "year": 2018,
+      "title": "Transparency and the KK Principle",
+      "venue": "Noûs",
+      "volume": "52",
+      "pages": "3-23",
+      "doi": "10.1111/nous.12158",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2016 is online-first; volume 52 is the 2018 volume (Crossref record vol 52, pp 3-23). DOI, title, authors match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Externalist’s Guide to Fishing for Compliments",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2017,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzw029",
+      "type": "journal-article",
+      "volume": "127",
+      "pages": "691-728"
+    },
+    "title_similarity": 0.99,
+    "source": "crossref-doi",
+    "key": "Salow2018Fishing",
+    "ref": {
+      "key": "Salow2018Fishing",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2018,
+      "title": "The Externalist's Guide to Fishing for Compliments",
+      "venue": "Mind",
+      "volume": "127",
+      "pages": "691-728",
+      "doi": "10.1093/mind/fzw029",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Elusive Externalism",
+      "authors": [
+        "Salow"
+      ],
+      "year": 2017,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzx015",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "397-427"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Salow2019Elusive",
+    "ref": {
+      "key": "Salow2019Elusive",
+      "authors": [
+        "Bernhard Salow"
+      ],
+      "year": 2019,
+      "title": "Elusive Externalism",
+      "venue": "Mind",
+      "volume": "128",
+      "pages": "397-427",
+      "doi": "10.1093/mind/fzx015",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2017 is online-first; Mind vol 128 (2019) pp 397-427 per Crossref and author homepage. DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowing against the odds",
+      "authors": [
+        "Dorr",
+        "Goodman",
+        "Hawthorne"
+      ],
+      "year": 2013,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-013-0212-9",
+      "type": "journal-article",
+      "volume": "170",
+      "pages": "277-287"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DorrGoodmanHawthorne2014",
+    "ref": {
+      "key": "DorrGoodmanHawthorne2014",
+      "authors": [
+        "Cian Dorr",
+        "Jeremy Goodman",
+        "John Hawthorne"
+      ],
+      "year": 2014,
+      "title": "Knowing against the odds",
+      "venue": "Philosophical Studies",
+      "volume": "170",
+      "pages": "277-287",
+      "doi": "10.1007/s11098-013-0212-9",
+      "type": "article",
+      "seen": "full text (author copy)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Inexact Knowledge without Improbable Knowing",
+      "authors": [
+        "Goodman"
+      ],
+      "year": 2013,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2013.775013",
+      "type": "journal-article",
+      "volume": "56",
+      "pages": "30-53"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goodman2013Inexact",
+    "ref": {
+      "key": "Goodman2013Inexact",
+      "authors": [
+        "Jeremy Goodman"
+      ],
+      "year": 2013,
+      "title": "Inexact Knowledge without Improbable Knowing",
+      "venue": "Inquiry",
+      "volume": "56",
+      "pages": "30-53",
+      "doi": "10.1080/0020174X.2013.775013",
+      "type": "article",
+      "seen": "abstract and introduction"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Knowledge and its Limits",
+      "authors": [
+        "Williamson"
+      ],
+      "year": 2002,
+      "venue": "Oxford University PressOxford",
+      "doi": "10.1093/019925656x.001.0001",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Williamson2000",
+    "ref": {
+      "key": "Williamson2000",
+      "authors": [
+        "Timothy Williamson"
+      ],
+      "year": 2000,
+      "title": "Knowledge and its Limits",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/019925656X.001.0001",
+      "type": "book",
+      "seen": "not read; content cited only via Goodman & Salow 2018, Salow (forthcoming), SEP Epistemic Logic",
+      "source_url": "note: Crossref online edition dated 2002"
+    },
+    "manual_check": "Print edition OUP 2000; Crossref record is the 2002 Oxford Scholarship Online edition (same DOI, title, author).",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "CONTEXTUALISM, SUBJECT-SENSITIVE INVARIANTISM AND KNOWLEDGE OF KNOWLEDGE",
+      "authors": [
+        "Williamson"
+      ],
+      "year": 2005,
+      "venue": "The Philosophical Quarterly",
+      "doi": "10.1111/j.0031-8094.2005.00396.x",
+      "type": "journal-article",
+      "volume": "55",
+      "pages": "213-235"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Williamson2005",
+    "ref": {
+      "key": "Williamson2005",
+      "authors": [
+        "Timothy Williamson"
+      ],
+      "year": 2005,
+      "title": "Contextualism, Subject-Sensitive Invariantism and Knowledge of Knowledge",
+      "venue": "The Philosophical Quarterly",
+      "volume": "55",
+      "pages": "213-235",
+      "doi": "10.1111/j.0031-8094.2005.00396.x",
+      "type": "article",
+      "seen": "title; content via Salow (forthcoming)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Gettier Cases in Epistemic Logic",
+      "authors": [
+        "Williamson"
+      ],
+      "year": 2013,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2013.775010",
+      "type": "journal-article",
+      "volume": "56",
+      "pages": "1-14"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Williamson2013Gettier",
+    "ref": {
+      "key": "Williamson2013Gettier",
+      "authors": [
+        "Timothy Williamson"
+      ],
+      "year": 2013,
+      "title": "Gettier Cases in Epistemic Logic",
+      "venue": "Inquiry",
+      "volume": "56",
+      "pages": "1-14",
+      "doi": "10.1080/0020174X.2013.775010",
+      "type": "article",
+      "seen": "title; content via Goodman 2013 and Goodman & Salow 2023"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Very Improbable Knowing",
+      "authors": [
+        "Williamson"
+      ],
+      "year": 2014,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-013-9590-9",
+      "type": "journal-article",
+      "volume": "79",
+      "pages": "971-999"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Williamson2014Improbable",
+    "ref": {
+      "key": "Williamson2014Improbable",
+      "authors": [
+        "Timothy Williamson"
+      ],
+      "year": 2014,
+      "title": "Very Improbable Knowing",
+      "venue": "Erkenntnis",
+      "volume": "79",
+      "pages": "971-999",
+      "doi": "10.1007/s10670-013-9590-9",
+      "type": "article",
+      "seen": "title; content via Goodman 2013 abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Williamson on Gettier Cases and Epistemic Logic",
+      "authors": [
+        "Cohen",
+        "Comesaña"
+      ],
+      "year": 2013,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2013.775012",
+      "type": "journal-article",
+      "volume": "56",
+      "pages": "15-29"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "CohenComesana2013",
+    "ref": {
+      "key": "CohenComesana2013",
+      "authors": [
+        "Stewart Cohen",
+        "Juan Comesaña"
+      ],
+      "year": 2013,
+      "title": "Williamson on Gettier Cases and Epistemic Logic",
+      "venue": "Inquiry",
+      "volume": "56",
+      "pages": "15-29",
+      "doi": "10.1080/0020174X.2013.775012",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2023, Salow (forthcoming)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On Logics of Knowledge and Belief",
+      "authors": [
+        "Stalnaker"
+      ],
+      "year": 2006,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-005-4062-y",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "169-199"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Stalnaker2006",
+    "ref": {
+      "key": "Stalnaker2006",
+      "authors": [
+        "Robert Stalnaker"
+      ],
+      "year": 2006,
+      "title": "On Logics of Knowledge and Belief",
+      "venue": "Philosophical Studies",
+      "volume": "128",
+      "pages": "169-199",
+      "doi": "10.1007/s11098-005-4062-y",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2018 n.10 and 2023 n.20"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Luminosity and the KK thesis",
+      "authors": [
+        "Stalnaker"
+      ],
+      "year": 2015,
+      "venue": "Externalism, Self-Knowledge, and Skepticism",
+      "doi": "10.1017/cbo9781107478152.002",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "19-40"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Stalnaker2015",
+    "ref": {
+      "key": "Stalnaker2015",
+      "authors": [
+        "Robert Stalnaker"
+      ],
+      "year": 2015,
+      "title": "Luminosity and the KK thesis",
+      "venue": "Externalism, Self-Knowledge, and Skepticism (ed. S. Goldberg), Cambridge University Press",
+      "volume": null,
+      "pages": "19-40",
+      "doi": "10.1017/CBO9781107478152.002",
+      "type": "chapter",
+      "seen": "title; content via Goodman & Salow 2023"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Could KK Be OK?",
+      "authors": [
+        "Greco",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2014,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil2014111411",
+      "type": "journal-article",
+      "volume": "111",
+      "pages": "169-197"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Greco2014Could",
+    "ref": {
+      "key": "Greco2014Could",
+      "authors": [
+        "Daniel Greco"
+      ],
+      "year": 2014,
+      "title": "Could KK Be OK?",
+      "venue": "The Journal of Philosophy",
+      "volume": "111",
+      "pages": "169-197",
+      "doi": "10.5840/jphil2014111411",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2018, 2023 and Bird & Pettigrew abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probability and Prodigality*",
+      "authors": [
+        "Greco"
+      ],
+      "year": 2013,
+      "venue": "Oxford Studies in Epistemology Volume 4",
+      "doi": "10.1093/acprof:oso/9780199672707.003.0004",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "82-107"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Greco2013Prodigality",
+    "ref": {
+      "key": "Greco2013Prodigality",
+      "authors": [
+        "Daniel Greco"
+      ],
+      "year": 2013,
+      "title": "Probability and Prodigality",
+      "venue": "Oxford Studies in Epistemology, Volume 4",
+      "volume": null,
+      "pages": "82-107",
+      "doi": "10.1093/acprof:oso/9780199672707.003.0004",
+      "type": "chapter",
+      "seen": "title; 'prodigality problem' via Schulz 2017 abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Distinguishing knowledge from knowledge\n            <sup>Ω</sup>",
+      "authors": [
+        "Greco"
+      ],
+      "year": 2025,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2025.2518446",
+      "type": "journal-article",
+      "volume": null,
+      "pages": "1-10"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Greco2025Distinguishing",
+    "ref": {
+      "key": "Greco2025Distinguishing",
+      "authors": [
+        "Daniel Greco"
+      ],
+      "year": 2025,
+      "title": "Distinguishing knowledge from knowledge^Ω",
+      "venue": "Inquiry",
+      "volume": null,
+      "pages": "1-10",
+      "doi": "10.1080/0020174X.2025.2518446",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Abominable KK Failures",
+      "authors": [
+        "Dorst"
+      ],
+      "year": 2019,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzy067",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "1227-1259"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Dorst2019Abominable",
+    "ref": {
+      "key": "Dorst2019Abominable",
+      "authors": [
+        "Kevin Dorst"
+      ],
+      "year": 2019,
+      "title": "Abominable KK Failures",
+      "venue": "Mind",
+      "volume": "128",
+      "pages": "1227-1259",
+      "doi": "10.1093/mind/fzy067",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "KK Failures Are Not Abominable",
+      "authors": [
+        "Fraser"
+      ],
+      "year": 2021,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzab029",
+      "type": "journal-article",
+      "volume": "131",
+      "pages": "575-584"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Fraser2022",
+    "ref": {
+      "key": "Fraser2022",
+      "authors": [
+        "Rachel Elizabeth Fraser"
+      ],
+      "year": 2022,
+      "title": "KK Failures Are Not Abominable",
+      "venue": "Mind",
+      "volume": "131",
+      "pages": "575-584",
+      "doi": "10.1093/mind/fzab029",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Fragile Knowledge",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2021,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzab040",
+      "type": "journal-article",
+      "volume": "131",
+      "pages": "487-515"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2022Fragile",
+    "ref": {
+      "key": "Goldstein2022Fragile",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2022,
+      "title": "Fragile Knowledge",
+      "venue": "Mind",
+      "volume": "131",
+      "pages": "487-515",
+      "doi": "10.1093/mind/fzab040",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Iterated Knowledge",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2024,
+      "venue": "Oxford University PressOxford",
+      "doi": "10.1093/oso/9780198885481.001.0001",
+      "type": "book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2024Iterated",
+    "ref": {
+      "key": "Goldstein2024Iterated",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2024,
+      "title": "Iterated Knowledge",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/oso/9780198885481.001.0001",
+      "type": "book",
+      "seen": "author's one-line summary; models described via Salow (forthcoming) and Holguín 2025"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Omega Knowledge Matters",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2026,
+      "venue": "Oxford Studies in Epistemology",
+      "doi": "10.1093/9780198975847.003.0003",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "63-84"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2026Omega",
+    "ref": {
+      "key": "Goldstein2026Omega",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2026,
+      "title": "Omega Knowledge Matters",
+      "venue": "Oxford Studies in Epistemology, Volume 8",
+      "volume": null,
+      "pages": "63-84",
+      "doi": "10.1093/9780198975847.003.0003",
+      "type": "chapter",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "KK is Wrong Because We Say So",
+      "authors": [
+        "Goldstein",
+        "Hawthorne"
+      ],
+      "year": 2024,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzae050",
+      "type": "journal-article",
+      "volume": "134",
+      "pages": "33-59"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoldsteinHawthorne2025KK",
+    "ref": {
+      "key": "GoldsteinHawthorne2025KK",
+      "authors": [
+        "Simon Goldstein",
+        "John Hawthorne"
+      ],
+      "year": 2025,
+      "title": "KK is Wrong Because We Say So",
+      "venue": "Mind",
+      "volume": "134",
+      "pages": "33-59",
+      "doi": "10.1093/mind/fzae050",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Safety, Closure, and Extended Methods",
+      "authors": [
+        "Goldstein",
+        "Hawthorne",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2024,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil202412112",
+      "type": "journal-article",
+      "volume": "121",
+      "pages": "26-54"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoldsteinHawthorne2024Safety",
+    "ref": {
+      "key": "GoldsteinHawthorne2024Safety",
+      "authors": [
+        "Simon Goldstein",
+        "John Hawthorne"
+      ],
+      "year": 2024,
+      "title": "Safety, Closure, and Extended Methods",
+      "venue": "The Journal of Philosophy",
+      "volume": "121",
+      "pages": "26-54",
+      "doi": "10.5840/jphil202412112",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowledge from multiple experiences",
+      "authors": [
+        "Goldstein",
+        "Hawthorne"
+      ],
+      "year": 2021,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-021-01710-4",
+      "type": "journal-article",
+      "volume": "179",
+      "pages": "1341-1372"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoldsteinHawthorne2022Multiple",
+    "ref": {
+      "key": "GoldsteinHawthorne2022Multiple",
+      "authors": [
+        "Simon Goldstein",
+        "John Hawthorne"
+      ],
+      "year": 2022,
+      "title": "Knowledge from multiple experiences",
+      "venue": "Philosophical Studies",
+      "volume": "179",
+      "pages": "1341-1372",
+      "doi": "10.1007/s11098-021-01710-4",
+      "type": "article",
+      "seen": "author's one-line summary; content via Goodman & Salow 2023 nn.28,40"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactual Contamination",
+      "authors": [
+        "Goldstein",
+        "Hawthorne"
+      ],
+      "year": 2021,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2021.1886129",
+      "type": "journal-article",
+      "volume": "100",
+      "pages": "262-278"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoldsteinHawthorne2022Contamination",
+    "ref": {
+      "key": "GoldsteinHawthorne2022Contamination",
+      "authors": [
+        "Simon Goldstein",
+        "John Hawthorne"
+      ],
+      "year": 2022,
+      "title": "Counterfactual Contamination",
+      "venue": "Australasian Journal of Philosophy",
+      "volume": "100",
+      "pages": "262-278",
+      "doi": "10.1080/00048402.2021.1886129",
+      "type": "article",
+      "seen": "author's one-line summary"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Losing confidence in luminosity",
+      "authors": [
+        "Goldstein",
+        "Waxman"
+      ],
+      "year": 2020,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.12348",
+      "type": "journal-article",
+      "volume": "55",
+      "pages": "962-991"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoldsteinWaxman2021",
+    "ref": {
+      "key": "GoldsteinWaxman2021",
+      "authors": [
+        "Simon Goldstein",
+        "Daniel Waxman"
+      ],
+      "year": 2021,
+      "title": "Losing confidence in luminosity",
+      "venue": "Noûs",
+      "volume": "55",
+      "pages": "962-991",
+      "doi": "10.1111/nous.12348",
+      "type": "article",
+      "seen": "author's one-line summary"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The normality of error",
+      "authors": [
+        "Carter",
+        "Goldstein"
+      ],
+      "year": 2021,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-020-01560-6",
+      "type": "journal-article",
+      "volume": "178",
+      "pages": "2509-2533"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "CarterGoldstein2021",
+    "ref": {
+      "key": "CarterGoldstein2021",
+      "authors": [
+        "Sam Carter",
+        "Simon Goldstein"
+      ],
+      "year": 2021,
+      "title": "The normality of error",
+      "venue": "Philosophical Studies",
+      "volume": "178",
+      "pages": "2509-2533",
+      "doi": "10.1007/s11098-020-01560-6",
+      "type": "article",
+      "seen": "author's one-line summary; content via Goodman & Salow 2023 nn.18,29"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Getting Accurate about Knowledge",
+      "authors": [
+        "Carter",
+        "Goldstein"
+      ],
+      "year": 2022,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzac009",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "158-191"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "CarterGoldstein2023",
+    "ref": {
+      "key": "CarterGoldstein2023",
+      "authors": [
+        "Sam Carter",
+        "Simon Goldstein"
+      ],
+      "year": 2023,
+      "title": "Getting Accurate about Knowledge",
+      "venue": "Mind",
+      "volume": "132",
+      "pages": "158-191",
+      "doi": "10.1093/mind/fzac009",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Higher order ignorance inside the margins",
+      "authors": [
+        "Carter"
+      ],
+      "year": 2018,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-018-1096-5",
+      "type": "journal-article",
+      "volume": "176",
+      "pages": "1789-1806"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Carter2019",
+    "ref": {
+      "key": "Carter2019",
+      "authors": [
+        "Sam Carter"
+      ],
+      "year": 2019,
+      "title": "Higher order ignorance inside the margins",
+      "venue": "Philosophical Studies",
+      "volume": "176",
+      "pages": "1789-1806",
+      "doi": "10.1007/s11098-018-1096-5",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2023"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Degrees of Assertability",
+      "authors": [
+        "Carter"
+      ],
+      "year": 2020,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12725",
+      "type": "journal-article",
+      "volume": "104",
+      "pages": "19-49"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Carter2022",
+    "ref": {
+      "key": "Carter2022",
+      "authors": [
+        "Sam Carter"
+      ],
+      "year": 2022,
+      "title": "Degrees of Assertability",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "104",
+      "pages": "19-49",
+      "doi": "10.1111/phpr.12725",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2020 is online-first; PPR vol 104 (2022) pp 19-49. DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Brute ignorance",
+      "authors": [
+        "Carter"
+      ],
+      "year": 2024,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13086",
+      "type": "journal-article",
+      "volume": "110",
+      "pages": "113-128"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Carter2025Brute",
+    "ref": {
+      "key": "Carter2025Brute",
+      "authors": [
+        "Sam Carter"
+      ],
+      "year": 2025,
+      "title": "Brute ignorance",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "110",
+      "pages": "113-128",
+      "doi": "10.1111/phpr.13086",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Dogmatism and Inquiry",
+      "authors": [
+        "Carter",
+        "Hawthorne"
+      ],
+      "year": 2024,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzad070",
+      "type": "journal-article",
+      "volume": "133",
+      "pages": "651-676"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "CarterHawthorne2024",
+    "ref": {
+      "key": "CarterHawthorne2024",
+      "authors": [
+        "Sam Carter",
+        "John Hawthorne"
+      ],
+      "year": 2024,
+      "title": "Dogmatism and Inquiry",
+      "venue": "Mind",
+      "volume": "133",
+      "pages": "651-676",
+      "doi": "10.1093/mind/fzad070",
+      "type": "article",
+      "seen": "abstract; argument via Brown 2025 and Salow (forthcoming)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowledge, inquiry and dogmatism",
+      "authors": [
+        "Brown"
+      ],
+      "year": 2025,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-025-05008-4",
+      "type": "journal-article",
+      "volume": "205",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Brown2025",
+    "ref": {
+      "key": "Brown2025",
+      "authors": [
+        "Jessica Brown"
+      ],
+      "year": 2025,
+      "title": "Knowledge, inquiry and dogmatism",
+      "venue": "Synthese",
+      "volume": "205",
+      "pages": "174",
+      "doi": "10.1007/s11229-025-05008-4",
+      "type": "article",
+      "seen": "full text (published OA version)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "<i>Subject‐Sensitive Invariantism and the Knowledge Norm for Practical Reasoning</i>",
+      "authors": [
+        "Brown"
+      ],
+      "year": 2008,
+      "venue": "Noûs",
+      "doi": "10.1111/j.1468-0068.2008.00677.x",
+      "type": "journal-article",
+      "volume": "42",
+      "pages": "167-189"
+    },
+    "title_similarity": 0.993,
+    "source": "crossref-doi",
+    "key": "Brown2008",
+    "ref": {
+      "key": "Brown2008",
+      "authors": [
+        "Jessica Brown"
+      ],
+      "year": 2008,
+      "title": "Subject-Sensitive Invariantism and the Knowledge Norm for Practical Reasoning",
+      "venue": "Noûs",
+      "volume": "42",
+      "pages": "167-189",
+      "doi": "10.1111/j.1468-0068.2008.00677.x",
+      "type": "article",
+      "seen": "title; surgeon case via Brown 2025"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The vague, the assertable, and the omega-knowable",
+      "authors": [
+        "Holguín"
+      ],
+      "year": 2025,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2025.2527718",
+      "type": "journal-article",
+      "volume": null,
+      "pages": "1-24"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Holguin2025Vague",
+    "ref": {
+      "key": "Holguin2025Vague",
+      "authors": [
+        "Ben Holguín"
+      ],
+      "year": 2025,
+      "title": "The vague, the assertable, and the omega-knowable",
+      "venue": "Inquiry",
+      "volume": null,
+      "pages": "1-24",
+      "doi": "10.1080/0020174X.2025.2527718",
+      "type": "article",
+      "seen": "full text (penultimate, author homepage)"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Indicative conditionals without iterative epistemology",
+      "authors": [
+        "Holguín"
+      ],
+      "year": 2019,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.12312",
+      "type": "journal-article",
+      "volume": "55",
+      "pages": "560-580"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Holguin2021Indicative",
+    "ref": {
+      "key": "Holguin2021Indicative",
+      "authors": [
+        "Ben Holguín"
+      ],
+      "year": 2021,
+      "title": "Indicative conditionals without iterative epistemology",
+      "venue": "Noûs",
+      "volume": "55",
+      "pages": "560-580",
+      "doi": "10.1111/nous.12312",
+      "type": "article",
+      "seen": "abstract and introduction (penultimate)"
+    },
+    "manual_check": "Crossref 'issued' 2019 is online-first; Noûs vol 55 (2021) pp 560-580. DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Thinking, Guessing, and Believing",
+      "authors": [
+        "Holguin"
+      ],
+      "year": 2022,
+      "venue": "Philosophers' Imprint",
+      "doi": "10.3998/phimp.2123",
+      "type": "journal-article",
+      "volume": "22",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Holguin2022Thinking",
+    "ref": {
+      "key": "Holguin2022Thinking",
+      "authors": [
+        "Ben Holguín"
+      ],
+      "year": 2022,
+      "title": "Thinking, Guessing, and Believing",
+      "venue": "Philosophers' Imprint",
+      "volume": "22",
+      "pages": null,
+      "doi": "10.3998/phimp.2123",
+      "type": "article",
+      "seen": "title (penultimate downloaded, not read)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Thinking and being sure\n                    <sup>*</sup>",
+      "authors": [
+        "Goodman",
+        "Holguín"
+      ],
+      "year": 2022,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12876",
+      "type": "journal-article",
+      "volume": "106",
+      "pages": "634-654"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodmanHolguin2023",
+    "ref": {
+      "key": "GoodmanHolguin2023",
+      "authors": [
+        "Jeremy Goodman",
+        "Ben Holguín"
+      ],
+      "year": 2023,
+      "title": "Thinking and being sure",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "106",
+      "pages": "634-654",
+      "doi": "10.1111/phpr.12876",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2023 n.21"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowing to infinity: Full knowledge and the margin‐for‐error principle",
+      "authors": [
+        "Fiat"
+      ],
+      "year": 2025,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.70001",
+      "type": "journal-article",
+      "volume": "110",
+      "pages": "1083-1113"
+    },
+    "title_similarity": 0.985,
+    "source": "crossref-doi",
+    "key": "Fiat2025",
+    "ref": {
+      "key": "Fiat2025",
+      "authors": [
+        "Yonathan Fiat"
+      ],
+      "year": 2025,
+      "title": "Knowing to infinity: Full knowledge and the margin-for-error principle",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "110",
+      "pages": "1083-1113",
+      "doi": "10.1111/phpr.70001",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Choice Points for a Theory of Normality",
+      "authors": [
+        "Loets"
+      ],
+      "year": 2021,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzab021",
+      "type": "journal-article",
+      "volume": "131",
+      "pages": "159-191"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Loets2022",
+    "ref": {
+      "key": "Loets2022",
+      "authors": [
+        "Annina J. Loets"
+      ],
+      "year": 2022,
+      "title": "Choice Points for a Theory of Normality",
+      "venue": "Mind",
+      "volume": "131",
+      "pages": "159-191",
+      "doi": "10.1093/mind/fzab021",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Justification, knowledge, and normality",
+      "authors": [
+        "Littlejohn",
+        "Dutant"
+      ],
+      "year": 2019,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-019-01276-2",
+      "type": "journal-article",
+      "volume": "177",
+      "pages": "1593-1609"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "LittlejohnDutant2020",
+    "ref": {
+      "key": "LittlejohnDutant2020",
+      "authors": [
+        "Clayton Littlejohn",
+        "Julien Dutant"
+      ],
+      "year": 2020,
+      "title": "Justification, knowledge, and normality",
+      "venue": "Philosophical Studies",
+      "volume": "177",
+      "pages": "1593-1609",
+      "doi": "10.1007/s11098-019-01276-2",
+      "type": "article",
+      "seen": "title; content via Ahmadian 2026 §5"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Modal Virtue Epistemology",
+      "authors": [
+        "Beddor",
+        "Pavese"
+      ],
+      "year": 2018,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12562",
+      "type": "journal-article",
+      "volume": "101",
+      "pages": "61-79"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "BeddorPavese2020",
+    "ref": {
+      "key": "BeddorPavese2020",
+      "authors": [
+        "Bob Beddor",
+        "Carlotta Pavese"
+      ],
+      "year": 2020,
+      "title": "Modal Virtue Epistemology",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "101",
+      "pages": "61-79",
+      "doi": "10.1111/phpr.12562",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2023"
+    },
+    "manual_check": "Crossref 'issued' 2018 is online-first; PPR vol 101 (2020) pp 61-79. DOI, title, authors match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Between Probability and Certainty",
+      "authors": [
+        "Smith"
+      ],
+      "year": 2016,
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780198755333.001.0001",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Smith2016",
+    "ref": {
+      "key": "Smith2016",
+      "authors": [
+        "Martin Smith"
+      ],
+      "year": 2016,
+      "title": "Between Probability and Certainty",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/acprof:oso/9780198755333.001.0001",
+      "type": "book",
+      "seen": "title; content via Goodman & Salow 2023 §7 and Ahmadian 2026 §5",
+      "manual_check": "Crossref stores main title only ('Between Probability and Certainty'); subtitle from OUP; DOI, author, year match."
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Coin trials",
+      "authors": [
+        "Smith"
+      ],
+      "year": 2018,
+      "venue": "Canadian Journal of Philosophy",
+      "doi": "10.1080/00455091.2017.1381936",
+      "type": "journal-article",
+      "volume": "48",
+      "pages": "726-741"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Smith2018Coin",
+    "ref": {
+      "key": "Smith2018Coin",
+      "authors": [
+        "Martin Smith"
+      ],
+      "year": 2018,
+      "title": "Coin trials",
+      "venue": "Canadian Journal of Philosophy",
+      "volume": "48",
+      "pages": "726-741",
+      "doi": "10.1080/00455091.2017.1381936",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Justification, normalcy and randomness",
+      "authors": [
+        "Smith"
+      ],
+      "year": 2024,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13106",
+      "type": "journal-article",
+      "volume": "110",
+      "pages": "442-459"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Smith2025Randomness",
+    "ref": {
+      "key": "Smith2025Randomness",
+      "authors": [
+        "Martin Smith"
+      ],
+      "year": 2025,
+      "title": "Justification, normalcy and randomness",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "110",
+      "pages": "442-459",
+      "doi": "10.1111/phpr.13106",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Logics of Normality Structures",
+      "authors": [
+        "Ahmadian"
+      ],
+      "year": 2026,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-026-09837-7",
+      "type": "journal-article",
+      "volume": "55",
+      "pages": "437-480"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Ahmadian2026",
+    "ref": {
+      "key": "Ahmadian2026",
+      "authors": [
+        "Raha Ahmadian"
+      ],
+      "year": 2026,
+      "title": "The Logics of Normality Structures",
+      "venue": "Journal of Philosophical Logic",
+      "volume": "55",
+      "pages": "437-480",
+      "doi": "10.1007/s10992-026-09837-7",
+      "type": "article",
+      "seen": "full text (introduction, §§4.3, 5, 6 read; proofs skimmed)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Giving your knowledge half a chance",
+      "authors": [
+        "Bacon"
+      ],
+      "year": 2014,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-013-0276-6",
+      "type": "journal-article",
+      "volume": "171",
+      "pages": "373-397"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Bacon2014",
+    "ref": {
+      "key": "Bacon2014",
+      "authors": [
+        "Andrew Bacon"
+      ],
+      "year": 2014,
+      "title": "Giving your knowledge half a chance",
+      "venue": "Philosophical Studies",
+      "volume": "171",
+      "pages": "373-397",
+      "doi": "10.1007/s11098-013-0276-6",
+      "type": "article",
+      "seen": "title; content via Goodman & Salow 2023"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Inductive Knowledge",
+      "authors": [
+        "Bacon"
+      ],
+      "year": 2018,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.12266",
+      "type": "journal-article",
+      "volume": "54",
+      "pages": "354-388"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Bacon2020",
+    "ref": {
+      "key": "Bacon2020",
+      "authors": [
+        "Andrew Bacon"
+      ],
+      "year": 2020,
+      "title": "Inductive Knowledge",
+      "venue": "Noûs",
+      "volume": "54",
+      "pages": "354-388",
+      "doi": "10.1111/nous.12266",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2018 is online-first; Noûs vol 54 (2020) pp 354-388. DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowledge and Objective Chance",
+      "authors": [
+        "Hawthorne",
+        "Lasonen‐Aarnio"
+      ],
+      "year": 2009,
+      "venue": "Williamson on Knowledge",
+      "doi": "10.1093/acprof:oso/9780199287512.003.0007",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "92-108"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HawthorneLasonenAarnio2009",
+    "ref": {
+      "key": "HawthorneLasonenAarnio2009",
+      "authors": [
+        "John Hawthorne",
+        "Maria Lasonen-Aarnio"
+      ],
+      "year": 2009,
+      "title": "Knowledge and Objective Chance",
+      "venue": "Williamson on Knowledge (eds. P. Greenough and D. Pritchard), Oxford University Press",
+      "volume": null,
+      "pages": "92-108",
+      "doi": "10.1093/acprof:oso/9780199287512.003.0007",
+      "type": "chapter",
+      "seen": "title; content via Dorr, Goodman & Hawthorne 2014 and Goodman & Salow 2023 n.6"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Safety’s coordination problems",
+      "authors": [
+        "Dutant",
+        "Rosenkranz"
+      ],
+      "year": 2024,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-024-02147-1",
+      "type": "journal-article",
+      "volume": "181",
+      "pages": "1317-1343"
+    },
+    "title_similarity": 0.983,
+    "source": "crossref-doi",
+    "key": "DutantRosenkranz2024",
+    "ref": {
+      "key": "DutantRosenkranz2024",
+      "authors": [
+        "Julien Dutant",
+        "Sven Rosenkranz"
+      ],
+      "year": 2024,
+      "title": "Safety's coordination problems",
+      "venue": "Philosophical Studies",
+      "volume": "181",
+      "pages": "1317-1343",
+      "doi": "10.1007/s11098-024-02147-1",
+      "type": "article",
+      "seen": "abstract, §§1-2 (published version)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Induction, Conjunction Introduction, and Safety",
+      "authors": [
+        "Zhao"
+      ],
+      "year": 2023,
+      "venue": "Philosophy",
+      "doi": "10.1017/s0031819123000190",
+      "type": "journal-article",
+      "volume": "98",
+      "pages": "477-483"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Zhao2023",
+    "ref": {
+      "key": "Zhao2023",
+      "authors": [
+        "Bin Zhao"
+      ],
+      "year": 2023,
+      "title": "Induction, Conjunction Introduction, and Safety",
+      "venue": "Philosophy",
+      "volume": "98",
+      "pages": "477-483",
+      "doi": "10.1017/S0031819123000190",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Single premise deduction and risk",
+      "authors": [
+        "Lasonen"
+      ],
+      "year": 2007,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-007-9157-1",
+      "type": "journal-article",
+      "volume": "141",
+      "pages": "157-173"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "LasonenAarnio2008",
+    "ref": {
+      "key": "LasonenAarnio2008",
+      "authors": [
+        "Maria Lasonen-Aarnio"
+      ],
+      "year": 2008,
+      "title": "Single premise deduction and risk",
+      "venue": "Philosophical Studies",
+      "volume": "141",
+      "pages": "157-173",
+      "doi": "10.1007/s11098-007-9157-1",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "UNREASONABLE KNOWLEDGE",
+      "authors": [
+        "Aarnio"
+      ],
+      "year": 2010,
+      "venue": "Philosophical Perspectives",
+      "doi": "10.1111/j.1520-8583.2010.00183.x",
+      "type": "journal-article",
+      "volume": "24",
+      "pages": "1-21"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "LasonenAarnio2010",
+    "ref": {
+      "key": "LasonenAarnio2010",
+      "authors": [
+        "Maria Lasonen-Aarnio"
+      ],
+      "year": 2010,
+      "title": "Unreasonable Knowledge",
+      "venue": "Philosophical Perspectives",
+      "volume": "24",
+      "pages": "1-21",
+      "doi": "10.1111/j.1520-8583.2010.00183.x",
+      "type": "article",
+      "seen": "title; content via Brown 2025 n.3"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowledge and Lotteries",
+      "authors": [
+        "Hawthorne"
+      ],
+      "year": 2003,
+      "venue": "Oxford University PressOxford",
+      "doi": "10.1093/0199269556.001.0001",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hawthorne2004",
+    "ref": {
+      "key": "Hawthorne2004",
+      "authors": [
+        "John Hawthorne"
+      ],
+      "year": 2004,
+      "title": "Knowledge and Lotteries",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/0199269556.001.0001",
+      "type": "book",
+      "seen": "title; specific claims via Dorr, Goodman & Hawthorne 2014 n.9 and Brown 2025 n.2",
+      "source_url": "Crossref dates online record 2003"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Dogmatism Puzzle",
+      "authors": [
+        "Lasonen-Aarnio"
+      ],
+      "year": 2013,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2013.834949",
+      "type": "journal-article",
+      "volume": "92",
+      "pages": "417-432"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "LasonenAarnio2014",
+    "ref": {
+      "key": "LasonenAarnio2014",
+      "authors": [
+        "Maria Lasonen-Aarnio"
+      ],
+      "year": 2014,
+      "title": "The Dogmatism Puzzle",
+      "venue": "Australasian Journal of Philosophy",
+      "volume": "92",
+      "pages": "417-432",
+      "doi": "10.1080/00048402.2013.834949",
+      "type": "article",
+      "seen": "title; content via Brown 2025 n.3"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Toxin and the Dogmatist",
+      "authors": [
+        "Beddor"
+      ],
+      "year": 2019,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2018.1556309",
+      "type": "journal-article",
+      "volume": "97",
+      "pages": "727-740"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Beddor2019",
+    "ref": {
+      "key": "Beddor2019",
+      "authors": [
+        "Bob Beddor"
+      ],
+      "year": 2019,
+      "title": "The Toxin and the Dogmatist",
+      "venue": "Australasian Journal of Philosophy",
+      "volume": "97",
+      "pages": "727-740",
+      "doi": "10.1080/00048402.2018.1556309",
+      "type": "article",
+      "seen": "title; content via Brown 2025 n.1"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "On Two Paradoxes of Knowledge*",
+      "authors": [
+        "Saul A."
+      ],
+      "year": 2011,
+      "venue": "Philosophical TroublesCollected Papers, Volume 1",
+      "doi": "10.1093/acprof:oso/9780199730155.003.0002",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "27-51"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok False, year ok True)"
+    ],
+    "key": "Kripke2011",
+    "ref": {
+      "key": "Kripke2011",
+      "authors": [
+        "Saul A. Kripke"
+      ],
+      "year": 2011,
+      "title": "On Two Paradoxes of Knowledge",
+      "venue": "Philosophical Troubles: Collected Papers, Volume 1, Oxford University Press",
+      "volume": null,
+      "pages": "27-51",
+      "doi": "10.1093/acprof:oso/9780199730155.003.0002",
+      "type": "chapter",
+      "seen": "title; content via Brown 2025 and Goodman & Salow 2023 n.41"
+    },
+    "manual_check": "Crossref record lists the author with given/family names swapped ('Kripke Saul A.'); DOI, title, year, pages match (Philosophical Troubles, OUP 2011).",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Dogmatism, Junk Knowledge, and Conditionals",
+      "authors": [
+        "Sorensen"
+      ],
+      "year": 1988,
+      "venue": "The Philosophical Quarterly",
+      "doi": "10.2307/2219708",
+      "type": "journal-article",
+      "volume": "38",
+      "pages": "433"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Sorensen1988",
+    "ref": {
+      "key": "Sorensen1988",
+      "authors": [
+        "Roy A. Sorensen"
+      ],
+      "year": 1988,
+      "title": "Dogmatism, Junk Knowledge, and Conditionals",
+      "venue": "The Philosophical Quarterly",
+      "volume": "38",
+      "pages": "433-454",
+      "doi": "10.2307/2219708",
+      "type": "article",
+      "seen": "title; content via Brown 2025 n.2"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Inquiry beyond knowledge",
+      "authors": [
+        "Beddor"
+      ],
+      "year": 2023,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13042",
+      "type": "journal-article",
+      "volume": "109",
+      "pages": "330-356"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Beddor2024Inquiry",
+    "ref": {
+      "key": "Beddor2024Inquiry",
+      "authors": [
+        "Bob Beddor"
+      ],
+      "year": 2024,
+      "title": "Inquiry beyond knowledge",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "109",
+      "pages": "330-356",
+      "doi": "10.1111/phpr.13042",
+      "type": "article",
+      "seen": "abstract; further content via Brown 2025"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Inquiry and Belief",
+      "authors": [
+        "Friedman"
+      ],
+      "year": 2017,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.12222",
+      "type": "journal-article",
+      "volume": "53",
+      "pages": "296-315"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Friedman2019",
+    "ref": {
+      "key": "Friedman2019",
+      "authors": [
+        "Jane Friedman"
+      ],
+      "year": 2019,
+      "title": "Inquiry and Belief",
+      "venue": "Noûs",
+      "volume": "53",
+      "pages": "296-315",
+      "doi": "10.1111/nous.12222",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2017 is online-first; Noûs vol 53 (2019) pp 296-315. DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Epistemic and the Zetetic",
+      "authors": [
+        "Friedman"
+      ],
+      "year": 2020,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-8540918",
+      "type": "journal-article",
+      "volume": "129",
+      "pages": "501-536"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Friedman2020",
+    "ref": {
+      "key": "Friedman2020",
+      "authors": [
+        "Jane Friedman"
+      ],
+      "year": 2020,
+      "title": "The Epistemic and the Zetetic",
+      "venue": "The Philosophical Review",
+      "volume": "129",
+      "pages": "501-536",
+      "doi": "10.1215/00318108-8540918",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Valuable ignorance: delayed epistemic gratification",
+      "authors": [
+        "Willard-Kyle"
+      ],
+      "year": 2022,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-022-01902-6",
+      "type": "journal-article",
+      "volume": "180",
+      "pages": "363-384"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "WillardKyle2023Valuable",
+    "ref": {
+      "key": "WillardKyle2023Valuable",
+      "authors": [
+        "Christopher Willard-Kyle"
+      ],
+      "year": 2023,
+      "title": "Valuable ignorance: delayed epistemic gratification",
+      "venue": "Philosophical Studies",
+      "volume": "180",
+      "pages": "363-384",
+      "doi": "10.1007/s11098-022-01902-6",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Knowledge Norm for Inquiry",
+      "authors": [
+        "Willard-Kyle",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2023,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil20231201134",
+      "type": "journal-article",
+      "volume": "120",
+      "pages": "615-640"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "WillardKyle2023Norm",
+    "ref": {
+      "key": "WillardKyle2023Norm",
+      "authors": [
+        "Christopher Willard-Kyle"
+      ],
+      "year": 2023,
+      "title": "The Knowledge Norm for Inquiry",
+      "venue": "The Journal of Philosophy",
+      "volume": "120",
+      "pages": "615-640",
+      "doi": "10.5840/jphil20231201134",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Why Double-Check?",
+      "authors": [
+        "Woodard"
+      ],
+      "year": 2022,
+      "venue": "Episteme",
+      "doi": "10.1017/epi.2022.22",
+      "type": "journal-article",
+      "volume": "21",
+      "pages": "644-667"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Woodard2024",
+    "ref": {
+      "key": "Woodard2024",
+      "authors": [
+        "Elise Woodard"
+      ],
+      "year": 2024,
+      "title": "Why Double-Check?",
+      "venue": "Episteme",
+      "volume": "21",
+      "pages": "644-667",
+      "doi": "10.1017/epi.2022.22",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2022 is online-first; Episteme vol 21 (2024) pp 644-667. DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Inquiring Minds Want to Improve",
+      "authors": [
+        "Falbo"
+      ],
+      "year": 2022,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2021.2024863",
+      "type": "journal-article",
+      "volume": "101",
+      "pages": "298-312"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Falbo2023",
+    "ref": {
+      "key": "Falbo2023",
+      "authors": [
+        "Arianna Falbo"
+      ],
+      "year": 2023,
+      "title": "Inquiring Minds Want to Improve",
+      "venue": "Australasian Journal of Philosophy",
+      "volume": "101",
+      "pages": "298-312",
+      "doi": "10.1080/00048402.2021.2024863",
+      "type": "article",
+      "seen": "title; content via Brown 2025"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Seeking confirmation: A puzzle for norms of inquiry",
+      "authors": [
+        "Millson"
+      ],
+      "year": 2020,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anaa017",
+      "type": "journal-article",
+      "volume": "80",
+      "pages": "683-693"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Millson2020",
+    "ref": {
+      "key": "Millson2020",
+      "authors": [
+        "Jared A. Millson"
+      ],
+      "year": 2020,
+      "title": "Seeking confirmation: A puzzle for norms of inquiry",
+      "venue": "Analysis",
+      "volume": "80",
+      "pages": "683-693",
+      "doi": "10.1093/analys/anaa017",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Wondering about what you know",
+      "authors": [
+        "Archer"
+      ],
+      "year": 2018,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anx162",
+      "type": "journal-article",
+      "volume": "78",
+      "pages": "596-604"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Archer2018",
+    "ref": {
+      "key": "Archer2018",
+      "authors": [
+        "Avery Archer"
+      ],
+      "year": 2018,
+      "title": "Wondering about what you know",
+      "venue": "Analysis",
+      "volume": "78",
+      "pages": "596-604",
+      "doi": "10.1093/analys/anx162",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Inquiry, Knowledge, and Understanding",
+      "authors": [
+        "Kelp"
+      ],
+      "year": 2021,
+      "venue": "Oxford University PressOxford",
+      "doi": "10.1093/oso/9780192896094.001.0001",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kelp2021",
+    "ref": {
+      "key": "Kelp2021",
+      "authors": [
+        "Christoph Kelp"
+      ],
+      "year": 2021,
+      "title": "Inquiry, Knowledge, and Understanding",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/oso/9780192896094.001.0001",
+      "type": "book",
+      "seen": "title; one claim via Salow (forthcoming) n.1"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On the Principle of Total Evidence",
+      "authors": [
+        "GOOD"
+      ],
+      "year": 1967,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1093/bjps/17.4.319",
+      "type": "journal-article",
+      "volume": "17",
+      "pages": "319-321"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Good1967",
+    "ref": {
+      "key": "Good1967",
+      "authors": [
+        "I. J. Good"
+      ],
+      "year": 1967,
+      "title": "On the Principle of Total Evidence",
+      "venue": "The British Journal for the Philosophy of Science",
+      "volume": "17",
+      "pages": "319-321",
+      "doi": "10.1093/bjps/17.4.319",
+      "type": "article",
+      "seen": "title; content via Ahmed & Salow 2019 and Salow 2023"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "INSTRUMENTAL RATIONALITY, EPISTEMIC RATIONALITY, AND EVIDENCE-GATHERING",
+      "authors": [
+        "Buchak"
+      ],
+      "year": 2010,
+      "venue": "Philosophical Perspectives",
+      "doi": "10.1111/j.1520-8583.2010.00186.x",
+      "type": "journal-article",
+      "volume": "24",
+      "pages": "85-120"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Buchak2010",
+    "ref": {
+      "key": "Buchak2010",
+      "authors": [
+        "Lara Buchak"
+      ],
+      "year": 2010,
+      "title": "Instrumental Rationality, Epistemic Rationality, and Evidence-Gathering",
+      "venue": "Philosophical Perspectives",
+      "volume": "24",
+      "pages": "85-120",
+      "doi": "10.1111/j.1520-8583.2010.00186.x",
+      "type": "article",
+      "seen": "title; role via Salow 2023"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Evidence: A Guide for the Uncertain",
+      "authors": [
+        "Dorst"
+      ],
+      "year": 2019,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12561",
+      "type": "journal-article",
+      "volume": "100",
+      "pages": "586-632"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Dorst2020Evidence",
+    "ref": {
+      "key": "Dorst2020Evidence",
+      "authors": [
+        "Kevin Dorst"
+      ],
+      "year": 2020,
+      "title": "Evidence: A Guide for the Uncertain",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "100",
+      "pages": "586-632",
+      "doi": "10.1111/phpr.12561",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Rational Polarization",
+      "authors": [
+        "Dorst"
+      ],
+      "year": 2023,
+      "venue": "Philosophical Review",
+      "doi": "10.1215/00318108-10469499",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "355-458"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Dorst2023Polarization",
+    "ref": {
+      "key": "Dorst2023Polarization",
+      "authors": [
+        "Kevin Dorst"
+      ],
+      "year": 2023,
+      "title": "Rational Polarization",
+      "venue": "The Philosophical Review",
+      "volume": "132",
+      "pages": "355-458",
+      "doi": "10.1215/00318108-10469499",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Value of Biased Information",
+      "authors": [
+        "Das"
+      ],
+      "year": 2023,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1093/bjps/axaa003",
+      "type": "journal-article",
+      "volume": "74",
+      "pages": "25-55"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Das2023Biased",
+    "ref": {
+      "key": "Das2023Biased",
+      "authors": [
+        "Nilanjan Das"
+      ],
+      "year": 2023,
+      "title": "The Value of Biased Information",
+      "venue": "The British Journal for the Philosophy of Science",
+      "volume": "74",
+      "pages": "25-55",
+      "doi": "10.1093/bjps/axaa003",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Game Theory Without Partitions, and Applications to Speculation and Consensus",
+      "authors": [
+        "Geanakoplos"
+      ],
+      "year": 2021,
+      "venue": "The B.E. Journal of Theoretical Economics",
+      "doi": "10.1515/bejte-2019-0010",
+      "type": "journal-article",
+      "volume": "21",
+      "pages": "361-394"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Geanakoplos2021",
+    "ref": {
+      "key": "Geanakoplos2021",
+      "authors": [
+        "John Geanakoplos"
+      ],
+      "year": 2021,
+      "title": "Game Theory Without Partitions, and Applications to Speculation and Consensus",
+      "venue": "The B.E. Journal of Theoretical Economics",
+      "volume": "21",
+      "pages": "361-394",
+      "doi": "10.1515/bejte-2019-0010",
+      "type": "article",
+      "seen": "title; role via Salow 2023 n.23 (cites 1989 Cowles discussion paper)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Rational Aversion to Information",
+      "authors": [
+        "Neth"
+      ],
+      "year": 2023,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1086/727772",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Neth2023",
+    "ref": {
+      "key": "Neth2023",
+      "authors": [
+        "Sven Neth"
+      ],
+      "year": 2023,
+      "title": "Rational Aversion to Information",
+      "venue": "The British Journal for the Philosophy of Science",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1086/727772",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Evidence-gathering without navel-gazing",
+      "authors": [
+        "Shepanski"
+      ],
+      "year": 2025,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-025-02366-0",
+      "type": "journal-article",
+      "volume": "182",
+      "pages": "2577-2612"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Shepanski2025",
+    "ref": {
+      "key": "Shepanski2025",
+      "authors": [
+        "Michael Shepanski"
+      ],
+      "year": 2025,
+      "title": "Evidence-gathering without navel-gazing",
+      "venue": "Philosophical Studies",
+      "volume": "182",
+      "pages": "2577-2612",
+      "doi": "10.1007/s11098-025-02366-0",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowing and Asserting",
+      "authors": [
+        "Williamson"
+      ],
+      "year": 1996,
+      "venue": "The Philosophical Review",
+      "doi": "10.2307/2998423",
+      "type": "journal-article",
+      "volume": "105",
+      "pages": "489"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Williamson1996",
+    "ref": {
+      "key": "Williamson1996",
+      "authors": [
+        "Timothy Williamson"
+      ],
+      "year": 1996,
+      "title": "Knowing and Asserting",
+      "venue": "The Philosophical Review",
+      "volume": "105",
+      "pages": "489-523",
+      "doi": "10.2307/2998423",
+      "type": "article",
+      "seen": "title; KNA via SEP Assertion"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "<i>Norms of Assertion</i>",
+      "authors": [
+        "Lackey"
+      ],
+      "year": 2007,
+      "venue": "Noûs",
+      "doi": "10.1111/j.1468-0068.2007.00664.x",
+      "type": "journal-article",
+      "volume": "41",
+      "pages": "594-626"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Lackey2007",
+    "ref": {
+      "key": "Lackey2007",
+      "authors": [
+        "Jennifer Lackey"
+      ],
+      "year": 2007,
+      "title": "Norms of Assertion",
+      "venue": "Noûs",
+      "volume": "41",
+      "pages": "594-626",
+      "doi": "10.1111/j.1468-0068.2007.00664.x",
+      "type": "article",
+      "seen": "title; content via SEP Assertion"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Assertion is weak",
+      "authors": [
+        "Mandelkern",
+        "Dorst"
+      ],
+      "year": 2022,
+      "venue": "Philosophers' Imprint",
+      "doi": "10.3998/phimp.1076",
+      "type": "journal-article",
+      "volume": "22",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "MandelkernDorst2022",
+    "ref": {
+      "key": "MandelkernDorst2022",
+      "authors": [
+        "Matthew Mandelkern",
+        "Kevin Dorst"
+      ],
+      "year": 2022,
+      "title": "Assertion is weak",
+      "venue": "Philosophers' Imprint",
+      "volume": "22",
+      "pages": "1-20",
+      "doi": "10.3998/phimp.1076",
+      "type": "article",
+      "seen": "abstract (Dorst homepage)"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Dubious objections from iterated conjunctions",
+      "authors": [
+        "Benton"
+      ],
+      "year": 2011,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-011-9769-3",
+      "type": "journal-article",
+      "volume": "162",
+      "pages": "355-358"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Benton2013",
+    "ref": {
+      "key": "Benton2013",
+      "authors": [
+        "Matthew A. Benton"
+      ],
+      "year": 2013,
+      "title": "Dubious objections from iterated conjunctions",
+      "venue": "Philosophical Studies",
+      "volume": "162",
+      "pages": "355-358",
+      "doi": "10.1007/s11098-011-9769-3",
+      "type": "article",
+      "seen": "title; content via Salow (forthcoming) §3.3"
+    },
+    "manual_check": "Crossref 'issued' 2011 is online-first; Philosophical Studies vol 162 (2013) pp 355-358 (Salow forthcoming also cites 2013). DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Dubious assertions",
+      "authors": [
+        "Sosa"
+      ],
+      "year": 2008,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-008-9255-8",
+      "type": "journal-article",
+      "volume": "146",
+      "pages": "269-272"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Sosa2009",
+    "ref": {
+      "key": "Sosa2009",
+      "authors": [
+        "David Sosa"
+      ],
+      "year": 2009,
+      "title": "Dubious assertions",
+      "venue": "Philosophical Studies",
+      "volume": "146",
+      "pages": "269-272",
+      "doi": "10.1007/s11098-008-9255-8",
+      "type": "article",
+      "seen": "title; content via SEP Assertion and Salow (forthcoming)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Assertion, Implicature, and Iterated Knowledge",
+      "authors": [
+        "Haziza"
+      ],
+      "year": 2022,
+      "venue": "Ergo an Open Access Journal of Philosophy",
+      "doi": "10.3998/ergo.2236",
+      "type": "journal-article",
+      "volume": "8",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Haziza2022",
+    "ref": {
+      "key": "Haziza2022",
+      "authors": [
+        "Eliran Haziza"
+      ],
+      "year": 2022,
+      "title": "Assertion, Implicature, and Iterated Knowledge",
+      "venue": "Ergo",
+      "volume": "8",
+      "pages": null,
+      "doi": "10.3998/ergo.2236",
+      "type": "article",
+      "seen": "title; content via Salow (forthcoming) n.11"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Unknowability and infelicity",
+      "authors": [
+        "Haziza"
+      ],
+      "year": 2025,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2025.2545882",
+      "type": "journal-article",
+      "volume": null,
+      "pages": "1-9"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Haziza2025",
+    "ref": {
+      "key": "Haziza2025",
+      "authors": [
+        "Eliran Haziza"
+      ],
+      "year": 2025,
+      "title": "Unknowability and infelicity",
+      "venue": "Inquiry",
+      "volume": null,
+      "pages": "1-9",
+      "doi": "10.1080/0020174X.2025.2545882",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "What price norm iteration? Comments on Simon Goldstein’s\n            <i>Iterated Knowledge</i>",
+      "authors": [
+        "Rosenkranz"
+      ],
+      "year": 2025,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2025.2498036",
+      "type": "journal-article",
+      "volume": null,
+      "pages": "1-9"
+    },
+    "title_similarity": 0.993,
+    "source": "crossref-doi",
+    "key": "Rosenkranz2025",
+    "ref": {
+      "key": "Rosenkranz2025",
+      "authors": [
+        "Sven Rosenkranz"
+      ],
+      "year": 2025,
+      "title": "What price norm iteration? Comments on Simon Goldstein's Iterated Knowledge",
+      "venue": "Inquiry",
+      "volume": null,
+      "pages": "1-9",
+      "doi": "10.1080/0020174X.2025.2498036",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Knowledge and Action",
+      "authors": [
+        "Hawthorne",
+        "Stanley",
+        "Journal of Philosophy, Inc."
+      ],
+      "year": 2008,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil20081051022",
+      "type": "journal-article",
+      "volume": "105",
+      "pages": "571-590"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HawthorneStanley2008",
+    "ref": {
+      "key": "HawthorneStanley2008",
+      "authors": [
+        "John Hawthorne",
+        "Jason Stanley"
+      ],
+      "year": 2008,
+      "title": "Knowledge and Action",
+      "venue": "The Journal of Philosophy",
+      "volume": "105",
+      "pages": "571-590",
+      "doi": "10.5840/jphil20081051022",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Decisions and Higher‐Order Knowledge",
+      "authors": [
+        "Schulz"
+      ],
+      "year": 2015,
+      "venue": "Noûs",
+      "doi": "10.1111/nous.12097",
+      "type": "journal-article",
+      "volume": "51",
+      "pages": "463-483"
+    },
+    "title_similarity": 0.986,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.99, author ok True, year ok False)"
+    ],
+    "key": "Schulz2017",
+    "ref": {
+      "key": "Schulz2017",
+      "authors": [
+        "Moritz Schulz"
+      ],
+      "year": 2017,
+      "title": "Decisions and Higher-Order Knowledge",
+      "venue": "Noûs",
+      "volume": "51",
+      "pages": "463-483",
+      "doi": "10.1111/nous.12097",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2015 is online-first; Noûs vol 51 (2017) pp 463-483 (Salow forthcoming cites 2017). DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "AGAINST THE ITERATED KNOWLEDGE ACCOUNT OF HIGH-STAKES CASES",
+      "authors": [
+        "Gao"
+      ],
+      "year": 2017,
+      "venue": "Episteme",
+      "doi": "10.1017/epi.2017.30",
+      "type": "journal-article",
+      "volume": "16",
+      "pages": "92-107"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Gao2019",
+    "ref": {
+      "key": "Gao2019",
+      "authors": [
+        "Jie Gao"
+      ],
+      "year": 2019,
+      "title": "Against the Iterated Knowledge Account of High-Stakes Cases",
+      "venue": "Episteme",
+      "volume": "16",
+      "pages": "92-107",
+      "doi": "10.1017/epi.2017.30",
+      "type": "article",
+      "seen": "title only"
+    },
+    "manual_check": "Crossref 'issued' 2017 is online-first; Episteme vol 16 (2019) pp 92-107 (Salow forthcoming cites 2019). DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Antiluminosity, Excuses and the Sufficiency of Knowledge for Rational Action",
+      "authors": [
+        "Vollet"
+      ],
+      "year": 2023,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-023-00682-7",
+      "type": "journal-article",
+      "volume": "90",
+      "pages": "21-42"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Vollet2025",
+    "ref": {
+      "key": "Vollet2025",
+      "authors": [
+        "Jacques-Henri Vollet"
+      ],
+      "year": 2025,
+      "title": "Antiluminosity, Excuses and the Sufficiency of Knowledge for Rational Action",
+      "venue": "Erkenntnis",
+      "volume": "90",
+      "pages": "21-42",
+      "doi": "10.1007/s10670-023-00682-7",
+      "type": "article",
+      "seen": "title only"
+    },
+    "manual_check": "Crossref 'issued' 2023 is online-first; Erkenntnis vol 90 (2025) pp 21-42 (Salow forthcoming cites 2025). DOI, title, author match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "How to act on what you know",
+      "authors": [
+        "Heil"
+      ],
+      "year": 2024,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-024-04628-6",
+      "type": "journal-article",
+      "volume": "203",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Heil2024",
+    "ref": {
+      "key": "Heil2024",
+      "authors": [
+        "Roman Heil"
+      ],
+      "year": 2024,
+      "title": "How to act on what you know",
+      "venue": "Synthese",
+      "volume": "203",
+      "pages": null,
+      "doi": "10.1007/s11229-024-04628-6",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Normality in Action?",
+      "authors": [
+        "Hong"
+      ],
+      "year": 2026,
+      "venue": "Philosophical Perspectives",
+      "doi": "10.1111/phpe.70003",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hong2026Action",
+    "ref": {
+      "key": "Hong2026Action",
+      "authors": [
+        "Frank Hong"
+      ],
+      "year": 2026,
+      "title": "Normality in Action?",
+      "venue": "Philosophical Perspectives",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1111/phpe.70003",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Fanaticism and knowledge",
+      "authors": [
+        "Hong"
+      ],
+      "year": 2025,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-025-05114-3",
+      "type": "journal-article",
+      "volume": "206",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hong2025Fanaticism",
+    "ref": {
+      "key": "Hong2025Fanaticism",
+      "authors": [
+        "Frank Hong"
+      ],
+      "year": 2025,
+      "title": "Fanaticism and knowledge",
+      "venue": "Synthese",
+      "volume": "206",
+      "pages": null,
+      "doi": "10.1007/s11229-025-05114-3",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Prefaces, Knowledge, and Questions",
+      "authors": [
+        "Hong"
+      ],
+      "year": 2023,
+      "venue": "Ergo an Open Access Journal of Philosophy",
+      "doi": "10.3998/ergo.4631",
+      "type": "journal-article",
+      "volume": "10",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hong2023Prefaces",
+    "ref": {
+      "key": "Hong2023Prefaces",
+      "authors": [
+        "Frank Hong"
+      ],
+      "year": 2023,
+      "title": "Prefaces, Knowledge, and Questions",
+      "venue": "Ergo",
+      "volume": "10",
+      "pages": null,
+      "doi": "10.3998/ergo.4631",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Belief revision revised",
+      "authors": [
+        "Pearson"
+      ],
+      "year": 2025,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.70037",
+      "type": "journal-article",
+      "volume": "111",
+      "pages": "696-727"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Pearson2025",
+    "ref": {
+      "key": "Pearson2025",
+      "authors": [
+        "Joshua Edward Pearson"
+      ],
+      "year": 2025,
+      "title": "Belief revision revised",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "111",
+      "pages": "696-727",
+      "doi": "10.1111/phpr.70037",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Guessing and Its Limits",
+      "authors": [
+        "Fang"
+      ],
+      "year": 2026,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.70101",
+      "type": "journal-article",
+      "volume": "112",
+      "pages": "563-577"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Fang2026",
+    "ref": {
+      "key": "Fang2026",
+      "authors": [
+        "Helena Fang"
+      ],
+      "year": 2026,
+      "title": "Guessing and Its Limits",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "112",
+      "pages": "563-577",
+      "doi": "10.1111/phpr.70101",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Responsibility and iterated knowledge",
+      "authors": [
+        "Kaiserman"
+      ],
+      "year": 2023,
+      "venue": "Philosophical Issues",
+      "doi": "10.1111/phis.12244",
+      "type": "journal-article",
+      "volume": "33",
+      "pages": "83-94"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kaiserman2023",
+    "ref": {
+      "key": "Kaiserman2023",
+      "authors": [
+        "Alex Kaiserman"
+      ],
+      "year": 2023,
+      "title": "Responsibility and iterated knowledge",
+      "venue": "Philosophical Issues",
+      "volume": "33",
+      "pages": "83-94",
+      "doi": "10.1111/phis.12244",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "match": {
+      "title": "Remeasuring Man",
+      "authors": [
+        "Weisberg"
+      ],
+      "year": 2013,
+      "venue": "PsycEXTRA Dataset",
+      "doi": "10.1037/e505052014-084",
+      "type": "dataset",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 0.412,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Weisberg2013",
+    "ref": {
+      "key": "Weisberg2013",
+      "authors": [
+        "Jonathan Weisberg"
+      ],
+      "year": 2013,
+      "title": "Knowledge in Action",
+      "venue": "Philosophers' Imprint",
+      "volume": "13",
+      "pages": null,
+      "doi": null,
+      "type": "article",
+      "seen": "abstract (via committee map); no DOI located",
+      "source_url": "https://jonathanweisberg.org/",
+      "note": "manual check: listed on author's publication page per committee bibliography"
+    },
+    "manual_check": "Philosophers' Imprint 2013 item without Crossref DOI; listed on author's publication page and in state/panel/committee_bibliography.json (Weisberg2013Knowledge, seen: abstract). Volume number not independently confirmed — cite without volume until checked.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Internalism, Externalism, and the KK Principle",
+      "authors": [
+        "Bird",
+        "Pettigrew"
+      ],
+      "year": 2019,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-019-00178-3",
+      "type": "journal-article",
+      "volume": "86",
+      "pages": "1713-1732"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "BirdPettigrew2021",
+    "ref": {
+      "key": "BirdPettigrew2021",
+      "authors": [
+        "Alexander Bird",
+        "Richard Pettigrew"
+      ],
+      "year": 2021,
+      "title": "Internalism, Externalism, and the KK Principle",
+      "venue": "Erkenntnis",
+      "volume": "86",
+      "pages": "1713-1732",
+      "doi": "10.1007/s10670-019-00178-3",
+      "type": "article",
+      "seen": "abstract"
+    },
+    "manual_check": "Crossref 'issued' 2019 is online-first; Erkenntnis vol 86 (2021) pp 1713-1732. DOI, title, authors match.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Inexact Knowledge with Introspection",
+      "authors": [
+        "Bonnay",
+        "Égré"
+      ],
+      "year": 2008,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-008-9087-1",
+      "type": "journal-article",
+      "volume": "38",
+      "pages": "179-227"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BonnayEgre2009",
+    "ref": {
+      "key": "BonnayEgre2009",
+      "authors": [
+        "Denis Bonnay",
+        "Paul Égré"
+      ],
+      "year": 2009,
+      "title": "Inexact Knowledge with Introspection",
+      "venue": "Journal of Philosophical Logic",
+      "volume": "38",
+      "pages": "179-227",
+      "doi": "10.1007/s10992-008-9087-1",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Epistemic Closure and Epistemic Logic I: Relevant Alternatives and Subjunctivism",
+      "authors": [
+        "Holliday"
+      ],
+      "year": 2014,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-013-9306-2",
+      "type": "journal-article",
+      "volume": "44",
+      "pages": "1-62"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Holliday2015",
+    "ref": {
+      "key": "Holliday2015",
+      "authors": [
+        "Wesley H. Holliday"
+      ],
+      "year": 2015,
+      "title": "Epistemic Closure and Epistemic Logic I: Relevant Alternatives and Subjunctivism",
+      "venue": "Journal of Philosophical Logic",
+      "volume": "44",
+      "pages": "1-62",
+      "doi": "10.1007/s10992-013-9306-2",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Resistance to evidence and the duty to believe",
+      "authors": [
+        "Simion"
+      ],
+      "year": 2023,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12964",
+      "type": "journal-article",
+      "volume": "108",
+      "pages": "203-216"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Simion2024",
+    "ref": {
+      "key": "Simion2024",
+      "authors": [
+        "Mona Simion"
+      ],
+      "year": 2024,
+      "title": "Resistance to evidence and the duty to believe",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "108",
+      "pages": "203-216",
+      "doi": "10.1111/phpr.12964",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Epistemic\n                    <i>Cans</i>",
+      "authors": [
+        "Kearl",
+        "Willard‐Kyle"
+      ],
+      "year": 2026,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.70091",
+      "type": "journal-article",
+      "volume": "112",
+      "pages": "462-470"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "KearlWillardKyle2026",
+    "ref": {
+      "key": "KearlWillardKyle2026",
+      "authors": [
+        "Timothy Kearl",
+        "Christopher Willard-Kyle"
+      ],
+      "year": 2026,
+      "title": "Epistemic Cans",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "112",
+      "pages": "462-470",
+      "doi": "10.1111/phpr.70091",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Unknowable Truths",
+      "authors": [
+        "Goodsell",
+        "Hawthorne",
+        "Yli-Vakkuri",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2026,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil202642019",
+      "type": "journal-article",
+      "volume": "123",
+      "pages": "77-101"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GoodsellHawthorneYliVakkuri2026",
+    "ref": {
+      "key": "GoodsellHawthorneYliVakkuri2026",
+      "authors": [
+        "Zachary Goodsell",
+        "John Hawthorne",
+        "Juhani Yli-Vakkuri"
+      ],
+      "year": 2026,
+      "title": "Unknowable Truths",
+      "venue": "The Journal of Philosophy",
+      "volume": "123",
+      "pages": "77-101",
+      "doi": "10.5840/jphil202642019",
+      "type": "article",
+      "seen": "abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Belief is weak",
+      "authors": [
+        "Hawthorne",
+        "Rothschild",
+        "Spectre"
+      ],
+      "year": 2015,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-015-0553-7",
+      "type": "journal-article",
+      "volume": "173",
+      "pages": "1393-1404"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HawthorneRothschildSpectre2016",
+    "ref": {
+      "key": "HawthorneRothschildSpectre2016",
+      "authors": [
+        "John Hawthorne",
+        "Daniel Rothschild",
+        "Levi Spectre"
+      ],
+      "year": 2016,
+      "title": "Belief is weak",
+      "venue": "Philosophical Studies",
+      "volume": "173",
+      "pages": "1393-1404",
+      "doi": "10.1007/s11098-015-0553-7",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Stability of Belief",
+      "authors": [
+        "Leitgeb"
+      ],
+      "year": 2017,
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780198732631.001.0001",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Leitgeb2017",
+    "ref": {
+      "key": "Leitgeb2017",
+      "authors": [
+        "Hannes Leitgeb"
+      ],
+      "year": 2017,
+      "title": "The Stability of Belief",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/acprof:oso/9780198732631.001.0001",
+      "type": "book",
+      "seen": "title; role via Goodman & Salow 2025 abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Propositional Reasoning that Tracks Probabilistic Reasoning",
+      "authors": [
+        "Lin",
+        "Kelly"
+      ],
+      "year": 2012,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-012-9237-3",
+      "type": "journal-article",
+      "volume": "41",
+      "pages": "957-981"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "LinKelly2012",
+    "ref": {
+      "key": "LinKelly2012",
+      "authors": [
+        "Hanti Lin",
+        "Kevin T. Kelly"
+      ],
+      "year": 2012,
+      "title": "Propositional Reasoning that Tracks Probabilistic Reasoning",
+      "venue": "Journal of Philosophical Logic",
+      "volume": "41",
+      "pages": "957-981",
+      "doi": "10.1007/s10992-012-9237-3",
+      "type": "article",
+      "seen": "title; role via Goodman & Salow 2025 abstract"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probabilistic Knowledge",
+      "authors": [
+        "Moss"
+      ],
+      "year": 2018,
+      "venue": "Oxford Scholarship Online",
+      "doi": "10.1093/oso/9780198792154.001.0001",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Moss2018",
+    "ref": {
+      "key": "Moss2018",
+      "authors": [
+        "Sarah Moss"
+      ],
+      "year": 2018,
+      "title": "Probabilistic Knowledge",
+      "venue": "Oxford University Press",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1093/oso/9780198792154.001.0001",
+      "type": "book",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Inexact knowledge 2.0",
+      "authors": [
+        "Dutant",
+        "Rosenkranz"
+      ],
+      "year": 2020,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2020.1754286",
+      "type": "journal-article",
+      "volume": "63",
+      "pages": "812-830"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DutantRosenkranz2020",
+    "ref": {
+      "key": "DutantRosenkranz2020",
+      "authors": [
+        "Julien Dutant",
+        "Sven Rosenkranz"
+      ],
+      "year": 2020,
+      "title": "Inexact knowledge 2.0",
+      "venue": "Inquiry",
+      "volume": "63",
+      "pages": "812-830",
+      "doi": "10.1080/0020174X.2020.1754286",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Escaping Zeno’s shadow: a defense of common knowledge",
+      "authors": [
+        "Fiat"
+      ],
+      "year": 2026,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-026-02516-y",
+      "type": "journal-article",
+      "volume": "183",
+      "pages": "1793-1816"
+    },
+    "title_similarity": 0.99,
+    "source": "crossref-doi",
+    "key": "Fiat2026",
+    "ref": {
+      "key": "Fiat2026",
+      "authors": [
+        "Yonathan Fiat"
+      ],
+      "year": 2026,
+      "title": "Escaping Zeno's shadow: a defense of common knowledge",
+      "venue": "Philosophical Studies",
+      "volume": "183",
+      "pages": "1793-1816",
+      "doi": "10.1007/s11098-026-02516-y",
+      "type": "article",
+      "seen": "title only"
+    }
+  },
+  {
+    "match": {
+      "title": "Is assertion social?",
+      "authors": [
+        "Pagin"
+      ],
+      "year": 2004,
+      "venue": "Journal of Pragmatics",
+      "doi": "10.1016/j.pragma.2003.10.004",
+      "type": "journal-article",
+      "volume": "36",
+      "pages": "833-859"
+    },
+    "title_similarity": 0.643,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "PaginMarsili2025SEP",
+    "ref": {
+      "key": "PaginMarsili2025SEP",
+      "authors": [
+        "Peter Pagin",
+        "Neri Marsili"
+      ],
+      "year": 2025,
+      "title": "Assertion",
+      "venue": "The Stanford Encyclopedia of Philosophy",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "type": "encyclopedia",
+      "seen": "full text of §5.1 (substantive revision 26 June 2025)",
+      "source_url": "https://plato.stanford.edu/entries/assertion/",
+      "note": "manual check: SEP page retrieved 2026-10-21"
+    },
+    "manual_check": "SEP entry retrieved 2026-10-21 from https://plato.stanford.edu/entries/assertion/ ; 'First published Mon Jan 22, 2007; substantive revision Thu Jun 26, 2025'; copyright line names Peter Pagin and Neri Marsili.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "match": {
+      "title": "Intensional Protocols for Dynamic Epistemic Logic",
+      "authors": [
+        "van Lee",
+        "Rendsvig",
+        "van Wijk"
+      ],
+      "year": 2019,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-019-09508-w",
+      "type": "journal-article",
+      "volume": "48",
+      "pages": "1077-1118"
+    },
+    "title_similarity": 0.469,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "RendsvigSymonsWang2023SEP",
+    "ref": {
+      "key": "RendsvigSymonsWang2023SEP",
+      "authors": [
+        "Rasmus Rendsvig",
+        "John Symons",
+        "Yanjing Wang"
+      ],
+      "year": 2023,
+      "title": "Epistemic Logic",
+      "venue": "The Stanford Encyclopedia of Philosophy",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "type": "encyclopedia",
+      "seen": "section on introspection principles read",
+      "source_url": "https://plato.stanford.edu/entries/logic-epistemic/",
+      "note": "manual check: SEP page retrieved 2026-10-21 (substantive revision 1 Dec 2023)"
+    },
+    "manual_check": "SEP entry retrieved 2026-10-21 from https://plato.stanford.edu/entries/logic-epistemic/ ; 'substantive revision Fri Dec 1, 2023'; copyright line names Rasmus Rendsvig, John Symons, Yanjing Wang.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  },
+  {
+    "match": {
+      "title": "The paradox of development planning",
+      "authors": [
+        "Goodman"
+      ],
+      "year": 1974,
+      "venue": "Omega",
+      "doi": "10.1016/0305-0483(74)90048-6",
+      "type": "journal-article",
+      "volume": "2",
+      "pages": "625-634"
+    },
+    "title_similarity": 0.585,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "GoodmanMsProofreader",
+    "ref": {
+      "key": "GoodmanMsProofreader",
+      "authors": [
+        "Jeremy Goodman"
+      ],
+      "year": 2025,
+      "title": "The paradox of the proofreader",
+      "venue": "unpublished draft",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "type": "manuscript",
+      "seen": "draft read (sections 1-2)",
+      "source_url": "https://jeremy-goodman.com/Proofreader.pdf",
+      "note": "manual check: author homepage lists it as 'rough draft' in work in progress; year unknown (field is retrieval-year placeholder)"
+    },
+    "manual_check": "Unpublished draft listed on https://jeremy-goodman.com/ under work in progress ('rough draft'); PDF retrieved 2026-10-21. Year unknown; cite as manuscript, n.d.",
+    "status_after_manual_check": "CONFIRMED_MANUALLY"
+  }
+]

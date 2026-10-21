@@ -1,0 +1,3895 @@
+[
+  {
+    "match": {
+      "title": "On Conditionals",
+      "authors": [
+        "Edgington"
+      ],
+      "year": 2007,
+      "venue": "Handbook of Philosophical Logic",
+      "doi": "10.1007/978-1-4020-6324-4_3",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "127-221"
+    },
+    "title_similarity": 0.737,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Edgington2025SEP",
+    "ref": {
+      "key": "Edgington2025SEP",
+      "authors": [
+        "Dorothy Edgington"
+      ],
+      "year": 2025,
+      "title": "Indicative Conditionals",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia",
+      "seen": "full text (selected sections)",
+      "source_url": "https://plato.stanford.edu/entries/conditionals/",
+      "note": "substantive revision 3 June 2025"
+    }
+  },
+  {
+    "match": {
+      "title": "William Graham Sumner: Sociologist",
+      "authors": [
+        "Starr"
+      ],
+      "year": 1925,
+      "venue": "Social Forces",
+      "doi": "10.2307/3005056",
+      "type": "journal-article",
+      "volume": "3",
+      "pages": "622-626"
+    },
+    "title_similarity": 0.25,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Starr2025SEP",
+    "ref": {
+      "key": "Starr2025SEP",
+      "authors": [
+        "William Starr"
+      ],
+      "year": 2025,
+      "title": "Counterfactuals",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia",
+      "seen": "full text (sections 3-7)",
+      "source_url": "https://plato.stanford.edu/entries/counterfactuals/",
+      "note": "substantive revision 19 Aug 2025; author name from SEP entry header"
+    }
+  },
+  {
+    "match": {
+      "title": "Moral Judgments and Semantic Judgments: A Case Study (Comments on Mikhail)",
+      "authors": [
+        "Chemla",
+        "Egre",
+        "Schlenker"
+      ],
+      "year": 2013,
+      "venue": "Jerusalem Review of Legal Studies",
+      "doi": "10.1093/jrls/jls013",
+      "type": "journal-article",
+      "volume": "8",
+      "pages": "26-43"
+    },
+    "title_similarity": 0.292,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "EgreRott2021SEP",
+    "ref": {
+      "key": "EgreRott2021SEP",
+      "authors": [
+        "Paul Egre",
+        "Hans Rott"
+      ],
+      "year": 2021,
+      "title": "The Logic of Conditionals",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia",
+      "seen": "full text (sections 2.3, 3.5, 5-8)",
+      "source_url": "https://plato.stanford.edu/entries/logic-conditionals/"
+    }
+  },
+  {
+    "match": {
+      "title": "Causal Modelling",
+      "authors": [
+        "Hitchcock"
+      ],
+      "year": 2010,
+      "venue": "The Oxford Handbook of Causation",
+      "doi": "10.1093/oxfordhb/9780199279739.003.0015",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "299-314"
+    },
+    "title_similarity": 0.828,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429",
+      "year differs: ref 2018 vs registry 2010"
+    ],
+    "status": "PROBABLE",
+    "key": "HitchcockSEPCausalModels",
+    "ref": {
+      "key": "HitchcockSEPCausalModels",
+      "authors": [
+        "Christopher Hitchcock"
+      ],
+      "year": 2018,
+      "title": "Causal Models",
+      "venue": "Stanford Encyclopedia of Philosophy",
+      "type": "encyclopedia",
+      "seen": "full text (section 3.2)",
+      "source_url": "https://plato.stanford.edu/entries/causal-models/"
+    }
+  },
+  {
+    "match": {
+      "title": "A Theory of Conditionals",
+      "authors": [
+        "Stalnaker"
+      ],
+      "year": 1968,
+      "venue": "IFS",
+      "doi": "10.1007/978-94-009-9117-0_2",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "41-55"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-search",
+    "notes": [],
+    "status": "VERIFIED",
+    "key": "Stalnaker1968Theory",
+    "ref": {
+      "key": "Stalnaker1968Theory",
+      "authors": [
+        "Robert C. Stalnaker"
+      ],
+      "year": 1968,
+      "title": "A Theory of Conditionals",
+      "venue": "Studies in Logical Theory (American Philosophical Quarterly Monograph 2)",
+      "type": "chapter",
+      "seen": "secondary (SEP)",
+      "note": "reprinted in Harper, Stalnaker & Pearce (eds.) Ifs, 1980, doi 10.1007/978-94-009-9117-0_2"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probability and Conditionals",
+      "authors": [
+        "Stalnaker"
+      ],
+      "year": 1970,
+      "venue": "Philosophy of Science",
+      "doi": "10.1086/288280",
+      "type": "journal-article",
+      "volume": "37",
+      "pages": "64-80"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Stalnaker1970Probability",
+    "ref": {
+      "key": "Stalnaker1970Probability",
+      "authors": [
+        "Robert C. Stalnaker"
+      ],
+      "year": 1970,
+      "title": "Probability and Conditionals",
+      "venue": "Philosophy of Science",
+      "type": "article",
+      "seen": "secondary (SEP; Dorr & Mandelkern)",
+      "doi": "10.1086/288280",
+      "volume": "37",
+      "pages": "64-80"
+    }
+  },
+  {
+    "match": {
+      "title": "Counterfactuals and Comparative Possibility",
+      "authors": [
+        "Lewis"
+      ],
+      "year": 1973,
+      "venue": "IFS",
+      "doi": "10.1007/978-94-009-9117-0_3",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "57-85"
+    },
+    "title_similarity": 0.517,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Lewis1973Counterfactuals",
+    "ref": {
+      "key": "Lewis1973Counterfactuals",
+      "authors": [
+        "David Lewis"
+      ],
+      "year": 1973,
+      "title": "Counterfactuals",
+      "venue": "Blackwell / Harvard University Press",
+      "type": "book",
+      "seen": "secondary (SEP)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probabilities of Conditionals and Conditional Probabilities",
+      "authors": [
+        "Lewis"
+      ],
+      "year": 1976,
+      "venue": "The Philosophical Review",
+      "doi": "10.2307/2184045",
+      "type": "journal-article",
+      "volume": "85",
+      "pages": "297"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Lewis1976Probabilities",
+    "ref": {
+      "key": "Lewis1976Probabilities",
+      "authors": [
+        "David Lewis"
+      ],
+      "year": 1976,
+      "title": "Probabilities of Conditionals and Conditional Probabilities",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "secondary (SEP statement of theorem)",
+      "doi": "10.2307/2184045",
+      "volume": "85",
+      "pages": "297"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactual Dependence and Time's Arrow",
+      "authors": [
+        "Lewis"
+      ],
+      "year": 1979,
+      "venue": "No\u00fbs",
+      "doi": "10.2307/2215339",
+      "type": "journal-article",
+      "volume": "13",
+      "pages": "455"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Lewis1979Counterfactual",
+    "ref": {
+      "key": "Lewis1979Counterfactual",
+      "authors": [
+        "David Lewis"
+      ],
+      "year": 1979,
+      "title": "Counterfactual Dependence and Time's Arrow",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.2307/2215339",
+      "volume": "13",
+      "pages": "455-476"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probabilities of Conditionals",
+      "authors": [
+        "Fraassen"
+      ],
+      "year": 1976,
+      "venue": "Foundations of Probability Theory, Statistical Inference, and Statistical Theories of Science",
+      "doi": "10.1007/978-94-010-1853-1_10",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "261-308"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "vanFraassen1976Probabilities",
+    "ref": {
+      "key": "vanFraassen1976Probabilities",
+      "authors": [
+        "Bas C. van Fraassen"
+      ],
+      "year": 1976,
+      "title": "Probabilities of Conditionals",
+      "venue": "Foundations of Probability Theory, Statistical Inference, and Statistical Theories of Science, vol. I",
+      "type": "chapter",
+      "seen": "secondary (Dorr & Mandelkern 2026; SEP)",
+      "doi": "10.1007/978-94-010-1853-1_10",
+      "pages": "261-308"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Logic of Conditionals",
+      "authors": [
+        "Adams"
+      ],
+      "year": 1975,
+      "venue": "Springer Netherlands",
+      "doi": "10.1007/978-94-015-7622-2",
+      "type": "book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Adams1975Logic",
+    "ref": {
+      "key": "Adams1975Logic",
+      "authors": [
+        "Ernest W. Adams"
+      ],
+      "year": 1975,
+      "title": "The Logic of Conditionals",
+      "venue": "Reidel",
+      "type": "book",
+      "seen": "secondary (SEP)",
+      "doi": "10.1007/978-94-015-7622-2"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Two Recent Theories of Conditionals",
+      "authors": [
+        "Gibbard"
+      ],
+      "year": 1980,
+      "venue": "IFS",
+      "doi": "10.1007/978-94-009-9117-0_10",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "211-247"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gibbard1980Two",
+    "ref": {
+      "key": "Gibbard1980Two",
+      "authors": [
+        "Allan Gibbard"
+      ],
+      "year": 1980,
+      "title": "Two Recent Theories of Conditionals",
+      "venue": "Ifs (Harper, Stalnaker & Pearce eds.)",
+      "type": "chapter",
+      "seen": "secondary (SEP; Holliday & Mandelkern)",
+      "doi": "10.1007/978-94-009-9117-0_10",
+      "pages": "211-247",
+      "note": "cited as Gibbard 1981 in much of the literature (Ifs, 1981 printing)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Counterexample to Modus Ponens",
+      "authors": [
+        "McGee"
+      ],
+      "year": 1985,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.2307/2026276",
+      "type": "journal-article",
+      "volume": "82",
+      "pages": "462"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "McGee1985Counterexample",
+    "ref": {
+      "key": "McGee1985Counterexample",
+      "authors": [
+        "Vann McGee"
+      ],
+      "year": 1985,
+      "title": "A Counterexample to Modus Ponens",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "secondary (SEP; Holliday & Mandelkern)",
+      "doi": "10.2307/2026276",
+      "volume": "82",
+      "pages": "462"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On Conditionals",
+      "authors": [
+        "EDGINGTON"
+      ],
+      "year": 1995,
+      "venue": "Mind",
+      "doi": "10.1093/mind/104.414.235",
+      "type": "journal-article",
+      "volume": "104",
+      "pages": "235-329"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Edgington1995Conditionals",
+    "ref": {
+      "key": "Edgington1995Conditionals",
+      "authors": [
+        "Dorothy Edgington"
+      ],
+      "year": 1995,
+      "title": "On Conditionals",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title + secondary",
+      "doi": "10.1093/mind/104.414.235",
+      "volume": "104",
+      "pages": "235-329"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Belief Revisions and the Ramsey Test for Conditionals",
+      "authors": [
+        "Gardenfors"
+      ],
+      "year": 1986,
+      "venue": "The Philosophical Review",
+      "doi": "10.2307/2185133",
+      "type": "journal-article",
+      "volume": "95",
+      "pages": "81"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gardenfors1986Belief",
+    "ref": {
+      "key": "Gardenfors1986Belief",
+      "authors": [
+        "Peter G\u00e4rdenfors"
+      ],
+      "year": 1986,
+      "title": "Belief Revisions and the Ramsey Test for Conditionals",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "secondary (SEP statement of theorem)",
+      "doi": "10.2307/2185133",
+      "volume": "95",
+      "pages": "81"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Probabilities of conditionals ? Revisited",
+      "authors": [
+        "H\ufffdjek"
+      ],
+      "year": 1989,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/bf00262944",
+      "type": "journal-article",
+      "volume": "18",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok False, year ok True)"
+    ],
+    "key": "Hajek1989Probabilities",
+    "ref": {
+      "key": "Hajek1989Probabilities",
+      "authors": [
+        "Alan H\u00e1jek"
+      ],
+      "year": 1989,
+      "title": "Probabilities of Conditionals \u2014 Revisited",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.1007/bf00262944",
+      "volume": "18"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A preservation condition for conditionals",
+      "authors": [
+        "Bradley"
+      ],
+      "year": 2000,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/60.3.219",
+      "type": "journal-article",
+      "volume": "60",
+      "pages": "219-222"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Bradley2000Preservation",
+    "ref": {
+      "key": "Bradley2000Preservation",
+      "authors": [
+        "Richard Bradley"
+      ],
+      "year": 2000,
+      "title": "A Preservation Condition for Conditionals",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "secondary (SEP; Mandelkern & Khoo abstract)",
+      "doi": "10.1093/analys/60.3.219",
+      "volume": "60",
+      "pages": "219-222"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Conditioning against the Grain",
+      "authors": [
+        "Kaufmann"
+      ],
+      "year": 2004,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1023/b:logi.0000046142.51136.bf",
+      "type": "journal-article",
+      "volume": "33",
+      "pages": "583-606"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kaufmann2004Conditioning",
+    "ref": {
+      "key": "Kaufmann2004Conditioning",
+      "authors": [
+        "Stefan Kaufmann"
+      ],
+      "year": 2004,
+      "title": "Conditioning against the Grain",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1023/b:logi.0000046142.51136.bf",
+      "volume": "33",
+      "pages": "583-606"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "An objection to possible-world semantics for counterfactual logics",
+      "authors": [
+        "Ellis",
+        "Jackson",
+        "Pargetter"
+      ],
+      "year": 1977,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/bf00262069",
+      "type": "journal-article",
+      "volume": "6",
+      "pages": "355-357"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EllisJacksonPargetter1977",
+    "ref": {
+      "key": "EllisJacksonPargetter1977",
+      "authors": [
+        "Brian Ellis",
+        "Frank Jackson",
+        "Robert Pargetter"
+      ],
+      "year": 1977,
+      "title": "An Objection to Possible-World Semantics for Counterfactual Logics",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.1007/bf00262069",
+      "volume": "6",
+      "pages": "355-357"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactuals with disjunctive antecedents",
+      "authors": [
+        "Mckay",
+        "Van Inwagen"
+      ],
+      "year": 1977,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/bf01873862",
+      "type": "journal-article",
+      "volume": "31",
+      "pages": "353-356"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "McKayVanInwagen1977",
+    "ref": {
+      "key": "McKayVanInwagen1977",
+      "authors": [
+        "Thomas McKay",
+        "Peter van Inwagen"
+      ],
+      "year": 1977,
+      "title": "Counterfactuals with Disjunctive Antecedents",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.1007/bf01873862",
+      "volume": "31",
+      "pages": "353-356"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "IV\u2014Free Choice Permission",
+      "authors": [
+        "Kamp"
+      ],
+      "year": 1974,
+      "venue": "Proceedings of the Aristotelian Society",
+      "doi": "10.1093/aristotelian/74.1.57",
+      "type": "journal-article",
+      "volume": "74",
+      "pages": "57-74"
+    },
+    "title_similarity": 0.957,
+    "source": "crossref-doi",
+    "key": "Kamp1974Free",
+    "ref": {
+      "key": "Kamp1974Free",
+      "authors": [
+        "Hans Kamp"
+      ],
+      "year": 1974,
+      "title": "Free Choice Permission",
+      "venue": "Proceedings of the Aristotelian Society",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/aristotelian/74.1.57",
+      "volume": "74",
+      "pages": "57-74"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Free Choice Disjunction and Epistemic Possibility",
+      "authors": [
+        "Zimmermann"
+      ],
+      "year": 2000,
+      "venue": "Natural Language Semantics",
+      "doi": "10.1023/a:1011255819284",
+      "type": "journal-article",
+      "volume": "8",
+      "pages": "255-290"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Zimmermann2000Free",
+    "ref": {
+      "key": "Zimmermann2000Free",
+      "authors": [
+        "Thomas Ede Zimmermann"
+      ],
+      "year": 2000,
+      "title": "Free Choice Disjunction and Epistemic Possibility",
+      "venue": "Natural Language Semantics",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1023/a:1011255819284",
+      "volume": "8",
+      "pages": "255-290"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Defaults in update semantics",
+      "authors": [
+        "Veltman"
+      ],
+      "year": 1996,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/bf00248150",
+      "type": "journal-article",
+      "volume": "25",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Veltman1996Defaults",
+    "ref": {
+      "key": "Veltman1996Defaults",
+      "authors": [
+        "Frank Veltman"
+      ],
+      "year": 1996,
+      "title": "Defaults in Update Semantics",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1007/bf00248150",
+      "volume": "25"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A PROBLEM FOR RELATIVE INFORMATION MINIMIZERS IN PROBABILITY KINEMATICS",
+      "authors": [
+        "VAN FRAASSEN"
+      ],
+      "year": 1981,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1093/bjps/32.4.375",
+      "type": "journal-article",
+      "volume": "32",
+      "pages": "375-379"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "vanFraassen1981Problem",
+    "ref": {
+      "key": "vanFraassen1981Problem",
+      "authors": [
+        "Bas C. van Fraassen"
+      ],
+      "year": 1981,
+      "title": "A Problem for Relative Information Minimizers in Probability Kinematics",
+      "venue": "The British Journal for the Philosophy of Science",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/bjps/32.4.375",
+      "volume": "32",
+      "pages": "375-379"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "An Axiomatic Characterization of Causal Counterfactuals",
+      "authors": [
+        "Galles",
+        "Pearl"
+      ],
+      "year": 1998,
+      "venue": "Foundations of Science",
+      "doi": "10.1023/a:1009602825894",
+      "type": "journal-article",
+      "volume": "3",
+      "pages": "151-182"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "GallesPearl1998",
+    "ref": {
+      "key": "GallesPearl1998",
+      "authors": [
+        "David Galles",
+        "Judea Pearl"
+      ],
+      "year": 1998,
+      "title": "An Axiomatic Characterization of Causal Counterfactuals",
+      "venue": "Foundations of Science",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1023/a:1009602825894",
+      "volume": "3",
+      "pages": "151-182"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Axiomatizing Causal Reasoning",
+      "authors": [
+        "Halpern"
+      ],
+      "year": 2000,
+      "venue": "Journal of Artificial Intelligence Research",
+      "doi": "10.1613/jair.648",
+      "type": "journal-article",
+      "volume": "12",
+      "pages": "317-337"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Halpern2000Axiomatizing",
+    "ref": {
+      "key": "Halpern2000Axiomatizing",
+      "authors": [
+        "Joseph Y. Halpern"
+      ],
+      "year": 2000,
+      "title": "Axiomatizing Causal Reasoning",
+      "venue": "Journal of Artificial Intelligence Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1613/jair.648",
+      "volume": "12",
+      "pages": "317-337"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Causality",
+      "authors": [
+        "Pearl"
+      ],
+      "year": 2009,
+      "venue": "Cambridge University Press",
+      "doi": "10.1017/cbo9780511803161",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 0.321,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.32, author ok True, year ok True)"
+    ],
+    "key": "Pearl2009Causality",
+    "ref": {
+      "key": "Pearl2009Causality",
+      "authors": [
+        "Judea Pearl"
+      ],
+      "year": 2009,
+      "title": "Causality: Models, Reasoning, and Inference (2nd ed.)",
+      "venue": "Cambridge University Press",
+      "type": "book",
+      "seen": "title",
+      "doi": "10.1017/cbo9780511803161"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Modals and ConditionalsNew and Revised Perspectives",
+      "authors": [
+        "Kratzer"
+      ],
+      "year": 2012,
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780199234684.001.0001",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 0.99,
+    "source": "crossref-doi",
+    "key": "Kratzer2012Modals",
+    "ref": {
+      "key": "Kratzer2012Modals",
+      "authors": [
+        "Angelika Kratzer"
+      ],
+      "year": 2012,
+      "title": "Modals and Conditionals: New and Revised Perspectives",
+      "venue": "Oxford University Press",
+      "type": "book",
+      "seen": "secondary (SEP)",
+      "doi": "10.1093/acprof:oso/9780199234684.001.0001"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Chance and Counterfactuals",
+      "authors": [
+        "HAWTHORNE"
+      ],
+      "year": 2005,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/j.1933-1592.2005.tb00534.x",
+      "type": "journal-article",
+      "volume": "70",
+      "pages": "396-405"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hawthorne2005Chance",
+    "ref": {
+      "key": "Hawthorne2005Chance",
+      "authors": [
+        "John Hawthorne"
+      ],
+      "year": 2005,
+      "title": "Chance and Counterfactuals",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.1111/j.1933-1592.2005.tb00534.x",
+      "volume": "70",
+      "pages": "396-405"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "<i>Defending Conditional Excluded Middle</i>",
+      "authors": [
+        "Williams"
+      ],
+      "year": 2010,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/j.1468-0068.2010.00766.x",
+      "type": "journal-article",
+      "volume": "44",
+      "pages": "650-668"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Williams2010Defending",
+    "ref": {
+      "key": "Williams2010Defending",
+      "authors": [
+        "J. Robert G. Williams"
+      ],
+      "year": 2010,
+      "title": "Defending Conditional Excluded Middle",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1111/j.1468-0068.2010.00766.x",
+      "volume": "44",
+      "pages": "650-668"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactual Triviality: A Lewis\u2010Impossibility Argument for Counterfactuals",
+      "authors": [
+        "G. Williams"
+      ],
+      "year": 2012,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/j.1933-1592.2012.00636.x",
+      "type": "journal-article",
+      "volume": "85",
+      "pages": "648-670"
+    },
+    "title_similarity": 0.993,
+    "source": "crossref-doi",
+    "key": "Williams2012Counterfactual",
+    "ref": {
+      "key": "Williams2012Counterfactual",
+      "authors": [
+        "J. Robert G. Williams"
+      ],
+      "year": 2012,
+      "title": "Counterfactual Triviality: A Lewis-Impossibility Argument for Counterfactuals",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/j.1933-1592.2012.00636.x",
+      "volume": "85",
+      "pages": "648-670"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "STALNAKER\u2019S THESIS IN CONTEXT",
+      "authors": [
+        "BACON"
+      ],
+      "year": 2014,
+      "venue": "The Review of Symbolic Logic",
+      "doi": "10.1017/s1755020314000318",
+      "type": "journal-article",
+      "volume": "8",
+      "pages": "131-163"
+    },
+    "title_similarity": 0.982,
+    "source": "crossref-doi",
+    "key": "Bacon2015Stalnaker",
+    "ref": {
+      "key": "Bacon2015Stalnaker",
+      "authors": [
+        "Andrew Bacon"
+      ],
+      "year": 2015,
+      "title": "Stalnaker's Thesis in Context",
+      "venue": "The Review of Symbolic Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1017/s1755020314000318",
+      "volume": "8",
+      "pages": "131-163",
+      "note": "Crossref issued 2014; volume year 2015"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Strongest Possible Lewisian Triviality Result",
+      "authors": [
+        "Fitelson",
+        "Philosophy Documentation Center"
+      ],
+      "year": 2015,
+      "venue": "Thought: A Journal of Philosophy",
+      "doi": "10.1002/tht3.159",
+      "type": "journal-article",
+      "volume": "4",
+      "pages": "69-74"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Fitelson2015Strongest",
+    "ref": {
+      "key": "Fitelson2015Strongest",
+      "authors": [
+        "Branden Fitelson"
+      ],
+      "year": 2015,
+      "title": "The Strongest Possible Lewisian Triviality Result",
+      "venue": "Thought: A Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract (one sentence) + secondary (SEP; Khoo & Mandelkern abstract)",
+      "doi": "10.1002/tht3.159",
+      "volume": "4",
+      "pages": "69-74"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "General Dynamic Triviality Theorems",
+      "authors": [
+        "Russell",
+        "Hawthorne"
+      ],
+      "year": 2016,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-3516936",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "307-339"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "RussellHawthorne2016General",
+    "ref": {
+      "key": "RussellHawthorne2016General",
+      "authors": [
+        "Jeffrey Sanford Russell",
+        "John Hawthorne"
+      ],
+      "year": 2016,
+      "title": "General Dynamic Triviality Theorems",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1215/00318108-3516936",
+      "volume": "125",
+      "pages": "307-339"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Triviality Results for Probabilistic Modals",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2017,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12477",
+      "type": "journal-article",
+      "volume": "99",
+      "pages": "188-222"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Goldstein2019Triviality",
+    "ref": {
+      "key": "Goldstein2019Triviality",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2019,
+      "title": "Triviality Results for Probabilistic Modals",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12477",
+      "volume": "99",
+      "pages": "188-222",
+      "note": "Crossref issued 2017 (online); volume year 2019"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Triviality Results and the Relationship between Logical and Natural Languages",
+      "authors": [
+        "Khoo",
+        "Mandelkern"
+      ],
+      "year": 2018,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzy006",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "485-526"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "KhooMandelkern2019Triviality",
+    "ref": {
+      "key": "KhooMandelkern2019Triviality",
+      "authors": [
+        "Justin Khoo",
+        "Matthew Mandelkern"
+      ],
+      "year": 2019,
+      "title": "Triviality Results and the Relationship between Logical and Natural Languages",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "abstract (MIT DSpace record)",
+      "doi": "10.1093/mind/fzy006",
+      "volume": "128",
+      "pages": "485-526",
+      "note": "Crossref issued 2018 (online); print 2019"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Against Preservation",
+      "authors": [
+        "Mandelkern",
+        "Khoo"
+      ],
+      "year": 2018,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/any051",
+      "type": "journal-article",
+      "volume": "79",
+      "pages": "424-436"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "MandelkernKhoo2019Against",
+    "ref": {
+      "key": "MandelkernKhoo2019Against",
+      "authors": [
+        "Matthew Mandelkern",
+        "Justin Khoo"
+      ],
+      "year": 2019,
+      "title": "Against Preservation",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/any051",
+      "volume": "79",
+      "pages": "424-436",
+      "note": "Crossref issued 2018 (online)"
+    }
+  },
+  {
+    "match": {
+      "title": "Epistemic Disadvantage",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2022,
+      "venue": "Philosophia",
+      "doi": "10.1007/s11406-021-00465-w",
+      "type": "journal-article",
+      "volume": "50",
+      "pages": "1861-1878"
+    },
+    "title_similarity": 0.483,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "GoldsteinSantorio2021Probability",
+    "ref": {
+      "key": "GoldsteinSantorio2021Probability",
+      "authors": [
+        "Simon Goldstein",
+        "Paolo Santorio"
+      ],
+      "year": 2021,
+      "title": "Probability for Epistemic Modalities",
+      "venue": "Philosophers' Imprint",
+      "type": "article",
+      "seen": "secondary (SEP Edgington 2025; Egre, Rossi & Sprenger 2026; author's one-line summary)",
+      "volume": "21",
+      "pages": "no. 33, 1-37",
+      "source_url": "https://www.philosophersimprint.org/021033/",
+      "note": "fetch request filed"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Probabilities of conditionals: Updating Adams",
+      "authors": [
+        "Ciardelli",
+        "Ommundsen"
+      ],
+      "year": 2022,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12437",
+      "type": "journal-article",
+      "volume": "58",
+      "pages": "26-53"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "CiardelliOmmundsen2024Probabilities",
+    "ref": {
+      "key": "CiardelliOmmundsen2024Probabilities",
+      "authors": [
+        "Ivano Ciardelli",
+        "Adrian Ommundsen"
+      ],
+      "year": 2024,
+      "title": "Probabilities of Conditionals: Updating Adams",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12437",
+      "volume": "58",
+      "pages": "26-53",
+      "note": "Crossref issued 2022 (online); volume 58 (2024)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Path Semantics for Indicative Conditionals",
+      "authors": [
+        "Santorio"
+      ],
+      "year": 2022,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzaa101",
+      "type": "journal-article",
+      "volume": "131",
+      "pages": "59-98"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2022Path",
+    "ref": {
+      "key": "Santorio2022Path",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2022,
+      "title": "Path Semantics for Indicative Conditionals",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/mind/fzaa101",
+      "volume": "131",
+      "pages": "59-98"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Trivializing Informational Consequence",
+      "authors": [
+        "Santorio"
+      ],
+      "year": 2021,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12745",
+      "type": "journal-article",
+      "volume": "104",
+      "pages": "297-320"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2022Trivializing",
+    "ref": {
+      "key": "Santorio2022Trivializing",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2022,
+      "title": "Trivializing Informational Consequence",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12745",
+      "volume": "104",
+      "pages": "297-320",
+      "note": "Crossref issued 2021 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "General triviality for counterfactuals",
+      "authors": [
+        "Santorio"
+      ],
+      "year": 2022,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anab038",
+      "type": "journal-article",
+      "volume": "82",
+      "pages": "277-289"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2022General",
+    "ref": {
+      "key": "Santorio2022General",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2022,
+      "title": "General Triviality for Counterfactuals",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anab038",
+      "volume": "82",
+      "pages": "277-289"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactual Probability",
+      "authors": [
+        "Schultheis",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2023,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil20231201133",
+      "type": "journal-article",
+      "volume": "120",
+      "pages": "581-614"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Schultheis2023Counterfactual",
+    "ref": {
+      "key": "Schultheis2023Counterfactual",
+      "authors": [
+        "Ginger Schultheis"
+      ],
+      "year": 2023,
+      "title": "Counterfactual Probability",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil20231201133",
+      "volume": "120",
+      "pages": "581-614"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probabilities of Counterfactuals Are Counterfactual Probabilities",
+      "authors": [
+        "Santorio",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2025,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil2025122613",
+      "type": "journal-article",
+      "volume": "122",
+      "pages": "285-312"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2025Probabilities",
+    "ref": {
+      "key": "Santorio2025Probabilities",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2025,
+      "title": "Probabilities of Counterfactuals Are Counterfactual Probabilities",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil2025122613",
+      "volume": "122",
+      "pages": "285-312"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Revisiting McGee\u2019s Probabilistic Analysis of Conditionals",
+      "authors": [
+        "Cantwell"
+      ],
+      "year": 2022,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-022-09657-5",
+      "type": "journal-article",
+      "volume": "51",
+      "pages": "973-1017"
+    },
+    "title_similarity": 0.991,
+    "source": "crossref-doi",
+    "key": "Cantwell2022Revisiting",
+    "ref": {
+      "key": "Cantwell2022Revisiting",
+      "authors": [
+        "John Cantwell"
+      ],
+      "year": 2022,
+      "title": "Revisiting McGee's Probabilistic Analysis of Conditionals",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10992-022-09657-5",
+      "volume": "51",
+      "pages": "973-1017"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Credences for strict conditionals",
+      "authors": [
+        "Willer"
+      ],
+      "year": 2024,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.13085",
+      "type": "journal-article",
+      "volume": "110",
+      "pages": "23-50"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Willer2025Credences",
+    "ref": {
+      "key": "Willer2025Credences",
+      "authors": [
+        "Malte Willer"
+      ],
+      "year": 2025,
+      "title": "Credences for Strict Conditionals",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.13085",
+      "volume": "110",
+      "pages": "23-50",
+      "note": "Crossref issued 2024 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Certain and Uncertain Inference with Indicative Conditionals",
+      "authors": [
+        "\u00c9gr\u00e9",
+        "Rossi",
+        "Sprenger"
+      ],
+      "year": 2025,
+      "venue": "Australasian Journal of Philosophy",
+      "doi": "10.1080/00048402.2025.2475882",
+      "type": "journal-article",
+      "volume": "103",
+      "pages": "569-596"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EgreRossiSprenger2025Certain",
+    "ref": {
+      "key": "EgreRossiSprenger2025Certain",
+      "authors": [
+        "Paul \u00c9gr\u00e9",
+        "Lorenzo Rossi",
+        "Jan Sprenger"
+      ],
+      "year": 2025,
+      "title": "Certain and Uncertain Inference with Indicative Conditionals",
+      "venue": "Australasian Journal of Philosophy",
+      "type": "article",
+      "seen": "full text (arXiv v2 preprint, introduction)",
+      "doi": "10.1080/00048402.2025.2475882",
+      "volume": "103",
+      "pages": "569-596"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probability for Trivalent Conditionals",
+      "authors": [
+        "\u00c9gr\u00e9",
+        "Rossi",
+        "Sprenger"
+      ],
+      "year": 2026,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzag023",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EgreRossiSprenger2026Probability",
+    "ref": {
+      "key": "EgreRossiSprenger2026Probability",
+      "authors": [
+        "Paul \u00c9gr\u00e9",
+        "Lorenzo Rossi",
+        "Jan Sprenger"
+      ],
+      "year": 2026,
+      "title": "Probability for Trivalent Conditionals",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "full text (author's manuscript, AperTO repository; sections 1, 6)",
+      "doi": "10.1093/mind/fzag023",
+      "source_url": "https://iris.unito.it/bitstream/2318/2142754/1/CP+Learning_rev7.pdf"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Sequence and consequence",
+      "authors": [
+        "Dorr",
+        "Mandelkern"
+      ],
+      "year": 2026,
+      "venue": "Philosophical Logic",
+      "doi": "10.16995/phil-log.27646",
+      "type": "journal-article",
+      "volume": "1",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DorrMandelkern2026Sequence",
+    "ref": {
+      "key": "DorrMandelkern2026Sequence",
+      "authors": [
+        "Cian Dorr",
+        "Matthew Mandelkern"
+      ],
+      "year": 2026,
+      "title": "Sequence and Consequence",
+      "venue": "Philosophical Logic",
+      "type": "article",
+      "seen": "full text (arXiv 2411.16994v2, 18 May 2026)",
+      "doi": "10.16995/phil-log.27646",
+      "volume": "1",
+      "source_url": "https://arxiv.org/abs/2411.16994"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Note on Conditionals Between Lewis and Stalnaker",
+      "authors": [
+        "Weiss"
+      ],
+      "year": 2026,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anag070",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Weiss2026Note",
+    "ref": {
+      "key": "Weiss2026Note",
+      "authors": [
+        "Yale Weiss"
+      ],
+      "year": 2026,
+      "title": "A Note on Conditionals Between Lewis and Stalnaker",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anag070"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Ifs and Oughts",
+      "authors": [
+        "Kolodny",
+        "MacFarlane",
+        "Journal of Philosophy, Inc."
+      ],
+      "year": 2010,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil2010107310",
+      "type": "journal-article",
+      "volume": "107",
+      "pages": "115-143"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "KolodnyMacFarlane2010Ifs",
+    "ref": {
+      "key": "KolodnyMacFarlane2010Ifs",
+      "authors": [
+        "Niko Kolodny",
+        "John MacFarlane"
+      ],
+      "year": 2010,
+      "title": "Ifs and Oughts",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.5840/jphil2010107310",
+      "volume": "107",
+      "pages": "115-143"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Modus Ponens Defended",
+      "authors": [
+        "Bledin",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2015,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil201511225",
+      "type": "journal-article",
+      "volume": "112",
+      "pages": "57-83"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Bledin2015Modus",
+    "ref": {
+      "key": "Bledin2015Modus",
+      "authors": [
+        "Justin Bledin"
+      ],
+      "year": 2015,
+      "title": "Modus Ponens Defended",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.5840/jphil201511225",
+      "volume": "112",
+      "pages": "57-83"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "One's<i>Modus Ponens</i>: Modality, Coherence and Logic",
+      "authors": [
+        "Stojni\u0107"
+      ],
+      "year": 2016,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12307",
+      "type": "journal-article",
+      "volume": "95",
+      "pages": "167-214"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Stojnic2017One",
+    "ref": {
+      "key": "Stojnic2017One",
+      "authors": [
+        "Una Stojni\u0107"
+      ],
+      "year": 2017,
+      "title": "One's Modus Ponens: Modality, Coherence and Logic",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12307",
+      "volume": "95",
+      "pages": "167-214",
+      "note": "Crossref issued 2016 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Counterexample to Modus Ponenses",
+      "authors": [
+        "Mandelkern",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2020,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil2020117619",
+      "type": "journal-article",
+      "volume": "117",
+      "pages": "315-331"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Mandelkern2020Counterexample",
+    "ref": {
+      "key": "Mandelkern2020Counterexample",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2020,
+      "title": "A Counterexample to Modus Ponenses",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil2020117619",
+      "volume": "117",
+      "pages": "315-331",
+      "note": "fetch request filed"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Import\u2010Export and \u2018And\u2019",
+      "authors": [
+        "Mandelkern"
+      ],
+      "year": 2018,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12513",
+      "type": "journal-article",
+      "volume": "100",
+      "pages": "118-135"
+    },
+    "title_similarity": 0.976,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.98, author ok True, year ok False)"
+    ],
+    "key": "Mandelkern2020Import",
+    "ref": {
+      "key": "Mandelkern2020Import",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2020,
+      "title": "Import-Export and 'And'",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12513",
+      "volume": "100",
+      "pages": "118-135",
+      "note": "Crossref issued 2018 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "If P, Then P!",
+      "authors": [
+        "Mandelkern",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2021,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil20211181242",
+      "type": "journal-article",
+      "volume": "118",
+      "pages": "645-679"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Mandelkern2021If",
+    "ref": {
+      "key": "Mandelkern2021If",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2021,
+      "title": "If P, Then P!",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil20211181242",
+      "volume": "118",
+      "pages": "645-679"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Modus Ponens and the Logic of Decision",
+      "authors": [
+        "Charlow"
+      ],
+      "year": 2023,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-022-09690-4",
+      "type": "journal-article",
+      "volume": "52",
+      "pages": "859-888"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Charlow2023Modus",
+    "ref": {
+      "key": "Charlow2023Modus",
+      "authors": [
+        "Nate Charlow"
+      ],
+      "year": 2023,
+      "title": "Modus Ponens and the Logic of Decision",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10992-022-09690-4",
+      "volume": "52",
+      "pages": "859-888"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Revisiting McGee\u2019s Counterexample to Modus Ponens",
+      "authors": [
+        "Lo Guercio",
+        "Rubin"
+      ],
+      "year": 2024,
+      "venue": "European journal of analytic philosophy",
+      "doi": "10.31820/ejap.20.2.7",
+      "type": "journal-article",
+      "volume": "20",
+      "pages": "389-412"
+    },
+    "title_similarity": 0.99,
+    "source": "crossref-doi",
+    "key": "LoGuercioRubin2024Revisiting",
+    "ref": {
+      "key": "LoGuercioRubin2024Revisiting",
+      "authors": [
+        "Nicol\u00e1s Lo Guercio",
+        "Mariela Rubin"
+      ],
+      "year": 2024,
+      "title": "Revisiting McGee's Counterexample to Modus Ponens",
+      "venue": "European Journal of Analytic Philosophy",
+      "type": "article",
+      "seen": "abstract (Croatian-language version on Crossref) + search snippet",
+      "doi": "10.31820/ejap.20.2.7",
+      "volume": "20",
+      "pages": "389-412"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Against Modus Ponens for Might",
+      "authors": [
+        "Berntson"
+      ],
+      "year": 2026,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anag011",
+      "type": "journal-article",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Berntson2026Against",
+    "ref": {
+      "key": "Berntson2026Against",
+      "authors": [
+        "Daniel Berntson"
+      ],
+      "year": 2026,
+      "title": "Against Modus Ponens for Might",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anag011"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Epistemic Modals",
+      "authors": [
+        "Yalcin"
+      ],
+      "year": 2007,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzm983",
+      "type": "journal-article",
+      "volume": "116",
+      "pages": "983-1026"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Yalcin2007Epistemic",
+    "ref": {
+      "key": "Yalcin2007Epistemic",
+      "authors": [
+        "Seth Yalcin"
+      ],
+      "year": 2007,
+      "title": "Epistemic Modals",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "secondary (Holliday & Mandelkern; Dorr & Hawthorne abstract)",
+      "doi": "10.1093/mind/fzm983",
+      "volume": "116",
+      "pages": "983-1026"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Embedding Epistemic Modals",
+      "authors": [
+        "Dorr",
+        "Hawthorne"
+      ],
+      "year": 2013,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzt091",
+      "type": "journal-article",
+      "volume": "122",
+      "pages": "867-913"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DorrHawthorne2013Embedding",
+    "ref": {
+      "key": "DorrHawthorne2013Embedding",
+      "authors": [
+        "Cian Dorr",
+        "John Hawthorne"
+      ],
+      "year": 2013,
+      "title": "Embedding Epistemic Modals",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "abstract (author homepage)",
+      "doi": "10.1093/mind/fzt091",
+      "volume": "122",
+      "pages": "867-913"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Must . . . stay . . . strong!",
+      "authors": [
+        "von Fintel",
+        "Gillies"
+      ],
+      "year": 2010,
+      "venue": "Natural Language Semantics",
+      "doi": "10.1007/s11050-010-9058-2",
+      "type": "journal-article",
+      "volume": "18",
+      "pages": "351-383"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "vonFintelGillies2010Must",
+    "ref": {
+      "key": "vonFintelGillies2010Must",
+      "authors": [
+        "Kai von Fintel",
+        "Anthony S. Gillies"
+      ],
+      "year": 2010,
+      "title": "Must . . . Stay . . . Strong!",
+      "venue": "Natural Language Semantics",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1007/s11050-010-9058-2",
+      "volume": "18",
+      "pages": "351-383"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On the semantics and pragmatics of epistemic vocabulary",
+      "authors": [
+        "Moss"
+      ],
+      "year": 2015,
+      "venue": "Semantics and Pragmatics",
+      "doi": "10.3765/sp.8.5",
+      "type": "journal-article",
+      "volume": "8",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Moss2015Semantics",
+    "ref": {
+      "key": "Moss2015Semantics",
+      "authors": [
+        "Sarah Moss"
+      ],
+      "year": 2015,
+      "title": "On the Semantics and Pragmatics of Epistemic Vocabulary",
+      "venue": "Semantics and Pragmatics",
+      "type": "article",
+      "seen": "title + citation in Hawke & Steinert-Threlkeld abstract",
+      "doi": "10.3765/sp.8.5",
+      "volume": "8"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Bounded Modality",
+      "authors": [
+        "Mandelkern"
+      ],
+      "year": 2019,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-7213001",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "1-61"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Mandelkern2019Bounded",
+    "ref": {
+      "key": "Mandelkern2019Bounded",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2019,
+      "title": "Bounded Modality",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "secondary (Bounded Meaning abstract; Hawke & Steinert-Threlkeld abstract)",
+      "doi": "10.1215/00318108-7213001",
+      "volume": "128",
+      "pages": "1-61"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Bounded Meaning",
+      "authors": [
+        "Mandelkern"
+      ],
+      "year": 2024,
+      "venue": "Oxford University PressOxford",
+      "doi": "10.1093/oso/9780192870049.001.0001",
+      "type": "book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 0.492,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.49, author ok True, year ok True)"
+    ],
+    "key": "Mandelkern2024Bounded",
+    "ref": {
+      "key": "Mandelkern2024Bounded",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2024,
+      "title": "Bounded Meaning: The Dynamics of Interpretation",
+      "venue": "Oxford University Press",
+      "type": "book",
+      "seen": "abstract",
+      "doi": "10.1093/oso/9780192870049.001.0001"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Generalized Update Semantics",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2019,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzy076",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "795-835"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2019Generalized",
+    "ref": {
+      "key": "Goldstein2019Generalized",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2019,
+      "title": "Generalized Update Semantics",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/mind/fzy076",
+      "volume": "128",
+      "pages": "795-835"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Semantic expressivism for epistemic modals",
+      "authors": [
+        "Hawke",
+        "Steinert-Threlkeld"
+      ],
+      "year": 2020,
+      "venue": "Linguistics and Philosophy",
+      "doi": "10.1007/s10988-020-09295-7",
+      "type": "journal-article",
+      "volume": "44",
+      "pages": "475-511"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HawkeSteinertThrelkeld2021Semantic",
+    "ref": {
+      "key": "HawkeSteinertThrelkeld2021Semantic",
+      "authors": [
+        "Peter Hawke",
+        "Shane Steinert-Threlkeld"
+      ],
+      "year": 2021,
+      "title": "Semantic Expressivism for Epistemic Modals",
+      "venue": "Linguistics and Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10988-020-09295-7",
+      "volume": "44",
+      "pages": "475-511",
+      "note": "Crossref issued 2020 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Epistemic Modals in Hypothetical Reasoning",
+      "authors": [
+        "Aloni",
+        "Incurvati",
+        "Schl\u00f6der"
+      ],
+      "year": 2022,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-022-00517-x",
+      "type": "journal-article",
+      "volume": "88",
+      "pages": "3551-3581"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "AloniIncurvatiSchloder2023Epistemic",
+    "ref": {
+      "key": "AloniIncurvatiSchloder2023Epistemic",
+      "authors": [
+        "Maria Aloni",
+        "Luca Incurvati",
+        "Julian J. Schl\u00f6der"
+      ],
+      "year": 2023,
+      "title": "Epistemic Modals in Hypothetical Reasoning",
+      "venue": "Erkenntnis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10670-022-00517-x",
+      "volume": "88",
+      "pages": "3551-3581",
+      "note": "Crossref issued 2022 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Orthologic of Epistemic Modals",
+      "authors": [
+        "Holliday",
+        "Mandelkern"
+      ],
+      "year": 2024,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-024-09746-7",
+      "type": "journal-article",
+      "volume": "53",
+      "pages": "831-907"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HollidayMandelkern2024Orthologic",
+    "ref": {
+      "key": "HollidayMandelkern2024Orthologic",
+      "authors": [
+        "Wesley H. Holliday",
+        "Matthew Mandelkern"
+      ],
+      "year": 2024,
+      "title": "The Orthologic of Epistemic Modals",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "full text (arXiv preprint of 7 July 2022) + published abstract",
+      "doi": "10.1007/s10992-024-09746-7",
+      "volume": "53",
+      "pages": "831-907",
+      "source_url": "https://arxiv.org/abs/2203.02872"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Conditional and Modal Reasoning in Large Language Models",
+      "authors": [
+        "Holliday",
+        "Mandelkern",
+        "Zhang"
+      ],
+      "year": 2024,
+      "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+      "doi": "10.18653/v1/2024.emnlp-main.222",
+      "type": "proceedings-article",
+      "volume": null,
+      "pages": "3800-3821"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HollidayMandelkernZhang2024Conditional",
+    "ref": {
+      "key": "HollidayMandelkernZhang2024Conditional",
+      "authors": [
+        "Wesley H. Holliday",
+        "Matthew Mandelkern",
+        "Cedegao E. Zhang"
+      ],
+      "year": 2024,
+      "title": "Conditional and Modal Reasoning in Large Language Models",
+      "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+      "type": "proceedings",
+      "seen": "full text (sections 1, 4)",
+      "doi": "10.18653/v1/2024.emnlp-main.222",
+      "pages": "3800-3821"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Mighty Knowledge",
+      "authors": [
+        "Beddor",
+        "Goldstein",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2021,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil2021118518",
+      "type": "journal-article",
+      "volume": "118",
+      "pages": "229-269"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BeddorGoldstein2021Mighty",
+    "ref": {
+      "key": "BeddorGoldstein2021Mighty",
+      "authors": [
+        "Bob Beddor",
+        "Simon Goldstein"
+      ],
+      "year": 2021,
+      "title": "Mighty Knowledge",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil2021118518",
+      "volume": "118",
+      "pages": "229-269"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "This paper might change your mind",
+      "authors": [
+        "Dever",
+        "Schiller"
+      ],
+      "year": 2020,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12336",
+      "type": "journal-article",
+      "volume": "55",
+      "pages": "863-890"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DeverSchiller2021This",
+    "ref": {
+      "key": "DeverSchiller2021This",
+      "authors": [
+        "Josh Dever",
+        "Henry Ian Schiller"
+      ],
+      "year": 2021,
+      "title": "This Paper Might Change Your Mind",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/nous.12336",
+      "volume": "55",
+      "pages": "863-890",
+      "note": "Crossref issued 2020 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "On Truth-Conditions for<i>If</i>(but Not Quite Only<i>If</i>)",
+      "authors": [
+        "Gillies"
+      ],
+      "year": 2009,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-2009-002",
+      "type": "journal-article",
+      "volume": "118",
+      "pages": "325-349"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gillies2009Truth",
+    "ref": {
+      "key": "Gillies2009Truth",
+      "authors": [
+        "Anthony S. Gillies"
+      ],
+      "year": 2009,
+      "title": "On Truth-Conditions for If (but Not Quite Only If)",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.1215/00318108-2009-002",
+      "volume": "118",
+      "pages": "325-349"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "TALKING ABOUT WORLDS*",
+      "authors": [
+        "Mandelkern"
+      ],
+      "year": 2018,
+      "venue": "Philosophical Perspectives",
+      "doi": "10.1111/phpe.12112",
+      "type": "journal-article",
+      "volume": "32",
+      "pages": "298-325"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Mandelkern2018Talking",
+    "ref": {
+      "key": "Mandelkern2018Talking",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2018,
+      "title": "Talking about Worlds",
+      "venue": "Philosophical Perspectives",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpe.12112",
+      "volume": "32",
+      "pages": "298-325"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Alternatives and Truthmakers in Conditional Semantics",
+      "authors": [
+        "Santorio",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2018,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil20181151030",
+      "type": "journal-article",
+      "volume": "115",
+      "pages": "513-549"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2018Alternatives",
+    "ref": {
+      "key": "Santorio2018Alternatives",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2018,
+      "title": "Alternatives and Truthmakers in Conditional Semantics",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.5840/jphil20181151030",
+      "volume": "115",
+      "pages": "513-549"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactuals Without Possible Worlds",
+      "authors": [
+        "Fine",
+        "Journal of Philosophy, Inc."
+      ],
+      "year": 2012,
+      "venue": "Journal of Philosophy",
+      "doi": "10.5840/jphil201210938",
+      "type": "journal-article",
+      "volume": "109",
+      "pages": "221-246"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Fine2012Counterfactuals",
+    "ref": {
+      "key": "Fine2012Counterfactuals",
+      "authors": [
+        "Kit Fine"
+      ],
+      "year": 2012,
+      "title": "Counterfactuals without Possible Worlds",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.5840/jphil201210938",
+      "volume": "109",
+      "pages": "221-246"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Conditional Heresies",
+      "authors": [
+        "Cariani",
+        "Goldstein"
+      ],
+      "year": 2018,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12565",
+      "type": "journal-article",
+      "volume": "101",
+      "pages": "251-282"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "CarianiGoldstein2020Conditional",
+    "ref": {
+      "key": "CarianiGoldstein2020Conditional",
+      "authors": [
+        "Fabrizio Cariani",
+        "Simon Goldstein"
+      ],
+      "year": 2020,
+      "title": "Conditional Heresies",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12565",
+      "volume": "101",
+      "pages": "251-282",
+      "note": "Crossref issued 2018 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The counterfactual direct argument",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2019,
+      "venue": "Linguistics and Philosophy",
+      "doi": "10.1007/s10988-019-09272-9",
+      "type": "journal-article",
+      "volume": "43",
+      "pages": "193-232"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2020Counterfactual",
+    "ref": {
+      "key": "Goldstein2020Counterfactual",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2020,
+      "title": "The Counterfactual Direct Argument",
+      "venue": "Linguistics and Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10988-019-09272-9",
+      "volume": "43",
+      "pages": "193-232",
+      "note": "Crossref issued 2019 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Theory of Conditional Assertion",
+      "authors": [
+        "Goldstein",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2019,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil2019116620",
+      "type": "journal-article",
+      "volume": "116",
+      "pages": "293-318"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2019Conditional",
+    "ref": {
+      "key": "Goldstein2019Conditional",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2019,
+      "title": "A Theory of Conditional Assertion",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil2019116620",
+      "volume": "116",
+      "pages": "293-318"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Sly Pete in Dynamic Semantics",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2022,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-022-09660-w",
+      "type": "journal-article",
+      "volume": "51",
+      "pages": "1103-1117"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2022Sly",
+    "ref": {
+      "key": "Goldstein2022Sly",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2022,
+      "title": "Sly Pete in Dynamic Semantics",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10992-022-09660-w",
+      "volume": "51",
+      "pages": "1103-1117"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "How Strong Is a Counterfactual?",
+      "authors": [
+        "Boylan",
+        "Schultheis",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2021,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil2021118728",
+      "type": "journal-article",
+      "volume": "118",
+      "pages": "373-404"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BoylanSchultheis2021How",
+    "ref": {
+      "key": "BoylanSchultheis2021How",
+      "authors": [
+        "David Boylan",
+        "Ginger Schultheis"
+      ],
+      "year": 2021,
+      "title": "How Strong Is a Counterfactual?",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil2021118728",
+      "volume": "118",
+      "pages": "373-404"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Qualitative Thesis",
+      "authors": [
+        "Boylan",
+        "Schultheis",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2022,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil2022119414",
+      "type": "journal-article",
+      "volume": "119",
+      "pages": "196-229"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BoylanSchultheis2022Qualitative",
+    "ref": {
+      "key": "BoylanSchultheis2022Qualitative",
+      "authors": [
+        "David Boylan",
+        "Ginger Schultheis"
+      ],
+      "year": 2022,
+      "title": "The Qualitative Thesis",
+      "venue": "The Journal of Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.5840/jphil2022119414",
+      "volume": "119",
+      "pages": "196-229"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactuals and quantificational force: Experimental evidence for selectional semantics",
+      "authors": [
+        "Ramotowska",
+        "Marty",
+        "Romoli",
+        "Santorio"
+      ],
+      "year": 2025,
+      "venue": "Semantics and Pragmatics",
+      "doi": "10.3765/sp.18.6",
+      "type": "journal-article",
+      "volume": "18",
+      "pages": "1-43"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "RamotowskaEtAl2025Counterfactuals",
+    "ref": {
+      "key": "RamotowskaEtAl2025Counterfactuals",
+      "authors": [
+        "Sonia Ramotowska",
+        "Paul Marty",
+        "Jacopo Romoli",
+        "Paolo Santorio"
+      ],
+      "year": 2025,
+      "title": "Counterfactuals and Quantificational Force: Experimental Evidence for Selectional Semantics",
+      "venue": "Semantics and Pragmatics",
+      "type": "article",
+      "seen": "abstract (journal page)",
+      "doi": "10.3765/sp.18.6",
+      "volume": "18",
+      "pages": "1-43"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Free choice and homogeneity",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2019,
+      "venue": "Semantics and Pragmatics",
+      "doi": "10.3765/sp.12.23",
+      "type": "journal-article",
+      "volume": "12",
+      "pages": "1-53"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2019Free",
+    "ref": {
+      "key": "Goldstein2019Free",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2019,
+      "title": "Free Choice and Homogeneity",
+      "venue": "Semantics and Pragmatics",
+      "type": "article",
+      "seen": "abstract (journal page)",
+      "doi": "10.3765/sp.12.23",
+      "volume": "12",
+      "pages": "1-53"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Free Choice Impossibility Results",
+      "authors": [
+        "Goldstein"
+      ],
+      "year": 2019,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-019-09517-9",
+      "type": "journal-article",
+      "volume": "49",
+      "pages": "249-282"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Goldstein2020Free",
+    "ref": {
+      "key": "Goldstein2020Free",
+      "authors": [
+        "Simon Goldstein"
+      ],
+      "year": 2020,
+      "title": "Free Choice Impossibility Results",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "abstract (publisher page)",
+      "doi": "10.1007/s10992-019-09517-9",
+      "volume": "49",
+      "pages": "249-282",
+      "note": "Crossref issued 2019 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Free choice, simplification, and Innocent Inclusion",
+      "authors": [
+        "Bar-Lev",
+        "Fox"
+      ],
+      "year": 2020,
+      "venue": "Natural Language Semantics",
+      "doi": "10.1007/s11050-020-09162-y",
+      "type": "journal-article",
+      "volume": "28",
+      "pages": "175-223"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BarLevFox2020Free",
+    "ref": {
+      "key": "BarLevFox2020Free",
+      "authors": [
+        "Moshe E. Bar-Lev",
+        "Danny Fox"
+      ],
+      "year": 2020,
+      "title": "Free Choice, Simplification, and Innocent Inclusion",
+      "venue": "Natural Language Semantics",
+      "type": "article",
+      "seen": "title + SALT 2017 abstract",
+      "doi": "10.1007/s11050-020-09162-y",
+      "volume": "28",
+      "pages": "175-223"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Logic and conversation: The case of free choice",
+      "authors": [
+        "Aloni"
+      ],
+      "year": 2022,
+      "venue": "Semantics and Pragmatics",
+      "doi": "10.3765/sp.15.5",
+      "type": "journal-article",
+      "volume": "15",
+      "pages": "1-60"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Aloni2022Logic",
+    "ref": {
+      "key": "Aloni2022Logic",
+      "authors": [
+        "Maria Aloni"
+      ],
+      "year": 2022,
+      "title": "Logic and Conversation: The Case of Free Choice",
+      "venue": "Semantics and Pragmatics",
+      "type": "article",
+      "seen": "abstract (journal page)",
+      "doi": "10.3765/sp.15.5",
+      "volume": "15",
+      "pages": "1-60"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "State-Based Modal Logics for Free Choice",
+      "authors": [
+        "Aloni",
+        "Anttila",
+        "Yang"
+      ],
+      "year": 2024,
+      "venue": "Notre Dame Journal of Formal Logic",
+      "doi": "10.1215/00294527-2024-0027",
+      "type": "journal-article",
+      "volume": "65",
+      "pages": "367-413"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "AloniAnttilaYang2024State",
+    "ref": {
+      "key": "AloniAnttilaYang2024State",
+      "authors": [
+        "Maria Aloni",
+        "Aleksi Anttila",
+        "Fan Yang"
+      ],
+      "year": 2024,
+      "title": "State-Based Modal Logics for Free Choice",
+      "venue": "Notre Dame Journal of Formal Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1215/00294527-2024-0027",
+      "volume": "65",
+      "pages": "367-413"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Homogeneity or implicature: An experimental investigation of free choice",
+      "authors": [
+        "Tieu",
+        "Bill",
+        "Romoli"
+      ],
+      "year": 2019,
+      "venue": "Semantics and Linguistic Theory",
+      "doi": "10.3765/salt.v29i0.4631",
+      "type": "journal-article",
+      "volume": "29",
+      "pages": "706"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "TieuBillRomoli2019Homogeneity",
+    "ref": {
+      "key": "TieuBillRomoli2019Homogeneity",
+      "authors": [
+        "Lyn Tieu",
+        "Cory Bill",
+        "Jacopo Romoli"
+      ],
+      "year": 2019,
+      "title": "Homogeneity or Implicature: An Experimental Investigation of Free Choice",
+      "venue": "Semantics and Linguistic Theory",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.3765/salt.v29i0.4631",
+      "volume": "29",
+      "pages": "706"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Disjunction and Possibility",
+      "authors": [
+        "Mandelkern"
+      ],
+      "year": 2024,
+      "venue": "Philosophical Perspectives",
+      "doi": "10.1111/phpe.12213",
+      "type": "journal-article",
+      "volume": "38",
+      "pages": "211-221"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Mandelkern2024Disjunction",
+    "ref": {
+      "key": "Mandelkern2024Disjunction",
+      "authors": [
+        "Matthew Mandelkern"
+      ],
+      "year": 2024,
+      "title": "Disjunction and Possibility",
+      "venue": "Philosophical Perspectives",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpe.12213",
+      "volume": "38",
+      "pages": "211-221"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A semantic theory of redundancy",
+      "authors": [
+        "Blumberg",
+        "Goldstein"
+      ],
+      "year": 2025,
+      "venue": "Linguistics and Philosophy",
+      "doi": "10.1007/s10988-025-09440-0",
+      "type": "journal-article",
+      "volume": "48",
+      "pages": "787-821"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BlumbergGoldstein2025Semantic",
+    "ref": {
+      "key": "BlumbergGoldstein2025Semantic",
+      "authors": [
+        "Kyle Blumberg",
+        "Simon Goldstein"
+      ],
+      "year": 2025,
+      "title": "A Semantic Theory of Redundancy",
+      "venue": "Linguistics and Philosophy",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10988-025-09440-0",
+      "volume": "48",
+      "pages": "787-821"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Simplification is not Scalar Strengthening",
+      "authors": [
+        "Santorio"
+      ],
+      "year": 2021,
+      "venue": "Semantics and Linguistic Theory",
+      "doi": "10.3765/salt.v30i0.4856",
+      "type": "journal-article",
+      "volume": "30",
+      "pages": "624"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2021Simplification",
+    "ref": {
+      "key": "Santorio2021Simplification",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2021,
+      "title": "Simplification is not Scalar Strengthening",
+      "venue": "Semantics and Linguistic Theory",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.3765/salt.v30i0.4856",
+      "volume": "30",
+      "pages": "624"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Does Chance Undermine Would?",
+      "authors": [
+        "Kocurek"
+      ],
+      "year": 2021,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzab055",
+      "type": "journal-article",
+      "volume": "131",
+      "pages": "747-787"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Kocurek2022Does",
+    "ref": {
+      "key": "Kocurek2022Does",
+      "authors": [
+        "Alexander W. Kocurek"
+      ],
+      "year": 2022,
+      "title": "Does Chance Undermine Would?",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/mind/fzab055",
+      "volume": "131",
+      "pages": "747-787",
+      "note": "Crossref issued 2021 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Counterfactual skepticism is (just) skepticism",
+      "authors": [
+        "Boylan"
+      ],
+      "year": 2023,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12957",
+      "type": "journal-article",
+      "volume": "108",
+      "pages": "259-286"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Boylan2024Counterfactual",
+    "ref": {
+      "key": "Boylan2024Counterfactual",
+      "authors": [
+        "David Boylan"
+      ],
+      "year": 2024,
+      "title": "Counterfactual Skepticism is (Just) Skepticism",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12957",
+      "volume": "108",
+      "pages": "259-286",
+      "note": "Crossref issued 2023 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A New Resolution of the Judy Benjamin Problem",
+      "authors": [
+        "Douven",
+        "Romeijn"
+      ],
+      "year": 2011,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzr051",
+      "type": "journal-article",
+      "volume": "120",
+      "pages": "637-670"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DouvenRomeijn2011New",
+    "ref": {
+      "key": "DouvenRomeijn2011New",
+      "authors": [
+        "Igor Douven",
+        "Jan-Willem Romeijn"
+      ],
+      "year": 2011,
+      "title": "A New Resolution of the Judy Benjamin Problem",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1093/mind/fzr051",
+      "volume": "120",
+      "pages": "637-670"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Learning Conditional Information",
+      "authors": [
+        "DOUVEN"
+      ],
+      "year": 2012,
+      "venue": "Mind &amp; Language",
+      "doi": "10.1111/j.1468-0017.2012.01443.x",
+      "type": "journal-article",
+      "volume": "27",
+      "pages": "239-263"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Douven2012Learning",
+    "ref": {
+      "key": "Douven2012Learning",
+      "authors": [
+        "Igor Douven"
+      ],
+      "year": 2012,
+      "title": "Learning Conditional Information",
+      "venue": "Mind & Language",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/j.1468-0017.2012.01443.x",
+      "volume": "27",
+      "pages": "239-263"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Learning Conditional Information by Jeffrey Imaging on Stalnaker Conditionals",
+      "authors": [
+        "G\u00fcnther"
+      ],
+      "year": 2017,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-017-9452-z",
+      "type": "journal-article",
+      "volume": "47",
+      "pages": "851-876"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gunther2018Learning",
+    "ref": {
+      "key": "Gunther2018Learning",
+      "authors": [
+        "Mario G\u00fcnther"
+      ],
+      "year": 2018,
+      "title": "Learning Conditional Information by Jeffrey Imaging on Stalnaker Conditionals",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "abstract (publisher page)",
+      "doi": "10.1007/s10992-017-9452-z",
+      "volume": "47",
+      "pages": "851-876",
+      "note": "Crossref issued 2017 (online); volume 47 (2018); committee key Gunther2017Learning"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Learning from Conditionals",
+      "authors": [
+        "Eva",
+        "Hartmann",
+        "Rad"
+      ],
+      "year": 2019,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzz025",
+      "type": "journal-article",
+      "volume": "129",
+      "pages": "461-508"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EvaHartmannRad2020Learning",
+    "ref": {
+      "key": "EvaHartmannRad2020Learning",
+      "authors": [
+        "Benjamin Eva",
+        "Stephan Hartmann",
+        "Soroush Rafiee Rad"
+      ],
+      "year": 2020,
+      "title": "Learning from Conditionals",
+      "venue": "Mind",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/mind/fzz025",
+      "volume": "129",
+      "pages": "461-508",
+      "note": "Crossref issued 2019 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The logic of partial supposition",
+      "authors": [
+        "Eva",
+        "Hartmann"
+      ],
+      "year": 2021,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anaa060",
+      "type": "journal-article",
+      "volume": "81",
+      "pages": "215-224"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EvaHartmann2021Logic",
+    "ref": {
+      "key": "EvaHartmann2021Logic",
+      "authors": [
+        "Benjamin Eva",
+        "Stephan Hartmann"
+      ],
+      "year": 2021,
+      "title": "The Logic of Partial Supposition",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anaa060",
+      "volume": "81",
+      "pages": "215-224"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A harder dilemma for partial subjunctive supposition",
+      "authors": [
+        "Nielsen"
+      ],
+      "year": 2022,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anab082",
+      "type": "journal-article",
+      "volume": "82",
+      "pages": "585-592"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Nielsen2022Harder",
+    "ref": {
+      "key": "Nielsen2022Harder",
+      "authors": [
+        "Michael Nielsen"
+      ],
+      "year": 2022,
+      "title": "A Harder Dilemma for Partial Subjunctive Supposition",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anab082",
+      "volume": "82",
+      "pages": "585-592"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Four Approaches to Supposition",
+      "authors": [
+        "Eva",
+        "Shear",
+        "Fitelson"
+      ],
+      "year": 2022,
+      "venue": "Ergo an Open Access Journal of Philosophy",
+      "doi": "10.3998/ergo.2227",
+      "type": "journal-article",
+      "volume": "8",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "EvaShearFitelson2022Four",
+    "ref": {
+      "key": "EvaShearFitelson2022Four",
+      "authors": [
+        "Benjamin Eva",
+        "Ted Shear",
+        "Branden Fitelson"
+      ],
+      "year": 2022,
+      "title": "Four Approaches to Supposition",
+      "venue": "Ergo",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.3998/ergo.2227",
+      "volume": "8"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Learning conditionals",
+      "authors": [
+        "Schulz"
+      ],
+      "year": 2024,
+      "venue": "Inquiry",
+      "doi": "10.1080/0020174x.2024.2427060",
+      "type": "journal-article",
+      "volume": "68",
+      "pages": "2401-2416"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Schulz2025Learning",
+    "ref": {
+      "key": "Schulz2025Learning",
+      "authors": [
+        "Moritz Schulz"
+      ],
+      "year": 2025,
+      "title": "Learning Conditionals",
+      "venue": "Inquiry",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1080/0020174x.2024.2427060",
+      "volume": "68",
+      "pages": "2401-2416",
+      "note": "Crossref issued 2024 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The relevance effect and conditionals",
+      "authors": [
+        "Skovgaard-Olsen",
+        "Singmann",
+        "Klauer"
+      ],
+      "year": 2016,
+      "venue": "Cognition",
+      "doi": "10.1016/j.cognition.2015.12.017",
+      "type": "journal-article",
+      "volume": "150",
+      "pages": "26-36"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "SkovgaardOlsenEtAl2016Relevance",
+    "ref": {
+      "key": "SkovgaardOlsenEtAl2016Relevance",
+      "authors": [
+        "Niels Skovgaard-Olsen",
+        "Henrik Singmann",
+        "Karl Christoph Klauer"
+      ],
+      "year": 2016,
+      "title": "The Relevance Effect and Conditionals",
+      "venue": "Cognition",
+      "type": "article",
+      "seen": "secondary (SEP)",
+      "doi": "10.1016/j.cognition.2015.12.017",
+      "volume": "150",
+      "pages": "26-36"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Causal Theory of Counterfactuals",
+      "authors": [
+        "Hiddleston"
+      ],
+      "year": 2005,
+      "venue": "Nous",
+      "doi": "10.1111/j.0029-4624.2005.00542.x",
+      "type": "journal-article",
+      "volume": "39",
+      "pages": "632-657"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hiddleston2005Causal",
+    "ref": {
+      "key": "Hiddleston2005Causal",
+      "authors": [
+        "Eric Hiddleston"
+      ],
+      "year": 2005,
+      "title": "A Causal Theory of Counterfactuals",
+      "venue": "No\u00fbs",
+      "type": "article",
+      "seen": "title",
+      "doi": "10.1111/j.0029-4624.2005.00542.x",
+      "volume": "39",
+      "pages": "632-657"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Interventionist counterfactuals",
+      "authors": [
+        "Briggs"
+      ],
+      "year": 2012,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-012-9908-5",
+      "type": "journal-article",
+      "volume": "160",
+      "pages": "139-166"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Briggs2012Interventionist",
+    "ref": {
+      "key": "Briggs2012Interventionist",
+      "authors": [
+        "Rachael Briggs"
+      ],
+      "year": 2012,
+      "title": "Interventionist Counterfactuals",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract (publisher page) + SEP summary",
+      "doi": "10.1007/s11098-012-9908-5",
+      "volume": "160",
+      "pages": "139-166"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Two switches in the theory of counterfactuals",
+      "authors": [
+        "Ciardelli",
+        "Zhang",
+        "Champollion"
+      ],
+      "year": 2018,
+      "venue": "Linguistics and Philosophy",
+      "doi": "10.1007/s10988-018-9232-4",
+      "type": "journal-article",
+      "volume": "41",
+      "pages": "577-621"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "CiardelliZhangChampollion2018Two",
+    "ref": {
+      "key": "CiardelliZhangChampollion2018Two",
+      "authors": [
+        "Ivano Ciardelli",
+        "Linmin Zhang",
+        "Lucas Champollion"
+      ],
+      "year": 2018,
+      "title": "Two Switches in the Theory of Counterfactuals",
+      "venue": "Linguistics and Philosophy",
+      "type": "article",
+      "seen": "full text (sections 1-3)",
+      "doi": "10.1007/s10988-018-9232-4",
+      "volume": "41",
+      "pages": "577-621"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Filtering Semantics for Counterfactuals: Bridging Causal Models and Premise Semantics",
+      "authors": [
+        "Santorio"
+      ],
+      "year": 2015,
+      "venue": "Semantics and Linguistic Theory",
+      "doi": "10.3765/salt.v24i0.2430",
+      "type": "journal-article",
+      "volume": "24",
+      "pages": "494"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Santorio2014Filtering",
+    "ref": {
+      "key": "Santorio2014Filtering",
+      "authors": [
+        "Paolo Santorio"
+      ],
+      "year": 2015,
+      "title": "Filtering Semantics for Counterfactuals: Bridging Causal Models and Premise Semantics",
+      "venue": "Semantics and Linguistic Theory",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.3765/salt.v24i0.2430",
+      "volume": "24",
+      "pages": "494",
+      "note": "SALT 24 (2014 conference); Crossref year 2015"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Against Counterfactual Miracles",
+      "authors": [
+        "Dorr"
+      ],
+      "year": 2016,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-3453187",
+      "type": "journal-article",
+      "volume": "125",
+      "pages": "241-286"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Dorr2016Against",
+    "ref": {
+      "key": "Dorr2016Against",
+      "authors": [
+        "Cian Dorr"
+      ],
+      "year": 2016,
+      "title": "Against Counterfactual Miracles",
+      "venue": "The Philosophical Review",
+      "type": "article",
+      "seen": "abstract (author homepage)",
+      "doi": "10.1215/00318108-3453187",
+      "volume": "125",
+      "pages": "241-286"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Causal counterfactuals without miracles or backtracking",
+      "authors": [
+        "Gallow"
+      ],
+      "year": 2022,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12925",
+      "type": "journal-article",
+      "volume": "107",
+      "pages": "439-469"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gallow2023Causal",
+    "ref": {
+      "key": "Gallow2023Causal",
+      "authors": [
+        "J. Dmitri Gallow"
+      ],
+      "year": 2023,
+      "title": "Causal Counterfactuals without Miracles or Backtracking",
+      "venue": "Philosophy and Phenomenological Research",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/phpr.12925",
+      "volume": "107",
+      "pages": "439-469",
+      "note": "Crossref issued 2022 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Tossing Morgenbesser\u2019s Coin",
+      "authors": [
+        "Goodsell"
+      ],
+      "year": 2022,
+      "venue": "Analysis",
+      "doi": "10.1093/analys/anab091",
+      "type": "journal-article",
+      "volume": "82",
+      "pages": "214-221"
+    },
+    "title_similarity": 0.981,
+    "source": "crossref-doi",
+    "key": "Goodsell2022Tossing",
+    "ref": {
+      "key": "Goodsell2022Tossing",
+      "authors": [
+        "Zachary Goodsell"
+      ],
+      "year": 2022,
+      "title": "Tossing Morgenbesser's Coin",
+      "venue": "Analysis",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1093/analys/anab091",
+      "volume": "82",
+      "pages": "214-221"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Backtracking through interventions: An exogenous intervention model for counterfactual semantics",
+      "authors": [
+        "Vandenburgh"
+      ],
+      "year": 2022,
+      "venue": "Mind &amp; Language",
+      "doi": "10.1111/mila.12447",
+      "type": "journal-article",
+      "volume": "38",
+      "pages": "981-999"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Vandenburgh2023Backtracking",
+    "ref": {
+      "key": "Vandenburgh2023Backtracking",
+      "authors": [
+        "Jonathan Vandenburgh"
+      ],
+      "year": 2023,
+      "title": "Backtracking through Interventions: An Exogenous Intervention Model for Counterfactual Semantics",
+      "venue": "Mind & Language",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1111/mila.12447",
+      "volume": "38",
+      "pages": "981-999",
+      "note": "Crossref issued 2022 (online)"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Causal modeling semantics for counterfactuals with disjunctive antecedents",
+      "authors": [
+        "Rosella",
+        "Sprenger"
+      ],
+      "year": 2024,
+      "venue": "Annals of Pure and Applied Logic",
+      "doi": "10.1016/j.apal.2023.103336",
+      "type": "journal-article",
+      "volume": "175",
+      "pages": "103336"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "RosellaSprenger2024Causal",
+    "ref": {
+      "key": "RosellaSprenger2024Causal",
+      "authors": [
+        "Giuliano Rosella",
+        "Jan Sprenger"
+      ],
+      "year": 2024,
+      "title": "Causal Modeling Semantics for Counterfactuals with Disjunctive Antecedents",
+      "venue": "Annals of Pure and Applied Logic",
+      "type": "article",
+      "seen": "secondary (repository record and search summary)",
+      "doi": "10.1016/j.apal.2023.103336",
+      "volume": "175",
+      "pages": "103336"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "An event algebra for causal counterfactuals",
+      "authors": [
+        "Wysocki"
+      ],
+      "year": 2023,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-023-02015-4",
+      "type": "journal-article",
+      "volume": "180",
+      "pages": "3533-3565"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wysocki2023Event",
+    "ref": {
+      "key": "Wysocki2023Event",
+      "authors": [
+        "Tomasz Wysocki"
+      ],
+      "year": 2023,
+      "title": "An Event Algebra for Causal Counterfactuals",
+      "venue": "Philosophical Studies",
+      "type": "article",
+      "seen": "abstract (publisher page)",
+      "doi": "10.1007/s11098-023-02015-4",
+      "volume": "180",
+      "pages": "3533-3565"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Multiteam Semantics for Interventionist Counterfactuals: Probabilities and Causation",
+      "authors": [
+        "Barbero",
+        "Sandu"
+      ],
+      "year": 2024,
+      "venue": "Journal of Philosophical Logic",
+      "doi": "10.1007/s10992-024-09777-0",
+      "type": "journal-article",
+      "volume": "53",
+      "pages": "1537-1577"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BarberoSandu2024Multiteam",
+    "ref": {
+      "key": "BarberoSandu2024Multiteam",
+      "authors": [
+        "Fausto Barbero",
+        "Gabriel Sandu"
+      ],
+      "year": 2024,
+      "title": "Multiteam Semantics for Interventionist Counterfactuals: Probabilities and Causation",
+      "venue": "Journal of Philosophical Logic",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s10992-024-09777-0",
+      "volume": "53",
+      "pages": "1537-1577"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Probabilistic Reasoning Across the Causal Hierarchy",
+      "authors": [
+        "Ibeling",
+        "Icard"
+      ],
+      "year": 2020,
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v34i06.6577",
+      "type": "journal-article",
+      "volume": "34",
+      "pages": "10170-10177"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "IbelingIcard2020Probabilistic",
+    "ref": {
+      "key": "IbelingIcard2020Probabilistic",
+      "authors": [
+        "Duligur Ibeling",
+        "Thomas Icard"
+      ],
+      "year": 2020,
+      "title": "Probabilistic Reasoning Across the Causal Hierarchy",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "type": "proceedings",
+      "seen": "abstract",
+      "doi": "10.1609/aaai.v34i06.6577",
+      "volume": "34",
+      "pages": "10170-10177"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Causal and Evidential Conditionals",
+      "authors": [
+        "G\u00fcnther"
+      ],
+      "year": 2022,
+      "venue": "Minds and Machines",
+      "doi": "10.1007/s11023-022-09606-w",
+      "type": "journal-article",
+      "volume": "32",
+      "pages": "613-626"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gunther2022Causal",
+    "ref": {
+      "key": "Gunther2022Causal",
+      "authors": [
+        "Mario G\u00fcnther"
+      ],
+      "year": 2022,
+      "title": "Causal and Evidential Conditionals",
+      "venue": "Minds and Machines",
+      "type": "article",
+      "seen": "abstract",
+      "doi": "10.1007/s11023-022-09606-w",
+      "volume": "32",
+      "pages": "613-626"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Ramsey Test Analysis of Causation for Causal Models",
+      "authors": [
+        "Andreas",
+        "G\u00fcnther"
+      ],
+      "year": 2021,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1093/bjps/axy074",
+      "type": "journal-article",
+      "volume": "72",
+      "pages": "587-615"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "AndreasGunther2021Ramsey",
+    "ref": {
+      "key": "AndreasGunther2021Ramsey",
+      "authors": [
+        "Holger Andreas",
+        "Mario G\u00fcnther"
+      ],
+      "year": 2021,
+      "title": "A Ramsey Test Analysis of Causation for Causal Models",
+      "venue": "The British Journal for the Philosophy of Science",
+      "type": "article",
+      "seen": "author's summary (committee map)",
+      "doi": "10.1093/bjps/axy074",
+      "volume": "72",
+      "pages": "587-615"
+    }
+  }
+]

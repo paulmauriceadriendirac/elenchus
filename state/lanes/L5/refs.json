@@ -1,0 +1,2253 @@
+[
+ {
+  "key": "BourgetChalmers2023",
+  "authors": [
+   "David Bourget",
+   "David J. Chalmers"
+  ],
+  "year": 2023,
+  "title": "Philosophers on Philosophy: The 2020 PhilPapers Survey",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "seen": "figures via state/calibration/brief.md (full text read by field-surveyor)",
+  "doi": "10.3998/phimp.2109",
+  "volume": "23"
+ },
+ {
+  "key": "Lewis1979",
+  "authors": [
+   "David Lewis"
+  ],
+  "year": 1979,
+  "title": "Attitudes De Dicto and De Se",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "quoted passages via SEP (Egan & Titelbaum 2022)",
+  "doi": "10.2307/2184843",
+  "volume": "88",
+  "pages": "513-543"
+ },
+ {
+  "key": "Perry1979",
+  "authors": [
+   "John Perry"
+  ],
+  "year": 1979,
+  "title": "The Problem of the Essential Indexical",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "quoted passages via SEP",
+  "doi": "10.2307/2214792",
+  "volume": "13",
+  "pages": "3-21"
+ },
+ {
+  "key": "Elga2000",
+  "authors": [
+   "Adam Elga"
+  ],
+  "year": 2000,
+  "title": "Self-Locating Belief and the Sleeping Beauty Problem",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "secondary (Schwarz 2025; SEP); not re-read",
+  "doi": "10.1093/analys/60.2.143",
+  "volume": "60",
+  "pages": "143-147"
+ },
+ {
+  "key": "Lewis2001",
+  "authors": [
+   "David Lewis"
+  ],
+  "year": 2001,
+  "title": "Sleeping Beauty: Reply to Elga",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "secondary (Schwarz 2025)",
+  "doi": "10.1093/analys/61.3.171",
+  "volume": "61",
+  "pages": "171-176"
+ },
+ {
+  "key": "Arntzenius2002",
+  "authors": [
+   "Frank Arntzenius"
+  ],
+  "year": 2002,
+  "title": "Reflections on Sleeping Beauty",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "title; secondary (Schwarz 2025)",
+  "doi": "10.1093/analys/62.1.53",
+  "volume": "62",
+  "pages": "53-62"
+ },
+ {
+  "key": "Dorr2002",
+  "authors": [
+   "Cian Dorr"
+  ],
+  "year": 2002,
+  "title": "Sleeping Beauty: In Defence of Elga",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "abstract (committee bibliography); secondary (Schwarz 2025)",
+  "doi": "10.1093/analys/62.4.292",
+  "volume": "62",
+  "pages": "292-296"
+ },
+ {
+  "key": "Arntzenius2003",
+  "authors": [
+   "Frank Arntzenius"
+  ],
+  "year": 2003,
+  "title": "Some Problems for Conditionalization and Reflection",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "seen": "secondary (SEP; Schwarz 2025)",
+  "doi": "10.5840/jphil2003100729",
+  "volume": "100",
+  "pages": "356-370"
+ },
+ {
+  "key": "Horgan2004",
+  "authors": [
+   "Terry Horgan"
+  ],
+  "year": 2004,
+  "title": "Sleeping Beauty Awakened: New Odds at the Dawn of the New Day",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "title; secondary (Schwarz 2025)",
+  "doi": "10.1093/analys/64.1.10",
+  "volume": "64",
+  "pages": "10-21"
+ },
+ {
+  "key": "Hitchcock2004",
+  "authors": [
+   "Christopher Hitchcock"
+  ],
+  "year": 2004,
+  "title": "Beauty and the Bets",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title; secondary",
+  "doi": "10.1023/b:synt.0000024889.29125.c0",
+  "volume": "139",
+  "pages": "405-420"
+ },
+ {
+  "key": "Elga2004",
+  "authors": [
+   "Adam Elga"
+  ],
+  "year": 2004,
+  "title": "Defeating Dr. Evil with Self-Locating Belief",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/j.1933-1592.2004.tb00400.x",
+  "volume": "69",
+  "pages": "383-396"
+ },
+ {
+  "key": "KierlandMonton2005",
+  "authors": [
+   "Brian Kierland",
+   "Bradley Monton"
+  ],
+  "year": 2005,
+  "title": "Minimizing Inaccuracy for Self-Locating Beliefs",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "secondary (Schwarz 2025 fn.20; Kim 2022 abstract)",
+  "doi": "10.1111/j.1933-1592.2005.tb00533.x",
+  "volume": "70",
+  "pages": "384-395"
+ },
+ {
+  "key": "Halpern2005",
+  "authors": [
+   "Joseph Y. Halpern"
+  ],
+  "year": 2005,
+  "title": "Sleeping Beauty Reconsidered: Conditioning and Reflection in Asynchronous Systems",
+  "venue": "Oxford Studies in Epistemology, vol. 1",
+  "type": "chapter",
+  "seen": "abstract",
+  "doi": "10.1093/oso/9780199285891.003.0005",
+  "pages": "111-142"
+ },
+ {
+  "key": "Bostrom2007",
+  "authors": [
+   "Nick Bostrom"
+  ],
+  "year": 2007,
+  "title": "Sleeping Beauty and Self-Location: A Hybrid Model",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title; secondary",
+  "doi": "10.1007/s11229-006-9010-7",
+  "volume": "157",
+  "pages": "59-78"
+ },
+ {
+  "key": "Meacham2008",
+  "authors": [
+   "Christopher J. G. Meacham"
+  ],
+  "year": 2008,
+  "title": "Sleeping Beauty and the Dynamics of De Se Beliefs",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "title; secondary (IHR 2022 statement of compartmentalized conditionalization)",
+  "doi": "10.1007/s11098-006-9036-1",
+  "volume": "138",
+  "pages": "245-269"
+ },
+ {
+  "key": "Titelbaum2008",
+  "authors": [
+   "Michael G. Titelbaum"
+  ],
+  "year": 2008,
+  "title": "The Relevance of Self-Locating Beliefs",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1215/00318108-2008-016",
+  "volume": "117",
+  "pages": "555-606"
+ },
+ {
+  "key": "DraperPust2008",
+  "authors": [
+   "Kai Draper",
+   "Joel Pust"
+  ],
+  "year": 2008,
+  "title": "Diachronic Dutch Books and Sleeping Beauty",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s11229-007-9226-1",
+  "volume": "164",
+  "pages": "281-287"
+ },
+ {
+  "key": "Kim2009",
+  "authors": [
+   "Namjoong Kim"
+  ],
+  "year": 2009,
+  "title": "Sleeping Beauty and Shifted Jeffrey Conditionalization",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "secondary (SEP)",
+  "doi": "10.1007/s11229-008-9443-2",
+  "volume": "168",
+  "pages": "295-312"
+ },
+ {
+  "key": "Briggs2010",
+  "authors": [
+   "Rachael Briggs"
+  ],
+  "year": 2010,
+  "title": "Putting a Value on Beauty",
+  "venue": "Oxford Studies in Epistemology, vol. 3",
+  "type": "chapter",
+  "seen": "title; secondary (Schwarz 2025)",
+  "pages": "3-34"
+ },
+ {
+  "key": "Schulz2010",
+  "authors": [
+   "Moritz Schulz"
+  ],
+  "year": 2010,
+  "title": "The Dynamics of Indexical Belief",
+  "venue": "Erkenntnis",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s10670-010-9209-3",
+  "volume": "72",
+  "pages": "337-351"
+ },
+ {
+  "key": "Bradley2012",
+  "authors": [
+   "Darren Bradley"
+  ],
+  "year": 2012,
+  "title": "Four Problems About Self-Locating Belief",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1215/00318108-1539071",
+  "volume": "121",
+  "pages": "149-177"
+ },
+ {
+  "key": "Moss2012",
+  "authors": [
+   "Sarah Moss"
+  ],
+  "year": 2012,
+  "title": "Updating as Communication",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "secondary (SEP)",
+  "doi": "10.1111/j.1933-1592.2011.00572.x",
+  "volume": "85",
+  "pages": "225-248"
+ },
+ {
+  "key": "Titelbaum2012",
+  "authors": [
+   "Michael G. Titelbaum"
+  ],
+  "year": 2012,
+  "title": "An Embarrassment for Double-Halfers",
+  "venue": "Thought: A Journal of Philosophy",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1002/tht3.21",
+  "volume": "1",
+  "pages": "146-151"
+ },
+ {
+  "key": "Titelbaum2013Ten",
+  "authors": [
+   "Michael G. Titelbaum"
+  ],
+  "year": 2013,
+  "title": "Ten Reasons to Care About the Sleeping Beauty Problem",
+  "venue": "Philosophy Compass",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phc3.12080",
+  "volume": "8",
+  "pages": "1003-1017"
+ },
+ {
+  "key": "Titelbaum2013Quitting",
+  "authors": [
+   "Michael G. Titelbaum"
+  ],
+  "year": 2013,
+  "title": "Quitting Certainties: A Bayesian Framework Modeling Degrees of Belief",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "seen": "secondary (SEP; IHR 2022 fn.23 quotation of Titelbaum 2016)",
+  "doi": "10.1093/acprof:oso/9780199658305.001.0001"
+ },
+ {
+  "key": "Hawley2013",
+  "authors": [
+   "Patrick Hawley"
+  ],
+  "year": 2013,
+  "title": "Inertia, Optimism and Beauty",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/j.1468-0068.2010.00817.x",
+  "volume": "47",
+  "pages": "85-103"
+ },
+ {
+  "key": "CappelenDever2013",
+  "authors": [
+   "Herman Cappelen",
+   "Josh Dever"
+  ],
+  "year": 2013,
+  "title": "The Inessential Indexical",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "seen": "author description (committee map); SEP summary and quotation",
+  "doi": "10.1093/acprof:oso/9780199686742.001.0001"
+ },
+ {
+  "key": "Chalmers2011",
+  "authors": [
+   "David J. Chalmers"
+  ],
+  "year": 2011,
+  "title": "Frege's Puzzle and the Objects of Credence",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "title; cited in SEP and Mahtani 2024 chapter abstract",
+  "doi": "10.1093/mind/fzr046",
+  "volume": "120",
+  "pages": "587-635"
+ },
+ {
+  "key": "Conitzer2015Devastating",
+  "authors": [
+   "Vincent Conitzer"
+  ],
+  "year": 2015,
+  "title": "A Devastating Example for the Halfer Rule",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract (Springer page)",
+  "doi": "10.1007/s11098-014-0384-y",
+  "volume": "172",
+  "pages": "1985-1992"
+ },
+ {
+  "key": "Conitzer2015Dutch",
+  "authors": [
+   "Vincent Conitzer"
+  ],
+  "year": 2015,
+  "title": "A Dutch Book Against Sleeping Beauties Who Are Evidential Decision Theorists",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "abstract (arXiv)",
+  "doi": "10.1007/s11229-015-0691-7",
+  "volume": "192",
+  "pages": "2887-2899"
+ },
+ {
+  "key": "Schwarz2015Fission",
+  "authors": [
+   "Wolfgang Schwarz"
+  ],
+  "year": 2015,
+  "title": "Belief Update across Fission",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1093/bjps/axu001",
+  "volume": "66",
+  "pages": "659-682"
+ },
+ {
+  "key": "Hedden2015",
+  "authors": [
+   "Brian Hedden"
+  ],
+  "year": 2015,
+  "title": "Time-Slice Rationality",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "title; secondary",
+  "doi": "10.1093/mind/fzu181",
+  "volume": "124",
+  "pages": "449-491"
+ },
+ {
+  "key": "Moss2015",
+  "authors": [
+   "Sarah Moss"
+  ],
+  "year": 2015,
+  "title": "Time-Slice Epistemology and Action under Indeterminacy",
+  "venue": "Oxford Studies in Epistemology, vol. 5",
+  "type": "chapter",
+  "seen": "title",
+  "doi": "10.1093/acprof:oso/9780198722762.003.0006",
+  "pages": "172-194"
+ },
+ {
+  "key": "CisewskiEtAl2016",
+  "authors": [
+   "Jessi Cisewski",
+   "Joseph B. Kadane",
+   "Mark J. Schervish",
+   "Teddy Seidenfeld",
+   "Rafael Stern"
+  ],
+  "year": 2016,
+  "title": "Sleeping Beauty's Credences",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/685741",
+  "volume": "83",
+  "pages": "324-347"
+ },
+ {
+  "key": "Schwarz2017",
+  "authors": [
+   "Wolfgang Schwarz"
+  ],
+  "year": 2017,
+  "title": "Diachronic Norms for Self-Locating Beliefs",
+  "venue": "Ergo",
+  "type": "article",
+  "seen": "full text (author PDF), opening sections",
+  "doi": "10.3998/ergo.12405314.0004.025",
+  "volume": "4",
+  "pages": "709-738",
+  "source_url": "https://www.umsu.de/papers/diachronic.pdf"
+ },
+ {
+  "key": "Spohn2017",
+  "authors": [
+   "Wolfgang Spohn"
+  ],
+  "year": 2017,
+  "title": "The Epistemology and Auto-Epistemology of Temporal Self-Location and Forgetfulness",
+  "venue": "Ergo",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.3998/ergo.12405314.0004.013",
+  "volume": "4",
+  "pages": "359-418"
+ },
+ {
+  "key": "ArntzeniusDorr2017",
+  "authors": [
+   "Frank Arntzenius",
+   "Cian Dorr"
+  ],
+  "year": 2017,
+  "title": "Self-Locating Priors and Cosmological Measures",
+  "venue": "The Philosophy of Cosmology (Cambridge University Press)",
+  "type": "chapter",
+  "seen": "title; cited in IHR 2022 and Schwarz 2025",
+  "doi": "10.1017/9781316535783.021",
+  "pages": "396-428"
+ },
+ {
+  "key": "SebensCarroll2018",
+  "authors": [
+   "Charles T. Sebens",
+   "Sean M. Carroll"
+  ],
+  "year": 2018,
+  "title": "Self-Locating Uncertainty and the Origin of Probability in Everettian Quantum Mechanics",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "arXiv abstract",
+  "doi": "10.1093/bjps/axw004",
+  "volume": "69",
+  "pages": "25-74"
+ },
+ {
+  "key": "Builes2020TimeSlice",
+  "authors": [
+   "David Builes"
+  ],
+  "year": 2020,
+  "title": "Time-Slice Rationality and Self-Locating Belief",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract (Springer page)",
+  "doi": "10.1007/s11098-019-01358-1",
+  "volume": "177",
+  "pages": "3033-3049"
+ },
+ {
+  "key": "IsaacsHawthorneRussell2022",
+  "authors": [
+   "Yoaav Isaacs",
+   "John Hawthorne",
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2022,
+  "title": "Multiple Universes and Self-Locating Evidence",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "full text (Philosopher's Annual PDF): secs 1-2, 4, 7, appendix A defs",
+  "doi": "10.1215/00318108-9743809",
+  "volume": "131",
+  "pages": "241-294",
+  "source_url": "https://philosophersannual.org/42articles/isaacsetal-multiple.pdf"
+ },
+ {
+  "key": "Jager2021Immortal",
+  "authors": [
+   "Jens Jäger"
+  ],
+  "year": 2021,
+  "title": "Immortal Beauty: Does Existence Confirm Reincarnation?",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "seen": "search-engine summary of abstract only (PhilArchive record); full text not retrieved",
+  "doi": "10.1080/00048402.2021.1938150",
+  "volume": "100",
+  "pages": "789-807"
+ },
+ {
+  "key": "Kim2022Centered",
+  "authors": [
+   "Namjoong Kim"
+  ],
+  "year": 2022,
+  "title": "Sleeping Beauty and the Evidential Centered Principle",
+  "venue": "Erkenntnis",
+  "type": "article",
+  "seen": "abstract (Springer page)",
+  "doi": "10.1007/s10670-022-00619-6",
+  "volume": "89",
+  "pages": "2073-2095"
+ },
+ {
+  "key": "Kim2022Dominance",
+  "authors": [
+   "Namjoong Kim"
+  ],
+  "year": 2022,
+  "title": "Sleeping Beauty and the Current Chance Evidential Immodest Dominance Axiom",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "abstract (Springer page)",
+  "doi": "10.1007/s11229-022-03926-1",
+  "volume": "200"
+ },
+ {
+  "key": "Russell2023",
+  "authors": [
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2023,
+  "title": "Sleeping Beauty's Evidence",
+  "venue": "The Routledge Handbook of the Philosophy of Evidence",
+  "type": "chapter",
+  "seen": "one-line abstract via search summary; cited by Schwarz 2025 fn.12",
+  "doi": "10.4324/9781315672687-16",
+  "pages": "163-175"
+ },
+ {
+  "key": "Pust2023",
+  "authors": [
+   "Joel Pust"
+  ],
+  "year": 2023,
+  "title": "No Double-Halfer Embarrassment: A Reply to Titelbaum",
+  "venue": "Analytic Philosophy",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1111/phib.12257",
+  "volume": "64",
+  "pages": "346-354"
+ },
+ {
+  "key": "ButtonRothschildSpectre",
+  "authors": [
+   "Tim Button",
+   "Daniel Rothschild",
+   "Levi Spectre"
+  ],
+  "year": 2024,
+  "title": "Too Clever by Halving",
+  "venue": "PhilArchive preprint (record BUTTCB-4)",
+  "type": "preprint",
+  "seen": "search-engine summary of PhilArchive abstract",
+  "source_url": "https://philarchive.org/rec/BUTTCB-4"
+ },
+ {
+  "key": "Builes2024Center",
+  "authors": [
+   "David Builes"
+  ],
+  "year": 2024,
+  "title": "Center Indifference and Skepticism",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12478",
+  "volume": "58",
+  "pages": "778-798"
+ },
+ {
+  "key": "Adelstein2024",
+  "authors": [
+   "Matthew Adelstein"
+  ],
+  "year": 2024,
+  "title": "Alternatives to the Self-Indication Assumption Are Doomed",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "abstract (Springer page)",
+  "doi": "10.1007/s11229-024-04686-w",
+  "volume": "204"
+ },
+ {
+  "key": "Mahtani2024",
+  "authors": [
+   "Anna Mahtani"
+  ],
+  "year": 2024,
+  "title": "The Objects of Credence",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "seen": "chapter abstracts (Crossref)",
+  "doi": "10.1093/oso/9780198847892.001.0001"
+ },
+ {
+  "key": "Bovens2024",
+  "authors": [
+   "Luc Bovens"
+  ],
+  "year": 2024,
+  "title": "The Reflection Principle and the Ex-Ante Pareto Principle in Anna Mahtani's Objects of Credence",
+  "venue": "Economics and Philosophy",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s0266267123000421",
+  "volume": "40",
+  "pages": "478-484"
+ },
+ {
+  "key": "Adlam2024",
+  "authors": [
+   "Emily Adlam"
+  ],
+  "year": 2024,
+  "title": "Against Self-Location",
+  "venue": "arXiv preprint arXiv:2409.05259",
+  "type": "preprint",
+  "seen": "arXiv abstract",
+  "source_url": "http://arxiv.org/abs/2409.05259"
+ },
+ {
+  "key": "Schwarz2025SB",
+  "authors": [
+   "Wolfgang Schwarz"
+  ],
+  "year": 2025,
+  "title": "Sleeping Beauty and the Demands of Non-Ideal Rationality",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "full text (author PDF dated 16 Jan 2025)",
+  "doi": "10.1111/nous.12545",
+  "volume": "59",
+  "pages": "1072-1092",
+  "source_url": "https://www.umsu.de/papers/sb.pdf"
+ },
+ {
+  "key": "Schwarz2025Disproportionate",
+  "authors": [
+   "Wolfgang Schwarz"
+  ],
+  "year": 2025,
+  "title": "Dynamic Rationality and Disproportionate Belief",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "seen": "abstract + introduction (author PDF)",
+  "doi": "10.3998/phimp.5853",
+  "volume": "25",
+  "source_url": "https://www.umsu.de/papers/disproportionate.pdf"
+ },
+ {
+  "key": "PiccioneRubinstein1997",
+  "authors": [
+   "Michele Piccione",
+   "Ariel Rubinstein"
+  ],
+  "year": 1997,
+  "title": "On the Interpretation of Decision Problems with Imperfect Recall",
+  "venue": "Games and Economic Behavior",
+  "type": "article",
+  "seen": "title; secondary",
+  "doi": "10.1006/game.1997.0536",
+  "volume": "20",
+  "pages": "3-24"
+ },
+ {
+  "key": "Hacking1987",
+  "authors": [
+   "Ian Hacking"
+  ],
+  "year": 1987,
+  "title": "The Inverse Gambler's Fallacy: The Argument from Design. The Anthropic Principle Applied to Wheeler Universes",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "passage quoted in IHR 2022",
+  "doi": "10.1093/mind/xcvi.383.331",
+  "volume": "96",
+  "pages": "331-340"
+ },
+ {
+  "key": "White2000",
+  "authors": [
+   "Roger White"
+  ],
+  "year": 2000,
+  "title": "Fine-Tuning and Multiple Universes",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "passages quoted in IHR 2022",
+  "doi": "10.1111/0029-4624.00210",
+  "volume": "34",
+  "pages": "260-276"
+ },
+ {
+  "key": "Bostrom2002",
+  "authors": [
+   "Nick Bostrom"
+  ],
+  "year": 2002,
+  "title": "Anthropic Bias: Observation Selection Effects in Science and Philosophy",
+  "venue": "Routledge",
+  "type": "book",
+  "seen": "definitions of SIA/SSA as quoted in IHR 2022 fns 24-25"
+ },
+ {
+  "key": "vanFraassen1984",
+  "authors": [
+   "Bas C. van Fraassen"
+  ],
+  "year": 1984,
+  "title": "Belief and the Will",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "seen": "statement via SEP",
+  "doi": "10.2307/2026388",
+  "volume": "81",
+  "pages": "235-256"
+ },
+ {
+  "key": "Lewis1976",
+  "authors": [
+   "David Lewis"
+  ],
+  "year": 1976,
+  "title": "Probabilities of Conditionals and Conditional Probabilities",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "not read; cited only as origin of imaging",
+  "doi": "10.2307/2184045",
+  "volume": "85",
+  "pages": "297-315"
+ },
+ {
+  "key": "Field1978",
+  "authors": [
+   "Hartry Field"
+  ],
+  "year": 1978,
+  "title": "A Note on Jeffrey Conditionalization",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "result as reported in Pettigrew & Weisberg 2025",
+  "doi": "10.1086/288812",
+  "volume": "45",
+  "pages": "361-367"
+ },
+ {
+  "key": "Joyce1998",
+  "authors": [
+   "James M. Joyce"
+  ],
+  "year": 1998,
+  "title": "A Nonpragmatic Vindication of Probabilism",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/392661",
+  "volume": "65",
+  "pages": "575-603"
+ },
+ {
+  "key": "GreavesWallace2006",
+  "authors": [
+   "Hilary Greaves",
+   "David Wallace"
+  ],
+  "year": 2006,
+  "title": "Justifying Conditionalization: Conditionalization Maximizes Expected Epistemic Utility",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "theorem as stated in SEP (Pettigrew) and Schwarz 2025",
+  "doi": "10.1093/mind/fzl607",
+  "volume": "115",
+  "pages": "607-632"
+ },
+ {
+  "key": "Predd2009",
+  "authors": [
+   "Joel B. Predd",
+   "Robert Seiringer",
+   "Elliott H. Lieb",
+   "Daniel N. Osherson",
+   "H. Vincent Poor",
+   "Sanjeev R. Kulkarni"
+  ],
+  "year": 2009,
+  "title": "Probabilistic Coherence and Proper Scoring Rules",
+  "venue": "IEEE Transactions on Information Theory",
+  "type": "article",
+  "seen": "theorem as stated in SEP",
+  "doi": "10.1109/tit.2009.2027573",
+  "volume": "55",
+  "pages": "4786-4792"
+ },
+ {
+  "key": "LeitgebPettigrew2010",
+  "authors": [
+   "Hannes Leitgeb",
+   "Richard Pettigrew"
+  ],
+  "year": 2010,
+  "title": "An Objective Justification of Bayesianism II: The Consequences of Minimizing Inaccuracy",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/651318",
+  "volume": "77",
+  "pages": "236-272"
+ },
+ {
+  "key": "EaswaranFitelson2012",
+  "authors": [
+   "Kenny Easwaran",
+   "Branden Fitelson"
+  ],
+  "year": 2012,
+  "title": "An 'Evidentialist' Worry About Joyce's Argument for Probabilism",
+  "venue": "Dialectica",
+  "type": "article",
+  "seen": "argument as summarised in SEP",
+  "doi": "10.1111/j.1746-8361.2012.01311.x",
+  "volume": "66",
+  "pages": "425-433"
+ },
+ {
+  "key": "Easwaran2013",
+  "authors": [
+   "Kenny Easwaran"
+  ],
+  "year": 2013,
+  "title": "Expected Accuracy Supports Conditionalization—and Conglomerability and Reflection",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/668879",
+  "volume": "80",
+  "pages": "119-142"
+ },
+ {
+  "key": "Greaves2013",
+  "authors": [
+   "Hilary Greaves"
+  ],
+  "year": 2013,
+  "title": "Epistemic Decision Theory",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "title; cases as summarised in SEP",
+  "doi": "10.1093/mind/fzt090",
+  "volume": "122",
+  "pages": "915-952"
+ },
+ {
+  "key": "Caie2013",
+  "authors": [
+   "Michael Caie"
+  ],
+  "year": 2013,
+  "title": "Rational Probabilistic Incoherence",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1215/00318108-2315288",
+  "volume": "122",
+  "pages": "527-575"
+ },
+ {
+  "key": "Huttegger2013",
+  "authors": [
+   "Simon M. Huttegger"
+  ],
+  "year": 2013,
+  "title": "In Defense of Reflection",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/671427",
+  "volume": "80",
+  "pages": "413-433"
+ },
+ {
+  "key": "Easwaran2015Accuracy",
+  "authors": [
+   "Kenny Easwaran",
+   "Branden Fitelson"
+  ],
+  "year": 2015,
+  "title": "Accuracy, Coherence, and Evidence",
+  "venue": "Oxford Studies in Epistemology, vol. 5",
+  "type": "chapter",
+  "seen": "title",
+  "doi": "10.1093/acprof:oso/9780198722762.003.0003",
+  "pages": "61-96"
+ },
+ {
+  "key": "Easwaran2016Truthlove",
+  "authors": [
+   "Kenny Easwaran"
+  ],
+  "year": 2016,
+  "title": "Dr. Truthlove or: How I Learned to Stop Worrying and Love Bayesian Probabilities",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1111/nous.12099",
+  "volume": "50",
+  "pages": "816-853"
+ },
+ {
+  "key": "Pettigrew2016",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2016,
+  "title": "Accuracy and the Laws of Credence",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "seen": "results as reported in SEP",
+  "doi": "10.1093/acprof:oso/9780198732716.001.0001"
+ },
+ {
+  "key": "Schoenfield2017",
+  "authors": [
+   "Miriam Schoenfield"
+  ],
+  "year": 2017,
+  "title": "Conditionalization Does Not (in General) Maximize Expected Accuracy",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "theorem as stated in Pettigrew (2025 blog) and SEP; full text not read",
+  "doi": "10.1093/mind/fzw027",
+  "volume": "126",
+  "pages": "1155-1187"
+ },
+ {
+  "key": "Carr2017",
+  "authors": [
+   "Jennifer Rose Carr"
+  ],
+  "year": 2017,
+  "title": "Epistemic Utility Theory and the Aim of Belief",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1111/phpr.12436",
+  "volume": "95",
+  "pages": "511-534"
+ },
+ {
+  "key": "Schoenfield2018",
+  "authors": [
+   "Miriam Schoenfield"
+  ],
+  "year": 2018,
+  "title": "An Accuracy Based Approach to Higher Order Evidence",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.12329",
+  "volume": "96",
+  "pages": "690-715"
+ },
+ {
+  "key": "Pettigrew2018Population",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2018,
+  "title": "The Population Ethics of Belief: In Search of an Epistemic Theory X",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12164",
+  "volume": "52",
+  "pages": "336-372"
+ },
+ {
+  "key": "KonekLevinstein2019",
+  "authors": [
+   "Jason Konek",
+   "Benjamin A. Levinstein"
+  ],
+  "year": 2019,
+  "title": "The Foundations of Epistemic Decision Theory",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "position as summarised in SEP",
+  "doi": "10.1093/mind/fzw044",
+  "volume": "128",
+  "pages": "69-107"
+ },
+ {
+  "key": "Levinstein2019Varying",
+  "authors": [
+   "Benjamin A. Levinstein"
+  ],
+  "year": 2019,
+  "title": "An Objection of Varying Importance to Epistemic Utility Theory",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "as summarised in SEP",
+  "doi": "10.1007/s11098-018-1157-9",
+  "volume": "176",
+  "pages": "2919-2931"
+ },
+ {
+  "key": "Das2019UrPrior",
+  "authors": [
+   "Nilanjan Das"
+  ],
+  "year": 2019,
+  "title": "Accuracy and Ur-Prior Conditionalization",
+  "venue": "The Review of Symbolic Logic",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s1755020318000035",
+  "volume": "12",
+  "pages": "62-96"
+ },
+ {
+  "key": "BriggsPettigrew2020",
+  "authors": [
+   "R. A. Briggs",
+   "Richard Pettigrew"
+  ],
+  "year": 2020,
+  "title": "An Accuracy-Dominance Argument for Conditionalization",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12258",
+  "volume": "54",
+  "pages": "162-181"
+ },
+ {
+  "key": "Pettigrew2020What",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2020,
+  "title": "What Is Conditionalization, and Why Should We Do It?",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s11098-019-01377-y",
+  "volume": "177",
+  "pages": "3427-3463"
+ },
+ {
+  "key": "CampbellMooreSalow2020",
+  "authors": [
+   "Catrin Campbell-Moore",
+   "Bernhard Salow"
+  ],
+  "year": 2020,
+  "title": "Avoiding Risk and Avoiding Evidence",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "seen": "abstract (committee bibliography); SEP summary",
+  "doi": "10.1080/00048402.2019.1697305",
+  "volume": "98",
+  "pages": "495-515"
+ },
+ {
+  "key": "Gallow2021",
+  "authors": [
+   "J. Dmitri Gallow"
+  ],
+  "year": 2021,
+  "title": "Updating for Externalists",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12307",
+  "volume": "55",
+  "pages": "487-516"
+ },
+ {
+  "key": "Nielsen2021",
+  "authors": [
+   "Michael Nielsen"
+  ],
+  "year": 2021,
+  "title": "Accuracy-Dominance and Conditionalization",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "as summarised in SEP",
+  "doi": "10.1007/s11098-020-01598-6",
+  "volume": "178",
+  "pages": "3217-3236"
+ },
+ {
+  "key": "Carr2021",
+  "authors": [
+   "Jennifer Rose Carr"
+  ],
+  "year": 2021,
+  "title": "A Modesty Proposal",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title; cited in Easwaran & Nielsen 2025",
+  "doi": "10.1007/s11229-019-02301-x",
+  "volume": "198",
+  "pages": "3581-3601"
+ },
+ {
+  "key": "Rescorla2021",
+  "authors": [
+   "Michael Rescorla"
+  ],
+  "year": 2021,
+  "title": "On the Proper Formulation of Conditionalization",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s11229-019-02179-9",
+  "volume": "198",
+  "pages": "1935-1965"
+ },
+ {
+  "key": "CampbellMooreLevinstein2021",
+  "authors": [
+   "Catrin Campbell-Moore",
+   "Benjamin A. Levinstein"
+  ],
+  "year": 2021,
+  "title": "Strict Propriety Is Weak",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/analys/anaa001",
+  "volume": "81",
+  "pages": "8-13"
+ },
+ {
+  "key": "Horowitz2021",
+  "authors": [
+   "Sophie Horowitz"
+  ],
+  "year": 2021,
+  "title": "Shrinking Three Arguments for Conditionalization",
+  "venue": "Philosophical Perspectives",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1111/phpe.12145",
+  "volume": "35",
+  "pages": "303-319"
+ },
+ {
+  "key": "Rescorla2022",
+  "authors": [
+   "Michael Rescorla"
+  ],
+  "year": 2022,
+  "title": "An Improved Dutch Book Theorem for Conditionalization",
+  "venue": "Erkenntnis",
+  "type": "article",
+  "seen": "as summarised in Pettigrew 2023 abstract",
+  "doi": "10.1007/s10670-020-00228-1",
+  "volume": "87",
+  "pages": "1013-1041"
+ },
+ {
+  "key": "Das2022",
+  "authors": [
+   "Nilanjan Das"
+  ],
+  "year": 2022,
+  "title": "Externalism and Exploitability",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.12742",
+  "volume": "104",
+  "pages": "101-128"
+ },
+ {
+  "key": "Nielsen2022Best",
+  "authors": [
+   "Michael Nielsen"
+  ],
+  "year": 2022,
+  "title": "On the Best Accuracy Arguments for Probabilism",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/psa.2021.43",
+  "volume": "89",
+  "pages": "621-630"
+ },
+ {
+  "key": "Pettigrew2022Additivity",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2022,
+  "title": "Accuracy-First Epistemology Without Additivity",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/psa.2021.17",
+  "volume": "89",
+  "pages": "128-151"
+ },
+ {
+  "key": "Pettigrew2023Bayesian",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2023,
+  "title": "Bayesian Updating When What You Learn Might Be False",
+  "venue": "Erkenntnis",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s10670-020-00356-8",
+  "volume": "88",
+  "pages": "309-324"
+ },
+ {
+  "key": "IsaacsRussell2023",
+  "authors": [
+   "Yoaav Isaacs",
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2023,
+  "title": "Updating without Evidence",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12426",
+  "volume": "57",
+  "pages": "576-599"
+ },
+ {
+  "key": "Nielsen2023",
+  "authors": [
+   "Michael Nielsen"
+  ],
+  "year": 2023,
+  "title": "Accuracy and Probabilism in Infinite Domains",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzac053",
+  "volume": "132",
+  "pages": "402-427"
+ },
+ {
+  "key": "KelleyNeth2023",
+  "authors": [
+   "Mikayla Kelley",
+   "Sven Neth"
+  ],
+  "year": 2023,
+  "title": "Accuracy and Infinity: A Dilemma for Subjective Bayesians",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title; cited in Easwaran & Nielsen 2025",
+  "doi": "10.1007/s11229-022-04019-9",
+  "volume": "201"
+ },
+ {
+  "key": "LewisFallisFitelson2024",
+  "authors": [
+   "Peter J. Lewis",
+   "Don Fallis",
+   "Branden Fitelson"
+  ],
+  "year": 2024,
+  "title": "Accuracy-First Epistemology and Scientific Progress",
+  "venue": "Ergo",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.3998/ergo.5709",
+  "volume": "11"
+ },
+ {
+  "key": "MeehanZhang2025",
+  "authors": [
+   "Alexander Meehan",
+   "Snow Zhang"
+  ],
+  "year": 2025,
+  "title": "Bayes Is Back",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract + detailed reconstruction in Pettigrew's blog post (2025); full text not read",
+  "doi": "10.1215/00318108-11873775",
+  "volume": "134",
+  "pages": "285-350",
+  "source_url": "https://richardpettigrew.substack.com/p/bayesianism-when-learning-isnt-straightforward"
+ },
+ {
+  "key": "EaswaranNielsen2025",
+  "authors": [
+   "Kenny Easwaran",
+   "Michael Nielsen"
+  ],
+  "year": 2025,
+  "title": "Updating by Maximizing Expected Accuracy in Infinite Non-Partitional Settings",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "seen": "full text (open access): abstract, introduction, conclusion",
+  "doi": "10.1007/s10992-025-09814-6",
+  "volume": "54",
+  "pages": "1095-1134"
+ },
+ {
+  "key": "Kelley2026",
+  "authors": [
+   "Mikayla Kelley"
+  ],
+  "year": 2026,
+  "title": "A Contextual Accuracy Dominance Argument for Probabilism",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.70098",
+  "volume": "112",
+  "pages": "594-607"
+ },
+ {
+  "key": "Weisberg2009",
+  "authors": [
+   "Jonathan Weisberg"
+  ],
+  "year": 2009,
+  "title": "Commutativity or Holism? A Dilemma for Conditionalizers",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1093/bjps/axp007",
+  "volume": "60",
+  "pages": "793-812"
+ },
+ {
+  "key": "Weisberg2015",
+  "authors": [
+   "Jonathan Weisberg"
+  ],
+  "year": 2015,
+  "title": "Updating, Undermining, and Independence",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "abstract (committee bibliography)",
+  "doi": "10.1093/bjps/axt052",
+  "volume": "66",
+  "pages": "121-159"
+ },
+ {
+  "key": "Meacham2016",
+  "authors": [
+   "Christopher J. G. Meacham"
+  ],
+  "year": 2016,
+  "title": "Ur-Priors, Conditionalization, and Ur-Prior Conditionalization",
+  "venue": "Ergo",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.3998/ergo.12405314.0003.017",
+  "volume": "3"
+ },
+ {
+  "key": "Elga2007",
+  "authors": [
+   "Adam Elga"
+  ],
+  "year": 2007,
+  "title": "Reflection and Disagreement",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/j.1468-0068.2007.00656.x",
+  "volume": "41",
+  "pages": "478-502"
+ },
+ {
+  "key": "Briggs2009",
+  "authors": [
+   "Rachael Briggs"
+  ],
+  "year": 2009,
+  "title": "Distorted Reflection",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1215/00318108-2008-029",
+  "volume": "118",
+  "pages": "59-85"
+ },
+ {
+  "key": "Christensen2010",
+  "authors": [
+   "David Christensen"
+  ],
+  "year": 2010,
+  "title": "Rational Reflection",
+  "venue": "Philosophical Perspectives",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1111/j.1520-8583.2010.00187.x",
+  "volume": "24",
+  "pages": "121-140"
+ },
+ {
+  "key": "Elga2013",
+  "authors": [
+   "Adam Elga"
+  ],
+  "year": 2013,
+  "title": "The Puzzle of the Unmarked Clock and the New Rational Reflection Principle",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s11098-013-0091-0",
+  "volume": "164",
+  "pages": "127-139"
+ },
+ {
+  "key": "Williamson2014",
+  "authors": [
+   "Timothy Williamson"
+  ],
+  "year": 2014,
+  "title": "Very Improbable Knowing",
+  "venue": "Erkenntnis",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s10670-013-9590-9",
+  "volume": "79",
+  "pages": "971-999"
+ },
+ {
+  "key": "Salow2018",
+  "authors": [
+   "Bernhard Salow"
+  ],
+  "year": 2018,
+  "title": "The Externalist's Guide to Fishing for Compliments",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1093/mind/fzw029",
+  "volume": "127",
+  "pages": "691-728"
+ },
+ {
+  "key": "Gallow2018",
+  "authors": [
+   "J. Dmitri Gallow"
+  ],
+  "year": 2018,
+  "title": "No One Can Serve Two Epistemic Masters",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s11098-017-0964-8",
+  "volume": "175",
+  "pages": "2389-2398"
+ },
+ {
+  "key": "Dorst2019HOU",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2019,
+  "title": "Higher-Order Uncertainty",
+  "venue": "Higher-Order Evidence: New Essays (Oxford University Press)",
+  "type": "chapter",
+  "seen": "abstract",
+  "doi": "10.1093/oso/9780198829775.003.0002",
+  "pages": "35-61"
+ },
+ {
+  "key": "Dorst2020",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2020,
+  "title": "Evidence: A Guide for the Uncertain",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpr.12561",
+  "volume": "100",
+  "pages": "586-632"
+ },
+ {
+  "key": "DorstEtAl2021",
+  "authors": [
+   "Kevin Dorst",
+   "Benjamin A. Levinstein",
+   "Bernhard Salow",
+   "Brooke E. Husic",
+   "Branden Fitelson"
+  ],
+  "year": 2021,
+  "title": "Deference Done Better",
+  "venue": "Philosophical Perspectives",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/phpe.12156",
+  "volume": "35",
+  "pages": "99-150"
+ },
+ {
+  "key": "HeddenDorst2022",
+  "authors": [
+   "Brian Hedden",
+   "Kevin Dorst"
+  ],
+  "year": 2022,
+  "title": "(Almost) All Evidence Is Higher-Order Evidence",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/analys/anab081",
+  "volume": "82",
+  "pages": "417-425"
+ },
+ {
+  "key": "Levinstein2023",
+  "authors": [
+   "Benjamin A. Levinstein"
+  ],
+  "year": 2023,
+  "title": "Accuracy, Deference, and Chance",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1215/00318108-10123774",
+  "volume": "132",
+  "pages": "43-87"
+ },
+ {
+  "key": "Dorst2023",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2023,
+  "title": "Rational Polarization",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "title; listed in calibration brief",
+  "doi": "10.1215/00318108-10469499",
+  "volume": "132"
+ },
+ {
+  "key": "DziuroszSerafinowicz2023",
+  "authors": [
+   "Patryk Dziurosz-Serafinowicz"
+  ],
+  "year": 2023,
+  "title": "Expert Deference and Adams Conditionalization",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s11229-023-04175-6",
+  "volume": "201"
+ },
+ {
+  "key": "McConway1981",
+  "authors": [
+   "K. J. McConway"
+  ],
+  "year": 1981,
+  "title": "Marginalization and Linear Opinion Pools",
+  "venue": "Journal of the American Statistical Association",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1080/01621459.1981.10477661",
+  "volume": "76",
+  "pages": "410-414"
+ },
+ {
+  "key": "Mongin1995",
+  "authors": [
+   "Philippe Mongin"
+  ],
+  "year": 1995,
+  "title": "Consistent Bayesian Aggregation",
+  "venue": "Journal of Economic Theory",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1006/jeth.1995.1044",
+  "volume": "66",
+  "pages": "313-351"
+ },
+ {
+  "key": "RussellHawthorneBuchak2015",
+  "authors": [
+   "Jeffrey Sanford Russell",
+   "John Hawthorne",
+   "Lara Buchak"
+  ],
+  "year": 2015,
+  "title": "Groupthink",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "central result as described in Dietrich 2019 abstract",
+  "doi": "10.1007/s11098-014-0350-8",
+  "volume": "172",
+  "pages": "1287-1309"
+ },
+ {
+  "key": "EaswaranEtAl2016",
+  "authors": [
+   "Kenny Easwaran",
+   "Luke Fenton-Glynn",
+   "Christopher Hitchcock",
+   "Joel D. Velasco"
+  ],
+  "year": 2016,
+  "title": "Updating on the Credences of Others: Disagreement, Agreement, and Synergy",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "seen": "title; cited in Pettigrew & Weisberg 2024 abstract",
+  "volume": "16"
+ },
+ {
+  "key": "DietrichList2017",
+  "authors": [
+   "Franz Dietrich",
+   "Christian List"
+  ],
+  "year": 2017,
+  "title": "Probabilistic Opinion Pooling Generalized. Part One: General Agendas",
+  "venue": "Social Choice and Welfare",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s00355-017-1034-z",
+  "volume": "48",
+  "pages": "747-786"
+ },
+ {
+  "key": "Dietrich2019",
+  "authors": [
+   "Franz Dietrich"
+  ],
+  "year": 2019,
+  "title": "A Theory of Bayesian Groups",
+  "venue": "Noûs",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1111/nous.12233",
+  "volume": "53",
+  "pages": "708-736"
+ },
+ {
+  "key": "StewartOjeaQuintana2018",
+  "authors": [
+   "Rush T. Stewart",
+   "Ignacio Ojea Quintana"
+  ],
+  "year": 2018,
+  "title": "Probabilistic Opinion Pooling with Imprecise Probabilities",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s10992-016-9415-9",
+  "volume": "47",
+  "pages": "17-45"
+ },
+ {
+  "key": "Bradley2018",
+  "authors": [
+   "Richard Bradley"
+  ],
+  "year": 2018,
+  "title": "Learning from Others: Conditioning versus Averaging",
+  "venue": "Theory and Decision",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s11238-017-9615-y",
+  "volume": "85",
+  "pages": "5-20"
+ },
+ {
+  "key": "Pettigrew2019Group",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2019,
+  "title": "On the Accuracy of Group Credences",
+  "venue": "Oxford Studies in Epistemology, vol. 6",
+  "type": "chapter",
+  "seen": "abstract",
+  "doi": "10.1093/oso/9780198833314.003.0006",
+  "pages": "137-160"
+ },
+ {
+  "key": "NielsenStewart2021",
+  "authors": [
+   "Michael Nielsen",
+   "Rush T. Stewart"
+  ],
+  "year": 2021,
+  "title": "Persistent Disagreement and Polarization in a Bayesian Setting",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1093/bjps/axy056",
+  "volume": "72",
+  "pages": "51-78"
+ },
+ {
+  "key": "BaccelliStewart2023",
+  "authors": [
+   "Jean Baccelli",
+   "Rush T. Stewart"
+  ],
+  "year": 2023,
+  "title": "Support for Geometric Pooling",
+  "venue": "The Review of Symbolic Logic",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s1755020320000416",
+  "volume": "16",
+  "pages": "298-337"
+ },
+ {
+  "key": "PettigrewWeisberg2024",
+  "authors": [
+   "Richard Pettigrew",
+   "Jonathan Weisberg"
+  ],
+  "year": 2024,
+  "title": "Updating on the Evidence of Others",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s11098-024-02173-z",
+  "volume": "181",
+  "pages": "2539-2562"
+ },
+ {
+  "key": "PettigrewWeisberg2025",
+  "authors": [
+   "Richard Pettigrew",
+   "Jonathan Weisberg"
+  ],
+  "year": 2025,
+  "title": "Jeffrey Pooling",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "seen": "full text (journal XML): introduction, secs 1-2, conclusion",
+  "doi": "10.3998/phimp.3806",
+  "volume": "25"
+ },
+ {
+  "key": "PettigrewWeisberg2026",
+  "authors": [
+   "Richard Pettigrew",
+   "Jonathan Weisberg"
+  ],
+  "year": 2026,
+  "title": "Geometric Pooling: A User's Guide",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1086/727000",
+  "volume": "77",
+  "pages": "749-771"
+ },
+ {
+  "key": "EvaHartmann2021",
+  "authors": [
+   "Benjamin Eva",
+   "Stephan Hartmann"
+  ],
+  "year": 2021,
+  "title": "The Logic of Partial Supposition",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/analys/anaa060",
+  "volume": "81"
+ },
+ {
+  "key": "EvaShearFitelson2022",
+  "authors": [
+   "Benjamin Eva",
+   "Ted Shear",
+   "Branden Fitelson"
+  ],
+  "year": 2022,
+  "title": "Four Approaches to Supposition",
+  "venue": "Ergo",
+  "type": "article",
+  "seen": "full text (journal PDF): abstract, sec. 1, conclusion",
+  "doi": "10.3998/ergo.2227",
+  "volume": "8"
+ },
+ {
+  "key": "Nielsen2022Harder",
+  "authors": [
+   "Michael Nielsen"
+  ],
+  "year": 2022,
+  "title": "A Harder Dilemma for Partial Subjunctive Supposition",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/analys/anab082",
+  "volume": "82",
+  "pages": "585-592"
+ },
+ {
+  "key": "Zhang2024",
+  "authors": [
+   "Snow Zhang"
+  ],
+  "year": 2024,
+  "title": "On the Dilemma for Partial Subjunctive Supposition",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/analys/anae020",
+  "volume": "84",
+  "pages": "576-592"
+ },
+ {
+  "key": "GebharterEtAl2026",
+  "authors": [
+   "Alexander Gebharter",
+   "Christian J. Feldbacher-Escamilla",
+   "Michał Sikorski"
+  ],
+  "year": 2026,
+  "title": "A Causal Theory of Suppositional Reasoning",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1007/s11098-025-02472-z"
+ },
+ {
+  "key": "MeehanZhang2020",
+  "authors": [
+   "Alexander Meehan",
+   "Snow Zhang"
+  ],
+  "year": 2020,
+  "title": "Jeffrey Meets Kolmogorov",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "seen": "title; characterisation from Zhang 2024 abstract",
+  "doi": "10.1007/s10992-019-09543-7",
+  "volume": "49",
+  "pages": "941-979"
+ },
+ {
+  "key": "Hajek2003",
+  "authors": [
+   "Alan Hájek"
+  ],
+  "year": 2003,
+  "title": "What Conditional Probability Could Not Be",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "position as summarised in SEP (Lin 2022)",
+  "doi": "10.1023/b:synt.0000004904.91112.16",
+  "volume": "137",
+  "pages": "273-323"
+ },
+ {
+  "key": "Williamson2007",
+  "authors": [
+   "Timothy Williamson"
+  ],
+  "year": 2007,
+  "title": "How Probable Is an Infinite Sequence of Heads?",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "as summarised in SEP and Goodsell & Nebel 2024 abstract",
+  "doi": "10.1093/analys/67.3.173",
+  "volume": "67",
+  "pages": "173-180"
+ },
+ {
+  "key": "Hajek2012",
+  "authors": [
+   "Alan Hájek"
+  ],
+  "year": 2012,
+  "title": "Is Strict Coherence Coherent?",
+  "venue": "Dialectica",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1111/j.1746-8361.2012.01310.x",
+  "volume": "66",
+  "pages": "411-424"
+ },
+ {
+  "key": "Pruss2013",
+  "authors": [
+   "Alexander R. Pruss"
+  ],
+  "year": 2013,
+  "title": "Null Probability, Dominance and Rotation",
+  "venue": "Analysis",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1093/analys/ant076",
+  "volume": "73",
+  "pages": "682-685"
+ },
+ {
+  "key": "Pruss2014",
+  "authors": [
+   "Alexander R. Pruss"
+  ],
+  "year": 2014,
+  "title": "Regular Probability Comparisons Imply the Banach-Tarski Paradox",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1007/s11229-014-0458-6",
+  "volume": "191",
+  "pages": "3525-3540"
+ },
+ {
+  "key": "Easwaran2014",
+  "authors": [
+   "Kenny Easwaran"
+  ],
+  "year": 2014,
+  "title": "Regularity and Hyperreal Credences",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1215/00318108-2366479",
+  "volume": "123",
+  "pages": "1-41"
+ },
+ {
+  "key": "Rescorla2015",
+  "authors": [
+   "Michael Rescorla"
+  ],
+  "year": 2015,
+  "title": "Some Epistemological Ramifications of the Borel-Kolmogorov Paradox",
+  "venue": "Synthese",
+  "type": "article",
+  "seen": "title; SEP summary",
+  "doi": "10.1007/s11229-014-0586-z",
+  "volume": "192",
+  "pages": "735-767"
+ },
+ {
+  "key": "BenciHorstenWenmackers2018",
+  "authors": [
+   "Vieri Benci",
+   "Leon Horsten",
+   "Sylvia Wenmackers"
+  ],
+  "year": 2018,
+  "title": "Infinitesimal Probabilities",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "seen": "title",
+  "doi": "10.1093/bjps/axw013",
+  "volume": "69",
+  "pages": "509-552"
+ },
+ {
+  "key": "Rescorla2018",
+  "authors": [
+   "Michael Rescorla"
+  ],
+  "year": 2018,
+  "title": "A Dutch Book Theorem and Converse Dutch Book Theorem for Kolmogorov Conditionalization",
+  "venue": "The Review of Symbolic Logic",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s1755020317000296",
+  "volume": "11",
+  "pages": "705-735"
+ },
+ {
+  "key": "Builes2020Paradox",
+  "authors": [
+   "David Builes"
+  ],
+  "year": 2020,
+  "title": "A Paradox of Evidential Equivalence",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzz046",
+  "volume": "129",
+  "pages": "113-127"
+ },
+ {
+  "key": "DorrHawthorneIsaacs2021",
+  "authors": [
+   "Cian Dorr",
+   "John Hawthorne",
+   "Yoaav Isaacs"
+  ],
+  "year": 2021,
+  "title": "Solving a Paradox of Evidential Equivalence",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzaa022",
+  "volume": "130",
+  "pages": "1159-1182"
+ },
+ {
+  "key": "MeehanZhang2021",
+  "authors": [
+   "Alexander Meehan",
+   "Snow Zhang"
+  ],
+  "year": 2021,
+  "title": "The Borel-Kolmogorov Paradox Is Your Paradox Too: A Puzzle for Conditional Physical Probability",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1086/714876",
+  "volume": "88",
+  "pages": "971-984"
+ },
+ {
+  "key": "MeehanZhang2022",
+  "authors": [
+   "Alexander Meehan",
+   "Snow Zhang"
+  ],
+  "year": 2022,
+  "title": "Kolmogorov Conditionalizers Can Be Dutch Booked (If and Only If They Are Evidentially Uncertain)",
+  "venue": "The Review of Symbolic Logic",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/s1755020320000295",
+  "volume": "15",
+  "pages": "722-757"
+ },
+ {
+  "key": "IsaacsHajekHawthorne2022",
+  "authors": [
+   "Yoaav Isaacs",
+   "Alan Hájek",
+   "John Hawthorne"
+  ],
+  "year": 2022,
+  "title": "Non-Measurability, Imprecise Credences, and Imprecise Chances",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzab031",
+  "volume": "131",
+  "pages": "894-918"
+ },
+ {
+  "key": "DiBella2022",
+  "authors": [
+   "Nicholas DiBella"
+  ],
+  "year": 2022,
+  "title": "Fair Infinite Lotteries, Qualitative Probability, and Regularity",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/psa.2022.4",
+  "volume": "89",
+  "pages": "824-844"
+ },
+ {
+  "key": "Dorr2024",
+  "authors": [
+   "Cian Dorr"
+  ],
+  "year": 2024,
+  "title": "Does Non-Measurability Favour Imprecision?",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzad041",
+  "volume": "133",
+  "pages": "472-503"
+ },
+ {
+  "key": "GoodsellNebel2024",
+  "authors": [
+   "Zachary Goodsell",
+   "Jacob M. Nebel"
+  ],
+  "year": 2024,
+  "title": "Symmetry, Invariance, and Imprecise Probability",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzae048"
+ },
+ {
+  "key": "Thong2024",
+  "authors": [
+   "Joshua Thong"
+  ],
+  "year": 2024,
+  "title": "Consequences of Assigning Non-Measurable Sets Imprecise Probabilities",
+  "venue": "Mind",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1093/mind/fzae023",
+  "volume": "133",
+  "pages": "793-804"
+ },
+ {
+  "key": "MancosuMassas2024",
+  "authors": [
+   "Paolo Mancosu",
+   "Guillaume Massas"
+  ],
+  "year": 2024,
+  "title": "Totality, Regularity, and Cardinality in Probability Theory",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "seen": "abstract",
+  "doi": "10.1017/psa.2023.159",
+  "volume": "91",
+  "pages": "721-740"
+ },
+ {
+  "key": "EganTitelbaum2022SEP",
+  "authors": [
+   "Andy Egan",
+   "Michael G. Titelbaum"
+  ],
+  "year": 2022,
+  "title": "Self-Locating Beliefs",
+  "venue": "Stanford Encyclopedia of Philosophy",
+  "type": "encyclopedia",
+  "seen": "full text",
+  "source_url": "https://plato.stanford.edu/entries/self-locating-beliefs/"
+ },
+ {
+  "key": "Lin2022SEP",
+  "authors": [
+   "Hanti Lin"
+  ],
+  "year": 2022,
+  "title": "Bayesian Epistemology",
+  "venue": "Stanford Encyclopedia of Philosophy",
+  "type": "encyclopedia",
+  "seen": "full text of secs 3.3-3.6, 5",
+  "source_url": "https://plato.stanford.edu/entries/epistemology-bayesian/"
+ },
+ {
+  "key": "Pettigrew2023SEP",
+  "authors": [
+   "Richard Pettigrew"
+  ],
+  "year": 2023,
+  "title": "Epistemic Utility Arguments for Epistemic Norms",
+  "venue": "Stanford Encyclopedia of Philosophy",
+  "type": "encyclopedia",
+  "seen": "full text of secs 5.1-5.6, 7, 8",
+  "source_url": "https://plato.stanford.edu/entries/epistemic-utility/"
+ }
+]
