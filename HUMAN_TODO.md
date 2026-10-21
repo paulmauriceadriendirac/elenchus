@@ -1,6 +1,6 @@
 # What the run needs from you
 
-_Updated 2026-10-21 19:37 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-21 19:45 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
@@ -85,6 +85,55 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Why:** L1 map: Invariant Value Theory and a new impossibility result for Independence; source of Independent Sum Consistency principle; only abstract read
 - **Requested by:** lane-mapper L1
 
+### `l2-carlson-risberg-2024`  (high)
+- **Citation:** Carlson & Risberg, 'In defense of value incomparability: A reply to Dorr, Nebel, and Zuehl', Noûs (2024), doi:10.1111/nous.12533
+- **Where to try:** https://doi.org/10.1111/nous.12533 ; https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/nous.12533
+- **Needed:** full text PDF
+- **Why:** L2 map: main published reply on Strong Monotonicity; open access but Wiley blocks automated download
+- **Requested by:** lane-mapper-L2
+
+### `l2-dnz-case-for-comparability`  (high)
+- **Citation:** Dorr, Nebel & Zuehl, 'The Case for Comparability', Noûs 57 (2023): 414-453, doi:10.1111/nous.12407
+- **Where to try:** https://philarchive.org/rec/DORTCF-2 ; https://doi.org/10.1111/nous.12407
+- **Needed:** full text PDF
+- **Why:** L2 map: central anti-incomparability paper (exact statement of Comparability, the valid-seeming inference patterns, replies to small-improvement arguments); only abstract readable (PhilArchive/Wiley block automated access)
+- **Requested by:** lane-mapper-L2
+
+### `l2-dnz-consequences`  (high)
+- **Citation:** Dorr, Nebel & Zuehl, 'Consequences of Comparability', Philosophical Perspectives 35 (2021): 70-98, doi:10.1111/phpe.12157
+- **Where to try:** https://philarchive.org/rec/DORCOC-3 ; https://doi.org/10.1111/phpe.12157
+- **Needed:** full text PDF
+- **Why:** L2 map: derives complete preferences and real-valued credences from Comparability; need exact premises to map open problems
+- **Requested by:** lane-mapper-L2
+
+### `l2-dnz-reply-2026`  (high)
+- **Citation:** Dorr, Nebel & Zuehl, 'In Defense of Comparability: Reply to Carlson and Risberg', Noûs (2026), doi:10.1111/nous.70040
+- **Where to try:** https://doi.org/10.1111/nous.70040 ; https://philarchive.org/rec/DORIDO-3
+- **Needed:** full text PDF
+- **Why:** L2 map: latest state of the comparability debate; OA (CC-BY) but Wiley blocks automated download
+- **Requested by:** lane-mapper-L2
+
+### `l2-hare-take-the-sugar`  (high)
+- **Citation:** Hare, 'Take the Sugar', Analysis 70 (2010): 237-247, doi:10.1093/analys/anp174
+- **Where to try:** https://doi.org/10.1093/analys/anp174
+- **Needed:** full text PDF
+- **Why:** L2 map: origin of opaque sweetening, prospectism vs deferentialism; currently known only through later papers
+- **Requested by:** lane-mapper-L2
+
+### `l2-rabinowicz-incomm-meets-risk`  (high)
+- **Citation:** Rabinowicz, 'Incommensurability Meets Risk', in Andersson & Herlitz (eds), Value Incommensurability (Routledge 2022), pp. 201-230, doi:10.4324/9781003148012-15
+- **Where to try:** https://doi.org/10.4324/9781003148012-15 ; https://doi.org/10.4324/9781003148012
+- **Needed:** full text PDF
+- **Why:** L2 map: source of Well-Roundedness principle attacked by Tarsney-Lederman-Spears; volume is OA (CC-BY-NC-ND) but download blocked
+- **Requested by:** lane-mapper-L2
+
+### `l2-schoenfield-parity`  (high)
+- **Citation:** Schoenfield, 'Decision Making in the Face of Parity', Philosophical Perspectives 28 (2014): 263-277, doi:10.1111/phpe.12044
+- **Where to try:** https://doi.org/10.1111/phpe.12044
+- **Needed:** full text PDF
+- **Why:** L2 map: main defence of statewise reasoning under parity; currently known only through quotations in later papers
+- **Requested by:** lane-mapper-L2
+
 ### `l3-carter-hawthorne-2024-dogmatism-inquiry`  (high)
 - **Citation:** Carter, S. and Hawthorne, J. (2024) 'Dogmatism and Inquiry', Mind 133(531): 651-676, doi:10.1093/mind/fzad070
 - **Where to try:** https://doi.org/10.1093/mind/fzad070 ; https://discovery.ucl.ac.uk/id/eprint/10197125 ; https://philarchive.org/rec/CARDIO-2
@@ -126,6 +175,55 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Needed:** full text (PDF)
 - **Why:** argues that only Goldstein's Fragility picture fits normality theory and that it vindicates KK for sophisticated believers; frontier of the KK debate; T&F blocks automated access
 - **Requested by:** lane-mapper L3
+
+### `l5-arntzenius-dorr-2017-self-locating-priors`  (high)
+- **Citation:** Arntzenius, F. & Dorr, C. (2017). Self-Locating Priors and Cosmological Measures. In Chamcham et al. (eds), The Philosophy of Cosmology, CUP, 396-428. doi:10.1017/9781316535783.021
+- **Where to try:** https://doi.org/10.1017/9781316535783.021
+- **Needed:** full text (PDF)
+- **Why:** Self-locating ur-priors and infinite-world measures (the 'measure problem' IHR 2022 calls open); panel member co-author; unread
+- **Requested by:** mapper-L5
+
+### `l5-button-rothschild-spectre-too-clever-by-halving`  (high)
+- **Citation:** Button, T., Rothschild, D. & Spectre, L. 'Too Clever by Halving' (PhilArchive BUTTCB-4; cited as 2024 by Schwarz 2025; venue unverified)
+- **Where to try:** https://philarchive.org/rec/BUTTCB-4
+- **Needed:** full text (PDF) and publication venue if published
+- **Why:** Recent anti-halfer arguments (epistemological sure-thing principle; 'Informed SB'); only a search-engine summary was available
+- **Requested by:** mapper-L5
+
+### `l5-dorst-et-al-2021-deference-done-better`  (high)
+- **Citation:** Dorst, K., Levinstein, B. A., Salow, B., Husic, B. E. & Fitelson, B. (2021). Deference Done Better. Philosophical Perspectives 35: 99-150. doi:10.1111/phpe.12156
+- **Where to try:** https://doi.org/10.1111/phpe.12156
+- **Needed:** full text (PDF)
+- **Why:** Exact statement of Total Trust and the characterisation theorems; two panel members are co-authors, so the principle must be stated exactly
+- **Requested by:** mapper-L5
+
+### `l5-jaeger-2021-immortal-beauty`  (high)
+- **Citation:** Jäger, J. (2021/2022). Immortal Beauty: Does Existence Confirm Reincarnation? Australasian Journal of Philosophy 100(4): 789-807. doi:10.1080/00048402.2021.1938150
+- **Where to try:** https://philarchive.org/rec/JAEIBD ; https://jaeger.hosting.nyu.edu/IB.pdf
+- **Needed:** full text (PDF)
+- **Why:** Panel member's self-location paper (thirding implies strong evidence for reincarnation); only a search summary read; must be represented exactly
+- **Requested by:** mapper-L5
+
+### `l5-levinstein-2023-accuracy-deference-chance`  (high)
+- **Citation:** Levinstein, B. A. (2023). Accuracy, Deference, and Chance. Philosophical Review 132(1): 43-87. doi:10.1215/00318108-10123774
+- **Where to try:** https://doi.org/10.1215/00318108-10123774
+- **Needed:** full text (PDF)
+- **Why:** Trust principle and its accuracy characterisation; landmark for deference; only abstract read
+- **Requested by:** mapper-L5
+
+### `l5-meehan-zhang-2025-bayes-is-back`  (high)
+- **Citation:** Meehan, A. & Zhang, S. (2025). Bayes Is Back. Philosophical Review 134(3): 285-350. doi:10.1215/00318108-11873775
+- **Where to try:** https://doi.org/10.1215/00318108-11873775
+- **Needed:** full text (PDF)
+- **Why:** Central 2025 result on conditionalization under nontransparent learning; only abstract and a third-party blog reconstruction read; exact theorem conditions needed
+- **Requested by:** mapper-L5
+
+### `l5-russell-2023-sleeping-beautys-evidence`  (high)
+- **Citation:** Russell, J. S. (2023). Sleeping Beauty's Evidence. In Lasonen-Aarnio & Littlejohn (eds), Routledge Handbook of the Philosophy of Evidence, 163-175. doi:10.4324/9781315672687-16
+- **Where to try:** https://philarchive.org/rec/RUSSBE
+- **Needed:** full text (PDF)
+- **Why:** Frontier statement on what Beauty's evidence supports ('That depends'); cited by Schwarz 2025 re externalist evidence; unread
+- **Requested by:** mapper-L5
 
 ### `mandelkern-2020-counterexample-modus-ponenses`  (high)
 - **Citation:** Mandelkern, M. (2020). A Counterexample to Modus Ponenses. Journal of Philosophy 117(6). doi:10.5840/jphil2020117619
@@ -253,6 +351,55 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Why:** L1 map: landmark impossibility (unbounded utility vs stochastic equivalence + sum invariance); only secondary statements read
 - **Requested by:** lane-mapper L1
 
+### `l2-bader-opaque`  (medium)
+- **Citation:** Bader, 'Stochastic Dominance and Opaque Sweetening', Australasian J. Phil. 96 (2018): 498-507, doi:10.1080/00048402.2017.1362566
+- **Where to try:** https://doi.org/10.1080/00048402.2017.1362566
+- **Needed:** full text PDF
+- **Why:** L2 map: conflict of statewise negative dominance with stochastic dominance; known only via later papers
+- **Requested by:** lane-mapper-L2
+
+### `l2-bales-cohen-handfield`  (medium)
+- **Citation:** Bales, Cohen & Handfield, 'Decision Theory for Agents with Incomplete Preferences', Australasian J. Phil. 92 (2014): 453-470, doi:10.1080/00048402.2013.843576
+- **Where to try:** https://doi.org/10.1080/00048402.2013.843576 ; https://doi.org/10.2139/ssrn.2331859
+- **Needed:** full text PDF
+- **Why:** L2 map: Competitiveness principle against prospectism; only abstract read
+- **Requested by:** lane-mapper-L2
+
+### `l2-chang-parity`  (medium)
+- **Citation:** Chang, 'The Possibility of Parity', Ethics 112 (2002): 659-688, doi:10.1086/339673
+- **Where to try:** https://doi.org/10.1086/339673
+- **Needed:** full text PDF
+- **Why:** L2 map: canonical parity paper; currently known through SEP and later papers
+- **Requested by:** lane-mapper-L2
+
+### `l2-doody-2025`  (medium)
+- **Citation:** Doody, 'Reasons, rationality, and opaque sweetening: Hare's No Reason argument for taking the sugar', Noûs 60 (2025): 328-350, doi:10.1111/nous.70007
+- **Where to try:** https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/nous.70007
+- **Needed:** full text PDF
+- **Why:** L2 map: latest opaque-sweetening paper; OA but blocked
+- **Requested by:** lane-mapper-L2
+
+### `l2-hedden-munoz`  (medium)
+- **Citation:** Hedden & Muñoz, 'Dimensions of Value', Noûs 58 (2024): 291-305, doi:10.1111/nous.12454
+- **Where to try:** https://philpapers.org/archive/HEDDOV.pdf ; https://doi.org/10.1111/nous.12454
+- **Needed:** full text PDF
+- **Why:** L2 map: Strong Pareto across value dimensions, Dimensionalism; only abstract read
+- **Requested by:** lane-mapper-L2
+
+### `l2-petersen-dynamic`  (medium)
+- **Citation:** Petersen, 'Dynamic choice without the completeness axiom', Theory and Decision 101 (2026): 375-390, doi:10.1007/s11238-025-10052-0
+- **Where to try:** https://doi.org/10.1007/s11238-025-10052-0
+- **Needed:** full text PDF
+- **Why:** L2 map: characterises most permissive dynamically consistent choice rule for incomplete preferences; only abstract read
+- **Requested by:** lane-mapper-L2
+
+### `l2-weatherson-binary`  (medium)
+- **Citation:** Weatherson, 'Are Choices Binary?', Philosophical Issues (2025), doi:10.1111/phis.70011
+- **Where to try:** https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/phis.70011
+- **Needed:** full text PDF
+- **Why:** L2 map: attacks the preference-choiceworthiness link used in parity debates; OA but blocked
+- **Requested by:** lane-mapper-L2
+
 ### `l3-dorst-2019-abominable-kk`  (normal)
 - **Citation:** Dorst, K. (2019) 'Abominable KK Failures', Mind 128(512): 1227-1259, doi:10.1093/mind/fzy067; and reply Fraser, R. E. (2022) 'KK Failures Are Not Abominable', Mind 131(522): 575-584, doi:10.1093/mind/fzab029
 - **Where to try:** https://doi.org/10.1093/mind/fzy067 ; https://doi.org/10.1093/mind/fzab029
@@ -287,6 +434,41 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Needed:** full text of both (PDF)
 - **Why:** canonical margin-for-error models and improbable-knowing results that the normality literature responds to; currently described only via Goodman 2013 and Salow
 - **Requested by:** lane-mapper L3
+
+### `l5-builes-2024-center-indifference`  (medium)
+- **Citation:** Builes, D. (2024). Center Indifference and Skepticism. Noûs 58: 778-798. doi:10.1111/nous.12478
+- **Where to try:** https://doi.org/10.1111/nous.12478
+- **Needed:** full text (PDF)
+- **Why:** Disambiguation of Elga-style center indifference; frontier for self-locating priors; only abstract read
+- **Requested by:** mapper-L5
+
+### `l5-gallow-2021-updating-for-externalists`  (medium)
+- **Citation:** Gallow, J. D. (2021). Updating for Externalists. Noûs 55(3): 487-516. doi:10.1111/nous.12307
+- **Where to try:** https://doi.org/10.1111/nous.12307
+- **Needed:** full text (PDF)
+- **Why:** Rival update rule for externalists; inconsistency of conditionalization and reflection under externalism; only abstract read
+- **Requested by:** mapper-L5
+
+### `l5-goodsell-nebel-2024-symmetry-invariance`  (medium)
+- **Citation:** Goodsell, Z. & Nebel, J. M. (2024). Symmetry, Invariance, and Imprecise Probability. Mind. doi:10.1093/mind/fzae048
+- **Where to try:** https://doi.org/10.1093/mind/fzae048
+- **Needed:** full text (PDF)
+- **Why:** Inconsistency result for symmetry principles on non-measurable regions; organiser and panel member authors; only abstract read
+- **Requested by:** mapper-L5
+
+### `l5-isaacs-russell-2023-updating-without-evidence`  (medium)
+- **Citation:** Isaacs, Y. & Russell, J. S. (2023). Updating without Evidence. Noûs 57(3): 576-599. doi:10.1111/nous.12426 (open access CC BY-NC; Wiley blocked automated download)
+- **Where to try:** https://onlinelibrary.wiley.com/doi/10.1111/nous.12426
+- **Needed:** full text (PDF)
+- **Why:** Non-transparent updating framework used by Schwarz 2025 and Easwaran-Nielsen 2025; only abstract read
+- **Requested by:** mapper-L5
+
+### `l5-schoenfield-2017-conditionalization-expected-accuracy`  (medium)
+- **Citation:** Schoenfield, M. (2017). Conditionalization Does Not (in General) Maximize Expected Accuracy. Mind 126(504): 1155-1187. doi:10.1093/mind/fzw027
+- **Where to try:** https://doi.org/10.1093/mind/fzw027
+- **Needed:** full text (PDF)
+- **Why:** Landmark theorem for non-partitional evidence; known only via SEP and Pettigrew's reconstruction
+- **Requested by:** mapper-L5
 
 ### `philpapers-survey-2020-specialist-results`  (normal)
 - **Citation:** Bourget, D. and Chalmers, D. J. (2020 PhilPapers Survey results website, survey2020.philpeople.org): per-question results pages with breakdowns by area of specialization (AOS)
