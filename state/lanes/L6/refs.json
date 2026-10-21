@@ -1699,5 +1699,138 @@
   "doi": "10.1093/bjps/axy074",
   "volume": "72",
   "pages": "587-615"
+ },
+ {
+  "key": "Khoo2022Meaning",
+  "authors": [
+   "Justin Khoo"
+  ],
+  "year": 2022,
+  "title": "The Meaning of If",
+  "venue": "Oxford University Press",
+  "doi": "10.1093/oso/9780190096700.001.0001",
+  "type": "book",
+  "seen": "abstract"
+ },
+ {
+  "key": "Williamson2020Suppose",
+  "authors": [
+   "Timothy Williamson"
+  ],
+  "year": 2020,
+  "title": "Suppose and Tell: The Semantics and Heuristics of Conditionals",
+  "venue": "Oxford University Press",
+  "doi": "10.1093/oso/9780198860662.001.0001",
+  "type": "book",
+  "seen": "abstract"
+ },
+ {
+  "key": "Stefansson2018Counterfactual",
+  "authors": [
+   "H. Orri Stefánsson"
+  ],
+  "year": 2018,
+  "title": "Counterfactual Skepticism and Multidimensional Semantics",
+  "venue": "Erkenntnis",
+  "doi": "10.1007/s10670-017-9918-y",
+  "volume": "83",
+  "pages": "875-898",
+  "type": "article",
+  "seen": "title + SEP summary"
+ },
+ {
+  "key": "Fisher2017Causal",
+  "authors": [
+   "Tyrus Fisher"
+  ],
+  "year": 2017,
+  "title": "Causal Counterfactuals Are Not Interventionist Counterfactuals",
+  "venue": "Synthese",
+  "doi": "10.1007/s11229-016-1183-0",
+  "volume": "194",
+  "pages": "4935-4957",
+  "type": "article",
+  "seen": "title"
+ },
+ {
+  "key": "Willer2022Negating",
+  "authors": [
+   "Malte Willer"
+  ],
+  "year": 2022,
+  "title": "Negating Conditionals",
+  "venue": "Oxford Studies in Philosophy of Language, Volume 2",
+  "doi": "10.1093/oso/9780192844613.003.0008",
+  "pages": "234-266",
+  "type": "chapter",
+  "seen": "abstract"
+ },
+ {
+  "key": "CiardelliOmmundsen2026Ambiguity",
+  "authors": [
+   "Ivano Ciardelli",
+   "Adrian Ommundsen"
+  ],
+  "year": 2026,
+  "title": "On the Ambiguity of Will-Conditionals",
+  "venue": "Mind",
+  "doi": "10.1093/mind/fzaf082",
+  "type": "article",
+  "seen": "abstract"
+ },
+ {
+  "key": "EgreRossiSprenger2026Trivalent",
+  "authors": [
+   "Paul Égré",
+   "Lorenzo Rossi",
+   "Jan Sprenger"
+  ],
+  "year": 2026,
+  "title": "Trivalent Conditionals, Kratzer Style",
+  "venue": "Journal of Semantics",
+  "doi": "10.1093/jos/ffag005",
+  "type": "article",
+  "seen": "abstract"
+ },
+ {
+  "key": "Wojtowicz2021Graph",
+  "authors": [
+   "Anna Wójtowicz",
+   "Krzysztof Wójtowicz"
+  ],
+  "year": 2021,
+  "title": "A Graph Model for Probabilities of Nested Conditionals",
+  "venue": "Linguistics and Philosophy",
+  "doi": "10.1007/s10988-021-09324-z",
+  "type": "article",
+  "seen": "title"
+ },
+ {
+  "key": "Wojtowicz2023Minimal",
+  "authors": [
+   "Anna Wójtowicz",
+   "Krzysztof Wójtowicz"
+  ],
+  "year": 2023,
+  "title": "A Minimal Probability Space for Conditionals",
+  "venue": "Journal of Philosophical Logic",
+  "doi": "10.1007/s10992-023-09710-x",
+  "type": "article",
+  "seen": "abstract"
+ },
+ {
+  "key": "Wojtowicz2025Deep",
+  "authors": [
+   "Anna Wójtowicz",
+   "Krzysztof Wójtowicz"
+  ],
+  "year": 2025,
+  "title": "Deep and Shallow Conditionals – and Three Alleged Counterexamples",
+  "venue": "Inquiry",
+  "doi": "10.1080/0020174X.2024.2410304",
+  "volume": "68",
+  "pages": "3806-3848",
+  "type": "article",
+  "seen": "title + search snippet"
  }
 ]

@@ -2249,5 +2249,102 @@
   "type": "encyclopedia",
   "seen": "full text of secs 5.1-5.6, 7, 8",
   "source_url": "https://plato.stanford.edu/entries/epistemic-utility/"
+ },
+ {
+  "key": "Draper2019",
+  "authors": [
+   "Kaila Draper"
+  ],
+  "year": 2019,
+  "title": "Direct Inference and the Sleeping Beauty Problem",
+  "venue": "Synthese",
+  "type": "article",
+  "doi": "10.1007/s11229-019-02203-y",
+  "volume": "198",
+  "pages": "2253-2271",
+  "seen": "abstract (Springer page)"
+ },
+ {
+  "key": "Horgan2019",
+  "authors": [
+   "Terry Horgan"
+  ],
+  "year": 2019,
+  "title": "Direct Inference, Reichenbach's Principle, and the Sleeping Beauty Problem",
+  "venue": "Episteme",
+  "type": "article",
+  "doi": "10.1017/epi.2019.41",
+  "volume": "18",
+  "pages": "640-653",
+  "seen": "abstract (Crossref)"
+ },
+ {
+  "key": "Bradley2011",
+  "authors": [
+   "Darren Bradley"
+  ],
+  "year": 2011,
+  "title": "Self-Location Is No Problem for Conditionalization",
+  "venue": "Synthese",
+  "type": "article",
+  "doi": "10.1007/s11229-010-9748-9",
+  "volume": "182",
+  "pages": "393-411",
+  "seen": "title; cited in Schwarz 2025"
+ },
+ {
+  "key": "BradleyLeitgeb2006",
+  "authors": [
+   "Darren Bradley",
+   "Hannes Leitgeb"
+  ],
+  "year": 2006,
+  "title": "When Betting Odds and Credences Come Apart: More Worries for Dutch Book Arguments",
+  "venue": "Analysis",
+  "type": "article",
+  "doi": "10.1093/analys/66.2.119",
+  "volume": "66",
+  "pages": "119-127",
+  "seen": "title; cited in Schwarz 2025"
+ },
+ {
+  "key": "Lange2024",
+  "authors": [
+   "Marc Lange"
+  ],
+  "year": 2024,
+  "title": "Jeffrey Conditionalization Permits Undermining",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "doi": "10.1007/s10992-024-09741-y",
+  "volume": "53",
+  "pages": "585-591",
+  "seen": "title"
+ },
+ {
+  "key": "Levinstein2017",
+  "authors": [
+   "Benjamin A. Levinstein"
+  ],
+  "year": 2017,
+  "title": "Accuracy Uncomposed: Against Calibrationism",
+  "venue": "Episteme",
+  "type": "article",
+  "doi": "10.1017/epi.2016.50",
+  "volume": "14",
+  "pages": "59-69",
+  "seen": "abstract (Crossref)"
+ },
+ {
+  "key": "Easwaran2019Handbook",
+  "authors": [
+   "Kenny Easwaran"
+  ],
+  "year": 2019,
+  "title": "Conditional Probabilities",
+  "venue": "The Open Handbook of Formal Epistemology (R. Pettigrew & J. Weisberg eds., PhilPapers Foundation)",
+  "type": "chapter",
+  "pages": "131-198",
+  "seen": "title; cited in SEP (Lin 2022) and Easwaran & Nielsen 2025 reference list"
  }
 ]
