@@ -1,0 +1,14 @@
+{
+  "_note": "USD per million tokens, list prices for the Claude API (docs.claude.com pricing page, checked 2026-10-21). Used only to ESTIMATE run cost for budget control and the methodology report. Keys are matched as substrings of the model id, first match wins, so keep specific keys above generic ones.",
+  "models": [
+    {"match": "fable",      "input": 10.0, "output": 50.0, "cache_write_5m": 12.5,  "cache_write_1h": 20.0, "cache_read": 0.25},
+    {"match": "mythos",     "input": 10.0, "output": 50.0, "cache_write_5m": 12.5,  "cache_write_1h": 20.0, "cache_read": 0.25},
+    {"match": "opus-5-5",   "input": 4.0,  "output": 20.0, "cache_write_5m": 5.0,   "cache_write_1h": 8.0,  "cache_read": 0.20},
+    {"match": "opus",       "input": 5.0,  "output": 25.0, "cache_write_5m": 6.25,  "cache_write_1h": 10.0, "cache_read": 0.50},
+    {"match": "sonnet-5-5", "input": 2.0,  "output": 10.0, "cache_write_5m": 2.5,   "cache_write_1h": 4.0,  "cache_read": 0.10},
+    {"match": "sonnet",     "input": 3.0,  "output": 15.0, "cache_write_5m": 3.75,  "cache_write_1h": 6.0,  "cache_read": 0.30},
+    {"match": "haiku-5-5",  "input": 0.10, "output": 0.50, "cache_write_5m": 0.125, "cache_write_1h": 0.20, "cache_read": 0.01},
+    {"match": "haiku",      "input": 1.0,  "output": 5.0,  "cache_write_5m": 1.25,  "cache_write_1h": 2.0,  "cache_read": 0.10}
+  ],
+  "web_search_per_1000": 10.0
+}
