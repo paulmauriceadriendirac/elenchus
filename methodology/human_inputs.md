@@ -12,3 +12,7 @@
 
 > "if budget runs low, prepare handoff packets for another AI model."  also maybe skip some of the extra most token inefficent steps damn i did not anticipate this api cost token burn speed
 
+## 2026-10-21T19:44:53Z — class: logistics
+
+> hey also i mean api costs are expensive, can i do the rest of this on my normal pro plan? assume like two weeks of budget with one full reset left
+

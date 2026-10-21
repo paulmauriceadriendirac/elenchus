@@ -15,3 +15,4 @@
 - 2026-10-21T19:42:49Z **agent**: lane-mapper L6: refs.json written (117 refs; 104 VERIFIED by verify_refs, 13 with documented manual checks), 12 fetch requests filed (6 high)
 - 2026-10-21T19:42:58Z **human** (logistics): see human_inputs.md
 - 2026-10-21T19:44:17Z **decision**: Budget: human set a total cap of $150 (list-price estimate from tools/usage_report.py) and chose Sonnet for mechanical roles (triage scoring, reference lookups, compliance, packaging); Opus kept for ideation, red team, drafting, referees. When remaining budget runs low: stop launching agents and write self-contained handoff packets for another AI model in relay/outbox/. Per the human's request to skip token-inefficient steps, optional work is dropped in the skill's order (evolution rounds, extra review rounds, extra full drafts); Phase 9 never dropped.
+- 2026-10-21T19:44:53Z **human** (logistics): see human_inputs.md
