@@ -21,3 +21,9 @@
   handoff packets in relay/outbox/ for another AI model (human couriers, unedited replies to
   relay/inbox/).
 - Optional work dropped in skill order: evolution rounds, extra review rounds, extra full drafts.
+
+## Lean mode (human instruction, 2026-10-21 ~20:00 UTC)
+- Budget $100. Full pipeline abandoned. Lanes mapped: L3, L5, L6 (L1, L2, L4 stopped unmapped).
+- Three single-pass essays: E1 (L3), E2 (L5), E3 (L6) → state/drafts/E*/v1.md. After that the
+  human takes them to other AI models for revision and does word count, hidden-text check, PDF
+  and methodology report manually.
