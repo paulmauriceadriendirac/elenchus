@@ -28,3 +28,7 @@
 
 > [uploaded PDF: bayes.pdf, 66 pages] this essay? like why were you focusing all the compute on exploration. should have spend this on thinking about the essay!!!! revise it now that you have the full text
 
+## 2026-10-21T20:11:41Z — class: courier
+
+> [uploaded PDF: goodman.pdf, 57 pages]
+
