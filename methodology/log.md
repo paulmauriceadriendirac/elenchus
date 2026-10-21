@@ -39,3 +39,4 @@
 - 2026-10-21T21:20:24Z **agent**: E3 revised to v3 after referee S5: state/drafts/E3/v3.md
 - 2026-10-21T21:28:51Z **human** (logistics): see human_inputs.md
 - 2026-10-21T21:29:51Z **decision**: Human lifted the no-web restriction and asked for more essays from existing work. Saved Zendejas Medina 'Just As Planned' (inbox/sources/zendejas-medina-just-as-planned.txt, from journal print view supplied by human). Copied 63 agent-downloaded source texts from the session scratchpad to state/sources_cache/ so they survive the VM. Launched: E2 v4 (engage Zendejas Medina et al.); ideators L3, L5, L6 (6 cards each) and DT wildcard over L1/L2/L4 (8 cards). Next: triage, then draft top candidates with read-closest-work-first discipline.
+- 2026-10-21T21:36:54Z **agent**: E1 revised to v3 after referee S2: state/drafts/E1/v3.md

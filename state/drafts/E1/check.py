@@ -19,9 +19,9 @@ normal in every respect; w >> v iff w >= v and w is sufficiently more normal in 
 
 Claims checked (numbering as in v3):
   Lemma 1   Under COMPARABILITY, RB and up(w) are nested, so K(w) is RB or up(w).
-  Thm 1     On products KM(w) = prod_d I_d(w_d) = {v : for no d, w >> w[d:=v_d]}
+  Thm 2     On products KM(w) = prod_d I_d(w_d) = {v : for no d, w >> w[d:=v_d]}
             = {v : not w >> glb(w, v)}.
-  Prop 2    On products (RB nonempty): (a) the projection of K(w) on each respect d is
+  Prop 3    On products (RB nonempty): (a) the projection of K(w) on each respect d is
             B_d U up_d(w_d); (b) K(w) is a box (= prod_d (B_d U up_d(w_d))) unless
             COND(w): some respect d has w_d outside B_d and some other respect e has w_e
             strictly more normal than some state in B_e; (c) COND(w) iff K(w) is neither RB
@@ -29,16 +29,16 @@ Claims checked (numbering as in v3):
             K knows "respect d is within belief, or respect e is at least as normal as w_e",
             knows neither disjunct, the first is false and believed, the second true.
   Fig 4     K(0,2) = JTB(0,2) = RB U {(0,2)}; JTB satisfies CONVEXITY at (0,2).
-  Prop 3    For any relation satisfying FACTIVITY on a product: SEPARATION at w iff
+  Prop 4    For any relation satisfying FACTIVITY on a product: SEPARATION at w iff
             COMBINATION (anchored at sets S containing a respect outside belief) at w.
             Brute force over all A, B.
-  Prop 4    MEET: (a) = K on every comparable structure; (b) on products
+  Prop 5    MEET: (a) = K on every comparable structure; (b) on products
             = prod_d (B_d U up_d(w_d)); (c) framework principles, transitivity;
             (d) the most restrictive relation with FACTIVITY, INDUCTIVE LIMITS, CONVEXITY and
             COMBINATION (any number of respects); MEET is the box hull of K; and
             K <= MEET <= KM <= I on products.
   Table     SEPARATION / MARGINS for I, K, KM, MEET on products.
-  Cor 5     Probabilist relations (p. 121) from independent marginals: KM on the product =
+  Cor 6     Probabilist relations (p. 121) from independent marginals: KM on the product =
             intersection of single-respect I contexts; MEET = intersection of single-respect
             K contexts.  Figure-5 parameters: joint context facts quoted in the text.
   Discovery K's loss of knowledge on discovering an antecedent, in 2 dimensions and in one
@@ -200,34 +200,34 @@ for dims in families:
     check(P.RB == frozenset(itertools.product(*[sorted(b) for b in Bs])), "RB != prod B_d")
     for w in P.W:
         I_fac = frozenset(itertools.product(*[pd[d][1](w[d]) for d in range(n)]))
-        # Thm 1 and its two global non-disjunctive forms
+        # Thm 2 and its two global non-disjunctive forms
         KMw = P.KM(w)
-        check(KMw == I_fac, f"Thm1 fails at {w} in {dims}")
+        check(KMw == I_fac, f"Thm2 fails at {w} in {dims}")
         f1 = frozenset(v for v in P.W
                        if not any(P.sm(w, tuple(v[j] if j == d else w[j] for j in range(n)))
                                   for d in range(n)))
         f2 = frozenset(v for v in P.W if not P.sm(w, P.glb(w, v)))
-        check(KMw == f1 == f2, f"Thm1 global forms fail at {w}")
-        # Prop 2
+        check(KMw == f1 == f2, f"Thm2 global forms fail at {w}")
+        # Prop 3
         Kw = P.K(w); upw = P.up(w)
         dk = frozenset(itertools.product(*[sorted(pd[d][0] | pd[d][2](w[d])) for d in range(n)]))
         for d in range(n):
-            check(set(v[d] for v in Kw) == pd[d][0] | pd[d][2](w[d]), f"Prop2a projection at {w}")
+            check(set(v[d] for v in Kw) == pd[d][0] | pd[d][2](w[d]), f"Prop3a projection at {w}")
         wit = [(d, e, b) for d in range(n) for e in range(n) if d != e and w[d] not in pd[d][0]
                for b in pd[e][0] if pd[e][3][w[e]] < pd[e][3][b]]
         cond = bool(wit)
-        check(is_box(Kw, n) == (not cond), f"Prop2b box condition at {w} in {dims}")
-        if not cond: check(Kw == dk, f"Prop2b K != prod(B U up) at {w}")
-        check((Kw not in (P.RB, upw)) == cond, f"Prop2c active disjunction at {w}")
-        check(combination_B(Kw, w, n, Bs) == (not cond), f"Prop2c COMBINATION at {w}")
+        check(is_box(Kw, n) == (not cond), f"Prop3b box condition at {w} in {dims}")
+        if not cond: check(Kw == dk, f"Prop3b K != prod(B U up) at {w}")
+        check((Kw not in (P.RB, upw)) == cond, f"Prop3c active disjunction at {w}")
+        check(combination_B(Kw, w, n, Bs) == (not cond), f"Prop3c COMBINATION at {w}")
         for (d, e, b) in wit:
             A = frozenset(v for v in P.W if v[d] in pd[d][0])           # respect d within belief
             Bp = frozenset(v for v in P.W if v[e] in pd[e][2](w[e]))     # e at least as normal
             check(Kw <= A | Bp and not Kw <= A and not Kw <= Bp and w not in A and w in Bp
-                  and P.RB <= A, f"Prop2d Gettier disjunction at {w}")
-        # Prop 4
+                  and P.RB <= A, f"Prop3d Gettier disjunction at {w}")
+        # Prop 5
         Mw = P.MEET(w)
-        check(Mw == dk, f"Prop4b MEET != prod(B U up) at {w} in {dims}")
+        check(Mw == dk, f"Prop5b MEET != prod(B U up) at {w} in {dims}")
         check(Mw == box_hull(Kw, n), f"MEET is not the box hull of K at {w}")
         check(Kw <= Mw <= KMw <= P.I(w), f"chain K <= MEET <= KM <= I fails at {w}")
     for name, RK in (("I", P.I), ("K", P.K), ("KM", P.KM), ("MEET", P.MEET)):
@@ -246,7 +246,7 @@ check(table["MEET"]["sep_fail"] == 0 and table["MEET"]["marg_fail"] > 0, "MEET t
 check(table["I"]["sep_fail"] > 0 and table["I"]["marg_fail"] == 0, "I table")
 check(table["K"]["sep_fail"] > 0 and table["K"]["marg_fail"] > 0, "K table")
 
-# ---------- Prop 3: SEPARATION <-> COMBINATION, brute force over all A, B ----------
+# ---------- Prop 4: SEPARATION <-> COMBINATION, brute force over all A, B ----------
 random.seed(2)
 sample = random.sample([f for f in families if len(f) == 2 and len(f[0][0]) == 3], 250) + \
          random.sample([f for f in families if len(f) == 3], 60)
@@ -261,11 +261,11 @@ for dims in sample:
             cands.append(frozenset([w]) | frozenset(v for v in P.W if random.random() < 0.5))
         for R in cands:
             check(separation(R, w, n, Bs, sizes) == combination_B(R, w, n, Bs),
-                  f"Prop3 SEPARATION <-> COMBINATION fails at {w} in {dims}")
+                  f"Prop4 SEPARATION <-> COMBINATION fails at {w} in {dims}")
             n_rel += 1
-print("Prop 3: SEPARATION <-> COMBINATION checked by brute force on", n_rel, "relation-situation pairs")
+print("Prop 4: SEPARATION <-> COMBINATION checked by brute force on", n_rel, "relation-situation pairs")
 
-# ---------- Prop 4(d): MEET is the knowledge default under COMBINATION ----------
+# ---------- Prop 5(d): MEET is the knowledge default under COMBINATION ----------
 def minimal_comb(P, w, n, Bs):
     R = set(P.RB) | {w}
     while True:
@@ -279,10 +279,10 @@ def minimal_comb(P, w, n, Bs):
 for dims in families:
     n = len(dims); P = product(dims); Bs = [per_dim(dims, d)[0] for d in range(n)]
     for w in P.W:
-        check(minimal_comb(P, w, n, Bs) == P.MEET(w), f"Prop4d MEET not the knowledge default at {w}")
-print("Prop 4(d): MEET = most restrictive relation with FACTIVITY, IL, CONVEXITY, COMBINATION: checked")
+        check(minimal_comb(P, w, n, Bs) == P.MEET(w), f"Prop5d MEET not the knowledge default at {w}")
+print("Prop 5(d): MEET = most restrictive relation with FACTIVITY, IL, CONVEXITY, COMBINATION: checked")
 
-# ---------- Lemma 1 and Prop 4(a): comparable structures ----------
+# ---------- Lemma 1 and Prop 5(a): comparable structures ----------
 cnt = 0
 def comparable_struct(rank, S):
     k = len(rank)
@@ -294,7 +294,7 @@ for k in range(1, 5):
             Kw = st.K(w)
             check(st.RB <= st.up(w) or st.up(w) <= st.RB, "Lemma1 nesting")
             check(Kw == (st.RB if w in st.RB else st.up(w)), "Lemma1 K in {RB, up}")
-            check(st.MEET(w) == Kw, f"Prop4a MEET != K under comparability: {rank},{S},{w}")
+            check(st.MEET(w) == Kw, f"Prop5a MEET != K under comparability: {rank},{S},{w}")
         cnt += 1
 random.seed(3)
 for _ in range(3000):
@@ -306,7 +306,7 @@ for _ in range(3000):
     st = comparable_struct(rank, S)
     if not st.axioms(): continue
     for w in st.W:
-        check(st.MEET(w) == st.K(w) == (st.RB if w in st.RB else st.up(w)), "Lemma1/Prop4a (k=5)")
+        check(st.MEET(w) == st.K(w) == (st.RB if w in st.RB else st.up(w)), "Lemma1/Prop5a (k=5)")
     cnt += 1
 print("comparable structures checked for Lemma 1 and MEET = K:", cnt)
 
@@ -383,8 +383,8 @@ def probabilist_check(marg, t):
         for cx in ctx:
             check(cx.KM(w) == cx.I(w), "KM != I in a comparable context")
             interI &= set(cx.I(w)); interK &= set(cx.K(w))
-        check(set(Prod.KM(w)) == interI, f"Cor5a fails at {w}")
-        check(set(Prod.MEET(w)) == interK, f"Cor5b fails at {w}")
+        check(set(Prod.KM(w)) == interI, f"Cor6a fails at {w}")
+        check(set(Prod.MEET(w)) == interK, f"Cor6b fails at {w}")
     ge, sm = prob_rel(W, joint, t)
     return Prod, ctx, Struct(W, ge, sm), joint
 
@@ -422,11 +422,11 @@ for _ in range(200):
     probabilist_check(marg, Fraction(random.randint(55, 99), 100))
 print("random probabilist product models checked: 200")
 
-# ---------- z3: Theorem 1 on arbitrary 3x3; infinite and non-well-founded respects ----------
+# ---------- z3: Theorem 2 on arbitrary 3x3; infinite and non-well-founded respects ----------
 try:
     from z3 import (Solver, Int, Ints, Bool, And, Or, Not, Implies, ForAll, Exists, If,
                     unsat, sat)
-    # (1) Theorem 1 on arbitrary 3x3 structures (as in v2)
+    # (1) Theorem 2 on arbitrary 3x3 structures (as in v2)
     s = Solver(); k = 3
     r = [[Int(f"r{d}_{x}") for x in range(k)] for d in range(2)]
     sd = [[[Bool(f"s{d}_{x}_{y}") for y in range(k)] for x in range(k)] for d in range(2)]
@@ -447,8 +447,8 @@ try:
     def FAC(w, v): return And(*[Not(sd[d][w[d]][v[d]]) for d in range(2)])
     s.add(Or(*[KMacc(w, v) != FAC(w, v) for w in W for v in W]))
     res = s.check()
-    print("z3: counterexample to Theorem 1 on arbitrary 3x3 structures:", res)
-    check(res == unsat, "z3 found a counterexample to Theorem 1")
+    print("z3: counterexample to Theorem 2 on arbitrary 3x3 structures:", res)
+    check(res == unsat, "z3 found a counterexample to Theorem 2")
 
     # Infinite respects with quantifiers. Situations (a, s): a an integer, s in {0,1,2} with
     # G&S's figure-4 relations on s (0 >> 2 only).
@@ -470,12 +470,12 @@ try:
     # RB is empty
     r1 = solve(dom(va, vs), RBq(va, vs))
     check(r1 == unsat, "non-well-founded: RB should be empty")
-    # Theorem 1: KM(w) = prod I_d(w_d)
+    # Theorem 2: KM(w) = prod I_d(w_d)
     KMq = Or(RBq(va, vs), Exists([ua, us], And(dom(ua, us), GEz(va, vs, ua, us), GEz(wa, ws, ua, us),
                                                  Not(SMz(wa, ws, ua, us)))))
     FACq = And(Not(wa >= va + 2), Not(And(ws == 0, vs == 2)))
     r2 = solve(dom(wa, ws), dom(va, vs), KMq != FACq)
-    check(r2 == unsat, "non-well-founded: Theorem 1 fails")
+    check(r2 == unsat, "non-well-founded: Theorem 2 fails")
     # repaired MEET = up(w) = K(w); unrepaired MEET is empty (violates FACTIVITY)
     glbA = If(wa <= ba, wa, ba); glbS = If(ws >= bs, ws, bs)
     MEETr = Or(GEz(va, vs, wa, ws), Exists([ba, bs], And(dom(ba, bs), RBq(ba, bs), GEz(va, vs, glbA, glbS))))
@@ -484,7 +484,7 @@ try:
     check(r3 == unsat, "non-well-founded: repaired MEET != K = up(w)")
     r4 = solve(dom(wa, ws), Exists([ba, bs], And(dom(ba, bs), RBq(ba, bs))))
     check(r4 == unsat, "non-well-founded: unrepaired MEET should have no witnesses")
-    print("z3 non-well-founded respect: RB empty, Thm 1 holds, repaired MEET = K = up(w):",
+    print("z3 non-well-founded respect: RB empty, Thm 2 holds, repaired MEET = K = up(w):",
           r1, r2, r3)
     # (3) infinite but well-founded: naturals, smaller = more normal, x >> y iff y >= x + 2
     Nn = mk(lambda x, y: x <= y, lambda x, y: y >= x + 2, lambda a: a >= 0)
@@ -497,13 +497,13 @@ try:
                                                  Not(SMz(wa, ws, ua, us)))))
     FACq = And(Not(va >= wa + 2), Not(And(ws == 0, vs == 2)))
     r6 = solve(dom(wa, ws), dom(va, vs), KMq != FACq)
-    check(r6 == unsat, "naturals: Theorem 1 fails")
+    check(r6 == unsat, "naturals: Theorem 2 fails")
     glbA = If(wa >= ba, wa, ba); glbS = If(ws >= bs, ws, bs)
     MEETr = Or(GEz(va, vs, wa, ws), Exists([ba, bs], And(dom(ba, bs), RBq(ba, bs), GEz(va, vs, glbA, glbS))))
     BOX = And(Or(BA(va), va <= wa), Or(BS(vs), vs <= ws))
     r7 = solve(dom(wa, ws), dom(va, vs), MEETr != BOX)
     check(r7 == unsat, "naturals: MEET != prod(B U up)")
-    # Prop 2 condition: K(w) is a box iff not COND; COND: (wa not in B_A and ws strictly better
+    # Prop 3 condition: K(w) is a box iff not COND; COND: (wa not in B_A and ws strictly better
     # than some believed s-state) or (ws not in B_S and wa strictly better than some believed a)
     Kq = Or(RBq(va, vs), GEz(va, vs, wa, ws))
     COND = Or(And(Not(BA(wa)), ws < 1), And(Not(BS(ws)), wa < 1))
@@ -511,7 +511,7 @@ try:
     check(r8 == unsat, "naturals: K not a box although COND fails")
     r9 = solve(dom(wa, ws), COND, Not(Exists([va, vs], And(dom(va, vs), BOX, Not(Kq)))))
     check(r9 == unsat, "naturals: K a box although COND holds")
-    print("z3 infinite well-founded respect (naturals x fig-4): Thm 1, MEET box, Prop 2:",
+    print("z3 infinite well-founded respect (naturals x fig-4): Thm 2, MEET box, Prop 3:",
           r5, r6, r7, r8, r9)
 except ImportError:
     print("z3 not available; skipped")
