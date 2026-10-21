@@ -22,3 +22,4 @@
 - 2026-10-21T19:48:32Z **decision**: Human set budget to $100 and asked for three essays from what exists. Stopped mappers L1, L2, L4, L5, L6 (L5 and L6 maps already written; L1, L2, L4 unmapped). Dropped the gauntlet, tournaments, review rounds, Phase 9 tool checks, PDF and methodology report (human will do mechanical checks and methodology manually). Launched three single-pass essay agents (Opus, no web): E1 from L3, E2 from L5, E3 from L6, citing only verified lane refs. Outputs state/drafts/E{1,2,3}/v1.md + notes.md.
 - 2026-10-21T19:51:34Z **human** (logistics): see human_inputs.md
 - 2026-10-21T19:57:31Z **agent**: E2 essay drafted from L5 map: state/drafts/E2/v1.md
+- 2026-10-21T20:04:24Z **agent**: E1 essay drafted from L3 map: state/drafts/E1/v1.md
