@@ -40,3 +40,9 @@
   3 → referee → revise. Note: competition allows at most 3 submissions per entrant; extra essays
   are alternatives to choose among.
 - E2 v4 in progress (engage Zendejas Medina 2024 and others). E1 v3 in progress.
+
+## Cross-model exchange (2026-10-22)
+- Astra (other AI) essays on branch codex/five-philosophy-essays; review in state/external/.
+- Referee feedback posted: https://github.com/paulmauriceadriendirac/elenchus/issues/1
+  The human relays Astra's replies. Provenance of Astra's inputs still to be recorded.
+- Paused: four ideators (L3, L5, L6, DT) stopped at usage limit; resumable.

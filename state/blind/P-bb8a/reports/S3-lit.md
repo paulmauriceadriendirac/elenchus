@@ -205,7 +205,7 @@ Percentages are my confidence that each work exists as described.
 - **Prop. 1.**
   - Reg_{E_a} strictly decreases and Reg_{E_b} strictly increases on [0,1], and they cross. So the maximum of the two is uniquely minimized at p(1−q)² = (1−p)q², i.e. q* = √p/(√p+√(1−p)). ✓
   - V(p) = 2p(1−q*)² = 2p(1−p)/(√p+√(1−p))². ✓
-  - With u = √p, v = √(1−p): q* − p = u/(u+v) − u²(u²+v²)… simplifies to uv(v−u)/(u+v). ✓ Then 2(q*−p)² = 2p(1−p)(u−v)²/(u+v)² ≤ V, because (u−v)² = 1 − 2uv ≤ 1. ✓ This holds strictly for p ∈ (0,1).
+  - With u = √p, v = √(1−p): q* − p = u/(u+v) − u² = u(1 − u² − uv)/(u+v) = u(v² − uv)/(u+v) = uv(v−u)/(u+v). ✓ Then 2(q*−p)² = 2p(1−p)(u−v)²/(u+v)² ≤ V, because (u−v)² = 1 − 2uv ≤ 1. ✓ This holds strictly for p ∈ (0,1).
   - Odds: q*/(1−q*) = √(p/(1−p)). ✓
   - p = 4/5: q* = 2/3 ✓; V = 8/45 ≈ 0.1778 ✓; keeping q = p gives max regret 32/125 = 0.256 at E_b ✓; N's regret at q* is 8/225 ≈ 0.0356 ✓.
 - **Prop. 2.** L_N ≥ 2p(1−p), with equality iff q = p. At q = p, L_{E_a} = 2p(1−p)² and L_{E_b} = 2(1−p)p², both ≤ 2p(1−p), and L_R = 0. ✓ Unique within the evidence-respecting class ✓. The dogmatic rule also attains 2p(1−p) everywhere ✓, so §4's caveat is right.
