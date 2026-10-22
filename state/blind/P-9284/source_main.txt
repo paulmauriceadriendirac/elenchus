@@ -1,0 +1,3001 @@
+=== PDF page 1 ===
+Bayes Is Back
+Alexander Meehan
+University of Wisconsin–Madison
+Snow Zhang
+University of California, Berkeley
+1. Introduction
+How should rational agents revise their credences given new informa-
+tion? According to Bayesianism, the answer is Bayesian conditionaliza-
+tion. As a ﬁrst approximation, the rule of Bayesian conditionalization
+says: if one begins at t0 with a rational prior /EM,a n d p is the strongest
+proposition that one will learn between t0 and t1, then one should plan
+at t0 to revise one’s credences by adopting/EM.:jp/ at t1.
+Why is Bayesian conditionalization the rational way of revising
+one’s credences? One prominent approach to answering this question
+appeals to some kind of bridge principle between accuracy and ratio-
+nal updating. The guiding thought is that epistemic rationality bears a
+close connection to truth, and this is what sets it apart from, say, pru-
+dential rationality. It may be prudentially rational to never change one’s
+This article beneﬁted tremendously from a lot of feedback and advice. We would like to
+thank Aaron Bronfman, Jennifer Carr, Cian Dorr, Adam Elga, Hartry Field, Dan Greco,
+Harvey Lederman, Ginger Schultheis, and three anonymous referees for their extremely
+helpful and detailed feedback on earlier versions of this article. We would also like
+to thank Zachary Barnett, Kevin Dorst, Melissa Fusco, Simon Huttegger, Josh Knobe,
+Matthew Mandelkern, Pablo Zendejas Medina, Richard Pettigrew, Richard Roth, Bern-
+hard Salow, and Patrick Wu for illuminating discussions. Earlier versions of this article
+were presented at the Berkeley–Stanford Logic Circle (2023), NYU Mind and Language
+seminar (2023), Central APA Symposium (2023), and Peking University Logic Seminar
+(2021). We are grateful to the participants for all their helpful comments.
+Philosophical Review, Vol. 134, No. 3, 2025
+DOI 10.1215/00318108-11873775
+© 2025 by Cornell University
+285
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 2 ===
+MEEHAN and ZHANG
+beliefs—perhaps doing so would make it much easier to organize one’s
+life—but such a dogmatic policy is not epistemically rational, and part
+of the explanation of its irrationality has to do with it being non-truth-
+conducive.
+Suppose this is right. A natural conjecture, then, is that Bayesian
+conditionalization is the rational updating rule because it is most accu-
+rate. However, a moment of reﬂection suggests that this can’t be right.
+For surely, the most accurate updating rule is the truth rule—the rule
+that tells the agent to be certain of the truth and nothing but the truth.
+Bayesian conditionalization disagrees with the truth rule in all but the
+exceptional case where the agent learns all the truths. Why, then, is
+Bayesian conditionalization the rule of rational credal revision and not
+the truth rule, even though the latter is always more accurate?
+One tempting reply to this challenge is that an updating rule must
+be followable in order to be rational; ought implies can. What does it
+take for a rule to be followable? A popular answer is that an updating
+rule is followable just in case it is evidentially constant —it recommends
+the same credence function at any two states where the agent learns
+the same evidence. Bayesian conditionalization satisﬁes this condition,
+whereas the truth rule does not. Moreover, Hilary Greaves and David
+Wallace (2006) prove that, in any transparent updating problem—case
+where it is always part of the agent’s evidence what is and is not part
+of their evidence—Bayesian conditionalization has the highest expected
+accuracy of all updating rules that are evidentially constant in the above
+sense. This result suggests a promising answer to the question we posed
+above: Bayesian conditionalization is the rule of rational credal revision
+because, of all followable updating rules, it is most accurate.
+One wrinkle with this answer, as pointed out by Aaron Bronfman
+(2014) and Miriam Schoenﬁeld (2018), is that it presupposes evidence
+internalism, the thesis that every updating problem is transparent. Evi-
+dence internalism is controversial. In particular, it is incompatible with
+the prima facie plausible hypothesis that, in some cases, what one learns
+may depend sensitively on facts of one’s environment without themselves
+entailing those facts. For instance, when one looks at a tree from afar, one
+may not learn the precise height of the tree, even though what one does
+learn about the height of the tree may vary depending on the precise
+height of the tree (Williamson 2000). If this is right, then it is possible
+for one to learn p without learning that one learns p, that is, evidence
+internalism is false.
+286
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 3 ===
+Bayes Is Back
+Whether the above argument succeeds remains a matter of philo-
+sophical dispute, and we won’t try to settle it here. Instead, for the pur-
+poses of this article, we will assume that evidence internalism is false, or
+equivalently that evidence externalism is true. The explanatory challenge
+the Bayesian then faces can be stated as follows: Assuming evidence exter-
+nalism, can we explain why Bayesian conditionalization is the rational
+updating rule, and the truth rule is not, without giving up on the idea
+that there is a substantive connection between the epistemic rationality
+of updating rules and their accuracy?
+A result due to Schoenﬁeld (2017) suggests that the answer is
+No. Schoenﬁeld shows that, in general, the updating rule that has the
+highest expected accuracy of all evidentially constant updating rules is
+meta-conditionalization, not Bayesian conditionalization. Roughly, meta-
+conditionalization says: if one begins with a rational prior /EM at t0 and
+learns p between t0 and t1 and nothing else, then one should plan at
+t0 to revise one’s credence at t1 by conditionalizing on the proposition
+that one has learned p and nothing else between t 0 and t 1.1 In particular,
+meta-conditionalization and Bayesian conditionalization disagree when-
+ever the agent learns p but doesn’t learn that she learns p. In such
+cases, assuming the agent has prior uncertainties about whether she will
+learn p, Bayesian conditionalization says she shouldn’t be certain that she
+learns p when she does learn p, whereas meta-conditionalization says she
+should.
+What shall we make of this result? The standard reply from many
+externalists is to give up on the explanatory project.2 For instance, some
+1. Schoenﬁeld (2017) calls this rule conditionalization*; Matthias Hild (1998) and
+Pablo Zendejas Medina (2024) call this rule auto-epistemic conditionalization; we adopt our
+terminology from Nilanjan Das (2019). Schoenﬁeld also proves that Bayesian condi-
+tionalization does not maximize expected accuracy if evidence is nonfactive. Whether
+evidence is factive is controversial (see, e.g., Mitova 2018 and references therein). For
+the purposes of this article, we shall assume factivity of evidence and focus on vindicating
+Bayesian conditionalization as a rule for updating in factive but possibly nontransparent
+evidential situations.
+2. One exception is Medina (2024). Medina (2024) gives an externalist-friendly
+justiﬁcation for Bayesian conditionalization based on conditional expected accuracy
+rather than unconditional expected accuracy. More speciﬁcally, he shows that, given
+certain implementability assumptions about updating plans, for each propositionp,c o n -
+ditionalizing on p is the best conditional updating plan for p. It will take us too far aﬁeld
+to discuss Medina’s nuanced proposal in detail, but it is worth noting that, as we will
+see, there are cases where Bayesian conditionalization can have lower unconditional
+expected accuracy than retaining one’s prior. So, assuming evidence externalism, it is
+287
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 4 ===
+MEEHAN and ZHANG
+take Bayesian conditionalization to be a corollary of the primitive norm
+that rational credence should conform to evidential probability, which is
+deﬁned as the probability conditional on one’s total evidence. Accuracy-
+based considerations are neither here nor there (see, e.g., Williamson
+2000; Das 2022). Other externalists accept the guiding thought that
+rational updating rules are truth-conducive, and conclude that Bayesian
+conditionalization is not the rule of rational credal revision, though nor
+is meta-conditionalization or the truth rule. Rather, whether an updating
+rule is truth-conducive and thereby rational for a given agent depends on
+how the agent would update if she were to try to follow the rule (Gal-
+low 2021; Isaacs and Russell 2023; Schultheis forthcoming). Bayesian
+conditionalization is only rational for special agents under special cir-
+cumstances. On this proposal, the explanatory challenge is dissolved, as
+there is nothing to be explained in the ﬁrst place.
+This article proposes a different response: we argue that the exter-
+nalist Bayesian can uphold Bayesian conditionalization as the rule of
+rational credal revision without giving up on the idea that what is rational
+is also truth-conducive (in a certain sense). The core of our proposal is
+a new accuracy-rationality bridge principle, which has two main ingredi-
+ents. First, we introduce a natural strengthening of evidential constancy,
+which we call global evidential constancy . Roughly, an updating rule satis-
+ﬁes global evidential constancy if, for any propositions p and q,i f p is
+the strongest proposition that the agent has learned, then the credence
+that the rule recommends the agent to assign toq doesn’t depend on the
+state at which the agent learns p or what she could have learned other
+than p. We think global evidential constancy is a plausible normative
+constraint on updating rules. In particular, Bayesian conditionalization
+satisﬁes global evidential constancy, whereas the truth rule and meta-
+conditionalization do not.
+However, ruling out the truth rule and meta-conditionalization
+is not enough, for there are updating rules other than Bayesian condi-
+tionalization that also satisfy global evidential constancy and have higher
+expected accuracy than Bayesian conditionalization in certain updat-
+possible that the unconditional plan (i.e., a set of conditional plans whose conditions
+form a partition) that maximizes unconditional expected accuracy isnot the conjunction
+of the best conditional plans, each of which maximizes conditional expected accuracy.
+To this extent, it remains a puzzle why Bayesian conditionalization gives the correct pre-
+scription for which unconditional plan a rational agent should adopt in nontransparent
+updating problems.
+288
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 5 ===
+Bayes Is Back
+ing problems. In fact, there are cases where retaining one’s prior has
+higher expected accuracy than updating by Bayesian conditionalization.
+So, insofar as Bayesian conditionalization is rational, it isn’t rational in
+virtue of having the highest expected accuracy (of all updating rules that
+satisfy global evidential constancy) in every updating problem—it does
+not.
+This brings us to the second important ingredient of our pro-
+posal, which is a different way of evaluating the accuracy of an updating
+rule. Some rules, such as “do not jaywalk,” may be good rules because
+they are best overall, even though following them is suboptimal on some
+speciﬁc occasions. Similarly, an updating rule may be accurate in general,
+even if updating in accord with the rule yields less accurate credences
+than alternative rules in some particular updating problems. We pro-
+pose that this is the sense in which BCOND is truth-conducive. That is,
+the externalist Bayesian should accept the following accuracy-rationality
+bridge principle:
+Highest Total Expected Accuracy (Hi-TEA) . An updating rule is epistem-
+ically rational if and only if it is globally evidentially constant and, of all
+the updating rules that satisfy global evidential constancy, it is the most
+accurate in general, in the sense that it has the highest total expected
+accuracy across updating problems.
+We show that, of all updating rules that satisfy global evidential con-
+stancy, Bayesian conditionalization has the highest total expected accu-
+racy across updating problems associated with any given prior space.
+Thus, the proposed bridge principle yields Bayesian conditionalization
+as the rational rule, even under conditions of evidence externalism.
+B a y e si sb a c k !
+Here is a roadmap for the rest of the article. Section 2 lays down
+the setup for modeling updating problems. Section 3 introduces the
+accuracy framework and the result of Schoenﬁeld (2017), and discusses
+the challenges with appeals to followability. Sections 4 and 5 present and
+defend the positive proposal. Section 6 concludes.
+2. Setup
+2.1. Updating Problems
+We learn information about the world; which information we learn
+depends on which state of the world obtains. For instance, suppose you
+toss a die. Maybe you will be told by a reliable informant exactly how it
+lands. Maybe the informant will only tell you whether the die lands on an
+289
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 6 ===
+MEEHAN and ZHANG
+even number or an odd number, but nothing more speciﬁc. Or maybe
+you will be able to see the die for yourself, but only through a piece of
+frosted glass. Intuitively, these different learning situations call for differ-
+ent plans of credal revision. Perhaps you should plan to be certain about
+exactly how the die lands in the case where the reliable informant will
+tell you exactly how it lands, but not so if the reliable informant will only
+tell you whether the die lands even or odd.
+We are interested in the question: Prior to your learning expe-
+rience, how should you plan to revise your credences, given each and
+every possible piece of information that you might learn? To make this
+question precise, we’ll start with the standard Bayesian modeling assump-
+tion that an agent can be associated with a prior probability function /EM
+deﬁned over a set of states S. We’ll call such a pair .S;/EM/ a prior space.
+Heuristically, one could think of S as a partition of the logical space
+whose cells settle every salient question in the given context. Unless oth-
+erwise speciﬁed, we’ll assume that S is ﬁnite and contains at least two
+elements, and /EMis regular, that is, it assigns nonzero probability to every
+state in S.3
+Given a prior space .S;/EM/,a learning situation relative to .S;/EM/
+speciﬁes, at each state s, what the agent thinks she will learn at s.F o rt h e
+purposes of this article, we’ll make the idealizing assumption that as a
+learner sets out to gather information about the world, she is certain that,
+in each of her possible courses of learning experiences, she will learn
+a unique, true proposition that is equivalent to a disjunction of states
+(given her background knowledge). We’ll call such a proposition “the
+strongest proposition learned” at the respective state, or sometimes “the
+evidence proposition.”4 A learning situation is then a complete conjunc-
+3. One may think of S as the set of state descriptions in the sense of Rudolf Carnap
+(1988), or the atoms of a given agenda (Pettigrew 2016). Importantly, we do not takeS to
+be the space of all metaphysical possibilities. This is partly motivated by the assumption
+of ﬁniteness, which is necessary given that many accuracy-theoretic results do not gener-
+alize to credence functions over inﬁnite domains (Kelley 2023; Pruss 2022; Nielsen 2022;
+Kelley and Neth 2022). The restriction to regular priors is relatively innocuous given the
+ﬁniteness assumption and will signiﬁcantly streamline the presentation. Most existing
+arguments against imposing regularity as a rational requirement concerns its plausibility
+in the inﬁnite context (see, e.g., Hájek 2012; Easwaran 2014). See Pettigrew 2016 for an
+accuracy-based argument for regularity in the ﬁnite setting.
+4. So we assume that evidence is factive. While we are not wedded to the assump-
+tion ourselves, we think it is plausible given evidence externalism. For instance, one
+inﬂuential externalist view of evidence is that evidence is knowledge (Williamson 2000).
+Since knowledge is factive, it follows that evidence is factive as well. Since our goal is
+290
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 7 ===
+Bayes Is Back
+tion of conditionals that specify the strongest propositions that a learner
+will learn at each possible state in her information-gathering process.
+Given this assumption, each learning situation can then be modeled by
+a function E that maps each state s to a set of states E.s/ (a subset of S)
+that contains s as a member. We’ll call a triple of the form .S;/EM ;E/ an
+updating problem.
+An updating rule speciﬁes, for each updating problem .S;/EM ;E/,
+how a learner facing that updating problem should plan to update her
+prior /EMover states, that is, what new credence function overS she should
+plan to have at each state. Formally, we represent an updating rule by a
+map that takes as input an updating problem .S;/EM ;E/, and outputs a
+function f.S;/EM;E/ from states in S to posterior probability functions over S.
+The intended interpretation is: if a learner faces the updating problem
+.S;/EM ;E/, then she should plan to adopt posterior f.S;/EM;E/.s/ over S if s
+obtains.
+Here are some updating rules that will feature prominently in our
+subsequent discussion:
+/SI Bayesian conditionalization ( BCOND ): If one faces the updat-
+ing problem .S;/EM ;E/, then one should plan, for each states,t o
+adopt the credence function over S given by /EM.:jE.s//:
+b.S;/EM;E/.s/ D /EM
+/NUL
+:
+ˇˇE.s/
+/SOH
+:
+/SI Meta-conditionalization (META -COND ): If one faces the updat-
+ing problem .S;/EM ;E/, then one should plan, for each states,t o
+adopt the credence function over S given by /EM.:jE D E.s//:
+m.S;/EM;E/.s/ D /EM
+/NUL
+:
+ˇˇE D E.s/
+/SOH
+;
+where ŒE D E.s//c141is shorthand for the following set of states:
+fs0 2 S W E.s0/ D E.s/g.
+/SI The truth rule: If one faces the updating problem .S;/EM ;E/,
+then one should plan, for each state s, to adopt the credence
+function over S given by vs—the credence function that assigns
+probability 1 to s and 0 to every other state:
+t.S;/EM;E/.s/ D vs:
+to explore the implications of externalism, this makes it a natural assumption to adopt
+here.
+291
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 8 ===
+MEEHAN and ZHANG
+/SI The dogmatic rule: If one faces the updating problem.S;/EM ;E/,
+then one should plan, for each state s, to retain one’s prior
+over S:
+d.S;/EM;E/.s/ D /EM:
+To conclude this subsection, let us apply this framework to a concrete
+example.
+Die. Xani and Yota are doing an experiment on a fair four-sided die. The
+die will be tossed in a black box. There are two different sensors in the
+box. The ﬁrst sensor simply detects whether the die lands even or odd.
+The second sensor is more sensitive: if the die lands even, it also only
+detects that the die lands even, but if the die lands odd, it detects exactly
+how the die landed. Xani is going to get the information from the ﬁrst
+sensor, while Yota will get the information from the second. Both Xani
+and Yota know everything about this setup before t0, and neither forgets
+anything in the course of learning how the die landed.
+Here is a simple model of Die:L e tS Df s1; s2; s3; s4g,w h e r esi represents
+the state where the die landed on i.L e t/EMbe the uniform prior over S.
+Then Xani faces the updating problem .S;/EM ;EX /,w h e r eEX maps a state
+si to the set fs2; s4g if i is even and the complement of that set if i is
+odd. Yota, on the other hand, faces a slightly different updating problem
+.S;/EM ;EY /,w h e r eEY maps a state si to the set fs2; s4g if i is even, and the
+singleton fsig if i is odd. The output of the BCOND rule for these two
+updating problems can be pictured as shown in ﬁgure 1.
+2.2. Externalism and Evidence
+Let us zoom in on the case of Die. One thing to note about Xani’s and
+Yota’s updating problems is that, for any propositionp that these agents
+might learn, they are certain that if they learn p, then they also learn that
+they learn p . For instance, consider Xani. Suppose Xani learns that the
+die landed odd. By stipulation, ex ante, Xani is certain of the bicondi-
+tional: she learns that the die landed odd if and only if the die landed
+odd. Moreover, she retains that piece of knowledge after she learns that
+the die landed odd. So, assuming that learning is closed under logical
+entailment given one’s background knowledge, when Xani learns that
+the die landed odd , she also learns that s h el e a r n st h a tt h ed i el a n d e do d d.
+Formally speaking, Xani’s learning situation satisﬁes the following
+property:
+E.s/ /DC2
+/STX
+E D E.s/
+/ETX
+for all s 2 S: (1)
+292
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 9 ===
+Bayes Is Back
+Figure 1. Illustration of BCOND as applied to the Die case.
+293
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 10 ===
+MEEHAN and ZHANG
+We say an updating problem .S;/EM ;E/ is transparent if E satisﬁes (1);
+an updating problem is opaque if it is not transparent. 5 Let evidence
+internalism be the view that all updating problems are transparent, and
+let evidence externalism be the view that some updating problem are
+opaque.
+Is evidence internalism true? Naively, one might think the answer
+is No. After all, in most cases, p doesn’t entail that one has learned p .I n
+general, if p doesn’t entail q, then there are possible circumstances in
+which it is rationally permissible to be uncertain whether one will learnp
+without learning q. It is unclear why p and that one has learned p should be
+an exception.
+Apart from this motivating consideration, there are also com-
+pelling theoretical considerations against evidence internalism. One
+such argument is the margin-for-error argument due to Timothy
+Williamson (2000). The idea is that, in some cases, the strongest propo-
+sitions that one learns in a given context may depend sensitively on facts
+of one’s environment without themselves entailing those facts. If this is
+right, then there are cases where it is possible that the agent learns p
+without learning that she learns p, that is, evidence internalism is false.
+Here is a concrete illustration of the argument:6
+Olivia. Olivia is making cookies. Unfortunately, her scale is broken, so she
+has to estimate the amount of butter she’ll use by hand. She takes out the
+leftover butter, which she knows weighs no less than 15 oz., and no more
+than 20 oz. Olivia is quite experienced. In particular, she knows that, if
+the butter weighs x oz., then she will learn by weighing it in her hand that
+it weighs .x ˙ 1/ oz., but nothing more precise.
+To see that Olivia’s learning situation is opaque, suppose the butter
+weighs 17 oz. Then by stipulation, after feeling the butter by hand, the
+strongest proposition that Olivia will learn about the weight of the but-
+ter is that the butter weighs between 16 oz. and 18 oz. But if the butter
+had weighed 18 oz.—a state compatible with what Olivia has learned at
+the 17 oz. state—then the strongest proposition that Olivia would have
+learned about the weight of the butter is that the butter weighs between
+5. One can check that a (factive) learning situation E is transparent, i.e., not
+opaque, if and only if it is partitional, in the sense that the collection fE.s/ W s 2 Sg
+forms a partition of S.
+6. This is a variant of the austere clock from Williamson (2011), which many take
+to be metaphysically possible; see, e.g., Elga 2013; Gallow 2019b; Horowitz 2014; Ahmed
+and Salow 2019.
+294
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 11 ===
+Bayes Is Back
+Figure 2. A simple model of Olivia’s learning situation (w ! v means v 2 E.w/).
+17 oz. and 19 oz. So in the case where the butter weighs 17 oz., Olivia
+can’t rule out the possibility that she learns something different from
+what she actually learns; her learning experience is opaque. A simple
+model of Olivia’s learning situation is given in ﬁgure 2.
+Now, one might object that ﬁgure 2 is a misrepresentation of
+Olivia’s learning situation. Perhaps there is no unique, true proposition
+that she has learned when she weighs the butter by hand (Jeffrey 1965).
+Or perhaps her possible evidence consists of propositions about her per-
+ceptual appearances, such as the butter weighs like this , and she has perfect
+introspective access to her own perceptual appearances. The issue is
+complicated, and we do not have a settled view on this matter. 7 How-
+ever, for the purposes of this article, we will assume that cases like Olivia
+are possible for ideal rational agents, and can be approximately repre-
+sented by Kripke models like the one depicted in ﬁgure 2. We will also
+take for granted that, even in such cases, the rational updating rule is
+BCOND . Our question is: Why (and in what sense) is BCOND the rational
+updating rule, assuming that it is (in some sense)? As we shall see, a sat-
+isfactory answer to this question is harder to obtain than one might have
+expected.
+3. Accuracy, Rationality, and Bayes Lost
+Many think that there is a tight connection between accuracy and epis-
+temic rationality. The aim of belief is truth; the aim of partial belief is
+accuracy.8 Given this intuitive connection, a natural thought is that an
+updating rule is rational just in case all of its recommended updating
+plans maximize expected accuracy.
+7. For arguments in favor of nontransparency, see, e.g., Williamson 2000, 2011;
+Weatherson 2013; Srinivasan 2015. For considerations against nontransparency as con-
+ceived here, see Berker 2008; Stalnaker 2015; Salow 2018; Greco 2019. One could also be
+a pluralist about learning, and think that transparency holds for one notion of learning
+but not another. See Pettigrew 2022 for related discussion.
+8. For a partial list of discussions and precisiﬁcations of this intuitive idea, see,
+e.g., Joyce 1998; Gibbard 2007; Carr 2017; Wedgwood 2002; Horwich 2006.
+295
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 12 ===
+MEEHAN and ZHANG
+To make this thought more precise, we need a quantitative mea-
+sure of accuracy—an accuracy scoring rule. Formally, an accuracy scoring
+rule is a map A that, for each state partition S, associates a pair of a cre-
+dence function c over S and a state s 2 S with a real number, A.c; s/.
+Intuitively, A.c; s/ represents how accurate c is at s. Throughout this arti-
+cle, we will require thatA is strictly proper: for any probabilistic credence
+function c over a state space S, c expects itself to be strictly more accu-
+rate than any other credence functionc0 deﬁned over the same domain.9
+This assumption is widely shared in the accuracy literature (though not
+uncontroversially), and we won’t dispute it here. 10 Note that, if A is
+strictly proper, then for any state s, the most accurate credence function
+at s according to A is the omniscient credence function vs that assigns
+probability 1 to all true propositions at s and 0 to all false propositions
+at s.11
+Now, ﬁx a strictly proper scoring rule A that represents a correct
+way of measuring accuracy. The expected accuracy of an updating rule
+9. Formally, P
+s2S c.s/A.c; s/ /NAKP
+s2S c.s/A.c0; s/ with equality if and only ifc D c0.
+10. See, e.g., Joyce 2009; Pettigrew 2016; Greaves and Wallace 2006; Schoenﬁeld
+2017; Briggs and Pettigrew 2020; Campbell-Moore and Levinstein 2021. Strict propriety
+is also widely assumed in the statistical literature on scoring rules for probabilistic fore-
+casts (e.g., Predd et al. 2009; Gneiting and Raftery 2007; Bröcker and Smith 2007). While
+we will assume strict propriety in this article, we think an externalist could challenge this
+assumption. In particular, the standard argument for propriety appeals to the assump-
+tion that rationality requires immodesty—not expecting oneself to be less accurate than
+someone else—which seems like an alethic version of the enkratic principle. Like the
+akratic agent who believes p but also that they shouldn’t believep, an agent with a mod-
+est credence function c holds onto c while judging a different credence function to be
+better accuracy-wise. Many externalists reject the enkratic principle on the grounds that
+it conﬂicts with the possibility of self-misleading evidence (e.g., Horowitz 2014; Dorst
+2019; Weatherson 2019; Worsnip 2018; Williamson 2011). Given the parallel, we think
+an externalist BCOND can get around the negative results mentioned below by rejecting
+strict propriety, though to what extent this is enough to vindicate BCOND as the rational
+updating rule remains to be seen. There are also other arguments for strict propriety
+that do not appeal directly to immodesty-type principles (e.g., the calibration argument
+by Richard Pettigrew (2016); see Levinstein 2017 for objections and Williams and Petti-
+grew forthcoming for a reply).
+11. Proof. Suppose A is strictly proper. Then for any s and credence function c not
+identical to vs , A.vs; s/ D Evs ŒA.vs//c141 >Evs ŒA.c//c141D A.c; s/. It’s worth noting that,
+although formally speaking A could be interpreted as any measure of epistemic value,
+this consequence of strict propriety makes it difﬁcult to interpret A as measuring any-
+thing other than accuracy. As a result, strict propriety is incompatible with views that
+take the “aim” of rational credence to be something different from truths, e.g., objective
+chance (Hájek 2011; Pettigrew 2012) or evidential probabilities. So proponents of these
+views could also get around the negative results below by rejecting strict propriety.
+296
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 13 ===
+Bayes Is Back
+f in an updating problem .S;/EM ;E/ is deﬁned as the weighted average of
+the accuracy scores of the credence functions that f recommends in the
+updating problem at each state s, weighted by the agent’s prior probabil-
+ity that s obtains:
+E/EM
+/STX
+A.f.S;/EM;E//
+/ETX
+WD
+X
+s
+/EM.s/A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+:
+With the notion of expected accuracy in hand, we can more pre-
+cisely state the intuitive connection between epistemic rationality and
+expected accuracy:
+Highest Expected Accuracy (HEA) . An updating rule is epistemically
+rational if and only if it has the highest expected accuracy in any updating
+problem.
+While the principle may seem intuitively plausible, a moment of reﬂec-
+tion suggests that it can’t be right. For consider the truth rule—the rule
+that says, in any updating problem, always assign probability one to the
+true state. As noted above, in any updating problem, the recommenda-
+tion of this rule is always maximally accurate. So any prior must expect
+this rule to have higher expected accuracy than any alternative rule that
+disagrees with it with positive probability. Therefore, HEA entails that the
+only rational updating rule is the truth rule. But arguably, this is absurd.
+Uncertainty seems an inevitable feature of our epistemic lives. If a princi-
+ple rules that out as epistemically irrational, then so much the worse for
+that principle.
+What, then, is the relationship between accuracy and epistemic
+rationality? In particular, for the Bayesians: Why is BCOND the rational
+updating rule, despite being less accurate than the truth rule?
+One tempting answer to this question is that the truth rule is
+not even a genuine competitor to BCOND because it is unfollowable.T h e
+rational updating rule must be followable by an (idealized) agent; ought
+implies can. Bayesian conditionalization is rational, the thought goes,
+because and to the extent that it is the most accurate followable updating
+rule.
+While we are sympathetic to the idea that followability is relevant
+to a notion of epistemic rationality, we are skeptical that appealing to
+followability would help explain the sense in which BCOND is rational or
+most accurate. The rest of this section explains why.
+297
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 14 ===
+MEEHAN and ZHANG
+3.1. Bayes Justiﬁed
+What does it mean for an updating rule to be followable? Let us start with
+a popular criterion, which we’ll callevidential constancy. An updating rule
+is evidentially constant if, in any updating problem, the rule doesn’t rec-
+ommend adopting different credence functions at two states where the
+agent learns the same information. Formally: f is evidentially constant if,
+given any updating problem .S;/EM ;E/,f o ra n ys; s0 2 S,
+E.s/ D E.s0/ ) f.S;/EM;E/.s/ D f.S;/EM;E/.s0/:
+While evidential constancy has not been explicitly defended as a nec-
+essary and sufﬁcient condition for followability, it is often assumed in
+the background. For instance, Pettigrew (2016: 191) writes, “[U]pdat-
+i n g r u l e s ...h a v e t o g i v e t h e s a m e r e c o m m e n d a t i o n f o r a n y t w o w o r l d s
+at which the same element of the partition is true. The reason for this
+restriction is that updating rules have to be something the agent might
+follow; and she can only follow a rule if, whenever she can’t distinguish
+two possibilities, the rule doesn’t distinguish those possibilities either,
+and gives the same recommendation for both.”12 It is straightforward to
+check that the truth rule is not in general evidentially constant, whereas
+BCOND is. Moreover, Greaves and Wallace (2006) prove that, in any trans-
+parent updating problem,BCOND is the most accurate updating rule that
+satisﬁes evidential constancy.
+Fact 1 (Greaves and Wallace 2006). In any transparent updating problem,
+BCOND has the highest expected accuracy of all updating rules that satisfy eviden-
+tial constancy.
+This result suggests a promising answer to our question: the ratio-
+nal updating rule is BCOND rather than the truth rule because (i) the
+truth rule is unfollowable, as it violates evidential constancy, and (ii) of all
+followable updating rules, that is, rules that satisfy evidential constancy,
+12. Evidential constancy corresponds to a generalization of the notion of “availabil-
+ity” in the sense of Greaves and Wallace (2006: 612), who motivate the constraint on
+similar grounds: “When [a is not available], a is an act that the agent is not able to per-
+form given only the experiment E, since performing act a would require the agent to
+respond to information that he does not have (hence our refusal to call such acts ‘avail-
+able’).” See also the discussions in Barnett 2021; Schoenﬁeld 2017; Das 2022. Similar
+constraints have been proposed in the economics literature, e.g., Geanakoplos 1989.
+298
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 15 ===
+Bayes Is Back
+BCOND is most accurate by having the highest expected accuracy in every
+transparent updating problem.
+3.2. Bayes Lost
+While the above answer might be good enough for evidence internal-
+ists, it will not satisfy the externalist Bayesian who thinks that cases like
+Olivia are possible and fall under the scope of BCOND as well. A natural
+question arises: Can we generalize Greaves and Wallace’s (2006) result
+to opaque updating problems? In particular, does followingBCOND have
+the highest expected accuracy (of all updating rules that satisfy evidential
+constancy) in cases like Olivia?
+Unfortunately, the answer is No. To see this, recall that Olivia
+learns that the butter weighs x ˙ 1 oz. if and only if the butter weighs x
+oz. As a result, she never learns the same proposition about the weight of
+the butter at two different states. Since evidential constancy only requires
+that the updating rule doesn’t recommend different credence functions
+at two states where the agent learns the same proposition, this constraint
+is vacuously satisﬁed by any updating rule in Olivia’s case. In particular,
+it is satisﬁed by the truth rule. As noted above, following the truth rule
+always has higher expected accuracy than following BCOND (unless they
+agree). So in Olivia, BCOND does not have the highest expected accuracy
+of all updating rules that satisfy evidential constancy; the truth rule does.
+As it turns out, this is a special case of a more general result. Recall
+the rule of meta-conditionalization, which says that in every updating
+problem .S;/EM ;E/, if the agent’s evidence proposition isp, then the agent
+should update by conditionalizing on the proposition that p is her evi-
+dence proposition, that is, if E.s/ D p, then m.S;/EM;E/.s/ D /EM.:jE D p/.I t ’ s
+straightforward to check that META -COND satisﬁes evidential constancy:
+let .S;/EM ;E/ be any updating problem. Suppose E.s/ D E.s0/ D p.T h e n
+m.S;/EM;E/.s/ D /EM.:jE D p/ D m.S;/EM;E/.s0/:
+If the agent always learns what she does and does not learn, that is,E.s/ /DC2
+ŒE D E.s//c141for every s, then META -COND coincides with BCOND .T h i si s
+true of Xani and Yota. On the other hand, if the agent learns different
+propositions at different states, that is, if E.s/ ¤ E.s0/ for any distinct
+states s and s0,t h e nMETA -COND coincides with the truth rule. This is the
+case for Olivia.
+299
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 16 ===
+MEEHAN and ZHANG
+Schoenﬁeld (2017) proves that, of all updating rules that satisfy
+evidential constancy, updating by META -COND always has the highest
+expected accuracy.
+Fact 2 (Schoenﬁeld 2017). In any updating problem, META -COND has the
+highest expected accuracy of all updating rules that satisfy evidential constancy.
+At this point, it appears that we have not made much progress
+after all. While we have ruled out the truth rule by appealing to the
+constraint of evidential constancy, we have not ruled out META -COND ,
+which is also more accurate than BCOND . So our question remains: Why
+is BCOND the rational updating rule, despite being less accurate than
+META -COND ?
+3.3. Stronger Conditions for Followability?
+A natural reply to Schoenﬁeld’s (2017) result is that evidential constancy
+is necessary for followability but not sufﬁcient. After all, it seems that
+Olivia can’t follow META -COND in her updating problem, for the same
+reason that Xani or Yota can’t follow the truth rule in their updating
+problems. In both cases, the rules tell them to be maximally certain in
+some truths that are not entailed by their evidence. Intuitively, this is not
+something that an agent can do reliably, not even if they have unlimited
+cognitive power.
+Say an updating rule is conservative if it doesn’t recommend cer-
+tainties in propositions that are not part of the agent’s evidence. For-
+mally: f is conservative if for any updating problem .S;/EM ;E/,a n y s 2 S,
+and any proposition p /DC2S, f.S;/EM;E/.s/.p/ D 1o n l yi f/EM.p/ D 1o r E.s/ /DC2p
+(see, e.g., Bronfman 2014; Das 2022). The above thought suggests that
+we should strengthen the criterion for followability to at least evidential
+constancy C conservativity. One can check that BCOND is conservative
+in this sense: if /EM.p/< 1, then /EM.pjE.s// D 1o n l yi fE.s/ /DC2p. On the
+other hand, neither META -COND nor the truth rule is conservative, as
+demonstrated by Olivia.
+We think there are at least three obstacles to this reply. Let us
+go through them one by one. First, let’s consider a simpliﬁed version of
+Olivia:
+Dana. Olivia’s friend Dana is also making cookies. Like Olivia, Dana’s
+scale is also broken, so she has to weigh everything by hand. Unlike
+Olivia, Dana knows in advance that the butter she has left weighs
+300
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 17 ===
+Bayes Is Back
+Figure 3. A simple model of Dana’s
+learning situation.
+Figure 4. Illustration of BCOND in Dana’s updating problem.
+between 15 and 17 oz. She is also relatively conﬁdent that the but-
+ter weighs 16 oz.—say 60 percent—and splits her remaining credence
+equally between the other two possibilities. Still, if she feels the butter by
+her hand, if the butter weighs 15 oz., she can rule out the possibility that
+it weighs 17 oz., but can’t rule out that it weighs 16 oz.; similarly if the
+butter weighs 17 oz. Lastly, if the butter weighs 16 oz., then she could go
+either way.
+Dana’s learning situation is pictured in ﬁgure 3, and the recom-
+mendation of BCOND for Dana is pictured in ﬁgure 4. (Note that if the
+butter weighs 16 oz., then BCOND recommends that Dana retain her
+prior.)
+Prima facie, if Olivia is possible, so is Dana. However, it turns out
+that, if we measure accuracy by the Brier score or the additive logaith-
+mic score, then updating by BCOND has lower expected accuracy than
+retaining one’s prior inDana (proof in the appendix; see also table 1).
+301
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 18 ===
+MEEHAN and ZHANG
+Table 1. A comparison of the accuracy of Bayesian conditionalization and the
+dogmatic rule in Dana’s updating problem, according to the Brier score. The ﬁrst
+column lists each state s. The second column speciﬁes the evidence proposition
+that Dana learns at s. The third and fourth columns give the accuracy (at s)
+of the dogmatic rule and BCOND rule, respectively. The ﬁnal column gives the
+difference in accuracy between the two rules.
+s E.s/ A.d.S;/EM;E/.s/; s/ A.b.S;/EM;E/.s/; s/ A.b.S;/EM;E/.s/; s/ /NULA.d.S;/EM;E/.s/; s/
+15 f15; 16g /NUL2:08 /NUL2:25 /NUL0:17
+16 f15; 16; 17g /NUL0:48 /NUL0:48 0
+17 f16; 17g /NUL2:08 /NUL2:25 /NUL0:17
+Fact 3. Suppose that accuracy is measured by the Brier score or the additive log-
+arithmic score. Then the dogmatic rule has higher expected accuracy than BCOND
+in Dana’s updating problem.13
+Presumably, the dogmatic rule is followable if any updating rule
+is followable; what could be easier than not updating at all? But suppos-
+ing it is not, this shows that evidential constancy and conservativity are
+not jointly sufﬁcient for followability either, as the dogmatic rule satisﬁes
+both. We would need something stronger still.14
+Our next result suggests that, even if we can ﬁnd such a criterion,
+it can’t be strong enough to rule out all updating rules that have higher
+expected accuracy than BCOND in Dana.F o ras t a r t ,l e t/SIbe some arbi-
+trarily small but positive real number. Consider the updating rule h that
+13. One might wonder if this result contradicts Irving John Good’s theorem that it
+is always valuable to learn free information (Good 1967). The answer is No, because the
+setup for Good’s theorem presupposes that the agent’s updating problem is transparent.
+A corollary of fact 3 is that cost-free information is not always epistemically valuable for
+Bayesians if learning is opaque (assuming that accuracy is measured by the additive Brier
+score or the additive logarithmic score). See Ahmed and Salow 2019; Das 2023; Neth
+forthcoming; Geanakoplos 1989 for related results and discussion.
+14. Admittedly, the result does not go through for certain choices of accuracy
+scores, e.g., the simple nonadditive logarithmic score A.c; s/ D ln c.s/. Indeed, under
+this scoring rule, the expected accuracy of BCOND is higher than that of retain-
+ing one’s prior, unless the two agree. ( Proof :L e t .S;/EM ;E/ be an updating problem.
+Then E/EMŒA.b.S;/EM;E// /NULA./EM//c141D P
+s /EM.s/.ln /EM.sjE.s// /NULln /EM.s// D P
+s /EM.s/.ln /EM.s/ /NUL
+ln /EM.E.s// /NULln /EM.s// D/NUL P
+s /EM.s/ ln /EM.E.s// > 0.) So one could take this case as moti-
+vation to reject the Brier score and the additive logarithmic score as appropriate scoring
+rules for assessing accuracy. See Bernardo 1979 and Lewis and Fallis 2021 for related dis-
+cussion. We thank an anonymous referee for noting this connection. It is worth noting
+that the subsequent argument involving mixtures does not rely on this restriction, and
+extends to the simple logarithmic score as well.
+302
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 19 ===
+Bayes Is Back
+Figure 5. Illustration of h in Dana’s updating problem.
+agrees with BCOND in every other updating problem except for Dana’s,
+and, in Dana’s updating problem, recommends the plan shown in ﬁg-
+ure 5.
+Notice that this rule is evidentially constant and conservative.
+However, if we measure accuracy by the Brier score, then this updating
+rule turns out to have higher expected accuracy than BCOND in Dana’s
+updating problem (and trivially the same expected accuracy as BCOND
+in every other updating problem).
+This result generalizes. Say an accuracy scoring rule A is concave
+if, for any state s 2 S and credence functions c, c0 over S, the accuracy
+score of any weighted average of c and c0 at s is at least as high as the
+corresponding weighted average of the accuracy scores of c and c0 at s:15
+A
+/NUL
+/NAKc C .1 /NUL/NAK/c0; s
+/SOH
+/NAK/NAKA.c; s/ C .1 /NUL/NAK/A.c0; s/; 8/NAK2 Œ0; 1/c141:
+Most well-known examples of strictly proper scoring rules are concave,
+including the Brier score, the additive logarithmic score, and the simple
+logarithmic score. It is controversial whether all legitimate accuracy scor-
+ing rules need be concave (Joyce 1998, 2009), but most agree that some
+legitimate accuracy scoring rules are concave (e.g., the Brier score is one
+legitimate accuracy scoring rule), which is sufﬁcient for our purposes.
+15. If we identify the inaccuracy score of a credence function c at a state s with its
+negative accuracy score, then an accuracy scoring rule is concave just in case the associ-
+ated inaccuracy scoring rule is convex. The latter is more well known in the literature.
+303
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 20 ===
+MEEHAN and ZHANG
+Let f and g be two updating rules. We say an updating rule h is a
+mixture of f and g if for every updating problem .S;/EM ;E/, there is some
+0 /DC4w /DC41 such that
+h.S;/EM;E/.s/ D w /SOHf.S;/EM;E/.s/ C .1 /NULw/ /SOHg.S;/EM;E/:
+One can check that the updating rule h described above is a mixture of
+BCOND and META -COND , where the weight assigned to BCOND is 1 /NUL/SI
+for Dana’s updating problem and 1 for any other updating problem.
+We noted that this rule is evidentially constant and conservative and has
+higher expected accuracy than BCOND in Dana’s updating problem if
+accuracy is measured by the Brier score. As it turns out, this result holds
+for any scoring rule that is concave and strictly proper (proof in the
+appendix.)
+Fact 4. Let A be any accuracy scoring rule which is concave in addition to
+strictly proper. Then any nontrivial mixture of BCOND and META -COND is evi-
+dentially constant, conservative, and has higher expected accuracy (relative to A)
+than BCOND in every updating problem where they do not agree.
+Thus, if BCOND is rational to the extent that it is the most accu-
+rate followable updating rule, then we must rule out all mixtures of
+BCOND and META -COND as unfollowable. And there are good reasons
+to think that this cannot be done. Consider the following plausible plati-
+tude about followability.
+Locality. An updating rule is followable just in case, in every updating
+problem, an (ideal) agent facing that updating problem can follow the
+rule.
+To deny locality is to think that, either some updating rule is followable
+even though there is an updating problem where no ideal agents can
+follow the rule, or some updating rule is unfollowable even though it can
+be followed by an ideal agent in every updating problem. Either sounds
+close to a contradiction.
+Suppose locality is true. The question whether an updating rule
+is followable is then equivalent to the question whether an (ideal) agent
+can follow the rule in a given updating problem. Now, suppose an agent
+can follow an updating rule f in an updating problem. Then, intuitively,
+the agent should also be able to follow any updating rule that only recom-
+mends different credence functions when f does, and whose recommen-
+304
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 21 ===
+Bayes Is Back
+dations deviate from those of f by a small enough margin. For instance,
+in Dana, if the agent can follow BCOND , which tells her to adopt the
+credence function .0:25; 0:75; 0/ if and only if the butter in fact weighs
+15 oz., then it seems that the agent can also follow a rule that tells her to
+adopt the credence function.0:25C/SI;0:75/NUL/SI;0/ if and only if the butter
+in fact weighs 15 oz., as long as /SI> 0 is sufﬁciently small. It is unclear
+what the obstacle could be. After all, on pain of simply stipulating that
+BCOND is the only followable rule, it can’t be that BCOND is followable,
+yet any slight deviation from it is off the table.
+Here is one way to make the above thought more precise. Fix an
+updating rule f and an updating problem .S;/EM ;E/.L e t ı be a positive
+real number. We say an updating rule g is ı-close to f in .S;/EM ;E/ if, at
+every state s, the Euclidean distance between the credence functions rec-
+ommended by f and g at s in this updating problem is smaller than ı.16
+We say g is no more sensitive than f in .S;/EM ;E/ if for any s and s0, g rec-
+ommends different credence functions at s and s0 only if f recommends
+different credence functions at s and s0.
+Margin. If an updating rule f is followable in an updating problem
+.S;/EM ;E/, then there is some margin ı> 0 (which possibly depends on
+f and .S;/EM ;E/) such that any updating rule g that is no more sensitive
+than f and is ı-close to f in .S;/EM ;E/ is also followable in .S;/EM ;E/.
+Margin is quite plausible. However, it follows from locality and margin
+that a version of the updating rule h that we constructed above is fol-
+lowable if BCOND is followable (for /SIsmaller than ı=2). And yet, as we
+saw, that rule has higher expected accuracy thanBCOND in Dana’s updat-
+ing problem (and the same expected accuracy in every other updating
+problem). More generally, given locality and margin, fact 4 entails that, if
+BCOND is followable, then relative to any strictly proper and concave scor-
+ing rule, there are (uncountably many) followable updating rules that
+have higher expected accuracy than BCOND in every opaque updating
+problem (and the same expected accuracy as BCOND in every transpar-
+ent updating problem).
+There is one more reason why externalist Bayesians should be
+skeptical of the idea that BCOND is rational because it is the most accu-
+rate followable updating rule (see, e.g., Isaacs and Russell 2023). So far
+we have assumed that BCOND is followable in all updating problems;
+the challenge is to say why other updating rules— META -COND ,t h ed o g -
+16. This argument goes through for other natural measures of distance between
+credence functions as well, including any p-norm and Bregmann divergence.
+305
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 22 ===
+MEEHAN and ZHANG
+matic rule, or the mixture rules—are not similarly followable. However,
+one might think that this assumption itself is dubious. Take Dana again.
+According to BCOND , if the butter weighs 15 oz., then she should con-
+ditionalize on the proposition that the butter weighs 15 oz. or 16 oz.,
+even though her evidence doesn’t entail that this is what BCOND tells her
+to do. For it is compatible with what she learns at that state that the but-
+ter weighs 16 oz., and at that state, Dana shouldn’t conditionalize on
+the proposition that the butter weighs 15 oz. or 16 oz.; she should leave
+open the possibility that the butter weighs 17 oz. But how could Dana
+update by conditionalization, if she doesn’t know which proposition to
+conditionalize on?
+To make the argument slightly more rigorous: Say an updating
+rule f is luminous in an updating problem .S;/EM ;E/ if for every state s,
+if f.S;/EM;E/.s/ D /SUB, then E.s/ entails the proposition f recommends adopting
+the credence function /SUB, that is, E.s/ /DC2ft 2 S W f.S;/EM;E/.t/ D /SUBg. Intuitively,
+if we take the agent’s knowledge to consist of all and only propositions
+entailed by her evidence (Williamson 2000), then an updating rule is
+luminous just in case, necessarily, the agent knows which credence func-
+tion the rule tells her to adopt. The dogmatic rule is always luminous in
+this sense. BCOND , on the other hand, is only luminous in transparent
+updating problems. This is because, although BCOND does not require
+the agent to be certain of what she learns, it does require the agent to
+be sensitive to what she learns: if the agent learns different propositions
+at s and s0, then she should conditionalize on different propositions at s
+and s0. Since what the agent learns in opaque updating problems may not
+entail facts about what she learns, it follows that BCOND is not luminous
+in such cases. In fact, it is easy to check that the only luminous updat-
+ing rules in Olivia and Dana are those rules which recommend the same
+posterior credences at every state, like the dogmatic rule. Therefore, if
+luminosity is necessary for followability, then it is not the case thatBCOND
+is followable in all updating problems, assuming evidence externalism.
+To recap, we started with the observation that BCOND is not the
+most accurate updating rule; the truth rule is. So why is BCOND the
+rule of rational credal revision? We have considered one attractive pro-
+posal, according to which the rational updating rule is the most accurate
+updating rule that an agent can follow. The truth rule is not the rational
+updating rule because it is unfollowable. However, we think this proposal
+isn’t a satisfactory answer to the explanatory challenge for the externalist
+Bayesian, for the following four reasons:
+306
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 23 ===
+Bayes Is Back
+1. If evidential constancy is sufﬁcient for followability, then
+META -COND is followable and has higher expected accuracy
+than BCOND does in every updating problem (unless they
+agree).
+2. There are opaque updating problems where retaining
+one’s prior has higher expected accuracy than updating
+by BCOND .
+3. For any criteria of followability that satisﬁes locality and mar-
+gin, there are updating rules that satisfy the criteria and have
+higher expected accuracy than BCOND in every updating
+problem (unless they agree).
+4. If luminosity is necessary for followability, then BCOND is not
+followable in any opaque updating problem.
+Where does this leave us? The most common reaction amongst exter-
+nalists is to give up on the explanatory project altogether. Some still
+accept BCOND as the rule of rational credal revision, but deny the request
+of explaining its normative status in terms of accuracy. Perhaps it is a
+primitive epistemic norm that rational agents should update by Bayesian
+conditionalization; perhaps the norm is derivative from the more basic
+norm that rational agents should proportion their credences to eviden-
+tial probabilities or objective chance, both of which evolve by condition-
+alization. If doing so does not maximize expected accuracy, then so much
+the worse for the idea that rationality requires maximizing expected
+accuracy.
+More recently, some externalists have gone the other direction of
+rejecting BCOND as the rule of rational credal revision, on the basis that
+it doesn’t maximize expected accuracy in opaque updating problems.
+However, nor should rational agents update by META -COND or the truth
+rule. Instead, the rational updating rule for a given agent is the rule
+such that, if the agent were to try to follow the rule, her credences would
+be most accurate on expectation. Most agents would fail badly if they
+were to try to follow the truth rule or META -COND , which is why neither
+is rational. But the same could be true of BCOND , and in such cases,
+BCOND is not the rule that the agent should try to follow either (Gallow
+2021; Isaacs and Russell 2023; Schultheis forthcoming). The explanatory
+challenge is effectively dissolved, as there is nothing to be explained in
+the ﬁrst place.
+It is beyond the scope of this article to examine either view in
+detail. Instead, we’ll settle for a more modest aim by arguing that these
+307
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 24 ===
+MEEHAN and ZHANG
+are not the only options available to the externalist. The externalist can
+have it both ways: they can be Bayesians and think that BCOND is ratio-
+nal because it is truth-conducive (in a sense). Our proposal has two key
+ingredients. The ﬁrst is a strengthening of evidential constancy, which
+we call global evidential constancy. Unlike evidential constancy, we propose
+global evidential constancy, not as a followability constraint, but as a nor-
+mative constraint on updating rules; an updating rule that violates global
+evidential constancy is irrational, whether or not it is followable. Notably,
+both META -COND and the truth rule violate this constraint, and are irra-
+tional to that extent. The second ingredient of our proposal is a new way
+of evaluating the accuracy of an updating rule. The rational updating
+rule, we argue, is the most accurate updating rule in general.W ep r o p o s e
+a precise account for what it means for an updating rule to be most accu-
+rate in general, and show that, of all updating rules that satisfy global
+evidential constancy, BCOND is the unique updating rule that satisﬁes
+our criterion. Bayes is back!
+4. Global Evidential Constancy
+Let us start with global evidential constancy. Formally, it is the conjunc-
+tion of two constraints: evidential constancy, and a new constraint which
+we will call noncontrastiveness. We think both are necessary conditions that
+an updating rule needs to satisfy in order to be rational. This is so, inde-
+pendently of whether or not the updating rule is followable. We’ll defend
+this claim in section 4.3. But ﬁrst, let us introduce and motivate the new
+constraint of noncontrastiveness.
+4.1. Noncontrastiveness
+Let’s go back to Die. Recall that Xani and Yota are getting information
+about the same four-sided die from two different sensors, and both of
+them know this. Xani will learn from her sensor whether the die lands
+odd or even; Yota will learn from her sensor whether the die lands on
+one, three, or even. Both of them know that it is a fair die, so they share
+the same uniform prior about how the die will land ex ante.
+Suppose the die lands on two, and so Xani and Yota learn from
+their respective sensors that the die lands even. Question: How should
+their posterior credences over the four possible outcomes of the die toss
+compare with one another?
+Intuitively, the answer is they should be the same. For one thing,
+both of their updating problems are transparent, so it follows from
+308
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 25 ===
+Bayes Is Back
+fact 1 that updating by conditionalization maximizes expected accuracy
+in their updating problems. Given that they start out with the same prior
+distribution over the outcomes of the die toss, conditionalizing on the
+proposition that the die lands even will bring them to the same posterior
+distribution over the possible outcomes of the die toss.
+However, we think this verdict is plausible even without appeal-
+ing to accuracy-based considerations. Prima facie, if the agents start out
+with the same prior over states S and learn the same true strongest
+proposition about S at s, then they should end up with the same pos-
+terior distribution over S at s. The two agents may have very different
+background beliefs, including beliefs about how they come to learn the
+relevant proposition. Nevertheless, the thought goes, if that difference
+doesn’t manifest in their priors overS, then it shouldn’t manifest in their
+posteriors over S either. In a slogan: same prior over S, same evidence
+about S, same posterior over S.
+As mentioned, we will assess this intuitive thought in more detail
+later in the section. But ﬁrst, let us try to make the thought more precise,
+and see where it leads. Say an updating rulef is noncontrastive if, for any
+two updating problems .S;/EM ;E/ and .S;/EM ;E0/ involving the same prior
+space, for any state s 2 S, if the strongest proposition learned at s is the
+same, then the rule recommends the same posterior over S at s:17
+E.s/ D E0.s/ ) f.S;/EM;E/.s/ D f.S;/EM;E0/.s/:
+Whereas evidential constancy requires that a rule recommend the same
+posteriors over S at different states in a given learning situation when
+the strongest proposition learned is the same at those states, noncon-
+trastiveness requires that a rule recommend the same posteriors overSi n
+different learning situations at a given state when the strongest proposition
+learned is the same at that state; it doesn’t matter what one could have
+learned instead, as long as one learns the same thing. One can check that
+in addition to satisfying evidential constancy, BCOND is noncontrastive.
+In particular, let .S;/EM ;E/ and .S;/EM ;E0/ be updating problems and sup-
+pose that E.s/ D E0.s/.T h e nBCOND recommends the same posterior
+over S at s:
+17. We borrowed this term from J. Dmitri Gallow (2019a), who makes a similar
+observation about BCOND . Noncontrastiveness is also related to the property of “stability”
+discussed in Briggs 2010: 27, and symmetry-invariance in the sense of Hughes and Van
+Fraassen 1984.
+309
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 26 ===
+MEEHAN and ZHANG
+b.S;/EM;E/.s/ D /EM
+/NUL
+:
+ˇˇE.s/
+/SOH
+D /EM
+/NUL
+:
+ˇˇE0.s/
+/SOH
+D b.S;/EM;E0/.s/:
+A quick clariﬁcation about the scope of noncontrastiveness: it is
+important, in the statement of the constraint, that .S;/EM ;E/ and .S;/EM ;E0/
+are updating problems involving the same prior over states and the same
+evidence proposition learned at s. To illustrate the importance of this
+qualiﬁcation, consider the following example:18
+Litmus Test. Albert and Bob are performing a litmus test on a ﬂuid. Prior
+to the test, they’re both 50/50 about whether the ﬂuid is acidic or basic,
+but they disagree about how to interpret the litmus test. Albert is certain
+that the litmus paper turns red if and only if liquids are acidic, whereas
+Bob is certain that the litmus paper turns red if and only if liquids are
+basic. They then both learn the color of the litmus paper.
+Intuitively, Albert and Bob should have different posteriors about the
+acidity of the ﬂuid after the litmus test, even though they share the same
+prior about the acidity of the ﬂuid ex ante. Is this a counterexample to
+noncontrastiveness?
+It is not, for the following reason. First, although Albert and Bob
+share the same prior about the acidity of the ﬂuid, they do not share the
+same prior about the acidity of the ﬂuid and the color of the litmus test
+(for instance, while Bob has no conﬁdence in the conjunction the ﬂuid
+is acidic and the litmus paper will turn red , Albert does). Thus, if we model
+their updating problems using states that specify both pieces of informa-
+tion, then Albert and Bob will not have the same prior over states, and so
+noncontrastiveness will not apply. On the other hand, suppose we model
+Albert’s and Bob’s updating problems using a coarser modelS Df a; bg,
+where a is the proposition that the ﬂuid is acidic and b is the proposition
+that b is basic. In this case, although Albert and Bob do share the same
+prior over S, they cannot be plausibly thought of as learning the same
+true subset ofS (as their strongest proposition learned) at either state. To
+see why, suppose the ﬂuid is acidic and the litmus paper turns red. What
+is the strongest proposition about the acidicity of the ﬂuid that Albert
+and Bob learn at a? The only two propositions representable as subsets
+of S that are true at a are t h eﬂ u i di sa c i d i c(fag)a n dthe ﬂuid is either acidic
+or basic (fa; bg). Presumably, for Albert the answer is notfa; bg, since intu-
+itively he has learned something nontrivial about the acidity of the ﬂuid.
+And for Bob it is not fag, since if the ﬂuid is acidic and the litmus turns
+18. We thank an anonymous referee for suggesting this example, which we bor-
+rowed almost verbatim.
+310
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 27 ===
+Bayes Is Back
+red, then Bob doesn’t learn that the ﬂuid is acidic; he learns that the
+litmus paper turns red and is disposed to infer that it is basic! So either
+this coarse-grained model is not adequate to represent Albert or Bob’s
+learning situations in the ﬁrst place, 19 or Albert and Bob learn different
+strongest propositions (represented as subsets of S) on the model at a.
+In either case, noncontrastiveness does not apply. The same argument
+extends to b, if the ﬂuid is basic and the paper turns blue, and mutatis
+mutandis (with Albert and Bob switched) if the litmus test behaves as
+Bob believes. In conclusion, depending on the model we adopt, either
+Albert or Bob do not have the same prior over states, or learn different
+evidence propositions at each state; in either case, noncontrastiveness
+does not apply.20,21
+19. We are inclined toward this diagnosis of the case, but the adequacy of such
+formal models is a subtle issue, especially in an externalist setting. See notes 21 and 22
+for related discussion.
+20. Strictly speaking this is not true on all models; letting r denote the proposition
+that the litmus paper turns red, onecould u s et h es t a t es p a c eS0 Df r; :rg to model Albert
+and Bob’s updating problems. In fact, relative to this state space, Albert and Bob’s updat-
+ing problems would be the same: formally, .S0;/EM0; E0/,w h e r e/EM0.r/ D /EM0.:r/ D 1=2
+and E0.r/ Df rgI E0.:r/ Df : rg. Here, noncontrastiveness does apply. But intuitively,
+Albert and Bob should have the same posterior about the color of the litmus paper, so
+this is not a counterexample to noncontrastiveness either.
+21. A similar point extends to some other putative counterexamples to noncon-
+trastiveness. Some theorists, in explaining the Monty Hall problem and its variants (such
+as the three prisoner paradox), sound close to rejecting noncontrastiveness. For exam-
+ple, Judea Pearl (1988) writes “The lesson [of these cases] is that we cannot assess the
+impact of new information by considering only propositions implied by the information;
+we must also consider what information could have been reported.” Here we should dis-
+tinguish between the standard transparent versions of these cases and other versions. On
+the standard version of the Monty Hall problem, when the agent is playing the game, they
+learn not only, e.g., there is a goat behind the door , but also, e.g., Monty Hall told me there is a
+goat behind the door , and the latter may not be equivalent to any proposition solely about
+what is behind the doors. So the agent’s total incremental evidence is not representable
+as a subset of the state space where the states only specify the possible positions of the
+car. The standard move is to notice that once we suitably ﬁne-grain S to represent the
+agent’s total incremental evidence, we ﬁnd that BCOND (which satisﬁes noncontrastive-
+ness) gives the right answer to the case. Thus noncontrastiveness is still satisﬁed with
+respect to this ﬁne-grained S. We interpret Pearl’s remark as pointing to the fact that to
+properly model the epistemic implications of the agent’s total incremental evidence, we
+must take into account the agent’s prior over the ﬁne-grained S, including her beliefs
+about Monty Hall’s protocol. This is compatible with noncontrastiveness. On the other
+hand, we can also imagine opaque versions of the Monty Hall problem where one learns
+nothing more than t h e r ei sag o a tb e h i n dt h ed o o r(Bronfman 2014). In that case, it is less
+obvious that the standard solution still applies. More generally, in such opaque cases, it
+will be more controversial whetherBCOND gives the right verdicts and thus whether non-
+311
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 28 ===
+MEEHAN and ZHANG
+Figure 6. A simple model of Noah’s
+learning situation.
+We will be interested in applying noncontrastiveness to the cookie
+case. To do this, let us introduce a counterpart to Dana, who has the same
+prior over states as Dana, but is in a different learning situation (see also
+ﬁg. 6):
+Noah and Dana . Noah is making cookies together with Dana. Like Dana,
+Noah knows that the butter that Dana has left weighs between 15 and
+17 oz., and he shares Dana’s conﬁdence judgment that it is 0 :6 likely
+that the butter weighs 16 oz., and equally likely that it weighs 15 oz. or
+17 oz. However, unlike Dana, Noah is much less perceptive. No matter
+how much the butter weighs (15 oz., 16 oz., or 17 oz.), he won’t be able
+to learn anything new just by weighing the butter by hand, and he knows
+this.
+Like Xani and Yota, Noah and Dana are in updating problems
+.S;/EM ;E/ and .S;/EM ;E0/ involving the same prior space but different learn-
+ing situations.22 Note that if the butter in fact weighs 16 oz., then Noah
+and Dana will learn the same proposition, namely, the tautology. So non-
+contrastiveness demands that Noah and Dana plan to update their cre-
+dence over the weights the same way at that state. Note that BCOND sat-
+contrastiveness holds. On that point, we refer the reader to our arguments below for why
+we think noncontrastiveness is a plausible normative constraint on updating rules, and
+BCOND is the rational updating rule. At this stage, our point is just that noncontrastive-
+ness is compatible with the received solution to the standard version of the Monty Hall
+problem. Thanks to an anonymous referee for helpful insights on this point.
+22. It is true that Noah and Dana have different background beliefs; for example,
+Dana is certain that she will learn that the butter weighs below 17 oz. if and only if
+the butter weighs 15 oz., while Noah is certain of no such biconditionals about him-
+self. Nevertheless, by stipulation, they share the same prior distribution over the same
+set of possible states (i.e., S Df 15oz:; 16oz:; 17oz:g), and their respective learning sit-
+uations can be represented by functions from S to its subsets. One could dispute these
+stipulations; one might think our models of Noah’s and Dana’s updating problems are
+overly simpliﬁed. However, the point is that, assuming that the way we model their respec-
+tive updating problems are formally adequate, nonconstrastiveness says that they should
+adopt the same posterior at the state where the butter weighs 16 oz.
+312
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 29 ===
+Bayes Is Back
+isﬁes this constraint; in particular, BCOND recommends that both Noah
+and Dana retain their prior when they don’t learn anything new.
+Notably, however, META -COND violates noncontrastiveness in this
+case: it recommends Noah retain his prior, while Dana become certain
+that the butter weighs 16 oz. Formally, letting .S;/EM/ denote Dana and
+Noah’s prior space, E denote Dana’s learning situation, and E0 denote
+Noah’s learning situation,META -COND recommends the following, when
+s is the 16 oz. state:
+m.S;/EM;E/.s/ D /EM
+/NUL
+:
+ˇˇE D E.s/
+/SOH
+D /EM
+/NUL
+:
+ˇˇfsg
+/SOH
+¤ /EM.:
+ˇˇS/ D /EM
+/NUL
+:
+ˇˇE0 D E0.s/
+/SOH
+D m.S;/EM;E0/.s/
+even though E.s/ D E0.s/ D S. This is a violation of noncontrastiveness.
+In fact, this result is not limited toMETA -COND : any nontrivial mixture of
+META -COND and BCOND will violate noncontrastiveness for a similar rea-
+son. For instance, consider the mixture rule h described in section 3.3.
+According to h, if the butter weighs 16 oz., then Noah should be 0 :6
+conﬁdent that the butter weighs 16 oz., whereas Dana should be slightly
+more than 0:6 conﬁdent that the butter weighs 16 oz. (0:6C 2
+5 /SIto be pre-
+cise). The difference is small, but it is a difference nonetheless, which is
+at odds with noncontrastiveness.
+This is promising. As we argued in the previous section, one chal-
+lenge for the externalist Bayesian is to explain why the rational updating
+rule is not some mixture of BCOND and META -COND , even though such
+rules always have higher expected accuracy than BCOND whenever they
+disagree. In particular, it is unclear that the externalist Bayesian can rule
+out such mixture rules on the grounds that they are unfollowable, given
+the plausibility of locality and margin. The above observation suggests an
+answer to this challenge: rational updating rules are noncontrastive; the
+mixture rules are irrational, because and to the extent that they violate
+noncontrastiveness.
+On the other hand, it’s worth noting that while the constraint of
+noncontrastiveness rules out META -COND and the mixture rules, it does
+not rule out the truth rule. For at any state s, the truth rule does rec-
+ommend adopting the same credence function over states at s,n a m e l y ,
+the omniscient credence function that assigns probability 1 to s.S on o n -
+contrastiveness alone is not enough to eliminate all updating rules that
+always have equal or higher expected accuracy than BCOND ;a n o t h e r
+constraint would be needed to rule out the truth rule as well.
+313
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 30 ===
+MEEHAN and ZHANG
+Figure 7. Venn diagram illustrating the relationship between evidentially constancy and
+noncontrastiveness. While META -COND is evidentially constant but not noncontrastive,
+the truth rule is noncontrastive but not evidentially constant. BCOND satisﬁes both.
+The constraint we propose to add to nonconstrastiveness is one
+that we’ve seen before: evidential constancy. However, in the present
+context, the constraint is interpreted as a normative constraint, not a
+followability constraint. That is, on our proposal, the truth rule is not a
+rational updating rule, not because it is unfollowable, but because it is
+irrational; it recommends the agent to adopt different credences at two
+different states, in a given updating problem, despite learning the same
+proposition at those two states. We think doing so is irrational, whether
+or not it is possible.
+Before proceeding, it’s worth highlighting one interesting aspect
+of our proposal. When faced with fact 2, the intuitive response is that
+META -COND is very much like the truth rule, and should be ruled out
+on the same or similar grounds (e.g., on grounds of unfollowability).
+This is not our proposal. Although we think both rules are irrational and
+thereby ruled out as competitors to BCOND , they are ruled out for quite
+different reasons. The truth rule is irrational because it violates eviden-
+tial constancy, whereas META -COND is irrational because it is contrastive.
+BCOND , on the other hand, passes the test by being both evidentially
+constant and noncontrastive (see ﬁg. 7).
+As promised, we’ll say more about the motivations for imposing
+evidential constancy and noncontrastiveness as normative constraints in
+section 4.3. But ﬁrst, let us give an explicit deﬁnition of global evidential
+constancy. As aforementioned, a rule f is globally evidentially constant
+314
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 31 ===
+Bayes Is Back
+just in case it satisﬁes evidential constancy and noncontrastiveness. More
+explicitly: an updating rule is globally evidentially constant if, for any
+pair of updating problems .S;/EM ;E/ and .S;/EM ;E0/ involving the same set
+of states and prior over states, for any s; s0 2 S,23
+E.s/ D E0.s0/ ) f.S;/EM;E/.s/ D f.S;/EM;E0/.s0/:
+In a slogan: same prior over S, same evidence about S, same posterior
+over S regardless of s.
+While the fact that global evidential constancy rules out both the
+truth rule and mixture rules is promising, it’s worth noting that imposing
+global evidential constancy is not going to be a cure-all to the problems
+raised in section 3. For example, the dogmatic rule, which recommends
+always retaining one’s prior, is globally evidentially constant. Yet we saw
+that the dogmatic rule has higher expected accuracy than BCOND in
+Dana. So more needs to be said about why BCOND is rational despite this
+fact. We will have an answer to this question; but we are getting ahead of
+ourselves. First, let us focus on ﬂeshing out global evidential constancy
+as a constraint on updating rules. We’ll start by giving a helpful alter-
+nate characterization of this constraint, and then discuss its status as a
+normative requirement on updating rules.
+4.2. An Alternate Characterization of Global Evidential Constancy
+As we deﬁned an updating rule, it takes three inputs—a prior space
+.S;/EM/, a learning situation E, and a state s in S—and outputs a probabil-
+ity distribution over S, interpreted as the credences over S that an agent
+facing the updating problem.S;/EM ;E/ should plan to adopt ats. However,
+one might have thought that this deﬁnition is too complicated. Instead,
+an updating rule only needs to take two inputs—a prior space .S;/EM/ and
+an evidence proposition p /DC2S. It then outputs a probability distribu-
+tion over S, interpreted as the posterior credences over S that an agent
+should plan to have if she has prior /EMover S and learns p and nothing
+23. That this condition entails noncontrastiveness and evidential constancy is
+straightforward. For the converse direction, suppose an updating rule f is evidentially
+constant and noncontrastive. Let.S;/EM ;E/ and .S;/EM ;E0/ be two updating problems. Sup-
+pose E.s/ D E0.s0/ D p. Consider the factive learning situation F given by, for each
+state t 2 S, F .t/ D p if t 2 p and F .t/ D S n p if t … p. By factivity, s; s0 2 p.S o
+F .s/ D F .s0/ D p D E.s/ D E0.s0/. By noncontrastiveness, f.S;/EM;F /.s/ D f.S;/EM;E/.s/ and
+f.S;/EM;F /.s0/ D f.S;/EM;E/.s0/.B ye v i d e n t i a lc o n s t a n c y ,f.S;/EM;F /.s/ D f.S;/EM;F /.s0/.T h e r e f o r e ,
+f.S;/EM;E/.s/ D f.S;/EM;F /.s/ D f.S;/EM;F /.s0/ D f.S;/EM;E0/.s0/.S o f is globally evidentially constant.
+315
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 32 ===
+MEEHAN and ZHANG
+else. Indeed, we can think of BCOND this way: if an agent has prior /EM
+over S and the strongest proposition she learns is p, which corresponds
+to a subset of S, then BCOND tells her to revise her credence distribution
+over S to /EM.:jp/. In other words, formally, b is representable by the map
+b/ETXthat maps a prior space .S;/EM/ and a proposition p /DC2S to /EM.:jp/:
+b/ETX
+.S;/EM/.p/ D /EM.:jp/:
+Another updating rule which is globally evidentially constant and can
+be represented this way is the dogmatic rule. Formally, the rule can be
+represented by the map d.S;/EM;E/.s/ D /EM, which in turn corresponds to the
+map
+d/ETX
+.S;/EM/.p/ D /EM:
+On the other hand, not every updating rule in our sense can be
+represented by a map from priors over states and propositions to poste-
+riors. In particular, neither the truth rule norMETA -COND (nor mixtures
+of BCOND and META -COND ) can be represented this way. To see that
+META -COND is not representable by a map of this form: let /EMbe Noah’s
+and Dana’s common prior overS Df 15; 16; 17g and let p D S.A sn o t e d
+above, the output of META -COND for /EM and p is underdetermined. If
+an agent with prior /EMis in Noah’s learning situation and learns p, then
+META -COND says she should retain her prior and therefore assign a cre-
+dence of 0:6 to the 16 oz. state; if an agent is in Dana’s learning situation
+and learns p, then META -COND says she should not retain her prior but
+assign probability 1 to the 16 oz. state.
+This is not a coincidence. As it turns out, an updating rule in our
+sense is representable by such a map if and only if it satisﬁes global evi-
+dential constancy (proof in the appendix).
+Fact 5. An updating rule f is globally evidentially constant if and only if there
+is a map f /ETX that takes as input a prior space .S;/EM/ and proposition p /DC2S
+and outputs a posterior probability distribution f /ETX
+.S;/EM/.p/ over S, such that for any
+updating problem .S;/EM ;E/,
+f.S;/EM;E/.s/ D f /ETX
+.S;/EM/
+/NUL
+E.s/
+/SOH
+:
+Given this characterization result, in what follows, if a rule f is
+globally evidentially constant, then we’ll abuse notation and use “ f ”t o
+also denote the map of fewer inputs f /ETXthat represents f . It will often be
+316
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 33 ===
+Bayes Is Back
+more convenient to represent globally evidentially constant rules in this
+alternate way.
+4.3. Global Evidential Constancy as a Normative Constraint
+As noted above, we take global evidential constancy to be a normative
+constraint on rational updating rules. To motivate this, let’s start with
+evidential constancy. Recall that an updating rule is evidentially constant
+just in case it does not recommend different credence functions at states
+where the agent learns the same proposition. We previously introduced
+evidential constancy as a popular criterion for followability. But here we
+are proposing evidential constancy as a normative constraint: an updat-
+ing rule that violates evidential constancy is irrational, whether or not it
+is followable.24
+Why should rational updating rules be evidentially constant? The
+basic thought is: an agent should adopt the same credence function in
+response to learning the same proposition: same evidence, same cre-
+dence. Note that this principle is neutral about one’s account of when
+the agent learns the same proposition, and is therefore compatible with
+a wide range of views about epistemic rationality. For instance, one might
+think an agent learns the same proposition at s and s0 just in case she
+knows the same thing at s and s0 (Williamson 2000). Then evidential
+constancy says that an updating rule is rational only if it recommends the
+same credence function for an agent at any two states where she knows
+the same thing. Alternatively, one could think that an agent learns the
+same proposition at s and s0 if she is disposed to guess the same state to
+be true at s and s0 (Isaacs and Russell 2023). Then evidential constancy
+says an updating rule is rational only if it recommends the same credence
+function for an agent whenever she is disposed to guess the same state
+to be true at s and s0. So evidential constancy is quite weak, and seems
+plausible to that extent.
+24. This approach is much less amenable to the accuracy-ﬁrst project (Pettigrew
+2016), according to which all credal norms are reducible to decision-theoretic norms
+about promoting accuracy. However, as discussed in section 3, we are skeptical that
+BCOND can be the vindicated on the grounds that it has the highest expected accu-
+racy out of all followable rules in all updating problems, or on the grounds that trying
+to follow BCOND has the highest expected accuracy in all updating problems. So for the
+externalist Bayesian who wants to preserve a substantive connection between accuracy
+and the epistemic rationality of updating rules, looking beyond followability considera-
+tions will be key.
+317
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 34 ===
+MEEHAN and ZHANG
+Nevertheless, one might still ﬁnd evidential constancy too strong,
+on the following grounds. In our framework, an updating rule is evi-
+dentially constant just in case, for every proposition that an agent might
+learn in an updating problem, there is one unique credence over states
+that the rule recommends them to adopt in response to learning that
+proposition.25 Many ﬁnd it plausible that there is no unique credence
+function that an agent should adopt in the state of total ignorance. Pre-
+sumably, you know absolutely nothing about Xani. How conﬁdent are
+you that she is vegetarian? 0:5? 0:6? Intuitively, both are permissible; nei-
+ther is irrational. Suppose this is right. Then, the thought goes, there
+may also be multiple permissible answers to this question—permissible
+for you, given your prior beliefs—after you acquire some information
+about Xani (e.g., that she likes the color blue).
+Our reply to this objection is quite ﬂat-footed: on its own, evi-
+dential constancy is compatible with the idea that there are multiple
+rationally permissible credence functions that an agent may adopt in
+response to learning a proposition in an updating problem. The two are
+incompatible only under the additional assumption that at every state,
+there is one unique credence function that the agent should adopt at
+that state. Formally, this corresponds to our stipulation that an updating
+rule associates each updating problem with a function that maps states to
+credence functions over states (Pettigrew 2020 calls this assumptiondeter-
+ministic updating ). One could relax this assumption and adopt a more
+general notion of updating rules, which associates each updating prob-
+lem with a function from states to sets of credence functions , interpreted as
+the set of credence functions that it is rationally permissible for the agent
+to adopt at that state. The notion of evidential constancy still applies
+in this more general framework, but it no longer entails that, for every
+updating problem, there is one unique credence function that an agent
+should adopt in response to learning a given proposition. (On the other
+hand, as Pettigrew (2020) points out, in this more general framework,
+it is unclear that BCOND is the unique rule of rational credal revision,
+even if we assume evidence internalism. In particular, depending on how
+we calculate the expected accuracy of permissive updating rules, BCOND
+may or may not be the unique updating rule that maximizes expected
+accuracy. To this extent, Pettigrew’s (2020) results present a different
+25. In other words, evidential constancy entails a thesis of intrapersonal uniqueness in
+the sense of Kelly 2013.
+318
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 35 ===
+Bayes Is Back
+explanatory challenge for the Bayesians, which we shall not explore in
+this article.)
+So much for evidential constancy for now. What about noncon-
+trastiveness? Prima facie, this constraint looks quite appealing as well.
+Intuitively, how one should revise one’s credence in response to a learn-
+ing experience doesn’t depend on what other learning experience (one
+thinks) one could have had instead. Maybe you think that you could
+have seen an UFO when you looked outside of your window, maybe not.
+Maybe you think that you could have been reading a paper on the feed-
+ing behaviors of red pandas (which could have been a better use of your
+time), maybe not. Either way, those possibilities seem neither here nor
+there. What you should actually believe depends on your initial evidence
+or beliefs and what you actually see and read, not what you could have
+seen and read.
+There is also a theoretical argument for noncontrastiveness. Let’s
+go back to Die once again. Suppose Xani learns from her sensor that the
+die landed even at t1. She then learns from Yota at t2 that her sensor says
+the same thing. There is no surprise here—she already knows this, since
+she knows—or, if one prefers, is absolutely certain—that both her and
+Yota’s sensors are perfectly reliable. What should be Xani’s credences in
+the outcome of the die toss at t2?
+Intuitively, they should be the same as her credences at t1.L e a r n -
+ing again that the die landed even (and nothing else) shouldn’t make
+her more or less conﬁdent that the die landed even, or more/less con-
+ﬁdent that the die landed on a 2 instead of a 4. After all, by stipulation,
+Xani already knows at t1 that the die landed even. What could justify a
+credal shift between t1 and t2, if she learns nothing in the interim that
+she doesn’t already know?26
+As before, let us try to make this thought more precise. Say an
+updating rule is idempotent if it recommends the agent to not plan to
+update differently when she learns the same proposition twice at a given
+state as compared to when she learns it once. Formally, f is idempotent
+26. Note that this is compatible with the thought that, if Xani does have uncertain-
+ties about the reliability of her or Yota’s sensors, then she may become more conﬁdent
+that the die landed even after learning that Yota’s sensor records the same outcome. In
+particular, in such cases, Xani won’t be learning the same proposition twice. Instead,
+she learns at t1 the proposition that her sensor records that the die landed even ,a n da t t2 the
+proposition that Y ota’s sensor records that the die landed even. These two propositions do not
+tell her the same thing about the die toss, relative to her background knowledge, given
+her prior uncertainties about the reliability of the sensors.
+319
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 36 ===
+MEEHAN and ZHANG
+just in case, for any two updating problems .S;/EM ;E/ and .S;/EM ;E0/ with
+the same prior space, and any s 2 S,
+E.s/ D E0.s/ ) f.S;/EM;E/.s/ D f.S;/EM;E^E0/.s/;
+where .E^E0/.s/ D E.s/\E0.s/.27 We submit that idempotence is a plausi-
+ble rational constraint on updating rules. Learning the same proposition
+twice should have the same effect as learning it once. This constraint
+seems particularly compelling if we further stipulate that the agent is
+always certain of what she learns. For then violations of idempotence
+would involve revising one’s credences upon learning a proposition that
+one is already certain to be true.28
+The crucial observation is that, for updating rules, idempotence
+is equivalent to noncontrastiveness (proof in the appendix).
+Fact 6. An updating rule is idempotent if and only if it is noncontrastive.
+To get a feel for this fact, let us consider META -COND .A sn o t e d
+above, META -COND is contrastive, so it is not idempotent. For a concrete
+illustration, suppose Dana’s right hand is sensitive in the way depicted in
+ﬁgure 3, but her left hand is more sensitive: she can tell, by weighing the
+butter using her left hand, whether or not it weighs 17 oz. (but nothing
+27. Note that this intersection is always nonempty given factivity. There is also a
+different formal regimentation of the idempotence constraint: say an updating rule is
+idempotent* if for any two prior-equivalent updating problems.S;/EM ;E/ and .S;/EM ;E0/,i f
+E.s/ D E0.s/,t h e nf.S;/EM;E/.s/ D f.S;/EMs ;E0/.s/,w h e r e/EMs D f.S;/EM;E/.s/. It’s straightforward to
+check that the two conditions are equivalent given the following constraint on updating
+rules:
+Accumulation. For any two prior-equivalent updating problems .S;/EM ;E/ and
+.S;/EM ;E0/, f.S;/EMs ;E0/.s/ D f.S;/EM;E^E0/.s/,w h e r e/EMs D f.S;/EM;E/.s/.
+Intuitively, accumulation says that learning two (possibly the same) propositions in
+sequence from two learning experiences has the same rational effect on one’s credence
+as learning their conjunction in one single learning experience. We think accumula-
+tion is quite plausible, so we will adopt idempotence in virtue of its formal simplicity,
+even though idempotence* is perhaps a more faithful formal regimentation of the intu-
+itive idea. Incidentally, META -COND violates both accumulation and idempotence* (see
+note 30).
+28. Admittedly, idempotence may not hold for nonideal agents with cognitive
+bounds, or in learning situations where there is no strongest proposition that summarizes
+the agent’s learning experience. But neither falls under the scope of BCOND .I n s t e a d ,i t
+is commonly assumed that BCOND only applies to idealized agents with unlimited cogni-
+tive resources and whose learning experiences consist in learning some propositions. It
+is more difﬁcult to imagine how idempotence could fail in such cases.
+320
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 37 ===
+Bayes Is Back
+more speciﬁc). Suppose Dana ﬁrst weighs the butter using her left hand
+at t1, and then weighs it using her right hand at t2. By stipulation, if the
+butter weighs 15 oz., then at both times, the strongest proposition that
+she learns is that the butter weighs 15 oz. or 16 oz. So idempotence says
+that, at that state, the rational updating rule should tell her to adopt the
+same credence function att1 and t2.29 This is not the recommendation of
+META -COND . Instead, META -COND recommends that Dana be one-fourth
+conﬁdent that the butter weighs 15 oz. at t1,b u tc e r t a i nt h a ti tw e i g h s
+15 oz. at t2.30
+Now one might object: despite initial appearances, it is actually
+rational for Dana to change her credences between t1 and t2 (though
+perhaps not in the particular manner recommended by META -COND ),
+because there is a crucial difference between her two learning experi-
+ences. At t1, she learns that the butter weighs 15 oz. or 16 oz., and also
+comes to know that that is the strongest proposition that she has learned.
+At t2, on the other hand, although she learns the same evidence propo-
+sition, she doesn’t also come to know that that is what she has learned.
+In other words, even though Dana actually learns the same proposition
+twice, she doesn’t know that herself, and, the thought goes, this higher-
+order ignorance about whether she has learned the same proposition
+could potentially justify a credal shift between t1 and t2.
+29. Strictly speaking, Dana also learns at t2 that she is weighing the butter using
+her right hand, and given her prior knowledge about the differential sensitivity of her
+two hands, she also knows that she learns that the butter weighs 15 oz. or 16 oz. this
+time if and only if the butter weighs 15 oz. However—and this is crucial—our model
+assumes that the fact that she is measuring the butter using her right hand does not give
+her additional information about the weight of the butter itself (just as our model of
+Xani assumes that the additional information that Xani learns at t2, namely, that she is
+learning something from Yota’s sensor, does not give her additional information about
+the die toss). In particular, Dana cannot infer from the biconditional the butter weighs
+15 oz. if and only if I learn that it weighs 15 oz. or 16 oz. , a biconditional that she knows based
+on the fact that she is measuring the butter using her right hand, to the conclusion that
+the butter weighs 15 oz., because although she does learn that the butter weighs 15 oz.
+or 16 oz., she does not learn that that is what she learns.
+30. On the other hand, suppose Dana ﬁrst weighs the butter using her right hand
+at t1, and then weighs it using her left hand at t2.T h e nMETA -COND says that, if the
+butter weighs 15 oz., then Dana should be certain that the butter weighs 15 oz. at t1 and
+so retain that certainty at t2. On the other hand, if she just weighs the butter using her
+more sensitive left hand, then she should only be one-fourth conﬁdent that the butter
+weighs 15 oz. This illustrates how META -COND violates accumulation and idempotence*
+(note 27).
+321
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 38 ===
+MEEHAN and ZHANG
+This objection is related to a more general consideration against
+imposing idempotence (equivalently, noncontrastiveness) as a ratio-
+nal constraint on updating rules. Recently, some epistemologists have
+argued that rational credal revision should be sensitive to one’s higher-
+order evidence about one’s ﬁrst-order evidence. For instance, some think
+that one should be certain of p if and only if one has (true) higher-order
+evidence that p is part of one’s evidence (Dorst 2019; Dorst et al. 2021).
+This principle is incompatible with idempotence, as we saw in the previ-
+ous variation of Dana. Idempotence says that, if the butter weighs 15 oz.,
+Dana should adopt the same credence function at t1 and t2.I np a r t i c -
+ular, she should be similarly certain (or uncertain) about whether the
+butter weighs 15 oz. or 16 oz. at those two times, even though she has the
+higher-order evidence that this disjunction is part of her evidence at t1,
+but not at t2.
+One thing to say about this objection is that the status of level-
+bridging principles like the one mentioned above is quite controversial.
+Some authors, such as Williamson (2011, 2014), reject such principles,
+on the grounds that they are violated in cases like Olivia and Dana
+(though Williamson’s argument assumes that it is rational to update by
+BCOND in such cases). Moreover, there are weaker level-bridging prin-
+ciples that are compatible with idempotence. For example, Adam Elga
+(2013) proposes that the correct bridging principle between ﬁrst- and
+higher-order uncertainties is the principle of new rational reﬂection.
+In our framework, this principle corresponds to the constraint that, if
+an updating rule f is rational, then for any updating problem .S;/EM ;E/
+and probability function /SUB2 /c129.S/, one’s prior conditional probability—
+conditional on the proposition that /SUBis the rational probability function
+to adopt according to f —should equal /SUBconditioning on that same
+proposition. This principle is compatible with the requirement that ratio-
+nal updating rules are idempotent, since it is satisﬁed by BCOND ,w h i c h
+as we saw is idempotent.
+Another thing to note is that, as we deﬁned it, updating rules
+are ﬁrst and foremost rules about which updating plan an agent should
+adopt prior to their learning experience. They impose constraints on
+which credence function the agent should adopt after their learning
+experience only if we assume that rational agents should be diachroni-
+cally continent (Paul 2014; Pettigrew 2016), in the sense that they should
+revise their credences in accord with the plans that they adopt ex ante.
+However, this assumption seems dubious precisely in cases like Dana.A s
+noted before, in Dana, the only updating rule that is luminous is a rule
+322
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 39 ===
+Bayes Is Back
+that recommends she adopt one particular credence function no matter
+what. So, if Dana plans to revise her credences in any nontrivial fashion,
+after weighing the butter using her less sensitive right hand, then when
+the time comes, she will not necessarily be in a position to tell what her
+plan tells her to do in her situation. Perhaps she planned to be certain that
+the butter weighs 15 oz. or 16 oz.; perhaps she planned to give some
+credence to the possibility that the butter weighs 17 oz. as well. Given
+this uncertainty, it seems rationally permissible for her to not revise her
+credences in accord with her own plans.
+So the remaining question is: Is it rational for Dana to plan to not
+revise her credences at t2, after learning (again) that the butter weighs
+15 oz. or 16 oz. and nothing more speciﬁc? We think it is. By her own
+lights, at t2, the strongest proposition that she will learn about the weight
+of the butter is something that she has already learned att1. Granted, she
+won’t know that herself at t2, and to that extent it might be rational for
+her to change her credences at t2. But ex ante, it seems that that uncer-
+tainty is neither here nor there. Compare: Suppose you are catching a
+ﬂight the next day. Right now, you think that it is highly probable that
+the train going to the airport will be delayed based on its track record.
+However, you also know that you tend not to be able to think clearly
+when you do not get enough sleep, and so would not be certain that this
+high conﬁdence is justiﬁed when you wake up early the next morning.
+How conﬁdent should you plan to be that the train will be delayed next
+morning? Intuitively, the answer is: highly conﬁdent. Yes, you won’t be
+sure if this is too high when you wake up, and it may very well be rational
+for you to adjust your conﬁdence then in light of this uncertainty. But
+that is the problem for your future self next morning; right now, you are
+rationally conﬁdent that the train will be delayed, and should plan to
+retain that conﬁdence when you wake up.31
+To recap: our argument for global evidential constancy as a ratio-
+nal constraint on updating rules consists of three steps:
+31. Side remark: as many theorists have pointed out, the standard Bayesian frame-
+work appears unable to model rational belief revision given higher-order defeat (Weis-
+berg 2009; Levinstein n.d.; Christensen 2010; Ye 2023; White 2009). One potential
+upshot of the discussion above is that perhaps idempotence is one piece of the puz-
+zle. As we saw,BCOND is idempotent, and idempotence amounts to the requirement that
+how one should update one’s credences in ﬁrst-order propositions (e.g., the weight of
+the butter) should be insensitive to one’s higher-order evidence about what ﬁrst-order
+evidence one has.
+323
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 40 ===
+MEEHAN and ZHANG
+1. Global evidential constancy is the conjunction of evidential
+constancy and noncontrastiveness.
+2. Rational updating rules should be evidentially constant
+because facts about which credence function is rational
+supervenes on facts about the agent’s evidence proposition.
+3. Rational updating rules should be idempotent and there-
+fore noncontrastive (fact 6).
+While we don’t take either 2 or 3 to be conclusive, we think they jointly
+make a strong case for global evidential constancy, which we shall take
+for granted from now on.
+With global evidential constancy in hand, we can now turn back to
+the externalist Bayesian’s explanatory challenge: Why is BCOND and not
+the truth rule the rule of rational credal revision? We now have a partial
+answer to that question: even though the truth rule is the most accurate,
+it is not rational because it violates global evidential constancy. However,
+we are not done yet, as we still need an account of why BCOND is the
+rule of rational credal revision. In particular, to address the explanatory
+challenge, this account must involve some connection between accuracy
+and epistemic rationality. One natural conjecture, then, is that BCOND
+is the rational updating rule because, of all updating rules that satisfy
+global evidential constancy, it is the most accurate.
+As we shall see, this conjecture contains a kernel of truth, but
+making it precise will take some work.
+5. Total Expected Accuracy, Rationality, and Bayes Redux
+Let us start with a positive result. With the truth rule, META -COND ,a n d
+mixtures of META -COND and BCOND off the table, there is no remaining
+rule that strictly outperforms BCOND in terms of accuracy.
+Fact 7. There is no globally evidentially constant updating rule distinct from
+BCOND that has equal or higher expected accuracy than BCOND in every updating
+problem.
+It’s worth going through the proof here, just to see global eviden-
+tial constancy in action. Suppose an updating rulef has higher expected
+accuracy than BCOND in an updating problem .S;/EM ;E/. It follows that f
+must disagree withBCOND about how the agent should plan to update on
+a proposition p that she might learn in this problem. Now consider the
+updating problem .S;/EM ;E0/ where the agent will only learn the truth ofp
+324
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 41 ===
+Bayes Is Back
+and nothing else (i.e., E0.s/ D p if s 2 p and :p if s … p). Since f satisﬁes
+global evidential constancy, it must recommend adopting the same cre-
+dence distribution over states in response to learning p in this updating
+problem, which by assumption is different from/EM.:jp/. But this updating
+problem is transparent, and in transparent updating problems, BCOND
+has the uniquely highest expected accuracy amongst all updating rules
+that satisfy evidential constancy, which includes f .S o BCOND has higher
+expected accuracy than f in this problem.
+While this result looks promising, it is not a resounding success
+for BCOND . For one thing, the result does not establish that BCOND out-
+performs its competitors in all updating problems. In fact, we know it
+doesn’t, at least assuming the Brier score or additive logarithmic score
+for measuring accuracy; recall (fact 3) that the dogmatic rule is globally
+evidentially constant, and yet has higher expected accuracy than BCOND
+in Dana, according to these two accuracy scores.
+One might hope that this is an edge case which relies on a particu-
+lar choice of scoring rule. But it turns out there is a general impossibility
+result which does not rely on any particular choice of scoring rule. This
+result says that any globally evidentially constant rule, including BCOND ,
+has lower expected accuracy than some other globally evidentially con-
+stant rule in some updating problem.
+Fact 8. Let A be any strictly proper scoring rule. Let f be a globally eviden-
+tially constant updating rule. Then for any prior space .S;/EM/, there is at least
+one learning situation E relative to .S;/EM/ such that f has lower expected accu-
+racy in .S;/EM ;E/ than some other globally evidentially constant rule. Moreover, if
+the accuracy scoring rule is concave in addition to strictly proper, then there is a
+learning situation E in which, for any ı> 0, f has lower expected accuracy in
+.S;/EM ;E/ than some globally evidentially constant rule that is ı-close to f , in the
+sense of section 3.3.
+The proof is in the appendix. To get a feel for this fact, consider
+Dana.L e t.S;/EM ;E/ be Dana’s updating problem and let A be any strictly
+proper scoring rule (e.g., the simple logarithmic score). Consider the
+following updating rule—call it the one-shot rule—which agrees with
+BCOND for any updating problem that does not have the same prior
+space as Dana’s, and for those that do, it gives the following disjunctive
+instruction:
+325
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 42 ===
+MEEHAN and ZHANG
+/SI If one learns that the butter weighs 15 oz. or 16 oz., be certain
+that it weighs 15 oz.; if one learns that the butter weighs 16 oz.
+or 17 oz., be certain that it weighs 17 oz.; if one learns that the
+b u t t e rw e i g h s1 5o z . ,1 6o z . ,o r1 7o z .( i . e . ,n o t h i n gn e w ) ,t h e n
+b ec e r t a i nt h a ti tw e i g h s1 6o z .
+/SI Otherwise, update by Bayesian conditionalization.
+Formally, the one-shot rule corresponds to the following function f (we
+use the tuple .x; y; z/ to denote the probability function that assigns prob-
+ability x to the state that the butter weighs 15 oz., and so on):
+f.S;/EM/.p/ D
+8
+ˆˆˆˆ<
+ˆˆˆˆ:
+.1; 0; 0/ if p Df 15; 16g
+.0; 1; 0/ if p Df 15; 16; 17g
+.0; 0; 1/ if p Df 16; 17g
+/EM.:jp/ otherwise:
+By construction, the one-shot rule f satisﬁes global evidential constancy
+(recall fact 5). Moreover, since following the one-shot rule corresponds
+to following the truth rule (equivalently, META -COND ) in Dana’s updat-
+ing problem, following it has higher expected accuracy for Dana than
+updating by BCOND according to any strictly proper scoring rule.32
+It’s important to note that, like the dogmatic rule, the one-shot
+rule is not always more accurate than BCOND (as fact 7 shows). In par-
+ticular, the one-shot rule has lower expected accuracy than BCOND for
+Noah. For according to the one-shot rule, after weighing the butter by
+hand, Noah should become certain that the butter weighs 16 oz. no mat-
+ter what. By strict propriety, Noah would expect this credence function
+to be less accurate than his prior. Fact 8 shows that this holds quite gen-
+erally: for any updating rule f that satisﬁes global evidential constancy
+(BCOND , the dogmatic rule, the one-shot rule, and so on), and any
+strictly proper scoring rule A, we can ﬁnd an updating problem where
+32. It’s also worth noting that, by construction, this rule also has the property
+ascribed to BCOND in fact 7: there is no globally evidentially constant rule distinct from
+f such that has equal or higher expected accuracy than f in every updating problem.
+To see why, note that such a rule would have to give the same recommendations as f in
+Dana’s updating problem, which means that it would only disagree for evidence propo-
+sitions p such that f recommends /EM.:jp/. But then the reasoning of the proof of fact 7
+shows that there would be at least some updating problems, namely, transparent prob-
+lems where one learns either p or :p,w h e r ef has higher expected accuracy than this
+alternate rule.
+326
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 43 ===
+Bayes Is Back
+f has lower expected accuracy than some other updating rule f 0 accord-
+ing to A, though that f 0 would in turn have lower expected accuracy than
+some other updating rule f 00 (possibly f ) in some other updating prob-
+lem.
+Here is a slightly different way of seeing what is going on. By
+Schoenﬁeld’s result, in every updating problem, the updating rule that
+has the highest expected accuracy of all updating rules that satisfy evi-
+dential constancy is META -COND . Now, we have argued that META -COND
+is irrational because it violates global evidential constancy (and in par-
+ticular noncontrastiveness). However, for every updating problem, one
+can ﬁnd one updating rule that satisﬁes global evidential constancy
+and “mimics” META -COND for that updating problem; in fact, there are
+inﬁnitely many such rules. On the one hand, any of these rules will have
+the highest expected accuracy in that updating problem (of all updating
+rules that satisfy global evidential constancy). On the other hand, they
+are going to do very poorly in some other problems. In particular, if they
+mimic META -COND for an opaque updating problem, then they will have
+lower expected accuracy than BCOND does for some transparent updat-
+ing problems. There is no rule that rules them all.
+So we can’t identify the most accurate updating rule that satisﬁes
+global evidential constancy with the rule that maximizes expected accu-
+racy in every updating problem; there is none. What then? Our proposal,
+in broadstrokes, is to take the perspective of rule evaluation seriously.
+Some rules, like no jaywalking, may be the best rule overall despite being
+suboptimal on particular occasions. Similarly, we propose that, of all the
+updating rules that satisfy global evidential constancy, the “most accu-
+rate” rule is the one that is “most accurate in general,” in a sense to
+be made precise in the next subsection. Such a rule may not have the
+highest expected accuracy in some particular updating problem, but this
+is ﬁne, since—assuming global evidential constancy—this is true of any
+rational updating rule anyway.
+5.1. Highest T otal Expected Accuracy
+Consider the one-shot rule from the previous section again. As we noted
+above, although the one-shot rule is most accurate for Dana’s updating
+problem, it won’t be very accurate for Noah’s updating problem. More
+concretely, suppose A is the Brier score, that is,
+327
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 44 ===
+MEEHAN and ZHANG
+A.c; s/ D/NUL
+X
+p/DC2S
+/NUL
+c.p/ /NULvs.p/
+/SOH2
+:
+A bit of calculation shows that, for Noah, following the one-shot rule,
+which amounts to being certain that the butter weighs 16 oz. no mat-
+ter what, has an expected accuracy of /NUL1:6, whereas following BCOND ,
+which corresponds to retaining his prior, has a higher expected accu-
+racy, of /NUL1:12.
+The same is true of Dana if she instead weighs the butter using
+her more sensitive left hand. In that case, according to the one-shot
+rule, Dana should be certain that the butter weighs 15 oz. if she learns
+that it weighs 15 oz. or 16 oz.; otherwise she should be certain that it
+weighs 17 oz. If Dana updates in this way, then the expected accuracy of
+her future credences would be /NUL2:4. On the other hand, if she updates
+by BCOND , then the expected accuracy of her future credences would
+be /NUL0:6.
+These results suggest a conjecture: although updating by this one-
+shot rule is more accurate than updating byBCOND in Dana,t h i si sm o r e
+of an exception than the norm. In general, updating by BCOND is more
+accurate than updating by the one-shot rule.
+To make this conjecture more precise, we need a way of evaluat-
+ing how accurate an updating rule is “in general.” One simple idea is
+to look at the sum of the rule’s expected accuracies in different updat-
+ing problems. However, there is one immediate technical difﬁculty with
+this proposal: the class of updating problems does not form a set—since
+it is at least as large as the class of ﬁnite sets—so the sum would not
+even be well deﬁned. 33 Moreover, even if we restrict attention to updat-
+ing problems associated with a ﬁxed (ﬁnite) state space, there are still
+inﬁnitely many such updating problems—in fact, uncountably inﬁnitely
+many (since there are uncountably inﬁnitely priors that one could deﬁne
+over that state space). As a result, while the sum of the expected accura-
+cies of an updating rule is well deﬁned in this case (using the counting
+33. Another conceptual difﬁculty with this approach is that it is not clear that accu-
+racy scores relative to different state spaces are directly comparable with each other.
+For instance, if we measure accuracy using the additive Brier score, then credence func-
+tions over larger state spaces will in general have higher inaccuracy scores than credence
+functions over smaller state spaces, simply because there are more propositions for the
+credence functions to accrue inaccuracy scores. While there are technical ways around
+this problem, each of these ways seems to have its own problems. See Carr 2015; Pettigrew
+2018; Talbot 2019 for related discussion.
+328
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 45 ===
+Bayes Is Back
+measure), it will be inﬁnite for almost every updating rule except for the
+truth rule.34
+To get around these issues, we propose to evaluate the total
+expected accuracy of an updating rule with respect to the set of updating
+problems associated with a given prior space. Formally, letf be an updat-
+ing rule and let .S;/EM/ be a prior space. Let E /DC2fE W S ! P .S/g denote
+all factive learning situations associated with .S;/EM/.T h e total expected
+accuracy of f relative to .S;/EM/ is given by the quantity
+X
+E2E
+X
+s2S
+/EM.s/A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+:
+An updating rule is “most accurate in general” if it has the highest total
+expected accuracy relative to every prior space .S;/EM/.
+One quick remark about this deﬁnition of total expected accuracy
+before moving on. If f satisﬁes global evidential constancy, then its total
+expected accuracy relative to a prior space .S;/EM/ is proportional to the
+following quantity:
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+:
+In particular, we have the following.
+Fact 9. Suppose that f is globally evidentially constant. Then for each state
+space S, there is a positive constant ˛S such that, for all /EMover S, the total expected
+accuracy of f relative to .S;/EM/ is proportional to the above quantity by a factor
+of ˛S .
+It turns out that this second quantity is often easier to calculate.
+Since we are only interested in comparing the accuracy of updating rules
+that satisfy global evidential constancy, it does not matter which quantity
+we use. So, without loss of generality, we will typically work with the sec-
+34. We can circumvent this problem by evaluating the inﬁnite sum using hyperreals,
+or introducing additional measure-theoretical structures to the set of updating problems
+and evaluating the sum using certain ﬁnite measures. However, both approaches would
+involve some degrees of arbitrariness that are not clearly well motivated. Moreover, given
+our main positive result (fact 10), these alternative approaches are likely to converge on
+a similar verdict.
+329
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 46 ===
+MEEHAN and ZHANG
+ond measure, and refer to it as the total expected accuracy of f relative
+to .S;/EM/ as well.35
+With an exact deﬁnition of “most accurate in general” in hand,
+we are ﬁnally in a position to state our main proposal precisely, which is
+the following bridge principle between accuracy and rationality:
+Highest Total Expected Accuracy (Hi-TEA) . An updating rule is epis-
+temically rational if and only if, of all updating rules that satisfy global
+evidential constancy, it is the most accurate in general, in the sense that
+it has the highest total expected accuracy relative to every prior space.
+The immediate question is: Of all updating rules that satisfy global evi-
+dential constancy, is there an updating rule that is most accurate in
+general in this sense? If not, then we are back to square one with respect
+to our earlier impossibility result.
+5.2. Bayes Is Back
+Fortunately, it turns out the answer is Yes, and that rule is Bayesian con-
+ditionalization.
+Fact 10. For every prior space .S;/EM/, BCOND has the highest total expected
+accuracy with respect to .S;/EM/ of all updating rules that satisfy global evidential
+constancy.
+Before going through the formal proof, let us illustrate this result
+with two examples. Earlier we conjectured that although updating by
+the one-shot rule f has higher expected accuracy than BCOND in Dana’s
+updating problem, it is not more accurate than BCOND in general. We
+can now show that this is the case, if we measure accuracy in general by
+total expected accuracy. As above, let.S;/EM/ be the prior space associated
+35. Jennifer Rose Carr (2021) makes a proposal that is formally similar to ours. Like
+us, Carr suggests that we should evaluate updating rules by a weighted average of their
+accuracies at all possible world-evidence combinations. And while Carr doesn’t explic-
+itly discuss the assumption of noncontrastiveness, she takes an updating rule relative to
+a state space S to be a function from world-evidence pairs to credence functions over
+S, which is formally equivalent to noncontrastiveness in our framework. However, our
+proposals differ in terms of the philosophical interpretation of the aggregate quantity.
+For Carr (2021), the aggregate quantity represents the agent’s subjective estimate of how
+accurate an updating rule is, given her uncertainty about what she might learn at a given
+state. For us, the total expected accuracy of an updating rule relative to a prior space is
+part of an objective measure of how accurate the updating rule is in generalfor any agent,
+irrespective of their uncertainties about their evidential situations.
+330
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 47 ===
+Bayes Is Back
+Table 2. Comparison of the accuracy of BCOND and the one-shot rule f at each
+state.
+s p A.f.S;/EM/.p/; s/ A.b.S;/EM/.p/; s/
+15
+f15g 0 0
+f15; 16g 0 /NUL2:25
+f15; 17g /NUL1 /NUL1
+f15; 16; 17g /NUL4 /NUL2:08
+16
+f16g 0 0
+f15; 16g /NUL4 /NUL0:25
+f16; 17g /NUL4 /NUL0:25
+f15; 16; 17g 0 /NUL0:48
+17
+f17g 0 0
+f16; 17g 0 /NUL2:25
+f15; 17g /NUL1 /NUL1
+f15; 16; 17g /NUL4 /NUL2:08
+with Dana and Noah’s updating problems. Table 2 shows a comparison
+of the Brier score of the one-shot rule f and BCOND at each state. To
+calculate their respective total expected accuracies, we proceed as fol-
+lows (see fact 9): For each state s, we add the accuracies of the credence
+functions that the rule recommends the agent with prior/EMto adopt at s,
+given each evidence proposition p /DC2S compatible with s.T h e nw et a k e
+the weighted sum of those numbers, weighted by the prior credence/EM.s/
+in the state. Crunching the numbers, we see that the one-shot rule f has
+the total expected accuracy
+0:2./NUL1 /NUL4/ C 0:6./NUL4 /NUL4/ C 0:2./NUL1 /NUL4/ D/NUL6:8;
+whereas BCOND has total expected accuracy
+0:2./NUL2:25 /NUL1 /NUL2:08/ C 0:6./NUL0:25 /NUL0:25 /NUL0:48/
+C 0:2./NUL2:25 /NUL1 /NUL2:08/ D/NUL2:72;
+which is strictly higher.
+The same is true of the dogmatic rule (table 3). Suppose again
+that we measure accuracy using the Brier score. As one can see from the
+table, the fact that updating by the dogmatic rule has higher expected
+accuracy than updating by BCOND in Dana’s updating problem is very
+much the exception than the rule—for any state s and any proposition
+p other than the one that Dana will learn at s, conditionalizing on p
+331
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 48 ===
+MEEHAN and ZHANG
+Table 3. Comparison of the accuracy of BCOND and the dogmatic rule d at each
+state.
+s p A.d.S;/EM/.p/; s/ A.b.S;/EM/.p/; s/
+15
+f15g /NUL2:08 0
+f15; 16g /NUL2:08 /NUL2:25
+f15; 17g /NUL2:08 /NUL1
+f15; 16; 17g /NUL2:08 /NUL2:08
+16
+f16g /NUL0:48 0
+f15; 16g /NUL0:48 /NUL0:25
+f16; 17g /NUL0:48 /NUL0:25
+f15; 16; 17g /NUL0:48 /NUL0:48
+17
+f17g /NUL2:08 0
+f16; 17g /NUL2:08 /NUL2:25
+f15; 17g /NUL2:08 /NUL1
+f15; 16; 17g /NUL2:08 /NUL2:08
+would result in a more accurate credence function at s than retaining
+one’s prior. This is born out by their respective total expected accuracy
+scores: the dogmatic rule has a total expected accuracy of /NUL4:48, which
+is signiﬁcantly lower than that of BCOND (/NUL2:72), though not as low as
+that of the one-shot rule.
+With these examples in hand, let us now work through the proof
+of fact 10. Fix a prior space .S;/EM/ and let f be a globally evidentially
+constant updating rule. As noted above, the total expected accuracy of f
+with respect to .S;/EM/ is proportional to the quantity
+X
+s
+/EM.s/
+X
+p/DC2SWs2p
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+:
+The crucial observation is that we can reexpress this quantity as36
+X
+p/DC2S
+/EM.p/
+X
+s2S
+/EM.sjp/A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+:
+Now note that, for a ﬁxed p, the inner sum is the expected accu-
+racy of the credence function f.S;/EM/.p/ according to /EM.:jp/.S i n c e/EM.:jp/
+36. To see why, let A.f.S;/EM/.p/; s/ D h.s/.N o t et h a tP
+s /EM.s/ P
+p/DC2SWs2p h.s/ DP
+.s;p/Ws2p;p/DC2S /EM.s/h.s/ D P
+p/DC2S
+P
+s2p /EM.s/h.s/ D P
+p/DC2S
+P
+s2S /EM.sjp//EM.p/h.s/ DP
+p/DC2S /EM.p/ P
+s2S /EM.sjp/h.s/, where the second last equality follows from the fact that,
+if s … p,t h e n/EM.sjp//EM.p/ D 0, and if s 2 p,t h e n/EM.s/ D /EM.sjp//EM.p/.
+332
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 49 ===
+Bayes Is Back
+is probabilistic, strict propriety entails that this inner sum is maximized
+if and only if f.S;/EM/.p/ equals /EM.:jp/. By regularity of /EM, it follows that the
+entire sum is maximized if and only if, for all p, f.S;/EM/.p/ equals /EM.:jp/.
+This completes the proof.
+To recap, we started with the question: Why is BCOND , and not the
+truth rule, the rule of rational credal revision? We argued that the external-
+ist Bayesian can’t answer this explanatory challenge by appealing to the
+idea that the rational updating rule is the most accurate followable rule.
+Even if the truth rule is not followable, it is not obvious that BCOND
+is always followable in opaque updating problems either, and even if it
+is, it is unlikely to be the most accurate followable updating rule, given
+plausible assumptions about followability. Instead, we propose that the
+externalist Bayesian answers this explanatory challenge by appealing to
+the principle Hi-TEA: the rational updating rule is the one that satisﬁes
+global evidential constancy and is most accurate in general, in the sense
+that of all updating rules that satisfy global evidential constancy, it has
+the highest total expected accuracy relative to every prior space. We’ve
+shown that this principle entails thatBCOND is the unique rational updat-
+ing rule.
+5.3. Objections
+Before we conclude, let us consider some objections against our pro-
+posed principle.
+One objection is that the notion of total expected accuracy has
+no normative weight. Yes, in some sense, the one-shot rule is less accu-
+rate than BCOND in general. But why should anyone care about that? In
+particular, why should Dana care about that? After all, by stipulation,
+Dana knows her learning situation, and updating by the one-shot rule,
+or even retaining her prior, is more accurate than updating by BCOND
+in her learning situation. The fact that either rule has lower expected
+accuracy in other learning situations, such as Noah’s, seems neither here
+nor there, as far as Dana is concerned.37
+Let us distinguish between two versions of this objection. On the
+ﬁrst version, the objection is not so much about the normative signiﬁ-
+37. This objection is analogous to the collapse objection against rule consequential-
+ism, according to which the best utilitarian rule is simply the rule that everyone performs
+the act that maximizes their own expected value (see, e.g., Smart and Williams 1973;
+Kagan 2000; Hooker 2002, chap. 4). Thanks to an anonymous referee for pressing us on
+this point.
+333
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 50 ===
+MEEHAN and ZHANG
+cance of total expected accuracy as it is about the requirement of global
+evidential constancy (and noncontrastiveness/idempotence in particu-
+lar). The thought is that the rational updating rule just is the rule
+that recommends the most accurate updating plan in every updating
+problem. If an agent learns the same proposition twice in two differ-
+ent updating problems, and the most accurate updating plans for those
+two problems recommend different posteriors over states in response to
+learning that same proposition, then the agent should revise her cre-
+dences accordingly. This may seem counterintuitive at ﬁrst glance, but
+it is quite sensible—the thought goes—once we take the relationship
+between epistemic rationality and accuracy seriously. Just as the pursuit
+of accuracy requires planning to adopt different posteriors over states
+depending on what one learns, it might also require planning to adopt
+different posteriors over states depending on how many times one learns
+a proposition, if the situation in which one is going to learn that propo-
+sition is changing.
+Our response to this version of the objection is relatively ﬂat-
+footed. Since BCOND satisﬁes global evidential constancy, to the extent
+that one is skeptical of global evidential constancy as a constraint that the
+rational updating rule satisﬁes, one must also be skeptical of the rational-
+ity of BCOND . As noted in the introduction, the objective of this article
+is not to convince the skeptic of Bayesianism why BCOND is the unique
+rational updating rule; rather, our proposal is pitched at the externalist
+Bayesian, and in particular, our aim is to offer an answer to the explana-
+tory challenge: Why is BCOND the rational updating rule and not the truth
+rule?, in a way that (i) does not assume evidence internalism and (ii)
+respects a connection between accuracy and epistemic rationality. As we
+acknowledged, an externalist could dissolve this explanatory challenge
+by rejecting Bayesianism. In particular, they might think that the only
+thing relevant for determining whether an updating rule is rational is
+its truth-conduciveness, and different updating rules are truth-conducive
+for different agents, depending on their individual psychological make-
+ups and learning situations. To this extent, updating by BCOND —or
+any updating rule that satisﬁes global evidential constancy—is only most
+accurate, and thereby rational, for special agents under special circum-
+stances. The main goal of this article is to show that this radical response
+is not the only option available to the externalist; the externalist Bayesian
+has a leg to stand on as well.
+However, one might question if this goal has really been achieved,
+namely, is our answer to the explanatory challenge on behalf of the exter-
+334
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 51 ===
+Bayes Is Back
+nalist Bayesian a good one? If not, then perhaps the externalist Bayesian
+does not have a leg to stand on, after all. This brings us to the second
+version of the objection.
+The second version of the objection concedes our claim that ratio-
+nal updating rules need to satisfy global evidential constancy, as well as
+the idea that rational updating rules are truth-conducive. The concern
+is about the robustness of the explanation for the truth-conduciveness
+of BCOND we have offered. In particular, we have been evaluating the
+truth-conduciveness of updating rules in terms of their total expected
+accuracy, which is deﬁned as the sum over the rule’s expected accuracies
+in all possible updating problems associated with a given prior space. But
+this mode of evaluation assumes that all updating problems associated
+with a given prior space are equally important for judging a rule’s truth-
+conduciveness. One could question this assumption. For instance, one
+might think that, for Dana, her actual updating problem is clearly more
+important than some hypothetical updating problems that she doesn’t
+face but could have faced. And even if we abstract away from individ-
+ual agents, perhaps the updating problem where one learns the truth
+of some laws of nature is more important than one where one learns
+the number of stones in Wisconsin. On this line of thought, when deter-
+mining which updating rule that satisﬁes global evidential constancy is
+most accurate in general, we should look at, not the sum of the rule’s
+expected accuracies in different updating problems associated with that
+prior space, but aweighted sum of its expected accuracies, weighted by the
+relative importance of those updating problems (subjectively or objec-
+tively speaking). Intuitively, on this alternative approach, BCOND would
+not necessarily be the rule that is most accurate in general. If that is right,
+then it appears that our explanation of the rationality ofBCOND is rather
+thin after all.
+Before addressing this worry, let us make it more precise. Let
+.S;/EM/ be a prior space. Let /NAKbe a function that assigns each learning
+situation E W S ! P .S/ a nonnegative real number /NAK.E/ (we also assume
+that /NAK.E/ is positive for some E). Intuitively, /NAK.E/ represents how epis-
+temically important the updating problem .S;/EM ;E/ is. The suggestion,
+then, is that we should deﬁne the total expected accuracy of an updating
+rule f relative to .S;/EM/ by the following quantity:
+X
+E2E
+/NAK.E/
+X
+s
+/EM.s/A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+:
+335
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 52 ===
+MEEHAN and ZHANG
+Our proposal assumes that /NAKis the constant function that assigns 1 to
+every E 2 E . The worry is that this assumption is too restrictive. For
+our explanation of the rationality of BCOND to be sufﬁciently robust and
+interesting, we need to show that BCOND has the highest total expected
+accuracy relative to a range of “natural” weighting functions.
+We think this is a good worry, and exploring its full implications
+will turn out to be both conceptually and dialectically illuminating. Let
+us start with the positive part of our reply. As it turns out, our result does
+generalize to a wide range of weighting functions that satisfy a natural
+property that we call extensionality, which is deﬁned as follows. Fix a prior
+space .S;/EM/.L e t /NAKbe a weighting function. Then for each proposition
+p /DC2S, /NAKinduces a random variable /NAKp W S ! R given by
+/NAKp.s/ WD
+X
+E2E WE.s/Dp
+/NAK.E/:
+Intuitively, one can think of /NAKp.s/ as representing the epistemic impor-
+tance of updating accurately in response to learning proposition p at
+state s.W es a y /NAKis extensional if /NAKp is a function of the truth-function
+of p, that is, for every s; s0 2 S,i f p has the same truth-values at s and
+s0, then /NAKp.s/ D /NAKp.s0/. Informally, a weighting function is extensional if
+how important it is to update accurately in response to learning p at s
+does not depend on anything other than the truth ofp at s. Any positive,
+constant weighting function is trivially extensional in this sense. For a
+less trivial example, let fE1;:::; Eng be a set of transparent learning situ-
+ations. Then the weighting function /NAKthat assigns positive weights to all
+and only the Ei’s is also extensional. Lastly, it’s worth noting that the set
+of extensional weighting functions is closed under linear combinations,
+that is, if /NAK1;:::;/NAK n are extensional, then so is Pn
+kD1 ak /SOH/NAKk.38
+So there are (uncountably) many extensional weighting func-
+tions. Are there nonextensional weighting functions? Here is an exam-
+ple: Let E be an opaque learning situation. Consider the weighting func-
+38. Proof. Suppose /NAKk is extensional for k 2f 1;:::; ng.L e t/NAKD Pn
+kD1 ak /SOH/NAKk.T h e n
+/NAKp.s/ D
+X
+E2E WE.s/Dp
+/NAK.E/ D
+X
+E2E WE.s/Dp
+nX
+kD1
+ak /SOH/NAKk.E/ D
+nX
+kD1
+ak /SOH./NAKk/p.s/:
+Since ./NAKk/p.s/ is a function of vs.p/ for each k, their linear combination is a function of
+vs.p/ as well.
+336
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 53 ===
+Bayes Is Back
+tion /NAKthat assigns 1 to E and 0 to any other learning situation relative to
+.S;/EM/.T h e n/NAKis not extensional in our sense. In particular, let s; s0 2 S
+be such that s0 2 E.s/ and E.s/ ¤ E.s0/—such a pair exists because E is
+opaque. Let p D E.s/.T h e n/NAKp.s/ D 1w h e r e a s/NAKp.s0/ D 0, even though
+vs.p/ D vs0 .p/ D 1.
+Clearly, if we use the above weighting function, then BCOND
+would not be the globally evidentially constant updating rule that has
+the highest total expected accuracy relative to .S;/EM/; instead, it would
+be any “one-shot”-type updating rule that is extensionally equivalent to
+META -COND with respect to E. As it turns out, this result generalizes: for
+BCOND to have the highest weighted total expected accuracy relative to
+a prior space .S;/EM/, it is necessary and sufﬁcient that the weighting func-
+tion is extensional in the above sense.
+Fact 11. For every prior space .S;/EM/ and weighting function /NAK, BCOND has the
+highest total expected accuracy relative to /NAKif and only if /NAKis extensional.39
+Fact 11 reveals both the generality and limitation of our explana-
+tion of the rationality ofBCOND based on Hi-TEA. It is quite general, as it
+is valid for any way of weighing the expected accuracies of updating rules
+in different updating problems that is extensional. It is also limitative, to
+the extent that it is valid only for those weighting functions.
+What shall we make of this? At this point, we think we are getting
+close to the bedrock of normative explanations. The Bayesians could dig
+in their heels and insist that extensionality is a natural assumption that
+“cuts epistemology at its joints.” Which updating rule is most accurate in
+general is a matter of which updating rule gives the most accurate recom-
+mendations given different evidence, where it is assumed that the impor-
+tance of the rule giving accurate recommendations givenp depends only
+on the truth of p, and not on other epistemic or pragmatic matters which
+may vary from agent to agent. It is a nontrivial fact that this assumption
+alone entails that BCOND is the most accurate updating rule in general
+(of those that satisfy global evidential constancy). The non-Bayesian, on
+the other hand, might respond with an incredulous stare: clearly truth is
+not the only factor that determines how important it is to update accu-
+rately in response to learning p; it also matters how likely it is for one to
+learn p at s , and perhaps also how epistemically important p is as a propo-
+39. If /NAK.E/ D 0f o rs o m eE,t h e nBCOND may not be the unique updating rule that
+has the highest expected accuracy, though it is one of such rules when /NAKis extensional.
+337
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 54 ===
+MEEHAN and ZHANG
+sition at s . On this picture, the most accurate updating rule in general
+would not be Bayesian conditionalization, but that is just a fact that we
+have to live with rather than explain away. Epistemology is messy, and we
+shouldn’t pretend it to be otherwise.
+While we don’t have much to say to satisfy the non-Bayesians, one
+thing to note is that these two perspectives are not necessarily incompat-
+ible with one another. Just as deterministic dynamics at the microscopic
+level is compatible with nontrivial probabilistic patterns at the macro-
+scopic level, perhaps the theory of Bayesianism can be treated as a the-
+ory of “high-level” rationality that coexists with a theory of “low-level”
+rationality. The latter takes into account details of individual psycholog-
+ical dispositions and environmental conditions that the former abstracts
+away. Epistemology can be both clean and messy, depending on the level
+of theorizing.40
+Let us conclude with a side remark. Throughout this article, we
+have assumed that the explanatory challenge Why is BCOND and not the
+truth rule the rational updating rule? is more of a challenge for the exter-
+nalist Bayesian than it is for the internalist Bayesian. In particular, the
+internalist Bayesian can justify BCOND on the basis that it is the most
+accurate updating rule that is followable, thanks to Greaves and Wallace’s
+result (fact 1). The externalist Bayesian cannot. However, fact 11 sug-
+gests a different perspective on this issue. As noted above, any weighting
+function that assigns positive weight to all and only transparent learn-
+ing situations is extensional. This suggests a strong connection between
+extensionality on the one hand, and evidence internalism on the other.
+In fact, we can make this connection precise by the following fact.
+Fact 12. Let .S;/EM ;E/ be an updating problem. Let /NAKbe the weighting function
+relative to .S;/EM/ that assigns 1 to E and 0 to any other learning situation. Then
+/NAKis extensional if and only if E is transparent.
+Thus, from an accuracy-theoretic perspective, Greaves and Wal-
+lace’s result is really a special case of fact 11; in particular, the result
+assumes evidence internalism only to the extent that it assumes exten-
+sionality. But one does not have to be an internalist to subscribe to exten-
+sionality; the principle is compatible with evidence externalism as well.
+Conversely, the internalist could reject extensionality, perhaps based on
+40. Thanks to an anonymous referee for pressing us on this point.
+338
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 55 ===
+Bayes Is Back
+considerations of contingent epistemic importance (Levinstein 2019),
+and for such internalist Bayesians, the Greaves and Wallace result will be
+of no avail either. To this extent, insofar as addressing the explanatory
+challenge is concerned, the important question is not whether evidence
+internalism is true, but whether the (total) expected accuracy of an
+updating rule should be evaluated in a way that satisﬁes extensionality.
+6. Conclusion
+Why is Bayesian conditionalization the rule of rational credal revision,
+despite it being less accurate than the truth rule? In this article, we
+proposed an answer to this challenge that does not assume evidence
+internalism. The core of our proposal is the new accuracy-rationality
+principle Hi-TEA: the rational updating rule satisﬁes global evidential
+constancy and, of all updating rules that satisfy this property, is the most
+accurate in general. Bayesian conditionalization is the rule of rational
+credal revision because it is the unique updating rule that satisﬁes these
+two desiderata. As one can infer from the suggestive remarks that we
+made in the last section, we do not take this to be the ﬁnal word on
+this problem, but rather a starting point of further investigation into the
+relationship between accuracy and epistemic rationality.
+Appendix A.
+Fact 1 is proved in Greaves and Wallace 2006.
+Fact 2 is proved in Schoenﬁeld 2017.
+Fact 3. Suppose that accuracy is measured by the Brier score or the additive log-
+arithmic score. Then the dogmatic rule has higher expected accuracy than BCOND
+in Dana’s updating problem.
+Proof. Given a ﬁnite state space S and a credence function c deﬁned over
+all subsets of S, the Brier score evaluates A.c; s/ as /NULP
+p/DC2S jc.p/ /NULvs.p/j2,
+where vs is the omniscient credence function ats.T h eadditive logarithmic
+score evaluates A.c; s/ as /NULP
+p/DC2S L.vs.p/; c.p//,w h e r eL.1; x/ D/NULln x and
+L.0; x/ D/NULln.1 /NULx/. In Dana’s updating problem,S Df 15; 16; 17g, /EMis
+probabilistic with /EM.16/ D 0:6a n d/EM.15/ D /EM.17/ D 0:2, and E is given
+by
+E.15/ Df 15; 16g; E.16/ Df 15; 16; 17g; E.17/ Df 16; 17g:
+339
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 56 ===
+MEEHAN and ZHANG
+Since /EM is probabilistic, /EM.:jE.16// D /EM. So to show that the dog-
+matic rule has higher expected accuracy than BCOND in Dana’s updat-
+ing problem, it sufﬁces to show that A./EM;15/> A./EM.:jE.15//; 15/ and
+A./EM;17/> A./EM.:jE.17//; 17/. We show that for the Brier scoreA./EM;15/>
+A./EM.:jf15; 16g/; 15/, the calculations for the other inequality, and for the
+additive logarithmic score, are similar. We have
+A./EM;15/ D/NUL
+/NUL
+j0:2 /NUL1j2 Cj 0:8 /NUL1j2 Cj 0:4 /NUL1j2 Cj 0:6j2
+Cj 0:8j2 Cj 0:2j2/SOH
+D/NUL2:08I
+A
+/NUL
+/EM
+/NUL
+:
+ˇˇf15; 16g
+/SOH
+; 15
+/SOH
+D/NUL
+/DLE
+2 /SOH
+ˇˇˇ0:2
+0:8 /NUL1
+ˇˇˇ
+2
+C 2 /SOH
+ˇˇˇ0:6
+0:8 /NUL0
+ˇˇˇ
+2/DC1
+D/NUL2:25:
+Fact 4. Let A be any accuracy scoring rule which is concave in addition to
+strictly proper. Then any nontrivial mixture of BCOND and META -COND is evi-
+dentially constant, conservative, and has higher expected accuracy (relative to A)
+than BCOND in every updating problem where they do not agree.
+Proof. Let A be a strictly proper, concave scoring rule and let f be a
+nontrivial mixture of BCOND and META -COND .S i n c eBCOND and META -
+COND are evidentially constant, it’s straightforward to check that f is
+evidentially constant. It’s also straightforward to check thatf is conserva-
+tive since BCOND is. Now ﬁx an updating problem .S;/EM ;E/. Then there
+is 0 /DC4w /DC41 such that
+f.S;/EM;E/.s/ D w /SOHb.S;/EM;E/.s/ C .1 /NULw/ /SOHm.S;/EM;E/.s/:
+Since A is concave,
+A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+/NAKw /SOHA
+/NUL
+b.S;/EM;E/.s/; s
+/SOH
+C .1 /NULw/ /SOHA
+/NUL
+m.S;/EM;E/.s/; s
+/SOH
+:
+It follows that
+E/EM
+/STX
+A.f.S;/EM;E//
+/ETX
+/NULE/EM
+/STX
+A.b.S;/EM;E//
+/ETX
+/NAKw /SOHE/EM
+/STX
+A.b.S;/EM;E/
+/ETX
+C .1 /NULw/ /SOHE/EM
+/STX
+A.m.S;/EM;E//
+/ETX
+/NULE/EM
+/STX
+A.b.S;/EM;E/
+/ETX
+D .1 /NULw/ /SOH.E/EM
+/STX
+A.m.S;/EM;E//
+/ETX
+/NULE/EMŒA
+/NUL
+b.S;/EM;E//c141
+/SOH
+/NAK0;
+340
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 57 ===
+Bayes Is Back
+where for the last step we invoke fact 2. Note that if f and BCOND do not
+agree in .S;/EM ;E/, then 1 /NULw > 0a n d META -COND and BCOND do not
+agree in .S;/EM ;E/, so the inequality is strict.
+Fact 5. An updating rule f is globally evidentially constant if and only if there
+is a map f /ETX that takes as input a prior space .S;/EM/ and proposition p /DC2S
+and outputs a posterior probability distribution f /ETX
+.S;/EM/.p/ over S, such that for any
+updating problem .S;/EM ;E/,
+f.S;/EM;E/.s/ D f /ETX
+.S;/EM/
+/NUL
+E.s/
+/SOH
+:
+Proof. For the “if” direction, let f be the updating rule given by
+f.S;/EM;E/.s/ WD f /ETX
+.S;/EM/.E.s// for a given updating problem .S;/EM ;E/.T h e n
+f is trivially representable by f /ETXand for any updating problems .S;/EM ;E/
+and .S;/EM ;E0/,f o ra n ys; s0 2 S,i f E.s/ D E0.s0/, then
+f.S;/EM;E/.s/ D f /ETX
+.S;/EM/
+/NUL
+E.s/
+/SOH
+D f /ETX
+.S;/EM/
+/NUL
+E0.s0/
+/SOH
+D f.S;/EM;E0/.s0/:
+So f is globally evidentially constant.
+For the “only if” direction, supposef is a globally evidentially con-
+stant updating rule. Given .S;/EM/, associate with each nonempty proposi-
+tion p /DC2S a factive learning situation Ep (a function from S to subsets of
+S such that s 2 Ep.s/ for all s 2 S) and a state sp such that Ep.sp/ D p;t h i s
+is guaranteed to exist since p ¤; . We then specify f /ETX
+.S;/EM/ by
+f /ETX
+.S;/EM/.p/ D f.S;/EM;Ep/.sp/:
+To check this satisﬁes the desired property, let .S;/EM ;E/ be any updating
+problem and let s 2 S be any state. Let p WD E.s/.N o t eE.s/ D Ep.sp/ by
+construction. So, by global evidential constancy of f ,
+f.S;/EM;E/.s/ D f.S;/EM;Ep/.sp/ D f /ETX
+.S;/EM/
+/NUL
+Ep.sp/
+/SOH
+D f /ETX
+.S;/EM/.p/:
+Therefore, f is representable by the two-place function f /ETX.
+Fact 6. An updating rule is idempotent if and only if it is noncontrastive.
+Proof. Suppose f is idempotent. Let .S;/EM ;E1/ and .S;/EM ;E2/ be two updat-
+ing problems involving the same prior space. Suppose E1.s/ D E2.s/.B y
+idempotence,
+341
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 58 ===
+MEEHAN and ZHANG
+f.S;/EM;E1/.s/ D f.S;/EM;E1^E2/.s/ D f.S;/EM;E2/.s/:
+So f is noncontrastive.
+Conversely, suppose f is noncontrastive. Let .S;/EM ;E1/ and
+.S;/EM ;E2/ be two updating problems involving the same prior space
+and suppose E1.s/ D E2.s/.T h e n.S;/EM ;E1/ has the same prior space as
+.S;/EM ;E1 ^ E2/ and E1.s/ D E1.s/ \ E2.s/. So by noncontrastiveness,
+f.S;/EM;E1/.s/ D f.S;/EM;E1^E2/.s/;
+that is, f is idempotent.
+Fact 7 is proved in the main text.
+Fact 8. Let A be any strictly proper scoring rule. Let f be a globally eviden-
+tially constant updating rule. Then for any prior space .S;/EM/, there is at least
+one learning situation E relative to .S;/EM/ such that f has lower expected accu-
+racy in .S;/EM ;E/ than some other globally evidentially constant rule. Moreover, if
+the accuracy scoring rule is concave in addition to strictly proper, then there is a
+learning situation E in which, for any ı> 0, f has lower expected accuracy in
+.S;/EM ;E/ than some globally evidentially constant rule that is ı-close to f , in the
+sense of section 3.3.
+Proof. Suppose f is globally evidentially constant. Fix a prior space.S;/EM/.
+Since META -COND isn’t globally evidentially constant, there must be
+some updating problem .S;/EM ;E/ associated with that prior space in
+which f disagrees with META -COND . It then follows that there is some
+q /DC2S such that the credence function recommended byf in response to
+learning q is not /EM.:jE D q/. Now consider the rule g that agrees with f ,
+except that, for all updating problems involving the prior space .S;/EM/,i t
+recommends
+g.S;/EM/.p/ D
+(
+/EM.:jE D p/ when E.s/ D p for some s;
+f.S;/EM/.p/ when E.s/ ¤ p for all s:
+That is, this rule “mimics”META -COND in the updating problem.S;/EM ;E/.
+Note that g satisﬁes global evidential constancy (by fact 5). Since
+it coincides with META -COND in .S;/EM ;E/, it has higher expected accuracy
+than f in this problem relative to any strictly proper scoring rule A.S o
+f does not maximize expected accuracy in .S;/EM ;E/.I f A is in addition
+342
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 59 ===
+Bayes Is Back
+concave, then we can choose g such that
+g.S;/EM/.p/
+D
+(
+.1 /NUL/SI//SOHf.S;/EM/.p/ C /SI/SOH/EM.:jE D p/ when E.s/ D p for some s;
+f.S;/EM/.p/ when E.s/ ¤ p for all s
+for 0 </SI/DC41 that satisﬁes /SI<ı =2.
+Fact 9. Suppose that f is globally evidentially constant. Then for each state
+space S, there is a positive constant ˛S such that, for all /EMover S, the total expected
+accuracy of f relative to .S;/EM/ is proportional to the quantity
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+by a factor of ˛S .
+Proof. Fix .S;/EM/.L e tE denote the set of all (factive) learning situations
+that can be deﬁned with respect to the state space S, that is, the set of
+all learning situations E such that .S;/EM ;E/ is an updating problem. Fix
+a state s 2 S. For each proposition p /DC2S compatible with s, consider
+the set of learning situations that yield evidence p at s,t h a ti s ,t h es e t
+fE 2 E W E.s/ D pg.E a c hp /DC2S compatible with s yields a distinct such
+set, and these sets together partitionE . Thus, a rule’s total expected accu-
+racy (with respect to .S;/EM/) can be reexpressed as a sum of its expected
+accuracy given different possible evidence and learning situations in E
+that yield that evidence:
+X
+E2E
+X
+s2S
+/EM.s/A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+D
+X
+s2S
+/EM.s/
+X
+E2E
+A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+D
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+X
+E2E WE.s/Dp
+A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+:
+Now, we make two observations. First, continuing the chain of equalities,
+if f is globally evidentially constant, then
+343
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 60 ===
+MEEHAN and ZHANG
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+X
+E2E WE.s/Dp
+A
+/NUL
+f.S;/EM;E/.s/; s
+/SOH
+D
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+X
+E2E WE.s/Dp
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+:
+Since the inner summand is now independent of the speciﬁc choice of
+E 2 E , it sufﬁces to calculate the number of E 2 E that yield evidence p
+at s. This leads to our second observation: Let d be the number of states
+in S, excluding s. For each of these d states, there are 2 d propositions
+that can be learned at those states (for each state other than the given
+state, there are two choices of whether that state is in or out of the evi-
+dence proposition). Thus the number of learning situations in E that
+yield evidence p at s is equal to the constant ˛S D .2d/d .T h u s
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+X
+E2E WE.s/Dp
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+D
+X
+s2S
+/EM.s/˛S /SOH
+X
+p/DC2SWs2p
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+D ˛S
+X
+s2S
+/EM.s/
+X
+p/DC2SWs2p
+A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+;
+as claimed. (Thanks to an anonymous referee for supplying the key ideas
+for this streamlined proof.)
+Fact 10 is proved in the main text.
+Fact 11. For every prior space .S;/EM/ and weighting function /NAK, BCOND has the
+highest total expected accuracy relative to /NAKif and only if /NAKis extensional.
+This fact is a consequence of the following two lemmas.
+Lemma 1. Let .S;/EM/ be a prior space and let /NAKbe a weighting function. For
+every p /DC2S, deﬁne /EM.:j/NAKp/ as the following probability function:
+/EM.sj/NAKp/ WD /EM.s//NAKp.s/P
+s02S /EM.s0//NAKp.s0/ D /EM.s//NAKp.s/
+E/EMŒ/NAKp/c141
+(provided that E/EMŒ/NAKp/c141>0). Let f be an updating rule such that f .S;/EM/.p/ D
+/EM.:j/NAKp/ whenever E/EMŒ/NAKp/c141>0. Then f has the highest total expected accuracy of
+all globally evidentially constant updating rules relative to /NAKand .S;/EM/.
+344
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 61 ===
+Bayes Is Back
+Proof. Fix .S;/EM/ and let f be any globally evidentially constant updating
+rule. By similar steps as the proof of fact 10,
+E/EM
+/STX
+A.f.S;/EM/
+/ETX
+D
+X
+s
+/EM.s/
+X
+p/DC2S
+/NAKp.s/A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+D
+X
+p/DC2S
+X
+s
+/EM.s//NAKp.s/A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+D
+X
+p/DC2S
+E/EMŒp/NAK/c141
+X
+s
+/EM.s//NAKp.s/
+E/EMŒp/NAK/c141A
+/NUL
+f.S;/EM/.p/; s
+/SOH
+:
+Note that the inner sum over s (on the ﬁnal line) is just the expected
+accuracy of a ﬁxed credence function (namely, f.S;/EM/.p/) according to
+the probability function/EM.:j/NAKp/. By strict propriety, this is maximized pre-
+cisely by /EM.:j/NAKp/, as claimed.
+Lemma 2. /NAKis extensional if and only if, for all .S;/EM/, /EM.:j/NAKp/ D /EM.:jp/ for
+all nonempty p /DC2S.
+Proof. First we note that, given .S;/EM/,i f /EM.:j/NAKp/ is well deﬁned, then
+/EM.p/> 0a n ds o /EM.:jp/ is well deﬁned; to see this, note /NAKp is a non-
+negative variable, so if EpŒ/NAKp/c141>0, then /EM.s0/> 0f o rs o m es0 2 p,a n d
+so /EM.p/> 0. Now, for the “only if” direction, ﬁx any .S;/EM/ and p /DC2S.
+Suppose /NAKp.s/ D /NAKp.s0/ D ˛p /NAK0f o ra l ls; s0 2 p. Suppose /EM.:j/NAKp/ is well
+deﬁned. Then EpŒ/NAKp/c141>0a n d/EM.p/> 0 and we have, using the fact that
+/NAKp D ˛p1p where 1p is the indicator function for p,
+/EM.sj/NAKp/ D /EM.s//NAKp.s/
+E/EMŒ/NAKp/c141D /EM.s/˛p1p.s/P
+s02S /EM.s0/˛p1p.s/ D
+( /EM.s/
+/EM.p/ if s 2 p
+0o t h e r w i s e;
+which is equal to /EM.:jp/, as claimed. For the “if” direction, ﬁx any .S;/EM/
+and p /DC2S. Suppose /EM.:j/NAKp/ is well deﬁned, and so EpŒ/NAKp/c141>0a n d/EM.p/>
+0, and that for all s 2 S, /EM.sj/NAKp/ D /EM.sjp/.L e ts 2 p.T h e n
+/EM.s//NAKp.s/
+E/EMŒ/NAKp/c141D /EM.s/
+/EM.p/;
+which implies /NAKp.s/ D E/EMŒ/NAKp/c141=/EM.p/. Note that this value is the indepen-
+dent of s 2 p. This argument can be repeated for any .S;/EM/ and p /DC2S,
+so it follows that /NAKis extensional.
+345
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 62 ===
+MEEHAN and ZHANG
+Fact 12. Let .S;/EM ;E/ be an updating problem. Let /NAKbe the weighting function
+relative to .S;/EM/ that assigns 1 to E and 0 to any other learning situation. Then
+/NAKis extensional if and only if E is transparent.
+Proof. Suppose /NAKis extensional. Let s 2 S. Suppose p D E.s/ and s0 2 p.
+Then vs.p/ D vs0 .p/.S o1 D /NAKp.s/ D /NAKp.s0/, that is, E.s0/ D p.C o n v e r s e l y ,
+suppose E is transparent. Let p /DC2S and s; s0 2 S. It sufﬁces to show
+that, if vs.p/ D vs0 .p/, then E.s/ D p if and only if E.s0/ D p. Suppose
+vs.p/ D vs0 .p/ D 0. Then E.s/ ¤ p and E.s0/ ¤ p by factivity. On the other
+hand, suppose vs.p/ D vs0 .p/ D 1. Suppose E.s/ D p, then since s0 2 p,
+E.s0/ D p by transparency. By symmetry, E.s/ D p if and if E.s0/ D p.
+References
+Ahmed, Arif, and Bernhard Salow. 2019. “Don’t Look Now.” British Journal for
+the Philosophy of Science 70, no. 2: 327–50.
+Barnett, Zach. 2021. “Rational Moral Ignorance.” Philosophy and Phenomenologi-
+cal Research 102, no. 3: 645–64.
+Berker, Selim. 2008. “Luminosity Regained.”Philosophers’ Imprint8, no. 2: 1–22.
+Bernardo, José M. 1979. “Expected Information as Expected Utility.” Annals of
+Statistics 7, no. 3: 686–90.
+Briggs, R. A. 2010. “Putting a Value on Beauty.” In Oxford Studies in Epistemol-
+ogy, vol. 3, edited by Tamar Szabo Gendler and John Hawthorne. Oxford
+University Press.
+Briggs, R. A., and Richard Pettigrew. 2020. “An Accuracy-Dominance Argument
+for Conditionalization.” Noûs 54, no. 1: 162–81.
+Bröcker, Jochen, and Leonard A. Smith. 2007. “Scoring Probabilistic Forecasts:
+The Importance of Being Proper.”Weather and Forecasting 22, no. 2: 382–88.
+Bronfman, Aaron. 2014. “Conditionalization and Not Knowing That One
+Knows.” Erkenntnis 79, no. 4: 871–92.
+Campbell-Moore, Catrin, and Benjamin A. Levinstein. 2021. “Strict Propriety Is
+Weak.”Analysis 81, no. 1: 8–13.
+Carnap, Rudolf. 1988. Meaning and Necessity: A Study in Semantics and Modal
+Logic. University of Chicago Press.
+Carr, Jennifer Rose. 2015. “Epistemic Expansions.” Res Philosophica 92, no. 2:
+217–36.
+Carr, Jennifer Rose. 2017. “Epistemic Utility Theory and the Aim of Belief.”
+Philosophy and Phenomenological Research 95, no. 3: 511–34.
+Carr, Jennifer Rose. 2021. “A Modesty Proposal.”Synthese 198, no. 4: 3581–601.
+Christensen, David. 2010. “Higher-Order Evidence 1.” Philosophy and Phe-
+nomenological Research 81, no. 1: 185–215.
+346
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 63 ===
+Bayes Is Back
+Das, Nilanjan. 2019. “Accuracy and Ur-Prior Conditionalization.”Review of Sym-
+bolic Logic 12, no. 1: 62–96.
+Das, Nilanjan. 2022. “Externalism and Exploitability.”Philosophy and Phenomeno-
+logical Research 104, no. 1: 101–28.
+Das, Nilanjan. 2023. “The Value of Biased Information.” British Journal for the
+Philosophy of Science 74, no. 1: 25–55.
+Dorst, Kevin. 2019. “Higher-Order Uncertainty.” In Higher-Order Evidence: New
+Essays, edited by Mattias Skipper and Asbjørn Steglich-Petersen. Oxford
+University Press.
+Dorst, Kevin, Benjamin A. Levinstein, Bernhard Salow, Brooke E. Husic, and
+Branden Fitelson. 2021. “Deference Done Better.” Philosophical Perspectives
+35, no. 1: 99–150.
+Easwaran, Kenny. 2014. “Regularity and Hyperreal Credences.” Philosophical
+Review 123, no. 1: 1–41.
+Elga, Adam. 2013. “The Puzzle of the Unmarked Clock and the New Rational
+Reﬂection Principle.” Philosophical Studies 164, no. 1: 127–39.
+Gallow, J. Dmitri. 2019a. “Diachronic Dutch Books and Evidential Import.”Phi-
+losophy and Phenomenological Research 99, no. 1: 49–80.
+Gallow, J. Dmitri. 2019b. Learning and Value Change . Michigan Publishing, Uni-
+versity of Michigan Library.
+Gallow, J. Dmitri. 2021. “Updating for Externalists.”Noûs 55, no. 3: 487–516.
+Geanakoplos, John. 1989. “Game Theory Without Partitions, and Applications
+to Speculation and Consensus.” BE Journal of Theoretical Economics 21, no. 2:
+361–94.
+Gibbard, Allan. 2007. “Rational Credence and the Value of Truth.”Oxford Stud-
+i e si nE p i s t e m o l o g y2: 143–64.
+Gneiting, Tilmann, and Adrian E. Raftery. 2007. “Strictly Proper Scoring Rules,
+Prediction, and Estimation.”Journal of the American Statistical Association 102,
+no. 477: 359–78.
+Good, Irving John, 1967. “On the Principle of Total Evidence.” British Journal
+for the Philosophy of Science 17, no. 4: 319–21.
+Greaves, Hilary, and David Wallace. 2006. “Justifying Conditionalization: Con-
+ditionalization Maximizes Expected Epistemic Utility.” Mind 115, no. 459:
+607–32.
+Greco, Daniel. 2019. “Fragmentation and Higher-Order Evidence.” In Higher-
+Order Evidence: New Essays , edited by Mattias Skipper and Asbjørn Steglich-
+Petersen. Oxford University Press.
+Hájek, Alan. 2011. “A Puzzle About Degree of Belief.” Unpublished
+manuscript.
+Hájek, Alan. 2012. Is Strict Coherence Coherent? Dialectica 66, no. 3: 411–24.
+Hild, Matthias. 1998. “Auto-Epistemology and Updating.” Philosophical Studies
+92, no. 3: 321–61.
+347
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 64 ===
+MEEHAN and ZHANG
+Hooker, Brad. 2002.Ideal Code, Real World: A Rule-Consequentialist Theory of Moral-
+ity. Oxford University Press.
+Horowitz, Sophie. 2014. “Epistemic Akrasia.”Noûs 48, no. 4: 718–44.
+Horwich, Paul. 2006. “The Value of Truth.”Noûs 40, no. 2: 347–60.
+Hughes, RIG, and Bas C. Van Fraassen. 1984. “Symmetry Arguments in Proba-
+bility Kinematics.” In PSA: Proceedings of the Biennial Meeting of the Philosophy
+of Science Association, vol. 2. Philosophy of Science Association.
+Isaacs, Yoaav, and Jeffrey Sanford Russell. 2023. “Updating Without Evidence.”
+Noûs 57, no. 3: 576–99.
+Jeffrey, Richard C. 1965. The Logic of Decision . University of Chicago Press.
+Joyce, James M. 1998. “A Nonpragmatic Vindication of Probabilism.”Philosophy
+of Science 65, no. 4: 575–603.
+Joyce, James M. 2009. “Accuracy and Coherence: Prospects for an Alethic Epis-
+temology of Partial Belief.” In Degrees of Belief , vol. 342 of Synthese Library ,
+edited by Franz Huber and Christoph Schmidt-Petri. Springer.
+Kagan, Shelly. 2000. “Evaluative Focal Points.” In Morality, Rules, and Conse-
+quences: A Critical Reader, edited by Brad Hooker, Elinor Mason, and Dale E.
+Miller. Edinburgh University Press.
+Kelley, Mikayla. 2023. “On Accuracy and Coherence with Inﬁnite Opinion
+Sets.” Philosophy of Science 90, no. 1: 92–128.
+Kelley, Mikayla, and Sven Neth. 2022. “Accuracy and Inﬁnity: A Dilemma for
+Subjective Bayesians.” Synthese 201, no. 12.
+Kelly, Thomas. 2013. “Evidence Can Be Permissive.” In Contemporary Debates in
+Epistemology, edited by Matthias Steup and John Turri. Blackwell
+Levinstein, Benjamin A. 2017. “Accuracy Uncomposed: Against Calibra-
+tionism.” Episteme 14, no. 1: 59–69.
+Levinstein, Benjamin A. 2019. “An Objection of Varying Importance to Epis-
+temic Utility Theory.”Philosophical Studies 176, no. 11: 2919–31.
+Levinstein, Benjamin A. n.d. “Higher-Order Evidence as Information Loss.”
+Unpublished manuscript.
+Lewis, Peter J., and Don Fallis. 2021. “Accuracy, Conditionalization, and Prob-
+abilism.” Synthese 198, no. 5: 4017–33.
+Medina, Pablo Zendejas. 2024. “Just as Planned: Bayesianism, Externalism, and
+Plan Coherence.” Philosophers’ Imprint3, no. 28.
+Mitova, Veli. 2018. T h eF a c t i v eT u r ni nE p i s t e m o l o g y. Cambridge University Press.
+Neth, Sven. Forthcoming. “Rational Aversion to Information.”British Journal for
+the Philosophy of Science .
+Nielsen, Michael. 2022. “Regular Conditional Probabilities and Strictly Proper
+Loss Functions.” Statistics and Probability Letters 185, no. 109412.
+Paul, Sarah K. 2014. “Diachronic Incontinence Is a Problem in Moral Philoso-
+phy.”Inquiry 57, no. 3: 337–55.
+Pearl, Judea. 1988. Probabilistic Reasoning in Intelligent Systems .M o r g a nK a u f -
+mann.
+348
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 65 ===
+Bayes Is Back
+Pettigrew, Richard. 2012. “Accuracy, Chance, and the Principal Principle.”
+Philosophical Review 121, no. 2: 241–75.
+Pettigrew, Richard. 2016. Accuracy and the Laws of Credence .O x f o r dU n i v e r s i t y
+Press.
+Pettigrew, Richard. 2018. “The Population Ethics of Belief: In Search of an
+Epistemic Theory X.” Noûs 52, no. 2: 336–72.
+Pettigrew, Richard. 2020. “What Is Conditionalization, and Why Should We Do
+It?” Philosophical Studies 177, no. 11: 3427–63.
+Pettigrew, Richard. 2022. “Radical Epistemology, Structural Explanations, and
+Epistemic Weaponry.”Philosophical Studies 179, no. 1: 289–304.
+Predd, Joel B., Robert Seiringer, Elliott H Lieb, Daniel N Osherson, H. Vincent
+Poor, and Sanjeev R. Kulkarni. 2009. “Probabilistic Coherence and Proper
+Scoring Rules.” IEEE Transactions on Information Theory 55, no. 10: 4786–92.
+Pruss, Alexander R. 2022. “Accuracy, Probabilism and Bayesian Update in Inﬁ-
+nite Domains.” Synthese 200, no. 6: 1–29.
+Salow, Bernhard. 2018. “The Externalist’s Guide to Fishing for Compliments.”
+Mind 127, no. 507: 691–728.
+Schoenﬁeld, Miriam. 2017. “Conditionalization Does Not Maximize Expected
+Accuracy.”Mind 126, no. 504: 1155–87.
+Schoenﬁeld, Miriam. 2018. “An Accuracy Based Approach to Higher Order
+Evidence.” Philosophy and Phenomenological Research 96, no. 3: 690–715.
+Schultheis, Ginger. Forthcoming. “Accurate Updating.”Philosophy of Science.
+Smart, J. J. C., and Bernard Williams. 1973. “An Outline of a System of Utilitar-
+ian Ethics.” In Utilitarianism: For and Against . Cambridge University Press.
+Srinivasan, Amia. 2015. “Normativity Without Cartesian Privilege.”Philosophical
+Issues 25, no. 1: 273–99.
+Stalnaker, Robert. 2015. “Luminosity and the KK Thesis.” In Externalism, Self-
+Knowledge, and Skepticism: New Essays , edited by Sanford Goldberg. Cam-
+bridge University Press.
+Talbot, Brian. 2019. “Repugnant Accuracy.”Noûs 53, no. 3: 540–63.
+Weatherson, Brian. 2013. “Margins and Errors.”Inquiry 56, no. 1: 63–76.
+Weatherson, Brian. 2019. Normative Externalism. Oxford University Press.
+Wedgwood, Ralph. 2002. “The Aim of Belief.” Philosophical Perspectives 16:
+267–97.
+Weisberg, Jonathan. 2009. “Commutativity or Holism? A Dilemma for Condi-
+tionalizers.” British Journal for the Philosophy of Science 60, no. 4: 793–812.
+White, Roger. 2009. “On Treating Oneself and Others as Thermometers.”Epis-
+teme 6, no. 3: 233–50.
+Williams, J. Robert G., and Richard Pettigrew. Forthcoming. “Consequences of
+Calibration.” British Journal of Philosophy of Science .
+Williamson, Timothy. 2000. Knowledge and Its Limits . Oxford University Press.
+Williamson, Timothy. 2011. “Improbable Knowing.” InEvidentialism and Its Dis-
+contents, edited by Trent Dougherty. Oxford University Press.
+349
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025
+
+=== PDF page 66 ===
+MEEHAN and ZHANG
+Williamson, Timothy. 2014. “Very Improbable Knowing.”Erkenntnis 79: 971–99.
+Worsnip, Alex. 2018. “The Conﬂict of Evidence and Coherence.”Philosophy and
+Phenomenological Research 96, no. 1: 3–44.
+Ye, Ru. 2023. Higher-Order Evidence and Calibrationism . Cambridge University
+Press.
+350
+Downloaded from http://read.dukeupress.edu/the-philosophical-review/article-pdf/134/3/285/2296350/285meehan.pdf by MIT LIBRARIES user on 03 September 2025

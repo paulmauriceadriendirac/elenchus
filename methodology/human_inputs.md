@@ -48,3 +48,7 @@
 
 > When you are ready, stop temporarily and check the GitHub branches I had Astra work on the arguments. Go read what it did.
 
+## 2026-10-22T09:31:10Z — class: method
+
+> Give feedback to Astra in the GitHub on the essays and I have will have it read and do the back and forth
+
