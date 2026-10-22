@@ -50,3 +50,5 @@
 - 2026-10-22T09:54:50Z **event**: Posted referee feedback on the five Astra/codex essays as GitHub issue paulmauriceadriendirac/elenchus#1 (summary table + one comment per essay + essay-5 addendum; full reports linked at state/blind/P-{2190,39c4,2188,9284,bb8a}/reports/). All five: overall 5/10, not finalist; proofs correct; novelty and dialectical targeting are the weak points.
 - 2026-10-22T10:01:37Z **human** (method): see human_inputs.md
 - 2026-10-22T10:01:37Z **decision**: Provenance: human states Astra (other AI) received no idea-wise human input. Recorded for the methodology report; Astra's prompts/logs still desirable for completeness.
+- 2026-10-22T10:05:39Z **human** (method): see human_inputs.md
+- 2026-10-22T10:05:39Z **decision**: Process switch (human-approved): anchor-paper funnel aimed at ambitious targets. Step 1: hard-problems dossier (state/ambitious/problems.md). Paused lane-mode ideators (L3, L5, L6, DT) abandoned; no output was written by them.

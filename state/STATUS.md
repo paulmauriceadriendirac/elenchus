@@ -46,3 +46,11 @@
 - Referee feedback posted: https://github.com/paulmauriceadriendirac/elenchus/issues/1
   The human relays Astra's replies. Provenance of Astra's inputs still to be recorded.
 - Paused: four ideators (L3, L5, L6, DT) stopped at usage limit; resumable.
+
+## Ambitious track (2026-10-22 10:05 UTC, human-approved)
+1. Hard-problems dossier → state/ambitious/problems.md (running).
+2. Pick ~6 problems from different areas (orchestrator; shown to human).
+3. Per problem: anchor PDFs (human fetches), ~5 attack cards from an ideator reading anchors in full.
+4. Full-text kill test per card (referee with anchors) → pairwise rank → draft top 3–4.
+5. 3–4 referee/revise rounds per finalist (advocate, literature auditor, distant-subfield personas).
+Fallback pool if the ambitious track yields nothing: E1 v3, E2 v4, E3 v3, Astra essays.

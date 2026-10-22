@@ -56,3 +56,7 @@
 
 > Don't worry I didn't give Astra anything idea wise. Okay what we have written and done so far how would you improve upon what we are doing process wise. I feel like I messed up with the planning. I feel like someone else who knew what they were doing wouldn't have focused so much on idea exploration. Or just have you make a linear ranking of idk 100 problems and then had you write 100 essays and then went for the three best ones
 
+## 2026-10-22T10:05:39Z — class: method
+
+> That actually much more reasonable.  Yeah okay can you pick the most ambitious projects. Let's see what you can do instead of incremental results. Like look for the hardest problems and then let's try to tackle them
+
