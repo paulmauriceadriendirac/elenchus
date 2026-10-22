@@ -1,0 +1,1008 @@
+=== PDF page 1 ===
+Dogmatism & Inquiry
+Sam Carter
+Dianoia Institute of Philosophy, Australia
+sam.carter@acu.edu.au
+John Hawthorne
+University of Southern California, USA
+jhawthor@usc.edu
+Abstract
+Inquiry aims at knowledge. Your inquiry into a question succeeds just
+in case you come to know the answer. However, combined with a common
+picture on which misleading evidence can lead knowledge to be lost, this
+view threatens to recommend a novel form of dogmatism. At least in some
+cases, individuals who know the answer to a question appear required to
+avoid evidence bearing on it.
+In this paper, we’ll aim to do two things. First, we’ll present an ar-
+gument for this novel form of dogmatism and show that it presents a
+substantive challenge. Second, we’ll consider a way those who take knowl-
+edge to be the aim of inquiry can mount a response. In the course of doing
+so, we’ll try to get clearer on the normative connections between inquiry,
+knowledge and evidence gathering.
+1 Introduction
+Dogmatists value evidence differently depending on when it is received. Dogma-
+tism comes in different forms (see, in particular, Harman (1973); Kripke (2011);
+for recent discussion, see, e.g., Lasonen-Aarnio (2014a); Beddor (2019); Fraser
+(2022)). Here, we distinguish two. Ex Post Dogmatism recommends that an
+agent should, upon acquiring evidence against what she has previously come to
+know, disregard that evidence (at least insofar as it bears on what she knows).
+That is, it says that if an agent knows p, then irrespective of what evidence she
+goes on to acquire against p, she should never come to believe ¬p. Ex Ante
+Dogmatism, in contrast, recommends that an agent should avoid gathering
+evidence which bears on what she currently knows (at least insofar as it bears
+on nothing else she is inquiring into). That is, it says that if an agent knows p,
+then she should not gather evidence which bears on p (and none of her other
+inquiries).Whereas the former is a principle about how agents should regulate
+their beliefs, the latter is a principle about how agents should structure their
+inquiry.
+1
+=== PDF page 2 ===
+Dogmatism—in either form—is puzzling. And yet a variety of arguments pur-
+port to show that, given relatively innocuous assumptions, dogmatism (of some
+form or another) is recommended.
+In this paper, we start (§ 2) by presenting an old argument for Ex Post Dogma-
+tism, framed in a new way. This argument comes with a well-known response:
+its conclusion can be avoided by entertaining the possibility of losing knowledge
+over time. What has been largely overlooked is that this response leaves its
+proponent exposed to a different kind of argument, in this case for Ex Ante
+Dogmatism. We present this argument (§ 3) and provide some reasons to think
+that Ex Ante Dogmatism is odd. We go on to consider how the non-dogmatic
+could respond to this challenge (§ 4) and assess how this response interacts with
+some proposed norms on inquiry (§ 5). § 6 concludes.
+2 Ex Post Dogmatism
+Imagine a bag containing three balls. You know that there are exactly three
+balls in the bag and that each ball is either red or black. You also know that
+there is at least one red ball in the bag and at least one black ball. 1 However,
+prior to drawing any balls from the bag, you do not know how many balls of
+each color there are.
+Suppose that, in fact, the bag contains two red balls. Anti-skeptical considera-
+tions suggest that, in at least some cases, you can come to know this by drawing
+balls sequentially (with replacement). Amongst other things, vindicating anti-
+skeptical considerations would seem to require accepting the following: 2
+Anti-
+Skepticism
+There is some n ≥ 1 such that, for any sequence of draws:
+if at least 2
+3 of the first n draws in the sequence are red,
+you can know after n draws that there are two red balls.
+Anti-Skepticism is motivated by the more general idea that your evidence
+can put you in a position to know a hypothesis without necessitating its truth.
+Denying Anti-Skepticism would impose seemingly unacceptable constraints
+on our ability to acquire knowledge via induction. While our framing scenario
+is—by design—artificially simple, we can find everyday examples of inductive
+knowledge which are structurally analogous. For example, consider a random
+sampling of an electorate prior to an election. There is some proportion of
+the electorate (presumably, significantly below 50%) such that, if you polled
+that proportion of voters and the vast majority (say, 90%) reported intending
+1We’ll also assume that you know that you know each of these propositions, that you know
+that you know that you know them, and so on.
+2Plausibly, the anti-skeptic will also want to accept that we can come to know that there
+are two red balls in the bag on the basis of a suﬀiciently long sequence of draws on which x
+of the draws are red for some x such that 1
+2 < x < 2
+3 . We will focus on weaker anti-skeptical
+principle since it is suﬀicient to make the dogmatist’s point and does not affect the subsequent
+discussion significantly.
+2
+=== PDF page 3 ===
+to vote for a particular candidate, you would be in a position to know that
+that candidate would win (assuming that, in fact, the polls —approximately—
+matched the outcome).
+Anti-Skepticism tells us what you can know on the basis of drawing balls.
+What about what you should believe? Evidentialist considerations suggest that
+what you believe about the contents of the bag should be sensitive to what
+balls you draw. Vindicating evidentialist considerations would seem to require
+accepting the following:
+Evidentialism There is some i < j such that for any sequence and any n,
+you may: believe after n draws that there are not two red
+balls, if at least i
+j of the first n draws in the sequence are
+black.
+Evidentialism is motivated by the more general idea that you are permitted
+to believe what is suﬀiciently well supported by your evidence. Denying Ev-
+identialism would involve positing an unacceptable disconnect between our
+evidence and what we may believe.
+Anti-Skepticism and Evidentialism are in apparent tension given a plausible
+assumption about how what you know constrains what you are permitted to
+believe. Specifically, it seems hard to resist accepting that you must not: believe
+p if you know that p is false. 3
+Idealizing, assume that you know everything that you can know and that what
+you know is closed under entailment. Suppose, then, that you know after n
+draws in a sequence that there are two red balls. 4 Then (the argument goes),
+for any k, you will also know after n+k draws in the sequence that there are two
+red balls. So, since your knowledge is closed under entailment and you know
+that there are exactly three balls in the bag, it follows that:
+Ex Post
+Dogmatism
+For any n and k, you must not: believe after n + k draws
+that there are two black balls, if you know after n draws
+that there are two red balls.
+Obviously, for any n, i and j (such that i < j ), it will be possible to find a
+sequence in which at least 2
+3 of the first n draws in that sequence are red and,
+for some k, at least i
+j of the first n + k draws are black. By Anti-Skepticism
+(and our idealizing assumptions), you know after n draws in such a sequence that
+there are two red balls. Yet Ex Post Dogmatism and Evidentialism offer
+conflicting advice about what to believe in such a sequence. Evidentialism
+states that you may believe after n + k draws in the sequence that there are two
+black balls. Ex Post Dogmatism states that you must not. 5
+3Kripke (2011) formulates a slightly different argument for (the generalization of) Ex Post
+Dogmatism which involves (knowledge of) misleading evidence. Although they differ in a
+number of respects, these differences are not important for our purposes. Both arguments can
+be successfully resisted by denying No Defeat .
+4Here and throughout, ⌜ after n draws⌝ is to be read as taking wide-scope over ‘knows’ .
+5In what sense the ex post dogmatist denies that the order of evidence is irrelevant will
+3
+=== PDF page 4 ===
+As has been widely noted, this argument depends on the assumption that agents
+do not lose knowledge upon the acquisition of new evidence. Within our setup,
+we can state this as:
+No Defeat For any n and any sequence of draws : if you know p after n
+draws in the sequence, then you know p after n + 1 draws.
+No Defeat is an instance of the more general principle that acquiring evidence
+against what you already knew cannot prevent you from continuing to know
+it. No Defeat is generally taken to be false—an agent who knows that there
+are two red balls in the bag may fail to retain this knowledge after observing a
+suﬀiciently long sequence of black draws (Harman (1973); Ginet (1980); Sorensen
+(1988); Conee (2001); Hawthorne (2003); Beddor (2019); though cf. Lasonen-
+Aarnio (2010, 2014a,b)).
+By denying No Defeat , the anti-skeptic can insist that while you may know
+that there are two red balls after observing a suﬀiciently fortuitous sequence of
+initial draws, upon being confronted with enough black draws, this knowledge
+can be lost. Accordingly, you will be epistemically permitted to switch to be-
+lieving that there are not two red balls. We’ll say that a proponent of defeat
+is someone who, more generally, appeals to the possibility of knowledge loss to
+avoid the conclusion that you must disregard misleading evidence against known
+propositions.
+In the next section, we argue that even if the proponent of defeat can avoid
+dogmatism regarding what an agent ought to believe, they are vulnerable to an
+argument for a different form of dogmatism regarding what evidence the agent
+is permitted to gather.
+3 Ex Ante Dogmatism
+You’re currently inquiring into many different things. Whatever their object,
+these inquiries are goal directed—there are conditions under which they would
+succeed and conditions under which they would fail. According to a popular
+story about inquiry, this goal is knowledge ( Kappel (2010); Whitcomb (2010,
+2017); Kelp (2011, 2014, 2021); Rysiew (2012); Friedman (2013, 2019b)). That
+is, where Q is a question, your inquiry into Q succeeds iff you come to know a
+depend, in part, on how they conceive of evidence. An E = K adherent who accepts Anti-
+Skepticism and No Defeat will deny that an agent who draws n red balls followed by k
+black balls is guaranteed to have the same evidence after n + k draws as the agent who draws
+k black balls followed by n red balls ( Williamson (2000)). For suﬀiciently large values of n,
+the former agent’s evidence after n + k draws can include the proposition that there are two
+red balls in the bag, while the latter agent’s cannot. However, the E = K adherent will deny
+the nearby principle that the order in which balls are drawn does not make a difference to
+what an agent knows or should believe. That is, they deny that for any two sequences such
+that exactly k of the first n draws in both sequences are red, an agent should believe after n
+draws in one sequence that there are two black balls iff she should believe it after n draws in
+the other.
+4
+=== PDF page 5 ===
+complete answer to Q. That inquiry has knowledge as its goal has been argued
+to explain the conditions under which agents are released from commitments
+incurred by inquiring ( Kelp (2014)); why inquiry entails a desire to know ( Sapir
+& van Elswyk (2021)); and what the function of knowledge is ( Kappel (2010);
+Rysiew (2012)). In what follows, we will frame Ex Ante Dogmatism as a
+problem specifically for someone who takes knowledge to be the constitutive
+aim of inquiry. 6
+Inquiring has both a mental and a non-mental component ( Friedman (2019b)).
+If you read a book in order to check your eyesight without any interest in what
+it says, you do not count as inquiring into its contents. Equally, you do not
+count as inquiring into the book’s contents if you are interested in what it says,
+but fail to take any steps to read it.
+We will say that someone cares about Q iff they satisfy all the mental require-
+ments for inquiring into Q. Different accounts of this state are possible. Fried-
+man, for instance, holds that you satisfy the mental requirements on inquiring
+into Q iff you bear the right kinds of attitude towards Q ( Friedman (2017,
+2019b)). These include, but are not limited to: being curious about Q, wonder-
+ing Q, deliberating over Q,... . In what follows, however, we will stay neutral on
+exactly what mental state you need to be in to count as inquiring into a given
+question.
+Among the non-mental components of inquiring is, importantly, the act of gath-
+ering evidence. How an agent gathers evidence is subject to various norms
+(Friedman (2020); Flores & Woodard (2023)). For example, it is tempting to
+think that you (epistemically) may not: decline evidence which bears on a ques-
+tion you are inquiring into. Perhaps surprisingly, the proponent of defeat is
+under pressure to deny this principle. Worse, a simple line of reasoning ap-
+pears to commit them to saying that you sometimes must decline evidence that
+bears on questions you are inquiring into.
+It is diﬀicult to say under what conditions exactly an agent counts as inquiring
+into a question. However, we can remain neutral on this issue within our current,
+simple setting. Just as we made the idealizing assumption that you know after
+6How is the aim of inquiry connected to the aims of inquirers? In general, the aim(s) of
+an activity need not be shared by a person performing it. For instance, the aim of playing
+chess is to win. Yet someone can play chess without aiming to win.
+Not all activities are like this, however. For instance, the aim of trying to X is, presumably,
+to X. This aim must be shared by anyone who (genuinely) tries to X. It is very hard to make
+sense of the claim that someone was trying to win but did not aim to win. (The same goes,
+plausibly, for a range of other activities. E.g., searching (which aims at finding), showing off
+(which aims at impressing), deceiving (which aims at misleading), etc.)
+Inquiry, we want to suggest, is much more like trying than it is like playing chess, in this
+respect. Someone cannot (genuinely) inquire into a question if they do not aim to know the
+answer (or, mutatis mutandis , your preferred aim of inquiry). This raises the question of how
+closely inquiry is connected to trying. In particular, is inquiring into Q anything more than
+trying to know the answer to Q? We will refrain from speculating on this here.
+We are grateful to a referee at MIND for encouraging us to address this point.
+5
+=== PDF page 6 ===
+n draws everything you can know after n draws, we will also assume that you
+make n draws if (and only if) after n − 1 draws you are inquiring into how many
+red balls there are. We will also make the simplifying assumption that, in the
+course of drawing balls, you do not start to care about any additional questions.
+That is, if you do not care about Q after n − 1 draws, you do not care about Q
+after n draws.7
+It strikes us as unsatisfying to insist that you may, in fact, continue to make
+draws, but only insofar as you cease to care about the number of red balls in
+the bag. Intuitively, we would like a response which does justice to the sense
+that someone who remains curious about how many red balls there are will have
+more reason to make further draw, not less (cf. Woodard (forthcoming, §2.1)).
+Say that you are draw indifferent iff for all n, you do not care about whether
+the nth draw is red or black. 8 An agent who is draw indifferent is, a fortiori ,
+not inquiring into the outcome of any particular draw. She may still, from an
+epistemic perspective, have reasons to draw balls from the bag. By doing so,
+she may come to know the answer to a question she is inquiring into (such as,
+e.g., how many red balls are in the bag). However, the possibility of coming to
+know the outcome of the nth draw would not, we take it, give such an agent a
+reason to draw n times.
+With this notion in hand, we can frame the recommendation of Ex Ante Dog-
+matism within our framework more carefully:
+Ex Ante
+Dogmatism
+For any n and k, if initially you are inquiring into the
+number of red balls but are draw indifferent, then you
+must not: make n + k draws if you know after n draws
+that there are two red balls.
+Ex Ante Dogmatism says that agents who start inquiring into the number of
+red balls but do not care about the outcome of any particular draw are required
+to stop drawing upon coming to know the former. It is an instance of the more
+general principle that agents are required to cease gathering evidence which
+bears on questions they know the answer to (and on nothing else which they are
+inquiring into). It is important to distinguish Ex Ante Dogmatism from the
+claim that agents are not required to continue drawing upon coming to know the
+number of red balls (see, especially, Beddor (forthcoming)). Even if it remains
+controversial, this latter claim appears to have much more going for it than the
+former, strictly stronger, claim.
+By denying No Defeat , the opponent of Ex Post Dogmatism is vulnerable
+7Note that, given these idealizations, the argument below will establish, at most, that an
+agent who knows how many red balls there are may not make further draws as part of an
+inquiry into the number of red balls . Yet even with this qualification the conclusion remains
+troubling.
+8Throughout, we will assume that if you care about Q and some complete answer to Q ′
+conjoined with one or more propositions you currently know is a partial answer to Q, then
+you care about Q ′. This ensures that if you care about, e.g., the number of red balls drawn
+between the 100th and 200th draw, then you will not be draw indifferent.
+6
+=== PDF page 7 ===
+to an argument for Ex Ante Dogmatism instead. Say that you come to know
+p after n draws in a sequence iff you do not know p after n − 1 draws and you do
+know p after n draws. Consider the following claim about what you can come
+to know by drawing balls from the bag.
+Minimality For any sequence of draws, the most you are in a position
+to know after the nth draw in the sequence is:
+(i) the outcome of the nth draw in that sequence;
+(ii) the number of red balls;
+(iii) propositions entailed by what you are in a position
+to know about (i)-(ii) along with what you were in a
+position to know after n − 1 draws in that sequence.
+When combined with the possibility of losing knowledge on the basis of mislead-
+ing evidence, Minimality suggests a limit on how long it is permissible for an
+agent to continue drawing balls.
+Imagine that you are inquiring into the number of red balls but are draw indiffer-
+ent. Imagine, further, that you know after n draws that there are two red balls
+in the bag. Trivially, by drawing additional balls, you cannot come to know
+anything about the number of red balls that you do not know after n draws.
+Furthermore, given Minimality and the assumption that you are draw indiffer-
+ent, by drawing additional balls you cannot come to know anything about any
+other question you are inquiring into. However, given the possibility of defeat,
+by drawing additional balls you may cease to know something about how many
+red balls there are which you know after n draws.
+Assuming, as suggested above, that the aim of inquiry is knowledge, we would
+expect a prohibition on gathering evidence which carries a risk of undermining
+that aim without any benefit to other inquiries.
+More specifically, it seems reasonable to adopt a principle with following form (at
+least insofar as it articulates the epistemic requirements on evidence gathering).
+An agent must decline to gather some evidence if, by gathering that evidence,
+she (i) could not come to satisfy the aim of any inquiry she is engaged in, but
+(ii) could cease to satisfy the aim of an inquiry she is engaged in.
+But, by hypothesis, for any k ≥ 1, if you make n + k draws then you are
+inquiring after n draws into the number of red balls. And, by making draws,
+you are gathering evidence. So, in combination with our previous observations,
+it follows that if you are initially inquiring into how many red balls there are
+but are draw indifferent, you do something you must not do if you make n + k
+draws despite knowing after n draws that there are two red balls. This, however,
+is simply a restatement of Ex Ante Dogmatism .
+Ex Ante Dogmatism imposes strict constraints on evidence gathering. Agents
+who know that there are two red balls violate this constraint if they continue
+to draw balls from the bag. If we generalize away from the specific case, the
+principle generates some pretty counterintuitive consequences. Here is one ex-
+7
+=== PDF page 8 ===
+ample (cf. Friedman (2019a); Goldstein (2022); Beddor (forthcoming) for similar
+cases).
+Stella is going away for the weekend. Before she leaves the house, she looks
+at a timetable and sees that her train leaves from platform 2. However, on
+arriving at the train station, she can either glance at the departures board to
+check or go straight to the platform. Assuming that the only relevant question
+she cares about is what platform the train departs from, the generalized ex ante
+principle will say that Stella must not look at the departure board. After all,
+by looking at the departure board she might receive misleading evidence which
+leads her to lose her knowledge that her train leaves from platform 2. But
+this result is surprising. Even if checking that the train leaves from platform 2
+is not epistemically obligatory, it is somewhat odd to think it is epistemically
+impermissible.
+A natural response to the ex ante dogmatist is to appeal to some epistemic
+benefit(s) of further inquiry besides knowledge (cf. Archer (2021); Woodard
+(forthcoming)). For example, by making additional draws an agent might hope
+to gain confidence about the number of red balls, to increase the accuracy of
+her credences 9 or to become sure of what she knows 10. Someone who adopts
+this form of response will need to resist the argument above in one of two places.
+They must hold either (i) that knowledge is not the (sole) aim of inquiry or (ii)
+that it is permissible to gather evidence even if doing so cannot help to achieve
+the aim(s) of inquiry, but could help to undermine it (them).
+In the remainder of the paper, we intend to show that resisting Ex Ante Dog-
+matism does not force either of these moves. We will offer a response which
+retains both the principle that inquiry aims (solely) at knowledge and that what
+evidence you ought to gather depends (solely) on the aim(s) of inquiry. This is
+important, since giving up either of these principles would involve a retreat from
+the idea that the goal of attaining knowledge, distinctively, is what structures
+inquiry.
+The interest of this puzzle is not limited to views which take knowledge to be
+the aim of inquiry. Millar (2011), for instance, has argued that inquiry (also)
+aims at second-order knowledge (i.e., knowing that you know the answer to
+a question). Views of this form will face a variant of Ex Ante Dogmatism ,
+proscribing gathering evidence upon coming to know that you know the number
+of red balls. The response we develop below can be easily adapted to address
+the related challenge to views like Millar’s.
+Our response depends on the idea that an agent may fail to know what she
+knows, and that such failures will be relevant to how she is epistemically evalu-
+ated overall. As we’ll see, different versions of this response will reject different
+steps in the reasoning which lead to Ex Ante Dogmatism .
+9Falbo (2021, 2023); cf. Joyce (1998, 2009); Pettigrew (2016); Easwaran (2016); Dorst
+(2019).
+10Beddor (forthcoming); Goodman & Holguín (forthcoming).
+8
+=== PDF page 9 ===
+4 Resisting Ex Ante Dogmatism
+Our preferred response has two components. The first involves adopting a par-
+ticular view of how norms governing belief and inquiry are structured (§ 4.1).
+The second involves adopting a particular view of how agents can come to know
+about their own epistemic position (§ 4.2).
+In presenting this response, we’ll proceed stepwise. We’ll start by arguing that
+Ex Ante Dogmatism fails for a particular kind of agent: someone who aims
+to do everything they are epistemically required to do. We’ll then seek to show
+that the same reasoning also applies (in a restricted form) to agents with more
+modest aims.
+4.1 Primary and Derivative Norms
+Ex Ante Dogmatism poses a particular problem, we claimed, for those who
+take knowledge to have a central role to play in our epistemic life. Specifically,
+our argument appealed to the idea that knowledge is the constitutive aim of
+inquiry. In this section, we will consider more broadly ways in which knowledge
+could be central to our epistemic life and show how they can act as a first step
+in a response to the ex ante dogmatist challenge.
+Here are two kinds of epistemic norm. Both, we take it, would be natural
+normative commitments to adopt for those sympathetic to the idea that inquiry
+aims at knowledge.
+Belief K-Norm You must: believe p only if you know p.
+Inquiry K-Norm You must: cease inquiring into a question only if you
+know the answer.
+Belief K-Norm says that belief in the absence of knowledge is impermissible.
+This has been defended by many authors ( Williamson (2000); Adler (2002);
+Sutton (2005, 2007); Sosa (2010)). Within a picture on which inquiry aims
+at knowledge, it implies it is impermissible to believe a complete answer to a
+question if you are not in a position to successfully end inquiry into it. 11
+Inquiry K-Norm says that it is impermissible for an agent who is currently
+inquiring to end inquiry in the absence of knowledge. This has been defended
+by fewer authors (though see, in particular, Whitcomb (2010) and Sapir & van
+Elswyk (2021)). However, it is also a natural norm for those who take knowledge
+to be the aim of inquiry to adopt. In this setting, it implies that you must not
+11Belief K-Norm will not be plausible on all conceptions of belief. Views which take belief
+to be weak typically adopt a less demanding requirement (cf. Holguín (2021); Goodman &
+Holguín (forthcoming); Dorst & Mandelkern (2023)). Our response to Ex Ante Dogmatism
+is compatible with such views by design, insofar as it can be run in terms of Inquiry K-Norm
+alone (though cf. § 5).
+9
+=== PDF page 10 ===
+close inquiry which has not achieved its aim. 12
+The norms governing an activity are generally distinct from the aims of that
+activity (cf. Maitra (2011); Marsili (2018, forthcoming)). It is a norm of chess
+you must not move a pawn backwards. But refraining from moving pawns
+backwards is not an aim of chess. It is an interesting question, given this,
+what relationship, if any, does hold between norms and aims. Our response
+is intended to be neutral on this issue. For all we say, it could be that the
+aims of inquiry are explanatorily prior to the norms which govern it; that the
+norms governing inquiry are explanatorily prior to is aims; or that there is no
+explanatory dependence between the two.
+In evaluating how an agent does with respect to a particular norm, we don’t
+only care about whether they satisfy the requirements of that norm. We also
+care about how they satisfy those requirements.
+If you promise to arrive on time and do, then you satisfy the requirements of the
+primary norms of promising. However, you may not be particularly positively
+evaluated if you had no intention of arriving on time. How you are evaluated
+with respect to the norm of promising depends, in part, on whether you intend
+to satisfy its requirements. Similarly, even if you promise to arrive on time and
+do, you may not be particularly positively evaluated if you could easily have
+arrived late. How you are evaluated with respect to the norm of promising also
+depends, in part, on whether you were at risk of not satisfying its requirements.
+Requirements on how agents satisfy normative requirements are imposed by
+derivative norms ( Williamson (2000, forthcoming); DeRose (2002); Hawthorne
+& Stanley (2008); Littlejohn (forthcomingb,f); Lasonen-Aarnio (2010)). Where
+X is an activity, and N X is a norm governing X-ing, we can entertain a number
+of different kinds of derivative norm. The derivative intention norm applied to
+NX says that you must: X only if you intend to satisfy N X. The derivative risk
+norm applied to N X says that you must: X only if you could not easily have
+failed to satisfy N X.
+A third common form of derivative norm says that you should engage in an activ-
+ity only if you know that you satisfy the requirements of the norm(s) governing
+that activity.
+Derivative K-Norm You must: X only if you know that you satisfy N X.
+If you promise to arrive on time and do, but don’t know that you did, then you
+may not be as positively evaluated as someone who arrived on time and knows
+that they did. The derivative K-norm explains why. While both people satisfy
+the primary norm of promising, only the latter satisfies the requirements of the
+derivative K-norm.
+12Inquiry K-Norm is a wide scope norm. It does not imply that any agent who is
+inquiring into Q and does not know Q must continue to inquire into Q. It may be that the
+only permitted way to satisfy Inquiry K-Norm , when it comes to certain questions, is to
+avoid opening inquiry into those questions in the first place.
+10
+=== PDF page 11 ===
+Derivative K-Norm imposes a requirement of self-knowledge. Applied to
+Belief K-Norm , it says you must: believe p only if you know that you know p.
+Applied to Inquiry K-Norm , it says you must: cease inquiry into a question
+only if you know whether you know the answer. We can also consider the
+result of applying Derivative K-Norm to these norms. This will generate a
+requirement to believe p only if you know that you know that you know p and to
+cease inquiry into a question only if you know that you know that you know the
+answer. Clearly, this procedure can be iterated at will. For any n, if there is a
+(primary or derivative) requirement to X only if you know n that p, Derivative
+K-Norm implies there is a derivative requirement to X only if you know n+1
+that p (where an agent (i) knows 1 p iff she knows p and (ii) knows n+1 p iff she
+knows that she knows n that p).
+Let us say that someone is epistemically ideal iff they satisfy all their epistemic
+requirements (both primary and derivative). If you believe p in the absence of
+knowledgen that p, you fail to be epistemically ideal (since you violate either the
+primary norm of belief or some derivative norm generated by it). Equally, and
+for corresponding reasons, if you cease inquiry into a question without knowing n
+the answer, you similarly fail to be epistemically ideal.
+Our idea is simple: anyone who aims to be epistemically ideal will need to align
+their inquires in a particular way. Specifically, you are rationally required to
+ensure that, insofar as you aim to be epistemically ideal, you do not inquire into
+a question without also inquiring into whether you know the answer to that
+question.13
+Why is that? Since knowledge entails belief, anyone who knows p but does not
+know whether they know p is epistemically non-ideal (by Belief K-Norm). And
+anyone who inquires into a question aims to know the answer to it. Accordingly,
+there is a rational requirement that you do not: aim to be epistemically ideal
+and inquire into a question without also aiming to know whether you know the
+answer. Equally, someone who ceases inquiry into a question without knowing
+whether they know the answer is similarly epistemically non-ideal (by Inquiry
+K-Norm). So, the same rational requirement can also be derived from the pri-
+mary norm of inquiry. Furthermore, these rational requirements will generalize
+to higher-order knowledge. For any n ≥ 1, there is a rational requirement that
+you do not: aim to be epistemically ideal and inquire into a question without
+aiming to know whether you know n the answer.
+We take it that it is plausible that you are rationally required to inquire into
+13It is worth distinguishing between (i) the state of aiming to satisfy all of your epistemic
+requirements and (ii) the state of aiming, for each of your epistemic requirements, to satisfy
+that requirement. Both could reasonably be identified with the state of aiming to be epistem-
+ically ideal. However, the two may come apart. Suppose that it is not possible to know ω that
+p, but that for any n ≥ 1, it is possible to know n that p. Suppose, also, that it is not possible
+to aim to X if it is not possible to X. Then it may be possible for an agent to be in the latter
+state, without being possible for her to be in the former. Everything we say below will hold
+of both states (i) and (ii). Accordingly, our argument is independent of whether, for any p, it
+is possible to know ω p.
+11
+=== PDF page 12 ===
+questions you aim to know the answer to. 14 But, if that is right, then any
+rationally coherent agent 15 who aims to be epistemically ideal will not inquire
+into a question without also inquiring into whether she knows the answer to
+that question.
+In this way, aiming to be epistemically ideal imposes global requirements on
+your inquiries. For any n ≥ 1, if you aim to be epistemically ideal and are
+inquiring into how many red balls there are, then, assuming you are rationally
+coherent, you will also be inquiring into whether you know n how many red balls
+there are.
+These global requirements on inquiry put us in a position to resist the argument
+for Ex Ante Dogmatism , at least for rationally coherent agents who aim to
+be epistemically ideal. Here’s the idea. Suppose that, whenever you know that
+there are two red balls but do not know n that you know that there are, you could
+come to know n that you know the number of red balls by making some number
+of additional draws (we will consider this assumption in more detail in § 4.2).
+Suppose, further, that you are rationally coherent and aim to be epistemically
+ideal. Then, even if after k draws you know the number of red balls, you could
+always come to know the answer to a question you are inquiring into after k
+draws by making k + i draws (for some i ≥ 1). That’s because, given that
+you are rationally coherent and aim to be epistemically ideal, you will also be
+inquiring into whether you know n the number of red balls (for each n ≥ 1).16
+So, crucially, the ex ante dogmatist goes wrong in assuming that, once you
+know how many red balls there are, making additional draws cannot help to
+satisfy the aims of any inquiry you are engaged in. For agents who aim to be
+epistemically ideal, gathering additional evidence can always serve as a means
+to resolve other inquiries, namely, inquiries into what they know. 17
+In fact, our response generalizes. If for some n, you fail to know n after k draws
+that there are two red balls, then, as long as you aim to be epistemically ideal
+and are rationally coherent, it will be permissible to make k + 1 draws. There
+will be no n such that agents aiming to be epistemically ideal are required to
+cease inquiry into a question once they come to know n the answer.
+To be epistemically ideal is a fine aim. Epistemically ideal agents do everything
+required of them, epistemically speaking. Nevertheless, there are a variety of
+reasons someone might aim for something less than being ideal. For our response
+14This is, importantly, only plausible as a wide scope norm.
+15i.e., an agent who satisfies all of her rational requirements.
+16Our response depends on the assumption that an agent who first comes to know after k
+draws that there are two red balls will fail to be in a position to know n after k draws that
+there two red balls, for some n ≥ 1. In this respect, it is unavailable those sympathetic to KK
+(Greco (2014); Das & Salow (2018); Goodman & Salow (2018)).
+17What about agents who cease inquiring into how many red balls there are upon coming
+to know? Observe that, unless such agents know ω the number of red balls, to be epistemically
+ideal they must continue to inquire into whether they know n how many red balls (for some
+n). Otherwise, they will violate Inquiry K-Norm (and, equally, some norm generated by
+applying Derivative K-Norm to Belief K-Norm one or more times).
+12
+=== PDF page 13 ===
+to be satisfactory, it ought to tell us something about agents like this.
+Before moving on, we’ll argue that our response generalizes (albeit in restricted
+form) to a broad range of agents who aim to do less than is required of them.
+We’ll consider two reasons agents might restrict their aims in this way. First,
+because being ideal is overly demanding; second, because aiming to be ideal
+would be overly risk-seeking.
+4.1.1 Demandingness
+Epistemic requirements are demanding (or so we have claimed). On the picture
+articulated in this section, not only must you refrain from believing (or ceasing
+inquiry into) what you do not know, you must also, for all n ≥ 1, refrain from
+believing (or ceasing inquiry into) what you do not know n. For agents with
+limited resources, the goal of being epistemically ideal may be unreasonable.
+For instance, there is a natural picture of inductive knowledge on which, if you
+aim to be epistemically ideal and are inquiring into how many red balls there are,
+your aims will require you to continue to draw balls from the bag indefinitely.
+Failing to do perfectly, however, does not preclude doing well. Someone who
+does not aim to satisfy all of their epistemic requirements will still, typically, aim
+to satisfy some. And, insofar as they do, they will be under rational pressure
+to ensure that they align their inquiries. That is, even if you do not aim to
+be epistemically ideal, you may still aim to, e.g., believe only what you know n
+(for some n > 1). And, assuming you aim to believe only what you know n and
+are inquiring into how many red balls there are, you will be rationally coherent
+only if you also inquire into whether you know n−1 how many red balls there are.
+(The same goes, mutatis mutandis, for requirements derived from the knowledge
+norm on inquiry.) Accordingly, by the same reasoning laid out above, agents
+will avoid pressure to be (ex ante) dogmatic as long as they aim to satisfy some
+of their derivative epistemic requirements. Note that, unlike an agent who aims
+to be ideal, there may be some n such that, if after k draws you know n how
+many red balls there are, you are required to cease drawing. We are, in fact,
+quite sympathetic to this result. It is, we think, not surprising that agents who
+aim at something less than perfection may be required to settle for a state which
+is less than ideal.
+4.1.2 Risk
+Sometimes, agents who aim to satisfy all their requirements can expect to satisfy
+fewer overall than those who aim only to satisfy some of them. This kind
+of situation is familiar, for resource limited agents like us. Often, the more
+things we aim to achieve, the more we increase the risk of any particular one
+of our endeavours failing. In such cases, it may be reasonable not to aim to
+be epistemically ideal, in order to avoid the risk of failing to be epistemically
+adequate.
+This type of situation is particularly relevant, since it holds of the ball drawing
+13
+=== PDF page 14 ===
+scenario on which we have focused. As we observed of the scenario, by aiming
+to satisfy the requirement to believe only what you know n, you can increase the
+risk of failing to satisfy the requirement to believe only what you know k, for
+k < n .
+Someone who, for this reason, does not aim to be epistemically ideal will need
+to make a decision about which requirements (primary and derivative) they do
+still aim to satisfy. This will be a complicated issue. It can be expected to
+depend both on how much value they assign to satisfying various norms and
+on the relative risks associated with aiming to satisfy each of those norms (cf.
+Williamson (2005a,b); Schulz (2017)). However, as above, our response will
+generalize to any agent who aims refrain from believing (or ceasing inquiry into)
+what they do not know n, for some n > 1.
+4.2 Transparency
+Our response depended, crucially, on the assumption that you could acquire
+higher-order knowledge of the number of red balls by making additional draws.
+This might seem mysterious. How can drawing balls put an agent in a position
+to know something about their own epistemic state? We take up this question
+in this subsection.
+You have first-order knowledge that p iff you know that p. You have higher-
+order knowledge that p iff you know n that p, for n ≥ 2. Assuming that we
+do not have infallible access to what we know, the requirement that you have
+higher-order knowledge is more demanding than the requirement that you have
+first-order knowledge. This raises the question: how do agents meet this more
+demanding requirement?
+An appealing hypothesis is that higher-order knowledge does not require evi-
+dence of a different kind to first-order knowledge. For any n, agents can come
+to know n that they know p by gathering the sort of evidence by which they can
+come to know p (Evans (1982); Dretske (1994), cf. Paul (2014)). This hypothe-
+sis fits well with a picture on which the level of higher-order knowledge that p
+an agent possesses depends on the strength of her evidence for p. Where n > k ,
+someone who can know n that p and someone who can (merely) know k that p
+may only differ in the strength of evidence each possesses for p.
+Within our setup, we can state the hypothesis as follows:
+T ransparency For any n ≥ 1 there is some k ≥ 1 such that for any
+sequence: if at least 2
+3 of the first k draws in the sequence
+are red, you can know n after k draws that there are two
+red balls.
+T ransparency is motivated by the more general idea that agents can learn
+about their own epistemic position by gathering first-order evidence about the
+world. It implies that there are sequences in which an agent who (merely)
+knowsn that there are two red balls may come to know that she knows n that
+14
+=== PDF page 15 ===
+there are two red balls by making some number of additional draws.
+T ransparency is strictly weaker than the thesis that any evidence for p is
+equally strong evidence for the self-ascription of knowledge that p (cf. Das
+& Salow (2018)). T ransparencysays that higher-order knowledge that there
+are two red balls does not require evidence of a different kind to first-order
+knowledge—though of course, it may be that strictly more evidence of that
+kind is required.
+The argument for Ex Ante Dogmatism asks us to imagine that you are in-
+quiring into the number of red balls but are draw indifferent. Via Minimality,
+it draws the preliminary conclusion that if after some number of draws you
+know that there are two red balls, then you cannot come to know the answer
+to any question you are inquiring into by making additional draws. When com-
+bined with the picture of primary and derivative norms in the previous section,
+T ransparencyputs pressure on this reasoning. Assuming you aim to be epis-
+temically ideal, you are rationally required not to inquire into the number of
+red balls without also inquiring into whether you know n the number of red balls
+(for n ≥ 1). By T ransparency, there is some number of additional draws such
+that if after that number of draws 2
+3 of the balls were red, you could know n that
+there are two red balls.
+Assuming that you are not omniscient about what you know, there will be some
+sequence and number of draws in that sequence after which you can know that
+there are two red balls but cannot know n that there are two red balls. 18
+Accordingly, after that number of draws in that sequence, there will be some
+question you are inquiring into which you could come to know the answer to by
+making additional draws.
+18Why think that you are not omniscient about what you know in this case? The simplest
+argument is that it is indeterminate which draw in a sequence is the first after which an
+agent in a position to know how many red balls there are. We take it that this indeterminacy
+motivates the following kind of claim. For any sequence, there is no n such that: after n − 1
+draws in that sequence you cannot know the number of red balls but it is determinate that
+after n draws you can know the number of red balls.
+According to orthodoxy, indeterminacy implies ignorance (though cf. Barnett (2000, 2011);
+Dorr (2003)); if it is indeterminate whether p, it cannot be known whether p. But, if that is
+right, then if the nth draw is the first draw in a sequence after which you can know that there
+are two red balls, then after n draws, you cannot know that you can know that there are two
+red balls. Accordingly, there will be some draw after which you can know the number of red
+balls but cannot know 2 it. The same reasoning, we take it, will extend, mutatis mutandis , to
+ignorance of what is known n, for any n.
+Importantly, if higher-order ignorance is attributable to indeterminacy, our explanation will
+extend to cases in which it is an inquirer’s first-order knowledge is not subject to a margin-
+for-error. This arguably includes both certain examples of inductive knowledge (such as the
+case discussed) as well certain variants of the preface ( Makinson (1965)). In the preface,
+the agent knows some claims in their book but does not know which claim is false ( Carter &
+Goldstein (2021, 2023); Dutant & Littlejohn (forthcoming)). If their knowledge is closed under
+entailment, it follows that they fail to know some true claim(s). Plausibly, however, if their
+evidence for each claim is equally strong, it will be indeterminate which true claim(s) they fail
+to know. As such, we predict that agents in preface-like cases of this kind may permissibly
+continue to gather evidence bearing on each of the claims in their book.
+15
+=== PDF page 16 ===
+Where (and how) the argument for Ex Ante Dogmatism goes wrong, however,
+depends on how agents come to acquire higher-order knowledge via making
+draws.
+There are two main options. Say that, after k draws in a sequence, you come
+to know n the number of red balls via prior knowledge iff (i) you do not know n
+after k − 1 draws that there are two red balls; (ii) you do know after k − 1
+draws that: if at least 2
+3 of the first k draws are red, then you know n−1 after
+k draws that there are two red balls; 19 and (iii) at least 2
+3 of the first k draws
+are red. Say that, after k draws in a sequence, you come to know n the number
+of red balls via bonus knowledge iff (i) you come to know n after k draws in the
+sequence that there are two red balls and (ii) you do not come to know n it via
+prior knowledge.
+What we’ll call ‘the prior knowledge picture’ says that in any sequence, any
+higher-order knowledge you acquire of the number of red balls is acquired via
+prior knowledge. What we’ll call ‘the bonus knowledge picture’ says that no
+higher-order knowledge you acquire of the number of red balls is acquired via
+prior knowledge in any sequence.
+According to the former, whenever you acquire nth order knowledge of the
+number of red balls from a draw, you know immediately prior to the draw that
+if it has a particular outcome, then you will know n−1 after the draw that there
+are two red balls. Upon that outcome occurring, you know the antecedent of this
+conditional. So, by the assumption that your knowledge is closed, you know n
+after the draw that there are two red balls. According to the latter, in advance
+of acquiring nth order knowledge you do not have any conditional knowledge
+of this kind. Rather, there are certain patterns of draws, which, if they occur,
+put you in a position to acquire nth-order knowledge of the number of red balls
+non-inferentially.
+This distinction mirrors the distinction identified in Bacon (2014) between prior
+knowledge and bonus knowledge based pictures of inductive knowledge (cf. Dorr
+et al. (2014); Goodman & Salow (2021); Bacon (2020)). Indeed, as is easy to see,
+T ransparencyis just the generalization of Anti-Skepticism to knowledge n,
+for n > 1.
+On the bonus knowledge picture, Minimality fails. In some sequences, there
+is some k such that you can know n after k draws that there are two red balls,
+despite the fact that this does not follow from the content of what you know
+after k − 1 draws along with what you know after k draws about the number of
+red balls and the outcomes of the first k draws.
+On the prior knowledge picture, Minimality holds. Any higher order knowl-
+edge you acquire upon the kth draw follows from what you know after k − 1
+draws along with the outcomes of the first k draws. Instead the argument goes
+19We’ll assume that your knowledge of this conditional is immune to defeat on the basis of
+the outcome of the kth draw.
+16
+=== PDF page 17 ===
+wrong in assuming that anyone who aims to be epistemically ideal can coher-
+ently inquire into the number of red balls while being draw indifferent. Insofar
+as they are rationally coherent, such a person will also be inquiring into whether
+they know n how many red balls there are (for all n ≥ 1). But there is some k
+such that for all you know, the conjunction of the outcome of the first k draws
+along with what you know prior to drawing any balls will entail a complete
+answer to the question of whether you know n how many red balls there are. So,
+by our closure constraints on what you care about (footnote 8), you care about
+the outcomes of those draws. So, if you are inquiring into the number of red
+balls and aim to be epistemically ideal, then either you are failing to do what is
+rationally required or you are not draw indifferent.
+On the bonus knowledge version of T ransparency, the argument of the previ-
+ous section fails to establish Ex Ante Dogmatism , since it has a false premise.
+On the prior knowledge version of T ransparency, although Ex Ante Dog-
+matism holds, it loses much of its bite. Its antecedent will never hold of you
+unless there is something you ought to be inquiring into about but aren’t.
+How does this response extend examples of non-inductive knowledge, like check-
+ing a train timetable? Williamson (2000) has argued that, if knowledge is subject
+to margin-for-error constraint, then an agent may know something via percep-
+tion which they fail to know ω. Yet, if that is right, then our response can also
+explain why further evidence gathering is permitted in these cases, on the as-
+sumption that noninductive knowledge is also transparent. Glancing again at
+the train timetable can help to settle what you know, what you know you know,
+and so on.
+5 Inquiry and Knowledge
+Some authors have proposed that there is a requirement to refrain from believing
+answers to questions you are inquiring into ( Friedman (2019b,a), Fraser (2022)).
+Call this Openmindedness.
+Openminded-
+ness
+You must not: believe that p and inquire into a question
+to which p is a complete answer.
+Openmindedness is often accompanied by a picture on which (one of) the func-
+tion(s) of belief is to close inquiry ( Hieronymi (2009); Kelp (2014, 2018, 2021)).
+Combined with the thesis that you believe p if you know p, Openmindedness
+implies Ignorance:
+Ignorance You must not: know Q and inquire into Q.
+Ignorance also has a number of advocates, some but not all of whom endorse
+Openmindedness (Whitcomb (2010, 2017); Friedman (2017); Sapir & van
+Elswyk (2021); Fraser (2022) cf. Archer (2018, 2021)).
+17
+=== PDF page 18 ===
+As Friedman (2017, 2019b,a) emphasizes, Ignorance does not, by itself, commit
+its advocates to Ex Ante Dogmatism . Inquiry has both mental and non-
+mental components. An agent who lacks the appropriate mental state may
+continue to gather evidence which bears on a question without thereby inquiring
+into that question. Friedman stresses that even if you know how many red balls
+there are, you do not violate the requirements of Ignorance by continuing to
+make draws as long you do not care how many red balls there are. 20
+Ignorance is compatible with the denial of Ex Ante Dogmatism . It is also
+compatible with our oﬀicial response to the argument for Ex Ante Dogmatism
+(i.e., the package of primary and derivative norms along with T ransparency).
+However, it is not compatible with all ways of developing that response into a
+picture of inquiry and higher-order knowledge.
+Here is a way of presenting our response: an agent who makes additional draws
+because she is inquiring into whether she knows the number of red balls thereby
+also inquires into the number of red balls. Doing so remains permissible, even
+if the agent already knows the number of red balls, because inquiring into the
+number of red balls is a way of inquiring into whether you know n the number
+of red balls. However, this presentation of our response is in tension with Igno-
+rance. That’s because anyone accepting Ignorance must deny the principle
+that an agent who knows n Q can come to know n+k Q by permissibly inquiring
+into Q.
+What attitude you should take to Ignorance depends, at least in part, on what
+account of belief you adopt. On accounts which take belief to be strong, being
+in a position to rationally believe p entails being in a demanding doxastic state,
+such as being certain, being sure or being confident that p. Accounts which
+take belief to be strong will thereby take Openmindness to be correspond-
+ingly weak. At the same time, however, they also undermine the connection
+between Openmindedness and Ignorance. That’s because, once we insist
+that belief entails a strong doxastic attitude, the claim that belief is necessary
+for knowledge ceases to look as plausible ( Holguín (2021); Goodman & Holguín
+(forthcoming)). Consider the unconfident examinee ( Radford (1966)). The un-
+confident examinee remembers (and, therefore, knows) that Queen Elizabeth I
+died in 1601. However, since he is not certain (or sure, or even confident) when
+Queen Elizabeth died, he does not believe that she died in 1601. If that is right,
+then those who take belief to be strong can accept Openmindedness while
+denying Ignorance, since they should deny that knowledge entails belief. And,
+if they deny Ignorance, then they can maintain that someone who knows n Q
+20For this reason, proponents of Ignorance may wish to resist our idealizing assumption
+that you are inquiring after n draws into the number of red balls if and only if you make n + 1
+draws. It is important, on Friedman’s picture, that an agent may gather evidence bearing on
+questions which she is no longer inquiring into (in virtue of knowing the answer).
+However, as observed above, giving up this idealization does not appear, by itself, to offer
+an adequate response to the threat of Ex Ante Dogmatism . It is unsatisfying to hold that
+you may continue to draw balls only insofar as you no longer care about how many red balls
+there are.
+18
+=== PDF page 19 ===
+can come to know n+k Q by permissibly inquiring into Q.
+On accounts which take belief to be weak, in contrast, believing p is likely is
+taken to entail being in a position to rationally believe p (Hawthorne et al.
+(2016); Dorst (2019); Rothschild (2020)). Recently, some authors have gone fur-
+ther, arguing that it is suﬀices for it to be rational to believe p that p would be a
+reasonable guess about a contextually supplied question ( Dorst (2019); Holguín
+(2022); Dorst & Mandelkern (2023)). Accounts which take belief to be weak
+appear to make Openmindedness correspondingly strong. And, since propo-
+nents of weak belief lack grounds of the same kind for denying that knowledge
+entails belief, they are under pressure to accept Ignorance.
+One response to this would be to deny Openmindedness. After all, if you
+can rationally believe p without being certain that p, it may seem reasonable to
+think that you can permissibly inquire into whether p while rationally believing
+p. Yet at least some proponents of the view that belief is weak appear to have
+good reason to endorse Openmindness. If belief is treated as akin to guessing,
+we need some account of the functional role belief is intended to play. At any
+time, there will be one or more answers which would be reasonable guesses
+about a given question, based on your evidence. What factors bear on whether
+an agent decides to believe that p?
+Openmindedness provides a natural answer to this question. The functional
+role of belief is to conclude inquiry. Accordingly, an agent will decide to believe
+an answer to a question only if they are prepared to cease inquiring into it.
+As our response to Ex Ante Dogmatism establishes, however, concluding
+inquiry into a question does not imply ceasing to gather evidence which bears
+on it. That’s because there may well be other questions (such as whether you
+know an answer to that question) which you continue to inquire into and on
+which that same evidence also bears.
+6 Conclusion
+If inquiry aims at knowledge, we face a puzzle: why risk loss of knowledge by
+accepting evidence which bears on what you already know? The response we
+developed here combines two ideas: first, we do not need any distinctive form of
+evidence in order to obtain self-knowledge. We can come to know what we know
+by gathering the same kind of evidence by which we come to know. Second, self-
+knowledge makes us epistemically better. All things being equal, we do better
+with respect to the norms governing our epistemic lives when we know we satisfy
+those norms.
+19
+=== PDF page 20 ===
+References
+Adler, J. 2002. Belief’s Own Ethics . Boston, MA: MIT Press.
+Archer, A very. 2018. Wondering about What You Know. Analysis, 78(4),
+anx162.
+Archer, A very. 2021. The Aim of Inquiry. Disputatio, 13(61), 95–119.
+Bacon, Andrew. 2014. Giving Your Knowledge Half a Chance. Philosophical
+Studies, 1–25.
+Bacon, Andrew. 2020. Inductive Knowledge. Noûs, 54(2), 354–388.
+Barnett, David. 2000. Vagueness-Related Attitudes. Noûs, 34(s1), 302–320.
+Barnett, David. 2011. Does Vagueness Exclude Knowledge? Philosophy and
+Phenomenological Research, 82(1), 22–45.
+Beddor, Bob. 2019. The Toxin and the Dogmatist. Australasian Journal of
+Philosophy, 97(4), 727–740.
+Beddor, Bob. forthcoming. Inquiry Beyond Knowledge. Philosophy & Phe-
+nomenological Research, 20.
+Carter, Sam, & Goldstein, Simon. 2021. The Normality of Error. Philosophical
+Studies, 178(8), 2509–2533.
+Carter, Sam, & Goldstein, Simon. 2023. Getting Accurate about Knowledge.
+Mind, 132(525), 158–191.
+Conee, Earl. 2001. Heeding Misleading Evidence. Philosophical Studies, 103(2),
+99–120.
+Das, Nilanjan, & Salow, Bernhard. 2018. Transparency and the KK Principle.
+Noûs, 52(1), 3–23.
+DeRose, Keith. 2002. Assertion, Knowledge, and Context. Philosophical Review,
+111(2), 167–203.
+Dorr, Cian. 2003. Vagueness without Ignorance. Philosophical Perspectives ,
+17(1), 83–113.
+Dorr, Cian, Goodman, Jeremy, & Hawthorne, John. 2014. Knowing against the
+Odds. Philosophical Studies , 170(2), 277–287.
+Dorst, Kevin. 2019. Lockeans Maximize Expected Accuracy. Mind, 128(509),
+175–211.
+Dorst, Kevin, & Mandelkern, Matthew. 2023. Good Guesses. Philosophy and
+Phenomenological Research, 105(3), 581–618.
+Dretske, Fred. 1994. Introspection. Proceedings of the Aristotelian Society ,
+94(1), 263–278.
+Dutant, Julien, & Littlejohn, Clayton. forthcoming. What Is Rational Belief?
+Noûs, n/a(n/a).
+Easwaran, Kenny. 2016. Dr. Truthlove or: How I Learned to Stop Worrying
+and Love Bayesian Probabilities. Noûs, 50(4), 816–853.
+Evans, Gareth. 1982. The Varieties of Reference . Vol. 137. Oxford University
+Press.
+Falbo, Arianna. 2021. Inquiry and Confirmation. Analysis, 81(4), 622–631.
+Falbo, Arianna. 2023. Inquiring Minds Want to Improve. Australasian Journal
+of Philosophy , 101(2).
+20
+=== PDF page 21 ===
+Flores, Carolina, & Woodard, Elise. 2023. Epistemic Norms on Evidence-
+Gathering. Philosophical Studies , 180(9), 2547–2571.
+Fraser, Rachel. 2022. The Will in Belief. Oxford Studies in Epistemology .
+Friedman, Jane. 2013. Suspended Judgment. Philosophical Studies , 162(2),
+165–181.
+Friedman, Jane. 2017. Why Suspend Judging? Noûs, 51(2), 302–326.
+Friedman, Jane. 2019a. Checking Again. Philosophical Issues , 29(1), 84–96.
+Friedman, Jane. 2019b. Inquiry and Belief. Noûs, 53(2), 296–315.
+Friedman, Jane. 2020. The Epistemic and the Zetetic. Philosophical Review ,
+129(4), 501–536.
+Ginet, Carl. 1980. Knowing Less by Knowing More. Midwest Studies in Philos-
+ophy, 5(1), 151–162.
+Goldstein, Simon. 2022. Omega Knowledge Matters. Oxford Studies in Episte-
+mology.
+Goodman, Jeremy, & Holguín, Ben. forthcoming. Thinking and Being Sure.
+Philosophy and Phenomenological Research , 1–27.
+Goodman, Jeremy, & Salow, Bernhard. 2018. Taking a Chance on KK. Philo-
+sophical Studies , 175(1), 183–196.
+Goodman, Jeremy, & Salow, Bernhard. 2021. Knowledge from Probability.
+Electronic Proceedings in Theoretical Computer Science , 335(June), 171–186.
+Greco, Daniel. 2014. Could KK Be OK? Journal of Philosophy , 111(4), 169–197.
+Harman, Gilbert H. 1973. Thought. Princeton University Press.
+Hawthorne, John. 2003. Knowledge and Lotteries . Oxford University Press.
+Hawthorne, John, & Stanley, Jason. 2008. Knowledge and Action. Journal of
+Philosophy, 105(10), 571–590.
+Hawthorne, John, Rothschild, Daniel, & Spectre, Levi. 2016. Belief Is Weak.
+Philosophical Studies , 173(5), 1393–1404.
+Hieronymi, Pamela. 2009. Two Kinds of Agency. Pages 138–162 of: O’Brien,
+Lucy, & Soteriou, Matthew (eds), Mental Action . Oxford University Press.
+Holguín, Ben. 2021. Knowledge by Constraint. Philosophical Perspectives, 35(1),
+1–28.
+Holguín, Ben. 2022. Thinking, Guessing, and Believing. Philosophers’ Imprint ,
+22(1), 1–34.
+Joyce, James. 2009. Accuracy and Coherence: Prospects for an Alethic Epis-
+temology of Partial Belief. Pages 263–297 of: Huber, Franz, & Schmidt-Petri,
+Christoph (eds), Degrees of Belief , vol. 342. Synthese.
+Joyce, James M. 1998. A Nonpragmatic Vindication of Probabilism. Philosophy
+of Science , 65(4), 575–603.
+Kappel, Klemens. 2010. On Saying That Someone Knows: Themes from Craig.
+In: Haddock, Adrian, Millar, Alan, & Pritchard, Duncan (eds), Social Episte-
+mology. Oxford University Press.
+Kelp, Christoph. 2011. What’s the Point of “Knowledge” Anyway? Episteme,
+8(1), 53–66.
+Kelp, Christoph. 2014. Two for the Knowledge Goal of Inquiry. American
+Philosophical Quarterly , 51(3), 227–32.
+Kelp, Christoph. 2018. Inquiry, Knowledge and Understanding. Synthese,
+21
+=== PDF page 22 ===
+198(Suppl 7), 1583–1593.
+Kelp, Christoph. 2021. Theory of Inquiry. Philosophy and Phenomenological
+Research, 103(2), 359–384.
+Kripke, Saul. 2011. On Two Paradoxes of Knowledge. In: Kripke, Saul A. (ed),
+Philosophical Troubles. Collected Papers Vol I . Oxford University Press.
+Lasonen-Aarnio, Maria. 2010. Unreasonable Knowledge. Philosophical Perspec-
+tives, 24(1), 1–21.
+Lasonen-Aarnio, Maria. 2014a. The Dogmatism Puzzle. Australasian Journal
+of Philosophy , 92(3), 417–432.
+Lasonen-Aarnio, Maria. 2014b. Higher-Order Evidence and the Limits of Defeat.
+Philosophy and Phenomenological Research , 88(2), 314–345.
+Littlejohn, Clayton. forthcominga. A Justification for Excuses: Brown’s Discus-
+sion of the Knowledge View of Justification and the Excuse Manoeuvre. Philo-
+sophical Studies .
+Littlejohn, Clayton. forthcomingb. A Plea for Epistemic Excuses. In: Julien Du-
+tant, Fabian Dorsch (ed), The New Evil Demon Problem . Oxford University
+Press.
+Maitra, Ishani. 2011. Assertion, Norms, and Games. Pages 277–296 of: Brown,
+Jessica, & Cappelen, Herman (eds), Assertion: New Philosophical Essays . Ox-
+ford University Press.
+Makinson, David C. 1965. The Paradox of the Preface. Analysis, 25(6), 205.
+Marsili, Neri. 2018. Truth and Assertion: Rules vs Aims. Analysis, 78(4),
+638–648.
+Marsili, Neri. forthcoming. Truth: The Rule or the Aim of Assertion? Episteme.
+Millar, Alan. 2011. Why Knowledge Matters. Aristotelian Society Supplemen-
+tary Volume, 85(1), 63–81.
+Paul, Sarah K. 2014. The Transparency of Mind. Philosophy Compass , 9(5),
+295–303.
+Pettigrew, Richard. 2016. Accuracy and the Laws of Credence. Oxford University
+Press UK.
+Radford, Colin. 1966. Knowledge: By Examples. Analysis, 27(1), 1.
+Rothschild, Daniel. 2020. What It Takes to Believe. Philosophical Studies ,
+177(5), 1345–1362.
+Rysiew, Patrick. 2012. Epistemic Scorekeeping. In: Brown, Jessica, & Gerken,
+Mikkel (eds), Knowledge Ascriptions. Oxford University Press.
+Sapir, Yasha, & van Elswyk, Peter. 2021. Hedging and the Ignorance Norm on
+Inquiry. Synthese, 199(3-4), 5837–5859.
+Schulz, Moritz. 2017. Decisions and Higher-Order Knowledge. Noûs, 51(3),
+463–483.
+Sorensen, Roy A. 1988. Dogmatism, Junk Knowledge, and Conditionals. Philo-
+sophical Quarterly , 38(153), 433–454.
+Sosa, Ernest. 2010. Knowing Full Well . Princeton University Press.
+Sutton, Jonathan. 2005. Stick to What You Know. Noûs, 39(3), 359–396.
+Sutton, Jonathan. 2007. Without Justification . MIT Press.
+Whitcomb, Dennis. 2010. Curiosity Was Framed. Philosophy and Phenomeno-
+logical Research, 81(3), 664–687.
+22
+=== PDF page 23 ===
+Whitcomb, Dennis. 2017. One Kind of Asking. Philosophical Quarterly, 67(266).
+Williamson, Timothy. 2000. Knowledge and Its Limits . Oxford: Oxford Univer-
+sity Press.
+Williamson, Timothy. 2005a. Contextualism, Subject-Sensitive Invariantism,
+and Knowledge of Knowledge. Philosophical Quarterly , 55(219), 213–235.
+Williamson, Timothy. 2005b. Replies to Commentators. Philosophy and Phe-
+nomenological Research, 70(2), 468–491.
+Williamson, Timothy. forthcoming. Justifications, Excuses, and Sceptical Sce-
+narios. In: Dorsch, Fabian, & Dutant, Julien (eds), The New Evil Demon .
+Oxford University Press.
+Woodard, Elise. forthcoming. Why Double-Check? Episteme, 1–24.
+23

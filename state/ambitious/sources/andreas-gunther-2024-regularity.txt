@@ -1,0 +1,1238 @@
+=== PDF page 1 ===
+A REGULARITY THEORY
+OF CAUSATION
+BY
+HOLGER ANDREAS AND MARIO GÜNTHER
+Abstract: In this paper, we propose a regularity theory of causation. The theory
+aims to be reductive and to align with our pre-theoretic understanding of the
+causal relation. We show that our theory can account for a wide range of causal
+scenarios, including isomorphic scenarios, omissions, and scenarios which sug-
+gest that causation is not transitive.
+1. Introduction
+Hume observed that all our reasoning about matters of particular fact is
+grounded in the relation of cause and effect. This relation, if any, we under-
+stand perfectly. And yet there is no theory of causation at our disposal that
+tells us reliably what it means that this is a cause of that.T h el a c ko fa
+satisfying theory of causation is, moreover, not for a lack of effort. There have
+been many attempts to analyze causation. Hume himself defined a cause to be
+an object, followed by another, and where all the objects similar to the first are followed by ob-
+jects similar to the second. Or in other words where, if the first object had not been, the second
+never had existed. (Sect. VII Hume, 1748/1975)
+The first sentence says that the relation between cause and effect instanti-
+ates a regularity (Andreas and Günther,2021). This idea has been developed
+further. We learned from Mackie ( 1965, 1974) and Wright ( 1985) that the
+sets of actual conditions which are jointly sufficient for the effect to occur
+must be minimal. And Baumgartner (2013) shows that the regularities must
+Holger Andreas and Mario Günther contributed equally.
+Pacific Philosophical Quarterly105 (2024) 2–32 DOI: 10.1111/papq.12447
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-
+NoDerivs License, which permits use and distribution in any medium, provided the original work is properly
+cited, the use is non-commercial and no modifications or adaptations are made.
+2
+
+=== PDF page 2 ===
+be non-redundant for the effect. The regularity theory thus counts as a cause
+each member of any minimal set of actual conditions that are jointly suffi-
+cient for the effect to occur in the presence of non-redundant regularities.
+The second sentence of the quote says that an effect counterfactually
+depends on its cause. This idea has been taken up by Lewis ( 1973)w h o
+analyses causation as the transitive closure of counterfactual dependences
+between actual events and absences. For Hitchcock ( 2001), a cause is con-
+nected by an active causal path to its effect. And Gallow ( 2021)a d d st h a t
+the active causal path, or rather active causal network, must transmit devi-
+ancy from cause to effect.
+In this paper, we propose a regularity theory of deterministic token
+causation.1 The motivating idea is this: causation is deviant forward-
+directed inferability along the causal paths of direct non-redundant regu-
+larities. Building on Baumgartner ’s work, we aim to reduce causation to
+true propositions of particular fact and deviancy from norms. The true
+propositions of particular facts and minimization procedures give rise to
+non-redundant regularities. This will allow us to define causal models in
+terms of true propositions of particular fact and direct non-redundant
+regularities. These causal models are ultimately obtained from the true
+propositions of particular fact, unlike the causal models employed by the
+counterfactual theories of Hitchcock ( 2001), Halpern and Pearl ( 2005),
+and others. We will show that our regularity theory aligns with the com-
+monsense understanding of the causal relation – even in causal scenarios
+where Baumgartner’sd o e sn o t .
+We proceed as follows. First, we present a regularity theory due to
+Lewis (1973) and restrict the regularities to direct and non-redundant ones.
+We then define causal models as tuples of direct non-redundant regularities
+and propositions of particular fact. This allows us to state our preliminary
+theory of token causation. We will show how our theory solves a wide range
+of causal scenarios and amend it where necessary. Finally, we aim to estab-
+lish the reductiveness of our theory by avoiding model-relativity.
+2. Direct non-redundant regularities
+Lewis (1973) authored and rejected a regularity theory. It can be summa-
+rized as follows. Let A be the proposition that is true if and only if (iff) some
+token eventa of type A occurs. If no token event of typeA occurs, ¬A is true.
+Furthermore, let L denote a set of true regularities, and F a possibly empty
+set of true propositions describing particular facts.2 An eventc is a cause of a
+1We set the issue of indeterministic causation aside.
+2True propositions of particular fact describe actual events and absences – events and absences of
+the actual world ranging from the most distant past to the farthest future.
+A REGULARITY THEORY OF CAUSATION 3
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 3 ===
+distinct event e iff there is a set L of true regularities and a set F of true
+propositions of particular fact such that
+(1) C and E are true,
+(2) L∪F ⊧C→E,
+(3) L∪F ⊭ E,a n d
+(4) F ⊭ C→E.
+(1) says that cause and effect are actual. (2) says that a cause expressed by
+C is sufficient for its effect in the presence of L∪F . However, (3) says that
+L∪F alone does not entail E.G i v e nL∪F ; C is necessary for E.I nt h i s
+sense, L∪F ∪C is a minimal set sufficient for E. (4) says that F alone does
+not entail the material implicationC→E. L is not redundant in the minimal
+sufficiency of L∪F ∪C for E.
+Lewis made a case that the regularity theory cannot properly distinguish
+between genuine causes and both effects and preempted would-be causes.
+The underlying reason is that some of the true regularities inL are spurious.
+Consider, for illustration, the structure in Figure 1,w h e r eC is a common
+type-cause of D and E. In addition, B and A are alternative type-causes of
+D and E respectively.
+B is sufficient for D, and so is C. Likewise, each of C and A alone is suf-
+ficient for E.B u t¬ B⋀D is also sufficient for E. When some token event
+of D occurs, and no token event of B, then some token event of C occurs.
+For no effect occurs without any of its causes. And C is sufficient for E.
+We have thus the following true but spurious regularity:
+ð¬B⋀DÞ⋁C⋁A↔E:
+I fat o k e ne v e n to ft y p eC occurs, for example, a token event of type E oc-
+curs. Similarly, if no token event of type B occurs and a token event of type
+FIGURE 1. C is a common type-cause of D and E.
+PACIFIC PHILOSOPHICAL QUARTERLY4
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 4 ===
+D occurs, then a token event of typeE occurs. Furthermore, if a token event
+of type E occurs, then a token event of type A,o ro ft y p eC occurs.
+Given the above regularity is inL and F ¼f ¬Bg, the occurring eventd is
+then a cause of the occurring event e on the above regularity theory. Indeed,
+D is then an INUS condition and a NESS condition for E. If the token
+events d of D and e of E occur, Mackie’s INUS theory and Wright’sN E S S
+theory wrongly count the event d as a cause of e.
+In the meantime, Baumgartner (2013) has shown that spurious regularities
+can be pruned fromL by requiring them to be non-redundant. A non-redun-
+dant regularity for E is a minimally necessary disjunction of minimally suf-
+ficient conjunctions forE.T ob ep r e c i s e ,l e tC be a set of minimal sets Ai of
+propositions of particular fact that are sufficient for E.⋀Ai is some conjunc-
+tion of the members of Ai,a n d ⋁i⋀Ai some disjunction of such
+conjunctions.3 We say C is minimally necessary for E iff
+(a) ⋁i⋀Ai↔E is true, and
+(b) there is no C0 ⊂ C such that ⋃j Aj ¼ ⋃C0 and ⋁j ⋀Aj ↔E is true.
+WheneverC is minimally necessary forE,w es a yt h a t⋁i⋀Ai↔E is a non-
+redundant regularity for E.
+Now, ff¬B; Dg; fCg; fAgg is not minimally necessary for E,b u t
+ffCg; fAgg is. The non-redundant regularity for E is thus
+C⋁A↔E:
+This solves the problem of joint effects of a common cause under the
+assumption that any type effect has more than one alternative type cause –
+more than one minimally sufficient conjunction. The assumption likewise
+solves the problem of the direction of causation. The non-redundant regular-
+ity implies a non-symmetry: each ofC and A alone is sufficient forE,b u tE is
+only sufficient for the disjunction C⋁A.T h e r e f o r e ,E is not a cause of C on
+the above regularity theory (assumingL ¼f C⋁A↔E; C⋁B↔Dg contains
+all and only the non-redundant regularities for E and D).
+The non-redundant regularities are relative to the set of propositional var-
+iables we consider. For this to be seen, consider the above structure restricted
+to the variable set fC; A; Eg. This simple structure of overdetermination is
+fully described by the non-redundant regularity C⋁A↔E.I n d e e d ,at o k e n
+event of type E occurs only if a token event of type C, or one of type A oc-
+curs, or both; and for any occurrence of a token event of typeA or C, there is
+an occurrence of a token event of type E.
+However, let us consider a structure of preemption enriched by informa-
+tion about the token events. In Figure 2, a gray-shaded node indicates that
+3⋁i ⋀Ai is short for ⋁
+i ≤ n ⋀Ai , where n is the cardinality ofC. Likewise,⋃i Ai is short for ⋃
+i ≤ n Ai .
+A REGULARITY THEORY OF CAUSATION 5
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 5 ===
+some token event of the relevant type occurs, and a white node that no token
+event of the relevant type occurs.
+C is sufficient for D, which in turn is sufficient for E.S i m i l a r l y ,A is suffi-
+cient forB, which in turn is sufficient forE.B u tC is also sufficient to prevent
+any token event of type B from occurring. This is represented by the
+‘preventive’arrow betweenC and B. In the scenario under consideration, to-
+ken events of both C and A occur. c is a cause of e,b u ta is a mere would be
+cause of e: c preempts the causal efficacy of a.
+The regularityC⋁A↔E is still true and non-redundant for the structure of
+preemption. However, this regularity does not fully describe the structure
+relative to the variable setfC; A; D; B; Eg. In order to obtain a full descrip-
+tion, we require that all non-redundant regularities inL are direct. A non-re-
+dundant regularity⋁i⋀Ai↔E is direct relative to a variable set iff there are
+no true non-redundant regularities ⋁j ⋀Bj ↔C and ⋁k⋀C k↔E, where the
+same variable appears as subformula in some ⋀Ai and some ⋀Bj ,w h i l e
+C appears as subformula in some ⋀C k.
+The non-redundant regularity C⋁A↔E is not direct relative to the
+extended variable set: there are the true non-redundant regularities C↔D
+and D⋁B↔E,a n dC appears as subformula inC⋀A and C,w h i l eD appears
+in D. (Any formula is a subformula of itself.) The non-redundant regularities
+C↔D; A⋀¬C↔B,a n d D⋁B↔E, by contrast, are all direct relative to the
+extended variable set. There are no other direct non-redundant regularities.
+In general, a causal structure is fully described by all and only the direct
+non-redundant regularities.
+How does Lewis’s regularity theory amended by direct non-redundant reg-
+ularities treat preemption? Well,c is a cause ofe, as it should be. For this to be
+seen, takeF ¼ ∅.C o n d i t i o n s( 1 )–(4) are then satisfied. Unfortunately,a also
+counts as a cause of e. For this to be seen, observe that condition (1) is satis-
+fied, and condition (3) is satisfied forF ¼ ∅ orF ¼f ¬Bg. Both options also
+satisfy condition (4). As to condition (2), let ’s consider the first option
+F ¼ ∅. There are only two cases: if ¬C, then the direct non-redundant reg-
+ularities inL entail A→E via B.I f C, the direct non-redundant regularities in
+L entail E, and thus A→E.H e n c e ,L∪F ⊧A→E. Condition (2) is satisfied,
+and so a wrongly counts as a cause of e.
+FIGURE 2. Preemption.
+PACIFIC PHILOSOPHICAL QUARTERLY6
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 6 ===
+What went wrong? Well, A and B are – just like C and D – type-causes of
+E. What makes the difference in the preemption scenario betweenC and A is
+that a token event of type D occurs, while no token event of type B occurs.
+The spirit behind regularity theories is that the true propositions of particu-
+lar fact should be respected. But the entailment of A→E involves an infer-
+ence via B, even though no token event of type B occurs. This suggests that
+the regularity theory of Lewis is too liberal as to the choice of the set F of
+true propositions of particular fact. There is a minimality constraint on F ,
+but a maximality constraint is lacking which would guarantee that ¬B ∈ F .
+Such a maximality constraint alone, however, does not help Lewis’sr e g u -
+larity theory. Even ifF ¼f ¬Bg; a counts as a cause ofe. For this to be seen,
+observe first that the direct non-redundant regularities in L and ¬ B entail
+¬A⋁C. There are again only two cases: if ¬ C,t h e n L and F entail ¬ A,
+and thus A→E.I f C,t h e nL and F entail E, and thus A→E. Condition
+(2) is again satisfied. But observe that this reasoning is artificial. Intuitively,
+a is not a cause ofe becauseA does not entailE in a forward-directed way via
+B. If you prefer, we may alternatively say that there is no causal path fromA
+over B to E that is active in the sense that a token event of each of the types
+A; B and E occurs.
+Baumgartner (2013) develops a theory of token-causation from his theory
+of type-causation and the notion of an active causal path. His theory of
+type-causation requires that the regularities remain non-redundant under
+any suitable extension of the variable set. As a result, there are direct and in-
+direct non-redundant regularities that already tell us which relations of
+type-causation are transitive, and which are not. He defines, roughly, a to-
+ken event to be a cause of another iff there is an active causal path from
+the first token event or absence to the second via the direct non-redundant
+regularities. (See p. 98 for the formal details).
+Baumgartner’s regularity theory reduces causation to material implica-
+tions and minimization procedures. He thereby proposes a theory of causa-
+tion free of any modal notion. And it is notable that his theory accounts well
+for many causal scenarios, including overdetermination, preemption, as well
+as some switching scenarios, and some short-circuits. Only very recently
+counterfactual theories of causation have been able to account for these sce-
+narios (Andreas and Günther, 2021b;G a l l o w ,2021).
+This being said, Baumgartner’s regularity theory works only under the as-
+sumption that each variable set is extendable such that each type effect has at
+least two alternative type causes. The assumption seems empirically accu-
+rate, even though it is contingent: it depends on the actual features of our
+world. We think it would be better if a theory of causation were even able
+to come to the right verdicts in all conceptual possibilities – including a sce-
+nario where one event is the only cause of another. We aim for such a con-
+ceptually accurate regularity theory that aligns with our understanding of
+the causal relation.
+A REGULARITY THEORY OF CAUSATION 7
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 7 ===
+3. Causal models
+Causal models represent causal scenarios. In a causal scenario like preemp-
+tion, certain events occur, others do not, and we have a certain structure that
+tells us how event types depend on other event types. We can define a causal
+model hL; F i by two components: a set L of direct non-redundant regular-
+ities and a set F of propositions of particular fact. A ∈ F means that some
+token event a of type A occurs. ¬A ∈ F , by contrast, means that no token
+e v e n to ft y p eA occurs. In other words, ¬A denotes the absence of any event
+of type A, or simply the absence of A.
+The preemption scenario can be represented by a causal model hL; F i,
+where L ¼f C↔D; B↔A⋀¬C; E↔D⋁Bg and F ¼f C; A; D; ¬B; Eg.
+For readability, we represent causal models in two-layered boxes. The upper
+layer shows the set L of direct non-redundant regularities ordered in the fol-
+lowing way: the single variable is on the left-hand side and the formula in
+disjunctive normal form on the right-hand side. The lower layer shows the
+set F of propositions of particular fact. For the preemption scenario, we
+obtain
+Let Γ be a set that contains propositional formulas. We understand entail-
+ment in the standard way: Γ⊧ϕ iff the propositional formulaϕ is satisfied by
+any classical valuation that satisfies all members of Γ. We define the entail-
+ment relation for causal models as follows:
+hL; F i⊧ϕ iff L∪F ⊧ϕ:
+Causation is not symmetric, if not asymmetric outright. If C is a cause of
+E, it is thereby not the case that E is a cause of C. Recall that non-redun-
+dant regularities of the form E↔⋁i⋀Ai are generally not symmetric: the
+type-effect E is only sufficient for a disjunction, while each disjunct is suf-
+ficient for E.
+There are, however, problematic limiting cases. Non-redundant regulari-
+ties like D↔C are symmetric: D is sufficient for C,a n d C is sufficient for
+D. There are two promising ways to determine the direction of causation
+in these limiting cases. One could reconsider a Humean approach to the di-
+rection of causation that relies on the direction of time (Andreas and
+Günther, 2024). If, for example, the token events of typeC precede the token
+PACIFIC PHILOSOPHICAL QUARTERLY8
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 8 ===
+events of type D, we may say that D is the type-effect. Alternatively, one
+could extend the variable set until the symmetry is broken
+(Baumgartner, 2013). If we extend the variable set by C0, which is another
+type-cause of D, the resulting non-redundant regularity D↔C⋁C0 breaks
+the symmetry. In what follows, we assume that the direction of
+non-redundant regularities can always be determined. We can then say that
+any type effect is by convention on the left-hand side of a direct
+non-redundant regularity and its direct type causes on the right-hand side.
+Still, non-redundant regularities allow for inferences in two directions.
+E↔D⋁B, for example, allows us to infer from either of the type causes D
+and B to the type effectE. This inference goes from type causes to some type
+effect. Let us call any such inference forward-directed. By contrast, the type
+effect E allows us to infer the disjunction of its type causes D⋁B.T h i si n f e r -
+ence goes from some type effect to its type causes. Let us call any such infer-
+ence backward-directed.
+One idea behind our theory of causation is that a token cause allows us to
+infer its token effect in a purely forward-directed way. To implement this
+idea, we need to isolate the forward-directed consequences of actual events
+and absences from the backward-directed ones. In general, we can isolate
+the forward-directed causal consequences of some occurring token event a
+of typeA for a causal modelhL; F 0i by a setting. Roughly speaking, a setting
+removes a non-redundant regularityA↔⋁i⋀Ai from L a n dr e p l a c e si tb ya
+true proposition, either A or ¬ A. Thereby, backward-directed inferences
+from A or ¬A are excluded.
+Suppose we want to determine the forward-directed causal consequences
+of the occurring token event a of type A for a causal model hL; F 0i,w h e r e
+F 0 is a subset of the set F of true propositions particular facts. The setting
+of A in this causal model results in a causal model hLA; F 0∪fAgi.I f
+A↔⋁i⋀Ai is a member of L; LA is obtained from L by removing this
+non-redundant regularity. Otherwise LA ¼ L. We call hLA; F 0∪fAgi the
+causal submodel of hL; F 0i after the setting of A. By removing the non-re-
+dundant regularity for A from L, backward-directed inferences from A or
+¬A are excluded in the causal submodel.
+Complex settings may be represented by a set S of true propositions of
+particular fact. Let us denote settings by an operator ½ · /C138 that takes a
+causal model hL; F 0i and a set S of true propositions of particular fact,
+where both F 0 and S are subsets of the true propositions F of particular
+fact, and returns a causal model – the submodel of hL; F 0i after the set-
+ting of S. The setting by a set of true propositions of particular fact is
+defined as follows:
+hL; F 0i½S/C138¼h LS ; F 0∪Sih L; F i½S/C138ðÞ
+where
+A REGULARITY THEORY OF CAUSATION 9
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 9 ===
+LS ¼ A↔⋁i⋀Ai ∈ LðÞ j A ∉ S and ¬A ∉ Sfg :
+LS is the subset of L that contains each direct non-redundant regularity
+A↔⋁i⋀Ai whose variable A does not appear in S. After setting S in the
+causal model hL; F 0i, the set S becomes part of the propositions of par-
+ticular fact of the resulting submodel. Note that the resulting submodel is
+again a causal model consisting of a set of non-redundant regularities
+and a set of propositions of particular fact.
+Settings will always only set true propositions of particular fact. No prop-
+ositions contrary to the true facts are ever set, unlike the interventions em-
+ployed by Halpern and Pearl ( 2005) for example. As a consequence, the
+resulting submodels are not inconsistent provided the original causal models
+were not.
+We are now in a position to state our preliminary theory of causation.
+Definition 1. Let hL; F i be a causal model such that F ⊧L. c is a cause of e
+relative to hL; F i iff there is a set F 0 ⊆ F such that all of the following
+conditions are satisfied:
+(1) hL; F i⊧C⋀E.
+(2) hL; F 0i ⊭ E, and there is no F 00 so that F 0 ⊂ F 00 ⊆ F and
+hL; F 00i ⊭ E.
+(3) hL; ∅i½F 0/C138½f Cg/C138 ⊧E.
+(1) says that cause and effect are actual. (2) says that there is a set F 0 of
+propositions of particular facts that does not entail the effect E in the pres-
+ence of the direct non-redundant regularities, and F 0 is maximal: any strict
+superset ofF 0 would entailE in the presence of the direct non-redundant reg-
+ularities. (3) says that F 0 and the direct non-redundant regularitiesdo entail
+E together with C in a forward-directed way.
+On our preliminary theory, a cause is each member of any maximized
+minimal set of actual conditions which are jointly sufficient in a
+forward-directed way for the effect to occur in the presence of direct
+non-redundant regularities. Causation so understood amounts to
+forward-directed inferability along direct non-redundant regularities.
+4. Scenarios
+Let us revisit the scenario of preemption.
+PACIFIC PHILOSOPHICAL QUARTERLY10
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 10 ===
+Relative to hL; F i; c is a cause of e. Condition (1) is satisfied, and will be
+satisfied in all the scenarios to come. Take F 0 ¼f ¬Bg.T h e nhL; F 0i ⊭ E,
+but any strict superset of F 0 would entail E in the presence of L.C o n d i t i o n
+(2) is satisfied. And condition (3) is satisfied as well:
+fD↔C; E↔D⋁Bg∪f¬Bg∪fCg⊧E.
+Relative to hL; F i; a is not a cause of e. Condition (2) is only satisfied for
+F 0 ¼f ¬Bg. But then the direct non-redundant regularity of B is removed
+from L by the setting of ¬ B. Condition (3) is then violated:
+fD↔C; E↔D⋁Bg∪f¬Bg∪fAg ⊭ E. Our preliminary theory solves
+preemption.
+We leave it to the reader to verify that our preliminary theory accounts for
+other classic scenarios like overdetermination, prevention, double preven-
+tion, and more. Instead, we turn toward the problem of isomorphic causal
+models.
+4.1. ISOMORPHISMS
+The problem of isomorphic causal models is that there are pairs of scenarios
+which are structurally indistinguishable for simple causal model accounts,
+and yet our causal judgments differ (Hall, 2007,p . 4 4 ) .W ec a l lac a u s a l
+model account simple if it only factors in structural equations– or our direct
+non-redundant regularities– together with values of variables– or our prop-
+ositions of particular fact.
+Let us illustrate an instance of the problem. Here is the causal model of a
+scenario of overdetermination.
+We transform this causal model into a structurally indistinguishable or
+isomorphic causal model. To do this, negate both sides of the direct
+A REGULARITY THEORY OF CAUSATION 11
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 11 ===
+non-redundant regularity. Then substituteC by F ; A by ¬D,a n dE by ¬E.
+The result is the isomorphic causal model:
+And indeed, ¬E is ‘overdetermined’ by F and ¬D. This causal model can
+be represented by Figure 3.
+Here is an example for this structure. Poisonings D are type causes of
+deaths E, and antidotes F are type preventers of deaths E.I nt h es c e n a r i o
+under consideration, let ’s say, there is an assassin, a potential target, and
+her bodyguard. The assassin refrains from poisoning target ’sc o f f e e ¬D,
+and her bodyguard puts antidote in her coffee F . Target survives, of course.
+Because target’s coffee is not poisoned in the first place, there is no danger at
+all that she dies. The prevention by bodyguard ’sa n t i d o t ei sbogus.A n ds o
+bodyguard’s putting the antidote in her coffee is arguably no cause of her
+survival (Hiddleston, 2005; Hitchcock, 2007).
+Recall that there is no structural difference for simple causal model ac-
+counts between F in the scenario of bogus prevention and C in the scenario
+of overdetermination. However, our causal judgments differ. We judgeC to
+be a cause ofE in the overdetermination scenario, while we do not judgeF to
+be a cause of ¬ E in the bogus prevention scenario.
+Simple causal model accounts of causation – like the accounts of
+Hitchcock ( 2001), Halpern and Pearl ( 2005), and Andreas and
+Günther (2021b, In Press)f o re x a m p l e– cannot distinguish between F and
+C in the isomorphic causal models: C counts as a cause iff F does. This
+means simple causal model accounts must incorrectly classify F as a cause
+in the bogus prevention scenario if they correctly classify C as a cause in
+the overdetermination scenario. This is a problem indeed if we take our
+pre-theoretic understanding of the causal relation seriously.
+Our preliminary theory of causation is a simple causal model account, and
+so is likewise susceptible to the problem of isomorphic causal models.
+FIGURE 3. Bogus prevention.
+PACIFIC PHILOSOPHICAL QUARTERLY12
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 12 ===
+Hitchcock ( 2007), Hall ( 2007), Halpern and Hitchcock ( 2015), and
+Halpern (2015) all aim to solve the problem by taking into account default
+or normality considerations. The underlying idea is that the status of genuine
+causes depends on being deviant from what is normal (Beebee, 2004;
+McGrath, 2005). On this view, genuine effects are brought about by causes
+that are more deviant from normality than its non-actual alternatives.
+Gallow (2021) goes even further by elevating the transmission of deviancy
+to the mark of causation: an event is a cause in virtue of transmitting its de-
+viancy to its effect.
+We also aim to resolve the problem of isomorphic causal models by a con-
+dition of deviancy. But what is deviancy? For now, we follow Gallow (2021,
+p. 54) in saying that prima facie an occurring event is more deviant than its
+absence. But this is just a first approximation. The question of what consti-
+tutes deviancy is more intricate. We will discuss it later.
+To amend our theory by a deviancy condition, we need the notion of a
+root proposition. We say a proposition F of particular fact is a root propo-
+sition in a causal modelhL; F i iff there is no direct non-redundant regularity
+for F or ¬F in L.F i n a l l y ,l e tF r denote the set of root propositions in F .
+We amend now our theory by a condition of deviancy. The condition ap-
+plies to all genuine causes for the effect under consideration and to all root
+propositions which are not in the maximized minimal setF 0 of propositions
+of particular fact that are jointly sufficient for the effect in the presence of the
+direct non-redundant regularities. It says that all such genuine causes and
+root propositions have to be more deviant than their negation. To be precise,
+we require the following condition in addition to conditions (1) –(3):
+(4) for all F ∈ F ∖F 0,i f F ≡C or F ∈ F r,t h e nF is more deviant than ¬F .
+The deviancy condition (4) says that, for c to be a cause of e, the proposi-
+tion C and each root propositionF that is not in the maximized minimal set
+F 0 of propositions of particular fact must be more deviant than its respective
+negation. On the amended theory, causation is thus understood as deviant
+forward-directed inferability along direct non-redundant regularities.
+How does our amended theory treat bogus prevention? Well, we know
+from the isomorphism between overdetermination and bogus prevention
+that f counts as a cause of the non-occurrence of any event e of type E –
+or simply e’sa b s e n c e– on our preliminary theory for F 0 ¼ ∅. However,
+the deviancy condition is violated. ¬D is a root proposition of particular fact
+that is not in F 0 ¼ ∅,b u t¬ D is less deviant than D. Therefore, f is not a
+cause of e’sa b s e n c e .d’s absence is normal and so is likewise no cause of
+e’s absence. Or so says our amended theory.
+Bogus prevention illustrates the underlying rationale of condition (4). The
+root propositions in F ∖F 0 are causes or backup causes if they are more
+A REGULARITY THEORY OF CAUSATION 13
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 13 ===
+deviant than their negations. Otherwise they would remain inF 0 in virtue of
+its maximality. In the bogus prevention scenario, d’s absence and f ’s occur-
+rence are no causes because of the normality of the root proposition ¬D.T h e
+normality of non-occurrence of any event of type D entails that d’sa b s e n c e
+and f ’s occurrence are no causes.
+Like the simple causal model accounts, Baumgartner ’s( 2013) regularity
+theory wrongly says thatd’s absence and f ’s occurrence are causes of e0s ab-
+sence (p. 105). He prefers this result over a relativization of causation to nor-
+mality or typicality (p. 106). This is where we fundamentally part ways. We
+take our pre-theoretic understanding of the causal relation in the bogus pre-
+vention scenario at face value.
+This being said, Baumgartner aims for a proof of concept that his regular-
+ity theory could be enriched by a notion of normality or typicality – much
+like simple causal model accounts (p. 106). And indeed, he shows how his
+regularity theory so enriched can account for the bogus preventer f by
+disregarding an atypical but empirically possible situation– possible accord-
+ing to the type-level structure of bogus prevention.
+He assumes that the least typical empirical possibility is the one in which
+some token events of type D and of type F occur. By disregarding this em-
+pirical possibility, a token event of type E occurs just in case one of type D
+occurs. The non-redundant regularity simplifies toE↔D.¬ F does not figure
+any longer in the non-redundant regularity. And sof ceases to be a cause of
+e’s absence on his enriched theory. Butd’s absence remains a cause ofe’sa b -
+sence. And this goes against our commonsense judgment: the normal
+absence of poison does not cause target ’s survival.
+4.2. OMISSIONS
+Omissions pose another problem for many theories of causation. In a sce-
+nario of omission, an event fails to occur and so another event occurs. How-
+ever, had the event occurred, it would have prevented the other event from
+occurring. The basic structure of omissions can be represented by Figure 4.
+An event c of type C occurs and brings about an event e of type E.N o
+event f of type F occurs. However, had an event f of type F occurred, it
+FIGURE 4. Omission.
+PACIFIC PHILOSOPHICAL QUARTERLY14
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 14 ===
+would have preventede from occurring. Here is the causal model for the sce-
+nario of omission.
+Relative to this causal model, f ’s absence is not a cause of e, given the
+above convention about deviancy. For this to be seen, observe that condi-
+tions (2) and (3) are only satisfied forF 0 ¼f Cg. But then condition (4) is vi-
+olated: ¬F ∈ F ∖F 0 and ¬F is a root proposition, and yet ¬F is less deviant
+than F .4
+Indeed, many omissions are no causes. Putin ’s failure to water my plant,
+for example, did not cause it to dry up and die. However, some omissions in-
+tuitively do count as causes. My neighbor promised me to water my plant,
+but she didn ’t and it died. Here, my neighbor ’s failure to water my plant
+should count as a cause of its death (McGrath, 2005). Our theory can cap-
+ture this phenomenon if we refine our notion of deviancy.
+We have said that prima facie an occurring event is more deviant than its
+absence. We say now in addition that the absence ¬A of any event of type A
+is more deviant than an event of typeA if ¬A violates a norm that is active in
+the scenario under consideration (Andreas et al., 2023; Beebee, 2004). My
+neighbor’s omission to water my plant is an absence that violates the active
+norm of promise-keeping. My neighbor deviated from this norm and so her
+omission is more deviant than its negation. Our theory says then that my
+neighbor’s failure to water my plant is a cause of the plant ’sd e a t h .P u t i n ,
+by contrast, did not promise to water my plant. His omission is thus less de-
+viant than his watering my plant, and so does not count as a cause of my
+plant’s death. Or so says our theory.
+We have illustrated how condition (4) helps overcome the problem of iso-
+morphic causal models and how it accounts for simple scenarios of omis-
+sion. As to the latter, deviant omissions are genuine causes, non-deviant ones
+are not. In general, a genuine cause is deviant and allows to infer its effect in
+a forward-directed way along direct non-redundant regularities.
+Baumgartner’s( 2013) theory says that all omissions of f in the above sce-
+nario are causes of e. There is only one set of actual conditions that are
+jointly sufficient fore to occur in the presence of the non-redundant regular-
+ity: f¬F ; Cg. What does his theory say when we enrich it by some typicality
+ranking?
+4By contrast, c is a cause of e.T a k eF 0 ¼f ¬F g. Conditions (2) and (3) are then satisfied. And be-
+cause ¬F is not in F ∖F 0, condition (4) is trivially met.
+A REGULARITY THEORY OF CAUSATION 15
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 15 ===
+Observe that the non-redundant regularity of the omission scenario is of
+the same form as the one of bogus prevention. There Baumgartner assumed
+that the empirical possibility in which token events of typeF and type C oc-
+cur is less typical than any other. By disregarding this empirical possibility,
+an event of type E occurs just in case one of type C occurs. The non-redun-
+dant regularity of the scenario simplifies to E↔C. And so the default omis-
+sion of f ceases to be a cause of e on his enriched theory. So far so good.
+There is, however, work left. Baumgartner has not yet said how normality,
+typicality, or deviancy are supposed to figure in the confines of his theory in
+general. It remains unclear how his enriched regularity theory applies to ar-
+bitrary causal scenarios.
+4.3. ENTANGLEMENTS
+Another problem comes from causes that are entangled with one another.
+We first illustrate the problem and then refine our theory in response. Con-
+sider a structure, where two type causesA and C are necessary for an effectE
+to occur. Moreover,A andC are entangled: one of them is a type cause of the
+other. And let’s say in the actual scenario a token event of each type occurs.
+Figure 5 graphically represents this scenario, where the thick circle aroundE
+means that both A and C are necessary for E.
+We say that C is here a subcause of A. Here is the causal model for this
+subcause scenario.
+Entangled causes are tightly related. Here, the subcause C depends di-
+rectly and exclusively on the‘supercause’A. Given the direct non-redundant
+regularities, the occurrence of some token event of type E is determined by
+whether or not some token event of type A occurs. In this sense, the type-
+cause C is subordinate to the type-cause A.
+FIGURE 5. Subcause.
+PACIFIC PHILOSOPHICAL QUARTERLY16
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 16 ===
+Our present theory of causation does not count the token event of type C
+as a cause of the token event of type E. For this to be seen, note that
+hL; F 0i ⊭ E only for F 0 ¼ ∅. But then hL; ∅i½F 0/C138½f Cg/C138 ⊭ E.H o w e v e r ,t h i s
+seems to be the wrong verdict.
+Why does our present theory of causation fail for entangled causes? Well,
+it seems that the tight connection between entangled causes like A and C is
+the culprit. A solution is thus to cut this tight connection between entangled
+causes by removing non-redundant regularities from the causal model. In
+the subcause scenario, this means we could cut the tight connection between
+the subcause C and its supercause A by removing the direct non-redundant
+regularity C↔A. We thus generalize our theory of causation as follows.
+Definition 2. Let hL; F i be a causal model such that F ⊧L. c is a cause of e
+relative tohL; F i iff there is a setL0 ⊆ L and a set F 0 ⊆ F such that all of
+the following conditions are satisfied:
+(1) hL; F i⊧C⋀E.
+(2) hL0; F 0i ⊭ E, and there is no F 00 so that F 0 ⊂ F 00 ⊆ F and
+hL0; F 00i ⊭ E.
+(3) hL0; ∅i½F 0/C138½f Cg/C138 ⊧E.
+(4) For all F ∈ F ∖F 0,i f F ≡C or F ∈ F r,t h e nF is more deviant than
+¬F .
+This proper generalization of our amended theory solves the subcause sce-
+nario. For this to be seen, take L0 ¼f E↔C⋀Ag and F 0 ¼f Ag.W e l lt h e n ,
+condition (2) is satisfied, and so are conditions (3) and (4). Hence, the occur-
+ring token event c of type C is a cause of the occurring token event e of type
+E, as desired.5
+4.4. NON-TRANSITIVITY
+A final challenge for the current theory arises from causal scenarios which
+suggest that causation is not transitive. The transitivity of causation means
+this: whenever a token event c of type C is a cause of one of type A and
+the one of type A is a cause of a token event e of type E,t h e nc is a cause
+e. It seems often plausible to judge c a cause of e if you judge c ac a u s eo f
+a and a a cause of e. However, several scenarios have been put forth which
+suggest that our causal judgments are not transitive (Lewis, 2000;
+McDermott, 1995;P a u l ,2000).
+5Baumgartner’s( 2013) theory correctly says that both token events of type A and C,r e s p e c t i v e l y ,
+are causes of the token event of typeE.B e c k e r s(2021,p p .1 3 6 1–1363) puts forth a series of six scenar-
+ios in order to support his causal model account of causation and to challenge others. The latter four
+scenarios contain entangled causes. We leave it to the reader to verify that our theory delivers the com-
+monsense results Beckers desires.
+A REGULARITY THEORY OF CAUSATION 17
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 17 ===
+One of the examples against transitivity is due to Hitchcock (2001,p .2 7 6 ) .
+A boulder is dislodged and rolls toward a hiker. The hiker sees the boulder
+coming and ducks, so that she does not get hit by the boulder. If the hiker
+had not ducked, however, the boulder would have hit her.
+The boulder scenario seems to show that there are cases where causation is
+not transitive: the dislodged boulder causes the ducking of the hiker, which
+in turn causes the hiker to remain untouched by the boulder. But it is
+counterintuitive to say that the dislodging of the boulder causes the hiker
+to remain unscathed. Unlike other accounts, our theory does not rely on
+transitivity to handle certain causal scenarios. We are thus free to deny that
+our causal judgment is invariably transitive.
+The structure of the boulder scenario can be represented by Figure 6
+(Gallow, 2021,p .5 3 ) .
+Hall (2007, p. 36) calls this structure ashort circuit: the boulder’s dislodge-
+ment (f ) threatens to hit the hiker by a rolling boulder ( b), and at the same
+time provokes an action – the ducking ( d) – that prevents this threat from
+being effective: no token event e of type E occurs.
+The token eventf should not count as a cause of the absence of any evente
+of type E,b e c a u s ef creates and cancels the threat to bring about some token
+event e of type E (Paul and Hall, 2013, p. 216). Our current analysis, how-
+ever, says that f is a cause of e’s absence. To see this, consider the causal
+model of the boulder scenario:
+Take L0 ¼f D↔F ; E↔B⋀¬Dg and F 0 ¼f Bg. Then condition (2) is sat-
+isfied, and so are the conditions (3) and (4).
+What went wrong? Well, it seems thatf comes out as a cause ofe’sa b s e n c e
+because we disregard that F is type-causally connected to E via B.B y
+FIGURE 6. Short circuit.
+PACIFIC PHILOSOPHICAL QUARTERLY18
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 18 ===
+removing the direct non-redundant regularity B↔F , we loose the informa-
+tion thatf creates a threat to bring aboute’s occurrence. But, intuitively, this
+information seems to be crucial to determine whether f is a cause of e’sa b -
+sence. And so it seems to be unwarranted to neglect one of the type-causal
+paths from F to E.
+The generalization of our theory to handle scenarios of entangled causes
+overshoots. Removing arbitrary direct non-redundant regularities from L
+can lead to counterintuitive results, as the boulder scenario illustrates. In
+response, we put a constraint on which direct non-redundant regularities
+can be removed. The idea is this: when testing whether a token event c of
+type C is a cause of a token event e of type E, the causal paths from C to
+E need to remain intact.
+To implement the idea that constrains the removal of direct
+non-redundant regularities, we introduce some terminology. Recall that
+A↔⋁i⋀Ai is the direct non-redundant regularity of A.W es a y A is a child
+variable of the parent variables appearing as subformulas in some Ai.L e t
+B be one of the parent variables appearing in some Ai. A is then one of its
+first descendants. The child variables of A are the child variables of one of
+B’sc h i l dv a r i a b l e sa n ds oa r ea m o n gB’s second descendants. And so on.
+The descendants of B are the variables you can reach by following the child
+relation. In general, the descendants of some variable B are the variables in
+the transitive closure of the child relation starting from B.F i n a l l y ,l e tB be
+a proposition of the formD or ¬D,w h e r eD is a propositional letter. We then
+say that the descendants ofB are all the variables (of the causal model under
+consideration) which are descendants of the variable D of which B is a
+proposition.
+For our final theory of causation, we require the following condition in
+addition to conditions (1)–(4):
+(5) For all descendants A of C, the direct non-redundant regularity ofA is
+in L0.
+Condition (5) ensures that the causal paths starting from a candidate cause
+C remain in L0. On our final theory, causation is understood as deviant
+forward-directed inferability along the causal paths of direct
+non-redundant regularities from cause to effect. We show now how this con-
+dition helps to handle scenarios that challenge the transitivity of causation.
+4.4.1. Short circuit
+Let us, first, reconsider the boulder scenario of Figure 6. f does no longer
+count as a cause of e’s absence. For this to be seen, observe that all variables
+are descendants of F . Condition (5) thus prohibits to remove any direct
+A REGULARITY THEORY OF CAUSATION 19
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 19 ===
+non-redundant regularity fromL. As a consequence, there is noL0 and F 0 so
+that condition (2) is satisfied. Even for F 0 ¼ ∅, the direct non-redundant
+regularities entail ¬E.
+By contrast,d counts as a cause ofe’s absence. For this to be seen, observe
+that F is not a descendant of D. Hence, the direct non-redundant regularity
+D↔F can be removed from L.T a k e L0 ¼f B↔F ; E↔B⋀¬Dg and
+F 0 ¼f F ; Bg. hL0; F 0i does not entail ¬ E,a n d F 0 is maximal: any strict
+superset of F 0 would entail ¬E in the presence of the direct non-redundant
+regularities in L0.B u t ,o fc o u r s e ,hL0; ∅i½F 0/C138½f Dg/C138 ⊧¬E.
+On Baumgartner’s( 2013) theory, the type-level structure of the boulder
+scenario is empirically equivalent to the type level structure
+L ¼f B↔F ; D↔F ; ¬E↔F ⋁¬F g. A situation in which B and ¬D are true
+is impossible according to this and the original type-level structure of the
+boulder scenario. In both, there are only two empirically possible situations
+over the four variables: fF ; B; D; ¬Eg and f¬F ; ¬B; ¬D; ¬Eg.T h e
+type-level structure of the boulder scenario only allows for empirical possi-
+bilities, in which no token event of type E occurs. And so it is empirically
+equivalent to a type-level structure including the indirect non-redundant reg-
+ularity ¬E↔F ⋁¬F but without the regularity E↔B⋀¬D.T h i ss h o w s ,s o
+argues Baumgartner, that the latter regularity is empirically redundant (pp.
+101–104). After all, the indirect non-redundant regularity says that a token
+e v e n to ft y p eE never occurs.
+The two type-level structures are empirically equivalent: the situations
+compatible with the respective non-redundant regularities coincide. How-
+ever, we think that the type-level structure of the boulder scenario is a con-
+ceptual possibility for which a theory of causation should be able to account
+for. And while Baumgartner’s theory correctly says thatf is not a cause ofe’s
+absence, it also says thatd is not a cause ofe’s absence. The latter is wrong on
+our understanding of the causal relation. After all, we judge the hiker ’s
+ducking to be a cause of her remaining untouched by the boulder.
+4.4.2. Extended double prevention
+In a scenario of double prevention, an event prevents another event which–
+had it occurred– would have prevented a third event. Hall (2004, p. 247) pre-
+sents an extension of a simple scenario of double prevention, which we call
+extended double prevention. The structure of this scenario can be repre-
+sented by Figure 7.
+Here, the event of type C double prevents the event of type E because C
+prevents an event of type D from occurring that – had it occurred – would
+have prevented the occurring event of type E. In the present scenario, how-
+ever, the occurring events of type B and of type C have an occurring com-
+mon cause of type F , and the subgraph F /C0 B /C0 C /C0 D is a short circuit.
+PACIFIC PHILOSOPHICAL QUARTERLY20
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 20 ===
+F starts a process via B that threatens to prevent E. At the same time, F ini-
+tiates another process viaC that prevents the threat.F cancels its own threat
+– the threat via B – to prevent E.P a u l(2013, p. 216) argue, among others,
+that F is not a cause of E in extended double prevention.
+Here is the causal model for the scenario of extended double prevention.
+Relative to this causal model,f is not a cause of e. For this to be seen, ob-
+serve first that all non-root variables are descendants of F . Condition (5)
+prohibits to remove any direct non-redundant regularity from L. Any set
+F 0 of particular facts that is supposed to satisfy condition (3) needs to con-
+tain A;o t h e r w i s ehL0; ∅i½F 0/C138½f F g/C138 ⊭ E.H o w e v e r ,i fA ∈ F , then condition
+(2) is violated: hL0; F 0i⊧E.6
+On Baumgartner ’s( 2013) theory, the type-level structure of extended
+double prevention is empirically equivalent to the type-level structure
+L ¼f B↔F ; C↔F ; E↔Ag (see pp. 101 –102). As a consequence, a is
+the only cause of e. The double preventer c, in particular, does not count
+as a cause of e.
+FIGURE 7. Extended double prevention.
+6By contrast, c is a cause of e.T a k eF 0 ¼f F ; B; Ag and L0 ¼ L∖fC↔F g. Conditions (1)–(5) are
+then met.
+A REGULARITY THEORY OF CAUSATION 21
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 21 ===
+4.4.3. Modified extended double prevention
+In Figure 8,P a u l(2013,p p .1 9 8–199) ask us to consider a slight modification
+of extended double prevention by ‘adding a non-occurring event of type G’.
+Paul and Hall argue that ‘the original verdict stands’: f is not a cause of e
+because no event of type G occurs and this non-occurrence does not make
+any difference (p. 199). Here is the causal model for the scenario of modified
+extended double prevention.
+Relative to this causal model, f is not a cause of e. For this to be seen, ob-
+serve first that all non-root variables are descendants of F . Condition (5)
+prohibits to remove any direct non-redundant regularity from L.T h e r ea r e
+only two cases in which hL0; F 0i meets condition (2). First, take
+F 0 ¼f ¬G; ¬Dg. But then condition (3) is violated: hL0; ∅i½F 0/C138½f F g/C138 ⊭ E.
+Second, take F 0 ¼f A; Bg. In this case, ¬G is in F ∖F 0 and ¬G ∈ F r.B e -
+cause ¬G is less deviant thanG, condition (4) is violated. We have shown that
+f is not a cause of e in the scenario of modified extended double prevention.
+On Baumgartner’s( 2013)t h e o r y ,f counts as a cause of e. The type-level
+structure of modified extended double prevention is empirically accurate,
+FIGURE 8. Modified extended double prevention.
+PACIFIC PHILOSOPHICAL QUARTERLY22
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 22 ===
+and yet his theory delivers the wrong result. This being said, his enriched
+theory could obtain the correct result, if the empirical possibility, in which
+a and f occur but g does not, is less typical than the other empirical possibil-
+ities. But this condition is hard to assess because Baumgartner did not yet
+tell us what makes one empirical possibility more or less typical than
+another.
+4.4.4. Isomorphic modified extended double prevention
+Paul (2013,p p .1 9 8–199) considers a scenario that is isomorphic to modified
+extended double prevention. They represent it by Figure 9.
+In this scenario, the occuring event of typeE requires that both an event of
+type A and one of type D occurs. Paul (2013, p. 199) argues that this time c
+clearly is a cause ofe. Here is the causal model for the scenario of isomorphic
+modified extended double prevention.
+Relative to this causal model, c is a cause of e.T a k e L0 ¼ L and
+F 0 ¼f A; ¬Bg. Then condition (2) is satisfied: hL0; F 0i ⊭ E,a n dF 0 is max-
+imal: any strict superset of F 0 would entail E in the presence of the direct
+non-redundant regularities. And condition (3) is satisfied as well:
+hL0; ∅i½F 0/C138½f Cg/C138 ⊧E. Condition (4) is satisfied as well: G is in F ∖F 0 and
+G ∈ F r,b u t G is also more deviant than ¬ G. And condition (5) is trivially
+satisfied as we did not remove any direct non-redundant regularity. We have
+shown that c is a cause of e in the scenario of isomorphic modified extended
+double prevention.7
+4.4.5. Switch
+Switching scenarios are paradigmatic for causal scenarios where our causal
+judgments are not transitive. In switching scenarios, some occurring event of
+type F helps determine the causal path by which another event is brought
+about. Crucially, the other event would also occur via an alternative causal
+path if no event of type F had occurred.
+7Baumgartner’s( 2013) theory correctly says that c is a cause of e (see pp. 101–102).
+A REGULARITY THEORY OF CAUSATION 23
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 23 ===
+To make it more concrete, consider a story provided by Hall ( 2000,p .
+205). Flipper is standing by a switch in the railroad tracks. A train ap-
+proaches in the distance. She flips the switch, so that the train travels down
+the right track, instead of the left. Because the tracks reconverge up ahead,
+the train arrives at its destination all the same. The commonsense judgment
+is that flipping the switch is not a cause of the train ’s arrival – even though
+flipping the switch is a cause of the train ’s traveling on the right track, and
+the train’s traveling on the right track is a cause of the train ’s arrival (Paul
+and Hall, 2013, p. 232).
+The structure of this switch scenario can be represented by Figure 10.
+The flipping of the switch f causes the train to travel on the right track r
+and prevents the train from traveling on the left track l. And the traveling
+on the right track r causes the train to arrive at its destination e.H o w e v e r ,
+the flipping of the switch f arguably is not a cause of the train ’s arrival e.
+Here is the causal model for the switch scenario.
+FIGURE 9. Isomorphic modified extended double prevention.
+FIGURE 10. Switch.
+PACIFIC PHILOSOPHICAL QUARTERLY24
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 24 ===
+Relative to this causal model,f is not a cause of e. For this to be seen, ob-
+serve first that all variables are descendants of F . Condition (5) thus pro-
+hibits to remove any direct non-redundant regularity fromL. But then there
+is no F 0 so that condition (2) is satisfied. Even for F 0 ¼ ∅, the direct non-
+redundant regularities entail E.
+By contrast, f is a cause of r.T a k eL0 ¼ L and F 0 ¼f Eg. Condition (2) is
+then satisfied: hL0; F 0i ⊭ R,a n d F 0 is maximal: any strict superset of F 0
+would entail R in the presence of the direct non-redundant regularities.
+The other conditions are trivially satisfied.
+Likewise, r is a cause of e.T a k e L0 ¼f L↔¬F ; E↔L⋁Rg and
+F 0 ¼f F ; ¬Lg. Condition (2) is then satisfied because hL0; F 0i ⊭ E,a n d
+F 0 is maximal: any strict superset of F 0 would entail E in the presence of
+the direct non-redundant regularities. The other conditions are trivially
+satisfied.
+The representation of switching scenarios is somewhat controversial. Our
+theory of causation delivers the desired results for the ‘basic’ switch
+discussed by Paul ( 2013, p. 232), for the more realistic switches discussed
+by Hitchcock ( 2009, pp. 395-396), and also a switch discussed by
+Halpern (2016, p. 72). We leave it to the reader to verify that our final theory
+of causation delivers also the desired results for all of the previously men-
+tioned scenarios.
+On Baumgartner’s( 2013) theory, the type-level structure of our simple
+switch is empirically equivalent to L ¼f L↔¬F ; R↔F ; E↔F ⋁¬F g.A n d
+so there is no cause of e. r does, in particular, not count as a cause of e.T h i s
+being said, Baumgartner’s theory delivers the correct verdicts for Paul and
+Hall’s basic switch.
+5. Reductiveness
+We have proposed a regularity theory of causation. On our preliminary the-
+ory, a cause is each member of any maximized minimal set of actual condi-
+tions which are jointly sufficient in a forward-directed way for the effect to
+occur in the presence of the direct non-redundant regularities. Causation
+so understood is forward-directed inferability along direct non-redundant
+A REGULARITY THEORY OF CAUSATION 25
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 25 ===
+regularities. The direct non-redundant regularities are material
+bi-implications obtained from true propositions of particular fact and mini-
+mization procedures. Causation is thus reduced to true propositions of par-
+ticular fact.
+However, our causal relation is so far relative to a set of selected var-
+iables. For the true non-redundant regularities are direct relative to a var-
+iable set (see Section 2). Extending the variable set under consideration
+may render direct non-redundant regularities indirect. Even worse, an exten-
+sion of the variable set may render a non-redundant regularity redundant
+(Baumgartner, 2013, pp. 93 –94). This poses the metaphysical question
+how we can identify causation in the world, as opposed to causation in a
+model containing a limited amount of variables.
+Our answer has two parts. First, causation in the world requires each non-
+redundant regularity to be stable – to remain non-redundant under any apt
+extension of the variable set. An extension of a variable set isapt just in case
+the additional variables do not introduce dependences among the variables
+that are stronger than causation, such as logical or mereological relations,
+supervenience, or grounding. Stable regularities are not relative to a particu-
+lar variable set because they remain non-redundant underany apt extension.
+Second, we say that a stable regularity⋁i⋀Ai↔E is metaphysically direct
+iff there are no stable regularities ⋁j ⋀Bj ↔C and ⋁k⋀Ck↔E, where the
+same variable appears as subformula in some Ai and some Bj ,w h i l eC ap-
+pears as subformula in some C k. Metaphysically direct regularities inherit
+from stable regularities that they are not relative to a particular variable
+set. And they remain metaphysically direct under each apt extension of the
+variable set.
+Metaphysically direct regularities allow us to define causation without
+model relativity. We sayc is a cause of e iff there is a set L0 ⊆ L of metaphys-
+ically direct regularities and a set F 0 ⊆ F of propositions of particular fact
+such that our conditions for causation are satisfied. This way to avoid model
+relativity may well lead to very fine-grained metaphysically direct regulari-
+ties. But it is also a way to reduce causation in the world to true propositions
+of particular fact.
+We have amended our preliminary theory by a condition of deviancy.
+Causation so understood is deviant forward-directed inferability along di-
+rect non-redundant regularities. We have said that occurring events are
+prima facie more deviant than their absences (Section 4.1). We could have
+said instead that occurring events have a metaphysically different status
+from their absences. This metaphysical postulate would have saved that
+our amended theory reduces causation to true propositions of particular
+fact. And it still solves the problem of isomorphic causal models and ac-
+counts for the non-causal status of many omissions. However, some omis-
+sions are judged to be causes. 8 The reason seems to be that the latter, but
+PACIFIC PHILOSOPHICAL QUARTERLY26
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 26 ===
+not the former, violate some norm. This is why we said in addition that an
+absence is more deviant than an event if the absence violates a norm active
+in the scenario under consideration. Causation is thus reduced to true prop-
+ositions of particular fact and deviancy from norms.
+Blanchard and Schaffer ( 2017) criticize the distinction between default
+and deviant events. Consider the causal model for bogus prevention in Sec-
+tion 4.1. They claim that this causal model is not apt for the scenario where
+no poison is administered because it lacks essential structure: a variable for
+whether or not the administered antidote neutralizes some poison. The
+causal model so enriched is not isomorphic to overdetermination and the ad-
+ministration of antidote is no cause of target’s survival. This solution, so they
+conclude, shows that we do not need a default-deviant distinction but apt
+causal models.
+Indeed, the metaphysically direct regularities presumably entail that a
+neutralization event occurs only if a poisoning event and an administration
+of antidote event occurs. One must wonder, however, whether there are no
+causal scenarios that share the simple structure of bogus prevention. It seems
+at least conceptually possible thatE↔¬F ⋀D is a true metaphysically direct
+regularity of some scenario, in which an event of typeF occurs, but no events
+of types D and E. But then the bogus preventer of typeF is not a cause of the
+absence of type E. Blanchard and Schaffer still need to explain this verdict.
+There is, of course, more to say about deviancy, norms, and the distinction
+between occurring events and absences. Hitchcock and Knobe (2009) argue
+that our judgment of causation is influenced by statistical and moral norms,
+as well as norms of proper functioning. However, they dodge the questions
+of what norms are in the first place and when they are active in a certain sce-
+nario. These are open problems. Another is that the distinction between oc-
+curring events and absences is not always clear cut. Is, for example, the death
+of a plant an occurring event, or rather the absence of continued living? It
+seems that this depends on the involved norms. Is it normal that plants con-
+tinue to live? Or is being alive the deviant state to being dead? The distinction
+between occurring events and absences seems to be related to the deviancy
+from norms. But an investigation of this relation must await another
+occasion.
+We have further amended our theory by a condition which ensures that
+the causal paths from a cause to its effect remain intact. Causation so under-
+stood is deviant forward-directed inferability along the causal paths of direct
+non-redundant regularities from cause to effect. The further amendment
+helps to handle scenarios that challenge the transitivity of causation, like
+short circuits and switches. Our final regularity theory thus accounts for
+8This claim is somewhat controversial. Beebee ( 2004) argues that omissions are never causes.
+Dowe (2000, Ch. 6) argues that omissions are no genuine causes, but may figure in true counterfactual
+claims about genuine causation. We are convinced by McGrath (2005) who argues that the causal sta-
+tus of omissions depends on norms.
+A REGULARITY THEORY OF CAUSATION 27
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 27 ===
+our judgments on a wide range of causal scenarios – wider than
+Baumgartner’s( 2013) theory. We summarize the results in the Conclusion.
+Except for perhaps norms, our regularity theory has no need for any
+modal notions. It does neither rely on a notion of nomic sufficiency
+(Hausman, 1998), nor on a notion of epistemic inferability (Andreas and
+Günther, 2019, 2020, 2021a). It does likewise not rely on counterfactuals.
+The latter distinguishes our theory from many contemporary theories of
+causation (Hall, 2004, 2007;L e w i s ,2000; Ramachandran, 1997;W o o d -
+ward, 2003;Y a b l o ,2002). These counterfactual theories are not reductive
+if they rely on antecedently given causal structures – as they often do in
+the form of given causal models (Andreas and Günther, 2021b;
+Gallow, 2021;H a l p e r n ,2016; Halpern and Pearl, 2005; Hiddleston, 2005;
+Hitchcock, 2001, 2007). Hitchcock ( 2001) and Halpern and Hitch-
+cock (2010) offer some guidelines on what constitutes an apt causal model.
+But the question is not fully answered (Blanchard and Schaffer, 2017).
+Our regularity theory, by contrast, has no need for discerning apt from
+non-apt causal models. It tells us what causes what relative to a particular
+causal model understood as a tuple of true direct non-redundant regularities
+and true propositions of particular fact. And we have proposed a way how
+we could avoid this model-relativity if we had the metaphysically direct reg-
+ularities at our disposal.
+6. Conclusion
+We have put forth a regularity theory of causation. The theory says, in es-
+sence, that causation is deviant forward-directed inferability along the
+causal paths of direct non-redundant regularities. The verdicts of our theory
+aligns with our pre-theoretic understanding of the causal relation in the con-
+sidered set of scenarios. In virtue of its deviancy condition, the theory can ac-
+count for the problem of isomorphic causal models and the problem of omis-
+sions. It can, furthermore, account for entangled causes and scenarios that
+challenge the transitivity of causation. The following table summarizes the
+results of our regularity theory in comparison with Baumgartner’s( 2013).
+Causes of e or ¬e Baumgartner (2013)O u r r e g u l a r i t y t h e o r y
+Overdetermination c; ac ; a
+Preemption c; dc ; d
+Bogus prevention ðf Þ; ¬d /C0
+Default omission ð¬f Þ; cc
+Deviant omission ð¬f Þ; c ¬f ; c
+Subcause c; ac ; a
+Short circuit /C0 d
+PACIFIC PHILOSOPHICAL QUARTERLY28
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 28 ===
+Table . (Continued)
+Causes of e or ¬e Baumgartner (2013) Our regularity theory
+Extended DP ac ; a
+Mod. extended DP ðf Þ; c; ¬d; ac ; a
+Iso. mod. extended DP c; h; d; ac ; h; d; a
+Simple switch /C0 r
+The table shows the causes ofe or e’sa b s e n c e– here abbreviated by ¬e – in
+the respective causal scenario. Expressions like ðf Þ mean that a suitable no-
+tion of typicality or deviancy could undo the causal status of the token event
+f on Baumgartner’st h e o r y .‘DP’ stands for double prevention.
+In the scenario of bogus prevention, there is no poisoning and target sur-
+vives. The absence of poison in target’s coffee, here ¬d, is as much a cause of
+her survival as the absence of someone stabbing her or the absence of some-
+one shooting her: the absences are not deviant and so are no causes. Body-
+guard’s putting antidote into her coffeef is in this scenario likewise no cause
+of her survival. Baumgartner can secure the latter but not the former verdict
+by imposing a certain typicality ranking on bogus prevention.
+We have discussed a short circuit scenario. A boulder is dislodged and
+rolls toward a hiker. The hiker sees the boulder coming and ducks, so that
+the boulder does not hit her. Had she not ducked, however, the boulder
+would have hit her. The dislodgement of the boulder f is no cause of the
+hiker’s remaining unscathed. Our theories agree. The hiker ’sd u c k i n gd is
+a cause of the hiker’s remaining untouched by the boulder. Our theory says
+so, but Baumgartner’s does not. A similar point applies to our simple switch.
+The train traveling on the right track r causes the train to arrive at its desti-
+nation. Our theory says so, unlike Baumgartner ’s. The table shows further
+differences.
+We think our theory aligns with our pre-theoretic judgments about causa-
+tion, and more so than Baumgartner’s. This is no wonder in a sense: our the-
+ory aims to be conceptually accurate, whereas Baumgartner’s seems to aim
+for empirical accurateness. And it may well turn out that his theory is empir-
+ically more accurate– perhaps scenarios like simple short circuits and simple
+switches have no empirical causal structure. But even if it should turn out
+this way, these scenarios seem to be conceptually possible. And so a concep-
+tually accurate theory should still align with our commonsense understand-
+ing of causation.
+We have set out to propose a regularity theory which reduces causation to
+true propositions of particular fact and deviancy from norms. And we have
+come a long way. We have defined direct non-redundant regularities in
+terms of true propositions of particular fact and minimization procedures.
+In turn, we have defined causal models in terms of direct non-redundant reg-
+ularities and propositions of particular fact. The regularity theory we
+A REGULARITY THEORY OF CAUSATION 29
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 29 ===
+proposed says what causes what relative to such a causal model. Finally, we
+have made a metaphysical proposal of how to avoid the model-relativity.
+Our regularity theory is, however, still incomplete. We haven’ts a i dm u c h
+on what norms are and when events deviate from norms in a given scenario.
+We have also bracketed the question whether or not norms can be reduced
+to propositions of particular matter of fact. It seems to us that the relation
+between the deviancy from norms and the distinction between events and
+absences, in particular, deserves more attention.
+We generally obtain the direction of causation via the direct
+non-redundant regularities. However, this strategy does not work for scenar-
+ios where some type effect has only a single type cause. We have pointed to-
+ward solutions for these simplistic but conceptually possible scenarios due to
+Baumgartner (2013) and Andreas and Günther (2024). But a comprehensive
+treatment in the confines of our theory is left for future work. 9
+There is no doubt: more work is to be done. But for now, we may hope to
+be one step closer to a regularity theory that grounds the type relation of
+cause and effect in matters of particular fact and aligns with our understand-
+ing of token causation.10
+[Correction added on 22 February 2024, after first online publication:
+Footnote 9 has been renumbered to 10, as a new footnote 9 and the related
+reference have been added in this version.]
+Holger Andreas
+Department of Economics, Philosophy and Political Science
+University of British Columbia
+Mario Günther
+Munich Center for Mathematical Philosophy
+LMU Munich
+REFERENCES
+Andreas, H., Armgardt, M. and Günther, M. (2023).‘Counterfactuals for Causal Responsibility
+in Legal Contexts,’ Artificial Intelligence and Law 31(1), pp. 115–132.
+Andreas, H. and Günther, M. (forthcoming-a). A Lewisian Regularity Theory. Philosophical
+Studies.
+Andreas, H. and Günther, M. (2019). ‘On the Ramsey Test Analysis of “Because”,’ Erkenntnis
+84(6), pp. 1229–1262.
+9In Andreas and Günther (forthcoming-a), we further develop the present regularity theory but
+without aiming for reductivity. We show in this sequel paper that there is another challenge to the
+reductivity of Baumgartner’s theory and ours. We do not think that this challenge is insurmountable.
+Unfortunately, we discovered it too late for dealing with it here. A solution must await another
+occasion.
+10Open Access funding enabled and organized by Projekt DEAL.
+PACIFIC PHILOSOPHICAL QUARTERLY30
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 30 ===
+Andreas, H. and Günther, M. (2020).‘Causation in Terms of Production,’Philosophical Studies
+177(6), pp. 1565–1591.
+Andreas, H. and Günther, M. (2021). ‘Regularity and Inferential Theories of Causation, ’ in
+Zalta, E.N. (ed.) The Stanford Encyclopedia of Philosophy . Metaphysics Research Lab,
+Stanford University, pp. 1–56. Fall 2021 edn.
+Andreas, H. and Günther, M. (2021a). ‘A Ramsey Test Analysis of Causation for Causal
+Models,’ The British Journal for the Philosophy of Science 72(2), pp. 587–615.
+Andreas, H. and Günther, M. (2021b). ‘Difference-Making Causation,’ Journal of Philosophy
+118(12), pp. 680–701.
+Andreas, H. and Günther, M. (In Press). ‘Actual Causation,’ dialectica.
+Andreas, H. and Günther, M. (2024). ‘From Reasons to Causes. An Epochetic Theory of
+Causation,’ Book Manuscript.
+Baumgartner, M. (2013).‘A regularity theoretic approach to actual causation,’Erkenntnis78(1),
+pp. 85–109.
+Beckers, S. (2021). ‘Causal sufficiency and actual causation,’ Journal of Philosophical Logic 50
+(6), pp. 1341–1374.
+B e e b e e ,H .( 2 0 0 4 ) .‘Causing and nothingness,’ in Paul, L.A., Hall, E.J. and Collins, J. (eds.)
+Causation and counterfactuals. MIT Press: Cambridge, MA, USA, pp. 291–308.
+Blanchard, T. and Schaffer, J. (2017).‘Cause without default,’in Beebee, H., Hitchcock, C. and
+Price, H. (eds.) M a k i n gad i f f e r e n c e. Oxford University Press: Oxford, pp. 175–214.
+Dowe, P. (2000).‘Physical causation,’Cambridge Studies in Probability, Induction and Decision
+Theory. Cambridge University Press.
+Gallow, D.J. (2021). ‘A model-invariant theory of causation,’ The Philosophical Review130(1),
+pp. 45–96.
+Hall, N. (2000). ‘Causation and the price of transitivity,’ Journal of Philosophy 97(4), pp. 198.
+Hall, N. (2004).‘Two concepts of causation,’in Collins, J., Hall, N. and Paul, L. (eds.)Causation
+and counterfactuals. MIT Press: Cambridge, MA, pp. 225–276.
+H a l l ,N .( 2 0 0 7 ) .‘Structural equations and causation,’Philosophical Studies132(1), pp. 109–136.
+Halpern, J.Y. (2015).‘A modification of the halpern-pearl definition of causality,’in Proc. 24th
+International Joint Conference on Artificial Intelligence (IJCAI 2015),p p .3 0 2 2–3033.
+Halpern, J. (2016). ‘Actual causality,’ MIT Press: Cambridge, MA.
+Halpern, J.Y. and Hitchcock, C. (2010).‘Actual causation and the art of modeling,’in Dechter,
+R., Geffner, H. and Halpern, J.Y. (eds.) Heuristics, probability, and causality: A tribute to
+judea pearl. College Publications: London, pp. 383–406.
+Halpern, J.Y. and Hitchcock, C. (2015).‘Graded causation and defaults,’British Journal for the
+Philosophy of Science 66(2), pp. 413–457.
+Halpern, J.Y. and Pearl, J. (2005).‘Causes and explanations: A structural-model approach. Part
+I: Causes,’ British Journal for the Philosophy of Science 56(4), pp. 843–887.
+Hausman, D.M. (1998).‘Causal asymmetries,’Cambridge Studies in Probability, Induction and
+Decision Theory. Cambridge University Press.
+H i d d l e s t o n ,E .( 2 0 0 5 ) .‘Causal powers,’ The British Journal for the Philosophy of Science 56(1),
+pp. 27–59.
+Hitchcock, C. (2001). ‘The intransitivity of causation revealed in equations and graphs, ’ The
+Journal of Philosophy 98(6), pp. 273–299.
+Hitchcock, C. (2007). ‘Prevention, preemption, and the principle of sufficient reason, ’
+Philosophical Review116(4), pp. 495–532.
+Hitchcock, C. (2009). ‘Structural Equations and Causation: Six Counterexamples, ’
+Philosophical Studies144(3), pp. 391–401.
+Hitchcock, C. and Knobe, J. (2009). ‘Cause and norm, ’ The Journal of Philosophy 106(11),
+pp. 587–612.
+A REGULARITY THEORY OF CAUSATION 31
+© 2024 The Authors
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PDF page 31 ===
+Hume, D. (1975). ‘An enquiry concerning human understanding,’ 3 Edited by Selby-Bigge, L.A.
+and Nidditch, P.H. Clarendon: Oxford.
+Lewis, D. (1973). ‘Causation,’ Journal of Philosophy 70(17), pp. 556–567.
+Lewis, D. (2000). ‘Causation as influence,’ Journal of Philosophy 97(4), pp. 182–197.
+Mackie, J.L. (1965). ‘Causes and conditions, ’ American Philosophical Quarterly 2(4),
+pp. 245–264.
+Mackie, J.L. (1974). ‘The cement of the universe: A study of causation ,’ Clarendon Library of
+Logic and Philosophy. Clarendon Press.
+McDermott, M. (1995). ‘Redundant causation,’ The British Journal for the Philosophy of
+Science 46(4), pp. 523–544.
+McGrath, S. (2005). ‘Causation by omission: A dilemma, ’ Philosophical Studies 123(1-2),
+pp. 125–148.
+Paul, L.A. (2000). ‘Aspect causation,’ Journal of Philosophy 97(4), pp. 235.
+Paul, L.A. and Hall, N. (2013). ‘Causation: A user’s guide,’ Oxford.
+Ramachandran, M. (1997). ‘A counterfactual analysis of causation, ’ Mind 106(422),
+pp. 263–277.
+Woodward, J. (2003).‘Making things happen: A theory of causal explanation,’Oxford University
+Press: Oxford.
+Wright, R.W. (1985). ‘Causation in tort law,’ California Law Review 73(6), pp. 1735–1828.
+Yablo, S. (2002). ‘De facto dependence,’ The Journal of Philosophy 99(3), pp. 130–148.
+PACIFIC PHILOSOPHICAL QUARTERLY32
+©2 0 2 4T h eA u t h o r s
+Pacific Philosophical Quarterly published by University of Southern California and John Wiley & Sons Ltd.
+ 14680114, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/papq.12447, Wiley Online Library on [12/03/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

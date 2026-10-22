@@ -1,12 +1,96 @@
 # What the run needs from you
 
-_Updated 2026-10-21 19:45 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-22 17:34 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
 Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text into the chat and say which slug it is. If you cannot get it, create `inbox/sources/<slug>.unavailable` (or just say so in the chat).
 
 **Cloud session:** on GitHub, open `paulmauriceadriendirac/elenchus`, switch to branch `claude/stoic-davinci-ktysg2`, go to `inbox/sources/`, use *Add file → Upload files*, commit to that branch, then tell the session "fetched". Or paste the text straight into the chat and name its slug.
+
+### `amb-andreas-gunther-2021`  (high)
+- **Citation:** Andreas, Holger and Mario Günther. 2021. A Ramsey Test Analysis of Causation for Causal Models. BJPS 72. doi:10.1093/bjps/axy074
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A4 (actual causation)
+- **Requested by:** orchestrator
+
+### `amb-das-2023`  (high)
+- **Citation:** Das, Nilanjan. 2023. The Value of Biased Information. BJPS. doi:10.1093/bjps/axaa003
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A6 (value of evidence and dogmatism)
+- **Requested by:** orchestrator
+
+### `amb-dorst-2019`  (high)
+- **Citation:** Dorst, Kevin. 2019. Lockeans Maximize Expected Accuracy. Mind 128. doi:10.1093/mind/fzx028
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A5 (belief-credence bridge)
+- **Requested by:** orchestrator
+
+### `amb-fritz-2022`  (high)
+- **Citation:** Fritz, Peter. 2022. Ground and Grain. Philosophy and Phenomenological Research 105: 299-330. doi:10.1111/phpr.12822
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A3 (Cantorian limits on grain)
+- **Requested by:** orchestrator
+
+### `amb-fritz-lederman-uzquiano-2021`  (high)
+- **Citation:** Fritz, Peter, Harvey Lederman and Gabriel Uzquiano. 2021. Closed Structure. Journal of Philosophical Logic 50: 1249-1291. doi:10.1007/s10992-021-09598-5
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A3 (Cantorian limits on grain)
+- **Requested by:** orchestrator
+
+### `amb-gallow-2021-causation`  (high)
+- **Citation:** Gallow, J. Dmitri. 2021. A Model-Invariant Theory of Causation. Philosophical Review 130: 45-96. doi:10.1215/00318108-8699682
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A4 (actual causation)
+- **Requested by:** orchestrator
+
+### `amb-hong-russell-2025`  (high)
+- **Citation:** Hong, Frank and Jeffrey Sanford Russell. 2025. Paradoxes of Infinite Aggregation. Noûs 59: 809-827. doi:10.1111/nous.12535
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A1 (infinite ethics)
+- **Requested by:** orchestrator
+
+### `amb-jackson-2020`  (high)
+- **Citation:** Jackson, Elizabeth. 2020. The Relationship between Belief and Credence. Philosophy Compass 15. doi:10.1111/phc3.12668
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A5 (belief-credence bridge)
+- **Requested by:** orchestrator
+
+### `amb-kowalczyk-2022`  (high)
+- **Citation:** Kowalczyk, Kacper. 2022. People in Suitcases. Journal of Moral Philosophy. doi:10.1163/17455243-19030009
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A2 (deontology under risk)
+- **Requested by:** orchestrator
+
+### `amb-lazar-graham-2021`  (high)
+- **Citation:** Lazar, Seth and Peter A. Graham. 2021. Deontological Decision Theory and Lesser-Evil Options. Synthese 198: 6889-6916. doi:10.1007/s11229-019-02496-z
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A2 (deontology under risk)
+- **Requested by:** orchestrator
+
+### `amb-nebel-2025`  (high)
+- **Citation:** Nebel, Jacob M. 2025. Infinite Ethics and the Limits of Impartiality. Noûs. doi:10.1111/nous.70010
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A1 (infinite ethics)
+- **Requested by:** orchestrator
+
+### `amb-wilkinson-2021`  (high)
+- **Citation:** Wilkinson, Hayden. 2021. Infinite Aggregation: Expanded Addition. Philosophical Studies 178: 1917-1949. doi:10.1007/s11098-020-01516-w
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** Anchor for ambitious problem A1 (infinite ethics)
+- **Requested by:** orchestrator
 
 ### `bales2023-will-ai-avoid-exploitation`  (high)
 - **Citation:** Adam Bales, 'Will AI avoid exploitation? Artificial general intelligence and expected utility theory', Philosophical Studies 182 (2025) 1519-1538, doi:10.1007/s11098-023-02023-4
@@ -288,6 +372,20 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Why:** CEM + SDA incompatibility results (panel member); need exact list of results
 - **Requested by:** lane-mapper L6
 
+### `e2-bronfman2014-conditionalization-kk`  (medium)
+- **Citation:** Bronfman, Aaron. 2014. Conditionalization and not Knowing that One Knows. Erkenntnis 79(4): 871-892. doi:10.1007/s10670-013-9570-0
+- **Where to try:** https://doi.org/10.1007/s10670-013-9570-0
+- **Needed:** full text (PDF)
+- **Why:** close prior work on accuracy and opaque evidence; currently omitted from E2 because unread
+- **Requested by:** E2 reviser
+
+### `e2-carr2021-modesty-proposal`  (medium)
+- **Citation:** Carr, Jennifer Rose. 2021. A Modesty Proposal. Synthese 198(4): 3581-3601. doi:10.1007/s11229-019-02301-x
+- **Where to try:** https://doi.org/10.1007/s11229-019-02301-x
+- **Needed:** full text (PDF)
+- **Why:** E2 cites Carr only via Meehan & Zhang's report; formally similar aggregate to the one analysed
+- **Requested by:** E2 reviser
+
 ### `eva-hartmann-rad-2020-learning-from-conditionals`  (normal)
 - **Citation:** Eva, B., Hartmann, S. & Rafiee Rad, S. (2020). Learning from Conditionals. Mind 129(514): 461-508. doi:10.1093/mind/fzz025
 - **Where to try:** https://doi.org/10.1093/mind/fzz025
@@ -539,4 +637,11 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Needed:** page as HTML or PDF
 - **Why:** panel map: rank conflicts between sources (assistant vs associate); pages blocked by bot check
 - **Requested by:** panel-analyst
+
+## Relay packets for another model (optional)
+
+Paste `relay/outbox/<id>.md` into the other model verbatim, then save its full reply, unedited, as `relay/inbox/<id>.md` with first line `model: <name and version>`.
+
+- `codex-eight-ideas-audit-20261022` → any frontier model other than Claude
+- `codex-expansion-20261022` → any frontier model other than Claude
 

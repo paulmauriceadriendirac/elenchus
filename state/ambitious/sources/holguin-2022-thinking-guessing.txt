@@ -1,0 +1,2547 @@
+
+
+Holguin | Thinking, Guessing, and Believing
+    |Philosophers' Imprint 
+
+ -->
+
+ -->
+
+Article
+
+Thinking, Guessing, and Believing
+
+    Author:
+
+Ben Holguín
+
+(Johns Hopkins University)
+
+Abstract
+
+This paper defends the view, put roughly, that to think that 
+p
+ is to guess that 
+p
+ is the answer to the question at hand, and that to think that 
+p
+ rationally is for one’s guess to that question to be (in a certain sense) non-arbitrary. Some theses that will be argued for along the way include: that thinking is question-sensitive and, correspondingly, that ‘thinks’ is context-sensitive; that it can be rational to think that 
+p
+ while having arbitrarily low credence that 
+p
+; that, nonetheless, rational thinking is closed under entailment; that thinking does not supervene on credence; and that in many cases what one thinks on certain matters is, in a very literal sense, a choice. Finally, since there are strong reasons to believe that thinking just is believing, there are strong reasons to believe that each of these claims is true of belief as well.
+
+Keywords:
+
+How to Cite:
+
+    Holguín, B.
+
+(2022) “Thinking, Guessing, and Believing”,
+
+Philosophers' Imprint
+. 22(0).
+doi: 
+https://doi.org/10.3998/phimp.2123
+
+1. Introduction
+
+There are many questions about belief on which there is little consensus. Is belief closed under entailment? What is the relationship between belief and credence? How about belief and knowledge? Can one believe a proposition without being disposed to assert it or use it as a premise in deliberation? Is belief sensitive to pragmatic or moral factors?
+
+But if there’s one thing that 
+has
+ been a matter of consensus—or near enough anyway
+
+1
+
+—it’s that it is rational to believe a proposition p only if one’s evidence for p is a good amount better than one’s evidence for ¬p. The question of how much better is debated. But the details aside, the general thought is widely regarded as a simple platitude.
+
+That is until recently. 
+Hawthorne et al. (2016
+) have argued compellingly that the evidential requirements on belief are much weaker than epistemological orthodoxy has taken them to be.
+
+2
+
+ Not only can one believe that p while knowing that one isn’t in a position to know that p, one can believe that p even while knowing that one’s evidence makes it more likely than not that p is false.
+
+We will see the details of some of their arguments shortly. But the train of thought underlying them is roughly this: (i) belief is what is denoted by the ordinary expression ‘believes’; (ii) ‘thinks’ and ‘believes’ are synonymous; (iii) the attitude denoted by ‘thinks’ has very weak evidential requirements; so (iv) belief has very weak evidential requirements.
+
+This paper takes no stance on the soundness of this argument. In particular, it takes no stance on the truth of either (i) or (ii). This is because the aim of the paper is not to defend a theory of belief 
+per se
+, but to defend a theory of 
+thinking
+—i.e., the attitude denoted by ‘thinks’ in sentences of the form ‘S thinks that p’. Of course, if thinking just is believing—if one thinks that p iff one believes that p—then this paper is also defending a theory of belief. But it will be better to develop a theory of thinking from a position of neutrality on these matters. This is not so much because the arguments for (i) or (ii) are particularly complex or controversial. Whether (i) is true or false seems to be mostly just a matter of stipulation. And though (ii)’s truth or falsity clearly isn’t a matter of stipulation, the case for it is very strong.
+
+Here is the short version.
+
+3
+
+ If thinking weren’t believing, then you’d expect to be able to imagine circumstances in which, for some agent S and proposition p, it would be natural to think or say that S thinks that p without believing it (or vice versa). But evidently we cannot imagine such circumstances:
+
+(1)
+ ✗ I think it’s raining, but I wouldn’t say I believe it is.
+
+✗ I’m not sure whether Jane thinks Federer will win Wimbledon, but I know she doesn’t believe he will.
+
+✗ My friends think I’m a good person, but my mom believes I am.
+
+It is difficult (if not impossible) to recover a coherent interpretation of these sentences. But replace ‘believe’ with (e.g.) ‘is sure’ or ‘is certain’ and they sound perfectly fine. If thinking is believing then it is entirely unsurprising why this is so. But if thinking isn’t believing—if one can think that p without believing that p (or vice versa)—then the existence of these judgments is a mystery. There is thus a strong case to be made that a theory of thinking just is a theory of the attitude that is the denotation of ‘believe’. So supposing that the attitude that is the denotation of ‘believe’ just is 
+belief
+, it follows that there is a strong case to be made that a theory of thinking just is a theory of belief.
+
+That said, some epistemologists are happy to help themselves to a notion of belief other than the one expressed by ‘believe’ in ordinary language.
+
+4
+
+ And although the arguments for the view that thinking is believing seem to me quite strong, it’s not as if they are unchallengeable.
+
+5
+
+ And so I think it would be useful if we approached our central topic—What does it take to think that p?—without prejudging whether in doing so we are also investigating the nature of belief.
+
+Until the paper’s concluding section, then, we will be concerned exclusively with thinking, with the aim of answering the following two questions:
+
+T
+he descriptive question
+: What is it to think that p?
+
+T
+he normative question
+: Under what conditions is it rationally permissible to think that p?
+
+For conspicuously absent from both 
+Hawthorne et al. (2016
+) and 
+Rothschild’s (2020
+)’s discussions is anything resembling a full account of thinking’s metaphysics and norms. 
+Dorst (2019
+), to his credit, develops a substantive view, but we will soon see reasons to think his cannot be correct. So regardless of one’s stance on the connections between thinking and believing, or between the attitude that is the denotation of ‘believe’ and the object of conventional epistemological study, there is a lacuna that deserves to be filled.
+
+And on that matter, this paper defends the view that to think that p is to guess that p is the answer to the question at hand, and that to think that p rationally is for one’s guess to be in a certain sense non-arbitrary. Some theses that will be argued for along the way include: that thinking is question-sensitive and, correspondingly, that ‘thinks’ is context-sensitive; that it can be rational to think that p while having arbitrarily low credence that p; that, nonetheless, rational thinking is closed under entailment; that thinking does not supervene on credence; and that, in many cases, what one thinks on certain matters is in a very literal sense a choice. Finally, if, as it seems, thinking just is believing, then all this goes for belief as well.
+
+2. A point about felicity judgments
+
+The main aim of this paper is to give a theory of the attitude that is the denotation of ‘thinks’. I will not be making any prior assumptions about this attitude’s theoretical roles, and so the primary source of evidence for the theory will be judgments about natural language sentences involving ‘thinks’—judgments that for the most part will simply be taken at face value.
+
+One might wonder how intuitions about natural language sentences containing ‘thinks’ could reveal facts about the 
+rational
+ requirements on thinking. But the idea is entirely familiar, even if not under this guise. There is something obviously strange about an utterance of a sentence like:
+
+(2)
+ ✗ I think that it’s raining and that it isn’t.
+
+This is what the ‘✗’ is meant to indicate. We could try to explain the strangeness by giving a semantics for ‘thinks’ (i.e., a theory of thinking 
+simpliciter
+) that makes ‘S thinks that p’ entail ‘It is not the case that S thinks that ¬p’. But that is not what the evidence warrants. If prior to asserting (2) I had declared that I tend to have irrational patterns of beliefs about the weather, there would be no impression that (2) expresses something that couldn’t be true. Indeed, it would be reasonable to cite the truth of (2) as evidence that I was irrational. Our judgments reveal something about the norms on thinking, rather than its metaphysics.
+
+By the same token, the fact that a sentence of the form ‘S thinks that p’ is felicitous in certain circumstances will often be pretty good evidence that S can rationally think that p in those circumstances. For example, if I know that Jones has an extremely low chance of winning the upcoming lottery and you ask me how I think he’ll fare, it would be perfectly appropriate for me to respond:
+
+(3)
+ ✓ I think he’ll lose.
+
+There is no impression that I represent myself as irrational in using (3) to answer your question about what I think. And we know that we often do detect when a person making a ‘thinks’-report would have to be irrational for the report to be true. So absent strong reasons to think our judgments about sentences like (3) are generally confused, we should think that a rational agent can speak from knowledge in asserting it.
+
+6
+
+With that, we can now turn to answering the two central questions: What does it take to think that p? And what does it take to think that p rationally? As it turns out, getting clear on the first question is much easier once we’ve gotten clear on the second. So for the next few sections our concern will be with the theory of rational thinking, rather than thinking 
+simpliciter
+.
+
+3. Thinking is weak
+
+We’ll start with a thesis defended in detail by 
+Hawthorne et al. (2016
+). It is that thinking is 
+weak
+. Somewhat more precisely:
+
+W
+eakness
+
+The evidential requirements on thinking that p are weaker than the evidential requirements on asserting that p, using p as a premise in deliberation, or being sure that p.
+
+Whether the evidential requirements on assertion, deliberation, and surety are equivalent is not a question we need to settle here. All that the proponent of 
+weakness
+ is committed to is that the strength of evidence needed to rationally think a proposition is less than the strength of evidence needed to do any of these other things—i.e., that there are circumstances in which it is appropriate for an agent to think that p, despite the fact that it would be inappropriate for her to be sure of it, assert it, or use it as a premise in deliberation.
+
+Since the arguments for 
+weakness
+ have already been given a fair bit of attention in the recent literature, our treatment of them here will be brief.
+
+One style of argument focuses on simple judgments about ‘thinks’-reports. For starters, it is perfectly felicitous to assert that one thinks p but is unsure whether p:
+
+(4)
+ ✓ I think it will rain, but I’m not sure it will.
+
+It is also perfectly felicitous to assert that one thinks but does not know whether p:
+
+(5)
+ ✓ I think it will rain, but I don’t know that it will.
+
+And it is also possible to felicitously assert that one thinks that p but knows that there is a substantial chance that ¬p:
+
+(6)
+ ✓ I think it will rain, but I know there’s a substantial chance it won’t.
+
+Since there are circumstances in which conjunctions like (4)–(6) can be uttered felicitously, it must be possible for a rational agent to speak truly in asserting them. Since it is possible for a rational agent to speak truly in asserting them, it must be possible for a rational agent to think it will rain while knowing there is a substantial chance that it won’t. But of course it is not possible for a rational agent in these circumstances to be sure that it will rain, assert it will rain, or use the proposition that it will rain as a premise in deliberation. Hence 
+weakness
+.
+
+We can make a similar argument for 
+weakness
+ by thinking about cases rather than sentences. Suppose A has purchased one of the 100 tickets to an upcoming lottery. She has no special information about what the outcome will be. Does A have enough information to be 
+sure
+ that she’ll lose the lottery? Of course not. Can she assert that she’ll lose, or take for granted that she’ll lose in (e.g.) deciding whether to sell the lottery ticket for a penny? No—this would be a failure on A’s part to give proper weight to her evidence. But does A have enough information to 
+think
+ that she’ll lose? Certainly. There is nothing irrational about thinking you’re not going to win the lottery.
+
+Indeed, examples that illustrate the weakness of thinking are legion. We think things about the weather, upcoming elections, unsolved murders, and mathematical conjectures even when we know full well that our evidence on these matters is far from decisive. But we do not act as if we are sure of these things. We do not assert them outright, and we do not treat them as the kind of propositions whose possible falsity can be ignored when engaging in practical deliberation. The evidential requirements on thinking are weak.
+
+4. Thinking is extremely weak
+
+Alright—but how weak? The answer this section defends is: 
+extremely
+ weak. One can rationally think that p despite the fact that one’s evidence makes the probability that p arbitrarily close to zero.
+
+7
+
+It will be helpful going forward to make some brief quick technical stipulations. I will model an agent S’s evidence (hereafter ‘E
+
+S
+
+’) as a proposition: in particular, the proposition that is the conjunction of all the propositions S rationally permitted to be sure of. I will associate with each such body of evidence a 
+rational credence function
+ (hereafter ‘C
+
+S
+
+(·)’), which takes propositions to real numbers on the unit interval. I will assume (i) that rational credence functions obey the axioms of the probability calculus, and (ii) that the rational credence function associated with a certain agent’s evidence takes p to 1 iff that agent’s evidence entails p. In saying ‘S has rational credence 
+x
+ that p’ (i.e., C
+
+S
+
+(p) = 
+x
+), I will mean that the rational credence function associated with S’s evidence takes p to 
+x
+, rather than that S 
+in fact
+ has credence 
+x
+ that p and is rational for doing so. As a reasonable gloss: S’s rational credences are the credences S would have were S rational.
+
+8
+
+With this terminology in place, here is a precise characterization of the claim that thinking is extremely weak:
+
+E
+xtreme
+ W
+eakness
+
+There is no positive number 
+x
+ such that: necessarily, for any agent S and proposition p, if C
+
+S
+
+(p) ≤ 
+x
+, then S is not rationally permitted to think that p.
+
+The argument for 
+extreme weakness
+ is fairly simple. But to warm up to it, I’ll first argue for the following more moderate principle:
+
+S
+ubstantial
+ W
+eakness
+
+Possibly: for some agent S and proposition p such that C
+
+S
+
+(p) < .5: S is rationally permitted to think that p.
+
+In other words: it is possible to rationally think p while having rational credence less than .5 that p.
+
+Suppose I tell you that an upcoming lottery has 100 tickets, that A has purchased 48 of them, and that the remaining 52 have been distributed evenly among 52 other people (B, C, D… etc.). So A has a 48% chance to win, everyone else 1%. Question: Who do you think will win?
+
+Here is a perfectly reasonable answer: A. After all, you know she is 
+48 times
+ more likely to win than anyone else. But you also know her chances of winning are a mere .48. So rational thinking does not require rational credence greater than .48. Hence 
+substantial weakness
+.
+
+Similar judgments can be elicited in other domains. Consider questions like:
+
+Which horse do you think will finish in first?
+
+Who do you think will get the Democratic nomination?
+
+How many people do you think were responsible for the “Jack the Ripper” murders?
+
+You might only have credence .35 that horse A will win, or that Harris will get the nomination, or that the Jack the Ripper murders were performed by no more than one person. But this is no principled barrier to offering these up as your answers. The question is about what you 
+think
+, not what you 
+know
+. Thinking isn’t just weak, it’s substantially weak.
+
+Of course, an argument for 
+substantial weakness
+ is not yet an argument for 
+extreme weakness
+. But since the argument for 
+extreme weakness
+ is really just a generalization of the argument for 
+substantial weakness
+, it is worth pausing to consider how this intermediate conclusion might be rejected. I’ll consider two quick objections.
+
+First, one might (correctly) point out that questions of the form ‘Wh-F do you think Gs?’ are standardly taken to 
+presuppose
+ that there is some F that you think Gs. So, for example, in asking you ‘Who do you think will win the lottery?’, I presuppose—possibly incorrectly—that there is some person you think will win. So perhaps in the circumstances of the 48 ticket case, your answering ‘A’ is merely your best attempt to accommodate my question’s presupposition, rather than a genuine attempt to report what you actually think.
+
+I think this response has some serious problems. For one, the fact that it is so easy to accommodate the presuppositions of the question ‘Who do you think will win the lottery?’ is itself good evidence that there is no barrier to thinking propositions in which one’s rational credence is a mere .48. Why? Because supposing that being in a position to rationally think that p is compatible with having rational credence .48 that p, it is no surprise that the question’s presuppositions are easy to accommodate. But supposing these things are 
+not
+ compatible, it is much less obvious why we would go about accommodating the question’s presuppositions. Notice that the appropriate answer to questions like ‘Who is it that you are sure will win the lottery?’ or ‘Who do you have greater than .5 confidence will win?’ is ‘No one’, not ‘A’. This is good evidence that, contrary to the imagined response, we do not blithely represent ourselves as irrational in order to try to accommodate the presuppositions of the questions we have been asked.
+
+Another issue with this objection is that one doesn’t even have to be asked a question to felicitously report oneself as thinking that A will win the lottery. In the circumstances of the 48 ticket lottery scenario, it is perfectly acceptable to assert outright: ‘I think A will win’, or ‘I think the winner will be A’, etc. Placing stress on ‘A’ makes the true readings of these sentences crystal clear. Likewise, if you were to overhear someone else say any of these things (knowing they have the same evidence as you), the natural conclusion to draw would 
+not
+ be that that person is irrational; rather, the natural conclusion to draw would be that that person is doing the perfectly normal thing of expressing the thought that the overwhelming favorite to win will, well, win. The fact that such reports are so readily elicited by questions is beside the point.
+
+A different objection to the argument for 
+substantial weakness
+ focuses on the apparent optionality in how one may choose to respond to questions about what one thinks. More concretely, though it can be appropriate to answer the lottery question with ‘I think A will win’, it seems it can 
+also
+ be appropriate to answer agnostically: say with an ‘I don’t know’, ‘I’m not sure’, ‘There isn’t anyone I think will win’, or what have you.
+
+Why would the availability of this alternative response cast doubt on the probative force of the data? I myself find it less than perfectly clear. But presumably it would have to involve the view that, for any given rational credence function and proposition p, rationality permits exactly one of the following attitudes: thinking that p, thinking that ¬p, or agnosticism toward p (i.e., neither thinking that p nor thinking that ¬p). It would then follow that at least one of the two seemingly appropriate kinds of answers (‘I think A will win’ vs. ‘I don’t have a view’) fails to track the underlying facts about rational thinking. And since the details of the case are such that the opinionated ‘I think A will win’ is more surprising than the agnostic ‘There isn’t anyone I think will win’—at least from the perspective of conventional epistemology—one might take this all to be reason to regard it with suspicion.
+
+I will return to the issue of optionality at some length in §10; for now my treatment of it will be brief. The view that the laws of rationality associate any given rational credence function with no more than one coarse-grained doxastic attitude is controversial and contestable. Though its theoretical appeal may count as some evidence that the natural language judgments ought to be regarded with suspicion, it would be a dubious methodological practice to dismiss them outright on such grounds.
+
+It is worth noting, for example, that the exact same phenomenon seems to arise in more mundane lottery cases. Suppose we modify the details of the lottery so that A has 99 of the 100 tickets, rather than 48. Now consider again the question ‘Who do you think will win?’. Though I expect many will be inclined to answer ‘A’, it is not at all clear that it would be irrational to answer agnostically instead. Responses like ‘I don’t know’ or ‘I have no particular view on who will win’ seem just fine. So there is optionality here too. But in this version of the case it seems especially implausible that the presence of optionality implies that we don’t report what we think when we say that we think the person who has a 99% chance of winning will win.
+
+Consequently, I believe we ought to take our intuitions about the answers to questions like ‘Wh- F do you think is G?’ seriously. And since there is nothing intuitively problematic about reporting that one thinks that the person with 48 of the 100 tickets to a lottery will win that lottery, we have good reason to believe that 
+substantial weakness
+ is true.
+
+From there the argument for 
+extreme weakness
+ follows quickly.
+
+9
+
+ For any real number 0 
+< x ≤
+ 1, we just need to come up with a lottery in which: (i) some person A has the best chance of winning and (ii) that chance is 
+x
+. For then we will have found a scenario in which it can be rational to think that A will win the lottery despite the fact that one’s rational credence in that proposition is no higher than 
+x
+.
+
+For 
+x
+ = .01, just imagine a 1,000 ticket lottery in which A has 10 tickets and the remaining 990 are distributed evenly among 990 other entrants. If asked ‘Who do you think will win the lottery?’ the answer ‘A’ remains appropriate. Again, this is not to say that it is mandatory. An ‘I don’t know’ or ‘There isn’t anyone I think will win’ is fine too. But one who answers ‘I think A will’ needn’t be irrational.
+
+The same goes regardless of whether A’s ticket count is 2 rather than 10 or if the total count is 10,000 rather than 1,000. Granted, if you shrink the gap between A’s chances of winning and the next highest person’s, or if you lower A’s absolute chances of winning—or both—then the agnostic response to the question ‘Who do you think will win?’ may start to seem more compelling. But again: 
+making the agnostic response more compelling is not the same thing as making the opinionated response unacceptable
+. And I contend that no matter how bad or close the odds happen to be, it will remain permissible to answer the question ‘Who do you think will win the lottery?’ with ‘
+The person who is most likely to
+’. So it is possible to rationally think that p even when one’s rational credence that p is arbitrarily close to zero. Hence 
+extreme weakness
+.
+
+5. Thinking is non-monotonic
+
+The kinds of cases in which it seems appropriate for S to think that p despite having very low credence that p seem to be those in which S’s evidence makes p more likely to be true than any other proposition in a class of relevant alternatives. This insight will eventually form the basis of this paper’s theory of rational thinking. But for now I want to put it to a different purpose, which is to argue that the relationship between rational thinking and rational credence is 
+non-monotonic
+:
+
+N
+on
+-M
+onotonicity
+
+There can be two agents (or the same agent at different times) S
+1
+ and S
+2
+ such that: 
+
+C
+
+S
+
+1
+
+(
+
+p
+
+)
+
+<
+
+C
+
+S
+
+2
+
+(
+
+p
+
+)
+
+, yet S
+1
+ is rationally permitted to think that p while S
+2
+ is not.
+
+In other words: increasing the strength of the evidence will sometimes decrease the strength of the conviction. One can start off rationally thinking that p, acquire evidence that increases the likelihood that p, but—because the evidence increases the likelihood of a relevant alternative q even more—one can thereby become rationally prohibited from thinking that p.
+
+The case for 
+non-monotonicity
+ looks to be at least as strong as the case for 
+extreme weakness
+. Consider a horse race with three entrants: A, B, and C. Suppose S
+1
+ has been told by an expert horse bettor that the horses’ chances of winning are 40%, 35%, and 25%, respectively, while S
+2
+ has been told by a different expert horse bettor that the horses’ chances of winning are 45%, 50%, and 5%. What is the rational thing for each of S
+1
+ and S
+2
+ to think about the outcome of the race?
+
+Intuitively, S
+1
+ should think A will win (or perhaps have no opinion) and S
+2
+ should think B will win (or perhaps have no opinion). If you were to ask S
+1
+ who she thinks will win, she would do just fine answering ‘A’, whereas she would seem to represent herself as irrational in answering either ‘B’ or ‘C’. Likewise, if you were to ask S
+2
+ who he thinks will win, he would do just fine answering ‘B’, whereas he would seem to represent himself as irrational in answering either ‘A’ or ‘C’. And all of this is despite the fact S
+2
+ has strictly greater rational credence that A will win than S
+1
+ has. That is to say: S
+2
+ would be less surprised than S
+1
+ if A were to win, would be willing to take worse bets on A’s winning, would have reason to think S
+1
+ is under-confident about A’s prospects, and so on. So we have a case in which there are two agents such that the first is rationally permitted to think that p while the second is not, and yet the second’s rational credence that p is higher. And of course the same point can be made with one agent instead of two: just modify the case so that the two sets of rational credences are both S
+1
+’s, only relativized to different times. Either way we have non-monotonicty.
+
+6. Thinking and closure
+
+This section will provide yet further evidence that rational thinking is about according what one thinks to what’s most likely to be true given one’s evidence. It will do so by considering the vexed question of whether rational thinking is closed under entailment—i.e., whether the following principle is valid:
+
+10
+
+C
+losure
+
+If a set of propositions Γ is such that S is rationally permitted to think every member of it, and Γ entails p, then S is rationally permitted to think that p.
+
+11
+
+There is a strong case to be made for closure. For one thing, it is highly plausible that rational agents can come to think that a proposition is true by deducing it from other propositions they already think are true. This seems to be exactly what we do when we try to reason through things. For another, we seem to ordinarily think and talk in a way that takes closure for granted. Notice how puzzling it is to speak as if the principle had false instances:
+
+(7)
+ ✗ I think B will be at the party. I also think C will be at the party. But I wouldn’t say I think both B and C will be at the party.
+
+✗ I think B will be at the party. And I think that if B will be at the party, C will be there too. But it’s not fair to say that I think C will be at the party.
+
+As is well known, however, 
+closure
+ also happens to face a number of putative counterexamples. Take 
+Kyburg’s (1961
+) famous lottery puzzle, for instance. You know that each of the 100 entrants to an upcoming lottery has a 1% chance of winning. Consequently, for each entrant it seems rationally permissible to think that that entrant won’t win. But of course you know that 
+someone
+ has to win, and are thus not rationally permitted to think that none of the entrants will. And therein lies the problem: if for each entrant you’re rationally permitted to think that that entrant won’t win, yet you are 
+not
+ rationally permitted to think that none of the entrants will win, then rational thinking cannot be closed under conjunction.
+
+The standard explanation for why closure allegedly fails in these sorts of cases is in terms of epistemic risk aggregation. Taken individually, each of the lottery propositions about specific entrants has a very high chance of being true, and is thus rationally thinkable. But each also has 
+some
+ chance of being false. As one conjoins these propositions the chances aggregate, eventually resulting in a proposition that is guaranteed to be false. And this is allegedly why, contrary to closure, one can rationally think each member of a set of propositions without being entitled to rationally think their conjunction.
+
+One point I think is worth emphasizing is that even if we do take cases like Kyburg’s to undermine closure, we should reject these sorts of risk-theoretic diagnoses of its invalidity. After all, we know from §4’s discussion of 
+extreme weakness
+ that there is no principled barrier to rationally thinking a proposition in which one’s rational credence is arbitrarily close to zero. So it’s not obvious why increasing the number of conjuncts in the relevant lottery proposition should automatically make it less fit as an object of rational thought. More to the point, though: if we’re willing to take the “rational thinking is about thinking most likely” slogan seriously, then we should expect to find even more striking putative counterexamples to closure—ones that have nothing in particular to do with the aggregation of risk.
+
+And indeed such examples are not hard to come by. Suppose we’re trying to track down James Bond. Our sources tell us there is a 40% chance he is hiding in London and a 20% chance he is hiding in each of Berlin, Frankfurt, and Munich. In light of this information, are we in a position to think that Bond is hiding in London? Well, suppose we are asked ‘Which city do you think Bond is in?’. By my lights, ‘We’re not sure, but we think he’s in London’ is a perfectly appropriate response. So we must be rationally permitted to think that Bond is in London. But are we rationally permitted to think that Bond is in the 
+United Kingdom
+? It’s not so clear. If asked ‘Which country do you think Bond is in?’, the most natural response would be ‘We’re not sure, but we think he’s in Germany’, or perhaps just the agnostic ‘We’re not sure’. If instead we were to answer ‘We’re not sure, but we think he’s in the United Kingdom’, it would be reasonable to object that we are significantly more confident that he is in Germany. So despite the fact that we appear to be rationally permitted to think that Bond is in London, we don’t appear to be rationally permitted to think that Bond is in the United Kingdom. And this is despite the fact that we are certain that London is in the United Kingdom, and thus have no less rational credence that he’s in the United Kingdom than we do that he is in London.
+
+What to make of 
+closure
+ then? At this point it is hard to say. But this much is clear: if the putative counterexamples to the principle are genuine, we are owed a debunking explanation of the theoretical arguments in favor of the principle as well as the intuitions to the effect that speeches like (7) are defective. And if the putative counterexamples are merely putative, then we are owed a debunking explanation of at least one of the intuitive judgments driving them.
+
+I will ultimately leverage the “rational thinking is about thinking most likely” slogan to argue in favor of the second approach. In particular, I will take 
+closure
+ to be valid, and I will try to explain away the recalcitrant data in terms of illicit shifts in the underlying class of alternatives against which the relevant ‘thinks’-reports are assessed. But first it will be good to take stock.
+
+7. Against existing views
+
+So far I’ve argued in favor of 
+weakness, extreme weakness
+, and 
+non-monotonicity
+, and have made an equivocal case for 
+closure
+. Since it will be useful in what’s to come, I will now make explicit the existence of a 
+consistency
+ requirement on rational thinking, which is the natural principle underlying the badness of speeches like (2, ‘I think that it’s raining and that it isn’t’):
+
+12
+
+C
+onsistency
+
+S is not rationally permitted to be such that: S thinks that p and S thinks that 
+¬
+p.
+
+The aim now is to find a theory of rational thinking that can make sense of all of these principles. I’ll start by ruling out the two main existing theories of rational thinking: Cartesianism and Lockeanism.
+
+7.1 Against Cartesianism
+
+According to the Cartesian conception of rational thinking, the evidential requirements on thinking are the same as those on 
+full belief
+:
+
+13
+
+C
+artesianism
+
+S is rationally permitted to think that p iff S is rationally permitted to fully believe that p.
+
+What does it take to fully believe that p? Well, that depends on which Cartesian you ask. But the answers tend to share a family resemblance. On some ways of understanding the notion, S fully believes that p just in case S can “rule out” p.
+
+14
+
+ On others, S fully believes that p just in case S is disposed to assert p or use p as a premise in deliberation.
+
+15
+
+ And yet on others, full belief is understood in terms of epistemological notions familiar from ordinary language: S fully believes that p just in case S is sure (or certain) that p.
+
+16
+
+These ways of understanding ‘full belief’ are neither obviously equivalent nor obviously inequivalent. But so long as one’s preferred interpretation of ‘full belief’ is anywhere in the vicinity of the sorts of interpretations just described, 
+cartesianism
+ is simply a non-starter. Rational agents who know that there is a substantial chance that ¬p are not disposed to assert p or use p as a premise in deliberation; nor are they the internal duplicates of agents who know that p; nor are they sure (certain) that p. But as we know from §3’s discussion of 
+weakness
+—and even more dramatically from §4’s discussion of 
+extreme weakness
+—rational agents who know that there is a substantial chance that ¬p can do perfectly well in thinking that p. So the rational norms on thinking are not the rational norms on full belief.
+
+7.2 Against Lockeanism
+
+So much for 
+cartesianism
+. Next we turn to its main rival:
+
+17
+
+L
+ockeanism
+
+S is rationally permitted to think that p iff S’s rational credence that p is sufficiently high.
+
+How high is ‘sufficiently high’? Well, that depends on which Lockean you ask.
+
+18
+
+ But on standard versions of 
+lockeanism
+, sufficiently high rational credence is 
+at a minimum
+ rational credence greater than .5.
+
+The reason why is simple. Suppose the threshold for rational thinking is no greater than .5—that is: if C
+
+S
+
+(p) = .5, then S is rationally permitted to think that p. By assumption C
+
+S
+
+(p) = .5 iff C
+
+S
+
+(¬p) = .5. It thus follows that if C
+
+S
+
+(p) = .5, then S is rationally permitted to think that ¬p too. But consistency tells us that rational agents are never permitted to think both that p and that 
+¬
+p. So it seems the threshold for rational thinking has to be greater than .5. This gives us:
+
+S
+imple
+ L
+ockeanism
+
+S is rationally permitted to think that p only if C
+
+S
+
+(p) > .5.
+
+The obvious problem with 
+simple lockeanism
+ is that it is incompatible with 
+extreme weakness
+. Rational agents can do perfectly well thinking that p even when their rational credence that p is arbitrarily close to zero. So any version of 
+lockeanism
+ that validates 
+simple lockeanism
+ must be false.
+
+But that doesn’t mean 
+lockeanism
+ must be false, for it is possible to be a Lockean without being a simple Lockean. Indeed, if one follows 
+Dorst’s (2019
+) lead and makes the notion of ‘sufficient likelihood’ both 
+context
+- and 
+proposition
+-sensitive, then one will have the resources to account for 
+extreme weakness
+. The Lockean should thus become a 
+sophisticated
+ Lockean:
+
+S
+ophisticated
+ L
+ockeanism
+
+For all contexts 
+c
+: ‘S is rationally permitted to think that p’ expresses a true proposition in 
+c
+ iff C
+
+S
+
+(p) > T
+<
+c
+,p>
+.
+
+Here ‘T
+<
+c
+,p>
+’ should be read as ‘the threshold for rationally thinking that p according to context 
+c
+’. Allowing ourselves some looseness with use and mention, what 
+sophisticated lockeanism
+ says is that whether S is rationally permitted to think that p depends on whether S’s rational credence that p is sufficiently high 
+by the standards context sets for p
+.
+
+19
+
+Here’s how going context- and proposition-sensitive allows the Lock-ean to accommodate 
+extreme weakness
+ without losing 
+consistency
+. First, the sophisticated Lockean stipulates that for every context 
+c
+ and proposition p, T
+<
+c
+,p>
+ + T
+<
+c
+,¬p>
+ ≥ 1. Since S’s rational credence that p and S’s rational credence that ¬p will always sum to 1, this stipulation guarantees that there is no context in which ‘S rationally thinks that p and S rationally thinks that ¬p’ expresses a true proposition. This in turn guarantees that there won’t be any counterexamples to 
+consistency
+. Second, they stipulate that for no proposition p is there a positive number 
+x
+ such that in every context 
+c
+, T
+<
+c
+,p>
+ ≥ 
+x
+. That is to say: for any given proposition p and real number 
+x
+ > 0, there is always a context in which the threshold for rationally thinking that p is less than 
+x
+. This guarantees that the view has the flexibility to account for the cases motivating 
+extreme weakness
+.
+
+Still, 
+sophisticated lockeanism
+ faces other significant challenges. In addition to requiring brute stipulations about the coordination of the proposition-sensitive thresholds for rational thinking, the view remains powerless to account for 
+non-monotonicity
+ or for the complexities surrounding 
+closure
+.
+
+Start with 
+non-monotonicity
+. Despite going in for context- and proposition-sensitivity, 
+sophisticated lockeanism
+
+is
+ a version of 
+lockeanism
+. It is thus committed to the core idea that whether one is permitted to rationally think that p depends on whether one’s rational credence that p 
+is sufficiently high
+. What counts as ‘sufficiently high’ might change depending on context and the proposition in question, but hold those two things fixed and you fix the evidential requirements on rational thinking. This means that the sophisticated Lockean is inevitably committed to the idea that the relationship between rational credence and rational thinking is monotonic: i.e., that if an agent is rationally permitted to think that p while having rational credence 
+x
+ that p, then any agent with rational credence 
+y
+ ≥ 
+x
+ that p is rationally permitted to think that p too. But we know that’s not true, for we know from §5 that the relationship between rational thinking and rational credence is non-monotonic. Whether an agent is rationally permitted to think that p depends on more than just whether their rational credence that p exceeds some absolute threshold; it also depends on whether there are any salient alternatives to p in which that agent has higher rational credence.
+
+With respect to 
+closure
+, the sophisticated Lockean predicts the existence of many contexts in which the principle fails. This is for the simple reason that whenever ‘sufficiently high rational credence’ means something other than ‘has rational credence 1’—which we know it often will—it will be possible to have sufficiently high rational credence that p and sufficiently high rational credence that q without having sufficiently high rational credence that p 
+and
+ q, or to have sufficiently high rational credence that p and sufficiently high rational credence that p ⊃ q without having sufficiently high rational credence that q. This much is fine in a vacuum. The problem is that it’s not at all clear why 
+closure
+ should 
+seem
+ valid if 
+sophisticated lockeanism
+ is true. For according to the sophisticated Lockean, being in a position to rationally think that p 
+just is
+ having sufficiently high rational credence that p (even if what counts as ‘sufficiently high’ varies from context to context and proposition to proposition). So the view seems powerless to explain why speeches like (7) should seem bad given that speeches like the following are basically fine:
+
+(8)
+ ✓ I have high credence B will be at the party. I also have high credence C will be at the party. But I wouldn’t say I have high credence that both B and C will be at the party.
+
+Considerations from 
+non-monotonicity
+ and 
+closure
+ thus provide strong evidence against 
+sophisticated lockeanism
+. Indeed, they provide strong evidence that we ought to abandon entirely the thought that rational thinking has anything to do with having sufficiently high rational credence. In its place we should embrace the thought that rational thinking is about having 
+highest
+ rational credence. The next section develops this idea in detail.
+
+8. Rational thinking as thinking most likely
+
+The goal is to give a theory of rational thinking that does justice to the intuitive thought that rational thinking is about thinking true the proposition 
+most
+ supported by one’s evidence. Since whether a proposition is most supported by one’s evidence depends on the alternatives to which it is compared, alternative-sensitivity is going to have to be built into the theory of rational thinking. I’ll thus start by briefly complicating the picture of thinking 
+simpliciter
+.
+
+8.1 Thinking as question-sensitive
+
+On the standard picture, thinking is a two-place relation between an agent and a proposition. ‘S thinks that p’ expresses a truth just in case S stands in the thinking relation to the proposition denoted by p. I am going to reject the standard picture in favor of one on which thinking is a three-place relation between an agent, a proposition, and a 
+partition
+. A partition Q
+?
+ is a set of mutually exclusive and exhaustive propositions: conjoin any two of its members and you’ll get the contradictory ⊥; disjoin all of its members and you’ll get the tautologous ⊤. If theorists working in the tradition of 
+Hamblin (1958
+) and 
+Groenendijk and Stokhof (1984
+) are right—and from here on out I will assume that they are—then partitions of this sort are the meanings of natural language questions. For example: the meaning of the question ‘Is it true that A will win the race?’ (at least on its most natural readings) is the partition {A wins, A doesn’t win}, while the meaning of the question ‘Who will win the race?’ (again on its most natural readings) is the partition {A wins, B wins, C wins}.
+
+20
+
+ Consequently, I will say that thinking is a three-place relation between an agent, a proposition, and a question. I will use phrases like ‘S thinks that p relative to the question Q
+?
+’ to describe this three-place thinking relation, and I will use the shorthand ‘thinks
+Q
+ p’ to indicate that p is thought relative to Q
+?
+.
+
+21
+
+Although I’ve said basically nothing about how this three-place thinking relation is working, we already know enough to know that the natural language expression ‘thinks’ must be context-sensitive. ‘Thinks’-reports made in ordinary language take only two arguments at surface form. We say ‘S thinks that p’, not ‘S thinks Q
+?
+-ishly that p’. So if thinking is question-sensitive and the attitude we talk about with ‘thinks’-reports is thinking, it must be that the semantic value of ‘thinks’ is a function from contexts to question-sensitive thinking relations: ‘S thinks that p’ is true in 
+c
+ iff S thinks
+Q
+ that p, for the 
+c
+-supplied question Q
+?
+.
+
+So: agents don’t think propositions are true or false 
+simpliciter
+; they think propositions are true or false relative to certain questions. But what is it to think a proposition is true relative to a question? The answer to that will come in §11. It will be much easier to answer it after trying to answer the question of when an agent is 
+rationally permitted
+ to think a proposition is true relative to a certain question. So for now I’ll simply take the notion of 
+a
+rational question-sensitive thinking for granted.
+
+8.2 Rational thinking in terms of best guesses
+
+What does it take to 
+rationally
+ think
+Q
+ that p? Here’s a first stab at it. Let E
+S
+ be S’s evidence proposition (i.e., the conjunction of all the propositions S is sure of). And let S’s 
+best guess
+ to Q
+?
+ be the answer to Q
+?
+ in which S has highest rational credence (if multiple answers are tied for first, S’s best guess is their disjunction). We can then say that rational thinking is thinking in terms of one’s best guess:
+
+B
+est
+ G
+uess
+
+S is rationally permitted to think
+Q
+ that p just in case: the conjunction of E
+S
+ and S’s best guess to Q
+?
+ entails p.
+
+To both motivate and get a feel for how 
+best guess
+ is working, consider again the horse race case from §5’s discussion of 
+non-monotonicity
+. An upcoming horse race has three entrants: A, B, and C. You know their respective chances of winning are 40%, 35%, and 25%. Here are two things I might ask you:
+
+1)
+   Who do you think will win the race?
+
+2)
+   Do you think it is true that A will win the race?
+
+Given your evidence, it would be perfectly appropriate to answer the first question with something like ‘I think A will win’, perfectly appropriate to answer the second question with something like ‘No, I think one of the other horses will’, but not at all appropriate to answer either question with something like ‘I think both that A will win the race and that A won’t win the race’.
+
+Here is how 
+best guess
+ explains this. Letting 
+a, b
+, and 
+c
+ be the propositions that horse A wins, B wins, and C wins respectively, we get two distinct partitions of logical space: {
+a, ¬a
+} and {
+a, b, c
+}. The first corresponds roughly to the meaning of the ordinary language question ‘Is it true that A will win the race?’, the second to ‘Who will win the race?’. We can use these questions to distinguish between two thinking relations: thinking
+{
+a,¬a
+}
+ and thinking
+{
+a,b,c
+}
+. Since your rational credence that ¬a is greater than your rational credence that 
+a
+, you are rationally permitted to think
+{
+a,¬a
+}
+ that A won’t win. And since your rational credence that 
+a
+ is greater than both your rational credence that 
+b
+ and your rational credence that 
+c
+, you are rationally permitted to think
+{
+a,b,c
+}
+ that A will win. So with respect to the proposition that A will win, what you are rationally permitted to think
+{
+a,¬a
+}
+ is quite distinct from what you are rationally permitted to think
+{
+a,b,c
+}
+. Lastly, since your rational credence that 
+a
+ ∧ ¬
+a
+ is 0, there is no question Q
+?
+ such that the answer to it you assign highest rational credence entails (with the rest of your evidence) the proposition that A will win and not win. Thus, there is no Q
+?
+ such that you are rationally permitted to think
+Q
+ that A will win and that A will not win.
+
+Here is how we connect these facts about question-sensitive rational thinking to our ordinary language judgments about ‘thinks’. In the contexts evoked by considering questions like ‘Do you think it is true that A will win the race?’, the contextually supplied question tends to be the polar one: {
+a, ¬a
+}. Since you are rationally permitted to think
+{
+a,¬a
+}
+ that A won’t win the race, your assertion of ‘I don’t think A will win the race’ is felicitous (i.e., both true and consistent with your being rational). Similarly, in the contexts evoked when considering questions like ‘Who will win the race?’, the contextually supplied question tends to be the wh- one: {
+a, b, c
+}. Since you are rationally permitted to think
+{
+a,b,c
+}
+ that A will win the race, your assertion of ‘I think A will win the race’ is felicitous. And since there is no Q
+?
+ for which you are in a position to rationally think
+Q
+ that A will and that A won’t win the race, there is no context in which your assertion of ‘I think that A will and that A won’t win the race’ can be felicitous.
+
+It is now a straightforward matter to see how 
+best guess
+ manages to validate the various principles about rational thinking gathered over the first few sections of the paper. Well, almost straightforward. Since we’ve moved to a question-sensitive theory of thinking, the principles technically need to be restated meta-linguistically:
+
+ML W
+eakness
+ Possibly, there is an agent S and context 
+c
+ such that: ‘S is rationally permitted to think p’ is true in 
+c
+ even though ‘S is rationally permitted to assert that p’, ‘S is rationally permitted to use p as a premise in deliberation’, and ‘S is rationally permitted to be sure that p’ are all false in 
+c
+.
+
+ML E
+xtreme
+ W
+eakness
+ There is no positive number 
+x
+ such that: necessarily, if C
+
+S
+
+(p) ≤ 
+x
+, then in every context 
+c
+: ‘S is not rationally permitted to think that p’ is true in 
+c
+.
+
+ML N
+on-monotonicity
+ There can be two agents S
+1
+ and S
+2
+ (or the same agent at different times) such that 
+
+C
+
+S
+
+1
+
+(
+
+p
+
+)
+
+<
+
+C
+
+S
+
+2
+
+(
+
+p
+
+)
+
+ and a context 
+c
+ such that: ‘S
+1
+ is rationally permitted to think that p’ is true in 
+c
+ while ‘S
+2
+ is rationally permitted to think that p’ is false in 
+c
+.
+
+ML C
+losure
+ In every context 
+c
+: if ‘A set of propositions Γ is such that S is rationally permitted to think every member of it’ is true in 
+c
+, and Γ entails p, then ‘S is rationally permitted to think that p’ is true in 
+c
+ too.
+
+ML C
+onsistency
+ In every context 
+c
+: ‘S is not rationally permitted to be such that: S thinks that p and S thinks that ¬p’ is true in 
+c
+.
+
+But it is easiest to see how the view validates them by allowing ourselves some looseness with use and mention. For starters, since p can be your best guess to Q
+?
+ even when you know there is a substantial chance that ¬p, it’s no surprise that thinking is weak. Indeed, since p can be your best guess to Q
+?
+ even when your rational credence that p is arbitrarily close to zero, it’s no surprise that thinking is 
+extremely
+ weak. The relationship between rational thinking and rational credence is non-monotonic because whether p is your best guess to Q
+?
+ depends not on your absolute rational credence that p, but your relative rational credence that p. Just as Jeff Bezos can go from being the richest person in the world to the second richest all while increasing his fortune (say because Elon Musk increased his even more), you can go from having highest rational credence that p to having highest rational credence in a proposition that entails that ¬p all while gaining rational credence that p.
+
+What about 
+closure
+? Well, given the question-theoretic interpretation of the context-sensitivity of ‘thinks’, the claim that rational thinking is closed under entailment is just the claim that for any question Q
+?
+, one is rationally permitted to think
+Q
+ what is entailed by the rest of what one is rationally permitted to think
+Q
+. And as it turns out, 
+best guess
+ makes rational thinking
+Q
+ closed under entailment. The reason why, in abstract, is that 
+best guess
+ is a 
+Hintikkan (1962
+) analysis of rational thinking
+Q
+, and any Hintikkan analysis of a propositional attitude will get you closure under entailment.
+
+More concretely, let G
+S
+ be the set of worlds that results from intersecting E
+S
+ with S’s best guess to Q
+?
+. According to 
+best guess
+, then, ‘S is rationally permitted to think that p’ expresses a true proposition in context just in case every world in G
+S
+ is a p-world. This makes it easy to see why 
+best guess
+ gets closure under entailment more or less for free. For any two propositions p and q and world 
+w
+, if p entails q, then 
+w
+ is a p-world only if it is a q-world. (If 
+w
+ were a p∧¬q-world, then p wouldn’t entail q.) It thus follows that ‘S is rationally permitted to think that p’ is true only if every world in G
+S
+ is a q-world. But if every world in G
+S
+ is a q-world, then holding context fixed, ‘S is rationally permitted to think that q’ expresses a true proposition too. Therefore, ‘S is rationally permitted to think that p’ expresses a true proposition in context only if ‘S is rationally permitted to think that q’ expresses a true proposition in context. Since q is an arbitrary entailment of p, we have 
+closure
+.
+
+22
+
+With respect to the intuitive evidence 
+against
+ closure under entailment, 
+best guess
+’s diagnosis is that the putative counterexamples invoke non-uniform resolutions of the context-sensitivity of ‘thinks’ and are thus not genuine counterexamples to the principle.
+
+Consider the putative counterexample to the closure of rational thinking under material implication. S has rational credence .4 that Bond is in London, .2 that he is in each of Berlin, Frankfurt, and Munich respectively, and rational credence 1 that London is in the United Kingdom and that each of Berlin, Frankfurt, and Munich is in Germany. In any context in which ‘S is rationally permitted to think Bond is in London’ expresses a true proposition, ‘S is rationally permitted to think Bond is in the United Kingdom’ expresses a true proposition. And in any context in which ‘S is rationally permitted to think Bond is in Germany’ expresses a true proposition, ‘S 
+isn’t
+ rationally permitted to think Bond is in London’ expresses a true proposition. The impression that one can be in a position to rationally think that Bond is in London but not that he is in the United Kingdom is simply due to the fact that what one is rationally permitted to think relative to the question ‘Which city is Bond in?’ is distinct from what one is rationally permitted to think relative to the question ‘Which country is Bond in?’. 
+Mutatis mutandis
+ for 
+Kyburg’s (1961
+) lottery puzzle. For each entrant 
+n
+, relative to the question ‘Will entrant 
+n
+ win the lottery?’ S is rationally permitted to think 
+n
+ won’t win the lottery. But relative to the question ‘Will someone win the lottery?’ S is not rationally permitted to think of any individual entrant that that entrant will not win. Thus, there is no single context in which ‘S is rationally permitted to think someone will win’ and, for each 
+n
+, ‘S is rationally permitted to think entrant 
+n
+ won’t win’ all express true propositions.
+
+In short: by combining the idea that thinking is a question-sensitive attitude whose norms are a function of an agent’s best guesses to those questions, 
+best guess
+ captures all of the puzzling properties of rational thinking outlined in the paper so far.
+
+9. Situating the view
+
+That said, I do not think 
+best guess
+ is the true answer to the normative question. This is for reasons that will be explored in the next section, where the paper’s final theory of rational thinking will be presented. But before getting into that, I think it will be helpful to explain the relationship between 
+best guess
+ and more familiar “contrastivist” theories of knowledge and belief. I will also discuss a popular objection stemming from the view’s use of question-based context-sensitivity.
+
+9.1 Comparison to existing forms of contrastivism
+
+Following 
+Baumann (2013
+), we can say that a 
+contrastivist
+ about a propositional attitude Φ is someone who thinks that the facts about whether S stands in Φ to p are relative to a contrast class (say, the answers to a question). Understood in this way, 
+best guess
+ is a contrastive theory of thinking. But there are important respects in which it is quite unlike standard forms of contrastivism, such as 
+Schaffer’s (2005
+, 
+2007
+) contrastive theory of knowledge or 
+Blaauw’s (2012b
+) contrastive theory of belief.
+
+23
+
+Perhaps the most striking difference is that on standard forms of contrastivism, the contrast classes to which (e.g.) knowledge or (full) belief are sensitive need 
+not
+ exhaust logical space. For example, on contrastivist theories of knowledge like Schaffer’s, one can know that one has hands relative to the question ‘Do I have hands or claws?’ but not relative to the question ‘Do I have hands or am I envatted?’. Indeed, it is essential to the contrastivist’s solution to certain skeptical puzzles—one of the main selling points of the view—that the contrast classes 
+themselves
+ have the ability to “rule out” certain kinds of skeptical possibilities. This is what ‘Do I have hands or claws?’ does: it presupposes that one has either hands or claws (and thus that one is not envatted).
+
+best guess
+’s attitude toward the skeptical puzzles is very different. For one, the questions to which I claim ‘thinks’ is sensitive are 
+partitional
+: that is, their answers exhaust logical space, and so include the remote regions where skeptical hypotheses are true. This means the contrastivist’s solution to the skeptical puzzles won’t work for ‘thinks’. But this is no matter, for there isn’t any skeptical puzzle for ‘thinks’ in the first place: thinking is a weak attitude, so it’s perfectly intuitive to think that you can rationally 
+think
+ you’re not envatted, even when your evidence is less than fully decisive on the matter.
+
+24
+
+Moreover, by going partitional, 
+best guess
+ avoids many of the standard objections to contrastivist theories of knowledge—see 
+Baumann (2017
+§3) for an overview. One issue that it does not obviously avoid, however, is that it predicts a healthy amount of semantic blindness on the part of otherwise competent speakers.
+
+25
+
+ This is the issue I turn to now.
+
+9.2 An objection from semantic blindness
+
+best guess
+’s solution to the puzzles surrounding 
+closure
+ implies that ordinary speakers are mostly blind to the fact that ‘thinks’-reports are question-sensitive. I say “mostly” because there does seem to be 
+some
+ awareness: witness the different range of acceptable answers to questions like ‘Which city do you think Bond is in?’ versus questions like ‘Which country do you think Bond is in?’. Still, it seems no rational person would ever say a thing like:
+
+(9)
+ ✗ Well I think Bond is in London rather than Frankfurt or Berlin; but I also think he’s in Germany rather than the United Kingdom.
+
+Likewise, if one were asked ‘Which city do you think Bond is in?’ and then 
+immediately after
+ ‘Which country do you think Bond is in?’, it would sound rather strange to answer first ‘London’ and then ‘Germany’. One’s audience would probably infer that one thinks London is in Germany.
+
+This is striking, for this is not what we would expect to happen were ordinary speakers fully aware that ‘thinks’ has the semantic properties implied by a view like 
+best guess
+. Instead, we would expect ordinary speakers to be able to recover the relevant true interpretation of (9), and to understand the answers to the two consecutive questions about Bond’s location as expressing distinct thinking relations. Indeed, we wouldn’t expect there to be any 
+puzzle
+ about 
+closure
+ in the first place.
+
+I lack the space here to address the vexing issues concerning contextualism and semantic blindness in the detail they deserve, so I’ll settle for making two quick points in defense of theories of rational thinking like 
+best guess
+ that predict it.
+
+The first point is that there is good reason to believe that ordinary speakers are semantically blind to the context-sensitivity of expressions that are (or at least ought to be) 
+uncontroversially context-sensitive
+.
+
+26
+
+ To use an example of 
+Schaffer and Szabó’s (2014
+), consider the abominableness of (10):
+
+(10)
+   ✗ Ann can speak Finnish, but she can only speak English.
+
+Uncontroversially, there is a sense of ‘can’ in which Ann can speak Finnish: she has the ability to learn it. Uncontroversially, there is a sense of ‘can’ in which Ann can only speak English: that’s the only language she speaks. So why can’t we “hear” the relevant, non-uniform interpretation of (10)? This is an interesting and difficult question, but it is unclear why we should have to know the answer before we can accept that ‘can’ is context-sensitive. So it’s unclear why our inability to hear true interpretations of (9) should convince us that ‘thinks’ couldn’t be similarly context-sensitive.
+
+The second point is that the judgments about the Bond case suggest that everyone is going to have to posit some degree of blindness to the semantic properties of ‘thinks’. And this is because everyone’s theory of (rational) thinking needs to account for the fact that, holding S’s evidence fixed, there are some situations in which an agent can assert ‘I think Bond is in London’, other situations in which they can assert ‘I think Bond is in Germany’, but no situation in which they can rationally think London is in Germany. Denying that ‘thinks’ is question-sensitive would explain one bit of data—namely the badness of speeches like (9)—but it would not explain the dual acceptability of ‘I think Bond is in London’ and ‘I think Bond is in Germany’. Indeed, it would have to predict that for at least one of these two ‘thinks’-reports, speakers are systematically mistaken in taking it to be the kind of thing a rational agent could assert. There is no reason to expect solutions to philosophical puzzles to be cost-free, and to my mind semantic blindness is a small price to pay for an otherwise elegant account of the intricate pattern of judgments surveyed so far.
+
+10. The optionality in what one thinks
+
+With these points aside, I now want to turn to what I take to be a more serious issue for best guess, which is its inability to fully account for the phenomenon of 
+optionality
+ raised to salience in §4’s discussion of 
+extreme weakness
+. Reflection on these points will lead to the final theory of rational thinking, while also placing some striking constraints on the space of possible theories of thinking 
+simpliciter
+—the topic of the next section.
+
+To help reintroduce the optionality phenomenon, I’ll focus on a horse race with four entrants—A, B, C, and D—where S’s rational credences that each will win are [
+a
+: .35, 
+b
+: .30, 
+c
+: .20, 
+d
+: .15]. Suppose S is asked ‘Who do you think will win the race?’. We know she does just fine in answering in terms of her best guess:
+
+(11)
+   ✓ A.
+
+We also know (back from the discussion in §4) that she also does just fine in answering agnostically, as in:
+
+(12)
+ ✓ I don’t know.
+
+✓ There isn’t any horse in particular I think will win.
+
+It thus appears that the norms of rationality leave S with options. If S goes the opinionated way, she can defend herself by pointing out that A has the best chances of winning. And if instead she goes the agnostic way, she can defend herself by pointing out that none of the horses is sure to win. In neither case would S seem to be making a mistake.
+
+So far none of this is a problem for best guess, for best guess tells us that rational agents are 
+permitted
+ to think
+Q
+ whatever is entailed by their best guess to Q
+?
+. It doesn’t say that they 
+must
+ think it. The problems for best guess emerge when we consider some of the more subtle patterns in the possible answers to questions about what we think.
+
+We can imagine the possible answers to the question ‘Who do you think will win the race?’ as falling on a spectrum. On one end of the spectrum we have the four maximally opinionated answers: ‘A’, ‘B’, ‘C’, and ‘D’. On the other we have the maximally agnostic answers: ‘I don’t know’, ‘One of A, B, C, or D’, etc. Between these two extremes we have “mixed” answers that are opinionated in some respects, agnostic in others: ‘I’m not sure about A, but I do think it’ll be A or B’, ‘B or D’, etc. Given that S’s rational credences are [
+a
+: .35, 
+b
+: .30, 
+c
+: .20, 
+d
+: .15], it is felicitous for her to give voice to some but not all of the possible mixed answers. These, for instance, are felicitous:
+
+(13)
+ ✓ There is no horse in particular I think will win, but I do think it will be either A or B.
+
+(14)
+ ✓ All I can say is that I think it won’t be D.
+
+These, for instance, are not:
+
+(15)
+ ✗ I think B or C will win.
+
+(16)
+ ✗ There is no horse in particular I think will win, but I do think it will be either A or C.
+
+Intuitively both (15) and (16) have the feel of wishful thinking on S’s part. (15) flies in the face of the fact that S knows that A has the best chance of winning, while (16) flies in the face of the fact that if S is only willing to narrow down her view on who will win to two horses, she should be thinking that the winner will be A or B, not that it will be A or C.
+
+Given 
+best guess
+, it’s no surprise why (13) and (14) are fine: S is rationally permitted to think
+{
+a,b,c,d
+}
+ whatever is entailed by her best guess to the question ‘Who will win the race?’. And both of these answers are indeed entailed by her best guess. It is also no surprise why (15) is infelicitous: the proposition that B or C will win the race is 
+not
+ entailed by her best guess to the question of who will win the race, and so S is not rationally permitted to think
+{
+a,b,c,d
+}
+ it.
+
+The kind of judgment that poses a problem for 
+best guess
+ is the one raised to salience by (16). S’s best guess to the question of who will win the race is that A will. This proposition entails that A or C will. So 
+best guess
+ says S is rationally permitted to think
+{
+a,b,c,d
+}
+ that A or C will win. But again, best guess only tells us when an agent is rationally permitted to think that a proposition is true, not when they must think it. So for all best guess is concerned, S is perfectly rational in thinking
+{
+a,b,c,d
+}
+ that the winner will be one of A or C while not having a view
+{
+a,b,c,d
+}
+ on whether A in particular will win. So 
+best guess
+ wrongly predicts that there should be nothing wrong with (16).
+
+As I see it, the lesson to take from the infelicity of (16) is that what one is rationally permitted to think relative to a question Q
+?
+ depends not only on the distribution of one’s rational credences in its answers, but also on what one 
+in fact
+ thinks the answer to that question is. If S happens to think
+{
+a,b,c,d
+}
+ that A will win (in accordance with her best guess), then she is indeed rationally permitted to think
+{
+a,b,c,d
+}
+ that A or C will win. But if S 
+doesn’t
+ think
+{
+a,b,c,d
+}
+ A will win—which is what she says in uttering (16)—then S isn’t rationally permitted to think
+{
+a,b,c,d
+}
+ that A or C will win. At most she can rationally think
+{
+a,b,c,d
+}
+ that which is entailed by the proposition that A or B will win.
+
+Now to turn this idea into a theory. I’ll start by defining S’s 
+guess
+ to Q
+?
+ as the strongest answer to Q
+?
+ such that S thinks
+Q
+ that answer is true.
+
+27
+
+ By assumption, then, ‘
+guess
+’ denotes a three-place relation between agents, questions, and unions of complete answers to those questions. If the question is {
+a, b, c, d
+}, S’s 
+guess
+ might be maximally strong, as when it’s 
+a, b, c
+, or 
+d
+; or it could be maximally weak, as when it’s 
+a ∨ b ∨ c ∨ d
+; or it could be of middling strength, as when it’s something like 
+a ∨ b
+.
+
+With this notion of 
+guessing
+ in place, here is a schematic theory of rational thinking:
+
+R
+ational
+ T
+hinking
+ S
+chema
+
+S is rationally permitted to think
+Q
+ that p just in case: (i) the conjunction of E
+S
+ and S’s 
+guess
+ to Q
+?
+ entails p, and (ii) S’s 
+guess
+ to Q
+?
+ is rational.
+
+The rest is just a matter of spelling out the details of (ii). And here the idea will be that S’s 
+guess
+ to Q
+?
+ is rational if and only if it is 
+cogent
+, where a proposition p is cogent for an agent S relative to a question Q
+?
+ if and only if:
+
+(1)
+   p is a union of complete answers to Q
+?
+
+(2)
+   If there is a complete answer to Q
+?
+, r, such that r doesn’t entail p, then there is no other complete answer to Q
+?
+, r*, such that: r* entails p, but C
+
+S
+
+(r) ≥ C
+
+S
+
+(r*).
+
+Although the statement of cogency is a bit of a mouthful, an example should make the idea intuitive. The question {
+a, b, c, d
+} has four complete answers: 
+a, b, c
+, and 
+d
+. A union of its complete answers will either be a single complete answer (say 
+a
+) or some disjunction of complete answers (say 
+a ∨ b
+). So for S’s 
+guess
+ to {
+a, b, c, d
+} to satisfy condition (1), it better be either a single complete answer or some disjunction of complete answers. To satisfy condition (2), S’s 
+guess
+ needs to have the following property: for each of the complete answers included in S’s 
+guess
+ (i.e., for each of the 
+guess
+’s disjuncts), S must have higher rational credence in that complete answer than in any of the complete answers excluded from the 
+guess
+. So, for example: if S’s 
+guess
+ to the question {
+a, b, c, d
+} is 
+a ∨ b
+, then S’s 
+guess
+ satisfies (2) iff S’s rational credences are such that: (i) C
+
+S
+
+(
+a
+) > C
+
+S
+
+(
+c
+) and C
+
+S
+
+(
+a
+) > C
+
+S
+
+(
+d
+), and (ii) C
+
+S
+
+(
+b
+) > C
+
+S
+
+(
+c
+) and C
+
+S
+
+(
+b
+) > C
+
+S
+
+(
+d
+). Abstracting from the example, the idea is that a 
+guess
+ is cogent with respect to a question just in case in the process of building the 
+guess
+, one doesn’t “skip” any answers that are equal or better than the ones that have been included.
+
+With the notion of a cogent 
+guess
+ in hand, here is the paper’s official theory of rational thinking:
+
+C
+ogent
+ G
+uess
+
+S is rationally permitted to think
+Q
+ that p just in case: (i) the conjunction of E
+S
+ and S’s 
+guess
+ to Q
+?
+ entails p, and (ii) S’s 
+guess
+ to Q
+?
+ is cogent.
+
+That is to say: S is rationally permitted to think that p relative to Q
+?
+ just in case p is entailed by the strongest thing S thinks relative to Q
+?
+, and the strongest thing S thinks relative to Q
+?
+ is cogent.
+
+cogent guess
+ correctly predicts that ‘thinks’-reports like (16) should be infelicitous. Given that S’s rational credences in the answers to the question ‘Who will win the race?’ are [
+a
+: .35, 
+b
+: .30, 
+c
+: .20, 
+d
+: .15], only the following 
+guesses
+ are cogent for S: 
+a, a ∨ b, a ∨ b ∨ c
+, and 
+a ∨ b ∨ c ∨ d
+. This means that relative to the question ‘Who will win the race?’, S is rationally permitted to be in all and only the following states: thinking that A will win, thinking merely that A or B will win, thinking merely that A, B, or C will win, or thinking merely that some horse or other will win. Thus, the only way for S to rationally think
+{
+a,b,c,d
+}
+ that A or C will win is if she rationally thinks
+{
+a,b,c,d
+}
+ that A will. So there is no way S can speak truly in uttering (16) while being rational.
+
+With respect to the earlier principles of interest, 
+cogent guess
+ makes the same predictions as 
+best guess
+. One’s best guess to Q
+?
+ will be cogent no matter one’s absolute rational credence in it, so 
+cogent guess
+ predicts 
+extreme weakness
+. Likewise, the relationship between the cogency of one’s possible 
+guesses
+ to Q
+?
+ and one’s rational credences is non-monotonic, so the view predicts 
+non-monotonicity
+. Since 
+cogent guess
+ is a Hintikkan analysis of ‘is rationally permitted to think’, it gets 
+closure
+ for free. And since it evokes the same kind of question-sensitivity as 
+best guess
+, it gets the same debunking explanation of the putative counterexamples to 
+closure
+. Finally, since cogent 
+guesses
+ never entail contradictions, 
+cogent guess
+ is guaranteed to preserve 
+consistency
+.
+
+We thus have our answer to:
+
+T
+he normative question
+: Under what conditions is it rationally permissible to think that p?
+
+And since for many agents S and questions Q
+?
+ there are a range of possible cogent 
+guesses
+ to Q
+?
+, it is predicted that the norms of rationality are permissive with respect to thinking:
+
+28
+
+P
+ermissivism
+
+It is not the case that: for any body of evidence E and proposition p, there is a unique doxastic attitude toward p that is consistent with being perfectly epistemically rational and having E as one’s evidence.
+
+Given the optionality in how one chooses to answer questions about what one thinks, this is exactly what we should expect to be true. Rational thinking is about thinking cogently. Thinking whatever is most likely to be true is one way to think cogently, but it is not the only way.
+
+11. Thinking 
+simpliciter
+
+At last we turn to:
+
+T
+he descriptive question
+: What is it to think that p?
+
+And once again I’ll start with a schematic answer:
+
+T
+hinking schema
+
+S thinks
+Q
+ that p just in case: the conjunction of all the propositions S is sure of and S’s 
+guess
+ to Q
+?
+ entails p.
+
+Having earlier defined S’s 
+guess
+ to Q
+?
+ as the strongest proposition S thinks relative to Q
+?
+, 
+thinking schema
+ is, of course, a circular analysis of thinking. This is not to say it is uninformative. It entails that thinking is question-sensitive. It also entails that holding context fixed, the inference from ‘S is sure that p’ to ‘S thinks that p’ is valid. And it also entails that thinking has some nice closure properties.
+
+29
+
+ But ideally we would have a sense for what makes it the case that S’s 
+guess
+ is one thing rather than another. This is what I take to be the heart of the descriptive question.
+
+I’ll start by saying something negative: whatever it is that determines whether one’s 
+guess
+ to Q
+?
+ is p rather than p*, it isn’t one’s credences. To see why, suppose that S
+1
+’s actual and rational credences in the answer to the question ‘Who will win the race?’ are [
+a
+: .35, 
+b
+: .30, 
+c
+: .20, 
+d
+: .15]. Suppose also that S
+2
+ is a credal duplicate of S
+1
+ and that all this is common knowledge between them. We know from the previous section that a person whose rational and actual credences are [
+a
+: .35, 
+b
+: .30, 
+c
+: .20, 
+d
+: .15] does just fine in answering ‘Who do you think will win the race?’ in any of the following ways:
+
+(17)
+ ✓ A.
+
+✓ One of A or B.
+
+✓ One of A, B, or C.
+
+✓ I have no idea.
+
+What I want to suggest is that because someone with these credences 
+could
+ answer in any of these ways, it seems as if nothing guarantees S
+1
+ and S
+2
+
+will
+ answer in the same way. S
+1
+ might answer with (17a), S
+2
+ with (17d). And since S
+1
+ and S
+2
+ can (and in fact might) answer in different ways despite being credal duplicates, the natural hypothesis is that they can 
+think
+ different things despite being credal duplicates.
+
+This point can be sharpened by imagining things from S
+1
+’s perspective. You know what your credence function says about the various possible outcomes of the horse race, and you know that S
+2
+ has the same credence function as you. You also know how you will answer the question ‘Who do you think will win the race?’. But do you know how S
+2
+ will answer it? I don’t see how you could. For all you know she could answer with any of (17a)–(17d).
+
+More generally, knowing a person’s credences just doesn’t seem to suffice for knowing how they’ll answer questions like ‘Who do you think will get the Democratic nomination?’ or ‘Where do you think Bond is hiding?’. They might answer in accordance with their best guess. But they might also answer agnostically. And until they answer, you simply won’t know. So knowing a person’s credences does not suffice for knowing what they think.
+
+But if not our credences, then what 
+does
+ determine the facts about what we think? Is it our behavioral dispositions? That seems unlikely. Regardless of the fact that S
+1
+ and S
+2
+ might think different things about who will win the race, neither would use the proposition that A will win the race as a premise in theoretical or practical reasoning. Nor would either be willing to assert that A will win the race. Nor would either take a bet on the outcome of the race that the other wouldn’t. Indeed, it seems that the only relevant behavioral difference that could arise between S
+1
+ and S
+2
+ concerns the first-personal ‘thinks’-reports they’d be willing to make about themselves. But clearly 
+that
+ can’t be what grounds the differences in what they think. They make the ‘thinks’-reports they do because of what they think, not the other way around.
+
+I thus want to suggest a rather different account of the metaphysics of thinking. In particular, I want to suggest that the facts about what we think are determined by our 
+choices
+—that is, by certain kinds of pure acts of the will. I think it is because S
+1
+ chose as her answer 
+A will win
+ and S
+2
+ chose as her answer 
+One of the entrants will win
+ that S
+1
+ thinks
+{
+a,b,c,d
+}
+ that A will win while S
+2
+ merely thinks
+{
+a,b,c,d
+}
+ that some horse or other will.
+
+I doubt an analysis can be given of the notion of ‘choice’ involved here, but the basic idea can be grasped through some paradigm cases. The kind of choice involved in deciding what to think about a question seems to me akin to the kind of choice involved in picking whether to go left or right at a fork, or in figuring out how to compose the next sentence of an email, or—perhaps most relevantly to the present discussion—in choosing between heads or tails when asked to guess how a coin will land.
+
+30
+
+ Your credences don’t determine whether you guess heads or tails. Nor do your broader behavioral dispositions. What determines your guess is how you 
+make up your mind
+. I claim something similar goes for thinking.
+
+Although I won’t say more to substantively characterize the kind of choices involved in thinking, I will assume they abide by two structural constraints. First, they are question-directed: you are choosing an answer to a question. And second, when presented with a question Q
+?
+, what one chooses is the union of a subset of Q
+?
+’s answers: you are choosing between collections of the question’s maximally specific answers.
+
+The hypothesis, then, is that for p to be one’s 
+guess
+ to Q
+?
+—for p to be the strongest thing one thinks relative to Q
+?
+—is for p to be one’s choice of answer to Q
+?
+. This gives the answer to the descriptive question:
+
+D
+oxastic
+ C
+hoice
+
+S thinks
+Q
+ that p just in case: the conjunction of all the propositions S is sure of and S’s choice of answer to Q
+?
+ entails p.
+
+And combining 
+doxastic choice
+ with 
+cogent guess
+, the following tidy picture of thinking and its norms emerges: to think that p is for p to be one’s choice of answer to the question at hand; to rationally think that p is for one’s choice to be cogent.
+
+Two clarificatory points before wrapping up. First, just because thinking involves choosing does not mean that one always 
+consciously
+ comes to think what one does. Choosing an answer to a question can be as automatic and subconscious as choosing which parts of one’s environment to attend to, or how to execute the various steps in a complex physical or cognitive task—say, hitting a serve, playing an instrument, choosing one’s gestures or words in speech, and so on. A choice that is subconscious can be a choice all the same.
+
+Second, one might wonder whether a theory like 
+doxastic choice
+ implies that, at the level of metaphysics, what one thinks about a question is a 
+purely
+ voluntary matter. That is: for any question Q
+?
+, is it in my powers to think
+Q
+
+any
+ of Q
+?
+’s possible answers? Not necessarily. Or at least 
+doxastic choice
+ does not by itself imply this. For one, 
+doxastic choice
+ says that we can’t help but think any proposition we’re sure of. In normal cases that will cover much of what we think on the basis of perception, memory, and testimony. Further, it is an open empirical question the extent to which people are capable of choosing to think non-cogently.
+
+31
+
+ Speaking for myself, I know that as much as I might want it to be true that I think that a particular divine being exists (say for Pascalian reasons), I can’t bring myself to do so (at least not on the basis of a wager). But that said, the possibility of wishful thinking suggests that some agents are capable of making these kinds of doxastic choices. And so it seems an open question whether non-cogent thinking is metaphysically impossible, psychologically impossible, or merely just psychologically very difficult. I see it as a virtue of a theory like 
+doxastic choice
+ that it does not prejudge these issues.
+
+12. Thinking and believing
+
+Let’s take stock. Thinking is a question-directed attitude. There are two ways one can come to think a proposition p relative to a question Q
+?
+. One can either be sure that p, or one can choose as one’s answer to Q
+?
+ a proposition that, together with the rest of what one is sure of, entails p.
+
+Since thinking is a choice, it follows that a strong form of doxastic voluntarism is true.
+
+32
+
+ It also follows that two agents with identical credence functions can think different things relative to the same question. This means that (rational) thinking does not supervene on (rational) credence. It also explains why two rational agents with the same evidence can come to different conclusions about whether p without either of them having made a mistake.
+
+Of course, if thinking is believing—if ‘S thinks that p’ is true in context iff ‘S believes that p’ is—then everything we’ve said about thinking is true of belief as well. And this would mean that belief cannot play many of the theoretical roles with which philosophers have associated it. If I know that A has only a 10% chance of winning the upcoming race, then it is not rational for me to take for granted that A will win the race or to assert that A will win the race; nor is it rational for me to take an even-money bet that A will win the race (let alone a 3:1 or 4:1 bet). But it can be rational for me to believe that A will win the race. So belief is not the attitude we hold toward the propositions we rely on in theoretical or practical reasoning; nor is it the attitude we hold toward the propositions we are willing to assert; nor is it even the attitude we hold toward propositions that we find highly likely to be true.
+
+The lesson to take from this is that if thinking is believing, then just about every existing theory of belief is false. Or, more conservatively, 
+if
+ existing theories of belief are theories of the attitude that is the denotation of the ordinary expression ‘believe’, then just about every existing theory of belief is false.
+
+Many theorists of “belief” might happily accept this conditional while denying its antecedent. Perhaps all along they’ve taken themselves to be giving theories of the distinct attitude of 
+acceptance
+, where, as a matter of stipulation, to accept a proposition p is to do some number of the following: treat p as a premise in deliberation; be willing to assert p; be the internal duplicate of one who knows p; be disposed to feel surprise upon learning that ¬p; and so on. It is worth noting that many of the questions this paper has been focused on retain much of their theoretical interest when restated in terms of this technical notion. So it’s not clear how much is lost in conceding that one’s theory of acceptance is a theory of something other than belief.
+
+33
+
+ And for those who think that having a home in natural language is a precondition on an attitude’s being a worthwhile object of epistemological study, note that all the claims just made about acceptance seem to lose neither plausibility nor theoretical interest when stated in terms of 
+being sure
+. Perhaps that’s the attitude epistemologists have been theorizing about all along.
+
+34
+
+Defenders of traditional conceptions of belief who are uncomfortable with the idea of restating their theories in terms of technical terminology or the folk notion of 
+being sure
+ are in a more difficult situation. If thinking is a kind of choosing but believing isn’t, then thinking can’t be believing. But the evidence that thinking is believing is very strong. Again, if there are coherent interpretations of sentences like
+
+(1a)
+ ✗ I think it’s raining, but I wouldn’t say I believe it is.
+
+(1b)
+ ✗ I’m not sure whether Jane thinks Federer will win Wimbledon, but I know she doesn’t believe he will.
+
+(1c)
+ ✗ My friends think I’m a good person, but my mom believes I am.
+
+they appear to be elusive. And readers can see for themselves whether their judgments about the paper’s example sentences are affected in any substantial way when ‘believes’ is substituted for ‘thinks’. I myself detect no meaningful difference.
+
+This raises the question: If thinking isn’t believing—indeed, if thinking really isn’t anything 
+like
+ believing—then why does natural language seem to treat the two as if they were the same?
+
+Whether those who defend traditional conceptions of belief can give a satisfying answer to this question is not something I will try to resolve here. But the conditional point remains: if thinking is believing, then believing isn’t about being sure, or even about being sufficiently sure. It’s about choosing. And your evidence only settles what you ought to choose when it is decisive on the matter. Otherwise the choice is yours. So long as you choose cogently, you can take comfort knowing that your belief will be rational.
+
+Acknowledgements
+
+Thanks to audiences at Princeton, Duke, UCL, Oxford, Johns Hopkins, Cambridge, and the Dianoia Institute of Philosophy; to two anonymous referees and the editorial team at this journal; and to Bob Beddor, Kyle Blumberg, Sam Carter, Cian Dorr, Kevin Dorst, Peter van Elswyk, Rachel Fraser, Jane Friedman, Nico Kirk-Giannini, Simon Goldstein, Dan Hoek, Harvey Lederman, Andrew Lee, Matt Mandelkern, Jake Nebel, Jim Pryor, Daniel Rothschild, Stephen Schiffer, Ginger Schultheis, Trevor Teitel, Peter Unger, Timothy Williamson, and Jake Zuehl for very helpful discussion. Thanks especially to Jeremy Goodman for continued and invaluable feedback over the course of the paper’s development.
+
+Notes
+
+Kaplan (1995
+) is a notable exception. 
+James (1956
+) too, though I’m not sure he’s part of the intended reference class.
+ ⮭
+
+ See 
+Dorst (2019
+) and 
+Rothschild (2020
+) for further developments.
+ ⮭
+
+ Here my presentation follows 
+Rothschild’s (2020
+).
+ ⮭
+
+ See, e.g., 
+Greco (2015
+, p. 180), who in defense of the view that “believing” that p requires having credence 1 that p writes:
+
+If the claim that belief involves maximal confidence is to be worth taking seriously at all, we cannot be working with a conception of belief closely tied to natural language constructions involving ‘belief’ and ‘believe’. Much work in epistemology suggests an alternative conception of belief, more closely related to knowledge… When belief is understood along some versions of these lines, the simple view that (strong) belief involves credence 1 is once again a live option.
+
+ ⮭
+
+ See, e.g., 
+Nagel (2021
+) and 
+Williamson (forthcoming
+).
+ ⮭
+
+ Some theorists—e.g., 
+Stanley (2008
+), 
+Nagel (2021
+), and 
+Williamson (forthcoming
+)—have suggested that sentences of the form ‘I think/believe that p’ have uses on which they don’t report the fact that speaker thinks/believes that p. Instead, they serve some other function: say to “hedge” one’s assertion, or to express (or otherwise make salient) the fact that speaker’s evidence for the proposition that p is relatively weak. But I find it hard to see the dialectical relevance of this observation, since presumably the best explanation of why they have these functions is that the epistemic requirements on thinking are weak.
+ ⮭
+
+ Strands of the discussion are covered by 
+Hawthorne et al. (2016
+, pp. 1400–1401) and developed more fully in 
+Dorst (2019
+, pp. 191–192). See also 
+Windschitl and Wells (1998
+) and 
+Yalcin (2010
+) for discussion of analogous principles concerning the semantics of expressions like ‘probable’ and ‘likely’.
+ ⮭
+
+ Supposing the standards for rational surety are as lax as ordinary language suggests they are, there will be many ordinary, contingent propositions in which agents get to have rational credence 1. I see nothing nonterminological hanging on this.
+ ⮭
+
+ Cf. 
+Williamson (forthcoming
+, p. 12).
+ ⮭
+
+ For further discussion, see, e.g., 
+Kyburg (1961
+), 
+Makinson (1965
+), 
+Foley (1992b
+), 
+Ryan (1996
+), 
+Douven (2002
+), 
+Christensen (2004
+), 
+Lin and Kelly (2012
+), 
+Leitgeb (2013
+, 
+2014
+).
+ ⮭
+
+ Here I leave the notion of ‘entailment’ unanalyzed. I will assume that obvious instances of conjunction introduction and modus ponens count as entailments, but I don’t take a stand on whether (e.g.) all metaphysical entailments do. Also note that we could add as another conjunct to the antecedent of the condition that S know or be rationally permitted to think that Γ entails p. These differences won’t be essential in what follows.
+ ⮭
+
+ One might have worries about whether 
+consistency
+ is valid in full generality given the possibility of identity confusion (and perhaps also the existence of the semantic paradoxes). The uses to which we put 
+consistency
+ will not exploit any of these sorts of considerations, so we can harmlessly ignore them in what follows.
+ ⮭
+
+ See, e.g., 
+Hintikka (1962
+), 
+Stalnaker (1984
+), 
+Williamson (2000
+), 
+Buchak (2014
+), 
+Ross and Schroeder (2014
+), 
+Greco (2015
+), 
+Staffel (2016
+). I should also mention that the label ‘Cartesianism’ is there for vivacity rather than historical accuracy. But see 
+Chignell (2018
+, §1.2) for evidence that something like it was indeed Descartes’ view on belief.
+ ⮭
+
+ Cf. 
+Hintikka (1962
+), 
+Stalnaker (1984
+).
+ ⮭
+
+ Cf. 
+Williamson (2000
+), 
+Buchak (2014
+), 
+Ross and Schroeder (2014
+).
+ ⮭
+
+ Cf. 
+Gettier (1963
+), 
+Greco (2015
+).
+ ⮭
+
+ See, e.g., 
+Foley (1992a
+), 
+Sturgeon (2008
+), 
+Foley (2009
+), 
+Leitgeb (2013
+), 
+Beddor and Goldstein (2018
+), 
+Dorst (2019
+), 
+Moss (2019
+). I should mention that as it is used in the literature, ‘Lockeanism’ is something of an umbrella term, covering theories of the norms of belief (thinking), as well as theories of its metaphysics. For the purposes of this paper we can lump these views together. But the official target will just be the Lockean theories of 
+rational
+ thinking.
+ ⮭
+
+ We’ll ignore those who say that the only sufficiently high rational credence is rational credence 1, as for our dialectical purposes such a view collapses the distinction between 
+lockeanism
+ and 
+cartesianism
+. But for defenses of this brand of lockeanism, see 
+Clarke (2013
+) and 
+Greco (2015
+). (See also the discussion of 
+Moss’s (2019
+) view in the next footnote.)
+ ⮭
+
+ As far as I can tell, 
+Moss (2019
+) defends a version of 
+sophisticated lockeanism
+. On Moss’s view, the inference from ‘S thinks that p’ to ‘S has credence 1 that p’ is semantically valid. On the surface, then, her view is the kind of 
+lockeanism
+ that collapses the distinction between it and 
+cartesianism
+. But Moss is well aware of the evidence that thinking is (extremely) weak (pp. 275–276). To account for this, Moss claims that in many contexts we treat as equivalent ‘S has credence 1 that p’ and ‘S has credence near enough to 1 that p’, with the interpretation of ‘near enough’ shifting between these contexts. And although Moss doesn’t explicitly speak to the issue, it will become clear in a moment that the contextually determined extension of ‘near’ will also have to be proposition-sensitive—lest she predict the existence of contexts that invalidate consistency. Consequently, I believe every objection raised against Dorst’s view applies just as well to Moss’s.
+ ⮭
+
+ Observant readers may notice that the proposition that either A wins, B wins, or C wins isn’t a tautology on any natural understanding of the notion, and thus that the set containing all and only those disjuncts (i.e., 
+a, b, c
+) doesn’t form a partition. We could get around this problem by identifying the natural readings of the question ‘Who will win the race?’ with the set {
+a, b, c
+, ∅}, where ∅ is defined as the negation of the disjunction of all the other elements of the set. But since the differences that would arise between associating the question ‘Who will win the race?’ with 
+a, b, c
+ versus {
+a, b, c
+, ∅} will not affect anything of substance, I will stick with the simpler (not fully partitional) set {
+a, b, c
+} in what follows.
+ ⮭
+
+ The idea that belief is question-sensitive has some precedent in the literature. 
+Blaauw (2012b
+), for example, invokes question-sensitivity in his “contrastive” theory of belief, which I’ll say more about below. 
+Yalcin (2018
+) also argues for a question-sensitive theory of belief, though his reasons for doing so—namely to help account for the problem of logical omniscience and explain the nature of concept possession—are quite different from the ones pertinent to this paper’s discussion. See also 
+Hoek (2020
+) for further developments along these lines.
+ ⮭
+
+ Well, we really only have single-premise closure. But generalizing to the multi-premise case is easy enough.
+ ⮭
+
+ Thanks to an anonymous referee for pressing me to say more to situate my view relative to existing forms of contrastivism. For a helpful overview on some of the broader philosophical issues concerning contrastivism, see, e.g., 
+Sinnott-Armstrong (2008
+) and 
+Blaauw (2012a
+).
+ ⮭
+
+ There is another respect in which best guess’s use of partitions makes it unlike existing forms of contrastivism. Suppose the alternative sets to which ‘thinks’ is relativized could contain any combination of two or more mutually exclusive propositions, whether or not those propositions exhaust logical space. It would follow that, for any proposition p in which S has non-zero rational credence, ‘S is rationally permitted to believe that p’ expresses a truth in at least one context. To see why, let 
+c
+ be a context in which the comparison class is {p, ⊥} (e.g., ‘Which do you think is true: that p, or that 2+2=5?’). Since p is S’s best guess to the question ‘Which is true: that p, or that 2+2=5?’, it follows that ‘S is rationally permitted to think that p’ is true in 
+c
+. But obviously there are many propositions p for which there seems to be no context in which ‘S is rationally permitted to think that p’ expresses a truth, as when p is the proposition that the horse that is least likely to win will win.
+ ⮭
+
+ Cf. 
+Schiffer (1996
+), 
+Greenough and Kindermann (2017
+). Thanks to an anonymous referee for raising this concern.
+ ⮭
+
+ See 
+Dorr (2014
+) and 
+Schaffer and Szabó (2014
+, §4) for further considerations in favor of this claim.
+ ⮭
+
+ I put ‘
+guess
+’ in 
+boldface
+ to make it clear that it is taking this particular technical interpretation.
+ ⮭
+
+ For some recent discussion of issues related to permissivism, see, e.g., 
+Greco and Hedden (2016
+) and 
+Schoenfield (2019
+).
+ ⮭
+
+ If one takes these closure properties to be a bug rather than a feature of thinking schema, one could instead have the following view: where Q
+!
+ is S’s 
+guess
+ to Q
+?
+, S thinks
+Q
+ that p iff S is sure that Q
+!
+ ⊃ p.
+ ⮭
+
+ Cf. 
+Harman (1976
+), 
+Holton (2009
+).
+ ⮭
+
+ Cf. 
+Setiya (2008
+).
+ ⮭
+
+ I am not the first person to defend the view that there are cases in which agents exercise direct doxastic control over what they think. See, e.g., 
+Boyle (2009
+), 
+Nickel (2010
+), 
+Peels (2015
+), 
+McHugh (2015
+), 
+Roeber (2019
+, 
+2020
+) for some recent defenses of this idea. However, I know of no author besides 
+James (1956
+) whose view predicts doxastic control as widely and directly as 
+doxastic choice
+ does.
+ ⮭
+
+ Though for opposition to this view, see 
+Moss (2019
+, pp. 273–274) and 
+Williamson (forthcoming
+, §6).
+ ⮭
+
+ Cf. 
+Chisholm (1957
+), 
+Ayer (2006
+).
+ ⮭
+
+References
+
+A. J. Ayer. The problem of knowledge. In Ted Honderich, editor, 
+
+Ayer Writings in Philosophy: A Palgrave Macmillan Archive Collection
+
+, pages 159–163. Palgrave Macmillan, 2006.
+
+Peter Baumann. Review of Martijn Blaauw (ed), 
+Contrastivism in Philosophy
+. 
+
+Notre Dame Philosophical Reviews
+
+, 2013.
+
+Peter Baumann. Epistemic contrastivism. In 
+
+Routledge Encyclopedia of Philosophy
+
+. Taylor and Francis, 2017.
+
+Bob Beddor and Simon Goldstein. Believing epistemic contradictions. 
+
+Review of Symbolic Logic
+
+,  11(1):87–114, 2018.
+
+Martijn Blaauw. 
+
+Contrastivism in Philosophy: New Perspectives
+
+. Routledge, 2012a.
+
+Martijn Blaauw. Contrastive belief. In Martijn Blaauw, editor, 
+
+Contrastivism in Philosophy: New Perspectives
+
+. Routledge, 2012b.
+
+Matthew Boyle. Active belief. 
+
+Canadian Journal of Philosophy
+
+,  39(S1): 119–147, 2009.
+
+Lara Buchak. Belief, credence, and norms. 
+
+Philosophical Studies
+
+,  169(2): 285–311, 2014.
+
+Andrew Chignell. The ethics of belief. In Edward N. Zalta, editor, 
+
+The Stanford Encyclopedia of Philosophy
+
+. Metaphysics Research Lab, Stanford University, 2018.
+
+Roderick M. Chisholm. 
+
+Perceiving: A Philosophical Study
+
+. Cornell University Press, 1957.
+
+David Christensen. 
+
+Putting Logic in Its Place: Formal Constraints on Rational Belief
+
+. Oxford University Press, 2004.
+
+Roger Clarke. Belief is credence one (in context). 
+
+Philosophers’ Imprint
+
+,  13(11):1–18, 2013.
+
+Cian Dorr. Transparency and the context-sensitivity of attitude reports. In Manuel García-Carpintero and Genoveva Martí, editors, 
+
+Empty Representations: Reference and Non-existence
+
+, pages 25–66. Oxford University Press, 2014.
+
+Kevin Dorst. Lockeans maximize expected accuracy. 
+
+Mind
+
+,  128(509): 175–211, 2019.
+
+Igor Douven. A new solution to the paradoxes of rational acceptability. 
+
+British Journal for the Philosophy of Science
+
+,  53(3):391–410, 2002.
+
+Richard Foley. The epistemology of belief and the epistemology of degrees of belief. 
+
+American Philosophical Quarterly
+
+,  29(2):111–124, 1992a.
+
+Richard Foley. 
+
+Working Without a Net: A Study of Egocentric Epistemology
+
+. Oxford University Press, 1992b.
+
+Richard Foley. Beliefs, degrees of belief, and the lockean thesis. In Franz Huber and Christoph Schmidt-Petri, editors, 
+
+Degrees of Belief
+
+, pages 37–47. Springer, 2009.
+
+Edmund Gettier. Is justified true belief knowledge? 
+
+Analysis
+
+,  23(6): 121–123, 1963.
+
+Daniel Greco. How I learned to stop worrying and love probability 1. 
+
+Philosophical Perspectives
+
+,  29(1):179–201, 2015.
+
+Daniel Greco and Brian Hedden. Uniqueness and metaepistemology. 
+
+Journal of Philosophy
+
+,  113(8):365–395, 2016.
+
+Patrick Greenough and Dirk Kindermann. The semantic error problem for epistemic contextualism. In Jonathan Ichikawa, editor, 
+
+Routledge Handbook of Epistemic Contextualism
+
+, pages 305–320. Routledge, 2017.
+
+Jeroen Groenendijk and Martin Stokhof. 
+
+Studies on the Semantics of Questions and the Pragmatics of Answers
+
+. PhD thesis, University of Amsterdam, 1984.
+
+CharlesL. Hamblin. Questions. 
+
+Australasian Journal of Philosophy
+
+,  36(3): 159–168, 1958.
+
+Gilbert Harman. Practical reasoning. 
+
+The Review of Metaphysics
+
+,  29(3): 431–463, 1976.
+
+John Hawthorne, Daniel Rothschild, and Levi Spectre. Belief is weak. 
+
+Philosophical Studies
+
+,  173(5):1393–1404, 2016.
+
+Jaakko Hintikka. 
+
+Knowledge and Belief
+
+. Cornell University Press, 1962.
+
+Daniel Hoek. Minimal rationality and the web of questions. In Dirk Kindermann, Peter van Elswyk, and Andy Egan, editors, 
+
+Unstructured Content
+
+. Oxford University Press, 2020.
+
+Richard Holton. 
+
+Willing, Wanting, Waiting
+
+. Oxford University Press UK, 2009.
+
+William James. 
+
+The Will to Believe and Other Essays in Popular Philosophy and Human Immortality: Two Supposed Objections to the Doctrine
+
+. Dover Publications, 1956.
+
+Mark Kaplan. Believing the improbable. 
+
+Philosophical Studies
+
+,  77(1): 117–146, 1995.
+
+Henry Kyburg. 
+
+Probability and the Logic of Rational Belief
+
+. Wesleyan University Press, 1961.
+
+Hannes Leitgeb. Reducing belief simpliciter to degrees of belief. 
+
+Annals of Pure and Applied Logic
+
+,  164(12):1338–1389, 2013.
+
+Hannes Leitgeb. The stability theory of belief. 
+
+Philosophical Review
+
+,  123 (2):131–171, 2014.
+
+Hanti Lin and Kevin T. Kelly. A geo-logical solution to the lottery paradox, with applications to conditional logic. 
+
+Synthese
+
+,  186(2): 531–575, 2012.
+
+David C. Makinson. The paradox of the preface. 
+
+Analysis
+
+,  25(6):205–207, 1965.
+
+Conor McHugh. The illusion of exclusivity. 
+
+European Journal of Philosophy
+
+,  23(4):1117–1136, 2015.
+
+Sarah Moss. Full belief and loose speech. 
+
+Philosophical Review
+
+,  128(3): 255–291, 2019.
+
+Jennifer Nagel. The psychological dimension of the lottery paradox. In Igor Douven, editor, 
+
+Lotteries, Knowledge, and Rational Belief: Essays on the Lottery Paradox
+
+. Cambridge University Press, 2021.
+
+Philip J. Nickel. Voluntary belief on a reasonable basis. 
+
+Philosophy and Phenomenological Research
+
+,  81(2):312–334, 2010.
+
+Rik Peels. Believing at will is possible. 
+
+Australasian Journal of Philosophy
+
+,  93(3):524–541, 2015.
+
+Blake Roeber. Evidence, judgment, and belief at will. 
+
+Mind
+
+,  128(511): 837–859, 2019.
+
+Blake Roeber. Permissive situations and direct doxastic control. 
+
+Philosophy and Phenomenological Research
+
+,  101(2):415–431, 2020.
+
+Jacob Ross and Mark Schroeder. Belief, credence, and pragmatic encroachment. 
+
+Philosophy and Phenomenological Research
+
+,  88(2):259–288, 2014.
+
+Daniel Rothschild. What it takes to believe. 
+
+Philosophical Studies
+
+,  177(5): 1345–1362, 2020.
+
+Sharon Ryan. The epistemic virtues of consistency. 
+
+Synthese
+
+,  109(2): 121–141, 1996.
+
+Jonathan Schaffer. Contrastive knowledge. In Tamar Szabó Gendler and John Hawthorne, editors, 
+
+Oxford Studies in Epistemology 1
+
+, page 235. Oxford University Press, 2005.
+
+Jonathan Schaffer. Knowing the answer. 
+
+Philosophy and Phenomenological Research
+
+,  75(2):383–403, 2007.
+
+Jonathan Schaffer and Zoltán Gendler Szabó. Epistemic comparativism: A contextualist semantics for knowledge ascriptions. 
+
+Philosophical Studies
+
+,  168(2):491–543, 2014.
+
+Stephen Schiffer. Contextualist solutions to scepticism. 
+
+Proceedings of the Aristotelian Society
+
+,  96(1):317–333, 1996.
+
+Miriam Schoenfield. Permissivism and the value of rationality: A challenge to the uniqueness thesis. 
+
+Philosophy and Phenomenological Research
+
+,  99(2):286–297, 2019.
+
+Kieran Setiya. Believing at will. 
+
+Midwest Studies in Philosophy
+
+,  32(1): 36–52, 2008.
+
+Walter Sinnott-Armstrong. A contrastivist manifesto. 
+
+Social Epistemology
+
+,  22(3):257–270, 2008.
+
+Julia Staffel. Beliefs, buses and lotteries: Why rational belief can’t be stably high credence. 
+
+Philosophical Studies
+
+,  173(7):1721–1734, 2016.
+
+Robert C. Stalnaker. 
+
+Inquiry
+
+. MIT Press, 1984.
+
+Jason Stanley. Knowledge and certainty. 
+
+Philosophical Issues
+
+,  18(1):35–57, 2008.
+
+Scott Sturgeon. Reason and the grain of belief. 
+
+Noûs
+
+,  42(1):139–165, 2008.
+
+Timothy Williamson. 
+
+Knowledge and Its Limits
+
+. Oxford University Press, 2000.
+
+Timothy Williamson. Knowledge, credence, and the strength of belief. In Amy Flowerree and Baron Reed, editors, 
+
+Towards an Expansive Epistemology: Norms, Action, and the Social World
+
+. Routledge, forthcoming.
+
+Paul D. Windschitl and Gary L. Wells. The alternative-outcomes effect. 
+
+Journal of Personality and Social Psychology
+
+,  75(6):1411–1423, 1998.
+
+Seth Yalcin. Probability operators. 
+
+Philosophy Compass
+
+,  5(11):916–937, 2010
+
+Seth Yalcin. Belief as question-sensitive. 
+
+Philosophy and Phenomenological Research
+
+,  97(1):23–47, 2018.
+
