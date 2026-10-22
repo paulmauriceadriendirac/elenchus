@@ -1,4 +1,6 @@
-# E2 v3 formal checks (v2 checks preserved in check_v2.py).
+# E2 v4 formal checks (v3 script preserved in check_v3.py, v2 in check_v2.py).
+# Sections 0-11 carry over from v3 (section numbers there refer to v3's propositions; see the map in
+# revision_notes_v4.md). Sections 12-15 are new in v4.
 # Framework of Meehan & Zhang 2025 (MZ): finite S, regular prior pi, factive learning situations
 # E: S -> subsets containing s; MZ Brier A(c,s) = -sum_{q subset S}(c(q)-v_s(q))^2 (MZ p.339).
 # For a globally evidentially constant (GEC) rule f, weighted total expected accuracy
@@ -364,5 +366,127 @@ for p in set(A):
 ok("Cyclic agent (fair coin): conditioning on 'I received p' = conditioning on p", good)
 post = [pi[s]*(F(2, 3)*(A[s] == A[0]) + F(1, 3)*(B[s] == A[0])) for s in range(3)]; post = [x/sum(post) for x in post]
 ok("Cyclic agent with biased coin (2/3,1/3): the two come apart", post != cond(pi, A[0]))
+
+print("\n==== v4 additions ====")
+print("== 12. v4 Prop 6(iii): TEA_lam respects conditional (Zendejas Medina) verdicts iff lam extensional ==")
+def cea(pi, p, c, n):  # expected accuracy of credence c conditional on p
+    z = sum(pi[t] for t in p); return sum(pi[s]/z*brier(c, s, n) for s in p)
+def randweighting(n, k, opaque_only=False):
+    Fa = factive(n)
+    pool = [E for E in Fa if not transparent(E)] if opaque_only else Fa
+    return [(random.choice(pool), F(random.randint(1, 5))) for _ in range(k)]
+good_ext = True; good_non = True; n_ext = n_non = 0
+for trial in range(60):
+    n = 3; pi = randprior(n)
+    if trial % 3 == 0:   # extensional: mixture of partitions plus Cyclic Informants
+        W = [((frozenset({0,1}),frozenset({1,2}),frozenset({0,2})), F(1)), ((frozenset({0,2}),frozenset({0,1}),frozenset({1,2})), F(1))]
+        W += [(E, F(random.randint(1,4))) for E in random.sample([E for E in factive(n) if transparent(E)], 2)]
+    else:
+        W = randweighting(n, random.randint(1, 4))
+    L = profile(n, W)
+    if extensional(n, L):
+        n_ext += 1
+        # random rule pairs with conditional dominance: g(p) arbitrary, f(p) = BCOND or g(p) at random
+        for _ in range(5):
+            g = randrule(n); f = {p: (cond(pi, p) if random.random() < .5 else g[p]) for p in props(n)}
+            assert all(cea(pi, p, f[p], n) >= cea(pi, p, g[p], n) for p in props(n))
+            good_ext &= tea(n, pi, L, lambda p: f[p]) >= tea(n, pi, L, lambda p: g[p])
+    else:
+        n_non += 1
+        p = next(p for p in props(n) if len({L.get((p, s), 0) for s in p}) > 1)
+        cstar = lamrule(pi, L, p, n); c0 = cond(pi, p)
+        f = lambda q: cond(pi, q); g = lambda q: cstar if q == p else cond(pi, q)
+        good_non &= cea(pi, p, c0, n) > cea(pi, p, cstar, n) and tea(n, pi, L, g) > tea(n, pi, L, f)
+ok("extensional weightings (%d): every conditionally dominated rule is weakly worse in TEA" % n_ext, good_ext and n_ext > 0)
+ok("non-extensional weightings (%d): explicit pair where TEA reverses a strict conditional verdict" % n_non, good_non and n_non > 0)
+
+print("== 13. v4 Prop 8: agents with a learning mechanism q over first-order states ==")
+# W = {(s,p): s in p}; mu(s,p) = pi(s) q(p|s); at (s,p) the agent learns sigma^{-1}[p] = {(t,r): t in p}.
+def mech_from_weighting(n, W):
+    L = profile(n, W); Lam = sum(w for _, w in W)
+    return {(p, s): L.get((p, s), 0)/Lam for p in props(n) for s in p}
+def is_car(n, q):
+    return all(len({q[(p, s)] for s in p}) == 1 for p in props(n))
+def worlds(n): return [(s, p) for p in props(n) for s in p]
+def mu(pi, q, w): return pi[w[0]]*q[(w[1], w[0])]
+def bcond_W(n, pi, q, p):  # posterior over W after learning sigma^{-1}[p]
+    z = sum(pi[t] for t in p); return {w: (mu(pi, q, w)/z if w[0] in p else F(0)) for w in worlds(n)}
+def meta_W(n, pi, q, p):   # posterior over W after conditioning on "p was received"
+    z = sum(mu(pi, q, w) for w in worlds(n) if w[1] == p); return {w: (mu(pi, q, w)/z if w[1] == p else F(0)) for w in worlds(n)}
+def marg(n, post): return [sum(v for w, v in post.items() if w[0] == s) for s in range(n)]
+def reflection_gap(n, pi, q):  # max over singleton propositions {w} of |E[posterior] - prior|
+    rec = [p for p in props(n) if any(q[(p, s)] > 0 for s in p)]
+    gap = 0
+    for w in worlds(n):
+        e = sum(sum(mu(pi, q, v) for v in worlds(n) if v[1] == p)*bcond_W(n, pi, q, p)[w] for p in rec)
+        gap = max(gap, abs(e - mu(pi, q, w)))
+    return gap
+def reflection_gap_S(n, pi, q):
+    rec = [p for p in props(n) if any(q[(p, s)] > 0 for s in p)]
+    return max(abs(sum(sum(mu(pi, q, v) for v in worlds(n) if v[1] == p)*cond(pi, p)[t] for p in rec) - pi[t]) for t in range(n))
+CYC = [((frozenset({0,1}),frozenset({1,2}),frozenset({0,2})), F(1)), ((frozenset({0,2}),frozenset({0,1}),frozenset({1,2})), F(1))]
+good_a = good_b = good_c = True; ncar = nnon = 0
+for trial in range(40):
+    n = 3; pi = randprior(n)
+    if trial % 2 == 0:
+        W = CYC + [(E, F(random.randint(0, 3))) for E in random.sample([E for E in factive(n) if transparent(E)], 2)]
+    else:
+        W = randweighting(n, random.randint(1, 4))
+    q = mech_from_weighting(n, W); car = is_car(n, q)
+    rec = [p for p in props(n) if any(q[(p, s)] > 0 for s in p)]
+    agree = all(marg(n, meta_W(n, pi, q, p)) == cond(pi, p) for p in rec)
+    good_a &= (agree == car)
+    if car:
+        ncar += 1; good_b &= reflection_gap(n, pi, q) == 0
+        good_c &= any(0 < q[(p, s)] < 1 for p in rec for s in p) or all(q[(p, s)] in (0, 1) for p in props(n) for s in p)
+    else:
+        nnon += 1
+ok("(a) META-COND and BCOND agree on S at every received p iff q is CAR (%d CAR, %d non-CAR)" % (ncar, nnon), good_a and ncar and nnon)
+ok("(b, if) CAR => BCOND satisfies Reflection for every proposition about W (exact)", good_b)
+# (c): Cyclic Informants with fair coin: opaque, CAR, credence that p is what was received = 1/2
+q = mech_from_weighting(3, CYC); pi = randprior(3); p = frozenset({0, 1})
+post = bcond_W(3, pi, q, p); cr = sum(v for w, v in post.items() if w[1] == p)
+ok("(c) Cyclic, fair coin: after learning {0,1}, BCOND credence that {0,1} is what was received = %s" % cr, cr == F(1, 2))
+# (b, only if): non-CAR => some prior violates Reflection about S; plus linear-algebra check of the converse
+import numpy as np
+viol = True
+for trial in range(30):
+    W = randweighting(3, random.randint(1, 4)); q = mech_from_weighting(3, W)
+    if is_car(3, q): continue
+    viol &= any(reflection_gap_S(3, randprior(3), q) > 0 for _ in range(40))
+ok("(b, only if) every sampled non-CAR mechanism violates Reflection about S at some prior", viol)
+def converse_dims(n, trials=60):
+    rng = np.random.default_rng(5); P = props(n); var = [(p, s) for p in P for s in p]; ix = {v: i for i, v in enumerate(var)}
+    rows = []
+    for s in range(n):
+        r = np.zeros(len(var)); [r.__setitem__(ix[(p, s)], 1) for p in P if s in p]; rows.append(r)
+    norm = list(rows)
+    for _ in range(trials):
+        x = rng.dirichlet(np.ones(n))
+        for t in range(n):
+            r = np.zeros(len(var))
+            for p in P:
+                if t in p:
+                    xp = sum(x[u] for u in p)
+                    for u in p: r[ix[(p, u)]] += x[u]/xp
+            rows.append(r)
+    car = [np.eye(len(var))[ix[(p, a)]] - np.eye(len(var))[ix[(p, b)]] for p in P for a, b in zip(sorted(p), sorted(p)[1:])]
+    rk = lambda M: np.linalg.matrix_rank(np.array(M), tol=1e-9)
+    return len(var) - rk(rows), len(var) - rk(norm + car), len(var) - rk(rows + car)
+for n in (3, 4):
+    a, b, c = converse_dims(n)
+    ok("n=%d: solution space of 'Reflection about S for every prior' (dim %d) = CAR space (dim %d), intersection dim %d" % (n, a, b, c), a == b == c)
+
+print("== 14. v4 illustrations ==")
+# Here's a Hand: states Good(0), Bad(1), NoExp(2); learn {Good} at Good, {Good,Bad} at Bad, {NoExp} at NoExp
+HH = (frozenset({0}), frozenset({0, 1}), frozenset({2})); pi = [F(1, 3)]*3
+qH = mech_from_weighting(3, [(HH, F(1))])
+ok("Here's a Hand is non-CAR", not is_car(3, qH))
+exp_hand = sum(pi[s]*cond(pi, HH[s])[0] for s in range(3))
+ok("Here's a Hand, uniform prior: expected posterior in HAND = %s > prior 1/3" % exp_hand, exp_hand == F(1, 2))
+# Cyclic Informants with a biased coin violates Reflection at some prior
+qb = mech_from_weighting(3, [(CYC[0][0], F(2)), (CYC[1][0], F(1))])
+gp = reflection_gap_S(3, [F(1, 2), F(1, 4), F(1, 4)], qb)
+ok("Cyclic, coin 2/3, prior (1/2,1/4,1/4): Reflection about S fails (gap %s)" % gp, gp > 0)
 
 print("\nALL CHECKS PASSED:", all(ALL_OK), "(%d checks)" % len(ALL_OK))
