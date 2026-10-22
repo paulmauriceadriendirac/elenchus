@@ -1,0 +1,1284 @@
+[
+ {
+  "key": "Gallow2020Guide",
+  "authors": [
+   "J. Dmitri Gallow"
+  ],
+  "year": 2020,
+  "title": "The Causal Decision Theorist's Guide to Managing the News",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "doi": "10.5840/jphil202011739"
+ },
+ {
+  "key": "Spencer2021Argument",
+  "authors": [
+   "Jack Spencer"
+  ],
+  "year": 2021,
+  "title": "An Argument against Causal Decision Theory",
+  "venue": "Analysis",
+  "type": "article",
+  "doi": "10.1093/analys/anaa037"
+ },
+ {
+  "key": "Barnett2022Graded",
+  "authors": [
+   "David James Barnett"
+  ],
+  "year": 2022,
+  "title": "Graded Ratifiability",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "doi": "10.5840/jphil202211925"
+ },
+ {
+  "key": "Mogensen2021Maximal",
+  "authors": [
+   "Andreas L. Mogensen"
+  ],
+  "year": 2021,
+  "title": "Maximal Cluelessness",
+  "venue": "The Philosophical Quarterly",
+  "type": "article",
+  "doi": "10.1093/pq/pqaa021"
+ },
+ {
+  "key": "Tarsney2023Epistemic",
+  "authors": [
+   "Christian Tarsney"
+  ],
+  "year": 2023,
+  "title": "The epistemic challenge to longtermism",
+  "venue": "Synthese",
+  "type": "article",
+  "doi": "10.1007/s11229-023-04153-y"
+ },
+ {
+  "key": "EvaHartmann2020Origins",
+  "authors": [
+   "Benjamin Eva",
+   "Stephan Hartmann"
+  ],
+  "year": 2020,
+  "title": "On the Origins of Old Evidence",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "doi": "10.1080/00048402.2019.1658210"
+ },
+ {
+  "key": "SprengerHartmann2019",
+  "authors": [
+   "Jan Sprenger",
+   "Stephan Hartmann"
+  ],
+  "year": 2019,
+  "title": "Bayesian Philosophy of Science",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780199672110.001.0001"
+ },
+ {
+  "key": "SterkenburgGrunwald2021",
+  "authors": [
+   "Tom F. Sterkenburg",
+   "Peter D. Grünwald"
+  ],
+  "year": 2021,
+  "title": "The no-free-lunch theorems of supervised learning",
+  "venue": "Synthese",
+  "type": "article",
+  "doi": "10.1007/s11229-021-03233-1"
+ },
+ {
+  "key": "CisewskiEtAl2018",
+  "authors": [
+   "Jessi Cisewski",
+   "Joseph B. Kadane",
+   "Mark J. Schervish",
+   "Teddy Seidenfeld",
+   "Rafael Stern"
+  ],
+  "year": 2018,
+  "title": "Standards for Modest Bayesian Credences",
+  "venue": "Philosophy of Science",
+  "type": "article",
+  "doi": "10.1086/694836"
+ },
+ {
+  "key": "LasonenAarnio2020Enkrasia",
+  "authors": [
+   "Maria Lasonen-Aarnio"
+  ],
+  "year": 2018,
+  "title": "Enkrasia or evidentialism? Learning to love mismatch",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-018-1196-2",
+  "volume_year": 2020,
+  "note": "Crossref issued year = online-first; cite volume year 2020"
+ },
+ {
+  "key": "Christensen2021Akratic",
+  "authors": [
+   "David Christensen"
+  ],
+  "year": 2021,
+  "title": "Akratic (epistemic) modesty",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-020-01536-6"
+ },
+ {
+  "key": "Smith2018Conviction",
+  "authors": [
+   "Martin Smith"
+  ],
+  "year": 2018,
+  "title": "When Does Evidence Suffice for Conviction?",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzx026"
+ },
+ {
+  "key": "ZuberEtAl2021",
+  "authors": [
+   "Stéphane Zuber"
+  ],
+  "year": 2021,
+  "title": "What Should We Agree on about the Repugnant Conclusion?",
+  "venue": "Utilitas",
+  "type": "article",
+  "doi": "10.1017/s095382082100011x"
+ },
+ {
+  "key": "SpearsBudolfson2021",
+  "authors": [
+   "Dean Spears",
+   "Mark Budolfson"
+  ],
+  "year": 2021,
+  "title": "Repugnant conclusions",
+  "venue": "Social Choice and Welfare",
+  "type": "article",
+  "doi": "10.1007/s00355-021-01321-2"
+ },
+ {
+  "key": "Horton2018Always",
+  "authors": [
+   "Joe Horton"
+  ],
+  "year": 2018,
+  "title": "Always Aggregate",
+  "venue": "Philosophy & Public Affairs",
+  "type": "article",
+  "doi": "10.1111/papa.12116"
+ },
+ {
+  "key": "Steuwer2021Aggregation",
+  "authors": [
+   "Bastian Steuwer"
+  ],
+  "year": 2021,
+  "title": "Aggregation, Balancing, and Respect for the Claims of Individuals",
+  "venue": "Utilitas",
+  "type": "article",
+  "doi": "10.1017/s0953820820000217"
+ },
+ {
+  "key": "Horton2020Risk",
+  "authors": [
+   "Joe Horton"
+  ],
+  "year": 2020,
+  "title": "Aggregation, Risk, and Reductio",
+  "venue": "Ethics",
+  "type": "article",
+  "doi": "10.1086/708534"
+ },
+ {
+  "key": "Lazar2018Limited",
+  "authors": [
+   "Seth Lazar"
+  ],
+  "year": 2018,
+  "title": "Limited Aggregation and Risk",
+  "venue": "Philosophy & Public Affairs",
+  "type": "article",
+  "doi": "10.1111/papa.12115"
+ },
+ {
+  "key": "LazarGraham2021",
+  "authors": [
+   "Seth Lazar",
+   "Peter A. Graham"
+  ],
+  "year": 2019,
+  "title": "Deontological decision theory and lesser-evil options",
+  "venue": "Synthese",
+  "type": "article",
+  "doi": "10.1007/s11229-019-02496-z",
+  "volume_year": 2021,
+  "note": "Crossref issued year = online-first; cite volume year 2021"
+ },
+ {
+  "key": "MacAskillBykvistOrd2020",
+  "authors": [
+   "William MacAskill",
+   "Krister Bykvist",
+   "Toby Ord"
+  ],
+  "year": 2020,
+  "title": "Moral Uncertainty",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780198722274.001.0001"
+ },
+ {
+  "key": "Weatherson2019Normative",
+  "authors": [
+   "Brian Weatherson"
+  ],
+  "year": 2019,
+  "title": "Normative Externalism",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780199696536.001.0001"
+ },
+ {
+  "key": "Rowland2019Normative",
+  "authors": [
+   "Richard Rowland"
+  ],
+  "year": 2019,
+  "title": "The Normative and the Evaluative",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780198833611.001.0001",
+  "note": "Crossref main title; subtitle not verified, omit unless checked"
+ },
+ {
+  "key": "Howard2019Fundamentality",
+  "authors": [
+   "Christopher Howard"
+  ],
+  "year": 2019,
+  "title": "The Fundamentality of Fit",
+  "venue": "Oxford Studies in Metaethics",
+  "type": "chapter",
+  "doi": "10.1093/oso/9780198841449.003.0010"
+ },
+ {
+  "key": "GoodmanLederman2021",
+  "authors": [
+   "Jeremy Goodman",
+   "Harvey Lederman"
+  ],
+  "year": 2019,
+  "title": "Perspectivism",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12322",
+  "volume_year": 2021,
+  "note": "Crossref issued year = online-first; cite volume year 2021"
+ },
+ {
+  "key": "BaconRussell2019",
+  "authors": [
+   "Andrew Bacon",
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2017,
+  "title": "The Logic of Opacity",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12454",
+  "volume_year": 2019,
+  "note": "Crossref issued year = online-first; cite volume year 2019"
+ },
+ {
+  "key": "Unnsteinsson2019",
+  "authors": [
+   "Elmar Unnsteinsson"
+  ],
+  "year": 2019,
+  "title": "Frege's Puzzle Is About Identity After All",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12516"
+ },
+ {
+  "key": "Bacon2018Vagueness",
+  "authors": [
+   "Andrew Bacon"
+  ],
+  "year": 2018,
+  "title": "Vagueness and Thought",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780198712060.001.0001"
+ },
+ {
+  "key": "Fine2020Vagueness",
+  "authors": [
+   "Kit Fine"
+  ],
+  "year": 2020,
+  "title": "Vagueness",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780197514955.001.0001",
+  "subtitle": "A Global Approach",
+  "note": "Crossref main title \"Vagueness\"; subtitle \"A Global Approach\" per SEP Vagueness bibliography (read 2026-10-22)"
+ },
+ {
+  "key": "MurziRossi2020",
+  "authors": [
+   "Julien Murzi",
+   "Lorenzo Rossi"
+  ],
+  "year": 2020,
+  "title": "Generalized Revenge",
+  "venue": "Australasian Journal of Philosophy",
+  "type": "article",
+  "doi": "10.1080/00048402.2019.1640323"
+ },
+ {
+  "key": "BarrioPailosSzmuc2020",
+  "authors": [
+   "Eduardo Alejandro Barrio",
+   "Federico Pailos",
+   "Damian Szmuc"
+  ],
+  "year": 2020,
+  "title": "A Hierarchy of Classical and Paraconsistent Logics",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "doi": "10.1007/s10992-019-09513-z"
+ },
+ {
+  "key": "FritzLedermanUzquiano2021",
+  "authors": [
+   "Peter Fritz",
+   "Harvey Lederman",
+   "Gabriel Uzquiano"
+  ],
+  "year": 2021,
+  "title": "Closed Structure",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "doi": "10.1007/s10992-021-09598-5"
+ },
+ {
+  "key": "Fritz2023Foundations",
+  "authors": [
+   "Peter Fritz"
+  ],
+  "year": 2023,
+  "title": "The Foundations of Modality",
+  "venue": "Oxford University Press",
+  "type": "book",
+  "doi": "10.1093/oso/9780192870025.001.0001",
+  "note": "Crossref main title; subtitle not verified, omit unless checked"
+ },
+ {
+  "key": "Fritz2022Ground",
+  "authors": [
+   "Peter Fritz"
+  ],
+  "year": 2022,
+  "title": "Ground and Grain",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12822"
+ },
+ {
+  "key": "Lovett2020Puzzles",
+  "authors": [
+   "Adam Lovett"
+  ],
+  "year": 2020,
+  "title": "The puzzles of ground",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-019-01325-w"
+ },
+ {
+  "key": "Beckers2021NESS",
+  "authors": [
+   "Sander Beckers"
+  ],
+  "year": 2021,
+  "title": "The Counterfactual NESS Definition of Causation",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "type": "article",
+  "doi": "10.1609/aaai.v35i7.16772"
+ },
+ {
+  "key": "Kammerer2021Illusion",
+  "authors": [
+   "François Kammerer"
+  ],
+  "year": 2019,
+  "title": "The illusion of conscious experience",
+  "venue": "Synthese",
+  "type": "article",
+  "doi": "10.1007/s11229-018-02071-y",
+  "volume_year": 2021,
+  "note": "Crossref issued year = online-first; cite volume year 2021"
+ },
+ {
+  "key": "HerrmannLevinstein2025",
+  "authors": [
+   "Daniel A. Herrmann",
+   "Benjamin A. Levinstein"
+  ],
+  "year": 2025,
+  "title": "Standards for Belief Representations in LLMs",
+  "venue": "Minds and Machines",
+  "type": "article",
+  "doi": "10.1007/s11023-024-09709-6"
+ },
+ {
+  "key": "LevinsteinHerrmann2024",
+  "authors": [
+   "Benjamin A. Levinstein",
+   "Daniel A. Herrmann"
+  ],
+  "year": 2024,
+  "title": "Still no lie detector for language models: probing empirical and conceptual roadblocks",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-023-02094-3"
+ },
+ {
+  "key": "Hedden2021Fairness",
+  "authors": [
+   "Brian Hedden"
+  ],
+  "year": 2021,
+  "title": "On statistical criteria of algorithmic fairness",
+  "venue": "Philosophy & Public Affairs",
+  "type": "article",
+  "doi": "10.1111/papa.12189"
+ },
+ {
+  "key": "Beigang2023Reconciling",
+  "authors": [
+   "Fabian Beigang"
+  ],
+  "year": 2023,
+  "title": "Reconciling Algorithmic Fairness Criteria",
+  "venue": "Philosophy & Public Affairs",
+  "type": "article",
+  "doi": "10.1111/papa.12233"
+ },
+ {
+  "key": "Eva2022Fairness",
+  "authors": [
+   "Benjamin Eva"
+  ],
+  "year": 2022,
+  "title": "Algorithmic Fairness and Base Rate Tracking",
+  "venue": "Philosophy & Public Affairs",
+  "type": "article",
+  "doi": "10.1111/papa.12211"
+ },
+ {
+  "key": "Dorst2019Lockeans",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2017,
+  "title": "Lockeans Maximize Expected Accuracy",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzx028",
+  "volume_year": 2019,
+  "note": "Crossref issued year = online-first; cite volume year 2019"
+ },
+ {
+  "key": "Jackson2020Relationship",
+  "authors": [
+   "Elizabeth G. Jackson"
+  ],
+  "year": 2020,
+  "title": "The relationship between belief and credence",
+  "venue": "Philosophy Compass",
+  "type": "article",
+  "doi": "10.1111/phc3.12668"
+ },
+ {
+  "key": "Fusco2024",
+  "authors": [
+   "Melissa Fusco"
+  ],
+  "year": 2024,
+  "title": "Absolution of a Causal Decision Theorist",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12459",
+  "volume": "58",
+  "pages": "616-643"
+ },
+ {
+  "key": "Beckstead2024Paradox",
+  "authors": [
+   "Nick Beckstead",
+   "Teruji Thomas"
+  ],
+  "year": 2024,
+  "title": "A paradox for tiny probabilities and enormous values",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12462",
+  "volume": "58",
+  "pages": "431-455",
+  "source_url": "https://globalprioritiesinstitute.org/wp-content/uploads/Nick-Beckstead-and-Teruji-Thomas_A-paradox-for-tiny-probabilities-and-enormous-values.pdf"
+ },
+ {
+  "key": "Wilkinson2022Defense",
+  "authors": [
+   "Hayden Wilkinson"
+  ],
+  "year": 2022,
+  "title": "In Defense of Fanaticism",
+  "venue": "Ethics",
+  "type": "article",
+  "doi": "10.1086/716869",
+  "volume": "132",
+  "pages": "445-477",
+  "source_url": "https://www.globalprioritiesinstitute.org/wp-content/uploads/Hayden-Wilkinson_In-defence-of-fanaticism.pdf"
+ },
+ {
+  "key": "Tarsney2024Against",
+  "authors": [
+   "Christian Tarsney"
+  ],
+  "year": 2024,
+  "title": "Against anti-fanaticism",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.13120",
+  "volume": "110",
+  "pages": "734-753",
+  "source_url": "https://www.christiantarsney.com/research"
+ },
+ {
+  "key": "Russell2024Two",
+  "authors": [
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2024,
+  "title": "On two arguments for fanaticism",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12461",
+  "volume": "58",
+  "pages": "565-595"
+ },
+ {
+  "key": "Goodsell2023Decision",
+  "authors": [
+   "Zachary Goodsell"
+  ],
+  "year": 2023,
+  "title": "Decision Theory Unbound",
+  "venue": "Noûs",
+  "volume": "58",
+  "pages": "669-695",
+  "doi": "10.1111/nous.12473",
+  "type": "article",
+  "source_url": "https://zacharygoodsell.com/"
+ },
+ {
+  "key": "Goodsell2025Symmetries",
+  "authors": [
+   "Zachary Goodsell"
+  ],
+  "year": 2025,
+  "title": "Symmetries of Value",
+  "venue": "Noûs",
+  "volume": "60",
+  "pages": "16-37",
+  "doi": "10.1111/nous.12549",
+  "type": "article",
+  "source_url": "https://zacharygoodsell.com/"
+ },
+ {
+  "key": "Russell2021Infinite",
+  "authors": [
+   "Jeffrey Sanford Russell",
+   "Yoaav Isaacs"
+  ],
+  "year": 2021,
+  "title": "Infinite Prospects",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12704",
+  "volume": "103",
+  "pages": "178-198"
+ },
+ {
+  "key": "Hong2025Paradoxes",
+  "authors": [
+   "Frank Hong",
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2025,
+  "title": "Paradoxes of infinite aggregation",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12535",
+  "volume": "59",
+  "pages": "809-827"
+ },
+ {
+  "key": "Nebel2025Infinite",
+  "authors": [
+   "Jacob M. Nebel"
+  ],
+  "year": 2025,
+  "title": "Infinite Ethics and the Limits of Impartiality",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.70010",
+  "volume": "60",
+  "pages": "433-453"
+ },
+ {
+  "key": "Wilkinson2021Infinite",
+  "authors": [
+   "Hayden Wilkinson"
+  ],
+  "year": 2021,
+  "title": "Infinite aggregation: expanded addition",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-020-01516-w",
+  "volume": "178",
+  "pages": "1917-1949"
+ },
+ {
+  "key": "Kowalczyk2021Transfinitely",
+  "authors": [
+   "Kacper Kowalczyk"
+  ],
+  "year": 2021,
+  "title": "Transfinitely Transitive Value",
+  "venue": "The Philosophical Quarterly",
+  "volume": "72",
+  "pages": "108-134",
+  "doi": "10.1093/pq/pqab005",
+  "type": "article"
+ },
+ {
+  "key": "Tarsney2025Dominance",
+  "authors": [
+   "Christian Tarsney",
+   "Harvey Lederman",
+   "Dean Spears"
+  ],
+  "year": 2025,
+  "title": "A Dominance Argument Against Incompleteness",
+  "venue": "Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-11964820",
+  "volume": "134",
+  "pages": "455-490"
+ },
+ {
+  "key": "Dorr2022Case",
+  "authors": [
+   "Cian Dorr",
+   "Jacob M. Nebel",
+   "Jake Zuehl"
+  ],
+  "year": 2022,
+  "title": "The Case for Comparability",
+  "venue": "Noûs",
+  "volume": "57",
+  "pages": "414-453",
+  "doi": "10.1111/nous.12407",
+  "type": "article",
+  "source_url": "https://pages.nyu.edu/dorr/"
+ },
+ {
+  "key": "Gustafsson2026Behavioural",
+  "authors": [
+   "Johan E. Gustafsson"
+  ],
+  "year": 2026,
+  "title": "A Behavioural Money-Pump Argument for Completeness",
+  "venue": "Theory and Decision",
+  "type": "article",
+  "doi": "10.1007/s11238-025-10025-3",
+  "volume": "101",
+  "pages": "391-400"
+ },
+ {
+  "key": "HajekRabinowicz2022",
+  "authors": [
+   "Alan Hájek",
+   "Wlodek Rabinowicz"
+  ],
+  "year": 2022,
+  "title": "Degrees of Commensurability and the Repugnant Conclusion",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12388",
+  "volume": "56",
+  "pages": "897-919"
+ },
+ {
+  "key": "IsaacsHajekHawthorne2022",
+  "authors": [
+   "Yoaav Isaacs",
+   "Alan Hájek",
+   "John Hawthorne"
+  ],
+  "year": 2022,
+  "title": "Non-Measurability, Imprecise Credences, and Imprecise Chances",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzab031",
+  "volume": "131",
+  "pages": "894-918"
+ },
+ {
+  "key": "Dorr2023Non",
+  "authors": [
+   "Cian Dorr"
+  ],
+  "year": 2023,
+  "title": "Does Non-Measurability Favour Imprecision?",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzad041"
+ },
+ {
+  "key": "IsaacsHawthorneRussell2022",
+  "authors": [
+   "Yoaav Isaacs",
+   "John Hawthorne",
+   "Jeffrey Sanford Russell"
+  ],
+  "year": 2022,
+  "title": "Multiple Universes and Self-Locating Evidence",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-9743809",
+  "volume": "131",
+  "pages": "241-294",
+  "source_url": "https://philosophersannual.org/42articles/isaacsetal-multiple.pdf"
+ },
+ {
+  "key": "Schwarz2025SB",
+  "authors": [
+   "Wolfgang Schwarz"
+  ],
+  "year": 2025,
+  "title": "Sleeping Beauty and the Demands of Non-Ideal Rationality",
+  "venue": "Noûs",
+  "type": "article",
+  "doi": "10.1111/nous.12545",
+  "volume": "59",
+  "pages": "1072-1092",
+  "source_url": "https://www.umsu.de/papers/sb.pdf"
+ },
+ {
+  "key": "Builes2020Paradox",
+  "authors": [
+   "David Builes"
+  ],
+  "year": 2020,
+  "title": "A Paradox of Evidential Equivalence",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzz046",
+  "volume": "129",
+  "pages": "113-127"
+ },
+ {
+  "key": "GoodmanSalow2023EN",
+  "authors": [
+   "Jeremy Goodman",
+   "Bernhard Salow"
+  ],
+  "year": 2023,
+  "title": "Epistemology Normalized",
+  "venue": "The Philosophical Review",
+  "volume": "132",
+  "pages": "89-145",
+  "doi": "10.1215/00318108-10123787",
+  "type": "article",
+  "source_url": "https://users.ox.ac.uk/~shug2406/EpistemologyNormalized.pdf"
+ },
+ {
+  "key": "Holguin2022Thinking",
+  "authors": [
+   "Ben Holguín"
+  ],
+  "year": 2022,
+  "title": "Thinking, Guessing, and Believing",
+  "venue": "Philosophers' Imprint",
+  "volume": "22",
+  "pages": null,
+  "doi": "10.3998/phimp.2123",
+  "type": "article"
+ },
+ {
+  "key": "Dorst2020",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2020,
+  "title": "Evidence: A Guide for the Uncertain",
+  "venue": "Philosophy and Phenomenological Research",
+  "type": "article",
+  "doi": "10.1111/phpr.12561",
+  "volume": "100",
+  "pages": "586-632"
+ },
+ {
+  "key": "HeddenDorst2022",
+  "authors": [
+   "Brian Hedden",
+   "Kevin Dorst"
+  ],
+  "year": 2022,
+  "title": "(Almost) All Evidence Is Higher-Order Evidence",
+  "venue": "Analysis",
+  "type": "article",
+  "doi": "10.1093/analys/anab081",
+  "volume": "82",
+  "pages": "417-425"
+ },
+ {
+  "key": "Hawthorne2025Normality",
+  "authors": [
+   "John Hawthorne"
+  ],
+  "year": 2025,
+  "title": "Normality and KK",
+  "venue": "Philosophical Studies",
+  "volume": "182",
+  "pages": "3071-3084",
+  "doi": "10.1007/s11098-025-02382-0",
+  "type": "article"
+ },
+ {
+  "key": "Goldstein2024Iterated",
+  "authors": [
+   "Simon Goldstein"
+  ],
+  "year": 2024,
+  "title": "Iterated Knowledge",
+  "venue": "Oxford University Press",
+  "volume": null,
+  "pages": null,
+  "doi": "10.1093/oso/9780198885481.001.0001",
+  "type": "book"
+ },
+ {
+  "key": "SalowForthIterated",
+  "authors": [
+   "Bernhard Salow"
+  ],
+  "year": 2025,
+  "title": "Iterated Knowledge isn't Better Knowledge",
+  "venue": "The Journal of Philosophy",
+  "volume": null,
+  "pages": null,
+  "doi": null,
+  "type": "article",
+  "source_url": "https://users.ox.ac.uk/~shug2406/IteratedKnowledge.pdf",
+  "manual_check": "Forthcoming J Phil, no DOI; author PDF read (state/sources_cache/salow_iterated_text.txt); listed on Salow homepage per committee map"
+ },
+ {
+  "key": "Ahmed2019Don",
+  "authors": [
+   "Arif Ahmed",
+   "Bernhard Salow"
+  ],
+  "year": 2019,
+  "title": "Don't Look Now",
+  "venue": "The British Journal for the Philosophy of Science",
+  "volume": "70",
+  "pages": "327-350",
+  "doi": "10.1093/bjps/axx047",
+  "type": "article"
+ },
+ {
+  "key": "Carter2024Dogmatism",
+  "authors": [
+   "Sam Carter",
+   "John Hawthorne"
+  ],
+  "year": 2024,
+  "title": "Dogmatism and Inquiry",
+  "venue": "Mind",
+  "volume": "133",
+  "pages": "651-676",
+  "doi": "10.1093/mind/fzad070",
+  "type": "article"
+ },
+ {
+  "key": "Salow2023Value",
+  "authors": [
+   "Bernhard Salow"
+  ],
+  "year": 2023,
+  "title": "The Value of Evidence",
+  "venue": "The Routledge Handbook of the Philosophy of Evidence",
+  "volume": null,
+  "pages": "148-162",
+  "doi": "10.4324/9781315672687-15",
+  "type": "chapter",
+  "source_url": "https://users.ox.ac.uk/~shug2406/ValueOfEvidence.pdf"
+ },
+ {
+  "key": "Das2023Biased",
+  "authors": [
+   "Nilanjan Das"
+  ],
+  "year": 2023,
+  "title": "The Value of Biased Information",
+  "venue": "The British Journal for the Philosophy of Science",
+  "volume": "74",
+  "pages": "25-55",
+  "doi": "10.1093/bjps/axaa003",
+  "type": "article"
+ },
+ {
+  "key": "Gunther2024Probability",
+  "authors": [
+   "Mario Günther"
+  ],
+  "year": 2024,
+  "title": "Probability of Guilt",
+  "venue": "Canadian Journal of Philosophy",
+  "volume": "54",
+  "pages": "189-206",
+  "doi": "10.1017/can.2025.6",
+  "type": "article",
+  "source_url": "https://www.mario-guenther.com/"
+ },
+ {
+  "key": "Moss2018",
+  "authors": [
+   "Sarah Moss"
+  ],
+  "year": 2018,
+  "title": "Probabilistic Knowledge",
+  "venue": "Oxford University Press",
+  "volume": null,
+  "pages": null,
+  "doi": "10.1093/oso/9780198792154.001.0001",
+  "type": "book"
+ },
+ {
+  "key": "Thornley2021Impossibility",
+  "authors": [
+   "Elliott Thornley"
+  ],
+  "year": 2021,
+  "title": "The impossibility of a satisfactory population prospect axiology (independently of Finite Fine-Grainedness)",
+  "venue": "Philosophical Studies",
+  "volume": "178",
+  "pages": "3671-3695",
+  "doi": "10.1007/s11098-021-01621-4",
+  "type": "article",
+  "source_url": "https://www.elliott-thornley.com/"
+ },
+ {
+  "key": "Kowalczyk2022People",
+  "authors": [
+   "Kacper Kowalczyk"
+  ],
+  "year": 2022,
+  "title": "People in Suitcases",
+  "venue": "Journal of Moral Philosophy",
+  "volume": "20",
+  "pages": "3-30",
+  "doi": "10.1163/17455243-19030009",
+  "type": "article"
+ },
+ {
+  "key": "Gustafsson2026Ex",
+  "authors": [
+   "Johan E. Gustafsson",
+   "Kacper Kowalczyk"
+  ],
+  "year": 2026,
+  "title": "Ex Ante Pareto and the Opaque-Identity Puzzle",
+  "venue": "The Journal of Philosophy",
+  "type": "article",
+  "doi": "10.5840/jphil20251177",
+  "volume": "123",
+  "pages": "63-76"
+ },
+ {
+  "key": "Greaves2023Bargaining",
+  "authors": [
+   "Hilary Greaves",
+   "Owen Cotton-Barratt"
+  ],
+  "year": 2023,
+  "title": "A Bargaining-Theoretic Approach to Moral Uncertainty",
+  "venue": "Journal of Moral Philosophy",
+  "volume": "21",
+  "pages": "127-169",
+  "doi": "10.1163/17455243-20233810",
+  "type": "article",
+  "source_url": "https://users.ox.ac.uk/~mert2255/"
+ },
+ {
+  "key": "Tarsney2024Metanormative",
+  "authors": [
+   "Christian Tarsney"
+  ],
+  "year": 2024,
+  "title": "Metanormative Regress: An Escape Plan",
+  "venue": "Philosophical Studies",
+  "volume": "181",
+  "pages": "1001-1023",
+  "doi": "10.1007/s11098-024-02114-w",
+  "type": "article",
+  "source_url": "https://www.christiantarsney.com/research"
+ },
+ {
+  "key": "KhooMandelkern2019Triviality",
+  "authors": [
+   "Justin Khoo",
+   "Matthew Mandelkern"
+  ],
+  "year": 2019,
+  "title": "Triviality Results and the Relationship between Logical and Natural Languages",
+  "venue": "Mind",
+  "type": "article",
+  "doi": "10.1093/mind/fzy006",
+  "volume": "128",
+  "pages": "485-526"
+ },
+ {
+  "key": "DorrMandelkern2026Sequence",
+  "authors": [
+   "Cian Dorr",
+   "Matthew Mandelkern"
+  ],
+  "year": 2026,
+  "title": "Sequence and Consequence",
+  "venue": "Philosophical Logic",
+  "type": "article",
+  "doi": "10.16995/phil-log.27646",
+  "volume": "1",
+  "source_url": "https://arxiv.org/abs/2411.16994"
+ },
+ {
+  "key": "GoldsteinSantorio2021Probability",
+  "authors": [
+   "Simon Goldstein",
+   "Paolo Santorio"
+  ],
+  "year": 2021,
+  "title": "Probability for Epistemic Modalities",
+  "venue": "Philosophers' Imprint",
+  "type": "article",
+  "volume": "21",
+  "pages": "no. 33, 1-37",
+  "source_url": "https://www.philosophersimprint.org/021033/",
+  "manual_check": "Philosophers' Imprint 21(33), no Crossref DOI; journal page https://www.philosophersimprint.org/021033/ per L6 refs (secondary)"
+ },
+ {
+  "key": "HollidayMandelkern2024Orthologic",
+  "authors": [
+   "Wesley H. Holliday",
+   "Matthew Mandelkern"
+  ],
+  "year": 2024,
+  "title": "The Orthologic of Epistemic Modals",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "doi": "10.1007/s10992-024-09746-7",
+  "volume": "53",
+  "pages": "831-907",
+  "source_url": "https://arxiv.org/abs/2203.02872"
+ },
+ {
+  "key": "Mandelkern2019Bounded",
+  "authors": [
+   "Matthew Mandelkern"
+  ],
+  "year": 2019,
+  "title": "Bounded Modality",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-7213001",
+  "volume": "128",
+  "pages": "1-61"
+ },
+ {
+  "key": "Goldstein2020Free",
+  "authors": [
+   "Simon Goldstein"
+  ],
+  "year": 2020,
+  "title": "Free Choice Impossibility Results",
+  "venue": "Journal of Philosophical Logic",
+  "type": "article",
+  "doi": "10.1007/s10992-019-09517-9",
+  "volume": "49",
+  "pages": "249-282"
+ },
+ {
+  "key": "Aloni2022Logic",
+  "authors": [
+   "Maria Aloni"
+  ],
+  "year": 2022,
+  "title": "Logic and Conversation: The Case of Free Choice",
+  "venue": "Semantics and Pragmatics",
+  "type": "article",
+  "doi": "10.3765/sp.15.5",
+  "volume": "15",
+  "pages": "1-60"
+ },
+ {
+  "key": "Chen2022",
+  "authors": [
+   "Eddy Keming Chen"
+  ],
+  "year": 2022,
+  "title": "Fundamental Nomic Vagueness",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-9415127",
+  "volume": "131",
+  "pages": "1-49"
+ },
+ {
+  "key": "Gallow2021Model",
+  "authors": [
+   "J. Dmitri Gallow"
+  ],
+  "year": 2021,
+  "title": "A Model-Invariant Theory of Causation",
+  "venue": "The Philosophical Review",
+  "type": "article",
+  "doi": "10.1215/00318108-8699682",
+  "volume": "130",
+  "pages": "45-96"
+ },
+ {
+  "key": "AndreasGunther2021Ramsey",
+  "authors": [
+   "Holger Andreas",
+   "Mario Günther"
+  ],
+  "year": 2021,
+  "title": "A Ramsey Test Analysis of Causation for Causal Models",
+  "venue": "The British Journal for the Philosophy of Science",
+  "type": "article",
+  "doi": "10.1093/bjps/axy074",
+  "volume": "72",
+  "pages": "587-615"
+ },
+ {
+  "key": "Andreas2024Regularity",
+  "authors": [
+   "Holger Andreas",
+   "Mario Günther"
+  ],
+  "year": 2024,
+  "title": "A Regularity Theory of Causation",
+  "venue": "Pacific Philosophical Quarterly",
+  "volume": "105",
+  "pages": "2-32",
+  "doi": "10.1111/papq.12447",
+  "type": "article",
+  "source_url": "https://www.mario-guenther.com/"
+ },
+ {
+  "key": "Chalmers2018Meta",
+  "authors": [
+   "David Chalmers"
+  ],
+  "year": 2018,
+  "title": "The Meta-Problem of Consciousness",
+  "venue": "Journal of Consciousness Studies",
+  "volume": "25",
+  "pages": "6-61",
+  "type": "article",
+  "source_url": "https://consc.net/all-papers/"
+ },
+ {
+  "key": "Chalmers2025Propositional",
+  "authors": [
+   "David J. Chalmers"
+  ],
+  "year": 2025,
+  "title": "Propositional Interpretability in Artificial Intelligence",
+  "venue": "arXiv:2501.15740",
+  "type": "preprint",
+  "source_url": "https://arxiv.org/abs/2501.15740",
+  "manual_check": "arXiv:2501.15740, confirmed on arXiv per committee map"
+ },
+ {
+  "key": "Thornley2024Shutdown",
+  "authors": [
+   "Elliott Thornley"
+  ],
+  "year": 2024,
+  "title": "The Shutdown Problem: An AI Engineering Puzzle for Decision Theorists",
+  "venue": "Philosophical Studies",
+  "type": "article",
+  "doi": "10.1007/s11098-024-02153-3",
+  "volume": "182",
+  "pages": "1653-1680"
+ },
+ {
+  "key": "Goldstein2024Shutdown",
+  "authors": [
+   "Simon Goldstein",
+   "Pamela Robinson"
+  ],
+  "year": 2024,
+  "title": "Shutdown-seeking AI",
+  "venue": "Philosophical Studies",
+  "volume": "182",
+  "pages": "1567-1579",
+  "doi": "10.1007/s11098-024-02099-6",
+  "type": "article"
+ },
+ {
+  "key": "Neth2025OffSwitching",
+  "authors": [
+   "Sven Neth"
+  ],
+  "year": 2025,
+  "title": "Off-switching not guaranteed",
+  "venue": "Philosophical Studies",
+  "volume": "182",
+  "pages": "1919-1931",
+  "doi": "10.1007/s11098-025-02296-x",
+  "type": "article",
+  "source_url": "https://arxiv.org/abs/2502.08864"
+ },
+ {
+  "key": "Thornley2025Towards",
+  "authors": [
+   "Elliott Thornley",
+   "Alexander Roman",
+   "Christos Ziakas",
+   "Leyton Ho",
+   "Louis Thomson"
+  ],
+  "year": 2025,
+  "title": "Towards Shutdownable Agents via Stochastic Choice",
+  "venue": "Transactions on Machine Learning Research",
+  "type": "article",
+  "source_url": "https://arxiv.org/abs/2407.00805",
+  "manual_check": "TMLR 12/2025; full text local state/sources_cache/drest1.txt shows \"Published in Transactions on Machine Learning Research (12/2025)\""
+ }
+]
