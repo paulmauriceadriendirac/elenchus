@@ -52,3 +52,4 @@
 - 2026-10-22T10:01:37Z **decision**: Provenance: human states Astra (other AI) received no idea-wise human input. Recorded for the methodology report; Astra's prompts/logs still desirable for completeness.
 - 2026-10-22T10:05:39Z **human** (method): see human_inputs.md
 - 2026-10-22T10:05:39Z **decision**: Process switch (human-approved): anchor-paper funnel aimed at ambitious targets. Step 1: hard-problems dossier (state/ambitious/problems.md). Paused lane-mode ideators (L3, L5, L6, DT) abandoned; no output was written by them.
+- 2026-10-22T17:18:08Z **human** (logistics): see human_inputs.md
