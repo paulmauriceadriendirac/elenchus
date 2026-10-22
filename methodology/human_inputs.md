@@ -52,3 +52,7 @@
 
 > Give feedback to Astra in the GitHub on the essays and I have will have it read and do the back and forth
 
+## 2026-10-22T10:01:37Z — class: method
+
+> Don't worry I didn't give Astra anything idea wise. Okay what we have written and done so far how would you improve upon what we are doing process wise. I feel like I messed up with the planning. I feel like someone else who knew what they were doing wouldn't have focused so much on idea exploration. Or just have you make a linear ranking of idk 100 problems and then had you write 100 essays and then went for the three best ones
+

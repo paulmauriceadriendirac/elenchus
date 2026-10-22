@@ -48,3 +48,5 @@
 - 2026-10-22T09:31:10Z **human** (method): see human_inputs.md
 - 2026-10-22T09:31:51Z **event**: Human asked for feedback to Astra on GitHub. Blind referees launched on Astra essays: P-2190 (01, S2), P-39c4 (02, S1), P-2188 (03, S5), P-9284 (04, S1+lit), P-bb8a (05, S3+lit). Reports to be posted as one GitHub issue, one comment per essay.
 - 2026-10-22T09:54:50Z **event**: Posted referee feedback on the five Astra/codex essays as GitHub issue paulmauriceadriendirac/elenchus#1 (summary table + one comment per essay + essay-5 addendum; full reports linked at state/blind/P-{2190,39c4,2188,9284,bb8a}/reports/). All five: overall 5/10, not finalist; proofs correct; novelty and dialectical targeting are the weak points.
+- 2026-10-22T10:01:37Z **human** (method): see human_inputs.md
+- 2026-10-22T10:01:37Z **decision**: Provenance: human states Astra (other AI) received no idea-wise human input. Recorded for the methodology report; Astra's prompts/logs still desirable for completeness.
