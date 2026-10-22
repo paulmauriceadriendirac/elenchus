@@ -1,0 +1,44 @@
+{
+  "wordcount_script_sha256": "3d9693bd4e07215e94ba3332d607ab8d9db86acc385297a4ac82f5137f527100",
+  "essays": [
+    {
+      "file": "essays/04-evidence-and-description.md",
+      "strict": 5980,
+      "wordlike": 5974,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 10,
+      "html_comments_found": 0,
+      "pdf_pages": 13,
+      "source_sha256": "a1f881283b6a1452b7f5931c68a16f082a8ab421f774949abefe2940d540e4e0",
+      "pdf_sha256": "48802c74bf4cfd01659f37a38fcd3d73d0630852a641193d1bb7f8cd7ead3df4"
+    },
+    {
+      "file": "essays/05-regret-and-belief.md",
+      "strict": 5976,
+      "wordlike": 5971,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 16,
+      "html_comments_found": 0,
+      "pdf_pages": 14,
+      "source_sha256": "fa79a255d5ce1c4d797094591fb01868a2983f6ff75899768bf7da53c702e71f",
+      "pdf_sha256": "0eb3b8e641c1ca503cafc7c34447cfdbcadec482b5e25de9cfe8c449933928d2"
+    }
+  ],
+  "candidate_round_counts": {
+    "round1": {
+      "advance": 40,
+      "park": 80
+    },
+    "round2": {
+      "reserve": 24,
+      "not assessed": 80,
+      "advance": 16
+    },
+    "round3": {
+      "not assessed": 104,
+      "priority": 8,
+      "reserve / demote": 8
+    }
+  },
+  "numerical_checks": 75
+}
