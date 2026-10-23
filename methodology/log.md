@@ -65,3 +65,4 @@
 - 2026-10-23T17:33:45Z **event**: Posted review of Astra A4 v0.1 (4/10) to issue #1. All four Astra round-2 reviews posted.
 - 2026-10-23T17:34:03Z **event**: Pulled Astra commit 4e0f6ce: external E2 v5 (Astra's revision of our E2, in state/external/revisions-20261023/), O5 v3, root FINALIZATION.md. Our state/drafts/E2 untouched. E2-v5-external carries Astra's provenance/exposure flag and is quarantined like other Astra outputs.
 - 2026-10-23T22:44:49Z **event**: Resumed A4, A5, A6 kill tests after usage limit (22:44 UTC).
+- 2026-10-23T22:47:29Z **agent**: A6 kill test: state/ambitious/killtest/A6.md
