@@ -1,0 +1,4 @@
+Uniform clock: mean preservation holds for all 16 propositions.
+Skewed regular prior: expected posterior of position 3 = 11/90, prior = 1/6.
+Uniform clock conditional Reflection: Pr({1,2} | posterior=2/3) = 1, while unconditional mean = 1/2.
+Proposition 4 boundary: revealing partition on two states has additive a({1})=a({2})=1, a(S)=g=0. The response to S has zero weight and is unconstrained; positive report weight is needed to force No News.

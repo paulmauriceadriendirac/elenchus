@@ -1,0 +1,90 @@
+== 0. Fidelity: reproduce MZ Table 2/3 totals (Fact 9 quantity, Dana prior) ==
+  [ok] BCOND -2.72, dogmatic -4.48, one-shot -6.80 = MZ -2.72, -4.48, -6.8
+== 1. Budget identity and weightings-as-learning-models (Obs. 1, Prop. 1 of v3) ==
+  [ok] n=3: sum_{p ni s} lam_p(s) = total weight at every s (random weightings)
+  [ok] n=3: every coarsening mechanism q is realized as the profile of prod_s q(E(s)|s) (total 1)
+  [ok] n=4: sum_{p ni s} lam_p(s) = total weight at every s (random weightings)
+  [ok] n=4: every coarsening mechanism q is realized as the profile of prod_s q(E(s)|s) (total 1)
+  [ok] representative agent: conditioning on the report event = Lemma-1 rule pi(.|lam_p)
+== 2. Selection vs ranking equivalence ==
+  [ok] n=3: opaque-only uniform weighting selects BCOND on every p
+  [ok] n=4: opaque-only uniform weighting selects BCOND on every p
+== 3. Prop 2 (MZ uniform total = 2^{(n-1)^2} x yes/no total) ==
+  [ok] n=3: #factive=64, #yes/no=4, uniform profile = 16 x yes/no profile = 16 x 1_p
+  [ok] n=4: #factive=4096, #yes/no=8, uniform profile = 512 x yes/no profile = 512 x 1_p
+  [ok] exact TEA_all = 16 TEA_yes/no for 20 random rules and priors (n=3)
+  [ok] n=3: random 2-colouring: block containing s is uniform over the 2^(n-1) propositions containing s
+  [ok] n=4: random 2-colouring: block containing s is uniform over the 2^(n-1) propositions containing s
+  [ok] n=5: random 2-colouring: block containing s is uniform over the 2^(n-1) propositions containing s
+  [ok] n=6: random 2-colouring: block containing s is uniform over the 2^(n-1) propositions containing s
+== 4. Prop 3: opaque-only uniform weighting lam_o ==
+  [ok] n=3: lam_o extensional and lam_o_p(s) = 2^{(n-1)^2} - B_{n-|p|}
+  [ok] n=4: lam_o extensional and lam_o_p(s) = 2^{(n-1)^2} - B_{n-|p|}
+  [ok] n=3: every partition with cell S-{s} has cell {s}
+  [ok] n=4: every partition with cell S-{s} has cell {s}
+  [ok] delta1/delta2 = 1.0345 lies in [1, 15/14)
+  [ok] lam_o ranks f above g
+  [ok] every transparent weighting tested (5 partitions + 200 random mixtures) ranks g at least as high as f
+  [ok] Cyclic Informants: both opaque, jointly extensional, normalized profile 1/2 on each pair
+== 5. Prop 4 (knife-edge): extensionality survives every reweighting of the support iff support transparent ==
+  [ok] n=3: point mass on each of the 59 opaque problems is non-extensional (MZ Fact 12)
+  [ok] n=3: uniform + eps on any single opaque problem is non-extensional (eps = 1/1000, 1/2, 3)
+  [ok] n=3: 100 random weightings of transparent problems are all extensional
+  [ok] Dana prior: uniform + eps x Dana's problem => optimal response to {15,16} differs from BCOND
+    (eps=1/10: optimal on {15,16} = ['161/641', '480/641', '0'] vs BCOND 1/4, 3/4, 0)
+  [ok] eps=1/10: optimal on {15,16} = (161/641, 480/641, 0)
+  [ok] Dana weight 64 (= all other problems together): {15,16} -> (5/8,3/8,0); S -> (1/17,15/17,1/17)
+  [ok] n=4: uniform + 1/1000 on 60 sampled opaque problems: all non-extensional
+== 6. Prop 5 (neutrality): permutation-invariant weightings are extensional ==
+  [ok] n=3: symmetrizations of random weightings are invariant and extensional
+  [ok] n=4: symmetrizations of random weightings are invariant and extensional
+  [ok] Cyclic Informants weighting is itself permutation-invariant (each permutation maps {A,B} to itself)
+  [ok] point mass on partition {{0},{1,2}}: extensional but not invariant (neutrality sufficient, not necessary)
+== 7. Prop 6 (propriety): S_p(c,s) = lam_p(s) A(c,s) strictly proper on p iff lam_p positive-constant on p ==
+  [ok] maximizer of the lam-weighted score is b^lam; equals b for all b iff lam constant (30 x 20 trials)
+== 8. Prop 7 (separable profiles; No News) ==
+  [ok] any weighting (60 random): optimal response to S = prior iff lam_S constant
+  [ok] n=3: product/additive (all, opaque-only) and range-sum: extensional <=> No News; product/additive also <=> H const (5 unbalanced, 13 balanced h)
+  [ok] n=3: product profile multiplicatively separable; additive and range-sum profiles additively separable
+  [ok] n=4: product/additive (all, opaque-only) and range-sum: extensional <=> No News; product/additive also <=> H const (2 unbalanced, 4 balanced h)
+  [ok] n=4: product profile multiplicatively separable; additive and range-sum profiles additively separable
+  [ok] product profile lam_p(s) = Lam h(p)/H(s)
+  [ok] product-form optimal rule = BCOND applied to tilted prior pi/H
+== 9. Enough Butter (Dana prior, h({16,17})=5, else 1) ==
+  [ok] H = (4,8,8), tilted prior = (1/3,1/2,1/6)
+  [ok] on {15,16}: optimal (2/5,3/5,0) vs BCOND (1/4,3/4,0)
+  [ok] Noah: prior -1.1200 vs tilted -1.1778 (=-53/45)
+  [ok] product weighting ranks tilted rule above BCOND
+  refinement: h=1 except h=5 on {1..n-1}; ratio H(0)/H(1) and TV distance of tilted from uniform prior
+    n= 3  H(0)=   4 H(other)=   8  TV(tilted, prior)=0.16667
+    n= 4  H(0)=   8 H(other)=  12  TV(tilted, prior)=0.08333
+    n= 5  H(0)=  16 H(other)=  20  TV(tilted, prior)=0.03810
+    n= 6  H(0)=  32 H(other)=  36  TV(tilted, prior)=0.01701
+    n= 8  H(0)= 128 H(other)= 132  TV(tilted, prior)=0.00340
+    n=10  H(0)= 512 H(other)= 516  TV(tilted, prior)=0.00070
+== 10. Objection: worst case, minimax regret, dominance (Dana prior, MZ Brier) ==
+  [ok] maximin: BCOND worst case -1.188 < dogmatic -1.120
+  [ok] minimax regret: BCOND max regret 1.188 (attained in Dana's problem: True) > dogmatic 1.120
+  [ok] in every problem a GEC rule matches META-COND's expected accuracy (regret baseline)
+  (minimax-regret optimum not computed; it suffices that dogmatic beats BCOND)
+== 11. Agent-level transfer: opaque but CAR learning => META-COND = BCOND on S ==
+  [ok] Cyclic agent (fair coin): conditioning on 'I received p' = conditioning on p
+  [ok] Cyclic agent with biased coin (2/3,1/3): the two come apart
+
+==== v4 additions ====
+== 12. v4 Prop 6(iii): TEA_lam respects conditional (Zendejas Medina) verdicts iff lam extensional ==
+  [ok] extensional weightings (22): every conditionally dominated rule is weakly worse in TEA
+  [ok] non-extensional weightings (38): explicit pair where TEA reverses a strict conditional verdict
+== 13. v4 Prop 8: agents with a learning mechanism q over first-order states ==
+  [ok] (a) META-COND and BCOND agree on S at every received p iff q is CAR (20 CAR, 20 non-CAR)
+  [ok] (b, if) CAR => BCOND satisfies Reflection for every proposition about W (exact)
+  [ok] (c) Cyclic, fair coin: after learning {0,1}, BCOND credence that {0,1} is what was received = 1/2
+  [ok] (b, only if) every sampled non-CAR mechanism violates Reflection about S at some prior
+  [ok] n=3: solution space of 'Reflection about S for every prior' (dim 4) = CAR space (dim 4), intersection dim 4
+  [ok] n=4: solution space of 'Reflection about S for every prior' (dim 11) = CAR space (dim 11), intersection dim 11
+== 14. v4 illustrations ==
+  [ok] Here's a Hand is non-CAR
+  [ok] Here's a Hand, uniform prior: expected posterior in HAND = 1/2 > prior 1/3
+  [ok] Cyclic, coin 2/3, prior (1/2,1/4,1/4): Reflection about S fails (gap 1/72)
+
+ALL CHECKS PASSED: True (62 checks)
