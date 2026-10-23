@@ -1,0 +1,7 @@
+B(S) = [1, 2, 3, 4]  K(s1) = [1, 2, 3, 4]
+B(q) = [1, 5]  K_q(s1) = [1, 5]  B^q(S) [BRN D.2] = [1]
+KDT: value now 1.000, value of looking 0.467 -> -0.533
+D (states where looking changes the payoff) == q: True
+CEU, BRN D.2 reading: CK = [1]; E[look - bet | CK] = -1.000 -> prefers betting now (refuses free evidence)
+CEU, discovery reading: CK = [1, 5]; E[look - bet | CK] = 0.235 -> prefers looking
+Pr(p | S) = 0.9375, Pr(p | q) = 0.8889

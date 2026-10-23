@@ -1,0 +1,168 @@
+[
+ {
+  "key": "AhmedSalow2019",
+  "authors": [
+   "Arif Ahmed",
+   "Bernhard Salow"
+  ],
+  "year": 2019,
+  "title": "Don't Look Now",
+  "venue": "British Journal for the Philosophy of Science",
+  "volume": "70",
+  "pages": "327-350",
+  "type": "article",
+  "doi": "10.1093/bjps/axx047"
+ },
+ {
+  "key": "CarterHawthorne2024",
+  "authors": [
+   "Sam Carter",
+   "John Hawthorne"
+  ],
+  "year": 2024,
+  "title": "Dogmatism and Inquiry",
+  "venue": "Mind",
+  "volume": "133",
+  "pages": "651-676",
+  "doi": "10.1093/mind/fzad070",
+  "type": "article"
+ },
+ {
+  "key": "Das2023",
+  "authors": [
+   "Nilanjan Das"
+  ],
+  "year": 2023,
+  "title": "The Value of Biased Information",
+  "venue": "British Journal for the Philosophy of Science",
+  "volume": "74",
+  "pages": "25-55",
+  "doi": "10.1093/bjps/axaa003",
+  "type": "article"
+ },
+ {
+  "key": "Goldschmidt2024",
+  "authors": [
+   "Zeev Goldschmidt"
+  ],
+  "year": 2024,
+  "title": "Foundations for Knowledge-Based Decision Theories",
+  "venue": "Australasian Journal of Philosophy",
+  "volume": "102",
+  "pages": "939-958",
+  "doi": "10.1080/00048402.2024.2328635",
+  "type": "article"
+ },
+ {
+  "key": "Good1967",
+  "authors": [
+   "I. J. Good"
+  ],
+  "year": 1967,
+  "title": "On the Principle of Total Evidence",
+  "venue": "British Journal for the Philosophy of Science",
+  "volume": "17",
+  "pages": "319-321",
+  "doi": "10.1093/bjps/17.4.319",
+  "type": "article"
+ },
+ {
+  "key": "GoodmanSalow2023",
+  "authors": [
+   "Jeremy Goodman",
+   "Bernhard Salow"
+  ],
+  "year": 2023,
+  "title": "Epistemology Normalized",
+  "venue": "Philosophical Review",
+  "volume": "132",
+  "pages": "89-145",
+  "doi": "10.1215/00318108-10123787",
+  "type": "article"
+ },
+ {
+  "key": "GoodmanSalow2025",
+  "authors": [
+   "Jeremy Goodman",
+   "Bernhard Salow"
+  ],
+  "year": 2025,
+  "title": "Belief Revision Normalized",
+  "venue": "Journal of Philosophical Logic",
+  "volume": "54",
+  "pages": "1-49",
+  "doi": "10.1007/s10992-024-09769-0",
+  "type": "article"
+ },
+ {
+  "key": "HawthorneStanley2008",
+  "authors": [
+   "John Hawthorne",
+   "Jason Stanley"
+  ],
+  "year": 2008,
+  "title": "Knowledge and Action",
+  "venue": "Journal of Philosophy",
+  "volume": "105",
+  "pages": "571-590",
+  "type": "article",
+  "doi": "10.5840/jphil20081051022"
+ },
+ {
+  "key": "Hong2024",
+  "authors": [
+   "Frank Hong"
+  ],
+  "year": 2024,
+  "title": "Know Your Way Out of St. Petersburg: An Exploration of \"Knowledge-First\" Decision Theory",
+  "venue": "Erkenntnis",
+  "doi": "10.1007/s10670-022-00639-2",
+  "type": "article",
+  "volume": "89",
+  "pages": "2473-2492"
+ },
+ {
+  "key": "Hong2026",
+  "authors": [
+   "Frank Hong"
+  ],
+  "year": 2026,
+  "title": "Normality in Action?",
+  "venue": "Philosophical Perspectives",
+  "doi": "10.1111/phpe.70003",
+  "type": "article"
+ },
+ {
+  "key": "Salow2025",
+  "authors": [
+   "Bernhard Salow"
+  ],
+  "year": 2025,
+  "title": "Fallibility and Dogmatism",
+  "venue": "Australasian Journal of Philosophy",
+  "volume": "103",
+  "pages": "23-38",
+  "doi": "10.1080/00048402.2024.2381692",
+  "type": "article"
+ },
+ {
+  "key": "Geanakoplos1989",
+  "authors": [
+   "John Geanakoplos"
+  ],
+  "year": 1989,
+  "title": "Game Theory Without Partitions, and Applications to Speculation and Consensus",
+  "venue": "Cowles Foundation Discussion Paper 914",
+  "type": "report"
+ },
+ {
+  "key": "Hawthorne2004",
+  "authors": [
+   "John Hawthorne"
+  ],
+  "year": 2004,
+  "title": "Knowledge and Lotteries",
+  "venue": "Oxford University Press",
+  "type": "book"
+ }
+]

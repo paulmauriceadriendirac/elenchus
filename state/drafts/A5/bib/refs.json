@@ -1,0 +1,9 @@
+[
+ {"key":"Dorst2019","authors":["Kevin Dorst"],"year":2019,"title":"Lockeans Maximize Expected Accuracy","venue":"Mind","volume":"128","pages":"175-211","doi":"10.1093/mind/fzx028","type":"article"},
+ {"key":"Easwaran2016","authors":["Kenny Easwaran"],"year":2016,"title":"Dr. Truthlove or: How I Learned to Stop Worrying and Love Bayesian Probabilities","venue":"Noûs","volume":"50","pages":"816-853","doi":"10.1111/nous.12099","type":"article"},
+ {"key":"Rothschild2021","authors":["Daniel Rothschild"],"year":2021,"title":"Lockean Beliefs, Dutch Books, and Scoring Systems","venue":"Erkenntnis","doi":"10.1007/s10670-021-00438-1","type":"article"},
+ {"key":"Wang2025","authors":["Minkyung Wang"],"year":2025,"title":"Credence and belief: epistemic decision theory revisited","venue":"Philosophical Studies","volume":"182","pages":"1433-1465","doi":"10.1007/s11098-025-02321-z","type":"article"},
+ {"key":"Holguin2022","authors":["Ben Holguín"],"year":2022,"title":"Thinking, Guessing, and Believing","venue":"Philosophers' Imprint","volume":"22","type":"article"},
+ {"key":"GoodmanSalow2023","authors":["Jeremy Goodman","Bernhard Salow"],"year":2023,"title":"Epistemology Normalized","venue":"The Philosophical Review","volume":"132","pages":"89-139","type":"article"},
+ {"key":"Leitgeb2014","authors":["Hannes Leitgeb"],"year":2014,"title":"The Stability Theory of Belief","venue":"The Philosophical Review","volume":"123","pages":"131-171","doi":"10.1215/00318108-2400575","type":"article"}
+]

@@ -1,0 +1,4 @@
+{'L': 5, 'kdt_value': -0.0034, 'ceu_plain_E_bet_given_CK': -0.468, 'ceu_plain_prefers_look': True, 'eps_E_zeta_on_K': 1.007, 'eps_ceu_margin_bet1_over_look': 0.0044}
+{'L': 10, 'kdt_value': -0.0491, 'ceu_plain_E_bet_given_CK': -0.626, 'ceu_plain_prefers_look': True, 'eps_E_zeta_on_K': 1.098, 'eps_ceu_margin_bet1_over_look': 0.0502}
+{'L': 20, 'kdt_value': -0.1184, 'ceu_plain_E_bet_given_CK': -0.91, 'ceu_plain_prefers_look': True, 'eps_E_zeta_on_K': 1.237, 'eps_ceu_margin_bet1_over_look': 0.1197}
+{'L': 100, 'kdt_value': -0.2733, 'ceu_plain_E_bet_given_CK': -2.658, 'ceu_plain_prefers_look': True, 'eps_E_zeta_on_K': 1.547, 'eps_ceu_margin_bet1_over_look': 0.2748}
