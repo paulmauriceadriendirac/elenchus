@@ -54,3 +54,10 @@
 4. Full-text kill test per card (referee with anchors) → pairwise rank → draft top 3–4.
 5. 3–4 referee/revise rounds per finalist (advocate, literature auditor, distant-subfield personas).
 Fallback pool if the ambitious track yields nothing: E1 v3, E2 v4, E3 v3, Astra essays.
+
+## Plan for this phase (human, 2026-10-23 01:55 UTC)
+1. Finish three essays from the ambitious track: A4 (actual causation), A5 (belief–credence), A6
+   (value of evidence / dogmatism). Cards → kill test → draft → hostile review rounds.
+2. Review Astra's latest work (04 v2, 05 v2, A6 v0.2, A4 v0.1) → post to issue #1.
+3. Human then uploads anchor PDFs for A1–A3 and brings other models' comments.
+Provenance: Astra outputs quarantined from our pipeline (Astra reported an exposure concern).
