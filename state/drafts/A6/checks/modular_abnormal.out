@@ -1,0 +1,3 @@
+modular: True  diamond-minus (Preservation) valid for all E,p: True
+K(b) = [0, 1]  post-answer ken at b after learning {b,c}: [1, 2]
+KDT value of {a | b,c} at b with a 10:1 ken bet, uniform prior: -0.5

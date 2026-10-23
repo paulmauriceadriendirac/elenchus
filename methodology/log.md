@@ -71,3 +71,4 @@
 - 2026-10-23T23:16:42Z **agent**: A4 essay v1: state/drafts/A4/v1.md (5,763 words); models state/drafts/A4/models.py (--essay checks E0-E12); notes state/drafts/A4/notes.md
 
 - 2026-10-23T23:02:33Z **human** (generic-feedback): see human_inputs.md
+- 2026-10-23T23:17:35Z **warning**: Astra commit 217d95d edited CLAUDE.md §1.2 (binding rules), added PROVENANCE-CLARIFICATION.md, and appended to STATUS.md and methodology logs (including a human message sent to Astra). CLAUDE.md change made by another agent, not by the orchestrator; awaiting the human's confirmation before treating the revised §1.2 as adopted. Our drafting pipeline continues unchanged.
