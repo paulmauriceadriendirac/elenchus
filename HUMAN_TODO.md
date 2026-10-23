@@ -1,12 +1,47 @@
 # What the run needs from you
 
-_Updated 2026-10-22 17:38 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-23 22:51 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
 Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text into the chat and say which slug it is. If you cannot get it, create `inbox/sources/<slug>.unavailable` (or just say so in the chat).
 
 **Cloud session:** on GitHub, open `paulmauriceadriendirac/elenchus`, switch to branch `claude/stoic-davinci-ktysg2`, go to `inbox/sources/`, use *Add file → Upload files*, commit to that branch, then tell the session "fetched". Or paste the text straight into the chat and name its slug.
+
+### `amb-a4-halpern-2016-book`  (high)
+- **Citation:** Halpern, Joseph Y. 2016. Actual Causality. MIT Press. (chapters 3 and 4: normality, the modified definition with normality AC2+(a^m), examples incl. rock-throwing and switches; pp. 38-39, 79-81, 90-91 cited by Andreas & Guenther 2024b)
+- **Where to try:** 
+- **Needed:** chapter 3 (Graded causation and normality) and the pages 38-39, 79-81, 90-91
+- **Why:** Cards A4-01/A4-02 claim tensions in normality-augmented modified HP; must check whether the book already treats preempted normal backups and frozen-variable equation violations
+- **Requested by:** A4 attack-card generator
+
+### `amb-a4-harinen-2017`  (high)
+- **Citation:** Harinen, Totte. 2017. Normal Causes for Normal Effects: Reinvigorating the Correspondence Hypothesis About Judgments of Actual Causation. Erkenntnis 82(6): 1299-1320. doi:10.1007/s10670-017-9876-4 (open access; also PhilSci-Archive 11133/11140, 2014 draft)
+- **Where to try:** https://link.springer.com/content/pdf/10.1007/s10670-017-9876-4.pdf https://philsci-archive.pitt.edu/11133/1/Normal_Causes_for_Normal_Effects_%28philsci%29.pdf
+- **Needed:** full text (PDF) of the 2017 Erkenntnis version; the 2014 PhilSci draft also useful
+- **Why:** Closest prior art for card A4-01 (normal-backup preemption vs normality-based accounts); automated access blocked (Springer HTML wall, PhilSci 503)
+- **Requested by:** A4 attack-card generator
+
+### `amb-a5-wang-2025`  (high)
+- **Citation:** Wang 2025. Philosophical Studies 182(5): 1433-1465. doi:10.1007/s11098-025-02321-z
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** A5 prior art: reportedly shows stability theory fails EU norms
+- **Requested by:** red-team
+
+### `amb-a6-goldstein-omega-knowledge`  (high)
+- **Citation:** Goldstein, Simon. 'Omega Knowledge Matters', Oxford Studies in Epistemology vol. 8 (2026), pp. 63-84; and Goldstein, Iterated Knowledge (OUP 2024), ch. 1 (same material)
+- **Where to try:** https://academic.oup.com/book/61877/chapter/547493593 ; https://hub.hku.hk/handle/10722/350984
+- **Needed:** full text (PDF) of the chapter
+- **Why:** A6 prior-art check: does Goldstein argue that omega knowledge is required for action via a value-of-information / Good's theorem argument? Card A6-01 claims omega knowledge is the strongest knowledge-like state whose expected-utility use never makes free evidence harmful.
+- **Requested by:** A6 attack-card generator
+
+### `amb-a6-hong-2025-2026`  (high)
+- **Citation:** Hong, Frank (2026) 'Normality in Action?', Philosophical Perspectives, doi:10.1111/phpe.70003; Hong, Frank (2025) 'Fanaticism and knowledge', Synthese 206, doi:10.1007/s11229-025-05114-3 (both listed open access by OpenAlex but blocked to automated access)
+- **Where to try:** https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/phpe.70003 ; https://link.springer.com/content/pdf/10.1007/s11229-025-05114-3.pdf
+- **Needed:** full text PDFs
+- **Why:** A6 prior-art check (high): Hong 2026 argues normality-framework knowledge is not action-guiding; card A6-01 proves that expected-utility use of normality knowledge violates Good's theorem except on ranked normality and identifies omega knowledge as the strongest Good-respecting state; must see whether Hong's two arguments anticipate this. Duplicates l3-hong-2026-normality-in-action at higher priority.
+- **Requested by:** A6 attack-card generator
 
 ### `amb-andreas-gunther-2021`  (high)
 - **Citation:** Andreas, Holger and Mario Günther. 2021. A Ramsey Test Analysis of Causation for Causal Models. BJPS 72. doi:10.1093/bjps/axy074
@@ -41,13 +76,6 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Where to try:** 
 - **Needed:** full text (PDF)
 - **Why:** Anchor for ambitious problem A3 (Cantorian limits on grain)
-- **Requested by:** orchestrator
-
-### `amb-gallow-2021-causation`  (high)
-- **Citation:** Gallow, J. Dmitri. 2021. A Model-Invariant Theory of Causation. Philosophical Review 130: 45-96. doi:10.1215/00318108-8699682
-- **Where to try:** 
-- **Needed:** full text (PDF)
-- **Why:** Anchor for ambitious problem A4 (actual causation)
 - **Requested by:** orchestrator
 
 ### `amb-hong-russell-2025`  (high)
@@ -343,6 +371,41 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Needed:** full text PDF (preprint acceptable)
 - **Why:** L4 map: its negative-dominance principle is the same condition Thornley uses to derive POSL from POST; need exact statements to assess whether the argument transfers to incomplete-preference shutdown proposals; abstract only so far
 - **Requested by:** lane-mapper-L4
+
+### `amb-a4-apr-2025-symposium`  (normal)
+- **Citation:** Australasian Philosophical Review 9(2) 2025, symposium on Andreas & Gunther (Hitchcock, Hall commentaries; reply)
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** A4 prior art: responses to the target account
+- **Requested by:** red-team
+
+### `amb-a4-blanchard-schaffer-2017`  (normal)
+- **Citation:** Blanchard, Thomas and Jonathan Schaffer. 2017. Cause without Default. In Making a Difference (OUP).
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** A4 prior art: normality in actual causation
+- **Requested by:** red-team
+
+### `amb-a4-hitchcock-2007-hall-2007`  (normal)
+- **Citation:** Hitchcock 2007 'Prevention, Preemption, and the Principle of Sufficient Reason' (Phil Review); Hall 2007 'Structural equations and causation' (Phil Studies)
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** A4 prior art
+- **Requested by:** red-team
+
+### `amb-a4-synthese-2023-isomorphs`  (normal)
+- **Citation:** Synthese 2023, doi:10.1007/s11229-023-04101-w
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** A4 prior art (isomorphs)
+- **Requested by:** red-team
+
+### `amb-a5-hewson-2022`  (normal)
+- **Citation:** Hewson 2022. Nous 56(4): 763-786. doi:10.1111/nous.12397
+- **Where to try:** 
+- **Needed:** full text (PDF)
+- **Why:** A5 prior art
+- **Requested by:** red-team
 
 ### `berntson-2026-against-mp-might`  (normal)
 - **Citation:** Berntson, D. (2026). Against Modus Ponens for Might. Analysis. doi:10.1093/analys/anag011
@@ -642,6 +705,8 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 
 Paste `relay/outbox/<id>.md` into the other model verbatim, then save its full reply, unedited, as `relay/inbox/<id>.md` with first line `model: <name and version>`.
 
+- `codex-ambitious-drafts-20261022` → any frontier model other than Claude
+- `codex-ambitious-review-20261022` → any frontier model other than Claude
 - `codex-eight-ideas-audit-20261022` → any frontier model other than Claude
 - `codex-expansion-20261022` → any frontier model other than Claude
 

@@ -67,3 +67,4 @@
 - 2026-10-23T22:44:49Z **event**: Resumed A4, A5, A6 kill tests after usage limit (22:44 UTC).
 - 2026-10-23T22:47:29Z **agent**: A6 kill test: state/ambitious/killtest/A6.md
 - 2026-10-23T22:49:42Z **agent**: A5 kill test: state/ambitious/killtest/A5.md
+- 2026-10-23T22:50:58Z **agent**: A4 kill test: state/ambitious/killtest/A4.md
