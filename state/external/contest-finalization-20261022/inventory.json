@@ -1,0 +1,366 @@
+[
+  {
+    "id": "E1",
+    "path": "state/drafts/E1/v3.md",
+    "status": "prepare",
+    "reason": "Latest Claude revision; Gettier argument. Verify the remaining source comparisons and central non-cliff-edge intuition.",
+    "title": "Gettier Knowledge across Independent Sources: K-Normality without Comparability",
+    "blob_sha": "d0e4b0afec435d1b653b5528774e5b1d8957d2d1",
+    "kind": "developed",
+    "count": {
+      "file": "sources/E1.md",
+      "strict": 5797,
+      "wordlike": 5746,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 17,
+      "html_comments_found": 0
+    },
+    "sha256": "462c0cd19dab882db95b4a9cb1b5fbbeacf9bc800f52bdd9263ed75a19ebc6bb",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/E1.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "E2",
+    "path": "state/drafts/E2/v4.md",
+    "status": "prepare",
+    "reason": "Latest Claude revision; ignorability/Reflection. Gallow full text is now cached; reconcile it with the novelty claim.",
+    "title": "Ignorable Learning: Total Accuracy, Plan Coherence, and Conditionalization for Externalists",
+    "blob_sha": "8dc9935d94c2cfb92fb1d86b93352157ed15586b",
+    "kind": "developed",
+    "count": {
+      "file": "sources/E2.md",
+      "strict": 5319,
+      "wordlike": 5276,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 29,
+      "html_comments_found": 0
+    },
+    "sha256": "cf617283dee570ec06fb27e030b6f9d2e32327c2846d4b47d1364e0a6c54f208",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/E2.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "E3",
+    "path": "state/drafts/E3/v3.md",
+    "status": "prepare",
+    "reason": "Latest Claude revision; Flattening. Main remaining burden is the bare-language judgments and rival semantic readings.",
+    "title": "Flattening and Counterfactual Independence",
+    "blob_sha": "7bf02476c27199cd942febdf916a43cca9a2fe7a",
+    "kind": "developed",
+    "count": {
+      "file": "sources/E3.md",
+      "strict": 5475,
+      "wordlike": 5423,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 41,
+      "html_comments_found": 0
+    },
+    "sha256": "cd2a1d65712af38e7fe33bd7511a125abf0be4e495b99b2af56e6a6df5dfdc9b",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/E3.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "O1",
+    "path": "state/external/astra/01-independent-sources.md",
+    "status": "archive",
+    "reason": "Alternative to E1; earlier review rejects present framing. Do not count as an independent topic.",
+    "title": "Independent Sources and the Correlations We Know",
+    "blob_sha": "d80bb747b712e7d0f7d5939630d38b4a17fe875b",
+    "kind": "developed",
+    "count": {
+      "file": "sources/O1.md",
+      "strict": 3148,
+      "wordlike": 3136,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 9,
+      "html_comments_found": 0
+    },
+    "sha256": "3b1b30f648e9439c15627cabe70e2cdbc78230583790358a4fa09956d72f7ad3",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/O1.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "O2",
+    "path": "state/external/astra/02-bayes-and-the-benchmark.md",
+    "status": "archive",
+    "reason": "Alternative to E2; unresolved uncertainty/indeterminacy and significance objections.",
+    "title": "How Much Does Bayes Depend on the Benchmark?",
+    "blob_sha": "11d9925585b6d57f198dcbdb375e99c8087077cd",
+    "kind": "developed",
+    "count": {
+      "file": "sources/O2.md",
+      "strict": 2897,
+      "wordlike": 2892,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 11,
+      "html_comments_found": 0
+    },
+    "sha256": "c53c2607e5afb9d2b9dbf07cfd89cce79ec320b9c3b882462f55c98104cfc1ae",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/O2.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "O3",
+    "path": "state/external/astra/03-independent-interventions.md",
+    "status": "archive",
+    "reason": "Alternative to E3; correct formal result but unestablished natural-language payoff.",
+    "title": "Independent Interventions and the Limits of Flattening",
+    "blob_sha": "834ffff3af2b8c71f321151a78fafa4c4f31eb91",
+    "kind": "developed",
+    "count": {
+      "file": "sources/O3.md",
+      "strict": 2787,
+      "wordlike": 2784,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 7,
+      "html_comments_found": 0
+    },
+    "sha256": "2a873c46cecc8741160b6d6e2940401727954a5546a81c0b49418ed79d6da306",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/O3.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "O4",
+    "path": "state/external/codex-expansion-20261022/essays/04-evidence-and-description.md",
+    "status": "alternate",
+    "reason": "Substantially revised after first review; current-version review pending.",
+    "title": "What Counts as the Same Evidence?",
+    "blob_sha": "f5339ce61d256abe6217b703ebe1f621533cb6c9",
+    "kind": "developed",
+    "count": {
+      "file": "sources/O4.md",
+      "strict": 5980,
+      "wordlike": 5974,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 11,
+      "html_comments_found": 0
+    },
+    "sha256": "37fb68bf667dbf2668c1cc2a9ce05e38f094c3552f8454051af16bd4ea0b2b6a",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/O4.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "O5",
+    "path": "state/external/codex-expansion-20261022/essays/05-regret-and-belief.md",
+    "status": "alternate",
+    "reason": "Substantially revised after first review; current-version review pending.",
+    "title": "Can Regret Minimization Determine What to Believe?",
+    "blob_sha": "79b496dc326ce21f09d099d68f5a2b9a290011a6",
+    "kind": "developed",
+    "count": {
+      "file": "sources/O5.md",
+      "strict": 5976,
+      "wordlike": 5971,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 17,
+      "html_comments_found": 0
+    },
+    "sha256": "f2bbce4723e0c509567f11a9c1e361e2d2a77db0abaf3ce884f861f16c744b66",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/O5.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "A4",
+    "path": "state/external/ambitious-drafts-20261022/A4-causal-refinement-v01.md",
+    "status": "hold",
+    "reason": "No admissible realization under full target theory; Ehring comparison unresolved.",
+    "title": "Causal Refinement Without a Final Layer",
+    "blob_sha": "ef47d311c0a076f5e52ad3d72ab75d603d627dff",
+    "kind": "developed",
+    "count": {
+      "file": "sources/A4.md",
+      "strict": 2577,
+      "wordlike": 2577,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 7,
+      "html_comments_found": 0
+    },
+    "sha256": "976a08e307cbb77875db37eb739939a45ecff0ee0cc5c431ec34363525929f44",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/A4.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "A6",
+    "path": "state/external/ambitious-drafts-20261022/A6-recoverable-knowledge-v01.md",
+    "status": "hold",
+    "reason": "Essay v0.1 plus separate v0.2 research note; no integrated final article or sufficient epistemic realization.",
+    "title": "Recoverable Knowledge and the Permission to Inquire",
+    "blob_sha": "817dd4c0a29200e12503328a2adaf3c245e72502",
+    "kind": "developed",
+    "count": {
+      "file": "sources/A6.md",
+      "strict": 2634,
+      "wordlike": 2632,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 9,
+      "html_comments_found": 0
+    },
+    "sha256": "2171a1d8e12518ee892228e44990a524e5da26e71f3593f4ea64b760ea13a5d6",
+    "mechanical_scan": {
+      "exit_code": 0,
+      "output": "Scanned sources/A6.md\nNo hard flags.\n"
+    }
+  },
+  {
+    "id": "C013",
+    "path": "state/external/eight-ideas-audit-20261022/01-C013-revocation.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "A revocation right whose evidence belongs to the delegate",
+    "blob_sha": "20dc60696db363e2de26cc725e666be171a9f197",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C013.md",
+      "strict": 979,
+      "wordlike": 977,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "3a6e63d882a9fe6fd80df6b5ba7903afe6158547a9f6bd7a544c4595603b104b"
+  },
+  {
+    "id": "C052",
+    "path": "state/external/eight-ideas-audit-20261022/02-C052-models-and-accountability.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "What an accountability model must preserve",
+    "blob_sha": "bcfb31d296568a5092c3b6eda6ea33dd5fd4084e",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C052.md",
+      "strict": 1056,
+      "wordlike": 1054,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "705cfb044559f504ff231055cff9d7378c5f3083d621255be536a9ce30bcc560"
+  },
+  {
+    "id": "C004",
+    "path": "state/external/eight-ideas-audit-20261022/03-C004-preserving-correction.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "The cost of making a claim uncheckable",
+    "blob_sha": "f6e7fdc12d730e40ccf4db6582feef8bcce7eaae",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C004.md",
+      "strict": 1048,
+      "wordlike": 1046,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "ecb03bc3bf77f7c921df6e87de12f191f459da9a1c9941661e1bdca7cba9c8e9"
+  },
+  {
+    "id": "C111",
+    "path": "state/external/eight-ideas-audit-20261022/04-C111-inherited-authority.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "Inheriting benefits without inheriting the founder's reasons",
+    "blob_sha": "ecb203701ae7c03d3ccba793f4018de9ba2d31f5",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C111.md",
+      "strict": 1026,
+      "wordlike": 1024,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "efc9b4046e1686b3cc1bbb3225600671ca8babf8221a1cd8f7940f619df002e3"
+  },
+  {
+    "id": "C063",
+    "path": "state/external/eight-ideas-audit-20261022/05-C063-translating-disagreement.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "A translation can preserve the sentences and lose the dispute",
+    "blob_sha": "745a78700ed9bdc7f4b10b8e0ac980f680373206",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C063.md",
+      "strict": 1089,
+      "wordlike": 1087,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "4f148a907a34999d4dd4f4a5b37a7c0fe1be7ea216982b243350d69008eb3103"
+  },
+  {
+    "id": "C045",
+    "path": "state/external/eight-ideas-audit-20261022/06-C045-forgotten-obligations.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "You may still owe me, but I may owe you an explanation",
+    "blob_sha": "7e95d2f92d4c43493c0a4a3ec97086c3beb403e9",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C045.md",
+      "strict": 1173,
+      "wordlike": 1171,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "380b565fb464d0871e516ef3d88bd4e575160dd8f6254f956f373492d9f4b292"
+  },
+  {
+    "id": "C085",
+    "path": "state/external/eight-ideas-audit-20261022/07-C085-reopening-inquiry.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "When the evidence needed to reopen a case is behind the closed door",
+    "blob_sha": "113e7104266d1f6b3356bd731165a82623516386",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C085.md",
+      "strict": 1082,
+      "wordlike": 1080,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "f69c69357464d3fd447c682309f8a0896a7c5b2a464e69fe8be1eb315950c17f"
+  },
+  {
+    "id": "C021",
+    "path": "state/external/eight-ideas-audit-20261022/08-C021-contesting-objectives.md",
+    "status": "future-work",
+    "reason": "Exploratory draft; use uploaded-source reassessment, which supersedes earlier positive rankings.",
+    "title": "A complaint that no department is authorized to hear",
+    "blob_sha": "8df28137d5515004327432ff138c0ab455dd4b55",
+    "kind": "exploratory",
+    "count": {
+      "file": "sources/C021.md",
+      "strict": 1013,
+      "wordlike": 1011,
+      "footnote_words": 0,
+      "bibliography_lines_excluded": 0,
+      "html_comments_found": 0
+    },
+    "sha256": "11500cdadcc97fe14087b99415cec2ca13ba3f5064305febc159fc6592081891"
+  }
+]
