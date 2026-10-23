@@ -68,3 +68,7 @@
 
 > Keep going and finish the three essays and also review Astra's work. And then do hostile review rounds. I think I will upload the papers you ask after that. I think this project is coming to an end for this phrase. Afterwards I probably will get other models to look at your and Astra work and then feed their comments back to you.
 
+## 2026-10-23T17:17:08Z — class: logistics
+
+> Keep going
+
