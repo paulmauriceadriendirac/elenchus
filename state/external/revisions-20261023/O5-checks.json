@@ -1,0 +1,343 @@
+{
+  "proper_loss_cases_checked": 56,
+  "bet_cases_checked_exactly": 81,
+  "loss_results": [
+    {
+      "alpha": -0.9,
+      "prior": 0.1,
+      "equalizer": 0.015297266799621014,
+      "direct_optimizer": 0.015297267147566162
+    },
+    {
+      "alpha": -0.9,
+      "prior": 0.2,
+      "equalizer": 0.04376892968073416,
+      "direct_optimizer": 0.04376893017266055
+    },
+    {
+      "alpha": -0.9,
+      "prior": 0.35,
+      "equalizer": 0.15525457486933222,
+      "direct_optimizer": 0.15525457472074555
+    },
+    {
+      "alpha": -0.9,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5000000000000007
+    },
+    {
+      "alpha": -0.9,
+      "prior": 0.65,
+      "equalizer": 0.8447454251306677,
+      "direct_optimizer": 0.8447454154419999
+    },
+    {
+      "alpha": -0.9,
+      "prior": 0.8,
+      "equalizer": 0.9562310703192658,
+      "direct_optimizer": 0.9562310696681252
+    },
+    {
+      "alpha": -0.9,
+      "prior": 0.9,
+      "equalizer": 0.9847027332003789,
+      "direct_optimizer": 0.9847027291613416
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.1,
+      "equalizer": 0.0460511916049361,
+      "direct_optimizer": 0.046051192037577064
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.2,
+      "equalizer": 0.11752288674125459,
+      "direct_optimizer": 0.11752288834041977
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.35,
+      "equalizer": 0.2808180512002427,
+      "direct_optimizer": 0.28081805253606484
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5000000000000002
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.65,
+      "equalizer": 0.7191819487997573,
+      "direct_optimizer": 0.7191819474639357
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.8,
+      "equalizer": 0.8824771132587454,
+      "direct_optimizer": 0.8824771060661002
+    },
+    {
+      "alpha": -0.75,
+      "prior": 0.9,
+      "equalizer": 0.9539488083950639,
+      "direct_optimizer": 0.953948810704516
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.1,
+      "equalizer": 0.09801412797590886,
+      "direct_optimizer": 0.09801412726374369
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.2,
+      "equalizer": 0.19758002136008077,
+      "direct_optimizer": 0.19758002029138075
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.35,
+      "equalizer": 0.3483843010619026,
+      "direct_optimizer": 0.348384302514175
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5000000000000001
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.65,
+      "equalizer": 0.6516156989380975,
+      "direct_optimizer": 0.6516157019834732
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.8,
+      "equalizer": 0.8024199786399193,
+      "direct_optimizer": 0.802419982639538
+    },
+    {
+      "alpha": -0.51,
+      "prior": 0.9,
+      "equalizer": 0.9019858720240912,
+      "direct_optimizer": 0.9019858775729871
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.1,
+      "equalizer": 0.1,
+      "direct_optimizer": 0.10000000001042408
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.2,
+      "equalizer": 0.2,
+      "direct_optimizer": 0.20000000104209043
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.35,
+      "equalizer": 0.35,
+      "direct_optimizer": 0.3499999994213791
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5000000000000001
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.65,
+      "equalizer": 0.6499999999999999,
+      "direct_optimizer": 0.6499999953869485
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.8,
+      "equalizer": 0.8,
+      "direct_optimizer": 0.7999999979147883
+    },
+    {
+      "alpha": -0.5,
+      "prior": 0.9,
+      "equalizer": 0.9,
+      "direct_optimizer": 0.8999999897118418
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.1,
+      "equalizer": 0.10196616045227924,
+      "direct_optimizer": 0.10196615991656448
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.2,
+      "equalizer": 0.20236425155319185,
+      "direct_optimizer": 0.20236425150009615
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.35,
+      "equalizer": 0.3515627365044968,
+      "direct_optimizer": 0.3515627342320649
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5000000000000001
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.65,
+      "equalizer": 0.6484372634955031,
+      "direct_optimizer": 0.648437265767935
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.8,
+      "equalizer": 0.7976357484468083,
+      "direct_optimizer": 0.797635748499904
+    },
+    {
+      "alpha": -0.49,
+      "prior": 0.9,
+      "equalizer": 0.8980338395477208,
+      "direct_optimizer": 0.8980338432430234
+    },
+    {
+      "alpha": 0,
+      "prior": 0.1,
+      "equalizer": 0.17569943677030664,
+      "direct_optimizer": 0.17569943515061143
+    },
+    {
+      "alpha": 0,
+      "prior": 0.2,
+      "equalizer": 0.2755080409994844,
+      "direct_optimizer": 0.27550803925895295
+    },
+    {
+      "alpha": 0,
+      "prior": 0.35,
+      "equalizer": 0.394215509866317,
+      "direct_optimizer": 0.3942155091733657
+    },
+    {
+      "alpha": 0,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5
+    },
+    {
+      "alpha": 0,
+      "prior": 0.65,
+      "equalizer": 0.605784490133683,
+      "direct_optimizer": 0.6057844876885591
+    },
+    {
+      "alpha": 0,
+      "prior": 0.8,
+      "equalizer": 0.7244919590005157,
+      "direct_optimizer": 0.7244919605948164
+    },
+    {
+      "alpha": 0,
+      "prior": 0.9,
+      "equalizer": 0.8243005632296934,
+      "direct_optimizer": 0.824300568973117
+    },
+    {
+      "alpha": 1,
+      "prior": 0.1,
+      "equalizer": 0.25000000000005645,
+      "direct_optimizer": 0.24999999835719702
+    },
+    {
+      "alpha": 1,
+      "prior": 0.2,
+      "equalizer": 0.3333333333333333,
+      "direct_optimizer": 0.3333333331862712
+    },
+    {
+      "alpha": 1,
+      "prior": 0.35,
+      "equalizer": 0.4232320023615812,
+      "direct_optimizer": 0.42323200106887915
+    },
+    {
+      "alpha": 1,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5
+    },
+    {
+      "alpha": 1,
+      "prior": 0.65,
+      "equalizer": 0.5767679976384188,
+      "direct_optimizer": 0.576767998931121
+    },
+    {
+      "alpha": 1,
+      "prior": 0.8,
+      "equalizer": 0.6666666666666667,
+      "direct_optimizer": 0.666666677887453
+    },
+    {
+      "alpha": 1,
+      "prior": 0.9,
+      "equalizer": 0.7499999999999433,
+      "direct_optimizer": 0.7500000039727917
+    },
+    {
+      "alpha": 2,
+      "prior": 0.1,
+      "equalizer": 0.28782632414693377,
+      "direct_optimizer": 0.2878263238481421
+    },
+    {
+      "alpha": 2,
+      "prior": 0.2,
+      "equalizer": 0.36005519538213665,
+      "direct_optimizer": 0.36005519256542334
+    },
+    {
+      "alpha": 2,
+      "prior": 0.35,
+      "equalizer": 0.43592782981058,
+      "direct_optimizer": 0.4359278269858757
+    },
+    {
+      "alpha": 2,
+      "prior": 0.5,
+      "equalizer": 0.5,
+      "direct_optimizer": 0.5000000000000001
+    },
+    {
+      "alpha": 2,
+      "prior": 0.65,
+      "equalizer": 0.56407217018942,
+      "direct_optimizer": 0.5640721730141244
+    },
+    {
+      "alpha": 2,
+      "prior": 0.8,
+      "equalizer": 0.6399448046178634,
+      "direct_optimizer": 0.6399448017201617
+    },
+    {
+      "alpha": 2,
+      "prior": 0.9,
+      "equalizer": 0.7121736758530662,
+      "direct_optimizer": 0.7121736854455312
+    }
+  ],
+  "status": "passed"
+}

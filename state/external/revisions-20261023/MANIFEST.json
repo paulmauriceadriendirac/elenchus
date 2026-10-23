@@ -1,0 +1,67 @@
+[
+  {
+    "file": "E2-v5-external.md",
+    "bytes": 38320,
+    "sha256": "4f388fe89461525fa99d7c489dbb02cd938b32b36df4c71404e6ba172a6aa84d"
+  },
+  {
+    "file": "E2-v5-external.pdf",
+    "bytes": 91762,
+    "sha256": "b4d005abedf05ae912e868ab0998862b7599826b6b8a17e9918cd42f24052085"
+  },
+  {
+    "file": "E2-v5-methodology.md",
+    "bytes": 6875,
+    "sha256": "b2ea891d0aed694a64750fcb446c2a45d64f86216376886884dba13264bfb1f5"
+  },
+  {
+    "file": "O5-REVISION-NOTES.md",
+    "bytes": 4672,
+    "sha256": "7c326ecce4e84eb959998bb623122aebe6959d7a075233f1454f39e0e880588f"
+  },
+  {
+    "file": "O5-checks.json",
+    "bytes": 7615,
+    "sha256": "e84745a2b2171ae7590f3a80d876734f25e3b565ad8a7bd371ad8c2892ab7dbc"
+  },
+  {
+    "file": "O5-v3-external.md",
+    "bytes": 40715,
+    "sha256": "49165d280e024bdc41390ae8373440a5a4dc01b40c30c63eff62e7db9a3466b2"
+  },
+  {
+    "file": "O5-v3-external.pdf",
+    "bytes": 98747,
+    "sha256": "18e59339bca2710ee1ba76e6e7efffaa31571885e6c1f6030cca8ab1f9cb8ad7"
+  },
+  {
+    "file": "O5-v3-methodology.md",
+    "bytes": 6841,
+    "sha256": "3374c3ea898f80ce09c4e9a2893ef5987d802afacff1b107b3354de9da36065a"
+  },
+  {
+    "file": "README.md",
+    "bytes": 2938,
+    "sha256": "35c920a6795d08142bac9e8588d9071f26cef7ca6d29e63bd5ba75f120dde234"
+  },
+  {
+    "file": "REVISION-NOTES.md",
+    "bytes": 4476,
+    "sha256": "e37f91d1e02793e893d371d0dcf8ae424b1591f3e1b82455672f8ab5a9687776"
+  },
+  {
+    "file": "check_o5_revision.py",
+    "bytes": 2106,
+    "sha256": "4061793c1bc5bfb338266828a9225d15a8d64257d97c7ebba3f87edce252206e"
+  },
+  {
+    "file": "new-checks.txt",
+    "bytes": 447,
+    "sha256": "73c447fdfe7991d12e8e0391006051ff64bd5786a7d83140ade5666f00f9e2c3"
+  },
+  {
+    "file": "original-checks.txt",
+    "bytes": 7090,
+    "sha256": "63ea0d2c7a7ca8f1920f3052904237678c593a722cc367b40e6c5a8841bd4f9f"
+  }
+]
