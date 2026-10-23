@@ -63,3 +63,4 @@
 - 2026-10-23T17:23:14Z **agent**: A4 attack cards: state/ambitious/cards/A4.md (5 cards; verdicts verified by state/ambitious/cards/A4_models.py --checks; fetch requests filed: amb-a4-harinen-2017, amb-a4-halpern-2016-book)
 - 2026-10-23T17:23:27Z **agent**: A6 attack cards: state/ambitious/cards/A6.md (5 cards; checks in session scratchpad a6/; fetch requests amb-a6-goldstein-omega-knowledge, amb-a6-hong-2025-2026)
 - 2026-10-23T17:33:45Z **event**: Posted review of Astra A4 v0.1 (4/10) to issue #1. All four Astra round-2 reviews posted.
+- 2026-10-23T17:34:03Z **event**: Pulled Astra commit 4e0f6ce: external E2 v5 (Astra's revision of our E2, in state/external/revisions-20261023/), O5 v3, root FINALIZATION.md. Our state/drafts/E2 untouched. E2-v5-external carries Astra's provenance/exposure flag and is quarantined like other Astra outputs.
