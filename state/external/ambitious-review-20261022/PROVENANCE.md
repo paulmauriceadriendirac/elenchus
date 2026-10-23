@@ -25,3 +25,8 @@ A further pertinent source was located and its main text read:
 - Hong, *Normality in Action?*, published online 11 September 2026, DOI 10.1111/phpe.70003: https://onlinelibrary.wiley.com/doi/10.1111/phpe.70003
 
 The six prior uploads should not be requested again. Darwall remains needed for C045. For the new track, the most immediate unresolved full-text requests are *Deontological Decision Theory and Lesser-Evil Options* for A2 and *Paradoxes of Infinite Aggregation* for A1. The former's publisher and author pages provided abstracts, while the JSTOR route did not return the article. The latter's PhilArchive PDF returned 403 and the accessible publisher/author records supplied the abstract. The repository's other fetch requests are not represented as resolved by this review. New relevance of an unread paper is not a verdict about its argument.
+
+## Clarification added 23 October 2026
+
+See [the provenance audit](../../../PROVENANCE-CLARIFICATION.md). The inspected project inputs contain no identified human philosophical contribution. The exposure disclosure above was a context-availability concern under the former broad local rule, not a finding that a human idea entered an essay or that an essay was disqualified. The audit preserves the disclosure and its limits while separating it from philosophical referee verdicts. This clarification supersedes contrary interpretations of this note.
+

@@ -1,0 +1,16 @@
+{
+  "causal_truth_table_queries": {
+    "2": 4,
+    "3": 24,
+    "4": 96,
+    "5": 320,
+    "6": 960
+  },
+  "conjunction_minimality_queries": 1092,
+  "restriction_checks": {
+    "dyadic_refinements": 7,
+    "ordered_sum_bridge_checks": 1
+  },
+  "scope": "Finite checks only; the manuscript supplies the infinite proof.",
+  "result": "PASS"
+}

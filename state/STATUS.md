@@ -61,3 +61,11 @@ Fallback pool if the ambitious track yields nothing: E1 v3, E2 v4, E3 v3, Astra 
 2. Review Astra's latest work (04 v2, 05 v2, A6 v0.2, A4 v0.1) → post to issue #1.
 3. Human then uploads anchor PDFs for A1–A3 and brings other models' comments.
 Provenance: Astra outputs quarantined from our pipeline (Astra reported an exposure concern).
+
+
+## Provenance correction and external revision (23 October 2026)
+
+The external audit in `PROVENANCE-CLARIFICATION.md` found no human philosophical contribution in the inspected project instructions. The previous quarantine entry records a workflow precaution prompted by Astra's disclosure, not a referee finding or a ruling of ineligibility. CLAUDE.md §1.2 now distinguishes neutral context from a relevant human-idea concern under the official FAQ; historical disclosures remain preserved. This correction does not certify the contents of all earlier sessions or waive the relevant-memory restriction.
+
+External A4 v2 is in `state/external/audit-and-a4-20261023/`: a conditional finite-cover-path theorem, three relay examples, and independent finite checks. It revises the external causal-refinement manuscript, not our A4 normality cards. E2 v5 and O5 v3 remain in `state/external/revisions-20261023/`. These revisions await philosophical review; no new finalist decision is implied.
+

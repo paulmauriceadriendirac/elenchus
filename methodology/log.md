@@ -68,3 +68,5 @@
 - 2026-10-23T22:47:29Z **agent**: A6 kill test: state/ambitious/killtest/A6.md
 - 2026-10-23T22:49:42Z **agent**: A5 kill test: state/ambitious/killtest/A5.md
 - 2026-10-23T22:50:58Z **agent**: A4 kill test: state/ambitious/killtest/A4.md
+
+- 2026-10-23T23:02:33Z **human** (generic-feedback): see human_inputs.md
