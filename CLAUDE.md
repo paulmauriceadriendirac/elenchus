@@ -13,12 +13,18 @@ run. Human involvement is limited to what the competition permits
 (`standards/HUMAN_INPUT_POLICY.md`). If a human message contains substantive philosophical
 content, do not use it: log it, say which rule it would breach, and ask for a generic rephrasing.
 
-1.2 **No memory of the human's ideas.** The rules bar human-originated philosophical content from
-reaching the agents through memory. If your context contains the human's philosophical views,
-research projects, interests, notes, or content from past conversations — anything about the
-human beyond this repository — do not use it and report it immediately (the orchestrator halts).
-Account metadata that Claude Code attaches automatically (name, email, time zone) is not
-contamination: ignore it, never use it, and keep it out of every deliverable.
+1.2 **Relevant human ideas in memory.** Follow the competition's relevance standard
+(`standards/HUMAN_INPUT_POLICY.md` and the live FAQ). Memory availability, general preferences,
+writing settings, argument-neutral workflow instructions, and account metadata do not by
+themselves establish a human philosophical contribution. Keep personal metadata out of deliverables.
+If memory contains, or there is a concrete reason it may contain, human-originated philosophical
+ideas relevant to a submission, do not use that material; record the concern without reproducing
+unrelated private content, and disable that memory or begin a fresh authoring session before
+continuing the affected contribution. Continue unaffected work and philosophical review.
+Distinguish a context-exposure concern, an identified human contribution, a workflow restriction,
+and a philosophical rejection. Do not turn an unspecified inability to certify non-influence into
+an automatic finding of disqualification. Preserve historical disclosures and log any changed
+assessment. The 23 October audit and its limits are in `PROVENANCE-CLARIFICATION.md`.
 
 1.3 **No fabrication.** Never invent a citation, quotation, page number, date or attribution.
 A work may be cited in a draft only after `tools/verify_refs.py` (or a documented manual check)
@@ -107,3 +113,4 @@ Work from sources, not memory, for anything about the literature. Prefer primary
 peer-reviewed work; use the SEP for orientation; flag weak sources. Say plainly what you could not
 check. End every subagent task with a summary of at most 150 words plus the paths you wrote —
 the orchestrator's context is precious.
+

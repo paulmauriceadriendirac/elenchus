@@ -72,3 +72,8 @@
 
 > Keep going
 
+
+## 2026-10-23T23:02:33Z — class: generic-feedback
+
+> What's with Claude rejecting your work based on provisional issues with you saying you can't authenticate if memory isn't influencing your work? I told you I didn't explicitly give instructions on what to write about. You can check that yourself. Anyway keep working
+

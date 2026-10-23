@@ -69,3 +69,5 @@
 - 2026-10-23T22:49:42Z **agent**: A5 kill test: state/ambitious/killtest/A5.md
 - 2026-10-23T22:50:58Z **agent**: A4 kill test: state/ambitious/killtest/A4.md
 - 2026-10-23T23:16:42Z **agent**: A4 essay v1: state/drafts/A4/v1.md (5,763 words); models state/drafts/A4/models.py (--essay checks E0-E12); notes state/drafts/A4/notes.md
+
+- 2026-10-23T23:02:33Z **human** (generic-feedback): see human_inputs.md
