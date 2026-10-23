@@ -1,0 +1,5 @@
+n=5 structures: 9211 mismatches: {'bel': 0, 'Kglob': 0, 'Iglob': 0, 'KMglob': 0, 'KK': 0, 'Ksuff': 0} K sufficiency trials: 31441
+
+real	0m30.147s
+user	0m29.840s
+sys	0m0.008s
