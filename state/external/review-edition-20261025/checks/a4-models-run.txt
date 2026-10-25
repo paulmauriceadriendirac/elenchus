@@ -1,0 +1,218 @@
+## E0. 75 weak orders on ['E00', 'E01', 'E10', 'E11']; 36 queries (32 original + DOOR:Df, DOOR:M, DOOR_R:Df, LOCP:Lo)
+## E1. Modified-HP witness profiles (actual category -> witness category), per coding
+  C1 DOOR:Df defaults={'L': 0, 'R': 0, 'E': 0} witness profiles (changed vars only): [(('Df', 'R1->R0'), ('E', 'E10->E00'), ('L', 'E00->E01'), ('R', 'E10->E00'))]
+  C1 NBP:Lo defaults={'D': 0, 'E': 0} witness profiles (changed vars only): [(('D', 'E00->E01'), ('E', 'E10->E00'), ('Lo', 'R1->R0'))]
+  C1 LOCP:Lo defaults={'D': 0, 'E': 0} witness profiles (changed vars only): [(('D', 'E00->E01'), ('E', 'E10->E00'), ('Lo', 'R1->R0'))]
+  C2 DOOR:Df defaults={'L': 0, 'R': 0, 'E': 0} witness profiles (changed vars only): [(('Df', 'R1->R0'), ('E', 'E10->E00'), ('L', 'E00->E01'), ('R', 'E10->E00'))]
+  C2 NBP:Lo defaults={'D': 1, 'E': 1} witness profiles (changed vars only): [(('D', 'E10->E11'), ('E', 'E00->E10'), ('Lo', 'R1->R0'))]
+  C2 LOCP:Lo defaults={'D': 0, 'E': 0} witness profiles (changed vars only): [(('D', 'E00->E01'), ('E', 'E10->E00'), ('Lo', 'R1->R0'))]
+  C3 DOOR:Df defaults={'L': 1, 'R': 0, 'E': 1} witness profiles (changed vars only): [(('Df', 'R1->R0'), ('E', 'E00->E10'), ('L', 'E10->E11'), ('R', 'E10->E00'))]
+  C3 NBP:Lo defaults={'D': 1, 'E': 1} witness profiles (changed vars only): [(('D', 'E10->E11'), ('E', 'E00->E10'), ('Lo', 'R1->R0'))]
+  C3 LOCP:Lo defaults={'D': 1, 'E': 1} witness profiles (changed vars only): [(('D', 'E10->E11'), ('E', 'E00->E10'), ('Lo', 'R1->R0'))]
+## E2. Verdicts under named schemes (T = (part of) cause)
+  C1 licence     orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 licence     upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 licence     mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 licence+    orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 licence+    upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 licence+    mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 conformity  orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C1 conformity  upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C1 conformity  mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=T NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C1 value-only  orig GP:A=F SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 value-only  upd  GP:A=F SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C1 value-only  mod  GP:A=F SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=T LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=T
+  C2 licence     orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 licence     upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 licence     mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 licence+    orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 licence+    upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 licence+    mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 conformity  orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 conformity  upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 conformity  mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=T NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 value-only  orig GP:A=F SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 value-only  upd  GP:A=F SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C2 value-only  mod  GP:A=F SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=T DOOR:Df=T DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 licence     orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 licence     upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 licence     mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 licence+    orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 licence+    upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 licence+    mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 conformity  orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 conformity  upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 conformity  mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=F EP:A=T LP:ST=T LP:BT=T NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 value-only  orig GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=F LP:ST=F LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 value-only  upd  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=F LP:ST=F LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+  C3 value-only  mod  GP:A=T SC:A=F CHAIN:C=T BOULDER:Dk=T EP:A=F LP:ST=F LP:BT=F NBP:Lo=F LOCP:Lo=F DOOR:Df=F DOOR:M=T DOOR_R:Df=T SW:F=F
+## E3. Orders satisfying the forcing cases (C1): GP:A cause, CHAIN:C cause, BOULDER:Dk cause, SC:A not
+  orig: 2 survivors: ['E10=E00 E01=E00 E11<E00 E11<E01', 'E10=E00 E01>E00 E11<E00 E11<E01']
+     GP:A correct in 44 orders; relations it constrains: ['E00 </= E10']
+     CHAIN:C correct in 44 orders; relations it constrains: ['E00 =/> E10']
+     BOULDER:Dk correct in 22 orders; relations it constrains: ['E00 </= E10']
+     SC:A correct in 55 orders; relations it constrains: []
+  upd: 2 survivors: ['E10=E00 E01=E00 E11<E00 E11<E01', 'E10=E00 E01>E00 E11<E00 E11<E01']
+     GP:A correct in 44 orders; relations it constrains: ['E00 </= E10']
+     CHAIN:C correct in 44 orders; relations it constrains: ['E00 =/> E10']
+     BOULDER:Dk correct in 22 orders; relations it constrains: ['E00 </= E10']
+     SC:A correct in 55 orders; relations it constrains: []
+  mod: 2 survivors: ['E10=E00 E01=E00 E11<E00 E11<E01', 'E10=E00 E01>E00 E11<E00 E11<E01']
+     GP:A correct in 44 orders; relations it constrains: ['E00 </= E10']
+     CHAIN:C correct in 44 orders; relations it constrains: ['E00 =/> E10']
+     BOULDER:Dk correct in 20 orders; relations it constrains: ['E00 </= E01', 'E00 </= E10', 'E01 =/> E10']
+     SC:A correct in 55 orders; relations it constrains: []
+## E4. Per coding and version: orders right on the whole battery; minimal unsatisfiable sets (size<=3) containing DOOR or locust queries
+  C1 orig: right on all 36: 0; right on core four: 2; right on core+NBP:Lo: 2; right on core+DOOR:Df: 0; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (14 of 29): [['NBP:Lo', 'SW:F'], ['DOOR:Df', 'NBP:Lo'], ['LOCP:Lo', 'SW:F'], ['DOOR:Df', 'LOCP:Lo'], ['DOOR:Df', 'MEDP:C', 'SC:A'], ['DOOR:Df', 'EDP:C', 'SC:A'], ['DOOR_R:Df', 'MENTOR:F', 'SW:F'], ['BOULDER:F', 'DOOR:Df', 'MEDP:C'], ['BOULDER:F', 'DOOR:Df', 'EDP:C'], ['DOOR:Df', 'MEDP:C', 'MEDP:F'], ['DOOR:Df', 'EDP:C', 'MEDP:F'], ['DOOR:Df', 'EDP:F', 'MEDP:C'], ['DOOR:Df', 'EDP:C', 'EDP:F'], ['DOOR:Df', 'DOOR_R:Df', 'MENTOR:F']]
+     fewest errors: 3; error sets attaining it: [('DOOR:Df', 'MENTOR:F', 'SW:F')]
+  C1 upd: right on all 36: 0; right on core four: 2; right on core+NBP:Lo: 2; right on core+DOOR:Df: 0; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (14 of 29): [['NBP:Lo', 'SW:F'], ['DOOR:Df', 'NBP:Lo'], ['LOCP:Lo', 'SW:F'], ['DOOR:Df', 'LOCP:Lo'], ['DOOR:Df', 'MEDP:C', 'SC:A'], ['DOOR:Df', 'EDP:C', 'SC:A'], ['DOOR_R:Df', 'MENTOR:F', 'SW:F'], ['BOULDER:F', 'DOOR:Df', 'MEDP:C'], ['BOULDER:F', 'DOOR:Df', 'EDP:C'], ['DOOR:Df', 'MEDP:C', 'MEDP:F'], ['DOOR:Df', 'EDP:C', 'MEDP:F'], ['DOOR:Df', 'EDP:F', 'MEDP:C'], ['DOOR:Df', 'EDP:C', 'EDP:F'], ['DOOR:Df', 'DOOR_R:Df', 'MENTOR:F']]
+     fewest errors: 3; error sets attaining it: [('DOOR:Df', 'MENTOR:F', 'SW:F')]
+  C1 mod: right on all 36: 0; right on core four: 2; right on core+NBP:Lo: 2; right on core+DOOR:Df: 0; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (59 of 105): [['NBP:Lo', 'SW:F'], ['DOOR:Df', 'NBP:Lo'], ['LOCP:Lo', 'SW:F'], ['DOOR:Df', 'MEDP:C'], ['DOOR:Df', 'EDP:C'], ['DOOR:Df', 'LOCP:Lo'], ['DOOR:Df', 'EP:A', 'EP:R'], ['DOOR:Df', 'EP:A', 'LP:BT'], ['BOULDER:Dk', 'DOOR:Df', 'EP:A'], ['DOOR:Df', 'EP:R', 'LP:ST'], ['DOOR:M', 'EP:R', 'SW:F'], ['DOOR_R:Df', 'EP:R', 'SW:F'], ['DOOR:Df', 'EP:R', 'OD:C'], ['DOOR:Df', 'EP:R', 'OM:C']]
+     fewest errors: 3; error sets attaining it: [('DOOR:Df', 'MENTOR:F', 'SW:F')]
+  C2 orig: right on all 36: 0; right on core four: 2; right on core+NBP:Lo: 0; right on core+DOOR:Df: 0; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (83 of 97): [['NBP:Lo', 'SC:A'], ['DOOR:M', 'MENTOR:F'], ['DOOR_R:Df', 'MENTOR:F'], ['LOCP:Lo', 'MENTOR:F'], ['DOOR:Df', 'LOCP:Lo'], ['DOOR:Df', 'MEDP:C', 'SC:A'], ['DOOR:Df', 'EDP:C', 'SC:A'], ['EP:A', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'EP:A', 'NBP:Lo'], ['EP:A', 'MEDP:F', 'NBP:Lo'], ['EDP:F', 'EP:A', 'NBP:Lo'], ['LP:ST', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'LP:ST', 'NBP:Lo'], ['LP:ST', 'MEDP:F', 'NBP:Lo']]
+     fewest errors: 3; error sets attaining it: [('DOOR:Df', 'MENTOR:F', 'NBP:Lo')]
+  C2 upd: right on all 36: 0; right on core four: 2; right on core+NBP:Lo: 0; right on core+DOOR:Df: 0; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (83 of 97): [['NBP:Lo', 'SC:A'], ['DOOR:M', 'MENTOR:F'], ['DOOR_R:Df', 'MENTOR:F'], ['LOCP:Lo', 'MENTOR:F'], ['DOOR:Df', 'LOCP:Lo'], ['DOOR:Df', 'MEDP:C', 'SC:A'], ['DOOR:Df', 'EDP:C', 'SC:A'], ['EP:A', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'EP:A', 'NBP:Lo'], ['EP:A', 'MEDP:F', 'NBP:Lo'], ['EDP:F', 'EP:A', 'NBP:Lo'], ['LP:ST', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'LP:ST', 'NBP:Lo'], ['LP:ST', 'MEDP:F', 'NBP:Lo']]
+     fewest errors: 3; error sets attaining it: [('DOOR:Df', 'MENTOR:F', 'NBP:Lo')]
+  C2 mod: right on all 36: 0; right on core four: 2; right on core+NBP:Lo: 0; right on core+DOOR:Df: 0; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (131 of 145): [['NBP:Lo', 'SC:A'], ['DOOR:Df', 'MEDP:C'], ['DOOR:Df', 'EDP:C'], ['DOOR:M', 'MENTOR:F'], ['DOOR_R:Df', 'MENTOR:F'], ['LOCP:Lo', 'MENTOR:F'], ['DOOR:Df', 'LOCP:Lo'], ['DOOR:Df', 'EP:A', 'EP:R'], ['DOOR:Df', 'EP:A', 'LP:BT'], ['EP:A', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'EP:A', 'NBP:Lo'], ['EP:A', 'MEDP:F', 'NBP:Lo'], ['EDP:F', 'EP:A', 'NBP:Lo'], ['BOULDER:Dk', 'DOOR:Df', 'EP:A']]
+     fewest errors: 3; error sets attaining it: [('DOOR:Df', 'MENTOR:F', 'NBP:Lo')]
+  C3 orig: right on all 36: 0; right on core four: 26; right on core+NBP:Lo: 0; right on core+DOOR:Df: 26; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (164 of 169): [['NBP:Lo', 'SC:A'], ['LOCP:Lo', 'SC:A'], ['MENTOR:F', 'NBP:Lo'], ['LOCP:Lo', 'MENTOR:F'], ['GP:A', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'GP:A', 'NBP:Lo'], ['GP:A', 'MEDP:F', 'NBP:Lo'], ['EDP:F', 'GP:A', 'NBP:Lo'], ['DOOR:Df', 'GP:A', 'NBP:Lo'], ['GP:A', 'LOCP:Lo', 'SW:F'], ['BOULDER:F', 'GP:A', 'LOCP:Lo'], ['GP:A', 'LOCP:Lo', 'MEDP:F'], ['EDP:F', 'GP:A', 'LOCP:Lo'], ['DOOR:Df', 'GP:A', 'LOCP:Lo']]
+     fewest errors: 3; error sets attaining it: [('LOCP:Lo', 'MENTOR:F', 'NBP:Lo')]
+  C3 upd: right on all 36: 0; right on core four: 26; right on core+NBP:Lo: 0; right on core+DOOR:Df: 26; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (164 of 169): [['NBP:Lo', 'SC:A'], ['LOCP:Lo', 'SC:A'], ['MENTOR:F', 'NBP:Lo'], ['LOCP:Lo', 'MENTOR:F'], ['GP:A', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'GP:A', 'NBP:Lo'], ['GP:A', 'MEDP:F', 'NBP:Lo'], ['EDP:F', 'GP:A', 'NBP:Lo'], ['DOOR:Df', 'GP:A', 'NBP:Lo'], ['GP:A', 'LOCP:Lo', 'SW:F'], ['BOULDER:F', 'GP:A', 'LOCP:Lo'], ['GP:A', 'LOCP:Lo', 'MEDP:F'], ['EDP:F', 'GP:A', 'LOCP:Lo'], ['DOOR:Df', 'GP:A', 'LOCP:Lo']]
+     fewest errors: 3; error sets attaining it: [('LOCP:Lo', 'MENTOR:F', 'NBP:Lo')]
+  C3 mod: right on all 36: 0; right on core four: 26; right on core+NBP:Lo: 0; right on core+DOOR:Df: 26; right on core+NBP:Lo+DOOR:Df: 0
+     MUS with DOOR/NBP/LOCP (164 of 169): [['NBP:Lo', 'SC:A'], ['LOCP:Lo', 'SC:A'], ['MENTOR:F', 'NBP:Lo'], ['LOCP:Lo', 'MENTOR:F'], ['GP:A', 'NBP:Lo', 'SW:F'], ['BOULDER:F', 'GP:A', 'NBP:Lo'], ['GP:A', 'MEDP:F', 'NBP:Lo'], ['EDP:F', 'GP:A', 'NBP:Lo'], ['DOOR:Df', 'GP:A', 'NBP:Lo'], ['GP:A', 'LOCP:Lo', 'SW:F'], ['BOULDER:F', 'GP:A', 'LOCP:Lo'], ['GP:A', 'LOCP:Lo', 'MEDP:F'], ['EDP:F', 'GP:A', 'LOCP:Lo'], ['DOOR:Df', 'GP:A', 'LOCP:Lo']]
+     fewest errors: 3; error sets attaining it: [('LOCP:Lo', 'MENTOR:F', 'NBP:Lo')]
+## E5. Errors of the two licence orders and the conformity order, all queries, per coding
+  C1 licence    orig: wrong on ['DOOR:Df', 'MENTOR:F', 'SW:F']
+  C1 licence    upd: wrong on ['DOOR:Df', 'MENTOR:F', 'SW:F']
+  C1 licence    mod: wrong on ['DOOR:Df', 'MENTOR:F', 'SW:F']
+  C1 licence+   orig: wrong on ['DOOR:Df', 'MENTOR:F', 'SW:F']
+  C1 licence+   upd: wrong on ['DOOR:Df', 'MENTOR:F', 'SW:F']
+  C1 licence+   mod: wrong on ['DOOR:Df', 'MENTOR:F', 'SW:F']
+  C1 conformity orig: wrong on ['BOULDER:Dk', 'EDP:C', 'LOCP:Lo', 'MEDP:C', 'MENTOR:F', 'NBP:Lo']
+  C1 conformity upd: wrong on ['BOULDER:Dk', 'EDP:C', 'LOCP:Lo', 'MEDP:C', 'MENTOR:F', 'NBP:Lo']
+  C1 conformity mod: wrong on ['BOULDER:Dk', 'EDP:C', 'EP:R', 'LOCP:Lo', 'LP:BT', 'MEDP:C', 'MENTOR:F', 'MENTOR_N:F', 'NBP:Lo']
+  C2 licence    orig: wrong on ['DOOR:Df', 'MENTOR:F', 'NBP:Lo']
+  C2 licence    upd: wrong on ['DOOR:Df', 'MENTOR:F', 'NBP:Lo']
+  C2 licence    mod: wrong on ['DOOR:Df', 'MENTOR:F', 'NBP:Lo']
+  C2 licence+   orig: wrong on ['DOOR:Df', 'MENTOR:F', 'NBP:Lo']
+  C2 licence+   upd: wrong on ['DOOR:Df', 'MENTOR:F', 'NBP:Lo']
+  C2 licence+   mod: wrong on ['DOOR:Df', 'MENTOR:F', 'NBP:Lo']
+  C2 conformity orig: wrong on ['BOULDER:Dk', 'EDP:C', 'LOCP:Lo', 'MEDP:C', 'MENTOR:F', 'NBP:Lo']
+  C2 conformity upd: wrong on ['BOULDER:Dk', 'EDP:C', 'LOCP:Lo', 'MEDP:C', 'MENTOR:F', 'NBP:Lo']
+  C2 conformity mod: wrong on ['BOULDER:Dk', 'EDP:C', 'EP:R', 'LOCP:Lo', 'LP:BT', 'MEDP:C', 'MENTOR:F', 'MENTOR_N:F', 'NBP:Lo']
+  C3 licence    orig: wrong on ['LOCP:Lo', 'MENTOR:F', 'NBP:Lo']
+  C3 licence    upd: wrong on ['LOCP:Lo', 'MENTOR:F', 'NBP:Lo']
+  C3 licence    mod: wrong on ['LOCP:Lo', 'MENTOR:F', 'NBP:Lo']
+  C3 licence+   orig: wrong on ['LOCP:Lo', 'MENTOR:F', 'NBP:Lo']
+  C3 licence+   upd: wrong on ['LOCP:Lo', 'MENTOR:F', 'NBP:Lo']
+  C3 licence+   mod: wrong on ['LOCP:Lo', 'MENTOR:F', 'NBP:Lo']
+  C3 conformity orig: wrong on ['BOULDER:Dk', 'EDP:C', 'LOCP:Lo', 'MEDP:C', 'MENTOR:F', 'NBP:Lo']
+  C3 conformity upd: wrong on ['BOULDER:Dk', 'EDP:C', 'LOCP:Lo', 'MEDP:C', 'MENTOR:F', 'NBP:Lo']
+  C3 conformity mod: wrong on ['BOULDER:Dk', 'EDP:C', 'EP:R', 'LOCP:Lo', 'LP:BT', 'MEDP:C', 'MENTOR:F', 'MENTOR_N:F', 'NBP:Lo']
+## E6. A&G, NESS, CNESS on the essay's cases
+  DOOR                           Df: AG-PPQ(4) False; AG-C5 False; AG-prelim False; NESS True; CNESS True
+  DOOR                           M: AG-PPQ(4) True; AG-C5 True; AG-prelim True; NESS True; CNESS True
+  NBP1                           Lo: AG-PPQ(4) False; AG-C5 False; AG-prelim True; NESS True; CNESS True
+  LOCP                           Lo: AG-PPQ(4) False; AG-C5 False; AG-prelim True; NESS True; CNESS True
+  NBP5_late                      Lo: AG-PPQ(4) False; AG-C5 False; AG-prelim True; NESS True; CNESS True
+  CTRL                           Lo: AG-PPQ(4) True; AG-C5 True; AG-prelim True; NESS True; CNESS True
+  Backup2 (EP, A non-deviant)    C: AG-PPQ(4) False; AG-C5 False; AG-prelim True; NESS True; CNESS True
+  Backup (EP, A deviant)         C: AG-PPQ(4) True; AG-C5 True; AG-prelim True; NESS True; CNESS True
+## E7. Proposition 1 on random models: hypothesis => A&G (both versions) deny causation
+  41 candidate/effect pairs meet the hypothesis; A&G causal verdicts among them: 0 (Proposition 1 predicts 0)
+## E8. Seedlings vs Doorbells: isomorphism check and verdicts
+  C1 Doorbells      Df: defaults {'L': 0, 'R': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C1 Seedlings      Lo: defaults {'S': 0, 'D': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C1 DoorbellsLate  Df: defaults {'R': 0, 'L': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C1 SeedlingsLate  Lo: defaults {'S': 0, 'D': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C2 Doorbells      Df: defaults {'L': 0, 'R': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C2 Seedlings      Lo: defaults {'S': 0, 'D': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C2 DoorbellsLate  Df: defaults {'R': 0, 'L': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C2 SeedlingsLate  Lo: defaults {'S': 0, 'D': 0, 'E': 0}  lice-orig=T lice-upd=T lice-mod=T conf-orig=F conf-upd=F conf-mod=F
+  C3 Doorbells      Df: defaults {'L': 1, 'R': 0, 'E': 1}  lice-orig=F lice-upd=F lice-mod=F conf-orig=F conf-upd=F conf-mod=F
+  C3 Seedlings      Lo: defaults {'S': 0, 'D': 1, 'E': 1}  lice-orig=F lice-upd=F lice-mod=F conf-orig=F conf-upd=F conf-mod=F
+  C3 DoorbellsLate  Df: defaults {'R': 0, 'L': 1, 'E': 1}  lice-orig=F lice-upd=F lice-mod=F conf-orig=F conf-upd=F conf-mod=F
+  C3 SeedlingsLate  Lo: defaults {'S': 0, 'D': 1, 'E': 1}  lice-orig=F lice-upd=F lice-mod=F conf-orig=F conf-upd=F conf-mod=F
+  Doorbells      Df: AG-PPQ(4) False; AG-C5 False; AG-prelim False; NESS True; CNESS True; HP(no normality) orig=True upd=True mod=True
+  Seedlings      Lo: AG-PPQ(4) False; AG-C5 False; AG-prelim False; NESS True; CNESS True; HP(no normality) orig=True upd=True mod=True
+  DoorbellsLate  Df: AG-PPQ(4) False; AG-C5 False; AG-prelim False; NESS True; CNESS True; HP(no normality) orig=True upd=True mod=True
+  SeedlingsLate  Lo: AG-PPQ(4) False; AG-C5 False; AG-prelim False; NESS True; CNESS True; HP(no normality) orig=True upd=True mod=True
+## E9. Non-local 'trigger' rule (frozen default atypical iff a parent is deviant), with/without exempting the candidate
+  C1                         exempt=False orig: wrong on ['SEED', 'LOCP', 'SW', 'BOULDER', 'EDP']
+  C1                         exempt=False upd: wrong on ['SEED', 'LOCP', 'SW', 'BOULDER', 'EDP']
+  C1                         exempt=False mod: wrong on ['SEED', 'LOCP', 'SW', 'BOULDER', 'LP-BT', 'EDP']
+  C1                         exempt=True  orig: wrong on ['SEED', 'LOCP', 'SW']
+  C1                         exempt=True  upd: wrong on ['SEED', 'LOCP', 'SW']
+  C1                         exempt=True  mod: wrong on ['SEED', 'LOCP', 'SW', 'LP-BT']
+  C1+LT=1 (inertial train)   exempt=False orig: wrong on ['SEED', 'LOCP', 'BOULDER', 'EDP']
+  C1+LT=1 (inertial train)   exempt=False upd: wrong on ['SEED', 'LOCP', 'BOULDER', 'EDP']
+  C1+LT=1 (inertial train)   exempt=False mod: wrong on ['SEED', 'LOCP', 'SW', 'BOULDER', 'LP-BT', 'EDP']
+  C1+LT=1 (inertial train)   exempt=True  orig: wrong on ['SEED', 'LOCP']
+  C1+LT=1 (inertial train)   exempt=True  upd: wrong on ['SEED', 'LOCP']
+  C1+LT=1 (inertial train)   exempt=True  mod: wrong on ['SEED', 'LOCP', 'SW', 'LP-BT']
+## E10. Shared enabling condition coded default (routine press; standing crop): trigger rule and licence
+  Doorbells  Df root-default-overrides={} C1 defaults={'M': 0, 'Df': 0, 'L': 0, 'R': 0, 'E': 0} | orig: trigger=F licence=T; upd: trigger=F licence=T; mod: trigger=F licence=T
+  Doorbells  Df root-default-overrides={} C2 defaults={'M': 0, 'Df': 0, 'L': 0, 'R': 0, 'E': 0} | orig: trigger=F licence=T; upd: trigger=F licence=T; mod: trigger=F licence=T
+  Doorbells  Df root-default-overrides={} C3 defaults={'M': 0, 'Df': 0, 'L': 1, 'R': 0, 'E': 1} | orig: trigger=F licence=F; upd: trigger=F licence=F; mod: trigger=F licence=F
+  Doorbells  Df root-default-overrides={'M': 1} C1 defaults={'M': 1, 'Df': 0, 'L': 0, 'R': 0, 'E': 0} | orig: trigger=T licence=T; upd: trigger=T licence=T; mod: trigger=T licence=T
+  Doorbells  Df root-default-overrides={'M': 1} C2 defaults={'M': 1, 'Df': 0, 'L': 1, 'R': 0, 'E': 1} | orig: trigger=F licence=F; upd: trigger=F licence=F; mod: trigger=F licence=F
+  Doorbells  Df root-default-overrides={'M': 1} C3 defaults={'M': 1, 'Df': 0, 'L': 1, 'R': 0, 'E': 1} | orig: trigger=F licence=F; upd: trigger=F licence=F; mod: trigger=F licence=F
+  Seedlings  Lo root-default-overrides={} C1 defaults={'P': 0, 'Lo': 0, 'S': 0, 'D': 0, 'E': 0} | orig: trigger=F licence=T; upd: trigger=F licence=T; mod: trigger=F licence=T
+  Seedlings  Lo root-default-overrides={} C2 defaults={'P': 0, 'Lo': 0, 'S': 0, 'D': 0, 'E': 0} | orig: trigger=F licence=T; upd: trigger=F licence=T; mod: trigger=F licence=T
+  Seedlings  Lo root-default-overrides={} C3 defaults={'P': 0, 'Lo': 0, 'S': 0, 'D': 1, 'E': 1} | orig: trigger=F licence=F; upd: trigger=F licence=F; mod: trigger=F licence=F
+  Seedlings  Lo root-default-overrides={'P': 1} C1 defaults={'P': 1, 'Lo': 0, 'S': 0, 'D': 0, 'E': 0} | orig: trigger=T licence=T; upd: trigger=T licence=T; mod: trigger=T licence=T
+  Seedlings  Lo root-default-overrides={'P': 1} C2 defaults={'P': 1, 'Lo': 0, 'S': 0, 'D': 1, 'E': 1} | orig: trigger=F licence=F; upd: trigger=F licence=F; mod: trigger=F licence=F
+  Seedlings  Lo root-default-overrides={'P': 1} C3 defaults={'P': 1, 'Lo': 0, 'S': 0, 'D': 1, 'E': 1} | orig: trigger=F licence=F; upd: trigger=F licence=F; mod: trigger=F licence=F
+## E11. Table for the essay: verdicts per coding (C1 event, Ci inertial = C1 except the train's left-track travel default, C2, C3) and scheme
+  licence    C1 orig GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  licence    C1 upd  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  licence    C1 mod  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  licence    Ci orig GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=F SEED=T
+  licence    Ci upd  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=F SEED=T
+  licence    Ci mod  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=F SEED=T
+  licence    C2 orig GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=T* SW(LT/RT)=F SEED=T
+  licence    C2 upd  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=T* SW(LT/RT)=F SEED=T
+  licence    C2 mod  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=T* SW(LT/RT)=F SEED=T
+  licence    C3 orig GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  licence    C3 upd  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  licence    C3 mod  GP=T CHAIN=T BOULDER=T SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C1 orig GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C1 upd  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C1 mod  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=T* LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity Ci orig GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity Ci upd  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity Ci mod  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=T* LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C2 orig GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C2 upd  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C2 mod  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=T* LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C3 orig GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C3 upd  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  conformity C3 mod  GP=T CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=T* LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  value-only C1 orig GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  value-only C1 upd  GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  value-only C1 mod  GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  value-only Ci orig GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  value-only Ci upd  GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  value-only Ci mod  GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=T DOOR=T* SW(LT/RT)=T* SEED=T
+  value-only C2 orig GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=T* SW(LT/RT)=F SEED=T
+  value-only C2 upd  GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=T* SW(LT/RT)=F SEED=T
+  value-only C2 mod  GP=F* CHAIN=T BOULDER=F* SC=F LP-ST=T LP-BT=F LOCUSTS=F* DOOR=T* SW(LT/RT)=F SEED=T
+  value-only C3 orig GP=T CHAIN=T BOULDER=T SC=F LP-ST=F* LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  value-only C3 upd  GP=T CHAIN=T BOULDER=T SC=F LP-ST=F* LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  value-only C3 mod  GP=T CHAIN=T BOULDER=T SC=F LP-ST=F* LP-BT=F LOCUSTS=F* DOOR=F SW(LT/RT)=F SEED=F*
+  (* = differs from the standard verdict)
+## E12. Halpern 2015 examples without normality (expected: 3.3 A orig only, C all; 3.4 A orig/upd, mod only with P=0; 3.9 LT/RT F all; 3.10 A all)
+  Ex 3.3       A: {'orig': {'A': 1}, 'upd': None, 'mod': None}
+  Ex 3.3       C: {'orig': {'C': 1}, 'upd': {'C': 1}, 'mod': {'C': 1}}
+  Ex 3.4       A: {'orig': {'A': 1}, 'upd': {'A': 1}, 'mod': {'A': 1, 'P': 0}}
+  Ex 3.9 LT/RT F: {'orig': {'F': 1}, 'upd': {'F': 1}, 'mod': {'F': 1}}
+  Ex 3.10      A: {'orig': {'A': 1}, 'upd': {'A': 1}, 'mod': {'A': 1}}

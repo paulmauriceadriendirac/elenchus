@@ -1,0 +1,1 @@
+Two-state empty-question counterexample: V=0.5 (expected 0.5). PASS

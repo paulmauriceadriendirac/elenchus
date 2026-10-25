@@ -1,0 +1,7 @@
+(a) Dorst (ii)/(iii) hold for all 256 states, 8 props, 3 worlds: True
+(b) increment of adding {1} to {{1,3}}: at w=2: -2  at w=3: -5 (both worlds make {1} false)
+(c) C  ['7/10', '3/20', '3/20'] max EA = 43/10 ( 4.3 ) runner-up EA = 21/5 4.2 #optima = 1 optimum: [['1', '12', '123', '13']]
+     {1} in every optimum: True ; in none: False
+(c) C' ['3/4', '1/100', '6/25'] max EA = 247/50 ( 4.94 ) runner-up EA = 19/4 4.75 #optima = 1 optimum: [['123', '13']]
+     {1} in every optimum: False ; in none: True
+(d) T=1,F=2,beta=3, grid 1/40: propositions with violations: 6 [('1', '7/10', '31/40'), ('2', '7/10', '31/40'), ('3', '7/10', '31/40'), ('12', '4/5', '33/40'), ('13', '4/5', '33/40'), ('23', '4/5', '33/40')]

@@ -1,0 +1,10 @@
+Defeat in Bjorn: post-discovery ken on line d has |m| <= c/sqrt2 = 1.386 ; weight bound |e1|<=c lost iff |d| > 1.148 = (2-sqrt2)c
+L=    2  decline iff |d| > 3.343 (= 1.706 c);  KDT value of the free 2nd weighing = -0.0000
+L=    3  decline iff |d| > 3.021 (= 1.541 c);  KDT value of the free 2nd weighing = -0.0000
+L=    5  decline iff |d| > 2.643 (= 1.349 c);  KDT value of the free 2nd weighing = -0.0041
+L=    9  decline iff |d| > 2.258 (= 1.152 c);  KDT value of the free 2nd weighing = -0.0407
+L=   10  decline iff |d| > 2.196 (= 1.120 c);  KDT value of the free 2nd weighing = -0.0499
+L=   20  decline iff |d| > 1.835 (= 0.936 c);  KDT value of the free 2nd weighing = -0.1202
+L=   50  decline iff |d| > 1.502 (= 0.766 c);  KDT value of the free 2nd weighing = -0.2168
+L=  100  decline iff |d| > 1.347 (= 0.687 c);  KDT value of the free 2nd weighing = -0.2739
+L= 1000  decline iff |d| > 1.171 (= 0.597 c);  KDT value of the free 2nd weighing = -0.3451

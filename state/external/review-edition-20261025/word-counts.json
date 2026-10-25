@@ -1,0 +1,34 @@
+[
+  {
+    "file": "essays/01-holistic-accuracy-A5-v2.md",
+    "strict": 4358,
+    "wordlike": 4347,
+    "footnote_words": 250,
+    "bibliography_lines_excluded": 21,
+    "html_comments_found": 0
+  },
+  {
+    "file": "essays/02-free-evidence-A6-v2.md",
+    "strict": 5872,
+    "wordlike": 5855,
+    "footnote_words": 0,
+    "bibliography_lines_excluded": 29,
+    "html_comments_found": 0
+  },
+  {
+    "file": "essays/03-flattening-E3-v4.md",
+    "strict": 5384,
+    "wordlike": 5333,
+    "footnote_words": 0,
+    "bibliography_lines_excluded": 41,
+    "html_comments_found": 0
+  },
+  {
+    "file": "essays/04-causation-A4-v2-reserve.md",
+    "strict": 5777,
+    "wordlike": 5768,
+    "footnote_words": 0,
+    "bibliography_lines_excluded": 23,
+    "html_comments_found": 0
+  }
+]

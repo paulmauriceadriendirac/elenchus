@@ -1,0 +1,22 @@
+[
+  {
+    "file": "01-holistic-accuracy-A5-v2.md",
+    "returncode": 0,
+    "output": "Scanned /workspace/scratch/45bb36400b49/review-edition-20261025/essays/01-holistic-accuracy-A5-v2.md\nNo hard flags.\n"
+  },
+  {
+    "file": "02-free-evidence-A6-v2.md",
+    "returncode": 0,
+    "output": "Scanned /workspace/scratch/45bb36400b49/review-edition-20261025/essays/02-free-evidence-A6-v2.md\nNo hard flags.\n"
+  },
+  {
+    "file": "03-flattening-E3-v4.md",
+    "returncode": 0,
+    "output": "Scanned /workspace/scratch/45bb36400b49/review-edition-20261025/essays/03-flattening-E3-v4.md\nNo hard flags.\n"
+  },
+  {
+    "file": "04-causation-A4-v2-reserve.md",
+    "returncode": 0,
+    "output": "Scanned /workspace/scratch/45bb36400b49/review-edition-20261025/essays/04-causation-A4-v2-reserve.md\nNo hard flags.\n"
+  }
+]

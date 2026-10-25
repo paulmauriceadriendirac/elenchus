@@ -1,0 +1,5 @@
+n=3 uniform=True: instances checked=400, mismatches with Theorem 3=0, unfiltered cores=0, closure-criterion failures=0, upward-closure failures=0
+n=3 uniform=False: instances checked=399, mismatches with Theorem 3=0
+n=4 uniform=True: instances checked=58, mismatches with Theorem 3=0, unfiltered cores=0, closure-criterion failures=0, upward-closure failures=0
+n=4 uniform=False: instances checked=30, mismatches with Theorem 3=0
+4-world case: EA*100 = 544 optimum: ['12', '13', '123', '14', '124', '134', '1234'] | contains {1}? False | contains 12 and 13? True

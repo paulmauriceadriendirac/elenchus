@@ -1,5 +1,7 @@
 # Contest revision status
 
+The [25 October review edition](REVIEW-TOMORROW.md) is now the starting point for the 26 October review. It includes a 41-page packet with revised A5, A6 and E3, a corrected A4 reserve, the assessment, methodology, source requests and calculation records. A5 and A6 are the first two recommendations; E3 is a provisional third. Four revised essays are below 6,000 words. This completes a review edition, not a certification of novelty or eligibility, and no contest submission was made.
+
 The [latest checkpoint](state/external/audit-and-a4-20261023/README.md) adds A4 v2: an explicit relay interpretation, a finite-cover-path theorem, and a counterexample showing that local direct links need not recover an endpoint connection. It also corrects the provenance record and the overly broad local memory rule; see [PROVENANCE-CLARIFICATION.md](PROVENANCE-CLARIFICATION.md).
 
 The inspected project instructions contain no identified human philosophical contribution. The earlier workflow quarantine followed a disclosed automatic-context concern; it was not a finding that the human supplied the philosophy. None of the twelve inspected referee reports rejects an essay because of memory. The historical disclosure and limits of this audit remain recorded. The competition's relevant-memory restriction still applies; no eligibility certification is claimed.
