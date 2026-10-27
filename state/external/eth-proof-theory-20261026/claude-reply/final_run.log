@@ -1,0 +1,37 @@
+construction ok {'D': 256, 'measured_rows_per_copy': 94, 'copies': 3, 'max_M0_row': 5} d=11 dH=11 q=2 J=3
+forms ok: P(0)=delta and Definition 3.1(4) separation hold for random x
+Lemma 3.2 (separation) ok on 12 random (t,E,U)
+Lemma 3.3 (Taylor by inclusion-exclusion) ok at all points
+Hermite interpolation ok
+end-to-end routine == brute-force weighted sum (random X)  [0.6s]
+seed=2 n=6 m=4 k=3 r=2 Q=4 R=2 I=[1, 2] {'D': 256, 'measured_rows_per_copy': 94, 'copies': 1, 'max_M0_row': 5} d,dH,q,J= (15, 15, 3, 4) ok [1.9s]
+seed=3 n=6 m=5 k=3 r=2 Q=5 R=2 I=[1, 2] {'D': 1024, 'measured_rows_per_copy': 349, 'copies': 1, 'max_M0_row': 6} d,dH,q,J= (15, 15, 3, 4) ok [7.1s]
+seed=4 n=5 m=4 k=3 r=2 Q=5 R=3 I=[1, 2, 3] {'D': 1024, 'measured_rows_per_copy': 259, 'copies': 2, 'max_M0_row': 16} d,dH,q,J= (13, 26, 5, 6) ok [8.1s]
+seed=5 n=5 m=3 k=3 r=3 Q=3 R=2 I=[1, 2] {'D': 729, 'measured_rows_per_copy': 243, 'copies': 1, 'max_M0_row': 3} d,dH,q,J= (13, 13, 4, 5) ok [2.8s]
+seed=6 n=6 m=6 k=2 r=2 Q=4 R=3 I=[0, 1, 2] {'D': 256, 'measured_rows_per_copy': 13, 'copies': 2, 'max_M0_row': 11} d,dH,q,J= (15, 30, 7, 8) ok [4.1s]
+seed=7 n=4 m=4 k=3 r=3 Q=3 R=3 I=[0, 1, 2] {'D': 729, 'measured_rows_per_copy': 27, 'copies': 2, 'max_M0_row': 7} d,dH,q,J= (13, 26, 8, 9) ok [2.3s]
+symbolic output is affine in every weight variable (multilinear)
+at Boolean X the symbolic run equals the numeric run on the pinned CNF
+symbolic output == weighted model count at random X
+gadgets ok (N after OR-split, N after Tovey, max occurrences): (12, 9, 3)
+sparsification ok (leaves, max occurrences in a leaf): (9, 4)
+gadgets ok (N after OR-split, N after Tovey, max occurrences): (9, 9, 3)
+sparsification ok (leaves, max occurrences in a leaf): (7, 3)
+gadgets ok (N after OR-split, N after Tovey, max occurrences): (16, 8, 3)
+sparsification ok (leaves, max occurrences in a leaf): (11, 3)
+gadgets ok (N after OR-split, N after Tovey, max occurrences): (20, 7, 3)
+sparsification ok (leaves, max occurrences in a leaf): (9, 4)
+gadgets ok (N after OR-split, N after Tovey, max occurrences): (12, 6, 3)
+sparsification ok (leaves, max occurrences in a leaf): (8, 4)
+  g_1 compiled by the routine matches the cube sum (d=5, q=1) [0.0s]
+  g_2 compiled by the routine matches the cube sum (d=8, q=1) [0.1s]
+  g_3 compiled by the routine matches the cube sum (d=11, q=2) [0.3s]
+  g_4 compiled by the routine matches the cube sum (d=14, q=2) [0.5s]
+  g_5 compiled by the routine matches the cube sum (d=17, q=3) [0.9s]
+  g_6 compiled by the routine matches the cube sum (d=20, q=4) [1.9s]
+  g_7 compiled by the routine matches the cube sum (d=23, q=4) [2.8s]
+  g_8 compiled by the routine matches the cube sum (d=26, q=5) [4.2s]
+  g_9 compiled by the routine matches the cube sum (d=29, q=5) [5.7s]
+  g_10 compiled by the routine matches the cube sum (d=32, q=6) [7.1s]
+  g_11 compiled by the routine matches the cube sum (d=35, q=7) [8.8s]
+IPS identity sum_i f_i g_i = 1 holds with routine-compiled g_i: n=5, m=11 core clauses [8.8s]
