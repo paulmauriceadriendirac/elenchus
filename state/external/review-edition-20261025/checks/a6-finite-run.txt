@@ -1,0 +1,3 @@
+K comparable 2 {'sit_q': 10, 'reldef': 0, 'gap_and_reldef': 0, 'nogap_no_reldef': 0, 'eps_kdt_fail': 0, 'eps_ceu_fail': 0, 'ceu_fail_without_reldef': 0, 'kdt_fail_without_reldef': 0, 'net_neg': 0, 'net_trials': 30}
+K comparable 3 {'sit_q': 774, 'reldef': 18, 'gap_and_reldef': 0, 'nogap_no_reldef': 0, 'eps_kdt_fail': 18, 'eps_ceu_fail': 18, 'ceu_fail_without_reldef': 0, 'kdt_fail_without_reldef': 0, 'net_neg': 28, 'net_trials': 2322}
+K comparable 4 {'sit_q': 63220, 'reldef': 3288, 'gap_and_reldef': 0, 'nogap_no_reldef': 0, 'eps_kdt_fail': 3288, 'eps_ceu_fail': 3288, 'ceu_fail_without_reldef': 10, 'kdt_fail_without_reldef': 0, 'net_neg': 4135, 'net_trials': 189660}

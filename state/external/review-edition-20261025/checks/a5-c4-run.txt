@@ -1,0 +1,11 @@
+T=1 F=2 beta=1/100: tau=0.6667 c0=0.5008 c1=0.6672 c=0.6669 c'=0.6670  believed at C: True  not believed at C': True
+T=1 F=2 beta=1/2: tau=0.6667 c0=0.5385 c1=0.6923 c=0.6752 c'=0.6838  believed at C: True  not believed at C': True
+T=1 F=2 beta=3: tau=0.6667 c0=0.6667 c1=0.7778 c=0.7037 c'=0.7407  believed at C: True  not believed at C': True
+T=1 F=2 beta=50: tau=0.6667 c0=0.9464 c1=0.9643 c=0.9524 c'=0.9583  believed at C: True  not believed at C': True
+T=1 F=2 beta=1000: tau=0.6667 c0=0.9970 c1=0.9980 c=0.9973 c'=0.9977  believed at C: True  not believed at C': True
+T=2 F=3 beta=1: tau=0.6000 c0=0.4545 c1=0.6364 c=0.6121 c'=0.6242  believed at C: True  not believed at C': True
+T=1 F=10 beta=2: tau=0.9091 c0=0.8750 c1=0.9167 c=0.9116 c'=0.9141  believed at C: True  not believed at C': True
+T=5 F=6 beta=1/10: tau=0.5455 c0=0.3213 c1=0.5475 c=0.5461 c'=0.5468  believed at C: True  not believed at C': True
+T=3 F=4 beta=20: tau=0.5714 c0=0.7353 c1=0.8235 c=0.7647 c'=0.7941  believed at C: True  not believed at C': True
+all cases confirm Theorem 2: True
+beta=3: at c' = c1 + 0.001 (concentrated), {1} believed: True

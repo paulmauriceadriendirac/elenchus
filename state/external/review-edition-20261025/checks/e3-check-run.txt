@@ -1,0 +1,17 @@
+     Reunion verdicts at actual world: {'N1 not(A>B)': True, 'N2 not(B>A)': True, 'N  A>notB': True, 'P2 (AvB)>(B & notA)': True, '(1) (AvB)>(A>B)': True, '(2) A>B': False, 'D': False}
+PASS K5 Reunion: N1, N2, N, P2 true; (1) true, (2) false (bare instance fails); D false
+PASS K5 Reunion model is not flat (as it must not be)
+     Avoidance verdicts at actual world: {'N1 not(A>B)': True, 'N2 not(B>A)': True, 'N  A>notB': True, 'P2 (AvB)>(B & notA)': True, '(1) (AvB)>(A>B)': False, '(2) A>B': False, 'D': True}
+PASS K5 Avoidance: N1, N2, P2 true; (1) false, (2) false (instance holds); D true
+PASS K5 Buttons (tie broken toward (0, 1)): N1, N2 true, D false
+PASS K5 Buttons (tie broken toward (1, 0)): N1, N2 true, D false
+PASS K5 asymmetric Buttons: (AvB)>(B>A) = True, B>A = False (instance fails)
+PASS K9 linearization of <_w is flat and preserves <_w: all 3-world frames, 3000 random 4-world frames
+PASS K9 disjoint union of linearizations is flat and agrees on every first-degree X>Y at head copies
+PASS K10 Reunion and Avoidance agree on every first-degree conditional about A, B at actuality
+PASS K10 flat versions: for every construal X of the inner antecedent entailing A v B, (AvB)>(X>B) = X>B, same in both cases
+     (1) in [Reunion, Avoidance]: inclusive [True, False], exclusive [False, False], additive [True, True], universal [False, False]
+PASS K10 only the inclusive selectional reading yields the contrast (True, False); the others yield none
+PASS K11 Reunion frame validates both Crashing principles but not Flattening
+PASS K12 do(A=1) at actuality leaves B=0; do(sitter=1) then do(A=1) leaves B=1
+ALL CHECKS PASSED

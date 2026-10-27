@@ -1,0 +1,14 @@
+{
+  "source_commit": "4fb0507a21f31aceaa10a16f0442d27d5f3389c2",
+  "unchanged_sources": {
+    "E1-v3.md": "state/drafts/E1/v3.md",
+    "E2-v5.md": "state/external/revisions-20261023/E2-v5-external.md",
+    "O1-independent-sources.md": "state/external/astra/01-independent-sources.md",
+    "O2-bayes-and-benchmark.md": "state/external/astra/02-bayes-and-the-benchmark.md",
+    "O3-independent-interventions.md": "state/external/astra/03-independent-interventions.md",
+    "O4-evidence-description-v2.md": "state/external/codex-expansion-20261022/essays/04-evidence-and-description.md",
+    "O5-learning-standard-v3.md": "state/external/revisions-20261023/O5-v3-external.md",
+    "OA-A4-relay-v2.md": "state/external/audit-and-a4-20261023/A4-v2-external.md",
+    "OA-A6-recovery-cost-v02.md": "state/external/ambitious-continuation-20261022/A6-almost-sure-recovery-and-cost-v02.md"
+  }
+}
