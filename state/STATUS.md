@@ -69,3 +69,13 @@ The external audit in `PROVENANCE-CLARIFICATION.md` found no human philosophical
 
 External A4 v2 is in `state/external/audit-and-a4-20261023/`: a conditional finite-cover-path theorem, three relay examples, and independent finite checks. It revises the external causal-refinement manuscript, not our A4 normality cards. E2 v5 and O5 v3 remain in `state/external/revisions-20261023/`. These revisions await philosophical review; no new finalist decision is implied.
 
+
+## Finishing plan (2026-10-27 16:00 UTC; package by 2026-10-30 23:59 UTC)
+Finalists (per Astra's 26 Oct review edition, provisional): A5 v2 (holistic accuracy / Lockean),
+A6 v2 (free evidence), E3 v4 (flattening). Reserves: A4 (ours v1; Astra's v2), E1 v3, E2 v4.
+1. Final hostile review round (running): packets P-7297 (A5v2), P-7f1b (A6v2), P-600a (E3v4);
+   specialist+lit and advocate per essay.
+2. Final revision per essay (reviser, one pass).
+3. Phase 9: citation audit, formal audit, compliance (word count, injection, anonymity).
+4. Phase 10: PDFs; methodology report draft (methodologist), incl. multi-model provenance.
+5. Gate A2: human confirms final three before packaging.

@@ -1,0 +1,1722 @@
+=== PDF page 1 ===
+Lockeans Maximize Expected Accuracy
+Kevin Dorst
+Massachusetts Institute of Technology
+kmdorst@mit.edu
+The Lockean Thesis says that you must believe p iff you’re sufﬁciently conﬁdent of
+it. On some versions, the ‘must’ asserts a metaphysical connection; on others, it
+asserts a normative one. On some versions, ‘sufﬁciently conﬁdent’ refers to a ﬁxed
+threshold of credence; on others, it varies with proposition and context. Claim: the
+Lockean Thesis follows from epistemic utility theory—the view that rational require-
+ments are constrained by the norm to promote accuracy. Different versions of this
+theory generate different versions of Lockeanism; moreover, a plausible version of
+epistemic utility theory meshes with natural-language considerations, yielding a
+new Lockean picture that helps to model and explain the role of beliefs in inquiry
+and conversation. Your beliefs are your best guesses in response to the epistemic
+priorities of your context. Upshot: we have a new approach to the epistemology
+and semantics of belief. And it has teeth. It implies that the role of beliefs is
+fundamentally different from what many have thought, and in fact supports a
+metaphysical reduction of belief to credence.
+You ask me if I think Bob’s in his ofﬁce, and I reply that I’m conﬁdent
+he is. Have I answered your question? Have I told you what I think?
+Some theorists say ‘No’: there’s a separate attitude—belief—and tell-
+ing you that I have high credence doesn’t settle the question of
+whether I believe. 1 In contrast, the Lockean Thesis says that I must
+believe Bob’s in his ofﬁce iff I’m sufﬁciently conﬁdent he is. 2 This
+thesis can be interpreted in different ways. ( 1) The ‘must’ could
+assert either a metaphysical or a normative connection: perhaps
+belief reduces to high credence; or perhaps they are distinct attitudes
+which simply ought to be in harmony. ( 2) The ‘sufﬁciently conﬁdent’
+could refer to either a ﬁxed or variable threshold of credence: perhaps
+there is a single threshold such that I must believe iff my credence is
+above that threshold; or perhaps the threshold can vary with
+1 For example, Levi ( 1967), Stalnaker ( 1984, 2006), Maher ( 1993), Kaplan ( 1996), Williamson
+(2000), Ganson ( 2008), Frankish ( 2009), Buchak ( 2014), Ross and Schroeder ( 2014), Smith
+(2016), and Staffel ( 2016).
+2 Sturgeon ( 2008), Foley ( 2009), Demey ( 2013), and Leitgeb ( 2013, 2014) defend versions of
+this view.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+doi:10.1093/mind/fzx028 Advance Access publication 12 December 2017
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 2 ===
+proposition and context. Mix and match these interpretations as you
+like—they are all versions of the Lockean Thesis as I will understand it.
+You ask me if you should be more conﬁdent that Bob’s in his ofﬁce
+than that Alex is, and I reply that that’ll make you most accurate. Have
+I answered your question? Have I told you whether to be more con-
+ﬁdent? Some theorists say ‘No’: there’s a separate issue—rationality—
+and telling you that an attitude best promotes accuracy doesn’t settle
+the question of whether it’s rationally required. 3 In contrast, epistemic
+utility theory says that rationality requires you to have an attitude that
+best promotes accuracy. 4
+Claim: Epistemic utility theory entails the Lockean Thesis. Different
+versions of the theory generate different versions of Lockeanism; more-
+over, a plausible version of epistemic utility theory meshes with natural-
+language considerations, yielding a new Lockean picture that helps to
+model and explain the role of beliefs in inquiry and conversation. Your
+beliefs are your best guesses in response to the epistemic priorities of
+your context. Upshot: we have a new approach to the epistemology and
+semantics of belief. And it has teeth. It implies that the role of beliefs is
+fundamentally different from what many have thought, and in fact
+supports a metaphysical reduction of belief to credence.
+Plan: After taking a fresh look at Lockeanism through natural lan-
+guage (§ 1), we’ll survey the machinery and standard assumptions of
+epistemic utility theory (§ 2). Applying our machinery to beliefs, we’ll
+get a Lockean thesis with a ﬁxed threshold (§ 3). Next, it’s time to
+adjust the knobs and dials. Dropping one of the standard assumptions
+(Extensionality) is independently motivated and leads to a plausible
+form of variable-threshold Lockeanism; and we can drop a second
+assumption (Separability) without loss (§ 4). At this point we’ll have
+our new Lockean picture. In closing, we’ll explore its epistemological
+and metaphysical signiﬁcance (§ 5).
+1. What a Lockean thinks
+I say epistemic utility theory entails that high credence sufﬁces for
+belief. But some will reply that this is a reductio of that theory—an
+3 For example, Berker ( 2013), Greaves ( 2014), Littlejohn ( 2015), and Carr ( 2017).
+4 See Pettigrew ( 2013b) for a helpful overview. For examples of the research programme in
+action, see Joyce ( 1998, 2009), Greaves and Wallace ( 2006), Predd et al. ( 2009), Leitgeb and
+Pettigrew ( 2010), Easwaran ( 2013), Pettigrew ( 2013a, 2016a, 2016b), Carr ( 2015), Schoenﬁeld
+(2016, 2017), De Bona and Staffel ( 2016), Horowitz ( 2017), and Staffel ( 2017).
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+176 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 3 ===
+example of what happens when we allow a formal framework to out-
+strip good sense. Haven’t we learned from lottery cases that high cre-
+dence—no matter how high—doesn’t sufﬁce for belief ? Here’s your
+ticket; there are 1000 others. Should you believe yours will lose? Many
+say ‘No’: you should simply believe it’slikely to lose. Why ’s that? Well,
+here things get messy. Maybe it’s because believing p is ruling out ‰p
+(Hintikka 1962); or because beliefs require more than statistical evi-
+dence (Buchak 2014; Staffel 2016); or because beliefs are what you’d
+assert in a context of inquiry (Kaplan 1996); or because beliefs aim at
+knowledge (Williamson 2000); or because you should believe p only if
+it’d be abnormal if ‰p (Stalnaker 2006; Smith 2016; Goodman and
+Salow 2017); or because beliefs are what you rely on as premise in
+reasoning (Frankish 2009; Ross and Schroeder 2014); or because beliefs
+are what you could conditionalize on without affecting your behav-
+iour (Weatherson 2005; cf. Ganson 2008). Regardless, you just
+shouldn’t believe you’ll lose.
+I must admit, I used to agree. But then Hawthorne, Rothschild, and
+Spectre ( 2016) helped me see that natural language offers a very dif-
+ferent picture of belief—one that ﬁts well with Lockeanism. In this
+section we’ll focus on the modest point that Lockeanism is not a non-
+starter. In § 4.1 we’ll see further that a plausible form of epistemic
+utility theory meshes with natural language in a variety of more
+subtle and interesting ways.
+(But what does our use of language have to do with epistemology?
+Everything—at least according to the T-schema. If I’m right, our use
+of natural language suggests that the sentence ‘You believe your lottery
+ticket will lose’ is true. It follows that you believe your lottery ticket
+will lose. Since you are reasonable, it follows that reasonable people
+can believe lottery propositions after all.)
+To begin, we’d be well-served to follow Hawthorne, Rothschild, and
+Spectre ( 2016) in focusing on judgements using ‘think’ instead of
+‘believe’. The former is much more colloquial, 5 and philosophers
+often use the latter in a technical way—ﬂagged by jargon like ‘full
+belief ’ and ‘outright belief ’. Thus the judgement that ‘You shouldn’t
+believe your ticket will lose’ may be theoretically loaded. What hap-
+pens when we change the verb?
+First, Hawthorne, Rothschild, and Spectre ( 2016,p . 1398) point out
+that—contra a natural ﬁrst thought—‘think’ does not express a
+5 Sceptical? Record some conversations and count. My tally: ‘think’, 95; ‘believe’, 3.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 177
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 4 ===
+weaker state than ‘believe’. If it did, then it would make sense to afﬁrm
+the former and deny the latter. But it doesn’t: 6
+(1) ? Tim thinks the dog is outside, but he doesn’ t believe
+it’s not as if he believes
+/C26/C27
+she is.
+(Contrast: ‘Tim thinks the dog is outside, but he doesn’t know she is’.)
+This suggests that you think p only if you believe it. The converse
+holds as well:
+(2) ? Tim believes the dog is outside, but he doesn’t think
+it’s not as if he thinks
+/C26/C27
+she is.
+The natural hypothesis is that you think p iff you believe p. I’ll adopt it
+in what follows. 7
+First, note that it makes no sense to express high credence and deny
+belief:
+(3) ? The dog is probably outside, but I don’t
+it’s not as if I
+/C26/C27
+think she is.
+This suggests that having high credence in rain requires thinking
+(hence believing) it. Similarly:
+(4) ? I think the dog is outside, but it’s not
+it’s not as if it’s
+/C26/C27
+likely that
+she is.
+This suggests the converse: thinking sufﬁces for having high credence.
+More generally, we are happy to draw conclusions about what to
+‘think’ based on merely statistical evidence—as predicted by
+Lockeanism. You ask me whether it will rain. Seeing that there’s a
+70% chance, I reply, ‘I think it will’. Most people like star fruit, though
+few have tried it. You ask me what I’m eating and I reply, ‘It’s a star
+fruit—try it, I think you’ll like it’. Student Steve asks Professor
+Peterson about a class. Knowing only that 90% of students get good
+grades, she replies, ‘I think you’ll ﬁnd it manageable’. Hopeful Holly
+6 In hearing these sentences, be sure not to put stress/emphasis on them, for doing so
+affects the semantic values of their parts—witness the acceptability of ‘I believe you love me,
+but I don’t believe it’.
+7 This hypothesis is helpful but inessential to my argument. First, the core argument from
+epistemic utility theory for Lockeanism stands on its own. Second, although ‘think’-judge-
+ments are less theoretically loaded than ‘believe’-judgements, all the natural-language data
+holds up using either verb—feel free to replace occurrences of ‘think’ with ‘believe’ in what
+follows.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+178 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 5 ===
+clutches her lottery ticket, waiting for the numbers to fall. Alas, I think
+her ticket will lose. Don’t you? Examples could be multiplied. We are
+constantly having to ﬁgure out what to think based on merely statis-
+tical, inconclusive evidence—and outside the philosophy room we do
+so without pause or compunction.
+Or at least that’s what I want to suggest. The interested reader is
+referred to Hawthorne, Rothschild, and Spectre ( 2016) (and below, in
+§4.1) for further discussion of these linguistic points. At this stage my
+claim is the modest one that Lockeanism is not absurd—the formal
+argument I’m about to give is not divorced from common sense.
+(Maybe so. But aren’t Hintikka et al. right that there is a theoret-
+ically important attitude toward p that amounts to ruling out ‰p; that
+aims at knowledge; that you rely on in reasoning; and so on? Yes—it’s
+just not belief, says the Lockean. See § 5.1.)
+2. Epistemic utility theory
+So our conclusion isn’t absurd—how do we reach it? Epistemic utility
+theory: a research programme started by Rosenkrantz ( 1981), Oddie
+(1997), and Joyce ( 1998) that attempts to justify norms of rationality
+using the constraint that they must promote accuracy. There are two
+core assumptions.
+(1) First, there is a distinctive kind of epistemic value—a degree to
+which a given doxastic state is epistemically good or bad (for a given
+agent, in a given context) at a given possible world. We’ll make the
+traditional assumption that it’s a metric of accuracy. Model it using an
+accuracy function A that takes a doxastic state D, a set of propositions
+P, a world w, and outputs D’s accuracy with respect to P at w:
+AðD, P, wÞ. Our understanding of accuracy can then be used to justify
+various constraints that A must meet (Joyce 2013,§ 6)—for instance, A
+should increase as you become more conﬁdent in truths.
+(2) Our second core assumption is that the norms of rationality are
+constrained by the norm to try to promote accuracy. There are two
+parts to this. (i) We say agents should ‘try ’ to promote accuracy be-
+cause this is a theory of subjective obligation—of what you should do,
+given the information you have. Though it remains implicit in many
+discussions, this point is highlighted by the fact that A—the metric of
+objective value—measures accuracy. Yet no one has ever thought that
+rationality requires accurate beliefs. Instead, it requires adopting
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 179
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 6 ===
+methods that are expected to be conducive to this end—that promote
+accuracy by your own lights.
+(ii) To say rational norms are ‘constrained’ by promoting accuracy
+means that if a norm can be derived purely from considerations of
+accuracy, then it’s a rational norm. The basic idea is that rationality—
+whatever else it is—must be an optimal guide to truth; thus we should
+start with accuracy in theorizing about it. This has a methodological
+upshot: in setting up our framework we should not impose external
+constraints on the class of doxastic alternatives. For instance we do not
+want to stipulate that the class of credence functions includes only
+probabilistic ones, for we want to see whether accuracy alone will get us
+there. Generalizing, call this an Accuracy First methodology: we should
+leave open a wide class of doxastic alternatives, since we want to derive
+norms from accuracy alone. Again, Accuracy First is rarely stated, but
+it’s implicit in the way epistemic utility theorists set up their frame-
+works and paint the big picture of what they are trying to do.
+(Accuracy First is crucial, and explains why I do not say Hempel
+(1962), Levi ( 1967)a n dM a h e r(1993) are founders of epistemic utility
+theory. They too ask what to believe given your epistemic values. But—
+crucially—they reject Accuracy First, instead imposing external bounds
+on permissible belief states. Example: deductive closure. This constraint
+is not motivated by considerations of accuracy, and is the reason—in
+fact, the only reason—why they do not end up with Lockeanism.)
+So we have our machinery in place. To get a grip on how it works
+and the assumptions we’ll use, let’s begin with the classic example.
+Consider Rational Rachael, who assigns credences C to a set of prop-
+ositions P modelled as subsets of a (ﬁnite) set of doxastic possibilities
+W. Suppose we want to explain why her credences are probabilistic.
+Accuracy First requires us to start with a wide range of credence
+functions as doxastic alternatives—say, every function from propos-
+itions to real numbers. The goal is to argue that only the probabilistic
+ones respect the norm to promote accuracy.
+To do this we have to motivate some constraints on A; the following
+three are standard. First, A should be proper:
+Propriety: Any probabilistic credence function C expects any other
+particular credence function C/C3 to be less A-accurate than itself.
+If A were improper then Rachael would be in a bizarrely unstable state,
+for in trying to maximize accuracy she’d have to change her credences
+based on no evidence (Gibbard 2008). (Although it’s needed for pro-
+babilism, we won’t need Propriety for Lockeanism.)
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+180 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 7 ===
+Second, A should be extensional: the accuracy of Rachael’s credences
+with respect to p depends only on ( 1) her credence in p, and ( 2) p’s
+truth-value. This is because, intuitively, A is a distance metric—a
+measure of how close Rachael’s credences are to the truth. Consider:
+the distance between her left foot and the nearest spider depends only
+on (1) where she puts her left foot, and ( 2) where the world puts the
+spider. Likewise, the distance between her credence and the truth-
+value depends on only ( 1) where she puts her credence, and ( 2)
+where the world puts the truth-value. Formally:
+ExtensionalityC: For any p, q:i f C(p)= C(q) and p and q have the
+same truth-value, then AðC, fpg, wÞ¼ AðC, fqg, wÞ.
+Rachael has 0.7 credence in both Nearby Spider and Nearby Snake, and
+in fact both are true—there are spiders and snakes nearby. Suppose
+her accuracy for Nearby Spider is 8.4. Can we guess her accuracy for
+Nearby Snake ? 8.4, according to Extensionality C.
+Finally, A should be separable: the accuracy of Rachael’s credence
+function with respect to a set of propositions fp1,… , png is the sum of
+its accuracy with respect to each member of the set. Consider: the
+distance she’d have to move her feet to stand on the spider and snake
+is the sum of the distances between ( 1) her left foot and the spider, and
+(2) her right foot and the snake. Likewise, the distance she’d have to
+move her credences to hit on the truth of p and of q is the sum of the
+distances between (1) her credence in p and its truth-value, and (2) her
+credence in q and its truth-value. Formally:
+SeparabilityC: AðC, fp1,… , png, wÞ¼ P
+i
+AðC, fpig, wÞ
+Rachael is wondering how accurate her views on Nearby Spider and
+Nearby Snake are. I tell her how accurate they are for Nearby Spider
+and how accurate they are for Nearby Snake . Have I answered her
+question? Yes, according to Separability C.
+Propriety, Separability C , and Extensionality C have become the
+standard operating procedure assumptions about A, so let’s suppose
+A obeys them.8 Our ﬁnal step is to clarify the sense in which Rachael
+can be thought of as ‘trying to promote accuracy ’. At a bare min-
+imum, she must never adopt a dominated state: a state D that she
+knows is less accurate than a different state D/C3 . Theorem: if A satisﬁes
+Propriety, Separability C , and Extensionality C, then Rachael’s credal
+state is undominated iff it is probabilistic (Predd et al. 2009).
+8 They are all assumed by Joyce ( 1998), Predd et al. ( 2009), Leitgeb and Pettigrew ( 2010),
+Easwaran ( 2013), Pettigrew ( 2013a), and Briggs and Pettigrew ( 2016).
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 181
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 8 ===
+But dominance is a special case. It arises from requiring Rachael to
+promote A by her own lights—to try to promote A. What does this
+come to generally? Presumably that she must select an option she
+estimates will best promote A. Note that such estimates are judged
+on a ‘closeness counts’ metric: if there are63 jelly beans in the jar, then
+my estimate of 58 is worse than your estimate of 59—even though
+neither of us was exactly right. Using such a (proper, separable, ex-
+tensional) ‘closeness counts’ metric, we can prove—on pain of dom-
+inance—that Rachael’s estimate of A must equal her mathematical
+expectation of A (De Finetti 1974; Pedersen and Glymour 2012;
+Pettigrew 2012). This is a weighted average of the accuracy of D
+across worlds, with weights determined by her credence that those
+worlds are actual. Formally, her Expected Accuracy of a doxastic
+state D with respect to the total set of propositions P is:
+EAðD, PÞ ¼
+X
+w
+ðCðwÞ/C1 AðD, P, wÞÞ
+Example: if she’s 3
+4 conﬁdent that D has accuracy 4, and 1
+4 conﬁdent
+that it has accuracy 1, then its expected accuracy is 3.25.
+To promote accuracy by her own lights, Rachael must select a state
+that maximizes expected accuracy according to her credences:
+Maximize Expected Accuracy : Given credences C, a doxastic state D
+is rational only if EAðD, PÞ /C21 EAðD/C3 , PÞ for every other D/C3 .
+This norm is standard. 9 But we needn’t appeal to orthodoxy: the
+above-mentioned proof suggests that Maximize Expected Accuracy
+is part and parcel of our core requirement to promote accuracy by
+your own lights. If it wouldn’t be rational for Rachael to maximize EA,
+then (by the above-mentioned proof ) she shouldn’t do what she es-
+timates will best promote A—which just shows that A wasn’t the
+correct metric of accuracy in the ﬁrst place.
+3. Fixed Lockeanism
+The epistemic utility machinery has primarily dealt with credences, so
+our ﬁrst step is to make it work for beliefs. The assumptions we’ll start
+with are Accuracy First, Extensionality, Separability, and Maximize
+Expected Accuracy. In this section we show that translating them to
+apply to beliefs yields a normative, ﬁxed Lockean Thesis: rational
+9 See Greaves and Wallace ( 2006), Leitgeb and Pettigrew ( 2010), Easwaran ( 2013),
+Schoenﬁeld ( 2016, 2017), and Shear and Fitelson ( 2017).
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+182 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 9 ===
+agents have a threshold t such that, for all p, they believe p iff their
+credence in p is above t. This is our base result. In the next section I’ll
+argue that it can and should be generalized: dropping Extensionality
+and Separability yields a normative, variable Lockean thesis, wherein
+the threshold varies with proposition and context.
+But ﬁrst let’s situate our argument, since some theorists have
+engaged in similar projects. 10 In particular, Easwaran ( 2016) has
+some very similar formalism—my Theorem 1 and Corollary 2 are
+identical to two of his results (see his §§ 3.2 and G. 2; he proved
+them ﬁrst). There are three key differences. First, I provide a new
+picture for why we should drop Extensionality, and explore how the
+resulting view meshes with natural language to yield a new picture of
+belief. Second, I argue that we can drop the (seemingly) essential
+assumption of Separability (cf. Easwaran 2016, §D). Third, philosoph-
+ically we are going in opposite directions. Easwaran is attempting to
+reduce talk of credences to talk of beliefs; I’m trying to do the oppos-
+ite. So whereas my project can be seen as an extension of the epistemic
+utility research programme, Easwaran’s cannot—in rejecting the in-
+dependent existence of credences, he is rejecting the foundations of
+that programme.
+Our conclusion isn’t absurd, and it’s not old news; time to see how
+we get there. Consider Rational Rachael; we want to prove she’s a
+Lockean. Our story begins—as these stories often do—by letting the
+idealizations rip. (But bear with me: in § 5.1 I’ll suggest we can drop
+them.) So suppose Rachael has a probabilistic credence function C
+deﬁned over a set of propositions P, the subsets of (ﬁnite) W. We are
+interested in her belief-state B—the set of propositions she believes. It
+encodes all her relevant attitudes: if she believes p, then p 2 B; if she
+disbelieves p, then ‰p 2 B; and if she suspends judgement on p, then
+p, ‰p =2 B.11 Accuracy First says there are no external requirements on
+B—it need not be consistent, or deductively closed, or non-empty.
+10 For example, Easwaran and Fitelson ( 2015), Pettigrew ( 2015, 2016c), Easwaran ( 2016), and
+Shear and Fitelson ( 2017).
+11 My treatment of suspension of judgement as non-belief is a modelling choice, not a substan-
+tive one. Friedman ( 2013, 2017) has forcefully argued that suspension is distinct from mere non-
+belief, but the question for our purpo ses is whether they have different accuracy proﬁles. They
+cannot. For the accuracy of su spending judgement or having no belief with respect to p cannot
+depend on whether p is true or false. Thus suspension always yields some accuracy score S,a n d
+non-belief always yields some accuracy score N.I f SÞN, then one option accuracy-dominates the
+other. Thus, at the level of accuracy, there cannot be t wo distinct, potentially rational options; our
+model needn’t discriminate between suspension of judgement and non-belief.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 183
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 10 ===
+We have Rachael’s beliefs; what do they aim at? Epistemic utility
+theory says: accuracy! Beliefs aim to be true, and to avoid being false.
+This motivates translations of Separability and Extensionality for the
+case of beliefs.
+First, Separability: the accuracy of Rachael’s beliefs for a set of
+propositions is the sum of her accuracy for each member of the set.
+Consider: her score on the exam is the sum of her scores on each
+question. Likewise, the overall accuracy of her beliefs for a set
+fp1,… , png is the sum of her accuracy for each pi. Formally:
+SeparabilityB: AðB, fp1,… , png, wÞ¼ P
+i
+AðB, fpig, wÞ
+This is a direct translation of Separability C above.
+Second, Extensionality: the accuracy of Rachael’s beliefs about p
+depends only on ( 1) her attitude toward p, and ( 2) p’s truth-value.
+She could either believe ( b), suspend judgement ( s), or disbelieve ( d),
+and p could be either true ( t) or false ( f ); so there are six options: bt,
+df, st, sf, bf, dt .B u ts h ed i s b e l i e v e sp iff she believes ‰p,a n dp is true iff
+‰p is false; so disbelieving a falsehood is believing a truth ( df ¼ bt)
+and disbelieving a truth is believing a falsehood ( dt ¼ bf ). Moreover,
+it’s no better or worse to suspend judgement on truths than false-
+hoods (st ¼ sf ). The six become three: bt ¼ df , st ¼ sf , bf ¼ dt.S o
+Extensionality requires A to take one of three values for a propos-
+ition, depending on whether Rachael believes it truly, suspends
+judgement, or believes it falsely. Call these values T, S and F,
+respectively.
+Suspending judgement is neither accurate nor inaccurate: S = 0.12
+What about T and F? They correspond to what William James called
+our two ‘great commandments as would-be knowers’ (1897, §VII). His
+claim was that ‘Be accurate!’ actually breaks down into two separate
+injunctions: (1) ‘Seek truth!’, and (2) ‘Avoid error!’ Rachael could fully
+satisfy ( 1) by believing everything, and fully satisfy ( 2) by believing
+nothing; we only get an accuracy metric once we weigh these factors
+against each other. In particular, there’s no need to assume that jT j =
+jFj; so what constraints should these values obey? A true belief is more
+accurate than suspending judgement, which itself is less inaccurate
+(more accurate) than a false belief: T > 0 > F.
+12 But this assumption is inessential; see Easwaran ( 2016,§ C ) .
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+184 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 11 ===
+Moreover, it’s plausible that—contra James—Rachael will be dox-
+astically conservative: she’ll avoid error more fervently than she’ll seek
+truth. Why? Well here’s a fair coin—does she believe it’ll land heads?
+Or tails? Or both? Or neither? Clearly neither. But if she cared more
+about seeking truth than avoiding error, why not believe both? She’d
+then be guaranteed to get one truth and one falsehood, and so be more
+accurate than if she believed neither. Yet believing both is not as ac-
+curate as believing neither—so belief is conservative. Upshot: we
+impose a Conservativeness constraint to capture the sense in which
+Rachael has ‘more to lose’ in forming a belief than she does to gain.
+That is, the jump in accuracy from suspending judgement ( S)t o
+believing a truth ( T) is smaller than corresponding jump from believ-
+ing a falsehood ( F) to suspending judgement ( S): jT – Sj < jF – Sj.
+Equivalently, when S = 0: jT j < jF j.
+Upshot: Extensionality says that a belief-state gets one of three
+values for a given proposition: T for a true belief, F for a false
+belief, 0 for no belief. Formally:
+ExtensionalityB : AðB, fpg, wÞ¼
+T if p is true and believed
+F if p is false and believed
+0 if p is not believed
+8
+<
+:
+We can combine this with Separability B to determine R achael’s ac-
+curacy for the question of whether p—that is, fp, ‰pg. If she believes
+o n l yt h et r u ep r o p o s i t i o ns h eg e t sa c c u r a c yT; if she believes only the
+f a l s eo n es h eg e t sF; if she suspends judgement she gets 0;a n di f
+she believes both she gets T + F (which, by Conservativeness, is less
+than 0).
+Summing up: epistemic utility theory commits us to Accuracy First
+and Maximize Expected Accuracy; moreover, its accuracy-theoretic
+foundations seem—on a ﬁrst pass—to motivate Separability B and
+ExtensionalityB. So—on a ﬁrst pass—epistemic utility theory commits
+us to a normative, ﬁxed Lockean Thesis: there is a single threshold of
+credence t (which turns out to be t ¼ /C0 F
+T /C0 F) such that Rachael must
+believe everything more likely than t, and must not believe anything
+less likely than t. Formally:
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 185
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 12 ===
+Theorem 1 (Easwaran 2016,§ 3.2). If A is separable and extensional,
+a belief-state 13 B maximizes expected accuracy iff, for all p:
+(i) If p 2 B, then CðpÞ/C21 /C0 F
+T /C0 F
+(ii) If p =2 B, then CðpÞ/C20 /C0 F
+T /C0 F
+(See the Appendix for all proofs.) Why does this happen?
+ExtensionalityB ensures that believing p is an epistemic bet, which
+pays out T if p is true and costs F if p is false. When should Rachael
+take this bet? Maximize Expected Accuracy says: whenever the possible
+beneﬁt ( T) is likely enough that it’s worth the possible cost ( F).
+(Example: if T = 1 and F =– 2, the threshold is 2
+1þ2 ¼ 2
+3.) Next,
+Accuracy First ensures that Rachael decides whether the bet is worth
+the risk for each proposition individually—deciding whether to bet on
+p ^ q is independent of deciding whether to bet on p and on q. Finally,
+SeparabilityB ensures that this dynamic for individual propositions is
+maintained when all propositions are in view. Hence Lockeanism.
+Conclusion: the standard assumptions of epistemic utility theory
+imply a ﬁxed Lockean Thesis—there is a single threshold for all beliefs.
+That’s a strong result—too strong, I think. The next section shows
+why and how it should be generalized.
+4. Lockeanism, generalized
+Plan: §4.1 argues that dropping Extensionality B is well-motivated and
+leads to more plausible results; § 4.2 argues that we can drop
+SeparabilityB without loss.
+4.1 Beyond Extensionality
+Fixed Lockeanism is too strong: there are good reasons to think that
+the threshold for belief varies with proposition and context.
+13 In scoring only Rachael’s beliefs, I sideline a worry raised by Pettigrew ( 2015) about
+scoring joint credal-belief states. He shows that if we presuppose Lockeanism, then there’s a
+hitch in the accuracy-dominance argument for probabilism: if C is not probabilistic, the joint
+state hC, Bi may not be dominated by a probabilistic and Lockean state hC/C3 , B/C3 i. But this issue
+does not arise on my account, for the order of explanation is reversed: we only get a Lockean
+constraint after establishing probabilism, for that constraint comes from Maximize Expected
+Accuracy—a norm that only makes sense for probabilistic credences (Joyce 1998,p . 590).
+Precisely: we start with any joint state hC, Bi. The accuracy-dominance argument shows that
+if C is non-probabilistic, hC, Bi is dominated by a state hC/C3 , Bi with C/C3 probabilistic. Only
+then does it make sense to apply my expected accuracy argument to show that if hC/C3 , Bi is not
+Lockean, it is exceeded in expectation by a state hC/C3 , B/C3 i that is. This is how we avoid
+Pettigrew’s worry. (See (Staffel 2017) for a more general response.)
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+186 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 13 ===
+ExtensionalityB doesn’t allow for this. So much the worse for
+ExtensionalityB.
+Why think the threshold varies? As Hawthorne, Rothschild, and
+Spectre (2016) point out, saying what people think is a shifty endeav-
+our. First, consider some rough-and-ready data. I’m about to ﬂip this
+coin three times; do I think it’ll land heads at least once? Yes. (So the
+threshold must be below 0.875.) But a recent study concluded that
+there’s a 0.9 chance that a new fundamental particle—the gloson—
+exists; do I think the world contains glosons? Not yet—we need more
+data. (So the threshold must be above 0.9.) Horses A, B and C are
+racing, with betting ratios of 0.45, 0.30 and 0.25, respectively. Who do I
+think will win? Horse A, of course! (So the threshold must be below
+0.5; see Hawthorne, Rothschild, and Spectre ( 2016).) What’s going on?
+Let’s look at an example more carefully.
+Peterson’s class was harder than expected, so Steve is down in the
+dumps. How to cheer up? Case 1: Steve has bought 480 tickets in the
+next 1000-ticket lottery; there are 520 other players with one ticket
+each. Who do I think will win? I think Steve will win. Taking my
+ascription at face value, I believe Steve wins but not Steve loses despite
+being less than 1
+2 conﬁdent in the former and more than 1
+2 conﬁdent in
+the latter ( 0.48 < 0.52). This calls out for proposition-dependence in
+the threshold: in this context Steve wins has a lower threshold for belief
+than Steve loses .
+Case 2: Steve has bought 480 tickets, but Peterson has bought the
+remaining 520. Who do I think will win? I think Peterson (not Steve)
+will win. Taking my ascription at face value, in Case 2 I don’tbelieve
+Steve wins, despite being just as conﬁdent in it ( 0.48) as I was in Case 1.
+This calls out, further, for context-dependence in the threshold for
+believing this proposition—in Case 1 the threshold is below 0.48,
+while in Case 2 it is not. 14
+(Objection: Perhaps these exchanges are felicitous for a pragmatic—
+not semantic—reason. Maybe I don’t, strictly speaking, think Steve
+will win in Case 1; but since the question ‘Who do you think will win?’
+presupposes an answer, I accommodate. Reply: I don’taccommodate
+questions like ‘Who are you conﬁdent/sure will win?’—instead I say,
+‘I’m not conﬁdent/sure of anyone!’ In contrast, I readily accommodate
+questions of the form ‘Who do you suspect/guess/think will win?’
+14 The cases are from Windschitl and Wells ( 1998), though they ask whether Steve will
+‘probably ’ win. (Cf. Yalcin 2010.)
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 187
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 14 ===
+Diagnosis: the latter have weak enough presuppositions to be satisﬁed;
+the former don’t.)
+We want to model and explain these natural-language phenomena.
+Epistemic utility theory can help. First point: we should expect prop-
+osition- and context-dependence in the threshold for belief, given
+epistemic utility theory. Why? The threshold for believing something
+is generated from the value and disvalue of getting it right ( T) and
+wrong (F). Yet it is independently plausible that the value of having a
+belief (an answer to a question) is a proposition- and context-depend-
+ent affair. A given inquiry is driven by a point, a purpose, a question—
+it is directed toward certain types of answers, and away from others.
+Thus different contexts of inquiry provide different epistemic priorities.
+Example: Phyllis the Physicist is wondering whether black holes
+destroy information. I tell her that my garbage disposal destroys
+spoons. A truth, sure enough—but an unimportant one. It would
+be much more valuable (in this context) to learn that black holes
+don’t destroy information. However, across campus Dee the
+Detective is wondering how a murderer might destroy his murder
+weapon. I tell her that black holes don’t destroy information. A
+truth, sure enough—but an unimportant one. It would be much
+more valuable (in this context) to learn that my garbage disposal
+destroys spoons. Upshot: different contexts of inquiry give epistemic
+priority to different questions.
+Incorporating this into epistemic utility theory requires making A
+proposition- and context-dependent. 15 Does this make sense for a
+measure of accuracy? Yes (cf. Joyce 2013). Any measure of accuracy
+worthy of the name must have a preference for truths over false-
+hoods—but it needn’t be indiscriminate in that preference. Perhaps
+some questions (in some contexts) count more toward your overall
+accuracy than others. Recall the exam analogy: Rachael’s score is a
+measure of the accuracy of her answers—it goes up for correct an-
+swers, down for incorrect ones. But different questions might contrib-
+ute more or less to her overall score than others; and the same
+question might contribute more or less on different exams.
+Likewise, Rachael’s A-score is a measure of the accuracy of her
+beliefs—it goes up for true beliefs, down for false ones. But different
+propositions might contribute more or less to her overall A-score than
+15 Do these motivations force us to drop Extensionality C for credences? Not obviously—
+though there may be contextual variation, I know of no data supporting proposition-
+dependence.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+188 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 15 ===
+others, and the same proposition might contribute more or less in
+different contexts. Example: Rachael writes a report on Happy Pill
+Pharmaceuticals. At a chemistry conference it’s praised for its accur-
+acy; at an economics conference it’s ridiculed for its inaccuracy. But
+the chemists and economists don’t disagree about the facts, nor about
+the content of the report—they just have different priorities about
+which questions this kind of report should get right.
+Upshot: epistemic utility theory provides reason to expect the prop-
+osition- and context-dependence in belief-ascriptions which we see in
+natural language.
+More than that, it provides a concrete model for thinking about
+what happens in cases like Steve’s lottery. Context-dependence really
+requires nothing new, so I won’t wrap it in symbols. We simply ac-
+knowledge that A is not an ‘ur-accuracy-metric’ ﬁxed for all time, but
+is instead generated within a given context by our priorities, interests,
+and questions. Since it will still obey the dynamics needed for
+Theorem 1 within any given context, we get a version of
+Lockeanism where thresholds for belief are generated by the (context-
+ually variable) values of T and F.
+Proposition-dependence is more interesting: T and F must be func-
+tions that take a proposition p and output the value Tp of truly believ-
+ing it and the disvalue Fp of falsely believing it (in a given context).
+That is, we now have a proposition-dependent A :
+AðB, fpg, wÞ¼
+Tp if p is true and believed
+Fp if p is false and believed
+0 if p is not believed
+8
+<
+:
+The upshot is a variable Lockean Thesis: for each proposition
+there’s a threshold of credence t ¼ /C0 Fp
+Tp /C0 Fp
+necessary and sufﬁcient for
+belief.16 Formally:
+Corollary 2 (Easwaran 2016, §G. 2). If A is proposition-dependent
+and separable, a belief-state B maximizes expected accuracy iff, for
+all p:
+(i) If p 2 B, then CðpÞ/C21 /C0 Fp
+Tp /C0 Fp
+(ii) If p =2 B, then CðpÞ/C20 /C0 Fp
+Tp /C0 Fp
+16 Worry: is our Lockean result still substantive if it allows variation in the threshold? Yes—
+see § 5.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 189
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 16 ===
+The ﬂexibility granted by Corollary 2 allows us to generate a model of
+what happens in our lottery cases. Recall Case 1: Steve has 480 tickets
+and 520 other players have one ticket each; when asked ‘Who do you
+think will win?’, I answer, ‘I think Steve will win’. Proposal: asking a
+question (posing a new stage of inquiry) is a way of shifting epistemic
+priorities; in particular, it shifts the values of Tp and Fp for various
+propositions.
+Model it thus. Suppose that before the question is asked the
+(dis)values of believing propositions of the form x wins and x
+loses (= ‰(x wins )) are the same. Say Tx wins ¼ Tx loses ¼ 1 while
+Fx wins ¼ Fx loses ¼/C0 2, generating thresholds at 2
+1þ2 ¼ 2
+3; therefore I be-
+lieve neither that Steve will win nor that he’ll lose (since
+2
+3 > 0:48, 0:52). Then you ask, ‘Who do you think will win?’ The ques-
+tion presupposes an answer, so ‘straightaway that presupposition
+comes into existence’ (Lewis 1979,p . 339).
+The question prioritizes answers of the form x wins ; it’s a way of
+saying, ‘Don’t worry too much about being wrong about who’ll win—
+just tell me what you’re inclined to think’. Formally, it makes the
+penalty Fx wins (of falsely believing that someone will win) less extreme.
+This has the effect of lowering the threshold for propositions of the
+form x wins. Since the question presupposes an answer, it adjusts them
+(within reason) until it gets one. In particular, once Fx wins shrinks
+from – 2 to – 0.923, the threshold becomes 0:923
+1þ0:923 < 0:48 —I now be-
+lieve Steve wins . According to epistemic utility theory, that’s how
+asking the question ‘Who do you think will win?’ can lead me to
+truly say ‘I think Steve will win’—despite the fact that I’m less than
+1
+2 conﬁdent of it. That’s Case 1.
+Case 2 is similar. Here Steve has 480 tickets but Peterson has the
+remaining 520. At ﬁrst I don’t believe of either that they ’ll win. When
+you ask ‘Who do you think will win?’, the same mechanism kicks in,
+lowering Fx wins until it gets an answer. But this time around it only
+needs to be shifted until the threshold for x wins drops below 0.52, for
+then I can truly respond, ‘I think Peterson (not Steve) will win’—so
+there’s no need to drop the threshold below 0.48.
+In fact, it couldn’t drop that low. If it did, I’d believe both that
+Peterson will win and that Steve will win (= Peterson won’t win).
+Yet epistemic utility theory won’t allow me to believe both p and
+‰p—even once we allow the threshold to fall below 1
+2.
+Recall that this comes from the Conservativeness constraint that
+rational agents have ‘more to lose than to gain’ in becoming opinion-
+ated on a given proposition. Originally this said that the value of truly
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+190 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 17 ===
+believing something is smaller than the disvalue of falsely believing it:
+jT j < jFj. But now that we have proposition-dependence, the value of
+getting p right or wrong (Tp or Fp) might be different from the value of
+getting its negation right or wrong ( T‰p or F‰p). Which one you’ll get
+will depend on whether p or ‰p is true; our constraint should guar-
+antee that either way you should be conservative. If p is true, becom-
+ing opinionated will yield either Tp or F‰p, depending on whether you
+believe p or ‰p. And if ‰p is true, becoming opinionated will yield
+either T‰p or Fp. Thus Variable Conservativeness requires these values
+to be coordinated: jTpj < jF‰pj and jT‰pj < jFpj.
+This guarantees that when an inquiry prioritizesp (makes Tp larger or
+Fp smaller), it thereby deprioritizes ‰p (makes F‰p larger or T‰p smaller,
+respectively). Thus whenever the threshold for p drops below 1
+2,t h e
+threshold for ‰p raises correspondinglyabove 1
+2.S oe v e nw h e nb e l i e v i n g
+with below 1
+2 probability, it’ll never be rational to believe bothp and ‰p:
+Proposition 3. Given Variable Conservativeness and Corollary 2,i f
+the threshold forp is t,t h e nt h et h r e s h o l df o r‰p is greater than 1 /C0 t.
+Thus it never maximizes expected accuracy to believe bothp and ‰p.
+Upshot: epistemic utility theory doesn’t merely motivate proposition-
+and context-dependence in the abstract; it provides a concrete model
+of particular cases of it without leading to bad results. Further, we can
+use this model to help inform our semantic theorizing. Here I’ll just
+sketch a few applications.
+Observation: Return to Case 1,w h e r eS t e v eh a s480 tickets and 520
+others have one ticket each. As already noted, if you ask ‘Who do you
+think will win?’, I’ll answer ‘I think Steve will win’. But if instead you ask
+‘Do you think Steve will win or lose?’, I’ll answer ‘I think he’ll lose’.
+Explanation: Different questions set different epistemic priorities for
+the context. In particular, asking ‘Do you think Steve will win or lose?’
+sets equal (dis)value to getting Steve wins and Steve loses right (wrong),
+so TSteve wins ¼ TSteve loses and FSteve wins ¼ FSteve loses . Since your question
+presupposes an answer, I believe the one with higher probability,
+namely, Steve loses .
+Observation: Consider Case 3, in which Steve has ﬁve lottery tickets
+and there are 995 other people with one ticket each. If you ask ‘Who
+do you think will win?’, I’ll respond ‘I have no idea!’ As Yalcin (2010)
+and Hawthorne, Rothschild, and Spectre ( 2016) observe, this means
+that we can’t explain Case1 (where Steve has 480 tickets) using the fact
+that he’s the most likely to win—for that holds in Case 3 as well.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 191
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 18 ===
+Explanation: Epistemic utility theory predicts this. For it’s
+much easier to shift epistemic priorities to get the threshold for x
+wins down to 0.48 than to get the threshold down to 0.005—the
+former merely requires jFx wins j to be a bit less than jTx wins j, while
+the latter requires it to be almost two hundred times less
+( /C0 Fp
+Tp /C0 Fp
+/C20 0:005 )j Fpj/C20 jTp j
+199 ). So in Case 3, if you ask simply ‘Who
+do you think will win?’, it’s reasonable to assume that you’ve made a
+mistake about the probabilities, rather than request such an extreme
+change in priorities.
+Observation: But you can make clear that such extreme changes are
+what you’re asking for. If in Case 3 you ask ‘I just want your best
+guess—who do you think will win?’, I’ll respond ‘Steve, I guess’.
+Explanation: Saying ‘I just want your best guess’ is a way of forcing
+the penalty Fx wins for a false belief very low, so I do accommodate the
+presupposition of your question.
+Upshot: dropping Extensionality B is well-motivated, and doing so
+ﬁts epistemic utility theory with natural-language considerations to
+offer a new picture of belief—a version of proposition- and context-
+dependent Lockeanism. On this picture, your beliefs are your best
+guesses—your best shots at the truth—in response to the epistemic
+priorities of your context. Moreover, our two approaches are mutually
+illuminating. The thresholds epistemic utility theory generates from
+the (dis)values of true (false) beliefs help to predict, model, and ex-
+plain patterns in natural language belief-ascriptions. Conversely, the
+natural-language phenomena of presupposition accommodation and
+question-setting help to explain how the (dis)values of true (false)
+beliefs are modulated by contextual priorities. Though many questions
+remain, we can see that this new picture might beneﬁt both epistem-
+ology and semantics.
+4.2 Beyond Separability
+Dropping Extensionality B is progress, but the real bugbear is
+SeparabilityB—the assumption that the value of a belief-state is the
+sum of the value of its parts. It seems to contradict epistemic holism
+(Joyce 2009,§ 5); so can holists avoid our Lockean picture? No. So long
+as we retain the core assumptions of epistemic utility theory, dropping
+SeparabilityB yields the same results. More precisely: assuming ( 1)a
+non-arbitrariness condition on beliefs, ( 2) Accuracy First, and ( 3)
+Maximize Expected Accuracy, we still get Lockeanism. (We must
+now get unavoidably technical; if you trust me on the details, feel
+free to skim or skip this section.)
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+192 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 19 ===
+Begin by granting the objector what he wants: A depends on
+Rachael’s current belief-state B0 (to capture the sense in which it
+matters what other beliefs she holds), and the value (accuracy) of
+any given belief-state B cannot be broken down into the value of
+the various propositions it contains. This blocks the straightforward
+route to Lockeanism we’ve been using.
+Nevertheless, we can be devious. Accuracy First ensures that the
+space of doxastic alternatives is open for exploration—it makes
+sense to compare the value of Rachael’s current belief-state B0 with
+another state B1 that adds a belief in p (B1 ¼ B0 [f pg). On our current
+supposition, the value of these two belief-states will depend on what
+her current beliefs are. Nevertheless, by the existence of an accuracy
+metric, there will be some function AB0 that assigns values to them.
+The value of her current belief-state B0 (relative to her beliefs B0)i s
+simply AB0 ðB0, P, wÞ. The value of B1 can be divided into three cases.
+(i) If B1 = B0 (because p 2 B0), then its value is identical to B0’s:
+AB0 ðB1, P, wÞ¼ AB0 ðB0, P, wÞ. (ii) If B1 6¼ B0 and p is true then B1
+adds one true belief to B0,s o B1 will have a higher score:
+AB0 ðB1, P, wÞ > AB0 ðB0, P, wÞ. Since AB0 is a real-valued function,
+there must be some t > 0 such that AB0 ðB1, P, wÞ¼ AB0 ðB0, P, wÞþ t.
+Write t as T B0
+p —the value, relative to B0, of adding a true belief in p.
+(iii) Finally, if B1 6¼ B0 and p is false then B1 adds one false belief to B0.
+By parallel reasoning, there will be some number f < 0 such that
+AB0 ðB1, P, wÞ¼ AB0 ðB0, P, wÞþ f . Write f as FB0
+p —the disvalue, rela-
+tive to B0, of adding a false belief in p. Combining (i)–(iii), we have
+derived this special case accuracy-comparison between B0 and B1:
+AB0 ðB1, P, wÞ¼
+AB0 ðB0, P, wÞ if (i) B1 ¼ B0
+AB0 ðB0, P, wÞþ T B0
+p if (ii) B1 6¼ B0 and p is true
+AB0 ðB0, P, wÞþ FB0
+p if (iii) B1 6¼ B0 and p is false
+8
+<
+:
+It’s crucial to emphasize that this assumes only that AB0 is well-
+deﬁned. Since the value of the move from B0 to B1 depends on the
+beliefs Rachael already has, there’s no way to string together applica-
+tions of this constraint to recover Separability B.
+However, there is room for more deviousness. Accuracy First allows
+Rachael to form her ﬁnal belief-state Bn in sequence —starting from
+nothing ( B0 ¼ 1) and deciding whether to add each proposition in
+some sequence p1,… , pn. (She needn’t actually go through this pro-
+cess. The point is not that she can form beliefs one at a time, but that
+she can assess the value of each state Biþ1 from the perspective of a less
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 193
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 20 ===
+opinionated Bi. The process may be purely imaginative—but for il-
+lustrative purposes, I’ll talk as if she actually goes through it.) By
+Maximize Expected Accuracy, her ﬁnal state Bn will be rational only
+if she maximizes her expectation at the previous stage Bn/C0 1. Given our
+constraint on ABi , this leads to an (uninteresting) special case of
+Lockeanism: if she forms beliefs in this sequence, then Maximize
+Expected Accuracy ensures that the ﬁnal proposition pn has a thresh-
+old necessary and sufﬁcient for belief. Formally:
+Proposition 4. If ABi is belief- and proposition-dependent and
+B1,… , Bn are formed on the sequence p1,… , pn, then Bn maximizes
+expected accuracy with respect to Bn/C0 1 only if:
+(i) If pn 2 Bn, then CðpnÞ/C21
+/C0 FBn/C0 1
+pn
+T Bn/C0 1
+pn /C0 FBn/C0 1
+pn
+(ii) If pn =2 Bn, then CðpnÞ/C20
+/C0 FBn/C0 1
+pn
+T Bn/C0 1
+pn /C0 FBn/C0 1
+pn
+Though this is a way for Rachael to form beliefs, it’s an uninteresting
+special case. But—and here’s the kicker— it shouldn’t matter in what
+sequence Rachael forms her beliefs, or whether she does so in any
+sequence at all. In the special case where she forms her beliefs sequen-
+tially, how could renumbering the propositions make a difference to
+what it’s rational to believe? That would be like changing the num-
+bering of the questions on an exam and thereby changing which an-
+swers it’s rational to give. That shouldn’t happen. Hence the following
+constraint:
+Sequence-Irrelevance : Holding ﬁxed all other factors, rational
+constraints on beliefs are not affected by the sequence (if any) in
+which they are formed.
+Sequence-Irrelevance is stated in terms of rationality, not expected
+accuracy. Everyone should accept it. To deny it is to allow that rational
+belief is to a surprising extent an arbitrary affair: it depends on
+Rachael’s choices about how and when and whether to consider vari-
+ous questions. Suppose it’s not rational for her to believe in God, yet
+she thinks she’d be happier if she did. If Sequence-Irrelevance fails, it’s
+possible that she could design a sequence that makes it rational for her
+to believe. That’s not possible. So Sequence-Irrelevance is true.
+But now it turns out that denying Separability B has gained us noth-
+ing: Sequence-Irrelevance turns the uninteresting Proposition 4 into a
+substantive Lockean result.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+194 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 21 ===
+Proposition 5. Given Sequence-Irrelevance, even if ABi is belief-
+and proposition-dependent, there are belief- independent values
+Tp and Fp for each proposition such that B is rational only if:
+(i) If p 2 B, then CðpÞ/C21 /C0 Fp
+Tp /C0 Fp
+(ii) If p =2 B, then CðpÞ/C20 /C0 Fp
+Tp /C0 Fp
+That is, we return to a variable (normative) Lockean Thesis: Rachael is
+rational only if, for each proposition p, she believes p iff p is above a
+given threshold of credence.
+The connection between epistemic utility theory and the Lockean
+Thesis is robust. Even a minimal version of the theory—which relies
+only on the existence of A, Maximize Expected Accuracy, and
+Accuracy First—leads to Lockeanism. Moreover, recall that these are
+all core assumptions of the theory: the ﬁrst comes from the existence of
+an accuracy metric, the second from the norm to promote accuracy by
+your own lights, and the third from the attempt to systematically
+derive rational norms from such considerations. Of course, once we
+drop Separability B the result also relies on Sequence-Irrelevance. But
+this assumption is plausible; and—perhaps more importantly—it
+shows that dropping Separability B is not the way to respect holism .
+After all, no holist ever thought that the insight of their position is
+that the order in which you consider propositions affects what you
+ought to believe. So if there’s a tension between epistemic utility
+theory and holism—and I’m not saying that there is—it’s somewhere
+in the core assumptions of the theory, not in Separability B (contra
+Joyce 2009,§ 5).
+Upshot: the bare epistemic utility framework—the simple idea that
+beliefs are valuable if true and disvaluable if false—is enough to gen-
+erate our new Lockean picture.
+5. Signiﬁcance?
+It’s been a long road. We took a fresh look at belief through natural
+language—Lockeanism looked natural. We developed an approach to
+the issue through epistemic utility theory—Lockeanism looked inev-
+itable. We realized that the threshold for belief varies with proposition
+and context—and found that epistemic utility theory explains why.
+We showed that these results are robust—they follow from the core of
+the epistemic utility approach. We are almost home.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 195
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 22 ===
+But wait. Does something smell ﬁshy? A normative Lockean Thesis
+says that high credence is necessary and sufﬁcient for rational belief.
+For a ﬁxed threshold this claim is clear and substantive. It is also
+false—hence our move to variable Lockeanism. But has this move
+sapped our conclusion of content? We say that for each propos-
+ition-context pair, there’s a threshold necessary and sufﬁcient for ra-
+tional belief. Does that say anything at all? Give me any proﬁle of
+beliefs you like, and it looks as though I’ll be able to give you a func-
+tion from contexts-and-propositions to thresholds that ﬁts it. You
+believe It’ll rain and snow but not It’ll snow? No problem: set the
+threshold for the conjunct higher than that for the conjunction. You
+believe in glosons on Mondays, but not on Tuesdays? No problem: set
+the threshold low for Monday-contexts and high for Tuesday-con-
+texts. And so on. Conclusion: our (normative) variable Lockean
+Thesis is no thesis at all! Right?
+Wrong. Granted, on its own normative variable Lockeanism says
+very little. But our Lockeanism doesn’t stand alone—so it says quite
+a bit.
+Reason number one: as we’ve seen, epistemic utility theory and
+natural-language considerations provide a story for how the Lockean
+thresholds get set. They come from the (dis)values of true (false) be-
+liefs, which in turn are modulated by contextual priorities and subject
+to formal constraints. The picture that emerges is that your beliefs are
+your best guesses at the truth in response to the epistemic priorities of
+your context.
+If this is correct, beliefs play a fundamentally different role from
+what many have thought. For Rachael’s best guess—what she thinks—
+is that it’ll rain (based on the70% chance); that you’ll like the star fruit
+(since most people do); and that Steve will win the lottery (since he
+has 480 tickets). But in doing so she doesn’t rule out that it’ll be sunny
+(contra Hintikka 1962); she has merely statistical evidence (contra
+Buchak 2014; Staffel 2016); she wouldn’t assert ‘It’ll rain’ (contra
+Kaplan 1996); she doesn’t aim at knowledge (contra Williamson
+2000); it wouldn’t be abnormal if you don’t like star fruit (contra
+Stalnaker 2006; Smith 2016; Goodman and Salow 2017); she wouldn’t
+use Steve’s winnings as a premise in her reasoning (contra Frankish
+2009; Ross and Schroeder 2014); and conditionalizing on these beliefs
+would radically change her behaviour (contra Weatherson 2005).
+Upshot: our normative, variable Lockean Thesis forces us to rethink
+the role of beliefs in assertion, reasoning, and inquiry.
+So what we’ve said is signiﬁcant. And we can say more.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+196 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 23 ===
+5.1 Normative metaphysics
+Reason number two: our normative result sets up a metaphysical
+conclusion.
+Begin with a parable. Billy is an up-and-coming philosopher of
+mind who tells us that there’s a heretofore undiscussed, irreducible
+mental attitude had by most agents—he calls it ‘thredence’. When
+asked to explain, he replies:
+‘The main effect of a thredence that p is to make it reasonable to
+take bets on p that have roughly 2-to-1 odds; to say 6probably ‰p7;
+etc. In fact, you have a thredence that p iff you have a credence that
+p in the ½:3, :4Þ range.’
+Billy is silly, I hope you agree. Thredence is not a new attitude at all—
+Billy has simply coined a new term for picking out a particular range
+of credence.
+The point of the parable is a methodological one about positing and
+individuating mental attitudes; call it my Pragmatist Premise . It says
+that the primary reason for positing such attitudes is the explanation,
+prediction, and rationalization of the dynamics of rational agents. It’s
+a form of functionalism: mental attitudes earn their keep in our meta-
+physics of mind by playing a functional role in the life of an agent.
+After all, it’s not as if we’re going to open up the heads of agents and
+ﬁnd beliefs, credences, and desires. We know exactly what we’ll ﬁnd—
+neurons and synapses; the point of attitude ascriptions is to charac-
+terize the dynamics these underlying mechanisms give rise to. The
+pragmatic picture is one on which
+Rational creatures are essentially agents. Representational mental
+states should be understood primarily in terms of the role that they
+play in the characterization and explanation of action … And,
+according to this picture, our conceptions of beliefs and of attitudes
+pro and con are conceptions of states which explain why a rational
+agent does what he does. (Stalnaker 1984,p . 4)
+So the problem with Billy ’s ‘thredences’ is that positing them as an
+irreducible attitude doesn’t do anything for us. Facts about thredences
+can simply be ‘read off ’ facts about credences: if you’re between 0.3
+and 0.4 conﬁdent, you have a thredence; and if not, then not. We can
+give all the same explanations of the dynamics of rational agents in
+terms of credences, without the middle man. Conclusion: there is no
+irreducible attitude of so-called thredence.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 197
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 24 ===
+You know where this is heading. Given our Lockean results, the
+Pragmatist Premise allows us to conclude something similar about
+beliefs. Epistemic utility theory entails that—at least for rational
+agents—positing beliefs as an irreducible attitude doesn’t do anything
+for us. Facts about beliefs can simply be ‘read off ’ facts about credal
+states and contextual priorities: if you’re at least so-and-so conﬁdent,
+then you believe; and if not, then not. We can give all the same ex-
+planations of the dynamics of rational agents in terms of credences,
+without the middle-man. Conclusion: at least for rational agents, there
+is no irreducible attitude of so-called ‘belief ’. This is how we’ll try to
+pull a metaphysical rabbit out of a normative hat. I anticipate
+resistance.
+Objection: The result holds only for ideal agents. Non-ideal ones still
+need beliefs.
+Reply: Not so. Granted, ideal agents are easy. Their credences and
+utilities are numerically precise, and they always maximize expect-
+ations. Granted, non-ideal agents are messy. Their credences and uti-
+lities are rough, and they sometimes make poor decisions—even by
+their own lights. But how to model, understand, and explain such
+imperfections is a wide-open question. If we had compelling reason
+to invoke (irreducible) beliefs to explain the quirks of non-ideal
+agents, then my reductive proposal would be a non-starter. But we
+don’t: beliefs are neither necessary nor sufﬁcient to do the needed
+explanatory work. They are not sufﬁcient because beliefs can’t explain
+all our non-ideal behaviour: witness the fact that my indifference to a
+bet is maintained even after you add $ 1 to the payout. Sharp credences
+plus beliefs won’t explain that—to do so, we’ll need to say I have
+(something like) imprecise credences. But once we make that move,
+adding beliefs to non-ideal agents is no longer even necessary to ex-
+plain my non-ideal behaviour.
+Here’s why. Invoking imprecise credences is an instance of a much
+more general strategy for modelling and explaining non-ideal agents:
+using collections of ideal doxastic states to do so. One form this takes is
+fragmentation: when Steve seems to think both that Main Street runs
+north–south and that it runs east–west, model him as having two
+fragmented doxastic states—one with each belief, but neither with
+both (Lewis 1982; Stalnaker 1984; Rayo 2013). A second form is impre-
+cise attitudes: an agent’s degrees of belief and values are represented
+with sets of sharp credence and utility functions (for example, Joyce
+2010; Hare 2010). We can easily imagine variations on this theme; the
+general idea is that our models and explanations of non-ideal agents
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+198 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 25 ===
+should be continuous with those of ideal ones. This approach has
+much more ﬂexibility than simply adding beliefs to non-ideal agents.
+Moreover, it vindicates our metaphysical reduction. At a high level:
+since our idealized explanations don’t invoke beliefs, neither should
+our non-idealized ones. More concretely: say we’re using a set D of
+ideal doxastic states to represent my non-ideal one. Though it can be
+tricky to ﬁgure out how exactly to infer the properties of my non-ideal
+state from the members of D,i f all of the members of D have some
+(appropriate17) property, then my state does as well. (Example: all
+members of D are more conﬁdent of p than q; therefore I am more
+conﬁdent of p than q.) But given that our Lockean result holds for the
+ideal states in D, the Pragmatist Premise entails that none of those
+states will have beliefs. So there are no (irreducible) beliefs in D, which
+is what models and explains my non-ideal state. Thus there are no
+(irreducible) beliefs in me. The reduction should extend to non-ideal
+agents.
+Objection: Beliefs can’t be reduced to credences, since they have
+different normative contours. A belief is either completely right (if
+true) or completely wrong (if false), whereas the state of having cre-
+dence above a threshold always falls in between (cf. Fantl and McGrath
+2010,p . 141).
+Reply: Differing normative contours do not imply non-reduction—
+they may simply reﬂect different modes of evaluating the same under-
+lying state. Example: the best grade you can get on the exam is an A;
+the best score you can get is 100. Rachael got an A by getting 98. In one
+sense, she did as well as possible—the options are A, B, C ,…, and she
+got an A. In another sense, she could have done better—the options
+are 100, 99, 98, …, and she got 98. But this doesn’t show that grades are
+irreducible to scores! It just shows that, given an exam, we can evalu-
+ate the outcome in two different ways: by asking ‘Did she get the
+highest grade?’ or by asking ‘Did she get the highest score?’
+Likewise, the most accurate belief you can have is a belief that it’ll
+rain; the most accurate credence you can have is credence 1. Rachael
+believes it’ll rain by having a credence of 0.98. In one sense, she’s as
+accurate as possible—the options are believing Rain, ‰Rain, or nei-
+ther, and she believes Rain. In another sense, she could have been
+more accurate—the options are credence 1, 0:99, 0:98, …, and she
+has 0.98. But this doesn’t show that beliefs are irreducible to credal
+states. It just shows that, given a doxastic state, we can evaluate its
+17 ‘Appropriate’ to rule out, say, the property of being ideal.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 199
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 26 ===
+accuracy in two different ways: by asking ‘Did she have the most
+accurate belief ?’ or by asking ‘Did she have the most accurate
+credence?’
+Objection: Beliefs play all sorts of theoretical roles that high credence
+can’t. By ruling out possibilities, they simplify and guide our activities
+of assertion, reasoning, and inquiry (Weisberg 2017; Holton 2017).
+Reply: Do they? My main claim is about beliefs—that is, about the
+attitude that the word ‘belief ’ refers to in the natural language we’re
+using to have this debate. The picture that emerges: you believe what-
+ever you’re sufﬁciently conﬁdent in—and in some contexts ‘sufﬁcient’
+need not be very conﬁdent at all. Your beliefs are your best guesses (in
+context). So natural-language and epistemic utility theory suggest that
+belief is not, after all, what ﬁlls these theoretical roles.
+That’s all a traditional, Bayesian Lockean will say. Many do. You
+might think that’s all any Lockean can say—namely, that knowledge-
+theoretic and traditional epistemology must fall by the wayside. But
+you’d be wrong. Less radical Lockeans must simply show how credal
+states can play the desired theoretical roles. We require an attitude
+toward p that
+(1) must be deductively closed and consistent;
+(2) rules out ‰p (Hintikka 1962);
+(3) demands more than statistical evidence (Buchak 2014);
+(4) warrants assertion in a context of inquiry (Kaplan 1996);
+(5) aims at knowledge (Williamson 2000);
+(6) would make you surprised if ‰p (Stalnaker 2006; Smith
+2016);
+(7) warrants premising that p (Frankish 2009; Ross and
+Schroeder 2014); and
+(8) warrants acting as if p (Weatherson 2005; Ganson 2008).
+Granted, Lockean belief cannot play these roles. But here’s a state
+that can: being sure, or being certain, or having credence 1, or taking
+for granted, or taking yourself to know—all the same (context-sensi-
+tive) state; all the same (context-sensitive) roles. Though I can’t ad-
+equately defend that claim here, I follow the proposals of Clarke ( 2013,
+2017) and Greco ( 2017), modulo their use of ‘belief ’.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+200 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 27 ===
+To get a feel for the position, consider: ( 1) Probability 1 is deduct-
+ively closed and consistent. ( 2) If you rule out ‰p, then all the open
+possibilities are p-worlds—you’re sure of p.( 3) Mere statistics cannot
+lead to certainty. ( 4) ‘It’ll rain, but I’m not sure it will’ has a Moore-
+paradoxical ring to it. 18 And if you assert ‘It’ll rain’, you update the
+common ground to include only rain-worlds (Stalnaker 1978); but the
+common ground in a context of inquiry is the set of possibilities you
+distribute credence over, so you must be sure it’ll rain. ( 5) Another
+Moore-paradoxical statement: ‘I don’t know if it’ll rain, but I’m sure it
+will’. (6) Nothing says ‘Surprise!’ like ﬁnding out that ‰p when you
+were certain that p.( 7)/(8) And what things can you use as Premise—
+or conditionalize on—without going beyond your information? The
+things you’re already certain of. Upshot: Lockeanism does have the
+resources to ﬁll the desired theoretical roles. We need not look beyond
+credence—we simply need look to the top of the scale.
+In fact, there’s a stronger reading of our results. Question: why is
+certainty suited to play our theoretical roles, while belief is not? The
+contrast is that belief falls on a coarsely categorized scale—you either
+believe p,o r ‰p, or neither—whereas certainty falls on a continuous
+scale of credences. This is crucial. For no matter the underlying values,
+on a coarse scale there are inevitably threshold points at which it be-
+comes worth the risk to ‘plump’ for the strongest attitude. On a con-
+tinuous scale, in contrast, you can always hedge your bets—no
+plumping is needed.
+Conjecture: this structural contrast is fully general. Take the atti-
+tude—whatever it is—that plays theoretical roles ( 1)–(8). Call it X-ing
+that p. As we’ve seen, X-ing that p cannot reduce to being sufﬁciently
+conﬁdent of some proposition q. But our results suggest that if X-ing
+falls on a coarsely categorized scale, then there’s no way around it—
+when you’re sufﬁciently conﬁdent of q, it’ll be rational to ‘plump’ for
+X-ing that p. Therefore X-ing that p and X-ing that ‰p cannot fall on a
+coarse scale: they must fall on the extreme ends of a continuous range
+of attitudes—a range of attitudes eerily reminiscent of degrees of
+conﬁdence.
+6. Beyond Belief
+Home, at last. The ﬁrst claim I’ve argued for is a conditional: if you
+like the basics of epistemic utility theory, then you’re committed to
+18 Notice: ‘I think
+believe
+/C26/C27
+it’ll rain, but I’m not sure it will’ sounds ﬁne.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 201
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 28 ===
+some version of Lockeanism. The second is that this result meshes
+with natural language to offer a proposition- and context-sensitive
+Lockean picture: your beliefs are your best guesses in response to
+the epistemic priorities of your context. The third is that it further
+supports a metaphysical reduction of belief to credence: your beliefs
+just are the things you’re sufﬁciently conﬁdent in.
+I ﬁnd these results compelling. The reason is that we have these two
+disparate sources of considerations—natural language and epistemic
+utility theory—that converge and cohere around a particular picture
+of belief. On its own, neither would force our hand. Natural language
+might be thought too commonsensical to address theoretical ques-
+tions about our epistemic life. Epistemic utility theory might be
+thought too theoretical to address commonsense questions about
+what we ‘think’. It is the conﬂuence of these two sources that warrants
+our attention—and, perhaps, our conviction.
+Suppose it gets them. Why care about beliefs, on the resulting pic-
+ture? In one sense, we philosophers should care less than we have, for
+it turns out that beliefs don’t play the key theoretical roles that they
+are often thought to—credences have supplanted them. Instead, the
+philosopher’s notion of ‘outright belief ’ is a mongrel, mixing the
+natural language state of ‘sufﬁcient conﬁdence’ with the philosophic-
+ally important state of being sure. Much confusion has arisen, I think,
+from invoking one state to play both roles. At the very least, then, we
+should care about beliefs so that we know what they are not.
+In another sense, though, we should care about beliefs just as much
+as we always have. We do care about what people think—about what
+they ’re sufﬁciently conﬁdent in—and that’s no mystery. Consider:
+being ‘ﬂat’ reduces to being ﬂat enough (in context); being ‘busy ’ re-
+duces to being busy enough (in context); and being ‘heavy ’ reduces to
+being heavy enough (in context). But none of these concepts are less
+important for that—on the contrary! We care about whether the roads
+we drive on are ﬂat, the semesters we teach are busy, and the boxes we
+lift are heavy. To be sure, there are more extreme questions we could
+ask. Are they completely ﬂat? Are they extremely busy? Are they very
+heavy? But usually we don’t—‘ﬂat’ is ﬂat enough. Likewise, believing a
+proposition reduces to being sufﬁciently conﬁdent in it (in context).
+We care about whether the forecaster is conﬁdent of rain, the congress-
+woman believes in climate change, and our colleagues think we smell.
+To be sure, there are more extreme questions we could ask. Is hecertain
+it’ll rain? Is sheconvinced of climate change? Are they sure we smell? But
+usually we don’t—‘sufﬁciently conﬁdent’ is conﬁdent enough. It’s no
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+202 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 29 ===
+more mysterious why we talk about (contextually variable) sufﬁcient
+conﬁdence than why we talk about (contextually variable) sufﬁcient
+ﬂatness. And it’s no less obvious why we care. 19
+7. Appendix
+Theorem 1 (Easwaran 2016,§ 3.2). If A is separable and extensional,
+a belief-state B maximizes expected accuracy iff, for all p:
+(i) If p 2 B, then CðpÞ/C21 /C0 F
+T /C0 F
+(ii) If p =2 B, then CðpÞ/C20 /C0 F
+T /C0 F
+Proof : Recall that ExtensionalityB ensures that our scoring rule for B
+for a single proposition { p} gives T, F or 0, depending on whether p is
+truly believed, falsely believed, or not believed. We can combine this
+with Separability B to recover a scoring rule for an arbitrary set of
+propositions P. In particular, we have AðB, P, wÞ¼ P
+pi 2P AðB, fpig, wÞ,
+that is, the sum of Ts, Fs and 0s got by our local scoring rule for each
+pi. Letting /C22w be the set of true propositions at w
+( /C22w ¼f p /C18 W jw 2 pg), we can partition P into those propositions
+believed truly at w (P \ B \ /C22w), those believed falsely at w
+(ðP \ BÞ/C0 /C22w), and those not believed ( P – B). Each member of
+P \ B \ /C22w adds T value, each member of ðP \ BÞ/C0 /C22w adds F disva-
+lue, and each member of P – B adds 0. Hence our global scoring rule:
+AðB, P, wÞ¼ T jP \ B \ /C22wjþ FjðP \ BÞ/C0 /C22wj
+We use this in the ensuing proof.
+): Suppose B maximizes expected accuracy (for the whole algebra
+P). Taking an arbitrary p, ﬁrst suppose (i) p 2 B. Then for
+B/C0 ¼ B /C0f pg we have EAðB, PÞ /C21 EAðB/C0 , PÞ. Now,
+EAðB, PÞ ¼
+X
+wp 2p
+ðCðwpÞ A ðB, P, wpÞÞ þ
+X
+w /C22p 2‰p
+ðCðw/C22pÞ A ðB, P, w/C22pÞÞ
+19 For much helpful discussion and feedback, thanks to Alex Byrne, Kenny Easwaran,
+Branden Fitelson, Cosmo Grant, Caspar Hare, Samia Hesni, Sophie Horowitz, Pavel Janda,
+Matthias Jenny, Richard Pettigrew, Milo Phillips-Brown, Agustı ´n Rayo, Bernhard Salow,
+Ginger Schultheis, Kieran Setiya, Brad Skow, Julia Staffel, Bob Stalnaker, Quinn White,
+Roger White, and Steve Yablo, as well as audiences at MIT, the 2015 Central APA, and the
+2015 Epistemic Consequentialism conference at Kent.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 203
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 30 ===
+Since p 2 B, it gets T for p at wp-worlds and F for p at w/C22p-worlds:
+ð1Þ
+¼
+X
+wp 2p
+ðCðwpÞ/C1ð AðB, P/C0f pg, wpÞþ T ÞÞ
+þ
+X
+w /C22p 2‰p
+ðCðw/C22pÞ/C1ð AðB, P/C0f pg, w/C22pÞþ FÞÞ
+¼ EAðB, P/C0f pgÞ þ CðpÞT þ Cð‰pÞF
+Note that since B and B– agree on all propositions in P/C0f pg,
+we have EAðB, P/C0f pgÞ ¼ EAðB/C0 , P/C0f pgÞ. And since p =2 B/C0 ,
+AðB/C0 , fpg, wÞ¼ 0 at all worlds, hence EAðB/C0 , P/C0f pgÞ ¼ EAðB/C0 , PÞ.
+Thus EAðB, P/C0f pgÞ ¼ EAðB/C0 , PÞ. Substituting into ( 1) yields:
+EAðB, PÞ ¼ EAðB/C0 , PÞ þ CðpÞT þ Cð‰pÞF
+Since EAðB, PÞ /C21 EAðB/C0 , PÞ, we know CðpÞT þ Cð‰pÞF /C21 0. This
+holds iff CðpÞT þð 1 /C0 CðpÞÞF /C21 0, which simpliﬁes to CðpÞ/C21 /C0 F
+T /C0 F,
+as desired.
+Next, if (ii) p =2 B, then parallel reasoning yields that for
+Bþ ¼ B [f pg:
+EAðBþ, PÞ ¼ EAðB, PÞ þ CðpÞT þ Cð‰pÞF
+Since EAðBþ, PÞ /C20 EAðB, PÞ, we know CðpÞT þ Cð‰pÞF /C20 0, and
+parallel reasoning gives the result that CðpÞ/C20 /C0 F
+T /C0 F, as desired.
+(: Suppose (i) and (ii) hold and, for reductio, that B does not
+maximize expected accuracy. So there is a B/C3 such that
+EAðB/C3 , PÞ > EAðB, PÞ. By Separability B, there must be a p such that
+EAðB/C3 , fpgÞ > EAðB, fpgÞ.I f p is in both or neither of B, B/C3 this is
+impossible. So either ( 1) p 2 B/C3 and p =2 B,o r( 2) p =2 B/C3 and p 2 B.
+If ( 1), since p =2 B then by (ii), CðpÞ/C20 /C0 F
+T /C0 F. But by supposition
+0 ¼ EAðB, fpgÞ < EAðB/C3 , fpgÞ ¼ CðpÞT þ Cð‰pÞF, which implies
+that CðpÞ > /C0 F
+T /C0 F. Contradiction. If ( 2), p =2 B/C3 and p 2 B, then by (i),
+CðpÞ/C21 /C0 F
+T /C0 F; yet 0 ¼ EAðB/C3 , fpgÞ > EAðB, fpgÞ ¼ CðpÞT þ Cð‰pÞF,
+which implies that CðpÞ < /C0 F
+T /C0 F. Contradiction again; so we reject
+our hypothesis. h
+Corollary 2 (Easwaran 2016, §G. 2). If A is proposition-dependent
+and separable, a belief-state B maximizes expected accuracy iff, for
+all p:
+(i) If p 2 B, then CðpÞ/C21 /C0 Fp
+Tp /C0 Fp
+(ii) If p =2 B, then CðpÞ/C20 /C0 Fp
+Tp /C0 Fp
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+204 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 31 ===
+Proof: We begin by partitioning the propositions P into equivalence
+classes based on the values of T and F: P¼ E1 [ … [ Em, where the
+p, q 2 Ei iff Tp = Tq and Fp = Fq. We then partition B into correlative
+equivalence classes B ¼ B1 [ … [ Bm where p 2 Bi iff p 2 B and
+p 2 Ei. Given this, our accuracy function A will be constant across
+propositions within each Ei and Bi, therefore each Ei and Bi corres-
+ponds to a total set of propositions and a total belief-state used in
+Theorem 1. By Separability B, B maximizes expected accuracy for P iff
+each Bi maximizes expected accuracy for Ei;s o m applications of
+Theorem 1 yields the result. h
+Proposition 3. Given Variable Conservativeness and Corollary 2,i f
+the threshold for p is t, then the threshold for ‰p is greater than
+1 /C0 t. Thus it never maximizes expected accuracy to believe both p
+and ‰p.
+Proof: Recall that Variable Conservativeness states that (a)
+jTpj < jF‰pj and (b) jT‰pj < jFpj. By Corollary 2, the threshold tp
+at which it maximizes expected accuracy to believe p is /C0 Fp
+Tp /C0 Fp
+, and
+the threshold t /C22p at which it maximizes expected accuracy to believe
+‰p is /C0 F‰p
+T‰p /C0 F‰p
+. We want to show that t /C22p > 1 /C0 tp. This holds iff
+ð1Þ
+/C0 F‰p
+T‰p /C0 F‰p
+> 1 /C0 /C0 Fp
+Tp /C0 Fp
+, /C0 F‰pTp þ F‰pFp
+T‰p /C0 F‰p
+> Tp
+,/C0 F‰pTp þ F‰pFp > TpT‰p /C0 F‰pTp
+, F‰pFp > TpT‰p
+Since F‰p and Fp are both negative, and Tp and T‰p are both positive,
+(1) holds iff
+ð2Þj F‰pFpj > jTpT‰pj
+By (a) above we have jF‰pj > jTpj, and by (b) we have jFpj > jT‰pj,
+thus (2) holds, as desired. That is, if the threshold for p is tp, then the
+threshold t /C22p for ‰p is greater than 1 /C0 tp.
+Corollary: Since Cð‰pÞ¼ 1 /C0 CðpÞ,i f C(p) is above the threshold tp
+to sufﬁce for belief, then Cð‰pÞ is below the threshold t /C22p to sufﬁce for
+belief, and vice versa. Therefore it never maximizes expected accuracy
+to believe both p and ‰p. h
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 205
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 32 ===
+Proposition 4. If ABi is belief- and proposition-dependent and
+B1,… , Bn are formed on the sequence p1,… , pn, then Bn maximizes
+expected accuracy with respect to Bn/C0 1 only if:
+(i) If pn 2 Bn, then CðpnÞ/C21
+/C0 FBn/C0 1
+pn
+T Bn/C0 1
+pn /C0 FBn/C0 1
+pn
+(ii) If pn =2 Bn, then CðpnÞ/C20
+/C0 FBn/C0 1
+pn
+T Bn/C0 1
+pn /C0 FBn/C0 1
+pn
+Proof: For convenience relabel Bn/C0 1 as B–, and suppose Bn maxi-
+mizes expected AB/C0 . Relabel pn as p, and ﬁrst suppose (i) p 2 Bn.
+We have:
+EAB/C0 ðBn, PÞ /C21 EAB/C0 ðB/C0 , PÞ
+,
+X
+w
+½CðwÞAB/C0 ðBn, P, wÞ/C138 /C21
+X
+w
+½CðwÞAB/C0 ðB/C0 , P, wÞ/C138
+Recall that at a p-world wp, AB/C0 ðBn, P, wpÞ¼ AB/C0 ðB/C0 , P, wpÞþ T B/C0
+p ,
+and similarly at a ‰p-world w/C22p: AB/C0 ðBn, P, w /C22pÞ¼ AB/C0 ðB/C0 , P, w /C22pÞþ FB/C0
+p .
+Thus we have the ugliest equations in this paper:
+,
+X
+wp
+CðwpÞ½AB/C0 ðB/C0 , P, wpÞþ T B/C0
+p /C138þ
+X
+w /C22p
+Cðw/C22pÞ½AB/C0 ðB/C0 , P, w /C22pÞþ FB/C0
+p /C138
+/C21
+X
+w
+ðCðwÞAB/C0 ðB/C0 , P, wÞÞ
+,
+X
+w
+ðCðwÞAB/C0 ðB/C0 , P, wÞ/C138Þ þ ð CðpÞT B/C0
+p þ Cð‰pÞFB/C0
+p Þ
+/C21
+X
+w
+ðCðwÞAB/C0 ðB/C0 , P, wÞÞ
+, CðpÞT B/C0
+p þ Cð‰pÞFB/C0
+p /C21 0
+, CðpÞ/C21
+/C0 FB/C0
+p
+T B/C0
+p /C0 FB/C0
+p
+as desired. If we suppose (ii) p =2 Bn, then by parallel reasoning (via
+parallel ugliness) we’ll arrive at CðpÞ/C20
+/C0 FB/C0
+p
+T B/C0
+p /C0 FB/C0
+p
+. h
+Proposition 5. Given Sequence-Irrelevance, even if ABi is belief-
+and proposition-dependent, there are belief- independent values
+Tp and Fp for each proposition such that B is rational only if:
+(i) If p 2 B, then CðpÞ/C21 /C0 Fp
+Tp /C0 Fp
+(ii) If p =2 B, then CðpÞ/C20 /C0 Fp
+Tp /C0 Fp
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+206 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 33 ===
+Proof: Take an arbitrary proposition p; we ﬁnd a Tp and Fp for
+which (i) and (ii) apply to all rational belief-states. Consider a
+sequence p1,… , pn/C0 1, p that puts p the end and consider any
+ðn /C0 1Þ-stage belief-state B–. By Proposition 4 and Maximize
+Expected Accuracy, it is a rational constraint on the ﬁnal belief-
+state Bn that both (iii) if p 2 Bn then CðpÞ/C21
+/C0 FB/C0
+p
+T B/C0
+p /C0 FB/C0
+p
+, and (iv) if
+p =2 Bn then CðpÞ/C20
+/C0 FB/C0
+p
+T B/C0
+p /C0 FB/C0
+p
+. But then by Sequence-Irrelevance,
+this rational constraint on Bn must be a constraint on all rational
+belief-states: they all obey (iii) and (iv). That means if we set
+Tp ¼ T B/C0
+p and Fp ¼ FB/C0
+p , the desired results (i) and (ii) hold.
+Since p was arbitrary, the same operation will work for every prop-
+osition. h
+References
+Berker, Selim 2013: ‘The Rejection of Epistemic Consequentialism’.
+Philosophical Issues , 23(1), pp. 363–37.
+Briggs, Rachael, and Richard Pettigrew 2016: ‘An Accuracy-
+Dominance Argument for Conditionalization’. Unpublished
+manuscript.
+Buchak, Lara 2014: ‘Belief, Credence, and Norms’. Philosophical
+Studies, 169(2), pp. 285–311.
+Carr, Jennifer 2015: ‘Chancy Accuracy and Imprecise Credence’.
+Philosophical Perspectives , 29, pp. 67–81.
+—— 2017: ‘Accuracy or Coherence?’ To appear in Philosophy and
+Phenomenological Research .
+Clarke, Roger 2013: ‘Belief is Credence One (In Context)’.
+Philosophers’ Imprint, 13(11).
+—— 2017: ‘Assertion, Belief, and Context’. To appear in Synthese.
+De Bona, Glauber, and Julia Staffel 2016: ‘Graded Incoherence for
+Accuracy-Firsters’. To appear in Philosophy of Science .
+De Finetti, Bruno 1974: Theory of Probability: A Critical Introductory
+Treatment. New York: John Wiley and Sons.
+Demey, Lorenz 2013: ‘Contemporary Epistemic Logic and the
+Lockean Thesis’. Foundations of Science , 18(4), pp. 599–610.
+Easwaran, Kenny 2013: ‘Expected Accuracy Supports
+Conditionalization—and Conglomerability and Reﬂection’.
+Philosophy of Science , 80(1), pp. 119–42.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 207
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 34 ===
+—— 2016: ‘Dr Truthlove or: How I Learned to Stop Worrying and
+Love Bayesian Probabilities’. Nouˆs, 50(4), pp. 816–53.
+Easwaran, Kenny, and Branden Fitelson 2015: ‘Accuracy, Coherence,
+and Evidence’. In Tamar Szabo ´ Gendler and John Hawthorne
+(eds.), Oxford Studies in Epistemology , vol. 5, pp. 61–96.
+Fantl, Jeremy, and Matthew McGrath 2010: Knowledge in an
+Uncertain World . Oxford: Oxford University Press.
+Foley, Richard 2009: ‘Beliefs, Degrees of Belief, and the Lockean
+Thesis’. In Huber and Schmidt-Petri 2009, pp. 37–47.
+Frankish, Keith 2009: ‘Partial Belief and Flat-Out Belief ’. In Huber
+and Schmidt-Petri 2009, pp. 75–93.
+Friedman, Jane 2013: ‘Suspended Judgment’. Philosophical Studies ,
+162(2), pp. 165–81.
+—— 2017: ‘Why Suspend Judging?’ Nouˆs, 51(2), pp. 302–26.
+Ganson, Dorit 2008: ‘Evidentialism and Pragmatic Constraints on
+Outright Belief ’. Philosophical Studies , 139(3), pp. 441–58.
+Gibbard, Alan 2008: ‘Rational Credence and the Value of Truth’. In
+Tamar Szabo´ Gendler and John Hawthorne (eds.), Oxford Studies
+in Epistemology , vol. 2. Oxford: Oxford University Press.
+Goodman, Jeremy, and Bernhard Salow 2017: ‘Taking a Chance on
+KK’. To appear in Philosophical Studies .
+Greaves, Hilary 2014: ‘Epistemic Decision Theory ’. Mind, 122,
+pp. 915–52.
+Greaves, Hilary, and David Wallace 2006: ‘Justiﬁying
+Conditonalization: Conditionalization Maximizes Expected
+Epistemic Utility ’. Mind, 115, pp. 607–32.
+Greco, Daniel 2017: ‘Cognitive Mobile Homes’. Mind, 126, pp. 93–121.
+Hare, Caspar 2010: ‘Take the Sugar’. Analysis, 70(2), pp. 237–47.
+Hawthorne, John, Daniel Rothschild, and Levi Spectre 2016: ‘Belief is
+Weak’. Philosophical Studies , 173(5), pp. 1393–1404.
+Hempel, Carl G. 1962: ‘Deductive-Nomological vs. Statistical
+Explanation’. Minnesota Studies in the Philosophy of Science , 3,
+pp. 98–169.
+Hintikka, Jaakko 1962: Knowledge and Belief . New York: Cornell
+University Press.
+Holton, Richard 2017: ‘Intention as a Model for Belief ’. In
+Manuel Vargas and Gideon Yaffe (eds.), Rational and Social
+Agency: Essays on the Philosophy of Michael Bratman . Oxford:
+Oxford University Press.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+208 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 35 ===
+Horowitz, Sophie 2017: ‘Accuracy and Educated Guesses’.
+Forthcoming in Tamar Szabo ´ Gendler and John Hawthorne
+(eds.), Oxford Studies in Epistemology . Oxford: Oxford
+University Press.
+Huber, Franz, and Christoph Schmidt-Petri (eds.) 2009: Degrees of
+Belief Dordrecht: Springer.
+James, William 1897: The Will to Believe . New York: Longmans,
+Green, and Co.
+Joyce, James M. 1998: ‘A Nonpragmatic Vindication of Probabilism’.
+Philosophy of Science , 65(4), pp. 575–603.
+—— 2009: ‘Accuracy and Coherence: Prospects for an Alethic
+Epistemology of Partial Belief ’. In Huber and Schmidt-Petri
+2009, pp. 263–97.
+—— 2010: ‘A Defense of Imprecise Credences in Inference and
+Decision Making’. Philosophical Perspectives , 24(1), pp. 282–323.
+—— 2013: ‘Why Evidentialists Need Not Worry about the Accuracy
+Argument for Probabilism’. Unpublished manuscript.
+Kaplan, Mark 1996: Decision Theory as Philosophy . Cambridge:
+Cambridge University Press.
+Leitgeb, Hannes 2013: ‘Reducing Belief Simpliciter to Degrees of
+Belief ’.Annals of Pure and Applied Logic , 164, pp. 1338–89.
+—— 2014: ‘The Stability Theory of Belief ’. Philosophical Review ,
+123(2), pp. 131–71.
+Leitgeb, Hannes, and Richard Pettigrew 2010: ‘An Objective
+Justiﬁcation of Bayesianism II: The Consequences of
+Minimizing Inaccuracy ’. Philosophy of Science , 77(2), pp. 236–72.
+Levi, Isaac 1967: Gambling with Truth . Cambridge, MA: MIT Press.
+Lewis, David 1979: ‘Scorekeeping in a Language Game’. Journal of
+Philosophical Logic , 8(3), pp. 339–59.
+—— 1982: ‘Logic for Equivocators’. Nouˆs, 16(3), pp. 431–41.
+Littlejohn, Clayton 2015: ‘Who Cares What You Accurately Believe?’
+Philosophical Perspectives , 29(1), pp. 217–48.
+Maher, Patrick 1993: Betting on Theories . Cambridge: Cambridge
+University Press.
+Oddie, Graham 1997: ‘Conditionalization, Cogency, and Cognitive
+Value’. British Journal for the Philosophy of Science , 48(4),
+pp. 533–41.
+Pedersen, Arthur, and Clark Glymour 2012: ‘What Language
+Dependence Problem? A Reply for Joyce to Fitelson on Joyce’.
+Philosophy of Science , 79(4), pp. 561–74.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 209
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 36 ===
+Pettigrew, Richard 2012: ‘Accuracy Domination Arguments and
+Credences as Estimates of Truth-Values’. Unpublished
+manuscript.
+—— 2013a: ‘A New Epistemic Utility Argument for the Principal
+Principle’. Episteme, 10(1), pp. 19–35.
+—— 2013b: ‘Epistemic Utility and Norms for Credences’. Philosophy
+Compass, 8(10), pp. 897–908.
+—— 2015: ‘Accuracy and the Credence-Belief Connection’.
+Philosopher’s Imprint, 15(16), pp. 1–20.
+—— 2016a: Accuracy and the Laws of Credence . Oxford: Oxford
+University Press.
+—— 2016b: ‘Accuracy, Risk, and the Principle of Indifference’.
+Philosophy and Phenomenological Research , 92(1), pp. 35–59.
+—— 2016c: ‘Jamesian Epistemology Formalized: An Explication of
+“The Will to Believe”’. Episteme, 13(3), pp. 253–68.
+Predd, Joel, Robert Seringer, Elliott H. Lieb, Daniel Osherson,
+H. Vincent Poor, and Sanjeev Kulkarni 2009: ‘Probabilistic
+Coherence and Proper Scoring Rules’. IEEE Transactions on
+Information Theory , 55(10), pp. 4786–92.
+Rayo, Agustı´n 2013: The Construction of Logical Space . Oxford:
+Oxford University Press.
+Rosenkrantz, Roger D. 1981: Foundations and Applications of
+Inductive Probability . Atascadero, CA: Ridgeview Press.
+Ross, Jacob, and Mark Schroeder 2014: ‘Belief, Credence, and
+Pragmatic Encroachment’. Philosophy and Phenomenological
+Research, 88(2), pp. 259–88.
+Schoenﬁeld, Miriam 2016: ‘An Accuracy Based Approach to Higher
+Order Evidence’. To appear in Philosophy and
+Phenomenological Research.
+—— 2017: ‘Conditionalization Does Not (In General) Maximize
+Expected Accuracy ’. To appear in Mind.
+Shear, Ted, and Branden Fitelson 2017: ‘Two Approaches to Belief
+Revision’. Unpublished manuscript.
+Smith, Martin 2016: Between Probability and Certainty: What Justiﬁes
+Belief. Oxford: Oxford University Press.
+Staffel, Julia 2016: ‘Beliefs, Buses and Lotteries: Why Rational Belief
+Can’t Be Stably High Credence’. Philosophical Studies , 173,
+pp. 1721–34.
+—— 2017: ‘Accuracy for Believers’. Episteme, 14(1), pp. 39–48.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+210 Kevin Dorst
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
+
+=== PDF page 37 ===
+Stalnaker, Robert 1978: ‘Assertion’.Syntax and Semantics , 9, pp. 315–
+32.
+—— 1984: Inquiry. Cambridge: Cambridge University Press.
+—— 2006: ‘On Logics of Knowledge and Belief ’. Philosophical
+Studies, 128(1), pp. 169–99.
+Sturgeon, Scott 2008: ‘Reason and the Grain of Belief ’. Nouˆs, 42(1),
+pp. 139–65.
+Weatherson, Brian 2005: ‘Can We Do Without Pragmatic
+Encroachment?’ Philosophical Perspectives , 19(1), pp. 417–43.
+Weisberg, Jonathan 2017: ‘Belief in Psyontology ’. To appear in
+Philosopher’s Imprint.
+Williamson, Timothy 2000: Knowledge and Its Limits . Oxford:
+Oxford University Press.
+Windschitl, Paul D., and Gary L. Wells 1998: ‘The Alternative-
+Outcomes Effect’. Journal of Personality and Social Psychology ,
+75(6), pp. 1411–23.
+Yalcin, Seth 2010: ‘Probability Operators’. Philosophy Compass , 5(11),
+pp. 916–37.
+Mind, Vol. 128 . 509 . January 2019 /C223Dorst 2017
+Lockeans Maximize Expected Accuracy 211
+Downloaded from https://academic.oup.com/mind/article/128/509/175/4735108 by MIT user on 05 August 2024
