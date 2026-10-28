@@ -1,6 +1,5 @@
-# Current review edition — 28 October 2026
+# Current review edition — after the Halpern book comparison
 
-The latest versioned set is [submission-revisions-20261028](state/external/submission-revisions-20261028/README.md). Start with its [review guide](state/external/submission-revisions-20261028/Review-Guide.md).
+The current reading set is [submission-book-review-20261028](state/external/submission-book-review-20261028/README.md). Read the [originality reassessment](state/external/submission-book-review-20261028/Halpern-Originality-Review.md) for the changed recommendation.
 
-A5 and A6 v3 are the primary candidates. A4 v3 is a conditional third: central finite checks now include all 355 partial preorders, but the Halpern 2016 book comparison remains outstanding. E3 is still withdrawn. The set includes individual anonymous essay PDFs, matching anonymized methodology reports, a combined personal reading copy, sources, differences and verification records. No contest submission has been made.
-
+A5 and A6 v3 remain the primary candidates. A4 is now v4, *Limits of Uniform Normality Filters in Actual Causation*, at 5,631 words. The supplied Halpern book has been read in the relevant sections: it anticipates the broad preemption and representation concerns and a proof idea. A4's claim is now the restricted calibration and paired-case classification; it remains a reserve on originality and significance. E3 remains withdrawn. A new Xiao–Xiong (2026) source comparison is outstanding. The GitHub edition contains the essays, assessment and combined reading copy. Matching methodology reports and the complete archive are supplied in the downloadable edition. No contest submission has been made.
