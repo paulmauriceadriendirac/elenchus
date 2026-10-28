@@ -1,3 +1,13 @@
+# Current review edition — 28 October 2026
+
+The latest versioned set is [submission-revisions-20261028](state/external/submission-revisions-20261028/README.md). Start with its [review guide](state/external/submission-revisions-20261028/Review-Guide.md).
+
+A5 and A6 v3 are the primary candidates. A4 v3 is a conditional third: central finite checks now include all 355 partial preorders, but the Halpern 2016 book comparison remains outstanding. E3 is still withdrawn. The set includes individual anonymous essay PDFs, matching anonymized methodology reports, a combined personal reading copy, sources, differences and verification records. No contest submission has been made.
+
+The material below is a preserved historical status; the current recommendations above supersede its selection advice.
+
+---
+
 # Contest revision status
 
 **28 October follow-up:** [Review of Claude's E3 reports](state/external/claude-review-20261028/README.md) withdraws E3 v4's provisional-third recommendation. Major revision is needed. The response includes corrected derivations, an explicit contextual-reset construction, causal-policy calculations, and replacement sections, while preserving the existing essays. A5/A6 assessments remain provisional and unchanged; no replacement third essay is promoted. The paragraphs below record earlier checkpoints.
@@ -13,3 +23,4 @@ The [earlier 23 October checkpoint](state/external/revisions-20261023/README.md)
 Claude's reviews of the preceding O4 v2, O5 v2, A4 v1, and A6 v0.2 versions identify substantive limits. A6's abstract cost model still lacks an adequate epistemic realization. Claude has since added full v1 drafts at state/drafts/A4, A5, and A6. The count is now thirteen developed manuscript tracks covering about ten distinct arguments, plus eight exploratory drafts. O1–O3 are alternative treatments of E1–E3; Claude's new A4 and A6 arguments differ from the external manuscripts with the same problem-area codes. Cards, kill tests, revisions, and continuation notes are not additional essays. See the [weekend reading guide](WEEKEND-READING-GUIDE.md) for summaries and source links.
 
 The [22 October closing packet](state/external/contest-finalization-20261022/README.md) remains a frozen earlier snapshot. E1, E2, and E3 are a preparation set, not an endorsed final three. The outstanding task is to select and strengthen at most three submissions on their philosophical merits and complete their methodology records. No contest submission has been made.
+

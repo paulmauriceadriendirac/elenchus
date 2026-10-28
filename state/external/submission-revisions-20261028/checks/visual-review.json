@@ -1,0 +1,6 @@
+{
+  "visual_review": "Inspected contact sheets of every individual PDF page and detailed views of revised first pages. Checked equation, table and reference pages. Removed near-empty final pages in the initial build. Final headers wrap without splitting title words.",
+  "layout": "11-point DejaVu Serif, 0.75-inch margins, numbered pages; no missing-glyph or overfull warnings.",
+  "anonymity": "Essay sources pass the existing scan; individual PDFs have blank author metadata; reports omit account and repository-owner identifiers.",
+  "scope": "Checks do not establish originality or eligibility."
+}
