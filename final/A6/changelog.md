@@ -83,3 +83,11 @@ Line numbers refer to `final/A6/essay.md`. None changed, because every edit was 
 
 ## Compliance fix (orchestrator, mechanical)
 - Applied citation-audit P4 verbatim (Hong 2026 reduced to abstract-level claim), per state/audit/A6/compliance.md failure 1.
+
+## Final delta-audit patches (state/audit/A6/citations_final.md), orchestrator, mechanical
+- patch 1: applied verbatim
+- patch 2: applied verbatim
+- patch 3: applied verbatim
+- patch 4: applied verbatim
+- patch 5: applied verbatim
+- patch 6: applied verbatim
