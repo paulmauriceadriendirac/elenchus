@@ -88,3 +88,4 @@
 - 2026-10-29T11:44:20Z **agent**: A4 v6 final revision: state/drafts/A4/v6.md
 - 2026-10-29T11:45:15Z **human** (selection): see human_inputs.md
 - 2026-10-29T11:45:15Z **decision**: Gate A2 closed: human selected A5, A6, A4 for submission; human confirmed the revised CLAUDE.md §1.2 (23 Oct). A4 v6 final revision complete (5,521 words).
+- 2026-10-29T11:51:23Z **agent**: A5 v5 audit patches applied: state/drafts/A5/v5.md
