@@ -1,0 +1,115 @@
+{
+  "edition": "GitHub essay and source-review snapshot; methodology reports supplied separately",
+  "files": [
+    {
+      "path": "Causation-v4.pdf",
+      "bytes": 97567,
+      "sha256": "cc8159fcd5f4178c66d3a1c146efe640341cd5f2524bf5fd1c38c4c0823c0f23"
+    },
+    {
+      "path": "Free-Evidence-v3.pdf",
+      "bytes": 111833,
+      "sha256": "2ec33208d3a459b073ebb9ec855c6e6d8f08bfa568b0b78add4cf508b3083c90"
+    },
+    {
+      "path": "Halpern-Originality-Review.md",
+      "bytes": 10777,
+      "sha256": "5098305fbf0fa977d55892d54e3ac5f180dca2697772ad953d9f32459b748147"
+    },
+    {
+      "path": "Halpern-Originality-Review.pdf",
+      "bytes": 48773,
+      "sha256": "69754fe8d2d8ec76e18bfb68de589cd98fc99ae553afaa1b1043d5dacb798282"
+    },
+    {
+      "path": "Holistic-Accuracy-v3.pdf",
+      "bytes": 104396,
+      "sha256": "484de56436fb5f912b83f104b11d616403305f04829fa74e4577ee948d584711"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1778,
+      "sha256": "dc5529de8b03893c155f012663cc60e270d4cf7cfca638b2643f537c79ea0e39"
+    },
+    {
+      "path": "Three-Essays-Reading-Copy-v4.pdf",
+      "bytes": 327619,
+      "sha256": "4ff14713f25d492c04c996fdc4d18caba5d69edef3b63ca57bc3f19382aeb8e0"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 1760,
+      "sha256": "1e9f9b15f2e492ba6392c9470897e901de5856295754ed37e695934089a674ad"
+    },
+    {
+      "path": "checks/check_injection.py",
+      "bytes": 4730,
+      "sha256": "3948c19641b5fefbce19f416d44ad8f731b59221ea6becc5c7b093a8f75ad0ec"
+    },
+    {
+      "path": "checks/formal-statements-unchanged.json",
+      "bytes": 259,
+      "sha256": "e98a3d8d179671b25af361bf43c607ac89bb32a41ab5c6d2a49015d222c50491"
+    },
+    {
+      "path": "checks/manuscript-scan.json",
+      "bytes": 419,
+      "sha256": "116c133fa14ef4a7ed9226cbbb8ace289211190c1c7bba534638c942d0c0d603"
+    },
+    {
+      "path": "checks/pdf-manifest.json",
+      "bytes": 565,
+      "sha256": "e86ec672b8a26aa970ac21bfb2829886fe8d4635e71aecf57a897a8dc4e4a980"
+    },
+    {
+      "path": "checks/pdf-validation.json",
+      "bytes": 485,
+      "sha256": "ad82b1b61a0af29637d35463b8bec6eabb1bac9329765df0de05c8a178e50a18"
+    },
+    {
+      "path": "checks/prior-revision-results.json",
+      "bytes": 336,
+      "sha256": "f7c6effa9fea1ad35e6bfd4d72d448e9e1f5262138724afda55e9179404f146c"
+    },
+    {
+      "path": "checks/unchanged-primary-files.json",
+      "bytes": 1235,
+      "sha256": "06ac7bc55ef894133cd702296dbf2b7a3f9dd64c8f0a1aa31a904ae6d1bfa05e"
+    },
+    {
+      "path": "checks/visual-review.json",
+      "bytes": 476,
+      "sha256": "f08080f312d03f3a0e8103d7afb0ca77b7d3a5e59473e6ba69db18127689f41f"
+    },
+    {
+      "path": "checks/wordcount.py",
+      "bytes": 5115,
+      "sha256": "fa9fc602a710d4bace9fe896e9972b4c3cc8ed761fd6bf610e6bd91311b30eb0"
+    },
+    {
+      "path": "essays/01-Holistic-Accuracy-v3.md",
+      "bytes": 35055,
+      "sha256": "619acb85c5edc72cc7b9cdb526b25ad855b802a27bf64662bf8fdb3482fe42b2"
+    },
+    {
+      "path": "essays/02-Free-Evidence-v3.md",
+      "bytes": 40032,
+      "sha256": "c1a68e042373a969f92ad38f755b456f5e13869a0e87629ee2b4397a8b50fc00"
+    },
+    {
+      "path": "essays/03-Causation-v4.md",
+      "bytes": 38692,
+      "sha256": "239669c74791a3ebcda04be1c4c7e843b4812c810e31df55ff124ec10f2ed204"
+    },
+    {
+      "path": "revision-diffs/A4-v3-to-v4.diff",
+      "bytes": 32877,
+      "sha256": "624a5b4ed7c25f91d81c71cf80c717e67ba41f610103fc2579558e31b5246d66"
+    },
+    {
+      "path": "word-counts.json",
+      "bytes": 572,
+      "sha256": "02fe9085ee66498b93cac1c47b87b3b40321e6c479f5d8c2ca9755f55bf99826"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "date_utc": "2026-10-28T03:45:55.908964+00:00",
+  "author": "Codex",
+  "source_commit": "4e2476a294a4d3300d9ff5984af3f672346c09c9",
+  "reviewed_target": "state/external/review-edition-20261025/essays/03-flattening-E3-v4.md",
+  "reviewed_reports": [
+    "state/blind/P-600a/reports/G4.md",
+    "state/blind/P-600a/reports/S5-lit.md"
+  ],
+  "pdf_pages": 8,
+  "pdf_visual_review": "All eight pages inspected in contact sheets; mathematics and intervention table inspected at larger size. No missing glyphs, clipped text, or broken tables.",
+  "scope": "Independent review and proposed replacement sections, not a completed E3 v5. No contest submission. No new A5/A6 reports in inspected snapshot.",
+  "verification_file": "verification.json"
+}

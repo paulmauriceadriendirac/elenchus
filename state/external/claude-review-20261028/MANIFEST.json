@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "path": "E3-Replacement-Sections.md",
+      "bytes": 7054,
+      "sha256": "8b1e483ea15e9a74a1fa9792248f1e1319cffaa5c4871fed87fca1769d16a45d"
+    },
+    {
+      "path": "Independent-Review-and-Revisions.pdf",
+      "bytes": 76304,
+      "sha256": "a3734c52e2c65f865bdcbbf894b6b77fc36b55c3690281250504b74796617912"
+    },
+    {
+      "path": "Independent-Review.md",
+      "bytes": 19218,
+      "sha256": "4f879a369eaf3af50813beb9e0f2ade52ed3ee67797e2e6a5d60fb2a374d490d"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 745,
+      "sha256": "58a1eb2962ebe64b4c31a78bf8a1d7d07e1c395e33fcb2e48205e1c7f6d6b82f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1404,
+      "sha256": "5295bf44f841b1d2f68ab5da522460e95800494107abd9eabc507035d733a0d4"
+    },
+    {
+      "path": "checks/check_review.py",
+      "bytes": 5488,
+      "sha256": "32f851c17849eda0b8428eeef7e7c027044502925654dc74b1fa811d4765cc4f"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1741,
+      "sha256": "18518c115d67701374119b06b91440feb4d79aa63fa553765c67b4dc0820f2ee"
+    }
+  ]
+}

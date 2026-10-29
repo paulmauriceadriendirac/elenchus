@@ -1,0 +1,262 @@
+{
+  "feature_order": [
+    "root_default",
+    "n",
+    "l",
+    "f",
+    "u"
+  ],
+  "modified_singleton_witness_vectors": {
+    "Chain": [
+      1,
+      2,
+      -2,
+      0,
+      0
+    ],
+    "Boulder": [
+      0,
+      -1,
+      0,
+      1,
+      0
+    ],
+    "Doorbells": [
+      1,
+      1,
+      -2,
+      1,
+      0
+    ]
+  },
+  "identity_exact": true,
+  "integer_score_vectors_checked": 2916,
+  "integer_score_vectors_meeting_both_calibrations": 1080,
+  "boundary_counterexample_weights": [
+    2,
+    0,
+    -1,
+    -5,
+    -3
+  ],
+  "boundary_verdicts": {
+    "orig": {
+      "Chain": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "C"
+          ],
+          [
+            "I"
+          ],
+          [
+            "Y"
+          ]
+        ]
+      },
+      "Boulder": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "F"
+          ],
+          [
+            "K"
+          ],
+          [
+            "H"
+          ]
+        ]
+      },
+      "Doorbells": {
+        "cause": false,
+        "part": false,
+        "minimal_candidates": [
+          [
+            "M"
+          ],
+          [
+            "R"
+          ],
+          [
+            "E"
+          ]
+        ]
+      },
+      "Prevention": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "A"
+          ],
+          [
+            "V"
+          ]
+        ]
+      },
+      "Short circuit": {
+        "cause": false,
+        "part": false,
+        "minimal_candidates": [
+          [
+            "V"
+          ]
+        ]
+      },
+      "Locusts": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "S"
+          ],
+          [
+            "X"
+          ]
+        ]
+      }
+    },
+    "upd": {
+      "Chain": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "C"
+          ],
+          [
+            "I"
+          ],
+          [
+            "Y"
+          ]
+        ]
+      },
+      "Boulder": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "F"
+          ],
+          [
+            "K"
+          ],
+          [
+            "H"
+          ]
+        ]
+      },
+      "Doorbells": {
+        "cause": false,
+        "part": false,
+        "minimal_candidates": [
+          [
+            "M"
+          ],
+          [
+            "R"
+          ],
+          [
+            "E"
+          ]
+        ]
+      },
+      "Prevention": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "A"
+          ],
+          [
+            "V"
+          ]
+        ]
+      },
+      "Short circuit": {
+        "cause": false,
+        "part": false,
+        "minimal_candidates": [
+          [
+            "V"
+          ]
+        ]
+      },
+      "Locusts": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "S"
+          ],
+          [
+            "X"
+          ]
+        ]
+      }
+    },
+    "mod": {
+      "Chain": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "C"
+          ]
+        ]
+      },
+      "Boulder": {
+        "cause": false,
+        "part": false,
+        "minimal_candidates": [
+          [
+            "F"
+          ]
+        ]
+      },
+      "Doorbells": {
+        "cause": false,
+        "part": false,
+        "minimal_candidates": [
+          [
+            "M"
+          ]
+        ]
+      },
+      "Prevention": {
+        "cause": true,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "A"
+          ]
+        ]
+      },
+      "Short circuit": {
+        "cause": false,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "A",
+            "V"
+          ]
+        ]
+      },
+      "Locusts": {
+        "cause": false,
+        "part": true,
+        "minimal_candidates": [
+          [
+            "Q",
+            "S"
+          ]
+        ]
+      }
+    }
+  }
+}

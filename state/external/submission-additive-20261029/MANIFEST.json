@@ -1,0 +1,92 @@
+[
+  {
+    "file": "Causation-v5.pdf",
+    "bytes": 102221,
+    "sha256": "7783940a8d2968fd1e9f57fb7013a18d4a34df7fd4cb0418d28b6627c2fb50fb"
+  },
+  {
+    "file": "Holistic-Accuracy-v3.pdf",
+    "bytes": 104396,
+    "sha256": "484de56436fb5f912b83f104b11d616403305f04829fa74e4577ee948d584711"
+  },
+  {
+    "file": "Free-Evidence-v3.pdf",
+    "bytes": 111833,
+    "sha256": "2ec33208d3a459b073ebb9ec855c6e6d8f08bfa568b0b78add4cf508b3083c90"
+  },
+  {
+    "file": "Three-Essays-Reading-Copy-v5.pdf",
+    "bytes": 287765,
+    "sha256": "4e2692a5c7c1cb20a61157a3e9b532fff4c0e5b20ea6d521efe7942fa7301c1b"
+  },
+  {
+    "file": "README.md",
+    "bytes": 3123,
+    "sha256": "26d79738169467d96b057d27172888a93ca4be25fcb4afb04560086d3600fb81"
+  },
+  {
+    "file": "essays/01-Holistic-Accuracy-v3.md",
+    "bytes": 35055,
+    "sha256": "619acb85c5edc72cc7b9cdb526b25ad855b802a27bf64662bf8fdb3482fe42b2"
+  },
+  {
+    "file": "essays/02-Free-Evidence-v3.md",
+    "bytes": 40032,
+    "sha256": "c1a68e042373a969f92ad38f755b456f5e13869a0e87629ee2b4397a8b50fc00"
+  },
+  {
+    "file": "essays/03-Causation-v5.md",
+    "bytes": 40765,
+    "sha256": "9199c01c8d9c2e47ba44aadf56c9ee22caf3016f57f14205e33dc50151796034"
+  },
+  {
+    "file": "additive/Additive-Normality-Obstruction.md",
+    "bytes": 9454,
+    "sha256": "b45685d12cab76726bdd94626fd29dac0ab25c92b06a91e651924b317c5893e9"
+  },
+  {
+    "file": "additive/verify_additive.py",
+    "bytes": 4381,
+    "sha256": "16aa997641474103f3a9c7087796dda956a46c3801d33f37b094f1f34e44d05d"
+  },
+  {
+    "file": "additive/source/models.py",
+    "bytes": 49308,
+    "sha256": "4bd18e348d193f5ccf0d9ae92dd41cf878e9fc2eba4e740b5aa782c7eda64c81"
+  },
+  {
+    "file": "additive/verification-results.json",
+    "bytes": 4152,
+    "sha256": "0a356ffc52ce52affba59d32ee99a932b07c20a57866361b6b21953e112ffb77"
+  },
+  {
+    "file": "Halpern-Originality-Review.md",
+    "bytes": 10777,
+    "sha256": "5098305fbf0fa977d55892d54e3ac5f180dca2697772ad953d9f32459b748147"
+  },
+  {
+    "file": "Halpern-Originality-Review.pdf",
+    "bytes": 48773,
+    "sha256": "69754fe8d2d8ec76e18bfb68de589cd98fc99ae553afaa1b1043d5dacb798282"
+  },
+  {
+    "file": "word-counts.json",
+    "bytes": 572,
+    "sha256": "a52741b6fec822cb586150c851bd46af558c250e8d213bc02cf30ce22aeef4a2"
+  },
+  {
+    "file": "revision-diffs/A4-v4-to-v5.diff",
+    "bytes": 19319,
+    "sha256": "cdffc67e206566f8cd8cdfbc3549edb9283a3fadaae5a9c2df17ba21af6abd67"
+  },
+  {
+    "file": "checks/prior-revision-results.json",
+    "bytes": 336,
+    "sha256": "f7c6effa9fea1ad35e6bfd4d72d448e9e1f5262138724afda55e9179404f146c"
+  },
+  {
+    "file": "checks/wordcount.py",
+    "bytes": 5115,
+    "sha256": "fa9fc602a710d4bace9fe896e9972b4c3cc8ed761fd6bf610e6bd91311b30eb0"
+  }
+]

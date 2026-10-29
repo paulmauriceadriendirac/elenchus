@@ -1,0 +1,19 @@
+{
+  "A4": {
+    "preorders": 355,
+    "calibrations": 2130,
+    "paired_comparisons": 3195,
+    "errors": []
+  },
+  "A5": {
+    "parameter_points": 6122,
+    "full_belief_space_checks": 150,
+    "errors": []
+  },
+  "A6": {
+    "defeat_cases": 3306,
+    "perturbation_checks": 194,
+    "minimum_margin": "89/390",
+    "errors": []
+  }
+}

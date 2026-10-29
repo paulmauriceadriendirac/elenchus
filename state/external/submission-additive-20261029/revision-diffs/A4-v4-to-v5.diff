@@ -1,0 +1,106 @@
+--- Causation-v4.md
++++ Causation-v5.md
+@@ -1,6 +1,6 @@
+ # Limits of Uniform Normality Filters in Actual Causation
+ 
+-**Abstract.** Normality can filter the counterfactual worlds that witness actual causation. Its difficulties with preemption and its dependence on causal representation are already recognized in the literature. I give a restricted classification: among uniform componentwise rankings that classify values by default status and equation conformity, four calibrating judgments hold exactly when the ranking satisfies a license rule. Under each of four specified default codings, no ranking in this class separates all three cases of switching, short-circuit prevention and preemption by a deviant event of a normal process. A default-preserving isomorphic pair illustrates the representational limitation beyond this local class. A supporting lemma adapts an intervention-elimination argument already used by Halpern. The contribution is the calibration and comparison for specified rules and models, not a general refutation of normality, a new discovery of the preemption problem, or a proof against richer representations.
++**Abstract.** Normality can filter the counterfactual worlds that witness actual causation. I classify uniform componentwise rankings based on default status and equation conformity: four calibrating judgments hold exactly when the ranking satisfies a license rule, but no ranking separates three further cases under any of four specified default codings. The limitation extends to compensating scores. Under the modified Halpern–Pearl definition, every uniform additive score preserving the chain and ducking judgments counts the switch in a binary Doorbells model as a cause. An exact identity among witness-score changes proves this; an explicit counterexample shows why the restriction to the modified definition matters. These results identify costs of transferring one normality policy across cases. They extend an established discussion of normality and representation, rather than refuting richer normality theories.
+ 
+ ## 1. Introduction
+ 
+@@ -8,15 +8,15 @@
+ 
+ Another familiar contrast is between switching and early preemption. A flipped switch sends a train down the right-hand track instead of the left, the tracks reconverge, and the flip is not usually counted a cause of the arrival; an assassin's poisoning, with a backup ready, is a cause of the death. Halpern (2015, 8) handles one model of the switch by normality, and Andreas and Günther's deviancy condition does the corresponding work in their theory, as Beckers (2026) shows.
+ 
+-My thesis is this: *within the specified class of local uniform witness filters, the four calibrating cases force a license rule; the switching/preemption contrasts then expose limits of the four specified default codings and of representations that identify the contrasted models.*
+-
+-The positive result (§3) derives a family of admissible rankings from four familiar judgments. A supporting lemma explains a known tension between equation conformity and preemption under the modified definition. The limitative result (§4) turns on a preemption whose backup is a normal process: locusts strip a crop that drought would have killed within the week. Depending on how defaults are coded, this case has the same witness typicality profile either as Gallow's Doorbells switch or as Halpern and Hitchcock's short circuit. Section 5 goes beyond the class with an exactly isomorphic pair whose defaults coincide under all four codings; §6 turns to Andreas and Günther; §7 answers objections.
+-
+-I do not claim that normality is idle, that it has no role in graded causal judgment, or that no richer model can draw the switch/preemption line. The claims concern models in which each route to the effect is an event variable, the format of the switch and preemption models in the literature discussed here.
++My thesis is that *a transferable normality policy faces constraints across cases, even when its scores allow gains in some variables to compensate for losses in others*. Componentwise calibration and an additive obstruction make two such constraints precise.
++
++Section 3 derives the componentwise calibration. Section 4 compares switching, short-circuit prevention and preemption by locusts of a normal drought process, then proves the additive obstruction. Section 5 gives a default-preserving isomorphic pair; §6 turns to regularity theories; §7 considers objections.
++
++The claims concern the specified binary models with event variables for the routes to an effect. Richer representations and graded causal judgment remain possible.
+ 
+ **Closest work and increment.** Halpern and Hitchcock (2015, 19, 34–37) allow exceptions to the default that variables obey their equations. Halpern (2016, Example 3.2.6, 84–85) already shows that excluding a preemption witness can make the preempted throw part of a cause; adding an accuracy variable can sharpen the difficulty. His Theorem 4.4.4(b) (121; proof 133–134) establishes stability under conservative extensions whose added variables respect their equations. The lemma below adapts its elimination-and-minimality reasoning to an individual conforming witness. Neither the problem nor the proof technique is claimed as new.
+ 
+-Halpern also explains why inadequate representations cannot distinguish relevant scenarios (2016, §4.1) and why normality rankings need independent motivation (§4.7). Beckers (2026) shows that Andreas and Günther's deviancy condition fails for early preemption with a normal backup. These are starting points. The proposed increment is the exact four-case classification, the three-case impossibility under four uniform codings, and an explicit pair preserving defaults across those codings. Hitchcock (2007) supplies the inertial coding and Principle of Sufficient Reason used in §5. The general isomorphism principle is elementary and already familiar.
++Halpern also explains why inadequate representations cannot distinguish relevant scenarios (2016, §4.1) and why normality rankings need independent motivation (§4.7). Beckers (2026) shows that Andreas and Günther's deviancy condition fails for early preemption with a normal backup. These are starting points. The proposed increment is the exact calibration, the three-case comparison under four codings, and the additive obstruction proved below. Hitchcock (2007) supplies the inertial coding and Principle of Sufficient Reason used in §5. The general isomorphism principle is elementary and already familiar.
+ 
+ ## 2. The setting
+ 
+@@ -48,7 +48,7 @@
+ 
+ The last two implement an undisturbed-system conception of defaults reported by Halpern and Hitchcock (2015, 18). Event, inertial and the first normal-course coding assign the same defaults in the four cases of §3; they come apart in §4.
+ 
+-The broad computational battery used all 75 weak orders and candidates of up to three conjuncts. The central theorems were subsequently checked for all 355 category preorders and every candidate subset (Appendix B).
++Appendix B distinguishes the initial computational battery from exhaustive checks of the central finite cases.
+ 
+ ## 3. What normality must do
+ 
+@@ -102,7 +102,7 @@
+ 
+ An exhaustive check confirms both parts for all 355 preorders on the four categories, including partial ones, under all three definitions and with candidates of every possible conjunction size. ∎
+ 
+-Theorem 2 assumes nothing about which ranking is correct. For the license rule it means: under event or inertial coding, both the swarm and the switch-setting are causes; under normal-course coding the swarm is not. (Under the modified definition the switch-setting's witness also has the profile of Suzy's in late preemption.) The remaining exits are non-uniform rankings or codings (§5).
++Theorem 2 assumes nothing about which ranking is correct. For the license rule it means: under event or inertial coding, both the swarm and the switch-setting are causes; under normal-course coding the swarm is not. (Under the modified definition the switch-setting's witness also has the profile of Suzy's in late preemption.) An additive score offers another possible exit by allowing compensation; the next result tests it.
+ 
+ **Table 1.** Verdicts under the modified definition ("C" = cause or part of a cause; the original and updated definitions agree except where noted). Verdicts that depart from the standard one are marked \*.
+ 
+@@ -120,6 +120,24 @@
+ 
+ Halpern (2015, 8; 2016, 90–91) already distinguishes several switch models and explains the effect of normality on them. In the LT/RT route model, excluding the witness where the train fails to take the left track despite a left setting blocks the switch verdict. Under event coding that excludes a frozen default, conflicting with Theorem 1; under inertial coding it can be the license rule's penalty on an unlicensed deviant. Doorbells tests whether that latter policy transfers when both routes are occurrences. The theorem supplies a cross-case constraint within the stated class, rather than discovering that normality can struggle with switches.
+ 
++### Additive compensation
++
++Give a world the sum of its variables' scores. Every root gets $r>0$ at default and 0 otherwise; every non-root gets $a,b,c,d$ in categories $\mathbf n,\mathbf l,\mathbf f,\mathbf u$, respectively. The same five real numbers apply across models. Admit a witness iff its total is at least the actual total. Unlike componentwise comparison, this permits compensation. Additive representations themselves are familiar: Halpern (2016, 144–145) discusses ranking functions with addition as their combination operation. Uniform category scores are the restriction tested here.
++
++**Theorem 3.** Under event coding and the modified definition, any such score that counts $C=1$ a cause in Chain and $K=1$ a cause of survival in Boulder counts $T=1$ a cause of barking in Doorbells.
++
++*Proof.* Chain's only singleton witness world is $(C,I,Y)=(0,0,0)$, with gain $g_C=r+2a-2b$. Boulder's only singleton witness world is $(F,B,K,H)=(1,1,0,1)$, with gain $g_B=c-a$. Freezing actual values gives no other worlds changing these outcomes. In Doorbells, $[T\leftarrow0,L\leftarrow0]$ gives $(M,T,L,R,E)=(1,0,0,0,0)$, with gain
++
++$$g_T=r+a-2b+c=g_C+g_B.$$
++
++The two causal judgments require $g_C,g_B\geq0$, hence $g_T\geq0$. This valid witness makes the singleton $T=1$ minimal automatically. ∎
++
++Thus compensation alone cannot preserve those three judgments. The result does not depend on Locusts or its contested coarse outcome. It still assumes the binary route model, common scores and event coding; variable-specific scores or richer representations can escape it.
++
++The definition restriction matters. With $(r,a,b,c,d)=(2,0,-1,-5,-3)$, original and updated HP preserve Chain and Boulder while excluding the Doorbells switch. Their additional Boulder witness $(0,1,0,1)$ has gain $r+d-b=0$; the modified definition cannot change the background root $F$ to 0. The Doorbells witness has gain $-1$. Enumeration of all candidate subsets confirms that the switch is not even part of a cause under either older definition. The same score accepts genuine prevention and Locusts and excludes short-circuit prevention. The obstruction therefore arises from uniform aggregation together with the modified contingency restriction, not from additivity alone.
++
++Uniformity is stronger than invariance under renaming. Distinct mechanisms can have different statistical reliabilities or normative significance, even when their values share a category. Theorem 3 does not prohibit representing those differences. Its diagnostic is quantitative: if the root-default bonuses for Chain and Doorbells are $r_C$ and $r_T$, while category scores remain shared, the identity becomes $g_T=g_C+g_B+(r_T-r_C)$. Excluding the switch while retaining both calibration judgments requires $r_C-r_T>g_C+g_B$. Thus even this simple escape has an explicit cost: a sufficiently larger normality bonus for removing the chain's initiating event. Independent evidence might justify that difference. The theorem identifies what a uniform policy cannot supply, and what one non-uniform response must establish.
++
+ ## 5. Beyond the class: an isomorph with identical defaults
+ 
+ Halpern and Hitchcock do not commit to the class (2015, 26 fn. 13; 36 fn. 18). The obvious non-local repair looks at a mechanism's inputs: a frozen default is atypical only when some parent of the frozen variable takes a deviant value. This has a pedigree in Hitchcock's (2007, 508) Principle of Sufficient Reason, which says that a variable with parents takes a default value whenever all its parents do; a deviant value needs a deviant source. The drought equation $D=\neg Q\wedge\neg S$ violates that principle under event coding, since a deviant death follows from all-default parents, whereas the left bell's equation does not. This *trigger rule* penalizes the frozen left bell (its parent, the press, is deviant) but not the frozen maize. With the candidate's own value exempted and the train's left-track travel coded inertially, the trigger rule gives the standard verdict on every case in Table 1 under the original and updated definitions. (Under the modified definition it errs on Billy's throw and on the switch.)
+@@ -156,7 +174,7 @@
+ 
+ *Reply.* Correct. Halpern's graded account (2016, 85–86) retains causes that a hard filter would exclude. His event-based account (97–99) compares sets of contexts satisfying witness formulas, and his further proposal (100–102) considers changes in normality. None is exhausted by one uniform order on the four local categories. The theorems give no direct impossibility result for them.
+ 
+-The question addressed here is whether a reusable rule using only default status and equation conformity can recover the specified contrasts. Those features offer a compact, transferable specification; Theorems 1 and 2 locate its limit. A richer account must justify its additional information. That requirement is already explicit in Halpern (2016, 83, 126–127), who discusses statistical and normative grounds for rankings. Proposition 1 illustrates the requirement in the present pair; it does not introduce it.
++Default status and equation conformity offer a compact, transferable specification. Theorems 1 and 2 test componentwise comparison; Theorem 3 also tests compensating additive scores. A richer account must justify its additional distinctions, a requirement already explicit in Halpern (2016, 83, 126–127).
+ 
+ **Objection 2: aptness.** The binary route models are inapt. Halpern (2015, 7–8; 2016, 38–39) gets the switch right in a three-variable model where the track variable makes no difference to arrival. Seedlings could be modelled the same way, with a single "destroyed by some route" mechanism, or with a finer-grained effect variable.
+ 
+@@ -176,9 +194,9 @@
+ 
+ ## 8. Conclusion
+ 
+-Four calibrating judgments force the license family within the uniform componentwise class. Under each of four specified default codings, no ranking in that class gives all three target verdicts for Doorbells, Locusts and the short circuit. The default-preserving isomorph shows that broader rules using only the same represented information also cannot separate the displayed pair.
+-
+-These are restricted classification results within an established diagnosis of representational limits. Halpern already identifies the conformity/preemption tension, alternatives to witness filtering, and the need to justify models. The calibration makes one tradeoff explicit: a uniform policy accepting the frozen defaults needed by the calibrating cases cannot then exclude them merely because the resulting case is called switching. A successful response must use additional distinctions, enrich the representation, or revise a judgment. The essay specifies where that choice arises; it does not establish which response is uniquely correct.
++Four calibrating judgments force the componentwise license family, which cannot give all the target verdicts. The additive result reaches beyond that aggregation rule: under modified HP, preserving Chain and Boulder forces the Doorbells switch verdict, because its witness gain is exactly the sum of theirs. This obstruction is absent from the original and updated definitions.
++
++These results give explicit constraints within an established discussion of representational limits. A reusable policy must earn its success across cases; merely permitting compensating scores does not always suffice. Additional distinctions, richer models or revised judgments remain available. The results specify where those choices arise, without establishing which response is uniquely correct.
+ 
+ ## Appendix A. Proofs
+ 
+@@ -196,7 +214,7 @@
+ 
+ The code (Python, standard library only) implements the three definitions as stated by Halpern (2015, 3–4); Halpern and Hitchcock's filter with componentwise comparison; NESS and CNESS (Beckers 2021); Andreas and Günther's (2024) definitions with condition (4); and the variant with (C5) in Beckers's (2026, 3–4) statement. Without normality it reproduces Halpern's (2015) verdicts in Examples 3.3, 3.4, 3.9 (LT/RT model) and 3.10, and it reproduces Andreas and Günther's (2024, 28–29) table. For each coding rule and each of the 75 weak orders it evaluates 36 queries in 25 models.
+ 
+-The original checks identify the two license weak orders, verify the displayed contrasts and default-preserving isomorphism, and test the regularity-theory corollary on 41 random models. The final targeted check expands the central claims to all 355 reflexive, transitive relations on the four categories. It enumerates every candidate subset, including those containing the outcome, computes every admissible witness under each definition, and applies AC3 after normality filtering. There were no discrepancies in 2,130 calibration comparisons and 3,195 paired-case comparisons. In the cases covered by these counts, inertial coding coincides with event coding. These are exhaustive checks of the finite cases and rankings specified here; they establish nothing about richer world rankings or unmodeled causal features.
++The original checks identify the two license weak orders, verify the displayed contrasts and default-preserving isomorphism, and test the regularity-theory corollary on 41 random models. The final targeted check expands the central claims to all 355 reflexive, transitive relations on the four categories. It enumerates every candidate subset, including those containing the outcome, computes every admissible witness under each definition, and applies AC3 after normality filtering. There were no discrepancies in 2,130 calibration comparisons and 3,195 paired-case comparisons. In the cases covered by these counts, inertial coding coincides with event coding. The additive check enumerates singleton witness feature vectors and verifies the exact coefficient identity in Theorem 3. Its boundary counterexample is checked across every candidate subset under all three definitions, using the same HP implementation. The written identity proves the result for all real scores; finite computation supplies a check, not the universal quantifier.
+ 
+ ## References
+ 

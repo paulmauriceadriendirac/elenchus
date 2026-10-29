@@ -1,0 +1,42 @@
+[
+  {
+    "file": "essays/01-Holistic-Accuracy-v3.md",
+    "sha256": "619acb85c5edc72cc7b9cdb526b25ad855b802a27bf64662bf8fdb3482fe42b2",
+    "unchanged": true
+  },
+  {
+    "file": "essays/02-Free-Evidence-v3.md",
+    "sha256": "c1a68e042373a969f92ad38f755b456f5e13869a0e87629ee2b4397a8b50fc00",
+    "unchanged": true
+  },
+  {
+    "file": "Holistic-Accuracy-v3.pdf",
+    "sha256": "484de56436fb5f912b83f104b11d616403305f04829fa74e4577ee948d584711",
+    "unchanged": true
+  },
+  {
+    "file": "Free-Evidence-v3.pdf",
+    "sha256": "2ec33208d3a459b073ebb9ec855c6e6d8f08bfa568b0b78add4cf508b3083c90",
+    "unchanged": true
+  },
+  {
+    "file": "methodology/A5-Methodology.md",
+    "sha256": "83e4d02a58763ee61101c5eb032470b958d31980f2a213373f25e7328fa443b9",
+    "unchanged": true
+  },
+  {
+    "file": "methodology/A6-Methodology.md",
+    "sha256": "f4aa4b27a130862ee2d050454706212d290b25e5b69f96a08fc194559d18fa94",
+    "unchanged": true
+  },
+  {
+    "file": "A5-Methodology.pdf",
+    "sha256": "1cef5ee5dd4349549daf946941354d16f80e13918017d54c0af03cc69f0e9f39",
+    "unchanged": true
+  },
+  {
+    "file": "A6-Methodology.pdf",
+    "sha256": "9965f2edfe9ef051bb7a101ea4a012cb2ddf8b4f79623a6a5d22c507dda6f24c",
+    "unchanged": true
+  }
+]
