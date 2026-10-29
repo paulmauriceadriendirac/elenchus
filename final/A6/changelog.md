@@ -80,3 +80,6 @@ Line numbers refer to `final/A6/essay.md`. None changed, because every edit was 
 - P7 remains argued, not proved.
 - The internal cross-reference "(§6.1)" at l.31, flagged above, is still unchanged.
 - I appended only to this changelog, as the task specified. `state/drafts/A6/changelog.md` does not exist.
+
+## Compliance fix (orchestrator, mechanical)
+- Applied citation-audit P4 verbatim (Hong 2026 reduced to abstract-level claim), per state/audit/A6/compliance.md failure 1.

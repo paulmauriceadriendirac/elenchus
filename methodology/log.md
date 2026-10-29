@@ -109,3 +109,4 @@
 - 2026-10-29T17:53:36Z **agent**: compliance(A4): PASS, no required fixes; Wysocki 2023 content claims (§§4–5, updated+modified coverage) verified against retrieved author PDF; §7 A&G verdicts accepted on referee hand check + author code; state/audit/A4/compliance.md
 - 2026-10-29T17:53:54Z **event**: A4 final: compliance PASS (state/audit/A4/compliance.md); PDF final/A4/essay.pdf.
 - 2026-10-29T17:54:46Z **agent**: Methodology report finalized: final/methodology/methodology_report.md (updated after A4/A6 formal patches and A4 compliance; ledger methodology/provenance.md)
+- 2026-10-29T17:57:41Z **event**: A6 compliance FAIL (2 citation items): Hong 2026 fixed by applying audit P4 verbatim; Deference Done Better paragraph under delta audit with local copy (state/ambitious/sources/dorst-etal-2021-deference-done-better.*).

@@ -1,0 +1,2794 @@
+=== PDF page 1 ===
+DOI:10.1111/phpe.12156
+ORIGINAL ARTICLE
+DeferenceDoneBetter
+KevinDorst1,2,* BenjaminA.Levinstein 3,* BernhardSalow1,*
+BrookeE.Husic 4,† BrandenFitelson5,†
+1 UniversityofOxford
+2 UniversityofPittsburgh
+3 UniversityofIllinoisat
+Urbana-Champaign
+4 StanfordUniversity
+5 NortheasternUniversity
+Correspondence
+KevinDorst,UniversityofPittsburgh.
+Email:kevindorst0@gmail.com
+*K.D.,B.A.L.,andB.S.contributed
+equally—theyjointlyprovedthetheorems
+andwrotethepaper.
+†B.E.H.andB.F.pioneeredthecomputa-
+tionalmethodsandlocatedthekeycoun-
+terexample(Fact2.1);together,thesemade
+therestofthepaperpossible.
+Abstract
+There are many things—call them ‘experts’—that you
+should defer to in forming your opinions. The trouble
+is, many experts aremodest: they’re less than certain
+that they are worthy of deference. When this happens,
+thestandardtheoriesofdeferencebreakdown:themost
+popular(“Reflection”-style)principlescollapsetoincon-
+sistency, while their most popular (“New-Reflection”-
+style) variants allow you to defer to someone while
+regardingthemasan anti-expert.Weproposeamiddle
+way: deferring to someone involves preferring to make
+any decision using their opinions instead of your own.
+Inaslogan, deferringopinionsisdeferringdecisions .Gen-
+eralizing the proposal of Dorst (2020a), we first formu-
+lateanewprinciplethatshowsexactlyhowyouropin-
+ionsmustrelatetoanexpert’sforthistobeso.Wethen
+buildofftheresultsofLevinstein(2019)andCampbell-
+Moore (2020) to show that this principle is also equiv-
+alent totheconstraintthatyoumust always expectthe
+expert’s estimates to be more accurate than your own.
+Finally,wecharacterizetheconditionsanexpert’sopin-
+ionsmustmeettobeworthyofdeferenceinthissense,
+showing how they sit naturally between the too-strong
+constraintsofReflectionandthetoo-weakconstraintsof
+NewReflection.
+PhilosophicalPerspectives 2021;35:99–150. ©2021WileyPeriodicalsLLC 99wileyonlinelibrary.com/journal/phpe
+
+=== PDF page 2 ===
+100 DORSTetal.
+Somepeoplearefools.It’sbesttoignoretheminformingyouropinions—andfromhereonout,
+wewill.
+Othersarenot.Infact,therearemanythings—callthem‘experts’—thatit’sbestto deferto in
+formingyouropinions.Thispaperoffersatheoryofhow.
+Expertsincludepeoplewhoaresmarterandbetterinformedthanyou,butalsothingslikeyour
+currentevidenceandtheobjectivechances.Althoughsuchexpertsareclearlyworthyofdeference
+insomesense,it’strickytosayexactlywhatthatsenseis.Thetroubleisthatit’spossibleforexperts
+tobe modest:tobelessthancertainthattheiropinionsareindeedworthyofdeference. 1Theperson
+whoisinfactsmarterandbetterinformedthanyoumightnotbesureaboutthat.Yourevidence
+mightinfactsupport 𝑞,butalsoassignsomeprobabilitytotheclaimthatyourevidencedoesn’t
+support𝑞. And the objective chances (at least on certain Humean theories) might assign non-
+zerochanceto underminingfutures:futuressuchthat,iftheycameabout,theobjectivechances
+would now have been different from what they actually are. When any of these things happen,
+thestandardtheoryofdeference—whichisbuiltaround“Reflection”principles—breaksdown. 2
+Abettertheoryisneeded. 3
+Thispaperoffersone.BuildingonDorst( 2020a),wesuggestthattherightdeferenceprinciple
+shouldencodetheidea—callit‘Value’—thatyoudefertoanexpertwhenyou’dprefertomakeany
+decisionusingtheiropinionsinsteadofyourown(cf.Huttegger 2014;Schoenfield 2016b;Nissan-
+RozenandSpectre 2019).Aswe’llsometimessay:deferenceisapreferencetogivesomeonepower
+ofattorney.Inaslogan: deferringopinionsisdeferringdecisions .
+UnlikeReflection,Valueallowsmodesty.Nevertheless,itturnsouttobeasurprisinglystrong
+constraint. The most popular way of fixing Reflection to allow modesty (“New-Reflection”4)
+allowsforradicalfailuresofValue.Andwe’llseethatevendeferenceunderstoodalongthepre-
+cise lines suggested by Dorst (2020a) himself (“Trust”) does not entail Value in full generality.
+Buthissuggestioncanbemodifiedtoyieldadeferenceprinciple(“TotalTrust”)which isexactly
+equivalenttoValue—andwhich,weargue,offersanaccountofdeferencethat’sbetterthanthose
+currentlyonoffer.
+Moreover,althoughthisaccountwasbuiltformodestexperts,itturnsouttohaveimplications
+for deference toimmodest ones as well. This may be surprising, as it’s well known that when
+expertsareimmodest,ValueisequivalenttoReflection(Skyrms 1990;Huttegger 2014).However,
+that result holds only because the standard accounts of deference—including our statement of
+Valueabove—areaccountsof globaldeference:ofhowtodefertoanexperton everyquestion.This
+typeofdeferenceisappropriateforsomeexperts(theobjectivechances,yourcurrentevidence),
+but not for others: you defer to the weather forecasterabouttomorrow’sweather , but not about
+whetheryoushouldthrowoutthebananasyouboughtlastweekend.Thuswealsoneedanotion
+oflocaldeference:deferringtoanexpert’sopinionsoncertainquestions,butnotothers.
+Toformalizelocaldeference,wecanrelativizeourprinciplestoagivenquestion 𝑄—forexam-
+ple, you Value an expertwithrespecttotomorrow’sweather iff, for any decisionwhoseoutcomes
+aredeterminedbytomorrow’sweather ,you’dliketogivethempowerofattorneyonthatdecision.
+Inasurprisingtwist,itturnsoutthatValueandReflectionare notequivalentwhenrelativizedto
+questionsinthisway,evenwhentheexpertisimmodest(§5).ThusourargumentthatValueisthe
+correctaccountof(global)deferencetomodestexpertssuggeststhatitmayalsohaveanimpor-
+tantroletoplayinunderstanding(local)deferencemoregenerally.Nevertheless,ourhandswill
+beplentyfulljustgettingatheoryofglobal,modestdeferenceonthetable—sowe’lllargelysup-
+presstalkoflocaldeferenceuntiltheend.
+Here’stheplan.§ 1sharpensboththeproblemraisedbymodestexpertsandourproposalfor
+how to fix it. §2 generalizes Dorst’s deference principle and proves that this generalization is
+=== PDF page 3 ===
+Deferencedonebetter 101
+indeedequivalenttoValue.§3thenexploreshowValue—which,withitsfocusondecisions,can
+seemlikea pragmaticdeferenceprinciple—relatestoapurelyepistemicvariantofthesameidea.
+BuildingontheresultsofLevinstein( 2019)andCampbell-Moore( 2020),weshowthatValueis
+equivalentto EpistemicValue:theclaimthatyoushouldexpecttheexpert’sestimatestobemore
+accuratethanyourownonanyreasonableway ofmeasuringtheiraccuracy.§ 4thencharacter-
+izestheconditionsthepotentialexperts’opinionsmustmeetinordertobeworthyofdeference
+inoursense,comparingthemtothoseimposedbyReflectionandNewReflection.§ 5concludes
+byturningtolocaldeferenceandseveralotheropenquestions.
+Onethemeofthispaperisthatallowing expertstobemodestopensupalargelyunexplored
+domainofpotentialdeferenceprinciples.Inanattempttohelpmakethisdomainmoretractable,
+we’veincludedaMathematicanotebookthatcontainsfunctionsforgenerating,visualizing,and
+exploringthemodelsofmodestyusedthroughout. 5
+Finally: the goal of this paper is to develop and defend a philosophical idea about deference.
+That defense is built upon a series of equivalence and non-equivalence results, which in turn
+require a fair bit of technical exposition to establish. Nevertheless, we hope that those uninter-
+estedinthetechnicalitieswillcareaboutthephilosophy.Soforthosewhocareaboutdeference
+but not about hyperplanes, we’ve done our best to hide the technicalities in endnotes, “Proof”
+paragraphs,andappendices—thesecan(andperhapsshould)beskippedwithoutlosstothephilo-
+sophicalargument.
+1 DEFERRINGOPINIONSASDEFERRINGDECISIONS
+Fix on some particular expert—say, your current evidence. Let ‘𝑃’ be a definite description for
+‘theexpert’sprobabilities,whatevertheyare’.Therearevariouspossibilitiesforwhatthoseproba-
+bilitiesmightbe,whichwemodelwitha probabilityframe ⟨𝑾,  ⟩.6 (Forintroductionstohow
+modelsofthiskindwork,seee.g.Williamson 2008,2019;Dorst 2019b,2020b.)‘ 𝑤’isarigiddes-
+ignatorfortheprobabilitydistributiontheexperthasatworld 𝑤.7 Propositionsaremodelledas
+subsetsof 𝑊.Usingastandardmovefrommodallogic(Hintikka 1962;Kripke 1963),thisincludes
+propositionsabouttheexpert’sprobabilities:thepropositionthattheexpertassignsprobability 𝑡
+to𝑞,written‘ [𝑃(𝑞)=𝑡] ’,issimplythesetofworlds 𝑤suchthat 𝑤(𝑞)=𝑡 ;thepropositionthatthe
+experthasprobabilityfunction 𝑥,written‘ [𝑃= 𝑥]’,issimplythesetof 𝑤 suchthat 𝑤 = 𝑥;
+andsoon.Fortheexperttobemodestat 𝑤isforthemtoassignnon-zeroprobabilityto‘theexpert’s
+probabilities’(pickedoutnon-rigidly)beingdifferentfromtheirown(pickedoutrigidly). 8
+Here’s a simple example. There are two possibilities,𝑊={𝑎,𝑏} . 𝑃 represents rational cre-
+dences. The evidence you have is ambiguous, so it’s rational to be unsure what the rational
+responsetotheevidenceis(Christensen 2010;Elga 2013;Lasonen-Aarnio 2013,2015;Carr 2019b;
+Dorst 2019b, 2020a). At world𝑎 it’s rational to be 70% confident you’re at world𝑎;a tw o r l d𝑏,
+it’srationaltobeonly40%confidentofthis.Thus 𝑎(𝑎)=0.7 while 𝑏(𝑎)=0.4 .Therearetwo
+compactwaystorepresentsuchaframe.Thefirstisa Markovdiagram inwhichnodesrepresent
+worlds, and the arrow from node𝑤 to node𝑣 is labelled with the probability𝑤 assigns to𝑣,
+𝑤(𝑣). The second represents the frame as a (row-)stochastic matrix, in which row𝑖, column𝑗
+represents𝑃𝑤𝑖(𝑤𝑗).ThesetworepresentationsaregiveninFigure 1.
+Thisframerepresentsamodestexpertsince,forexample,at 𝑎therationalcredencefunction
+isunsurewhetherit’srationaltoassigncredence0.7or0.4to 𝑎: 𝑎(𝑎)>0 and 𝑎(𝑏)>0 ,thus
+𝑎(𝑃(𝑎)=0.7)>0 and 𝑎(𝑃(𝑎)=0.4)>0 .
+=== PDF page 4 ===
+102 DORSTetal.
+FIGURE 1 Amodestframe,in
+Markov-diagram(left)and
+stochastic-matrix(right)forms
+Aprobabilityframerepresentsvarioushypothesesaboutwhattheexpert’sprobabilitiesmight
+be. To formulate deference principles, we need to add a further probability distribution𝝅 over
+𝑊,whichrepresenttheopinionsoftheindividualdeferringtotheexpert. 9 While‘𝑃’isadefinite
+description for ‘the expert probability function, whatever it is’, ‘𝜋’ (along with other lowercase
+Greekletters,like‘ 𝜌’)isarigiddesignatorforaparticularprobabilityfunctionwhosevaluesare
+fixedandknown.
+Structure in place, let’s consider some deference principles: principles attempting to specify
+how𝜋 and ⟨𝑊, ⟩ need to be related for𝜋 to be deferring to⟨𝑊, ⟩. The most natural such
+principleisthattodefertotheexpertistoadopttheiropinionsasyourown,conditionalonany
+givenhypothesisaboutwhatthoseopinionsmightbe: 10
+Reflection:𝜋(⋅|𝑃=𝜌)=𝜌
+Conditionalontheexperthavingacertainsetofopinions,adoptthoseopinions.
+Letussaythat 𝜋reflectsaframe ⟨𝑊, ⟩iffitmeetsthiscondition.
+Unfortunately,theconditionsimposedbyReflectionaretoostrong.Inparticular,it’simpossible
+foranydistributiontoreflectaframewhileassigningnon-zeroprobabilitytothepossibilitythat
+theexpertismodest(Hall 1994;Lewis 1994;Elga 2013).Thereasonissimpleenough.Supposeyou
+leaveopenthatamodestcandidate 𝑤 mightbetheexpert.Sinceit’smodest,itassignslessthan
+maximalcredencetotheclaimthatit’stheexpert: 𝑤(𝑃= 𝑤)<1 .Butconditionalonitbeingthe
+expert,youshouldbecertainthatit’stheexpert: 𝜋(𝑃= 𝑤|𝑃= 𝑤)=1 .Thereforeconditional
+on this fact, you don’t adopt the opinions of𝑤:𝜋(⋅|𝑃= 𝑤) ≠𝑤. For example, in the frame
+fromFigure 1, 𝑎(𝑃= 𝑎)=0.7 ,but 𝜋(𝑃= 𝑎|𝑃= 𝑎)=1 .11
+ThusifReflectionwerethecorrecttheoryofdeference,itwouldbeimpossible todefertoan
+expert unless you’re sure they’re immodest. But deferring to someone while leaving open that
+they might be modest is clearly possible. So reflecting a frame isn’t necessary for𝜋 to count as
+deferringtoit—Reflectioncannotbethefulltheoryofdeference.
+Inresponsetothisproblem,severalphilosophershavearguedthatweshouldmodifyReflection
+asfollows:
+NewReflection: 𝜋(⋅|𝑃=𝜌)=𝜌(⋅ |𝑃=𝜌)
+Conditionalontheexperthavingacertainsetofopinions,adopttheopinionstheywouldhave
+weretheytolearnthatfact.
+Saythat𝜋new-reflectsaframeiffthisconditionholds.NewReflectionisequivalenttoReflec-
+tion when the expert is certain to be immodest (since then for all𝑤, 𝑤 = 𝑤(⋅ |𝑃= 𝑤)); but
+NewReflectionpermitsdeferencetomodestexperts.
+Moreover, defenders of New Reflection have an attractive story to tell about why this princi-
+ple should hold even when Reflection fails (Hall1994;L e w i s1994;E l g a2013). The idea is that
+theconditionthat 𝑃= 𝑤 givesadditionalinformation—informationthattheexpert,beingmod-
+est, doesn’t have. So when you reason hypothetically on that assumption, you shouldn’t adopt
+the expert’sunconditional opinions, which fail to take this information into account; rather,
+=== PDF page 5 ===
+Deferencedonebetter 103
+FIGURE 2 Aframeunworthyofdeference.Left:Markovdiagram.Right:stochastic-matrix
+you should adopt the opinion the expert would have once made aware of this information,
+i.e. 𝑤(⋅ |𝑃= 𝑤).
+This is a compelling explanation for why Reflection is not required for deference to experts
+whomightbemodest;anditalsomakesclearwhy,bycontrast,NewReflectionreallyisnecessary
+for such deference. But it’s worth noting that it provides no direct reason to think that obeying
+NewReflectionis sufficientfordeference.Moreover,there’sgoodreasontothinkthatit’snot.The
+problemisthat—evenwhentheexpertknowseverythingthatyoudo—NewReflectionimposes
+virtuallynoconstraintsonwhatyouthinkabouttheexpert’sunconditionalopinions.
+Toseethis,noticethatwecanequivalentlystateNewReflectionasfollows(Stalnaker 2019).Let
+theinformedexpert opinions, ˆ𝑷,betheopinionstheexpertwouldhaveweretheirmodestyto
+beremoved—i.e.weretheytobeinformedthattheyaretheexpert: ˆ𝒘 ∶= 𝑤(⋅|𝑃= 𝑤).Then
+NewReflectionisequivalentto:
+NewReflection(informedversion) : 𝜋(⋅|ˆ𝑃=𝜌)=𝜌
+Conditionalonthe informedexperthavingacertainsetofopinions,adoptthoseopinions. 12
+NewReflectionthussayssimplytoreflectthe informedexpert,andissilentonwhatyoushould
+thinkabouttheexpert’sunconditionalopinions.
+This is a problem. It means that you can new-reflect a frame even if you are certain that the
+expertismistaken.ConsideratoyexamplefromDorst( 2020a,§6),representedinFigure 2below.
+𝑊containsonlytwopossibilities, 𝑎and𝑏,and 𝑎(𝑏)= 𝑏(𝑎)=0.8 :bothcandidatesfortheexpert
+assignhigherprobabilitytothefalsehypothesisaboutwhichofthetwoistheexpertthanthenon-
+expertdoes.(Forexample,if 𝑎isactual,thentheexpert, 𝑎,assignsthisalowprobabilityof0.2,
+whilethenon-expert, 𝑏,assignsitahighprobabilityof0.8.)Thus,forinstance,conditionalon
+theexpert’scredencein 𝑎beinghigh, 𝑎isdefinitelyfalse;andconditionalonthatcredencebeing
+low,𝑎isdefinitelytrue—theexpert’scredencesare(knowntobe)anti-correlatedwiththetruth.
+Meanwhile,suppose𝜋is50-50between 𝑎and𝑏,soitdoesn’tknowanythingthat 𝑎 and 𝑏 don’t.
+(Allthreearesureof {𝑎,𝑏},andnothingstronger.)Surely,if 𝜋capturesyourcredences,youdonot
+countasdeferringtothisframe—theopinions(asyouseethem)arethoseofan anti-expert,notan
+expert.Butnotethat [𝑃= 𝑎]={𝑎} and[𝑃= 𝑏]={𝑏} ,so 𝜋new-reflectsthisframe. 13 Upshot:𝜋
+new-reflectingaframecannotbesufficientfor 𝜋tocountasdeferringtoit;andsoNewReflection
+cannotbethefulltheoryofdeference.
+(Whatarewedoingwhenwegiveapurelyformalexamplelikethis?Afterall,onsomeinter-
+pretations of𝜋 and𝑃, there may be general explanations for why structures like Figure2 are
+impossible—forinstance,perhapsthecorrectHumeanaccountofobjectivechancewillruleout
+thepossibilityofthechanceshavingthisstructure(Levinstein 2019).Nevertheless,onotherinter-
+pretationsof‘ 𝑃’(suchas‘thefool’scredences’),thisscenarioisperfectlypossible.Andmoregen-
+erally, the point of this example is to illustrate that New Reflection is missing something: the
+=== PDF page 6 ===
+104 DORSTetal.
+completetheoryofdeferenceshouldpredictthat 𝜋doesn’tdeferto 𝑃ifithasthisstructure,yet
+NewReflectionfailstodoso.)
+Intuitively,whatgoeswrongintheaboveexampleisthat 𝜋doesnotregardtheexpert’s(uncon-
+ditional)opinionsastrackingthefacts.Thereisbothapragmaticandapurelyepistemicversion
+ofthiscomplaint.Thepragmaticversionpointsoutthat 𝜋doesnotregardtheexpert’sopinions
+asgoodonestouseinmakingdecisions:facedwithabetonwhichof 𝑎or𝑏isactual, 𝜋 would
+ratherdecideforitselfthanlettheexpertdecide.Afterall, 𝜋knowsthatthetheexpertwillmake
+the wrong decision—that they’ll bet on𝑎 iff𝑃(𝑎)>𝑃(𝑏) , which happens iff𝑃= 𝑏,i . e .i f f𝑏 is
+actualandit’salosingbet.Conversely,they’llbeton 𝑏iff𝑎isactual.Eitherway,they’lltakethe
+wrongbet—andwhatever 𝜋thinksofitself,itcan’tthinkthatit’sboundtotakethewrongbet. 14
+Meanwhile,theepistemicversionofthiscomplaintpointsoutthat 𝜋regardsitselfasclosertothe
+truthaboutwhichof 𝑎or𝑏isactualthantheexpert:if 𝑎isactual,then 𝜋ismoreconfidentofit
+thantheexpertis( 𝜋(𝑎)=0.5>0.2= 𝑎(𝑎)),andif 𝑏isactualthen 𝜋ismoreconfidentof itthan
+theexpertis( 𝜋(𝑏)=0.5>0.2= 𝑏(𝑏)).
+Let’sfocus(till§3)onthepragmaticversion.Thissuggestsanewconstraintonwhatdeference
+requires: deference in opinions requires deference in decisions. That is, deference to an expert
+requiresthat,foranydecisionproblem,youwouldprefertogivetheexpertpowerofattorney:to
+usetheirprobabilitiestomakethedecisionratherthanuseyourown.Aswe’llputit:you valuean
+expert’sopinionswhenyoualwaysexpectthedecisionsthoseopinionswarranttobebetterthan
+yourown.
+Here’showtoformalizethisidea.(Ifit’sintuitiveenough,skipthenexttwoparagraphs.)Letan
+optionbeafunctionfrom 𝑊 torealnumbers,with 𝑶(𝒘)representingtheutilitythatwouldbe
+achieved(forwhateverpersonwearemodelingwith 𝜋)if 𝑂weretobechosenat 𝑤.Leta decision
+problem on𝑊 be a finite set of options. For example, to represent the decision of whether
+to bet on𝑎 or𝑏,l e t={𝑂𝑎,𝑂𝑏} where𝑂𝑎 =
+{
+1 if𝑎
+−1 if𝑏
+,a n d𝑂𝑏 =
+{
+−1 if𝑎
+1 if𝑏
+.R e l a t i v et oa
+probabilitydistribution𝜌,wecancalculatethe expectedvalueofanoption 𝑂asaweightedaverage
+of the various values it might take, with weights determined by how likely it is to take them:
+𝔼𝔼𝔼𝝆(𝑶)∶= ∑
+𝑤𝜌(𝑤)𝑂(𝑤) (wewrite 𝑬𝒘𝑬𝒘𝑬𝒘(𝑶)toabbreviate 𝔼𝑤(𝑂)).Forexample,inouraboveanti-
+expertframe(Figure 2),𝔼𝜋(𝑂𝑎)=0.5(1)+0.5(−1)=0 ,while 𝔼𝑎(𝑂𝑎)=0.2(1)+0.8(−1)=−0.6
+and𝔼𝑎(𝑂𝑏)=0.2(−1)+0.8(1)=0.6 .
+Givenaframe ⟨𝑊, ⟩andadecisionproblem on𝑊,leta strategy𝑺beawayofchoosing
+options based on the expert’s probabilities: a function from𝑊 to ,𝑤↦𝑆 𝑤 such that𝑆𝑤 =𝑆𝑣
+whenever 𝑤 = 𝑣.Astrategy 𝑆isrecommendedbythe(expertmodeledbythe)frameforthe
+decision-problem iff the option𝑆𝑤 it selects at each world𝑤 is one that maximizes expected
+utility according to the the expert’s credences at𝑤:𝔼𝑤(𝑆𝑤) ≥𝔼𝑤(𝑂) for every𝑂∈ . In other
+words,ifastrategyisrecommended,thenfollowingitissimplylettingtheexpertdecidehowto
+respondto onyourbehalf.Forexample,notethat 𝔼𝑎(𝑂𝑏)=0.6>−0.6=𝔼 𝑎(𝑂𝑏),andsimilarly
+𝔼𝑏(𝑂𝑎)=0.6>−0.6=𝔼 𝑏(𝑂𝑏).ThusthestrategythattheframeinFigure 2recommendsfor is
+totakethebeton 𝑏 (𝑂𝑏)atworld 𝑎,andthebeton 𝑎 (𝑂𝑎)atworld 𝑏.Aswecansee,astrategy
+involvestakingdifferentoptionsatdifferentworlds.Abusingnotationever-soslightly,we’llwrite
+𝔼𝔼𝔼𝝅(𝑺)fortheexpectedutilityoffollowingthestrategyaccordingto 𝜋:𝔼𝜋(𝑆)∶= ∑
+𝑤𝜋(𝑤)𝑆𝑤(𝑤).
+Note that in our example, this value is negative, since𝜋 knows that the expert, whoever it is,
+recommendstakingthewrongbet: 𝔼𝜋(𝑆)=𝜋(𝑎)𝑆 𝑎(𝑎)+𝜋(𝑏)𝑆 𝑏(𝑏)=0.5𝑂 𝑏(𝑎)+0.5𝑂 𝑎(𝑏)=−1 .
+Thisislessthantheexpectedvalueofsimplybettingon 𝑎,comewhatmay: 𝔼𝜋(𝑂𝑎)=0 .Thus 𝜋
+=== PDF page 7 ===
+Deferencedonebetter 105
+FIGURE 3 Aprobabilityfunctionthatvaluesamodestframe
+prefersnottogivethe(anti-)expertpowerofattorneyintheaboveframe—it’sbetteroffchoosing
+foritself!
+Generalizing,theproposalisthat 𝜋deferstoaframeiffit valuesthatframe:
+Value:I f𝑆isrecommendedfor ,thenforall 𝑂∈ : 𝔼𝜋(𝑆) ≥𝔼𝜋(𝑂).
+Foranydecisionproblem,prefergivingtheexpertpowerofattorneytodecideonyourbehalf,
+ratherthandecidingforyourself.
+Inotherwords:nomatterwhatdecisionyouface,theexpectedutilityofadoptingastrategyrec-
+ommendedbytheexpertisalwaysatleastashighasbypassingtheexpertandpickinganoption
+usingyourownprobabilities. 15
+That’stheproposal.HowdoesitrelatetoReflectionandNewReflection?
+If𝜋reflectsaframe,itvaluesit. 16 Andifaframeisimmodest, 𝜋reflectsit ifandonlyif 𝜋values
+it.17 Butthisisnottrueingeneral: 𝜋canvalueaframewithoutreflectingit—and,inparticular,
+without that frame being immodest. To get a feel for why, consider a case in which𝜋 is 50-50
+between𝑎and𝑏but 𝑎(𝑎)=0.9 and 𝑏(𝑏)=0.8 ,inFigure 3.Thisframeismodest,so 𝜋doesn’t
+reflect it—for example,𝜋(𝑎|𝑃= 𝑎)=1 ≠0.9= 𝑎(𝑎).B u t𝜋 values the frame. For if𝑎 is true
+thentheexpertismoreconfidentofitthan 𝜋is;andif 𝑏istrue,likewise.Asaresult, 𝑃iscloser
+tothetruththan 𝜋foreveryproposition,andateveryworld.Thus,obviously, 𝜋wouldpreferto
+givetheexpertpowerofattorney.Sincethisexpertismodest,Valuemustbeaweakerconstraint
+thanReflection.18
+Meanwhile,Valueisa strongerconstraintthanNewReflection. 𝜋valuesaframeonlyifitnew-
+reflectsit.19 But,aswe’veseen, 𝜋doesnotvalueframesinwhichtheexpert’sopinionsareanti-
+correlatedwiththetruth,evenwhenitnew-reflectsthem(Figure 2).
+Finally,notethatValueisequivalenttoanaturalformulationofabanonDutch-bookability.In
+particular,imaginethat 𝜋isyourpriorand 𝑃istheposteriorcredencesyouwillhaveaftersome
+transitioninbeliefs.A fixed-optionDutchbook isapairofdecisionproblems—bothincluding
+a “no bet” option with 0 payout, one presented before and the other presented after the belief-
+transition—suchthatdoingtherationalthingbeforeandafterisguaranteedtoresultinaloss. 20
+If𝜋failstovalue 𝑃,itispossibletoconstructafixed-optionDutchbookagainstthetransitionfrom
+𝜋 to𝑃.21 Nosuchbookcanbemadeif 𝜋 values𝑃;infact,therecan’tevenbeapairofdecision
+problemswhichbothincludea“nobet”optionbutresultinan expectedloss.22
+Valuethuslookslikeaplausiblecandidateforthreadingtheneedlebetweentheoverlystrong
+ReflectionandtheoverlyweakNewReflection.Whatweneednowisaclearerpictureofwhat
+Value requires. In particular, we’d like a characterization of Value that tells us directly how𝜋
+and𝑃’sopinionsmustrelate(§2),thatexplainshowthepragmatic-lookingValuerelatestopurely
+epistemicformsofdeference(§3),andthattellsuswhattheexpert’sopinionsmustbelikeinorder
+tobevaluable(§4).Offtoit.
+=== PDF page 8 ===
+106 DORSTetal.
+2 IMPROVINGTRUST,GENERATINGVALUE
+Asadeferenceprinciple,Valueiscumbersome—we’dliketobeabletosay,directly,how 𝜋’sopin-
+ionsmustrelateto 𝑃’sinorderfor 𝜋tovalue 𝑃.Dorst( 2020a)takesastepintherightdirection.
+Atafirst-pass,heproposesasadeferenceprinciple:
+SimpleTrust: 𝜋(𝑞 |𝑃(𝑞) ≥𝑡) ≥𝑡
+Conditionalontheexpertbeingconfidentof 𝑞,beconfidentof 𝑞.
+This principle looks independently appealing. It says that you regard the information that the
+expertfavors 𝑞toatleastacertainextentasalsofavoring 𝑞toatleastthatextent.Notethatthis
+is not affected by the criticism of Reflection we discussed earlier. For, while it may be that the
+expertdoesn’tknowthattheexpertfavors 𝑞toatleastdegree 𝑡—sothatlearningthisinformation
+mightchangetheiropinions—theasymmetricnatureof‘atleast degree 𝑡’plausibly meansthat
+thisaddedinformationcanonly favor𝑞further:it’llchangetheexpert’sopinions inapredictable
+direction.Thusyouknowthatuponlearningwhatyou’velearned,theexpert’scredencewillstill
+be at least𝑡, so it makes sense for your credence be at least𝑡 upon learning this (Dorst2020a,
+§§4–5).23
+AsDorst( 2020a)emphasizes,SimpleTrustissymmetric—substituting ¬𝑝for𝑞and1−𝑠 for𝑡
+givesustheprinciplethatconditionalontheexpertbeing doubtfulof𝑝,youshouldbedoubtful
+of𝑝:𝜋(𝑝|𝑃(𝑝) ≤𝑠) ≤𝑠.ThusSimpleTrustsaysthatwhenyoulearnwhethertheexpertfavorsor
+disfavors𝑞(whether𝑃(𝑞) ≥𝑡or𝑃(𝑞)<𝑡 ),youshouldagreewiththeexpertin(dis)favoring 𝑞.24
+DorstshowsthatSimpleTrustisconnectedtoValue.HefirstgeneralizesSimpleTrusttoapply
+toconditionalprobabilitiesaswellasunconditionalones,yielding:
+Trust: 𝜋(𝑞|𝑝∧[𝑃(𝑞 |𝑝) ≥𝑡]) ≥𝑡
+Conditionalontheexpertbeingconfidentof 𝑞conditionalon 𝑝,beconfidentof 𝑞conditional
+on𝑝.
+He thenshows that Trust follows from Value (Dorst2020a, Theorem7.2) and that, in a natural
+subclassofframes,ValuealsofollowsfromTrust(Theorem7.4). 25 Hefurtherconjecturesthatthe
+twoareequivalentmoregenerally.
+Unfortunately,he’swrong:
+Fact2.1. Thereare 𝜋, ⟨𝑊, ⟩suchthat 𝜋trusts ⟨𝑊, ⟩withoutvaluingit.
+Proof. Let𝜋=
+(
+0.170.560.27
+)
+and ⟨𝑊, ⟩=
+⎛
+⎜
+⎜⎝
+0.450.100.45
+0.150.700.15
+0.300.100.60
+⎞
+⎟
+⎟⎠
+. Usingthe checkTrustfunction
+intheMathematicanotebookshowsthat 𝜋truststheframe. 26 Butlet 𝑂0 =0 everywhereandlet
+𝑂1(𝑤1)=29 ,𝑂1(𝑤2)=−3 ,and 𝑂1(𝑤3)=−13 .Each 𝑖 intheframehashigherexpectationfor 𝑂1
+than𝑂0,sotherecommendedstrategyistotake 𝑂1 everywhere.Thus 𝔼𝜋(𝑆)=𝐸 𝜋(𝑂1)=−0.26<
+0=𝔼 𝜋(𝑂0);Valuefails. □
+Nevertheless,itturnsoutthatTrustcannaturallybegeneralizedtoyieldaprinciplethatreally
+isequivalenttoValue.
+=== PDF page 9 ===
+Deferencedonebetter 107
+The simplest way to motivate the generalization invokes the idea of arandom variable—
+a function (any function) from worlds to numbers. Think of this as a definite description for a
+number—‘thenumberofplanets’;‘theweightofthiscow’,‘theamountofutilityyou’dgetfrom
+eatingcake’,etc.(Noticethat options,inthesenseusedtospecifydecisionproblems,aresimply
+randomvariables.)Ifyou’reunsurewhatvaluearandomvariabletakes,youcanforman estimate
+ofitbyaveragingthevariouspossibilitiestotrytobeascloseaspossible.Precisely:the expected
+valueofarandomvariablerelativetoadistribution 𝜋isaweightedaverageofthevariouspossible
+valuesitmighttake,withweightsdeterminedbyhowlikelytheyaretobeactual. 27 Notethata
+proposition𝑞isinterchangeablewithits indicatorvariable 𝟙𝑞,i.e.thevariablethatassigns1to
+worldswhere 𝑞 istrueand0tothosewhereit’sfalse.Theprobabilityassignedtoaproposition
+equalstheestimateassignedtoitsindicatorvariable: 𝔼𝜋(𝟙𝑞)=𝜋(𝑞)1+𝜋(¬𝑞)0=𝜋(𝑞) .
+Thought of in this way, Simple Trust says that forcertainrandom variables—namely, indica-
+tor variables—conditional on the expert’s estimate of that variable being at least𝑡,y o uh a v ea n
+estimate that’s at least𝑡. To formalize this, let ‘𝔼𝔼𝔼(𝑿)’ be a definite description for the expert’s
+expectation of𝑋 (so, for example,[𝔼(𝑋) ≥𝑡]={𝑤∶𝔼 𝑤(𝑋) ≥𝑡}). Then Simple Trust is simply
+therequirementthat,foreveryindicatorvariable 𝟙𝑞:𝔼𝜋(𝟙𝑞|𝔼(𝟙𝑞) ≥𝑡) ≥𝑡.
+It’stheneasytospotageneralization.Saythat 𝜋totallytrusts aframeiff:
+TotalTrust:F o ranyvariable𝑋: 𝔼𝜋(𝑋 |𝔼(𝑋) ≥𝑡) ≥𝑡
+Conditionalontheexperthavingahighestimatefor 𝑋,haveahighestimatefor 𝑋.28
+TotalTrustisofthesameformasTrust—both [𝔼(𝑋) ≥𝑡]and[𝑃(𝑞) ≥𝑡](i.e.,[𝔼(𝟙𝑞) ≥𝑡])assert
+that the expert’s probability function has a certain lower-bounded feature: its estimate of some
+quantity(𝑋,or 𝟙𝑞)isaboveagiventhreshold.SowhileTotalTrustisstrongerthanSimpleTrust,
+itformalizesasimilaridea.Inparticular,itislikewisenotaffectedbythecriticismofReflectionwe
+discussedearlier.Whileitmaybethattheexpertdoesn’tknowthattheexperthasahighestimate
+for𝑋—sothatthisisnewinformationthattheexperthasnotyettakenintoaccount—theasym-
+metric nature of ‘high estimate’ plausibly means that this added information can onlyincrease
+theirestimatefor 𝑋,meaningyouknowthatit’llstillbehighoncethisinformationisadded.
+Like Trust, Total Trust is again symmetric: 𝜋 totally trusts a frame iff for all 𝑌,𝑠:
+𝔼𝜋(𝑌|𝔼(𝑌) ≤𝑠) ≤𝑠.ThusTotalTrustsaysthatupon learningwhethertheexpert’sestimatefor
+𝑋 is high or not (whether𝔼(𝑋) ≥𝑡 or𝔼(𝑋)<𝑡 ), you should follow their estimate across this
+dividing line. (But, again, it doesnot follow that we can combine these conditions to arrive at
+𝔼𝜋(𝑋|𝑡 ≤𝔼(𝑋) ≤𝑡)=𝑡 .)
+Total Trust is also, in some respects, more elegant. While Trust is stronger than Simple
+Trust, Total Trust already implies the analogous principle for conditional estimates (endnote
+36):𝔼𝜋(𝑋|𝑞∧[𝔼(𝑋 |𝑞) ≥𝑡]) ≥𝑡;thatmeansTotalTrustimpliesTrust(let 𝑋beanindicatorvari-
+able),andhencethatTotalTrustimpliesNewReflectionaswell(seeendnote37below).Moreover,
+TotalTrustalsoimpliesaversionofitselfwhichappliestocomparisonsoftwoestimates,rather
+thancomparisonsofanestimatewithathreshold. 29
+Mostimportantly,TotalTrustisequivalenttoValue:
+Theorem2.2. 𝜋totallytrusts ⟨𝑊, ⟩iff𝜋values ⟨𝑊, ⟩.30
+ProofSketch. (⇒)∶ Suppose𝔼𝜋(𝑆)<𝔼 𝜋(𝑂)forsome 𝑂∈ ,so 𝔼𝜋(𝑂−𝑆)>0 .Assume(without
+lossofgenerality,asanexcruciatingproofintheappendixshows)thatforeach 𝑖 intheframe,
+thereisaunique 𝑂∈ withmaximal expectation.Then,findingapair ⟨𝑗,𝑂𝑗 ⟩thatmaximizes
+=== PDF page 10 ===
+108 DORSTetal.
+thequantity 𝔼𝑗(𝑂𝑗 −𝑆) intheframe,therewillbea 𝑡>0 suchthat [𝔼(𝑂𝑗 −𝑆) ≥𝑡]includesall
+andonlyworlds 𝑤where𝑆𝑤 =𝑂𝑗 andhence (𝑂𝑗 −𝑆)(𝑤)=0 .Thus 𝔼𝜋(𝑂𝑗 −𝑆 |𝔼(𝑂𝑗 −𝑆) ≥𝑡)=
+0<𝑡 ;TotalTrustfails.
+(⇐)∶ If𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡) ≤𝑡−𝜀 forsome 𝑋,𝑡 and𝜀>0 ,thenweletouroptionsbe ={𝑋,𝑌}
+where𝑌=𝑡−𝑎𝜀 for0<𝑎<1 atallworlds.As 𝑎→0 ,wereachapointatwhichif 𝑆isrecom-
+mended,𝑆selects𝑋at𝑤if𝑤∈[𝔼(𝑋) ≥𝑡],andselects 𝑌otherwise.Thus 𝔼𝜋(𝑆)isanaverageof
+𝔼𝜋(𝑆|𝔼(𝑋)<𝑡)=𝔼 𝜋(𝑌|𝔼(𝑋)<𝑡)=𝑡−𝑎𝜀 and𝔼𝜋(𝑆|𝔼(𝑋) ≥𝑡)=𝔼 𝜋(𝑋|𝔼(𝑋) ≥𝑡) ≤𝑡−𝜀<𝑡−
+𝑎𝜀,andsoislessthan 𝔼𝜋(𝑌)=𝑡−𝑎𝜀 ;Valuefails. □
+WhydoesTotalTrustsucceedwhereSimpleTrustandTrustfailed?Inspectingtheproof,clearly
+partoftheansweristhatTotalTrustcanapplydirectlytoarbitraryrandomvariables—thelan-
+guageofValueandits“options”—whereasTrustisrestrictedtopropositions.Buttounderstand
+why this restriction is limiting, and to identify another sense in which Total Trust is a natural
+generalizationofTrust,ithelpstovisualizewhatthesevariousprinciplesrequire. 31 (Readersless
+interestedinthedetailscanskiptothenextsectionwithoutsignificantlossofcontinuity.)
+Todothis,thinkofaprobabilityfunction 𝜋definedover 𝑛worldsasavectorin 𝑛-dimensional
+Euclideanspace,wherethe 𝑖thcoordinateis 𝜋(𝑤𝑖).Wecanthenrepresentprobabilityfunctions
+aspointsina barycentricplot:asimplex(the 𝑛-dimensionalgeneralizationofatriangle)inwhich
+the extreme points are those which assign maximal probability to a single world. For a 3-world
+frame,thissimplexisa2Dequilateraltriangle.Toseehowthisworks,lookatthetoplefttriangle
+inFigure 4—ignoretheshadedregionsandarrowsfornow.Inthisfigure,anypointwithinthe
+trianglerepresentsaprobabilityfunction.Theredpointinthebottomleft,labeled 𝑤1,represents
+theprobabilityfunctionthatassigns1to 𝑤1 and0toeachof 𝑤2 and𝑤3.(InEuclidean3-space,this
+isthepoint
+(
+100
+)
+.)Similarly,thegraypointlabeled 𝑤2 atthetoprepresentstheprobabilityfunc-
+tionthatassigns0to 𝑤1 and𝑤3,and1to 𝑤2.(Thepoint
+(
+010
+)
+.)Withinthetriangle,howclose
+eachdotistotheseextremepointsrepresentshowconfidentitisinthecorrespondingworld.For
+instance, 1 isequallyconfidentin 𝑤1 and𝑤3,henceitisinthemiddleofthetriangle,butismuch
+lessconfidentof 𝑤2,henceitismuchfurtherawayfromthetop.(Exactly, 1 =
+(
+0.450.10.45
+)
+.)
+Incontrast, 3 isequallydoubtfulof 𝑤2,butisslightlymoreconfidentof 𝑤3 thanof 𝑤1,soitis
+thesameverticalheightas 1 butisshiftedfurthertotheright.(Exactly, 3 =
+(
+0.30.10.6
+)
+.)
+Usingsuchdiagrams,wecanvisualizewhatourvariousTrustprinciplesrequire.
+StartwithSimpleTrust.Thisrequiresthatconditionalontheexpertbeingconfidentof 𝑞—that
+is,conditionalon 𝑃beingintheset {𝜌∶𝜌(𝑞) ≥𝑡}—𝜋mustalsobeconfidentof 𝑞 (mustalsobe
+in this set). In our diagrams, such “probability-threshold” sets correspond to those probability
+functionsthatfallononesideofacertainstraight cutthroughthespace.Forexample,thegray
+region on the top left of Figure4 is the set of functions that assign at least2
+3 to{𝑤2}; and the
+blueregiononthetoprightisthesetoffunctionsthatassignatleast 2
+3 to{𝑤2,𝑤3}.A“ cut”isa
+hyperplane—aflatsurfacein 𝑛-dimensionalspace(seebelow).Alltheprobabilityfunctionsthat
+areintheprobability-thresholdsetarethosethatfallabovethishyperplane.
+SimpleTrustsaysthatconditionalontheexpertbeinginthisset,youshouldbeinthisset.Since
+SimpleTrustissymmetric,italsosaysthatconditionalontheexpertbeing outsidethisset(inthe
+non-shadedregion),youshouldbeoutsidethisset.WhatSimpleTrustamountstoisthus: trust
+the expert’s judgment when you learn which side of a probability-threshold cut they’re on.A sc a n
+be seen,𝜋 in the top row of Figure4 satisfies this criterion for the two cuts we displayed: the
+solidarrowsindicatewhere 𝜋moveswhenitconditionson 𝑃beingintheshadedset( 𝑃(𝑞) ≥𝑡);
+thedottedarrowindicateswhereitmoveswhenitconditionson 𝑃 beinginthenon-shadedset
+=== PDF page 11 ===
+Deferencedonebetter 109
+FIGURE 4 Aframeandprobabilityfunction 𝜋displayedwithseveraldifferentcuts. Top:Two
+probability-thresholdsetsgovernedbySimpleTrust.Grayregion(leftfigure)comprises {𝜌∶𝜌(𝑤 2) ≥
+2
+3
+};blue
+region(rightfigure)comprises {𝜌∶𝜌({𝑤 2,𝑤3}) ≥
+2
+3
+}.Solidarrowsrepresentwhere 𝜋moveswhenitconditions
+on𝑃beingintheshadedset;dottedarrowsarewhereitmovewhenitconditionson 𝑃beinginthenon-shaded
+set.Middle:Twoconditional-probability-thresholdsetsgovernedbyTrust.Grayregion(leftfigure)comprises
+{𝜌∶𝜌(𝑤 2|{𝑤1,𝑤2}) ≥1∕4};blueregion(rightfigure)comprises {𝜌∶𝜌(𝑤 3|{𝑤2,𝑤3}) ≥5∕6}.Solidarrowrepresents
+where𝜋moveswhenitconditionson 𝑃beingintheshadedset;dottedarrowrepresentswhereitmoveswhenit
+conditionson 𝑃notbeingintheshadedset. Bottom:AcutgovernedbyTotalTrust. 𝜋doesnottrusttheexpert’s
+judgmentacrossthiscut—conditionalontheexpertbeingtotheleftofthecut, 𝜋staystotheright,whereit
+alreadyis—meaningthatTotalTrustfails
+(𝑃(𝑞)<𝑡 ). For instance, the solid gray arrow in the top left maps𝜋 to𝑤2 (makes𝜋 certain of
+𝑤2)since 𝑤2 istheonlyworld 𝑤suchthat 𝑤(𝑤2) ≥ 2
+3—ascanbeseenbythefactthat 2 isthe
+onlyworldinthegrayregion.NowturnfromSimpleTrusttoTrust.Thisgeneralizationmatters
+becauseitintroducesadditionalcuts.Inoursimplethree-worlddiagrams,thecutsassociatedwith
+probabilitythresholdsareallandonlythosethatareparalleltooneofthesidesofthetriangle.By
+=== PDF page 12 ===
+110 DORSTetal.
+strengtheningSimpleTrusttoTrust,werequirethatyoutrusttheexpert’sjudgmentaboutcertain
+additionalcuts—namelythosecorrespondingto conditionalprobabilitythresholds.Inourthree-
+world diagrams, this adds all the cuts that intersect one of the vertices—see the middle row of
+Figure4fortwoexamples.Thoughitistrickytoverifyinfullgenerality,itturnsoutthat 𝜋trusts
+𝑃’sjudgmentabout allsuchcuts,i.e. 𝜋truststhisframe.
+Turn,finally,toTotalTrust.Thekeyrealizationisthatthereare furthercutsbeyondthosegov-
+erned by Trust: not every cut corresponds to a conditional-probability threshold. In particular,
+consider the purple region in the bottom row of Figure4. This region is bounded by a cut; and
+since this cut separates𝜋 and the𝑖,𝜋 clearly does not trust the expert’s judgment across this
+cut.Afterall, 𝜋isalreadycertainthattheexpertisontheotherside;soconditionalontheexpert
+beingonthatside, 𝜋remainsexactlywhereitis.
+Nowforthebigreveal:thecasewe’vebeendiagrammingisinfactthecasethatweusedabove
+(Fact2.1)toshowthat 𝜋cantrustaframewithoutvaluingit.Sothefactthat 𝜋agreeswith𝑃across
+allofthecutscorrespondingtoprobabilityandconditional-probabilitythresholdsjustisthefact
+that𝜋 trusts this frame. And the purple line separating𝜋 from the frame represents the set of
+probabilityfunctions𝜌suchthat𝔼𝜌(𝑂1)=0 —where𝑂1isasdefinedinthedecisionproblemused
+toshowthat 𝜋doesn’tvaluetheframe,and0isthefixedutilityofthealternativeoption 𝑂0.Sothe
+failureof 𝜋tovaluetheframecorrespondstoitsfailuretotrusttheexpertabouttheseadditional
+cuts;requiring 𝜋totrusttheexpertabout everycutwouldclearlybesufficientforeliminatingthis
+example.32
+There is, in fact, a more general connection between “cuts” and random variables such as
+𝑂1. For acut is a hyperplane, and a hyperplane is specified by a linear equation; so a “cut” is
+aset {𝜌∶𝜌(𝑤 1)𝑥1 +⋯+𝜌(𝑤 𝑛)𝑥𝑛 =𝑡} ,forsome 𝑥1,…,𝑥 𝑛,𝑡∈ℝ .Thetwosidesintowhichthis
+cutseparatesprobability-spacearethesets {𝜌∶𝜌(𝑤 1)𝑥1 +⋯+𝜌(𝑤 𝑛)𝑥𝑛 ≥𝑡}and{𝜌∶𝜌(𝑤 1)𝑥1 +
+⋯+𝜌(𝑤 𝑛)𝑥𝑛 ≤𝑡}.Butnowwecanthinkof 𝑥1,𝑥2,…,𝑥 𝑛 asthevaluesofsomerandomvariable
+𝑋, meaning that a cut is simply a set{𝜌∶𝔼 𝜌(𝑋)=𝑡} for some𝑡 and𝑋, and the two sides are
+{𝜌∶𝔼 𝜌(𝑋) ≥𝑡}and{𝜌∶𝔼 𝜌(𝑋) ≤𝑡}.Therequirementtotrusttheexpert’sjudgmentabout every
+cutisthusexactlytherequirementthat,foreveryrandomvariable 𝑋andthreshold 𝑡,yourexpec-
+tation for𝑋 conditional on the expert’s expectation being greater than𝑡 should also be greater
+than𝑡 (and mutatis mutandisfor smaller than𝑡). That is, it is simply the principle Total Trust.
+ThatiswhyTotalTrustsucceedswhereSimpleTrustandTrustfailed.
+ThiswayofthinkingaboutourTrustprinciplesmaysuggestideasforevenstrongerones.After
+all,whyshouldtheprincipleberestrictedtocuts,i.e.hyperplanes,i.e. flatsurfaces.Wouldn’titbe
+naturaltoalsorequire 𝜋totrusttheexpert’sjudgmentabout bentsurfaces?Ortogofurtheryet
+andsimplyrequirethat,foranycondition 𝐶onprobabilitydistributions, 𝜋shouldagreewiththe
+expertonwhethertoexhibit 𝐶whenitlearnswhethertheexpertdoesso—thatis, 𝜋(⋅| ∈𝐶)∈𝐶
+and𝜋(⋅| ∉𝐶)∉𝐶 ?
+But any such strengthened requirement would be too demanding for reasons quite orthogo-
+naltoanythingarisingfrommodesty.Supposethattherearetwocandidateexpertdistributions,
+𝜌1 and𝜌2, with extreme probabilities: that𝜌1(𝑞)=1 and𝜌2(𝑞)=0 .𝜋 can clearly defer to this
+expertevenif,uponlearningthattheexpert’scredencesareeither 𝜌1 or𝜌2,𝜋assignsaprobabil-
+itybetween0and1to 𝑞—conditionalontheexpertknowingwhether 𝑞,youmaystillbeuncertain
+whether𝑞!(EvenReflectionallowsthis.)Butassigning 𝑞aprobabilitybetween0and1conditional
+on𝑃beingeither 𝜌1 or𝜌2 meansthat 𝜋doesnotagreewiththeexpertonwhethertoexhibitthe
+condition{𝜌∶𝜌(𝑞)=1 or𝜌(𝑞)=0} .Moregenerally,saythataset 𝐶ofprobabilitydistributionsis
+convexifitcontainseverydistributionthatisaweightedaverageofothersitcontains. 33 Itseems
+thatyoucandefertoanexpertbyadoptinganyweightedaverageofthepossibleopinionsofthe
+=== PDF page 13 ===
+Deferencedonebetter 111
+expert.(This,too,isallowedbyReflection.)Soif 𝐶 isnotconvex, 𝜋 candeferto  eventhough
+though𝜋(⋅|𝑃∈𝐶)∉𝐶 .Soatmostitmakessensetorequire 𝜋(⋅| ∈𝐶)∈𝐶 if𝐶isconvex.
+But notice: hyperplanes are theonly divisions that divide probability space into two convex
+sets.34 So if we want a principle that respects the basic shape of Total Trust—requiring you to
+trusttheexpert’sjudgmentoneithersideofadivision—thatprincipleshouldbenostrongerthan
+TotalTrustitself. 35 ThisobservationhelpssituatetherelativestrengthsofReflection,TotalTrust,
+andSimpleTrust.Inparticular,Reflectioncanbeequivalentlystatedusingconvexsets:
+Reflection(convexityversion) : 𝜋(⋅|𝑃∈𝐶)∈𝐶 ,foranyconvex 𝐶.
+LikewiseforTotalTrust.Saythataset 𝐵isbiconvexiffboth 𝐵anditscomplementareconvex.
+Thensinceasetisbiconvexiffitsboundaryisahyperplane(endnote34),TotalTrustisequivalent
+to:
+TotalTrust(convexityversion) :𝜋(⋅|𝑃∈𝐵)∈𝐵 ,forany biconvex𝐵.
+ThisformulationofTotalTrustisperhapsthemostformallyuseful;itallowsustoeasilyshow
+thatTotalTrustimpliesavarietyofotherprinciples.Forinstance,TotalTrustimpliesaseemingly
+moregeneralconditional-expectationversionofouraboveformulation. 36 ThisshowsthatTotal
+TrustimpliesTrust(let 𝑋beanindicatorvariable),whichinturnshowsthatTotalTrustimplies
+NewReflection.37 Likewise,TotalTrustimpliesthatconditionalontheexpert’s averagecredence
+acrossasetofpropositions {𝑞𝑖}beingatleast 𝑡,youraveragecredenceshouldalsobeatleast 𝑡.38
+Finally,thisconvexityformulationallowsusseewhySimpleTrustremainsanaturalcompo-
+nent of Total Trust. Suppose we restrict ourselves toproposition-level formulations of such def-
+erenceprinciples—thatis,onesthatuseonlyconditionson 𝑃 thatcanbestatedintermsofthe
+expert’sopinion aboutasingleproposition 𝑞.T hes etofconvexproposition-level conditionsare
+thoseoftheform 𝑃∈{𝜌∶𝜌(𝑞)∈[𝑙,ℎ]} ,i.e.thosethatsaythattheexpert’scredenceinagiven 𝑞
+iswithinagivenrange [𝑙,ℎ].Thisleadstoaproposition-levelformulationthatisonlyveryslightly
+weakerthanReflectionasformulatedabove: 𝜋(𝑞|𝑃(𝑞)∈[𝑙,ℎ])∈[𝑙,ℎ] (seeGallow 2017).Mean-
+while, the set ofbiconvex proposition-level conditions are those of the form𝑃∈{𝜌∶𝜌(𝑞) ≥𝑡},
+i.e.thosethatsaytheexpert’scredenceinagiven 𝑞isaboveagiventhreshold 𝑡.Thatis,restrict-
+ing Total Trust to proposition-level conditions gives us exactly Simple Trust:𝜋(𝑞|𝑃(𝑞) ≥𝑡) ≥𝑡.
+ThusSimpleTrustisthestrongestcomponentofTotalTrust(i.e.Value)thatwecanformulateif
+werestrictourselvestodeferenceprinciplesbuiltaroundsinglepropositions.Thatrestrictionis
+whereSimpleTrustwentwrong.
+A similar lesson applies to New Reflection. If we restrict ourselves to learning about thefull
+distribution of𝑃—i.e. propositions of the form[𝑃=𝜌] —then New Reflection is the strongest
+thingwecansay.Moreprecisely,NewReflectionisthestrongestprinciplethatfollowsfromTotal
+Trust(i.e.Value)oftheform 𝜋(⋅|𝑃=𝜌)∈𝐶 ,forsome 𝐶.
+Theobviouslessonfromthesetwoinstancesisthatthe formofpotentialdeferenceprinciples
+wecountenancecaneasilyimposeproblematicrestrictionsinoursearchforthecorrectone.Itis
+onlywhenarangeofdifferentformscoincide—astheydowithValue,thevariousformulations
+of Total Trust, and several other formulations we’ll see below—that we can have confidence in
+theprincipleweendupwith.
+=== PDF page 14 ===
+112 DORSTetal.
+3 THEVALUEOFACCURACY
+We’ve now shown that Total Trust captures the pragmatic version of Value we’ve been focus-
+ingon:theprinciplethat,nomatterwhatdecisionyouface,youshouldalwaysprefertoletthe
+expert decide for you rather than decide yourself. But there is also anepistemic version of this
+constraint—namely,thatyoushouldalwaysexpecttheexpertto bemoreaccurate thanyouare.
+Inotherwords,ifallyoucareaboutisgettingtothetruth,youshouldprefertohavetheexpert’s
+credences,ratherthanyourown:
+EpistemicValue(rough) :Alwaysexpecttheexpert’sopinionstobemoreaccuratethanyour
+own,underanyreasonablewayofmeasuringaccuracy.
+It’s straightforward to see that Value entails Epistemic Value. After all, here’s a decision-
+problem:adoptacredencefunction,andreceiveutilityinproportiontoitsaccuracy.Standardly,
+every candidate for the expert (every probability function) must expect itself to be more accu-
+ratethananyparticularalternativecandidate—thisisthe strictpropriety constraintonaccuracy
+measuresrequiredforvirtuallyallthemajorresultsintheliterature. 39 Thisentailsthattherec-
+ommendedstrategy 𝑆insuchadecisionproblemisalwayssimplytoadopttheexpert’scredences,
+whatevertheyare.SinceValueentailsthatthisstrategyhashigherexpectedutilitythansimply
+stickingwithyourcredencefunction,itentailsthatyouexpecttheexperttobemoreaccuratethan
+you.40
+The converse, however, is not straightforward: why should expecting the expert to be more
+accuratethanyou(havepreferablecredencesfor onetypeofdecision—namely,whatopinionsto
+have)necessarilymeanthatyouprefertousetheiropinionsfor allpossibledecisions?Anatural
+firstthoughtisthatthe reasonyouprefertousetheexpert’sopinionstomakedecisionsisthatyou
+expect themto be more accurate than yours. But,as we’ll see,it turnsout that the tenability of
+thisthoughtdependsheavilyonhowwidetherangeofreasonablewaysofmeasuringaccuracyis.
+Inparticular,therecentworkofLevinstein( 2019)canbemarshaledtoshowbothaclosecon-
+nectionbutalsoapotentialdivergencebetweenValueandEpistemicValue.Thereisalargelit-
+eraturedevotedtomeasuresofaccuracy(‘scoringrules’)andtheconstraintstheycanbeusedto
+imposeonrationalopinions. 41 Byfillingin‘anyreasonablewayofmeasuringaccuracy’inEpis-
+temicValuewiththestandardclassofscoringrulesusedinthisliterature,Levinstein( 2019)shows
+thatthisversionofEpistemicValueisequivalentto SimpleTrust.
+SincewenowknowthatSimpleTrustissubstantiallyweakerthanValue,thisraisesthepos-
+sibilitythatEpistemicValueandValuemightcomeapart.Butaswe’llshow,weneednotaccept
+that conclusion. The results of Campbell-Moore (2020) suggests that we can broaden our view
+ofwhatcountsasa‘reasonablewayofmeasuringaccuracy’bybroadeningwhat sortofstatewe
+canmeasuretheaccuracyof:insteadofjustmeasuringtheaccuracyofcredencesinpropositions,
+we can measure the accuracy of estimates of random variables. Once we broaden our view in
+thisway,we’llshowthatEpistemicValuedoesindeedturnouttobeequivalenttoValue.(Those
+uninterestedinthedetailscanskipto§ 3.1.)
+First,weneedtogetclearonwhatLevinstein( 2019)shows.Let 𝐼𝑞 bealocal inaccuracymeasure
+foragivenproposition 𝑞:ittakesaprobabilityfunction, 𝛿,andtruth-valueof 𝑞,𝟙𝑞 andoutputsa
+non-negativerealnumbermeasuringthedivergencebetweentheprobabilityandthetruthof 𝑞—
+i.e.howinaccurate 𝛿isabout 𝑞.𝐼𝑞(𝛿)canthenbetreatedasarandomvariable—‘theinaccuracy
+of𝛿 about𝑞, whatever it is.’ Say that𝐼𝑞 is truth-directed iff being closer to the truth-value of𝑞
+=== PDF page 15 ===
+Deferencedonebetter 113
+makes a probability function more accurate (less inaccurate).42 Say that𝐼𝑞 is strictly properiff
+everyprobabilityfunctionexpectsitselftobemoreaccuratethananyother(rigidlydesignated)
+probabilityfunction.43
+Nowlet𝐼bea globalinaccuracymeasurewhichtakesaprobabilityfunction 𝛿andaworld 𝑤and
+outputsitsoverallinaccuracyat 𝑤.Say 𝐼isadditiveiffitisasumoflocalinaccuracymeasures. 44
+Saythatanadditive 𝐼istruth-directedandstrictlyproperiffallitscomponentlocalscoringrules
+aretruth-directedandstrictlyproper.Thefavoredclassofscoringruleswithintheepistemicutil-
+ityliteratureistheclassofadditive,truth-directed,strictlyproperscoringrules(Preddetal. 2009;
+Pettigrew2016;Levinstein 2017a;Campbell-MooreandLevinstein 2020).Sosupposeweassume
+thattheseareallandonlythereasonablewaysofmeasuringaccuracy;thenEpistemicValuecor-
+respondstoSimpleTrust.
+Noticethat 𝐼(𝑃)and𝐼𝑞(𝑃)canbetreatedasrandomvariablesfor‘theinaccuracyoftheexpert’s
+opinions, whatever they are’:𝐼𝑞(𝑃)(𝑤)=𝐼 𝑞(𝑤,𝑤), etc. Now fixing some particular𝑞, say that
+𝜋simplytrusts 𝑃withrespectto 𝑞 iffforall 𝑡:𝜋(𝑞|𝑃(𝑞) ≥𝑡) ≥𝑡 and𝜋(𝑞|𝑃(𝑞) ≤𝑡) ≤𝑡.Thenwe
+have:
+Theorem3.1 (Levinstein2019). 𝜋simplytrusts 𝑃withrespectto 𝑞iffforeverycontinuous, 45 truth-
+directed, strictly proper local scoring rule𝐼𝑞, 𝔼𝜋(𝐼𝑞(𝑃)) ≤𝔼𝜋(𝐼𝑞(𝜋)), with equality if and only if
+𝜋(𝑃(𝑞)=𝜋(𝑞))=1 .
+Acorollaryisthat 𝜋 simplytrusts 𝑃 (forallpropositions)ifandonlyifforeverycontinuous,
+truth-directed,strictlyproper,andadditive globalscoringrule 𝐼,𝔼𝜋(𝐼(𝑃)) ≤𝔼𝜋(𝐼(𝜋)).
+Whattomakeofthisresult?Ifthisisthecorrectclassof‘reasonablewaysofmeasuringaccu-
+racy’,then—sinceSimpleTrustisstrictlyweakerthanTotalTrust—itfollowsthatEpistemicValue
+isstrictlyweakerthanValue.
+Butanalternativereadingispossible:theresultmaysuggestthatthestandardwayofthinking
+aboutscoringrulesisoverlynarrow;theydo notcaptureeveryreasonablewayofmeasuringaccu-
+racy.Toseewhy,returntotheexampleusedinFact 2.1andthebottomrowofFigure 4.Aswe’ve
+seen,inthatexample 𝜋trusts𝑃,andthereforeexpects 𝑃tobemoreaccuratethanitselfonallof
+thewaysofmeasuringaccuracythatTheorem 3.1countenances.Yetthereisanissueonwhich,
+it seems,𝜋 may sensiblynot expect𝑃 to be more accurate than itself on—namely, the value of
+the random variable𝑂1.𝜋 estimates𝑂1 to have a value of−0.26, while every candidate expert
+functionestimatesittohaveavalueofatleast0.3—thiswaswhywewereabletoseparate 𝜋from
+theframeusingthepurplecutinthebottomrowofFigure 4.
+Visually,there’sanintuitivesenseinwhich 𝜋couldexpectitselftobemoreaccurateabout 𝑂1
+thantheexpert—namely,it’sonthecorrectsideofthelinedividingthepurplefromwhiteregion.
+Forexample,supposewemeasureaccuracythisway:tohaveanaccurateestimateof 𝑂1,itmatters
+alotwhetheryourestimateisonthecorrectsideof0,butverylittlehowcloseitisbeyondthat.
+Onthatwayofmeasuringaccuracyofestimates, 𝜋willexpectitselftobemoreaccurateabout 𝑂1
+thantheexpert. 46
+This suggests that we should follow the work of Campbell-Moore (2020) and consider scor-
+ing rules that apply to arbitrary estimates—not just to estimates of indicator random variables,
+i.e. probabilities of propositions. If we do so, we’ll find that Value and Epistemic value will
+alignexactly.
+Precisely,letan estimate-inaccuracymeasure forarandomvariable 𝑋takeaestimate 𝑒∈ℝ ,
+aw o r l d𝑤, and output the inaccuracy of𝑒 at𝑤, denoted𝐼𝑋(𝑒,𝑤). Writing𝐼𝑋(𝜋) to abbreviate
+𝐼𝑋(𝔼𝜋(𝑋)),saythat 𝐼𝑋 isgenerallystrictlyproper(gsp) iffanyprobabilityfunctionexpectsits
+=== PDF page 16 ===
+114 DORSTetal.
+ownestimateof 𝑋tobemoreaccuratethananyother(rigidlydesignated)estimate. 47Fortractabil-
+ity,assume 𝐼𝑋 isabsolutelycontinuousinitsfirstargument.
+Inarecentpaper,Campbell-Moore( 2020)hasshownthatSchervish’s( 1989)well-knownchar-
+acterization of strictly proper local inaccuracy measures can be generalized to characterize gsp
+estimate-inaccuracy measures as well. Using this more general characterization, we can show
+that our pragmatic version of valuedoes coincide with a version of Epistemic Value—namely,
+the version we get if we say that the class of ‘reasonable ways of measuring (in)accuracy’ cor-
+respond exactly to the generally strictly properestimate-scoring rules. In fact, we can show an
+eventighterconnectionthanthat—onethatoutstripsin bothdirectionstheargumentthatValue
+impliesEpistemicValuefromabove.Forwecanshowthattotallytrustinganexpert withrespect
+toagivenvariable 𝑋isequivalenttoexpectingtheirestimateof 𝑋tobemoreaccuratethanyour
+ownunderanwayofmeasuringtheaccuracyofsuchanestimate.
+Precisely,let 𝐼𝑋(𝑃) betheinaccuracyoftheexpert’sestimatefor 𝑋,whateveritis: 𝐼𝑋(𝑃,𝑤)=
+𝐼𝑋(𝔼𝑤(𝑋),𝑤). Say that𝜋 epistemically valuesthe 𝑃 with respect to𝑋 iff it expects𝑃’s esti-
+mateof 𝑋tobemoreaccuratethanitsown,onany(generallystrictlyproper)wayofmeasuring
+accuracy.48 And say that𝜋 totally trusts𝑃 withrespectto 𝑋 iff for all𝑡:𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡) ≥𝑡 and
+𝔼𝜋(𝑋|𝔼(𝑋) ≤𝑡) ≤𝑡.Then:
+Theorem3.2. 𝜋totallytrusts 𝑃withrespectto 𝑋iff𝜋epistemicallyvalues 𝑃withrespectto 𝑋.49
+ProofSketch. (⇒):Let 𝔼𝜋(𝑋)=𝑒 .GivenTotalTrust,weshow:
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋)>𝑒)<𝔼 𝜋(𝐼𝑋(𝑒) |𝔼(𝑋)>𝑒) (1)
+Thissufficesfortheproofsinceasymmetricargumentshows:
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋)<𝑒)<𝔼 𝜋(𝐼𝑋(𝑒) |𝔼(𝑋)<𝑒) (2)
+Jointlyequations( 1)and( 2)entailthisdirectionofthetheorem.
+Toproveequation( 1):Let 𝑤1,…,𝑤 𝑝 betheworldswhereforeach 𝑖,𝔼𝑖(𝑋)>𝑒 .Withoutlossof
+generality,assumethatforeach 𝑖<𝑝 ,𝔼𝑖(𝑋)>𝔼 𝑖+1(𝑋).Wethenprovebyinductionforall 𝑘with
+1 ≤𝑘 ≤𝑝andforany 𝑠<𝔼 𝑘(𝑋):
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼𝑘(𝑋))<𝔼 𝜋(𝐼𝑋(𝑠) |𝔼(𝑋) ≥𝔼𝑘(𝑋))
+(⇐):Supposethat 𝔼𝜋(𝑋 |𝔼(𝑋) ≥𝑡)<𝑡 forsome 𝑡.(Thecasewhere 𝔼𝜋(𝑋 |𝔼(𝑋)<𝑡) ≥𝑡 canbe
+treatedsimilarly.)Thenthereissomeregion (𝛼,𝛽) whereforall 𝑡∈(𝛼,𝛽) ,𝔼𝜋(𝑋 |𝔼(𝑋) ≥𝑡)<𝑡 .In
+AppendixB.3.1,weshowhowtomakeagspthatpaysspecialattention (𝛼,𝛽).Itisthenrelatively
+straightforwardtoshowthat 𝔼𝜋(𝐼𝑋(𝑒))<𝔼 𝜋(𝐼𝑋(𝑃))forthisrule. □
+ItfollowsimmediatelyfromTheorems 2.2and3.2thatValueisequivalenttoEpistemicValue—
+at least, it is if we understand the ‘reasonable ways of measuring accuracy’ as the set ofallgsp
+estimate-inaccuracymeasures:
+Epistemic Value: For any𝑋 and gsp𝐼𝑋,𝔼𝜋(𝐼𝑋(𝑃)) ≤𝔼𝜋(𝐼𝑋(𝜋)) with equality if and only if
+𝜋(𝔼(𝑋)=𝔼 𝜋(𝑋))=1 .
+Alwaysexpecttheexpert’sestimatestobemoreaccuratethanyourown.
+=== PDF page 17 ===
+Deferencedonebetter 115
+As with Theorem3.1, this result immediately generalizes to additive, “global” estimate-
+inaccuracy which measure the inaccuracy of a given probability function by a sum of the inac-
+curaciesofitsvariousestimates.
+3.1 Upshots
+By Theorem3.2, you expect an expert’s estimate of a particular quantity𝑋 to be more accurate
+thanyourownoneveryreasonablewayofmeasuringaccuracyiffyoutotallytrusttheirestimate
+of that quantity. This result carries with it some philosophical subtleties, so let’s pause to take
+alook.
+Firstsubtlety:recallthatmanypotentialexpertsareonly localexperts—youshouldonlytrust
+themonarestrictedrangeofquestions(Introduction).UnlikeTheorems 2.2and4.1,Theorem 3.2
+is alocalequivalence result. Fix some particular quantity𝑋—say, the number of inches of rain
+we’llhavenextweek.Andfixonsomepotentialexpert—say,theweatherforecaster.Theresult
+saysthatyoutotallytrusttheforecaster abouthowmuchrainwe’llhave iffyouexpecttheirestimate
+tobemoreaccuratethanyourownoneveryreasonablewayofmeasuringitsaccuracy.Thisholds
+even if you don’t totally trust them on other questions (like what to do with the now-far-too-
+old bananas). This is significant because it shows that the connection between Total Trust and
+EpistemicValueisaverytightone.Inparticular,theconnectionisnotrestrictedtomodestexperts.
+As we’ll discuss below (§5), you can totally trust animmodest expert with respect to a certain
+question(orwithrespecttocertainquantities)evenwithoutreflectingthemwithrespecttothat
+question.ByTheorem 3.2,youwillthenlikewiseexpectthemtobemoreaccuratethanyouwith
+respecttothatquestion.Thusthistheoremshowsthatevenwhenitcomestoimmodestexperts,
+TotalTrustcarvesoutaformallyandphilosophicallynaturalnotionofdeferencethatisweaker
+thanReflection.
+Second subtlety: note that the biconditional connecting Total Trust to Epistemic Value goes
+throughonlyonaverypermissiveaccountofthereasonablewaysofmeasuringaccuracy.Ifthere
+aremoreconstraintsonreasonablewaysofmeasuringaccuracybeyondthembeinggspestimate-
+inaccuracy measures, then we would lose the right-to-left direction of the proof, and Epistemic
+ValuemightnotentailValue.Yetsomehavearguedthatthere arefurtherconstraints—forexam-
+ple, that the Brier score (squared Euclidean distance) is the uniquely reasonable scoring rule
+(Joyce2009;Pettigrew 2015,2016).Whatshouldwemakeofthisdiscrepancy?
+Onepossibilityistoendorseaformofsubjectivismaboutmeasuringaccuracy:individualshave
+completelatitude(amongstthegspestimate-inaccuracymeasures)tochoosehowtheyaregoing
+tovalueaccuracy.TheproperformulationofEpistemicValueshouldthenguaranteethatifthey
+defertoanexpert,then howevertheydecidetomeasureaccuracy,theywillexpecttheexperttobe
+more accurate than their own credence function. A second reaction would be a form of objec-
+tivism, combined with an epistemic-robustness constraint: although there is a uniquely ratio-
+nalwayofmeasuringaccuracy,reasonablepeoplecanbeuncertainwhatitis(amongstthegsp
+estimate-inaccuracymeasures).TheproperformulationofEpistemicValueshouldthenguaran-
+teethatnomatterhowthisuncertaintyisdistributed,iftheydefertoanexpertthenthey’llexpect
+themtobemoreaccuratethantheirowncredencefunction.Afinaloptionisaformofsupervalua-
+tionism:it’sindeterminate(amongstthegspestimate-inaccuracymeasures)whatthecorrectway
+ofmeasuringaccuracyis,butifyoudefertoanexpertthenit’sdeterminatelytruethatyouexpect
+themtobemoreaccuratethanyou—therefore,theymustbemoreaccurateonallsuchmeasures.
+=== PDF page 18 ===
+116 DORSTetal.
+Weareneutralbetweenthesethreeapproaches.ButwedothinkthatTheorem 3.2lendssome
+supporttoareadingalongoneoftheselines—i.e.toapluralisticapproachtoaccuracy-measures.
+Foritturnsoutthattheuniversalquantificationoveraccuracymeasuresisextremelyimportant
+intheaboveargument:merelyrequiringthat 𝜋expects𝑃tobemoreaccuratethanitself according
+to(say)thepropositionalBrierscore ,doesnotentailanyinterestingdeferenceprinciple—noteven
+Simple Trust or New Reflection.50 Interestingly, requiring𝜋 to expectall of𝑃’s estimates to be
+moreaccuratethanitsownasmeasuredbysquaredEuclideandistance mayentailNewReflection
+(we’vebeenunabletofindacounterexample).ButNewReflectiondoesnotentailthisconstraint,
+andtheconstraintstilldoesnotentailevenSimpleTrust. 51
+Thusinsofarasthere’sreasontowantatightconnectionbetweendeferenceandexpectedaccu-
+racy,there’sreasontobepluralistabouttheacceptablewaysofmeasuringaccuracy.And,wethink,
+thereissuchreason:afterall,it’sintuitivetothinkthatwhenyouvalueanexpert,the explanation
+forwhyyouprefertousetheiropinionstomakedecisionsisthatyouexpecttheiropinionstobe
+moreaccuratethanyourown.Aswe’veseen,thisintuitioniscorrectiffthereasonablewaysto
+measureaccuracycorrespondtothesetofgspestimate-inaccuracymeasures.
+4 THEGEOMETRYOFDESERVEDDEFERENCE
+Sofarwe’veshownhowtogeneralizeTrusttoarriveatadeferenceprinciple—TotalTrust—that
+canbestatedasaconstraintontherelationshipbetweenyouropinionsandtheexpert’s,andwhich
+characterizeswhatittakestovalueanexpert’sopinionsforthesakeofmakinggooddecisionsor
+accurateestimates.Butthisdoesn’tyettellusexactlywhatconstraintsthevariouscandidatesfor
+theexpertmustmeetinordertodeserve 𝜋’sdeference.Inparticular,we’dlikeacharacterization
+of these constraints along with the relationship𝜋 must bear to them such that, if we are given
+a probability function and a frame, we can (efficiently) check whether the function values that
+frame.(Compare:inepistemiclogic,wedon’tsimplywanttoknowwhichaxiomsareequivalent
+theKKprinciplethat 𝐾𝑞→𝐾𝐾𝑞 ;wealsowanttoknowthataframevalidatesthisprincipleiff
+it is transitive.) This section will give such a characterization, revealing another way in which
+TotalTrustisanaturalmiddlegroundbetweenReflectionandNewReflection.(Thiswillrequire
+attentiontosometechnicalities;ifyouarejusthereforthephilosophy,youmayprefertoskipto
+§5.)
+The characterization begins, once more, by looking at pictures. Compare frames𝐹1 and𝐹2,
+described and pictured in the first two rows of Figure5. The two frames look very similar: in
+both,each 𝑖 ismoreconfidentof 𝑤𝑖 thanoftheotherworlds;inboth 2 thinks𝑤1 ismorelikely
+than𝑤3;inthesecond,itjustdoessotoaslightlygreaterextent.Butwhilethereareprobability
+distributionsthattotallytrustthefirstframe(forexample,theuniformdistribution 𝜋=( 1
+3,1
+3,1
+3),
+oranyotherdistributioninthetriangledelineatedbythe 𝑖),therearenoprobabilitydistributions
+thattotallytrustthesecond.Whythedifference?
+Noticethatin 𝐹2 wecanseparate 2 fromtherestoftheframeusingacutthatdoesnotinclude
+𝑤2 (rightsideofsecondpicture-rowofFigure 5).Asaresult,conditionalontheexpertbeingto
+theleftofthiscut, 𝜋movesdirectlyto 𝑤2,anddoes nottrusttheexpertonthiscut. 52 Incontrast,
+wecannotdothesamein 𝐹1:anycutthatisshallowenoughtoincludeonly 2 willalsoinclude
+𝑤2,s o𝜋 will map to𝑤2 and trust𝑃 across about this cut (middle picture row of Figure5;g r a y
+regionandsolidarrowontheleft);andanycutsteepenoughtoexclude 𝑤2 willinclude 1,and
+=== PDF page 19 ===
+Deferencedonebetter 117
+FIGURE 5 Twoframes. 𝜋=(
+1
+3
+,
+1
+3
+,
+1
+3
+)values𝐹1 (leftcolumn)butnot 𝐹2 (rightcolumn). Top:Theframesare
+thesameexceptthatin 𝐹2, 2 isslightlyfurtherweightedtowards 𝑤1 over𝑤3.Middle:In 𝐹2 wecanuseacutto
+separate 2 fromitsworld( 𝑤2)andtheother 𝑖 (right);in 𝐹1 wecannot(left):anycutshallowenoughtoexclude
+1 (grayregion)willinclude 𝑤2,sowillmap 𝜋to𝑤2 (solidarrow);anycutsteepenoughtoinclude 1 (hatched
+region)willincludethe (
+1
+2
+,
+1
+2
+,0) pointitmaps 𝜋to(dottedarrow). Bottom:Shadedtrianglesrepresenttheconvex
+hullsof {ˆ1, 2, 3}(red/left),{1,ˆ2, 3}(gray/top),{1, 2,ˆ3}(blue/right).Notethatin 𝐹1, 2 fallswithinthe
+grayhull,whilein 𝐹2 itdoesnot.
+somap 𝜋totheleftsideofthetriangle,againtrustingtheexpertaboutthecut(orangehatched
+regionanddashedarrow).
+What makes for the difference? The answer is easy to visualize. First, recall thatˆ𝑤 ∶=
+𝑤(⋅|𝑃= 𝑤) is the expert’sinformed opinions—those they’d have upon learning that they are
+theexpert(§1).Sincein 𝐹1 and𝐹2 each 𝑤 isunique,thismeansthat ˆ𝑤 iscertainit’sat 𝑤,so
+isrepresentedbytheextremepointinthetrianglethat’scertainit’sat 𝑤: ˆ1 isatthebottomleft
+=== PDF page 20 ===
+118 DORSTetal.
+corner,ˆ2 isthetopcorner,etc.Nownoticethedifferingrelationshipbetweenthe 𝑖 andthe ˆ𝑖 in
+𝐹1 and𝐹2.The convexhull ofasetofpoints 𝜌1,…,𝜌 𝑛 isthesmallestconvexsetcontainingthem
+all, i.e. the set of points obtainable by averaging them.53 On the bottom picture-row of Figure5
+we’veplottedtheconvexhulls(shadedtriangles)of {ˆ1, 2, 3}(red/left),{1,ˆ2, 3}(gray/top),
+and{1, 2,ˆ3}(blue/right).Oncewedoso,thedifferencebetwen 𝐹1 and𝐹2 jumpsout:inthe
+former, 2 fallsinsidesthegrayconvexhullof {1,ˆ2, 3},whileinthelatteritdoesnot. Thisis
+whatallowedustoseparate 2 fromtherestoftheframeand 𝑤2,generatingaValuefailurefor
+𝐹2.
+Italsopointsustoacharacterization.Saythatacandidate 𝑖 ismodestlyinformed ifftheir
+opinionsareanaverageoftheirowninformedopinions ˆ𝑖 alongwiththe(uninformed)opinions
+𝑗 of the other candidates they think might be an expert.54 This is the key constraint.𝜋 totally
+trusts(i.e.values)aframeiffallthecandidatesfortheexpertaremodestlyinformed,and 𝜋isan
+averageofthem:
+Theorem4.1. 𝜋totallytrusts ⟨𝑊, ⟩iffeach 𝑖 ∈𝐶𝜋 ismodestlyinformedand 𝜋isintheircon-
+vexhull.
+ProofSketch. (⇒∶)If𝜋isnotintheconvexhullofthe 𝑖,wecanseparateitfromthemusinga
+cutaswedidinthebottomrowofFigure 4,inwhichcaseTotalTrustfails.Andifoneofthe 𝑖
+isnotmodestlyinformed,wecanuseacuttoseparateitfromitsworldsandtheother 𝑗 likewe
+didinthebottomofFigure 5,leadingtoaTotalTrustfailure.
+(⇐∶) If Total Trust fails, then Value fails, so𝔼𝜋(𝑂−𝑆)>0 for some,𝑂∈ , and recom-
+mended𝑆. There must be some extreme point𝑖 in the frame that maximizes this divergence.
+The trouble is, if𝑖 is modestly informed then𝔼𝑖(𝑂−𝑆) is an average ofˆ𝔼𝑖(𝑂−𝑆) (which is
+0, since𝑂 maximizes𝔼𝑖 and so𝑆𝑖 =𝑂) and the other𝔼𝑗(𝑂−𝑆) (which are less extreme than
+𝔼𝑖(𝑂−𝑆) ).Thiscontradictstheassumptionthat 𝑖 isanextremepoint,soitmustnotbemod-
+estlyinformed. □
+Howshouldweunderstandthisresult—and,inparticular,theconstraintthateachcandidate
+bemodestlyinformed?
+First,togetsomeintuitionfortheconstraint,considerwhatitamountstoinonestandardcase
+ofhigher-orderevidence:youandsomepeersdosomereasoningandeachcometohaveacertain
+“hunch”; but then you realize your hunches differ, conclude that you might not have reasoned
+properly, and so adjust your opinions to take account of your higher-order doubts. For each𝑖,
+we can think of the informed opinionˆ𝑖 as the “hunch” of the person who reasoned properly
+at world𝑖55—after all, they’re the opinions that person would have if they had no higher-order
+doubtsabouttheirreasoning.Meanwhile, 𝑖 representsthe“all-doubts-considered”opinionsof
+the person who reasoned properly at world𝑖—those which that person has once they’ve taken
+theirhigher-orderdoubtsintoconsideration.Torequiretherationalperson’s(all-doubtsconsid-
+ered) opinions to be modestly informed is thus to insist that they are some kind of average of
+thehunchofthewell-reasoningindividual, ˆ𝑖,andtheall-doubts-consideredopinionsofthose
+whoreasonedpoorly.Itthuspermitsbothanextreme“rightreasons”response(whichmaintains
+that the all-doubts considered opinions of the well-reasoning individual should simply be their
+hunch;Titelbaum 2015)andanextreme“conciliationist”response(whichmaintainsthatevery-
+one’sall-doubts-consideredopinionsshouldcoincide;Elga 2007),andeverythingthatfallsstrictly
+betweenthese.
+=== PDF page 21 ===
+Deferencedonebetter 119
+FIGURE 6 Projectiononto2Dofasetofpointsillustratingwhyeach 𝑖 can’tstablybeaanontrivial
+averageofitselfand 𝐶−
+𝑖 unlessitisanaverageof 𝐶−
+𝑖 .Left:Orangeregionisconvexhullof 𝐶−
+1 ;since 1 falls
+outsideit,itismoreextremethan 𝐶−
+1 ;thusaveraging 1 withthispullsittowardstheothers.(Incontrast,thered
+dottedlinedelineatestheconvexhullof {ˆ1}∪𝐶 −
+1 ,meaningthat 1 canstablybeanaverageofthese
+points—i.e.itcanstablybemodestlyinformed.) Right:Theprocessiteratesasnewextremepointsarepulled
+towardstheothers,illustratingwhyReflectionmakesmodestyunstable
+Now let’s turn to seeing how the modestly-informed constraint relates to those imposed by
+ReflectionandNewReflection.Ahelpfulwaytodosoistofocusonwhatourvariousprinciples
+require of the expert candidates, assuming that they all defer to the expert.56 Say that a frame
+validatesadeferenceprinciple Φiffevery 𝑖 intheframedeferstoit Φ-wise.Reflectionthenis
+equivalenttotherequirementthateach 𝑖 iseitherimmodestoranaverageoftheothercandidates
+itleavesopen:
+Fact4.2. ⟨𝑊, ⟩validatesReflectioniffforeach 𝑖∈𝑊 :either 𝑖 isimmodestor 𝑖 isintheconvex
+hullof 𝐶−
+𝑖 .57
+Whyisthistrue?Inparticular,whydoesReflectionrequirethatif 𝑖 ismodest,then 𝑖 isan
+average of theothercandidates, excluding itself? Reflection immediately implies that𝑖 can be
+written as an average of itself along with the other candidates,𝐶−
+𝑖 .58 Moreover, if𝑖 is modest,
+then 𝑖(𝑃= 𝑗)>0 forsome 𝑗 ∈𝐶−
+𝑖 ;sothenthisaverageisnontrivialinthesensethatitgives
+atleastsomeweighttotheothercandidates 𝐶−
+𝑖 .Now,inorderforapointtofalloutsidetheconvex
+hulloftheothercandidates,itmustbemoreextremethanoftheminsomedirection(Figure 6).
+It’stheneasytoseethatanynontrivialaverageofsuchapointandtheothercandidateswouldbe
+lessextremethanthepointitself.(If 𝑥>𝑦 1,…,𝑦 𝑛,thenanyaverageof 𝑥withthe 𝑦𝑖 willbeless
+than𝑥.)Since 𝑖 issuchanontrivialaverage,andcan’tbelessextremethanitself,itfollowsthat
+𝑖 mustalreadybeintheconvexhulloftheothercandidates 𝐶−
+𝑖 .
+Moreover,itisthisfeaturewhichmakesReflectionincompatiblewithmodestexperts.Forcon-
+siderthesetofallthecandidateexperts.Bythereasoningabove,noneofitsextremepointscanbe
+modest.Soallofitsextremepointsareimmodest,andthusassignprobability0toanycandidate
+otherthanthemselves.Inparticular,theyallassignprobability0toeverymodestcandidate.And
+sinceanyothercandidatemustbeintheirconvexhull(otherwise itwouldbeanextremepoint),
+itfollowsthatanyothercandidatealsoassignsprobability0toeverymodestcandidate;somodest
+candidatesmightaswellnotbeincludedintheframe.Theproblem,inessence,isthatReflection
+=== PDF page 22 ===
+120 DORSTetal.
+requires 𝑖 tobeanaverageof itselfandtheothercandidatesitleavesopen;butapoint 𝑖 can’t
+beusedtoanchor itselfoutsideofthehulloftheothercandidatesitgivesweightto.
+NewReflectionsolvesthisproblembyhavingeach 𝑖 beanaverageofa differentsetofpoints—
+theinformed ˆ𝑗—ratherthanthe 𝑗 themselves:
+Fact4.3. ⟨𝑊, ⟩validatesNewReflectioniffforeach 𝑖∈𝑊 : 𝑖 isintheconvexhullof {ˆ𝑗 ∶ 𝑗 ∈
+𝐶𝑖}.59
+Thisdoessolvetheinstabilityproblemjustidentified—butnoticethatitwalksbackmuchfur-
+therfromReflectionthanisneededtodoso.Itreplaces everypoint 𝑗 thatReflectiontold 𝑖 to
+bepulledtowardswithitsinformedversion, ˆ𝑗.ButthereasonReflectionwasunstablewasnot
+becauseeachcandidate 𝑖 waspulledtowardstheothers 𝑗—itwasthat 𝑖 hadnothingdistinct
+fromitselftopullbackwith .Thuswedidn’tneedtoreplace allthe 𝑗 withtheirinformedselves;
+itsufficestoreplace 𝑖 withitsinformedself ˆ𝑖 tomakeitsothat 𝑖 canstablygiveweighttothe
+othercandidateswithoutbeingpulledintotheirconvexhull.Toseethis,noticethatinFigure 6,
+1 isintheconvexhullof ˆ1 (leftcornerofthetriangle)withtheotherpoints,asdelineatedby
+thereddottedline.Thisisjusttosaythat 𝑖 isintheconvexhullof ˆ1 and𝐶−
+1 —i.e.thatitisstably
+bothmodestandmodestlyinformed.
+Thustheconstraintthat 𝑖 bemodestlyinformedcombinestheinsightsofbothReflectionand
+New Reflection. From Reflection, it takes the idea that𝑖 should be pulled towards the unin-
+formed opinions of the other candidates𝑗 ∈𝐶−
+𝑖 it leaves open. From New Reflection, it takes
+theideathatinordertodosostably, 𝑖 mustpullbackwithsomeanchorpointotherthanitself—
+inparticular,withits informedselfˆ𝑖—which,sinceit’snotsensitivetohigher-orderdoubts,can
+stablypullback.
+Nevertheless,wemaywonderwhyithastobe 𝑖’sinformedself( ˆ𝑖)inparticularthatserves
+astheanchor,asopposedtosomeotherpointmoreextremethan 𝐶−
+𝑖 .Toseewhythisisso,con-
+sideronefinalwaytoreachtheconstraintthat 𝑖 bemodestlyinformed.Inparticular,noticethat
+Fact4.2entailsthatthere’sanotherformulationoftherequirementsofReflection—namely,that
+𝑖 mustbeanaverageofitsinformedselfandthe(uninformed)opinionsoftheothercandidates,
+where the weights in this average are extreme. That is, where𝜆𝑖𝑗 ≥0are non-negative weights
+thatsumto1,wehave:
+Corollary4.4. ⟨𝑊, ⟩validatesReflectioniffforeach 𝑖∈𝑊 : 𝑖 ismodestlyinformedwithextreme
+weights,i.e. 𝑖 =𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗,witheither 𝜆𝑖𝑖 =1 or𝜆𝑖𝑖 =0.60
+OncewewriteReflectionthisway,wecanseethattherearetwocompletelydiscontinuousways
+tosatisfyit:thefirstistohaveyouropinionsmatchyourinformedopinions(if 𝜆𝑖𝑖 =1);thesecond
+istohavethemmatchanaverageoftheothercandidates’uninformedopinions(if 𝜆𝑖𝑖 =0).Once
+we see this bifurcation, it’s natural to generalize it by allowingintermediate averages between
+thesetwoextremes—givingsomeweighttoyourinformedselfandsomeweighttotheothercan-
+didatesuninformedopinions( 0<𝜆 𝑖𝑖 <1).Thatgeneralizationissimplytherequirementthat 𝑖
+bemodestlyinformed:
+Corollary4.5. ⟨𝑊, ⟩validatesTotalTrustiffforeach 𝑖∈𝑊 , 𝑖 ismodestlyinformed: 𝑖 =𝜆𝑖𝑖ˆ𝑖 +∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗 with0 ≤𝜆𝑖𝑖 ≤1.61
+=== PDF page 23 ===
+Deferencedonebetter 121
+Inshort,ValueretainsthecoreideaofReflection—namely,thatyouropinionsshouldbepulled
+betweenyourowninformedopinionsandtheothercandidatesuninformedones—butgeneralizes
+ittoallowthebalancebetweenthesetwoforcestobeintermediate.
+5 OPENQUESTIONS
+Manyofthethingswe’dliketodeferto—people,evidence,chances—canbeunsurewhetherthey
+areworthyofdeference.Insuchcontextsthestandardtheoriesofdeferencebreakdown.We’ve
+proposedValueasnewtheoryofdeference:youdefertoanexpertifyou’dalwayspreferforthem
+tomakedecisionsonyourbehalf—inaslogan, deferringopinionsisdeferringdecisions .Following
+Dorst(2020a),weobservedthatthistheoryisequivalenttothestandardtheories(Reflectionand
+NewReflection)inthecontextofimmodesty,butitbothallowsmodesty(unlikeReflection)and
+rulesoutdeferencetoanti-expertsorDutch-bookableones(unlikeNewReflection)(§1).However,
+wealsoshowedthatwelackedageneraltheoryofmodestValue(§2).
+Thepointofthispaperhasbeentogiveone.Aswe’veseen,youvalueanexpertiffyoutotally
+trusttheirestimates(§2),iffyouexpecttheirestimatestobemoreaccuratethanyoursonanyrea-
+sonablewayofmeasuringaccuracy(§3),iffalltheexpertcandidates’opinionscanbefactoredinto
+theirinformedopinionsalongwiththeirhigher-orderdoubts,andyouropinionsareanaverage
+oftheirs(§4).Collectingourtheorems,wehavethefollowingcharacterization:
+Theorem5.1 (CharacterizationofValue) . Thefollowingareequivalent:
+⋅𝜋 values ⟨𝑊, ⟩;
+Forany ,if 𝑆isrecommendedfor ,then ∀𝑂∈ ,𝔼𝜋(𝑆) ≥𝔼𝜋(𝑂);
+There’snofixed-optionDutchBookagainsttransitioningfrom 𝜋to𝑃.
+⋅𝜋 totallytrusts ⟨𝑊, ⟩:
+𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡) ≥𝑡,forall 𝑋;
+𝜋(⋅|𝑃∈𝐵)∈𝐵 foranybiconvex 𝐵.
+⋅𝜋 epistemicallyvalues ⟨𝑊, ⟩:
+𝔼𝜋(𝐼𝑋(𝑃)) ≤𝔼𝜋(𝐼𝑋(𝜋)),forall 𝑋andgsp 𝐼𝑋.
+⋅𝜋 isintheconvexhullof 𝐶𝜋,andeach 𝑖 ∈𝐶𝜋 ismodestlyinformed:
+𝜋=
+∑
+𝑖∈𝐶𝜋
+𝜆𝑖 𝑖 andforeach 𝑖 ∈𝐶𝜋 ∶ 𝑖 =𝜆𝑖𝑖ˆ𝑖 +
+∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗.
+Theoryinhand,wecandrawoutbothformallessonsandphilosophicalquestions.
+The most obvious formal lesson is this. In the context of immodesty, deference can seem
+simple—all the plausible theories (Reflection, New Reflection, Value, Trust, etc.) coincide. But
+once we allow modest experts, important differences emerge. We’ve argued that probing these
+differences singles out Value as the most plausible, general account of deference. Nevertheless,
+withinthespacethatmodestyopensup,there’sclearlyawiderangeofdifferentdeferenceprinci-
+plesthatdeservetobeexplored(cf.Dorst 2020b).Wehopethatthemethodswe’vefoundsouseful
+here(askingcomputers;drawingpictures)willalsobehelpfulinsuchfurtherexplorations.
+Turningtophilosophicalquestions,we’dliketofocusontwo.First,thereareavarietyofthings
+thatmostphilosophersagreeweshoulddeferto:objectivechances(Lewis 1980;Levinstein 2019);
+ourrationalandmore-informedfutureselves(vanFraassen 1984;Salow 2018);ourownevidence
+(Good1967;D o r s t2020a); and so on. If we are right, that means we mustvaluesuch experts—
+=== PDF page 24 ===
+122 DORSTetal.
+which in turn imposes structural constraints on what their opinions might be. For example, to
+value an expert, their opinions must obeypositiveaccess: if the expert is certain of𝑞, they must
+becertainthattheexpertiscertainof 𝑞;if 𝑃(𝑞)=1 ,then 𝑃(𝑃(𝑞)=1)=1 (Dorst2020a,Fact8.2).
+Thatraisesaquestion:whatsubstantivefactsaboutthesevariousexpertsexplainwhytheiropin-
+ionsobeysuchstructuralfeatures?Whatisitaboutobjectivechances(orrationalcredences,or
+evidentialprobabilities)thatguaranteesthattheyobey(say)positiveaccess—andwhichtheories
+ofthemcandeliverthisresult?Thustheoriesofdeferencecanbeusedtoimposeadequacycondi-
+tionsonsubstantiveaccountsofchance(C.Dorst2019;Gallow 2019a),diachronicrationality(cf.
+Schoenfield2016b;Gallow 2019b),evidence(cf.Lasonen-Aarnio 2019;Das 2020a),andsoon.
+Second, every theory we’ve explored here is a theory ofglobaldeference—of what it takes to
+defertoanexperton allyouropinions.Aswementionedatthebeginning,thisisanappropriate
+notionofdeferenceforsomeexperts(presentchances,yourcurrentevidence)butnotforothers.
+We defer to Nate Silver about who’ll win the election, but not about what the weather will be;
+we defer to our political opponents about what their favorite news network says, but not about
+whetherit’scorrect;wedefertoourfutureselfabouthowbusywe’llbenextmonth,butnotabout
+howmuchweshouldworktoday;andsoon.Mostreal-worlddeferenceis localdeference:wedefer
+toanexpert’sopinionsaboutsomequestionsbutnotothers.Suchlimiteddeferenceisclearlyboth
+pervasiveandphilosophicallyimportant.
+It’salsoformallyinteresting,foritturnsoutthatquestion-sensitivityaddsevenmorevariability
+toourgrowinggamutofdeferenceprinciples.Thinkingofaquestion 𝑄asapartitionoflogical
+space (Hamblin1976; Roberts2012), we can relativize all our principles to such questions. You
+reflectanexpert withrespectto 𝑄iffforanypartialanswerto 𝑄,youadopttheexpert’scredence
+inthatansweruponlearningwhatitis. 62 Youtotallytrustanexpert withrespectto 𝑄iffforany
+quantitywhosevaluesaredeterminedbytheanswerto 𝑄,youhaveahighestimateforthatquan-
+tity upon learning that their estimate is high.63 You value an expertwithrespectto 𝑄iff for any
+decision-problemwhoseutilitiesaredeterminedbytheanswerto 𝑄,you’dliketogivetheexpert
+powerofattorneyforthatdecision. 64
+Once we add such question-sensitivity, things get even more interesting. For example, you
+totallytrustaframe withrespecttoevery2-cellquestion (𝑄={𝑞,¬𝑞} )iffyousimplytrustit(with
+respectto everyquestion).Aswe’veseeninTheorem 3.2,youtotallytrustanexpertwithrespect
+toaquestioniffyouexpecttheirestimatesofquantitiesdeterminedbythatquestiontobemore
+accuratethanyourownoneveryreasonablewayofmeasuringaccuracy.Weconjecturethat,sim-
+ilarly,youtotallytrustanexpertwithrespecttoaquestioniffyouvaluethemwithrespecttothat
+question.65
+Finally—andperhapsmostimportantly—itturnsoutthatyoucantotallytrust,value,andepis-
+temicallyvaluean immodestexpertwithrespectto 𝑄withoutreflectingthemwithrespectto 𝑄.66
+Thismeansthateveninthecontextofimmodesty,theepistemicandpragmaticincentivestodefer
+tosomeonedo notalwayssufficetojustifyReflection—theysometimesjustifyonlyTotalTrust.
+Thatopensupfurtherquestions.HowexactlydothelocalversionsofReflectionandTotalTrust
+relate?Isthelatterindeedequivalentto(local)Value?And,moregenerally,howwillthevarious
+theoriesofdeferencestackuponceweturnourattentiontotheincredibly-commonbutunder-
+exploreddomainoflocal,question-relativedeference?
+We don’t know. So we should end on a modest note: although we think that our theory of
+deferencedoesbetterthanthosecurrentlyonoffer,thereremainsplentyofroomfordeferenceto
+bedonebetteryet.
+=== PDF page 25 ===
+Deferencedonebetter 123
+ACKNOWLEDGMENTS
+Thisprojectbenefitedfromlotsofhelpalongtheway.SpecialthankstoCatrinCampbell-Moore,
+forsharinghercharacterizationofinaccuracymeasureswithus,andtobothherandDanielRoth-
+schild,forhelpingustogiveanelementaryproofofoneofthecoreresults(Theorem 3.2).Thanks
+toNilanjanDas,forsuggestingwelookcloseratthe(itturnsout,all-important)hyperplanesep-
+aration theorem, and for giving detailed feedback on the paper once we had. Thanks to Jason
+Konek,RichardPettigrew,ItaiSher,IsaacWilhelm,andtheTwittermathhivemindforhelpwith
+avarietyofplacesthatwegotstuckalongtheway.AndthankstoCatrinCampbell-Moore(again!),
+AdamElga,DmitriGallow,HarveyLederman,DanielRothschild(again!),GingerSchultheis,Jack
+Spencer,TimothyWilliamson,andSnowZhangforhelpfulfeedbackonearlierdrafts.Thiswork
+benefittedfromtheMellonFoundation,NewDirectionsfellowship1905-06835.
+ENDNOTES
+1 Letting‘𝑃’beadefinitedescriptionfortheexpert’sopinions,whatevertheyare,theexpertismodestifftheyare
+lessthancertainthattheyareindeedtheexpert:thereissome 𝑞,𝑡 suchthat 𝑃(𝑞)=𝑡 but𝑃(𝑃(𝑞)=𝑡)<1 .W e
+followElga( 2013)inthe‘modest’terminology;notethatitisorthogonaltothesenseof‘immodesty’(or‘strict
+propriety’)usedasaconstraintonaccuracyscoringrules(Lewis 1971;Gibbard 2008;Joyce 2009;Pettigrew 2016;
+Horowitz2018).See§3fordiscussion.
+2 We here use ‘Reflection’ to refer to a variety of principles of the same structure; in this sense, the principles
+discussedbyMiller( 1966);Lewis( 1980);Skyrms( 1980);vanFraassen( 1984);Gaifman( 1988);Williamson( 2000);
+Christensen (2007, 2010); Briggs (2009a, 2009b); Roush (2009, 2016); Elga (2013)a n dM a h t a n i(2017)a r ea l l
+Reflectionprinciples.ThetensionwithmodestyisalreadynotedbyLewis( 1980);Elga( 2013)givesaparticularly
+clearandgeneralexplanation.
+3 We’refollowingPettigrewandTitelbaum( 2014)inframingourproblemasfindingtheright formofadeference
+principleacrossthesevariousdomains.Wedon’tclaimthatthere’sapretheoreticnotionof‘deference’toana-
+lyze;rather,weuse‘deference’asanamefortherelationthatshouldholdbetweenyouropinionsand(atleast
+someof)thevariousexpertprobabilitiesdiscussedabove.
+4 See Hall (1994); Lewis (1994); Elga (2007,2013); Pettigrew and Titelbaum (2014); Gallow (2019b); Christensen
+(2020).FordifferentcriticismsNewReflection,seeLasonen-Aarnio( 2015).
+5 Availableat https://www.kevindorst.com/DDB_notebook.html.ThecodewaslargelywrittenbyK.D.Asyou’ll
+notice,he’snoprogrammer.Butitworks.
+6 𝑊 is a finite set of worlds, and is a function from worlds𝑤 to probability functions𝑤 that are defined
+overthesubsetsof 𝑊.Convention:technicaltermsareboldedwhendefined;thedefinitionsarecollectedin
+AppendixA;boldedsymbolsalwayshavethesamemeaningastheirunboldedcounterparts.
+7 Thisformalismassumesthatateachworldthereisaunique,preciseprobabilityfunctionthatmodelstheexpert’s
+opinions(cf.White 2005;Schoenfield 2012,2014;Schultheis 2018;Carr 2019b).
+8 Precisely: 𝑤(𝑃= 𝑣)>0 for 𝑣 ≠𝑤;i.e.there’sa 𝑣∈𝑊 suchthat 𝑤(𝑣)>0 and 𝑣 ≠𝑤.
+9 Whentherelevantopinionsarethemselvescandidatesforbeingtheexpert,wedon’tneedthisadditionalstruc-
+ture,since𝜋willbeguaranteedtobeoneofthe 𝑤 (Dorst2020a,fn.14).Butinsomecasesthedeferringopinions
+willnotbecandidateexperts:youmightknowthat,whoeverthesmartestandbest-informedpersonis,itdefi-
+nitelyisn’tyou.
+10 Hereandthroughoutweleaveimplicittherestrictionthattheconditionalprobabilityiswell-defined.
+11 Reflectionhasalsobeenproposedasspecifyingtheconditionsunderwhichshiftingopinionsfrom 𝜋to𝑃counts
+asa“genuinelearningexperience”(Jeffrey 1988;Graves 1989;Skyrms 1990,1997;Myrvold 2012;Huttegger 2013,
+2014,2017).Theabovesuggeststhatthisistoodemanding,sinceonecansurelyregardtheshifttosomenew
+opinionsasagenuinelearningexperienceevenwhenthosenewopinionsaremodest(i.e.,inthiscontext,less
+than perfectly introspective). We think, instead, that the transition represents a genuine learning experience
+onlyif 𝜋defersto𝑃—wheredeference,aswe’llargue,neednotrequireReflection.
+12 Why are the two versions equivalent? Take any𝑤∈[ ˆ𝑃=𝜌] ,s o ˆ𝑤 ∶= 𝑤(⋅|𝑃= 𝑤)=𝜌 , and hence
+𝜌(𝑃= 𝑤)=1 .Thusif 𝑥 ≠𝑤,then ˆ𝑥 ∶= 𝑥(⋅|𝑃= 𝑥),so ˆ𝑥(𝑃= 𝑤)=0 ,and ˆ𝑥 ≠𝜌.Ontheotherhand
+since if𝑥 = 𝑤 then ˆ𝑥 =𝜌,w eh a v et h a t[ˆ𝑃=𝜌]=[𝑃= 𝑤].T h u s𝜋(⋅|ˆ𝑃=𝜌)=𝜌 iff𝜋(⋅|𝑃= 𝑤)=𝜌=
+ˆ𝑤 = 𝑤(⋅|𝑃= 𝑤);seeStalnaker( 2019)andDorst( 2019b)fordiscussion.
+=== PDF page 26 ===
+124 DORSTetal.
+13 Precisely: 𝑎(𝑎|𝑃= 𝑎)=1=𝜋(𝑎 |𝑃= 𝑎)and 𝑏(𝑏|𝑃= 𝑏)=1=𝜋(𝑏 |𝑃= 𝑏).
+14 Hereit’simportanttonotethat‘ 𝜋’isarigiddesignatorforafixedandknownprobabilityfunction,ratherthan
+adefinitedescriptionfor(e.g.)‘Youropinions,whatevertheyare’,which,like‘ 𝑃’,couldrefertodifferentprob-
+abilityfunctionsatdifferentworlds.
+15 ValueisrelatedtoasubstantialliteraturearisingoutofGood( 1967)abouttheconditionsunderwhichweshould
+obtainadditionalinformationbeforedeciding(e.g.Blackwell 1953;Savage 1954;Brown 1976;Skyrms 1990;Oddie
+1997;Williamson 2000;Kadaneetal. 2008;Myrvold 2012;Buchak 2013;Huttegger 2014;BradleyandSteele 2016;
+AhmedandSalow 2018;Campbell-MooreandSalow 2019;Das 2020a;Pettigrew 2020).SeeSalow( 2020)fora
+philosophicaloverview.Workinginthistradition,Geanakoplos( 1989)waseffectivelythefirsttoinvestigatethe
+possibilityofsatisfyingValuewhenprobabilitiesaremodest,althoughhedoesn’tformulatehisprojectinthis
+way.Heworkswithinasub-classofprobabilityframesknownas priorframes (endnote25),thusourcharacter-
+ization(Theorem 4.1)willgeneralizehisTheorem1.
+16 BytotalexpectationandthenReflection,wehave 𝔼𝜋(𝑆)= ∑
+𝑤 𝜋(𝑃= 𝑤)𝔼𝜋(𝑆|𝑃= 𝑤)= ∑
+𝑤 𝜋(𝑃= 𝑤)𝔼𝑤(𝑆).
+SinceReflectionimpliesthattheframeisimmodest, 𝔼𝑤(𝑆)=𝔼 𝑤(𝑆𝑤) ≥𝔼𝑤(𝑂),meaningthattheabovesumis
+atleastasgreatat ∑
+𝑤 𝜋(𝑃= 𝑤)𝔼𝑤(𝑂)= ∑
+𝑤 𝜋(𝑃= 𝑤)𝔼𝜋(𝑂|𝑃= 𝑤)=𝔼 𝜋(𝑂).SeeSkyrms( 1990);Huttegger
+(2014).
+17 Notethat 𝜋valuesaframeonlyifitnew-reflectsit(seeendnote19).Soiftheframeisimmodest,then 𝑖 = ˆ𝑖,so
+𝜋new-reflectstheframeiffitreflectsit,andhence 𝜋valuesitonlyifitreflectsit;endnote16provestheconverse.
+AgainseeSkyrms( 1990);Huttegger( 2014).
+18 ThisframealsoshowsthatValuedoesnotentailanothercommonweakeningofReflection—namely,thatyour
+credence must equal your best estimate of the expert’s credence:𝜋(𝑞)=𝔼 𝜋(𝑃(𝑞)) (Ismael 2008, 2015; Salow
+2018,2019;Gallow 2019b).For 𝜋(𝑎)=0.5 ,yet 𝔼𝜋(𝑃(𝑎))=𝜋(𝑎)⋅0.9+𝜋(𝑏)⋅0.2=0.55 .UnlikeReflection,such
+“estimate-matching”principlesdonotentailValue—note,forinstance,thatinouranti-expertframeinFigure 2,
+wedohave𝜋(𝑞)=𝔼 𝜋(𝑃(𝑞))forall 𝑞.
+19 If New Reflection fails, we can make a conditional bet which the frame recommends taking but𝜋 doesn’t
+want to take. Precisely: if (WLOG)𝜋(𝑞|𝑃= 𝑤)<𝑡< 𝑤(𝑞|𝑃= 𝑤),t h e nl e t𝑂0 yield 0 everywhere and𝑂1
+be a conditional bet which yields 0 if𝑃 ≠𝑤,1−𝑡 if𝑞∧[𝑃= 𝑤],a n d−𝑡 if¬𝑞∧[𝑃= 𝑤].T h e n𝑤 takes
+thebet,andeveryoptionhas0utilitywhen 𝑃 ≠𝑤,so 𝔼𝜋(𝑆)=𝜋(𝑃 ≠𝑤)0+𝜋(𝑃= 𝑤)𝔼𝜋(𝑂1|𝑃= 𝑤),and
+𝔼𝜋(𝑂1|𝑃= 𝑤)<𝑡(1−𝑡)+(1−𝑡)(−𝑡)=0 ,so 𝔼𝜋(𝑆)<0=𝔼 𝜋(𝑂0);Valuefails.
+20 Precisely,itisapairofdecisionproblems 1 and 2 thatbothincludeaconstant(“nobet”) 𝑂0 =0 option,where
+𝑂∈ 1 maximizesexpectationamongst 1 relativeto 𝜋and𝑆isastrategyrecommendedfor 2 by𝑃,suchthat
+𝑂(𝑤)+𝑆 𝑤(𝑤)<0 atevery 𝑤∈𝑊 .
+21 Suppose𝜋doesn’tvalue 𝑃.Thenthereisadecisionproblem ,anoption 𝑂∈ andastrategy 𝑆recommended
+by𝑃for suchthat 𝔼𝜋(𝑂)>𝔼 𝜋(𝑆).Let 1 ={𝑂0,𝑂−𝑆−𝜖} for0<𝜖<𝔼 𝜋(𝑂)−𝔼 𝜋(𝑆),andlet 2 ={𝑂′ −𝑂∶
+𝑂′ ∈ }.N o t et h a t𝑂0 =𝑂−𝑂∈ 2, so both decision problems include a “no bet” option. Then𝔼𝜋(𝑂−𝑆−
+𝜖)=𝔼 𝜋(𝑂)−𝔼 𝜋(𝑆)−𝜖>0 ,so 𝑂−𝑆−𝜖 maximizesexpectationfrom 1 relativeto𝜋.Moreover,since 𝐸𝑤(𝑂′ −
+𝑂)=𝐸 𝑤(𝑂′)−𝐸 𝑤(𝑂),and 𝑆isrecommendedfor ,𝔼𝑤(𝑆𝑤 −𝑂) ≥𝔼𝑤(𝑂′ −𝑂) forevery 𝑂′ ∈ ;sothestrategy
+𝑆′ suchthat 𝑆′
+𝑤 =𝑆𝑤 −𝑂 isrecommendedfor 2 by𝑃.Butforanyworld 𝑤:𝑂(𝑤)−𝑆(𝑤)−𝜖+𝑆 ′
+𝑤(𝑤)=𝑂(𝑤)−
+𝑆𝑤(𝑤)−𝜖+𝑆 𝑤(𝑤)−𝑂(𝑤)=−𝜖<0 ;thecombinedcourseofactionguaranteesaloss.
+22 Anexpectedlossimpliesthat 𝔼𝜋(𝑂+𝑆)=𝔼 𝜋(𝑂)+𝔼 𝜋(𝑆)<0 forsome 𝑂withmaximal 𝜋-expectation.Butby
+definition,𝔼𝜋(𝑂) ≥𝔼𝜋(𝑂0)=0 ,andbyValue, 𝔼𝜋(𝑆) ≥𝔼𝜋(𝑂0)=0 .
+Note: the formulation of these claims in terms offixed options touches on a subtle but important point.
+Williamson(2000,Ch.10)showsthatmanymodesttransitions—includingsomethatGeanakoplos( 1989)and
+Dorst(2020a)showtosatisfyValue—aresuchthatyoucanbeofferedafixedsetof betssuchthat,ifatthelater
+timeyoupayforeachbetthemaximalpricethat 𝑃iswillingtopay,youshouldexpectaloss.Das( 2020a)gener-
+alizesthisresult,andstrengthensittoshowthatyoucanalsobeforcedintosurelossesinthisfashion.Theway
+toreconciletheseresultswiththeaboveisthatwhenwefixabetbutvaryhowmuchyoupayforitacrossworlds,
+weare(inthetechnicalsense)givingyoudifferent options atdifferentworlds:abetthatpaysout$1if 𝑞and
+$0if ¬𝑞,butwhichyoumustyoupay$0.60foratworlds 𝑤where 𝑤(𝑞)=0.61 and$0.70foratworlds 𝑥where
+𝑥(𝑞)=0.71 is not a single option, but is instead𝑂1 =
+{
+0.40if𝑞
+−0.60if¬𝑞
+at𝑤 and𝑂2 =
+{
+0.30if𝑞
+−0.70if¬𝑞
+at𝑥.
+=== PDF page 27 ===
+Deferencedonebetter 125
+Thephilosophicalimportofthisfactissubtle.Weareinclinedtothinkthatitcastsdoubtontheclaimthatsuch
+(non-fixed-option)Dutchbooksdemonstrateirrationality,butthisisanissuethatdeservesmorediscussion.
+23 Forexample,notethatinFigure 1,[𝑃(𝑎) ≥0.7]={𝑎} and[𝑃(𝑏) ≥0.6]={𝑏} .Thusforany 𝜋:𝜋(𝑎|𝑃(𝑎) ≥0.7)=
+1 ≥0.7,a n d𝜋(𝑏|𝑃(𝑏) ≥0.6)=1 ≥0.6; learning which world the expert favors should lead you to favor that
+worldaswell—justevenmoreso.
+24 It’stemptingto combinethetwoconditionstoinferthatSimpleTrustimpliesthat 𝑃(𝑞|[𝑃(𝑞) ≥𝑡]∧[𝑃(𝑞) ≤𝑡])=
+𝑡,butSimpleTrustdoesnotimplythisduetothenon-monotonicityofprobabilisticsupport(Dorst 2020a,§4.1).
+25 Thespecialsubclassistheclassof priorframes.Apriorframe ⟨𝑊, ,𝜋 ⟩consistofasetofworlds 𝑊,afunction 
+fromworlds 𝑤tosetsofworlds 𝑤,andaprobabilitydistribution 𝜋that’sregularover 𝑊.Wecanthenrecover
+a probability frame by defining𝑤 =𝜋(⋅ | 𝑤). Informally, we can think of𝑤 as the set of worlds which the
+expert’s evidence at𝑤 fails to rule out, and of𝜋 as representing an initial probability distribution indicating
+whattheexperttakesthevariousbodiesofevidencetosupport.Onsuchaninterpretation,priorframesallow
+foruncertaintyaboutwhatevidencetheexperthas,butnotforuncertaintyaboutwhattheytakethesebodiesof
+evidencetosupport.Priorframesarethefocusinmuchoftherelatedwork(e.g.Geanakoplos 1989;Williamson
+20002014,2018;Cresto 2012;Lederman 2015;Lasonen-Aarnio 2015;Campbell-Moore 2016;Salow 2018,2019;Das
+2020a,2020b),inpartbecausetheyaremoretractable.Nevertheless,therearecompellingreasonstoconsider
+the wider class of probability frames. Prior frames build in a wide range of modeling assumptions about the
+candidateexperts—forexample,thattheyallsharethesamepriorandallupdatebyconditioningthatprioron
+propositionalevidence.Onsomeinterpretations(e.g. 𝑃= ‘mypresentevidence’)theseassumptionsarehighly
+controversial;onothers(e.g. 𝑃= ‘theopinionsofthesmartestpersonintheroom’),theyaresimplywrong.So
+whenwecandowithouttheseassumptions,weshould.Nevertheless,priorframesremainauseful,tractable
+startingpointformostinvestigations.
+26 The checkTrustfunctionaskswhetherforeach 𝑖 inagivenframe, 𝑖 truststheframe.Tocheckthat 𝜋trusts
+theframe(aswellasthateach 𝑖 intheframetruststheframe),oneshouldenterthewholestructureasif 𝜋is
+aworldintheframethatalwaysgets0probability,likeso:
+⎛
+⎜
+⎜
+⎜
+⎜⎝
+0 0.17 0.56 0.27
+0 0.45 0.10 0.45
+0 0.15 0.70 0.15
+0 0.30 0.10 0.60
+⎞
+⎟
+⎟
+⎟
+⎟⎠
+.
+27 𝔼𝔼𝔼𝝅(𝑿)∶= ∑
+𝑤 𝜋(𝑤)𝑋(𝑤).Notethat(totalexpectation:)foranypartition 𝑄,𝔼𝜋(𝑋)= ∑
+𝑞∈𝑄 𝜋(𝑞)𝔼𝜋(𝑋|𝑞),where
+𝔼𝜋(𝑋|𝑞)= ∑
+𝑤 𝜋(𝑤|𝑞)𝑋(𝑤).
+28 Foraficionados:thisprinciplecanbere-statedintermsofconvexsets;seeTotalTrust(convexityversion)below.
+29 That is, Total Trust implies that for any𝑋,𝑌:𝔼𝜋(𝑋|𝔼(𝑋) ≥𝔼(𝑌)) ≥𝔼𝜋(𝑌|𝔼(𝑋) ≥𝔼(𝑌)). Note that by linear-
+ity of expectations,𝔼(𝑋) ≥𝐸(𝑌) iff 𝔼(𝑋−𝑌) ≥0; hence𝔼𝜋(𝑋|𝔼(𝑋) ≥𝔼(𝑌))<𝔼 𝜋(𝑌|𝔼(𝑋) ≥𝔼(𝑌)) implies
+𝔼𝜋(𝑋−𝑌 |𝔼(𝑋−𝑌) ≥0)<0 ,violatingTotalTrust.
+30 For more difficult theorems we include only proof sketches in the main text; full proofs can be found in
+AppendixB.
+31 Indeed,ifthere’sonemethodologicalmoralthatwetakeawayfromthispaper,it’sthatweshould’velongago
+takentohearttheadviceofHantiLinandKevinKelly(LinandKelly 2012a,2012b)and drawnpictures ofprob-
+abilityframes.Thiswaswhatledustodiscovermostoftheresultstocome.Infact,arguablyoneofthereasons
+that characterizations within prior frames (endnote 25) have come so much more easily than in probability
+framesisthattheformerareeasiertodraw.
+32 If,lookingatthisdiagram,youarethinking“whynotjustsaythat 𝜋isintheconvexhullof(withinthetriangle
+circumscribedby) {1, 2, 3}?”,theansweristhatthisconditionisnecessarybutnotsufficientforValue—as
+provenbelowinTheorem 4.1andillustratedbyFigure 2above.
+33 Formally:𝐶isconvexif 𝛿∈𝐶 whenever𝛿= ∑
+𝑖 𝜆𝑖𝜌𝑖 forsome 𝜌1,…,𝜌 𝑛 ∈𝐶 with𝜆𝑖 ≥0suchthat ∑
+𝑖 𝜆𝑖 =1.
+34 Precisely: ifboth 𝐵and𝐵𝑐 areconvex,thenbythehyperplaneseparationtheorem,theirboundaryisahyper-
+plane. Recall that we are restricting attention to finite probability frames, so we don’t need to worry about
+strengtheningthe 𝔼(𝑋) ≥𝑡 conditioninTotalTrusttodealwithedgecases.Inparticular, 𝐶={ 𝑤 ∶ 𝑤 ∈𝐵}
+and𝐷={ 𝑤 ∶ 𝑤 ∉𝐵} arebothfinite,sotheirconvexhullsareclosedandcompact,meaningthatthereisa
+hyperplanestronglyseparatingthem: ∃𝑌,𝑡,𝜀>0 suchthat 𝐶⊂{𝜌∶𝔼 𝜌(𝑌) ≥𝑡}and𝐷⊂{𝜌∶𝔼 𝜌(𝑌) ≤𝑡−𝜀} .
+35 There may be more to be said about why the idea behind Total Trust does not motivate any stronger princi-
+ples.Onehypothesisbuildsonthe“directed”natureofthesetofprobabilityfunctionsaboveacut.Intuitively,
+{𝜌∶𝜌(𝑞) ≥𝑡} is directed towards𝑞-worlds and away from¬𝑞 worlds. Indeed, this can be made precise and
+=== PDF page 28 ===
+126 DORSTetal.
+generalized:anyset 𝐴={𝜌∶𝔼 𝜌(𝑋) ≥𝑡} hasauniquedirectionassociatedwithit—namely,thatofthevector
+𝑋.Moreover,any(non-empty)suchsetwillcontainatleastoneextremepoint(world)ofthesimplex,andthe
+anglebetween 𝑋andanyextremepointinside 𝐴islessthanthatbetween 𝑋andanyextremepointoutsideof
+𝐴.Thusanysuch 𝐴isdirectedatcertainworldsandawayfromothers.Thesameisnottrueofsetsthatarenot
+determinedbyoneofourcuts,eveniftheyareconvex.Thismightgiveasenseforwhyconditioningonsuch
+an𝐴 should effect a shift in a predictable direction, while conditioning on another set, even a convex one, is
+unconstrained—andhencewhyTotalTrustshouldbetrue,butanygeneralizationofitwouldoverstepthemark
+thewayReflectiondoes.
+36 For any𝑋,𝑡 and 𝑞⊆𝑊 : 𝔼𝜋(𝑋|𝑞∧[𝔼(𝑋 |𝑞) ≥𝑡]) ≥𝑡.N o t et h a t𝐵={𝜌∶𝔼 𝜌(𝑋|𝑞) ≥𝑡} is biconvex. To see
+this, first note that if𝛿= ∑
+𝑖 𝜆𝑖𝜌𝑖,t h e n𝛿(⋅|𝑞) is also a convex mixture of the𝜌𝑖(⋅|𝑞): for any𝑝, 𝛿(𝑝|𝑞)=
+𝛿(𝑝∧𝑞)
+𝛿(𝑞)
+=
+∑
+𝑖 𝜆𝑖𝜌𝑖(𝑞)
+𝜌𝑖(𝑝∧𝑞)
+𝜌𝑖(𝑞)
+∑
+𝑘 𝜆𝑘𝜌𝑘(𝑞)
+= ∑
+𝑖(
+𝜆𝑖𝜌𝑖(𝑞)
+∑
+𝑘 𝜆𝑘𝜌𝑘(𝑞)
+𝜌𝑖(𝑝|𝑞));so 𝛿(⋅|𝑞)= ∑
+𝑖(
+𝜆𝑖𝜌𝑖(𝑞)
+∑
+𝑘 𝜆𝑘𝜌𝑘(𝑞)
+𝜌𝑖(⋅|𝑞)).Notethatthismixturegivespos-
+itiveweightonlytothe 𝜌𝑖 forwhich 𝜌𝑖(⋅|𝑞)iswell-defined.Now,forany 𝜌𝑖 ∈𝐵 andnon-negative 𝜆𝑖 thatsum
+to 1,∑
+𝑖 𝜆𝑖𝔼𝜌𝑖(𝑋|𝑞) ≥ ∑
+𝑖 𝜆𝑖𝑡=𝑡 ,s o∑
+𝑖 𝜆𝑖𝜌𝑖 ∈𝐵 . Likewise, for any𝛿𝑖 ∈𝐵𝑐,i f𝔼𝛿𝑖(𝑋|𝑞) is well-defined then it’s
+lessthan 𝑡,so ∑
+𝑖 𝜆𝑖𝔼𝛿𝑖(𝑋|𝑞)< ∑
+𝑖 𝜆𝑖𝑡=𝑡 ,so ∑
+𝑖 𝜆𝑖𝛿𝑖 ∈𝐵𝑐.Thus 𝐵 isbiconvex,sobyTotalTrust,wehavethat
+𝜋∗ ∶=𝜋(⋅ |𝑃∈𝐵)∈𝐵 ,andthus 𝔼𝜋(𝑋|𝑞∧[𝔼(𝑋 |𝑞) ≥𝑡])=𝔼 𝜋∗(𝑋|𝑞) ≥𝑡.
+37 For arbitrary𝑞, suppose𝑗(𝑞|𝑃= 𝑗)=𝑠 .T h e n[𝑃= 𝑗]∧[𝑃(𝑞 |𝑃= 𝑗) ≥𝑠]=[𝑃= 𝑗] and similarly[𝑃=
+𝑗]∧[𝑃(𝑞 |𝑃= 𝑗) ≤𝑠]=[𝑃= 𝑗];sobyTrust, 𝜋(𝑞|𝑃= 𝑗)=𝜋(𝑞 |[𝑃= 𝑗]∧[𝑃(𝑞 |𝑃= 𝑗) ≥𝑠) ≥𝑠,andalso
+𝜋(𝑞|𝑃= 𝑗)=𝜋(𝑞 |[𝑃= 𝑗]∧[𝑃(𝑞 |𝑃= 𝑗) ≤𝑠) ≤𝑠,s o𝜋(𝑞|𝑃= 𝑗)=𝑠 . Since𝑞 was arbitrary, that means
+TrustimpliesNewReflection.
+38 That is, ∑
+𝑖
+1
+𝑛
+𝜋(𝑞𝑖 |∑
+𝑖
+1
+𝑛
+𝑃(𝑞𝑖) ≥𝑡) ≥𝑡.N o t et h a t𝐵={𝜌∶ ∑
+𝑖
+𝜌(𝑞𝑖)
+𝑛
+≥𝑡} is a biconvex set, since if𝜌𝑗 ∈𝐵 ,t h e n
+∑
+𝑖
+1
+𝑛
+∑
+𝑗 𝜆𝑗𝜌𝑗(𝑞𝑖)= ∑
+𝑗
+∑
+𝑖
+1
+𝑛
+𝜆𝑗𝜌𝑗(𝑞𝑖)= ∑
+𝑗 𝜆𝑗
+∑
+𝑖
+𝜌𝑗(𝑞𝑖)
+𝑛
+≥ ∑
+𝑗 𝜆𝑗𝑡 ≥𝑡,so ∑
+𝑗 𝜆𝑗𝜌𝑗 ∈𝐵 ;byparallelreasoning 𝐵𝑐 is
+alsoconvex.Hence 𝜋(⋅|𝑃∈𝐵)∈𝐵 ,andtheresultholds.
+39 E.g.GreavesandWallace( 2006);Joyce( 2009);Preddetal.( 2009);Pettigrew( 2016).Notethatthispropertyis
+sometimescalled“immodesty”(Lewis 1971)—terminologythatisorthogonaltoourown(endnote1).
+40 Precisely:let 𝐴beanystrictlyproperaccuracymeasure(so ∀𝜌,𝛿∶𝔼 𝜌(𝐴(𝜌))>𝔼 𝜌(𝐴(𝛿))if𝛿 ≠𝜌)andlettheset
+ofoptionsbethosewhichyieldutilitymatchingtheaccuracyofeither 𝜋orsomefunctionintheframe 𝑖: =
+{𝐴(𝜌)∶𝜌∈{𝜋}∪{ 𝑤 ∶𝑤∈𝑊}} .(Recallthatourframesourfinite,sothatthisisafinitesetofoptions.)Thenby
+strictpropriety,forany 𝑖∈𝑊 and𝜌 ≠𝑖 in{𝜋}∪{ 𝑤 ∶𝑤∈𝑊} ,wehave 𝔼𝑖(𝐴(𝑖))>𝔼 𝑖(𝐴(𝜌)),i.e. ∀𝑂 ≠𝐴(𝑖),
+𝔼𝑖(𝐴(𝑖))>𝔼 𝑖(𝑂);hencetheuniquelyrecommendedstrategy 𝑆issuchthatforall 𝑖,𝑆𝑖 =𝐴( 𝑖),and 𝑆picksout
+“theaccuracyoftheexpertcredencefunction,whateveritis”:forall 𝑤,𝑆(𝑤)=𝐴( 𝑤,𝑤).ByValue,weknowthat
+𝔼𝜋(𝐴(𝜋)) ≤𝔼𝜋(𝑆)=𝔼 𝜋(𝐴(𝑃)).Since 𝐴wasanarbitrarystrictlypropermeasure,itfollowsthatValueimplies
+that𝜋expectstheexperttobeatleastasaccurateasitselfunderanysuchmeasure.
+41 SeeRosenkrantz( 1981);Schervish( 1989);Oddie( 1997);Joyce( 1998,2009);GreavesandWallace( 2006);Predd
+etal.( 2009);Schoenfield( 2016b,2016a,2017);Pettigrew( 2016);Carr( 2017,2019a);DeBonaandStaffel( 2017);
+Levinstein (2017b); Campbell-Moore and Salow (2019, 2020); Campbell-Moore (2020); Campbell-Moore and
+Levinstein(2020);KonekandLevinstein( 2019),andmanyothers.
+42 Precisely:if |𝛿(𝑞)−𝑖 |< |𝜌(𝑞)−𝑖 |,then 𝐼𝑞(𝛿,𝑖)<𝐼 𝑞(𝜌,𝑖) for𝑖=0,1 .
+43 Precisely:forany 𝛿,𝜌,𝔼𝛿(𝐼𝑞(𝛿)) ≤𝔼𝛿(𝐼𝑞(𝜌))withequalityiff 𝛿(𝑞)=𝜌(𝑞) .
+44 Precisely:therearelocalinaccuracymeasures 𝐼𝑞 suchthatforall 𝑤,𝛿,𝐼(𝛿,𝑤)= ∑
+𝑞⊆𝑊 𝐼𝑞(𝛿,𝟙𝑞(𝑤)).
+45 SeeLevinstein( 2019),AppendixAforthedetails.
+46 Precisely: using the Schervish-style characterization from § B.3.2,l e t t i n g𝑒=𝔼 𝜋(𝑋), 𝑓(𝑡)={
+1if𝑡∈[−0.1,0.1]
+0.001otherwise
+and 𝐼𝑋(𝜋,𝑤)= ∫
+max(𝑒,𝑋(𝑤))
+min(𝑒,𝑋(𝑤)) |𝑡−𝑋(𝑤) |𝑓(d𝑡), then this is a generally strictly proper
+scoringruleandwehave 𝔼𝜋(𝐼𝑂1(𝑃))=1.107>1.082=𝔼 𝜋(𝐼𝑂1(𝜋)).
+47 Precisely:foranyprobabilistic 𝜋,𝔼𝜋(𝐼𝑋(𝜋))<𝔼 𝜋(𝐼𝑋(𝑠))whenever𝔼𝜋(𝑋) ≠𝑠.
+48 Precisely:foranygsp 𝐼𝑋,𝔼𝜋(𝐼𝑋(𝑃)) ≤𝔼𝜋(𝐼𝑋(𝜋)),withequalityonlyif 𝜋(𝔼(𝑋)=𝔼 𝜋(𝑋))=1 .
+49 AppendixB.3givestwoproofsofthisresult,oneusingCampbell-Moore’s(2020)Schervish-stylecharacteriza-
+tion,andtheotherusingpurelyelementarymethods;thelatterisheavilyindebtedtohelpfromCatrinCampbell-
+MooreandDanielRothschild.
+=== PDF page 29 ===
+Deferencedonebetter 127
+50 Let our frame be
+⎛
+⎜
+⎜⎝
+0.9 0.1 0
+0.9 0.1 0
+0.4 0.1 0.5
+⎞
+⎟
+⎟⎠
+and let𝜋= 3 =
+(
+0.4 0.1 0.5
+)
+. 𝜋(𝑤1|𝑃(𝑤𝑠) ≥0.9)=0.8 and 𝜋(𝑤1|𝑃= 1)=
+0.8 ≠0.9= 1(𝑤1|𝑃= 1),s o𝜋 neither (simply) trusts nor new-reflects this frame. Nevertheless, for every
+𝑞⊆𝑊 ,𝜋expects𝑃tohaveabetterBrierscorewithrespectto 𝑞thanitself.
+51 Recall that Figure2 shows that𝜋 can new-reflect𝑃 while knowing that𝑃 is less accurate than𝜋.A n dl e t -
+ting𝜋=
+(
+0.8 0.1 0.1
+)
+and ⟨𝑊, ⟩=
+⎛
+⎜
+⎜⎝
+0.6 0.2 0.2
+010
+001
+⎞
+⎟
+⎟⎠
+yieldsanexampleinwhich 𝜋expects𝑃tobemoreaccurate
+thanitoneveryrandomvariable,accordingtosquaredEuclideandistance,yet 𝜋(𝑃({𝑤2,𝑤3}) ≥0.4)=1 while
+𝜋({𝑤2,𝑤3})=0.2<0.4 ,soSimpleTrustfails.ThankstoRichardPettigrewfortheexample.
+52 Precisely,for 𝑋=
+(
+5− 1− 1 0
+)
+,thepurpleregionis {𝜌∶𝔼 𝜌(𝑋) ≥0},so 𝔼𝜋(𝑋|𝔼(𝑋) ≥0)<0 .
+53 Precisely,CH({𝜌1,…,𝜌 𝑛})={𝛿∶∃𝜆 𝑖 ≥0and ∑𝜆𝑖 =1 suchthat 𝛿= ∑𝜆𝑖𝜌𝑖}.
+54 Precisely,let 𝑪𝝆 ∶={𝛿∶𝜌(𝑃=𝛿)>0} bethesetof Candidatesthat 𝜌thinksmightbetheexpert(abbreviating
+𝐶𝑖 to𝑪𝒊 for 𝑖 intheframe),andlet 𝑪−
+𝝆 =𝐶𝜌 ⧵{𝜌} bethosecandidatesotherthan 𝜌itself.Then 𝑖 ismodestly
+informediff 𝑖 isintheconvexhullof {ˆ𝑖}∪𝐶 −
+𝑖 ,i.e.ifftherearenon-negativeweights 𝜆𝑖𝑗 thatsumto1such
+that 𝑖 =𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗.
+55 Or,ifyouprefer,aswhatthe“first-orderevidence”warrantsatthatworld(Dorst 2019b).
+56 Notably, while𝜋 reflects/values/totally-trusts ⟨𝑊, ⟩only if every𝑖 ∈𝑊𝜋 reflects/values/totally-trusts𝑃,𝜋
+cannew-reflect ⟨𝑊, ⟩evenwhen 𝑖 ∈𝑊𝜋 doesn’tnew-reflect ⟨𝑊, ⟩.ThustherequirementthatNewReflec-
+tionisvalidonaframeisstrongerthantherequirementthatsome 𝜋thatassignspositiveprobabilitytoall 𝑤∈𝑊
+new-reflectsit.Ifoneshoulddeferonlytothosewhodefertothemselves,thisissimplyanotherargumentthat
+NewReflectionistooweakfordeference.
+57 Proof.(⇒∶)If 𝑖(𝑃= 𝑖)>0 then 𝑖 mustbeimmodestsince 𝑖(𝑃= 𝑖 |𝑃= 𝑖)=1 .Ifnot,then 𝐶𝑖 =𝐶−
+𝑖 ,soby
+totalprobabilityandReflection 𝑖 = ∑
+𝑗∈𝐶−
+𝑖
+𝑖(𝑃= 𝑗)𝑗.
+(⇐∶)Let𝐴∶={ 𝑖 ∶𝑖∈𝑊} ,let 𝐵betheextremepointsof 𝐴’sconvexhull.Every 𝑖 ∈𝐵 mustbeimmodest,
+since if𝑖 is an extreme point then it’s not inCH(𝐴−{ 𝑖}), and so not in the convex hull of𝐶−
+𝑖 ; so Reflec-
+tionholdsthroughout 𝐵.F or𝑗 ∈𝐴−𝐵 , 𝑗 isintheconvexhulloftheimmodest 𝐵,so 𝑗(𝑃∈𝐵)=1 ,hence
+𝑗 = ∑
+𝑖∈𝐵𝜆𝑖 𝑖.Takingany 𝑞and 𝑘,wehave 𝑗(𝑞|𝑃= 𝑘)=
+𝑗(𝑞∧[𝑃=𝑘])
+𝑗(𝑃=𝑘)
+=
+∑
+𝑖 𝜆𝑖 𝑖(𝑞∧[𝑃=𝑘])
+∑
+𝑖 𝜆𝑖(𝑃=𝑘)
+=
+𝜆𝑘 𝑘(𝑞∧[𝑃=𝑘])
+𝜆𝑘 𝑘(𝑃=𝑘)
+=
+𝑘(𝑞). (The last two equalities comes from the fact that each𝑖 ∈𝐵 is immodest.) Hence Reflection holds
+throughout𝐴−𝐵 .
+58 By total probability and then Reflection, 𝑖 = ∑
+𝑗∈𝐶𝑖
+𝑖(𝑃= 𝑗)𝑖(⋅|𝑃= 𝑗)= ∑
+𝑗∈𝐶𝑖
+𝑖(𝑃= 𝑗)𝑗 =
+𝑖(𝑃= 𝑖)𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝑖(𝑃= 𝑗)𝑗.
+59 Proof.(⇒∶) If 𝑖 satisfies New Reflection, then by total probability and then New Reflection we have𝑖 =∑
+𝑗∈𝐶𝑖
+𝑖(𝑃= 𝑗)𝑖(⋅|𝑃= 𝑗)= ∑
+𝑗∈𝐶𝑖
+𝑖(𝑃= 𝑗)ˆ𝑗,so 𝑖 isintheCHof {ˆ𝑗; 𝑖 ∈𝐶𝑖}.
+(⇐∶) Suppose 𝑖 = ∑
+𝑗∈𝐶𝑖
+𝜆𝑗ˆ𝑗.T a k i n ga n y𝑞 and ˆ𝑘 for which 𝑖(⋅|ˆ𝑃= ˆ𝑘) is defined, we have
+𝑖(𝑞|ˆ𝑃= ˆ𝑘)=
+𝑖(𝑞∧[ˆ𝑃=ˆ𝑘])
+𝑖(ˆ𝑃=ˆ𝑘)
+=
+∑
+𝑗 𝜆𝑗ˆ𝑗(𝑞∧[ˆ𝑃=ˆ𝑘])
+∑
+𝑗 𝜆𝑗(ˆ𝑃=ˆ𝑘)
+=
+𝜆𝑘ˆ𝑘(𝑞∧[ˆ𝑃=ˆ𝑘])
+𝜆𝑘ˆ𝑘(ˆ𝑃=ˆ𝑘)
+= ˆ𝑘(𝑞). (The last two equalities come from the
+factthateach ˆ𝑗 isimmodest.)HenceNewReflection(informedversion)holds.
+60 ByFact 4.2,each 𝑖 iseitherimmodestorintheconvexhullof 𝐶−
+𝑖 .Iftheformer,then 𝑖 = ˆ𝑖,so 𝜆𝑖𝑖 =1;andif
+thelatter,then 𝑖 = ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗,so 𝜆𝑖𝑖 =0.
+61 ByTheorem 4.1, 𝑖 totallytruststheframeiffit’sintheconvexhullof 𝐶𝑖 and𝐶𝑖 ismodestlyinformed.If 𝑖 assigns
+positiveprobabilitytoitself,thenit’sautomaticallyintheconvexhullof 𝑖 ∈𝐶𝑖,andsotheonlyrequirementis
+thatallof 𝐶𝑖 (including 𝑖)bemodestlyinformed.If 𝑖 doesnotassignpositiveprobabilitytoitself,thensince
+𝐶𝑖 =𝐶−
+𝑖 ,it’sintheconvexhullof 𝐶𝑖 iffit’smodestlyinformed.Note:Whereastheweights 𝜆𝑖𝑗 inFacts 4.2,4.3,
+and4.4turnouttoalwaysequal 𝑖(𝑃= 𝑗),thiswillnotingener albetruefortheweights 𝜆𝑖𝑗 usedinCorol-
+lary4.5.
+62 Precisely:if 𝑞= ⋃𝑞𝑖,for 𝑞𝑖 ∈𝑄,then 𝜋(𝑞|𝑃=𝜌)=𝜌(𝑞) .
+63 Precisely:if 𝑋issuchthatforall 𝑤,𝑤′ inthesame 𝑄-cell,𝑋(𝑤)=𝑋(𝑤 ′),then 𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡) ≥𝑡.
+64 Precisely:ifforall 𝑂∈ ,𝑂(𝑤)=𝑂(𝑤 ′)whenever𝑤and𝑤′ areinthesame 𝑄-cell,thenif 𝑆isrecommended
+for ,𝔼𝜋(𝑆) ≥𝔼𝜋(𝑂),forany 𝑂∈ .
+=== PDF page 30 ===
+128 DORSTetal.
+65 Theright-to-leftdirectionistrueandeasytoproveusingthesamereasoningasthatinLemma B.1;it’stheleft-
+to-rightdirectionwhichisopen.Levinstein( 2017b)showshowscoringrulesforindividualpropositionscanbe
+thoughtofasmeasuringtheexpectedpractical(dis)utilityofhavingacertaincredenceinagivenproposition
+when it is uncertain what decision problem you face whose outcome is determined solely by the truth-value
+ofthepropositioninquestion.SinceLevinstein’s( 2019)resultshowsthatSimpleTrustisenoughtoexpectan
+experttobeatleastasaccurateasyouareforagivenproposition(andthereforetohaveacredencewithhigher-
+expected utility), we believe it’s likely the left-to-right direction holds as well. However, it is unclear how or
+whethertheidentificationofpropositionalscoringruleswithpragmaticexpecteddisutilitygeneralizestogsp
+scoringrules.
+66 Let ⟨𝑊, ⟩=
+⎛
+⎜
+⎜
+⎜
+⎜⎝
+10 00
+00 . 60 . 40
+00 . 60 . 40
+00 01
+⎞
+⎟
+⎟
+⎟
+⎟⎠
+and 𝜋=(
+1
+4
+,
+1
+4
+,
+1
+4
+,
+1
+4
+),l e t𝑞={𝑤 1,𝑤2} and 𝑄={𝑞,¬𝑞} .T h e n𝜋(𝑞|𝑃(𝑞)=0.6)=
+𝜋(𝑞|{2,3})=0.5 ,s o𝜋 doesn’t reflect⟨𝑊, ⟩ with respect to𝑄; and since the frame is immodest,𝜋 likewise
+doesnotnew-reflectitwithrespectto 𝑄.Nevertheless, 𝜋doestotallytrust ⟨𝑊, ⟩withrespectto 𝑄,since,for
+instance,𝜋(𝑞|𝑃(𝑞) ≥0.6)=𝜋(𝑞 |{1,2,3})= 2∕3 and𝜋(𝑞|𝑃(𝑞) ≤0.6)=𝜋(𝑞 |{2,3,4})= 1∕3;and,infact, 𝜋values
+thisframewithrespectto 𝑄.
+67 If you’re wondering why we said the Schervish-style proof is more illuminating, this scoring rule is one rea-
+son.WeconstructedthisruleusingtheCampbell-Moore,Schervish-stylecharacterization,setting 𝜆(d𝑡)=2 d𝑡
+everywhereexcept [𝛼,𝛽],whereinsteaditis 2𝐶d𝑡.ThenwemadeB.A.L.computetheintegrals.
+REFERENCES
+Ahmed,ArifandSalow,Bernhard,2018.‘Don’tLookNow’. BritishJournalforthePhilosophyofScience ,Toappear.
+Blackwell,David,1953.‘EquivalentComparisonsofExperiments’. TheAnnalsofMathematicalStatistics ,24(2):265–
+272.
+Bradley,SeamusandSteele,Katie,2016.‘Canfreeevidencebebad?Valueofinformationfortheimpreciseproba-
+bilist’.PhilosophyofScience ,83(1):1–28.
+Briggs,R.,2009a.‘DistortedReflection’. PhilosophicalReview,118(1):59–85.
+Briggs,Ray,2009b.‘TheAnatomyoftheBigBadBug’. Nous,43(3):428–449.
+Brown,PeterM,1976.‘Conditionalizationandexpectedutility’. PhilosophyofScience ,43(3):415–419.
+Buchak,Lara,2013. Riskandrationality .OxfordUniversityPress.
+Campbell-Moore,Catrin,2016. Self-ReferentialProbability.Ph.D.thesis.
+,2020.‘Accuracy,Estimates,andRepresentationResults’.
+Campbell-Moore,CatrinandLevinstein,BenjaminA,2020.‘StrictProprietyisWeak’. Analysis,ToAppear.
+Campbell-Moore,CatrinandSalow,Bernhard,2019.‘AvoidingRiskandAvoidingEvidence’.
+,2020.‘AccurateUpdatingfortheRisk-Sensitive’. TheBritishJournalforthePhilosophyofScience .
+Carr, Jennifer Rose, 2017. ‘Epistemic Utility Theory and the Aim of Belief’.Philosophy and Phenomenological
+Research,95(3):511–534.
+,2019a.‘Amodestyproposal’. Synthese,1–21.
+,2019b.‘ImpreciseEvidencewithoutImpreciseCredences’. PhilosophicalStudies,Toappear.
+Christensen,David,2007.‘EpistemicSelf-Respect’. ProceedingsoftheAristotelianSociety ,CVII(3):319–337.
+,2010.‘RationalReflection’. PhilosophicalPerspectives,24:121–140.
+,2020.‘Akratic(epistemic)modesty’. PhilosophicalStudies,Toappear(September).
+Cresto,Eleonora,2012.‘ADefenseofTemperateEpistemicTransparency’. JournalofPhilosophicalLogic ,41(6):923–
+955.
+Das,Nilanjan,2020a.‘ExternalismandExploitability’. PhilosophyandPhenomenologicalResearch ,ToAppear.
+,2020b.‘TheValueofBiasedInformation’. TheBritishJournalforthePhilosophyofScience ,ToAppear.
+De Bona, Glauber and Staffel, Julia, 2017. ‘Graded Incoherence for Accuracy-Firsters’.Philosophy of Science,
+84(2):189–213.
+Dorst,Chris,2019a.‘Towardsabestpredictivesystemaccountoflawsofnature’. TheBritishJournalforthePhilos-
+ophyofScience ,70(3):877–900.
+=== PDF page 31 ===
+Deferencedonebetter 129
+Dorst, Kevin, 2019b. ‘Higher-Order Uncertainty’. In Mattias Skipper Rasmussen and Asbjørn Steglich-Petersen,
+eds.,Higher-OrderEvidence:NewEssays ,35–61.OxfordUniversityPress.
+,2020a.‘Evidence:AGuidefortheUncertain’. PhilosophyandPhenomenologicalResearch ,100(3):586–632.
+, 2020b. ‘Higher-Order Evidence’. In Maria Lasonen-Aarnio and Clayton Littlejohn, eds.,The Routledge
+HandbookforthePhilosophyofEvidence .Routledge.
+Elga,Adam,2007.‘ReflectionandDisagreement’. Noûs,41(3):478–502.
+,2013.‘Thepuzzleoftheunmarkedclockandthenewrationalreflectionprinciple’. PhilosophicalStudies,
+164(1):127–139.
+Gaifman,Haim,1988.‘ATheoryofHigherOrderProbabilities’.InBrianSkyrmsandWilliamLHarper,eds., Cau-
+sation,Chance,andCredence ,volume1,191–219.Kluwer.
+Gallow,J.Dmitri,2017.‘Local&GlobalExperts’.
+,2019a.‘ASubjectivist’sGuidetoDeterministicChance’. Synthese,ToAppear:1–34.
+,2019b.‘Updatingforexternalists’. Noûs,(November2018):1–30.
+Geanakoplos, John, 1989. ‘Game Theory Without Partitions, and Applications to Speculation and Consensus’.
+CowlesFou.
+Gibbard,Alan,2008.‘RationalCredenceandtheValueofTruth’.InTamarSzabóGendlerandJohnHawthorne,
+eds.,OxfordStudiesinEpistemology ,volume2.OxfordUniversityPress.
+Good,IJ,1967.‘OnthePrincipleofTotalEvidence’. TheBritishJournalforthePhilosophyofScience ,17(4):319–321.
+Graves,PaulR,1989.‘Thetotalevidencetheoremforprobabilitykinematics’. PhilosophyofScience ,56(2):317–324.
+Greaves, Hilary and Wallace, David, 2006. ‘Justifying conditionalisation: conditionalisation maximizes expected
+epistemicutilityIntroduction:Justifyingconditionalisation’.1–23.
+Hall,Ned,1994.‘CorrectingtheGuidetoObjectiveChance’. Mind,103(412):505–517.
+Hamblin,CharlesL,1976.‘Questionsinmontagueenglish’.In Montaguegrammar,247–259.Elsevier.
+Hintikka,Jaako,1962. KnowledgeandBelief .CornellUniversityPress.
+Horowitz,Sophie,2018.‘EpistemicvalueandtheJamesiangoals’. EpistemicConsequentialism,269–289.
+Huttegger,SimonM,2013.‘Indefenseofreflection’. PhilosophyofScience ,80(3):413–433.
+,2014.‘Learningexperiencesandthevalueofknowledge’. PhilosophicalStudies,171(2):279–288.
+,2017. Theprobabilisticfoundationsofrationallearning .CambridgeUniversityPress.
+Ismael,J.T.,2015.‘IndefenseofIP:Aresponsetopettigrew’. Nous,49(1):197–200.
+Ismael,Jenann,2008.‘Raid!Dissolvingthebig,badbug’. Nous,42(2):292–307.
+Jeffrey,Richard,1988.‘Conditioning,kinematics,andexchangeability’.In Causation,chanceandcredence ,221–255.
+Springer.
+Joyce,JamesM,1998.‘ANonpragmaticVindicationofProbabilism’. PhilosophyofScience ,65(4):575–603.
+,2009.‘AccuracyandCoherence:ProspectsforanAlethicEpistemologyofPartialBelief’.InFranzHuber
+andChristophSchmidt-Petri,eds., DegreesofBelief ,263–297.Springer.
+Kadane,JosephB,Schervish,Mark,andSeidenfeld,Teddy,2008.‘Isignorancebliss?’ TheJournalofPhilosophy ,
+105(1):5–36.
+Konek, Jason and Levinstein, Benjamin A., 2019. ‘The Foundations of Epistemic Decision Theory’.Mind,
+128(509):69–107.
+Kripke,SaulA,1963.‘Semanticalanalysisofmodallogicinormalmodalpropositionalcalculi’. MathematicalLogic
+Quarterly,9(5-6):67–96.
+Lasonen-Aarnio,Maria,2013.‘Disagreementandevidentialattenuation’. Nous,47(4):767–794.
+, 2015. ‘New Rational Reflection and Internalism about Rationality’. In Tamar Szabó Gendler and John
+Hawthorne,eds., OxfordStudiesinEpistemology ,volume5,145–171.OxfordUniversityPress.
+,2019.‘Higher-OrderDefeatandEvincibility’. Higher-OrderEvidence:NewEssays ,144–171.
+Lederman,Harey,2015.‘PeoplewithCommonPriorsCanAgreetoDisagree’. TheReviewofSymbolicLogic ,8(1):11–
+45.
+Levinstein,B.A.,2019.‘Accuracy,Deference,andChance’.
+Levinstein, Ben, 2017a. ‘Permissive Rationality and Sensitivity’.Philosophy and Phenomenological Research,
+XCIV(2):343–370.
+Levinstein,BenjaminAnders,2017b.‘Apragmatist’sguidetoepistemicutility’. PhilosophyofScience ,84(4):613–638.
+Lewis,David,1971.‘CompletenessandDecidabilityofThreeLogicsofCounterfactualConditionals’. Theoria,17:74–
+85.
+=== PDF page 32 ===
+130 DORSTetal.
+,1980.‘Asubjectivist’sguidetoobjectivechance’.InRichardCJeffrey,ed., StudiesinInductiveLogicand
+Probability,volume2.UniversityofCaliforniaPress.
+,1994.‘HumeanSupervenienceDebugged’. Mind,103(412):473–490.
+Lin,HantiandKelly,KevinT,2012a.‘Ageo-logicalsolutiontothelotteryparadox,withapplicationstoconditional
+logic’.Synthese,186(2):531–575.
+,2012b.‘Propositionalreasoningthattracksprobabilisticreasoning’. Journalofphilosophicallogic ,41(6):957–
+981.
+Mahtani,Anna,2017.‘Deference,respectandintensionality’. PhilosophicalStudies,174(1):163–183.
+Miller,David,1966.‘Aparadoxofinformation’. TheBritishJournalforthePhilosophyofScience ,17(1):59–61.
+Myrvold,WayneC,2012.‘Epistemicvaluesandthevalueoflearning’. Synthese,187(2):547–568.
+Nissan-Rozen, Ittay and Spectre, Levi, 2019. ‘A pragmatic argument against equal weighting’. Synthese,
+196(10):4211–4227.
+Oddie,Graham,1997.‘Conditionalization,Cogency,andCognitiveValue’. TheBritishJournalforthePhilosophyof
+Science,48(4):533–541.
+Pettigrew,Richard,2015.‘Risk,rationalityandexpectedutilitytheory’. CanadianJournalofPhilosophy ,45(5-6):798–
+826.
+,2016.‘MeasuringAccuracy:ANewAccount’.In AccuracyandtheLawsofCredence .
+,2020.‘Onthepragmaticandepistemicvirtuesofinferencetothebestexplanation’.
+Pettigrew,RichardandTitelbaum,MichaelG,2014.‘DeferenceDoneRight’. Philosopher’sImprint,14(35):1–19.
+Predd,J,Seringer,R,Lieb,EH,Osherson,D,Poor,HV,andKulkarni,S,2009.‘Probabilisticcoherenceandproper
+scoringrules’. IEEETransactionsonInformationTheory ,55(10):4786–4792.
+Roberts, Craige, 2012. ‘Information structure in discourse: Towards an integrated formal theory of pragmatics’.
+SemanticsandPragmatics ,5(6):1–69.
+Rosenkrantz,RogerD,1981. FoundationsandApplicationsofInductiveProbability .RidgeviewPress.
+Roush,Sherrilyn,2009.‘SecondGuessing:ASelf-HelpManual’. Episteme,251–268.
+,2016.‘KnowledgeofOurOwnBeliefs’. PhilosophyandPhenomenologicalResearch ,93(3).
+Salow,Bernhard,2018.‘TheExternalist’sGuidetoFishingforCompliments’. Mind,127(507):691–728.
+,2019.‘ElusiveExternalism’. Mind,128(510):397–427.
+,2020.‘TheValueofEvidence’.InMariaLasonen-AarnioandClaytonLittlejohn,eds., TheRoutledgeHand-
+bookforthePhilosophyofEvidence .Routledge.
+Savage,LeonardJ,1954. TheFoundationsofStatistics .WileyPublicationsinStatistics.
+Schervish,MarkJ,1989.‘Ageneralmethodforcomparingprobabilityassessors’. Theannalsofstatistics ,17(4):1856–
+1879.
+Schoenfield,Miriam,2012.‘Chillingoutonepistemicrationality’. PhilosophicalStudies,158(2):197–219.
+,2014.‘PermissiontoBelieve:WhyPermissivismisTrueandWhatitTellsUsAboutIrrelevantInfluences
+onBelief’. Nous,48(2):193–218.
+, 2016a. ‘An Accuracy Based Approach to Higher Order Evidence’.Philosophy and Phenomenological
+Research,ToAppear.
+,2016b.‘BridgingRationalityandAccuracy’. JournalofPhilosophy ,112(12):633–657.
+,2017.‘ConditionalizationDoesNot(InGeneral)MaximizeExpectedAccuracy’. Mind,126(504):1155–1187.
+Schultheis,Ginger,2018.‘LivingontheEdge:AgainstEpistemicPermissivism’. Mind,127(507):863–879.
+Skyrms,Brian,1980.‘HigherOrderDegreesofBelief’.InDHMellor,ed., ProspectsforPragmatism ,109–137.Cam-
+bridgeUniversityPress.
+,1990.‘TheValueofKnowledge’. MinnesotaStudiesinthePhilosophyofScience ,14:245–266.
+,1997.‘Thestructureofradicalprobabilism’.In Probability,dynamicsandcausality ,145–157.Springer.
+Stalnaker,Robert,2019.‘RationalReflection,andtheNotoriousUnmarkedClock’.In KnowledgeandConditionals:
+EssaysontheStructureofInquiry ,99–112.OxfordUniversityPress.
+Titelbaum,Michael,2015.‘Rationality’sFixedPoint(or:InDefenseofRightReason)’.InTamarSzabóGendlerand
+JohnHawthorne,eds., OxfordStudiesinEpistemology ,volume5,253–292.OxfordUniversityPress.
+vanFraassen,Bas,1984.‘BeliefandtheWill’. TheJournalofPhilosophy ,81(5):235–256.
+White,Roger,2005.‘EpistemicPermissiveness’. PhilosophicalPerspectives,445–459.
+Williamson,Timothy,2000. KnowledgeanditsLimits .OxfordUniversityPress.
+=== PDF page 33 ===
+Deferencedonebetter 131
+,2008.‘WhyEpistemologyCannotbeOperationalized’.InQuentin Smith,ed., Epistemology:NewEssays ,
+277–300.OxfordUniversityPress.
+,2014.‘VeryImprobableKnowing’. Erkenntnis,79(5):971–999.
+,2018.‘Evidenceofevidenceinepistemiclogic’. Higher-OrderEvidence:NewEssays,volumeToappear .
+, 2019. ‘Evidence of Evidence in Epistemic Logic’. In Mattias Skipper and Asbjørn Steglich-Petersen, eds.,
+Higher-OrderEvidence:NewEssays ,265–297.OxfordUniversityPress.
+Howtocitethisarticle: DorstK,LevinsteinBA,SalowB,etal.DeferenceDoneBetter.
+PhilosophicalPerspectives.2021;35:99–150. https://doi.org/10.1111/phpe.12156
+APPENDIXA:GLOSSARY
+Definitionsoftechnicaltermsandsymbolsarerepeatedhere,inalphabeticalorder:
+⋅ Biconvexset:Asetofpointsin 𝐵⊆ℝ 𝑛 isbiconvexiffbothitanditscomplement ℝ𝑛 ⧵𝐵 are
+convex.
+⋅𝑪 𝝅,𝑪𝒊,𝑪−
+𝝅: 𝐶𝜋 is the set of candidates that𝜋 leaves open might be the expert:𝐶𝜋 ∶={𝜌∶
+𝜋(𝑃=𝜌)>0} .F o r𝑖 that occur in a frame,𝐶𝑖 abbreviates𝐶𝑖.𝐶−
+𝜋 ∶=𝐶𝜋 ⧵{𝜋} are the can-
+didatesitleavesopenotherthanitself.
+⋅ Convex:Asetofpoints 𝐶⊆ℝ 𝑛 isconvexiffitcontainsanyaverageofthepointsitcontains:if
+𝑐1,…,𝑐 𝑛 ∈𝐶 ,thenforany 𝜆𝑖 ≥0thatsumto1, ∑
+𝑖𝜆𝑖𝑐𝑖 ∈𝐶 .
+⋅ Convex hull, CH:T h econvex hull of a set of points𝜌1,…,𝜌 𝑛 is the set of points that
+can be obtained by taking averages of them: CH({𝜌1,…,𝜌 𝑛})={𝜌∶∃𝜆 𝑖 ≥0and ∑
+𝑖𝜆𝑖 =
+1suchthat 𝜌= ∑
+𝑖𝜆𝑖𝜌𝑖}.
+⋅ Cut:A cutthroughprobabilityspace ℝ𝑛 isahyperplane,i.e.asetoftheform {𝜋∶𝔼 𝜋(𝑋)=𝑡}
+forsomerandomvariable 𝑋andthreshold 𝑡.
+⋅ Decisionproblem, :Afinitesetofoptions whicharefunctionsfromworlds 𝑤tonumbers
+(utilities)𝑂(𝑤).
+⋅ Estimate-inaccuracymeasure,𝑰𝑿(𝒆),𝑰𝑿(𝝅),𝑰𝑿(𝑷):Givenarandomvariable 𝑋,anestimate-
+inaccuracymeasure𝐼𝑋 takesanestimate 𝑒∈ℝ andaworld 𝑤andoutputstheinaccuracyof 𝑒at
+𝑤,𝐼𝑋(𝑒,𝑤)∈ℝ .‘𝐼𝑋(𝜋)’abbreviatestheinaccuracyof 𝜋’sestimate: 𝐼𝑋(𝜋)=𝐼 𝑋(𝔼𝜋(𝑋)).‘𝐼𝑋(𝑃)’
+isadefinitedescriptionfortheinaccuracyoftheexpert’sestimate,whateveritis: 𝐼𝑋(𝑃)(𝑤)∶=
+𝐼𝑋(𝔼𝑤(𝑋),𝑤).
+⋅ Epistemic Value:𝜋 epistemicallyvalues a frame iff for any random variable𝑋 and generally
+strictly proper estimate-inaccuracy measure𝐼𝑋, 𝔼𝜋(𝐼𝑋(𝑃)) ≤𝔼𝜋(𝐼𝑋(𝜋)), with equality if and
+onlyif 𝜋(𝔼(𝑋)=𝔼 𝜋(𝑋))=1 .
+⋅ Expectedvalue,𝔼𝔼𝔼𝝅(𝑿),𝔼𝔼𝔼𝒘,𝔼𝔼𝔼(𝑿),𝔼𝔼𝔼𝝅(𝑺):theexpectedvalue(estimate)ofarandomvariable 𝑋
+relativeto 𝜋is𝔼𝜋(𝑋)= ∑
+𝑤𝜋(𝑤)𝑋(𝑤).Forprobabilityfunctions 𝑤 intheframeweabbreviate
+𝔼𝑤 to𝔼𝑤.‘𝔼(𝑋)’isadefinitedescriptionfortheexpert’sestimateof 𝑋,whateveritis. 𝔼𝜋(𝑆)∶=∑
+𝑤𝜋(𝑤)𝑆𝑤(𝑤)istheexpectedutilityoffollowingstrategy 𝑆.
+⋅ Fixed-optionDutchbook :Givena 𝜋andframe ⟨𝑊, ⟩,afixed-optionDutchbookisapairof
+decisionproblems 1 and 2,eachofwhichcontaina“nobet”0-option,suchthat 𝑂maximizes
+expected value amongst1 relative to𝜋,𝑆 is recommended for2 by the frame, and for all
+𝑤∈𝑊 ,𝑂(𝑤)+𝑆 𝑤(𝑤)<0 .
+=== PDF page 34 ===
+132 DORSTetal.
+⋅ Generallystrictlyproper(gsp) :Anestimate-inaccuracymeasure 𝐼𝑋 isgspiffforanyproba-
+bilistic𝜋,𝔼𝜋(𝐼𝑋(𝜋)) ≤𝔼𝜋(𝐼𝑋(𝜌))withequalityonlyif 𝔼𝜋(𝑋)=𝔼 𝜌(𝑋).
+⋅ Indicatorvariable,𝟙𝑞:Arandomvariablesuchthat 𝟙𝑞(𝑤)=1 if𝑤∈𝑞 and𝟙𝑞(𝑤)=0 if𝑤∉𝑞 .
+⋅ Informed expert, ˆ𝑷,ˆ𝒘: The opinions the expert would have were they informed that they
+weretheexpert: ˆ𝑤 ∶= 𝑤(⋅|𝑃= 𝑤).‘ˆ𝑃’isadefinitedescriptionfortheinformedexpertopin-
+ions,whatevertheyare.
+⋅ Modestlyinformed:Acandidate 𝑖 ismodestlyinformed iffit’sintheconvexhullof {ˆ𝑖}∪𝐶 −
+𝑖 ,
+iff 𝑖 =𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗 for𝜆𝑖𝑗 ≥0suchthat ∑
+𝑗𝜆ij =1.
+⋅ NewReflection:𝜋new-reflectsaframeiffforeveryfunction 𝜌,𝜋(⋅|𝑃=𝜌)=𝜌(⋅ |𝑃=𝜌) .Equiv-
+alently(informedversion): 𝜋(⋅|ˆ𝑃=𝜌)=𝜌 .
+⋅ Option,𝑶:Anoption 𝑂isafunctionfromworlds 𝑤torealnumbers 𝑂(𝑤)representedtheutility
+thatwouldbeachievedbytakingoption 𝑂at𝑤.
+⋅ ‘𝑷’, ‘𝒘’, ‘𝝅’, and ‘𝝆’: ‘𝑃’ is a definite description for the expert credencefunction,whatever it
+is.‘ 𝑤’isarigiddesignatorforthecredencefunctiontheexperthasatworld 𝑤.‘𝜋’(alongwith
+otherlower-caseGreekletters,like‘ 𝜌’)isarigiddesignatorforanarbitraryprobabilityfunction.
+⋅[ 𝑷∈𝑪 ]∶ ={ 𝑤∈𝑊∶𝑤 ∈𝐶} istheproposition(setofworldsinaprobabilityframe ⟨𝑊, ⟩)
+thattheexpert’scredencefunctionisintheset 𝐶.
+⋅ Probabilityframe ⟨𝑾,  ⟩:Afinitesetofworlds 𝑊 andafunction  fromworlds 𝑤∈𝑊 to
+probabilitydistributions 𝑤 definedoverthesubsetsof 𝑊,thoughtofastheexpert’scredences
+at𝑤.
+⋅ Random variable,𝑿:Ar a n d o mv a r i a b l e𝑋 is any function from worlds𝑤 to real numbers
+𝑋(𝑤).
+⋅ Reflection:𝜋reflectsaframeiffforeveryfunction 𝜌,𝜋(⋅|𝑃=𝜌)=𝜌 .Equivalently,iffforevery
+convexset 𝐶:𝜋(⋅|𝑃∈𝐶)∈𝐶 .
+⋅ SimpleTrust:𝜋simplytrusts aframeiff,forall 𝑞,𝑡:𝜋(𝑞|𝑃(𝑞) ≥𝑡) ≥𝑡.
+⋅ Strategy,𝑺:givenadecisionproblem ,a strategyisafunctionfromworlds 𝑤tooptions𝑆𝑤 ∈ 
+suchthat𝑆𝑤 =𝑆𝑣 whenever 𝑤 = 𝑣.𝑆isrecommendedfor byaframeiff,foreach 𝑤∈𝑊 ,𝑆𝑤
+maximizesexpectedutilityrelativeto 𝑤 amongsttheoptions: 𝔼𝑤(𝑆𝑤) ≥𝔼𝑤(𝑂)forany 𝑂∈ .
+⋅ Total Trust: 𝜋 totally trustsa frame iff for any random variable𝑋 and threshold𝑡∈ℝ ,
+𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡) ≥𝑡.Equivalently,foreverybiconvexset 𝐵,𝜋(⋅|𝑃∈𝐵)∈𝐵 .
+⋅ Trust:𝜋trustsaframeiffforany 𝑞,𝑝,𝑡 :𝜋(𝑞|𝑝∧[𝑃(𝑞 |𝑝) ≥𝑡]) ≥𝑡.
+⋅ Validates:Aframe ⟨𝑊, ⟩validatesadeferenceprinciple Φiffforevery 𝑖∈𝑊 , 𝑖 defersΦ-wise
+totheframe.
+⋅ Value:𝜋valuesaframe ⟨𝑊, ⟩iffforanydecisionproblem ,anyrecommendedstrategyhas
+higherexpectedutilitythananyoption:if 𝑆isrecommendedfor bytheframe,then 𝔼𝜋(𝑆)=∑
+𝑣𝜋(𝑣)𝑆𝑣(𝑣) ≥𝔼𝜋(𝑂)forany 𝑂∈ .
+⋅𝑾 𝝅 ∶{𝑤∈𝑊∶𝜋(𝑤)>0} .
+APPENDIXB:PROOFS
+Forbothefficiencyandtechnicalreasonswewillprovethemainresultsusingaslightlydifferent
+structurethanthetheoremsstatedinthetext.Ratherthanprovingaseriesofbiconditionals,will
+willfirstproveacycle,andthenusealloftheseresultstogetherforthefinallink.Inparticular,
+fortechnicalreasonsitismuchhardertoprovethefullversionofValuedirectly;instead,wefirst
+workwithapotentiallyweakerversion(whichwe’lllatershowtoinfactbeequivalent):
+=== PDF page 35 ===
+Deferencedonebetter 133
+WeakValue:Givenany ,there existssomerecommendedstrategy 𝑆suchthatforall 𝑂∈ :
+𝔼𝜋(𝑆) ≥𝔼𝜋(𝑂).
+ThedifferenceisthatValueuniversallyquantifiesoverrecommendedstrategies,whereasWeak
+Valueexistentiallyquantifiesoverthem.Notethatforframes-plus-decision-problemsforwhich
+therecommendedstrategyisunique,WeakValueholdsiffValuedoes.
+We’llproceedasfollows.We’llfirst(§ B.1)provethat 𝜋weaklyvaluesaframeonlyif 𝜋totally
+trustsit.We’llthenprovethat 𝜋totallytrustsaframeonlyif 𝜋isintheconvexhullof 𝐶𝜋 andeach
+𝑖 ∈𝐶𝜋 ismodestlyinformed.We’llthenshowthatifthisconditionholds,then 𝜋weaklyvalues
+the frame. This shows that these three conditions are equivalent. Next (§B.2), we’ll show that,
+together, they entail that𝜋 values the frame—thus establishing Theorems2.2 and 4.1. Finally,
+in §B.3 we’ll prove Theorem3.2—that Total Trust is equivalent to epistemic value—directly.
+Together,theseresultsestablishTheorem 5.1.
+B.1 WeakValue⇔Total Trust⇔ModestlyInformed
+LemmaB.1. If𝜋weaklyvalues ⟨𝑊, ⟩,𝜋totallytrustsit.
+Proof. Supposing 𝜋 doesn’t totally trust⟨𝑊, ⟩, we find a decision problem using the same
+random variable on which Value fails and in which there is a unique recommended strategy—
+therefore,WeakValuefailstoo.
+If𝜋doesn’ttotallytrusttheframe,thereisan 𝑋,𝑡 suchthat 𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡)=𝑎<𝑡 .(Notethat
+thisimplies 𝜋(𝔼(𝑋) ≥𝑡)>0 .)Findthemaximum 𝑏<𝑡 suchthat ∃𝑤∈𝑊 :𝔼𝑤(𝑋)=𝑏 ,andlet 𝑠
+beanynumberstrictlybetween max(𝑎,𝑏) and𝑡.Let 𝑌bearandomvariablethattakesvalues 𝑠at
+allworlds,andlet ={𝑋,𝑌} .
+By construction, for all𝑥∈[𝔼(𝑋) ≥𝑡], 𝔼𝑥(𝑋)>𝔼 𝑥(𝑌);a n df o ra l l𝑦∈[𝔼(𝑋)<𝑡] , 𝔼𝑦(𝑋)<
+𝔼𝑦(𝑌). Thus there is a uniquely recommended strategy𝑆—namely,𝑆𝑤 =𝑋 iff𝑤∈[𝔼(𝑋) ≥𝑡]
+and𝑆𝑤 =𝑌 iff𝑤∈[𝔼(𝑋)<𝑡] . Noting that𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡)<𝑠 and that𝔼𝜋(𝑌|𝔼(𝑋)<𝑡)=𝑠 if
+defined,wethenhave:
+𝔼𝜋(𝑆)=𝜋(𝔼(𝑋) ≥𝑡)⋅𝔼 𝜋(𝑋|𝔼(𝑋) ≥𝑡) +𝜋(𝔼(𝑋)<𝑡)⋅𝔼 𝜋(𝑌|𝔼(𝑋)<𝑡)
+<𝜋(𝔼(𝑋) ≥𝑡⋅𝑠 +𝜋(𝔼(𝑋)<𝑡)⋅𝑠
+=𝑠=𝔼 𝜋(𝑌).
+Wethushave 𝔼𝜋(𝑌)>𝔼 𝜋(𝑆);WeakValuefails. □
+Thenextstepistoprove:
+Lemma B.2. If𝜋 totally trusts⟨𝑊, ⟩,t h e n𝜋 is in the convex hull of𝐶𝜋 and each𝑖 ∈𝐶𝜋 is
+modestlyinformed.
+Todoso,wefirstprovesomelemmasaboutthepropertiesof 𝐶𝜋 ifallthecandidatesaremod-
+estlyinformed;inparticular,wewanttoshowthatthatassuming 𝜋isintheconvexhullof 𝐶𝜋,
+all the candidates are modestly informed iff a more general condition (class-convexity, defined
+below)holds.
+=== PDF page 36 ===
+134 DORSTetal.
+RemarkB.3. When𝜋= ∑
+𝑖𝜆𝑖 𝑖,or 𝑗 =𝜆𝑗𝑗ˆ𝑗 + ∑
+𝑖∈𝐶−
+𝑖
+𝜆𝑗𝑖 𝑖,theremaywellbemultipleworlds
+𝑤 ≠𝑤′ such that 𝑤 = 𝑖 = 𝑤′. Nevertheless, we can always choose a single representative
+world𝑖ineachsuchequivalenceclass,andinwhatfollowswewritetheterms 𝜆𝑗𝑖 (etc.)assuming
+wehavedoneso.
+Lemma B.4.Takeanynonemptysetofpoints 𝐴={ 1,…, 𝑛}thatareeachmodestlyinformed,
+so 𝑖 =𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗,andwhichassignweightonlytoeachother,so 𝜆𝑖𝑗 >0 onlyif 𝑗 ∈𝐴.
+Then𝜆𝑖𝑖 >0 forsome 𝑖 in𝐴.
+Proof. Suppose not: each𝑖 = ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗 where each𝐶−
+𝑖 ⊂{ 1,…, 𝑛}. Then each𝑖 is in
+the convex hull of the other𝑗, meaning thatCH(𝐴)has at most one extremepoint and there-
+foreisasingleton.Butsince 1 ∉𝐶−
+1 , 1 = ∑
+𝑗∈𝐶−
+1
+𝜆1𝑗 𝑗 =0,contradictingthefactthat 1 isa
+probabilityfunction. □
+DefinitionB.5. Let𝑾𝝅 bethesetofworldsseenby 𝜋:{𝑤∈𝑊∶𝜋(𝑤)>0} .
+LemmaB.6 (Transitivity). Ifeach 𝑖 in𝐶𝜋 ismodestlyinformedand 𝜋isintheirconvexhull,then
+theyallaresuchthat 𝑖(𝑊𝜋)=1
+Proof. Let 𝑊′
+𝜋 ∶={𝑤∈𝑊 𝜋 ∶ 𝑤(𝑊𝜋)=1} . 𝑊′
+𝜋 is nonempty, otherwise𝜋 is not in𝐶𝜋’s con-
+vex hull. We first note that every𝑖 for𝑖∈𝑊 ′
+𝜋, is a mixture ofˆ𝑖 and{𝑗 ∶𝑗∈𝑊 ′
+𝜋}.F o r𝑖 =
+𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗,andsince 𝑖(𝑊𝜋)=1 ,𝐶𝑖 ⊆{ 𝑗 ∶𝑗∈𝑊 𝜋};yetforany 𝑗 with𝑗∈𝑊 𝜋 but
+not in𝑊′
+𝜋, 𝑗(𝑊𝜋)<1 ,s o𝑗(𝑥)>0 for𝑥∉𝑊 𝜋; hence if𝜆𝑖𝑗 >0, then𝑖(𝑥) ≥𝜆𝑖𝑗 𝑗(𝑥)>0 ,
+contradictingtheassumptionthat 𝑖(𝑊𝜋)=1 .
+Next we show that for𝑖∈𝑊 ′
+𝜋, 𝑖(𝑊′
+𝜋)=1 . Suppose not, so𝑖(𝑥)>0 for𝑥∈𝑊 𝜋 but not in
+𝑊′
+𝜋.Let 𝑡∶=max 𝑤∈𝑊′
+𝜋(𝑤(𝑥)),andlet 𝑀∶={𝑤∈𝑊 ′
+𝜋 ∶ 𝑤(𝑥)=𝑡} and𝑚∈𝑀 .Notethat(by
+theabove) 𝜆𝑚𝑗 >0 onlyif 𝑗∈𝑊 ′
+𝜋;hence 𝜆𝑚𝑗 >0 onlyif 𝑗(𝑥) ≤𝑡.Thusif 𝜆𝑚𝑘 >0 for𝑘∉𝑀 ,
+𝑗(𝑥) would average to less than𝑡;s o𝜆𝑚𝑗 >0 only if𝑗∈𝑀 . Notice also that sinceˆ𝑚(𝑥)=0
+(since 𝑥(𝑊𝜋)<1 but 𝑚(𝑊𝜋)=1 ),wemustsimilarlyhavethat 𝜆𝑚𝑚 =0,for 𝑚(𝑥) ≤𝜆𝑚𝑚 ⋅0+
+(1−𝜆 𝑚𝑚)𝑡.Hencewehavethatforall 𝑚∈𝑀 :𝜆𝑚𝑚 =0 but𝜆𝑚𝑗 >0 onlyif 𝑗∈𝑀 ;i.e.eachsuch
+𝑚ismodestlyinformed,assignweightonlytoeachother,andassignnoweighttothemselves.By
+LemmaB.4,thisisacontradiction;sowehavethat 𝑖(𝑊′
+𝜋)=1 .
+We can now show that𝑊𝜋 ⧵𝑊′
+𝜋 =∅. For we know that𝜋= ∑
+𝑖𝜆𝑖 𝑖 for 𝑖 ∈𝐶𝜋.S i n c e
+𝜋(𝑊𝜋)=1 weknow 𝜆𝑖 >0 onlyif 𝑖(𝑊𝜋)=1 ,hence 𝜆𝑖 >0 onlyif 𝑖 ∈𝑊′
+𝜋.Butsincewenow
+knowthatall such 𝑖 have 𝑖(𝑊′
+𝜋)=1 ,it follows that𝜋(𝑊′
+𝜋)=1 ,i . e.𝑊𝜋 =𝑊′
+𝜋. Henceforall
+𝑖∈𝑊 𝜋 =𝑊′
+𝜋,wehave 𝑖(𝑊𝜋)= 𝑖(𝑊′
+𝜋)=1 . □
+LemmaB.7 (Reflexivity). Ifeach 𝑖 ∈𝐶𝜋 ismodestlyinformedand 𝜋isintheirconvexhull,then
+forall 𝑖∈𝑊 𝜋, 𝑖(𝑖)>0 .
+Proof. Suppose 𝜋(𝑖)>0 but 𝑖(𝑖)=0 .S i n c e𝜋= ∑
+𝑗∈𝐶𝜋
+𝜆𝑗 𝑗, there must be some𝑗∈𝑊 𝜋
+such that 𝑗(𝑖)>0 .L e t𝑡=max 𝑗∈𝑊𝜋(𝑗(𝑖)) and 𝑀∶={𝑗∈𝑊 𝜋 ∶ 𝑗(𝑖)=𝑡} ,a n d𝑚∈𝑀 .B y
+Lemma B.6, 𝑚(𝑊𝜋)=1 ,s o𝜆𝑚𝑘 >0 only if𝑘∈𝑊 𝜋,s oo n l yi f𝑘(𝑖) ≤𝑡.T h u si f𝜆𝑚𝑘 >0 for
+𝑘∉𝑀 , 𝑚(𝑖)mustaveragetolessthan 𝑡;butitdoesn’t.Similarly,notethatsince ˆ𝑚(𝑖)=0 (since
+𝑖 ≠𝑚),wemustlikewisehavethat 𝜆𝑚𝑚 =0.So 𝑀 isanonemptysetofworldswhichassign
+=== PDF page 37 ===
+Deferencedonebetter 135
+weight𝜆𝑚𝑘 >0 only to each other and not to themselves—contradicting LemmaB.4. Hence if
+𝑖∈𝑊 𝜋,then 𝑖(𝑖)>0 . □
+DefinitionB.8. 𝑊𝜋 isclass-convexiffeachcandidate 𝑖 isintheconvexhullofitsinformed
+selfandtheothercandidatesin 𝑊𝜋 (asopposedtotheothercandidates itleavesopen,formodest-
+informedness):forall 𝑖 ∈𝐶𝜋, 𝑖 =𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗 ≠𝑖∶𝑗∈𝐶𝜋
+𝜆𝑖𝑗 𝑗.
+Lemma B.9(Class-Convexity). If𝜋 is in the convex hull of𝐶𝜋,t h e n𝑊𝜋 is class-convex iff each
+𝑖 ∈𝐶𝜋 ismodestlyinformed.
+Proof. (⇒)∶ Suppose𝑊𝜋 is class-convex but there is a𝑖 ∈𝐶𝜋 that’s not modestly informed.
+Since𝑊𝜋 isclass-convex, 𝑖 isintheconvexhullofitsinformedselfandtheothercandidatesin
+𝑊𝜋: 𝑖 =𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗 ≠𝑖∶𝑗∈𝐶𝜋
+𝜆𝑖𝑗 𝑗.ByLemma B.6, 𝑖(𝑊𝜋)=1 ,so 𝐶𝑖 ⊆𝐶𝜋.Since 𝑖 isnotin
+theconvexhullof ˆ𝑖 and𝐶−
+𝑖 ,thismeansthereissome 𝑗 ∈𝐶𝜋 but 𝑗 ∉𝐶𝑖 suchthat 𝜆𝑖𝑗 >0.By
+LemmaB.7, 𝑗(𝑗)>0 ,hence 𝑖(𝑗) ≥𝜆𝑖𝑗 𝑗 >0.Butsince 𝑗 ∉𝐶𝑖, 𝑖(𝑗)=0 —contradiction.
+(⇐)∶ If𝑊𝜋 isnotclass-convex,thenthereisa 𝑖 that’snotintheconvexhullof ˆ𝑖 and{𝑗 ≠
+𝑖 ∶ 𝑗 ∈𝐶𝜋}.SincebyLemma B.6𝐶𝑖 ⊆𝐶𝜋,itfollowsthat 𝑖 isnotintheconvexhullof ˆ𝑖 and
+𝐶−
+𝑖 ,soitnotmodestlyinformed. □
+We’renowinapositiontoproveLemma B.2,repeatedhere:
+Lemma B.10. If𝜋 totally trusts⟨𝑊, ⟩,t h e n𝜋 is in the convex hull of𝐶𝜋 and each𝑖 ∈𝐶𝜋 is
+modestlyinformed.
+Proof. Suppose𝜋 is not in the convex hull of𝐶𝜋. Then by the hyperplane separation theorem,
+there is an𝑋,𝑡 strongly separating them: i.e.,𝔼𝜋(𝑋)<𝑡 but for all𝑖 ∈𝐶𝜋, 𝔼𝑖(𝑋) ≥𝑡. Then
+𝜋(𝔼(𝑋) ≥𝑡)=1 ,so 𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡)=𝔼 𝜋(𝑋)<𝑡 ;TotalTrustfails.
+Nowsupposethat 𝜋isintheconvexhullof 𝐶𝜋 yetsome 𝑖 ∈𝐶𝜋 isnotmodestlyinformed.By
+LemmaB.9, this means𝑊𝜋 is not class-convex, so some𝑗 is not in the convex hull ofˆ𝑗 and
+{𝑘 ≠𝑗 ∶ 𝑘 ∈𝐶𝜋}.Bythehyperplaneseparationtheorem,theremustbean 𝑋,𝑡 thatstrongly
+separatesthem: 𝔼𝑗(𝑋) ≥𝑡,but ˆ𝔼𝑗(𝑋)<𝑡 andlikewiseforall 𝑘 ≠𝑖 in𝐶𝜋,𝔼𝑘(𝑋)<𝑡 .Bythelat-
+terfact, [𝔼(𝑋) ≥𝑡]=[𝑃= 𝑗].IfTotalTrustheld,we’dhave 𝔼𝜋(𝑋|𝔼(𝑋) ≥𝑡)=𝔼 𝜋(𝑋|𝑃= 𝑗)=
+ˆ𝔼𝑗(𝑋) ≥𝑡 (since, by endnotes 36 and 37, Total Trust entails New Reflection); but by the above,
+ˆ𝔼𝑗(𝑋)<𝑡 ;soTotalTrustfails. □
+Next,weprovethelastlinkinthiscycle:
+LemmaB.11. If𝜋isintheconvexhullof 𝐶𝜋 andeach 𝑖 ∈𝐶𝜋 ismodestlyinformed,then 𝜋weakly
+values ⟨𝑊, ⟩.
+Proof. By LemmaB.9, we know that𝑊𝜋 is class convex, and by LemmaB.6,e a c h𝑖 ∈𝐶𝜋 has
+𝑖(𝑊𝜋)=1 .Thusthroughoutwerestrictquantificationoverworldstothosein 𝑊𝜋.
+Wefirstprovethateach 𝑖 in𝐶𝜋 weaklyvaluestheframe,andmoreoverthatthereisalwaysa
+singlestrategythattheyallvalue.Supposenot,sothereisadecisionproblem suchthatforany
+recommendedstrategy 𝑆,thereisaworld 𝑖andanoption 𝑂∈ suchthat 𝔼𝑖(𝑂)>𝔼 𝑖(𝑆),hence
+𝔼𝑖(𝑂−𝑆)>0 .Forany 𝑗,let 𝑗 ∶={𝑂∶(∀𝑂 ′)𝔼𝑗(𝑂) ≥𝔼𝑗(𝑂′)}bethesetofoptionswithmaximal
+=== PDF page 38 ===
+136 DORSTetal.
+(uninformed)expectedutilityatworld 𝑗;soany 𝑆suchthatforall 𝑗∈𝑊 ,𝑆𝑗 ∈ 𝑗 willbearecom-
+mendedstrategy.Chooseastrategy 𝑆suchthatforall 𝑗∈𝑊 :𝑆𝑗 maximizesinformedexpectedutil-
+ityamongsttheoptionswithmaximal(uninformed)expectedutility: ∀𝑂′ ∈ 𝑗,ˆ𝔼𝑗(𝑆𝑗) ≥ˆ𝔼𝑗(𝑂′).
+Thisisarecommendedstrategy,andsostillwehavesome 𝑖,𝑂 suchthat 𝔼𝑖(𝑂−𝑆)>0 .W euse
+thisfacttoshowthatclass-convexitymustfail,contradictingourhypothesis.
+Find a pair ⟨𝑂′,𝑚 ⟩ that maximizes this divergence in the frame: 𝔼𝑚(𝑂′ −𝑆)=𝛼=
+max⟨𝑂′′,𝑗⟩(𝔼𝑗(𝑂′′ −𝑆)). (It exists, since the number of options and worlds are both finite.) Let
+𝑀∶={𝑗∈𝑊∶𝔼 𝑗(𝑂′ −𝑆)=𝛼} be the set of worlds with this maximal divergence. Note three
+factsabout 𝑀:
+F1:I f𝑘∉𝑀 ,then 𝔼𝑘(𝑂′ −𝑆)<𝛼 ,byconstruction.
+F2:I f𝑗∈𝑀 ,then 𝑂′ hasmaximalexpectedvalueamongst .(Ifnot,then 𝛼isnotthemaximal
+divergenceafterall,forthereisan 𝑂′′suchthat𝔼𝑗(𝑂′′)>𝔼 𝑗(𝑂′),andtherefore 𝔼𝑗(𝑂′′ −𝑆)>
+𝔼𝑗(𝑂′ −𝑆)=𝛼 .)
+F3:I f𝑗∈𝑀 , thenˆ𝔼𝑗(𝑂′ −𝑆) ≤0<𝛼 ,s i n c e𝑂′ maximizes𝔼𝑗,a n d𝑆𝑗 has maximal informed
+expected value amongst such options, soˆ𝔼𝑗(𝑆𝑗) ≥ˆ𝔼𝑗(𝑂′).S i n c eˆ𝑗(𝑆=𝑆 𝑗)=1 since ˆ𝑗
+knowswhat 𝑃is,itfollowsthat ˆ𝔼𝑗(𝑆)= ˆ𝔼𝑗(𝑆𝑗) ≥ˆ𝔼𝑗(𝑂′),so ˆ𝔼𝑗(𝑂′ −𝑆) ≤0.
+Nowlet𝐴∶= CH({𝑘 ∶𝑘∉𝑀}∪{ ˆ𝑗 ∶𝑗∈𝑀}) betheconvexhulloftheuninformedopinions
+outside𝑀andtheinformedopinionsinsideit.ByF1andF3, ∀𝜌∈𝐴 :wehavethat 𝔼𝜌(𝑂′ −𝑆)<𝛼 ,
+whileforall 𝑗∈𝑀 :𝔼𝑗(𝑂′ −𝑆) ≥𝛼.Thus ⟨𝑂′ −𝑆,𝛼 ⟩determinesahyperplanethatseparatesall
+the 𝑗 (for𝑗∈𝑀 )from 𝐴,meaning 𝑗 isnotin 𝐴.
+Wenowstrengthenthisconclusiontoshowthattheremustbea 𝑖 for𝑖∈𝑀 onwhichclass-
+convexityfails,i.e. 𝑖 ∉𝐴𝑖 ∶=CH({ˆ𝑖}∪{ 𝑗 ≠𝑖 ∶ 𝑗 ∈𝐶𝜋}).Notethat
+𝐴𝑖 ⊆𝐴∗
+𝑖 ∶=CH({ˆ𝑗 ∶𝑗∈𝑀}∪{ 𝑘 ∶𝑘∉𝑀}∪{ 𝑗 ≠𝑖 ∶𝑗∈𝑀})
+= CH(𝐴∪{ 𝑗 ≠𝑖 ∶𝑗∈𝑀})
+soit’llsufficetoshowthat 𝑖 isseparablefrom 𝐴∗
+𝑖 .
+Take a𝑖 that is extreme within the convex hull of{𝑗 ∶𝑗∈𝑀} ,s o𝑖 is not in the convex
+hullof {𝑗 ≠𝑖 ∶𝑗∈𝑀} .Suppose,forreductio,that 𝑖 isintheconvexhullof 𝐴∗
+𝑖 ,sothereare
+𝜌𝑘 ∈𝐴 suchthat 𝑖 = ∑
+𝑘𝜆𝑘𝜌𝑘 + ∑
+𝑗 ≠𝑖∶𝑗∈𝑀 𝜆𝑗 𝑗.Now,if 𝜆𝑘 =0 forall 𝜌𝑘,then 𝑖 wouldbein
+theconvexhullof {𝑗 ≠𝑖 ∶𝑗∈𝑀} ,contradictingtheassumptionthatit’sextremewithin 𝑀;so
+𝜆𝑘 >0 forsome 𝜌𝑘.Butweknowthat 𝔼𝜌(𝑂′ −𝑆) ≤𝛼−𝜀 for𝜀>0 ,while 𝔼𝑗(𝑂′ −𝑆)=𝛼 forall
+𝑗∈𝑀 ;hence 𝔼𝑖(𝑂′ −𝑆) ≤𝜆𝑘(𝛼−𝜀)+(1−𝜆 𝑘)𝛼<𝛼 ,contradictingtheassumptionthat 𝑖∈𝑀 .
+Thus 𝑖 isnotin𝐴∗
+𝑖 ,andhenceitisnotin 𝐴𝑖,so 𝑊𝜋 isnotclass-convex.
+Thisestablishesthatforanydecisionproblem ,thereisastrategy 𝑆suchthatforall 𝑖∈𝑊 𝜋
+and𝑂∈ ,𝔼𝑖(𝑆) ≥𝔼𝑖(𝑂),so 𝔼𝑖(𝑆−𝑂) ≥0.Notethatsince 𝜋isintheconvexhullofthe 𝑖 for
+𝑖∈𝑊 𝜋,thismeansthatforanysuch ,thereisan 𝑆suchthatforall 𝑂,𝔼𝜋(𝑆−𝑂)= ∑
+𝑖𝜆𝑖𝔼𝑖(𝑆−
+𝑂) ≥ ∑
+𝑖𝜆𝑖0=0 ,andhence 𝔼𝜋(𝑆) ≥𝔼𝜋(𝑂),andso 𝜋weaklyvaluestheframe. □
+ByLemma B.1,𝜋weaklyvaluesaframeonlyif 𝜋totallytrustsit;byLemma B.2,𝜋totallytrusts
+itonlyif 𝜋isintheconvexhullof 𝐶𝜋 andeach 𝑖 ∈𝐶𝜋 ismodestlyinformed;byLemma B.11only
+if𝜋weaklyvaluestheframe.Hencewe’veshownthatthesethreeconditionsareequivalent.
+=== PDF page 39 ===
+Deferencedonebetter 137
+B.2 WeakValue⇔Value
+HavingestablishedthatWeakValueisequivalenttobothTotalTrustandourconvex-hull-plus-
+modestly-informedconstraint,wenowprovethattogetheralltheseprinciplesentailfullValue.
+SincefullValue(obviously)entailsWeakValue(sincetherealwaysisatleastonerecommended
+strategy),thiswillestablishthatalltheseconditionsareequivalent.
+WefirstshowahelpfulLemmaaboutthedecompositionofmodestlyinformed 𝑖:
+Lemma B.12. If𝜋 is in the convex hull of𝐶𝜋 and each𝑖 ∈𝐶𝜋 is modestly informed, so𝑖 =
+𝜆𝑖𝑖ˆ𝑖 + ∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗 𝑗,then 𝜆𝑖𝑖 >0.
+Proof. Notethatbytheresultsof§B.1,both 𝜋andallthe 𝑖 musttotallytrusttheframe.Suppose
+𝜆𝑖𝑖 =0,s o𝑖 is in the convex hull of𝐶−
+𝑖 .T a k e𝑘 ∈argmax 𝑗∈𝐶−
+𝑖
+(𝑘(𝑃= 𝑖)).S i n c e𝑖 is in
+theconvexhullof 𝐶−
+𝑖 , 𝑖(𝑃= 𝑖) ≤𝑘(𝑃= 𝑖).Ifthereisa 𝑤∈[𝑃= 𝑖]suchthat 𝑡= 𝑘(𝑤)>
+𝑖(𝑤),then 𝜋(𝑤|𝑃(𝑤) ≥𝑡)=0 ,contradicting(Simple)Trust.Thusforall 𝑤∈[𝑃= 𝑖], 𝑖(𝑤) ≥
+𝑘(𝑤),hencewehaveequality: 𝑖(𝑃= 𝑖)= 𝑘(𝑃= 𝑖).Sincenevertheless 𝑖 ≠𝑘,theremust
+bean 𝑥∉[𝑃= 𝑖]suchthat 𝑘(𝑥)> 𝑖(𝑥)andhence 𝑘(¬{𝑥})< 𝑖(¬{𝑥}).Thuswehavethat
+𝑡′ ∶= 𝑘(𝑃= 𝑖 |¬{𝑥})= 𝑘(𝑃= 𝑖)
+𝑘(¬{𝑥}) > 𝑖(𝑃= 𝑖)
+𝑖(¬{𝑥}) = 𝑖(𝑃= 𝑖 |¬{𝑥})
+Thusifthere’ssomeworldin 𝑊𝜋 that’snot𝑥andwhere [𝑃(𝑃= 𝑖 |¬{𝑥}) ≥𝑡′]holds,wehavethat
+𝜋(𝑃= 𝑖 |¬{𝑥}∧[𝑃(𝑃= 𝑖 |¬{𝑥}) ≥𝑡′])iswell-definedandequalto 0<𝑡 ′ (sinceno 𝑤∈[𝑃= 𝑖]
+is such a world), contradicting the fact that𝜋 trusts the frame. Conversely, if there is no such
+world,thatmeansthat 𝑘=𝑥 andsothen 𝑘(𝑃(𝑃= 𝑖 |¬{𝑥})<𝑡 ′|¬{𝑥})=1 .ItfollowsthatTrust
+fails at𝑘, since we have that𝑘(𝑃= 𝑖 |¬{𝑥}∧[𝑃(𝑃= 𝑖 |¬{𝑥})<𝑡 ′])= 𝑘(𝑃= 𝑖 |¬{𝑥}) ≥𝑡′,
+contradictingthefactthat 𝑘 truststheframe. □
+We’re now in a position to prove that Weak Value entails full Value. The strategy is to take a
+casewhereValuefails,andshowthatwecanmodifyitbyslightlyadjustingtheavailableoptions
+tomaketherebea uniquerecommendedstrategy,togenerateacasewhereWeakValuefails.To
+doso,wewillneedtouseourknowledgeaboutwhattheframemustlooklikeforWeakValueto
+hold,usingtheLemmas B.1–B.12.
+LemmaB.13. 𝜋weaklyvaluesaframeiffitvaluesit.
+Proof. The⇐directionisimmediate,soweshowthe ⇒direction.Suppose 𝜋weaklyvaluesthe
+frame ⟨𝑊, ⟩. By LemmasB.1–B.11we know that𝜋 also totally trusts the frame and that each
+𝑖 ∈𝐶𝜋 ismodestlyinformedandthat 𝜋isintheirconvexhull.Moreover,sinceforeach 𝑖 ∈𝐶𝜋,
+byLemma B.6weknowthat 𝐶𝑖 ⊆𝐶𝜋,weknowthatall 𝑗 ∈𝐶𝑖 aremodestlyinformed;andsince
+byLemma 𝐵.7wehavethat 𝑖(𝑖)>0 , 𝑖 ∈𝐶𝑖 andso 𝑖 isautomaticallyintheconvexhullof 𝐶𝑖.
+ThusapplyingLemmas B.1–B.11with 𝑖 substitutedfor 𝜋,wehavethateach 𝑖 alsoweaklyvalues
+andtotallytruststheframe.
+Suppose,forreductio,that 𝜋 doesn’tvaluetheframe,sothatthereisadecisionproblem =
+{𝑂1,…,𝑂 𝑚}andarecommendedstrategy 𝑆suchthat𝔼𝜋(𝑂−𝑆)>0 forsome𝑂∈ .Wewillshow
+that we can alter the decision problem to make one on which there is aunique recommended
+strategy,andonwhich 𝜋stillfailstovaluetheframe—andhence,thatWeakValuefailsaswell
+=== PDF page 40 ===
+138 DORSTetal.
+(sincewhenthereisauniquerecommendedstrategy,WeakValueholdsforthatdecisionproblem
+iffValuedoes).
+Relabel things so that{1,…, 𝑛}=𝐶 𝜋, and consider the set of options they select under𝑆:
+{𝑆1,…,𝑆 𝑛}⊆ .Wearegoingtoremovealltheseoptionsfromthedecisionproblem,andreplace
+themwithones 𝑆𝑡
+𝑖 thatareidenticalto 𝑆𝑖 excepttheyyieldanadditional 𝑡valuewhen 𝑃= 𝑖.In
+particular,forany 𝑡 ≥0and𝑖,let
+𝑆𝑡
+𝑖(𝑤)∶=
+{
+𝑆𝑖(𝑤)+𝑡 if 𝑤 = 𝑖
+𝑆𝑖(𝑤) otherwise
+Since𝐶𝜋 isallmodestlyinformed,forall 𝑖 ∈𝐶𝜋 wehavethat
+𝔼𝑖
+(
+𝑆𝑡
+𝑖 −𝑆𝑖
+)
+=𝜆𝑖𝑖ˆ𝔼𝑖
+(
+𝑆𝑡
+𝑖 −𝑆𝑖
+)
++
+∑
+𝑗∈𝐶−
+𝑖
+𝜆𝑖𝑗𝔼𝑗
+(
+𝑆𝑡
+𝑖 −𝑆𝑖
+)
+whereˆ𝔼𝑖(𝑆𝑡
+𝑖 −𝑆𝑖)=𝑡 and𝔼𝑗(𝑆𝑡
+𝑖 −𝑆𝑖) ≥0bydefinitionof 𝑆𝑡
+𝑖,and 𝜆𝑖𝑖 >0 byLemma B.12.Viewing
+this equation as a function of𝑡, notice that it is continuous and monotonically increasing in𝑡;
+moreover,when 𝑡=0 ,𝔼𝑖(𝑆𝑡
+𝑖 −𝑆𝑖)=0 ,andas 𝑡→∞ ,𝜆𝑖𝑖𝑡→∞ andthus 𝔼𝑖(𝑆𝑡
+𝑖 −𝑆𝑖)→∞ .Asa
+result,forany 𝛼 ≥0,bytheintermediatevaluetheoremthereisaunique 𝑡𝑖 suchthat𝔼𝑖(𝑆𝑡𝑖
+𝑖 −𝑆𝑖)=
+𝛼.(Notethatas 𝛼→0 ,likewise 𝑡𝑖 →0.)
+Consideranarbitrary 𝛼>0 andforeach 𝑖 choose𝑡𝑖 >0 suchthat 𝔼𝑖(𝑆𝑡𝑖
+𝑖 −𝑆𝑖)=𝛼 .Nowcon-
+sider a new decision-problem∗ ∶=( −{𝑆1,…,𝑆 𝑛})∪{𝑆 𝑡1
+1 ,…,𝑆 𝑡𝑛
+𝑛 }. We first show that for any
+𝛼>0 ,thereisauniquelyrecommendedstrategyfor ∗;wethenshowthatif 𝛼issmallenough,
+thiswillbeadecision-problemonwhichValue(andhenceWeakValue)fails.
+We know that for each𝑖,𝔼𝑖(𝑆𝑖) was maximal amongst the options in. Letting = −
+{𝑆1,…,𝑆 𝑛}, note that∗ = ∪{𝑆𝑡1
+1 ,…,𝑆 𝑡𝑛
+𝑛 }. For any𝑂∈ , we know that𝔼𝑖(𝑆𝑡𝑖
+𝑖 )>𝔼 𝑖(𝑆𝑖) ≥
+𝔼𝑖(𝑂). So to show that each𝑆𝑡𝑖
+𝑖 is the unique option that maximizes expected utility accord-
+ing to 𝑖, it suffices to show that if𝑖 ≠𝑗, then𝔼𝑖(𝑆𝑡𝑖
+𝑖 )>𝔼 𝑖(𝑆
+𝑡𝑗
+𝑗 ). Notice that this holds iff
+𝔼𝑖(𝑆𝑡𝑖
+𝑖 −𝑆𝑖)>𝔼 𝑖(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑖),andsince 𝔼𝑖(𝑆𝑖) ≥𝔼𝑖(𝑆𝑗),itsufficestoshowthat
+𝔼𝑖
+(
+𝑆𝑡𝑖
+𝑖 −𝑆𝑖
+)
+>𝔼𝑖
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+(∗)
+Notethatsince 𝔼𝑖(𝑆𝑡𝑖
+𝑖 −𝑆𝑖)=𝛼=𝔼 𝑗(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗),itsufficestoshowthat
+𝔼𝑗
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+>𝔼𝑖
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+(∗∗)
+First note that for all 𝑘 ≠𝑗,w eh a v et h a t𝔼𝑘(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) ≤𝔼𝑗(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗). For suppose
+not, and instead 𝔼𝑘(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) ≥𝑠>𝔼 𝑗(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗)>0 . Then [𝔼(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) ≥𝑠] is nonempty
+and entails 𝑃 ≠𝑗, therefore by definition of𝑆
+𝑡𝑗
+𝑗 , [𝔼(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) ≥𝑠]⊆[𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗 =0], hence
+𝔼𝜋(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗 |𝔼(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) ≥𝑠)=0<𝑠 , violating Total Trust. Thus𝔼𝑘(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) ≤𝔼𝑗(𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗) for
+=== PDF page 41 ===
+Deferencedonebetter 139
+all 𝑘.Giventhis,for 𝑗 ≠𝑖 wehavethat
+𝔼𝑖
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+=𝜆𝑖𝑖ˆ𝔼𝑖
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
++
+∑
+𝑘∈𝐶−
+𝑖
+𝜆𝑖𝑘𝔼𝑘
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+≤𝜆𝑖𝑖0+
+∑
+𝑘∈𝐶−
+𝑖
+𝜆𝑖𝑘𝔼𝑗
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+=(1−𝜆 𝑖𝑖)𝔼𝑗
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+<𝔼𝑗
+(
+𝑆
+𝑡𝑗
+𝑗 −𝑆𝑗
+)
+Thelastlinefollowsfromthefactthat,byLemma B.12,𝜆𝑖𝑖 >0.Thisestablishes(**),andtherefore
+(*),andthereforethatforall 𝑖,𝑆𝑡𝑖
+𝑖 isanoptionthatuniquelymaximizesexpectedvalue,i.e.that
+thestrategy 𝑆∗ suchthat 𝑆∗
+𝑖 =𝑆𝑡𝑖
+𝑖 ,foreach 𝑖,istheuniquelyrecommendedstrategyfor ∗,for
+anarbitrary 𝛼>0 .
+From here we show that Weak Value fails. We know that𝔼𝜋(𝑂−𝑆)>0 ; say it equals𝛽>0 .
+Weknowmoreoverthatnomatterwhich 𝛼>0 wechooseinmodifying to ∗,we’llhavean
+option𝑂∗ ∈ ∗ such that𝔼𝜋(𝑂∗) ≥𝔼𝜋(𝑂) (since our modifications only replace options with
+morevaluableones).Finally,notethatforany 𝑤∈𝑊 𝜋,there’sa 𝑖 suchthat 𝑤 = 𝑖,so (𝑆∗ −
+𝑆)(𝑤)=(𝑆 𝑡𝑖
+𝑖 −𝑆𝑖)(𝑤)=𝑡 𝑖. Hence this divergence𝑆∗ −𝑆 is upper-bounded across all worlds by
+themaximal 𝑡𝑖 usedtomodifytheoptions 𝑆𝑖 to𝑆𝑡𝑖
+𝑖 .Recallingthatas 𝛼→0 ,allsuch 𝑡𝑖 →0,w e
+canchoosean 𝛼>0 smallenoughsothat 𝑡1,…,𝑡 𝑛 <𝛽 ,inwhichcasewehavethe 𝔼𝜋(𝑆∗ −𝑆)<𝛽 .
+Itfollowsthat
+𝔼𝜋(𝑂−𝑆)=𝛽>0
+⇒𝔼𝜋(𝑂−𝑆)−𝔼 𝜋(𝑆∗ −𝑆)>0
+⇒𝔼 𝜋(𝑂−𝑆−𝑆 ∗ +𝑆)>0
+⇒𝔼 𝜋(𝑂−𝑆 ∗)>0
+And,since 𝔼𝜋(𝑂∗) ≥𝔼𝜋(𝑂),wehavethat 𝔼𝜋(𝑂∗ −𝑆∗)>0 ,i.e. 𝔼𝜋(𝑂∗)>𝔼 𝜋(𝑆∗),whichisjustto
+say that𝜋 does not value the frame on this decision-problem∗.S i n c e𝑆∗ is the uniquely rec-
+ommended strategy on this decision problem, it follows that𝜋 doesn’t weakly value the frame,
+completingtheproof. □
+CombiningLemmas B.1,B.2,B.11,and B.13,we’venowestablished:
+TheoremB.14. Thefollowingareequivalent:
+⋅𝜋 values ⟨𝑊, ⟩.
+⋅𝜋 weaklyvalues ⟨𝑊, ⟩.
+⋅𝜋 totallytrusts ⟨𝑊, ⟩.
+⋅𝜋 isintheconvexhullof 𝐶𝜋 aneach 𝑖 ∈𝐶𝜋 ismodestlyinformed.
+=== PDF page 42 ===
+140 DORSTetal.
+Whatremainstobedoneinordertoestablishourfullcharacterizationresult,Theorem 5.1,is
+toproveTheorem 3.2,whichwedointhenextsubsection.
+B.3 Accuracytheorem
+WegivetwodifferentproofsofTheorem 3.2toestablishtheconnectionbetweenTotalTrustand
+EpistemicValue.Thesecond(§ B.3.2)istheonewestartedwith,usingCampbell-Moore’s(2020)
+characterization of gsp estimate-inaccuracy measures. It is in some ways more illuminating, at
+leastforthosefamiliarwithSchervish( 1989)’sconstructionofscoringrules.Howeveritalsohas
+ahighbarriertoentry.CatrinCampbell-MooreandDanielRothschildlaterhelpedusfigureout
+howtogiveaproofusingonlyelementarymethods(§ B.3.1);webeginwiththisone.
+SinceTheorem 3.2islocal—i.e.,concernsonlyasinglerandomvariable—wefix 𝑋fortherest
+ofthisappendix.Wealsoadoptthefollowingconventions:
+∙ Tosavespace,weset 𝔼𝜋(𝑋)∶=𝑒 .
+∙ We let𝔼(𝑋)takevaluesin 𝑎0 <⋯<𝑎 𝑚.
+∙ We let𝑋takevaluesin 𝑣0 <⋯<𝑣 𝑛.
+Forconveniencewerestatetheresulthere:
+Theorem3.2. 𝜋totallytrusts 𝑃withrespectto 𝑋iff𝔼𝜋(𝐼𝑋(𝑃)) ≤𝔼𝜋(𝐼𝑋(𝑒))forgspscoringrules 𝐼𝑋,
+withequalityifandonlyif 𝜋(𝔼(𝑋)=𝑒)=1 .
+Elementary-methodsproof
+For the elementary-methods proof, we first note that Campbell-Moore (2020) proves that
+every gsp estimate-inaccuracy measure isvalue-directed, which generalizes the constraint of
+truth-directedness to estimates generally: If𝑒1 <𝑒2 ≤𝑋(𝑤) or𝑒1 >𝑒2 ≥𝑋(𝑤), then𝐼𝑋(𝑒1,𝑤)>
+𝐼𝑋(𝑒2,𝑤).
+Next,wewillneedthefollowingconcept:
+MonotoneStrictPropriety Let𝐼𝑋 beagsp.Wesaythat 𝐼𝑋 ismonotonestrictlyproper ifforany
+probabilityfunction 𝜋:
+⋅ If𝑒 ≤𝑠<𝑡 ≤𝑣𝑛,then 𝔼𝜋(𝐼𝑋(𝑡))>𝔼 𝜋(𝐼𝑋(𝑠))
+⋅ If𝑣0 ≤𝑠<𝑡 ≤𝑒,then 𝔼𝜋(𝐼𝑋(𝑡))<𝔼 𝜋(𝐼𝑋(𝑠))
+Theideabehindthisdefinitionisjustthatasestimatesgetcloserto 𝑒,𝜋expectsthemtobeless
+inaccurate.Sinceforanygsp 𝐼𝑋,𝜋expectsitsownestimatetobetheleastinaccurate,thefollowing
+lemmaisnotsurprising,buttheproof(duetoCatrinCampbell-Moore)israthertricky.
+LemmaB.15. If𝐼𝑋 isagsp,then 𝐼𝑋 ismonotonestrictlyproper.
+Proof. We show that if𝑒 ≤𝑠<𝑡<𝑣 𝑛, then𝔼𝜋(𝐼𝑋(𝑡))>𝔼 𝜋(𝐼𝑋(𝑠)). The second condition is
+entirelysymmetric.
+Fix𝑠 and𝑡 with𝑠<𝑡 .Wefocusonprobabilityfunctions 𝜌suchthat(i)if 𝑣𝑖 ≤𝑠,𝜌(𝑋=𝑣 𝑖) ≤
+𝜋(𝑋=𝑣 𝑖),(ii)if 𝑠<𝑣 𝑖 <𝑡 ,𝜌(𝑋=𝑣 𝑖)=𝜋(𝑋=𝑣 𝑖),and(iii)if 𝑡 ≤𝑣𝑖,𝜌(𝑋=𝑣 𝑖) ≥𝜋(𝑋=𝑣 𝑖).Let
+𝑄bethesetofallsuch 𝜌.
+Since𝐼𝑋 isagsp,itisvalue-directed.So,if 𝑣𝑖 ≤𝑠,𝐼𝑋(𝑡,𝑣𝑖)>𝐼 𝑋(𝑠,𝑣𝑖),andif 𝑡 ≤𝑣𝑖,𝐼𝑋(𝑡,𝑣𝑖)<
+𝐼𝑋(𝑠,𝑉𝑖).So,forany 𝜌∈𝑄 ,𝔼𝜌(𝐼𝑋(𝑡)−𝐼 𝑋(𝑠)) ≤𝔼𝜋(𝐼𝑋(𝑡)−𝐼 𝑋(𝑠)).
+=== PDF page 43 ===
+Deferencedonebetter 141
+Weshowthatthereexistsa 𝜌∈𝑄 suchthat 𝔼𝜌(𝑋)=𝑠 .Let:
+𝜌⋆(𝑋=𝑣 𝑖)=
+⎧
+⎪
+⎨
+⎪⎩
+0 if𝑣𝑖 ≤𝑠
+𝜋(𝑋=𝑣 𝑖) if𝑠<𝑣 𝑖 <𝑣𝑛
+𝜋(𝑋=𝑣 𝑛)+𝜋(𝑋 ≤𝑠) if𝑣𝑖 =𝑣𝑛
+Clearly𝜌⋆ =argmax 𝜌∈𝑄𝔼𝜌(𝑋).
+Giventhedefinitionof 𝜌⋆,wesee 𝑠<𝔼 𝜌⋆(𝑋).Notethat 𝜋∈𝑄 andthat 𝑄isconvex.Sosince
+𝑒 ≤𝑠 ≤𝔼𝜌⋆(𝑋), there is indeed some𝜌∈𝑄 such that𝔼𝜌(𝑋)=𝑠 . By strict propriety,𝔼𝜌(𝐼𝑋(𝑡)−
+𝐼𝑋(𝑠))>0 ,andaswe’vealreadyestablished 𝔼𝜋(𝐼𝑋(𝑡)−𝐼 𝑋(𝑠))>𝔼 𝜌(𝐼𝑋(𝑡)−𝐼 𝑋(𝑠)).Thiscompletes
+theproof. □
+WecannowproveTheorem 3.2withelementarymethods.Theleft-to-rightdirectionisdueto
+DanielRothschild.
+Proof. Wefirstprovetheleft-to-rightdirection.GivenTotalTrust,weshow:
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋)>𝑒)<𝔼 𝜋(𝐼𝑋(𝑒) |𝔼(𝑋)>𝑒) (B1)
+Thissufficesfortheproofsinceasymmetricargumentshows:
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋)<𝑒)<𝔼 𝜋(𝐼𝑋(𝑒) |𝔼(𝑋)<𝑒) (B2)
+Jointlyequations( B1)and( B2)entailthisdirectionofthetheorem.
+Toproveequation( B1):Let 𝑤1,…,𝑤 𝑝 betheworldswhereforeach 𝑖,𝔼𝑖(𝑋)>𝑒 .Withoutloss
+ofgenerality,assumethatforeach 𝑖<𝑝 ,𝔼𝑖(𝑋)>𝔼 𝑖+1(𝑋).(Inwhatfollows,itwillbeclearthatif
+𝔼𝑤(𝑋)=𝔼 𝑤′(𝑋)thentheycanbetreatedtogether.)
+Wewillprovebyinductionforall 𝑘with1 ≤𝑘 ≤𝑝andforany 𝑠<𝔼 𝑘(𝑋):
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼𝑘(𝑋))<𝔼 𝜋(𝐼𝑋(𝑠) |𝔼(𝑋) ≥𝔼𝑘(𝑋)) (B3)
+When𝑘=𝑝 ,equation( B3)entails( B1),since 𝔼𝑝(𝑋)isthelowestvalue 𝔼(𝑋)cantakewhilestill
+beinggreaterthan 𝑒.
+Basecase:𝑘=1 ,so 𝔼𝑘(𝑋)isatitsmaximumvalue.Therefore,
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼1(𝑋))=𝔼 𝜋(𝐼𝑋(1) |𝔼(𝑋) ≥𝔼1(𝑋)) (B4)
+By total trust in𝑋, we know that𝔼𝜋(𝑋 |𝔼(𝑋) ≥𝔼1(𝑋)) ≥𝔼1(𝑋).S i n c e𝐼𝑋 is monotone strictly
+properbyLemma B.15,wehavethenestablishedthebasecase:
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼1(𝑋))<𝔼 𝜋(𝐼𝑋(𝑠) |𝔼(𝑋) ≥𝔼1(𝑋)) (B5)
+forany 𝑠<𝔼 1(𝑋).
+=== PDF page 44 ===
+142 DORSTetal.
+InductiveStep:Supposeequation( B3)holdsforall 𝑘<𝑖 .ByTotalTrustin 𝑋andmonotone
+strictpropriety,wehavethatforany 𝑠<𝔼 𝑖(𝑋):
+𝔼𝜋(𝐼𝑋(𝑖) |𝔼(𝑋) ≥𝔼𝑖(𝑋))<𝔼 𝜋(𝐼𝑋(𝑠) |𝔼(𝑋) ≥𝔼𝑖(𝑋)) (B6)
+Since𝔼𝑖(𝑋)<𝔼 𝑖−1(𝑋),theinductivehypothesistellsusthat:
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼𝑖−1(𝑋))<𝔼 𝜋(𝐼𝑋(𝑖) |𝔼(𝑋) ≥𝔼𝑖−1(𝑋)) (B7)
+Since[𝔼(𝑋) ≥𝔼𝑖(𝑋)]=[𝔼(𝑋)=𝔼 𝑖(𝑋)]∪[𝔼(𝑋) ≥𝔼𝑖−1(𝑋)],(B7)impliesthat
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼𝑖(𝑋))<𝔼 𝜋(𝐼𝑋(𝑖) |𝔼(𝑋) ≥𝔼𝑖(𝑋)) (B8)
+Combining(B6)and( B8),wehavethatforany 𝑠<𝔼 𝑖(𝑋):
+𝔼𝜋(𝐼𝑋(𝑃) |𝔼(𝑋) ≥𝔼𝑖(𝑋))<𝔼 𝜋(𝐼𝑋(𝑠) |𝔼(𝑋) ≥𝔼𝑖(𝑋))
+asdesired.
+To show the right-to-left direction: Suppose𝜋 does not totally trust𝑃 with respect to𝑋.W e
+considerthecasewherethereexists 𝑡 suchthat 𝔼𝜋(𝑋 |𝔼(𝑋) ≥𝑡)<𝑡 (asthecasewherethereis
+a𝑡 such that𝔼𝜋(𝑋 |𝔼(𝑋) ≤𝑡)>𝑡 is symmetric). Since𝔼(𝑋) c a nt a k eo n l yfi n i t e l ym a n yv a l u e s
+(𝑎0,…,𝑎 𝑚),thereissomeregion (𝛼,𝛽) with𝛼<𝛽 whereTotalTrustfails.I.e.,forall 𝑡∈(𝛼,𝛽) ,
+𝔼𝜋(𝑋 |𝔼(𝑋) ≥𝑡)<𝑡 .
+We construct a gsp where𝔼𝜋(𝐼𝑋(𝑒))<𝔼 𝜋(𝐼𝑋(𝑃)). For convenience (so that we only need six
+insteadofninecasesinthescoringruledefinedbelow),wechoose 𝛼,𝛽 suchthat:thereisno 𝑣𝑖,
+𝑎𝑖 in(𝛼,𝛽),andmoreover 𝑒∉(𝛼,𝛽) .Thisisalwayspossiblesincethereareonlyfinitelymany 𝑣𝑖
+and𝑎𝑖.
+Wedefinethefollowingscoringruleforsome(large)constant 𝐶>0 :
+𝐼𝑋(𝑥,𝑣𝑖)=
+⎧
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+⎨
+⎪
+⎪
+⎪
+⎪
+⎪
+⎪⎩
+(𝑥−𝑣 𝑖)2 if𝑥 ≤𝛼and𝑣𝑖 <𝛼
+(𝛼−𝑣 𝑖)2 +𝐶(𝑥−𝛼)(𝑥+𝛼−2𝑣 𝑖) if𝛼<𝑥<𝛽 and𝑣𝑖 <𝛼
+(𝛼−𝑣 𝑖)2 +𝐶(𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖)
++(𝑥−𝛽)(𝑥+𝛽−2𝑣 𝑖) if𝑥 ≥𝛽and𝑣𝑖 <𝛼
+(𝛼−𝑥)(2𝑣 𝑖 −𝛼−𝑥)+𝐶(𝛽−𝛼)(2𝑣 𝑖 −𝛽−𝛼)
++(𝛽−𝑣 𝑖)2 if𝑥 ≤𝛼and𝑣𝑖 >𝛽
+(𝛽−𝑣 𝑖)2 +𝐶(𝛽−𝑥)(2𝑣 𝑖 −𝛽−𝑥) if𝛼<𝑥<𝛽 and𝑣𝑖 >𝛽
+(𝑥−𝑣 𝑖)2 if𝑥 ≥𝛽and𝑣𝑖 >𝛽
+Weleaveittothereadertoverifythat 𝐼𝑋(𝑥,𝑣𝑖)isagspscoringrule. 67
+Supposethat 𝑒<𝛼 .(Thecasewhere 𝑒>𝛽 canbetreatedsimilarly.)Notethat:
+𝔼𝜋(𝐼𝑋(𝑃)−𝐼 𝑋(𝑒))=
+𝑛∑
+𝑖=0
+𝑚∑
+𝑗=0
+𝜋(𝑣𝑖,𝑎𝑗)(𝐼𝑋(𝑎𝑗,𝑣𝑖)−𝐼 𝑋(𝑒,𝑣𝑖)) (B9)
+=== PDF page 45 ===
+Deferencedonebetter 143
+wherewewrite 𝜋(𝑣𝑖,𝑎𝑗)for𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)=𝑎 𝑗).Wewanttoshowthatfor 𝐶largeenough( B9)
+ispositive.
+We can break (B9) up into four separate summations: (i) when𝑣𝑖,𝑎𝑗 <𝛼 , (ii) when𝑣𝑖 <𝛼 ,
+but𝑎𝑗 >𝛽 , (iii) when𝑣𝑖 >𝛽 ,b u t𝑎𝑗 <𝛼 , and (iv) when𝑣𝑖,𝑎𝑗 >𝛽 . When we look at𝐼𝑋, these
+correspond,respectively,to:
+∑
+𝑣𝑖<𝛼
+∑
+𝑎𝑗<𝛼
+𝜋(𝑣𝑖,𝑎𝑗)((𝑎𝑗 −𝑣𝑖)2 −(𝑒−𝑣 𝑖)2) (B10)
+∑
+𝑣𝑖<𝛼
+∑
+𝑎𝑗>𝛽
+((𝛼−𝑣 𝑖)2 +(𝑎𝑗 −𝛽)(𝑎𝑗 +𝛽−2𝑣 𝑖)
++𝐶(𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖)−(𝑒−𝑣 𝑖)2)) (B11)
+∑
+𝑣𝑖>𝛽
+∑
+𝑎𝑗<𝛼
+𝜋(𝑣𝑖,𝑎𝑗)(𝑎𝑗 −𝑒)(𝑎𝑗 +𝑒−2𝑣 𝑖)) (B12)
+∑
+𝑣𝑖>𝛽
+∑
+𝑎𝑗>𝛽
+𝜋( 𝑣𝑖,𝑎𝑗)((𝑎𝑗 −𝑣𝑖)2 −(𝑎−𝑒)(2𝑣 𝑖 −𝛼−𝑒)−(𝛽−𝑣 𝑖)2
++𝐶(𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖)) (B13)
+Summingthesefourexpressionsgivesus( B9).
+It’seasytoseethatwecanignorethecontributionsof( B10)and( B12),since 𝐶doesnotappear.
+Wealsocanignorealltermsin( B11)and( B13)thatdonotinvolve 𝐶.Thatis,weonlyneedto
+consider:
+∑
+𝑣𝑖<𝛼
+∑
+𝑎𝑗>𝛽
+𝜋(𝑣𝑖,𝑎𝑗)(𝐶(𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖))+
+∑
+𝑣𝑖>𝛽
+∑
+𝑎𝑗>𝛽
+(𝐶(𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖)) (B14)
+Forsufficientlylarge 𝐶,(B14)ispositiveifandonlyif( B9)ispositive.
+Wedivide( B14)by 𝐶andseethat:
+(B14)∕𝐶 =
+∑
+𝑖
+𝜋(𝑣𝑖,𝔼(𝑋)>𝛽)((𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖)) (B15)
+=𝜋(𝔼(𝑋)>𝛽)
+∑
+𝑖
+𝜋(𝑣𝑖 |𝔼(𝑋)>𝛽)((𝛽−𝛼)(𝛽+𝛼−2𝑣 𝑖)) (B16)
+=𝜋(𝔼(𝑋)>𝛽)(𝛽−𝛼)(𝛽+𝛼−2𝔼 𝜋(𝑋 |𝔼(𝑋)>𝛽)) (B17)
+=== PDF page 46 ===
+144 DORSTetal.
+In (B17), 𝜋(𝔼(𝑋)>𝛽)>0 and 𝛽−𝛼>0 . Given how we chose 𝛼,𝛽, 𝔼𝜋(𝑋 |𝔼(𝑋)>𝛽)=
+𝔼𝜋(𝑋 |𝔼(𝑋)>𝛼)<𝛼 .Sosince 𝛽>𝛼 ,𝛽+𝛼−2𝔼 𝜋(𝑋 |𝔼(𝑋)>𝛽)>0 .So( B17)andtherefore( B9)
+arebothpositiveasdesired. □
+Schervish-styleproof
+Wenowturntotheslightlymorein-depthbut(wethink)illuminatingSchervish-styleproof.For
+simplicity,we’llassume,withoutlossofgenerality,thatperfectaccuracyreceivesascoreof0.I.e.,
+if𝑋isarandomvariable,then 𝐼𝑋(𝑥,𝑤)=0 ifandonlyif 𝑥=𝑋(𝑤) ,where 𝑋(𝑤)is𝑋’svalueat 𝑤.
+Schervish (1989) proves that for indicator variables, we can construct essentially arbitrary
+strictly proper scoring rules by placing various measures over the [0,1] interval as follows. (For
+anintuitiveexplanationofSchervish’stheorem,seeLevinstein 2017b.)
+TheoremB.16 (Schervish1989). Let𝑋beanindicatorvariable,andlet 𝐼𝑋(𝑥,𝑖) beafunctionfrom
+[0,1]×{0,1} toℝ∪{∞} .Suppose 𝐼𝑋(𝑖,𝑖)=0 ,and 𝐼𝑋(𝑥,𝑖) isstrictlyincreasing(decreasing)for 𝑖=0
+(𝑖=1 ),that 𝐼𝑋 iscontinuousinitsfirstargumentover(0,1),andsuchthat 𝐼𝑋(𝑖,𝑗)=lim 𝑡→𝑖 𝐼𝑋(𝑡,𝑗)
+for𝑖,𝑗=0,1 .Then 𝐼𝑋 isastrictlyproperscoringruleifandonlyifthereexistsameasure 𝜆on[0,1]
+suchthat:
+𝐼𝑋(𝑥,1)= ∫
+1
+𝑥
+(1−𝑡)𝜆(d𝑡)
+𝐼𝑋(𝑥,0)= ∫
+𝑥
+0
+𝑡𝜆(d𝑡)
+forall 𝑥,where 𝜆givespositivemeasuretoeveryinterval [𝑎,𝑏) where𝑏>𝑎 .
+For example, if we let𝜆(d𝑡)=2 d𝑡, then𝐼𝑋(𝑥,1)=(1−𝑥) 2,a n d𝐼𝑋(𝑥,0)=𝑥 2, which is the
+familiarBrierscore.
+Campbell-Moore(2020)generalizesSchervish’sresulttoconstructgeneralizedstrictlyproper
+scoringrulesforestimates.
+Theorem B.17(Campbell-Moore2020). Let𝑋 be a real-valued random variable such that𝑣0 ≤
+𝑋 ≤𝑣𝑛,andlet 𝐼𝑋(𝑥,𝑘) beafunctionfrom [𝑣0,𝑣𝑛]×[𝑣 0,𝑣𝑛]toℝ.Suppose𝐼𝑋(𝑥,𝑥)=0 and𝐼𝑋(𝑥,𝑦)
+isstrictlyincreasingas |𝑥−𝑦 |increases.Supposefurtherthat 𝐼𝑋(𝑥,𝑘) isabsolutelycontinuousinits
+first argument over(𝑣0,𝑣𝑛).T h e n𝐼𝑋 is a generalized strictly proper scoring rule iff there exists a
+measure𝜆on[𝑣0,𝑣𝑛]suchthat:
+𝐼𝑋(𝑥,𝑘)= ∫
+𝑥
+𝑘
+𝑘−𝑥𝜆(d𝑡)
+forall 𝑥,where 𝜆givespositivemeasuretoeveryinterval [𝑎,𝑏) where𝑏>𝑎 .
+Afewquickremarks.First,werequireanygsptobeabsolutelycontinuousinitsfirstargument
+sothatwecanusetheLebesgueintegral.(Itisunclearifthereisawaytorelaxthisrestriction.)
+Second,intheaboveresult,wedefinetheintegral ∫
+𝑏
+𝑎 𝑓(𝑡)𝜆(d𝑡)=− ∫
+𝑎
+𝑏 𝑓(𝑡)𝜆(d𝑡).Thisensures
+∫
+𝑥
+𝑘 𝑘−𝑥𝜆(d𝑡) ≥0.Second,we’vewrittentheresultsothat 𝑋 isbounded.Thisdoesnotrestrict
+usatall,sincewe’reassumingallframeshavefinitelymanyworlds.
+=== PDF page 47 ===
+Deferencedonebetter 145
+Campbell-Moore’sresultlet’suseasilygeneralizestandardrules.Forinstance,ifweagainlet
+𝜆(d𝑡)=2 d𝑡 over[𝑣0,𝑣𝑛] (where𝑣0 (𝑣𝑛) is the minimum (maximum) value of𝑋 in the frame),
+then𝐼𝑋(𝑥,𝑘)=(𝑘−𝑥) 2,whichisthenaturalanalogoftheBrierscoreforestimates.
+Wenowestablishausefullemma:
+LemmaB.18. If𝜋totallytrusts 𝑃withrespectto 𝑋,thenforall 𝑡∈[0,1] :
+1. 𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡⋅𝜋(𝔼(𝑋) ≤𝑡) ≤0;
+2. 𝑡⋅𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡) ≤0withstrictinequalityif 𝜋(𝔼(𝑋)>𝑡)>0 .
+Furthermore,if 𝜋doesnottotallytrust 𝑃withrespectto 𝑋,thenthereexist 𝑥,𝑦 with𝑥<𝑦 suchthat
+forall 𝑡in[𝑥,𝑦] either:
+3. 𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡⋅𝜋(𝔼(𝑋) ≤𝑡)>0 ;or
+4. 𝑡⋅𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡)>0 .
+Proof. If𝜋(𝔼(𝑋) ≤𝑡)=0 ,then 𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)=0 ,so(1)holdstrivially.Likewise,if 𝜋(𝔼(𝑋)>𝑡)=
+0,then 𝔼𝜋(𝑋𝟙𝔼(𝑋)>𝑡)=0 ,so(2)holdstrivially.
+Supposethat 𝜋(𝔼(𝑋) ≤𝑡)>0 and𝜋totallytrusts 𝑃.Then 𝔼𝜋(𝑋 |𝔼(𝑋) ≤𝑡) ≤𝑡.Expandingthe
+definitionofconditionalexpectation:
+𝑛∑
+𝑖=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)
+𝜋(𝔼(𝑋) ≤𝑡) 𝑣𝑖 ≤𝑡 (B18)
+Multiplyingbothsidesby 𝜋(𝔼(𝑋) ≤𝑡)andthenappealingtothedefinitionofexpectation,weget
+thatif 𝜋totallytrusts 𝑃,then 𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡⋅𝜋(𝔼(𝑋) ≤𝑡) ≤0.
+Wecanobtain(2)throughasimilarderivation.
+Nowsuppose 𝜋doesnottotallytrust 𝑃.So,thereexistssome 𝑡suchthat 𝔼𝜋(𝑋 |𝔼(𝑋) ≤𝑡)>𝑡
+or𝔼𝜋(𝑋 |𝔼(𝑋)>𝑡) ≤𝑡.Supposeit’stheformer.Thenforsucha 𝑡:
+𝑛∑
+𝑖=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)
+𝜋(𝔼(𝑋) ≤𝑡) 𝑣𝑖 >𝑡 (B19)
+Again, multiplying both sides by𝜋(𝔼(𝑋) ≤𝑡) and appealing to the definition of expectation,
+we have𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡⋅𝜋(𝔼(𝑋) ≤𝑡)>0 .S i n c e𝔼(𝑋) c a nt a k eo no n l yf i n i t e l ym a n yv a l u e s ,
+[𝔼(𝑋) ≤𝑡]isequivalenttoeither [𝔼(𝑋) ≤𝑡+𝜀] or[𝔼(𝑋) ≤𝑡−𝜀] forsomesufficientlysmall 𝜀.A
+parallelargumentshowsthatif 𝔼𝜋(𝑋 |𝔼(𝑋)>𝑡) ≤𝑡,(4)holds. □
+Lemma B.19. If𝐼𝑋 is a generalized strictly proper scoring rule generated by measure𝜆 and𝑃 is
+coherent,then:
+𝔼𝜋(𝐼𝑋(𝑃))= ∫
+𝑒
+𝑣0
+𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡⋅𝜋(𝔼(𝑋) ≤𝑡)𝜆(d𝑡) (B20)
+=== PDF page 48 ===
+146 DORSTetal.
++ ∫
+𝑣𝑛
+𝑒
+𝑡⋅𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡)𝜆(d𝑡)
++𝔼𝜋(𝐼𝑋(𝑒))
+= ∫
+𝑣0
+𝑒
+𝑡⋅𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡)𝜆(d𝑡) (B21)
++ ∫
+𝑒
+𝑣𝑛
+𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡⋅𝜋(𝔼(𝑋) ≤𝑡)𝜆(d𝑡)
++𝔼𝜋(𝐼𝑋(𝑒))
+Proof. BythedefinitionofexpectationandTheorem B.17,wehave:
+𝔼𝜋(𝐼𝑋(𝑒))=
+𝑛∑
+𝑖=0
+𝜋(𝑋=𝑣 𝑖) ∫
+𝑣𝑖
+𝑒
+(𝑣𝑖 −𝑡)𝜆(d𝑡) (B22)
+(Recall:Wearedefiningtheintegralsothat ∫
+𝑣𝑖
+𝑒 𝑓(𝑡)𝜆(d𝑡)=− ∫
+𝑒
+𝑣𝑖
+𝑓(𝑡)𝜆(d𝑡).)
+WenowshowthatEquation( B20)holds.W ehave:
+𝔼𝜋(𝐼𝑋(𝑃))=
+𝑛∑
+𝑖=0
+𝑚∑
+𝑗=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)=𝑎 𝑗) ∫
+𝑣𝑖
+𝑎𝑗
+(𝑣𝑖 −𝑡)𝜆(d𝑡) (B23)
+Fix𝑣𝑖 intheaboveequationandconsidertheinsidesummation:
+𝑚∑
+𝑗=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)=𝑎 𝑗) ∫
+𝑣𝑖
+𝑎𝑗
+(𝑣𝑖 −𝑡)𝜆(d𝑡) (B24)
+First,divideupthe 𝑎𝑗’ssothat 𝑎0 <…<𝑎 𝑙 ≤𝑣𝑖 and𝑣𝑖 ≤𝑎𝑙+1 <…<𝑎 𝑚.So,wecanre-write
+expression(B24)as:
+𝑙∑
+𝑗=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)=𝑎 𝑗) ∫
+𝑣𝑖
+𝑎𝑗
+(𝑣𝑖 −𝑡)𝜆(d𝑡) (B25)
++
+𝑚∑
+𝑗=𝑙+1
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)=𝑎 𝑗) ∫
+𝑣𝑖
+𝑎𝑗
+(𝑣𝑖 −𝑡)𝜆(d𝑡) (B26)
+Considerthefirstsummandonline( B25).Wefirstintegratefrom 𝑎0 to𝑣𝑖,thenfrom 𝑎1 (whichis
+greaterthan 𝑎0)to 𝑣𝑖,thenfrom 𝑎2 to𝑣𝑖,etc.Sowecanre-writeline( B25)as:
+𝑙∑
+𝑗=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)∈{𝑎 0,…,𝑎 𝑗}) ∫
+min(𝑎𝑗+1,𝑣𝑖)
+𝑎𝑗
+(𝑣𝑖 −𝑡)𝜆(d𝑡)
+=== PDF page 49 ===
+Deferencedonebetter 147
+=
+𝑙∑
+𝑗=0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑎𝑗) ∫
+min(𝑎𝑗+1,𝑣𝑖)
+𝑎𝑗
+(𝑣𝑖 −𝑡)𝜆(d𝑡)
+=
+𝑙∑
+𝑗=0 ∫
+min(𝑎𝑗+1,𝑣𝑖)
+𝑎𝑗
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
+= ∫
+𝑣𝑖
+𝑎0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
+= ∫
+𝑣𝑖
+𝑣0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡) (B27)
+Thesecondequalitycomesfromthefactthatif 𝑎𝑗 ≤𝑡 ≤𝑎𝑗+1,then 𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)=𝜋(𝑋=
+𝑣𝑖,𝔼(𝑋) ≤𝑎𝑗). The last equality comes from the fact that since𝑃 is coherent,𝑎0 ≥𝑣0.S o ,
+∫
+𝑎0
+𝑣0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)=0 .
+Applying a similar manipulation to line (B26), we have that the expression on line (B24)i s
+equivalentto:
+∫
+𝑣𝑖
+𝑣0
+𝜋( 𝑋= 𝑣𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
++ ∫
+𝑣𝑚
+𝑣𝑖
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡) (B28)
+Supposefirstthat 𝑣𝑖 <𝑒.Thenwecanre-writeexpression( B28)as:
+∫
+𝑣𝑖
+𝑣0
+𝜋( 𝑋= 𝑣𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
++ ∫
+𝑒
+𝑣𝑖
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)
++ ∫
+𝑣𝑚
+𝑒
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)
+= ∫
+𝑣𝑖
+𝑣0
+𝜋( 𝑋= 𝑣𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
++ ∫
+𝑒
+𝑣𝑖
+[𝜋(𝑋=𝑣 𝑖)−𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)](𝑡−𝑣 𝑖)𝜆(d𝑡)
++ ∫
+𝑣𝑚
+𝑒
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)
+= ∫
+𝑣𝑖
+𝑣0
+𝜋( 𝑋= 𝑣𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
+=== PDF page 50 ===
+148 DORSTetal.
++ ∫
+𝑒
+𝑣𝑖
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
++ ∫
+𝑣𝑖
+𝑒
+𝜋(𝑋=𝑣 𝑖)(𝑣𝑖 −𝑡)𝜆(d𝑡)
++ ∫
+𝑣𝑚
+𝑒
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)
+= ∫
+𝑒
+𝑣0
+𝜋( 𝑋= 𝑣𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡) (B29)
++ ∫
+𝑣𝑚
+𝑒
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)
++ ∫
+𝑣𝑖
+𝑒
+𝜋(𝑋=𝑣 𝑖)(𝑣𝑖 −𝑡)𝜆(d𝑡)
+Thesecondlineontheright-handsideofthefirstequalitycomesfromthelawoftotalprobability,
+since𝜋(𝑋=𝑣 𝑖)=𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡) .
+If𝑒<𝑣 𝑖, we can show using a similar derivation that the expression (B28) is still equivalent
+toexpression( B29).So,sinceexpressions( B28)and( B29)arealwaysequivalent,wecanrewrite
+equation(B23)as:
+𝔼𝜋(𝐼𝑋(𝑃))=
+𝑛∑
+𝑖=0
+(
+∫
+𝑒
+𝑣0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡) (B30)
++ ∫
+𝑣𝑚
+𝑒
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡) (B31)
++ ∫
+𝑣𝑖
+𝑒
+𝜋(𝑋=𝑣 𝑖)(𝑣𝑖 −𝑡)𝜆(d𝑡)
+)
+(B32)
+First,notethesummationoftheintegralsonline( B32)isequivalentto 𝔼𝜋(𝐼𝑋(𝑒)),i.e.:
+𝑛∑
+𝑖=0 ∫
+𝑣𝑖
+𝑒
+𝜋(𝑋=𝑣 𝑖)(𝑣𝑖 −𝑡)𝜆(d𝑡)=𝔼 𝜋(𝐼𝑋(𝑒)) (B33)
+Second,notethatthefirstandsecondsummationsonlines( B30)and( B31)simplifyaswellto:
+𝑛∑
+𝑖=0 ∫
+𝑒
+𝑣0
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)= ∫
+𝑒
+𝑣0
+𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡𝜋(𝔼(𝑋) ≤𝑡)𝜆(d𝑡) (B34)
+=== PDF page 51 ===
+Deferencedonebetter 149
+𝑛∑
+𝑖=0 ∫
+𝑣𝑚
+𝑒
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)= ∫
+𝑣𝑚
+𝑒
+𝑡𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡)𝜆(d𝑡) (B35)
+Ifweplugtheright-handsidesofEquations( B33),(B34),and( B35)intolines( B30)–(B32),wesee
+thatEquation( B20)holds,whichcompletestheproofofEquation( B20).
+ToseethatEquation( B21)holds,notethatinthederivationofline( B27)fr omline(B25),we
+integrated𝑣𝑖 −𝑡 firstfrom 𝑎0 to𝑣𝑖,thenfrom 𝑎1 to𝑣𝑖,…,andthenfrom 𝑎𝑙 to𝑣𝑖.Bytheintegration
+conventionwe’veadopted,weinsteadcouldhaveintegrated 𝑡−𝑣 𝑖 firstfrom 𝑣𝑖 to𝑎𝑙,thenfrom 𝑣𝑖
+to𝑎𝑙−1,…,thenfrom 𝑣𝑖 to𝑎0.Insteadofline( B27),wewouldhave:
+∫
+𝑣0
+𝑣𝑖
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡) (B36)
+Andbyananalogoustreatmentofline( B26),wewouldseethatline( B24)isequivalentto:
+∫
+𝑣0
+𝑣𝑖
+𝜋( 𝑋= 𝑣𝑖,𝔼(𝑋)>𝑡)(𝑡−𝑣 𝑖)𝜆(d𝑡)
++ ∫
+𝑣𝑖
+𝑣𝑚
+𝜋(𝑋=𝑣 𝑖,𝔼(𝑋) ≤𝑡)(𝑣𝑖 −𝑡)𝜆(d𝑡)
+The rest of the proof goes on to use a mirror image of the above derivation to obtain Equa-
+tion(B21). □
+UsingtheseLemmas,we’renowinapositiontoproveourmainaccuracyresult,Theorem 3.2.
+Proof. Wefirstprovetheleft-to-rightdirection.Suppose 𝜋totallytrusts 𝑃.ByLemma B.19,Equa-
+tion(B20)holds.ByF act( B.18),thefirsttwotermsinEquation( B20)arelessthanorequalto0
+andthelasttermis 𝔼𝜋(𝐼𝑋(𝑒)).So 𝔼𝜋(𝐼𝑋(𝑃)) ≤𝔼𝜋(𝐼𝑋(𝑒))asdesired.
+Toshowthat 𝔼𝜋(𝐼𝑋(𝑃))=𝔼 𝜋(𝐼𝑋(𝑒))whenandonlywhen 𝜋(𝔼(𝑋)=𝑒)=1 ,considerthefirst
+twointegrandsinEquation( B20).AsnotedinFact B.18,thesecondintegrandwillbelessthan0
+forall 𝑡suchthat 𝜋(𝔼(𝑋)>𝑡)>0 .It’salsoeasytoseethatthefirstintegrandwillbenegativefor
+all𝑡suchthatboth 𝜋(𝔼(𝑋)=𝑡)=0 and𝜋(𝔼(𝑋) ≤𝑡)>0 .Unless 𝜋(𝔼(𝑋)=𝑒)=1 ,then,theinte-
+grandswillbesometimesnegativeoversomerange(sincethereareonlyfinitelypossiblevalues
+of𝔼(𝑋)).Therefore,theinequalityisstrictwhen 𝜋(𝔼(𝑋)=𝑒)<1 .
+To prove the right-to-left direction, suppose𝜋 does not totally trust𝑃. We will show there is
+thensomegspscoringrule 𝐼𝑋 suchthat 𝔼𝜋(𝐼𝑋(𝑃))>𝔼 𝜋(𝐼𝑋(𝑒)).
+Since𝜋doesnottotallytrust 𝑃,weappealtoitems(3)and(4)ofFact B.18.Thereexistssome
+interval[𝑥,𝑦] suchthatatleastoneofthefollowingholds:
+1. 𝑦 ≤𝑒andforall 𝑡∈[𝑥,𝑦] ,𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡𝜋(𝔼(𝑋) ≤𝑡)>0 ,
+2. 𝑦 ≤𝑒andforall 𝑡∈[𝑥,𝑦] ,𝑡𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡)>0
+3. 𝑒 ≤𝑥andforall 𝑡∈[𝑥,𝑦] ,𝔼𝜋(𝑋𝟙𝔼(𝑋)≤𝑡)−𝑡𝜋(𝔼(𝑋) ≤𝑡)>0 ,or
+4. 𝑒<𝑥 andforall 𝑡∈[𝑥,𝑦] ,𝑡𝜋(𝔼(𝑋)>𝑡)−𝔼 𝜋(𝑋𝟙𝔼(𝑋)>𝑡)>0
+=== PDF page 52 ===
+150 DORSTetal.
+We choose𝜆 such that𝜆([𝑣0,𝑥]) and𝜆([𝑦,𝑣𝑚])<𝜀 with𝜆([𝑎,𝑏])=𝑏−𝑎 for𝑎,𝑏∈[𝑥,𝑦] .I f
+(1)or(4)hold, 𝜀 sufficientlysmall,weforcethesumofthefirsttwotermsinEquation( B20)to
+bepositive.If(2)or(3)hold,weforcethesumofthetermsinEquation( B21)tobepositive.This
+completestheproof. □
