@@ -73,3 +73,44 @@
   mod: g_LP == g_LTRT == g_DOOR == g_CHAIN + g_BOULDER: True
   orig: GP gains {(1, -1, 1, 0, 0)}; SV gains {(2, -1, 1, 0, 0)}; LP gains {(2, 2, -2, 0, 0), (1, 1, -2, 1, 0)}; DOOR gains {(1, 1, -2, 1, 0)}
   upd: GP gains {(1, -1, 1, 0, 0)}; SV gains {(2, -1, 1, 0, 0)}; LP gains {(2, 2, -2, 0, 0), (1, 1, -2, 1, 0)}; DOOR gains {(1, 1, -2, 1, 0)}
+  3000 random integer scores: violations of [mod: ST singleton => both route switches] 0; [mod: CHAIN & BOULDER => DOOR] 0; [orig/upd: GP => SV] 0
+  scores separating GP+LP from all four switches: {'orig': 0, 'upd': 0, 'mod': 0}
+  boundary score (2,0,-1,-5,-3):
+    GP       {'orig': True, 'upd': True, 'mod': True}
+    CHAIN    {'orig': True, 'upd': True, 'mod': True}
+    BOULDER  {'orig': True, 'upd': True, 'mod': False}
+    SC       {'orig': False, 'upd': False, 'mod': True}
+    LP       {'orig': True, 'upd': True, 'mod': True}
+    EP       {'orig': True, 'upd': True, 'mod': True}
+    LTRT     {'orig': False, 'upd': False, 'mod': False}
+    DOOR     {'orig': False, 'upd': False, 'mod': False}
+    LBRB     {'orig': True, 'upd': True, 'mod': True}
+    SV       {'orig': True, 'upd': True, 'mod': True}
+    LOC      {'orig': True, 'upd': True, 'mod': True}
+    SEED     {'orig': False, 'upd': False, 'mod': False}
+
+## 7. Escapes
+  mechanism-specific frozen scores (c=0 default; frozen L=-5, frozen BH=0, frozen LT=-5), mod: {'CHAIN': True, 'BOULDER': True, 'DOOR': False, 'LTRT': False, 'LP ST': True, 'LP BT': False, 'SEED (frozen D penalised)': False, 'LOC (frozen D penalised)': True}
+  mechanism-specific frozen scores (c=0 default; frozen L=-5, frozen BH=-5, frozen LT=-5), mod: {'CHAIN': True, 'BOULDER': True, 'DOOR': False, 'LTRT': False, 'LP ST': True, 'LP BT': True, 'SEED (frozen D penalised)': False, 'LOC (frozen D penalised)': True}
+  inertial coding of standing blockages, orig: SV flip counted under license preorders: [False, False, False, False, False] ; additive gains {(0, -1, 1, 0, 0)} ; LBRB flip counted (event coding): [False, False, False, False, False] ; GP still a cause: [True, True, True, True, True]
+  inertial coding of standing blockages, upd: SV flip counted under license preorders: [False, False, False, False, False] ; additive gains {(0, -1, 1, 0, 0)} ; LBRB flip counted (event coding): [False, False, False, False, False] ; GP still a cause: [True, True, True, True, True]
+  fresh blockages (landslides) are event-coded: SV flip counted under license preorders (orig): [True, True, True, True, True]
+
+## 8. Exceptionless conformity (n=l > f,u; f,u incomparable-or-equal) under modified HP
+    {'GP': True, 'CHAIN': True, 'BOULDER': False, 'SC': False, 'LP': True, 'EP': True, 'LOC': False, 'LTRT': False, 'DOOR': False} | CHAIN I part of cause: False | LP BT: True
+    {'GP': True, 'CHAIN': True, 'BOULDER': False, 'SC': False, 'LP': True, 'EP': True, 'LOC': False, 'LTRT': False, 'DOOR': False} | CHAIN I part of cause: False | LP BT: True
+
+## 9. Frozen-witness lemma on random acyclic binary models (modified HP, all candidate subsets)
+  357 modified-HP causes; 940 conforming witnesses; counterexamples to the lemma: 0
+
+## 10. Andreas-Guenther verdicts, with their deviancy condition and with it disabled
+  DOOR   T: {'2024a/dev': False, '2024a/nodev': False, '2024b/dev': False, '2024b/nodev': False}
+  SEED   S: {'2024a/dev': False, '2024a/nodev': False, '2024b/dev': False, '2024b/nodev': False}
+  LOC    S: {'2024a/dev': False, '2024a/nodev': True, '2024b/dev': False, '2024b/nodev': True}
+  LTRT   F: {'2024a/dev': False, '2024a/nodev': False, '2024b/dev': False, '2024b/nodev': False}
+  EP     A: {'2024a/dev': True, '2024a/nodev': True, '2024b/dev': True, '2024b/nodev': True}
+
+## 11. Corollary with singleton verdicts (GP, ST singleton causes; BT in no cause; LTRT, DOOR, SV flips not singleton causes)
+  orig: preorders satisfying all: 0
+  upd: preorders satisfying all: 0
+  mod: preorders satisfying all: 0
