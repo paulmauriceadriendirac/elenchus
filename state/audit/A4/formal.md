@@ -36,7 +36,7 @@ Date: 2026-10-29. Mode: audit. Auditor's independent code: `state/audit/A4/forma
 | 8 | Calibration needs l⪰n (prevention), n⪰l (chain), f⪰l (Boulder's only modified witness K l→f, H n→l), u⋡n (short circuit); so f⪰n and the common profile passes | 72 | §D: calibrated set = {l⪰n, n⪰l, f⪰l, u⋡n} exactly | VERIFIED |
 | 9 | "Exactly five of the 355 preorders, two of them total orders, give all four calibrating verdicts, under each definition" | 72 | §D: five, the same set under orig/upd/mod. Two of them are total **preorders** (weak orders). **None is a total (linear) order**: all five have n~l | Five: VERIFIED. "total orders": **FALSE** (patch P1) |
 | 10 | g_Doorbells = g_Tracks = g_Suzy = r+a−2b+c = (r+2a−2b)+(c−a) = g_Chain + g_Boulder | 73 | §G: sympy, gains computed from model worlds | VERIFIED |
-| 11 | Any additive score that keeps the chain and the ducking counts both switches | 74 | Follows from #10 under the modified definition (Boulder has one witness there). Under the older definitions the ducking can be kept via the second witness (gain r+d−b), as line 86 says | VERIFIED (modified-definition context, as in text) |
+| 11 | Any additive score that keeps the chain and the ducking counts both switches | 74 | Follows from #10 under the modified definition (Boulder has one witness there). Under the older definitions the ducking can be kept via the second witness (gain r+d−b; line 162 notes that witness), which is how the boundary score of line 86 keeps it | VERIFIED (modified-definition context, as in text) |
 | 12 | Thm 2: under orig/upd, the Blocked flip has witness [EF←0, LB←0]; its profile = prevention profile + one R1→R0; the anonymous-Pareto consequence follows | 76–78 | §B: unique witness world (0,0,1,1); profile identity checked; sufficiency checked | VERIFIED |
 | 13 | g_Blocked = g_Prevention + r; gains r+b−a and 2r+b−a; componentwise admits iff l⪰n | 76, 78 | §G, §D/§I | VERIFIED |
 | 14 | Under modified, the flip has no witness of its own; {EF, LB} has the Thm-2 world as witness; for componentwise filters the flip is part of a cause exactly when l⪰n | 80 | §B, §I: 0 exceptions over 355 | VERIFIED |
@@ -122,5 +122,7 @@ With: `Their witnesses are actual-value witnesses (Definition 13, 6, holds off-r
 (Definition 13 is on p. 6 of the article, per the `inbox/sources` text; the citation auditor should confirm the page.)
 
 **P8 (optional strengthening; lines 84 and 164).** These need no correction. If the candidate's own formal directory adds an exact check, line 84 could add after "finds none either": `; an exact SMT check over all real additive scores, and over all anonymous Pareto filters on the profiles that occur, confirms this`. Do this only if that check is added to the candidate's own verified code; the essay may not cite this audit's scripts.
+
+**Word budget.** The essay currently counts 5,521 words (`tools/wordcount.py`; target 5,600, limit 6,000). P1 changes no words. P2–P7 together add roughly 45 words, which keeps the essay under target.
 
 **Row 35 (Section 7).** No textual patch is required for consistency: the author's code produces the stated pattern. Independent confirmation needs an implementation of Andreas and Günther (2024) conditions (1)–(5) and deviancy from the source. Until then, the orchestrator should treat these as author-computed only.

@@ -101,3 +101,4 @@
 - 2026-10-29T17:43:03Z **agent**: A6 final patches: final/A6/essay.md
 - 2026-10-29T17:43:21Z **agent**: compliance: A5 final essay PASS (5039 words; no hard flags; patches verified), state/audit/A5/compliance.md
 - 2026-10-29T17:43:54Z **event**: A5 final: compliance PASS (state/audit/A5/compliance.md); PDF built final/A5/essay.pdf.
+- 2026-10-29T17:44:03Z **agent**: A4 formal audit: state/audit/A4/formal.md (independent HP implementation in state/audit/A4/formal/; 91/94 checks pass, 3 intended FAIL show 'total orders' wording false; Lemma 0 counterexamples; Section 7 A&G unverified)
