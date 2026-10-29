@@ -1,0 +1,12 @@
+[
+ {"key":"Dorst2019","authors":["Kevin Dorst"],"year":2019,"title":"Lockeans Maximize Expected Accuracy","venue":"Mind","volume":"128","pages":"175-211","doi":"10.1093/mind/fzx028","type":"article"},
+ {"key":"DorstMandelkern2022","authors":["Kevin Dorst","Matthew Mandelkern"],"year":2022,"title":"Good Guesses","venue":"Philosophy and Phenomenological Research","volume":"105","pages":"581-618","doi":"10.1111/phpr.12831","type":"article"},
+ {"key":"Easwaran2016","authors":["Kenny Easwaran"],"year":2016,"title":"Dr. Truthlove or: How I Learned to Stop Worrying and Love Bayesian Probabilities","venue":"Noûs","volume":"50","pages":"816-853","doi":"10.1111/nous.12099","type":"article"},
+ {"key":"Holguin2022","authors":["Ben Holguín"],"year":2022,"title":"Thinking, Guessing, and Believing","venue":"Philosophers' Imprint","volume":"22","doi":"10.3998/phimp.2123","type":"article"},
+ {"key":"Joyce2009","authors":["James M. Joyce"],"year":2009,"title":"Accuracy and Coherence: Prospects for an Alethic Epistemology of Partial Belief","venue":"Degrees of Belief","pages":"263-297","doi":"10.1007/978-1-4020-9198-8_11","type":"chapter"},
+ {"key":"Leitgeb2014","authors":["Hannes Leitgeb"],"year":2014,"title":"The Stability Theory of Belief","venue":"The Philosophical Review","volume":"123","pages":"131-171","doi":"10.1215/00318108-2400575","type":"article"},
+ {"key":"Leitgeb2017","authors":["Hannes Leitgeb"],"year":2017,"title":"The Stability of Belief: How Rational Belief Coheres with Probability","venue":"Oxford University Press","doi":"10.1093/acprof:oso/9780198732631.001.0001","type":"book"},
+ {"key":"Levi1967","authors":["Isaac Levi"],"year":1967,"title":"Gambling with Truth: An Essay on Induction and the Aims of Science","venue":"Knopf","type":"book"},
+ {"key":"Rothschild2023","authors":["Daniel Rothschild"],"year":2023,"title":"Lockean Beliefs, Dutch Books, and Scoring Systems","venue":"Erkenntnis","volume":"88","pages":"1979-1995","doi":"10.1007/s10670-021-00438-1","type":"article"},
+ {"key":"Wang2025","authors":["Minkyung Wang"],"year":2025,"title":"Credence and belief: epistemic decision theory revisited","venue":"Philosophical Studies","volume":"182","pages":"1433-1465","doi":"10.1007/s11098-025-02321-z","type":"article"}
+]

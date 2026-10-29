@@ -1,6 +1,6 @@
 # What the run needs from you
 
-_Updated 2026-10-23 22:51 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-29 04:01 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
@@ -365,6 +365,13 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Why:** Newest statement of the counterfactual-probability principle and its triviality-avoidance; frontier of the lane; only abstract readable
 - **Requested by:** lane-mapper L6
 
+### `schultheis-reasonable-inferences-for-counterfactuals`  (high)
+- **Citation:** Ginger Schultheis, Reasonable Inferences for Counterfactuals (author-listed manuscript; PhilArchive SCHRIF-3, latest listed version 10 May 2024)
+- **Where to try:** https://philarchive.org/rec/SCHRIF-3 https://www.gingerschultheis.com/research.html
+- **Needed:** Full text PDF; no human summary needed
+- **Why:** E3 follow-up: compare the reasonable-inference account with the proposed redundancy and context-shift arguments. Archive PDF returned 403; author listing accessible through search only.
+- **Requested by:** Codex independent review, 28 October 2026
+
 ### `tarsney-lederman-spears2025-dominance-incompleteness`  (high)
 - **Citation:** Christian Tarsney, Harvey Lederman, Dean Spears, 'A Dominance Argument Against Incompleteness', Philosophical Review 134 (2025) 455-490, doi:10.1215/00318108-11964820
 - **Where to try:** https://doi.org/10.1215/00318108-11964820 ; https://philpapers.org/archive/TARSTS.pdf
@@ -645,6 +652,13 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Why:** L4 map: panel member's paper; only a search-snippet paraphrase of the abstract was found; needed to represent it accurately
 - **Requested by:** lane-mapper-L4
 
+### `santorio-2018-alternatives-truthmakers-final`  (normal)
+- **Citation:** Paolo Santorio (2018), Alternatives and Truthmakers in Conditional Semantics, Journal of Philosophy 115(10):513-549, doi:10.5840/jphil20181151030
+- **Where to try:** https://doi.org/10.5840/jphil20181151030 https://www.paolosantorio.net/
+- **Needed:** Final published 2018 article, PDF
+- **Why:** The author-hosted link supplies an August 2016 draft that allows both distributive and nondistributive parses. Need the final version before attributing an exceptionless SDA commitment to the published paper. DOI retrieval failed.
+- **Requested by:** Codex independent review, 28 October 2026
+
 ### `schultheis-2023-counterfactual-probability`  (normal)
 - **Citation:** Schultheis, G. (2023). Counterfactual Probability. Journal of Philosophy 120(11): 581-614. doi:10.5840/jphil20231201133
 - **Where to try:** https://philarchive.org/archive/SCHCAP-36 ; https://doi.org/10.5840/jphil20231201133
@@ -707,6 +721,8 @@ Paste `relay/outbox/<id>.md` into the other model verbatim, then save its full r
 
 - `codex-ambitious-drafts-20261022` → any frontier model other than Claude
 - `codex-ambitious-review-20261022` → any frontier model other than Claude
+- `codex-e3-review-response-20261028` → any frontier model other than Claude
 - `codex-eight-ideas-audit-20261022` → any frontier model other than Claude
 - `codex-expansion-20261022` → any frontier model other than Claude
+- `codex-review-edition-20261025` → any frontier model other than Claude
 

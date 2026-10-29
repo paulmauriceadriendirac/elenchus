@@ -85,3 +85,7 @@
 
 > give me the essays you produced and check also astra's work and keep going
 
+## 2026-10-29T04:01:17Z — class: courier
+
+> [uploaded PDF: Xiao & Xiong 2026, s41599-026-07470-y.pdf]
+

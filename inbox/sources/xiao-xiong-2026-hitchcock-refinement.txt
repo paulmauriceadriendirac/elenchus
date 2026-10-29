@@ -1,0 +1,952 @@
+=== PDF page 1 ===
+ARTICLE
+Ar e ﬁnement of the Hitchcock de ﬁnition of actual
+causation
+Zhizun Xiao 1 & Wei Xiong 1 ✉
+Models of actual causation seek to capture the causal relationships between two speci ﬁc
+events within a given context, thereby contributing to a clear understanding of causality. A
+key challenge in constructing such models lies in providing a rigorous and well-de ﬁned notion
+of actual causation. Several in ﬂuential approaches have been proposed in the literature,
+including the Hitchcock de ﬁnition, the modi ﬁed Halpern-Pearl de ﬁnition, and the Halpern-
+Hitchcock deﬁnition. However, these de ﬁnitions struggle to offer a uni ﬁed solution to certain
+canonical problems, such as the switch example, the short circuit example, the bogus pre-
+vention example, and the switch-variant example. To address this limitation, we propose a
+deﬁnition for actual causation by formalizing and re ﬁning the Hitchcock de ﬁnition. This
+reﬁned de ﬁnition offers a framework capable of resolving these canonical problems. Addi-
+tionally, we present an analysis comparing these de ﬁnitions, demonstrating that our proposed
+deﬁnition is more restrictive than both the Hitchcock and modi ﬁed Halpern-Pearl de ﬁnitions.
+https://doi.org/10.1057/s41599-026-07470-y OPEN
+1 Institute of Logic and Cognition, Department of Philosophy, Sun Yat-sen University, Guangzhou, China. ✉email: hssxwei@mail.sysu.edu.cn
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y 1
+1234567890():,;
+=== PDF page 2 ===
+Introduction
+C
+ausation is a fundamental concept that plays a critical role
+across a wide range of disciplines, including arti ﬁcial
+intelligence, philosophy, law, biomedicine, economics, and
+epidemiology, among others. Its importance has inspired exten-
+sive interdisciplinary research, as scholars seek to explore its
+implications and applications.
+Within the literature, causation is generally divided into two
+main categories: type causation (general causation) and actual
+causation (token causation). Type causation refers to a relation-
+ship between types of events in general contexts, whereas actual
+causation describes a relationship between speci ﬁc, concrete
+events within a particular scenario — events tied to particular
+individuals, places, or times (Hitchcock ( 2018)).1 For example,
+the statement “smoking causes lung cancer ” represents type
+causation, as it captures a general causal relationship. In contrast,
+the statement “Lucy’s smoking ten cigarettes daily for twenty
+years caused her to develop lung cancer this year ” illustrates
+token causation, as it refers to a speci ﬁc causal instance involving
+a particular individual and a de ﬁnite time frame. Beyond such
+speciﬁc instances, theories of actual causation are crucial. They
+not only deepen our understanding of the nature of causality but
+also provide a theoretical framework for addressing practical
+societal issues, such as responsibility attribution and blame
+assignment.
+To effectively model actual causation, it is crucial to formulate a
+general deﬁnition. In recent years, substantial research efforts have
+been devoted to addressing this challenge (see, e.g., Beckers (2021);
+Beckers and Vennekens ( 2018); Bochman ( 2018); Hall ( 2007);
+Halpern ( 2008, 2015); Halpern and Hitchcock ( 2015); Hitchcock
+(2001); Menzies (2007); Pearl (2000); Weslake (2015); Zhu (2022)).
+Most de ﬁnitions of actual causation are rooted in the counter-
+factual approach introduced by Lewis ( 1973a), which posits that C
+is a cause of E if, in the absence of C, E would not have occurred. To
+resolve the issue of early preemption, Lewis deﬁned causation as the
+transitive closure of causal dependence among actual events (Lewis
+(1979)).2 However, this approach entails the transitivity of causa-
+tion as a corollary, which has been challenged in the literature on
+the basis of various counterexamples (Hall ( 2000)).
+One approach to identifying a causal relation without relying
+on the transitivity principle is to hold certain variables ﬁxed at
+their actual values, thereby revealing hidden counterfactual
+dependencies (Hitchcock ( 2001)). Hitchcock employs explicitly
+nonforetracking counterfactuals to de ﬁne an active route between
+two events. The core idea is to identify an active route between
+the putative cause and the effect, such that altering the value of
+the putative cause along this route would also change the value of
+the effect variable. This approach, referred to as the Hitchcock
+(HIT) de ﬁnition, aligns naturally with our intuitive causal judg-
+ments by appealing to psychologically natural counterfactuals
+rather than philosophically technical ones (Hitchcock ( 2001)).
+However, the HIT de ﬁnition struggles to satisfactorily resolve
+several canonical examples, such as the switch and short circuit
+problems (Hitchcock ( 2001)). A similar idea of ﬁxing variables at
+their actual values is also central to the modi ﬁed Halpern-Pearl
+(MHP) de ﬁnition (Halpern ( 2015)), which is widely regarded as
+an in ﬂuential de ﬁnition of actual causation in the current litera-
+ture. Despite its formal elegance, the MHP de ﬁnition similarly
+fails to resolve these problems.
+A prominent alternative approach involves incorporating
+notions of normality into accounts of actual causation (Hall
+(2007); Halpern ( 2008); Halpern and Hitchcock ( 2015); Hitch-
+cock ( 2007); Icard et al. ( 2017); Menzies ( 2004, 2007)). This
+approach is supported by empirical research indicating that
+people’s judgments of actual causation are in ﬂuenced by their
+perceptions of the normality of events (see Hitchcock and Knobe
+(2009)). For instance, Halpern and Hitchcock ( 2015) introduce a
+normality ordering over possible worlds to rank causes based on
+their most normal witness. The Halpern and Hitchcock (HH)
+deﬁnition, which builds on this idea, successfully addresses the
+short circuit example (Halpern and Hitchcock ( 2015)). The
+authors emphasize that the structural equations within the model
+play a crucial role in determining the normality ordering. Simi-
+larly, Weslake ( 2015) proposes a related approach to handle the
+switch example, suggesting that the relevant possibilities within
+the model should be exhaustive. In his framework, there are
+typically only two possibilities, both leading to the same outcome.
+Introducing a third possibility that yields a different outcome
+could lead to confusion and unsatisfactory results. These cases
+highlight a subtle yet signi ﬁcant constraint that profoundly
+inﬂuences our causal judgments.
+Inspired by these insights, we re ﬁne the HIT de ﬁnition by
+introducing a condition on the notion of active routes and for-
+malizing it within the structural equation framework of Halpern
+and Pearl (Halpern and Pearl ( 2005)). Speci ﬁcally, we consider
+whether the possible worlds resulting from a hypothetical inter-
+vention are consistent with the given context. This re ﬁnement
+yields a relatively simple and elegant de ﬁnition that provides a
+uniﬁed solution to several canonical problems in the literature.
+The remainder of this paper is structured as follows. Section“Basic
+concepts” introduces the formal framework of structural equations
+and reviews the HIT, MHP, and HH deﬁnitions. Section“AP r o b l e m
+in the HIT and MHP de ﬁnitions” discusses a key problem faced by
+both the HIT and MHP de ﬁnitions. In Section “Ar e ﬁned HIT
+deﬁnition”,w er e ﬁne the HIT de ﬁnition by incorporating a condi-
+tion on the notion of active routes and establish a theoretical result
+regarding the relationships between these de ﬁnitions. Section
+“Analyzing other examples” applies the new de ﬁnition to several
+canonical examples, comparing its performance with other de ﬁni-
+tions. Finally, Section “Concluding Remarks” concludes the paper.
+Basic concepts
+In this section, we introduce key concepts, including causal
+models and active routes, and provide a review of the HIT, MHP,
+and HH de ﬁnitions.
+Causal models . Following Halpern and Pearl ( 2005), we assume
+that the world is modeled by random variables and their values,
+with causal in ﬂuences between these variables represented by a
+set of structural equations. It is conceptually useful to divide the
+random variables into two sets: exogenous variables and endo-
+genous variables. To this end, a signature that lists these two types
+of variables and characterizes their possible values can be de ﬁned
+as follows.
+Deﬁnition 1 . A signature S is a tuple ( U; V; R), where U is a set
+of exogenous variables, V is a set of endogenous variables, and R
+associates with every variable Y2 U ∪ V a nonempty set R(Y) of
+possible values for Y.
+Deﬁnition 2 . A causal model M is a pair ( S; F ), where S is a
+signature,and F deﬁnes a set of structural equations , i.e., F
+associates with each endogenous variable X2 V a function
+denoted FX such that FX :ð ´ U2U RðUÞÞ ´ð ´ Y2V/C0f XgRðYÞÞ!
+RðXÞ.
+The structural equations indicate that the value of X is
+determined by FX and the values of all other variables in U ∪ V.
+These equations play a crucial role in de ﬁning what happens in
+the presence of external interventions. Fixing some variable X at x
+in a causal model M = (S; F ) through an intervention results in a
+new causal model denoted MX←x, which is identical to M except
+ARTICLE HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y
+2 HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y
+=== PDF page 3 ===
+that the equation for X in F is replaced by X = x.3 To simplify the
+exposition, we focus on recursive (or acyclic) models. 4 In such
+models, for any given context — that is, an assignment ~u to the
+exogenous variables in U— the system of equations yields a
+unique solution. A graphical representation of the causal model
+can often provide useful insight into its structure.
+Deﬁnition 3. A graph is a pro ﬁle G = (N , L), where N is a set of
+nodes (or vertices), and L is a set of links (or edges) that connect
+some pairs of vertices.
+Each vertex in a graph corresponds to one variable in the
+model, and the edges denote a certain relation that holds between
+pairs of variables. If the variable X appears as an argument on the
+right side of the structural equation for the endogenous variable
+Z, then X is a parent of Z, and Z is a child of X. There will be an
+arrow from node X to node Z in this case. The value of each
+variable is constrained by a function of its parents. A valuation is
+an assignment of a value to each vertex in accordance with the
+speciﬁed functions. An intervention on X for a valuation is a new
+valuation with a value of X that violates the function relating X to
+its parents but is consistent with all other function speci ﬁcations
+and agrees with the pre-intervention valuation for each variable
+that is neither X nor a descendant of X. For example, in Fig. 1(a),
+F is a parent of R and L, while R and L are parents of TA.W e
+might have L = F. Thus, if F = 0, then L = 0. After intervening
+with variable L and setting its value to 1, we have L = 1 regardless
+of the value of F. In this case, F is no longer a parent of L (Fig. 1b).
+To distinguish variables in causal graphs, the variables are shaded
+when their values are assigned 1.
+A route between two variables X and Z is an ordered sequence
+of variables ( X, ⋯ , Z) such that each variable in the sequence is a
+parent of its successor. Graphically, a route between X and Z is a
+directed path from X to Z. A variable in a path between X and Z is
+called as an intermediate node of the path. For instance, in Fig.
+1(a), there are two paths from F to TA:( F, R, TA) and ( F, L, TA).
+R is an intermediate node of the path ( F, R, TA).
+Next, we brie ﬂy describe a formal language for counterfactuals
+and interventions, which is useful for de ﬁning actual cause
+properly. For more details, see Halpern ( 2015).
+Deﬁnition 4 . Given a signature S¼ð U; V; RÞ,a primitive event
+is a formula of the form X = x, where X2 V and x2 RðXÞ.
+We write Y ← y to indicate that the value of the variable Y is
+assigned to y by some external intervention, meaning the
+structural equation for Y in F is replaced by Y = y.
+Deﬁnition 5.A causal formula over S is a form [ Y1 ← y1, ⋯ , Yk ←
+yk]φ, where
+● φ is a Boolean combination of primitive events;
+● Y1, ⋯ , Yk are distinct variables in V;
+● yi2 RðYiÞ.
+A causal formula can be abbreviated as ½~Y ~y/C138 φ. The special
+case where k = 0 is abbreviated as φ. Intuitively, [ Y1 ← y1, ⋯ , Yk
+← yk]φ says that φ would hold if Yi were set to yi for i = 1, ⋯ , k.
+A causal formula ψ is true or false in a causal model given a
+context. As usual, we write ðM;~uÞ/C131 ψ if the causal formula ψ is
+true in the causal model M given the context ~u. The ⊧ relation is
+deﬁned inductively asðM;~uÞ/C131ð X¼ xÞ if the variable X has value
+x in the unique solution to the equations in M with the context ~u
+(that is, the unique vector of values for the exogenous variables
+simultaneously satisﬁes all equations in M with the variables in U
+set to ~u). The truth of conjunctions and negations is de ﬁned in
+the standard way. Finally, we have
+ðM;~uÞ/C131½ ~Y ~y/C138 φ
+ifðM~Y¼~y;~uÞ/C131 φ:
+Three de ﬁnitions of actual causation . Inspired by Halpern and
+Pearl ( 2005), Hitchcock presents structural equations as tools for
+representing patterns of counterfactual dependence. He uses
+explicitly nonforetracking counterfactuals to de ﬁne the notion of
+an active route between two events (Hitchcock ( 2001)). Through
+this route, the value of the putative cause variable determines the
+value of the effect variable, indicating a counterfactual depen-
+dence between them. If there are multiple routes between the
+putative cause and the effect, variables on other routes need to be
+ﬁxed at their actual values. With this idea, actual causation can be
+identiﬁed by ﬁnding an active route on the diagram.
+Deﬁnition 6. A route ( X, Y1, ⋯ , Yn, Z) is active in a causal model
+ðS; FÞ if and only if Z depends counterfactually upon X within a
+new system of equations F0 constructed from F as follows: for all
+Y2 U ∪ V,i f Y is intermediate between X and Z but does not
+belong to the route ( X, Y1, ⋯ , Yn, Z), then replace the equation
+for Y with a new equation that sets Y equal to its actual value in
+F .
+Note that if there is no intermediate variable that does not
+belong to this route, then F0 is the same as F .
+Deﬁnition 7 . (The HIT de ﬁnition) Let c and e be distinct
+occurrent events, and let X and Z be variables such that the values
+of X and Z represent alterations of c and e, respectively. Then c is
+a cause of e if and only if there is an active causal route from X to
+Z in an appropriate causal model ðS; FÞ.
+Halpern ( 2015) offers a de ﬁnition for actual causation that is
+elegant and provides a good reference for formalizing our
+deﬁnition. The key idea of this de ﬁnition is that keeping some
+variables ﬁxed at their actual values uncovers hidden counter-
+factual dependence.
+Deﬁnition 8. (The MHP de ﬁnition) ~X¼ ~x is an actual cause of ϕ
+inðM;~uÞ if the following three conditions hold:
+● AC1.ðM;~uÞ/C131ð ~X¼ ~xÞ andðM;~uÞ/C131 ϕ.
+● AC2(am). There is a setting ~W of the variables in V and a
+setting ~x0 of the variables in ~X such that if
+ðM;~uÞ/C131ð ~W¼ ~wÞ, thenðM;~uÞ/C131½ ~W ~w; ~X ~x0/C138: ϕ.
+● AC3. ~X is minimal, and no subset of ~X satisﬁes conditions
+AC1 and AC2.
+It is worth emphasizing that the condition AC2( am) is a but-for
+clause involving a witness. In the context ~u, setting ~X = ~x0 and ~W
+= ~w can obtain an assignment of values about the world, meaning
+that a witness world is one that justi ﬁes AC2( am). This witnesses
+the fact that ~X = ~x is a cause of ϕ in context ~u.
+Halpern and Hitchcock ( 2015) develop a ﬂexible formal
+framework for incorporating normality into an account of actual
+causation. They use a normality ordering on possible worlds to
+rank causes according to the most normal witness. Before
+reviewing their de ﬁnition, let us ﬁrst provide some notions.
+Fig. 1 A graphical representation of a causal model. a Before intervening
+with variable L. b After intervening with variable L.
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y ARTICLE
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y 3
+=== PDF page 4 ===
+Deﬁnition 9 .A world is an assignment of values to the endo-
+genous variables in a causal model M.
+We usually assume that there is a partial preorder ≽ over the
+set of worlds, which can be used to compare the normality
+between different worlds. The formula wkw0 stands for w being
+at least as normal as w0.
+Deﬁnition 10 . An extended causal model is a tuple M =
+(S; F ; k), where ( S; F ) is a causal model and ≽ is a partial
+preorder on worlds.
+Deﬁnition 11. (The HH de ﬁnition) ~X¼ ~x is an actual cause of ϕ
+in an extended causal model M with a context ~u if the following
+three conditions hold:
+● AC1.ðM;~uÞ/C131ð ~X¼ ~xÞ andðM;~uÞ/C131 ϕ.
+● AC2. There is a partition of V into two subsets ~Z, ~W with
+~X/C18 ~Z, and there are ~x0 and ~w such that
+(a) ðM;~uÞ/C131½ ~W ~w; ~X ~x0/C138: ϕ, and w ~W¼~w;~X¼~x0 ;~ukw~u,
+where w~u is the actual world characterized by ðM;~uÞ;
+(b) ðM;~uÞ/C131½ ~W
+0
+ ~w; ~X ~x; ~Z
+0
+ ~z/C3 /C138 ϕ for all subsets ~W
+0
+of
+~W and all subsets ~Z
+0
+of ~Z such thatðM;~uÞ/C131 ~Z
+0
+¼ ~z/C3 .
+● AC3. ~X is minimal, and no subset of ~X satisﬁes conditions
+AC1 and AC2.
+A problem in the HIT and MHP de ﬁnitions
+Although the HIT and MHP de ﬁnitions can effectively address
+the problem of early preemption without invoking the transitivity
+principle, they fail to adequately explain some canonical exam-
+ples, such as the switch example (Hall ( 2007)).
+Example 1 . (Switch) An engineer is standing by a switch in the
+railroad tracks. A train approaches in the distance. She ﬂips the
+switch, causing the train to travel down the right-hand track
+instead of the left. Since the tracks reconverge ahead, the train
+arrives at its destination regardless. Is the engineer ’s ﬂipping of
+the switch a cause of the train ’s arrival?
+Figure 2 illustrates the causal structure of the example, where
+EF stands for the engineer ﬂipping the switch; TR denotes the
+train traveling on the right-hand track; TL denotes the train
+traveling on the left-hand track; and TA represents the train ’s
+arrival.
+We can construct a causal model MS¼ð U; V; R; FÞ for the
+switch example, where
+● The set of exogenous variables U¼f Ug, where U
+represents the psychological conditions determining
+whether the engineer ﬂips the switch. U = 1 if the engineer
+decides to ﬂip the switch, U = 0 otherwise. We omit the
+exogenous variables from the graph.
+● The set of endogenous variables V¼f EF; TR; TL; TAg.
+● R : V!f 1; 0g.
+● The set of structural equations F are TR = EF, TL = (1 −
+EF), TA = max{TL, TR}.
+According to the scenario, the actual world is ( EF = 1, TR = 1,
+TL = 0, TA = 1). We now analyze the example using the HIT
+deﬁnition. From Fig. 2, there are two paths from EF to TA: P1 =
+(EF, TR, TA), P2 = (EF, TL, TA). Considering P1,w e ﬁx TL at its
+actual value of 0 and set EF = 0, resulting in TA = 0. This
+indicates that TA counterfactually depends on EF, implying an
+active route ( EF, TR, TA) from EF to TA. According to the HIT
+deﬁnition, EF = 1 is an actual cause of TA = 1, which contradicts
+our intuition.
+Next, we analyze the example using the MHP de ﬁnition.
+Clearly, AC1 and AC3 hold. We take ~W¼f TLg and w = 0; that
+is, we hold TL at its actual value of 0. If we set EF = 0, then TA =
+0, showing that AC2( am) holds. Therefore, we also conclude that
+EF = 1 is an actual cause of TA = 1.
+However, our intuition suggests that the engineer ’s ﬂipping of
+the switch is not an actual cause of the train ’s arrival. This is
+because ﬂipping the switch does not actually change the outcome.
+If the engineer had not ﬂipped the switch, the train would still
+have arrived at its destination.
+One popular approach to addressing this problem is to
+incorporate the notion of normality into accounts of actual
+causation. Normality can typically be divided into two types:
+descriptive (statistical) norms and prescriptive norms (Hitchcock
+and Knobe ( 2009)). Descriptive norms are grounded in statistical
+tendencies, such as the statistical mode or mean, whereas pre-
+scriptive norms are rooted in how things ought to be or are
+supposed to be, encompassing moral, legal, and other normative
+standards. These norms collectively guide judgments of what
+constitutes appropriate behavior in a given situation.
+The HH de ﬁnition provides a ﬂexible formal framework for
+incorporating normality into the account of actual causation. It
+uses a normality ordering on the set of possible worlds to rank
+causes according to their most normal witness. Although the HH
+deﬁnition is powerful and can address many problems, it still has
+limitations, which will be discussed in the next section. Addi-
+tionally, con ﬂicts may emerge between descriptive and pre-
+scriptive norms — an issue even acknowledged by Halpern and
+Hitchcock themselves (Halpern and Hitchcock ( 2015)).
+Ar e ﬁned HIT de ﬁnition
+In this section, we address the aforementioned problems in the
+HIT and HH de ﬁnitions by re ﬁning the HIT de ﬁnition through
+the addition of a condition on the notion of active routes. Fur-
+thermore, we establish a result illustrating the relationships
+between these de ﬁnitions.
+Although the HH de ﬁnition is powerful, it encounters dif ﬁ-
+culties in the switch-variant example , where both tracks are
+blocked (Halpern ( 2016), p.90).
+Example 2 . (Switch-variant example) This case builds upon
+Example 1 by incorporating the possibility of track blockages —
+either on the right-hand or left-hand side. Figure 3 illustrates the
+causal structure of this scenario, where EF denotes the engineer
+ﬂipping the switch; RB and LB indicate blockage states of the
+right-hand and left-hand tracks, respectively; and TA represents
+the train’s arrival outcome. We examine a situation in which both
+tracks are blocked: the engineer ﬂips the switch, directing the
+train to the right-hand track instead of the left. Since both tracks
+are obstructed, the train cannot reach its destination via either
+route. This analysis aims to determine whether the engineer ’s
+action of ﬂipping the switch constitutes a cause of the train ’s
+failure to arrive.
+Observation 1: In the switch-variant example, we have
+Fig. 2 Switch.
+ARTICLE HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y
+4 HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y
+=== PDF page 5 ===
+(a) Given that the normal values of EF, LB and RB are 0,
+ﬂipping the switch ( EF = 1) is a cause of the train not
+arriving ( TA = 0) under the HH de ﬁnition;
+(b) EF = 1 is not a cause of TA = 0 under the MHP de ﬁnition;
+(c) EF = 1 is not a cause of TA = 0 under the HIT de ﬁnition.
+Proof. We construct a causal model M0
+S¼ð U; V; R; FÞ for the
+switch-variant example, where
+● U¼f Ug, with U¼f U1; U2; U3g, where U1 represents the
+conditions determining whether the engineer ﬂips the
+switch: U1=1 if he decides to ﬂip the switch, and U1=0
+otherwise; U2 represents the conditions determining
+whether the left-hand track is blocked: U2=1i fi ti s
+blocked, and U2=0 otherwise; U3 represents the conditions
+determining whether the right-hand track is blocked: U3=1
+if it is blocked, and U3=0 otherwise.
+● V¼f EF; RB; LB; TAg.
+● R : V!f 1; 0g.
+● F¼f TA¼ðð EF^: RBÞ_ð: EF^: LBÞÞg, where ¬ EF
+denotes the engineer not ﬂipping the switch, and ¬ RB and
+¬ LB represent the right-hand and left-hand tracks not
+being blocked, respectively.
+Given the context where both tracks are blocked, the actual
+world is ( EF = 1, LB = 1, RB = 1, TA = 0). For part (a), let
+~W¼f LB; RBg, and w = {0, 1}. Then we have
+ðM;~uÞ/C131½ LB 0; RB 1; EF 0/C138ð TA¼ 1Þ:
+On the assumption that the normal values of EF, LB and RB are 0,
+the witness world ( EF = 0, LB = 0, RB = 1, TA = 1) is more
+normal than the actual world ( EF = 1, LB = 1, RB = 1, TA = 0).
+Thus, AC2(a) does hold, and it follows that EF = 1 is a cause of
+TA = 0 under the HH de ﬁnition.
+For part (b), let ~W¼f LB; RBg, and w = {1, 1}. Then we have
+ðM;~uÞ/C131½ LB 1; RB 1; EF 0/C138ð TA¼ 0Þ:
+This implies that AC2( am) does not hold. Hence, EF = 1 is not a
+cause of TA = 0 under the MHP de ﬁnition.
+For part (c), consider the path ( EF, TA). Assign actual values of
+LB and RB to 1, and set EF = 0; then the value TA = 0. This
+indicates that TA does not counterfactually depend upon EF,
+which implies that the path ( EF, TA) is not an active route. By the
+HIT de ﬁnition, EF = 1 is not an actual cause of TA = 0. □
+In this example, since both tracks are blocked, the train cannot
+possibly reach its destination. Our intuition is clear: the engineer ’s
+act of ﬂipping the switch does not cause the train ’s failure to
+arrive. Both the MHP and HIT de ﬁnitions yield conclusions
+consistent with this intuition, whereas the HH de ﬁnition
+encounters dif ﬁculties in this scenario. In our view, the HH
+deﬁnition is overly permissive, as it allows variables outside the
+causal pathway to be ﬁxed at non-actual values. By considering a
+broader set of counterfactual worlds, this approach increases the
+likelihood of classifying an event as a cause. Although the HH
+deﬁnition incorporates normality constraints to restrict con-
+tingencies, it remains prone to problems when the actual world
+contains numerous abnormal endogenous variables. In this
+example, the witness world ( EF = 0, LB = 0, RB = 1, TA = 1) is
+more normal than the actual world ( EF = 1, LB = 1, RB = 1, TA
+= 0), since EF and LB take more normal values in the witness
+world and RB remains unchanged. As a result, the de ﬁnition
+inappropriately identiﬁes the engineer ’s ﬂipping of the switch as a
+cause.
+Deﬁnition 12 . (Availability) A world is said to be available in a
+causal model if it does not violate the structural equations of
+the model.
+Essentially, an available world in a causal model is one that is
+consistent with the given scenario. For example, in the switch
+example, there are 16 possible worlds, as there are four elements
+in the set of endogenous variables. The structural equations in
+this example are de ﬁned as TR = EF, TL = (1 − TR), TA =
+max{TL, TR}. According to the scenario, if EF = 1, then TR = 1,
+TL = 0, and TA = 1. Conversely, if EF = 0, then TR = 0, TL = 1,
+and TA = 1. Therefore, the world ( EF = 1, TR = 1, TL = 0, TA =
+1) and ( EF = 0, TR = 0, TL = 1, TA = 1) are available in the
+model MS. In contrast, the other worlds are not available in the
+model, because they violate the structural equations.
+As previously established, ﬂipping the switch does not qualify
+as a cause of the train ’s arrival in the standard switch example.
+However, it would be deemed a cause if we account for the
+possibility that the tracks might be blocked. Thus, when the
+speciﬁc details of a scenario change, the corresponding models
+and conclusions shift accordingly. From this perspective, the
+structural equations that constrain the notion of availability are
+contingent. Nevertheless, studies of actual causation focus on
+exploring causal relationships within a speci ﬁc scenario, where
+the causal in ﬂuences between events are modeled through a set of
+structural equations. Once a speci ﬁc narrative context is provided
+and background information is fully supplemented, a causal
+model can be derived; in this case, the structural equations are
+also determined.
+We return to the HIT de ﬁnition, which is more natural and
+only ﬁxes variables at their actual values. In the switch example,
+Weslake ( 2015) notes that the relevant possibilities should be
+exhaustive. As we can see, there are only two available worlds in
+this example: ( EF = 1, TR = 1, TL = 0, TA = 1) and ( EF = 0, TR
+= 0, TL = 1, TA = 1), both of which yield the same result. It is
+therefore reasonable to conclude that EF = 1 is not an actual
+cause of TA = 1. If the world ( EF = 0, TR = 0, TL = 0, TA = 0)
+were available, ﬂipping the switch could be considered as a cause
+— but this is not the case in the switch example. Evidently, the
+notion of availability helps address the switch example.
+The idea that possible worlds should be available in a causal
+model can also address the short circuit example (Hitchcock
+(2007)). In this example, there are two possible worlds, both
+yielding the same result. Consequently, nothing is considered a
+cause (more details about this example will be discussed in Sec-
+tion 5). Beckers and Vennekens ( 2018) argue that this example is
+essentially no different from the switch example. Halpern and
+Hitchcock ( 2015) contend that the structural equations in the
+model signi ﬁcantly in ﬂuence the normality ordering. Halpern
+(2015) further discusses that the witness is an abnormal world
+that contradicts the story.
+There appears to be a subtle restriction that signi ﬁcantly
+inﬂuences our causal judgments. We now re ﬁne the HIT de ﬁni-
+tion with this idea to address the problems it encounters. Speci-
+ﬁcally, we make important modi ﬁcations to the notion of active
+routes. In the re ﬁned HIT de ﬁnition of actual causation we will
+offer, X = x is an actual cause of Z = z if there is an active causal
+Fig. 3 A variant of the switch example.
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y ARTICLE
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y 5
+=== PDF page 6 ===
+route P from X to Z in an appropriate causal model M. The route
+P = (X, Y1, ⋯ , Yn, Z) is active inðM;~uÞ if and only if Z depends
+counterfactually upon X within the new equations F0 constructed
+from F as follows: for the intermediate ~Wxz between X and Z,i f
+W2 ~Wxz , but does not belong to the route P, then replace the
+equation for W with a new equation that sets W equal to its actual
+value w in F . Crucially, the possible world ðx0; ~wxz ; y0
+1;/C1/C1/C1 ; y0
+n; z0Þ
+produced by intervention must be available in the model. As
+Woodward ( 2016) argues, this constraint should be incorporated
+into the formulation of the given problem, and it is assumed to be
+inviolable.
+With the concept of availability, a re ﬁned HIT (RHIT) de ﬁ-
+nition of actual causation can be formulated as follows:
+Deﬁnition 13. (An RHIT de ﬁnition) X = x is an actual cause of Z
+= z inðM;~uÞ if the following conditions hold:
+● AC1.ðM;~uÞ/C131ð X¼ xÞ andðM;~uÞ/C131ð Z¼ zÞ.
+● AC2. In the graph G characterized by ðM;~uÞ, there is a
+route P = (X, Y1, ⋯ , Yn, Z) from X to Z and ~Wxz is the set
+of the intermediate nodes between X and Z in which every
+node is not in the route P. There exists a setting x0 of the
+variable X such that if ðM;~uÞ/C131ð ~Wxz¼ ~wxzÞ, then
+ðM;~uÞ/C131½ ~Wxz ~wxz ; X x0/C138ð Z¼ z0Þ
+and the world ðx0; ~wxz ; y0
+1;/C1/C1/C1 ; y0
+n; z0Þ is available in
+the model.
+Next, we explore the connections between de ﬁnitions for actual
+causation.
+Lemma 1 . (Halpern ( 2016)) If ðM;~uÞ/C131½ ~X ~x/C138ð ~Y¼ ~yÞ; then
+ðM;~uÞ/C131½ ~X ~x/C138 φ if and only if ðM;~uÞ/C131½ ~X ~x; ~Y ~y/C138 φ.
+Proposition 1. Let M be a causal model and ~u be a context, then
+(a) If X = x is a cause of Z = z inðM;~uÞ under the RHIT
+deﬁnition, then X = x is a cause of Z = z inðM;~uÞ under
+the HIT de ﬁnition.
+(b) If X = x is a cause of Z = z inðM;~uÞ under the HIT
+deﬁnition, then X = x is a cause of Z = z inðM;~uÞ under
+the MHP de ﬁnition.
+(c) If X = x is a cause of Z = z inðM;~uÞ under the RHIT
+deﬁnition, and for every available w, w/C31 w~u, then X = x is a
+cause of Z = z inðM;~uÞ under the HH de ﬁnition.
+Proof. The difference between the RHIT and HIT de ﬁnitions lies
+in the availability condition, which requires that the world
+ðx0; ~wxz ; y0
+1;/C1/C1/C1 ; y0
+n; z0Þ is available in the model. It is straightfor-
+ward to see that part (a) holds.
+Suppose that X = x is a cause of Z = z in (M;~u)u n d e rt h eH I T
+deﬁnition. By this deﬁnition, there must exist a valuex0 of the variable
+X and an intermediate set ~Wxz such that ifðM;~uÞ/C131ð ~Wxz¼ ~wxzÞ,
+then ðM;~uÞ/C131½ ~Wxz ~wxz; X x0/C138ð Z¼ z0Þ. Clearly, we have
+ðM;~uÞ/C131ð X¼ xÞ^ð Z¼ zÞ,s i n c eX = x is a cause of Z = z in
+(M;~u)u n d e rt h eH I Td e ﬁnition. Hence, AC1 holds. Since
+ðM;~uÞ/C131½ ~Wxz ~wxz; X x0/C138ð Z¼ z0Þ, the obvious candidate for
+aw i t n e s sf o rA C 2 (am)i s( ~Wxz; ~wxz; x0). AC3 holds for X = x,a si ti s
+a singleton. Thus part (b) holds.
+Finally, assume that X = x is a cause of Z = z in (M;~u) under
+the RHIT de ﬁnition. The proofs of AC1 and AC3 in the HH
+deﬁnition are similar to those of part (b). We need to prove that
+AC2(a) and AC2(b) hold. Since X = x is a cause of Z = z in
+(M;~u), there must exist a value x0 of the variable X and an
+intermediate set ~Wxz such that if ðM;~uÞ/C131ð ~Wxz¼ ~wxzÞ, then
+ðM;~uÞ/C131½ ~Wxz ~wxz ; X x0/C138ð Z¼ z0Þ. The obvious candidate
+for a witness for AC2(a) is ( ~Wxz ; ~wxz ; x0). By the RHIT de ﬁnition,
+the world ðx0; ~wxz ; y0
+1;/C1/C1/C1 ; y0
+n; z0Þ is available in the model. For
+every available w, w/C31 w~u, by the assumption w/C31 w~u, we have
+w ~Wxz¼~wxz ;X¼x0 ;~u/C31 w~u. Hence, AC2(a) holds.
+According to the RHIT de ﬁnition, we have
+ðM;~uÞ/C131ð X¼ xÞ^ð Z¼ zÞ,ðM;~uÞ/C131ð ~Wxz¼ ~wxzÞ. By the HH
+deﬁnition, we have ðM;~uÞ/C131ð ~T
+0
+¼~t
+/C3
+Þ. It is straightforward to
+show that ðM;~uÞ/C131½ ~Wxz ~wxz ; X x/C138ð ~T
+0
+¼~t
+/C3
+Þ andðM;~uÞ/C131
+½ ~Wxz ~wxz ; X x/C138ð Z¼ zÞ. By Lemma 1, we have ðM;~uÞ/C131
+½ ~Wxz ~wxz ; X x; ~T
+0
+ ~t
+/C3
+/C138ð Z¼ zÞ. It follows that AC2(b)
+holds. □
+Parts (a) and (b) of Proposition 1 show that the MHP de ﬁni-
+tion is the most permissive of the three, while the RHIT de ﬁnition
+is the most restrictive. It should be noted that the converse of (a)
+does not hold. A counterexample can be found in the switch
+example, where ﬂipping the switch is a cause of the train ’s arrival
+under the HIT de ﬁnition but not under the RHIT de ﬁnition.
+Halpern (2015) provides an example illustrating that the converse
+of (b) also does not hold. 5
+Observation 2: For the switch-variant example, ﬂipping the
+switch (EF = 1) is not a cause of the train not arriving ( TA = 0)
+under the RHIT de ﬁnition;
+Proof. Let ~Wxz¼f LB; RBg, and wxz = {1, 1}. Then, we have
+ðM;~uÞ/C131½ LB 1; RB 1; EF 0/C138ð TA¼ 0Þ. Thus, AC2 is not
+satisﬁed, which implies this conclusion. □
+Analyzing other examples
+In this section, we analyze some well-known examples using the
+RHIT, HH, MHP, and HIT de ﬁnitions. We ﬁrst consider the
+short circuit example (Hitchcock ( 2007)).
+Example 3 . (Short Circuit) The Assistant Bodyguard adminis-
+ters a harmless antidote to Victim ’s coffee. Subsequently,
+B u d d yp o i s o n st h ec o f f e ew i t has u b s t a n c et h a ti so r d i n a r i l y
+lethal — though this toxicity is neutralized by the antidote.
+Critically, Buddy would not have poisoned the coffee at all had
+Bodyguard not ﬁrst administered the antidote. Victim con-
+sumes the coffee and survives. A question arises: Does Body-
+guard’s act of administering the antidote constitute a cause of
+Victim ’s survival?
+The corresponding causal graph for this example is shown in
+Fig. 4, where A represents Buddy putting poison in the coffee; B
+denotes the bodyguard putting the antidote in the coffee; and VS
+represents the victim ’s survival.
+Observation 3: The following assertions hold in the short circuit
+example.
+(a) Putting in the antidote ( B = 1) is not a cause of the victim ’s
+survival ( VS = 1) under the RHIT de ﬁnition;
+(b) B = 1 is not a cause of VS = 1 under the HH de ﬁnition;
+(c) B = 1 is a cause of VS = 1 under the MHP de ﬁnition;
+(d) B = 1 is a cause of VS = 1 under the HIT de ﬁnition.
+Proof. We construct a causal model MSC¼ð U; V; R; FÞ for the
+short circuit example, where
+● U¼f U1; U2g, where U1 represents the conditions deter-
+mining whether Buddy puts poison in the coffee: U1 = 1i f
+he decides to put the poison, and U1 = 0 otherwise; U2
+represents the conditions determining whether the body-
+guard puts the antidote in the coffee: U2 = 1 if he decides to
+put the antidote, and U2= 0 otherwise.
+ARTICLE HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y
+6 HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y
+=== PDF page 7 ===
+● V¼f A; B; VSg.
+● R : V!f 1; 0g.
+● F includes A = B, VS = max{(1 − A), B}.
+In the actual world, we have A = 1, B = 1, and VS = 1, so AC1
+hold in these de ﬁnitions. AC3 trivially holds for B = 1, as it is a
+singleton. Figure 4 shows that there is a path ( B, VS) with the
+intermediate variable A. Let ~Wxz¼f Ag and wxz = 1. Then, we
+haveðM;~uÞ/C131½ A 1; B 0/C138ð VS¼ 0Þ. Note that the world ( A
+= 1, B = 1, VS = 1) and ( A = 0, B = 0, VS = 1) are available
+within the model, whereas the world ( A = 1, B = 0, VS = 0) is
+not. Thus, AC2 does not hold, which implies that B = 1 is not a
+cause of VS = 1 under the RHIT de ﬁnition. Therefore, part
+(a) holds.
+For part (b), let ~W¼f Ag and w = 1. Then, we have
+ðM;~uÞ/C131½ A 1; B 0/C138ð VS¼ 0Þ. The witness world ( A = 1, B
+= 0, VS = 0) directly contradicts the story, meaning that it is less
+normal than the actual world ( A = 1, B = 1, VS = 1). Thus,
+AC2(a) does not hold, and B = 1 is not a cause of VS = 1 under
+the HH de ﬁnition.
+For part (c), let ~W¼f Ag and w = 1. Then, we have
+ðM;~uÞ/C131½ A 1; B 0/C138ð VS¼ 0Þ, which implies that AC2( am)
+does hold. Thus, B = 1 is a cause of VS = 1 under the MHP
+deﬁnition.
+For part (d), consider the path ( B, VS). Assign the actual value
+of A to 1, and set B = 0; then the value VS = 0. This means the
+path ( B, VS) is an active route. Thus, B = 1 is a cause of VS = 1
+under the HIT de ﬁnition. □
+From an intuitive standpoint, the majority of people would
+concur that administering the antidote does not constitute a cause
+of Victim ’s survival. Instead, Bodyguard and his associate Buddy
+appear to be playing a deliberate trick on Victim — one that aligns
+with Hitchcock ’s speculative scenario: we might suppose that
+Bodyguard, who is up for a promotion (the bodyguard equivalent
+of tenure), wants to make it look as though he has foiled an
+assassination attempt, with Buddy assisting him (Hitchcock
+(2007)). Critically, their motives were not to in ﬂict harm on
+Victim; rather, the ruse was designed to fabricate a “life-saving”
+scenario. Further, the act of administering the antidote did not
+produce any substantive change in the ﬁnal outcome: had
+Bodyguard refrained from adding the antidote, Buddy would not
+have poisoned the coffee at all, and Victim would still have sur-
+vived by drinking the unadulterated beverage. For these reasons,
+we take the view that Bodyguard ’s administration of the antidote
+is not a cause of Victim ’s survival.
+The next example is the bogus prevention example (Hitchcock
+(2007)).
+Example 4 . (Bogus Prevention) An assassin is in possession of a
+lethal poison but has a last-minute change of heart and refrains
+from putting it in the victim ’s coffee. A bodyguard puts an
+antidote in the coffee, which would have neutralized the poison
+had there been any. The victim drinks the coffee and survives. Is
+the bodyguard ’s putting in the antidote a cause of the victim ’s
+survival?
+See Fig. 5 for the causal structure in the example, where A
+denotes the assassin putting poison in the coffee; B stands for that
+the bodyguard putting the antidote in the coffee; and VS repre-
+sents the victim ’s survival.
+Observation 4: In the bogus prevention example, the following
+assertions hold.
+(a) Putting in the antidote ( B = 1) is not a cause of the victim ’s
+survival ( VS = 1) under the RHIT de ﬁnition;
+(b) Given that the normal values of both A and B are 0, B = 1i s
+not a cause of VS = 1 under the HH de ﬁnition;
+(c) A = 0 ∧ B = 1 is a cause of VS = 1 under the MHP
+deﬁnition ( B = 1 is part of a cause of VS = 1);
+(d) B = 1 is not a cause of VS = 1 under the HIT de ﬁnition.
+Proof. We establish a causal model MBP¼ð U; V; R; FÞ for the
+bogus prevention example, where
+● U¼f U1; U2g, where U1 represents the conditions deter-
+mining whether the assassin puts poison in the coffee: U1 =
+1 if he decides to put the poison, and U1 = 0 otherwise; U2
+represents the conditions determining whether the body-
+guard puts the antidote in the coffee: U2 = 1 if he decides to
+put the antidote, and U2= 0 otherwise.
+● V¼f A; B; VSg.
+● R : V!f 1; 0g.
+● F¼f VS¼ maxfð1/C0 AÞ; Bgg.
+In the actual world of this example, we have ( A = 0, B = 1,
+VS = 1), so AC1 holds in the three de ﬁnitions. AC3 clearly holds
+for B = 1, since it is a singleton.
+For part (a), Fig. 5 shows there is a path ( B, VS), where the
+intermediate variable is A. Let ~Wxz¼f Ag and wxz = 0. Then, we
+haveðM;~uÞ/C131½ A 0; B 0/C138ð VS¼ 1Þ, which entails that AC2
+Fig. 4 Short Circuit.
+ Fig. 5 Bogus Prevention.
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y ARTICLE
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y 7
+=== PDF page 8 ===
+does not hold. Hence, B = 1 is not a cause of VS = 1 under the
+RHIT de ﬁnition.
+For part (b), let ~W¼f Ag and w = 1. Then, we have
+ðM;~uÞ/C131½ A 1; B 0/C138ð VS¼ 0Þ. On the assumption that the
+normal values of both A and B are 0, the witness world ( A = 1, B
+= 0, VS = 0) and the actual world ( A = 0, B = 1, VS = 1) are
+incomparable. Thus, AC2(a) does not hold, which means that B
+= 1 is not a cause of VS = 1 under the HH de ﬁnition.
+For part (c), let ~W¼ +. Then, we have ðM;~uÞ/C131
+½A 1; B 0/C138ð VS¼ 0Þ. Hence, AC2( am) holds, and thus A =
+0 ∧ B = 1 is a cause of VS = 1 under the MHP de ﬁnition.
+For part (d), consider the path ( B, VS). Assign the actual value
+of A to 0, and set B = 0; then the value VS = 1. This implies that
+the path ( B, VS) is not an active route. Thus, B = 1 is not a cause
+of VS = 1 under the HIT de ﬁnition. □
+In summary, the results of the above observations are shown in
+Table 1, where we see that the RHIT de ﬁnition provides a
+treatment of all these canonical problems.
+Concluding remarks
+Providing a precise de ﬁnition of causation is a fundamental step
+in constructing models for actual causation. The HIT, MHP, and
+HH de ﬁnitions offer valuable frameworks for determining causal
+relationships between speci ﬁc events. However, because the
+possible worlds resulting from a hypothetical intervention may be
+inconsistent with the given context, these de ﬁnitions sometimes
+produce unsatisfactory causal judgments in certain situations.
+Consequently, they fail to provide a uniform solution to some
+canonical problems, such as the switch example, the short circuit
+example, the bogus prevention example, and the switch-variant
+example.
+To address this problem in these causal theories, we propose a
+reﬁned de ﬁnition of actual causation by formalizing and re ﬁning
+the HIT deﬁnition. This reﬁned deﬁnition provides a treatment of
+all the aforementioned canonical examples. Our key insight is
+that certain subtle restrictions, which signi ﬁcantly in ﬂuence
+causal judgments, must be incorporated into the modeling of
+actual causation. Speci ﬁcally, it is essential to determine whether
+the possible worlds generated by hypothetical interventions are
+consistent with a given causal context. By integrating this
+restriction into the causal models, we propose an alternative
+approach to determining causal relationships.
+To be sure, this restriction might give rise to undesired con-
+sequences. For instance, the RHIT de ﬁnition entails that the
+trainee’s ﬁring does not count as a cause of the victim ’s death in
+the early preemption scenario. Nevertheless, we can resolve this
+counterintuitive conclusion by drawing on Beckers and Venne-
+kens’ analysis of the early preemption example (Beckers and
+Vennekens ( 2017, 2018)). In their work, they argue that the key
+distinction between the early preemption and the switch example
+lies in whether we take into account the possibility that the
+backup mechanism malfunctions. More speci ﬁcally, since it is
+quite plausible to regard the supervisor ’s shooting accuracy as far
+more uncertain than the breakage of a sturdy track, it is
+reasonable to expect that intuitions supporting the trainee ’s ﬁring
+as a cause are more prevalent than those endorsing the ﬂip of the
+switch as a cause. Hence, an appropriate model for the early
+preemption scenario should incorporate a variable representing
+the uncertainty inherent in the counterfactual narrative, which
+stands in contrast to the model constructed for the switch
+example (Beckers and Vennekens ( 2018)).
+From this perspective, a proper formal model of the early
+preemption scenario should be nondeterministic — reasonably
+allowing for the possibility that even the supervisor may not
+always ﬁre accurately or might similarly lose his nerve. This idea
+supports the view that our intuitive judgments do not treat the
+early preemption example as a deterministic case, and that the
+causal model should accordingly re ﬂect this nondeterminism. To
+capture the supervisor ’s potential inaccuracy or hesitation, we can
+introduce additional variables such as Accurate (representing
+whether the supervisor ’s ﬁring hits the target) and Nerve
+(representing whether the supervisor maintains the resolve to
+ﬁre). Integrating these variables into the model yields a more
+adequate, nondeterministic formalization, which allows us to
+conclude that the trainee ’s ﬁring is a cause of the victim ’s death.
+An alternative approach to representing the restriction in causal
+models can be based on similarity semantics. Lewis ( 1973b) pro-
+posed a method for evaluating counterfactuals that incorporates
+the notion of comparative similarity: one orders possible worlds
+according to their distance from the actual world, and the coun-
+terfactual “If it were A, then B” is declared true in a world w if and
+only if B is true in all the closest A-worlds to w. Lewis ( 1979)
+subsequently established an intricate system of weights and prio-
+rities for various aspects of similarity, aiming to align similarity
+more closely with causal intuitions. It is for this reason that the
+framework of similarity semantics offers an alternative approach
+to interpreting the speci ﬁc meaning of normality. Furthermore,
+similarity semantics may provide a feasible method for re ﬁning
+the conditions in the deﬁnition of availability. Drawing on insights
+from this semantics to establish a set of normative assumptions
+that select a witness world yielding the desired conclusion thus
+constitutes a promising avenue for future research — one that we
+intend to explore in our subsequent work.
+Data availability
+No datasets were generated or analysed during the current study.
+Received: 18 February 2025; Accepted: 23 April 2026;
+Notes
+1 The term “particular individual ” denotes a speci ﬁc entity that can be uniquely and
+exclusively identiﬁed within a de ﬁned scope, set of conditions, or given context. While
+most commonly referring to a human being, it may also denote an animal or
+inanimate object. Its core feature is that, within a set of similar entities, the target entity
+is uniquely pinpointed and thereby distinguished from all other members of that set by
+virtue of satisfying prede ﬁned restrictive criteria.
+2 The early preemption scenario is as follows. An assassin-in-training is on his ﬁrst
+mission. When the supervisor observes the trainee ﬁring the shot, the supervisor
+refrains from shooting. As a result, the trainee ﬁres his gun and kills the victim.
+However, if the trainee had not ﬁred, the supervisor would have shot and killed the
+victim in the same manner. In this case, we regard the trainee ’s shooting as the cause of
+the victim ’s death, even though there is no causal dependence between the trainee ’s
+shooting and the victim ’s death: had the trainee not ﬁred, the supervisor would have
+acted, and the victim would still have died.
+3 For a detailed account of interventions, please refer to Woodward ( 2004).
+4 Here, we restrict our discussion to structural equation models, where “recursive” and
+“acyclic” are strictly synonymous. Within the terminological framework of structural
+equation models, recursion denotes a partial ordering of variables, from which a
+directed acyclic graph is derived. In the broader vocabulary of computer science,
+Table 1 Results of Applying the Proposed De ﬁnitions to
+Respective Examples (Symbol Interpretation: ○ = Example
+Resolved Successfully; △ = Issues in Example Resolution).
+Switch Short Circuit Bogus Prevention Switch-variant
+HIT △△ ○ ○
+MHP △△ △ ○
+HH ○○ ○ △
+RHIT ○○ ○ ○
+ARTICLE HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y
+8 HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y
+=== PDF page 9 ===
+however, recursion can imply the presence of a cycle — recursive functions being a case
+in point.
+5 See Example 4.2 in Halpern ( 2015).
+References
+Beckers S (2021) Causal suf ﬁciency and actual causation. J Philos Log
+50:1341–1374
+Beckers S, Vennekens J (2017) The transitivity and asymmetry of actual causation.
+Ergo 4(1):1 –27
+Beckers S, Vennekens J (2018) A principled approach to de ﬁning actual causation.
+Synthese 195:835 –862
+Bochman, A. (2018) Actual causality in a logical setting. In Proceedings of the 27th
+International Joint Conference on Arti ﬁcial Intelligence (IJCAI'18) AAAI
+Press, Menlo Park, CA, USA pp 1730 –1736
+Hall N (2000) Causation and the price of transitivity. J Philos 97(4):198 –222
+Hall N (2007) Structural equations and causation. Philos Stud 132:109 –136
+Halpern, J.Y. (2008) Defaults and normality in causal structures. In Proceedings of the
+Eleventh InternationalConference on Principles of Knowledge Representation
+and Reasoning (KR'08). AAAI Press, Menlo Park, CA, USA pp 198 –208
+Halpern, J.Y. (2015) A modi ﬁcation of the Halpern-Pearl de ﬁnition of causality. In
+Proceedings of the 24th International Joint Conference on Arti ﬁcial Intelli-
+gence (IJCAI'15). AAAI Press, Menlo Park, CA, USA pp 3022 –3033
+Halpern JY (2016) Actual causality. MIT Press, Cambridge, MA, USA
+Halpern JY, Hitchcock C (2015) Graded causation and defaults. Br J Philos Sci
+66(2):413–457
+Halpern JY, Pearl J (2005) Causes and explanations: A structural-model approach.
+part i: Causes. Br J Philos Sci 56(4):843 –887
+Hitchcock C (2001) The intransitivity of causation revealed in equations and
+graphs. J Philos 98(6):273 –299
+Hitchcock C (2007) Prevention, preemption, and the principle of suf ﬁcient reason.
+Philos Rev 116(4):495 –532
+Hitchcock, C. (2018) Probabilistic causation. The Stanford Encyclopedia of Phi-
+losophy, Stanford, CA, USA
+Hitchcock C, Knobe J (2009) Cause and norm. J Philos 106(11):587 –612
+Icard TF, Kominsky JF, Knobe J (2017) Normality and actual causal strength.
+Cognition 161:80 –93
+Lewis D (1973a) Causation. J Philos 70(17):556 –567
+Lewis D (1973b) Counterfactuals. Harvard University Press, Cambridge, MA, USA
+Lewis D (1979) Counterfactual dependence and time ’s arrow. Noûs 13(4):455 –476
+Menzies P (2004) Causal models, token causation, and processes. Philos Sci
+71(5):820–832
+Menzies, P. (2007) Causation in context. In Causation, Physics, and the Con-
+stitution of Reality, edited by H. Price and R. Corry, Clarendon Press, Oxford,
+UK pp 191 –223
+Pearl J (2000) Causality: models, reasoning, and inference (1st edn). Cambridge
+University Press, Cambridge, UK
+Weslake, B. (2015) A partial theory of actual causation. Unpublished manuscript.
+Retrieved from http://philpapers.org/rec/wesapt
+Woodward, J. (2004) Making Things Happen: A Theory of Causal Explanation.
+Oxford University Press, Oxford, UK
+Woodward J (2016) The problem of variable choice. Synthese 193:1047 –1072
+Zhu F (2022) A new Halpern-Pearl de ﬁnition of actual causality by appealing to the
+default world. Axiomathes 32(Suppl 2):453 –472
+Acknowledgements
+We would like to thank the editor and the two referees for their thoughtful and con-
+structive feedback, which has undoubtedly improved our manuscript. This work was
+supported by the major project of the National Social Science Fund of China
+[23&ZD240].
+Author contributions
+Zhizun Xiao: Conceptualization, Methodology, Investigation, Formal analysis, Writing-
+original draft; Wei Xiong: Conceptualization, Methodology, Funding acquisition,
+Supervision, Writing-review & editing.
+Competing interests
+The authors declare no competing interests.
+Ethical approval
+Ethical approval was not required for this study, as it did not involve human participants.
+No primary surveys were conducted.
+Informed consent
+This article does not contain any studies with human participants performed by any of
+the authors.
+Additional information
+Correspondence and requests for materials should be addressed to Wei Xiong.
+Reprints and permission information is available at http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional af ﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and reproduction in any
+medium or format, as long as you give appropriate credit to the original author(s) and
+the source, provide a link to the Creative Commons licence, and indicate if you modi ﬁed
+the licensed material. You do not have permission under this licence to share adapted
+material derived from this article or parts of it. The images or other third party material
+in this article are included in the article ’s Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article ’s
+Creative Commons licence and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by-nc-nd/4.0/.
+© The Author(s) 2026
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-026-07470-y ARTICLE
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS |         (2026) 13:1088 | https://doi.org/10.1057/s41599-026-07470-y 9
