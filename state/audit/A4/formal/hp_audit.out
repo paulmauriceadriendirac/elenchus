@@ -205,3 +205,54 @@ F. Corollary: exhaustive over 355 preorders; exact SMT over all anonymous Pareto
      (mod) drop "Tracks flip not cause": unsat
      (mod) drop "Blocked flip not cause": unsat
 [PASS] Corollary (mod): UNSAT over all real additive scores with r>0  -- unsat
+[PASS] Corollary: 3,000 random integer additive scores (own seed), no exception under any definition
+==============================================================================
+G. Additive gain identities (sympy, computed from the model worlds)
+  g_Suzy=a - 2*b + c + r  g_Tracks=a - 2*b + c + r  g_Doorbells=a - 2*b + c + r  g_Chain=2*a - 2*b + r  g_Boulder(mod)=-a + c
+  g_Prevention=-a + b + r  g_Blocked=-a + b + 2*r  g_Blocked(inertial)=-a + b  g_Clear=a - b
+  g_Boulder second witness (older defs)=-b + d + r  g_Suzy second witness (older defs)=2*a - 2*b + 2*r
+[PASS] g_Doorbells = g_Tracks = g_Suzy = r + a - 2b + c
+[PASS] r+a-2b+c = (r+2a-2b)+(c-a) = g_Chain + g_Boulder
+[PASS] g_Blocked = g_Prevention + r; gains r+b-a and 2r+b-a
+[PASS] Inertial coding: g_Blocked = b - a = g_Prevention - r
+[PASS] Clear tracks witness gain = a - b
+[PASS] Mechanism-specific scores: Suzy gain minus Doorbells gain = c_BH - c_L  -- c_BH - c_L
+==============================================================================
+H. Boundary score (r,a,b,c,d)=(2,0,-1,-5,-3)
+  orig: prev A True | chain C True | ducking K True | short A False/part False | Suzy True | Billy part False | Tracks F False/part False | Doorbells T False/part False | Blocked EF True/part True | Clear EF True/part True
+[PASS] Boundary (orig): keeps prevention, chain, ducking, Suzy; excludes Tracks and Doorbells switches; counts Blocked flip and clear-tracks flip
+  upd: prev A True | chain C True | ducking K True | short A False/part False | Suzy True | Billy part False | Tracks F False/part False | Doorbells T False/part False | Blocked EF True/part True | Clear EF True/part True
+[PASS] Boundary (upd): keeps prevention, chain, ducking, Suzy; excludes Tracks and Doorbells switches; counts Blocked flip and clear-tracks flip
+  mod: prev A True | chain C True | ducking K False | short A False/part True | Suzy False | Billy part True | Tracks F False/part False | Doorbells T False/part False | Blocked EF False/part True | Clear EF False/part True
+==============================================================================
+I. Remark: modified definition, Blocked tracks, flip part of a cause
+[PASS] Modified: flip part of a cause in Blocked tracks iff l>=n (all 355 preorders)  -- 0 exceptions
+[PASS] Modified: {EF,LB} is a cause iff l>=n (all 355 preorders)
+  causes in Blocked tracks (mod) under a calibrated preorder: [('RB',), ('EF', 'LB')]
+==============================================================================
+J. Section 5: mechanism-specific score, Sprinkler, Seedlings (modified definition)
+[PASS] Mech score (mod): antidote, chain start, ducking, Suzy are causes
+[PASS] Mech score (mod): Billy, Tracks flip, Doorbells setting out of every cause
+  (extra) short-circuit antidote part of a cause under mech score: True
+  Sprinkler causes (c_SW=-5): [('OUT',), ('FF', 'SA'), ('SA', 'FW')]
+[PASS] Sprinkler: firefighter not a cause by itself; every cause containing it contains the sprinkler activation; activation part of a cause
+  Seedlings causes (c_D=-5): [('P',), ('G',), ('X',)]
+[PASS] Seedlings: swarm not even part of a cause (c_D=-5, modified)
+[PASS] Seedlings -> Doorbells map preserves equations, actual values and defaults
+==============================================================================
+K. Inertial coding of standing blockages (LB, RB default 1)
+[PASS] Inertial (orig): for all five calibrated preorders the Blocked flip is not a cause and the antidote is
+     (orig) Blocked flip part of a cause under inertial coding, by calibrated preorder: [False, False, False, False, False]
+[PASS] Inertial (upd): for all five calibrated preorders the Blocked flip is not a cause and the antidote is
+     (upd) Blocked flip part of a cause under inertial coding, by calibrated preorder: [False, False, False, False, False]
+==============================================================================
+L. Exceptionless conformity (modified): admit only witness worlds with no f/u
+[PASS] Conformity: ducking not part of any cause; chain intermediate I=1 not a cause (nor part)
+[PASS] Conformity: late preemption -- {ST,BT} is a cause, Suzy not a cause alone, Billy part of a cause
+[PASS] Conformity: every cause in every model consists of roots only (Lemma consequence)
+[PASS] Exceptionless componentwise preorders with n>=l (36): ducking lost and {ST,BT} a cause in all
+==============================================================================
+SUMMARY: 85 checks, 82 pass, 3 fail
+  FAIL: orig: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
+  FAIL: upd: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
+  FAIL: mod: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
