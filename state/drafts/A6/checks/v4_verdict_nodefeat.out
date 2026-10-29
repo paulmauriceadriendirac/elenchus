@@ -1,9 +1,0 @@
-states 4 uniform prior; x = 3
-geq (row >= col): [[1, 1, 1, 1], [0, 1, 1, 0], [0, 0, 1, 0], [0, 1, 1, 1]]
-gg  (row >> col): [[0, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 1, 0]]
-question: [[3], [1, 2], [0]]
-acts: [[-2, -2, 2, 3], [3, 3, -3, 3], [-1, 0, -2, 1]]
-ken K(x): [0, 3] ; act now: 1 ; look policy: {3: 0, 1: 0, 2: 0, 0: 1}
-  hypothesis look->0: [1, 2, 3]  conditional ken: [1, 3]
-  hypothesis look->1: [0]  conditional ken: [0]
-KDT 0.0000  CEU 0.0000  VER -1.2500  ANS 0.0000
