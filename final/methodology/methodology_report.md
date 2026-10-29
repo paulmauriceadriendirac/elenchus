@@ -2,7 +2,7 @@
 
 This report covers one production run that yielded three candidate essays:
 
-- **A4**, "Limits of Uniform Normality Filters in Actual Causation";
+- **A4**, "A Switching Dilemma for Normality in Actual Causation";
 - **A5**, "Holistic Accuracy, Refinement, and the Lockean Thesis";
 - **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models".
 
@@ -30,8 +30,9 @@ operator's generic request for ambition, it switched to a hard-problems track:
 
 A second AI system, an OpenAI Codex assistant that the operator calls "Astra", worked on the same
 repository. It wrote its own essays and idea pool, and substantively revised A4, A5 and A6 several
-times. The pipeline's blind referee agents reviewed both systems' work. The final A5 and A6 revisions
-answered those referees. A4's latest version is the second system's.
+times. The pipeline's blind referee agents reviewed both systems' work. The final revisions (A5 v4,
+A6 v4, A4 v6) were written by this pipeline's revisers in answer to those referees. A4 v2–v5 were the
+second system's.
 
 The operator set budgets, relayed between systems, uploaded or linked sources, and gave generic
 instructions. No philosophical contribution traces to a human message (`methodology/provenance.md`).
@@ -120,7 +121,7 @@ Subagents cannot spawn subagents (`.claude/settings.json`: `CLAUDE_CODE_MAX_SUBA
         ▼
  ORCHESTRATOR, finishing (27–29 Oct)
            blind referees: P-7297 (A5 v2), P-7f1b (A6 v2), P-600a (E3 v4), P-d300 (A4 v5)
-           revisers → A5 v4, A6 v4 (A4 v6 launched, not complete)
+           revisers → A5 v4, A6 v4 (29 Oct 04:00–04:06), A4 v6 (29 Oct 11:39)
            citation-auditor (A5), formalist (A5, partial), methodologist
 ```
 
@@ -187,7 +188,8 @@ added it to `human_inputs.md` in commit 217d95d, and the orchestrator logged the
 - **Supplied sources (courier).**
   - Two PDF uploads: the target papers of E2 and E1 (21 Oct).
   - A journal URL for an unread E2 source (21 Oct).
-  - A 2026 PDF on actual causation, by Xiao and Xiong, placed in the A4 referee packet P-d300 (29 Oct).
+  - A 2026 PDF on actual causation, by Xiao and Xiong, placed in the A4 referee packet P-d300 and engaged
+    in A4 v6 (29 Oct).
   - According to the second system's records, six requested primary texts and a 2016 book on actual
     causality, supplied to that system "without philosophical comments"
     (`state/external/ambitious-review-20261022/PROVENANCE.md`;
@@ -352,8 +354,9 @@ Each finalist had one round of this pipeline's referees. No finalist's final ver
 so no within-essay score trajectory exists for A4, A5 or A6. The trajectories that do exist (E3 v2 → v4:
 6 → 5; Astra 04 and 05, round 1 → round 2: 5 → 5) show no improvement in score.
 
-All reports with recommendations recommend major revision or rejection. None rates an essay as a
-finalist. The A4 v5 referee recommends "reject (in present form)". Its main objection is that
+All 18 saved reports recommend major revisions or rejection, and every one records "Prize: not
+finalist". Several reports that recommend rejection add that a reframed, shorter paper could be
+publishable. The A4 v5 referee recommends "reject (in present form)". Its main objection is that
 uniformity "does all the work".
 
 ### 7.3 Revisions
@@ -364,8 +367,12 @@ uniformity "does all the work".
 - **A6 v4** (reviser, 29 Oct 04:06). It adopted the two referees' alternative formulations of the
   conditional repair and analysed all three (§5). No revision-notes file exists.
 - **A4.** The second system made v2–v5: proof repair, scope narrowing, a book-level originality
-  comparison, and a new additive theorem in v5. This pipeline's v6 revision against P-d300 was launched
-  on 29 Oct 04:15 and was not complete when this report was written.
+  comparison, and a new additive theorem in v5. This pipeline's reviser then wrote v6 (launched 29 Oct
+  04:15, file 11:39) against P-d300. It took the referee's advice to reframe the essay as a dilemma
+  about switches across the three Halpern–Pearl definitions, and proved two witness-profile identities
+  and an exceptionless-conformity lemma. v6 has new reference verification
+  (`state/drafts/A4/v6_checks/new_refs_verification.md`) and checks (`v6_verify.py`). It has no
+  revision notes, and when this report was written the log had no completion entry.
 - **Editor.** The editor agent and its plans and changelogs were not used. Revisers worked directly
   from the reports.
 
@@ -376,15 +383,20 @@ uniformity "does all the work".
   accurate, 5 accurate only on abstracts or summaries, 2 oversimplified, 1 inaccurate. It proposed 8
   patches. The patches post-date v4 and had not been applied when this report was written. A fetch
   request was filed for a cited panel paper whose full text was unavailable.
-- **A5 formal audit** (`state/audit/A5/formal.md`; status PARTIAL). The auditor wrote independent
-  exact-arithmetic scripts and checked the proofs by hand. 21 items were VERIFIED, and Theorem 4 was
-  verified by hand. One item fails: the footnote-5 minimality witness does not support its claim. The
-  minimality claim is reported as still true but needing a different witness.
+- **A5 formal audit** (formalist, `state/audit/A5/formal.md`, COMPLETE 29 Oct 11:41). The auditor wrote
+  independent exact-arithmetic scripts and checked every proof by hand. Its bottom line: "All four
+  theorems are correct, and their proofs check by hand. Every number in the essay is reproduced
+  exactly." It found two errors in §6:
+  - footnote 5 does not show that one premise of Theorem 4 cannot be dropped;
+  - one sentence ("no non-Lockean score can ...") is false as stated.
+  It also recommended three precision fixes, and flagged one literature claim it could not verify, which
+  must be checked or deleted. It proposed eight exact patches (P1–P8, three of them required). None had
+  been applied when this report was written.
 - **A6 and A4.** No separate audit. A6 v4 has new check scripts (`state/drafts/A6/checks/v4_*.py`) and
   a reference verification (`refs_v4_new.verification.md`). The second system verified A4 with finite
   model checks and a book comparison (`state/external/submission-*/checks/`).
 - **Compliance** (word count, injection scan, anonymity). This must be run on the final files before
-  submission. The current strict counts are A4 v5 5,876, A5 v4 5,296 and A6 v4 5,790, all under 6,000.
+  submission. The current strict counts are A4 v6 4,976, A5 v4 5,296 and A6 v4 5,790, all under 6,000.
 
 ## 8. Tools and access
 
@@ -478,14 +490,19 @@ human message.
 - Two blind referees (P-7f1b, S2-lit and G4) proposed alternative formulations of the conditional
   repair. The reviser's three-way analysis and Propositions 4–5 in v4 build on them.
 
-**A4** (final: second system's v5,
-`state/external/submission-additive-20261029/essays/03-Causation-v5.md`).
-- Cards A4-01 to A4-04 supplied the licence calibration, the switch versus normal-backup preemption
-  contrast, and the frozen-witness lemma. A4-05 was killed.
-- The kill test supplied the Doorbells model and four-coding robustness. v1 was written by the drafter.
-- The second system then made v2–v5: lemma repair, scope narrowing, crediting a 2016 book, and the new
-  additive-score obstruction (Theorem 3). That theorem is the second system's own contribution.
-- No referee report from this pipeline entered A4's text.
+**A4** (final: `state/drafts/A4/v6.md`).
+- Cards A4-01 to A4-04 supplied the setting (normality as a filter on witnesses), the switch versus
+  preemption contrast, the licence calibration and the frozen-witness lemma. A4-05 was killed.
+- The kill test supplied the Doorbells model and the coding-robustness requirement. v1 was written by
+  the drafter.
+- The second system then made v2–v5: lemma repair, scope narrowing, crediting a 2016 book, and an
+  additive-score obstruction in v5.
+- The hostile referee (P-d300 S7-lit) found that uniformity did all the work. It recommended a reframed
+  paper on "a cross-definition switching dilemma" and pointed to the both-blocked switch case.
+- The reviser's v6 is built on that advice. It states the thesis that no anonymous, Pareto-respecting
+  normality filter separates switches from preemption under any of the three definitions, and gives two
+  witness-profile theorems, a pricing of mechanism-specific escapes, and a conformity lemma. v6
+  subsumes the second system's additive theorem.
 
 ## 11. Limitations
 
@@ -508,9 +525,11 @@ human message.
    and comparison texts were read only as abstracts, summaries or preprints (for example, the A5 audit's
    five "accurate only on abstract or summary" attributions). Fetch requests for some remain open.
 6. **Open defects at the time of writing.**
-   - A5: 8 citation patches unapplied; one minimality witness fails; formal audit partial.
+   - A5: the citation audit's 8 patches and the formal audit's 8 patches (two §6 errors, one unverified
+     literature claim) are unapplied.
    - A6: no audit.
-   - A4: the hostile review's main objection is unanswered, and the v6 revision is incomplete.
+   - A4: v6 was written hours before this report, is not reviewed or audited, and is not yet recorded in
+     the log.
 7. **Cost figures** are list-price estimates; billing ran on a subscription.
 8. **Transcripts** have not been exported to `methodology/transcripts/`. They can be exported with
    `tools/export_transcripts.py`.
@@ -2363,12 +2382,12 @@ commit b086236, 28 Oct 13:34, `state/external/submission-additive-20261029/essay
 |---|---|---|---|
 | 5.1 | Target: a 2019 argument (Dorst, Proposition 5) that expected-accuracy maximisation yields Lockean thresholds without Separability | Card A5-03 (ideator, `cards/A5.md`, 23 Oct 02:07) | Kill test: REPAIR, "close to PROCEED"; recommended as the essay (red-team, `killtest/A5.md` §7, 23 Oct 22:49) |
 | 5.2 | Thesis: Proposition 5 does not follow from its premises | Card A5-03; kill-test "calibrated thesis" | v4 narrows and extends it: the premise needed is refinement invariance (see 5.6) |
-| 5.3 | Counterexample: a truth-directed score with a premium for an error-free belief state (the "record" measure) satisfies the premises and makes belief non-monotone in credence (Theorem 1) | Card A5-03 ("a premium on a flawless record") | Kill test verified the counterexample by hand and corrected the card's claim that optima are always deductively closed (4-cell counterexample). v1 states it for every positive premium. v2 (second system) corrected consistency and tie claims. v4 adds runner-ups and margins (referee S1-lit, minor). Formal audit (formalist, `state/audit/A5/formal.md`): items 1–8 VERIFIED. |
-| 5.4 | Diagnosis: the derivation's key step holds exactly when accuracy is separable on the domain (Theorem 2, Corollary) | Kill test §7 ("its key step assumes ... near-Separability"); v1 abstract | v2 (second system): distinguished a sufficient repair (ME+BI) from a necessary condition. v4: deleted two false sentences and added the Corollary and dilemma (referee S1-lit, Major 2). Audit items 9–10 VERIFIED. |
+| 5.3 | Counterexample: a truth-directed score with a premium for an error-free belief state (the "record" measure) satisfies the premises and makes belief non-monotone in credence (Theorem 1) | Card A5-03 ("a premium on a flawless record") | Kill test verified the counterexample by hand and corrected the card's claim that optima are always deductively closed (4-cell counterexample). v1 states it for every positive premium. v2 (second system) corrected consistency and tie claims. v4 adds runner-ups and margins (referee S1-lit, minor). Formal audit (formalist, `state/audit/A5/formal.md`, complete 29 Oct 11:41): the case's numbers are reproduced exactly; Theorem 1 is verified for uniform values, and the abstract's quantifier over values is judged overbroad (patch P5). |
+| 5.4 | Diagnosis: the derivation's key step holds exactly when accuracy is separable on the domain (Theorem 2, Corollary) | Kill test §7 ("its key step assumes ... near-Separability"); v1 abstract | v2 (second system): distinguished a sufficient repair (ME+BI) from a necessary condition. v4: deleted two false sentences and added the Corollary and dilemma (referee S1-lit, Major 2). The formal audit verified Theorem 2 and its corollary. |
 | 5.5 | What holism delivers: under the record measure one believes the probable consequences of a "core" hypothesis (Theorem 3); link to Holguín's non-monotonicity | v1 (drafter), developing the card's "closed, non-monotone belief" | v3 (second system) added a proved account of increasing the premium. v4 cut it to two sentences (word budget, `revision_notes_v4.md`). The "horse race" paragraph was cut on referee S1-lit Major 3. |
-| 5.6 | Refinement invariance: given truth-directedness and conservative increments it forces fixed thresholds (Theorem 4, "Localization"); its converse; minimality witnesses | **Referee suggestion.** Referee S1-lit on packet P-7297 (27 Oct 16:25) named the most serious problem: the record measure's verdicts change when an irrelevant possibility is split. It offered routes (a) and (b). | Reviser v4 (29 Oct 04:00) took route (b) "as a theorem" and also route (a); the theorem statement, proof and minimality claims are the reviser's (`revision_notes_v4.md`; checks `checks/c8_refinement.py`, `c9_localization.py`). The formal audit (partial, 29 Oct 11:31) verifies Theorem 4 by hand but finds that the footnote-5 minimality witness does not support the claim. A different witness is needed; not yet repaired. |
+| 5.6 | Refinement invariance: given truth-directedness and conservative increments it forces fixed thresholds (Theorem 4, "Localization"); its converse; minimality witnesses | **Referee suggestion.** Referee S1-lit on packet P-7297 (27 Oct 16:25) named the most serious problem: the record measure's verdicts change when an irrelevant possibility is split. It offered routes (a) and (b). | Reviser v4 (29 Oct 04:00) took route (b) "as a theorem" and also route (a); the theorem statement, proof and minimality claims are the reviser's (`revision_notes_v4.md`; checks `checks/c8_refinement.py`, `c9_localization.py`). The formal audit (complete, 29 Oct 11:41) finds all four theorems correct. It finds two errors in §6: the footnote-5 witness does not support its claim (patch P1 supplies a different witness), and the sentence "no non-Lockean score can ..." is false as stated (P2). Neither patch is applied yet. |
 | 5.7 | A normalised, question-relative record score that satisfies restricted refinement invariance | Reviser v4, responding to referee S1-lit route (a); motivated by the target's taking "a set of propositions" as input | — |
-| 5.8 | Reply: order and Sequence-Irrelevance (greedy example: −0.8 first, +0.1 last) | **Referee suggestion** (S1-lit, Major 5) → v4 | Audit item 6 VERIFIED over all 40,320 orders |
+| 5.8 | Reply: order and Sequence-Irrelevance (greedy example: −0.8 first, +0.1 last) | **Referee suggestion** (S1-lit, Major 5) → v4 | The formal audit verified the order example over all 40,320 orders |
 | 5.9 | Reply: scope and accommodation (fixed context) | **Referee suggestion** (S1-lit, Major 4) → v4 | — |
 | 5.10 | Reply: representation dependence | v2 (second system) added the objection | v4 turned it into Theorem 4 (5.6) |
 | 5.11 | Comparisons with a 2022 paper on guessing, Levi 1967 and Leitgeb 2014/2017 | **Referee suggestion** (S1-lit, Major 1) → v4 | Citation audit (`state/audit/A5/citations.md`, 29 Oct 04:10): 13 quotations exact; 8 patches proposed (one inaccurate attribution, two oversimplified, two imprecise page references, one scare-quoted term from an unretrieved source). The patches post-date v4 and are not yet applied. |
@@ -2396,16 +2415,25 @@ texts.
 | 6.9 | Replies: self-trust versus evidence (§6.1); stakes and encroachment (§6.2); statism (§6.3); "Good's theorem is not sacrosanct" (§6.4) | Kill test objections 2–3 and card A6-05 (one paragraph on encroachment) → v1 | v2 (second system) narrowed the encroachment claims. Referee G4 Major 5 (scope of the margins horn) bears on §6.1; v4 §6.1 cites the target theory's "NO DEFEAT" result. |
 | 6.10 | Dropped: cards A6-03, A6-04 (KILL) and A6-05 as a stand-alone essay | Kill test | — |
 
-## 4. A4 — "Limits of Uniform Normality Filters in Actual Causation"
+## 4. A4 — "A Switching Dilemma for Normality in Actual Causation" (v6)
 
-Final text: the latest complete version is **v5 by the second AI system**,
-`state/external/submission-additive-20261029/essays/03-Causation-v5.md` (5,876 words strict; commit 8f82b0b,
-29 Oct 00:18). A v6 revision by this pipeline was launched on 29 Oct 04:15 (commit 6c587ae). Only check
-scripts exist (`state/drafts/A4/v6_checks/`); there is no `state/drafts/A4/v6.md`, so v5 is treated as final.
-Version chain: v1 (drafter, 23 Oct 23:16, `state/drafts/A4/v1.md`) → v2 (second system, 25 Oct 07:01,
-`review-edition-20261025/essays/04-causation-A4-v2-reserve.md`) → v3 (second system, b086236, 28 Oct 13:34)
-→ v4 (second system, cccc9b9, 28 Oct 23:57, after reading a 2016 book on actual causality that the human
-supplied to that system) → v5 (second system, 8f82b0b, 29 Oct 00:18).
+Final text: `state/drafts/A4/v6.md` (4,976 words strict; file time 29 Oct 11:39). The reviser was launched
+on 29 Oct 04:15 (commit 6c587ae) to revise v5 against the hostile review P-d300. Its checks and
+reference verification are in `state/drafts/A4/v6_checks/` (`v6_verify.py`, `new_refs_verification.md`).
+When this ledger was written, the run log had no completion entry for v6 and the repository had no v6
+revision-notes file, so the v6 attributions below come from comparing the report with the v5 and v6
+texts.
+
+Version chain:
+- v1: drafter, 23 Oct 23:16, `state/drafts/A4/v1.md`, "What Normality Can and Cannot Do in Theories of
+  Actual Causation".
+- v2: second system, 25 Oct 07:01, `review-edition-20261025/essays/04-causation-A4-v2-reserve.md`.
+- v3: second system, b086236, 28 Oct 13:34.
+- v4: second system, cccc9b9, 28 Oct 23:57, after reading a 2016 book on actual causality that the human
+  supplied to that system; retitled "Limits of Uniform Normality Filters in Actual Causation".
+- v5: second system, 8f82b0b, 29 Oct 00:18,
+  `state/external/submission-additive-20261029/essays/03-Causation-v5.md`.
+- v6: reviser (this pipeline), 29 Oct 11:39.
 
 The second system also wrote a different A4 manuscript ("Causal Refinement Without a Final Layer", v0.1
 on 22 Oct and v2 on 23 Oct, in `state/external/ambitious-drafts-20261022/` and
@@ -2414,16 +2442,22 @@ our cards. It is not an ancestor of the finalist A4 (`state/STATUS.md`, 23 Oct e
 
 | # | Contribution | First appearance | Later changes and their source |
 |---|---|---|---|
-| 4.1 | Setting: normality as a filter on the witness worlds of structural-equation accounts (Halpern–Hitchcock) | Card A4-02/A4-04 (ideator, `cards/A4.md`, 23 Oct 17:22) | — |
-| 4.2 | Calibration: within uniform componentwise rankings (default status times equation conformity), four calibrating judgments hold exactly when the ranking satisfies a "license" rule | Card A4-02 ("deviations need licences") | Kill test: REPAIR, the positive half of the recommended essay; noted the battery-size discrepancy. v1 states it. v3 (second system) checked all 355 category preorders. |
-| 4.3 | Three-case non-separation (switch, short-circuit prevention, a deviant event preempting a normal process) under four default codings | Card A4-04 ("the switch is not a normality problem") and card A4-01 (locusts preempting a dry-season drought) | Kill test (red-team, 23 Oct 22:50) replaced the card's train switch with a "Doorbells" model from Gallow 2021 and required robustness under four uniform coding rules. v1 adopts both. v2 (second system) restricted the coding result to the four stated codings. |
-| 4.4 | Frozen-witness lemma | Card A4-03 | Kill test: KILL as a card, keep as a lemma. v2 (second system) repaired its proof using AC3 minimality and acyclic uniqueness, removing an invalid inference. v4 (second system) credits its technique to Halpern 2016 Theorem 4.4.4(b). |
-| 4.5 | A default-preserving isomorphic pair: no default-based account can separate it | v1 (drafter), from the kill test's "normality-isomorph" discussion | v3 (second system) explained what the pair requires of richer representations |
-| 4.6 | Additive obstruction (Theorem 3): under the modified Halpern–Pearl definition, every uniform additive score that preserves the chain and ducking judgments counts the Doorbells switch as a cause; an explicit counterexample for the original and updated definitions; an exact escape condition with unequal root weights | **Second AI system, v5** (8f82b0b, 29 Oct 00:18; companion note `state/external/submission-additive-20261029/additive/`) | Not present in v1–v4 |
-| 4.7 | Thesis wording ("a transferable normality policy faces constraints across cases, even when its scores allow compensation") and narrowed increment statement | v1 thesis ("the contrast between switching and preempting is not normality's to draw") (drafter) | v3: claims of the target's commitments narrowed. v4: originality narrowed after the book comparison; title changed. v5: compensation clause added. All by the second system. |
-| 4.8 | Regularity theories (§6): a 2024 regularity theory's deviancy condition fails for early preemption with a normal backup | Card A4-01 → kill test, which found the point already in Beckers 2026 and required crediting it | v1 credits Beckers; retained |
-| 4.9 | Replies to objections (§7): non-uniform or mechanism-specific rankings, coding choices, firmness of the locusts verdict | Kill test (objection list; "lean on the production verdict") → v1 | Revised in v2–v5 by the second system |
-| 4.10 | Hostile review of v5 | Referee S7-lit on P-d300 (29 Oct 04:13; packet included a human-uploaded 2026 paper by Xiao and Xiong): 5/10, "reject in present form"; uniformity does all the work | Launched v6 revision not completed; **no suggestion from this report is in the final text** |
+| 4.1 | Setting: normality as a filter on the witness worlds of the Halpern–Pearl definitions (Halpern–Hitchcock); the switch versus preemption contrast as the test case | Cards A4-02 and A4-04 (ideator, `cards/A4.md`, 23 Oct 17:22) | Retained through v6 |
+| 4.2 | Calibration: within uniform componentwise rankings, four calibrating judgments hold exactly when a "license" rule is satisfied | Card A4-02 | Kill test: REPAIR. v1 states it. v3 (second system) checked all 355 category preorders. Reduced to passing mentions in v6. |
+| 4.3 | The "Doorbells" switch model (from Gallow 2021) and robustness under several default codings | Kill test (red-team, `killtest/A4.md`, 23 Oct 22:50), replacing the card's train switch | v1 adopts it. v2 (second system) restricted the coding claim to four codings. In v6, Doorbells carries Theorem 1, and the coding question is Objection 2. |
+| 4.4 | Frozen-witness lemma | Card A4-03 | Kill test: keep as a lemma. v2 (second system) repaired its proof using AC3 minimality. v4 (second system) credits its technique to Halpern 2016 Theorem 4.4.4(b). Still used in v6. |
+| 4.5 | Locusts case (a deviant event preempting a normal drought process) | Card A4-01 | Central in v1–v5. One mention in v6. |
+| 4.6 | Additive-score obstruction under the modified definition, with a counterexample for the older definitions | **Second AI system, v5** (8f82b0b, 29 Oct 00:18; `state/external/submission-additive-20261029/additive/`) | v6 subsumes it: v6 covers every anonymous filter that respects Pareto improvement, under all three definitions (7 mentions of "additive" remain) |
+| 4.7 | **Thesis of v6**: no anonymous normality filter that respects Pareto improvement keeps genuine prevention and late preemption while excluding every switch, under any of the three HP definitions; so separating switches from preemption needs mechanism-specific normality | **Referee suggestion.** Referee S7-lit on P-d300 (29 Oct 04:13) recommended "a reframed short paper on a cross-definition switching dilemma". It computed the both-tracks-blocked switch variant and wrote that "the correct result is stronger: a dilemma across all three definitions". | Formulated, proved and argued by the reviser in v6 (the terms "anonymous" and "Pareto improvement" and the theorem statements first appear in v6) |
+| 4.8 | Theorem 1 (modified definition): the only witness for the preempting throw has exactly the profile of the witnesses for two standard switches | v6 (reviser), from the report's analysis of preemption and switch witnesses | — |
+| 4.9 | Theorem 2 (original and updated definitions): the both-blocked switch's witness equals the witness for genuine prevention plus one default-restoring change | v6 (reviser). The case is Schumacher's, as reported by Halpern 2015, and is used against another definition by Xiao and Xiong (2026, Obs. 1). The referee pointed to both sources. | — |
+| 4.10 | §5: what mechanism-specific normality must judge, and what its published motivations cost; §6: an exceptionless-conformity lemma (only root but-for causes remain), applied to a conjecture in the 2015 normality paper and to Xiao and Xiong's definition | v6 (reviser). The report discusses equation conformity and the Xiao–Xiong definition. | — |
+| 4.11 | §7: a parallel in regularity theory (Beckers 2026's dilemma for a 2024 regularity theory) | Card A4-01 → kill test, which found the point in Beckers 2026 | Credited from v1; recast as a parallel in v6 |
+| 4.12 | Replies: aptness, coding, graded causation, the switch verdicts themselves | Kill test objection list → v1; revised by the second system in v2–v5 | Rewritten in v6 (reviser) |
+
+The Xiao and Xiong paper engaged in v6 is the PDF the human uploaded on 29 Oct 04:01. It was supplied as a
+source, without comment, and placed in the referee packet. The reviser read it from
+`inbox/sources/`.
 
 ## 5. Points where referee or editor suggestions entered the final texts
 
@@ -2433,12 +2467,14 @@ our cards. It is not an ancestor of the finalist A4 (`state/STATUS.md`, 23 Oct e
   paragraph, scope and order replies, margins).
 - A6 v4: the verdict-change rule (P-7f1b S2-lit) and the answer-by-answer rule (P-7f1b G4), which the reviser
   turned into the three-way analysis of §5 and Propositions 4–5.
-- A4 v5: no referee report from this pipeline entered A4. The packet for A4 v1 (P-93b0) has no saved
-  report. The P-d300 report arrived after v5, and the v6 revision is incomplete. The second system's
-  revisions answered its own self-review and, in v2–v3, Claude's earlier general criticisms of external
-  work.
+- A4 v6: the cross-definition dilemma (the thesis), the both-blocked switch case and the engagement with
+  Xiao and Xiong come from P-d300 S7-lit. Earlier versions had no referee input from this pipeline:
+  P-93b0 (A4 v1) left no saved report, and the second system revised v2–v5 on its own self-review and a
+  book comparison.
 - Kill-test (red-team) repairs entered all three v1 drafts (see the tables).
-- Second-system revisions: A5 v2–v3, A6 v2–v3, A4 v2–v5. They are credited to that system above.
+- Second-system revisions: A5 v2–v3, A6 v2–v3, A4 v2–v5. They are credited to that system above. Of
+  A4's second-system material, the repaired lemma, the coding restriction and the narrowed originality
+  claims survive into v6; the additive theorem is subsumed by v6's more general result.
 - The editor agent and the editor-plan and changelog files of the original design were never used. The
   run abandoned those phases (log 21 Oct 19:48:32).
 
@@ -2452,7 +2488,8 @@ the orchestrator (`problems.md`, `selection.md`). The theses and cases originate
 red-team kill tests, or in the second AI system's revisions.
 
 Sources the human supplied that bear on these essays:
-- the 2026 Xiao and Xiong paper, uploaded 29 Oct 04:01 and placed in the A4 v5 referee packet;
+- the 2026 Xiao and Xiong paper, uploaded 29 Oct 04:01, placed in the A4 v5 referee packet and engaged in
+  A4 v6;
 - the 2016 book on actual causality, supplied to the second system and recorded as arriving "without
   philosophical comments" (`state/external/submission-book-review-20261028/Halpern-Originality-Review.md`).
 
@@ -2463,7 +2500,7 @@ The second system's own records say the human withheld philosophical feedback
 Limits of this ledger:
 - The second system's chat transcripts are not in the repository. Its contributions are traced from its
   committed files and commit messages.
-- A6 v4 has no revision notes, so v4 attributions rest on comparing the texts.
+- A6 v4 and A4 v6 have no revision notes, so their attributions rest on comparing the texts.
 - That system's early provenance disclosure (a possible exposure to personal context) and the later
   clarification are recorded in the methodology report, §4.
 ~~~~

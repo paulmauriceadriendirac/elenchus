@@ -114,3 +114,20 @@
   orig: preorders satisfying all: 0
   upd: preorders satisfying all: 0
   mod: preorders satisfying all: 0
+  3000 random additive scores satisfying all: {'orig': 0, 'upd': 0, 'mod': 0}
+  modified: SV flip part of a cause iff l>=n: True ; minimal causes (no filter): [('RB',), ('TA',), ('EF', 'LB')]
+  modified: SV causes containing EF under GP-calibrated additive (2,0,-1,0,-3): [('EF', 'LB')]
+  modified: LBRB minimal causes (no filter): [('RB',), ('A',), ('F', 'LB')]
+  escape score, modified, singleton/part verdicts:
+    GP       cand A: singleton True part True
+    CHAIN    cand C: singleton True part True
+    BOULDER  cand K: singleton True part True
+    SC       cand A: singleton False part True
+    LP       cand ST: singleton True part True; BT part False
+    LTRT     cand F: singleton False part False
+    DOOR     cand T: singleton False part False
+    SV       cand EF: singleton False part True
+    LBRB     cand F: singleton False part True
+  boundary score orig: LP BT part False; ST singleton True; SV singleton True; LBRB singleton True; SC part False; BOULDER K True
+  boundary score upd: LP BT part False; ST singleton True; SV singleton True; LBRB singleton True; SC part False; BOULDER K True
+  sprinkler (frozen BH scored -5), modified: minimal causes: [('BS',), ('ST', 'BT'), ('BT', 'SH')]

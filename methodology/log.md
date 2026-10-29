@@ -83,3 +83,5 @@
 - 2026-10-29T04:10:29Z **agent**: A5 citation audit: state/audit/A5/citations.md (8 patches; fetch filed requests/fetch/a5-dorst-mandelkern-2022-good-guesses.md)
 - 2026-10-29T11:30:03Z **human** (logistics): see human_inputs.md
 - 2026-10-29T11:41:00Z **agent**: A5 formal audit: state/audit/A5/formal.md
+- 2026-10-29T11:42:25Z **agent**: Methodology report draft: final/methodology/methodology_report.md (common report for A4 v6, A5 v4, A6 v4; appendices verbatim); provenance ledger: methodology/provenance.md
+- 2026-10-29T11:43:05Z **agent**: A6 v4 final revision: state/drafts/A6/v4.md (5,883 words; notes state/drafts/A6/revision_notes_v4.md; new checks in state/drafts/A6/checks/v4_*.py, bjorn_v4.py)
