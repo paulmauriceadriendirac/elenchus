@@ -103,3 +103,4 @@
 - 2026-10-29T17:43:54Z **event**: A5 final: compliance PASS (state/audit/A5/compliance.md); PDF built final/A5/essay.pdf.
 - 2026-10-29T17:44:03Z **agent**: A4 formal audit: state/audit/A4/formal.md (independent HP implementation in state/audit/A4/formal/; 91/94 checks pass, 3 intended FAIL show 'total orders' wording false; Lemma 0 counterexamples; Section 7 A&G unverified)
 - 2026-10-29T17:47:22Z **agent**: A6 formal audit: state/audit/A6/formal.md (independent code in state/audit/A6/formal/; all theorems/proofs verified; patches P1-P8: 0.37 figure, -0.63->-0.60, s0=s1, 2,322 population, non-trivial partitions, Lemma 2 continuum, encroachment genericity, 'finite graded')
+- 2026-10-29T17:49:40Z **agent**: A4 formal patches applied: final/A4/essay.md
