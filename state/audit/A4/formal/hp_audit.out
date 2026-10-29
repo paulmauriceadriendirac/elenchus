@@ -1,0 +1,207 @@
+==============================================================================
+A. Models: actual worlds
+  Genuine prevention                     actual (P=1,A=1,V=0)  phi: V=0
+  Chain                                  actual (C=1,I=1,Y=1)  phi: Y=1
+  Boulder                                actual (F=1,B=1,K=1,H=0)  phi: H=0
+  Short circuit                          actual (A=1,P=1,V=0)  phi: V=0
+  Late preemption                        actual (ST=1,BT=1,SH=1,BH=0,BS=1)  phi: BS=1
+  Tracks                                 actual (F=1,LT=0,RT=1,A=1)  phi: A=1
+  Doorbells                              actual (M=1,T=1,L=0,R=1,E=1)  phi: E=1
+  Blocked tracks                         actual (EF=1,LB=1,RB=1,TA=0)  phi: TA=0
+  Blocked tracks (inertial blockages)    actual (EF=1,LB=1,RB=1,TA=0)  phi: TA=0
+  Halpern's clear tracks                 actual (EF=1,LB=0,RB=0,TA=1)  phi: TA=1
+  Halpern's 3-variable switch            actual (F=1,T=1,A=1)  phi: A=1
+  Sprinkler                              actual (FF=1,SA=1,FW=1,SW=0,OUT=1)  phi: OUT=1
+  Seedlings                              actual (P=1,S=1,G=1,D=0,X=1)  phi: X=1
+[PASS] Blocked tracks actual (EF,LB,RB,TA)=(1,1,1,0)
+[PASS] Seedlings actual G=1, D=0, X=1
+==============================================================================
+B. Witness worlds of the focal single candidates (no normality), with profiles
+  Genuine prevention     A   orig: 1 world(s): (P=1,A=0,V=1) prof=(('R1', 'R0'), ('n', 'l')) via ((0,), (), ())
+  Genuine prevention     A   upd : 1 world(s): (P=1,A=0,V=1) prof=(('R1', 'R0'), ('n', 'l')) via ((0,), (), ())
+  Genuine prevention     A   mod : 1 world(s): (P=1,A=0,V=1) prof=(('R1', 'R0'), ('n', 'l')) via ((0,), (), ())
+  Chain                  C   orig: 1 world(s): (C=0,I=0,Y=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), (), ())
+  Chain                  C   upd : 1 world(s): (C=0,I=0,Y=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), (), ())
+  Chain                  C   mod : 1 world(s): (C=0,I=0,Y=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), (), ())
+  Chain                  I   orig: 2 world(s): (C=1,I=0,Y=0) prof=(('l', 'f'), ('l', 'n')) via ((0,), (), ()); (C=0,I=0,Y=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), ('C',), (0,))
+  Chain                  I   upd : 2 world(s): (C=1,I=0,Y=0) prof=(('l', 'f'), ('l', 'n')) via ((0,), (), ()); (C=0,I=0,Y=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), ('C',), (0,))
+  Chain                  I   mod : 1 world(s): (C=1,I=0,Y=0) prof=(('l', 'f'), ('l', 'n')) via ((0,), (), ())
+  Boulder                K   orig: 2 world(s): (F=1,B=1,K=0,H=1) prof=(('l', 'f'), ('n', 'l')) via ((0,), (), ()); (F=0,B=1,K=0,H=1) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'u'), ('n', 'l')) via ((0,), ('F', 'B'), (0, 1))
+  Boulder                K   upd : 2 world(s): (F=1,B=1,K=0,H=1) prof=(('l', 'f'), ('n', 'l')) via ((0,), (), ()); (F=0,B=1,K=0,H=1) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'u'), ('n', 'l')) via ((0,), ('F', 'B'), (0, 1))
+  Boulder                K   mod : 1 world(s): (F=1,B=1,K=0,H=1) prof=(('l', 'f'), ('n', 'l')) via ((0,), (), ())
+  Short circuit          A   orig: 1 world(s): (A=0,P=1,V=1) prof=(('R1', 'R0'), ('l', 'u'), ('n', 'l')) via ((0,), ('P',), (1,))
+  Short circuit          A   upd : 1 world(s): (A=0,P=1,V=1) prof=(('R1', 'R0'), ('l', 'u'), ('n', 'l')) via ((0,), ('P',), (1,))
+  Short circuit          A   mod : 1 world(s): (A=0,P=1,V=1) prof=(('R1', 'R0'), ('l', 'u'), ('n', 'l')) via ((0,), ('P',), (1,))
+  Late preemption        ST  orig: 2 world(s): (ST=0,BT=0,SH=0,BH=0,BS=0) prof=(('R1', 'R0'), ('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), ('BT',), (0,)); (ST=0,BT=1,SH=0,BH=0,BS=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('BH',), (0,))
+  Late preemption        ST  upd : 2 world(s): (ST=0,BT=0,SH=0,BH=0,BS=0) prof=(('R1', 'R0'), ('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), ('BT',), (0,)); (ST=0,BT=1,SH=0,BH=0,BS=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('BH',), (0,))
+  Late preemption        ST  mod : 1 world(s): (ST=0,BT=1,SH=0,BH=0,BS=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('BH',), (0,))
+  Late preemption        BT  orig: 0 world(s): NONE
+  Late preemption        BT  upd : 0 world(s): NONE
+  Late preemption        BT  mod : 0 world(s): NONE
+  Tracks                 F   orig: 1 world(s): (F=0,LT=0,RT=0,A=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('LT',), (0,))
+  Tracks                 F   upd : 1 world(s): (F=0,LT=0,RT=0,A=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('LT',), (0,))
+  Tracks                 F   mod : 1 world(s): (F=0,LT=0,RT=0,A=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('LT',), (0,))
+  Doorbells              T   orig: 1 world(s): (M=1,T=0,L=0,R=0,E=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('L',), (0,))
+  Doorbells              T   upd : 1 world(s): (M=1,T=0,L=0,R=0,E=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('L',), (0,))
+  Doorbells              T   mod : 1 world(s): (M=1,T=0,L=0,R=0,E=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('L',), (0,))
+  Blocked tracks         EF  orig: 1 world(s): (EF=0,LB=0,RB=1,TA=1) prof=(('R1', 'R0'), ('R1', 'R0'), ('n', 'l')) via ((0,), ('LB',), (0,))
+  Blocked tracks         EF  upd : 1 world(s): (EF=0,LB=0,RB=1,TA=1) prof=(('R1', 'R0'), ('R1', 'R0'), ('n', 'l')) via ((0,), ('LB',), (0,))
+  Blocked tracks         EF  mod : 0 world(s): NONE
+  Halpern's clear tracks EF  orig: 1 world(s): (EF=0,LB=1,RB=0,TA=0) prof=(('R0', 'R1'), ('R1', 'R0'), ('l', 'n')) via ((0,), ('LB',), (1,))
+  Halpern's clear tracks EF  upd : 1 world(s): (EF=0,LB=1,RB=0,TA=0) prof=(('R0', 'R1'), ('R1', 'R0'), ('l', 'n')) via ((0,), ('LB',), (1,))
+  Halpern's clear tracks EF  mod : 0 world(s): NONE
+  Halpern's 3-variable s F   orig: 0 world(s): NONE
+  Halpern's 3-variable s F   upd : 0 world(s): NONE
+  Halpern's 3-variable s F   mod : 0 world(s): NONE
+  Sprinkler              FF  orig: 2 world(s): (FF=0,SA=0,FW=0,SW=0,OUT=0) prof=(('R1', 'R0'), ('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), ('SA',), (0,)); (FF=0,SA=1,FW=0,SW=0,OUT=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('SW',), (0,))
+  Sprinkler              FF  upd : 2 world(s): (FF=0,SA=0,FW=0,SW=0,OUT=0) prof=(('R1', 'R0'), ('R1', 'R0'), ('l', 'n'), ('l', 'n')) via ((0,), ('SA',), (0,)); (FF=0,SA=1,FW=0,SW=0,OUT=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('SW',), (0,))
+  Sprinkler              FF  mod : 1 world(s): (FF=0,SA=1,FW=0,SW=0,OUT=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('SW',), (0,))
+  Seedlings              S   orig: 1 world(s): (P=1,S=0,G=0,D=0,X=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('D',), (0,))
+  Seedlings              S   upd : 1 world(s): (P=1,S=0,G=0,D=0,X=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('D',), (0,))
+  Seedlings              S   mod : 1 world(s): (P=1,S=0,G=0,D=0,X=0) prof=(('R1', 'R0'), ('l', 'n'), ('l', 'n'), ('n', 'f')) via ((0,), ('D',), (0,))
+[PASS] Thm1: Suzy has exactly one modified witness world = (0, 1, 0, 0, 0)
+[PASS] Thm1: Suzy modified witness profile = common profile
+[PASS] Thm1: Tracks flip has exactly one modified witness world = (0, 0, 0, 0)
+[PASS] Thm1: Tracks flip modified witness profile = common profile
+[PASS] Thm1: Doorbells setting has exactly one modified witness world = (1, 0, 0, 0, 0)
+[PASS] Thm1: Doorbells setting modified witness profile = common profile
+[PASS] Older defs: Suzy has second witness world [ST<-0,BT<-0] = all zeros; profile = chain profile + 1 root
+[PASS] Older defs (orig): Tracks switch has a unique witness world (same as modified)
+[PASS] Older defs (upd): Tracks switch has a unique witness world (same as modified)
+[PASS] Older defs (orig): Doorbells switch has a unique witness world (same as modified)
+[PASS] Older defs (upd): Doorbells switch has a unique witness world (same as modified)
+[PASS] Doorbells: [T<-0, M<-0] violates sufficiency (not a witness under orig/upd)
+[PASS] Thm2 (orig): EF has witness world (0,0,1,1) with profile = prevention + one root dev->def  -- worlds=[(0, 0, 1, 1)]
+[PASS] Thm2 (upd): EF has witness world (0,0,1,1) with profile = prevention + one root dev->def  -- worlds=[(0, 0, 1, 1)]
+[PASS] Thm2: sufficiency: [EF<-1] and [EF<-1, LB<-0] both give TA=0
+[PASS] Modified: EF alone has no witness in Blocked tracks
+[PASS] Modified: {EF,LB} has witness world (0,0,1,1) (the Thm 2 world)
+[PASS] Prevention (orig): only witness world (P,A,V)=(1,0,1), profile root dev->def + n->l
+[PASS] Chain (orig): only witness [C<-0]
+[PASS] Short circuit (orig): only witness world (A,P,V)=(0,1,1), P l->u, V n->l
+[PASS] Prevention (upd): only witness world (P,A,V)=(1,0,1), profile root dev->def + n->l
+[PASS] Chain (upd): only witness [C<-0]
+[PASS] Short circuit (upd): only witness world (A,P,V)=(0,1,1), P l->u, V n->l
+[PASS] Prevention (mod): only witness world (P,A,V)=(1,0,1), profile root dev->def + n->l
+[PASS] Chain (mod): only witness [C<-0]
+[PASS] Short circuit (mod): only witness world (A,P,V)=(0,1,1), P l->u, V n->l
+[PASS] Boulder (mod): only (F,B,K,H)=(1,1,0,1), K l->f, H n->l
+[PASS] Boulder (orig): witness worlds exactly (1,1,0,1) and (0,1,0,1); B l->u in the latter
+[PASS] Boulder (upd): witness worlds exactly (1,1,0,1) and (0,1,0,1); B l->u in the latter
+[PASS] Clear tracks (orig): flip witness [EF<-0, LB<-1], world (0,1,0,0)
+[PASS] Clear tracks (upd): flip witness [EF<-0, LB<-1], world (0,1,0,0)
+==============================================================================
+C. Verdicts without normality (all minimal causes; candidates of every size)
+  Genuine prevention             orig causes: [('A',), ('V',)]
+  Genuine prevention             upd  causes: [('A',), ('V',)]
+  Genuine prevention             mod  causes: [('A',), ('V',)]
+  Chain                          orig causes: [('C',), ('I',), ('Y',)]
+  Chain                          upd  causes: [('C',), ('I',), ('Y',)]
+  Chain                          mod  causes: [('C',), ('I',), ('Y',)]
+  Boulder                        orig causes: [('F',), ('H',), ('K',)]
+  Boulder                        upd  causes: [('F',), ('H',), ('K',)]
+  Boulder                        mod  causes: [('F',), ('H',), ('K',)]
+  Short circuit                  orig causes: [('A',), ('V',)]
+  Short circuit                  upd  causes: [('A',), ('V',)]
+  Short circuit                  mod  causes: [('A',), ('V',)]
+  Late preemption                orig causes: [('BS',), ('SH',), ('ST',)]
+  Late preemption                upd  causes: [('BS',), ('SH',), ('ST',)]
+  Late preemption                mod  causes: [('BS',), ('SH',), ('ST',)]
+  Tracks                         orig causes: [('A',), ('F',), ('RT',)]
+  Tracks                         upd  causes: [('A',), ('F',), ('RT',)]
+  Tracks                         mod  causes: [('A',), ('F',), ('RT',)]
+  Doorbells                      orig causes: [('E',), ('M',), ('R',), ('T',)]
+  Doorbells                      upd  causes: [('E',), ('M',), ('R',), ('T',)]
+  Doorbells                      mod  causes: [('E',), ('M',), ('R',), ('T',)]
+  Blocked tracks                 orig causes: [('EF',), ('LB',), ('RB',), ('TA',)]
+  Blocked tracks                 upd  causes: [('EF',), ('LB',), ('RB',), ('TA',)]
+  Blocked tracks                 mod  causes: [('RB',), ('TA',), ('EF', 'LB')]
+  Halpern's clear tracks         orig causes: [('EF',), ('LB',), ('RB',), ('TA',)]
+  Halpern's clear tracks         upd  causes: [('EF',), ('LB',), ('RB',), ('TA',)]
+  Halpern's clear tracks         mod  causes: [('RB',), ('TA',), ('EF', 'LB')]
+  Halpern's 3-variable switch    orig causes: [('A',)]
+  Halpern's 3-variable switch    upd  causes: [('A',)]
+  Halpern's 3-variable switch    mod  causes: [('A',)]
+  Sprinkler                      orig causes: [('FF',), ('FW',), ('OUT',)]
+  Sprinkler                      upd  causes: [('FF',), ('FW',), ('OUT',)]
+  Sprinkler                      mod  causes: [('FF',), ('FW',), ('OUT',)]
+  Seedlings                      orig causes: [('G',), ('P',), ('S',), ('X',)]
+  Seedlings                      upd  causes: [('G',), ('P',), ('S',), ('X',)]
+  Seedlings                      mod  causes: [('G',), ('P',), ('S',), ('X',)]
+[PASS] No normality: every focal candidate is a cause or part of a cause under every definition
+[PASS] No normality: Billy's throw is NOT part of any cause under any definition (so 'every candidate above' excludes it)
+[PASS] Halpern 2015 verdicts: clear tracks flip a cause under orig and upd, not (single) under mod
+  NOTE clear tracks, modified, no normality: flip part of a cause? True causes=[('RB',), ('TA',), ('EF', 'LB')]
+[PASS] Halpern 2015 verdicts: both-blocked flip a cause under orig/upd, not (single) under mod
+[PASS] Halpern 2015 verdicts: 3-variable switch flip not a cause (nor part) under all three
+[PASS] Halpern 2015 verdicts: route model (Tracks) flip a cause under all three; short circuit antidote a cause under all three
+==============================================================================
+D. Preorders on {n,l,f,u} and calibration
+  preorders=355 total preorders(weak orders)=75 linear(total) orders=24 partial orders=219
+[PASS] There are exactly 355 preorders on four categories
+  orig: calibrated preorders = 5 (weak orders among them: 2, linear orders: 0); with short-circuit antidote in no cause: 5
+     {f>=l, f>=n, l>=n, n>=l}  total=False
+     {f>=l, f>=n, l>=f, l>=n, n>=f, n>=l}  total=False
+     {f>=l, f>=n, f>=u, l>=n, n>=l}  total=False
+     {f>=l, f>=n, f>=u, l>=n, l>=u, n>=l, n>=u}  total=True
+     {f>=l, f>=n, f>=u, l>=f, l>=n, l>=u, n>=f, n>=l, n>=u}  total=True
+[PASS] orig: exactly five preorders give the four calibrating verdicts
+[PASS] orig: exactly two of the five are total PREorders (weak orders)
+[FAIL] orig: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
+  upd: calibrated preorders = 5 (weak orders among them: 2, linear orders: 0); with short-circuit antidote in no cause: 5
+     {f>=l, f>=n, l>=n, n>=l}  total=False
+     {f>=l, f>=n, l>=f, l>=n, n>=f, n>=l}  total=False
+     {f>=l, f>=n, f>=u, l>=n, n>=l}  total=False
+     {f>=l, f>=n, f>=u, l>=n, l>=u, n>=l, n>=u}  total=True
+     {f>=l, f>=n, f>=u, l>=f, l>=n, l>=u, n>=f, n>=l, n>=u}  total=True
+[PASS] upd: exactly five preorders give the four calibrating verdicts
+[PASS] upd: exactly two of the five are total PREorders (weak orders)
+[FAIL] upd: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
+  mod: calibrated preorders = 5 (weak orders among them: 2, linear orders: 0); with short-circuit antidote in no cause: 5
+     {f>=l, f>=n, l>=n, n>=l}  total=False
+     {f>=l, f>=n, l>=f, l>=n, n>=f, n>=l}  total=False
+     {f>=l, f>=n, f>=u, l>=n, n>=l}  total=False
+     {f>=l, f>=n, f>=u, l>=n, l>=u, n>=l, n>=u}  total=True
+     {f>=l, f>=n, f>=u, l>=f, l>=n, l>=u, n>=f, n>=l, n>=u}  total=True
+[PASS] mod: exactly five preorders give the four calibrating verdicts
+[PASS] mod: exactly two of the five are total PREorders (weak orders)
+[FAIL] mod: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
+[PASS] The five calibrated preorders are the same under all three definitions
+[PASS] Calibrated set (mod) = {l>=n, n>=l, f>=l, not u>=n}
+==============================================================================
+E. Theorem 1 computational claims over all 355 preorders (modified definition)
+[PASS] Suzy cause <=> Tracks flip part of a cause <=> Doorbells setting part of a cause (all 355)  -- 0 exceptions
+[PASS] Suzy cause <=> each switch-setting a (single) cause (all 355)  -- 0 exceptions
+[PASS] Whenever Suzy is part of a cause only via a conjunction (96 preorders), every such conjunction contains BT  -- []
+==============================================================================
+F. Corollary: exhaustive over 355 preorders; exact SMT over all anonymous Pareto filters and all real additive scores
+[PASS] Corollary (orig): no componentwise preorder meets all desiderata  -- 0 exceptions
+[PASS] Corollary (upd): no componentwise preorder meets all desiderata  -- 0 exceptions
+[PASS] Corollary (mod): no componentwise preorder meets all desiderata  -- 0 exceptions
+[PASS] Corollary (orig): UNSAT over ALL anonymous Pareto filters (28 profiles, 14 Pareto links)  -- unsat
+     (orig) same desiderata without Pareto: sat
+     (orig) drop "antidote cause": sat
+     (orig) drop "Suzy cause": unsat
+     (orig) drop "Billy in no cause": unsat
+     (orig) drop "Doorbells setting not cause": unsat
+     (orig) drop "Tracks flip not cause": unsat
+     (orig) drop "Blocked flip not cause": sat
+[PASS] Corollary (orig): UNSAT over all real additive scores with r>0  -- unsat
+[PASS] Corollary (upd): UNSAT over ALL anonymous Pareto filters (28 profiles, 14 Pareto links)  -- unsat
+     (upd) same desiderata without Pareto: sat
+     (upd) drop "antidote cause": sat
+     (upd) drop "Suzy cause": unsat
+     (upd) drop "Billy in no cause": unsat
+     (upd) drop "Doorbells setting not cause": unsat
+     (upd) drop "Tracks flip not cause": unsat
+     (upd) drop "Blocked flip not cause": sat
+[PASS] Corollary (upd): UNSAT over all real additive scores with r>0  -- unsat
+[PASS] Corollary (mod): UNSAT over ALL anonymous Pareto filters (28 profiles, 14 Pareto links)  -- unsat
+     (mod) same desiderata without Pareto: unsat
+     (mod) drop "antidote cause": unsat
+     (mod) drop "Suzy cause": sat
+     (mod) drop "Billy in no cause": unsat
+     (mod) drop "Doorbells setting not cause": unsat
+     (mod) drop "Tracks flip not cause": unsat
+     (mod) drop "Blocked flip not cause": unsat
+[PASS] Corollary (mod): UNSAT over all real additive scores with r>0  -- unsat

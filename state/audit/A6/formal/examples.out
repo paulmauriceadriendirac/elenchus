@@ -1,0 +1,9 @@
+(1) Preservation for every E and discovery: True | K at b: ['a', 'b'] | after learning not-a, K at b: ['b', 'c']
+(2) ken ['a', 'b'] | ev now ['1.0000', '0.0000', '1.2000'] | now act 3 | policy {'a': 1, 'b': 2, 'c': 2} | look ev 0.5000 | KDT -0.7000 CEU -0.7000
+(3) s0=s1: ken ['a', 's1', 's2'] | now beta1 | policy {'a': 'beta', 's2': 'decline', 's1': 'decline', 'v2': 'decline', 'v1': 'decline'} | cond ken on decline ['s1', 's2', 'v2'] | beta1 ev there 0.0281 | KDT -0.3187 CEU -0.3187 VER -0.0082 ANS 0.1517 | pairs differ everywhere True | both nontrivial answers reopen: True
+(3) s0=s2: ken ['a', 's1', 's2'] | now beta | policy {'a': 'beta', 's2': 'decline', 's1': 'decline', 'v2': 'decline', 'v1': 'decline'} | cond ken on decline ['s1', 's2', 'v2'] | beta1 ev there 0.0181 | KDT -0.3163 CEU -0.0187 VER -0.0059 ANS 0.1539 | pairs differ everywhere True | both nontrivial answers reopen: True
+(4) chaining ok True | ken ['a', 'x'] | relative defeat False | now act 2 | policy {'a': 2, 'x': 1, 'b': 1, 'c': 1} | look >= now on ken True | cond ken on 'choose act1' ['b', 'x'] | KDT 0.0500 CEU -2.4500 VER -1.2250 ANS 0.0500
+(5a) two states a>>b, x=b: ken [0, 1] | empty-question KDT value 0.5000
+(5b) I-normality: I(0) = [0, 1] ; I(1) = [0, 1, 2] ; KK fails at 0: True
+(6) pairs with non-trivial partitions: 64004 ; trivial-partition pairs: 17977 ; relative-defeat pairs with E = S: 2322
+(7) VER random search (150 trials/pair, exact re-verification): pairs where VER disvalues the question: 2222 of 2322 ; using generic random acts only: 2152
