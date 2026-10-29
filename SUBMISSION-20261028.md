@@ -1,7 +1,18 @@
-# Current review edition — 29 October 2026
+# Current submission reading package
 
-The current set is [submission-additive-20261029](state/external/submission-additive-20261029/README.md). A5 Holistic Accuracy v3 (4,937 words) and A6 Free Evidence v3 (5,818 words) remain the primary candidates. A4 is now v5 (5,876 words), with a proved additive-normality obstruction and a counterexample locating its restriction to modified HP. It remains a reserve pending the outstanding Xiao–Xiong comparison and an assessment of the restricted result's importance. E3 remains withdrawn.
+Updated 29 October 2026.
 
-The Halpern book comparison is complete for the relevant passages. The [scientific companion note](state/external/submission-additive-20261029/additive/Additive-Normality-Obstruction.md) gives the new proof, boundary and reproduction instructions. Targeted rechecks of Dorst, Salow and Hong did not warrant further edits to A5 or A6. Earlier versions remain preserved.
+The current manuscripts, anonymous PDFs, matching scientific methodology reports and verification note are in [submission-sourcechecked-20261029](state/external/submission-sourcechecked-20261029/README.md).
 
-The GitHub edition contains the essays, scientific review and code/results. Matching methodology reports and the complete archive are in the downloadable edition; detailed production-history disclosures were excluded from GitHub after the earlier automatic approval rejection. No contest form has been submitted.
+| Candidate | Version | PDF | Words excluding bibliography |
+|---|---|---|---:|
+| A5 — Holistic Accuracy | 7 | [Read](state/external/submission-sourcechecked-20261029/A5-Holistic-Accuracy-v7.pdf) | 5,035 |
+| A6 — Free Evidence | 5 | [Read](state/external/submission-sourcechecked-20261029/A6-Free-Evidence-v5.pdf) | 5,739 |
+| A4 — Causation | 7 | [Read](state/external/submission-sourcechecked-20261029/A4-Causation-v7.pdf) | 5,520 |
+
+A5 and A6 are the primary candidates. A4 remains a conditional reserve; E3 remains withdrawn. [Combined reading copy](state/external/submission-sourcechecked-20261029/Three-Essays-Reading-Copy-20261029.pdf).
+
+This package narrows A5 against *Good Guesses*, connects A6 to *Deference Done Better* and corrects the Bjorn probability distinction, and narrows A4 against Wysocki and the limits of its anonymity assumption. [Remaining gaps and verification](state/external/submission-sourcechecked-20261029/VERIFICATION.md).
+
+Earlier packages and draft versions remain preserved. This index supersedes older candidate pointers in historical finalization notes. No contest submission is recorded here.
+
