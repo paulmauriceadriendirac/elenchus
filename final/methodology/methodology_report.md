@@ -1,41 +1,38 @@
 # Methodology report
 
-This report covers one production run that yielded three candidate essays:
+This report covers one production run that yielded three essays, submitted in the versions in `final/`:
 
-- **A4**, "A Switching Dilemma for Normality in Actual Causation";
-- **A5**, "Holistic Accuracy, Refinement, and the Lockean Thesis";
-- **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models".
+- **A5**, "Holistic Accuracy and the Limits of Lockean Derivation" (`final/A5/essay.md`, 5,039 words);
+- **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
+  (`final/A6/essay.md`, 5,793 words);
+- **A4**, "A Switching Dilemma for Normality in Actual Causation" (`final/A4/essay.md`, 5,540 words).
 
-The report is common to all three. Section 10 has a short provenance section for each. Every statement
-cites the file it comes from; paths are relative to the project's working directory. Times are UTC. When
-the report says "the log", it means `methodology/log.md`, an append-only record written through
-`tools/log.py`. Human messages are quoted from `methodology/human_inputs.md`.
+Word counts are strict counts by `tools/wordcount.py` (everything except the bibliography), run on
+29 Oct. The report is common to all three; Section 10 has a provenance section for each. Every
+statement cites the file it comes from; paths are relative to the project's working directory. Times
+are UTC. "The log" means `methodology/log.md`, an append-only record written through `tools/log.py`.
+Human messages are quoted from `methodology/human_inputs.md`. Authors of engaged works who sit on the
+panel are not named; their works are described or named by title.
 
 ## 1. Summary
 
-The human operator commissioned an argument-neutral scaffold: agent prompts, quality standards and
-tools, with no topics or theses. An AI session (Claude Opus 5.5 in Claude Code) designed and wrote it.
-The run began as a planned eleven-phase funnel: map the field and the readership, generate many ideas,
-test them against prior art and a red team, draft, run tournaments, run blind review rounds, audit and
-package. After about an hour and a half the operator cut the budget, and the run did not follow the
-planned phases end to end. It produced three quick essays from literature maps (E1–E3). Then, at the
-operator's generic request for ambition, it switched to a hard-problems track:
-1. a field-surveyor agent listed 30 open problems;
-2. the orchestrator chose six;
-3. ideator agents wrote five "attack cards" each for three of them, after reading the anchor papers in
-   full;
-4. red-team agents ran full-text kill tests, which killed eight of the fifteen cards and merged the rest
-   into three essay plans;
-5. drafting agents wrote A4, A5 and A6.
-
-A second AI system, an OpenAI Codex assistant that the operator calls "Astra", worked on the same
-repository. It wrote its own essays and idea pool, and substantively revised A4, A5 and A6 several
-times. The pipeline's blind referee agents reviewed both systems' work. The final revisions (A5 v4,
-A6 v4, A4 v6) were written by this pipeline's revisers in answer to those referees. A4 v2–v5 were the
-second system's.
-
-The operator set budgets, relayed between systems, uploaded or linked sources, and gave generic
-instructions. No philosophical contribution traces to a human message (`methodology/provenance.md`).
+The human operator commissioned an argument-neutral scaffold (agent prompts, quality standards, tools;
+no topics or theses), which an AI session (Claude Opus 5.5 in Claude Code) designed and wrote. The run
+began as a planned eleven-phase funnel. After about an hour and a half the operator cut the budget and
+the planned phases were abandoned. The run produced three quick essays from literature maps (E1–E3).
+Then, at the operator's generic request for ambition, it switched to a hard-problems track: a
+field-surveyor agent listed 30 open problems; the orchestrator chose six; ideator agents wrote five
+"attack cards" each for three of them after reading the anchor papers in full; red-team agents ran
+full-text kill tests that killed eight of the fifteen cards and merged the rest into three essay plans;
+drafting agents wrote A4, A5 and A6. A second AI system, an OpenAI Codex assistant that the operator
+calls "Astra", worked on the same repository: it wrote its own essays and idea pool, and revised A4, A5
+and A6 several times. This pipeline's blind referee agents reviewed both systems' work, and its revisers
+answered them (A5 v4, A6 v4, A4 v6). The second system then reviewed those versions, checked them
+against primary sources, and produced A5 v7, A6 v5 and A4 v7. These became the bases of the final texts,
+to which this pipeline's citation audits were applied as patches. The operator chose the three essays
+at a gate from the orchestrator's recommendation, set budgets, relayed between the systems, supplied
+sources and gave generic instructions. No philosophical contribution traces to a human message
+(`methodology/provenance.md`).
 
 ## 2. Models
 
@@ -43,37 +40,29 @@ instructions. No philosophical contribution traces to a human message (`methodol
 |---|---|---|
 | Scaffold design (before the run) | Claude Opus 5.5 (`claude-opus-5-5`) in a claude.ai conversation | `methodology/design_inputs.md` |
 | Orchestrator (session model) | Claude Opus 5.5, Claude Code 2.1.306, cloud Linux session, Python 3.13.16 | `methodology/run_config.md` |
-| All subagents of the run: field-surveyor, panel-analyst, cartographers, ideators, red team, referees, drafters and revisers (general-purpose agents with model "opus"), citation-auditor, formalist, methodologist | Claude Opus 5.5 | Transcripts. The usage tool records only `claude-opus-5-5`: 2,795 requests, 2,517 of them by subagents (`tools/usage_report.py`). |
-| Second AI system ("Astra") | An OpenAI Codex assistant. Its own records say that "a precise model-version identifier for every OpenAI authoring session is not established". | `state/external/review-edition-20261025/METHODOLOGY.md`; `state/external/submission-revisions-20261028/methodology/*.md` |
+| All subagents: field-surveyor, panel-analyst, cartographers, ideators, red team, referees, drafters, revisers and patch agents (general-purpose agents with model "opus"), citation-auditor, formalist, compliance-officer, methodologist | Claude Opus 5.5 | Transcripts. `tools/usage_report.py` records only `claude-opus-5-5`: 3,181 requests, 2,853 of them by subagents. |
+| Second AI system ("Astra") | An OpenAI Codex assistant. Its records say that "a precise model-version identifier for every OpenAI authoring session is not established". | `state/external/review-edition-20261025/METHODOLOGY.md`; `state/external/submission-revisions-20261028/methodology/*.md` |
 
 On 21 October the orchestrator decided to use a smaller model for mechanical roles (log 19:44:17). The
-transcripts record no request to any model other than Opus 5.5, so that decision was not carried out.
+transcripts record no request to any other model, so that decision was not carried out.
 
 ## 3. Architecture
 
 ### 3.1 The design as written
 
 The orchestrator follows `SKILL.md` and `PHASES.md` (Appendix B). Every agent follows `CLAUDE.md` and
-the standards files (Appendices C–D). The planned phases are:
-
-0. setup and hygiene;
-1. terrain: competition digest, committee map, calibration brief, research lanes, lane maps;
-2. ideation;
-3. triage;
-4. gauntlet: prior-art search, formal check, red team, repairs;
-5. selection for drafting (Gate A);
-6. development and drafting;
-7. draft tournament (pairwise judgments, Bradley–Terry ranking with `tools/rank.py`; Gate A2);
-8. revision loop: blind referee rounds, editor, reviser;
-9. integrity: citation audit, formal audit, compliance;
-10. packaging, including this report.
-
-`CONFIG.md` asked for six lanes, ten candidates per lane, a gauntlet of 16, three full drafts, five
-referees per round and up to four review rounds (`methodology/run_config.md`).
+the standards files (Appendices C–D). The planned phases are: 0 setup and hygiene; 1 terrain
+(competition digest, committee map, calibration brief, research lanes, lane maps); 2 ideation; 3
+triage; 4 gauntlet (prior-art search, formal check, red team, repairs); 5 selection for drafting (Gate
+A); 6 development and drafting; 7 draft tournament (pairwise judgments, Bradley–Terry ranking with
+`tools/rank.py`; Gate A2); 8 revision loop (blind referee rounds, editor, reviser); 9 integrity (citation
+audit, formal audit, compliance); 10 packaging, including this report. `CONFIG.md` asked for six lanes,
+ten candidates per lane, a gauntlet of 16, three full drafts, five referees per round and up to four
+review rounds (`methodology/run_config.md`).
 
 ### 3.2 The agents
 
-There are sixteen agent definitions in `.claude/agents/`. Their full text is in Appendix A.
+There are sixteen agent definitions in `.claude/agents/` (full text in Appendix A).
 
 | Agent | Role | What it sees |
 |---|---|---|
@@ -81,10 +70,10 @@ There are sixteen agent definitions in `.claude/agents/`. Their full text is in 
 | panel-analyst | Committee map from the judges' public work, candidate research lanes, referee personas | Web, repository |
 | cartographer | Literature map of one lane, verified bibliography, fetch requests | Web, repository |
 | ideator | Candidate theses ("cards") | Lane map or anchor papers |
-| triage, prior-art-hunter, formalist, red-team | Gauntlet. In this run the red team ran the kill tests and the formalist audited A5. | Card, sources, web |
-| drafter, developer, editor, reviser | Drafting and revision. In this run, general-purpose Opus agents with inline task prompts did the drafting and revising. The editor never ran. | Draft, notes, reports |
-| referee | Blind review against `standards/REFEREE_RUBRIC.md` in a subfield persona from `state/panel/personas.md` | **Only the packet**: `essay.md`, `RUBRIC.md`, and the main target source (`source_main.txt`, plus one further source for P-d300). Packets have random labels; the mapping is kept in `state/blind/keys/`. |
-| citation-auditor, compliance-officer | Integrity checks | Draft, sources, tools |
+| triage, prior-art-hunter, formalist, red-team | Gauntlet. In this run the red team ran the kill tests; the formalist audited A5, A4 and (partly) A6. | Card, sources, web |
+| drafter, developer, editor, reviser | Drafting and revision. In this run general-purpose Opus agents with inline task prompts drafted, revised and patched. The editor never ran. | Draft, notes, reports |
+| referee | Blind review against `standards/REFEREE_RUBRIC.md` in a subfield persona from `state/panel/personas.md` | **Only the packet**: `essay.md`, `RUBRIC.md`, the main target source (`source_main.txt`; P-d300 also had the Xiao and Xiong paper). Packets have random labels; the mapping is in `state/blind/keys/`. |
+| citation-auditor, compliance-officer | Integrity checks | Draft, sources, tools. The A4 citation auditor was told not to open `state/external/` or `relay/` (`state/audit/A4/citations.md`). |
 | methodologist | This report and the ledger | Whole repository |
 
 Subagents cannot spawn subagents (`.claude/settings.json`: `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` 1).
@@ -93,7 +82,7 @@ Subagents cannot spawn subagents (`.claude/settings.json`: `CLAUDE_CODE_MAX_SUBA
 
 ```
  Human operator ── commissions scaffold (design_inputs.md) ── CONFIG.md (topic: none)
-        │ messages: budget, logistics, uploads, generic instructions (human_inputs.md)
+        │ messages: budget, logistics, uploads, generic instructions, Gate A2 (human_inputs.md)
         ▼
  ORCHESTRATOR (Claude Opus 5.5, Claude Code)
   Phase 0  hygiene ─ digest ─ judge list                              21 Oct 18:27
@@ -102,52 +91,55 @@ Subagents cannot spawn subagents (`.claude/settings.json`: `CLAUDE_CODE_MAX_SUBA
            orchestrator   → 6 lanes (L1–L6)                            21 Oct 19:19
            6 cartographers → maps of L3, L5, L6 (L1, L2, L4 stopped)   21 Oct 19:45
   ── budget cut: full pipeline abandoned (log 19:48:32) ──
-  Lean     3 single-pass essays E1(L3) E2(L5) E3(L6) → full-text revision (v2)
-           → blind referees (P-cbf4, P-8c16, P-c865) → v3; E2 v4       21–22 Oct
-           4 lane ideators launched, interrupted by usage limit, abandoned
+  Lean     3 single-pass essays E1(L3) E2(L5) E3(L6) → v2 → blind referees → v3; E2 v4   21–22 Oct
   ── process switch approved by the human (log 22 Oct 10:05:39) ──
-  Ambitious field-surveyor → 30 hard problems (problems.md)            22 Oct 17:33
-           orchestrator → 6 problems A1–A6 (selection.md)              22 Oct 17:35
+  Ambitious field-surveyor → 30 hard problems                          22 Oct 17:33
+           orchestrator → 6 problems A1–A6                             22 Oct 17:35
            3 ideators → 5 attack cards each for A4, A5, A6             23 Oct
            3 red-team kill tests (full texts) → 3 essay plans          23 Oct 22:47–22:50
            3 drafters → A4 v1, A5 v1, A6 v1                            23 Oct 23:16–23:17
         ▲                                   │
-        │ files on the shared branch        │ blind referee reports, posted as a GitHub issue
+        │ files on the shared branch        │ referee reports (GitHub issue), drafts
         │                                   ▼
  SECOND AI SYSTEM ("Astra", OpenAI Codex; operated separately by the human)
-           5 essays; 120-idea pool → 8; own A4/A6 drafts; E2 v5; E3 v4;
-           A5 v2–v3, A6 v2–v3, A4 v2–v5                                22–29 Oct
+           own essays and idea pool; A5 v2–v3, A6 v2–v3, A4 v2–v5      22–29 Oct
+           E3 review and withdrawal                                    28 Oct
         │
         ▼
  ORCHESTRATOR, finishing (27–29 Oct)
            blind referees: P-7297 (A5 v2), P-7f1b (A6 v2), P-600a (E3 v4), P-d300 (A4 v5)
-           revisers → A5 v4, A6 v4 (29 Oct 04:00–04:06), A4 v6 (29 Oct 11:39)
-           citation-auditor (A5), formalist (A5, partial), methodologist
+           revisers → A5 v4 (04:00), A6 v4 (11:43), A4 v6 (11:44)
+           audits: A5 citation (04:10), A5 formal (11:41); A5 v5 = audit patches (11:51)
+           Gate A2: human selects A5, A6, A4; confirms revised CLAUDE.md §1.2 (11:45)
+        │
+        ▼
+ SECOND AI SYSTEM: review of A5 v4, A6 v4, A4 v6 (11:51); Good Guesses check (12:16);
+           A5 v7, A6 v5, A4 v7 with source checks (17:02)
+        │
+        ▼
+ ORCHESTRATOR: adopts v7/v5/v7 as bases (17:34); A6 and A4 citation audits (of v4/v6);
+           A5 delta audit; patch passes → final/A5, final/A6, final/A4 (17:40–17:43);
+           A5 compliance PASS, A5 PDF (17:43); A4 formal audit (17:44); this report
 ```
 
 ## 4. Human involvement
 
 ### 4.1 Before the run
 
-The operator asked an AI model, in a claude.ai conversation, to build the scaffold. The record of that
-conversation is a paraphrase (`methodology/design_inputs.md`). It lists six instructions:
-1. aim to win;
-2. use the panel's public research areas;
-3. treat cost as no constraint;
-4. "Make sure the human cannot accidentally supply ideas";
-5. generic method suggestions: the PhilPapers Survey, prize-winning work, metaphilosophy and experimental
-   philosophy, and existing work on AI essay generation;
-6. ask the human to fetch inaccessible texts.
-
-The file states: "The human wrote no part of it." `CONFIG.md` was left at its defaults, with
-`topic: none` and `avoid: none` (`methodology/run_config.md`; `methodology/hygiene.md` item 4).
+The operator asked an AI model, in a claude.ai conversation, to build the scaffold. The record is a
+paraphrase (`methodology/design_inputs.md`) listing six instructions: aim to win; use the panel's public
+research areas; treat cost as no constraint; "Make sure the human cannot accidentally supply ideas";
+generic method suggestions (the PhilPapers Survey, prize-winning work, metaphilosophy and experimental
+philosophy, existing work on AI essay generation); ask the human to fetch inaccessible texts. The file
+states: "The human wrote no part of it." `CONFIG.md` was left at its defaults, with `topic: none` and
+`avoid: none` (`methodology/run_config.md`; `methodology/hygiene.md` item 4).
 
 ### 4.2 Every message to this pipeline, verbatim
 
-The orchestrator classified each message when it arrived. The classes come from
-`standards/HUMAN_INPUT_POLICY.md`: logistics, courier (supplying a source), method (generic workflow
-instruction) and generic-feedback. The messages are reproduced from `methodology/human_inputs.md`
-without omission. They contain no account metadata.
+The orchestrator classified each message on arrival, using the classes of
+`standards/HUMAN_INPUT_POLICY.md` (logistics, courier, method, generic-feedback; "selection" for the
+gate answer). The 25 entries of `methodology/human_inputs.md` are reproduced without omission. They
+contain no account metadata.
 
 | Time (UTC) | Class | Message |
 |---|---|---|
@@ -174,86 +166,90 @@ without omission. They contain no account metadata.
 | 29 Oct 03:42:42 | logistics | "give me the essays you produced and check also astra's work and keep going" |
 | 29 Oct 04:01:17 | courier | "[uploaded PDF: Xiao & Xiong 2026, s41599-026-07470-y.pdf]" |
 | 29 Oct 11:30:03 | logistics | "Keep going" |
+| 29 Oct 11:45:15 | selection | "Gate A2 answer: "A5, A6, A4 (Recommended)"; §1.2 change: "Yes, I confirm it"" |
+| 29 Oct 17:35:47 | courier | "[Human message forwarding the other model's (Astra's) status note, followed by: "this is Astra review the last GitHub commits here"] We're one final review-and-repair cycle away, plus one reporting task. You can send the current PDFs to the other models now. I checked GitHub: no newer Claude changes have appeared since the package we just published. The manuscripts, source comparisons, targeted calculations, word counts and PDF checks are complete. The remaining intellectual risks are: A5: whether its reading of Dorst is persuasive and its narrower contribution sufficiently significant. A6: whether the normality-specific result adds enough beyond existing deference results, and whether any hypothesis is missing. A4: philosophical significance and overlap with prior work. It remains the reserve. One correction to my previous update: the latest methodology PDFs are scientific verification notes, not complete contest production reports. We still need an accurate, anonymized account of the models, workflow, selection and human involvement. That was an omission in the package I called finished. The contest requires that account; submitting chat logs is optional, so this does not require publishing private histories. For the other models, request specific defects with evidence: a false lemma or missing assumption, a misrepresented source passage, or prior work that already establishes the claimed contribution. Those findings should determine the final edits. Submitting Friday after that review cycle is reasonable, with Saturday available for concrete repairs. The official deadline is October 31, 11:59 p.m. this is Astra review the last GitHub commits here" |
 
-The 23 Oct 23:02:33 message was addressed to the second system, not to this pipeline. That system
-added it to `human_inputs.md` in commit 217d95d, and the orchestrator logged the commit (log 23 Oct
-23:17:35).
+The 23 Oct 23:02:33 message was addressed to the second system, not to this pipeline; that system added
+it to `human_inputs.md` in commit 217d95d, and the orchestrator logged the commit (log 23 Oct 23:17:35).
+The Gate A2 answer was given to a structured question in which the orchestrator had marked its
+recommendation (log 29 Oct 11:45:15). The 29 Oct 17:35:47 entry is classified as courier: apart from
+one sentence, the text is the second system's own note, relayed by the human.
 
 ### 4.3 What the human did
 
 - **Commissioned the scaffold** (4.1) and started the run.
-- **Set budgets and switched modes.** A $150 list-price cap, then $100. The operator asked for three
-  essays from existing work, said they would do the mechanical checks and the methodology report by
-  hand, briefly forbade web search and then lifted the ban (log 21 Oct 19:44:17, 19:48:32, 21:29:51).
-- **Supplied sources (courier).**
-  - Two PDF uploads: the target papers of E2 and E1 (21 Oct).
-  - A journal URL for an unread E2 source (21 Oct).
-  - A 2026 PDF on actual causation, by Xiao and Xiong, placed in the A4 referee packet P-d300 and engaged
-    in A4 v6 (29 Oct).
-  - According to the second system's records, six requested primary texts and a 2016 book on actual
-    causality, supplied to that system "without philosophical comments"
-    (`state/external/ambitious-review-20261022/PROVENANCE.md`;
-    `state/external/submission-book-review-20261028/Halpern-Originality-Review.md`).
-- **Approved a process change.** The operator asked how to improve the process and approved the
-  orchestrator's proposed anchor-paper funnel. The operator asked for ambition ("look for the hardest
-  problems") without naming any problem (22 Oct 10:01–10:05).
+- **Set budgets and switched modes.** A $150 list-price cap, then $100; a request for three essays from
+  existing work; a brief ban on web search, lifted the same evening (log 21 Oct 19:44:17, 19:48:32,
+  21:29:51).
+- **Supplied sources (courier), without comment as recorded.** Two PDFs (the target papers of E2 and
+  E1, 21 Oct); a journal URL for an E2 source (21 Oct); the 2026 Xiao and Xiong paper on actual
+  causation, placed in referee packet P-d300 and engaged in A4 (29 Oct). According to the second
+  system's records, the human also supplied that system with six requested primary texts and a 2016 book
+  on actual causality "without philosophical comments" (`state/external/ambitious-review-20261022/
+  PROVENANCE.md`; `state/external/submission-book-review-20261028/Halpern-Originality-Review.md`). The
+  second system describes the July 2021 draft of *Good Guesses* that it used as "supplied"; its files do
+  not say by whom (`state/audit/A5/good-guesses-comparison-20261029.md`).
+- **Approved a process change** and asked for ambition ("look for the hardest problems") without naming
+  any problem (22 Oct 10:01–10:05).
 - **Ran the second AI system and relayed between systems.** The operator asked the orchestrator to read
-  that system's branch and to post referee feedback as a GitHub issue that the system would read
-  (22 Oct 09:26, 09:31). The system's commits were pushed from the operator's account; the orchestrator
-  merged them. The second system records that the operator asked it for "stronger philosophical
-  contributions, near-limit drafts, at least 100 further ideas, and progressive assessment emphasizing
-  importance and originality" (`state/external/codex-expansion-20261022/README.md`). It also records a
-  "methodological suggestion about adversarial review" (to broaden review beyond the judging panel) and
-  that "the user explicitly withheld philosophical feedback for the contest"
-  (`state/external/ambitious-drafts-20261022/README.md`).
-- **Gave one piece of generic feedback** (23 Oct 23:02:33, to the second system; see 4.4).
+  that system's branch and to post referee feedback as a GitHub issue (22 Oct 09:26, 09:31; log
+  09:54:50). The system's commits were pushed from the operator's account and merged by the orchestrator.
+  The second system records that the operator asked it for "stronger philosophical contributions,
+  near-limit drafts, at least 100 further ideas, and progressive assessment emphasizing importance and
+  originality" (`state/external/codex-expansion-20261022/README.md`), and that "the user explicitly
+  withheld philosophical feedback for the contest" (`state/external/ambitious-drafts-20261022/README.md`).
+  On 29 Oct the operator relayed that system's status note (4.2).
+- **Gave one piece of generic feedback** (23 Oct 23:02:33, to the second system).
+- **Closed Gate A2**: selected A5, A6 and A4, as recommended, and confirmed the revised `CLAUDE.md` §1.2
+  (29 Oct 11:45:15).
 - **Stated:** "Don't worry I didn't give Astra anything idea wise" (22 Oct 10:01:37; logged as a
-  provenance decision at the same time).
+  provenance decision).
 
-### 4.4 The provenance disclosure, quarantine and clarification
+### 4.4 The provenance disclosure, quarantine, lifting and confirmation
 
 - **22 Oct.** In a review file, the second system stated that "an exposure concern was reported in the
-  chat": possible exposure, in its own session, to personal material from outside the repository. It
-  said its session "is therefore not represented as an isolated, clean-origin contest-authoring run".
-  It reproduced no such material (`state/external/ambitious-review-20261022/PROVENANCE.md`).
-- **23 Oct 01:56:19.** The orchestrator recorded the disclosure. It noted that its own context was
-  unaffected, quarantined the second system's outputs from this pipeline's drafting, and told drafting
-  and ideation agents not to read `state/external/` or `relay/` (log). The A6 ideator later disclosed
-  that it had read fragments of three external files before the quarantine, none on its topic (log
+  chat": possible exposure of its own session to personal material from outside the repository. It said
+  its session "is therefore not represented as an isolated, clean-origin contest-authoring run". It
+  reproduced no such material (`state/external/ambitious-review-20261022/PROVENANCE.md`).
+- **23 Oct 01:56:19 — quarantine.** The orchestrator recorded the disclosure, noted that its own context
+  was unaffected, quarantined the second system's outputs from this pipeline's drafting, and told
+  drafting and ideation agents not to read `state/external/` or `relay/` (log). The A6 ideator later
+  disclosed reading fragments of three external files before the quarantine, none on its topic (log
   23 Oct 17:18:23).
-- **23 Oct (commit 217d95d).** The second system added `PROVENANCE-CLARIFICATION.md`. It reports a
-  limited audit of the project's recorded human inputs and of project-related prior messages, which
-  "identified no human-supplied philosophical contribution". It distinguishes a context-exposure concern,
-  a workflow quarantine and a philosophical rejection, and states that the audit "does not certify the
-  contents of all earlier sessions". The same commit rewrote `CLAUDE.md` §1.2. The old text treated any
-  information about the human beyond the repository as a halt trigger. The new text follows the
-  competition FAQ's relevance standard, under which relevant human-originated philosophical ideas in
-  memory call for disabling memory or a fresh session. The orchestrator logged that another agent had
-  changed a binding rule and held the change pending the human's confirmation (log 23 Oct 23:17:35).
-- **27 Oct 16:02:46.** The orchestrator changed its assessment. Under §1.2 as revised, no human
+- **23 Oct (commit 217d95d).** The second system added `PROVENANCE-CLARIFICATION.md`, reporting a limited
+  audit of recorded human inputs and project-related prior messages that "identified no human-supplied
+  philosophical contribution" and that "does not certify the contents of all earlier sessions". The
+  same commit rewrote `CLAUDE.md` §1.2 to follow the competition FAQ's relevance standard. The
+  orchestrator logged that another agent had changed a binding rule and held the change pending the
+  human's confirmation (log 23 Oct 23:17:35).
+- **27 Oct 16:02:46 — lifting.** The orchestrator changed its assessment: under §1.2 as revised, no human
   philosophical contribution had been identified, and the human had stated that the second system
-  received no idea-wise input. It lifted the quarantine for selection and revision, credited all
-  external revisions to the other model, and kept the historical disclosures (log). The record does not
-  show the human explicitly confirming the §1.2 change. The 27 Oct message instructs the orchestrator
-  to continue.
+  received no idea-wise input. It lifted the quarantine for selection and revision, credited all external
+  revisions to the other model, and kept the historical disclosures (log).
+- **29 Oct 11:45:15 — confirmation.** The human confirmed the revised §1.2 at Gate A2 ("Yes, I confirm
+  it"; log).
+- **29 Oct.** The A5 compliance check treats this history as "a disclosed context-availability concern,
+  not an identified human contribution" and requires its disclosure here (`state/audit/A5/compliance.md`
+  §6 and advisory 1).
 
 Both versions of §1.2 are in Appendix C. Nothing private is reproduced in this report.
 
 ### 4.5 What the human did not do
 
-According to the record, the human did not:
-- propose, select or edit any topic, lane, problem, thesis, argument, case, objection, reply or formal
-  result;
-- choose the finalists (Gate A2 confirmation had not been recorded when this report was written);
-- summarise or comment on any source;
-- edit any essay or agent output.
+According to the record, the human did not propose, select or edit any topic, lane, problem, thesis,
+argument, case, objection, reply or formal result; did not summarise or comment on any source; and did
+not edit any essay or agent output. The human's one selection was among three finished essays, matching
+the orchestrator's recommendation.
 
 ### 4.6 Was the policy followed?
 
-No message was logged as substantive philosophical content needing rephrasing. The "method" messages
-ask for revision, a process critique and ambition. They name no problem. The process critique offered
-a hypothetical workflow ("rank 100 problems, write 100 essays, choose the best three"), which is generic
-workflow under `standards/HUMAN_INPUT_POLICY.md`.
+No message was logged as substantive philosophical content needing rephrasing (`human_inputs.md`
+classifications; `state/audit/A5/compliance.md` §6). The "method" messages ask for revision, a process
+critique and ambition, and name no problem. The process critique's hypothetical workflow ("rank 100
+problems, write 100 essays, choose the best three") is generic workflow under
+`standards/HUMAN_INPUT_POLICY.md`. The relayed 29 Oct note names risk areas (e.g. "A4: philosophical
+significance and overlap with prior work"); it is AI-written, and the patch passes that followed added
+no arguments, cases or claims (`final/A6/changelog.md`, `final/A4/changelog.md`).
 
 ## 5. Topic selection
 
@@ -261,30 +257,28 @@ Topic selection was done entirely by agents.
 
 1. **Competition digest and judge list** (orchestrator, Phase 0): `state/competition/digest.md`,
    `state/panel/judges.txt` (23 judges).
-2. **Calibration brief** (field-surveyor, 21 Oct 18:50): `state/calibration/brief.md`. It covers
-   PhilPapers 2020 survey splits from the published paper, a sample of 30 prize-winning papers,
-   evidence on AI-written philosophy, and guidance from metaphilosophy and experimental philosophy. It
-   cites 57 references (49 verified by tool, 8 checked by hand). Its guidance: prefer split questions,
-   and conditional, negative and structural results with decisive cases or theorems.
-3. **Committee map** (panel-analyst, 21 Oct 19:18): profiles of the judges from homepages, CVs and
-   Crossref; a 217-work bibliography; 14 candidate lanes ranked by panel coverage and crowding; 11
-   subfield referee personas and 4 generic ones (`state/panel/committee_map.md`, `lanes.md`,
-   `personas.md`). Per `CLAUDE.md` §1.6, the panel served only as a readership: the areas where a
-   contribution would be recognised, an originality baseline, and personas.
-4. **Lanes** (orchestrator, 21 Oct 19:19; `state/lanes/index.md`): L1 extreme-stakes decision theory;
-   L2 comparability; L3 knowledge, normality and inquiry; L4 formal questions about artificial agents;
-   L5 credence, updating and self-location; L6 conditionals, modals and probability. Three areas were
-   dropped. Population ethics was "saturated"; AI interpretation and AI consciousness were "crowded". L6
-   was added so that three lanes lie outside the decision-theory and ethics cluster.
-5. **Hard problems** (field-surveyor, 22 Oct 17:33; `state/ambitious/problems.md`): 30 open problems
-   in seven blocks, with a top-10 shortlist ranked by ambition times tractability.
+2. **Calibration brief** (field-surveyor, 21 Oct 18:50; `state/calibration/brief.md`): PhilPapers 2020
+   survey splits, a sample of 30 prize-winning papers, evidence on AI-written philosophy, guidance from
+   metaphilosophy and experimental philosophy; 57 references (49 verified by tool, 8 by hand). Its
+   guidance: prefer split questions, and conditional, negative and structural results with decisive
+   cases or theorems.
+3. **Committee map** (panel-analyst, 21 Oct 19:18): profiles of the judges' public work; a 217-work
+   bibliography; 14 candidate lanes ranked by panel coverage and crowding; 11 subfield referee personas
+   and 4 generic ones (`state/panel/committee_map.md`, `lanes.md`, `personas.md`). Per `CLAUDE.md` §1.6
+   the panel served only as a readership: areas where a contribution would be recognised, an originality
+   baseline, and personas.
+4. **Lanes** (orchestrator, 21 Oct 19:19; `state/lanes/index.md`): L1 extreme-stakes decision theory; L2
+   comparability; L3 knowledge, normality and inquiry; L4 formal questions about artificial agents; L5
+   credence, updating and self-location; L6 conditionals, modals and probability. Population ethics was
+   dropped as "saturated", AI interpretation and AI consciousness as "crowded"; L6 was added so that three
+   lanes lie outside the decision-theory and ethics cluster.
+5. **Hard problems** (field-surveyor, 22 Oct 17:33; `state/ambitious/problems.md`): 30 open problems in
+   seven blocks, with a top-10 shortlist ranked by ambition times tractability.
 6. **Selection** (orchestrator, 22 Oct 17:35; `state/ambitious/selection.md`): six problems from
-   different blocks, so that the three final essays could come from three areas. They were A1 infinite
-   ethics, A2 deontology under risk, A3 hyperintensional grain, A4 actual causation, A5 the
-   belief–credence bridge, and A6 the value of evidence and dogmatism. A4–A6 went ahead first because
-   their anchor papers were already in hand. A1–A3 waited on fetch requests that were never filled.
-   Standard for every card: "a rigorous result that changes the state of the debate ... no grand
-   claims".
+   different blocks — A1 infinite ethics, A2 deontology under risk, A3 hyperintensional grain, A4 actual
+   causation, A5 the belief–credence bridge, A6 the value of evidence and dogmatism. A4–A6 went first
+   because their anchor papers were in hand; A1–A3 waited on fetch requests that were never filled.
+   Standard for every card: "a rigorous result that changes the state of the debate ... no grand claims".
 
 ## 6. The funnel
 
@@ -292,261 +286,269 @@ Topic selection was done entirely by agents.
 |---|---|---|
 | Candidate lanes from the committee map | 14 | `state/panel/lanes.md` |
 | Lanes chosen | 6 | `state/lanes/index.md` |
-| Lanes mapped | 3 (L3, L5, L6). Maps have 123 refs (L3) and 117 refs (L6), verified or checked by hand. L1, L2 and L4 were stopped at the budget cut. | log 21 Oct 19:42–19:48 |
-| Single-pass lane essays | 3 (E1–E3). In E1 and E2 the v1 core turned out to be prior art and the thesis was replaced at v2. E3's core cases survived. | `state/STATUS.md`; `state/drafts/E*/revision_notes.md` |
-| Lane ideation, second wave (6+6+6+8 cards planned) | 0 written; interrupted by a usage limit and abandoned | log 22 Oct 02:11:48, 10:05:39; `state/ideas/` is empty |
+| Lanes mapped | 3 (L3, L5, L6); L1, L2, L4 stopped at the budget cut | log 21 Oct 19:42–19:48 |
+| Single-pass lane essays | 3 (E1–E3). In E1 and E2 the v1 core turned out to be prior art and the thesis was replaced at v2. | `state/STATUS.md`; `state/drafts/E*/revision_notes.md` |
+| Lane ideation, second wave | 0 cards written; interrupted by a usage limit and abandoned | log 22 Oct 02:11:48, 10:05:39 |
 | Hard problems listed / shortlisted / selected / carded | 30 / 10 / 6 / 3 | `problems.md`, `selection.md` |
 | Attack cards | 15 (5 each for A4, A5, A6) | `state/ambitious/cards/` |
 | Kill-test verdicts | 7 REPAIR, 8 KILL. A4: 01, 02, 04 repair; 03 kill (kept as a lemma); 05 kill. A5: 01, 03 repair; 02, 04, 05 kill. A6: 01, 02 repair; 03, 04 kill; 05 kill as a stand-alone essay. | `state/ambitious/killtest/*.md` |
-| Kills for prior art | A5-02: proved in print in 2021 under the conjecture's own name. A5-04: anticipated by a 2022 model of guessing. A5-05: "textbook statistics". A4-05: already in Beckers 2026. A6-04: a conjunction of two published results. A6-05: anticipated by work on encroachment from 2004 and 2018/19. | same |
+| Kills for prior art | A5-02: proved in print in 2021 under the conjecture's own name. A5-04: anticipated by a 2022 model of guessing (*Good Guesses*). A5-05: "textbook statistics". A4-05: already in Beckers 2026. A6-04: a conjunction of two published results. A6-05: anticipated by work on encroachment (2004, 2018/19). | same |
 | Essay plans (merged survivors) | 3. A4 = cards 04+02+03 with 01's case; A5 = 03 with 01 as a closing section; A6 = 01 with 02 as a section | same |
-| Formal checks before drafting | Exhaustive or random finite checks by the ideators (`cards/A4_models.py`, `A5_checks/`, `A6_checks/`), re-done by hand in the kill tests | same |
-| Drafts | 3 (A4 v1 5,763 words; A5 v1 5,399; A6 v1 5,472; strict count) | `tools/wordcount.py` |
-| Selection tournament | Not run. On 29 Oct 03:45 the orchestrator chose A5, A6 and A4, following the second system's 25 and 28 Oct recommendations. E3 was dropped after the second system withdrew it and showed that the referees' proposed fix kept the problematic premise. | log 29 Oct 03:45:15; `state/external/claude-review-20261028/README.md` |
+| Formal checks before drafting | Exhaustive or random finite checks by the ideators, re-done by hand in the kill tests | `cards/A4_models.py`, `A5_checks/`, `A6_checks/` |
+| Drafts (v1) | 3 (A4 5,763 words; A5 5,399; A6 5,472) | `tools/wordcount.py` |
+| Finalist candidates, 27 Oct | Provisional finalists A5 v2, A6 v2, E3 v4; reserves A4, E1 v3, E2 v4 (following the second system's 26 Oct review edition) | `state/STATUS.md` finishing plan |
+| E3 | Withdrawn: the second system's 28 Oct analysis found that the referees' proposed fix "retains an SDA-sensitive premise" and withdrew its recommendation; the orchestrator did not revise E3 further | log 28 Oct 03:40 (second system's entry), 29 Oct 03:45:15; `state/external/claude-review-20261028/README.md` |
+| Selection tournament | Not run. The orchestrator recommended A5, A6, A4 (29 Oct 03:45); the human selected them at Gate A2 (11:45). The second system's 29 Oct README still lists A4 as "a conditional reserve". | log; `human_inputs.md`; `state/external/submission-sourcechecked-20261029/README.md` |
+| Final essays | 3 | `final/A5`, `final/A6`, `final/A4` |
 
-The second system ran a separate funnel, recorded as "120 → 40 → 16 → 8", in
-`state/external/codex-expansion-20261022/ideation/`. An originality audit then demoted the eight
-(`state/external/eight-ideas-audit-20261022/README.md`). None of those ideas reached the finalists.
+The second system ran its own funnel ("120 → 40 → 16 → 8") in `state/external/codex-expansion-20261022/
+ideation/`; an originality audit demoted the eight (`state/external/eight-ideas-audit-20261022/README.md`).
+None of those ideas reached the final essays.
 
 ## 7. Testing, criticism and revision
 
 ### 7.1 Kill tests (the gauntlet as run)
 
-The planned gauntlet (separate triage, prior-art search, formal check and red team) was replaced by
-one red-team kill test per problem. The red team read the anchor papers in full; checked each card's
-formal claims by hand; searched for prior art; wrote a steelman, objections, replies and a verdict with
-a confidence; and recommended a calibrated thesis with its closest prior work and exact increment.
+The planned gauntlet (separate triage, prior-art search, formal check and red team) was replaced by one
+red-team kill test per problem. The red team read the anchor papers in full, checked each card's formal
+claims by hand, searched for prior art, wrote a steelman, objections, replies and a verdict with a
+confidence, and recommended a calibrated thesis with its closest prior work and exact increment
+(`state/ambitious/killtest/*.md`). Repairs that reached the final texts include the Doorbells switch
+model (A4), the corrected closure claim (A5), and the moderate-stakes weighing instance and required
+reading of Hong (A6).
 
-Examples of repairs that entered the drafts:
-- the "Doorbells" switch model and robustness under four default codings (A4);
-- the corrected claim that optimal states are closed (A5);
-- a moderate-stakes instance and a required reading of Hong (A6).
+### 7.2 Blind review rounds (this pipeline)
 
-### 7.2 Blind review rounds
+Referees saw only an anonymous packet. Scores run from 1 to 10 in the order clarity, argument,
+significance, originality, literature, accuracy, overall (`standards/REFEREE_RUBRIC.md`). Persona codes:
+S = specialist, "-lit" = with the literature-expert brief, G4 = advocate of the attacked view
+(`state/panel/personas.md`).
 
-Referees saw only an anonymous packet: the essay, the rubric and the main target source. Scores run
-from 1 to 10 in the order clarity, argument, significance, originality, literature, accuracy, overall
-(`standards/REFEREE_RUBRIC.md`). Persona codes come from `state/panel/personas.md`: S = specialist,
-"-lit" = with the literature-expert brief, G4 = advocate of the attacked view.
+| Essay and version | Packet / persona | Date | Cl | Arg | Sig | Orig | Lit | Acc | Overall | Recommendation |
+|---|---|---|---|---|---|---|---|---|---|---|
+| E1 v2 | P-cbf4 / S2 | 21 Oct | 7 | 5 | 4 | 5 | 4 | 6 | 5 | |
+| E2 v2 | P-8c16 / S1 | 21 Oct | 7 | 6 | 4 | 5 | 4 | 7 | 5 | |
+| E3 v2 | P-c865 / S5 | 21 Oct | 7 | 6 | 5 | 6 | 5 | 8 | 6 | |
+| Astra 01–05 (round 1) | P-2190, P-39c4, P-2188, P-9284, P-bb8a | 22 Oct | 6–7 | 5 | 4 | 4–5 | 3–4 | 6–7 | 5 each | |
+| Astra 04 v2 | P-a097 / S1-lit | 23 Oct | 7 | 6 | 5 | 5 | 4 | 7 | 5 | |
+| Astra 05 v2 | P-57bb / S3-lit | 23 Oct | 7 | 6 | 4 | 5 | 5 | 7 | 5 | |
+| Astra A6 v0.2 (separate thesis) | P-b4ea / S2 | 23 Oct | 5 | 4 | 2 | 3 | 3 | 6 | 3 | |
+| Astra A4 v0.1 (separate thesis) | P-3b36 / S7 | 23 Oct | 6 | 4 | 4 | 4 | 3 | 6 | 4 | |
+| E3 v4 (second system) | P-600a / S5-lit | 27 Oct | 6 | 4 | 4 | 5 | 5 | 6 | 5 | reject |
+| E3 v4 (second system) | P-600a / G4 | 27 Oct | 6 | 4 | 5 | 5 | 5 | 7 | 5 | reject |
+| **A5 v2** | P-7297 / S1-lit | 27 Oct | 6 | 6 | 5 | 6 | 4 | 6 | **6** | major revisions |
+| **A6 v2** | P-7f1b / S2-lit | 27 Oct | 6 | 5 | 4 | 4 | 6 | 7 | **5** | major revisions |
+| **A6 v2** | P-7f1b / G4 | 27 Oct | 6 | 6 | 5 | 6 | 6 | 7 | **6** | major revisions |
+| **A4 v5** | P-d300 / S7-lit | 29 Oct | 5 | 5 | 4 | 5 | 4 | 6 | **5** | reject (in present form; a reframed short paper "could be publishable") |
 
-| Essay and version | Packet / persona | Date | Cl | Arg | Sig | Orig | Lit | Acc | Overall |
-|---|---|---|---|---|---|---|---|---|---|
-| E1 v2 | P-cbf4 / S2 | 21 Oct | 7 | 5 | 4 | 5 | 4 | 6 | 5 |
-| E2 v2 | P-8c16 / S1 | 21 Oct | 7 | 6 | 4 | 5 | 4 | 7 | 5 |
-| E3 v2 | P-c865 / S5 | 21 Oct | 7 | 6 | 5 | 6 | 5 | 8 | 6 |
-| E3 v4 (second system) | P-600a / S5-lit | 27 Oct | 6 | 4 | 4 | 5 | 5 | 6 | 5 |
-| E3 v4 (second system) | P-600a / G4 | 27 Oct | 6 | 4 | 5 | 5 | 5 | 7 | 5 |
-| Astra 01–05 (first round) | P-2190, P-39c4, P-2188, P-9284, P-bb8a | 22 Oct | 6–7 | 5 | 4 | 4–5 | 3–4 | 6–7 | 5 each |
-| Astra 04 v2 | P-a097 / S1-lit | 23 Oct | 7 | 6 | 5 | 5 | 4 | 7 | 5 |
-| Astra 05 v2 | P-57bb / S3-lit | 23 Oct | 7 | 6 | 4 | 5 | 5 | 7 | 5 |
-| Astra A6 v0.2 (separate thesis) | P-b4ea / S2 | 23 Oct | 5 | 4 | 2 | 3 | 3 | 6 | 3 |
-| Astra A4 v0.1 (separate thesis) | P-3b36 / S7 | 23 Oct | 6 | 4 | 4 | 4 | 3 | 6 | 4 |
-| **A5 v2** | P-7297 / S1-lit | 27 Oct | 6 | 6 | 5 | 6 | 4 | 6 | **6** |
-| **A6 v2** | P-7f1b / S2-lit | 27 Oct | 6 | 5 | 4 | 4 | 6 | 7 | **5** |
-| **A6 v2** | P-7f1b / G4 | 27 Oct | 6 | 6 | 5 | 6 | 6 | 7 | **6** |
-| **A4 v5** | P-d300 / S7-lit | 29 Oct | 5 | 5 | 4 | 5 | 4 | 6 | **5** |
+Reports launched without a saved result: A4 v1 (P-93b0, 23 Oct 23:17) and the A5 v2 advocate (27 Oct;
+"not resumed (time)", log 29 Oct 03:45:15). Every saved report records "Prize: not finalist". Each final
+essay's line had one round of this pipeline's referees; no later version was re-scored by them, so no
+within-essay score trajectory exists for the final texts. The trajectories that do exist (E3 v2 → v4:
+6 → 5; Astra 04 and 05: 5 → 5) show no score improvement.
 
-Several reviews launched in the transcripts left no saved report:
-- A4 v1 (packet P-93b0, advocate and specialist, launched 23 Oct 23:17);
-- the A5 v2 advocate (launched 27 Oct 16:02; "not resumed (time)", log 29 Oct 03:45:15).
+### 7.3 Revisions by this pipeline
 
-Each finalist had one round of this pipeline's referees. No finalist's final version has been re-scored,
-so no within-essay score trajectory exists for A4, A5 or A6. The trajectories that do exist (E3 v2 → v4:
-6 → 5; Astra 04 and 05, round 1 → round 2: 5 → 5) show no improvement in score.
+- **A5 v4** (reviser, log 29 Oct 04:00): accepted the referee's most serious problem (refinement
+  dependence) and turned it into Theorem 4 plus a question-relative measure; accepted Majors 1–5; listed
+  what was not adopted (`state/drafts/A5/revision_notes_v4.md`). **A5 v5** (log 11:51): formal-audit
+  patches P1–P5, P8 and citation-audit patches 1–8 applied (`changelog_v5.md`). A v6 narrowing pass was
+  stopped as a duplicate of the second system's work (log 17:34:53).
+- **A6 v4** (reviser, launched 03:43, log 11:43:05; 5,883 words): rebuilt §5 around three developments
+  of the conditional repair, verifying G4's five-state counterexample and accepting G4's safety proof as
+  Proposition 4, adding Proposition 5; triaged every S2-lit and G4 point (`revision_notes_v4.md`).
+- **A4 v6** (reviser, launched 04:15, log 11:44:20; 5,521 words): reframed as a cross-definition dilemma
+  for anonymous Pareto filters, as the referee advised; two witness-profile theorems; a conformity lemma;
+  new checks `v6_checks/v6_verify.py` (`revision_notes_v6.md`).
+- **Editor.** The editor agent and its plans were not used; revisers worked from the reports.
 
-All 18 saved reports recommend major revisions or rejection, and every one records "Prize: not
-finalist". Several reports that recommend rejection add that a reframed, shorter paper could be
-publishable. The A4 v5 referee recommends "reject (in present form)". Its main objection is that
-uniformity "does all the work".
+### 7.4 The second system's review and source checks (29 Oct)
 
-### 7.3 Revisions
+- **Review** (`state/external/claude-review-20261029/ASSESSMENT-485bec4.md`, commit faa6381, 11:51 UTC),
+  of A5 v4, A6 v4 and A4 v6 at the Gate A2 snapshot. Verdicts: A5 "Retain; correct the refinement and
+  rational-permission claims"; A6 "Retain; add the closest comparison and tighten scope"; A4 "Improved
+  reserve; needs a substantive literature comparison and a corrected escape claim". It recomputed A5's
+  256 belief states and A6's five-state and four-state examples exactly, and reran A6's integration
+  script. Required fixes: for A5, refinement invariance as sufficient not necessary (with the n/(n+1)
+  family), the footnote-5 correction, a weaker existence bridge than Permission, the pending audit
+  patches; for A6, a direct comparison with *Deference Done Better*, rule-restricted conclusions, the
+  future policy, an explicit price condition, an accurate description of numerical coverage; for A4, the
+  frozen-mechanism claim restricted to the additive repair, a comparison with Wysocki's "Conjoined cases"
+  (2023), explicit conditions for the conformity application, and argument rather than stipulation for
+  the normative restriction. It states that it is "a model-conducted critical review".
+- ***Good Guesses*** (`state/audit/A5/good-guesses-comparison-20261029.md`, commit 9c39291, 12:16 UTC).
+  Using a July 2021 penultimate author draft, it found that the earlier model "produces exactly the two
+  belief sets displayed in A5's principal three-world example" with J = 125/64, and narrowed A5's claimed
+  increment. The draft is not in the repository; the published text has not been checked by either
+  system's recorded work.
+- ***Deference Done Better***: checked by the second system "for Value, Weak Value and Total Trust";
+  **BRN's** passage and note 18 for the 0.37/0.42 distinction; **Wysocki 2023** and the **2016 book on
+  actual causality** "support the narrowed causation comparison" (`state/external/submission-
+  sourcechecked-20261029/VERIFICATION.md`). Its book review gives page-level confirmations for each
+  Halpern 2016 pinpoint (`Halpern-Originality-Review.md`).
+- **Revisions** (commit 89bd70f, 17:02 UTC): A5 v7 (5,035 words), A6 v5 (5,739), A4 v7 (5,520), with
+  anonymous PDFs and short verification notes; the README lists the substantive changes and says "No
+  manuscript is represented as having independently certified novelty".
+- **Convergence** (log 17:34:53): the orchestrator adopted these three as bases, because they
+  incorporated this pipeline's latest drafts plus the review's fixes.
 
-- **A5 v4** (reviser, 29 Oct 04:00). It accepted the referee's most serious problem (refinement
-  dependence) and turned it into a new theorem. It accepted Majors 1–5 and most minor points, rejected
-  one suggestion with reasons, and listed what was not adopted (`state/drafts/A5/revision_notes_v4.md`).
-- **A6 v4** (reviser, 29 Oct 04:06). It adopted the two referees' alternative formulations of the
-  conditional repair and analysed all three (§5). No revision-notes file exists.
-- **A4.** The second system made v2–v5: proof repair, scope narrowing, a book-level originality
-  comparison, and a new additive theorem in v5. This pipeline's reviser then wrote v6 (launched 29 Oct
-  04:15, file 11:39) against P-d300. It took the referee's advice to reframe the essay as a dilemma
-  about switches across the three Halpern–Pearl definitions, and proved two witness-profile identities
-  and an exceptionless-conformity lemma. v6 has new reference verification
-  (`state/drafts/A4/v6_checks/new_refs_verification.md`) and checks (`v6_verify.py`). It has no
-  revision notes, and when this report was written the log had no completion entry.
-- **Editor.** The editor agent and its plans and changelogs were not used. Revisers worked directly
-  from the reports.
+### 7.5 Integrity phase
 
-### 7.4 Integrity phase (partial)
-
-- **A5 citation audit** (`state/audit/A5/citations.md`). It covered all 10 references: 6 verified by
-  tool and 4 confirmed by hand. All 13 quotations were exact, and 34 attributions were checked: 26
-  accurate, 5 accurate only on abstracts or summaries, 2 oversimplified, 1 inaccurate. It proposed 8
-  patches. The patches post-date v4 and had not been applied when this report was written. A fetch
-  request was filed for a cited panel paper whose full text was unavailable.
-- **A5 formal audit** (formalist, `state/audit/A5/formal.md`, COMPLETE 29 Oct 11:41). The auditor wrote
-  independent exact-arithmetic scripts and checked every proof by hand. Its bottom line: "All four
-  theorems are correct, and their proofs check by hand. Every number in the essay is reproduced
-  exactly." It found two errors in §6:
-  - footnote 5 does not show that one premise of Theorem 4 cannot be dropped;
-  - one sentence ("no non-Lockean score can ...") is false as stated.
-  It also recommended three precision fixes, and flagged one literature claim it could not verify, which
-  must be checked or deleted. It proposed eight exact patches (P1–P8, three of them required). None had
-  been applied when this report was written.
-- **A6 and A4.** No separate audit. A6 v4 has new check scripts (`state/drafts/A6/checks/v4_*.py`) and
-  a reference verification (`refs_v4_new.verification.md`). The second system verified A4 with finite
-  model checks and a book comparison (`state/external/submission-*/checks/`).
-- **Compliance** (word count, injection scan, anonymity). This must be run on the final files before
-  submission. The current strict counts are A4 v6 4,976, A5 v4 5,296 and A6 v4 5,790, all under 6,000.
+| | A5 | A6 | A4 |
+|---|---|---|---|
+| Citation audit | Of v4 (`citations.md`, 04:10): 10 refs, 13 quotations exact, 34 attributions (1 inaccurate, 2 oversimplified), 8 patches → v5. Delta audit of the final (`citations_final.md`, 17:40): 14 new or reworded attributions, 1 oversimplified; 3 patches applied verbatim. | Of v4 (`citations.md`, 17:34): 16 refs, 20 quotations exact, 38 attributions (26 accurate, 10 oversimplified, 1 inaccurate, 1 unverifiable: Hong 2026), 17 patches; applied to the v5 base, several adapted, two already fixed (`final/A6/changelog.md`). | Of v6 (`citations.md`, 17:34): 13 refs, 15 quotations exact, 43 attributions (2 inaccurate, 2 oversimplified, 5 unverifiable Halpern 2016 pinpoints), 8 patches applied; conditional patches H1–H5 skipped because the second system's book review confirms the pinpoints (`final/A4/changelog.md`). |
+| Formal audit | Of v4 (`formal.md`, 11:41): "All four theorems are correct"; two §6 errors and an unverified literature claim, fixed in v5 and confirmed superseded in the final (`compliance.md` §7). | Partial (`formal.md`, "PARTIAL, in progress"): proofs read by hand, source matches, two open issues (both resolved in the v5 base); no patch list. | Of v6 (`formal.md`, log 17:44:03), with an independent implementation of the three definitions and SMT checks: theorems, Corollary and Lemma verified; "two of them total orders" FALSE; three side remarks inaccurate; §7 computations UNVERIFIED. Completed after the final patch pass; its patches P1–P7 had not been applied to `final/A4/essay.md` when this report was written. |
+| Compliance | `compliance.md` (17:43): PASS (word count, no hard injection flags, anonymity, structure, scholarship, human-input record, formal audit); PDF built. | Not run by the compliance agent; the patch agent recorded the word count and "no hard flags". | Same as A6. |
 
 ## 8. Tools and access
 
-- **Web search and fetch.** Claude Code WebSearch and WebFetch were allowed (`.claude/settings.json`).
-  Exceptions were the three first drafts (agents told "no web", log 21 Oct 19:48:32) and the human's
-  brief ban, which was lifted at 21:29. Sites that blocked automated access included the PhilPapers
-  survey site (403), OpenAlex (429 rate limits) and a Springer cookie redirect (log 21 Oct 18:39,
-  19:25).
-- **Registries.** `tools/verify_refs.py` checks references against Crossref and OpenAlex. Every
-  bibliography has a verification file (for example `state/ambitious/refs.verification.json`: 95
-  verified, 4 not found and checked by hand).
-- **Code execution and solvers.** Python with exact rationals and sympy, exhaustive enumeration of small
-  models, and z3 (in the E-series checks). Examples:
-  - A6: every statist structure up to 5 states, and over 100,000 random decision problems
-    (`cards/A6.md`).
-  - A5: all 2^16 belief states in the four-world case (`state/audit/A5/formal.md`).
-  - A4: all 355 category preorders (the second system, `submission-revisions-20261028/Review-Guide.md`).
-- **Packets and logs.** `tools/packets.py` (blind packets), `tools/log.py`, `tools/human_tasks.py`
-  (103 fetch requests in `requests/fetch/`), `tools/wordcount.py`, `tools/check_injection.py`,
-  `tools/build_pdf.py` (reading copies in `final/reading-20261029/`).
+- **Web search and fetch.** Claude Code WebSearch and WebFetch were allowed (`.claude/settings.json`),
+  except for the three first drafts ("no web", log 21 Oct 19:48:32) and the human's brief ban, lifted at
+  21:29. Sites that blocked automated access included the PhilPapers survey site (403), OpenAlex (429),
+  Wiley (403, for Hong 2026 and *Good Guesses*), PhilArchive (403), MIT Press Direct (403, Halpern 2016)
+  and a Springer bot check (`state/audit/*/citations*.md`; log 21 Oct 18:39, 19:25).
+- **Registries.** `tools/verify_refs.py` checks Crossref and OpenAlex; every bibliography has a
+  verification record, and the final audits re-ran it (e.g. A4: 11 VERIFIED, 2 NOT_FOUND because of rate
+  limits and checked by hand, 1 year-only mismatch).
+- **Code execution and solvers.** Python with exact rationals and sympy; exhaustive enumeration of small
+  models; z3. Examples: A5, all 2^16 belief states in the four-world case and all 40,320 orders
+  (`state/audit/A5/formal.md`); A6, finite structures and Gaussian integrals (`state/drafts/A6/checks/`,
+  `state/audit/A6/formal/`); A4, an independent implementation of the three Halpern–Pearl definitions,
+  all 355 preorders, 312 three-variable models and SMT checks over all anonymous Pareto filters and all
+  real additive scores (`state/audit/A4/formal/`).
+- **Packets, logs and checks.** `tools/packets.py`, `tools/log.py`, `tools/human_tasks.py` (fetch requests
+  in `requests/fetch/`), `tools/wordcount.py`, `tools/check_injection.py`, `tools/build_pdf.py`.
 - **GitHub.** The orchestrator posted referee feedback for the second system as a GitHub issue (log
-  22 Oct 09:54:50).
-- **Fetched sources.**
-  - 63 agent-downloaded texts were copied to `state/sources_cache/` (log 21 Oct 21:29:51).
-  - Anchor papers are in `state/ambitious/sources/`.
-  - Human-supplied texts are in `inbox/sources/` (Section 4.3); one more was fetched by the orchestrator
-    from arXiv and one was added by the second system.
-- **Memory disabled** (`methodology/hygiene.md`):
-  - project setting `autoMemoryEnabled: false`;
-  - memory and conversation-search connector tools denied;
-  - no user-level `CLAUDE.md` or rules;
-  - no memory or past-conversation content found in the orchestrator's context; the only user-specific
-    item was automatically attached account metadata, ignored;
-  - mail, drive, calendar and document connectors, and synced personal skills, were present but never
-    called and were not available to subagents.
-
-  The second system's working environment is described only in its own disclosure (Section 4.4).
+  22 Oct 09:54:50). The second system's commits reached this pipeline through the shared branch.
+- **Fetched sources.** Agent-downloaded texts in `state/sources_cache/` and `state/ambitious/sources/`;
+  human-supplied texts in `inbox/sources/` (read-only for agents). The final audits retrieved open-access
+  copies of several sources (arXiv preprints, author manuscripts, a working paper), recorded in each audit.
+  Open fetch requests relevant to the final essays: the published *Good Guesses*, Hong 2026
+  (`amb-a6-hong-2025-2026`) and the Halpern 2016 pinpoints (`a4-audit-halpern-2016-pinpoints`).
+- **Memory disabled** (`methodology/hygiene.md`): project setting `autoMemoryEnabled: false`; memory and
+  conversation-search connector tools denied; no user-level `CLAUDE.md` or rules; no memory or
+  past-conversation content found in the orchestrator's context (the only user-specific item was
+  automatically attached account metadata, ignored); mail, drive, calendar and document connectors and
+  synced personal skills were present but never called and not available to subagents. The second
+  system's environment is described only in its own disclosure (4.4).
 
 ## 9. Cost and time
 
-- **Tokens and cost, this pipeline** (`python3 tools/usage_report.py`, run 29 Oct). There are 61
-  transcript files, from 21 Oct 18:25 to 29 Oct 11:32. They record 2,795 Opus 5.5 requests (2,517 by
-  subagents). Tokens: 5,672 input, 5,026,931 output, 559,475,865 cache-read, 32,802,763 cache-write.
-  - Estimated total: **$387.71 at list prices**.
-  - Since the budget cut (21 Oct 19:48): $325.16. Since 22 Oct: $280.54. Since 27 Oct: $78.61.
-
-  These are list-price estimates from the transcripts, not bills. After the first evening the operator
-  ran the work on a subscription plan with usage limits. The log records usage-limit interruptions on
-  22 and 23 Oct. Each figure above is therefore an estimate of equivalent API cost, not money spent.
-- **Second system.** Its own records say: "Exact cumulative machine time, human time, tokens and
-  financial expenditure across the project could not be established"
+- **Tokens and cost, this pipeline** (`python3 tools/usage_report.py`, run 29 Oct during this report):
+  73 transcript files from 21 Oct 18:25 to 29 Oct 17:45; 3,181 Opus 5.5 requests (2,853 by subagents);
+  tokens 6,466 input, 5,795,543 output, 624,026,974 cache-read, 35,853,470 cache-write. Estimated total
+  **$433.20 at list prices**. With `--since`: from the budget cut (21 Oct 19:48) $370.49; from 22 Oct
+  $325.87; from 27 Oct $123.94; from Gate A2 (29 Oct 11:43) $36.62. These are list-price estimates from
+  transcripts, not bills: after the first evening the operator ran the work on a subscription plan with
+  usage limits (interruptions logged 22 and 23 Oct). `methodology/usage.md` does not exist; these figures
+  come from the tool directly.
+- **Second system.** Its own records: "Exact cumulative machine time, human time, tokens and financial
+  expenditure across the project could not be established"
   (`state/external/submission-revisions-20261028/methodology/A5-Methodology.md`).
-- **Machine time, this pipeline.** The transcripts show activity in 60 ten-minute intervals, about 10
-  hours of wall-clock activity, spread over 21, 22, 23, 27 and 29 Oct (up to six agents ran in
-  parallel). The calendar span is 21 Oct 18:25 to 29 Oct 11:32.
-- **Human time (approximate).** This pipeline received 22 messages, plus one message to the second
-  system that it recorded (Section 4.2). Most are a sentence or two. Together with four source uploads
-  or links, direct interaction with this pipeline probably took under two hours. That figure is an
-  estimate from timestamps and message lengths, not a measurement. Time spent operating the second
-  system and reading drafts is not recorded.
+- **Machine time, this pipeline.** The transcripts show activity in 64 ten-minute intervals (about 11
+  hours), on 21 Oct (21 intervals), 22 Oct (16), 23 Oct (13), 27 Oct (4) and 29 Oct (10); up to six
+  agents ran in parallel. Calendar span: 21 Oct 18:25 to 29 Oct 17:45.
+- **Human time (approximate).** 25 recorded entries: 24 messages to this pipeline (most a sentence or
+  two, one relayed note) and one message to the second system. Together with four uploads or links and
+  one gate answer, direct interaction with this pipeline probably took under two hours. This is an
+  estimate from timestamps and message lengths, not a measurement. Time spent operating the second system
+  and reading drafts is not recorded.
 
 ## 10. Provenance
 
 The full ledger is in Appendix E (`methodology/provenance.md`). In summary:
 
 **All three essays.** The problem came from the field-surveyor's dossier and the orchestrator's
-selection. The core thesis came from an ideator's attack card, filtered and repaired by a red-team
-kill test. The first draft was written by a drafting agent. None of the contributions traces to a
-human message.
+selection. The core thesis came from an ideator's attack card, filtered and repaired by a red-team kill
+test, and the first draft from a drafting agent. Both AI systems then revised; this pipeline's blind
+referees supplied the most consequential later changes to A5 and A4 and two of A6's three conditional
+rules; the second system's 29 Oct review and source checks narrowed all three; this pipeline's audits
+corrected scholarship. None of the contributions traces to a human message.
 
-**A5** (final: `state/drafts/A5/v4.md`).
-- Card A5-03 (ideator, 23 Oct) supplied the target, the thesis that the 2019 separability-free
-  derivation fails, and the "record" counterexample.
-- The kill test corrected a closure claim.
-- The second system (v2, v3) corrected consistency and tie claims, removed a secondary theorem, added a
-  representation-dependence objection, and added a result on raising the premium. v4 cut that result to
-  two sentences.
-- A blind referee (P-7297 S1-lit) identified dependence on how possibilities are refined. The reviser
-  turned this into the essay's new Theorem 4 (refinement invariance forces fixed thresholds) and a
-  question-relative score. The literature comparisons and the order and scope replies also came from
-  that report.
+**A5** (final base: second system's v7; this pipeline's v1, v4, v5 in its ancestry).
+- Card A5-03 (ideator): the target (Dorst's Proposition 5), the "does not follow" thesis and the
+  record-premium counterexample. The kill test corrected a closure claim.
+- Second system (v2–v3): consistency and tie corrections; removal of a secondary theorem.
+- Referee P-7297 S1-lit: refinement dependence → reviser's Theorem 4 and question-relative measure;
+  literature comparisons, order and scope replies.
+- This pipeline's formal and citation audits: corrected footnote 5, a false sentence, quantifiers and
+  attributions (v5).
+- Second system (v7): the "two readings" thesis, Non-vacuity, refinement invariance as a sufficient route
+  with the n/(n+1) family, and the concession that *Good Guesses* already reproduces the example's belief
+  sets, which narrows the increment. Final patches 1–3: wording and a note on section numbering.
 
-**A6** (final: `state/drafts/A6/v4.md`).
-- Card A6-01 supplied the exact boundary for Good's theorem (gappedness) and the graded collapse. Card
-  A6-02 supplied the repeated-weighing case and the conditional repair.
-- The kill test merged the two cards, demanded a moderate-stakes instance and a comparison with Hong,
-  and supplied objections.
-- The second system (v2, v3) corrected quantifiers, incorporated Hong's full text, and strengthened the
-  conditional-rule counterexample. It added a continuous-model argument and later removed a continuous
-  extension it judged unsupported.
-- Two blind referees (P-7f1b, S2-lit and G4) proposed alternative formulations of the conditional
-  repair. The reviser's three-way analysis and Propositions 4–5 in v4 build on them.
+**A6** (final base: second system's v5).
+- Cards A6-01 and A6-02: the gappedness boundary, the graded collapse, the weighing case and the
+  conditional repair. Kill test: merger, moderate-stakes instance, comparison with Hong.
+- Second system (v2–v3): quantifiers, Hong, strengthened counterexample.
+- Referees P-7f1b: S2-lit's verdict-change rule and the concession that the qualitative principle is
+  silent; G4's answer-by-answer rule, its safety proof (Proposition 4) and the five-state counterexample.
+  The reviser added Proposition 5.
+- Second system (v5): the *Deference Done Better* comparison, the 42%/37% distinction, explicit future
+  policy and price condition. Final patches P1–P14d: attributions and pinpoints.
 
-**A4** (final: `state/drafts/A4/v6.md`).
-- Cards A4-01 to A4-04 supplied the setting (normality as a filter on witnesses), the switch versus
-  preemption contrast, the licence calibration and the frozen-witness lemma. A4-05 was killed.
-- The kill test supplied the Doorbells model and the coding-robustness requirement. v1 was written by
-  the drafter.
-- The second system then made v2–v5: lemma repair, scope narrowing, crediting a 2016 book, and an
-  additive-score obstruction in v5.
-- The hostile referee (P-d300 S7-lit) found that uniformity did all the work. It recommended a reframed
-  paper on "a cross-definition switching dilemma" and pointed to the both-blocked switch case.
-- The reviser's v6 is built on that advice. It states the thesis that no anonymous, Pareto-respecting
-  normality filter separates switches from preemption under any of the three definitions, and gives two
-  witness-profile theorems, a pricing of mechanism-specific escapes, and a conformity lemma. v6
-  subsumes the second system's additive theorem.
+**A4** (final base: second system's v7).
+- Cards A4-01–04: setting, switch–preemption contrast, calibration, frozen-witness lemma. Kill test:
+  Doorbells model and coding robustness.
+- Second system (v2–v5): lemma repair, scope narrowing, book-level comparison, additive obstruction.
+- Referee P-d300 S7-lit: the cross-definition switching dilemma and the both-blocked case → reviser's v6
+  theorems, Corollary and conformity application.
+- Second system (v7): Wysocki comparison, escape claims restricted to the additive repair, fixed-context
+  conditions. Final patches 1–8: attributions, a quotation splice, pinpoints.
 
 ## 11. Limitations
 
-1. **Planned controls not run.** The run abandoned most of the designed funnel: broad ideation,
-   evolution rounds, the full gauntlet, draft tournaments, multi-round review with plateau stopping,
-   and the editor. Selection among finalists was a judgment by the orchestrator, informed by the second
-   system's recommendations. It was not a tournament.
-2. **Weak external validation.** Each finalist had one blind round from this pipeline, with overall
-   scores of 5 or 6 out of 10. The final versions were not re-reviewed. AI referees in subfield
-   personas are not philosophers, and their scores are not calibrated against human judgment.
-3. **Mixed authorship.** Two AI systems from different providers revised the essays. The second
-   system's transcripts are not in the repository. Its contributions are traced from its committed
-   files, its commit messages and its own provenance notes, which acknowledge incomplete model-version,
-   cost and time records.
+1. **Planned controls not run.** Most of the designed funnel was abandoned: broad ideation, evolution
+   rounds, the full gauntlet, draft tournaments, multi-round review with plateau stopping, and the
+   editor. Selection was the orchestrator's recommendation, confirmed by the human; not a tournament.
+2. **Weak external validation.** Each final essay's line had one blind round from this pipeline (overall
+   5 or 6 out of 10, all "not finalist"). The final texts were not re-reviewed by this pipeline's
+   referees. The second system's 29 Oct review is model-conducted and calls itself so. Neither system's
+   referees are calibrated against human judgment.
+3. **Mixed authorship.** Two AI systems from different providers wrote and revised the essays, and the
+   final bases are the second system's. Its transcripts are not in the repository; its contributions are
+   traced from its files, commits and own notes, which acknowledge incomplete model-version, cost and
+   time records.
 4. **Context exposure.** The second system disclosed a possible exposure of its session to personal
    context. A later limited audit found no human philosophical contribution but "does not certify the
-   contents of all earlier sessions". This report cannot certify more than that. This pipeline's own
-   session was checked at the start and found clean (`methodology/hygiene.md`).
-5. **Originality.** Prior-art searches can find predecessors but cannot prove novelty. Several anchor
-   and comparison texts were read only as abstracts, summaries or preprints (for example, the A5 audit's
-   five "accurate only on abstract or summary" attributions). Fetch requests for some remain open.
+   contents of all earlier sessions"; this report cannot certify more. This pipeline's own session was
+   checked at the start and found clean (`methodology/hygiene.md`).
+5. **Originality and unverified sources.** Prior-art searches cannot prove novelty. Not verified by this
+   pipeline: the published text of *Good Guesses* (only the second system's reading of a 2021 draft not
+   in the repository, and the authors' public summary); Hong 2026, never read by this pipeline (A6's
+   description rests on the second system's reading of §§1–3); the content of Wysocki 2023 and of
+   *Deference Done Better* (second system only; this pipeline checked metadata); the Halpern 2016
+   pinpoints (the second system's record only). BRN locators were checked against an accepted
+   manuscript. Several attributions in the audits rest on abstracts.
 6. **Open defects at the time of writing.**
-   - A5: the citation audit's 8 patches and the formal audit's 8 patches (two §6 errors, one unverified
-     literature claim) are unapplied.
-   - A6: no audit.
-   - A4: v6 was written hours before this report, is not reviewed or audited, and is not yet recorded in
-     the log.
+   - A4: the formal audit's required patch P1 ("two of them total orders" is false; "total preorders"),
+     and recommended P2, P3, P5, P7, were not applied to `final/A4/essay.md`; §7's regularity-theory
+     computations are author-computed only; three uncredited overlaps with the 2016 book were flagged
+     but not added (`final/A4/changelog.md`).
+   - A6: formal audit partial; material added in v5 (the *Deference Done Better* paragraph, the
+     computation counts 64,004 and 3,306) is outside the v4 audit; `refs_v4.json` still needs a note on
+     the 1989 working paper.
+   - A6 and A4: no compliance-officer run and no PDF in `final/` at the time of writing.
+   - A5: an optional footnote-2 wording advisory; the *Good Guesses* fetch is open.
 7. **Cost figures** are list-price estimates; billing ran on a subscription.
-8. **Transcripts** have not been exported to `methodology/transcripts/`. They can be exported with
-   `tools/export_transcripts.py`.
+8. **Transcripts** have not been exported to `methodology/transcripts/`; `tools/export_transcripts.py`
+   can export them with identity strings redacted.
 
 ## 12. Appendices
 
 - **Appendix A.** The sixteen agent prompts (`.claude/agents/*.md`), full text.
 - **Appendix B.** The orchestrator skill: `SKILL.md` and `PHASES.md`, full text.
-- **Appendix C.** `CLAUDE.md` as it now stands, and the original §1.2 it replaced.
+- **Appendix C.** `CLAUDE.md` as it now stands (the version the human confirmed on 29 Oct), and the
+  original §1.2 it replaced.
 - **Appendix D.** The standards files (`standards/*.md`), full text.
 - **Appendix E.** The provenance ledger (`methodology/provenance.md`).
 - **Appendix F.** Pointers to transcripts and records.
 
-The inline task prompts that the orchestrator gave general-purpose drafting and revision agents are
-not reproduced here; they are in the session transcripts (Appendix F). One proper name in Appendix A (a
-panel member's, in a citation) is replaced by a bracketed note; otherwise the appendices are verbatim. Some appendix files name the
-scaffold. They are reproduced verbatim as records of the method; they are not addressed to the reader.
+The inline task prompts that the orchestrator gave general-purpose drafting, revision and patch agents
+are not reproduced; they are in the session transcripts (Appendix F). One proper name in Appendix A (a
+panel member's, in a citation) is replaced by a bracketed note; otherwise the appendices are verbatim.
+Some appendix files name the scaffold. They are reproduced verbatim as records of the method; they are
+not addressed to the reader. None of these files changed after 29 Oct 11:43 (git history).
 
 ---
 
@@ -2334,190 +2336,196 @@ A two-paragraph roadmap at most.
 Verbatim copy of `methodology/provenance.md`.
 
 ~~~~markdown
-# Provenance ledger — finalist essays A4, A5, A6
+# Provenance ledger — final essays A5, A6, A4
 
 Compiled 29 October 2026 by the methodologist agent (Claude Opus 5.5) from the repository's files and
-git history. Every entry names the file where a contribution first appears and the agent or system that
-wrote it. Times are UTC. Times for commits by the second AI system are converted from the commits'
--05:00 offsets. "Log" means `methodology/log.md`; "card" means a file in `state/ambitious/cards/`; "kill
-test" means a file in `state/ambitious/killtest/`. Authors of works that the essays engage are not named
-here when they sit on the judging panel; the target works are described instead.
+git history; this version replaces the 11:42 draft and describes the texts in `final/A5/essay.md`,
+`final/A6/essay.md` and `final/A4/essay.md`. Every entry names the file where a contribution first
+appears and the agent or system that wrote it. Times are UTC. Times of commits by the second AI system
+are converted from their -05:00 offsets. "Log" means `methodology/log.md`; "card" means a file in
+`state/ambitious/cards/`; "kill test" means a file in `state/ambitious/killtest/`. Authors of engaged
+works who sit on the panel are not named here; their works are described or named by title.
 
-## 0. Systems and agents that appear in this ledger
+## 0. Systems and agents in this ledger
 
 | Label | What it is | Evidence |
 |---|---|---|
-| Orchestrator | The Claude Code session (Claude Opus 5.5, `claude-opus-5-5`) that ran the scaffold's skill | `methodology/run_config.md`; transcripts (model field) |
-| field-surveyor | Subagent (Opus 5.5) that wrote the calibration brief and the hard-problems dossier | transcript launch records 21 Oct 18:27, 22 Oct 10:05 |
-| ideator | Subagent (Opus 5.5) that wrote attack cards | launches 22 Oct 17:35 (A4, A5, A6) |
-| red-team | Subagent (Opus 5.5) that ran the full-text kill tests | launches 23 Oct 17:17 (A5), 17:23 (A4, A6) |
-| drafter / reviser | General-purpose subagents (Opus 5.5) given inline drafting or revision tasks | launches 23 Oct 22:47–22:51 (drafts), 29 Oct 03:43 and 04:15 (revisions) |
+| Orchestrator | The Claude Code session (Claude Opus 5.5, `claude-opus-5-5`) running the scaffold's skill | `methodology/run_config.md`; transcripts |
+| field-surveyor | Subagent (Opus 5.5): calibration brief, hard-problems dossier | transcript launches 21 Oct 18:27, 22 Oct 10:05 |
+| ideator | Subagent (Opus 5.5): attack cards | launches 22 Oct 17:35 |
+| red-team | Subagent (Opus 5.5): full-text kill tests | launches 23 Oct 17:17 (A5), 17:23 (A4, A6) |
+| drafter / reviser | General-purpose subagents (Opus 5.5) with inline drafting, revision or patch tasks | drafting launches 23 Oct 22:47–22:51; revisions launched 29 Oct 03:43 (A5, A6) and 04:15 (A4); patch passes later on 29 Oct (log 11:51, 17:40–17:43) |
 | referee | Blind referee subagent (Opus 5.5) that sees only a packet in `state/blind/P-xxxx/` | `state/blind/keys/*.json`; reports in `state/blind/*/reports/` |
-| citation-auditor, formalist | Audit subagents (Opus 5.5) | launches 29 Oct 04:00 |
-| Second AI system | An OpenAI Codex assistant that the human operator calls "Astra". It committed to this branch and to `codex/five-philosophy-essays` and wrote `state/external/` and `relay/outbox/`. Its model version is not recorded in its files (`state/external/review-edition-20261025/METHODOLOGY.md`). | git log; READMEs in `state/external/*/` |
+| citation-auditor, formalist, compliance-officer | Audit subagents (Opus 5.5) | `state/audit/*/` |
+| Second AI system | An OpenAI Codex assistant that the human operator calls "Astra". It committed to the shared branch and wrote `state/external/`, `relay/outbox/codex-*.md` and `state/audit/A5/good-guesses-comparison-20261029.md`. Its model version is not recorded in its files. | git log; READMEs in `state/external/*/`; `state/external/review-edition-20261025/METHODOLOGY.md` |
 
 ## 1. Shared origin of all three essays (ambitious track)
 
 | Step | What | Agent / system | File | Time |
 |---|---|---|---|---|
-| 1 | Human asks how to improve the process; the orchestrator proposes an anchor-paper funnel aimed at hard problems; the human approves and asks for "the most ambitious projects" and "the hardest problems". No topic, problem, thesis or argument is named by the human. | Human (method); orchestrator | `methodology/human_inputs.md` 22 Oct 10:01:37, 10:05:39; log 10:05:39 | 22 Oct 10:05 |
-| 2 | Hard-problems dossier: 30 open problems in seven areas, top-10 shortlist ranked by ambition times tractability. The belief–credence bridge is #8, value of evidence and dogmatism #13, actual causation #26. | field-surveyor | `state/ambitious/problems.md` | 22 Oct 17:33 (log) |
-| 3 | Selection of six problems (A1–A6) from different blocks; A4 actual causation, A5 belief–credence bridge, A6 value of evidence and dogmatism; anchor papers named | Orchestrator | `state/ambitious/selection.md` | 22 Oct 17:35 (log) |
-| 4 | Attack cards for A4, A5 and A6 (five each), written after the ideators read the anchors in full | ideator (three instances) | `cards/A4.md` (file 23 Oct 17:22), `cards/A5.md` (23 Oct 02:07), `cards/A6.md` (23 Oct 17:23) | log 23 Oct 17:18–17:23 |
-| 5 | Kill tests: card-by-card verdicts (KILL / REPAIR), closest prior work, recommended essay and calibrated thesis | red-team (three instances) | `killtest/A6.md` (22:47), `killtest/A5.md` (22:49), `killtest/A4.md` (22:50) | 23 Oct |
-| 6 | First drafts (v1) | drafter (general-purpose, Opus) | `state/drafts/A4/v1.md` (23:16), `A5/v1.md` (23:17), `A6/v1.md` (23:17) | 23 Oct |
+| 1 | The human asks how to improve the process; the orchestrator proposes an anchor-paper funnel aimed at hard problems; the human approves and asks for "the most ambitious projects" and "the hardest problems". The human names no topic, problem, thesis or argument. | Human (method); orchestrator | `methodology/human_inputs.md` 22 Oct 10:01:37, 10:05:39; log 10:05:39 | 22 Oct 10:05 |
+| 2 | Hard-problems dossier: 30 open problems in seven areas, top-10 shortlist (belief–credence bridge #8, value of evidence and dogmatism #13, actual causation #26) | field-surveyor | `state/ambitious/problems.md` | log 22 Oct 17:33 |
+| 3 | Six problems selected (A1–A6) from different areas; anchor papers named | Orchestrator | `state/ambitious/selection.md` | log 22 Oct 17:35 |
+| 4 | Five attack cards each for A4, A5, A6, written after reading the anchors in full | ideator (three instances) | `cards/A4.md` (file 23 Oct 17:22), `cards/A5.md` (23 Oct 02:07), `cards/A6.md` (23 Oct 17:23) | 23 Oct |
+| 5 | Kill tests: KILL/REPAIR verdict per card, closest prior work, recommended essay and calibrated thesis | red-team (three instances) | `killtest/A6.md` (22:47), `killtest/A5.md` (22:49), `killtest/A4.md` (22:50) | 23 Oct |
+| 6 | First drafts (v1) | drafter | `state/drafts/A4/v1.md` (23:16), `A5/v1.md` (23:17), `A6/v1.md` (23:17) | 23 Oct |
+| 7 | Gate A2: the orchestrator recommended A5, A6, A4 (log 29 Oct 03:45:15); the human selected "A5, A6, A4 (Recommended)" | Orchestrator; human (selection among finished AI texts) | `human_inputs.md` 29 Oct 11:45:15; log 11:45:15 | 29 Oct |
+| 8 | Convergence on the second system's source-checked versions as bases; this pipeline's audits applied on top | Orchestrator (decision); second system (bases); patch agents | log 29 Oct 17:34:53, 17:36:33 | 29 Oct |
 
-The A1–A3 problems were never carded: their anchor papers were requested (`requests/fetch/amb-*`) but
-not supplied before the finishing phase.
+## 2. A5 — "Holistic Accuracy and the Limits of Lockean Derivation"
 
-## 2. A5 — "Holistic Accuracy, Refinement, and the Lockean Thesis"
+Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Version chain:
 
-Final text: `state/drafts/A5/v4.md` (5,296 words, strict count by `tools/wordcount.py`; file time 29 Oct
-03:59). Version chain: v1 (drafter, 23 Oct 23:17) → v2 (second AI system, commit 8d2a333, 25 Oct 07:01,
-`state/external/review-edition-20261025/essays/01-holistic-accuracy-A5-v2.md`) → v3 (second AI system,
-commit b086236, 28 Oct 13:34, `state/external/submission-additive-20261029/essays/01-Holistic-Accuracy-v3.md`)
-→ v4 (reviser, 29 Oct 04:00, log).
-
-| # | Contribution in the final text | First appearance (agent, file, time) | Later changes and their source |
+| Version | Author | File | Time |
 |---|---|---|---|
-| 5.1 | Target: a 2019 argument (Dorst, Proposition 5) that expected-accuracy maximisation yields Lockean thresholds without Separability | Card A5-03 (ideator, `cards/A5.md`, 23 Oct 02:07) | Kill test: REPAIR, "close to PROCEED"; recommended as the essay (red-team, `killtest/A5.md` §7, 23 Oct 22:49) |
-| 5.2 | Thesis: Proposition 5 does not follow from its premises | Card A5-03; kill-test "calibrated thesis" | v4 narrows and extends it: the premise needed is refinement invariance (see 5.6) |
-| 5.3 | Counterexample: a truth-directed score with a premium for an error-free belief state (the "record" measure) satisfies the premises and makes belief non-monotone in credence (Theorem 1) | Card A5-03 ("a premium on a flawless record") | Kill test verified the counterexample by hand and corrected the card's claim that optima are always deductively closed (4-cell counterexample). v1 states it for every positive premium. v2 (second system) corrected consistency and tie claims. v4 adds runner-ups and margins (referee S1-lit, minor). Formal audit (formalist, `state/audit/A5/formal.md`, complete 29 Oct 11:41): the case's numbers are reproduced exactly; Theorem 1 is verified for uniform values, and the abstract's quantifier over values is judged overbroad (patch P5). |
-| 5.4 | Diagnosis: the derivation's key step holds exactly when accuracy is separable on the domain (Theorem 2, Corollary) | Kill test §7 ("its key step assumes ... near-Separability"); v1 abstract | v2 (second system): distinguished a sufficient repair (ME+BI) from a necessary condition. v4: deleted two false sentences and added the Corollary and dilemma (referee S1-lit, Major 2). The formal audit verified Theorem 2 and its corollary. |
-| 5.5 | What holism delivers: under the record measure one believes the probable consequences of a "core" hypothesis (Theorem 3); link to Holguín's non-monotonicity | v1 (drafter), developing the card's "closed, non-monotone belief" | v3 (second system) added a proved account of increasing the premium. v4 cut it to two sentences (word budget, `revision_notes_v4.md`). The "horse race" paragraph was cut on referee S1-lit Major 3. |
-| 5.6 | Refinement invariance: given truth-directedness and conservative increments it forces fixed thresholds (Theorem 4, "Localization"); its converse; minimality witnesses | **Referee suggestion.** Referee S1-lit on packet P-7297 (27 Oct 16:25) named the most serious problem: the record measure's verdicts change when an irrelevant possibility is split. It offered routes (a) and (b). | Reviser v4 (29 Oct 04:00) took route (b) "as a theorem" and also route (a); the theorem statement, proof and minimality claims are the reviser's (`revision_notes_v4.md`; checks `checks/c8_refinement.py`, `c9_localization.py`). The formal audit (complete, 29 Oct 11:41) finds all four theorems correct. It finds two errors in §6: the footnote-5 witness does not support its claim (patch P1 supplies a different witness), and the sentence "no non-Lockean score can ..." is false as stated (P2). Neither patch is applied yet. |
-| 5.7 | A normalised, question-relative record score that satisfies restricted refinement invariance | Reviser v4, responding to referee S1-lit route (a); motivated by the target's taking "a set of propositions" as input | — |
-| 5.8 | Reply: order and Sequence-Irrelevance (greedy example: −0.8 first, +0.1 last) | **Referee suggestion** (S1-lit, Major 5) → v4 | The formal audit verified the order example over all 40,320 orders |
-| 5.9 | Reply: scope and accommodation (fixed context) | **Referee suggestion** (S1-lit, Major 4) → v4 | — |
-| 5.10 | Reply: representation dependence | v2 (second system) added the objection | v4 turned it into Theorem 4 (5.6) |
-| 5.11 | Comparisons with a 2022 paper on guessing, Levi 1967 and Leitgeb 2014/2017 | **Referee suggestion** (S1-lit, Major 1) → v4 | Citation audit (`state/audit/A5/citations.md`, 29 Oct 04:10): 13 quotations exact; 8 patches proposed (one inaccurate attribution, two oversimplified, two imprecise page references, one scare-quoted term from an unretrieved source). The patches post-date v4 and are not yet applied. |
-| 5.12 | Dropped: the split-invariance impossibility theorem (card A5-01, repaired in the kill test, in v1 as the closing section) | Card A5-01 (ideator) | Removed by the second system in v2; absent from v4 |
+| v1 | drafter | `state/drafts/A5/v1.md` | 23 Oct 23:17 |
+| v2 | second system | `state/external/review-edition-20261025/essays/01-holistic-accuracy-A5-v2.md` (commit 8d2a333) | 25 Oct 07:01 |
+| v3 | second system | `state/external/submission-additive-20261029/essays/01-Holistic-Accuracy-v3.md` (b086236) | 28 Oct 13:34 |
+| v4 | reviser, against referee report P-7297 S1-lit | `state/drafts/A5/v4.md`; notes `revision_notes_v4.md` | log 29 Oct 04:00 |
+| v5 | patch agent: formal-audit P1–P5, P8 and citation-audit patches 1–8 applied | `state/drafts/A5/v5.md`; `changelog_v5.md` | log 29 Oct 11:51 |
+| v6 | a narrowing pass launched 11:52 and stopped as a duplicate; the file is byte-identical to v5 | `state/drafts/A5/v6.md` | log 17:34:53 |
+| v7 | second system, after its 29 Oct review and *Good Guesses* comparison | `state/external/submission-sourcechecked-20261029/A5-Holistic-Accuracy-v7.md` (89bd70f) | 29 Oct 17:02 |
+| final | orchestrator: patches 1–3 of `state/audit/A5/citations_final.md` applied verbatim | `final/A5/essay.md`; `final/A5/changelog.md` | log 17:40:57 |
+
+| # | Contribution in the final text | First appearance | Later changes and their source |
+|---|---|---|---|
+| 5.1 | Target: a 2019 argument (Dorst, Proposition 5) that expected-accuracy maximisation yields Lockean thresholds without Separability | Card A5-03 (ideator, 23 Oct 02:07) | Kill test: REPAIR, "close to PROCEED", recommended as the essay (red-team, `killtest/A5.md` §7) |
+| 5.2 | Thesis: Proposition 5 does not follow on the unrestricted reading of holism; on a stronger reading the argument's values already restrict holism | Card A5-03 ("does not follow"); kill-test calibrated thesis | v4 (reviser) said the needed premise is refinement invariance. The second system's 29 Oct review (`state/external/claude-review-20261029/ASSESSMENT-485bec4.md`, required fix 1) judged that an overstatement. v7 (second system) recast the thesis as "two readings" and retitled the essay. |
+| 5.3 | Counterexample: a truth-directed score with a premium for an error-free belief state; belief at credence 0.70 but not at 0.75, with values and context fixed (Theorem 1) | Card A5-03 ("a premium on a flawless record") | Kill test verified it by hand and corrected the card's closure claim. v2 (second system) corrected consistency and tie claims. v4 added runner-ups and margins (referee S1-lit, minor). Formal audit (formalist, `state/audit/A5/formal.md`, 11:41) reproduced every number; the second system's review recomputed all 256 belief states. |
+| 5.4 | Bridge from optimisation to rationality: "Non-vacuity" (some state is permitted at each credence) replaces "Permission" | **Second-system review** (ASSESSMENT required fix 3: "Permission is not the minimal existence assumption") | Written into v7 by the second system (term absent from v5, present in v7) |
+| 5.5 | Diagnosis: order independence does not justify the marginal-value restrictions; for a single measure, marginal extensionality plus background-independent thresholds recover separability (Theorem 2, Corollary) | Kill test §7 ("its key step assumes ... near-Separability"); v1 | v2 (second system) separated a sufficient repair from a necessary condition. v4: Corollary and dilemma (referee S1-lit, Major 2). v5: formal-audit P4 (BI read across the family). v7: the "stronger reading" framing (second system). |
+| 5.6 | Core characterisation: the score's optima select a core and its above-threshold consequences (Theorem 3) | v1 (drafter), developing the card's "closed, non-monotone belief" | v3 (second system) added a premium-raising result; v4 cut it (word budget). Referee S1-lit Major 3 led to cutting the "horse race" paragraph. |
+| 5.7 | Prior-work concession: an earlier utility theory of guessing (*Good Guesses*, 2022) already reproduces the two belief sets of the main example (with one fixed parameter, J = 125/64); the increment is narrowed to the realisation under strict marginal truth-directedness, the diagnosis, and the optimiser characterisation | **Second system**, `state/audit/A5/good-guesses-comparison-20261029.md` (commit 9c39291, 29 Oct 12:16), from a July 2021 penultimate author draft described as "supplied" | Written into v7. Final patch 2 (citation-auditor, `citations_final.md`) reworded the abstract to "An earlier utility theory of guessing already generates …"; patch 1 added the note that section numbers follow the 2021 draft. Earlier: referee S1-lit Major 1 had asked for comparisons with the guessing paper, Levi 1967 and Leitgeb 2014/2017 (added in v4). |
+| 5.8 | Refinement invariance (RI) plus truth-directedness and conservative increments (CI) force fixed thresholds (Theorem 4); RI is one sufficient route, not a necessary premise; a separable family T = 1, F = −n has fixed-space thresholds n/(n+1) but violates RI | **Referee suggestion**: P-7297 S1-lit (27 Oct 16:25) named refinement dependence as the most serious problem and offered routes (a) and (b). The reviser's v4 proved Theorem 4 (route (b)). | Formal audit: theorem correct; the old footnote-5 witness was wrong (P1), and "no non-Lockean score can …" was false (P2); both fixed in v5. **Second-system review** (required fix 1) supplied the n/(n+1) family and the "sufficient, not necessary" reading, written into v7. Final patch 3 ("with uniform values") from `citations_final.md`. |
+| 5.9 | Question-relative record measure (mean over the algebra) meets restricted refinement invariance | Reviser v4, answering referee S1-lit route (a) | Retained in v7 and final |
+| 5.10 | Replies: premium is alethic; necessary-condition objection met by Non-vacuity; "negative only" reply; order and Sequence-Irrelevance; scope (fixed context) | Order and scope replies: **referee suggestions** (S1-lit, Majors 5 and 4) → v4. Non-vacuity reply: second system, v7. Premium reply: v1–v3. | The formal audit verified the order example over all 40,320 orders |
+| 5.11 | Dropped: the split-invariance impossibility theorem (card A5-01) | Card A5-01 | Removed by the second system in v2 |
 
 ## 3. A6 — "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
 
-Final text: `state/drafts/A6/v4.md` (5,790 words strict; file time 29 Oct 04:06; committed in 070f821).
-Version chain: v1 (drafter, 23 Oct 23:17) → v2 (second system, 8d2a333, 25 Oct 07:01) → v3 (second system,
-b086236, 28 Oct 13:34; `state/external/submission-additive-20261029/essays/02-Free-Evidence-v3.md`) → v4
-(reviser, launched 29 Oct 03:43). No revision-notes file for v4 exists in the repository, and the log has
-no completion entry for it. Attributions for v4 come from comparing the referee reports with the v3 and v4
-texts.
+Final text: `final/A6/essay.md`, 5,793 words strict. Version chain:
+
+| Version | Author | File | Time |
+|---|---|---|---|
+| v1 | drafter | `state/drafts/A6/v1.md` | 23 Oct 23:17 |
+| v2 | second system | `review-edition-20261025/` (8d2a333) | 25 Oct 07:01 |
+| v3 | second system | `submission-additive-20261029/essays/02-Free-Evidence-v3.md` (b086236) | 28 Oct 13:34 |
+| v4 | reviser, against P-7f1b S2-lit and G4 | `state/drafts/A6/v4.md`; `revision_notes_v4.md` | launched 29 Oct 03:43; log 11:43:05 (5,883 words) |
+| v5 | second system, after its 29 Oct review | `submission-sourcechecked-20261029/A6-Free-Evidence-v5.md` (89bd70f) | 29 Oct 17:02 |
+| final | patch agent: citation-audit patches P1–P14d of `state/audit/A6/citations.md` (audit of v4) | `final/A6/essay.md`; `final/A6/changelog.md` | log 17:43:03 |
 
 | # | Contribution | First appearance | Later changes and their source |
 |---|---|---|---|
-| 6.1 | Question: does knowledge-based decision theory (expected utility conditioned on what one knows) keep Good's theorem inside the normality theory of inductive knowledge? | Card A6-01 (ideator, `cards/A6.md`, 23 Oct 17:23) | — |
-| 6.2 | Boundary theorem: a free question is safe in every decision problem iff no state compatible with one's knowledge is one where the answer would reopen a ruled-out possibility; safe for all questions iff knowledge is gapped (Theorem 1) | Card A6-01 (ideator), with exhaustive small-structure checks | Kill test (red-team, 23 Oct 22:47): REPAIR, spine of a merged essay; must credit value-of-information precedents and isolate the bridge lemma. v2 (second system): corrected the quantifiers (a given safe question versus all questions; the empty question's value is non-negative, not zero). |
-| 6.3 | Extension to any factive state containing rational belief; graded collapse (Theorem 2) | Card A6-01 ("any factive ken containing everything one believes") | v1 |
-| 6.4 | Case: the target theory's model of repeated weighing; a free second weighing has negative value at ten-to-one odds | Card A6-02 (key case drawn from the target paper) | Kill test asked for a moderate-stakes instance ("odds of 20:1 or better"). v1 supplies ten-to-one. v2 (second system) corrected the ten-to-one scope. |
-| 6.5 | The conditional repair (an expected-utility development of the principle Conditional Knowledge Dominance) fails wherever the unconditional rule fails (Theorem 3) | Card A6-02 → kill test (REPAIR as a section) → v1 | v3 (second system): strengthened the counterexample so that the same rule governs future decisions; added a three-state example and a local-stability proof. |
-| 6.6 | Three developments of the conditional repair. Conditioning on the evidence's changing one's choice also fails. Conditioning answer by answer is safe (Proposition 4) but pays to check what one knows, which the qualitative principle forbids (Proposition 5). | **Referee suggestions.** Referee S2-lit on packet P-7f1b (27 Oct 16:26) proposed conditioning on "what looking would lead one to do" and argued that it prefers looking in Theorem 3's construction. Referee G4 (advocate persona) on P-7f1b (27 Oct 16:42) proposed the answer-by-answer version. | Reviser v4 (29 Oct): the constructions showing the verdict-change rule fails elsewhere, and Propositions 4–5, first appear in v4; checks `state/drafts/A6/checks/v4_conditional_rules.py`, `v4_verdict_rule.py`. |
-| 6.7 | Comparison with Hong (2024–2026), crediting prior objections to normality knowledge as action-guiding | Kill test (blocking repair: "read Hong before drafting") | v2 (second system) incorporated Hong's full paper; retained in v4 §1 |
-| 6.8 | Continuous model (Gaussian measurement) | Mentioned in v1 | v2 (second system) added a positive-measure Gaussian argument; referee S2-lit found it valid but its gloss imprecise; v3 (second system) removed an "unsupported continuous-model extension" (`submission-revisions-20261028/Review-Guide.md`) |
-| 6.9 | Replies: self-trust versus evidence (§6.1); stakes and encroachment (§6.2); statism (§6.3); "Good's theorem is not sacrosanct" (§6.4) | Kill test objections 2–3 and card A6-05 (one paragraph on encroachment) → v1 | v2 (second system) narrowed the encroachment claims. Referee G4 Major 5 (scope of the margins horn) bears on §6.1; v4 §6.1 cites the target theory's "NO DEFEAT" result. |
-| 6.10 | Dropped: cards A6-03, A6-04 (KILL) and A6-05 as a stand-alone essay | Kill test | — |
+| 6.1 | Question: does knowledge-based decision theory keep Good's theorem inside the 2023 normality theory of inductive knowledge? | Card A6-01 (ideator, 23 Oct 17:23) | — |
+| 6.2 | Boundary theorem: a free question is safe in every decision problem iff no state compatible with one's knowledge is one where the answer reopens a ruled-out possibility; all questions safe iff knowledge is gapped (Theorem 1) | Card A6-01, with exhaustive small-structure checks | Kill test: REPAIR, spine of a merged essay; credit value-of-information precedents. v2 (second system) corrected quantifiers. v4 (referee S2-lit M4): the theorem's shape credited to Geanakoplos. v5 (second system): connected to *Deference Done Better* (see 6.8). |
+| 6.3 | Graded collapse: no factive state containing rational belief is safe unless it is the whole evidence (Theorem 2) | Card A6-01 | — |
+| 6.4 | Case: the target theory's repeated-weighing model; a free second weighing has negative value at ten-to-one odds | Card A6-02 | Kill test asked for a moderate-stakes instance; v1 supplied ten-to-one; v2 corrected its scope; v4 separated three claims (referee S2-lit M2a). v5 (second system) distinguished about 42% weight-belief loss from about 37% loss with a consistent discovery; the discrepancy was first flagged in this pipeline's partial formal audit (`state/audit/A6/formal.md`, file 11:52). The record does not show whether the second system used that audit. Final patch P10 attributes "about 0.37" to the source's note 18. |
+| 6.5 | Conditioning on the options' differing (CEU) fails wherever the unconditional rule fails (Theorem 3); Conditional Knowledge Dominance itself is silent in that construction | Card A6-02 → kill test → v1 | v3 (second system) strengthened the counterexample. v4 conceded the silence (**referee suggestion**, S2-lit MS(a)) and proved it generally (A.7). |
+| 6.6 | Conditioning on the evidence's changing one's choice (VER) also fails, including a five-state counterexample | **Referee suggestions**: S2-lit (27 Oct 16:26) proposed the verdict-change rule; G4 (27 Oct 16:42) supplied the five-state counterexample, verified by the reviser | v4 added a failure without relative defeat. v5 (second system): s0 = s1 made explicit, the future policy specified, enumeration scope described (ASSESSMENT A6 fixes 3 and 5) |
+| 6.7 | Conditioning answer by answer (ANS) is safe (Proposition 4) but pays to check what one knows, which Conditional Knowledge Dominance forbids (Proposition 5) | **Referee suggestion**: G4 proposed ANS and its safety proof, accepted as Proposition 4. Proposition 5 is the reviser's (v4). | v5 (second system): price condition 0 < κ < L made explicit (ASSESSMENT fix 4); conclusion restricted to the rules examined (fix 2) |
+| 6.8 | Comparison with *Deference Done Better* (2021): its Value and Total Trust results; the normality model's increment is the relative-defeat/gappedness characterisation and the conditional repairs | **Second-system review** (ASSESSMENT required fix 1) | Written into v5 by the second system, which checked Value, Weak Value and Total Trust (`VERIFICATION.md`). This pipeline checked only the Crossref metadata (`final/A6/changelog.md`). |
+| 6.9 | Comparison with Hong (2024–2026) | Kill test ("read Hong before drafting") | v2 (second system) drew on that system's reading of §§1–3. Final patch P4 narrowed the description to what that system's records support. **This pipeline has not read Hong's text** (Wiley 403; fetch `amb-a6-hong-2025-2026` open). |
+| 6.10 | Replies: self-trust versus evidence; stakes and encroachment; statism and questions; "Good's theorem is not sacrosanct" | Kill test objections and card A6-05 → v1 | v2 narrowed encroachment; v4 added the encroachment literature (S2-lit) and the question-sensitivity limitation (S2-lit M5); final patches P11–P14d reworded attributions |
+| 6.11 | Dropped: cards A6-03, A6-04 (KILL), A6-05 as a stand-alone essay | Kill test | — |
 
-## 4. A4 — "A Switching Dilemma for Normality in Actual Causation" (v6)
+## 4. A4 — "A Switching Dilemma for Normality in Actual Causation"
 
-Final text: `state/drafts/A4/v6.md` (4,976 words strict; file time 29 Oct 11:39). The reviser was launched
-on 29 Oct 04:15 (commit 6c587ae) to revise v5 against the hostile review P-d300. Its checks and
-reference verification are in `state/drafts/A4/v6_checks/` (`v6_verify.py`, `new_refs_verification.md`).
-When this ledger was written, the run log had no completion entry for v6 and the repository had no v6
-revision-notes file, so the v6 attributions below come from comparing the report with the v5 and v6
-texts.
+Final text: `final/A4/essay.md`, 5,540 words strict. Version chain:
 
-Version chain:
-- v1: drafter, 23 Oct 23:16, `state/drafts/A4/v1.md`, "What Normality Can and Cannot Do in Theories of
-  Actual Causation".
-- v2: second system, 25 Oct 07:01, `review-edition-20261025/essays/04-causation-A4-v2-reserve.md`.
-- v3: second system, b086236, 28 Oct 13:34.
-- v4: second system, cccc9b9, 28 Oct 23:57, after reading a 2016 book on actual causality that the human
-  supplied to that system; retitled "Limits of Uniform Normality Filters in Actual Causation".
-- v5: second system, 8f82b0b, 29 Oct 00:18,
-  `state/external/submission-additive-20261029/essays/03-Causation-v5.md`.
-- v6: reviser (this pipeline), 29 Oct 11:39.
+| Version | Author | File | Time |
+|---|---|---|---|
+| v1 | drafter | `state/drafts/A4/v1.md` | 23 Oct 23:16 |
+| v2 | second system | `review-edition-20261025/essays/04-causation-A4-v2-reserve.md` | 25 Oct 07:01 |
+| v3, v4, v5 | second system (v4 after reading a 2016 book on actual causality supplied by the human "without philosophical comments") | commits b086236, cccc9b9, 8f82b0b; `submission-additive-20261029/essays/03-Causation-v5.md` | 28 Oct 13:34; 23:57; 29 Oct 00:18 |
+| v6 | reviser, against P-d300 S7-lit | `state/drafts/A4/v6.md`; `revision_notes_v6.md` | launched 29 Oct 04:15; log 11:44:20 (5,521 words) |
+| v7 | second system, after its 29 Oct review | `submission-sourcechecked-20261029/A4-Causation-v7.md` (89bd70f) | 29 Oct 17:02 |
+| final | patch agent: citation-audit patches 1–8 of `state/audit/A4/citations.md` (audit of v6); conditional patches H1–H5 skipped | `final/A4/essay.md`; `final/A4/changelog.md` | log 17:42:47 |
 
-The second system also wrote a different A4 manuscript ("Causal Refinement Without a Final Layer", v0.1
-on 22 Oct and v2 on 23 Oct, in `state/external/ambitious-drafts-20261022/` and
-`state/external/audit-and-a4-20261023/`). It started from the orchestrator's problem selection, not from
-our cards. It is not an ancestor of the finalist A4 (`state/STATUS.md`, 23 Oct entry).
+The second system's separate manuscript "Causal Refinement Without a Final Layer" (22–23 Oct) started
+from the orchestrator's problem selection, not from the cards, and is not an ancestor of A4.
 
 | # | Contribution | First appearance | Later changes and their source |
 |---|---|---|---|
-| 4.1 | Setting: normality as a filter on the witness worlds of the Halpern–Pearl definitions (Halpern–Hitchcock); the switch versus preemption contrast as the test case | Cards A4-02 and A4-04 (ideator, `cards/A4.md`, 23 Oct 17:22) | Retained through v6 |
-| 4.2 | Calibration: within uniform componentwise rankings, four calibrating judgments hold exactly when a "license" rule is satisfied | Card A4-02 | Kill test: REPAIR. v1 states it. v3 (second system) checked all 355 category preorders. Reduced to passing mentions in v6. |
-| 4.3 | The "Doorbells" switch model (from Gallow 2021) and robustness under several default codings | Kill test (red-team, `killtest/A4.md`, 23 Oct 22:50), replacing the card's train switch | v1 adopts it. v2 (second system) restricted the coding claim to four codings. In v6, Doorbells carries Theorem 1, and the coding question is Objection 2. |
-| 4.4 | Frozen-witness lemma | Card A4-03 | Kill test: keep as a lemma. v2 (second system) repaired its proof using AC3 minimality. v4 (second system) credits its technique to Halpern 2016 Theorem 4.4.4(b). Still used in v6. |
-| 4.5 | Locusts case (a deviant event preempting a normal drought process) | Card A4-01 | Central in v1–v5. One mention in v6. |
-| 4.6 | Additive-score obstruction under the modified definition, with a counterexample for the older definitions | **Second AI system, v5** (8f82b0b, 29 Oct 00:18; `state/external/submission-additive-20261029/additive/`) | v6 subsumes it: v6 covers every anonymous filter that respects Pareto improvement, under all three definitions (7 mentions of "additive" remain) |
-| 4.7 | **Thesis of v6**: no anonymous normality filter that respects Pareto improvement keeps genuine prevention and late preemption while excluding every switch, under any of the three HP definitions; so separating switches from preemption needs mechanism-specific normality | **Referee suggestion.** Referee S7-lit on P-d300 (29 Oct 04:13) recommended "a reframed short paper on a cross-definition switching dilemma". It computed the both-tracks-blocked switch variant and wrote that "the correct result is stronger: a dilemma across all three definitions". | Formulated, proved and argued by the reviser in v6 (the terms "anonymous" and "Pareto improvement" and the theorem statements first appear in v6) |
-| 4.8 | Theorem 1 (modified definition): the only witness for the preempting throw has exactly the profile of the witnesses for two standard switches | v6 (reviser), from the report's analysis of preemption and switch witnesses | — |
-| 4.9 | Theorem 2 (original and updated definitions): the both-blocked switch's witness equals the witness for genuine prevention plus one default-restoring change | v6 (reviser). The case is Schumacher's, as reported by Halpern 2015, and is used against another definition by Xiao and Xiong (2026, Obs. 1). The referee pointed to both sources. | — |
-| 4.10 | §5: what mechanism-specific normality must judge, and what its published motivations cost; §6: an exceptionless-conformity lemma (only root but-for causes remain), applied to a conjecture in the 2015 normality paper and to Xiao and Xiong's definition | v6 (reviser). The report discusses equation conformity and the Xiao–Xiong definition. | — |
-| 4.11 | §7: a parallel in regularity theory (Beckers 2026's dilemma for a 2024 regularity theory) | Card A4-01 → kill test, which found the point in Beckers 2026 | Credited from v1; recast as a parallel in v6 |
-| 4.12 | Replies: aptness, coding, graded causation, the switch verdicts themselves | Kill test objection list → v1; revised by the second system in v2–v5 | Rewritten in v6 (reviser) |
+| 4.1 | Setting: normality as a filter on witness worlds of the three Halpern–Pearl definitions; switches versus preemption | Cards A4-02, A4-04 (ideator, 23 Oct 17:22) | Retained |
+| 4.2 | **Thesis**: no anonymous (transition-profile-only) normality filter that respects Pareto improvement keeps genuine prevention and late preemption while counting no switch a cause, under any of the three definitions; a separating filter needs information beyond the profile | **Referee suggestion**: P-d300 S7-lit (29 Oct 04:13) recommended "a reframed short paper on a cross-definition switching dilemma" and wrote that "the correct result is stronger: a dilemma across all three definitions" | Formulated and proved by the reviser in v6. v7 (second system) added "Within these codings" and "information beyond the transition profile", and removed v6's sentence calling anonymity "the natural target for a principled policy", which ASSESSMENT fix 4 had asked to be defended rather than stipulated. |
+| 4.3 | Theorem 1 (modified definition): Suzy's only witness has exactly the profile of the witnesses for two standard switches | v6 (reviser) | Formal audit (`state/audit/A4/formal.md`, 17:44): verified by independent implementation |
+| 4.4 | Theorem 2 (original and updated definitions): the both-blocked switch's witness is genuine prevention's plus one default-restoring change | v6 (reviser); the case is Schumacher's, reported by Halpern 2015, used by Xiao and Xiong (2026); the referee pointed to both | Verified by the formal audit; the Corollary also by exact SMT check over all anonymous Pareto filters on the occurring profiles |
+| 4.5 | Calibration: exactly five of 355 componentwise preorders give the four calibrating verdicts | Card A4-02 (license rule); v3 (second system) enumerated 355 preorders; v6 restated | Formal audit: the five is VERIFIED; "two of them total orders" is **FALSE** (they are total preorders). Patch P1 had not been applied to the final text when this ledger was written. |
+| 4.6 | §5: pricing non-anonymous escapes; one additive repair based on mechanism reliability (c_BH > c_L holds only in that repair) | v6 (reviser) from the report's analysis | v7 (second system) restricted the frozen-mechanism argument to the additive repair it establishes (ASSESSMENT fix 1). Final patch 3 restored a hedge in a quotation from Xiao and Xiong; patch 4 corrected a gloss of a 2017 paper. |
+| 4.7 | Frozen-witness Lemma; exceptionless equation-conformity leaves only root but-for causes in fixed-context acyclic models; applied to a 2015 conjecture and to Xiao and Xiong's definition | Card A4-03 (lemma) → kill test (keep as lemma) → v2 (second system repaired the proof via AC3 minimality) → v4 (credited technique to Halpern 2016) → v6 (conformity application, reviser) | v7 (second system) made the fixed-context conditions explicit (ASSESSMENT fix 3). Formal audit: Lemma holds on all 312 three-variable models and 1,500 random larger models. |
+| 4.8 | Comparison with Wysocki 2023, "Conjoined cases", as stronger prior obstruction | **Second-system review** (ASSESSMENT required fix 2) | Written into v7. Metadata verified by this pipeline; content checked only by the second system (`VERIFICATION.md`). |
+| 4.9 | Doorbells switch model (from Gallow 2021) and coding robustness | Kill test (red-team, 23 Oct 22:50) | v2 restricted the coding claim; in v6 Doorbells carries Theorem 1 and coding is Objection 2. Final patch 2 corrected the description of Gallow's own model. |
+| 4.10 | §7: parallel in regularity theory (Beckers 2026's dilemma for a 2024 regularity theory) | Card A4-01 → kill test, which found the point in Beckers 2026 | Recast as a parallel in v6; final patch 6 ("related shape"). The formal audit marks the §7 computations UNVERIFIED (author-computed only). |
+| 4.11 | Additive-score obstruction | Second system, v5 (8f82b0b) | Subsumed by v6's profile results; the additive identities remain |
+| 4.12 | Replies: aptness, coding, graded causation, the switch verdicts | Kill-test objections → v1; second system v2–v5 | Rewritten in v6; final patches 1–2 |
 
-The Xiao and Xiong paper engaged in v6 is the PDF the human uploaded on 29 Oct 04:01. It was supplied as a
-source, without comment, and placed in the referee packet. The reviser read it from
-`inbox/sources/`.
+The Xiao and Xiong paper is the PDF the human uploaded on 29 Oct 04:01 without comment; it was placed in
+packet P-d300 and read by the reviser from `inbox/sources/`.
 
-## 5. Points where referee or editor suggestions entered the final texts
+## 5. Points where referee, reviewer or editor suggestions entered the final texts
 
-- A5 v4: refinement invariance and Theorem 4 (route (b)) and the normalised record measure (route (a)), both
-  from P-7297 S1-lit's most serious problem. Also Majors 1–5 and the minor items listed as ACCEPTED in
-  `state/drafts/A5/revision_notes_v4.md` (literature comparisons, the Corollary and dilemma, the cut
-  paragraph, scope and order replies, margins).
-- A6 v4: the verdict-change rule (P-7f1b S2-lit) and the answer-by-answer rule (P-7f1b G4), which the reviser
-  turned into the three-way analysis of §5 and Propositions 4–5.
-- A4 v6: the cross-definition dilemma (the thesis), the both-blocked switch case and the engagement with
-  Xiao and Xiong come from P-d300 S7-lit. Earlier versions had no referee input from this pipeline:
-  P-93b0 (A4 v1) left no saved report, and the second system revised v2–v5 on its own self-review and a
-  book comparison.
-- Kill-test (red-team) repairs entered all three v1 drafts (see the tables).
-- Second-system revisions: A5 v2–v3, A6 v2–v3, A4 v2–v5. They are credited to that system above. Of
-  A4's second-system material, the repaired lemma, the coding restriction and the narrowed originality
-  claims survive into v6; the additive theorem is subsumed by v6's more general result.
-- The editor agent and the editor-plan and changelog files of the original design were never used. The
-  run abandoned those phases (log 21 Oct 19:48:32).
+- **This pipeline's blind referees.** A5: refinement dependence (route (a) question-relative measure,
+  route (b) Theorem 4), Majors 1–5 (P-7297 S1-lit). A6: the verdict-change rule (S2-lit), the
+  answer-by-answer rule, its safety proof and the five-state VER counterexample (G4), the concession that
+  Conditional Knowledge Dominance is silent (S2-lit) (P-7f1b). A4: the cross-definition dilemma, the
+  both-blocked switch and the engagement with Xiao and Xiong (P-d300 S7-lit).
+- **Red-team kill tests.** Repairs entered all three v1 drafts (tables above).
+- **The second AI system's 29 Oct review** (`ASSESSMENT-485bec4.md`, commit faa6381, 11:51) of A5 v4,
+  A6 v4 and A4 v6. Its required fixes entered v7/v5/v7 through that system's own revisions: A5
+  Non-vacuity, RI as sufficient with the n/(n+1) family, footnote-5 and audit corrections; A6
+  *Deference Done Better*, rule-restricted conclusions, future policy, price condition, enumeration
+  scope; A4 Wysocki, restricted frozen-mechanism claim, fixed-context conditions, and removal of the
+  stipulated "natural target" sentence. Its *Good Guesses* comparison (9c39291) produced A5's prior-work concession.
+- **This pipeline's audits.** A5 formal P1–P5, P8 and citation patches 1–8 (in v5, retained in v7);
+  `citations_final.md` patches 1–3 (final). A6 citation P1–P14d (final). A4 citation patches 1–8 (final).
+  These patches correct attributions, pinpoints and wording; they add no arguments.
+- **Editor.** The editor agent and its plan files were never used (phases abandoned, log 21 Oct
+  19:48:32). Changelogs exist only for the final patch passes and A5 v5.
 
 ## 6. Human messages and the contributions
 
-None of the contributions above traces to a human message. The human's messages (all quoted in
-`methodology/human_inputs.md`) contain workflow, budget, logistics, source uploads and generic
-instructions. They include the request for ambition ("look for the hardest problems") but no topic,
-problem, thesis, case, objection or formal result. The problems were chosen by the field-surveyor and
-the orchestrator (`problems.md`, `selection.md`). The theses and cases originate in ideator cards and
-red-team kill tests, or in the second AI system's revisions.
+None of the contributions above traces to a human message. The 25 entries in
+`methodology/human_inputs.md` are logistics, courier, method, generic feedback and one selection. The
+request for ambition named no problem. The Gate A2 answer selected among finished essays that the
+orchestrator had recommended. The 29 Oct 17:35 entry relays the second system's status note (AI-written
+risk headings: e.g. "A4: philosophical significance and overlap with prior work"); the subsequent patch
+passes added no arguments, cases or claims (`final/A6/changelog.md`, `final/A4/changelog.md`).
 
-Sources the human supplied that bear on these essays:
-- the 2026 Xiao and Xiong paper, uploaded 29 Oct 04:01, placed in the A4 v5 referee packet and engaged in
-  A4 v6;
-- the 2016 book on actual causality, supplied to the second system and recorded as arriving "without
-  philosophical comments" (`state/external/submission-book-review-20261028/Halpern-Originality-Review.md`).
-
-The human's statement that the second system received no idea-wise input is at 22 Oct 10:01:37.
-The second system's own records say the human withheld philosophical feedback
-(`state/external/review-edition-20261025/METHODOLOGY.md`).
+Sources the human supplied that bear on the final essays, all without comment as recorded:
+- Xiao and Xiong 2026 (uploaded 29 Oct 04:01), engaged in A4;
+- the 2016 book on actual causality, supplied to the second system "without philosophical comments"
+  (`state/external/submission-book-review-20261028/Halpern-Originality-Review.md`);
+- the July 2021 draft of *Good Guesses* is described in the second system's files as "supplied"; the
+  record does not say by whom, and the file is not in the repository (`state/audit/A5/citations_final.md`).
 
 Limits of this ledger:
-- The second system's chat transcripts are not in the repository. Its contributions are traced from its
-  committed files and commit messages.
-- A6 v4 and A4 v6 have no revision notes, so their attributions rest on comparing the texts.
-- That system's early provenance disclosure (a possible exposure to personal context) and the later
-  clarification are recorded in the methodology report, §4.
+- The second system's chat transcripts are not in the repository; its contributions are traced from its
+  files and commits.
+- Not verified by this pipeline: the published text of *Good Guesses* (only the second system's reading
+  of the 2021 draft and the authors' own summary); Hong 2026 (never read); the content of Wysocki 2023 and
+  of *Deference Done Better* (second system only); the Halpern 2016 pinpoints (confirmed only by the
+  second system's book review; fetch `a4-audit-halpern-2016-pinpoints` open).
+- The second system's early context-exposure disclosure, the quarantine, its lifting and the human's
+  confirmation of revised `CLAUDE.md` §1.2 are recorded in the methodology report, §4.4.
 ~~~~
 
 ---
 
 ## Appendix F. Transcripts and records
 
-- Claude Code session transcripts, with subagent transcripts: 61 JSONL files spanning 21 Oct 18:25 to
-  29 Oct 11:32 UTC. They are in the session's local Claude Code project store. They can be exported with
-  identity strings redacted using `python3 tools/export_transcripts.py`. That export had not been run
-  when this report was written, so `methodology/transcripts/` does not yet exist.
+- Claude Code session transcripts, with subagent transcripts: 73 JSONL files spanning 21 Oct 18:25 to
+  29 Oct 17:45 UTC (when `tools/usage_report.py` was run for this report). They are in the session's
+  local Claude Code project store and can be exported, with identity strings redacted, by
+  `python3 tools/export_transcripts.py`. That export had not been run when this report was written, so
+  `methodology/transcripts/` does not yet exist.
 - Run log: `methodology/log.md`. Human messages: `methodology/human_inputs.md`. Hygiene:
   `methodology/hygiene.md`. Commissioning: `methodology/design_inputs.md`. Configuration:
   `methodology/run_config.md`.
-- Intermediate work: `state/` (panel, calibration, lanes, ambitious track, drafts, blind packets and
-  reports, audits).
-- The second system's files: `state/external/*/` (README, MANIFEST, METHODOLOGY, VALIDATION files) and
+- Intermediate work: `state/` (panel, calibration, lanes, ambitious track, drafts and revision notes,
+  blind packets and reports, audits in `state/audit/A4|A5|A6/`).
+- Final texts and their changelogs: `final/A5/`, `final/A6/`, `final/A4/`.
+- The second system's files: `state/external/*/` (README, MANIFEST, METHODOLOGY, VERIFICATION and
+  review files, including `claude-review-20261029/ASSESSMENT-485bec4.md` and
+  `submission-sourcechecked-20261029/`), `state/audit/A5/good-guesses-comparison-20261029.md`, and
   `relay/outbox/codex-*.md`. Its own chat transcripts are not in the repository.
 - Git history of the working branch, including the merged commits of the second system.

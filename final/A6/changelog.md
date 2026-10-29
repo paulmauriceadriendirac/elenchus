@@ -53,3 +53,30 @@ The change adds 9 words. My direct access attempt failed (Wiley returned 403 on 
 - **Material added after v4.** It falls outside the v4 audit and is not re-verified here. The *Deference Done Better* paragraph (l.21) has Crossref metadata matching the reference entry (*Philosophical Perspectives* 35(1): 99–150). VERIFICATION.md records the Value, Weak Value and Total Trust check.
 - **l.31, "(§6.1)".** This is an internal cross-reference, but it could be misread as a citation of Goodman and Salow. I left it unchanged because it is not on the patch list.
 - **BRN locators.** These were checked against the accepted manuscript, not the published version.
+
+## Formal-audit patches
+
+**Version:** final (`final/A6/essay.md`), edited in place. The pre-patch copy is `final/A6/essay_pre_formal.md`.
+**Date:** 2026-10-29
+**Mode:** patch. I applied the patch list P1–P8 of the completed formal audit `state/audit/A6/formal.md`. This entry replaces the "Formal audit" entry above, which was written while that audit was still partial. The audit was run on `state/drafts/A6/v4.md`, so each patch was matched against the final text. No new arguments, cases or claims.
+**Word count** (`tools/wordcount.py`): 5,831 strict and 5,804 wordlike, up from 5,793 and 5,766 (+38). The limit is 6,000. The target is 5,600, which the text already exceeded.
+**Injection check:** no hard flags. The soft flags are unchanged: Salow 46, Hawthorne 7, Goldstein 3, Fitelson 1, all genuine citations.
+
+Line numbers refer to `final/A6/essay.md`. None changed, because every edit was made within a line.
+
+| Patch | Location | Status | What and why |
+|---|---|---|---|
+| P1 | §3 l.49, l.51; Computations l.181 | adapted (partly already fixed) | The old string was not present. Two parts of P1 were already done. v5 had replaced the wrong reading of 0.37 as the probability of losing the weight belief with 0.417. Citation patch P10 had tied BRN's "∼.37" to the narrower consistent-discovery event $(2-\sqrt2)c<\|r-r'\|\le\sqrt2c$, which is the audit's own alternative (keep the BRN attribution with its exact conditions). Citation audit A14 records that n. 18's figure is Pr(\|y−z\| ∈ (2c−√2c, √2c]). The missing part was the audit's knowledge-conditional figure. l.49 now reads "has unconditioned probability about $0.417$ (about $0.356$ conditional on his present knowledge)". "Unconditioned" is the essay's own term (§2, §3) and states the conditioning. I kept three decimals rather than the audit's 0.42/0.36 so that 0.356 and BRN's 0.37 are visibly different figures for different events. Two related clarity edits: (1) l.51 now reads "(it wins with probability $0.95$; expected value …)". Otherwise the fallibilist's 0.95 could be read as the Preservation-failure 0.95 just above; both equal 2Φ(c)−1 but concern different events. (2) Computations now reads "decision values and knowledge-conditional probabilities use numerical integration", which states the method for 0.356 and for the existing 0.05. I recomputed the figures independently (mpmath, c = 1.96): 0.4168727826 (loss), 0.3668769923 (loss with a consistent discovery), 0.3555901517 (loss given δ ≤ c²), 0.9500042097 (consistent discovery). The first two match VERIFICATION.md exactly and the third matches the audit's 0.3556. |
+| P2 | §5.1 l.107 | applied | −0.63 → −0.60. The audit found −0.602 by mpmath quadrature; −0.626 was an artefact of a coarse grid. The sign and the conclusion (CEU, VER and ANS look) are unchanged. |
+| P3 | §5.2 l.121 | already fixed | "$s_0=s_1$" was already in v5. |
+| P4 | §5.2 | already fixed (claim removed) | The "1,724 of the 2,322" sentence is not in v5 or in the final essay, and neither number appears anywhere. I did not reintroduce it: patch mode adds no claims, and the audit shows the count depends on the random search (its own search found 2,222) and covers only E = S. If the count is ever restored, use the audit's wording: "at least 1,724 of the 2,322 … in which the evidence is the whole state space". |
+| P5 | Computations l.181 | already fixed; spelling harmonized | v5 already restricted the 64,004 pairs to nontrivial partitions, which the audit confirms (81,981 with trivial partitions; 3,306 is unchanged because trivial partitions never defeat under K-normality). The audit has now verified these counts, which the entry above had left unchecked. I changed "nontrivial" to "non-trivial", the audit's spelling and the essay's in §5.2 ("non-trivial answers"). |
+| P6 | §4 l.91 | applied | "by Lemma 2" → "by the continuous analogue of Lemma 2 (on each line of fixed reading difference the kens are nested intervals)". Lemma 2 is proved only for finite models; the audit verified the continuous case separately. |
+| P7 | §6.2 l.151 | applied | Added ", for all but knife-edge priors,". The audit rates this generalization "argued only": it fails for $p_v$ questions when Pr(E∖M \| $p_v$) = Pr(E∖M). The qualifier calibrates the claim, which is still presented as following "by the reasoning of Corollary (ii)" and is not proved. |
+| P8 | Abstract l.3 | applied | "in graded models" → "in finite graded models", matching Corollary (ii). |
+
+**Residual.**
+- The essay states P6's continuous analogue but does not prove it. The audit's argument (Danskin, line by line) is not reproduced, because adding it would be new material.
+- P7 remains argued, not proved.
+- The internal cross-reference "(§6.1)" at l.31, flagged above, is still unchanged.
+- I appended only to this changelog, as the task specified. `state/drafts/A6/changelog.md` does not exist.

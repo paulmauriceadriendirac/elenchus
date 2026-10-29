@@ -6,7 +6,7 @@ git history; this version replaces the 11:42 draft and describes the texts in `f
 appears and the agent or system that wrote it. Times are UTC. Times of commits by the second AI system
 are converted from their -05:00 offsets. "Log" means `methodology/log.md`; "card" means a file in
 `state/ambitious/cards/`; "kill test" means a file in `state/ambitious/killtest/`. Authors of engaged
-works who sit on the judging panel are not named here; their works are described or named by title.
+works who sit on the panel are not named here; their works are described or named by title.
 
 ## 0. Systems and agents in this ledger
 
