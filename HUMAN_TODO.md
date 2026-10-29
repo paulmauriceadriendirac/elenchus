@@ -1,12 +1,19 @@
 # What the run needs from you
 
-_Updated 2026-10-29 04:01 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-29 04:10 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
 Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text into the chat and say which slug it is. If you cannot get it, create `inbox/sources/<slug>.unavailable` (or just say so in the chat).
 
 **Cloud session:** on GitHub, open `paulmauriceadriendirac/elenchus`, switch to branch `claude/stoic-davinci-ktysg2`, go to `inbox/sources/`, use *Add file → Upload files*, commit to that branch, then tell the session "fetched". Or paste the text straight into the chat and name its slug.
+
+### `a5-dorst-mandelkern-2022-good-guesses`  (high)
+- **Citation:** Dorst, Kevin, and Matthew Mandelkern. 2022. Good Guesses. Philosophy and Phenomenological Research 105(3): 581-618. doi:10.1111/phpr.12831
+- **Where to try:** https://doi.org/10.1111/phpr.12831 ; https://philpapers.org/rec/DORGG
+- **Needed:** full text (PDF), published version with page numbers
+- **Why:** A5 final essay describes the expected answer-value model, the term 'filtered', and the credit to Holguin; panel member co-author; only the authors' Substack summary was retrievable
+- **Requested by:** citation-auditor
 
 ### `amb-a4-halpern-2016-book`  (high)
 - **Citation:** Halpern, Joseph Y. 2016. Actual Causality. MIT Press. (chapters 3 and 4: normality, the modified definition with normality AC2+(a^m), examples incl. rock-throwing and switches; pp. 38-39, 79-81, 90-91 cited by Andreas & Guenther 2024b)

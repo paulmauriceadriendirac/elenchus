@@ -1,0 +1,54 @@
+[
+ {
+  "key": "Dorst2020",
+  "authors": [
+   "Kevin Dorst"
+  ],
+  "year": 2020,
+  "title": "Evidence: A Guide for the Uncertain",
+  "venue": "Philosophy and Phenomenological Research",
+  "volume": "100",
+  "pages": "586-632",
+  "type": "article"
+ },
+ {
+  "key": "FantlMcGrath2002",
+  "authors": [
+   "Jeremy Fantl",
+   "Matthew McGrath"
+  ],
+  "year": 2002,
+  "title": "Evidence, Pragmatics, and Justification",
+  "venue": "Philosophical Review",
+  "volume": "111",
+  "pages": "67-94",
+  "doi": "10.1215/00318108-111-1-67",
+  "type": "article"
+ },
+ {
+  "key": "Weatherson2005",
+  "authors": [
+   "Brian Weatherson"
+  ],
+  "year": 2005,
+  "title": "Can We Do Without Pragmatic Encroachment?",
+  "venue": "Philosophical Perspectives",
+  "volume": "19",
+  "pages": "417-443",
+  "doi": "10.1111/j.1520-8583.2005.00068.x",
+  "type": "article"
+ },
+ {
+  "key": "GoldsteinHawthorne2022",
+  "authors": [
+   "Simon Goldstein",
+   "John Hawthorne"
+  ],
+  "year": 2022,
+  "title": "Knowledge from Multiple Experiences",
+  "venue": "Philosophical Studies",
+  "volume": "179",
+  "pages": "1341-1372",
+  "type": "article"
+ }
+]

@@ -1,11 +1,14 @@
 # How widespread are failures of the verdict-conditioned rule (VER)?  For every situation-question
 # pair with relative defeat in comparable statist K-normality structures with up to 4 (resp. 5)
 # states, try random full-support priors with the Theorem-3 family and with random 3-act problems.
+# (n <= 4 only: the five-state run was too slow for the time available.)
 # Also: does VER ever disvalue a question where there is no relative defeat?
 import random, sys
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 from structs import structures, subsets, K_K
-from v4_conditional_rules import partitions, values, rel_defeat_witnesses
+import io, contextlib
+with contextlib.redirect_stdout(io.StringIO()):
+    from v4_conditional_rules import partitions, values, rel_defeat_witnesses
 random.seed(11)
 def run(nmax, trials):
     rd = fail = nonrd_fail = 0
@@ -45,7 +48,7 @@ def run(nmax, trials):
                     if W:
                         rd += 1; fail += found
     return rd, fail, nonrd_fail
-for nmax, trials in ((4, 40), (5, 6)):
+for nmax, trials in ((4, 40),):
     rd, fail, nf = run(nmax, trials)
     print('E = all states, n <= %d, %d random trials per pair: relative-defeat pairs %d; VER disvalues the question '
           'for some tried problem in %d; VER negative without relative defeat: %d' % (nmax, trials, rd, fail, nf))

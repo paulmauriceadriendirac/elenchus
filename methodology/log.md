@@ -80,3 +80,4 @@
 - 2026-10-29T03:45:15Z **decision**: 29 Oct: candidates A5 (Astra v3 -> our final v4 from S1-lit report), A6 (Astra v3 -> our final v4 from S2-lit + G4), A4 (Astra v5; hostile review P-d300). E3 not revised further (Astra withdrew it; its 28 Oct analysis shows the referees' proposed fix does not escape the SDA issue). A5 advocate review and E3 v5 revision not resumed (time). Reading copies in final/reading-20261029/.
 - 2026-10-29T04:00:03Z **agent**: A5 v4 final revision: state/drafts/A5/v4.md (notes: state/drafts/A5/revision_notes_v4.md; checks c8, c9)
 - 2026-10-29T04:01:17Z **human** (courier): see human_inputs.md
+- 2026-10-29T04:10:29Z **agent**: A5 citation audit: state/audit/A5/citations.md (8 patches; fetch filed requests/fetch/a5-dorst-mandelkern-2022-good-guesses.md)
