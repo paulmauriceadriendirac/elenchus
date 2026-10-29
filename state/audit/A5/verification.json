@@ -1,0 +1,317 @@
+[
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Lockeans Maximize Expected Accuracy",
+      "authors": [
+        "Dorst"
+      ],
+      "year": 2017,
+      "venue": "Mind",
+      "doi": "10.1093/mind/fzx028",
+      "type": "journal-article",
+      "volume": "128",
+      "pages": "175-211"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Dorst2019",
+    "ref": {
+      "key": "Dorst2019",
+      "authors": [
+        "Kevin Dorst"
+      ],
+      "year": 2019,
+      "title": "Lockeans Maximize Expected Accuracy",
+      "venue": "Mind",
+      "volume": "128",
+      "pages": "175-211",
+      "doi": "10.1093/mind/fzx028",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Good Guesses",
+      "authors": [
+        "Dorst",
+        "Mandelkern"
+      ],
+      "year": 2021,
+      "venue": "Philosophy and Phenomenological Research",
+      "doi": "10.1111/phpr.12831",
+      "type": "journal-article",
+      "volume": "105",
+      "pages": "581-618"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "DorstMandelkern2022",
+    "ref": {
+      "key": "DorstMandelkern2022",
+      "authors": [
+        "Kevin Dorst",
+        "Matthew Mandelkern"
+      ],
+      "year": 2022,
+      "title": "Good Guesses",
+      "venue": "Philosophy and Phenomenological Research",
+      "volume": "105",
+      "pages": "581-618",
+      "doi": "10.1111/phpr.12831",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Dr. Truthlove or: How I Learned to Stop Worrying and Love Bayesian Probabilities*",
+      "authors": [
+        "Easwaran"
+      ],
+      "year": 2015,
+      "venue": "No\u00fbs",
+      "doi": "10.1111/nous.12099",
+      "type": "journal-article",
+      "volume": "50",
+      "pages": "816-853"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Easwaran2016",
+    "ref": {
+      "key": "Easwaran2016",
+      "authors": [
+        "Kenny Easwaran"
+      ],
+      "year": 2016,
+      "title": "Dr. Truthlove or: How I Learned to Stop Worrying and Love Bayesian Probabilities",
+      "venue": "No\u00fbs",
+      "volume": "50",
+      "pages": "816-853",
+      "doi": "10.1111/nous.12099",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Thinking, Guessing, and Believing",
+      "authors": [
+        "Holguin"
+      ],
+      "year": 2022,
+      "venue": "Philosophers' Imprint",
+      "doi": "10.3998/phimp.2123",
+      "type": "journal-article",
+      "volume": "22",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Holguin2022",
+    "ref": {
+      "key": "Holguin2022",
+      "authors": [
+        "Ben Holgu\u00edn"
+      ],
+      "year": 2022,
+      "title": "Thinking, Guessing, and Believing",
+      "venue": "Philosophers' Imprint",
+      "volume": "22",
+      "doi": "10.3998/phimp.2123",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Accuracy and Coherence: Prospects for an Alethic Epistemology of Partial Belief",
+      "authors": [
+        "Joyce"
+      ],
+      "year": 2009,
+      "venue": "Synthese Library",
+      "doi": "10.1007/978-1-4020-9198-8_11",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": "263-297"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Joyce2009",
+    "ref": {
+      "key": "Joyce2009",
+      "authors": [
+        "James M. Joyce"
+      ],
+      "year": 2009,
+      "title": "Accuracy and Coherence: Prospects for an Alethic Epistemology of Partial Belief",
+      "venue": "Degrees of Belief",
+      "pages": "263-297",
+      "doi": "10.1007/978-1-4020-9198-8_11",
+      "type": "chapter"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Stability Theory of Belief",
+      "authors": [
+        "Leitgeb"
+      ],
+      "year": 2014,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-2400575",
+      "type": "journal-article",
+      "volume": "123",
+      "pages": "131-171"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Leitgeb2014",
+    "ref": {
+      "key": "Leitgeb2014",
+      "authors": [
+        "Hannes Leitgeb"
+      ],
+      "year": 2014,
+      "title": "The Stability Theory of Belief",
+      "venue": "The Philosophical Review",
+      "volume": "123",
+      "pages": "131-171",
+      "doi": "10.1215/00318108-2400575",
+      "type": "article"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "The Stability of Belief",
+      "authors": [
+        "Leitgeb"
+      ],
+      "year": 2017,
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780198732631.001.0001",
+      "type": "monograph",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 0.505,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 0.51, author ok True, year ok True)"
+    ],
+    "key": "Leitgeb2017",
+    "ref": {
+      "key": "Leitgeb2017",
+      "authors": [
+        "Hannes Leitgeb"
+      ],
+      "year": 2017,
+      "title": "The Stability of Belief: How Rational Belief Coheres with Probability",
+      "venue": "Oxford University Press",
+      "doi": "10.1093/acprof:oso/9780198732631.001.0001",
+      "type": "book"
+    }
+  },
+  {
+    "match": {
+      "title": "Gambling with Truth. An Essay on Induction and the Aims of Science",
+      "authors": [
+        "Bonis",
+        "Levi"
+      ],
+      "year": 1976,
+      "venue": "Technometrics",
+      "doi": "10.2307/1267533",
+      "type": "journal-article",
+      "volume": "18",
+      "pages": "240"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-search",
+    "notes": [
+      "year differs: ref 1967 vs registry 1976"
+    ],
+    "status": "PROBABLE",
+    "key": "Levi1967",
+    "ref": {
+      "key": "Levi1967",
+      "authors": [
+        "Isaac Levi"
+      ],
+      "year": 1967,
+      "title": "Gambling with Truth: An Essay on Induction and the Aims of Science",
+      "venue": "Knopf",
+      "type": "book"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "Lockean Beliefs, Dutch Books, and Scoring Systems",
+      "authors": [
+        "Rothschild"
+      ],
+      "year": 2021,
+      "venue": "Erkenntnis",
+      "doi": "10.1007/s10670-021-00438-1",
+      "type": "journal-article",
+      "volume": "88",
+      "pages": "1979-1995"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "Rothschild2023",
+    "ref": {
+      "key": "Rothschild2023",
+      "authors": [
+        "Daniel Rothschild"
+      ],
+      "year": 2023,
+      "title": "Lockean Beliefs, Dutch Books, and Scoring Systems",
+      "venue": "Erkenntnis",
+      "volume": "88",
+      "pages": "1979-1995",
+      "doi": "10.1007/s10670-021-00438-1",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Credence and belief: epistemic decision theory revisited",
+      "authors": [
+        "Wang"
+      ],
+      "year": 2025,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-025-02321-z",
+      "type": "journal-article",
+      "volume": "182",
+      "pages": "1433-1465"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wang2025",
+    "ref": {
+      "key": "Wang2025",
+      "authors": [
+        "Minkyung Wang"
+      ],
+      "year": 2025,
+      "title": "Credence and belief: epistemic decision theory revisited",
+      "venue": "Philosophical Studies",
+      "volume": "182",
+      "pages": "1433-1465",
+      "doi": "10.1007/s11098-025-02321-z",
+      "type": "article"
+    }
+  }
+]
