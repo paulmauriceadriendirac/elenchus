@@ -1,0 +1,9 @@
+(1) five-state example
+  K(a) = ['a', 's1', 's2']  act now = beta1
+  look policy: {'a': 'beta', 's2': 'decline', 's1': 'decline', 'v2': 'decline', 'v1': 'decline'}
+  conditional ken on [look->decline]: ['s1', 's2', 'v2']
+  KDT -0.3187  CEU -0.3187  VER -0.0082  ANS 0.1517
+  primitive acts differ everywhere: True
+(2) situation-question pairs (n<=4, comparable statist): 64004 ; ANS negative on random problems: 0
+(3) relative-defeat cases: 3306 ; Prop 5 confirmed: 3306 ; not confirmed: 0
+(4) Theorem-3 family: CEU prefers acting now in 3306 of 3306 cases; VER prefers acting now in 0 of 3306
