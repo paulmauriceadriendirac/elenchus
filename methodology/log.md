@@ -99,3 +99,5 @@
 - 2026-10-29T17:40:57Z **event**: A5 final: applied citations_final.md patches 1-3 verbatim to final/A5/essay.md (mechanical).
 - 2026-10-29T17:42:47Z **agent**: A4 final patches: final/A4/essay.md
 - 2026-10-29T17:43:03Z **agent**: A6 final patches: final/A6/essay.md
+- 2026-10-29T17:43:21Z **agent**: compliance: A5 final essay PASS (5039 words; no hard flags; patches verified), state/audit/A5/compliance.md
+- 2026-10-29T17:43:54Z **event**: A5 final: compliance PASS (state/audit/A5/compliance.md); PDF built final/A5/essay.pdf.
