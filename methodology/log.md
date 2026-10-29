@@ -75,3 +75,4 @@
 - 2026-10-27T16:01:38Z **human** (logistics): see human_inputs.md
 - 2026-10-27T16:02:46Z **decision**: Provenance assessment changed: CLAUDE.md §1.2 as now in the repository (revised 23 Oct, see PROVENANCE-CLARIFICATION.md) applies the FAQ relevance standard; no human philosophical contribution has been identified, and the human states Astra received no idea-wise input. The workflow quarantine of Astra outputs is lifted for selection and revision; all external revisions are credited to the other model in the methodology report. Historical disclosures kept.
 - 2026-10-27T16:24:51Z **event**: E3 v4 final reviews in (S5-lit 5/10, G4 5/10); both propose the same Reciprocity-based strengthening. E3 final revision to v5 launched.
+- 2026-10-29T03:42:42Z **human** (logistics): see human_inputs.md
