@@ -90,3 +90,6 @@
 - 2026-10-29T11:45:15Z **decision**: Gate A2 closed: human selected A5, A6, A4 for submission; human confirmed the revised CLAUDE.md §1.2 (23 Oct). A4 v6 final revision complete (5,521 words).
 - 2026-10-29T11:51:23Z **agent**: A5 v5 audit patches applied: state/drafts/A5/v5.md
 - 2026-10-29T11:52:12Z **event**: Astra posted ASSESSMENT-485bec4 (review of A5 v4, A6 v4, A4 v6): required fixes incl. A6 comparison with 'Deference Done Better', A4 comparison with Wysocki 2023 'Conjoined cases'. A5 v6 narrowing launched; A6/A4 fixes to be combined with their audit patches.
+- 2026-10-29T17:34:34Z **agent**: A6 citation audit: state/audit/A6/citations.md
+- 2026-10-29T17:34:45Z **agent**: A4 citation audit: state/audit/A4/citations.md (8 unconditional patches, 5 conditional Halpern-2016 patches; fetch a4-audit-halpern-2016-pinpoints filed)
+- 2026-10-29T17:34:53Z **decision**: Convergence: Astra's A5 v7, A6 v5, A4 v7 (state/external/submission-sourcechecked-20261029/) incorporate our latest drafts (A5 v5/v6-in-progress, A6 v4, A4 v6) plus fixes from its 29 Oct review (Good Guesses full draft, Deference Done Better, Wysocki 2023). Adopted as bases for the final versions; our A5 v6 narrowing stopped as duplicate; our A6/A4 citation and formal audits (of v4/v6) to be applied on top.

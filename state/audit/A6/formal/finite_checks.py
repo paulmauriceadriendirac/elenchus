@@ -118,7 +118,7 @@ class Model:
 def cell_of(Pi, s):
     for c in Pi:
         if s in c:
-            return c
+            return frozenset(c)
     raise ValueError
 
 def rel_defeat_witnesses(Mrule, E, x, Pi):

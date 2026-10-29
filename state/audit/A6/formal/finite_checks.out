@@ -1,10 +1,11 @@
-Traceback (most recent call last):
-  File "/home/user/elenchus/state/audit/A6/formal/finite_checks.py", line 448, in <module>
-    main()
-    ~~~~^^
-  File "/home/user/elenchus/state/audit/A6/formal/finite_checks.py", line 307, in main
-    W = rel_defeat_witnesses(m.K, E, x, Pi)
-  File "/home/user/elenchus/state/audit/A6/formal/finite_checks.py", line 126, in rel_defeat_witnesses
-    return [s for s in Mx if not Mrule(E & cell_of(Pi, s), s) <= Mx]
-                                       ~~^~~~~~~~~~~~~~~~
-TypeError: unsupported operand type(s) for &: 'frozenset' and 'list'
+sanity: >> among strict pairs only == full axiom filter for n<=3: OK
+structures (labelled, n<=4): 594 ; of which satisfy COLLAPSE: 92
+situation-question pairs, every E: 81981 ; with relative defeat: 3306
+situation-question pairs, E = whole S only: 33366 ; with relative defeat: 2322
+Thm1(a) 'if': random problems tested on no-defeat pairs: 11691 ; negative: 0
+Prop 4: random (problem, act) tests: 36821 ; ANS negative: 0
+A.7 silence: random tests with look differing everywhere: 14930 ; violations: 0
+Theorem 3 constructions (2 priors x relative-defeat pairs): 6612 ; KDT negative: 6612 ; CEU prefers acting now: 6612
+  CKD silent in construction: 6612 ; VER prefers acting now with A.6's L: 0 ; conditional ken on 'decline' contains an excluded state: 6612 ; VER prefers looking with 1000L: 6612
+Prop 5 constructions verified: 6612
+failures by check: none

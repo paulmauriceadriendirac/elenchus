@@ -21,10 +21,10 @@ Sources read in full or at the cited passages:
 | 1 Coverage | 16 reference entries; every in-text citation | 0 missing and 0 uncited. Years and spellings all match |
 | 2 Metadata | 16 | tool: 14 VERIFIED, 1 MISMATCH (Hong 2024, resolved by hand), 1 PROBABLE (Geanakoplos: the 1989 paper is confirmed, but its "June 18, 2002 revision" cannot be verified, so remove it) |
 | 3 Quotations | 20 | all 20 match word for word. One is quoted without its scope condition (Q9, fixed under attributions) |
-| 4 Attributions | 38 | 27 accurate, 9 oversimplified, 1 inaccurate (A12), 1 unverifiable (A3, Hong 2026). Das 2023 is checked only against its abstract and is weakened under A5 |
+| 4 Attributions | 38 | 26 accurate, 10 oversimplified, 1 inaccurate (A17), 1 unverifiable (A3, Hong 2026). Das 2023 is checked only against its abstract and is weakened under A5 |
 | 5 Pages/dates | 27 page or section locators | 26 verified. One citation needs an added page (A10). One date claim (the Geanakoplos 2002 revision) cannot be verified and is removed |
 
-Patches: 14 (P1–P14). All of them stay within the existing word count, give or take about 10 words.
+Patches: 17 (P1–P14, P14b–P14d). All of them stay within the existing word count, give or take about 10 words.
 
 ## Step 1: Coverage
 

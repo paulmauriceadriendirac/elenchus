@@ -2,7 +2,7 @@
 
 Essay audited: `state/drafts/A4/v6.md` (strict word count 5,521 by `tools/wordcount.py`).
 Date: 2026-10-29. Auditor: citation-auditor subagent.
-State of the bibliography: no `state/candidates/A4/refs.json` exists. I built a full 13-entry file covering all 12 references, plus one entry for the book chapter-check, at the scratchpad path below and ran `tools/verify_refs.py` on it.
+State of the bibliography: no `state/candidates/A4/refs.json` exists. I built a 13-entry file, one entry for each of the essay's 13 references, at the scratchpad path below and ran `tools/verify_refs.py` on it.
 Per the task, I did not open `state/external/` or `relay/`. That means the 28 October Halpern-book review, which the reviser's notes rely on for every Halpern 2016 pinpoint, was not available to me.
 
 ## Sources actually compared
@@ -19,13 +19,13 @@ Per the task, I did not open `state/external/` or `relay/`. That means the 28 Oc
 
 ## Summary counts
 
-- **References: 12.** All 12 are cited in the text, and every in-text citation has an entry. 10 are VERIFIED by the tool. 2 are NOT_FOUND by the tool (arXiv preprints, OpenAlex 429) and were verified by hand. 1 is a MISMATCH that is only the online-first year. Metadata problems: none. Optional additions: 2.
+- **References: 13.** All 13 are cited in the text, and every in-text citation has an entry. 10 are VERIFIED by the tool. 2 are NOT_FOUND by the tool (arXiv preprints, OpenAlex 429) and were verified by hand. 1 is a MISMATCH that is only the online-first year. Metadata problems: none. Optional additions: 2.
 - **Quotations: 15 strings.** All 15 are word-for-word exact at the stated page. One splice drops the source's hedge and needs a fix (patch 3).
-- **Attributions: 38 checked.**
-  - Accurate: 30.
-  - Oversimplified: 2 (patches 4, 6).
-  - Inaccurate: 2 (patches 1, 2).
-  - Unverifiable: 4 (Halpern 2016; patches H1–H5).
+- **Attributions: 43 checked** (rows A1–A43).
+  - Accurate: 34 (A21 and A27 also need a page fix and a quotation fix).
+  - Oversimplified: 2 (A29, A37; patches 4, 6).
+  - Inaccurate: 2 (A39, A40; patches 1, 2).
+  - Unverifiable: 5 (A6, A15, A24, A33, A41, all Halpern 2016; patches H1–H5).
 - **Pinpoints (page, example, section): 41 checked.**
   - Correct: 34.
   - Incomplete: 2 (patches 4, 5).
@@ -140,7 +140,7 @@ No Halpern 2016 quotations appear, so no quotation needed a fetch request.
 | A42 | Objection 4: Hitchcock 2009, as Beckers (10) reports, presented a switch model to challenge the contrast | Beckers p. 10 | accurate | — |
 | A43 | Appendix: the implementation reproduces Halpern's (2015) verdicts on the switch models and the short circuit | Consistent with pp. 7–8 and Ex. 3.10 | accurate | — |
 
-These are 38 distinct author-claims; I split the long rows when counting. On the "as reported by" items: Hitchcock 2009 via Beckers (A42, A36) and Beckers & Vennekens via X&X (A27) are accurately reported. Blanchard & Schaffer via A&G (A29) is accurately reported only after patch 4. **Panel member:** Mario Günther (`judges.txt`). Andreas & Günther 2024 was checked in full text at every pinpoint (A16, A17, A29, A35, and the Beckers reports about A&G). All are accurate except the A29 gloss and page range.
+On the "as reported by" items: Hitchcock 2009 via Beckers (A42, A36) and Beckers & Vennekens via X&X (A27) are accurately reported. Blanchard & Schaffer via A&G (A29) is accurately reported only after patch 4. **Panel member:** Mario Günther (`judges.txt`). Andreas & Günther 2024 was checked in full text at every pinpoint (A16, A17, A29, A35, and the Beckers reports about A&G). All are accurate except the A29 gloss and page range.
 
 ## Step 5. Page numbers and dates
 
@@ -221,3 +221,9 @@ Word-count effect: patches 1–8 add about 25 words. Patches H1–H5 remove abou
 
 - The essay's own computations (355 preorders, five calibrated preorders, gain identities, A&G-condition runs) are not citation matters and were not re-run.
 - Gallow's verdict is about productive causation (pp. 86–87). The essay's "negative verdict" wording is acceptable.
+
+## Paths
+
+- Report: `/home/user/elenchus/state/audit/A4/citations.md`
+- Fetch request: `/home/user/elenchus/requests/fetch/a4-audit-halpern-2016-pinpoints.md`
+- Session scratch, not persistent: verify_refs input `/tmp/claude-0/-home-user-elenchus/0999555b-7b80-5958-88f6-1f601c103b28/scratchpad/refs.json`, output `/tmp/claude-0/-home-user-elenchus/0999555b-7b80-5958-88f6-1f601c103b28/scratchpad/verif.md` and `/tmp/claude-0/-home-user-elenchus/0999555b-7b80-5958-88f6-1f601c103b28/scratchpad/verif.json`, and arXiv text extracts in `/tmp/claude-0/-home-user-elenchus/0999555b-7b80-5958-88f6-1f601c103b28/scratchpad/src/`.
