@@ -1,0 +1,7 @@
+c=1.960 (threshold t=0.854) L= 10: KDT value -0.0497 | answer-indexed max price 0.0187 | fallibilist: bet EV 0.450, value of 2nd weighing 0.1855
+c=1.960 (threshold t=0.854) L= 20: KDT value -0.1208 | answer-indexed max price 0.1088 | fallibilist: bet EV -0.050, value of 2nd weighing 0.4872
+c=1.960 (threshold t=0.854) L=100: KDT value -0.2736 | answer-indexed max price 1.2258 | fallibilist: bet EV -4.050, value of 2nd weighing 0.0957
+c=2.448 (threshold t=0.950) L= 10: KDT value -0.0099 | answer-indexed max price 0.0022 | fallibilist: bet EV 0.842, value of 2nd weighing 0.0313
+c=2.448 (threshold t=0.950) L= 20: KDT value -0.0389 | answer-indexed max price 0.0237 | fallibilist: bet EV 0.698, value of 2nd weighing 0.1047
+c=2.448 (threshold t=0.950) L=100: KDT value -0.1540 | answer-indexed max price 0.4159 | fallibilist: bet EV -0.452, value of 2nd weighing 0.5539
+Pr(delta >= (1+sqrt2)^2 c^2) = 1.37e-05
