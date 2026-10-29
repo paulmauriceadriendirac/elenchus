@@ -1,12 +1,19 @@
 # What the run needs from you
 
-_Updated 2026-10-29 11:51 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-29 17:35 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
 Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text into the chat and say which slug it is. If you cannot get it, create `inbox/sources/<slug>.unavailable` (or just say so in the chat).
 
 **Cloud session:** on GitHub, open `paulmauriceadriendirac/elenchus`, switch to branch `claude/stoic-davinci-ktysg2`, go to `inbox/sources/`, use *Add file → Upload files*, commit to that branch, then tell the session "fetched". Or paste the text straight into the chat and name its slug.
+
+### `a4-audit-halpern-2016-pinpoints`  (high)
+- **Citation:** Halpern, Joseph Y. 2016. Actual Causality. Cambridge, MA: MIT Press. doi:10.7551/mitpress/10809.001.0001 (open access, CC BY-NC-ND)
+- **Where to try:** https://doi.org/10.7551/mitpress/10809.001.0001 ; https://directory.doabooks.org/handle/20.500.12854/78541
+- **Needed:** PDF (or page images) of printed pp. 84-85 (Example 3.2.6), pp. 121 and 133-134, pp. 149-150, and all of Section 3.3; save to inbox/sources/halpern-2016-actual-causality.pdf. Automated access is blocked (DOAB bot wall, MIT Press Direct 403).
+- **Why:** Citation audit of state/drafts/A4/v6.md: five pinpointed attributions to this book cannot be checked from any copy available to the auditor; fallback patches remove them.
+- **Requested by:** citation-auditor (A4)
 
 ### `a5-dorst-mandelkern-2022-good-guesses`  (high)
 - **Citation:** Dorst, Kevin, and Matthew Mandelkern. 2022. Good Guesses. Philosophy and Phenomenological Research 105(3): 581-618. doi:10.1111/phpr.12831
