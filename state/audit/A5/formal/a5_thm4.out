@@ -1,0 +1,35 @@
+=== (1) random TD + CI two-world measures (all 16 states checked) ===
+   accepted TD+CI measures: 332; failures of the lemma: 0
+OK   Theorem 4 two-world lemma holds for all 332 accepted random TD+CI measures
+
+=== (2) converse: separable uniform measure (T=1,F=-2) satisfies RI on a grid with exact ties ===
+OK   separable T=1,F=-2: RI (every and some) holds, incl. ties at C(p)=2/3 [0 violations]
+
+=== (3) footnote 5 measure ===
+OK   fn5: truth-directed on all 16 states
+OK   fn5: violates CI
+   c=0.3: optima=[14], EA: {'{W}': 0.0, '{W,p}': -1.1, '{W,pbar}': 0.1, '{W,p,pbar}': 0.41}
+OK   fn5: p in the unique optimum at c=0.3
+   c=0.64: optima=[8], EA: {'{W}': 0.0, '{W,p}': -0.08, '{W,pbar}': -0.92, '{W,p,pbar}': -0.032}
+OK   fn5: p in no optimum at c=0.64
+   c=0.7: optima=[10], EA: {'{W}': 0.0, '{W,p}': 0.1, '{W,pbar}': -1.1, '{W,p,pbar}': -0.11}
+OK   fn5: p in the unique optimum at c=0.7
+   verdict on {u} at C(u)=0.3: every/some=(True, True); verdict on {v} at C(v)=0.3: every/some=(False, False)
+OK   fn5 violates RI under the swap automorphism (verdict on {u} at C(u)=.3 differs from verdict on {v} at C(v)=.3)
+
+=== (4) TD two-world measures: swap-symmetric verdicts (forced by RI) => no non-monotonicity ===
+   TD measures sampled: 784; with swap-symmetric verdicts: 216; non-monotone: 74; non-monotone AND symmetric: 0
+OK   no TD two-world measure with swap-symmetric verdicts is non-monotone (random + symmetric families)
+
+=== (5) replacement witnesses for 'CI cannot be dropped' ===
+OK   (a) separable T=2,F=-1: TD
+OK   (a) separable T=2,F=-1: violates CI
+OK   (a) separable T=2,F=-1: RI holds [0 violations]
+OK   (a) at C(p)=1/2 the unique optimum contains p and pbar, so no tau_p in (1/2,1) works
+OK   (b) pairwise tie measure: TD on 2 and 3 worlds
+OK   (b) pairwise tie measure: violates CI
+OK   (b) pairwise tie measure: RI holds [0 violations]
+   two worlds, C(p)=1/2: optima [8, 14]; C(p)=3/5: optima [8, 14]
+OK   (b) for C(p) in (1/3,2/3), p is in some but not every optimum: no tau_p satisfies Theorem 4's conclusion
+
+SUMMARY a5: ALL CHECKS PASSED

@@ -1,0 +1,4 @@
+uniform T=1,F=-2, beta=3 (sanity: the essay's case): non-monotone propositions on the grid (bitmask: (lowest C*200 with p required, highest C*200 with p excluded)): {1: (134, 155), 2: (134, 155), 3: (156, 166), 4: (134, 155), 5: (156, 166), 6: (156, 166)}
+OK   sanity: {w1} detected as non-monotone with uniform values
+proposition-dependent conservative values (singletons tau=2/3, doubletons tau=0.99), beta=3: non-monotone propositions on the grid (bitmask: (lowest C*200 with p required, highest C*200 with p excluded)): {}
+RESULT: no non-monotonicity found on the grid for these conservative proposition-dependent values

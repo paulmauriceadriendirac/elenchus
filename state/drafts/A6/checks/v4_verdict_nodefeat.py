@@ -33,11 +33,3 @@ for b in set(v['alpha'].values()):
     print('  hypothesis look->%d:' % b, sorted(Db), ' conditional ken:', sorted(Kc(Db, E, x, geq, gg)))
 print('KDT %.4f  CEU %.4f  VER %.4f  ANS %.4f' % (v['kdt'], v['ceu'], v['ver'], v['ans']))
 
-# Tie-free version used in the essay. States 0=a, 3=x, 1=b, 2=c (a > x > b > c; a >> all others; x >> c only).
-P = {s: .25 for s in E}
-A1 = {0: -2, 3: 3.1, 1: -2, 2: 2.1}
-A2 = {0: 3, 3: 3, 1: 3, 2: -3}
-v = values([A1, A2], E, 3, [frozenset([3]), frozenset([1, 2]), frozenset([0])], geq, gg, P)
-print('essay version: ken', sorted(v['K']), 'act now', v['a_now'], 'look policy', v['alpha'],
-      'relative defeat:', bool(rel_defeat_witnesses(E, 3, [frozenset([3]), frozenset([1, 2]), frozenset([0])], geq, gg)))
-print('  KDT %.4f  CEU %.4f  VER %.4f  ANS %.4f' % (v['kdt'], v['ceu'], v['ver'], v['ans']))

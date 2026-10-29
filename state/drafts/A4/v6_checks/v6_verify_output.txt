@@ -1,0 +1,75 @@
+# preorders on {n,l,f,u}: 355
+
+## 0. Unfiltered verdicts (candidate of interest; part of a cause)
+  GP       {'orig': True, 'upd': True, 'mod': True} standard: True
+  CHAIN    {'orig': True, 'upd': True, 'mod': True} standard: True
+  BOULDER  {'orig': True, 'upd': True, 'mod': True} standard: True
+  SC       {'orig': True, 'upd': True, 'mod': True} standard: False
+  LP       {'orig': True, 'upd': True, 'mod': True} standard: True
+  EP       {'orig': True, 'upd': True, 'mod': True} standard: True
+  LTRT     {'orig': True, 'upd': True, 'mod': True} standard: False
+  DOOR     {'orig': True, 'upd': True, 'mod': True} standard: False
+  LBRB     {'orig': True, 'upd': True, 'mod': True} standard: False
+  SV       {'orig': True, 'upd': True, 'mod': True} standard: False
+  LOC      {'orig': True, 'upd': True, 'mod': True} standard: True
+  SEED     {'orig': True, 'upd': True, 'mod': True} standard: True
+
+## 1. Singleton witness worlds and their changed-category profiles (event coding)
+  GP       orig: {'P': 1, 'A': 0, 'V': 1} prof={('R1', 'R0'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, -1, 1, 0, 0)
+  GP       upd : {'P': 1, 'A': 0, 'V': 1} prof={('R1', 'R0'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, -1, 1, 0, 0)
+  GP       mod : {'P': 1, 'A': 0, 'V': 1} prof={('R1', 'R0'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, -1, 1, 0, 0)
+  CHAIN    orig: {'C': 0, 'I': 0, 'Y': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 2, -2, 0, 0)
+  CHAIN    upd : {'C': 0, 'I': 0, 'Y': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 2, -2, 0, 0)
+  CHAIN    mod : {'C': 0, 'I': 0, 'Y': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 2, -2, 0, 0)
+  BOULDER  orig: {'F': 1, 'B': 1, 'K': 0, 'H': 1} prof={('l', 'f'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(0, -1, 0, 1, 0); {'F': 0, 'B': 1, 'K': 0, 'H': 1} prof={('R1', 'R0'): 1, ('l', 'u'): 1, ('l', 'n'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, 0, -1, 0, 1)
+  BOULDER  upd : {'F': 1, 'B': 1, 'K': 0, 'H': 1} prof={('l', 'f'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(0, -1, 0, 1, 0); {'F': 0, 'B': 1, 'K': 0, 'H': 1} prof={('R1', 'R0'): 1, ('l', 'u'): 1, ('l', 'n'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, 0, -1, 0, 1)
+  BOULDER  mod : {'F': 1, 'B': 1, 'K': 0, 'H': 1} prof={('l', 'f'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(0, -1, 0, 1, 0)
+  SC       orig: {'A': 0, 'P': 1, 'V': 1} prof={('R1', 'R0'): 1, ('l', 'u'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, -1, 0, 0, 1)
+  SC       upd : {'A': 0, 'P': 1, 'V': 1} prof={('R1', 'R0'): 1, ('l', 'u'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, -1, 0, 0, 1)
+  SC       mod : {'A': 0, 'P': 1, 'V': 1} prof={('R1', 'R0'): 1, ('l', 'u'): 1, ('n', 'l'): 1} gain(r,a,b,c,d)=(1, -1, 0, 0, 1)
+  LP       orig: {'ST': 0, 'BT': 0, 'SH': 0, 'BH': 0, 'BS': 0} prof={('R1', 'R0'): 2, ('l', 'n'): 2} gain(r,a,b,c,d)=(2, 2, -2, 0, 0); {'ST': 0, 'BT': 1, 'SH': 0, 'BH': 0, 'BS': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2, ('n', 'f'): 1} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  LP       upd : {'ST': 0, 'BT': 0, 'SH': 0, 'BH': 0, 'BS': 0} prof={('R1', 'R0'): 2, ('l', 'n'): 2} gain(r,a,b,c,d)=(2, 2, -2, 0, 0); {'ST': 0, 'BT': 1, 'SH': 0, 'BH': 0, 'BS': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2, ('n', 'f'): 1} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  LP       mod : {'ST': 0, 'BT': 1, 'SH': 0, 'BH': 0, 'BS': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2, ('n', 'f'): 1} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  LTRT     orig: {'F': 0, 'LT': 0, 'RT': 0, 'A': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  LTRT     upd : {'F': 0, 'LT': 0, 'RT': 0, 'A': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  LTRT     mod : {'F': 0, 'LT': 0, 'RT': 0, 'A': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  DOOR     orig: {'M': 1, 'T': 0, 'L': 0, 'R': 0, 'E': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  DOOR     upd : {'M': 1, 'T': 0, 'L': 0, 'R': 0, 'E': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  DOOR     mod : {'M': 1, 'T': 0, 'L': 0, 'R': 0, 'E': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 2} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  LBRB     orig: {'F': 0, 'LB': 1, 'RB': 0, 'A': 0} prof={('R1', 'R0'): 1, ('R0', 'R1'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(0, 1, -1, 0, 0)
+  LBRB     upd : {'F': 0, 'LB': 1, 'RB': 0, 'A': 0} prof={('R1', 'R0'): 1, ('R0', 'R1'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(0, 1, -1, 0, 0)
+  LBRB     mod : 
+  SV       orig: {'EF': 0, 'LB': 0, 'RB': 1, 'TA': 1} prof={('R1', 'R0'): 2, ('n', 'l'): 1} gain(r,a,b,c,d)=(2, -1, 1, 0, 0)
+  SV       upd : {'EF': 0, 'LB': 0, 'RB': 1, 'TA': 1} prof={('R1', 'R0'): 2, ('n', 'l'): 1} gain(r,a,b,c,d)=(2, -1, 1, 0, 0)
+  SV       mod : 
+  LOC      orig: {'S': 0, 'Q': 1, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('R0', 'R1'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(0, 1, -1, 0, 0); {'S': 0, 'Q': 0, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(1, 0, -1, 1, 0)
+  LOC      upd : {'S': 0, 'Q': 1, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('R0', 'R1'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(0, 1, -1, 0, 0); {'S': 0, 'Q': 0, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(1, 0, -1, 1, 0)
+  LOC      mod : {'S': 0, 'Q': 0, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('n', 'f'): 1, ('l', 'n'): 1} gain(r,a,b,c,d)=(1, 0, -1, 1, 0)
+  SEED     orig: {'P': 1, 'S': 0, 'G': 0, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2, ('n', 'f'): 1} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  SEED     upd : {'P': 1, 'S': 0, 'G': 0, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2, ('n', 'f'): 1} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+  SEED     mod : {'P': 1, 'S': 0, 'G': 0, 'D': 0, 'X': 0} prof={('R1', 'R0'): 1, ('l', 'n'): 2, ('n', 'f'): 1} gain(r,a,b,c,d)=(1, 1, -2, 1, 0)
+
+## 2. Calibration (GP, CHAIN, BOULDER causes; SC not) over all 355 preorders
+  orig: 5 preorders calibrated (2 total orders); all satisfy l=n, f>=n, u!>=n: True; preorders satisfying the conditions: 5
+  upd: 5 preorders calibrated (2 total orders); all satisfy l=n, f>=n, u!>=n: True; preorders satisfying the conditions: 5
+  mod: 5 preorders calibrated (2 total orders); all satisfy l=n, f>=n, u!>=n: True; preorders satisfying the conditions: 5
+
+## 3. Horn A (modified): LP(ST), LTRT(F), DOOR(T) agree under every preorder
+  singleton verdicts agree in 355/355; 'ST singleton cause' == 'switch part of cause' in 355/355
+  preorders where ST is part of a cause only via a conjunction: 96; BT then also part of a cause in all of them: True
+
+## 4. Horn B (original/updated): GP => SV, every preorder; and l>=n <=> SV
+  orig: GP cause => SV flip part of cause: True;  SV flip part of cause iff l>=n: True
+  upd: GP cause => SV flip part of cause: True;  SV flip part of cause iff l>=n: True
+  modified: SV flip part of a cause under no filter at all: False
+
+## 5. Dilemma: preorders getting GP and LP(ST cause, BT not) right while excluding every switch
+  orig: 0
+  upd: 0
+  mod: 0
+
+## 6. Additive scores: identities and random sweep
+  mod: CHAIN {(1, 2, -2, 0, 0)} BOULDER {(0, -1, 0, 1, 0)} LP {(1, 1, -2, 1, 0)} LTRT {(1, 1, -2, 1, 0)} DOOR {(1, 1, -2, 1, 0)}
+  mod: g_LP == g_LTRT == g_DOOR == g_CHAIN + g_BOULDER: True
+  orig: GP gains {(1, -1, 1, 0, 0)}; SV gains {(2, -1, 1, 0, 0)}; LP gains {(2, 2, -2, 0, 0), (1, 1, -2, 1, 0)}; DOOR gains {(1, 1, -2, 1, 0)}
+  upd: GP gains {(1, -1, 1, 0, 0)}; SV gains {(2, -1, 1, 0, 0)}; LP gains {(2, 2, -2, 0, 0), (1, 1, -2, 1, 0)}; DOOR gains {(1, 1, -2, 1, 0)}

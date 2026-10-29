@@ -1,0 +1,194 @@
+[
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A refinement of the Hitchcock definition of actual causation",
+      "authors": [
+        "Xiao",
+        "Xiong"
+      ],
+      "year": 2026,
+      "venue": "Humanities and Social Sciences Communications",
+      "doi": "10.1057/s41599-026-07470-y",
+      "type": "journal-article",
+      "volume": "13",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "XiaoXiong2026",
+    "ref": {
+      "key": "XiaoXiong2026",
+      "authors": [
+        "Zhizun Xiao",
+        "Wei Xiong"
+      ],
+      "year": 2026,
+      "title": "A refinement of the Hitchcock definition of actual causation",
+      "venue": "Humanities and Social Sciences Communications",
+      "volume": "13",
+      "pages": "1088",
+      "doi": "10.1057/s41599-026-07470-y",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Causation and the Price of Transitivity",
+      "authors": [
+        "Hall"
+      ],
+      "year": 2000,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.2307/2678390",
+      "type": "journal-article",
+      "volume": "97",
+      "pages": "198"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hall2000",
+    "ref": {
+      "key": "Hall2000",
+      "authors": [
+        "Ned Hall"
+      ],
+      "year": 2000,
+      "title": "Causation and the Price of Transitivity",
+      "venue": "Journal of Philosophy",
+      "volume": "97",
+      "pages": "198-222",
+      "doi": "10.2307/2678390",
+      "type": "article"
+    }
+  },
+  {
+    "match": {
+      "title": "Structural equations and causation: six counterexamples",
+      "authors": [
+        "Hitchcock"
+      ],
+      "year": 2008,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-008-9216-2",
+      "type": "journal-article",
+      "volume": "144",
+      "pages": "391-401"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-search",
+    "notes": [],
+    "status": "VERIFIED",
+    "key": "Hitchcock2009",
+    "ref": {
+      "key": "Hitchcock2009",
+      "authors": [
+        "Christopher Hitchcock"
+      ],
+      "year": 2009,
+      "title": "Structural equations and causation: six counterexamples",
+      "venue": "Philosophical Studies",
+      "volume": "144",
+      "pages": "391-401",
+      "type": "article"
+    }
+  },
+  {
+    "match": {
+      "title": "A principled approach to defining actual causation",
+      "authors": [
+        "Beckers",
+        "Vennekens"
+      ],
+      "year": 2016,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-016-1247-1",
+      "type": "journal-article",
+      "volume": "195",
+      "pages": "835-862"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-search",
+    "notes": [
+      "year differs: ref 2018 vs registry 2016"
+    ],
+    "status": "PROBABLE",
+    "key": "BeckersVennekens2018",
+    "ref": {
+      "key": "BeckersVennekens2018",
+      "authors": [
+        "Sander Beckers",
+        "Joost Vennekens"
+      ],
+      "year": 2018,
+      "title": "A principled approach to defining actual causation",
+      "venue": "Synthese",
+      "volume": "195",
+      "pages": "835-862",
+      "type": "article"
+    }
+  },
+  {
+    "match": {
+      "title": "Cause without Default",
+      "authors": [
+        "Blanchard",
+        "Schaffer"
+      ],
+      "year": 2017,
+      "venue": "Oxford Scholarship Online",
+      "doi": "10.1093/oso/9780198746911.003.0010",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-search",
+    "notes": [],
+    "status": "VERIFIED",
+    "key": "BlanchardSchaffer2017",
+    "ref": {
+      "key": "BlanchardSchaffer2017",
+      "authors": [
+        "Thomas Blanchard",
+        "Jonathan Schaffer"
+      ],
+      "year": 2017,
+      "title": "Cause without Default",
+      "venue": "Making a Difference",
+      "type": "chapter"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Structural equations and causation",
+      "authors": [
+        "Hall"
+      ],
+      "year": 2007,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-006-9057-9",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "109-136"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hall2007",
+    "ref": {
+      "key": "Hall2007",
+      "authors": [
+        "Ned Hall"
+      ],
+      "year": 2007,
+      "title": "Structural equations and causation",
+      "venue": "Philosophical Studies",
+      "volume": "132",
+      "pages": "109-136",
+      "doi": "10.1007/s11098-006-9057-9",
+      "type": "article"
+    }
+  }
+]
