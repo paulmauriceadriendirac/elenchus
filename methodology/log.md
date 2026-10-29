@@ -89,3 +89,4 @@
 - 2026-10-29T11:45:15Z **human** (selection): see human_inputs.md
 - 2026-10-29T11:45:15Z **decision**: Gate A2 closed: human selected A5, A6, A4 for submission; human confirmed the revised CLAUDE.md §1.2 (23 Oct). A4 v6 final revision complete (5,521 words).
 - 2026-10-29T11:51:23Z **agent**: A5 v5 audit patches applied: state/drafts/A5/v5.md
+- 2026-10-29T11:52:12Z **event**: Astra posted ASSESSMENT-485bec4 (review of A5 v4, A6 v4, A4 v6): required fixes incl. A6 comparison with 'Deference Done Better', A4 comparison with Wysocki 2023 'Conjoined cases'. A5 v6 narrowing launched; A6/A4 fixes to be combined with their audit patches.
