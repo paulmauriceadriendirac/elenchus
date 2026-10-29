@@ -97,3 +97,4 @@
 - 2026-10-29T17:36:33Z **event**: Final cycle: A6 and A4 patch passes on Astra's v5/v7 (bases) with our citation audits (and formal audits if complete) -> final/A6, final/A4; external review request template at relay/outbox/final-review-request-20261029.md; methodology report to be finalized against final versions.
 - 2026-10-29T17:40:33Z **agent**: A5 final delta audit: state/audit/A5/citations_final.md
 - 2026-10-29T17:40:57Z **event**: A5 final: applied citations_final.md patches 1-3 verbatim to final/A5/essay.md (mechanical).
+- 2026-10-29T17:42:47Z **agent**: A4 final patches: final/A4/essay.md

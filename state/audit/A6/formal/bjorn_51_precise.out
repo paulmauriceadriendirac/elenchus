@@ -1,0 +1,4 @@
+d* = 2.1956251 = 1.12022 c ; inf_D delta = d*^2/2 = 2.4103848
+P(lose | K^D) = 0.14564441 ; bet EV on K^D at L=10: -0.602089
+declining states with |d|<d*, |mu|>c/sqrt2 inside the delta bound (grid scan): 0
+q(d=0.5d*, m=a) = 0.0145121 ; q(d=0.95d*, m=a) = 0.0790207
