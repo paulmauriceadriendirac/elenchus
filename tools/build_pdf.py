@@ -11,6 +11,7 @@ processor (mechanical formatting by the human is permitted by the rules).
 """
 import argparse
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -49,6 +50,8 @@ def main():
         subprocess.run([pd, a.src, "-f", "markdown+tex_math_dollars+footnotes+smart",
                         "-t", "typst", "-s", "-o", typ], check=True)
         body = open(typ, encoding="utf-8").read()
+        # pandoc emits the pre-0.12 Typst name for the intersection symbol
+        body = re.sub(r"\bsect\b", "inter", body)
         with open(typ, "w", encoding="utf-8") as f:
             f.write(PREAMBLE + "\n" + body)
         import typst
