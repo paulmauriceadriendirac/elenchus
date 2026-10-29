@@ -578,6 +578,59 @@ okL = all(not is_part(tables('mod', R)['boulder'], 'K') and ('ST', 'BT') in tabl
 check(f'Exceptionless componentwise preorders with n>=l ({len(exc)}): ducking lost and {{ST,BT}} a cause in all', okL)
 
 print('=' * 78)
+print('M. Appendix remark: other contingencies for the Tracks flip and the Doorbells setting (orig/upd)')
+for nm, m, c in [('Tracks', T_, 'F'), ('Doorbells', D_, 'T')]:
+    for dfn in ('orig', 'upd'):
+        V, act = m.order, m.actual
+        others = [v for v in V if v != c]
+        rows = []
+        for W in subsets(others):
+            for wv in itertools.product((0, 1), repeat=len(W)):
+                wd = dict(zip(W, wv))
+                world = m.solve({c: 1 - act[c], **wd})
+                if m.phi(world):
+                    continue
+                valid = (tuple(world[v] for v in V) in m.witness_worlds((c,), dfn)
+                         and any(lst[1] == W and lst[2] == wv for lst in m.witness_worlds((c,), dfn)[tuple(world[v] for v in V)]))
+                rootdev = any(m.trans(world)[v] == (R0, R1) for v in m.roots)
+                rows.append((W, wv, tuple(world[v] for v in V), 'VALID' if valid else 'fails sufficiency', rootdev))
+        print(f'  {nm} ({dfn}): contingencies with not-phi:')
+        for row in rows:
+            print('     W=%s w=%s world=%s %s root->deviant=%s' % row)
+        check(f'{nm} ({dfn}): every not-phi contingency is valid with the unique witness world or fails sufficiency; none moves a root to deviant',
+              all(r_[3] == 'fails sufficiency' or r_[2] == list(m.witness_worlds((c,), 'mod'))[0] for r_ in rows) and not any(r_[4] for r_ in rows))
+    tr_other = [r_ for r_ in rows if r_[2] != list(m.witness_worlds((c,), 'mod'))[0]]
+    print(f'  {nm}: contingencies changing the outcome with a different world: {[(r_[0], r_[1], r_[2]) for r_ in tr_other]}')
+
+print('=' * 78)
+print('N. Section 5: variable-indexed componentwise escape (f not >= n,l for LT and L only), modified definition')
+
+
+def comp_admit_var(geq_default, geq_special, special):
+    def adm(m, w):
+        for v, (ca, cw) in m.trans(w).items():
+            if ca == cw:
+                continue
+            if ca in (R0, R1):
+                if cw != R0:
+                    return False
+            elif (cw, ca) not in (geq_special if (m.name, v) in special else geq_default):
+                return False
+        return True
+    return adm
+
+
+for R in CAL['mod']:
+    Rs = frozenset(p for p in R if p not in {('f', 'n'), ('f', 'l')})
+    trans_ok = all((x, z) in Rs for (x, y) in Rs for (y2, z) in Rs if y == y2)
+    adm = comp_admit_var(R, Rs, {('Tracks', 'LT'), ('Doorbells', 'L')})
+    t = {k: cause_table(M[k], 'mod', adm)[1] for k in ['prevention', 'chain', 'boulder', 'short', 'late', 'tracks', 'doorbells']}
+    ok = (trans_ok and is_cause(t['prevention'], 'A') and is_cause(t['chain'], 'C') and is_cause(t['boulder'], 'K')
+          and not is_cause(t['short'], 'A') and is_cause(t['late'], 'ST') and not is_part(t['late'], 'BT')
+          and not is_part(t['tracks'], 'F') and not is_part(t['doorbells'], 'T'))
+    check(f'Variable-indexed escape from calibrated preorder {show(R)} separates Suzy from both switches (mod)', ok)
+
+print('=' * 78)
 fails = [l for l, ok in CHECKS if not ok]
 print(f'SUMMARY: {len(CHECKS)} checks, {len(CHECKS) - len(fails)} pass, {len(fails)} fail')
 for l in fails:

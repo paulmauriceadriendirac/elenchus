@@ -252,7 +252,118 @@ L. Exceptionless conformity (modified): admit only witness worlds with no f/u
 [PASS] Conformity: every cause in every model consists of roots only (Lemma consequence)
 [PASS] Exceptionless componentwise preorders with n>=l (36): ducking lost and {ST,BT} a cause in all
 ==============================================================================
-SUMMARY: 85 checks, 82 pass, 3 fail
+M. Appendix remark: other contingencies for the Tracks flip and the Doorbells setting (orig/upd)
+  Tracks (orig): contingencies with not-phi:
+     W=('LT',) w=(0,) world=(0, 0, 0, 0) VALID root->deviant=False
+     W=('A',) w=(0,) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT') w=(0, 0) world=(0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'A') w=(0, 0) world=(0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'A') w=(1, 0) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('RT', 'A') w=(0, 0) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('RT', 'A') w=(1, 0) world=(0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(0, 0, 0) world=(0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(0, 1, 0) world=(0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(1, 0, 0) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(1, 1, 0) world=(0, 1, 1, 0) fails sufficiency root->deviant=False
+[PASS] Tracks (orig): every not-phi contingency is valid with the unique witness world or fails sufficiency; none moves a root to deviant
+  Tracks (upd): contingencies with not-phi:
+     W=('LT',) w=(0,) world=(0, 0, 0, 0) VALID root->deviant=False
+     W=('A',) w=(0,) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT') w=(0, 0) world=(0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'A') w=(0, 0) world=(0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'A') w=(1, 0) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('RT', 'A') w=(0, 0) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('RT', 'A') w=(1, 0) world=(0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(0, 0, 0) world=(0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(0, 1, 0) world=(0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(1, 0, 0) world=(0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('LT', 'RT', 'A') w=(1, 1, 0) world=(0, 1, 1, 0) fails sufficiency root->deviant=False
+[PASS] Tracks (upd): every not-phi contingency is valid with the unique witness world or fails sufficiency; none moves a root to deviant
+  Tracks: contingencies changing the outcome with a different world: [(('A',), (0,), (0, 1, 0, 0)), (('LT', 'A'), (1, 0), (0, 1, 0, 0)), (('RT', 'A'), (0, 0), (0, 1, 0, 0)), (('RT', 'A'), (1, 0), (0, 1, 1, 0)), (('LT', 'RT', 'A'), (0, 1, 0), (0, 0, 1, 0)), (('LT', 'RT', 'A'), (1, 0, 0), (0, 1, 0, 0)), (('LT', 'RT', 'A'), (1, 1, 0), (0, 1, 1, 0))]
+  Doorbells (orig): contingencies with not-phi:
+     W=('M',) w=(0,) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L',) w=(0,) world=(1, 0, 0, 0, 0) VALID root->deviant=False
+     W=('E',) w=(0,) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L') w=(0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L') w=(1, 0) world=(1, 0, 0, 0, 0) VALID root->deviant=False
+     W=('M', 'R') w=(0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'E') w=(0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'E') w=(1, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'R') w=(0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'E') w=(0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'E') w=(1, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('R', 'E') w=(0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('R', 'E') w=(1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R') w=(0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R') w=(1, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(0, 1, 0) world=(0, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(1, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(1, 1, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(0, 1, 0) world=(0, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(1, 0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(1, 1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(0, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(0, 1, 0) world=(1, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(1, 0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(1, 1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 0, 1, 0) world=(0, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 1, 0, 0) world=(0, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 1, 1, 0) world=(0, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 0, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 0, 1, 0) world=(1, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 1, 0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 1, 1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+[PASS] Doorbells (orig): every not-phi contingency is valid with the unique witness world or fails sufficiency; none moves a root to deviant
+  Doorbells (upd): contingencies with not-phi:
+     W=('M',) w=(0,) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L',) w=(0,) world=(1, 0, 0, 0, 0) VALID root->deviant=False
+     W=('E',) w=(0,) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L') w=(0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L') w=(1, 0) world=(1, 0, 0, 0, 0) VALID root->deviant=False
+     W=('M', 'R') w=(0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'E') w=(0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'E') w=(1, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'R') w=(0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'E') w=(0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'E') w=(1, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('R', 'E') w=(0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('R', 'E') w=(1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R') w=(0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R') w=(1, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(0, 1, 0) world=(0, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(1, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'E') w=(1, 1, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(0, 1, 0) world=(0, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(1, 0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'R', 'E') w=(1, 1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(0, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(0, 1, 0) world=(1, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(1, 0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('L', 'R', 'E') w=(1, 1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 0, 0, 0) world=(0, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 0, 1, 0) world=(0, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 1, 0, 0) world=(0, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(0, 1, 1, 0) world=(0, 0, 1, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 0, 0, 0) world=(1, 0, 0, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 0, 1, 0) world=(1, 0, 0, 1, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 1, 0, 0) world=(1, 0, 1, 0, 0) fails sufficiency root->deviant=False
+     W=('M', 'L', 'R', 'E') w=(1, 1, 1, 0) world=(1, 0, 1, 1, 0) fails sufficiency root->deviant=False
+[PASS] Doorbells (upd): every not-phi contingency is valid with the unique witness world or fails sufficiency; none moves a root to deviant
+  Doorbells: contingencies changing the outcome with a different world: [(('M',), (0,), (0, 0, 0, 0, 0)), (('E',), (0,), (1, 0, 1, 0, 0)), (('M', 'L'), (0, 0), (0, 0, 0, 0, 0)), (('M', 'R'), (0, 0), (0, 0, 0, 0, 0)), (('M', 'E'), (0, 0), (0, 0, 0, 0, 0)), (('M', 'E'), (1, 0), (1, 0, 1, 0, 0)), (('L', 'E'), (1, 0), (1, 0, 1, 0, 0)), (('R', 'E'), (0, 0), (1, 0, 1, 0, 0)), (('R', 'E'), (1, 0), (1, 0, 1, 1, 0)), (('M', 'L', 'R'), (0, 0, 0), (0, 0, 0, 0, 0)), (('M', 'L', 'E'), (0, 0, 0), (0, 0, 0, 0, 0)), (('M', 'L', 'E'), (0, 1, 0), (0, 0, 1, 0, 0)), (('M', 'L', 'E'), (1, 1, 0), (1, 0, 1, 0, 0)), (('M', 'R', 'E'), (0, 0, 0), (0, 0, 0, 0, 0)), (('M', 'R', 'E'), (0, 1, 0), (0, 0, 0, 1, 0)), (('M', 'R', 'E'), (1, 0, 0), (1, 0, 1, 0, 0)), (('M', 'R', 'E'), (1, 1, 0), (1, 0, 1, 1, 0)), (('L', 'R', 'E'), (0, 1, 0), (1, 0, 0, 1, 0)), (('L', 'R', 'E'), (1, 0, 0), (1, 0, 1, 0, 0)), (('L', 'R', 'E'), (1, 1, 0), (1, 0, 1, 1, 0)), (('M', 'L', 'R', 'E'), (0, 0, 0, 0), (0, 0, 0, 0, 0)), (('M', 'L', 'R', 'E'), (0, 0, 1, 0), (0, 0, 0, 1, 0)), (('M', 'L', 'R', 'E'), (0, 1, 0, 0), (0, 0, 1, 0, 0)), (('M', 'L', 'R', 'E'), (0, 1, 1, 0), (0, 0, 1, 1, 0)), (('M', 'L', 'R', 'E'), (1, 0, 1, 0), (1, 0, 0, 1, 0)), (('M', 'L', 'R', 'E'), (1, 1, 0, 0), (1, 0, 1, 0, 0)), (('M', 'L', 'R', 'E'), (1, 1, 1, 0), (1, 0, 1, 1, 0))]
+==============================================================================
+N. Section 5: variable-indexed componentwise escape (f not >= n,l for LT and L only), modified definition
+[PASS] Variable-indexed escape from calibrated preorder {f>=l, f>=n, l>=n, n>=l} separates Suzy from both switches (mod)
+[PASS] Variable-indexed escape from calibrated preorder {f>=l, f>=n, l>=f, l>=n, n>=f, n>=l} separates Suzy from both switches (mod)
+[PASS] Variable-indexed escape from calibrated preorder {f>=l, f>=n, f>=u, l>=n, n>=l} separates Suzy from both switches (mod)
+[PASS] Variable-indexed escape from calibrated preorder {f>=l, f>=n, f>=u, l>=n, l>=u, n>=l, n>=u} separates Suzy from both switches (mod)
+[PASS] Variable-indexed escape from calibrated preorder {f>=l, f>=n, f>=u, l>=f, l>=n, l>=u, n>=f, n>=l, n>=u} separates Suzy from both switches (mod)
+==============================================================================
+SUMMARY: 94 checks, 91 pass, 3 fail
   FAIL: orig: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
   FAIL: upd: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE
   FAIL: mod: 'two of them total orders' read as linear orders (antisymmetric) -- expected FALSE

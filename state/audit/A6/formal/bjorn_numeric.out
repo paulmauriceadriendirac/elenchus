@@ -1,0 +1,27 @@
+threshold map c^2=-2ln(1-t): c=1.96 -> t=0.8535; t=0.85 -> c=1.9479; t=0.95 -> c=2.4477
+  MC check: P(delta < b+c^2 | delta >= b) = 0.8539 vs 1-exp(-c^2/2) = 0.8535
+c=1.9600 L= 10: d*=2.1956 (= 1.1202 c) | KDT value -0.0496 | ANS max price 0.0187 | norm check 0.853510 vs 0.853510
+c=1.9600 L= 20: d*=1.8354 (= 0.9364 c) | KDT value -0.1207 | ANS max price 0.1088 | norm check 0.853510 vs 0.853510
+c=1.9600 L=100: d*=1.3466 (= 0.6870 c) | KDT value -0.2738 | ANS max price 1.2258 | norm check 0.853510 vs 0.853510
+c=2.4477 L= 10: d*=3.0569 (= 1.2489 c) | KDT value -0.0099 | ANS max price 0.0022 | norm check 0.950000 vs 0.950000
+c=2.4477 L= 20: d*=2.6241 (= 1.0720 c) | KDT value -0.0389 | ANS max price 0.0237 | norm check 0.950000 vs 0.950000
+c=2.4477 L=100: d*=1.8955 (= 0.7744 c) | KDT value -0.1539 | ANS max price 0.4159 | norm check 0.950000 vs 0.950000
+fallibilist c=1.96 L=10: P(|e1|<=c)=0.9500, bet EV=0.4500, Bayesian value of 2nd weighing=0.1855
+P(0<|d|<=sqrt2 c) = 2Phi(c)-1 = 0.9500
+P(weight belief lost) = P(|d|>(2-sqrt2)c): unconditional 0.4169; given delta<=c^2 0.3556
+   c=1.645: unconditional 0.4956
+   c=1.96: unconditional 0.4169
+   c=2.0: unconditional 0.4074
+   c=2.17: unconditional 0.3687
+   c=2.448: unconditional 0.3106
+   first reading accurate (e1=0): P(|e2|>(2-sqrt2)c) = 0.2509
+P(delta >= (1+sqrt2)^2 c^2) = 1.374e-05
+5.1: inf delta over decline set 2.4112 (d*^2/2 = 2.4104); bet EV on conditional ken = -0.6007
+A.5 R=1c^2 (threshold (1+sqrt2)^2=5.828): state-bet value L=1e3 -0.84356, L=1e6 -0.99529 | weight-bet value L=1e6 -0.355873
+A.5 R=3c^2 (threshold (1+sqrt2)^2=5.828): state-bet value L=1e3 -0.00408, L=1e6 -0.00418 | weight-bet value L=1e6 -0.003148
+A.5 R=5c^2 (threshold (1+sqrt2)^2=5.828): state-bet value L=1e3 -0.00006, L=1e6 -0.00007 | weight-bet value L=1e6 -0.000006
+A.5 R=7c^2 (threshold (1+sqrt2)^2=5.828): state-bet value L=1e3 -0.00000, L=1e6 -0.00000 | weight-bet value L=1e6 -0.000000
+   R=3c^2: max post-ken |e1| = 1.9316 c vs sqrt(R) = 1.7321 c (formula c/sqrt2+sqrt(R/2) = 1.9319 c)
+   R=5c^2: max post-ken |e1| = 2.2882 c vs sqrt(R) = 2.2361 c (formula c/sqrt2+sqrt(R/2) = 2.2882 c)
+   R=5.9c^2: max post-ken |e1| = 2.4289 c vs sqrt(R) = 2.4290 c (formula c/sqrt2+sqrt(R/2) = 2.4247 c)
+   R=7c^2: max post-ken |e1| = 2.6457 c vs sqrt(R) = 2.6458 c (formula c/sqrt2+sqrt(R/2) = 2.5779 c)

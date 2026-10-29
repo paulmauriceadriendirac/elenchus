@@ -1,0 +1,3 @@
+exhaustive 3-variable models: 312
+{'models': 1812, 'phis': 15703, 'causes': 27474, 'conf_wit': 114513, 'cex': 0, 'filt_causes': 7109, 'filt_conf_wit': 39773}
+LEMMA VERIFIED (no counterexample)
