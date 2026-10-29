@@ -1,0 +1,63 @@
+=== Section 3: the case (T=1, F=-2, beta=3, all 2^8 states) ===
+C=('7/10', '3/20', '3/20'): optima=['{1,12,13,W}'] EA=43/10 (4.3)
+   next three: [('{12,13,W}', '21/5'), ('{12,W}', '41/10'), ('{13,W}', '41/10')]
+C'=('3/4', '1/100', '6/25'): optima=['{13,W}'] EA=247/50 (4.94)
+   next three: [('{1,12,13,W}', '19/4'), ('{12,13,W}', '9/2'), ('{1,13,W}', '447/100')]
+OK   C: unique optimum {1,12,13,W}
+OK   C: EA(optimum)=4.30
+OK   C: runner-up {12,13,W} at 4.20 (strictly second)
+OK   C: runner-up has same core {w1}
+OK   C: margin = e_1 = 0.10
+OK   C': unique optimum {13,W}
+OK   C': EA(optimum)=4.94
+OK   C': runner-up {1,12,13,W} at 4.75 (strictly second)
+OK   C': C'(12)=0.76 > tau=2/3 and 12 not in optimum
+OK   {w1} believed at 0.70 (in every optimum at C), in no optimum at 0.75
+
+=== Section 3 'Order': greedy procedure from the empty state at C ===
+OK   considering 1 first from empty state gains e_1 - beta*C({w2,w3}) = 0.1-0.9 = -0.8
+OK   every order with 1 first ends greedily at {12,13,W}
+OK   every order with 1 last ends at the optimum {1,12,13,W}
+OK   gain from adding 1 last (to {12,13,W}) is 0.1
+   distribution of greedy end states over all 40320 orders: {'{12,13,W}': 26880, '{1,12,13,W}': 13440}
+
+=== Section 4: quantifier gap ===
+OK   adding false 1 to {13} costs 2 at w2 and 5 at w3 (got 2, 5)
+OK   EA(B)-EA(B\{p}) = e_p - beta*C(core(B\{p}) minus p)  [3000 random cases, 3-4 worlds]
+
+=== Theorem 1: symbolic identities (sympy) ===
+OK   c1-c0 = T/(2D+beta)
+OK   c1-tau = beta*T/(D(2D+beta))
+OK   1-c1 = 2T/(2D+beta)
+OK   tau-c0 = T(D-beta)/(D(2D+beta))  [so tau>=c0 iff beta<=D]
+OK   Phi(1)-Phi(W) = c(2D+beta)+T+2F-beta
+OK   root of Phi(1)-Phi(W) in c is c0
+OK   Phi(1)-Phi(13) = (Phi(1)-Phi(W))/2 + e_1/2
+OK   Phi(1)-Phi({w2}) = e_1+e_12+beta(3c-1)/2
+OK   Phi(1)-Phi({w2,w3}) = e_1+2e_12+beta(2c-1)
+OK   Phi(1)-Phi(empty) = beta*c
+OK   Phi(13)-Phi(1) = beta(1-c')-2e_1 at (c',0,1-c')
+OK   root of Phi(13)-Phi(1) in c' is c1
+   case values: c0=2/3, tau=2/3, c1=7/9; 0.70 and 0.75 in (2/3, 7/9)
+OK   case: c0=2/3, tau=2/3, c1=7/9
+
+=== Theorem 1: brute force over random parameters (all 2^8 states, exact) ===
+OK   Theorem 1 conclusion holds in 250 random instances (eps in {0,1e-9,1e-6})
+   case values, c'=0.7768, eps=0: optima ['{13,W}']
+   case values, c'=0.7788, eps=0: optima ['{1,12,13,W}']
+
+=== Footnote 4: bonus 1/2 for deductively closed states (T=1, F=-2) ===
+OK   fn4 [def1 (empty state not closed)]: ME holds on all states
+OK   fn4 [def1 (empty state not closed)]: truth-directed on all states
+   C=(0.575, 0.2, 0.225): optima ['{1,12,13,W}'] EA=1.95
+OK   fn4 [def1 (empty state not closed)]: {w1} in the unique optimum at (0.575, 0.2, 0.225)
+   C=(0.65, 0.0, 0.35): optima ['{13,W}'] EA=2.5
+OK   fn4 [def1 (empty state not closed)]: {w1} in no optimum at (0.65, 0.0, 0.35)
+OK   fn4 [def2 (empty state closed)]: ME holds on all states
+OK   fn4 [def2 (empty state closed)]: truth-directed on all states
+   C=(0.575, 0.2, 0.225): optima ['{1,12,13,W}'] EA=1.95
+OK   fn4 [def2 (empty state closed)]: {w1} in the unique optimum at (0.575, 0.2, 0.225)
+   C=(0.65, 0.0, 0.35): optima ['{13,W}'] EA=2.5
+OK   fn4 [def2 (empty state closed)]: {w1} in no optimum at (0.65, 0.0, 0.35)
+
+SUMMARY a1: ALL CHECKS PASSED

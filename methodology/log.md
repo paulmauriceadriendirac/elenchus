@@ -81,3 +81,4 @@
 - 2026-10-29T04:00:03Z **agent**: A5 v4 final revision: state/drafts/A5/v4.md (notes: state/drafts/A5/revision_notes_v4.md; checks c8, c9)
 - 2026-10-29T04:01:17Z **human** (courier): see human_inputs.md
 - 2026-10-29T04:10:29Z **agent**: A5 citation audit: state/audit/A5/citations.md (8 patches; fetch filed requests/fetch/a5-dorst-mandelkern-2022-good-guesses.md)
+- 2026-10-29T11:30:03Z **human** (logistics): see human_inputs.md

@@ -1,0 +1,34 @@
+--- n=2: |Dom|=9, unknowns=18, ME rows=6, BI rows=16
+    expected dim (a) = n + (|Dom|-1) + #contingent = 2+8+2 = 12
+    expected dim (b) = n + 2*#contingent + 2 = 8
+OK   n=2: (a) every representation basis vector satisfies ME
+OK   n=2: (b) every separable basis vector satisfies ME and BI
+OK   n=2, p=2305843009213693951: representation (a) basis independent (rank 12 = 12)
+OK   n=2, p=2305843009213693951: separable (b) basis independent (rank 8 = 8)
+OK   n=2, p=2305843009213693951: rank(ME) = 6 = unknowns - dim(a) = 6  => ME space = family (a)
+OK   n=2, p=2305843009213693951: rank(ME+BI) = 10 = unknowns - dim(b) = 10  => ME+BI space = separable
+OK   n=2, p=1000000007: representation (a) basis independent (rank 12 = 12)
+OK   n=2, p=1000000007: separable (b) basis independent (rank 8 = 8)
+OK   n=2, p=1000000007: rank(ME) = 6 = unknowns - dim(a) = 6  => ME space = family (a)
+OK   n=2, p=1000000007: rank(ME+BI) = 10 = unknowns - dim(b) = 10  => ME+BI space = separable
+--- n=3: |Dom|=81, unknowns=243, ME rows=324, BI rows=624
+    expected dim (a) = n + (|Dom|-1) + #contingent = 3+80+6 = 89
+    expected dim (b) = n + 2*#contingent + 2 = 17
+OK   n=3: (a) every representation basis vector satisfies ME
+OK   n=3: (b) every separable basis vector satisfies ME and BI
+OK   n=3, p=2305843009213693951: representation (a) basis independent (rank 89 = 89)
+OK   n=3, p=2305843009213693951: separable (b) basis independent (rank 17 = 17)
+OK   n=3, p=2305843009213693951: rank(ME) = 154 = unknowns - dim(a) = 154  => ME space = family (a)
+OK   n=3, p=2305843009213693951: rank(ME+BI) = 226 = unknowns - dim(b) = 226  => ME+BI space = separable
+OK   n=3, p=1000000007: representation (a) basis independent (rank 89 = 89)
+OK   n=3, p=1000000007: separable (b) basis independent (rank 17 = 17)
+OK   n=3, p=1000000007: rank(ME) = 154 = unknowns - dim(a) = 154  => ME space = family (a)
+OK   n=3, p=1000000007: rank(ME+BI) = 226 = unknowns - dim(b) = 226  => ME+BI space = separable
+
+--- Footnote 3: ME + truth-directed measure on ALL states (3 worlds), J_p changes when complement believed
+OK   fn3 example: ME holds on all 2^8 states
+OK   fn3 example: truth-directed on all 2^8 states
+   J_p for p={w1}: background empty -> 3; background {w2,w3} (its complement) -> 5/2
+OK   fn3 example: J_p changes when the complement of p is believed (proviso of Theorem 2 needed)
+
+SUMMARY a2: ALL CHECKS PASSED

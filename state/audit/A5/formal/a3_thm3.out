@@ -1,0 +1,23 @@
+=== Theorem 3, main statement: random instances, exhaustive over states ===
+OK   n=2: max EA = max Phi and optimal set = characterised set in all 400 random instances
+OK   n=3: max EA = max Phi and optimal set = characterised set in all 300 random instances
+OK   n=4: max EA = max Phi and optimal set = characterised set in all 6 random instances
+
+=== Theorem 3, generic case with uniform values: B* and (i)-(iii); (ii) for all maximisers ===
+OK   n=3: generic uniform-value claims (unique optimum B*, (i), (iii)) and (ii) for all maximisers: 0 failures
+OK   n=4: generic uniform-value claims (unique optimum B*, (i), (iii)) and (ii) for all maximisers: 0 failures
+   generic instances: {'generic': 297, 'closed': 264, 'notclosed': 33, 'inconsistent': 7}
+
+=== Section 5: four-world closure failure (C=(0.62,0.18,0.10,0.10), T=1, F=-2, beta=3) ===
+   optima: [['12', '13', '123', '14', '124', '134', 'W']] EA = 136/25 5.44
+   second-best EA: 53/10 5.3
+OK   four-world: unique optimum (exhaustive over 2^16 states)
+OK   four-world: optimum believes {w1,w2} and {w1,w3} but not {w1}
+OK   four-world: core of optimum is {w1} (C(core)=0.62 < tau, so not closed: (iii))
+
+=== Section 5: comparative statics in beta (uniform values) and large-beta limit ===
+OK   raising beta never lowers the credence of the optimal core (200 random instances)
+OK   distinct world credences: every optimal core is a top-k set, hence nested as beta grows
+OK   all credences positive, very large beta: unique optimal core W and only W believed
+
+SUMMARY a3: ALL CHECKS PASSED

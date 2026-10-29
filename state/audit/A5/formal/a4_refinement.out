@@ -1,0 +1,40 @@
+=== (1) split the 1% world of C' into two worlds of credence 0.005 (worlds w1,w2a,w2b,w3) ===
+   Phi({w1}) = 29/4 = 7.25, Phi({w1,w3}) = 691/100 = 6.91, max Phi at core 0b1
+OK   refined C': Phi({w1}) = 7.25
+OK   refined C': Phi({w1,w3}) = 6.91
+OK   refined C': unique optimum (exhaustive, 2^16 states) contains {w1}  [EA=7.25]
+OK   refined C: unique optimum (exhaustive, 2^16 states) contains {w1}  [EA=6.5]
+
+=== (2) splitting a credence-zero world into k worlds (record measure, case values) ===
+OK   separable part of Phi multiplied by exactly 2^(k-1) for every core excluding the null world; premium term unchanged (k=1..6)
+   c'-side bound c1(k) = c1 at effective premium beta/2^(k-1); verify by exact verdicts on both sides:
+   k=1: c1(k)=0.777778, c1(k)-tau=0.111111 (formula 0.111111); {w1} believed just below/above c1(k): [False, True]
+   k=2: c1(k)=0.733333, c1(k)-tau=0.066667 (formula 0.066667); {w1} believed just below/above c1(k): [False, True]
+   k=3: c1(k)=0.703704, c1(k)-tau=0.037037 (formula 0.037037); {w1} believed just below/above c1(k): [False, True]
+   k=4: c1(k)=0.686275, c1(k)-tau=0.019608 (formula 0.019608); {w1} believed just below/above c1(k): [False, True]
+   k=5: c1(k)=0.676768, c1(k)-tau=0.010101 (formula 0.010101); {w1} believed just below/above c1(k): [False, True]
+   k=6: c1(k)=0.671795, c1(k)-tau=0.005128 (formula 0.005128); {w1} believed just below/above c1(k): [False, True]
+OK   {w1} withheld just below c1(beta/2^(k-1)) and believed just above it, k=1..6 (interval shrinks ~2^-k)
+
+=== (3) normalised measure A = |Alg|^-1 sum v_p + b[core], b = 3/8 (equivalent to record with beta = b*2^n) ===
+   split w2 into 1: at C: generic=True, {w1} believed=True; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 1: at C': generic=True, {w1} believed=False; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 2: at C: generic=True, {w1} believed=True; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 2: at C': generic=True, {w1} believed=False; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 4: at C: generic=True, {w1} believed=True; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 4: at C': generic=True, {w1} believed=False; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 8: at C: generic=True, {w1} believed=True; verdicts on all 8 coarse propositions match coarse=True
+   split w2 into 8: at C': generic=True, {w1} believed=False; verdicts on all 8 coarse propositions match coarse=True
+OK   normalised measure: {w1} believed at C and not at C' after splitting w2 into 1, 2, 4, 8 worlds (all coarse verdicts preserved)
+OK   normalised measure: Phi of every core excluding a null world exactly unchanged by splitting it (k=2..5)
+
+=== (4) two-world coarsening {{w1},{w2,w3}} ===
+OK   record: two-world threshold for {w1} is (beta-F)/(D+beta) = 5/6
+OK   record two-world: {u} in no optimum just below 5/6, in the unique optimum just above
+OK   record two-world at credence 0.70: {u} withheld (while {w1} believed at C on three worlds) => RI fails
+OK   normalised two-world (beta_eff = 3/2): threshold 7/9 = 7/9; withholds {u} at 0.70 => normalised measure violates RI
+
+=== (5) question-relative record measure: question {{w1},{w2},{w3}}; split w2 into two (not distinguished) ===
+OK   question-relative measure: optima and values identical after splitting a world the question does not distinguish (C and C')
+
+SUMMARY a4: ALL CHECKS PASSED
