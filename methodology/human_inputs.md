@@ -93,3 +93,7 @@
 
 > Keep going
 
+## 2026-10-29T11:45:15Z — class: selection
+
+> Gate A2 answer: "A5, A6, A4 (Recommended)"; §1.2 change: "Yes, I confirm it"
+

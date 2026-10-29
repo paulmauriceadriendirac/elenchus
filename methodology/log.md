@@ -85,3 +85,6 @@
 - 2026-10-29T11:41:00Z **agent**: A5 formal audit: state/audit/A5/formal.md
 - 2026-10-29T11:42:25Z **agent**: Methodology report draft: final/methodology/methodology_report.md (common report for A4 v6, A5 v4, A6 v4; appendices verbatim); provenance ledger: methodology/provenance.md
 - 2026-10-29T11:43:05Z **agent**: A6 v4 final revision: state/drafts/A6/v4.md (5,883 words; notes state/drafts/A6/revision_notes_v4.md; new checks in state/drafts/A6/checks/v4_*.py, bjorn_v4.py)
+- 2026-10-29T11:44:20Z **agent**: A4 v6 final revision: state/drafts/A4/v6.md
+- 2026-10-29T11:45:15Z **human** (selection): see human_inputs.md
+- 2026-10-29T11:45:15Z **decision**: Gate A2 closed: human selected A5, A6, A4 for submission; human confirmed the revised CLAUDE.md §1.2 (23 Oct). A4 v6 final revision complete (5,521 words).
