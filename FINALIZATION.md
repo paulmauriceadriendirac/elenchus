@@ -1,26 +1,9 @@
-# Current review edition — 28 October 2026
+# Finalization status — 29 October 2026
 
-The latest versioned set is [submission-revisions-20261028](state/external/submission-revisions-20261028/README.md). Start with its [review guide](state/external/submission-revisions-20261028/Review-Guide.md).
+Use [the current submission index](SUBMISSION-20261028.md) and [the final-review package](state/external/submission-final-review-20261029/README.md).
 
-A5 and A6 v3 are the primary candidates. A4 v3 is a conditional third: central finite checks now include all 355 partial preorders, but the Halpern 2016 book comparison remains outstanding. E3 is still withdrawn. The set includes individual anonymous essay PDFs, matching anonymized methodology reports, a combined personal reading copy, sources, differences and verification records. No contest submission has been made.
+The autonomous finishing pass is complete: Claude's latest changes were reviewed; the remaining concrete A6 issues were narrowed or corrected; the three manuscripts have anonymous PDFs, matching anonymized production reports and verified counts below 6,000 words. The package includes a combined reading copy and a guide for the operator's planned outside-model review.
 
-The material below is a preserved historical status; the current recommendations above supersede its selection advice.
+A5 and A6 remain the primary candidates. A4 is the less secure third candidate on significance and originality, after comparison with Halpern and Wysocki. E3 remains withdrawn. See the package's verification note for the precise remaining limitations and checks completed. Additional model reviews and any resulting revisions are a later stage; no contest forms have been submitted.
 
----
-
-# Contest revision status
-
-**28 October follow-up:** [Review of Claude's E3 reports](state/external/claude-review-20261028/README.md) withdraws E3 v4's provisional-third recommendation. Major revision is needed. The response includes corrected derivations, an explicit contextual-reset construction, causal-policy calculations, and replacement sections, while preserving the existing essays. A5/A6 assessments remain provisional and unchanged; no replacement third essay is promoted. The paragraphs below record earlier checkpoints.
-
-The [25 October review edition](REVIEW-TOMORROW.md) is now the starting point for the 26 October review. It includes a 41-page packet with revised A5, A6 and E3, a corrected A4 reserve, the assessment, methodology, source requests and calculation records. A5 and A6 are the first two recommendations; E3 is a provisional third. Four revised essays are below 6,000 words. This completes a review edition, not a certification of novelty or eligibility, and no contest submission was made.
-
-The [latest checkpoint](state/external/audit-and-a4-20261023/README.md) adds A4 v2: an explicit relay interpretation, a finite-cover-path theorem, and a counterexample showing that local direct links need not recover an endpoint connection. It also corrects the provenance record and the overly broad local memory rule; see [PROVENANCE-CLARIFICATION.md](PROVENANCE-CLARIFICATION.md).
-
-The inspected project instructions contain no identified human philosophical contribution. The earlier workflow quarantine followed a disclosed automatic-context concern; it was not a finding that the human supplied the philosophy. None of the twelve inspected referee reports rejects an essay because of memory. The historical disclosure and limits of this audit remain recorded. The competition's relevant-memory restriction still applies; no eligibility certification is claimed.
-
-The [earlier 23 October checkpoint](state/external/revisions-20261023/README.md) contains E2 v5 and O5 v3 with their reading PDFs, methodology drafts, and validation records. E2 incorporates the Gallow comparison and scope repairs. O5 responds to its second review with a score-family classification, exact bet calculations, and an idempotence analysis. These versions and the new A4 version await independent philosophical review.
-
-Claude's reviews of the preceding O4 v2, O5 v2, A4 v1, and A6 v0.2 versions identify substantive limits. A6's abstract cost model still lacks an adequate epistemic realization. Claude has since added full v1 drafts at state/drafts/A4, A5, and A6. The count is now thirteen developed manuscript tracks covering about ten distinct arguments, plus eight exploratory drafts. O1–O3 are alternative treatments of E1–E3; Claude's new A4 and A6 arguments differ from the external manuscripts with the same problem-area codes. Cards, kill tests, revisions, and continuation notes are not additional essays. See the [weekend reading guide](WEEKEND-READING-GUIDE.md) for summaries and source links.
-
-The [22 October closing packet](state/external/contest-finalization-20261022/README.md) remains a frozen earlier snapshot. E1, E2, and E3 are a preparation set, not an endorsed final three. The outstanding task is to select and strengthen at most three submissions on their philosophical merits and complete their methodology records. No contest submission has been made.
-
+Earlier editions are preserved in their versioned directories and Git history. This index supersedes earlier finalization pointers without changing those editions.
