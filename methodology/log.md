@@ -113,3 +113,4 @@
 - 2026-10-29T18:02:00Z **agent**: A6 final delta audit: state/audit/A6/citations_final.md
 - 2026-10-30T02:55:32Z **human** (logistics): see human_inputs.md
 - 2026-10-30T02:56:53Z **event**: Final check of Astra package 833b464 (submission-final-review-20261029): A5 v8 and A4 v8 word-identical to our compliance-passed final/A5, final/A4; A6 v6 = our final/A6 + scope narrowing (formal delta audit + compliance re-check running). Astra essay PDFs: empty author/creator/producer metadata, no identity strings. Production reports: no identity strings (mention Codex as model, expected); compliance check running together with our full report.
+- 2026-10-30T02:58:45Z **agent**: compliance(A6 v6, state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md): PASS; Hong 2026 and DDB failures closed (DDB spot-checked vs local text); v6 scope edits consistent with §3/A.5 and formal outputs; state/audit/A6/compliance.md

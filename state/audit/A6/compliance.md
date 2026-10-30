@@ -1,109 +1,112 @@
-FAIL
+PASS
 
-# A6 compliance check: `final/A6/essay.md` (mode: essay)
+# A6 compliance re-check (mode: essay)
 
-Date: 2026-10-29. The final essay is based on the second system's v5 and has the v4 citation-audit and formal-audit patches applied on top (see `final/A6/changelog.md`).
+**Target:** `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md` (the second system's v6), plus its PDF `A6-Free-Evidence-v6.pdf`. This is not `final/A6/essay.md`.
+**Date:** 2026-10-30
+**Previous record (2026-10-29, on `final/A6/essay.md`):** FAIL, for two reasons: (a) the Hong 2026 §§1–3 attribution at l.19 was unverified; (b) the *Deference Done Better* paragraph at l.21 had not been audited.
+
+**How v6 differs from `final/A6/essay.md`** (`git diff --no-index --word-diff=plain`):
+- The availability premise is added to the thesis (l.15) and the conclusion (l.163).
+- "(§6.1)" becomes "(see §6.1 below)" (l.31).
+- The "continuous analogue of Lemma 2" sentence is removed and replaced by "Part (ii) depends on the available questions. It does not establish the same necessity result for the second weighing alone." (l.91).
+- The §6.2 pragmatic-encroachment passage is rewritten, and its generic-prior generalization is removed (l.151).
+- The Dorst 2020 and Dorst et al. 2021 references are swapped into the correct order.
 
 ## Checklist
 
 ### 1. Word count: PASS (over target)
-`python3 tools/wordcount.py final/A6/essay.md --limit 6000 --target 5600` gives strict=5831, wordlike=5804, footnotes=0, 37 bibliography lines excluded, result OVER_TARGET.
-- The count is under the 6,000 limit by 169.
-- It is over the 5,600 target by 231. This is not blocking.
+`python3 tools/wordcount.py <v6> --limit 6000 --target 5600` gives strict=5853, wordlike=5827, footnotes=0, 36 bibliography lines excluded. Result: OVER_TARGET. That is 147 under the 6,000 limit and 253 over the 5,600 target, which does not block submission.
 
 ### 2. Injection and panel mentions: PASS
-`check_injection.py` with `--names "paulmauriceadriendirac"` and `--judges-file state/panel/judges.txt` reports no hard flags. Soft flags: Salow 46, Hawthorne 7, Goldstein 3, Fitelson 1.
+`check_injection.py <v6> --names "paulmauriceadriendirac" --judges-file state/panel/judges.txt` reports no hard flags. Soft flags: Salow 46, Hawthorne 7, Goldstein 3, Fitelson 1, the same as before.
+- **Salow, Hawthorne and Goldstein.** These mentions are unchanged from the audited text. Verdicts: citations.md, and citations_final.md O1, O2, O6–O12.
+- **Fitelson.** Fitelson appears only in the DDB reference entry. That paper is now verified against its full text (item 5).
 
-I reviewed each panel mention:
-- **Salow.** The mentions are cited quotations and paraphrases. Citation audit Q1–Q20 found them exact, and the post-audit edits (P2, P12, P14) calibrate them.
-- **Hawthorne.** He appears through Salow's report (2004, 181, flagged as Salow's report), as Goldschmidt's subject (H&S 2008), and as G&S's report of Goldstein & Hawthorne. All are accurate per audit A29, A31, A34 and A38.
-- **Goldstein.** The mentions come only through G&S 2023, 130 n. 40. Accurate.
-- **Fitelson.** He appears only as a co-author in the *Deference Done Better* reference entry. That paper's content has NOT been verified by this pipeline; see item 5.
-
-Separate scan for hidden text:
+Hidden-text scan of the .md:
 - No zero-width, soft-hyphen or control characters.
 - No HTML comments.
-- Every "<" character sits inside LaTeX math.
+
+PDF (11 pages):
+- Metadata has only a Title; Author, Creator and Producer are null.
+- The only annotations are 4 /Link entries, to the two Wiley DOIs.
+- The extracted text contains the v6 sentences and does not contain "continuous analogue".
 
 ### 3. Anonymity: PASS
-I grepped for the redact value, the account email, "github", "astra", "claude", "codex", "gpt", "openai", "anthropic", "competition", "judge", "panel", "pipeline", "elenchus", "AI", "language model" and "/home". There were no hits. The only URLs are two Wiley DOIs in the references. There is no first-person reference to the entrant and no mention of AI authorship.
+I grepped the .md and the PDF text for the following. There are no hits apart from the two DOI URLs in the references:
+- the redact value and the account email;
+- github, astra, claude, codex, gpt, openai, anthropic;
+- competition, judge, panel, pipeline, elenchus, "AI", "language model", /home.
 
-### 4. Structure: PASS (minor notes)
-The essay has a title, an abstract and a references section.
+There is no reference to the entrant and no mention of AI authorship.
 
-Citations and references match both ways (17 each): Ahmed & Salow 2019; Das 2023; Dorst 2020; Dorst et al. 2021; Fantl & McGrath 2002; Geanakoplos 1989; Goldschmidt 2024; Goldstein & Hawthorne 2022; Good 1967; Goodman & Salow 2023; Goodman & Salow 2025 (BRN); Hawthorne 2004; Hawthorne & Stanley 2008; Hong 2024; Hong 2026; Salow 2025; Weatherson 2005. Fantl & McGrath and Weatherson are cited only inside a Salow quotation, which the audit accepts.
+### 4. Structure: PASS
+- The essay has a title, an abstract (l.3), numbered sections, an appendix and references.
+- Citations and references match in both directions, with 17 works each. This is unchanged from citations_final.md Step 1, because v6 adds and removes no citation.
+- The earlier optional points are now fixed: Dorst 2020 precedes Dorst et al. 2021, and the §6.1 cross-reference is reworded.
 
-Minor points:
-- Dorst et al. 2021 is listed before Dorst 2020. The usual order puts the single-author entry first.
-- Only two entries carry DOIs.
-- "(§6.1)" at l.31 is an internal cross-reference that can be misread as a G&S locator. The changelog already flags this.
+### 5. Scholarship: PASS (both previous failures closed)
+**(a) Hong 2026, l.19: closed.**
+- The text reads: "Hong (2026) gives two arguments suggesting that whatever the normality framework captures is not action-guiding."
+- This is citations_final.md P2 verbatim. P2 is a calibration of citations.md P4.
+- The Crossref abstract, as quoted in the audit, reads: "we give two arguments that suggest that whatever concept the normality framework is capturing ... it is not action-guiding".
+- No §§1–3 content is attributed to Hong anywhere in v6.
 
-### 5. Scholarship (citation audit): FAIL
-The audit (`state/audit/A6/citations.md`, run on v4) lists P1–P14d. I confirmed in the final text that P1–P3, P5–P14d are applied or superseded. Two problems remain.
+**(b) *Deference Done Better*, l.21: closed.** The delta audit read the published Wiley text, and P3–P6 appear verbatim in v6. I spot-checked each claim against `state/ambitious/sources/dorst-etal-2021-deference-done-better.txt`:
 
-**(a) A3 / P4, Hong 2026: open item, not patched.**
-- The audit classed the Hong attribution "unverifiable". Wiley returned 403. Its patch P4 cuts the attribution back to what the abstract supports ("argues that whatever the normality framework captures is not action-guiding"), and Step 5 records the "§§1–3" locator as "unverifiable; removed (P4)".
-- The final essay (l.19) does not apply P4. It restores, word for word, the v4 sentence that P4 was written to replace: "Hong (2026, §§1–3) criticizes combining normality knowledge with a knowledge-first decision rule, using lottery choices, sweetened prospects and information that distinguishes equally likely payoffs."
-- That content comes from the second system's notes: `state/external/ambitious-review-20261022/REVIEW.md` l.46 and l.103 ("Main text §§1–3 read"). The audit's A3 row says the auditor could not open those notes. No agent in this pipeline has read Hong's text (changelog note 1; `methodology/provenance.md` l.168, "Hong 2026 (never read)"). Fetch requests `amb-a6-hong-2025-2026` and `l3-hong-2026-normality-in-action` are still pending.
+| Claim in v6 | Where it is in DDB | Verdict |
+|---|---|---|
+| Theorem 2.2: Total Trust iff Value | l.414 (p.107): "π totally trusts ⟨W,P⟩ iff π values ⟨W,P⟩" | matches |
+| Value gloss: in every decision problem, each recommended strategy has π-expected utility at least that of any option | l.288 (p.105): "Value: If S is recommended for 𝒪, then for all O ∈ 𝒪: 𝔼π(S) ≥ 𝔼π(O)" | matches |
+| Weak Value | l.1803 (p.133): existential quantifier over recommended strategies | matches |
+| Appendix B (§§B.1–B.2) | l.1815: §B.1 "Weak Value ⇔ Total Trust ⇔ Modestly Informed"; l.2015: §B.2 "Weak Value ⇔ Value" | matches |
+| Theorem 4.1, "modestly informed", convex hull | l.866 (p.118): "π totally trusts ⟨W,P⟩ iff each 𝑖 ∈ C_π is modestly informed and π is in their convex hull"; C_π is defined in n.54 | matches; "the relevant candidate expert functions" is a fair gloss of C_π |
 
-On the caller's specific question: the essay attributes nothing to Hong beyond what those records say. The wording matches REVIEW.md l.46 almost exactly, and the cut of "challenges normality knowledge" is a correct narrowing. But those records are an unverified secondhand summary by another model. The pipeline's own auditor ruled the claim unverifiable, and the section-level locator was never checked. Under CLAUDE.md §1.3 and checklist item 5 this is an open audit item that has not been patched.
+I also checked the essay's own two-way step:
+- Under full support, P_s fixes the post-answer ken. KDT with a fixed tie order is therefore a function of P_s that maximizes 𝔼_{P_s}, which makes it a recommended strategy.
+- Safety in every A gives Weak Value.
+- Value, which quantifies over all recommended strategies, gives V_x ≥ 0 for KDT's strategy.
 
-**(b) *Deference Done Better* paragraph (l.21): unaudited attribution to a work co-authored by two panel members (Salow, Fitelson).**
-- The paragraph was added in v5, after both audits. It makes specific claims:
-  - "Total Trust is equivalent to Value … (Theorem 2.2)"
-  - the gloss of Value
-  - a "Weak Value condition"
-  - "their Appendix B establishes its equivalence to Value and Total Trust"
-- Only the second system's one-line note in `VERIFICATION.md` covers these claims ("checked for Value, Weak Value and Total Trust"). This pipeline checked only the Crossref metadata (`provenance.md` row 6.8; changelog "Not done and residual risks"). The high-priority fetch `l5-dorst-et-al-2021-deference-done-better` (filed 2026-10-21) is still open.
-- My own attempts to retrieve the text failed: PhilArchive and PhilPapers OA returned 403, the author-site URL returned 404, and the Wayback request was reset.
-- The OpenAlex abstract supports only the general shape: deferring opinions is deferring decisions; a new principle is equivalent to the decision-preference constraint and to an accuracy constraint. It names neither "Total Trust", "Value", "Weak Value", Theorem 2.2 nor Appendix B.
-- CLAUDE.md §1.6 requires exceptional care with judges' work. Two co-authors are judges, so a wrong theorem or appendix locator or a wrong definition would be noticed.
+The paragraph is accurate and complete. The citations.md items are still all applied or superseded, as recorded in the previous check. The v6 edits add no new attribution.
 
 ### 6. Human-input record and hygiene: PASS
-- All 27 entries in `methodology/human_inputs.md` are classified: logistics, courier, method, generic-feedback or selection. No entry is classed rejected-substantive, so there was nothing to trace.
-- The 2026-10-22T10:01:37Z entry records the human's statement that Astra received nothing idea-wise.
-- The 2026-10-29T17:35:47Z courier entry forwards Astra's status note, which is AI-originated.
-- `methodology/hygiene.md` (Phase 0) is clean. No memory or profile content was present, auto-memory was off, and connectors were not called. The account email was ignored, and it does not appear in the essay.
-- The 23 October context-exposure disclosure about the second system is handled as follows:
-  - `methodology/log.md` l.60 records the quarantine.
-  - l.76 lifts it under the revised §1.2 (no human contribution identified; `PROVENANCE-CLARIFICATION.md`).
-  - l.90 records the human's confirmation of the revised §1.2 on 29 Oct.
-  - The historical disclosure is preserved.
-- The A6 base is the second system's v5, credited in `methodology/provenance.md` rows 6.2 and 6.8. The methodology report must keep that credit and the disclosure history.
+- `methodology/human_inputs.md` has 26 entries, all classified: 16 logistics, 4 courier, 4 method, 1 generic-feedback, 1 selection. None is rejected-substantive, so there is nothing to trace.
+- The new entry, 2026-10-30T02:55:32Z, is logistics: "okay let's do the final check on astra's work."
+- The v6 changes are AI-originated. They are the second system's finishing pass, described in `VERIFICATION.md` l.12 and README l.18. No human content enters them.
+- `methodology/hygiene.md` is unchanged and clean (Phase 0).
+- The 23 October context-exposure history stays preserved as recorded previously: log.md l.60, l.76 and l.90.
 
-### 7. Formal audit: PASS
-`state/audit/A6/formal.md` is complete. It has two FALSE or unsupported items (#24, #27) and patches P1–P8. I checked each patch against the final text:
+### 7. Formal audit and the changed sentences: PASS
+`state/audit/A6/formal.md` has no unresolved mismatch. P1–P5 and P8 are still present in v6. The v6 changes remove the two items the previous record listed as residual and unproved:
+- #13 / P6: the continuous analogue of Lemma 2.
+- #38 / P7: the generic-prior encroachment generalization.
 
-| Patch | Evidence in final text |
-|---|---|
-| P1 | "about $0.356$ conditional" (l.49), with BRN's 0.37 tied to its narrower event |
-| P2 | "is $-0.60$" (l.107) |
-| P3 | "s_0=s_1" (l.121) |
-| P4 | "1,724" and "2,322" are absent; the claim was removed |
-| P5 | "non-trivial partition" (l.181) |
-| P6 | "continuous analogue of Lemma 2" (l.91) |
-| P7 | "for all but knife-edge priors" (l.151) |
-| P8 | "in finite graded models no factive" (abstract) |
+The removals narrow the claims and do not introduce new ones.
 
-No "2002 revision" remains. There is no unresolved mismatch.
+I checked each changed sentence against the essay's §3, §4 and appendix, and against `state/audit/A6/formal/bjorn_numeric.out`.
 
-Residual points, not blocking:
-- The continuous analogue (P6) is stated without proof.
-- The §6.2 generalization is argued, not proved.
-- The new l.21 claim that universal safety implies DDB's Weak Value was not formally audited. It depends on DDB's definitions; see 5(b).
+**Encroachment passage (§6.2), sentence by sentence:**
+
+| Sentence | Check | Verdict |
+|---|---|---|
+| "Knowledge-conditioned evaluation strictly prefers acting now" at ten-to-one | §3 gives the KDT value of the free weighing as "about −0.05"; the formal run gives −0.0496 at c=1.96, L=10 | consistent: negative means acting now is strictly preferred |
+| "ordinary Bayesian evaluation strictly prefers looking (§3)" | §3: "by Good's theorem the second weighing has positive value for her"; formal run: Bayesian value 0.1855 > 0 | consistent |
+| Bet alone: "win probability 1" under KDT and "(0.95)" under evidence | In a normal situation the ken is {δ≤c²}, and by Cauchy–Schwarz in A.5 \|e₁\|≤c throughout, so the probability is 1. P(\|e₁\|≤c)=0.9500, and §3 gives EV 0.45 | consistent |
+| "conditional on extending the criterion ... no general result about every graded state follows" | This correctly withdraws the claim that formal #38 had marked as argued only | correct calibration |
+
+**Other changed sentences:**
+
+| Change | Check | Verdict |
+|---|---|---|
+| l.91: "It does not establish the same necessity result for the second weighing alone." | Agrees with §3 (iii): "Theorem 2 and its corollary are finite results using the questions defined in §4; the second weighing is not one of them." | consistent |
+| Thesis (l.15) and conclusion (l.163) availability premise | Theorem 1(b) and Theorem 2 state "if it is available". The gapped direction needs no availability, so the conjoined premise is correct, if slightly stronger than needed. The abstract already had "Given suitable questions". | consistent |
 
 ## Required fixes
+None blocking.
 
-1. **Hong 2026 (l.19).** Apply citation-audit P4. Replace the sentence with "Hong (2026) argues that whatever the normality framework captures is not action-guiding." This shortens the text by about 15 words, and the next sentence ("The general decision-theoretic objection is therefore not new.") still follows. Do this unless the full text is obtained before submission and a citation-auditor verifies the §§1–3 description against it. The human can fetch it via the pending request; it must not be summarized by the human.
-2. **Deference Done Better (l.21).** Before submission, a citation-auditor in this pipeline must check, against a retrieved copy:
-   - Theorem 2.2
-   - the definitions of Value, Weak Value and Total Trust
-   - the Appendix B equivalence
-   - the essay's mapping of $\pi$ and $P_s$ onto DDB's framework
+Recommended before submission (orchestrator):
+1. Make v6 the deliverable. Copy it to `final/A6/essay.md` as a new version, keeping the current file. Record the v6 delta in `final/A6/changelog.md`, credited to the second system's finishing pass. The methodology report must reflect that the final A6 text comes from that system's v6.
 
-   The human can supply the PDF through fetch request `l5-dorst-et-al-2021-deference-done-better`. If this cannot be done, reduce the paragraph to what the abstract supports. Drop "(Theorem 2.2)", "Weak Value" and the "Appendix B" sentence, and present the link to Theorem 1 as the essay's own claim, without attributing specific results.
-3. After the fixes, rerun `wordcount.py` and `check_injection.py`, and log the change in `final/A6/changelog.md`.
-
-Optional:
-- Put Dorst 2020 before Dorst et al. 2021 in the references.
-- Reword "(§6.1)" at l.31 as "(see §6.1 below)".
+Optional, for clarity:
+2. In §6.2, the claim "win probability 1" holds at normal situations (δ≤c²), as in §3. Consider "Offered the ten-to-one bet alone at a normal situation, ...".
+3. In §6.2, "withdraws knowledge whenever these two evaluations change the preference" reads awkwardly. Consider "whenever the difference between these two evaluations changes his preference", which matches the quoted criterion. This is word-neutral.
