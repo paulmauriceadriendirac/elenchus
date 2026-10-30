@@ -112,3 +112,4 @@
 - 2026-10-29T17:57:41Z **event**: A6 compliance FAIL (2 citation items): Hong 2026 fixed by applying audit P4 verbatim; Deference Done Better paragraph under delta audit with local copy (state/ambitious/sources/dorst-etal-2021-deference-done-better.*).
 - 2026-10-29T18:02:00Z **agent**: A6 final delta audit: state/audit/A6/citations_final.md
 - 2026-10-30T02:55:32Z **human** (logistics): see human_inputs.md
+- 2026-10-30T02:56:53Z **event**: Final check of Astra package 833b464 (submission-final-review-20261029): A5 v8 and A4 v8 word-identical to our compliance-passed final/A5, final/A4; A6 v6 = our final/A6 + scope narrowing (formal delta audit + compliance re-check running). Astra essay PDFs: empty author/creator/producer metadata, no identity strings. Production reports: no identity strings (mention Codex as model, expected); compliance check running together with our full report.
