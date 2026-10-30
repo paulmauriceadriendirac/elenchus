@@ -118,3 +118,5 @@
 - 2026-10-30T03:03:43Z **human** (logistics): see human_inputs.md
 - 2026-10-30T03:04:08Z **event**: Per-essay production reports (second system's A5 v8, A6 v6, A4 v8) copied to final/A*/methodology_short.md with the two required compliance edits applied verbatim; Astra's essay PDFs for A5 v8 and A4 v8 copied to final/A*/essay_final.pdf. Common report fixes delegated to methodologist.
 - 2026-10-30T03:07:46Z **agent**: Methodology report: compliance edits applied (final/methodology/methodology_report.md; methodology/provenance.md and Appendix E)
+- 2026-10-30T03:11:00Z **agent**: A6 v6 formal delta audit: state/audit/A6/formal_v6.md
+- 2026-10-30T03:11:26Z **event**: A6 v6 formal delta audit: no false claims, no patch (state/audit/A6/formal_v6.md). final/A6/essay.md = A6 v6. Methodology report and ledger updated with the result (mechanical replacement of the 'pending' statements).
