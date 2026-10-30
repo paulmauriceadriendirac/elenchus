@@ -79,3 +79,8 @@ A6 v2 (free evidence), E3 v4 (flattening). Reserves: A4 (ours v1; Astra's v2), E
 3. Phase 9: citation audit, formal audit, compliance (word count, injection, anonymity).
 4. Phase 10: PDFs; methodology report draft (methodologist), incl. multi-model provenance.
 5. Gate A2: human confirms final three before packaging.
+
+## Submission set ready (2026-10-30 03:20 UTC)
+See final/SUBMISSION.md. All three essays and four methodology reports passed compliance.
+Remaining: outside-model defect review (operator), any concrete repairs, then submission by the
+operator before 31 Oct 23:59 AoE.
