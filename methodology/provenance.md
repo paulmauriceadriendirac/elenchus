@@ -69,7 +69,7 @@ Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Ver
 
 ## 3. A6 — "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
 
-Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words strict (second system's v6). This pipeline's own last text, `final/A6/essay.md`, is 5,906 words strict. Version chain:
+Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words strict (second system's v6). This pipeline's own last pre-v6 text, kept as `final/A6/essay_pre_v6.md`, is 5,906 words strict; on 30 Oct `final/A6/essay.md` was replaced by v6 (log 03:11:26). Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|

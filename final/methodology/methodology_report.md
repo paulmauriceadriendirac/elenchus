@@ -6,8 +6,7 @@ second AI system's final package (`state/external/submission-final-review-202610
 - **A5**, "Holistic Accuracy and the Limits of Lockean Derivation" (v8, word-identical to
   `final/A5/essay.md`, 5,039 words);
 - **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
-  (`state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, the second system's v6 text, 5,853 words; this pipeline's last A6 text,
-  `final/A6/essay.md`, is 5,906 words and is the base of v6);
+  (v6, byte-identical to `final/A6/essay.md` and `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words; this pipeline's pre-v6 text, the base of v6, is kept as `final/A6/essay_pre_v6.md`, 5,906 words);
 - **A4**, "A Switching Dilemma for Normality in Actual Causation" (v8, word-identical to
   `final/A4/essay.md`, 5,581 words).
 
@@ -581,8 +580,7 @@ second system's v8, word-identical to `final/A5/essay.md`).
      where a patch or changelog says so (`final/A4/changelog.md`).
    - A6: `refs_v4.json` still needs a note on the 1989 working paper; A6 is over the 5,600 target
      (5,853) but under the 6,000 limit; the second system's v6 narrowing was compliance-checked (PASS,
-     30 Oct 02:58:45); formal delta check: no false claim, no patch required (`state/audit/A6/formal_v6.md`, 30 Oct). The submitted A6 text and PDF are the second
-     system's v6 files; `final/A6/essay.md` holds the pre-v6 text.
+     30 Oct 02:58:45); formal delta check: no false claim, no patch required (`state/audit/A6/formal_v6.md`, 30 Oct). The submitted A6 text and PDF are the second system's v6 files, copied to `final/A6/essay.md` and `final/A6/essay_final.pdf`; the pre-v6 text is kept as `final/A6/essay_pre_v6.md` (log 30 Oct 03:11:26).
    - A5: an optional footnote-2 wording advisory; the *Good Guesses* fetch is open.
 7. **Cost figures** are list-price estimates; billing ran on a subscription.
 8. **Transcripts** have not been exported to `methodology/transcripts/`; `tools/export_transcripts.py`
@@ -2462,7 +2460,7 @@ Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Ver
 
 ## 3. A6 — "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
 
-Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words strict (second system's v6). This pipeline's own last text, `final/A6/essay.md`, is 5,906 words strict. Version chain:
+Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words strict (second system's v6). This pipeline's own last pre-v6 text, kept as `final/A6/essay_pre_v6.md`, is 5,906 words strict; on 30 Oct `final/A6/essay.md` was replaced by v6 (log 03:11:26). Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|

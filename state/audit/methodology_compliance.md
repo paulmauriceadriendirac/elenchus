@@ -187,3 +187,118 @@ Recommended, not blocking:
 ## Recommendation: which report(s) to submit with each essay
 
 Submit with each essay its own corrected per-essay report: R2 with A5 v8, R3 with A6 v6, R4 with A4 v8. Each is short, anonymous, paired with its version and word count, and calibrated. Attach the corrected R1 as the complete production record common to all three, or put it in the same upload if the form allows only one file. R1 alone reproduces every human message verbatim, gives the provenance ledger and the full prompts, and corrects the attribution of the model-choice answer, so it is the record that makes "no human philosophical contribution" checkable. The per-essay reports summarise rather than replace it, and their human-involvement paragraph is too general to stand alone. If only one methodology document can accompany each essay, submit the corrected R1 with all three essays, since it covers each of them in §10, and add R2/R3/R4 only as a supplementary file. Do not submit any report until R1's A6 sections record the result of the v6 compliance re-check, and A6 v6 is the file in `final/A6/` (or R1's paths point to it).
+
+---
+
+## Final re-check (30 Oct)
+
+FAIL (R1 only: three stale statements about `final/A6/essay.md`; quick mechanical fix + PDF rebuild). R2 PASS, R3 PASS, R4 PASS.
+
+| Report | Verdict | Blocking issues |
+|---|---|---|
+| R1 `final/methodology/methodology_report.md` (+ `methodology/provenance.md` / Appendix E) and `.pdf` | **FAIL** | Three statements say `final/A6/essay.md` is the 5,906-word pre-v6 text. Since 30 Oct 03:11 it is the v6 text: `cmp` shows it byte-identical to `A6-Free-Evidence-v6.md`, 5,853 strict; the pre-v6 text is `final/A6/essay_pre_v6.md`, 5,906 (log 03:11:26; `final/A6/changelog.md` "Final version"). The PDF reproduces the same stale lines. |
+| R2 `final/A5/methodology_short.md` + `.pdf` | **PASS** | none |
+| R3 `final/A6/methodology_short.md` + `.pdf` | **PASS** | none |
+| R4 `final/A4/methodology_short.md` + `.pdf` | **PASS** | none |
+
+Final essays checked against (`tools/wordcount.py --limit 6000 --target 5600`, run now):
+- `final/A5/essay.md`: 5,039 strict, OK.
+- `final/A6/essay.md`: 5,853 strict, OVER_TARGET, under the limit, byte-identical to the second system's v6.
+- `final/A4/essay.md`: 5,581 strict, OK.
+
+The submitted essay PDFs `final/A5|A6|A4/essay_final.pdf` are byte-identical to the package PDFs (`A5-Holistic-Accuracy-v8.pdf`, `A6-Free-Evidence-v6.pdf`, `A4-Causation-v8.pdf`):
+- Title metadata only; Author, Creator and Producer are null.
+- No hits for the redact value, "dirac", the email, "gmail", "github", "elenchus", "astra", "claude", "codex", "competition" or "/home/".
+
+### R1: required edits from the first check, verified
+
+| # | Edit | Status |
+|---|---|---|
+| pre | Late `human_inputs.md` entry for 21 Oct 19:44:05 | **Done.** Header `2026-10-30T03:03:43Z — class: logistics`, body "[Late entry; original time 2026-10-21T19:44:05Z …] Budget cap: "$150 total". Cuts: "Cheaper model for chores"." The file has 27 entries. |
+| 1 | Header A6 count, word-count sentence | Partly done. "5,853" and the "run on 30 Oct …" sentence are in. **The rest is stale; see new edit N1.** |
+| 2 | §1 sentence on the A6 fix and the final package | Done (l.31–34). |
+| 3 | §2 Claude Code 2.1.306–2.1.314 | Done (l.53). |
+| 4 | §2 request counts | Done: "3,425 requests, 3,063 of them by subagents (final run, 30 Oct 03:08)". |
+| 5 | §2 attribution of the model choice to the human | Done (l.57–60). |
+| 6 | §3.3 diagram lines | Done (l.138–145). |
+| 7 | §4.2 count, late-entry note, two new rows, explanatory paragraph | Done. A script check shows **all 27 entries reproduced verbatim**, classes matching (l.164–200). |
+| 8 | §4.3 budget bullet | Done (l.211–212). |
+| 9 | §4.6 qualification (P5–P6; v6 removals) | Done (l.283–287). |
+| 10 | §7.4 "Final package" bullet | Done (l.430–436). |
+| 11 | §7.5 A6 cells | Done. Citation delta audit; formal: P6/P7 removed in v6, plus the `formal_v6.md` result "no false claim, no patch required"; compliance: FAIL 17:57, fixes, and **re-check of v6 PASS (log 30 Oct 02:58:45)**. |
+| 12 | §9 usage and human-time figures | Done, as a dated snapshot ("final run 30 Oct 03:08"): 81 files, 3,425 requests (3,063 subagent), $458.91, and 68 intervals. "27 recorded entries: 26 to this pipeline … two structured answers". A rerun now gives 82 files, 3,461 requests and $461.36 to 03:14, so the snapshot is consistent and correctly dated. |
+| 13 | §10 A6 | Done (l.527 and l.534–538). |
+| 14 | §11.5 Hong and DDB | Done (l.570–575). |
+| 15 | §11.6 A6 bullets | Done: v6 compliance PASS and formal delta recorded; old residuals deleted. **However, its last clause is now stale; see N2.** |
+| 16 | §12 / Appendix F | Done (figures updated). |
+| 17 | provenance.md and Appendix E (l.68/88/89/150/168 items; version rows for the compliance fix, delta audit and v6) | Done. Appendix E equals `methodology/provenance.md` except for its wrapper lines (diff). **However, l.72 is now stale; see N3.** |
+
+### R1: report-mode checklist (re-run)
+
+1. **Identity strings: PASS, with the advisory below.**
+   - The redact value, "dirac", the email, "gmail", "github.com", "/home/", "/root/", "claude.ai/code" and "session_" have no hits in the .md or the PDF text.
+   - `check_injection.py` hard flags: "OpenReview" (l.1853) and "AI Philosophy Competition" (l.1870). Both are inside the verbatim `PHASES.md`/`CLAUDE.md` appendices, as before, and expected in a methodology report.
+2. **Panel members: PASS.** No panel surname appears in R1.
+3. **Private material: PASS.** Unchanged. The late entry contains only budget choices.
+4. **Human involvement matches `human_inputs.md` and `design_inputs.md`: PASS.**
+   - All 27 entries are verbatim, and the classes match.
+   - The orchestrator transcript contains no further human-typed message or structured answer after 30 Oct 02:55:18 (checked to 03:11; only subagent hand-backs).
+   - The model-choice attribution is corrected.
+5. **Models and versions: PASS.** Opus 5.5 / `claude-opus-5-5` only; Claude Code 2.1.306–2.1.314.
+6. **No unsupported claims: FAIL.** N1–N3 below are contradicted by log 30 Oct 03:11:26 and `final/A6/changelog.md`.
+7. **Final essays: PASS** apart from N1–N3. The A5 and A4 counts and identity statements are correct. The A6 v6 count of 5,853, the compliance PASS and the formal_v6 result are correctly recorded.
+8. **PDF: needs rebuild.**
+   - `methodology_report.pdf` (82 pp., built 03:11:49) matches the current .md: its text contains "3,425", "formal_v6", "27 entries", "2.1.314" and the corrected attribution.
+   - It also contains the stale "5,906" and "holds the pre-v6" lines.
+   - Metadata: Creator "Typst 0.15.0" and dates only, with no author.
+   - No annotations.
+
+### R1: remaining required edits (exact old → new), then rebuild the PDF
+
+- **N1. Header, l.8–10.**
+  - OLD: ``(`state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, the second system's v6 text, 5,853 words; this pipeline's last A6 text,`` / `` `final/A6/essay.md`, is 5,906 words and is the base of v6);``
+  - NEW: ``(v6, byte-identical to `final/A6/essay.md` and `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words; this pipeline's pre-v6 text, the base of v6, is kept as `final/A6/essay_pre_v6.md`, 5,906 words);``
+- **N2. §11.6, l.584–585.**
+  - OLD: ``The submitted A6 text and PDF are the second`` / ``system's v6 files; `final/A6/essay.md` holds the pre-v6 text.``
+  - NEW: ``The submitted A6 text and PDF are the second system's v6 files, copied to `final/A6/essay.md` and `final/A6/essay_final.pdf`; the pre-v6 text is kept as `final/A6/essay_pre_v6.md` (log 30 Oct 03:11:26).``
+- **N3. `methodology/provenance.md` l.72, and the same sentence in Appendix E (report l.2465).**
+  - OLD: ``This pipeline's own last text, `final/A6/essay.md`, is 5,906 words strict.``
+  - NEW: ``This pipeline's own last pre-v6 text, kept as `final/A6/essay_pre_v6.md`, is 5,906 words strict; on 30 Oct `final/A6/essay.md` was replaced by v6 (log 03:11:26).``
+  - Re-copy the ledger into Appendix E.
+- **Rebuild** `final/methodology/methodology_report.pdf` from the edited .md. Then confirm that the PDF text no longer contains "holds the pre-v6", and that its metadata has no author.
+
+Recommended, not blocking:
+- §3.3 diagram, last line. Append `; A6 v6 formal delta audit, no patch (03:11); final/A6 = v6`.
+- §9. If R1 is rebuilt, optionally refresh the usage figures. The 03:08 snapshot is dated and accurate as it stands.
+
+### R2–R4: re-check
+
+- **Required edits 1 and 2 applied verbatim in all three.**
+  - Method: a word-level diff of each `final/A*/methodology_short.md` against `state/external/submission-final-review-20261029/A*-Methodology-v*.md`.
+  - Result: only paragraph 11 differs ("…recorded as Claude Code 2.1.306 at the start of the run; the session transcripts show the client updating to 2.1.314 during the run.") and paragraph 15 ("The personas were composite subfield profiles given to models as prompts; none represented, imitated or involved any individual scholar."). Nothing else changed.
+- **PDFs regenerated (edit 3).** `final/A5|A6|A4/methodology_short.pdf`, 4 pp. each, built 03:11:46–47:
+  - The text contains "composite subfield profiles" and "2.1.314", and does not contain "named scholars".
+  - Metadata: Creator "Typst 0.15.0" and Creation/ModDate only; no Author or Producer.
+  - No identity strings, no annotations.
+- **Checklist (re-run against the final essays).**
+  - Identity: PASS.
+  - `check_injection`: no hard flags. The soft flags are Mandelkern, Salow and Günther, once each, all as cited authors.
+  - Private material: PASS.
+  - Human involvement: PASS. It is consistent with `human_inputs.md` and contradicts nothing in it.
+  - Models: PASS.
+  - Claims: PASS.
+  - Word counts: 5,039, 5,853 and 5,581, matching the final essays. R3's v6 description now matches `final/A6/essay.md`, which is identical to v6, and the v6 compliance PASS.
+- **Advisories from the first check, still open and not blocking:**
+  - The resource figures (3,181 requests, $433.20) are the earlier snapshot, stated as such ("reported before the final finishing pass … not independently recomputed"). They differ from R1's $458.91 snapshot.
+  - "task and deadline" (deadline → schedule).
+  - "relevant philosophical perspectives".
+  - R3 does not mention this pipeline's own DDB delta audit.
+  - R2 "singular"; R4 *Conjoined Cases* should be in quotation marks.
+
+### Advisory for the human/orchestrator (not a report defect; my first check missed this)
+
+The git remote `github.com/<redact value>/elenchus` is **public**: `gh api` returns `private: false, visibility: public`. It contains the final essays, R1, `human_inputs.md` and this audit. R1 names the pipeline "ELENCHUS"/"/elenchus" 19 times, which is the repository name, in the verbatim appendices and in the "/elenchus start" message. The methodologist rule bars "repository names … that identify the entrant".
+
+Redacting the name from R1 would not remove the link. Any sentence of the essays or of R1's verbatim appendices can be found by search in a public repository, and that search leads to the username. The effective protection is to make the repository private, at least until judging ends. That is a logistics decision for the human (`tools/human_tasks.py`), not an agent edit.
+
+If the human keeps the repository public, consider replacing "elenchus"/"ELENCHUS" in R1 with "[pipeline]", and record that the appendices are verbatim except for that substitution.
