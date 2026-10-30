@@ -1,0 +1,35 @@
+===== c = 1.96, L = 10 =====
+[1a] bet alone, knowledge-conditioned: on K={delta<=c^2}, |e1|<=sqrt(delta)<=c, so P(win|K)=1; EV 1 > 0 (decline): TAKES
+[1b] bet alone, evidence-conditioned: P(win)=erf(c/sqrt2)=0.9500042097; EV=0.4500463067 > 0: TAKES
+[1c] free 2nd scale, KDT: d* = 2.1956250997 (= 1.12022 c); value of looking = -P(|d|>d*|K) = -0.04961859269 (Q1) / -0.04961859269 (Q2) < 0: STRICTLY PREFERS ACTING NOW
+     KDT ranking: bet now 1 > look 0.950381 > decline 0
+[1d] free 2nd scale, Bayesian: decline threshold d_B = 2.031662406; value of looking G = 0.1854584072 > 0: STRICTLY PREFERS LOOKING (tower check 0.0499957903 vs erfc(c/sqrt2) 0.0499957903)
+     Bayesian ranking: look 0.635505 > bet now 0.450046 > decline 0
+[4a] P(weight belief lost | K) = P(|d|>(2-sqrt2)c | K) = 0.355590151696 (Q1) / 0.355590151696 (Q2)
+[4b] threshold d* = 2.1956250997
+[4c] sec 5.1: P(lose | K^D) = 0.145644389762; bet EV on K^D = -0.602088287387
+     region check (|d|<d*, c/sqrt2<|mu|<=a(d), 600x300 grid): max q-1/(1+L) = -0.000412963 (excluding the last 1% of d before d*: -0.00246058); negative => no declining state there
+[P1] unconditioned loss erfc((2-sqrt2)c/2) = 0.4168727826; narrower event minus erfc(c/sqrt2) = 0.3668769923; P(0<|d|<=sqrt2 c) = 0.9500042097; P(delta>=(1+sqrt2)^2c^2) = 1.37394e-5
+     KDT value at 20:1 = -0.12066316 (d* = 1.8354008)
+     KDT value at 100:1 = -0.27382261 (d* = 1.3465839)
+     VERIFICATION.md vs this script:
+       0.3555901517 vs 0.3555901517 -> match to 10 d.p.: True
+       2.19562510   vs 2.1956251 -> match to 8 d.p.: True
+       -0.60208829  vs -0.60208829 -> match to 8 d.p.: True
+[MC] N = 20,000,000 states (seed 20261030); in K: 17,073,347
+     losing states inside K: 0 (proof says 0); P(win) = 0.95008
+     KDT value = -0.04963 +/- 0.00005; P(weight loss | K) = 0.35561 +/- 0.00012
+     Bayesian value of look (Bayes later policy) = 0.1846; (not claimed) Bayesian value of look with KDT later policy = 0.1848
+     min delta over decline set D = 2.41056 (d*^2/2 = 2.41038); K^D samples 1,857,077: bet EV = -0.5981 +/- 0.0028
+===== c = z_0.975 = 1.95996398454, L = 10 =====
+[1a] bet alone, knowledge-conditioned: on K={delta<=c^2}, |e1|<=sqrt(delta)<=c, so P(win|K)=1; EV 1 > 0 (decline): TAKES
+[1b] bet alone, evidence-conditioned: P(win)=erf(c/sqrt2)=0.95; EV=0.45 > 0: TAKES
+[1c] free 2nd scale, KDT: d* = 2.19556590728 (= 1.12021 c); value of looking = -P(|d|>d*|K) = -0.04962313926 (Q1) / -0.04962313926 (Q2) < 0: STRICTLY PREFERS ACTING NOW
+     KDT ranking: bet now 1 > look 0.950377 > decline 0
+[1d] free 2nd scale, Bayesian: decline threshold d_B = 2.031590325; value of looking G = 0.1854802397 > 0: STRICTLY PREFERS LOOKING (tower check 0.05 vs erfc(c/sqrt2) 0.05)
+     Bayesian ranking: look 0.63548 > bet now 0.45 > decline 0
+[4a] P(weight belief lost | K) = P(|d|>(2-sqrt2)c | K) = 0.355594922194 (Q1) / 0.355594922194 (Q2)
+[4b] threshold d* = 2.19556590728
+[4c] sec 5.1: P(lose | K^D) = 0.145643830959; bet EV on K^D = -0.602082140552
+     region check (|d|<d*, c/sqrt2<|mu|<=a(d), 600x300 grid): max q-1/(1+L) = -0.000412953 (excluding the last 1% of d before d*: -0.00246052); negative => no declining state there
+[P1] unconditioned loss erfc((2-sqrt2)c/2) = 0.4168813437; narrower event minus erfc(c/sqrt2) = 0.3668813437; P(0<|d|<=sqrt2 c) = 0.95; P(delta>=(1+sqrt2)^2c^2) = 1.37451e-5

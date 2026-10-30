@@ -2,7 +2,10 @@
 
 Compiled 29 October 2026 by the methodologist agent (Claude Opus 5.5) from the repository's files and
 git history; this version replaces the 11:42 draft and describes the texts in `final/A5/essay.md`,
-`final/A6/essay.md` and `final/A4/essay.md`. Every entry names the file where a contribution first
+`final/A6/essay.md` and `final/A4/essay.md`. Revised 30 October 2026 by the methodologist agent after
+the methodology compliance check (`state/audit/methodology_compliance.md`): the submitted A6 is the
+second system's v6 (`state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`), and the
+submitted A5 v8 and A4 v8 are word-identical to `final/A5/essay.md` and `final/A4/essay.md`. Every entry names the file where a contribution first
 appears and the agent or system that wrote it. Times are UTC. Times of commits by the second AI system
 are converted from their -05:00 offsets. "Log" means `methodology/log.md`; "card" means a file in
 `state/ambitious/cards/`; "kill test" means a file in `state/ambitious/killtest/`. Authors of engaged
@@ -33,6 +36,7 @@ works who sit on the panel are not named here; their works are described or name
 | 6 | First drafts (v1) | drafter | `state/drafts/A4/v1.md` (23:16), `A5/v1.md` (23:17), `A6/v1.md` (23:17) | 23 Oct |
 | 7 | Gate A2: the orchestrator recommended A5, A6, A4 (log 29 Oct 03:45:15); the human selected "A5, A6, A4 (Recommended)" | Orchestrator; human (selection among finished AI texts) | `human_inputs.md` 29 Oct 11:45:15; log 11:45:15 | 29 Oct |
 | 8 | Convergence on the second system's source-checked versions as bases; this pipeline's audits applied on top | Orchestrator (decision); second system (bases); patch agents | log 29 Oct 17:34:53, 17:36:33 | 29 Oct |
+| 9 | Final package: A5 v8 and A4 v8 (word-identical to `final/A5`, `final/A4`), A6 v6 (scope narrowing of this pipeline's final A6); checked by the orchestrator; A6 v6 compliance re-check PASS | Second system (package, commit 833b464); orchestrator; compliance-officer | `state/external/submission-final-review-20261029/`; log 30 Oct 02:56:53, 02:58:45; `state/audit/A6/compliance.md` | 29 Oct 23:31; 30 Oct |
 
 ## 2. A5 — "Holistic Accuracy and the Limits of Lockean Derivation"
 
@@ -65,7 +69,7 @@ Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Ver
 
 ## 3. A6 — "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
 
-Final text: `final/A6/essay.md`, 5,831 words strict. Version chain:
+Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words strict (second system's v6). This pipeline's own last text, `final/A6/essay.md`, is 5,906 words strict. Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|
@@ -75,19 +79,22 @@ Final text: `final/A6/essay.md`, 5,831 words strict. Version chain:
 | v4 | reviser, against P-7f1b S2-lit and G4 | `state/drafts/A6/v4.md`; `revision_notes_v4.md` | launched 29 Oct 03:43; log 11:43:05 (5,883 words) |
 | v5 | second system, after its 29 Oct review | `submission-sourcechecked-20261029/A6-Free-Evidence-v5.md` (89bd70f) | 29 Oct 17:02 |
 | final | patch agents: citation-audit patches P1–P14d of `state/audit/A6/citations.md` (log 17:43:03), then formal-audit patches P1–P8 of `state/audit/A6/formal.md` (log 17:53:18); both audits were of v4 | `final/A6/essay.md`; `final/A6/changelog.md` | 29 Oct |
+| compliance fix | compliance check FAIL, 2 items (Hong 2026; *Deference Done Better* paragraph unaudited); orchestrator applied citation-audit P4 verbatim (Hong reduced to an abstract-level claim) | `state/audit/A6/compliance.md` (first version); `final/A6/changelog.md`; commit f69bb59 | log 29 Oct 17:57:41 |
+| delta audit | citation-auditor: delta audit of the final against the published text of *Deference Done Better* (`state/audit/A6/citations_final.md`): 14 new or altered attributions (9 accurate, 4 oversimplified, 0 inaccurate), 11 locators verified; orchestrator applied patches P1–P6 verbatim | `state/audit/A6/citations_final.md`; `final/A6/changelog.md`; commit e716195 | 29 Oct 18:02 |
+| v6 (submitted) | second system: this pipeline's patched final plus a scope-narrowing pass: removed the continuous analogue of Lemma 2 (formal patch P6's material) and the encroachment generalization over "all but knife-edge priors" (P7's material); added question availability to the thesis and conclusion; rewrote the Bjorn encroachment sentences; adopted "(see §6.1 below)" and the corrected reference order. Compliance re-check of v6: PASS. Formal delta audit of v6: pending: when this report was finalized (30 Oct 03:08) the formal delta audit of v6 was still running (log 30 Oct 02:56:53) and `state/audit/A6/formal_v6.md` did not exist. | `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md` (commit 833b464); `state/audit/A6/compliance.md` | 29 Oct 23:31; compliance log 30 Oct 02:58:45 |
 
 | # | Contribution | First appearance | Later changes and their source |
 |---|---|---|---|
 | 6.1 | Question: does knowledge-based decision theory keep Good's theorem inside the 2023 normality theory of inductive knowledge? | Card A6-01 (ideator, 23 Oct 17:23) | — |
-| 6.2 | Boundary theorem: a free question is safe in every decision problem iff no state compatible with one's knowledge is one where the answer reopens a ruled-out possibility; all questions safe iff knowledge is gapped (Theorem 1) | Card A6-01, with exhaustive small-structure checks | Kill test: REPAIR, spine of a merged essay; credit value-of-information precedents. v2 (second system) corrected quantifiers. v4 (referee S2-lit M4): the theorem's shape credited to Geanakoplos. v5 (second system): connected to *Deference Done Better* (see 6.8). |
-| 6.3 | Graded collapse: no factive state containing rational belief is safe unless it is the whole evidence (Theorem 2) | Card A6-01 | — |
+| 6.2 | Boundary theorem: a free question is safe in every decision problem iff no state compatible with one's knowledge is one where the answer reopens a ruled-out possibility; all questions safe iff knowledge is gapped (Theorem 1) | Card A6-01, with exhaustive small-structure checks | Kill test: REPAIR, spine of a merged essay; credit value-of-information precedents. v2 (second system) corrected quantifiers. v4 (referee S2-lit M4): the theorem's shape credited to Geanakoplos. v5 (second system): connected to *Deference Done Better* (see 6.8). v6 (second system): K-normality and the availability of the requisite questions stated in the thesis and conclusion. |
+| 6.3 | Graded collapse: no factive state containing rational belief is safe unless it is the whole evidence (Theorem 2) | Card A6-01 | Formal patch P6 (final) added an appeal to a continuous analogue of Lemma 2 for the Bjorn case, stated but not proved. v6 (second system) removed that appeal and says the result "does not establish the same necessity result for the second weighing alone". |
 | 6.4 | Case: the target theory's repeated-weighing model; a free second weighing has negative value at ten-to-one odds | Card A6-02 | Kill test asked for a moderate-stakes instance; v1 supplied ten-to-one; v2 corrected its scope; v4 separated three claims (referee S2-lit M2a). v5 (second system) distinguished about 42% weight-belief loss from about 37% loss with a consistent discovery; the discrepancy was first flagged in this pipeline's partial formal audit (`state/audit/A6/formal.md`, file 11:52). The record does not show whether the second system used that audit. Final citation patch P10 attributes "about 0.37" to the source's note 18; the completed formal audit (17:47) confirmed the distinction, and formal patch P2 corrected a §5.1 figure from −0.63 to −0.60. |
 | 6.5 | Conditioning on the options' differing (CEU) fails wherever the unconditional rule fails (Theorem 3); Conditional Knowledge Dominance itself is silent in that construction | Card A6-02 → kill test → v1 | v3 (second system) strengthened the counterexample. v4 conceded the silence (**referee suggestion**, S2-lit MS(a)) and proved it generally (A.7). |
 | 6.6 | Conditioning on the evidence's changing one's choice (VER) also fails, including a five-state counterexample | **Referee suggestions**: S2-lit (27 Oct 16:26) proposed the verdict-change rule; G4 (27 Oct 16:42) supplied the five-state counterexample, verified by the reviser | v4 added a failure without relative defeat. v5 (second system): s0 = s1 made explicit, the future policy specified, enumeration scope described (ASSESSMENT A6 fixes 3 and 5) |
 | 6.7 | Conditioning answer by answer (ANS) is safe (Proposition 4) but pays to check what one knows, which Conditional Knowledge Dominance forbids (Proposition 5) | **Referee suggestion**: G4 proposed ANS and its safety proof, accepted as Proposition 4. Proposition 5 is the reviser's (v4). | v5 (second system): price condition 0 < κ < L made explicit (ASSESSMENT fix 4); conclusion restricted to the rules examined (fix 2) |
-| 6.8 | Comparison with *Deference Done Better* (2021): its Value and Total Trust results; the normality model's increment is the relative-defeat/gappedness characterisation and the conditional repairs | **Second-system review** (ASSESSMENT required fix 1) | Written into v5 by the second system, which checked Value, Weak Value and Total Trust (`VERIFICATION.md`). This pipeline checked only the Crossref metadata (`final/A6/changelog.md`). |
-| 6.9 | Comparison with Hong (2024–2026) | Kill test ("read Hong before drafting") | v2 (second system) drew on that system's reading of §§1–3. Final patch P4 narrowed the description to what that system's records support. **This pipeline has not read Hong's text** (Wiley 403; fetch `amb-a6-hong-2025-2026` open). |
-| 6.10 | Replies: self-trust versus evidence; stakes and encroachment; statism and questions; "Good's theorem is not sacrosanct" | Kill test objections and card A6-05 → v1 | v2 narrowed encroachment; v4 added the encroachment literature (S2-lit) and the question-sensitivity limitation (S2-lit M5); final patches P11–P14d reworded attributions |
+| 6.8 | Comparison with *Deference Done Better* (2021): its Value and Total Trust results; the normality model's increment is the relative-defeat/gappedness characterisation and the conditional repairs | **Second-system review** (ASSESSMENT required fix 1) | Written into v5 by the second system, which checked Value, Weak Value and Total Trust (`VERIFICATION.md`). Checked against the published text by this pipeline's delta audit (citations_final.md); patches P3–P6. P5 states the converse direction of the correspondence and P6 acknowledges that paper's Theorem 4.1. |
+| 6.9 | Comparison with Hong (2024–2026) | Kill test ("read Hong before drafting") | v2 (second system) drew on that system's reading of §§1–3. Compliance fix applied P4; delta-audit P2 calibrated the sentence to the abstract ("gives two arguments suggesting …"). **This pipeline has not read Hong's full text** (Wiley 403; fetch `amb-a6-hong-2025-2026` open). |
+| 6.10 | Replies: self-trust versus evidence; stakes and encroachment; statism and questions; "Good's theorem is not sacrosanct" | Kill test objections and card A6-05 → v1 | v2 narrowed encroachment; v4 added the encroachment literature (S2-lit) and the question-sensitivity limitation (S2-lit M5); final patches P11–P14d reworded attributions. v6 (second system) removed the generalization over "all but knife-edge priors" (formal patch P7's material) and rewrote the Bjorn encroachment sentences (he bets under both knowledge- and evidence-conditioned evaluation). |
 | 6.11 | Dropped: cards A6-03, A6-04 (KILL), A6-05 as a stand-alone essay | Kill test | — |
 
 ## 4. A4 — "A Switching Dilemma for Normality in Actual Causation"
@@ -139,20 +146,29 @@ packet P-d300 and read by the reviser from `inbox/sources/`.
   scope; A4 Wysocki, restricted frozen-mechanism claim, fixed-context conditions, and removal of the
   stipulated "natural target" sentence. Its *Good Guesses* comparison (9c39291) produced A5's prior-work concession.
 - **This pipeline's audits.** A5 formal P1–P5, P8 and citation patches 1–8 (in v5, retained in v7);
-  `citations_final.md` patches 1–3 (final). A6 citation P1–P14d and formal P1–P8 (final). A4 citation
+  `citations_final.md` patches 1–3 (final). A6 citation P1–P14d and formal P1–P8 (final), the compliance
+  fix (citation P4) and delta-audit patches P1–P6 (`state/audit/A6/citations_final.md`). A4 citation
   patches 1–8 and formal P1–P7 (final). These patches correct attributions, pinpoints, figures and
-  wording; their changelogs record that they add no arguments, cases or claims.
+  wording and add no arguments or cases. A6 delta-audit P5–P6 (AI-written) state the converse direction
+  of the *Deference Done Better* correspondence and acknowledge that paper's Theorem 4.1.
+- **The second AI system's A6 v6** (commit 833b464, 29 Oct 23:31) removed two claims (the continuous
+  analogue of Lemma 2 and the encroachment generalization), made question availability explicit and
+  adopted two optional suggestions of this pipeline's A6 compliance check.
 - **Editor.** The editor agent and its plan files were never used (phases abandoned, log 21 Oct
   19:48:32). Changelogs exist only for the final patch passes and A5 v5.
 
 ## 6. Human messages and the contributions
 
-None of the contributions above traces to a human message. The 25 entries in
-`methodology/human_inputs.md` are logistics, courier, method, generic feedback and one selection. The
+None of the contributions above traces to a human message. The 27 entries in
+`methodology/human_inputs.md` are logistics, courier, method, generic feedback and one selection. One of
+them, a structured answer of 21 Oct 19:44:05 on budget and cost cuts ("$150 total"; "Cheaper model for
+chores"), was recorded late, on 30 Oct, from the session transcript. The
 request for ambition named no problem. The Gate A2 answer selected among finished essays that the
 orchestrator had recommended. The 29 Oct 17:35 entry relays the second system's status note (AI-written
 risk headings: e.g. "A4: philosophical significance and overlap with prior work"); the subsequent patch
-passes added no arguments, cases or claims (`final/A6/changelog.md`, `final/A4/changelog.md`).
+passes added no arguments or cases; A6 delta-audit P5–P6 (AI-written) state the converse direction of
+the *Deference Done Better* correspondence and acknowledge its Theorem 4.1, and the second system's A6 v6
+removed two claims (`final/A6/changelog.md`, `final/A4/changelog.md`, `state/audit/A6/citations_final.md`).
 
 Sources the human supplied that bear on the final essays, all without comment as recorded:
 - Xiao and Xiong 2026 (uploaded 29 Oct 04:01), engaged in A4;
@@ -165,8 +181,8 @@ Limits of this ledger:
 - The second system's chat transcripts are not in the repository; its contributions are traced from its
   files and commits.
 - Not verified by this pipeline: the published text of *Good Guesses* (only the second system's reading
-  of the 2021 draft and the authors' own summary); Hong 2026 (never read); the content of *Deference Done Better*
-  (second system only); the Halpern 2016 pinpoints (confirmed only by the
+  of the 2021 draft and the authors' own summary); Hong 2026 (full text never read; cited at abstract
+  level); the Halpern 2016 pinpoints (confirmed only by the
   second system's book review; fetch `a4-audit-halpern-2016-pinpoints` open).
 - The second system's early context-exposure disclosure, the quarantine, its lifting and the human's
   confirmation of revised `CLAUDE.md` §1.2 are recorded in the methodology report, §4.4.
