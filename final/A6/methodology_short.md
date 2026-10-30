@@ -1,0 +1,65 @@
+# Production methodology: A6
+
+Companion to **When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models**, version 6. Prepared 29 October 2026.
+
+The matching essay contains **5,853 words** under the conservative source count, including all non-bibliographic material. This anonymized report covers production, revision and verification; it replaces the earlier short verification-only note.
+
+## Production setting and models
+
+The essays were developed and revised during 21–29 October 2026 through two AI systems working with a shared project repository. This report reconstructs the production method from the retained drafts, review reports, source comparisons and production summary. It describes recorded work rather than treating a planned workflow as a completed experiment. Some historical details remain unverified.
+
+The Claude-side records identify the scaffold designer, orchestrator, drafting agents and review agents as **Claude Opus 5.5**, with model string `claude-opus-5-5`; the orchestrator's environment was recorded as Claude Code 2.1.306 at the start of the run; the session transcripts show the client updating to 2.1.314 during the run. These identifiers are reported from that system's records, not independently recovered from service telemetry. The other system was an **OpenAI Codex assistant**. A verified session-by-session model-version record for its earlier work was not available. It contributed candidate generation, critical review, mathematical checks, source comparison, substantive revisions and final document preparation. The present finishing pass also used Codex. No later reviews by additional model providers are included in this report.
+
+## Candidate generation and selection
+
+The initial AI-written scaffold proposed a broad funnel: survey the literature, generate candidates, reject anticipated or defective claims, draft survivors, obtain critical reviews, revise, audit citations and proofs, and package the results. Public research interests of the intended academic audience informed the literature areas and reviewer personas. The personas were composite subfield profiles given to models as prompts; none represented, imitated or involved any individual scholar.
+
+The original plan was reduced after budget and usage constraints. Three early essays were drafted from literature maps; prior-art checks led to replacement of some initial theses. A later problem survey listed 30 problems, shortlisted ten and selected six. Source availability helped determine which three were developed first. For these three, ideation agents produced fifteen proposals, five per topic. Recorded critical assessments rejected eight and repaired or merged seven into three essay plans. An additional Codex idea search generated 120 candidates and narrowed them through 40, 16 and eight; its survivors did not become these final essays. One other essay was withdrawn after its central objections remained unresolved.
+
+Selection ultimately used the models' recommendations and the operator's choice among AI-produced outputs. The proposed formal draft tournament was not run. The process was exploratory and adaptive, not a preregistered evaluation. This matters because the final essays were selected from substantially more attempts than the three displayed here.
+
+## Instructions, scaffolding and revision
+
+The recurring instruction pattern was to reconstruct the target's strongest argument, identify its assumptions, compare the closest primary literature, propose a precise increment, look for counterexamples, repair errors and narrow unsupported conclusions. Ideation tasks asked for multiple candidate arguments and an explicit account of what each would add. Critical tasks asked models to find prior art, invalid steps, misleading attributions and objections that would survive a charitable reading. Drafting tasks required a self-contained philosophical argument within the word limit. These are descriptions of the prompt functions, not a verbatim prompt archive.
+
+Claude's workflow assigned separate roles for literature surveying, ideation, critical testing, drafting, revision, citation checking, formal checking and document checks. Some roles existed only in the planned scaffold; an editor stage and the proposed multi-round ranking tournament were not completed. Selected drafts received anonymous model-review packets containing the manuscript, a rubric and a main source. Some packets contained an additional comparator. The review roles included a subject specialist and an advocate of the position criticized. Their reports informed substantive revisions. Separate model instances and anonymous packets reduce some contextual influence but do not create human expert review or establish statistical independence between judgments.
+
+Codex reviewed successive drafts against primary sources and supplied counterexamples, calculations and restrictions on claims. The two systems then incorporated each other's revisions. The last Claude pass added citation and proof-audit corrections. This edition incorporates those corrections, reviews the changed claims, and produces matching manuscripts and PDFs. It does not count a proposed check as completed or describe a previous draft's review as a new review of this version.
+
+## Research and computational tools
+
+The systems used web search, author-posted papers, journal or repository copies, uploaded texts, text extraction and the shared repository. Bibliographic metadata checks supplemented reading; abstracts and metadata were not treated as substitutes for a full-text check of a theorem. Essential inaccessible texts were requested as documents rather than as human explanations.
+
+Computational work used Python, exact rational arithmetic, symbolic algebra, finite-model enumeration, numerical integration and, in the Claude-side causation audit, an SMT solver. Such calculations checked examples and finite domains. Written proofs support claims quantified over all decision problems or all models in a stated class. Neither numerical agreement nor finite enumeration establishes originality. The essay-specific section below distinguishes checks performed for this edition from previously recorded checks that were retained.
+
+PDFs were generated from the final Markdown sources using Pandoc and XeLaTeX. The existing counting script counts title, abstract, headings, mathematical tokens, footnotes and appendices, excluding only the bibliography. Text and metadata were checked for identifying strings, and rendered pages were visually inspected. The combined reading copy is an additional convenience document; the individual essay and its matching report are the paired documents.
+
+## Human involvement and context
+
+The operator set the task and deadline, requested more candidates and stronger originality and significance, supplied or relayed source documents and model reviews, asked for further revision, and selected among AI-generated work. Recorded methodological suggestions included using relevant philosophical perspectives and demanding criticism. The available project review identified no substantive philosophical argument, example, distinction or repair supplied by the operator that entered these essays. This is a limited provenance finding, not a certification of every earlier session.
+
+Claude's records state that automatic memory was disabled and personal-account retrieval was not used in its production workflow. A previous Codex disclosure recorded possible availability of unrelated personal context; the subsequent limited audit identified no human philosophical contribution but did not certify all historical context. That limitation remains disclosed. This finishing pass did not retrieve personal context or use unrelated task histories to develop arguments. Raw conversations, human-input histories and internal run logs are not included in this report.
+
+## Resources and limitations of the record
+
+The Claude-side production summary reports 3,181 requests, including 2,853 subagent requests, across 73 transcript files, and estimates approximately US$433.20 at list prices. It records 64 ten-minute intervals containing activity, approximately eleven hours of occupied intervals across the project period; this is not a measurement of processor time or summed agent time. The estimate was reported before the final finishing pass, was not independently recomputed here, and is not a bill: work used subscription access with usage limits. Reliable cumulative Codex token use, cost and machine time were unavailable. Total human time and a defensible cost allocation to this particular essay could not be established.
+
+The earlier anonymous model reviews were critical; no calibrated human-expert assessment of these final versions has been completed. The workflow cannot demonstrate that the literature search was exhaustive, that model judgments are independent, or that the surviving contributions are important enough for publication. The most consequential remaining questions are stated below. No contest submission has been made as part of this finishing pass.
+
+## Essay-specific development and checks
+
+The initial proposals combined the normality-theoretic boundary for safe inquiry, a graded-model consequence, repeated weighing and a conditional repair. Later model reviews generated the verdict-change and answer-by-answer evaluations, a five-state counterexample, and the safety proof for answer-by-answer evaluation. The reviser added the costly-inquiry conflict. Codex subsequently clarified the future KDT policy, restricted conclusions to the specified rules, separated distinct probability events, and added the comparison with *Deference Done Better*.
+
+The source checks include Goodman and Salow's normality framework and *Belief Revision Normalized*, the reported conditional-dominance principle, and the published *Deference Done Better*. For the last of these, this finishing pass checked the definitions of Value and Weak Value, the Appendix B equivalences, and Theorem 4.1. The general characterization is earlier work. The essay's intended increment is its formulation in terms of relative defeat and gappedness in the stated normality models, together with the conditional-rule examples. Hong 2026 is described only at the abstract-supported level; no essential proof rests on an unverified section-level attribution to that paper.
+
+Earlier exact calculations gave, in the five-state example, KDT value $-1952/6125$, VER value $-12847/1568000$, and ANS value $32917/217000$. In the four-state example without relative defeat, KDT and ANS give $1/20$, VER $-49/40$ and CEU $-49/20$. Those unchanged examples were not rerun in this finishing pass. Previously checked Gaussian integrations distinguish weight-belief loss, approximately 0.417, from loss with a consistent discovery, approximately 0.367. Claude's later correction adds approximately 0.356 conditional on present knowledge; this finishing pass independently integrated that event and obtained 0.3555901517.
+
+This pass independently recomputed the corrected conditional-bet value using one-dimensional SciPy quadrature with the decline event evaluated on its full candidate region. It obtained threshold $d_*=2.19562510$, or $1.12021689c$, and conditional expected value $-0.60208829$ at $c=1.96$ and ten-to-one odds, supporting the essay's rounded $-0.60$. This is a numerical check, not an independent philosophical endorsement. The complete finite enumeration was not rerun for this edition; its recorded domain is 64,004 situation–question pairs with nontrivial partitions. Sampled utilities do not verify the universal quantifiers.
+
+Two peripheral claims were narrowed in the final pass. An optional continuous safety assertion, invoking an unproved extension of the finite laminar lemma, was removed. The broad encroachment generalization about almost all priors was also removed; the discussion now compares the two specified inquiry evaluations and states its consequence conditionally. K-normality and the required availability of questions are explicit in the introductory thesis and conclusion. These changes preserve the finite theorems and the separately analyzed weighing example.
+
+Remaining limits include available questions, statism, the fixed current ken, the future policy, commitment to ignore evidence, alternative conditional theories, and question-relative normality. The essay does not establish that every knowledge-based decision theory or every interpretation of the qualitative conditional principle fails.
+
+## Final document pairing
+
+The manuscript `A6-Free-Evidence-v6.md` and anonymous PDF `A6-Free-Evidence-v6.pdf` contain the same version 6 text. This report is paired with that version. Subsequent substantive revisions or additional model reviews should be reflected in an updated report.

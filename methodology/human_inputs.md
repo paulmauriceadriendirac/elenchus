@@ -106,3 +106,7 @@
 
 > okay let's do the final check on astra's work.
 
+## 2026-10-30T03:03:43Z — class: logistics
+
+> [Late entry; original time 2026-10-21T19:44:05Z. Structured answer to the orchestrator's budget question] Budget cap: "$150 total". Cuts: "Cheaper model for chores".
+
