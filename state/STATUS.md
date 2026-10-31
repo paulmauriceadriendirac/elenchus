@@ -84,3 +84,8 @@ A6 v2 (free evidence), E3 v4 (flattening). Reserves: A4 (ours v1; Astra's v2), E
 See final/SUBMISSION.md. All three essays and four methodology reports passed compliance.
 Remaining: outside-model defect review (operator), any concrete repairs, then submission by the
 operator before 31 Oct 23:59 AoE.
+
+## FINAL (2026-10-31 ~14:30 UTC)
+Submission set in final/SUBMISSION.md (A5 v9+patches, A6 v8, A4 v10+P1; four methodology reports).
+Grok outside-model reviews relayed; no defects of the requested kinds; not acted on beyond adopted versions.
+Submission is the operator's action.

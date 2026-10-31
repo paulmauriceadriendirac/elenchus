@@ -130,3 +130,5 @@
 - 2026-10-31T13:24:51Z **decision**: A5: adopted v9 with delta-audit patches 1-2 (state/audit/A5/v9_delta.md); PDF rebuilt.
 - 2026-10-31T13:28:11Z **agent**: A4 v10 delta audit: state/audit/A4/v10_delta.md
 - 2026-10-31T13:28:35Z **decision**: A4: adopted v10 with delta-audit P1 (state/audit/A4/v10_delta.md); PDF rebuilt.
+- 2026-10-31T13:34:40Z **agent**: Methodology reports reconciled to adopted versions (final/A5|A6|A4/methodology_short.md from second system's v9/v8/v10 reports with corrections; final/methodology/methodology_report.md; methodology/provenance.md; methodology/usage.md; PDFs rebuilt)
+- 2026-10-31T13:35:24Z **event**: Run complete: final submission set in final/SUBMISSION.md; identity scan of all seven PDFs clean.

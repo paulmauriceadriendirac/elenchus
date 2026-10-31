@@ -1,21 +1,22 @@
 # Methodology report
 
-This report covers one production run that yielded three essays. The submitted files are those of the
-second AI system's final package (`state/external/submission-final-review-20261029/`):
+This report covers one production run that yielded three essays. The adopted final texts (31 Oct
+2026; `final/A*/changelog.md`, last section) are versions from the second AI system's 30 Oct submission
+edition (`state/external/submission-ready-20261030/`), each checked by a delta audit and, where needed,
+patched by the orchestrator:
 
-- **A5**, "Holistic Accuracy and the Limits of Lockean Derivation" (v8, word-identical to
-  `final/A5/essay.md`, 5,039 words);
-- **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
-  (v6, byte-identical to `final/A6/essay.md` and `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words; this pipeline's pre-v6 text, the base of v6, is kept as `final/A6/essay_pre_v6.md`, 5,906 words);
-- **A4**, "A Switching Dilemma for Normality in Actual Causation" (v8, word-identical to
-  `final/A4/essay.md`, 5,581 words).
+- **A5**, "Holistic Accuracy and the Limits of Lockean Derivation": the second system's v9 with two
+  bibliography patches (`final/A5/essay.md`, 5,536 words; delta audit `state/audit/A5/v9_delta.md`);
+- **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models":
+  the second system's v8, unchanged (`final/A6/essay.md`, 5,948 words; `state/audit/A6/v8_delta.md`);
+- **A4**, "A Switching Dilemma for Normality in Actual Causation": the second system's v10 with patch P1
+  (`final/A4/essay.md`, 5,813 words; `state/audit/A4/v10_delta.md`).
 
-Each essay is accompanied by a short production report written by the second system, with two
-corrections required by this pipeline's compliance check (`final/A5/methodology_short.md`,
-`final/A6/methodology_short.md`, `final/A4/methodology_short.md`; log 30 Oct 03:04:08;
-`state/audit/methodology_compliance.md`). Word counts are strict counts by `tools/wordcount.py`
-(everything except the bibliography), run on 30 Oct on the final texts (A5 and A4 unchanged since
-29 Oct 17:49; A6 v6 of 29 Oct 23:31). The report is common to all three; Section 10 has a provenance section for each. Every
+The earlier finals are kept (`final/A5/essay_v8.md`, `final/A6/essay_v6.md`, `final/A4/essay_v8.md`).
+Each essay is accompanied by a short production report, the second system's latest report corrected
+on 31 Oct to the adopted text (`final/A5/methodology_short.md`, `final/A6/methodology_short.md`,
+`final/A4/methodology_short.md`). Word counts are strict counts by `tools/wordcount.py` (everything
+except the bibliography), run on 31 Oct on the adopted texts. The report is common to all three; Section 10 has a provenance section for each. Every
 statement cites the file it comes from; paths are relative to the project's working directory. Times
 are UTC. "The log" means `methodology/log.md`, an append-only record written through `tools/log.py`.
 Human messages are quoted from `methodology/human_inputs.md`. Authors of engaged works who sit on the
@@ -39,7 +40,12 @@ against primary sources, and produced A5 v7, A6 v5 and A4 v7. These became the b
 to which this pipeline's citation and formal audits were applied as patches. After an A6 compliance
 failure, this pipeline corrected two citations in A6 (Hong 2026, *Deference Done Better*). The second
 system's final package (29 Oct, 23:31 UTC) contained A5 v8 and A4 v8, word-identical to this pipeline's
-final A5 and A4, and A6 v6, which narrows the scope of two peripheral claims. The operator chose the three essays
+final A5 and A4, and A6 v6, which narrows the scope of two peripheral claims. On 30 Oct the second
+system issued a readability edition and then a submission pass with two corrections (A6's CEU–KDT
+agreement claim narrowed; A4 given an acknowledgment of a Halpern antecedent). On 31 Oct the operator
+relayed three reviews by an outside model (Grok); delta audits by this pipeline checked the new versions
+and mapped the reviews' requests, and the orchestrator adopted A5 v9 (with two bibliography patches),
+A6 v8 and A4 v10 (with a patch replacing an unverifiable page-85 attribution). The operator chose the three essays
 at a gate from the orchestrator's recommendation, set budgets, relayed between the systems, supplied
 sources and gave generic instructions. No philosophical contribution traces to a human message
 (`methodology/provenance.md`).
@@ -50,8 +56,9 @@ sources and gave generic instructions. No philosophical contribution traces to a
 |---|---|---|
 | Scaffold design (before the run) | Claude Opus 5.5 (`claude-opus-5-5`) in a claude.ai conversation | `methodology/design_inputs.md` |
 | Orchestrator (session model) | Claude Opus 5.5; Claude Code 2.1.306 at run start (transcripts record 2.1.306–2.1.314 as the client updated: 2.1.306, 307, 308, 309, 311, 312, 314), cloud Linux session, Python 3.13.16 | `methodology/run_config.md`; transcript records |
-| All subagents: field-surveyor, panel-analyst, cartographers, ideators, red team, referees, drafters, revisers and patch agents (general-purpose agents with model "opus"), citation-auditor, formalist, compliance-officer, methodologist | Claude Opus 5.5 | Transcripts. `tools/usage_report.py` records only `claude-opus-5-5`: 3,425 requests, 3,063 of them by subagents (final run, 30 Oct 03:08). |
+| All subagents: field-surveyor, panel-analyst, cartographers, ideators, red team, referees, drafters, revisers and patch agents (general-purpose agents with model "opus"), citation-auditor, formalist, compliance-officer, methodologist | Claude Opus 5.5 | Transcripts. `tools/usage_report.py` records only `claude-opus-5-5`: 3,571 requests, 3,173 of them by subagents (final run, 31 Oct 13:29). |
 | Second AI system ("Astra") | An OpenAI Codex assistant. Its records say that "a precise model-version identifier for every OpenAI authoring session is not established". | `state/external/review-edition-20261025/METHODOLOGY.md`; `state/external/submission-revisions-20261028/methodology/*.md` |
+| Outside reviewer (31 Oct): three peer-review reports relayed by the human | "Grok" (as labelled in the relayed file); no version recorded | `relay/inbox/grok-reviews-20261031.md` |
 
 On 21 October the human, answering a structured question on cost cuts, chose "Cheaper model for
 chores", and the orchestrator recorded Sonnet for mechanical roles (log 19:44:17; `human_inputs.md`, late
@@ -142,6 +149,19 @@ Subagents cannot spawn subagents (`.claude/settings.json`: `CLAUDE_CODE_MAX_SUBA
         ▼
  ORCHESTRATOR (30 Oct): check of that package (02:56); A6 v6 compliance re-check PASS (02:58);
            methodology compliance check (03:03); corrected short reports (03:04); this report
+        │
+        ▼
+ SECOND AI SYSTEM (30 Oct): readability edition fc363b6 (13:07): A5 v9, A6 v7, A4 v9;
+           submission pass 4668769 (31 Oct 00:07): A6 v8 (CEU–KDT claim narrowed),
+           A4 v10 (Halpern acknowledgment), A5 v9 unchanged
+        │
+        ▼
+ HUMAN relays three Grok reviews (31 Oct 13:18)
+        │
+        ▼
+ ORCHESTRATOR (31 Oct): delta audits A6 v8 (13:24:00), A5 v9 (13:24:04), A4 v10 (13:28:11);
+           adopts A6 v8 (13:24:16), A5 v9 + patches 1–2 (13:24:51), A4 v10 + P1 (13:28:35);
+           PDFs rebuilt; reports reconciled
 ```
 
 ## 4. Human involvement
@@ -160,7 +180,7 @@ states: "The human wrote no part of it." `CONFIG.md` was left at its defaults, w
 
 The orchestrator classified each message on arrival, using the classes of
 `standards/HUMAN_INPUT_POLICY.md` (logistics, courier, method, generic-feedback; "selection" for the
-gate answer). The 27 entries of `methodology/human_inputs.md` are reproduced without omission. One of
+gate answer). The 28 entries of `methodology/human_inputs.md` are reproduced without omission. One of
 them, a structured answer of 21 Oct 19:44:05, was recorded late, on 30 Oct. They contain no account
 metadata.
 
@@ -193,6 +213,7 @@ metadata.
 | 29 Oct 11:45:15 | selection | "Gate A2 answer: "A5, A6, A4 (Recommended)"; §1.2 change: "Yes, I confirm it"" |
 | 29 Oct 17:35:47 | courier | "[Human message forwarding the other model's (Astra's) status note, followed by: "this is Astra review the last GitHub commits here"] We're one final review-and-repair cycle away, plus one reporting task. You can send the current PDFs to the other models now. I checked GitHub: no newer Claude changes have appeared since the package we just published. The manuscripts, source comparisons, targeted calculations, word counts and PDF checks are complete. The remaining intellectual risks are: A5: whether its reading of Dorst is persuasive and its narrower contribution sufficiently significant. A6: whether the normality-specific result adds enough beyond existing deference results, and whether any hypothesis is missing. A4: philosophical significance and overlap with prior work. It remains the reserve. One correction to my previous update: the latest methodology PDFs are scientific verification notes, not complete contest production reports. We still need an accurate, anonymized account of the models, workflow, selection and human involvement. That was an omission in the package I called finished. The contest requires that account; submitting chat logs is optional, so this does not require publishing private histories. For the other models, request specific defects with evidence: a false lemma or missing assumption, a misrepresented source passage, or prior work that already establishes the claimed contribution. Those findings should determine the final edits. Submitting Friday after that review cycle is reasonable, with Saturday available for concrete repairs. The official deadline is October 31, 11:59 p.m. this is Astra review the last GitHub commits here" |
 | 30 Oct 02:55:32 | logistics | "okay let's do the final check on astra's work." |
+| 31 Oct 13:18:03 | courier | "[Human relayed three outside-model (Grok) review reports on A4, A5, A6, with connecting messages: "what about this one"; "Refer to the following content:"; "here is review by grok". Saved verbatim: relay/inbox/grok-reviews-20261031.md]" |
 
 The 21 Oct 19:44:05 answer was given to two structured questions from the orchestrator. It was not
 entered in `human_inputs.md` at the time; its effect is in the log (19:44:17), and the entry was added on
@@ -202,7 +223,9 @@ The 23 Oct 23:02:33 message was addressed to the second system, not to this pipe
 it to `human_inputs.md` in commit 217d95d, and the orchestrator logged the commit (log 23 Oct 23:17:35).
 The Gate A2 answer was given to a structured question in which the orchestrator had marked its
 recommendation (log 29 Oct 11:45:15). The 29 Oct 17:35:47 entry is classified as courier: apart from
-one sentence, the text is the second system's own note, relayed by the human.
+one sentence, the text is the second system's own note, relayed by the human. The 31 Oct 13:18:03
+entry is courier: the reviews are AI-written, and the human's own words are the three connecting
+phrases quoted.
 
 ### 4.3 What the human did
 
@@ -228,7 +251,9 @@ one sentence, the text is the second system's own note, relayed by the human.
   near-limit drafts, at least 100 further ideas, and progressive assessment emphasizing importance and
   originality" (`state/external/codex-expansion-20261022/README.md`), and that "the user explicitly
   withheld philosophical feedback for the contest" (`state/external/ambitious-drafts-20261022/README.md`).
-  On 29 Oct the operator relayed that system's status note (4.2).
+  On 29 Oct the operator relayed that system's status note (4.2). On 31 Oct the operator relayed three
+  reviews written by an outside model (Grok), with short connecting phrases and no comment of their own
+  (4.2; 7.6).
 - **Gave one piece of generic feedback** (23 Oct 23:02:33, to the second system).
 - **Closed Gate A2**: selected A5, A6 and A4, as recommended, and confirmed the revised `CLAUDE.md` §1.2
   (29 Oct 11:45:15).
@@ -283,7 +308,8 @@ significance and overlap with prior work"); it is AI-written. The patch passes t
 arguments or cases. A6's citation delta-audit patches P5–P6 (AI-written) state the converse direction of
 the *Deference Done Better* correspondence and acknowledge that paper's Theorem 4.1, and the second
 system's A6 v6 removed two claims (`final/A6/changelog.md`, `final/A4/changelog.md`,
-`state/audit/A6/citations_final.md`). The human's 30 Oct message asked only for a final check.
+`state/audit/A6/citations_final.md`). The human's 30 Oct message asked only for a final check. The
+31 Oct Grok reviews are AI-written; none of their requests was acted on (7.6).
 
 ## 5. Topic selection
 
@@ -333,7 +359,8 @@ Topic selection was done entirely by agents.
 | Finalist candidates, 27 Oct | Provisional finalists A5 v2, A6 v2, E3 v4; reserves A4, E1 v3, E2 v4 (following the second system's 26 Oct review edition) | `state/STATUS.md` finishing plan |
 | E3 | Withdrawn: the second system's 28 Oct analysis found that the referees' proposed fix "retains an SDA-sensitive premise" and withdrew its recommendation; the orchestrator did not revise E3 further | log 28 Oct 03:40 (second system's entry), 29 Oct 03:45:15; `state/external/claude-review-20261028/README.md` |
 | Selection tournament | Not run. The orchestrator recommended A5, A6, A4 (29 Oct 03:45); the human selected them at Gate A2 (11:45). The second system's 29 Oct README still lists A4 as "a conditional reserve". | log; `human_inputs.md`; `state/external/submission-sourcechecked-20261029/README.md` |
-| Final essays | 3: A5 v8 and A4 v8 (word-identical to `final/A5`, `final/A4`), A6 v6 (scope narrowing of `final/A6`) | `state/external/submission-final-review-20261029/`; log 30 Oct 02:56:53 |
+| Package of 29 Oct | A5 v8 and A4 v8 (word-identical to this pipeline's finals), A6 v6 (scope narrowing) | `state/external/submission-final-review-20261029/`; log 30 Oct 02:56:53 |
+| Final essays (adopted 31 Oct) | 3: A5 v9 + bibliography patches 1–2 (5,536 words), A6 v8 (5,948), A4 v10 + P1 (5,813) | `final/A*/changelog.md`; log 31 Oct 13:24:16–13:28:35 |
 
 The second system ran its own funnel ("120 → 40 → 16 → 8") in `state/external/codex-expansion-20261022/
 ideation/`; an originality audit demoted the eight (`state/external/eight-ideas-audit-20261022/README.md`).
@@ -433,6 +460,15 @@ within-essay score trajectory exists for the final texts. The trajectories that 
   conclusion, the Bjorn encroachment sentences corrected, and the "(§6.1)" and reference-order
   suggestions of the compliance check adopted; per-essay production reports; anonymous PDFs. The
   orchestrator checked the package (log 30 Oct 02:56:53).
+- **30 Oct edition** (`state/external/submission-final-20261030/`, commit fc363b6, 30 Oct 13:07 UTC):
+  readability revisions A5 v9, A6 v7, A4 v9; formal statements, equations and proof text unchanged
+  according to its reports. A5 v9 also acknowledges Skipper (2023), found by a targeted literature
+  check, and corrects the Holguín entry. **Submission pass** (`state/external/submission-ready-20261030/`,
+  commit 4668769, 31 Oct 00:07 UTC, dated 30 Oct): its README states "Two final corrections were made.
+  A6 now limits its CEU–KDT agreement claim to the comparisons established by the construction. A4
+  explicitly credits Halpern's automatic rock-throwing machine as an antecedent of the reliability
+  concern applied in Sprinkler. A5's manuscript is unchanged from v9." The second of these was replaced
+  in the adopted text (7.5).
 
 ### 7.5 Integrity phase
 
@@ -441,6 +477,29 @@ within-essay score trajectory exists for the final texts. The trajectories that 
 | Citation audit | Of v4 (`citations.md`, 04:10): 10 refs, 13 quotations exact, 34 attributions (1 inaccurate, 2 oversimplified), 8 patches → v5. Delta audit of the final (`citations_final.md`, 17:40): 14 new or reworded attributions, 1 oversimplified; 3 patches applied verbatim. | Of v4 (`citations.md`, 17:34): 16 refs, 20 quotations exact, 38 attributions (26 accurate, 10 oversimplified, 1 inaccurate, 1 unverifiable: Hong 2026), 17 patches; applied to the v5 base, several adapted, two already fixed (`final/A6/changelog.md`). Delta audit of the final (`citations_final.md`, 18:02) against the published text of *Deference Done Better*: 14 new or altered attributions (9 accurate, 4 oversimplified, 0 inaccurate); 11 locators verified; patches P1–P6 applied verbatim. | Of v6 (`citations.md`, 17:34): 13 refs, 15 quotations exact, 43 attributions (2 inaccurate, 2 oversimplified, 5 unverifiable Halpern 2016 pinpoints), 8 patches applied; conditional patches H1–H5 skipped because the second system's book review confirms the pinpoints (`final/A4/changelog.md`). |
 | Formal audit | Of v4 (`formal.md`, 11:41): "All four theorems are correct"; two §6 errors and an unverified literature claim, fixed in v5 and confirmed superseded in the final (`compliance.md` §7). | Of v4 (`formal.md`, log 17:47:22): "Every theorem, lemma, proposition and appendix proof holds", checked by hand and by exhaustive computation over all 594 labelled statist, comparable structures with up to four states; two numbers wrong or unsupported (0.37 in §3, −0.63 in §5.1, correctly −0.60) and three imprecise statements. Patches P1–P8 matched against the final text (log 17:53:18): four applied, P1 adapted, three already fixed in the v5 base (`final/A6/changelog.md`). In v6 the second system removed the sentences carrying P6 and P7. Formal delta audit of v6 (`state/audit/A6/formal_v6.md`, 30 Oct): every changed formal or numerical claim verified independently (Bjorn bet at ten-to-one: knowledge-conditioned win probability exactly 1, value of looking −0.0496 so acting now is strictly preferred; evidence-conditioned win probability 0.9500; ordinary Bayesian value of looking +0.1855; the second system's 0.3555901517 and −0.60208829 reproduced); no false claim, no patch required. | Of v6 (`formal.md`, log 17:44:03), with an independent implementation of the three definitions and SMT checks: theorems, Corollary and Lemma verified; "two of them total orders" FALSE; three side remarks inaccurate; §7 computations UNVERIFIED (author-computed only). Patches P1–P7 applied to the final text (log 17:49:40; P2, P5, P7 adapted; optional P8 skipped; `final/A4/changelog.md`). |
 | Compliance | `compliance.md` (17:43): PASS (word count, no hard injection flags, anonymity, structure, scholarship, human-input record, formal audit); PDF built. | `compliance.md` (17:57): FAIL, 2 items (Hong 2026 unpatched; *Deference Done Better* paragraph unaudited). Fixed by citation-audit P4 and then delta-audit P2 (Hong), and by the delta audit (DDB). Re-check of v6 (`compliance.md`, log 30 Oct 02:58:45): PASS; 5,853 words, no hard injection flags, both failures closed, v6 scope edits consistent with the formal outputs. The A6 PDF is the second system's `A6-Free-Evidence-v6.pdf`. | `compliance.md` (log 17:53:36): PASS, no required fixes; it verified the Wysocki 2023 content claims against the retrieved author-posted PDF (pp. 7–14), and accepted the §7 regularity-theory verdicts on the referee's hand check plus the author's code; PDF built (17:53:54). |
+
+**Delta audits of the adopted versions (31 Oct).** Each compared the new version with the audited final
+and covered citations, quotations, attributions, locators, formal content and compliance.
+
+| | A5 v9 (`v9_delta.md`, 13:24:04) | A6 v8 (`v8_delta.md`, 13:24:00) | A4 v10 (`v10_delta.md`, 13:28:11) |
+|---|---|---|---|
+| Changes | 14 prose passages; 1 new reference (Skipper 2023, VERIFIED, full text read); 3 new attributions, all accurate; 414 math segments and all statements identical | 19 word-level edits in 12 passages; no theorem, equation, proof, quotation, locator, reference or number changed | 13 passages (9 new or rewritten prose, 1 new attribution, paragraph splits); references byte-identical; 193 math spans identical; HP audit rerun byte-identical (94 checks, 91 pass, 3 designed negative controls) |
+| Finding | Holguín 2022 pages "1–34" false (25 pp.) | Theorem 3 construction edit corrects a real v6 error (exact check: KDT +1/2, CEU −9/2 for the original bet over looking; +7/10 under both for the best act); no CEU cycle | "automatic rock-throwing machine (2016, 85)" unverifiable from any retrieved copy and absent from the designated book-review record; fetch `a4-v10-halpern-2016-p85` filed |
+| Patches applied by the orchestrator (verbatim) | 1: pages 1–25; 2: Skipper issue (7); optional 3 not applied | none (optional P1 not applied) | P1: "Halpern (2016, 84–85) already notes that Suzy's throw stops being a cause by itself when Billy's throwing without hitting is too abnormal." |
+| Words; injection | 5,536; no hard flags | 5,948; no hard flags | 5,813; no hard flags |
+
+### 7.6 Outside-model reviews (Grok, 31 Oct)
+
+The human relayed three review reports written by an outside model labelled Grok
+(`relay/inbox/grok-reviews-20261031.md`, saved verbatim). Their recommended decisions: A4 "Major
+revisions (borderline accept / revise-and-resubmit)"; A5 and A6 "Revise and resubmit (leaning accept)".
+The orchestrator logged that they report "no false lemma, misrepresented source or anticipating prior
+work" and that their requests are framing and exposition (log 31 Oct 13:19:05). Each delta audit mapped
+every request against the new version (last section of each `*_delta.md`): several were already met;
+the remainder (for example, a positive argument that anonymous policies form a natural class in A4,
+motivation for the core premium over other interaction terms in A5, a sharper positive upshot in A6)
+were judged presentational, not accuracy defects. No change was made in response to the reviews beyond
+what the adopted versions already contained.
 
 ## 8. Tools and access
 
@@ -468,7 +527,8 @@ within-essay score trajectory exists for the final texts. The trajectories that 
   The A6 delta auditor downloaded the published typeset text of *Deference Done Better* itself and found
   it byte-identical to the copy in `state/ambitious/sources/` (`state/audit/A6/citations_final.md`).
   Open fetch requests relevant to the final essays: the published *Good Guesses*, Hong 2026
-  (`amb-a6-hong-2025-2026`) and the Halpern 2016 pinpoints (`a4-audit-halpern-2016-pinpoints`).
+  (`amb-a6-hong-2025-2026`), the Halpern 2016 pinpoints (`a4-audit-halpern-2016-pinpoints`) and
+  Halpern 2016 p. 85 (`a4-v10-halpern-2016-p85`, filed 31 Oct).
 - **Memory disabled** (`methodology/hygiene.md`): project setting `autoMemoryEnabled: false`; memory and
   conversation-search connector tools denied; no user-level `CLAUDE.md` or rules; no memory or
   past-conversation content found in the orchestrator's context (the only user-specific item was
@@ -478,23 +538,24 @@ within-essay score trajectory exists for the final texts. The trajectories that 
 
 ## 9. Cost and time
 
-- **Tokens and cost, this pipeline** (`python3 tools/usage_report.py`, final run 30 Oct 03:08, while this
-  report was being corrected): 81 transcript files from 21 Oct 18:25 to 30 Oct 03:07; 3,425 Opus 5.5
-  requests (3,063 by subagents); tokens 6,967 input, 6,166,321 output, 663,414,383 cache-read, 37,515,799
-  cache-write. Estimated total **$458.91 at list prices**. With `--since`: from the budget cut (21 Oct
-  19:48) $396.19; from 22 Oct $351.57; from 27 Oct $149.64; from Gate A2 (29 Oct 11:43) $62.32. These
-  are list-price estimates computed from transcripts, not bills: after the first evening the operator ran
-  the work on a subscription plan with usage limits (interruptions logged 22 and 23 Oct). The figures
-  include the work of writing and correcting this report. `methodology/usage.md` does not exist; these
-  figures come from the tool directly.
+- **Tokens and cost, this pipeline** (`python3 tools/usage_report.py --md methodology/usage.md`, final
+  run 31 Oct 13:29 UTC): 86 transcript files from 21 Oct 18:25 to 31 Oct 13:29; 3,571 Opus 5.5
+  requests (3,173 by subagents); tokens 7,264 input, 6,311,827 output, 695,831,226 cache-read,
+  38,684,803 cache-write. Estimated total **$476.44 at list prices** (`methodology/usage.md`). The run
+  of 30 Oct 03:08 gave $458.91; with `--since` 30 Oct 03:16 (after the previous report edits) the
+  estimate is $15.28, covering the 31 Oct delta audits and adoption. Earlier `--since` figures (30 Oct
+  run): from the budget cut (21 Oct 19:48) $396.19; from 22 Oct $351.57; from 27 Oct $149.64; from Gate
+  A2 (29 Oct 11:43) $62.32. These are list-price estimates computed from transcripts, not bills: after
+  the first evening the operator ran the work on a subscription plan with usage limits (interruptions
+  logged 22 and 23 Oct). The final figures exclude this last reconciliation of the reports.
 - **Second system.** Its own records: "Exact cumulative machine time, human time, tokens and financial
   expenditure across the project could not be established"
   (`state/external/submission-revisions-20261028/methodology/A5-Methodology.md`).
-- **Machine time, this pipeline.** The transcripts show activity in 68 ten-minute intervals (about
-  11.3 hours), on 21 Oct (21 intervals), 22 Oct (16), 23 Oct (13), 27 Oct (4), 29 Oct (12) and
-  30 Oct (2); up to six agents ran in parallel. Calendar span: 21 Oct 18:25 to 30 Oct 03:07.
-- **Human time (approximate).** 27 recorded entries: 26 to this pipeline (most a sentence or two, one
-  relayed note, two structured answers) and one message to the second system. Together with four uploads
+- **Machine time, this pipeline.** The transcripts show activity in 72 ten-minute intervals (about
+  12.0 hours), on 21 Oct (21 intervals), 22 Oct (16), 23 Oct (13), 27 Oct (4), 29 Oct (12), 30 Oct (3)
+  and 31 Oct (3); up to six agents ran in parallel. Calendar span: 21 Oct 18:25 to 31 Oct 13:29.
+- **Human time (approximate).** 28 recorded entries: 27 to this pipeline (most a sentence or two, two
+  relays of AI-written text, two structured answers) and one message to the second system. Together with four uploads
   or links, direct interaction with this pipeline probably took under two hours. This is an
   estimate from timestamps and message lengths, not a measurement. Time spent operating the second system
   and reading drafts is not recorded.
@@ -510,8 +571,8 @@ referees supplied the most consequential later changes to A5 and A4 and two of A
 rules; the second system's 29 Oct review and source checks narrowed all three; this pipeline's audits
 corrected scholarship. None of the contributions traces to a human message.
 
-**A5** (final base: second system's v7; this pipeline's v1, v4, v5 in its ancestry; submitted as the
-second system's v8, word-identical to `final/A5/essay.md`).
+**A5** (adopted: second system's v9 with two bibliography patches; ancestry v1, v4, v5 by this
+pipeline, v7–v9 by the second system).
 - Card A5-03 (ideator): the target (Dorst's Proposition 5), the "does not follow" thesis and the
   record-premium counterexample. The kill test corrected a closure claim.
 - Second system (v2–v3): consistency and tie corrections; removal of a secondary theorem.
@@ -522,8 +583,11 @@ second system's v8, word-identical to `final/A5/essay.md`).
 - Second system (v7): the "two readings" thesis, Non-vacuity, refinement invariance as a sufficient route
   with the n/(n+1) family, and the concession that *Good Guesses* already reproduces the example's belief
   sets, which narrows the increment. Final patches 1–3: wording and a note on section numbering.
+- Second system (v9): readability revision; positioning against Skipper (2023). Delta-audit patches 1–2
+  (Holguín pages, Skipper issue).
 
-**A6** (final text: second system's v6, built on its v5 and this pipeline's patches).
+**A6** (adopted: second system's v8 = v6 plus a readability revision and a corrected Theorem 3
+construction sentence; v6 built on its v5 and this pipeline's patches).
 - Cards A6-01 and A6-02: the gappedness boundary, the graded collapse, the weighing case and the
   conditional repair. Kill test: merger, moderate-stakes instance, comparison with Hong.
 - Second system (v2–v3): quantifiers, Hong, strengthened counterexample.
@@ -534,10 +598,11 @@ second system's v8, word-identical to `final/A5/essay.md`).
   policy and price condition. Final citation patches P1–P14d (attributions, pinpoints) and formal
   patches P1–P8 (a corrected figure, scope qualifiers). Compliance fix: Hong 2026 reduced to an
   abstract-level claim. Delta-audit patches P1–P6 after a check of *Deference Done Better* against the
-  published text. Second system (v6): two peripheral claims removed and scope made explicit.
+  published text. Second system (v6): two peripheral claims removed and scope made explicit. Second
+  system (v7–v8): exposition; the CEU–KDT agreement claim narrowed (verified by the delta audit; no patch).
 
-**A4** (final base: second system's v7; submitted as the second system's v8, word-identical to
-`final/A4/essay.md`).
+**A4** (adopted: second system's v10 with delta-audit patch P1; v8, word-identical to this pipeline's
+earlier final, is its base).
 - Cards A4-01–04: setting, switch–preemption contrast, calibration, frozen-witness lemma. Kill test:
   Doorbells model and coding robustness.
 - Second system (v2–v5): lemma repair, scope narrowing, book-level comparison, additive obstruction.
@@ -546,6 +611,10 @@ second system's v8, word-identical to `final/A5/essay.md`).
 - Second system (v7): Wysocki comparison, escape claims restricted to the additive repair, fixed-context
   conditions. Final citation patches 1–8 (attributions, a quotation splice, pinpoints) and formal
   patches P1–P7 (a false "total orders", an over-inclusive sentence, a false appendix sentence).
+- Second system (v9–v10): exposition; an acknowledgment that Sprinkler applies an earlier Halpern
+  concern. Delta-audit P1 replaced its unverifiable p. 85 example with the pp. 84–85 point.
+
+**Outside reviews.** The Grok reviews (31 Oct) contributed nothing to the texts (7.6).
 
 ## 11. Limitations
 
@@ -554,7 +623,8 @@ second system's v8, word-identical to `final/A5/essay.md`).
    editor. Selection was the orchestrator's recommendation, confirmed by the human; not a tournament.
 2. **Weak external validation.** Each final essay's line had one blind round from this pipeline (overall
    5 or 6 out of 10, all "not finalist"). The final texts were not re-reviewed by this pipeline's
-   referees. The second system's 29 Oct review is model-conducted and calls itself so. Neither system's
+   referees. The outside-model (Grok) reviews of 31 Oct are AI reviews, not human expert assessments, and the
+   relayed file does not identify which version of each essay was reviewed. The second system's 29 Oct review is model-conducted and calls itself so. Neither system's
    referees are calibrated against human judgment.
 3. **Mixed authorship.** Two AI systems from different providers wrote and revised the essays, and the
    final bases are the second system's. Its transcripts are not in the repository; its contributions are
@@ -568,7 +638,8 @@ second system's v8, word-identical to `final/A5/essay.md`).
    pipeline: the published text of *Good Guesses* (only the second system's reading of a 2021 draft not
    in the repository, and the authors' public summary); Hong 2026, never read in full by this pipeline
    (A6 now describes it only at the level of its published abstract); the Halpern 2016 pinpoints (the second system's
-   record only). Wysocki 2023, by contrast, was checked by this pipeline's A4 compliance agent against
+   record only), and in particular the second system's p. 85 rock-throwing-machine claim, which was
+   therefore removed from A4 (fetch `a4-v10-halpern-2016-p85` open). Wysocki 2023, by contrast, was checked by this pipeline's A4 compliance agent against
    an author-posted PDF. BRN locators were checked against an accepted
    manuscript. *Deference Done Better* was checked against the published text by this pipeline's A6
    delta audit. Several attributions in the audits rest on abstracts.
@@ -578,12 +649,19 @@ second system's v8, word-identical to `final/A5/essay.md`).
      uncredited overlaps with the 2016 book were flagged but not added; the formal audits of A4 and A6
      were run on this pipeline's v6/v4, so material the second system added in v7/v5 was checked only
      where a patch or changelog says so (`final/A4/changelog.md`).
-   - A6: `refs_v4.json` still needs a note on the 1989 working paper; A6 is over the 5,600 target
-     (5,853) but under the 6,000 limit; the second system's v6 narrowing was compliance-checked (PASS,
-     30 Oct 02:58:45); formal delta check: no false claim, no patch required (`state/audit/A6/formal_v6.md`, 30 Oct). The submitted A6 text and PDF are the second system's v6 files, copied to `final/A6/essay.md` and `final/A6/essay_final.pdf`; the pre-v6 text is kept as `final/A6/essay_pre_v6.md` (log 30 Oct 03:11:26).
+   - Word counts: A6 (5,948) and A4 (5,813) are over the internal 5,600 target but under the 6,000
+     limit; A5 is 5,536.
+   - Grok requests not met (all presentational, per the delta audits): A4's case for the anonymity
+     baseline, parts of causes, event coding, uniqueness arguments, a category table; A5's core-premium
+     motivation and interval-length intuition; A6's positive upshot.
+   - A6: `refs_v4.json` still needs a note on the 1989 working paper; earlier history: the second system's v6 narrowing was compliance-checked (PASS,
+     30 Oct 02:58:45); formal delta check: no false claim, no patch required (`state/audit/A6/formal_v6.md`, 30 Oct). On 30 Oct `final/A6/essay.md` became v6 (log 03:11:26); on 31 Oct it became v8 (v6 kept as `final/A6/essay_v6.md`).
    - A5: an optional footnote-2 wording advisory; the *Good Guesses* fetch is open.
 7. **Cost figures** are list-price estimates; billing ran on a subscription.
-8. **Transcripts** have not been exported to `methodology/transcripts/`; `tools/export_transcripts.py`
+8. **Late changes.** The 30 Oct edition's prose revisions were checked by delta audits, not by fresh
+   referee rounds; the A4 v10 formal content was checked by rerunning the earlier HP audit, and A6 v8's
+   changed construction claim by an exact recomputation.
+9. **Transcripts** have not been exported to `methodology/transcripts/`; `tools/export_transcripts.py`
    can export them with identity strings redacted.
 
 ## 12. Appendices
@@ -2396,7 +2474,10 @@ git history; this version replaces the 11:42 draft and describes the texts in `f
 `final/A6/essay.md` and `final/A4/essay.md`. Revised 30 October 2026 by the methodologist agent after
 the methodology compliance check (`state/audit/methodology_compliance.md`): the submitted A6 is the
 second system's v6 (`state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`), and the
-submitted A5 v8 and A4 v8 are word-identical to `final/A5/essay.md` and `final/A4/essay.md`. Every entry names the file where a contribution first
+submitted A5 v8 and A4 v8 are word-identical to `final/A5/essay.md` and `final/A4/essay.md`. Revised again 31 October 2026 by the
+methodologist agent to describe the adopted versions: A5 = the second system's v9 plus two
+bibliography patches, A6 = the second system's v8, A4 = the second system's v10 plus delta-audit patch
+P1 (`final/A*/changelog.md`, last section; log 31 Oct 13:24:16–13:28:35). Every entry names the file where a contribution first
 appears and the agent or system that wrote it. Times are UTC. Times of commits by the second AI system
 are converted from their -05:00 offsets. "Log" means `methodology/log.md`; "card" means a file in
 `state/ambitious/cards/`; "kill test" means a file in `state/ambitious/killtest/`. Authors of engaged
@@ -2428,10 +2509,13 @@ works who sit on the panel are not named here; their works are described or name
 | 7 | Gate A2: the orchestrator recommended A5, A6, A4 (log 29 Oct 03:45:15); the human selected "A5, A6, A4 (Recommended)" | Orchestrator; human (selection among finished AI texts) | `human_inputs.md` 29 Oct 11:45:15; log 11:45:15 | 29 Oct |
 | 8 | Convergence on the second system's source-checked versions as bases; this pipeline's audits applied on top | Orchestrator (decision); second system (bases); patch agents | log 29 Oct 17:34:53, 17:36:33 | 29 Oct |
 | 9 | Final package: A5 v8 and A4 v8 (word-identical to `final/A5`, `final/A4`), A6 v6 (scope narrowing of this pipeline's final A6); checked by the orchestrator; A6 v6 compliance re-check PASS | Second system (package, commit 833b464); orchestrator; compliance-officer | `state/external/submission-final-review-20261029/`; log 30 Oct 02:56:53, 02:58:45; `state/audit/A6/compliance.md` | 29 Oct 23:31; 30 Oct |
+| 10 | Second system's 30 Oct edition: readability revision (A5 v9, A6 v7, A4 v9; commit fc363b6, `state/external/submission-final-20261030/`), then a submission pass with two corrections (A6 v8: CEU–KDT agreement narrowed; A4 v10: an acknowledgment crediting Halpern with an antecedent of the Sprinkler concern) and no change to A5 v9 (commit 4668769, `state/external/submission-ready-20261030/`) | Second system | `submission-ready-20261030/README.md` | 30 Oct 13:07; 31 Oct 00:07 |
+| 11 | Human relays three outside-model (Grok) reviews; orchestrator logs that they report no false lemma, misrepresented source or anticipating prior work | Human (courier); orchestrator | `relay/inbox/grok-reviews-20261031.md`; `human_inputs.md` 31 Oct 13:18:03; log 13:19:05 | 31 Oct |
+| 12 | Delta audits (citation, formal, compliance) of A5 v9, A6 v8, A4 v10 against the audited finals; adoption with patches | citation/formal/compliance subagents (Opus 5.5); orchestrator (patches applied verbatim) | `state/audit/A5/v9_delta.md`, `A6/v8_delta.md`, `A4/v10_delta.md`; log 13:24:00–13:28:35 | 31 Oct |
 
 ## 2. A5 — "Holistic Accuracy and the Limits of Lockean Derivation"
 
-Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Version chain:
+Final (adopted) text: `final/A5/essay.md`, the second system's v9 with delta-audit patches 1–2, 5,536 words (strict, `tools/wordcount.py`, 31 Oct). The earlier final (v8, 5,039 words) is kept as `final/A5/essay_v8.md`. Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|
@@ -2442,7 +2526,9 @@ Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Ver
 | v5 | patch agent: formal-audit P1–P5, P8 and citation-audit patches 1–8 applied | `state/drafts/A5/v5.md`; `changelog_v5.md` | log 29 Oct 11:51 |
 | v6 | a narrowing pass launched 11:52 and stopped as a duplicate; the file is byte-identical to v5 | `state/drafts/A5/v6.md` | log 17:34:53 |
 | v7 | second system, after its 29 Oct review and *Good Guesses* comparison | `state/external/submission-sourcechecked-20261029/A5-Holistic-Accuracy-v7.md` (89bd70f) | 29 Oct 17:02 |
-| final | orchestrator: patches 1–3 of `state/audit/A5/citations_final.md` applied verbatim | `final/A5/essay.md`; `final/A5/changelog.md` | log 17:40:57 |
+| v8 | orchestrator: patches 1–3 of `state/audit/A5/citations_final.md` applied verbatim (word-identical to the second system's v8) | `final/A5/essay_v8.md`; `final/A5/changelog.md` | log 29 Oct 17:40:57 |
+| v9 | second system: readability revision; Skipper 2023 acknowledged after a targeted literature check; Holguín entry corrected; no theorem or proof changed | `state/external/submission-final-20261030/` (fc363b6), unchanged in `submission-ready-20261030/A5-Holistic-Accuracy-v9.md` (4668769) | 30 Oct 13:07 |
+| final | delta audit (`state/audit/A5/v9_delta.md`): one defect (Holguín pages 1–34; the article has 25 pages); orchestrator applied patch 1 (pages 1–25) and patch 2 (Skipper issue 7) verbatim; optional patch 3 not applied | `final/A5/essay.md`; `final/A5/changelog.md` | log 31 Oct 13:24:51 |
 
 | # | Contribution in the final text | First appearance | Later changes and their source |
 |---|---|---|---|
@@ -2457,10 +2543,11 @@ Final text: `final/A5/essay.md`, 5,039 words (strict, `tools/wordcount.py`). Ver
 | 5.9 | Question-relative record measure (mean over the algebra) meets restricted refinement invariance | Reviser v4, answering referee S1-lit route (a) | Retained in v7 and final |
 | 5.10 | Replies: premium is alethic; necessary-condition objection met by Non-vacuity; "negative only" reply; order and Sequence-Irrelevance; scope (fixed context) | Order and scope replies: **referee suggestions** (S1-lit, Majors 5 and 4) → v4. Non-vacuity reply: second system, v7. Premium reply: v1–v3. | The formal audit verified the order example over all 40,320 orders |
 | 5.11 | Dropped: the split-invariance impossibility theorem (card A5-01) | Card A5-01 | Removed by the second system in v2 |
+| 5.12 | Positioning against Skipper (2023): his refinement objection to *Good Guesses* compares fixed guesses; the essay's invariance condition covers every coarsening | **Second system**, v9 (targeted literature check, `submission-ready-20261030/A5-Methodology-v9.md`, "Final review") | Delta audit: three attributions to Skipper accurate, locators §3.2 and §4 correct; patch 2 added the issue number. The Grok review's requests for A5 were mapped in the delta audit; none was acted on. |
 
 ## 3. A6 — "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models"
 
-Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md`, 5,853 words strict (second system's v6). This pipeline's own last pre-v6 text, kept as `final/A6/essay_pre_v6.md`, is 5,906 words strict; on 30 Oct `final/A6/essay.md` was replaced by v6 (log 03:11:26). Version chain:
+Final (adopted) text: `final/A6/essay.md` = the second system's v8 (`state/external/submission-ready-20261030/A6-Free-Evidence-v8.md`), 5,948 words strict (31 Oct; log 13:24:16). The previous final, v6 (5,853 words), is kept as `final/A6/essay_v6.md`; this pipeline's own last pre-v6 text, kept as `final/A6/essay_pre_v6.md`, is 5,906 words strict. Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|
@@ -2472,7 +2559,9 @@ Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free
 | final | patch agents: citation-audit patches P1–P14d of `state/audit/A6/citations.md` (log 17:43:03), then formal-audit patches P1–P8 of `state/audit/A6/formal.md` (log 17:53:18); both audits were of v4 | `final/A6/essay.md`; `final/A6/changelog.md` | 29 Oct |
 | compliance fix | compliance check FAIL, 2 items (Hong 2026; *Deference Done Better* paragraph unaudited); orchestrator applied citation-audit P4 verbatim (Hong reduced to an abstract-level claim) | `state/audit/A6/compliance.md` (first version); `final/A6/changelog.md`; commit f69bb59 | log 29 Oct 17:57:41 |
 | delta audit | citation-auditor: delta audit of the final against the published text of *Deference Done Better* (`state/audit/A6/citations_final.md`): 14 new or altered attributions (9 accurate, 4 oversimplified, 0 inaccurate), 11 locators verified; orchestrator applied patches P1–P6 verbatim | `state/audit/A6/citations_final.md`; `final/A6/changelog.md`; commit e716195 | 29 Oct 18:02 |
-| v6 (submitted) | second system: this pipeline's patched final plus a scope-narrowing pass: removed the continuous analogue of Lemma 2 (formal patch P6's material) and the encroachment generalization over "all but knife-edge priors" (P7's material); added question availability to the thesis and conclusion; rewrote the Bjorn encroachment sentences; adopted "(see §6.1 below)" and the corrected reference order. Compliance re-check of v6: PASS. Formal delta audit of v6 (`state/audit/A6/formal_v6.md`, 30 Oct): every changed formal or numerical claim verified independently (Bjorn bet at ten-to-one: knowledge-conditioned win probability exactly 1, value of looking −0.0496 so acting now is strictly preferred; evidence-conditioned win probability 0.9500; ordinary Bayesian value of looking +0.1855; the second system's 0.3555901517 and −0.60208829 reproduced); no false claim, no patch required. | `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md` (commit 833b464); `state/audit/A6/compliance.md` | 29 Oct 23:31; compliance log 30 Oct 02:58:45 |
+| v6 | second system: this pipeline's patched final plus a scope-narrowing pass: removed the continuous analogue of Lemma 2 (formal patch P6's material) and the encroachment generalization over "all but knife-edge priors" (P7's material); added question availability to the thesis and conclusion; rewrote the Bjorn encroachment sentences; adopted "(see §6.1 below)" and the corrected reference order. Compliance re-check of v6: PASS. Formal delta audit of v6 (`state/audit/A6/formal_v6.md`, 30 Oct): every changed formal or numerical claim verified independently (Bjorn bet at ten-to-one: knowledge-conditioned win probability exactly 1, value of looking −0.0496 so acting now is strictly preferred; evidence-conditioned win probability 0.9500; ordinary Bayesian value of looking +0.1855; the second system's 0.3555901517 and −0.60208829 reproduced); no false claim, no patch required. | `state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md` (commit 833b464); `state/audit/A6/compliance.md` | 29 Oct 23:31; compliance log 30 Oct 02:58:45 |
+| v7 | second system: readability revision (glosses of the ken and the gap condition, proof roadmap, paragraph splits) | `state/external/submission-final-20261030/` (fc363b6) | 30 Oct 13:07 |
+| v8 (adopted) | second system: submission pass; the Theorem 3 construction sentence narrowed to the agreement the construction establishes. Delta audit ADOPT, no patch: the edit corrects a real error in v6 (exact check: KDT +1/2 vs CEU −9/2 for the original bet over looking; +7/10 under both for the best act over looking; no CEU cycle). Optional precision patch P1 not applied | `submission-ready-20261030/A6-Free-Evidence-v8.md` (4668769); `state/audit/A6/v8_delta.md`, `state/audit/A6/v8/ceu_check.out` | 31 Oct 00:07; adopted log 31 Oct 13:24:16 |
 
 | # | Contribution | First appearance | Later changes and their source |
 |---|---|---|---|
@@ -2480,7 +2569,7 @@ Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free
 | 6.2 | Boundary theorem: a free question is safe in every decision problem iff no state compatible with one's knowledge is one where the answer reopens a ruled-out possibility; all questions safe iff knowledge is gapped (Theorem 1) | Card A6-01, with exhaustive small-structure checks | Kill test: REPAIR, spine of a merged essay; credit value-of-information precedents. v2 (second system) corrected quantifiers. v4 (referee S2-lit M4): the theorem's shape credited to Geanakoplos. v5 (second system): connected to *Deference Done Better* (see 6.8). v6 (second system): K-normality and the availability of the requisite questions stated in the thesis and conclusion. |
 | 6.3 | Graded collapse: no factive state containing rational belief is safe unless it is the whole evidence (Theorem 2) | Card A6-01 | Formal patch P6 (final) added an appeal to a continuous analogue of Lemma 2 for the Bjorn case, stated but not proved. v6 (second system) removed that appeal and says the result "does not establish the same necessity result for the second weighing alone". |
 | 6.4 | Case: the target theory's repeated-weighing model; a free second weighing has negative value at ten-to-one odds | Card A6-02 | Kill test asked for a moderate-stakes instance; v1 supplied ten-to-one; v2 corrected its scope; v4 separated three claims (referee S2-lit M2a). v5 (second system) distinguished about 42% weight-belief loss from about 37% loss with a consistent discovery; the discrepancy was first flagged in this pipeline's partial formal audit (`state/audit/A6/formal.md`, file 11:52). The record does not show whether the second system used that audit. Final citation patch P10 attributes "about 0.37" to the source's note 18; the completed formal audit (17:47) confirmed the distinction, and formal patch P2 corrected a §5.1 figure from −0.63 to −0.60. |
-| 6.5 | Conditioning on the options' differing (CEU) fails wherever the unconditional rule fails (Theorem 3); Conditional Knowledge Dominance itself is silent in that construction | Card A6-02 → kill test → v1 | v3 (second system) strengthened the counterexample. v4 conceded the silence (**referee suggestion**, S2-lit MS(a)) and proved it generally (A.7). |
+| 6.5 | Conditioning on the options' differing (CEU) fails wherever the unconditional rule fails (Theorem 3); Conditional Knowledge Dominance itself is silent in that construction | Card A6-02 → kill test → v1 | v3 (second system) strengthened the counterexample. v4 conceded the silence (**referee suggestion**, S2-lit MS(a)) and proved it generally (A.7). v8 (second system's submission pass) narrowed the construction's CEU–KDT agreement claim to the present best act versus looking and choices among primitive acts; verified exactly by the delta audit (`state/audit/A6/v8_delta.md`). |
 | 6.6 | Conditioning on the evidence's changing one's choice (VER) also fails, including a five-state counterexample | **Referee suggestions**: S2-lit (27 Oct 16:26) proposed the verdict-change rule; G4 (27 Oct 16:42) supplied the five-state counterexample, verified by the reviser | v4 added a failure without relative defeat. v5 (second system): s0 = s1 made explicit, the future policy specified, enumeration scope described (ASSESSMENT A6 fixes 3 and 5) |
 | 6.7 | Conditioning answer by answer (ANS) is safe (Proposition 4) but pays to check what one knows, which Conditional Knowledge Dominance forbids (Proposition 5) | **Referee suggestion**: G4 proposed ANS and its safety proof, accepted as Proposition 4. Proposition 5 is the reviser's (v4). | v5 (second system): price condition 0 < κ < L made explicit (ASSESSMENT fix 4); conclusion restricted to the rules examined (fix 2) |
 | 6.8 | Comparison with *Deference Done Better* (2021): its Value and Total Trust results; the normality model's increment is the relative-defeat/gappedness characterisation and the conditional repairs | **Second-system review** (ASSESSMENT required fix 1) | Written into v5 by the second system, which checked Value, Weak Value and Total Trust (`VERIFICATION.md`). Checked against the published text by this pipeline's delta audit (citations_final.md); patches P3–P6. P5 states the converse direction of the correspondence and P6 acknowledges that paper's Theorem 4.1. |
@@ -2490,7 +2579,7 @@ Final (submitted) text: `state/external/submission-final-review-20261029/A6-Free
 
 ## 4. A4 — "A Switching Dilemma for Normality in Actual Causation"
 
-Final text: `final/A4/essay.md`, 5,581 words strict. Version chain:
+Final (adopted) text: `final/A4/essay.md`, the second system's v10 with delta-audit patch P1, 5,813 words strict (31 Oct; log 13:28:35). The earlier final (v8, 5,581 words) is kept as `final/A4/essay_v8.md`. Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|
@@ -2499,7 +2588,10 @@ Final text: `final/A4/essay.md`, 5,581 words strict. Version chain:
 | v3, v4, v5 | second system (v4 after reading a 2016 book on actual causality supplied by the human "without philosophical comments") | commits b086236, cccc9b9, 8f82b0b; `submission-additive-20261029/essays/03-Causation-v5.md` | 28 Oct 13:34; 23:57; 29 Oct 00:18 |
 | v6 | reviser, against P-d300 S7-lit | `state/drafts/A4/v6.md`; `revision_notes_v6.md` | launched 29 Oct 04:15; log 11:44:20 (5,521 words) |
 | v7 | second system, after its 29 Oct review | `submission-sourcechecked-20261029/A4-Causation-v7.md` (89bd70f) | 29 Oct 17:02 |
-| final | patch agents: citation-audit patches 1–8 of `state/audit/A4/citations.md` (log 17:42:47; conditional H1–H5 skipped), then formal-audit patches P1–P7 of `state/audit/A4/formal.md` (log 17:49:40); both audits were of v6. Compliance PASS (log 17:53:36). | `final/A4/essay.md`; `final/A4/changelog.md`; `state/audit/A4/compliance.md` | 29 Oct |
+| v8 | patch agents: citation-audit patches 1–8 of `state/audit/A4/citations.md` (log 17:42:47; conditional H1–H5 skipped), then formal-audit patches P1–P7 of `state/audit/A4/formal.md` (log 17:49:40); both audits were of v6. Compliance PASS (log 17:53:36). | `final/A4/essay_v8.md`; `final/A4/changelog.md`; `state/audit/A4/compliance.md` | 29 Oct |
+| v9 | second system: readability revision (backup-route comparison, witness profiles, default values versus equation conformity explained; proofs split into paragraphs) | `state/external/submission-final-20261030/` (fc363b6) | 30 Oct 13:07 |
+| v10 | second system: submission pass; added "Halpern already illustrates the problem of a reliable backup with an automatic rock-throwing machine (2016, 85). Sprinkler applies that concern to a comparison with switching." | `submission-ready-20261030/A4-Causation-v10.md` (4668769) | 31 Oct 00:07 |
+| final | delta audit (`state/audit/A4/v10_delta.md`): the p. 85 machine attribution unverifiable from any retrieved copy or from the designated book-review record; orchestrator applied patch P1 verbatim: "Halpern (2016, 84–85) already notes that Suzy's throw stops being a cause by itself when Billy's throwing without hitting is too abnormal." Math spans, theorem statements and references unchanged; HP audit rerun byte-identical; fetch `a4-v10-halpern-2016-p85` filed | `final/A4/essay.md`; `final/A4/changelog.md` | log 31 Oct 13:28:35 |
 
 The second system's separate manuscript "Causal Refinement Without a Final Layer" (22–23 Oct) started
 from the orchestrator's problem selection, not from the cards, and is not an ancestor of A4.
@@ -2518,6 +2610,7 @@ from the orchestrator's problem selection, not from the cards, and is not an anc
 | 4.10 | §7: parallel in regularity theory (Beckers 2026's dilemma for a 2024 regularity theory) | Card A4-01 → kill test, which found the point in Beckers 2026 | Recast as a parallel in v6; final patch 6 ("related shape"). The formal audit marks the §7 computations UNVERIFIED (author-computed only). |
 | 4.11 | Additive-score obstruction | Second system, v5 (8f82b0b) | Subsumed by v6's profile results; the additive identities remain |
 | 4.12 | Replies: aptness, coding, graded causation, the switch verdicts | Kill-test objections → v1; second system v2–v5 | Rewritten in v6; final patches 1–2 |
+| 4.13 | Acknowledgment that Sprinkler applies an earlier Halpern concern (Suzy's throw ceasing to be a cause by itself when Billy's non-hitting throw is too abnormal) to a comparison with switching | **Second system**, v10 (acknowledgment with an unverified p. 85 machine example) | Replaced by **delta-audit patch P1** (wording from the delta-audit agent, applied verbatim by the orchestrator, 31 Oct), using the pp. 84–85 point the book-review record supports and v8 already cited. The Grok review's requests for A4 were mapped in the delta audit; none was acted on. |
 
 The Xiao and Xiong paper is the PDF the human uploaded on 29 Oct 04:01 without comment; it was placed in
 packet P-d300 and read by the reviser from `inbox/sources/`.
@@ -2545,12 +2638,21 @@ packet P-d300 and read by the reviser from `inbox/sources/`.
 - **The second AI system's A6 v6** (commit 833b464, 29 Oct 23:31) removed two claims (the continuous
   analogue of Lemma 2 and the encroachment generalization), made question availability explicit and
   adopted two optional suggestions of this pipeline's A6 compliance check.
+- **The second AI system's 30 Oct edition** (commits fc363b6 and 4668769): readability revisions of all
+  three essays; A5 v9's Skipper positioning and Holguín correction; A6 v8's narrowed CEU–KDT agreement
+  claim; A4 v10's Sprinkler acknowledgment (`submission-ready-20261030/README.md`).
+- **This pipeline's 31 Oct delta audits.** A5 patches 1–2 (bibliography: Holguín pages, Skipper issue);
+  A4 patch P1 (replacing the unverifiable p. 85 attribution with the pp. 84–85 point); A6 no patch.
+  These add no arguments or cases.
+- **Outside-model reviews (Grok)**, relayed 31 Oct (`relay/inbox/grok-reviews-20261031.md`). The delta
+  audits mapped every request against the new versions; no change was made in response to them, so no
+  suggestion from them entered the texts.
 - **Editor.** The editor agent and its plan files were never used (phases abandoned, log 21 Oct
   19:48:32). Changelogs exist only for the final patch passes and A5 v5.
 
 ## 6. Human messages and the contributions
 
-None of the contributions above traces to a human message. The 27 entries in
+None of the contributions above traces to a human message. The 28 entries in
 `methodology/human_inputs.md` are logistics, courier, method, generic feedback and one selection. One of
 them, a structured answer of 21 Oct 19:44:05 on budget and cost cuts ("$150 total"; "Cheaper model for
 chores"), was recorded late, on 30 Oct, from the session transcript. The
@@ -2560,6 +2662,9 @@ risk headings: e.g. "A4: philosophical significance and overlap with prior work"
 passes added no arguments or cases; A6 delta-audit P5–P6 (AI-written) state the converse direction of
 the *Deference Done Better* correspondence and acknowledge its Theorem 4.1, and the second system's A6 v6
 removed two claims (`final/A6/changelog.md`, `final/A4/changelog.md`, `state/audit/A6/citations_final.md`).
+The 31 Oct 13:18:03 entry (courier) relays three AI-written reviews by an outside model (Grok) with
+short connecting messages ("what about this one"; "Refer to the following content:"; "here is review by
+grok"); none of their requests was acted on (delta audits, last sections).
 
 Sources the human supplied that bear on the final essays, all without comment as recorded:
 - Xiao and Xiong 2026 (uploaded 29 Oct 04:01), engaged in A4;
@@ -2574,7 +2679,9 @@ Limits of this ledger:
 - Not verified by this pipeline: the published text of *Good Guesses* (only the second system's reading
   of the 2021 draft and the authors' own summary); Hong 2026 (full text never read; cited at abstract
   level); the Halpern 2016 pinpoints (confirmed only by the
-  second system's book review; fetch `a4-audit-halpern-2016-pinpoints` open).
+  second system's book review; fetch `a4-audit-halpern-2016-pinpoints` open); the second system's claim
+  that Halpern 2016, p. 85, presents an automatic rock-throwing machine (removed by A4 patch P1; fetch
+  `a4-v10-halpern-2016-p85` open).
 - The second system's early context-exposure disclosure, the quarantine, its lifting and the human's
   confirmation of revised `CLAUDE.md` §1.2 are recorded in the methodology report, §4.4.
 ~~~~
@@ -2583,8 +2690,8 @@ Limits of this ledger:
 
 ## Appendix F. Transcripts and records
 
-- Claude Code session transcripts, with subagent transcripts: 81 JSONL files spanning 21 Oct 18:25
-  to 30 Oct 03:07 UTC (when `tools/usage_report.py` was last run for this report). They are in the session's
+- Claude Code session transcripts, with subagent transcripts: 86 JSONL files spanning 21 Oct 18:25
+  to 31 Oct 13:29 UTC (when `tools/usage_report.py` was last run for this report). They are in the session's
   local Claude Code project store and can be exported, with identity strings redacted, by
   `python3 tools/export_transcripts.py`. That export had not been run when this report was written, so
   `methodology/transcripts/` does not yet exist.
@@ -2594,8 +2701,9 @@ Limits of this ledger:
 - Intermediate work: `state/` (panel, calibration, lanes, ambitious track, drafts and revision notes,
   blind packets and reports, audits in `state/audit/A4|A5|A6/`).
 - Final texts and their changelogs: `final/A5/`, `final/A6/`, `final/A4/`; per-essay short reports
-  `final/A*/methodology_short.md`; the submitted package `state/external/submission-final-review-20261029/`
-  (A5 v8, A6 v6, A4 v8 and PDFs).
+  `final/A*/methodology_short.md`; the second system's 30 Oct edition `state/external/submission-ready-20261030/`
+  (A5 v9, A6 v8, A4 v10 and PDFs); delta audits `state/audit/A5/v9_delta.md`, `A6/v8_delta.md`,
+  `A4/v10_delta.md`; outside reviews `relay/inbox/grok-reviews-20261031.md`; usage `methodology/usage.md`.
 - The second system's files: `state/external/*/` (README, MANIFEST, METHODOLOGY, VERIFICATION and
   review files, including `claude-review-20261029/ASSESSMENT-485bec4.md` and
   `submission-sourcechecked-20261029/`), `state/audit/A5/good-guesses-comparison-20261029.md`, and
