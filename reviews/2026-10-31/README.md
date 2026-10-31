@@ -39,5 +39,6 @@ After the reports were drafted, they were cross-checked against this repository'
 
 ## Files
 
+- `ADDENDUM-reproduction.md` — second-machine rerun of every audit script (all outputs reproduce byte-for-byte).
 - `00-overview.md` — verdicts, verification summary, cross-cutting issues.
 - `A6-good-theorem.md`, `A5-lockean-holism.md`, `A4-causation.md` — full reports (summary, assessment, major and minor comments, verification notes).
