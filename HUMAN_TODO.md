@@ -1,6 +1,6 @@
 # What the run needs from you
 
-_Updated 2026-10-29 17:35 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
+_Updated 2026-10-31 13:29 UTC. Courier work only: fetch exactly what is asked, add nothing of your own._
 
 ## Sources to fetch
 
@@ -14,6 +14,13 @@ Save each as `inbox/sources/<slug>.pdf` (or .txt/.md/.html), or paste the text i
 - **Needed:** PDF (or page images) of printed pp. 84-85 (Example 3.2.6), pp. 121 and 133-134, pp. 149-150, and all of Section 3.3; save to inbox/sources/halpern-2016-actual-causality.pdf. Automated access is blocked (DOAB bot wall, MIT Press Direct 403).
 - **Why:** Citation audit of state/drafts/A4/v6.md: five pinpointed attributions to this book cannot be checked from any copy available to the auditor; fallback patches remove them.
 - **Requested by:** citation-auditor (A4)
+
+### `a4-v10-halpern-2016-p85`  (high)
+- **Citation:** Halpern, Joseph Y. 2016. Actual Causality. Cambridge, MA: MIT Press. doi:10.7551/mitpress/10809.001.0001 (open access)
+- **Where to try:** https://cs.cornell.edu/home/halpern/papers/causalitybook-ch1-3.html ; https://doi.org/10.7551/mitpress/10809.001.0001 ; https://directory.doabooks.org/handle/20.500.12854/78541
+- **Needed:** PDF or page images of printed pp. 84-86 (Example 3.2.6 and the following discussion); save to inbox/sources/halpern-2016-pp84-86.pdf. Automated access failed 31 Oct (Cornell author page HTTP 503; DOAB and OAPEN 403).
+- **Why:** A4 v10 adds an attribution with a page number: Halpern illustrates the reliable-backup problem with an automatic rock-throwing machine (2016, 85). It can't be checked against a retrieved copy; the fallback patch in state/audit/A4/v10_delta.md removes it. Supersedes nothing; complements a4-audit-halpern-2016-pinpoints.
+- **Requested by:** citation-auditor (A4 v10 delta)
 
 ### `a5-dorst-mandelkern-2022-good-guesses`  (high)
 - **Citation:** Dorst, Kevin, and Matthew Mandelkern. 2022. Good Guesses. Philosophy and Phenomenological Research 105(3): 581-618. doi:10.1111/phpr.12831
@@ -739,4 +746,5 @@ Paste `relay/outbox/<id>.md` into the other model verbatim, then save its full r
 - `codex-eight-ideas-audit-20261022` → any frontier model other than Claude
 - `codex-expansion-20261022` → any frontier model other than Claude
 - `codex-review-edition-20261025` → any frontier model other than Claude
+- `final-review-request-20261029` → any frontier model other than Claude
 
