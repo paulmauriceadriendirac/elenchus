@@ -1,9 +1,7 @@
 # Finalization status — 30 October 2026
 
-Use [the current submission index](SUBMISSION-20261028.md) and [the final review and readability package](state/external/submission-final-20261030/README.md).
+The final submission pass is complete. Use [the current index](SUBMISSION-20261028.md) and [the submission edition](state/external/submission-ready-20261030/README.md), containing A5 v9, A6 v8 and A4 v10 with their matching anonymized methodology reports.
 
-Claude's completed review has been assessed, the requested prose improvements incorporated, and the final source and scope corrections made. All three manuscripts have anonymous PDFs, matching anonymized production reports and verified counts below 6,000 words. The package includes a combined reading copy, a final assessment and a guide for the next review.
+The complete manuscripts and appendices were re-read. Two limited corrections were made: a narrower CEU–KDT agreement claim in A6, and explicit credit to Halpern's automatic-rock-thrower example in A4. The central theorem statements, displayed equations and appendix proofs are unchanged. The final assessment records the argument checks, exact arithmetic for the A6 correction and remaining limits.
 
-A5 and A6 remain the primary candidates. A4 remains the less secure third on significance and originality, after comparison with Halpern and Wysocki. E3 remains withdrawn. The published Good Guesses version comparison is still open; the previously inspected author draft supports the current comparison. See the final assessment for access and review limits.
-
-The additional-model reviews proposed by the operator and any resulting revisions are a later stage. No contest forms have been submitted. Earlier editions remain preserved in their versioned directories and Git history.
+A5 and A6 remain the primary submissions. A4 remains a less secure third on significance and originality. All three are below 6,000 words including non-bibliographic material. E3 remains withdrawn. Further reviews by other model providers are not an outstanding requirement. No contest form has been submitted. Earlier versions remain preserved.
