@@ -1,0 +1,11 @@
+math: v8=193 v10=193 identical_multiset=True
+quotes: v8=16 v10=16 identical_multiset=True
+cites: v8=46 v10=47 identical_multiset=False
+  only v8 : {}
+  only v10: {'(2016, 85)': 1}
+nums: v8=166 v10=168 identical_multiset=False
+  only v8 : {}
+  only v10: {'2016': 1, '85': 1}
+references identical: True 14 14
+theorem/lemma/corollary statements identical: True
+Theorem1 proof text v8 contained in v10 (whitespace-normalised, joined): True

@@ -1,0 +1,25 @@
+math segments baseline/v9: 414 414 identical sequence: True
+statements identical: True 5
+defs identical: True 4
+appendix identical modulo whitespace: True
+C opt 4.3 ['1', '12', '123', '13'] #opt 1 runner-up 4.2 ['12', '123', '13']
+C' opt 4.94 ['123', '13'] #opt 1 runner-up 4.75 ['1', '12', '123', '13']
+refined C': Phi({w1})= 7.25 Phi({w1,w3})= 6.91 best cores [[0]]
+refined C best cores [[0]]
+k 1 sep(Phi) ratio vs k=1: 1 expected 1
+k 2 sep(Phi) ratio vs k=1: 2 expected 2
+k 3 sep(Phi) ratio vs k=1: 4 expected 4
+k 4 sep(Phi) ratio vs k=1: 8 expected 8
+mean repair C split w2 into 1 cores [[0]]
+mean repair C split w2 into 2 cores [[0]]
+mean repair C split w2 into 4 cores [[0]]
+mean repair C split w2 into 8 cores [[0]]
+mean repair C' split w2 into 1 cores [[0, 2]]
+mean repair C' split w2 into 2 cores [[0, 3]]
+mean repair C' split w2 into 4 cores [[0, 5]]
+mean repair C' split w2 into 8 cores [[0, 9]]
+T,F,beta 1 -2 3 max(c0,tau)<c1<1: True
+T,F,beta 1 -2 1/10 max(c0,tau)<c1<1: True
+T,F,beta 1 -3 10 max(c0,tau)<c1<1: True
+T,F,beta 1/2 -1 1/100 max(c0,tau)<c1<1: True
+two-world threshold 0.8333333333333334

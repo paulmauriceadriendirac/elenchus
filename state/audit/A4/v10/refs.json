@@ -1,0 +1,16 @@
+[
+{"key":"AndreasGunther2024","authors":["Holger Andreas","Mario Günther"],"year":2024,"title":"A Regularity Theory of Causation","venue":"Pacific Philosophical Quarterly","volume":"105","pages":"2-32","doi":"10.1111/papq.12447","type":"article"},
+{"key":"Beckers2026","authors":["Sander Beckers"],"year":2026,"title":"Difference-Making without Making a Difference","venue":"arXiv","volume":"","pages":"","doi":"","type":"preprint"},
+{"key":"BeckersVennekens2018","authors":["Sander Beckers","Joost Vennekens"],"year":2018,"title":"A Principled Approach to Defining Actual Causation","venue":"Synthese","volume":"195","pages":"835-862","doi":"10.1007/s11229-016-1247-1","type":"article"},
+{"key":"BlanchardSchaffer2017","authors":["Thomas Blanchard","Jonathan Schaffer"],"year":2017,"title":"Cause without Default","venue":"Making a Difference","volume":"","pages":"175-214","doi":"10.1093/oso/9780198746911.003.0010","type":"chapter"},
+{"key":"Gallow2021","authors":["J. Dmitri Gallow"],"year":2021,"title":"A Model-Invariant Theory of Causation","venue":"Philosophical Review","volume":"130","pages":"45-96","doi":"10.1215/00318108-8699682","type":"article"},
+{"key":"Hall2000","authors":["Ned Hall"],"year":2000,"title":"Causation and the Price of Transitivity","venue":"Journal of Philosophy","volume":"97","pages":"198-222","doi":"10.2307/2678390","type":"article"},
+{"key":"Hall2007","authors":["Ned Hall"],"year":2007,"title":"Structural Equations and Causation","venue":"Philosophical Studies","volume":"132","pages":"109-136","doi":"10.1007/s11098-006-9057-9","type":"article"},
+{"key":"Halpern2015","authors":["Joseph Y. Halpern"],"year":2015,"title":"A Modification of the Halpern-Pearl Definition of Causality","venue":"arXiv","volume":"","pages":"","doi":"","type":"preprint"},
+{"key":"Halpern2016","authors":["Joseph Y. Halpern"],"year":2016,"title":"Actual Causality","venue":"MIT Press","volume":"","pages":"","doi":"10.7551/mitpress/10809.001.0001","type":"book"},
+{"key":"HalpernHitchcock2015","authors":["Joseph Y. Halpern","Christopher Hitchcock"],"year":2015,"title":"Graded Causation and Defaults","venue":"British Journal for the Philosophy of Science","volume":"66","pages":"413-457","doi":"10.1093/bjps/axt050","type":"article"},
+{"key":"Hitchcock2001","authors":["Christopher Hitchcock"],"year":2001,"title":"The Intransitivity of Causation Revealed in Equations and Graphs","venue":"Journal of Philosophy","volume":"98","pages":"273-299","doi":"10.2307/2678432","type":"article"},
+{"key":"Hitchcock2009","authors":["Christopher Hitchcock"],"year":2009,"title":"Structural Equations and Causation: Six Counterexamples","venue":"Philosophical Studies","volume":"144","pages":"391-401","doi":"10.1007/s11098-008-9216-2","type":"article"},
+{"key":"Wysocki2023","authors":["Tomasz Wysocki"],"year":2023,"title":"Conjoined Cases","venue":"Synthese","volume":"201","pages":"197","doi":"10.1007/s11229-023-04101-w","type":"article"},
+{"key":"XiaoXiong2026","authors":["Zhizun Xiao","Wei Xiong"],"year":2026,"title":"A Refinement of the Hitchcock Definition of Actual Causation","venue":"Humanities and Social Sciences Communications","volume":"13","pages":"1088","doi":"10.1057/s41599-026-07470-y","type":"article"}
+]

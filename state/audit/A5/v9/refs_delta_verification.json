@@ -1,0 +1,65 @@
+[
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Thinking, Guessing, and Believing",
+      "authors": [
+        "Holguin"
+      ],
+      "year": 2022,
+      "venue": "Philosophers' Imprint",
+      "doi": "10.3998/phimp.2123",
+      "type": "journal-article",
+      "volume": "22",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Holguin2022",
+    "ref": {
+      "key": "Holguin2022",
+      "authors": [
+        "Ben Holgu\u00edn"
+      ],
+      "year": 2022,
+      "title": "Thinking, Guessing, and Believing",
+      "venue": "Philosophers' Imprint",
+      "volume": "22",
+      "issue": "6",
+      "pages": "1-34",
+      "doi": "10.3998/phimp.2123",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Good guesses as accuracy-specificity tradeoffs",
+      "authors": [
+        "Skipper"
+      ],
+      "year": 2023,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-022-01915-1",
+      "type": "journal-article",
+      "volume": "180",
+      "pages": "2025-2050"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Skipper2023",
+    "ref": {
+      "key": "Skipper2023",
+      "authors": [
+        "Mattias Skipper"
+      ],
+      "year": 2023,
+      "title": "Good Guesses as Accuracy-Specificity Tradeoffs",
+      "venue": "Philosophical Studies",
+      "volume": "180",
+      "pages": "2025-2050",
+      "doi": "10.1007/s11098-022-01915-1",
+      "type": "article"
+    }
+  }
+]

@@ -94,3 +94,6 @@ Line numbers refer to `final/A6/essay.md`. None changed, because every edit was 
 
 ## Final version (2026-10-30)
 - final/A6/essay.md replaced by the second system's v6 (state/external/submission-final-review-20261029/A6-Free-Evidence-v6.md): this pipeline's patched text plus a scope-narrowing pass by the second system. Previous text kept as essay_pre_v6.md. v6 compliance PASS (state/audit/A6/compliance.md); formal delta audit: no false claims, no patch required (state/audit/A6/formal_v6.md).
+
+## Adopted v8 (2026-10-31)
+- final/A6/essay.md = second system's v8 (state/external/submission-ready-20261030/A6-Free-Evidence-v8.md): v6 plus prose edits and a correction to the Theorem 3 construction sentence (CEU/KDT agreement narrowed). Delta audit ADOPT (state/audit/A6/v8_delta.md). v6 kept as essay_v6.md.

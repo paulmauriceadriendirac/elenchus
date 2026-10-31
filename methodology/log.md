@@ -124,3 +124,6 @@
 - 2026-10-30T03:15:51Z **event**: Methodology report: final re-check edits N1-N3 applied verbatim (state/audit/methodology_compliance.md, Final re-check); PDF rebuilt. R2-R4 PASS.
 - 2026-10-31T13:18:03Z **human** (courier): see human_inputs.md
 - 2026-10-31T13:19:05Z **event**: Grok reviews (relay/inbox/grok-reviews-20261031.md): no false lemma, misrepresented source or anticipating prior work reported; requests are framing/exposition. Astra's 30 Oct editions (A5 v9, A6 v8, A4 v10, state/external/submission-ready-20261030/) under delta audit for adoption; audits also map Grok's requests to the new versions.
+- 2026-10-31T13:24:00Z **agent**: A6 v8 delta audit: state/audit/A6/v8_delta.md
+- 2026-10-31T13:24:04Z **agent**: A5 v9 delta audit: state/audit/A5/v9_delta.md
+- 2026-10-31T13:24:16Z **decision**: A6: adopted v8 after delta audit ADOPT (state/audit/A6/v8_delta.md).
