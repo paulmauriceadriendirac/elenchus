@@ -78,3 +78,6 @@ Audit row 35 covers the §7 claims about Andreas and Günther's verdicts:
 The audit marks row 35 **UNVERIFIED** (no independent implementation) but supplies no weakening patch. It says no textual patch is needed for consistency, because the author's rerun code prints the stated pattern. It asks that the results be treated as author-computed only. I therefore left §7 and the Appendix's mention of "Andreas and Günther's (2024) conditions with and without deviancy" unchanged. The text already presents the verdicts as "on my computation".
 
 **For the orchestrator:** independent confirmation needs an implementation of Andreas and Günther's (2024) conditions (1)–(5) and of deviancy, taken from the source. The audit notes that the source is not in `inbox/`. The previous release used a copy at `state/ambitious/sources/andreas-gunther-2024-regularity.txt`. Audit finding 4 concerns the clear-tracks flip under the modified definition, which the essay does not discuss; no change was needed.
+
+## Adopted v10 (2026-10-31)
+- final/A4/essay.md = second system's v10 (state/external/submission-ready-20261030/A4-Causation-v10.md) with delta-audit patch P1 applied verbatim by the orchestrator (unverifiable p. 85 machine example replaced by the verified pp. 84–85 point). Delta audit: state/audit/A4/v10_delta.md. v8 kept as essay_v8.md. PDF rebuilt.
