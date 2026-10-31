@@ -89,3 +89,6 @@ operator before 31 Oct 23:59 AoE.
 Submission set in final/SUBMISSION.md (A5 v9+patches, A6 v8, A4 v10+P1; four methodology reports).
 Grok outside-model reviews relayed; no defects of the requested kinds; not acted on beyond adopted versions.
 Submission is the operator's action.
+
+## Closed (2026-10-31 ~16:00 UTC)
+Operator submitting the set in final/SUBMISSION.md. Possible later task: expanded, self-contained versions without the word limit (separate from the contest entries).
