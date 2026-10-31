@@ -81,3 +81,6 @@ The audit marks row 35 **UNVERIFIED** (no independent implementation) but suppli
 
 ## Adopted v10 (2026-10-31)
 - final/A4/essay.md = second system's v10 (state/external/submission-ready-20261030/A4-Causation-v10.md) with delta-audit patch P1 applied verbatim by the orchestrator (unverifiable p. 85 machine example replaced by the verified pp. 84–85 point). Delta audit: state/audit/A4/v10_delta.md. v8 kept as essay_v8.md. PDF rebuilt.
+
+## DeepSeek substance triage fixes (2026-10-31)
+- Applied verbatim E1, E2 (Tier 1) and E3 (Tier 2) from state/audit/A4/deepseek_triage.md; pre-edit text kept as essay_pre_deepseek.md. PDF rebuilt.
