@@ -1,9 +1,7 @@
-# Finalization status — 29 October 2026
+# Finalization status — 30 October 2026
 
-Use [the current submission index](SUBMISSION-20261028.md) and [the final-review package](state/external/submission-final-review-20261029/README.md).
+The final submission pass is complete. Use [the current index](SUBMISSION-20261028.md) and [the submission edition](state/external/submission-ready-20261030/README.md), containing A5 v9, A6 v8 and A4 v10 with their matching anonymized methodology reports.
 
-The autonomous finishing pass is complete: Claude's latest changes were reviewed; the remaining concrete A6 issues were narrowed or corrected; the three manuscripts have anonymous PDFs, matching anonymized production reports and verified counts below 6,000 words. The package includes a combined reading copy and a guide for the operator's planned outside-model review.
+The complete manuscripts and appendices were re-read. Two limited corrections were made: a narrower CEU–KDT agreement claim in A6, and explicit credit to Halpern's automatic-rock-thrower example in A4. The central theorem statements, displayed equations and appendix proofs are unchanged. The final assessment records the argument checks, exact arithmetic for the A6 correction and remaining limits.
 
-A5 and A6 remain the primary candidates. A4 is the less secure third candidate on significance and originality, after comparison with Halpern and Wysocki. E3 remains withdrawn. See the package's verification note for the precise remaining limitations and checks completed. Additional model reviews and any resulting revisions are a later stage; no contest forms have been submitted.
-
-Earlier editions are preserved in their versioned directories and Git history. This index supersedes earlier finalization pointers without changing those editions.
+A5 and A6 remain the primary submissions. A4 remains a less secure third on significance and originality. All three are below 6,000 words including non-bibliographic material. E3 remains withdrawn. Further reviews by other model providers are not an outstanding requirement. No contest form has been submitted. Earlier versions remain preserved.

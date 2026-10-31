@@ -1,17 +1,17 @@
-# Current philosophy essay package
+# Current submission package
 
-Updated 29 October 2026. The current final-review edition is [submission-final-review-20261029](state/external/submission-final-review-20261029/README.md). It incorporates Claude's changes through e716195 and the subsequent targeted review, with complete matching anonymized production reports.
+Updated 30 October 2026. Use [the submission edition](state/external/submission-ready-20261030/README.md).
 
-| Candidate | Essay | Production report | Words |
+| Candidate | Essay PDF | Matching methodology report | Words |
 |---|---|---|---:|
-| A5 — primary | [Holistic Accuracy v8](state/external/submission-final-review-20261029/A5-Holistic-Accuracy-v8.pdf) | [Report v8](state/external/submission-final-review-20261029/A5-Methodology-v8.pdf) | 5,039 |
-| A6 — primary | [Free Evidence v6](state/external/submission-final-review-20261029/A6-Free-Evidence-v6.pdf) | [Report v6](state/external/submission-final-review-20261029/A6-Methodology-v6.pdf) | 5,853 |
-| A4 — less secure third | [Causation v8](state/external/submission-final-review-20261029/A4-Causation-v8.pdf) | [Report v8](state/external/submission-final-review-20261029/A4-Methodology-v8.pdf) | 5,581 |
+| A5 — primary | [Holistic Accuracy v9](state/external/submission-ready-20261030/A5-Holistic-Accuracy-v9.pdf) | [Report v9](state/external/submission-ready-20261030/A5-Methodology-v9.pdf) | 5,536 |
+| A6 — primary | [Free Evidence v8](state/external/submission-ready-20261030/A6-Free-Evidence-v8.pdf) | [Report v8](state/external/submission-ready-20261030/A6-Methodology-v8.pdf) | 5,948 |
+| A4 — less secure third | [Causation v10](state/external/submission-ready-20261030/A4-Causation-v10.pdf) | [Report v10](state/external/submission-ready-20261030/A4-Methodology-v10.pdf) | 5,807 |
 
-[Combined reading copy](state/external/submission-final-review-20261029/Three-Essays-Final-Reading-Copy-20261029.pdf) · [Review guide](state/external/submission-final-review-20261029/REVIEW-GUIDE.md) · [Verification and remaining questions](state/external/submission-final-review-20261029/VERIFICATION.md)
+[Combined reading copy](state/external/submission-ready-20261030/Three-Essays-Submission-20261030.pdf) · [Final assessment](state/external/submission-ready-20261030/FINAL-REVIEW.md) · [Verification](state/external/submission-ready-20261030/VERIFICATION.md)
 
-The bibliography is excluded from the counts; all other material is included. All three essays are below 6,000 words. The production reports include recorded models and roles, selection and revision, source access, checks, human involvement and the limitations of historical resource records. They do not reproduce internal run logs or human-input histories.
+Only bibliography is excluded from the counts. The final pass narrows one A6 explanatory agreement claim and explicitly credits an A4 antecedent in Halpern. A5's manuscript is unchanged. No theorem statement, displayed equation or appendix proof changed. Each PDF is paired with an anonymized report of completed work.
 
-The last pass checked A6's corrected numbers and deference comparison, removed two unsupported peripheral generalizations, and made the question-availability premise explicit. A5 and A4 retain Claude's last corrected arguments. The main remaining outside-review questions are originality and philosophical significance, especially for A4. The Halpern book comparison has been completed. E3 remains withdrawn.
+A5 and A6 remain primary. A4's significance is less secure. The published Good Guesses version comparison and a fresh Wysocki full-text recheck remain access limits described in the assessment. E3 remains withdrawn. No contest form has been submitted, and no additional-model review is treated as pending or completed.
 
-The package is ready for the operator's planned final model reviews; those reviews have not yet been performed. No contest submission is claimed. The [previous source-checked edition](state/external/submission-sourcechecked-20261029/README.md) and earlier versions remain available.
+The [preceding edition](state/external/submission-final-20261030/README.md) and earlier versions remain preserved.
