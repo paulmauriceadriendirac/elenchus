@@ -1,0 +1,455 @@
+[
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Regularity Theory of Causation",
+      "authors": [
+        "Andreas",
+        "G\u00fcnther"
+      ],
+      "year": 2024,
+      "venue": "Pacific Philosophical Quarterly",
+      "doi": "10.1111/papq.12447",
+      "type": "journal-article",
+      "volume": "105",
+      "pages": "2-32"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "AndreasGunther2024",
+    "ref": {
+      "key": "AndreasGunther2024",
+      "authors": [
+        "Holger Andreas",
+        "Mario G\u00fcnther"
+      ],
+      "year": 2024,
+      "title": "A Regularity Theory of Causation",
+      "venue": "Pacific Philosophical Quarterly",
+      "volume": "105",
+      "pages": "2-32",
+      "doi": "10.1111/papq.12447",
+      "type": "article"
+    }
+  },
+  {
+    "match": {
+      "title": "What Does It Take to Make a Difference? A Reply to Andreas and G\u00fcnther",
+      "authors": [
+        "Beckers",
+        "Journal of Philosophy Inc."
+      ],
+      "year": 2025,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.5840/jphil202512249",
+      "type": "journal-article",
+      "volume": "122",
+      "pages": "177-189"
+    },
+    "title_similarity": 0.392,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Beckers2026",
+    "ref": {
+      "key": "Beckers2026",
+      "authors": [
+        "Sander Beckers"
+      ],
+      "year": 2026,
+      "title": "Difference-Making without Making a Difference",
+      "venue": "arXiv",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "type": "preprint"
+    }
+  },
+  {
+    "status": "MISMATCH",
+    "match": {
+      "title": "A principled approach to defining actual causation",
+      "authors": [
+        "Beckers",
+        "Vennekens"
+      ],
+      "year": 2016,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-016-1247-1",
+      "type": "journal-article",
+      "volume": "195",
+      "pages": "835-862"
+    },
+    "title_similarity": 1.0,
+    "notes": [
+      "DOI resolves to a different/conflicting record (title sim 1.00, author ok True, year ok False)"
+    ],
+    "key": "BeckersVennekens2018",
+    "ref": {
+      "key": "BeckersVennekens2018",
+      "authors": [
+        "Sander Beckers",
+        "Joost Vennekens"
+      ],
+      "year": 2018,
+      "title": "A Principled Approach to Defining Actual Causation",
+      "venue": "Synthese",
+      "volume": "195",
+      "pages": "835-862",
+      "doi": "10.1007/s11229-016-1247-1",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Cause without Default",
+      "authors": [
+        "Blanchard",
+        "Schaffer"
+      ],
+      "year": 2017,
+      "venue": "Oxford Scholarship Online",
+      "doi": "10.1093/oso/9780198746911.003.0010",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "BlanchardSchaffer2017",
+    "ref": {
+      "key": "BlanchardSchaffer2017",
+      "authors": [
+        "Thomas Blanchard",
+        "Jonathan Schaffer"
+      ],
+      "year": 2017,
+      "title": "Cause without Default",
+      "venue": "Making a Difference",
+      "volume": "",
+      "pages": "175-214",
+      "doi": "10.1093/oso/9780198746911.003.0010",
+      "type": "chapter"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A Model-Invariant Theory of Causation",
+      "authors": [
+        "Dmitri Gallow"
+      ],
+      "year": 2021,
+      "venue": "The Philosophical Review",
+      "doi": "10.1215/00318108-8699682",
+      "type": "journal-article",
+      "volume": "130",
+      "pages": "45-96"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Gallow2021",
+    "ref": {
+      "key": "Gallow2021",
+      "authors": [
+        "J. Dmitri Gallow"
+      ],
+      "year": 2021,
+      "title": "A Model-Invariant Theory of Causation",
+      "venue": "Philosophical Review",
+      "volume": "130",
+      "pages": "45-96",
+      "doi": "10.1215/00318108-8699682",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Causation and the Price of Transitivity",
+      "authors": [
+        "Hall"
+      ],
+      "year": 2000,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.2307/2678390",
+      "type": "journal-article",
+      "volume": "97",
+      "pages": "198"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hall2000",
+    "ref": {
+      "key": "Hall2000",
+      "authors": [
+        "Ned Hall"
+      ],
+      "year": 2000,
+      "title": "Causation and the Price of Transitivity",
+      "venue": "Journal of Philosophy",
+      "volume": "97",
+      "pages": "198-222",
+      "doi": "10.2307/2678390",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Structural equations and causation",
+      "authors": [
+        "Hall"
+      ],
+      "year": 2007,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-006-9057-9",
+      "type": "journal-article",
+      "volume": "132",
+      "pages": "109-136"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hall2007",
+    "ref": {
+      "key": "Hall2007",
+      "authors": [
+        "Ned Hall"
+      ],
+      "year": 2007,
+      "title": "Structural Equations and Causation",
+      "venue": "Philosophical Studies",
+      "volume": "132",
+      "pages": "109-136",
+      "doi": "10.1007/s11098-006-9057-9",
+      "type": "article"
+    }
+  },
+  {
+    "match": {
+      "title": "The HP Definition of Causality",
+      "authors": [
+        "Halpern"
+      ],
+      "year": 2016,
+      "venue": "Actual Causality",
+      "doi": "10.7551/mitpress/9780262035026.003.0002",
+      "type": "book-chapter",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 0.674,
+    "source": "crossref-search",
+    "notes": [
+      "openalex unavailable: HTTP 429"
+    ],
+    "status": "NOT_FOUND",
+    "key": "Halpern2015",
+    "ref": {
+      "key": "Halpern2015",
+      "authors": [
+        "Joseph Y. Halpern"
+      ],
+      "year": 2015,
+      "title": "A Modification of the Halpern-Pearl Definition of Causality",
+      "venue": "arXiv",
+      "volume": "",
+      "pages": "",
+      "doi": "",
+      "type": "preprint"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Actual Causality",
+      "authors": [
+        "Halpern"
+      ],
+      "year": 2016,
+      "venue": "The MIT Press",
+      "doi": "10.7551/mitpress/10809.001.0001",
+      "type": "edited-book",
+      "volume": null,
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Halpern2016",
+    "ref": {
+      "key": "Halpern2016",
+      "authors": [
+        "Joseph Y. Halpern"
+      ],
+      "year": 2016,
+      "title": "Actual Causality",
+      "venue": "MIT Press",
+      "volume": "",
+      "pages": "",
+      "doi": "10.7551/mitpress/10809.001.0001",
+      "type": "book"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Graded Causation and Defaults",
+      "authors": [
+        "Halpern",
+        "Hitchcock"
+      ],
+      "year": 2015,
+      "venue": "The British Journal for the Philosophy of Science",
+      "doi": "10.1093/bjps/axt050",
+      "type": "journal-article",
+      "volume": "66",
+      "pages": "413-457"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "HalpernHitchcock2015",
+    "ref": {
+      "key": "HalpernHitchcock2015",
+      "authors": [
+        "Joseph Y. Halpern",
+        "Christopher Hitchcock"
+      ],
+      "year": 2015,
+      "title": "Graded Causation and Defaults",
+      "venue": "British Journal for the Philosophy of Science",
+      "volume": "66",
+      "pages": "413-457",
+      "doi": "10.1093/bjps/axt050",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "The Intransitivity of Causation Revealed in Equations and Graphs",
+      "authors": [
+        "Hitchcock"
+      ],
+      "year": 2001,
+      "venue": "The Journal of Philosophy",
+      "doi": "10.2307/2678432",
+      "type": "journal-article",
+      "volume": "98",
+      "pages": "273"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hitchcock2001",
+    "ref": {
+      "key": "Hitchcock2001",
+      "authors": [
+        "Christopher Hitchcock"
+      ],
+      "year": 2001,
+      "title": "The Intransitivity of Causation Revealed in Equations and Graphs",
+      "venue": "Journal of Philosophy",
+      "volume": "98",
+      "pages": "273-299",
+      "doi": "10.2307/2678432",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Structural equations and causation: six counterexamples",
+      "authors": [
+        "Hitchcock"
+      ],
+      "year": 2008,
+      "venue": "Philosophical Studies",
+      "doi": "10.1007/s11098-008-9216-2",
+      "type": "journal-article",
+      "volume": "144",
+      "pages": "391-401"
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Hitchcock2009",
+    "ref": {
+      "key": "Hitchcock2009",
+      "authors": [
+        "Christopher Hitchcock"
+      ],
+      "year": 2009,
+      "title": "Structural Equations and Causation: Six Counterexamples",
+      "venue": "Philosophical Studies",
+      "volume": "144",
+      "pages": "391-401",
+      "doi": "10.1007/s11098-008-9216-2",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "Conjoined cases",
+      "authors": [
+        "Wysocki"
+      ],
+      "year": 2023,
+      "venue": "Synthese",
+      "doi": "10.1007/s11229-023-04101-w",
+      "type": "journal-article",
+      "volume": "201",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "Wysocki2023",
+    "ref": {
+      "key": "Wysocki2023",
+      "authors": [
+        "Tomasz Wysocki"
+      ],
+      "year": 2023,
+      "title": "Conjoined Cases",
+      "venue": "Synthese",
+      "volume": "201",
+      "pages": "197",
+      "doi": "10.1007/s11229-023-04101-w",
+      "type": "article"
+    }
+  },
+  {
+    "status": "VERIFIED",
+    "match": {
+      "title": "A refinement of the Hitchcock definition of actual causation",
+      "authors": [
+        "Xiao",
+        "Xiong"
+      ],
+      "year": 2026,
+      "venue": "Humanities and Social Sciences Communications",
+      "doi": "10.1057/s41599-026-07470-y",
+      "type": "journal-article",
+      "volume": "13",
+      "pages": null
+    },
+    "title_similarity": 1.0,
+    "source": "crossref-doi",
+    "key": "XiaoXiong2026",
+    "ref": {
+      "key": "XiaoXiong2026",
+      "authors": [
+        "Zhizun Xiao",
+        "Wei Xiong"
+      ],
+      "year": 2026,
+      "title": "A Refinement of the Hitchcock Definition of Actual Causation",
+      "venue": "Humanities and Social Sciences Communications",
+      "volume": "13",
+      "pages": "1088",
+      "doi": "10.1057/s41599-026-07470-y",
+      "type": "article"
+    }
+  }
+]
