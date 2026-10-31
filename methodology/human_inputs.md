@@ -110,3 +110,7 @@
 
 > [Late entry; original time 2026-10-21T19:44:05Z. Structured answer to the orchestrator's budget question] Budget cap: "$150 total". Cuts: "Cheaper model for chores".
 
+## 2026-10-31T13:18:03Z — class: courier
+
+> [Human relayed three outside-model (Grok) review reports on A4, A5, A6, with connecting messages: "what about this one"; "Refer to the following content:"; "here is review by grok". Saved verbatim: relay/inbox/grok-reviews-20261031.md]
+
