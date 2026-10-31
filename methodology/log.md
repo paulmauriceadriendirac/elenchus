@@ -141,3 +141,4 @@
 - 2026-10-31T15:16:10Z **event**: A5: applied DeepSeek-triage R1 verbatim (family_check.py ALL CHECKS PASS); PDF rebuilt.
 - 2026-10-31T15:16:39Z **event**: Methodology reports updated for DeepSeek late review edits; PDFs rebuilt.
 - 2026-10-31T15:20:25Z **human** (logistics): see human_inputs.md
+- 2026-10-31T15:45:04Z **human** (logistics): see human_inputs.md

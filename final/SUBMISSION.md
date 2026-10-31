@@ -8,6 +8,8 @@ Deadline: 31 Oct 2026, 23:59 Anywhere on Earth (= 1 Nov 11:59 UTC).
 | A6 | final/A6/essay_final.pdf — "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models" | second system v8 | 5,948 | final/A6/methodology_short.pdf |
 | A4 | final/A4/essay_final.pdf — "A Switching Dilemma for Normality in Actual Causation" | second system v10 + patch P1 | 5,825 | final/A4/methodology_short.pdf |
 
+Upload per submission (one methodology file each): final/A5/methodology_submission.pdf, final/A6/methodology_submission.pdf, final/A4/methodology_submission.pdf — each is that essay's report followed by the complete production record.
+
 Common, complete production record (every human message verbatim, provenance ledger, prompts):
 final/methodology/methodology_report.pdf (88 pp.).
 

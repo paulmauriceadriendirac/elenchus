@@ -126,3 +126,7 @@
 
 > Okay thanks. I think this is the final check. Will go eat breakfast and then submit. I was gonna have Astra relook over it but eh. Maybe after submission I will have you get rid of the word limit and rewrite the essays to be readavle for people who don't have the background papers memorized and get rid of the word limits and extend the theorems as much as you want
 
+## 2026-10-31T15:45:04Z — class: logistics
+
+> can you produce a merged copy of methodology report with each compaionion piece the pdf upload for that is one file for each submission
+
