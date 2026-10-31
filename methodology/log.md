@@ -137,3 +137,5 @@
 - 2026-10-31T15:09:30Z **agent**: A6 DeepSeek substance triage: no error or gap; do not revise; optional O1 (state/audit/A6/deepseek_triage.md)
 - 2026-10-31T15:13:57Z **agent**: A4 DeepSeek substance triage: two Tier-1 wording fixes (state/audit/A4/deepseek_triage.md)
 - 2026-10-31T15:14:27Z **event**: A4: applied DeepSeek-triage edits E1-E3 verbatim; PDF rebuilt.
+- 2026-10-31T15:15:52Z **agent**: A5 DeepSeek substance triage: family claim true, one-line proof; edit R1 (state/audit/A5/deepseek_triage.md)
+- 2026-10-31T15:16:10Z **event**: A5: applied DeepSeek-triage R1 verbatim (family_check.py ALL CHECKS PASS); PDF rebuilt.

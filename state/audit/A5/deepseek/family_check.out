@@ -1,0 +1,7 @@
+(1) own-state ME + cross-family BI: ok
+(2) truth-directedness violations: 0
+(3) members non-separable on the domain: 256 of 256
+(3') family constant? False
+(4) credences tested: 65; mismatches between Prop.4-set and S-optima: 0
+    S-optima at (7/10, 3/20, 3/20): [[[0], [0, 1], [0, 1, 2], [0, 2]]]
+ALL CHECKS PASS
