@@ -134,3 +134,4 @@
 - 2026-10-31T13:35:24Z **event**: Run complete: final submission set in final/SUBMISSION.md; identity scan of all seven PDFs clean.
 - 2026-10-31T14:58:48Z **human** (method): see human_inputs.md
 - 2026-10-31T15:00:17Z **human** (courier): see human_inputs.md
+- 2026-10-31T15:09:30Z **agent**: A6 DeepSeek substance triage: no error or gap; do not revise; optional O1 (state/audit/A6/deepseek_triage.md)
