@@ -114,3 +114,7 @@
 
 > [Human relayed three outside-model (Grok) review reports on A4, A5, A6, with connecting messages: "what about this one"; "Refer to the following content:"; "here is review by grok". Saved verbatim: relay/inbox/grok-reviews-20261031.md]
 
+## 2026-10-31T14:58:48Z — class: method
+
+> Check deepseeks comments do not run the other checks only check for substance of the arguments! Are they worth revising the essay for
+
