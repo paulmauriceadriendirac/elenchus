@@ -2,7 +2,7 @@
 
 Companion to **A Switching Dilemma for Normality in Actual Causation**, version 10, as adopted with one correction (patch P1). Prepared 30 October 2026; updated 31 October 2026.
 
-The matching essay contains **5,813 words** under the conservative source count, including all non-bibliographic material. This anonymized report covers production, revision and verification; it carries forward the preceding production report and adds the readability revision described below.
+The matching essay contains **5,825 words** under the conservative source count, including all non-bibliographic material. This anonymized report covers production, revision and verification; it carries forward the preceding production report and adds the readability revision described below.
 
 ## Production setting and models
 
@@ -81,3 +81,7 @@ On 31 October the operator relayed reviews of all three essays by a third model 
 ## Final document pairing
 
 The adopted essay is version 10 (`A4-Causation-v10.md`) with patch P1 applied; the anonymous essay PDF was rebuilt from the patched text. This report is paired with that text.
+
+## Late review edit (31 Oct)
+
+An outside AI model (DeepSeek) wrote referee reports on the final essays, relayed unedited by the operator. A Claude-side substance-only triage found no false theorem but two wording inconsistencies, both corrected: a sentence that used "componentwise" for a variable-indexed escape that the essay's definition excludes, and a compensation claim now restricted to the modified definition. It also added "by itself" to make the single-candidate reading explicit. No theorem statement or computation changed. Final length: 5,825 words.

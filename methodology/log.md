@@ -139,3 +139,4 @@
 - 2026-10-31T15:14:27Z **event**: A4: applied DeepSeek-triage edits E1-E3 verbatim; PDF rebuilt.
 - 2026-10-31T15:15:52Z **agent**: A5 DeepSeek substance triage: family claim true, one-line proof; edit R1 (state/audit/A5/deepseek_triage.md)
 - 2026-10-31T15:16:10Z **event**: A5: applied DeepSeek-triage R1 verbatim (family_check.py ALL CHECKS PASS); PDF rebuilt.
+- 2026-10-31T15:16:39Z **event**: Methodology reports updated for DeepSeek late review edits; PDFs rebuilt.

@@ -2,7 +2,7 @@
 
 Companion to **Holistic Accuracy and the Limits of Lockean Derivation**, version 9, as adopted with two bibliography corrections. Prepared 30 October 2026; updated 31 October 2026.
 
-The matching essay contains **5,536 words** under the conservative source count, including all non-bibliographic material. This anonymized report covers production, revision and verification; it carries forward the preceding production report and adds the readability revision described below.
+The matching essay contains **5,597 words** under the conservative source count, including all non-bibliographic material. This anonymized report covers production, revision and verification; it carries forward the preceding production report and adds the readability revision described below.
 
 ## Production setting and models
 
@@ -77,3 +77,7 @@ On 31 October the operator relayed reviews of all three essays by a third model 
 ## Final document pairing
 
 The adopted essay is version 9 (`A5-Holistic-Accuracy-v9.md`) with the two bibliography corrections described above; the anonymous essay PDF was rebuilt from the corrected text. This report is paired with that text.
+
+## Late review edit (31 Oct)
+
+An outside AI model (DeepSeek) wrote referee reports on the final essays, relayed unedited by the operator. A Claude-side substance-only triage found one real gap: the claim about Dorst's state-indexed family of measures was asserted without proof. The triage agent supplied a one-paragraph proof that the dilemma's second horn extends to such families; a check script confirmed it on finite cases, and the paragraph was replaced. No theorem statement or example changed. Final length: 5,597 words.

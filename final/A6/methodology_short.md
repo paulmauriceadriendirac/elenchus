@@ -81,3 +81,7 @@ On 31 October the operator relayed reviews of all three essays by a third model 
 ## Final document pairing
 
 The adopted essay is version 8 (`A6-Free-Evidence-v8.md`) and its anonymous PDF, without change. This report is paired with that version.
+
+## Late review edit (31 Oct)
+
+An outside AI model (DeepSeek) wrote referee reports on the final essays, relayed unedited by the operator. A Claude-side substance-only triage found no error or gap in A6's stated claims; the essay was not changed.

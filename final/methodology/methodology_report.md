@@ -6,11 +6,11 @@ edition (`state/external/submission-ready-20261030/`), each checked by a delta a
 patched by the orchestrator:
 
 - **A5**, "Holistic Accuracy and the Limits of Lockean Derivation": the second system's v9 with two
-  bibliography patches (`final/A5/essay.md`, 5,536 words; delta audit `state/audit/A5/v9_delta.md`);
+  bibliography patches (`final/A5/essay.md`, 5,597 words; delta audit `state/audit/A5/v9_delta.md`);
 - **A6**, "When Acting on Knowledge Makes Free Evidence Harmful: Good's Theorem in Normality Models":
   the second system's v8, unchanged (`final/A6/essay.md`, 5,948 words; `state/audit/A6/v8_delta.md`);
 - **A4**, "A Switching Dilemma for Normality in Actual Causation": the second system's v10 with patch P1
-  (`final/A4/essay.md`, 5,813 words; `state/audit/A4/v10_delta.md`).
+  (`final/A4/essay.md`, 5,825 words; `state/audit/A4/v10_delta.md`).
 
 The earlier finals are kept (`final/A5/essay_v8.md`, `final/A6/essay_v6.md`, `final/A4/essay_v8.md`).
 Each essay is accompanied by a short production report, the second system's latest report corrected
@@ -360,7 +360,7 @@ Topic selection was done entirely by agents.
 | E3 | Withdrawn: the second system's 28 Oct analysis found that the referees' proposed fix "retains an SDA-sensitive premise" and withdrew its recommendation; the orchestrator did not revise E3 further | log 28 Oct 03:40 (second system's entry), 29 Oct 03:45:15; `state/external/claude-review-20261028/README.md` |
 | Selection tournament | Not run. The orchestrator recommended A5, A6, A4 (29 Oct 03:45); the human selected them at Gate A2 (11:45). The second system's 29 Oct README still lists A4 as "a conditional reserve". | log; `human_inputs.md`; `state/external/submission-sourcechecked-20261029/README.md` |
 | Package of 29 Oct | A5 v8 and A4 v8 (word-identical to this pipeline's finals), A6 v6 (scope narrowing) | `state/external/submission-final-review-20261029/`; log 30 Oct 02:56:53 |
-| Final essays (adopted 31 Oct) | 3: A5 v9 + bibliography patches 1–2 (5,536 words), A6 v8 (5,948), A4 v10 + P1 (5,813) | `final/A*/changelog.md`; log 31 Oct 13:24:16–13:28:35 |
+| Final essays (adopted 31 Oct) | 3: A5 v9 + bibliography patches 1–2 (5,597 words), A6 v8 (5,948), A4 v10 + P1 (5,825) | `final/A*/changelog.md`; log 31 Oct 13:24:16–13:28:35 |
 
 The second system ran its own funnel ("120 → 40 → 16 → 8") in `state/external/codex-expansion-20261022/
 ideation/`; an originality audit demoted the eight (`state/external/eight-ideas-audit-20261022/README.md`).
@@ -486,7 +486,7 @@ and covered citations, quotations, attributions, locators, formal content and co
 | Changes | 14 prose passages; 1 new reference (Skipper 2023, VERIFIED, full text read); 3 new attributions, all accurate; 414 math segments and all statements identical | 19 word-level edits in 12 passages; no theorem, equation, proof, quotation, locator, reference or number changed | 13 passages (9 new or rewritten prose, 1 new attribution, paragraph splits); references byte-identical; 193 math spans identical; HP audit rerun byte-identical (94 checks, 91 pass, 3 designed negative controls) |
 | Finding | Holguín 2022 pages "1–34" false (25 pp.) | Theorem 3 construction edit corrects a real v6 error (exact check: KDT +1/2, CEU −9/2 for the original bet over looking; +7/10 under both for the best act); no CEU cycle | "automatic rock-throwing machine (2016, 85)" unverifiable from any retrieved copy and absent from the designated book-review record; fetch `a4-v10-halpern-2016-p85` filed |
 | Patches applied by the orchestrator (verbatim) | 1: pages 1–25; 2: Skipper issue (7); optional 3 not applied | none (optional P1 not applied) | P1: "Halpern (2016, 84–85) already notes that Suzy's throw stops being a cause by itself when Billy's throwing without hitting is too abnormal." |
-| Words; injection | 5,536; no hard flags | 5,948; no hard flags | 5,813; no hard flags |
+| Words; injection | 5,597; no hard flags | 5,948; no hard flags | 5,825; no hard flags |
 
 ### 7.6 Outside-model reviews (Grok, 31 Oct)
 
@@ -649,8 +649,8 @@ earlier final, is its base).
      uncredited overlaps with the 2016 book were flagged but not added; the formal audits of A4 and A6
      were run on this pipeline's v6/v4, so material the second system added in v7/v5 was checked only
      where a patch or changelog says so (`final/A4/changelog.md`).
-   - Word counts: A6 (5,948) and A4 (5,813) are over the internal 5,600 target but under the 6,000
-     limit; A5 is 5,536.
+   - Word counts: A6 (5,948) and A4 (5,825) are over the internal 5,600 target but under the 6,000
+     limit; A5 is 5,597.
    - Grok requests not met (all presentational, per the delta audits): A4's case for the anonymity
      baseline, parts of causes, event coding, uniqueness arguments, a category table; A5's core-premium
      motivation and interval-length intuition; A6's positive upshot.
@@ -2515,7 +2515,7 @@ works who sit on the panel are not named here; their works are described or name
 
 ## 2. A5 — "Holistic Accuracy and the Limits of Lockean Derivation"
 
-Final (adopted) text: `final/A5/essay.md`, the second system's v9 with delta-audit patches 1–2, 5,536 words (strict, `tools/wordcount.py`, 31 Oct). The earlier final (v8, 5,039 words) is kept as `final/A5/essay_v8.md`. Version chain:
+Final (adopted) text: `final/A5/essay.md`, the second system's v9 with delta-audit patches 1–2, 5,597 words (strict, `tools/wordcount.py`, 31 Oct). The earlier final (v8, 5,039 words) is kept as `final/A5/essay_v8.md`. Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|
@@ -2579,7 +2579,7 @@ Final (adopted) text: `final/A6/essay.md` = the second system's v8 (`state/exter
 
 ## 4. A4 — "A Switching Dilemma for Normality in Actual Causation"
 
-Final (adopted) text: `final/A4/essay.md`, the second system's v10 with delta-audit patch P1, 5,813 words strict (31 Oct; log 13:28:35). The earlier final (v8, 5,581 words) is kept as `final/A4/essay_v8.md`. Version chain:
+Final (adopted) text: `final/A4/essay.md`, the second system's v10 with delta-audit patch P1, 5,825 words strict (31 Oct; log 13:28:35). The earlier final (v8, 5,581 words) is kept as `final/A4/essay_v8.md`. Version chain:
 
 | Version | Author | File | Time |
 |---|---|---|---|
@@ -2709,3 +2709,7 @@ Limits of this ledger:
   `submission-sourcechecked-20261029/`), `state/audit/A5/good-guesses-comparison-20261029.md`, and
   `relay/outbox/codex-*.md`. Its own chat transcripts are not in the repository.
 - Git history of the working branch, including the merged commits of the second system.
+
+## Addendum: late outside review (31 Oct)
+
+After the final versions were adopted, the operator relayed referee reports by a further outside AI model (DeepSeek), saved verbatim in `relay/inbox/deepseek-20261031/`. At the operator's request ("only check for substance of the arguments"), three Claude editor agents triaged them for substance only (`state/audit/A*/deepseek_triage.md`). A6: no error or gap; unchanged. A4: no false theorem; two wording inconsistencies and one clarification corrected verbatim from the triage (5,825 words). A5: one real gap (the state-indexed family claim was unproved); the triage agent's one-paragraph proof replaced the paragraph, after the orchestrator ran its check script (`state/audit/A5/deepseek/family_check.py`, all checks pass) (5,597 words). No contribution in these edits traces to a human message.
