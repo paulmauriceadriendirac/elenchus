@@ -127,3 +127,4 @@
 - 2026-10-31T13:24:00Z **agent**: A6 v8 delta audit: state/audit/A6/v8_delta.md
 - 2026-10-31T13:24:04Z **agent**: A5 v9 delta audit: state/audit/A5/v9_delta.md
 - 2026-10-31T13:24:16Z **decision**: A6: adopted v8 after delta audit ADOPT (state/audit/A6/v8_delta.md).
+- 2026-10-31T13:24:51Z **decision**: A5: adopted v9 with delta-audit patches 1-2 (state/audit/A5/v9_delta.md); PDF rebuilt.
